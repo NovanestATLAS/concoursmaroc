@@ -48,7 +48,7 @@ export function buildPracticePage(site, all, lang, banks) {
   const crumbs = [[pfx, t(lang, 'home')], [`${pfx}entrainement/`, t(lang, 'navPractice')]];
   const practiceList = all.filter((c) => c.practice && c[lang]);
   const body = html`${breadcrumb(lang, link, crumbs)}
-<div class="container">
+<div class="container practice-head">
 <header class="page-head" style="padding-bottom:0"><span class="eyebrow">${t(lang, 'navPractice')}</span><h1>${x.h1}</h1><p class="lead">${x.lead}</p></header>
 </div>
 <div id="cm-app" class="cm-app" data-lang="${lang}" data-data="${link('data/')}" data-guides="${link('')}">
@@ -56,7 +56,7 @@ export function buildPracticePage(site, all, lang, banks) {
 <noscript><div class="callout warn">${x.noscript}</div></noscript>
 </div>
 <div class="sheet-back" id="sheet"></div>
-<div class="container">
+<div class="container practice-extra">
 <section class="section"><h2>${x.features}</h2><div class="grid cols-3">${x.feats.map(([ic, h, p]) => html`<div class="card"><div class="card-top"><span class="card-ico">${icon(ic)}</span><span class="card-title">${h}</span></div><p class="card-sub">${p}</p></div>`)}</div></section>
 <section class="section"><h2>${x.byConcours}</h2>
 ${GROUPS.map((g) => {

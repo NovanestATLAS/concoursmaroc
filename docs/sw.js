@@ -1,9 +1,9 @@
 /* Concours Maroc — service worker.
  * Network-first for pages (always fresh when online), cache-first for static
  * assets and question banks (instant and offline after the first visit). */
-var VERSION = '9f1f02d0491e';
+var VERSION = '9cade0bfa395';
 var CACHE = 'cm-' + VERSION;
-var PRECACHE = ["ar/entrainement/index.html","ar/index.html","assets/css/concours-maroc.css","assets/css/entrainement.css","assets/js/annuaire.js","assets/js/echeances.js","assets/js/site.js","data/concours.json","data/i18n/ar.json","data/i18n/fr.json","data/manifest.json","data/outils.json","data/sources.json","entrainement/index.html","index.html","manifest.webmanifest","offline.html"];
+var PRECACHE = ["ar/entrainement/index.html","ar/index.html","assets/css/concours-maroc.css","assets/css/entrainement.css","assets/js/annuaire.js","assets/js/echeances.js","assets/js/entrainement/app.js","assets/js/entrainement/data-loader.js","assets/js/entrainement/i18n.js","assets/js/entrainement/quiz-engine.js","assets/js/entrainement/stats.js","assets/js/entrainement/storage.js","assets/js/entrainement/tts.js","assets/js/entrainement/ui.js","assets/js/entrainement/utils.js","assets/js/site.js","data/concours.json","data/i18n/ar.json","data/i18n/fr.json","data/manifest.json","data/outils.json","data/sources.json","entrainement/index.html","index.html","manifest.webmanifest","offline.html"];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
