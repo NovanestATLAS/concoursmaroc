@@ -1,0 +1,59 @@
+/* Concours Maroc — service worker.
+ * Network-first for pages (always fresh when online), cache-first for static
+ * assets and question banks (instant and offline after the first visit). */
+var VERSION = '9f1f02d0491e';
+var CACHE = 'cm-' + VERSION;
+var PRECACHE = ["ar/entrainement/index.html","ar/index.html","assets/css/concours-maroc.css","assets/css/entrainement.css","assets/js/annuaire.js","assets/js/echeances.js","assets/js/site.js","data/concours.json","data/i18n/ar.json","data/i18n/fr.json","data/manifest.json","data/outils.json","data/sources.json","entrainement/index.html","index.html","manifest.webmanifest","offline.html"];
+
+self.addEventListener('install', function (event) {
+  event.waitUntil(
+    caches.open(CACHE).then(function (cache) {
+      return cache.addAll(PRECACHE.map(function (p) { return new Request(p, { cache: 'reload' }); }));
+    }).then(function () { return self.skipWaiting(); })
+  );
+});
+
+self.addEventListener('activate', function (event) {
+  event.waitUntil(
+    caches.keys().then(function (keys) {
+      return Promise.all(keys.filter(function (k) { return k.indexOf('cm-') === 0 && k !== CACHE; })
+        .map(function (k) { return caches.delete(k); }));
+    }).then(function () { return self.clients.claim(); })
+  );
+});
+
+self.addEventListener('fetch', function (event) {
+  var req = event.request;
+  if (req.method !== 'GET') return;
+  var url = new URL(req.url);
+  if (url.origin !== self.location.origin) return;
+
+  var isPage = req.mode === 'navigate' || (req.headers.get('accept') || '').indexOf('text/html') !== -1;
+  if (isPage) {
+    event.respondWith(
+      fetch(req).then(function (res) {
+        var copy = res.clone();
+        caches.open(CACHE).then(function (c) { c.put(req, copy); });
+        return res;
+      }).catch(function () {
+        return caches.match(req).then(function (hit) {
+          return hit || caches.match(new URL('offline.html', self.registration.scope).href);
+        });
+      })
+    );
+    return;
+  }
+
+  event.respondWith(
+    caches.match(req).then(function (hit) {
+      var net = fetch(req).then(function (res) {
+        if (res && res.ok) {
+          var copy = res.clone();
+          caches.open(CACHE).then(function (c) { c.put(req, copy); });
+        }
+        return res;
+      });
+      return hit || net;
+    })
+  );
+});

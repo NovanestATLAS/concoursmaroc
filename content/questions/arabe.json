@@ -1,0 +1,2291 @@
+{
+ "category": "arabe",
+ "contentVersion": "1.0.0",
+ "labels": {
+  "fr": "Langue arabe",
+  "ar": "اللغة العربية"
+ },
+ "count": 60,
+ "questions": [
+  {
+   "id": "CM-ARA-001",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما إعراب كلمة «الطالبُ» في جملة: حضر الطالبُ مبكرًا؟",
+     "choices": [
+      "فاعل مرفوع",
+      "مفعول به منصوب",
+      "مبتدأ مرفوع",
+      "خبر مرفوع"
+     ],
+     "correctIndex": 0,
+     "correction": "«الطالبُ» فاعل مرفوع.",
+     "explanation": "الفعل «حضر» فعل ماضٍ لازم، والاسم الذي يليه هو من قام بالفعل، فيُعرب فاعلًا مرفوعًا وعلامة رفعه الضمة الظاهرة. وليس مفعولًا به لأن الفعل لازم لا يتعدى إلى مفعول."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-002",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما إعراب كلمة «الدرسَ» في جملة: كتب التلميذُ الدرسَ؟",
+     "choices": [
+      "مفعول به منصوب",
+      "فاعل مرفوع",
+      "مبتدأ مرفوع",
+      "نعت منصوب"
+     ],
+     "correctIndex": 0,
+     "correction": "«الدرسَ» مفعول به منصوب.",
+     "explanation": "الفعل «كتب» متعدٍّ، والفاعل هو «التلميذُ»، أما «الدرسَ» فهو ما وقع عليه فعل الكتابة، فيُعرب مفعولًا به منصوبًا وعلامة نصبه الفتحة الظاهرة."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-003",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما علامة رفع جمع المذكر السالم؟",
+     "choices": [
+      "الواو",
+      "الألف",
+      "الضمة",
+      "الياء"
+     ],
+     "correctIndex": 0,
+     "correction": "يُرفع جمع المذكر السالم بالواو.",
+     "explanation": "جمع المذكر السالم يُرفع بالواو ويُنصب ويُجر بالياء، نحو: حضر المعلمون، ورأيت المعلمين، وسلّمت على المعلمين. أما الضمة فعلامة رفع الاسم المفرد وجمع التكسير وجمع المؤنث السالم."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-004",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما علامة نصب جمع المؤنث السالم؟",
+     "choices": [
+      "الكسرة",
+      "الفتحة",
+      "الياء",
+      "الألف"
+     ],
+     "correctIndex": 0,
+     "correction": "يُنصب جمع المؤنث السالم بالكسرة نيابة عن الفتحة.",
+     "explanation": "جمع المؤنث السالم يُرفع بالضمة ويُنصب ويُجر بالكسرة، نحو: رأيتُ الطالباتِ، وسلّمتُ على الطالباتِ. وهذه من العلامات الفرعية في الإعراب."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-005",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما إعراب المثنى في حالة النصب؟",
+     "choices": [
+      "منصوب بالياء",
+      "منصوب بالفتحة",
+      "منصوب بالألف",
+      "منصوب بالكسرة"
+     ],
+     "correctIndex": 0,
+     "correction": "يُنصب المثنى بالياء.",
+     "explanation": "المثنى يُرفع بالألف ويُنصب ويُجر بالياء، نحو: جاء الطالبان، ورأيتُ الطالبين، ومررتُ بالطالبين. وتُفتح النون في المثنى وتُكسر في جمع المذكر السالم."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-006",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "في جملة «إنّ العلمَ نورٌ»، ما إعراب «العلمَ»؟",
+     "choices": [
+      "اسم إنّ منصوب",
+      "خبر إنّ مرفوع",
+      "فاعل مرفوع",
+      "مفعول به منصوب"
+     ],
+     "correctIndex": 0,
+     "correction": "«العلمَ» اسم إنّ منصوب.",
+     "explanation": "«إنّ» من الحروف الناسخة التي تنصب المبتدأ ويسمى اسمها وترفع الخبر ويسمى خبرها. فـ«العلمَ» اسمها منصوب و«نورٌ» خبرها مرفوع."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-007",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "في جملة «كان الجوُّ صافيًا»، ما إعراب «صافيًا»؟",
+     "choices": [
+      "خبر كان منصوب",
+      "اسم كان مرفوع",
+      "حال منصوب",
+      "نعت منصوب"
+     ],
+     "correctIndex": 0,
+     "correction": "«صافيًا» خبر كان منصوب.",
+     "explanation": "«كان» من الأفعال الناسخة التي ترفع المبتدأ ويسمى اسمها وتنصب الخبر ويسمى خبرها. فـ«الجوُّ» اسمها مرفوع و«صافيًا» خبرها منصوب."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-008",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما نوع «لا» في جملة: لا تهملْ واجبَك؟",
+     "choices": [
+      "لا الناهية الجازمة",
+      "لا النافية",
+      "لا النافية للجنس",
+      "لا الزائدة"
+     ],
+     "correctIndex": 0,
+     "correction": "هي «لا» الناهية الجازمة.",
+     "explanation": "دخلت «لا» على الفعل المضارع فجزمته وسُكّن آخره، والمعنى طلب الكفّ عن الفعل. أما «لا» النافية فلا تؤثر في إعراب الفعل، و«لا» النافية للجنس تدخل على الاسم فتنصبه."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-009",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما إعراب الفعل المضارع بعد «لن»؟",
+     "choices": [
+      "منصوب",
+      "مجزوم",
+      "مرفوع",
+      "مبني على السكون"
+     ],
+     "correctIndex": 0,
+     "correction": "يُنصب الفعل المضارع بعد «لن».",
+     "explanation": "«لن» من أدوات النصب مثل «أن» و«كي» و«حتى»، نحو: لن أتأخرَ. أما أدوات الجزم فمنها «لم» و«لا» الناهية و«لام الأمر»."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-010",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما إعراب الفعل المضارع بعد «لم»؟",
+     "choices": [
+      "مجزوم",
+      "منصوب",
+      "مرفوع",
+      "مبني على الفتح"
+     ],
+     "correctIndex": 0,
+     "correction": "يُجزم الفعل المضارع بعد «لم».",
+     "explanation": "«لم» حرف نفي وجزم وقلب: تجزم المضارع وتقلب معناه إلى الماضي، نحو: لم يحضرْ. وعلامة الجزم السكون في الفعل الصحيح الآخر."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-011",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "في جملة «جاء الطلابُ إلا خالدًا»، ما إعراب «خالدًا»؟",
+     "choices": [
+      "مستثنى منصوب",
+      "مفعول به منصوب",
+      "حال منصوب",
+      "بدل منصوب"
+     ],
+     "correctIndex": 0,
+     "correction": "«خالدًا» مستثنى منصوب.",
+     "explanation": "الاستثناء بـ«إلا» في كلام تام مُثبت يوجب نصب المستثنى. أما إذا كان الكلام منفيًّا وتامًّا فيجوز النصب أو الإتباع على البدلية."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-012",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما إعراب «مجتهدًا» في جملة: عاد التلميذُ مجتهدًا؟",
+     "choices": [
+      "حال منصوب",
+      "خبر منصوب",
+      "مفعول به منصوب",
+      "نعت منصوب"
+     ],
+     "correctIndex": 0,
+     "correction": "«مجتهدًا» حال منصوب.",
+     "explanation": "الحال وصف فضلة يبيّن هيئة صاحبه عند وقوع الفعل، وهو منصوب دائمًا. ويُعرف بأنه يقع جوابًا عن سؤال «كيف؟»."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-013",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما نوع الجملة في قولنا: «العلمُ نافعٌ»؟",
+     "choices": [
+      "جملة اسمية",
+      "جملة فعلية",
+      "جملة شرطية",
+      "شبه جملة"
+     ],
+     "correctIndex": 0,
+     "correction": "هي جملة اسمية.",
+     "explanation": "الجملة الاسمية تبدأ باسم وتتكون من مبتدأ وخبر، أما الجملة الفعلية فتبدأ بفعل. وهنا «العلمُ» مبتدأ و«نافعٌ» خبر، وكلاهما مرفوع."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-014",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما جمع كلمة «كتاب»؟",
+     "choices": [
+      "كُتُب",
+      "كاتبون",
+      "مكاتب",
+      "كتابات"
+     ],
+     "correctIndex": 0,
+     "correction": "جمع «كتاب» هو «كُتُب».",
+     "explanation": "«كُتُب» جمع تكسير لكلمة «كتاب». أما «كاتبون» فجمع مذكر سالم لـ«كاتب»، و«مكاتب» جمع «مكتب»."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-015",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما مثنى كلمة «قاضٍ»؟",
+     "choices": [
+      "قاضيان",
+      "قاضون",
+      "قضاة",
+      "قاضيات"
+     ],
+     "correctIndex": 0,
+     "correction": "مثنى «قاضٍ» هو «قاضيان».",
+     "explanation": "«قاضٍ» اسم منقوص تعود ياؤه عند التثنية فيصير «قاضيان» في الرفع و«قاضيين» في النصب والجر. أما «قضاة» فجمع تكسير."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-016",
+   "category": "arabe",
+   "subcategory": "صرف",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما وزن كلمة «استخرج»؟",
+     "choices": [
+      "استفعل",
+      "افتعل",
+      "انفعل",
+      "تفعّل"
+     ],
+     "correctIndex": 0,
+     "correction": "وزن «استخرج» هو «استفعل».",
+     "explanation": "الجذر هو «خ ر ج» وقد زيدت عليه ألف وسين وتاء، فصار على وزن «استفعل» الذي يفيد غالبًا الطلب أو التحول."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-017",
+   "category": "arabe",
+   "subcategory": "صرف",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما وزن كلمة «اجتمع»؟",
+     "choices": [
+      "افتعل",
+      "انفعل",
+      "افعلّ",
+      "تفاعل"
+     ],
+     "correctIndex": 0,
+     "correction": "وزن «اجتمع» هو «افتعل».",
+     "explanation": "الجذر «ج م ع» زيدت عليه همزة الوصل والتاء، فصار على وزن «افتعل» الذي يفيد المطاوعة أو المشاركة."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-018",
+   "category": "arabe",
+   "subcategory": "صرف",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما اسم الفاعل من الفعل «كتب»؟",
+     "choices": [
+      "كاتب",
+      "مكتوب",
+      "مكتب",
+      "كتابة"
+     ],
+     "correctIndex": 0,
+     "correction": "اسم الفاعل من «كتب» هو «كاتب».",
+     "explanation": "اسم الفاعل من الثلاثي يأتي على وزن «فاعل». أما «مكتوب» فاسم مفعول على وزن «مفعول»، و«مكتب» اسم مكان."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-019",
+   "category": "arabe",
+   "subcategory": "صرف",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما اسم المفعول من الفعل «فهم»؟",
+     "choices": [
+      "مفهوم",
+      "فاهم",
+      "فهيم",
+      "مفهم"
+     ],
+     "correctIndex": 0,
+     "correction": "اسم المفعول من «فهم» هو «مفهوم».",
+     "explanation": "اسم المفعول من الثلاثي يأتي على وزن «مفعول». و«فاهم» اسم فاعل، و«فهيم» صفة مشبهة تدل على الثبوت."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-020",
+   "category": "arabe",
+   "subcategory": "صرف",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما مصدر الفعل «عَلِمَ»؟",
+     "choices": [
+      "عِلْم",
+      "عالم",
+      "معلوم",
+      "تعليم"
+     ],
+     "correctIndex": 0,
+     "correction": "مصدر «عَلِمَ» هو «عِلْم».",
+     "explanation": "المصدر يدل على الحدث مجردًا من الزمن. و«عالم» اسم فاعل، و«معلوم» اسم مفعول، و«تعليم» مصدر الفعل الرباعي «علّم»."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-021",
+   "category": "arabe",
+   "subcategory": "صرف",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما نوع الاسم في كلمة «مصنع» من حيث الدلالة؟",
+     "choices": [
+      "اسم مكان",
+      "اسم زمان",
+      "اسم آلة",
+      "مصدر ميمي"
+     ],
+     "correctIndex": 0,
+     "correction": "«مصنع» اسم مكان.",
+     "explanation": "اسم المكان من الثلاثي يأتي على وزن «مَفْعَل» أو «مَفْعِل» ويدل على مكان وقوع الفعل. أما اسم الآلة فيأتي على أوزان مثل «مِفْعَل» و«مِفْعال» و«مِفْعَلة»."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-022",
+   "category": "arabe",
+   "subcategory": "صرف",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما وزن كلمة «مِفْتاح»؟",
+     "choices": [
+      "مِفْعال",
+      "مَفْعول",
+      "فِعْلال",
+      "مُفْتَعِل"
+     ],
+     "correctIndex": 0,
+     "correction": "وزن «مِفْتاح» هو «مِفْعال».",
+     "explanation": "«مِفْعال» من أوزان اسم الآلة، مثل «مِنشار» و«مِيزان». وهذه الأوزان تدل على الأداة التي يقع بها الفعل."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-023",
+   "category": "arabe",
+   "subcategory": "صرف",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما جمع «مستشفى»؟",
+     "choices": [
+      "مستشفيات",
+      "مشافي",
+      "مستشفون",
+      "شفاءات"
+     ],
+     "correctIndex": 0,
+     "correction": "جمع «مستشفى» هو «مستشفيات».",
+     "explanation": "«مستشفى» اسم مقصور يُجمع جمع مؤنث سالم فتردّ ألفه ياءً: مستشفيات. وهذا الجمع هو الشائع في الاستعمال الرسمي."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-024",
+   "category": "arabe",
+   "subcategory": "إملاء",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "أي كتابة صحيحة إملائيًا؟",
+     "choices": [
+      "مسؤولية",
+      "مسئولية",
+      "مسؤليّة",
+      "مسؤولييّة"
+     ],
+     "correctIndex": 0,
+     "correction": "الكتابة الصحيحة هي «مسؤولية».",
+     "explanation": "الهمزة المتوسطة تُكتب على واو لأنها مضمومة وما قبلها ساكن، ثم تأتي الواو ثم لام وياء وتاء مربوطة. وكتابتها على نبرة قليلة الشيوع في المعايير الإملائية المعتمدة."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-025",
+   "category": "arabe",
+   "subcategory": "إملاء",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "متى تُكتب التاء مربوطة في آخر الكلمة؟",
+     "choices": [
+      "إذا نُطقت هاءً عند الوقف",
+      "إذا سُبقت بألف دائمًا",
+      "إذا كانت الكلمة فعلًا",
+      "إذا كانت الكلمة جمع مذكر سالم"
+     ],
+     "correctIndex": 0,
+     "correction": "تُكتب التاء مربوطة إذا نُطقت هاءً عند الوقف.",
+     "explanation": "مثال: «مدرسة» تُنطق عند الوقف «مدرسه»، فتُكتب بالتاء المربوطة. أما التاء المبسوطة فتبقى تاءً عند الوقف، نحو «بيت» و«كتبتْ»."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-026",
+   "category": "arabe",
+   "subcategory": "إملاء",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما الكتابة الصحيحة للهمزة في: «الس…ال»؟",
+     "choices": [
+      "السؤال",
+      "السئال",
+      "السأال",
+      "السـؤءال"
+     ],
+     "correctIndex": 0,
+     "correction": "الكتابة الصحيحة هي «السؤال».",
+     "explanation": "الهمزة هنا متوسطة مضمومة وما قبلها ساكن، والضمة أقوى من السكون، فتُكتب على واو."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-027",
+   "category": "arabe",
+   "subcategory": "إملاء",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "أي الكلمات التالية مكتوبة كتابة صحيحة؟",
+     "choices": [
+      "هذا",
+      "هاذا",
+      "هذاء",
+      "هذى"
+     ],
+     "correctIndex": 0,
+     "correction": "الكتابة الصحيحة هي «هذا».",
+     "explanation": "«هذا» اسم إشارة تُحذف ألفه في الكتابة وإن نُطقت، وهي من الكلمات التي جرت العادة على كتابتها هكذا، مثل «لكن» و«الرحمن»."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-028",
+   "category": "arabe",
+   "subcategory": "إملاء",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "متى تُكتب الألف اللينة في آخر الاسم الثلاثي ياءً (ى)؟",
+     "choices": [
+      "إذا كان أصلها ياءً",
+      "إذا كان أصلها واوًا",
+      "دائمًا",
+      "إذا كانت الكلمة معرّفة"
+     ],
+     "correctIndex": 0,
+     "correction": "تُكتب ياءً إذا كان أصلها ياءً.",
+     "explanation": "نعرف الأصل بالتثنية أو بالمصدر: «فتى» تُثنّى «فتيان» فتُكتب بالياء، أما «عصا» فتُثنّى «عصوان» فتُكتب بالألف."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-029",
+   "category": "arabe",
+   "subcategory": "إملاء",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما الكتابة الصحيحة لهمزة الوصل في أول الفعل «اجتهد»؟",
+     "choices": [
+      "همزة وصل بلا رسم للهمزة",
+      "همزة قطع تُرسم فوق الألف",
+      "همزة قطع تُرسم تحت الألف",
+      "لا تُكتب الألف أصلًا"
+     ],
+     "correctIndex": 0,
+     "correction": "همزة الفعل الخماسي «اجتهد» همزة وصل تُكتب ألفًا بلا رسم للهمزة.",
+     "explanation": "همزة الوصل تسقط في النطق عند الوصل وتثبت في الابتداء، وتكون في الأفعال الخماسية والسداسية وأمرها ومصدرها، وفي «ال» التعريف. أما همزة القطع فتُرسم دائمًا وتُنطق في كل الأحوال."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-030",
+   "category": "arabe",
+   "subcategory": "إملاء",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "أي الكلمات التالية تُكتب بهمزة قطع؟",
+     "choices": [
+      "أحمد",
+      "استقبال",
+      "انتظار",
+      "اجتماع"
+     ],
+     "correctIndex": 0,
+     "correction": "«أحمد» تُكتب بهمزة قطع.",
+     "explanation": "همزة القطع تكون في الأسماء غير المصادر الخماسية والسداسية، وفي الأعلام، وفي الفعل الماضي الرباعي وأمره ومصدره. أما «استقبال» و«انتظار» و«اجتماع» فمصادر تبدأ بهمزة وصل."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-031",
+   "category": "arabe",
+   "subcategory": "بلاغة",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما نوع الصورة البيانية في قولنا: «العلمُ نورٌ»؟",
+     "choices": [
+      "تشبيه بليغ",
+      "استعارة مكنية",
+      "كناية",
+      "مجاز مرسل"
+     ],
+     "correctIndex": 0,
+     "correction": "هي تشبيه بليغ.",
+     "explanation": "التشبيه البليغ ما حُذفت منه أداة التشبيه ووجه الشبه، فبقي المشبه والمشبه به فقط. والأصل: العلم كالنور في الهداية."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-032",
+   "category": "arabe",
+   "subcategory": "بلاغة",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما نوع الصورة في قولنا: «ابتسم الصباحُ»؟",
+     "choices": [
+      "استعارة مكنية",
+      "تشبيه تام",
+      "كناية عن صفة",
+      "طباق"
+     ],
+     "correctIndex": 0,
+     "correction": "هي استعارة مكنية.",
+     "explanation": "شُبّه الصباح بإنسان، وحُذف المشبه به وأُبقيت إحدى لوازمه وهي «الابتسام»، وهذا هو تعريف الاستعارة المكنية."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-033",
+   "category": "arabe",
+   "subcategory": "بلاغة",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما المحسّن البديعي في قولنا: «يُحيي ويُميت»؟",
+     "choices": [
+      "الطباق",
+      "الجناس",
+      "السجع",
+      "التورية"
+     ],
+     "correctIndex": 0,
+     "correction": "المحسّن هو الطباق.",
+     "explanation": "الطباق هو الجمع بين اللفظ وضده في الكلام. أما الجناس فتشابه لفظين في الحروف واختلافهما في المعنى، والسجع توافق الفواصل في الحرف الأخير."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-034",
+   "category": "arabe",
+   "subcategory": "بلاغة",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما المقصود بالكناية؟",
+     "choices": [
+      "لفظ أُريد به لازم معناه مع جواز إرادة المعنى الأصلي",
+      "لفظ استُعمل في غير معناه مع قرينة مانعة",
+      "تشبيه حُذفت أداته",
+      "تكرار الحرف الأخير في الفواصل"
+     ],
+     "correctIndex": 0,
+     "correction": "الكناية لفظ أُريد به لازم معناه مع جواز إرادة المعنى الأصلي.",
+     "explanation": "مثال: «فلان كثير الرماد» كناية عن الكرم، مع بقاء إمكان إرادة المعنى الحرفي. وهذا ما يميزها عن المجاز الذي تمنع فيه القرينة إرادة المعنى الأصلي."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-035",
+   "category": "arabe",
+   "subcategory": "بلاغة",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "في قولنا «شربتُ ماءَ النهر»، ما نوع المجاز في «النهر»؟",
+     "choices": [
+      "مجاز مرسل علاقته المحلية",
+      "استعارة تصريحية",
+      "كناية عن موصوف",
+      "تشبيه ضمني"
+     ],
+     "correctIndex": 0,
+     "correction": "هو مجاز مرسل علاقته المحلية.",
+     "explanation": "أُطلق المحل وهو «النهر» وأُريد الحالّ فيه وهو الماء. والعلاقة المحلية من علاقات المجاز المرسل المشهورة، إلى جانب السببية والجزئية والكلية."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-036",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما مرادف كلمة «سعى»؟",
+     "choices": [
+      "اجتهد",
+      "تكاسل",
+      "توقّف",
+      "نام"
+     ],
+     "correctIndex": 0,
+     "correction": "مرادف «سعى» هو «اجتهد».",
+     "explanation": "السعي بذل الجهد والحركة في طلب الشيء، فهو قريب من الاجتهاد. أما التكاسل والتوقف فمن أضداده."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-037",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما ضد كلمة «الإيجاز»؟",
+     "choices": [
+      "الإطناب",
+      "الاختصار",
+      "التلخيص",
+      "الإجمال"
+     ],
+     "correctIndex": 0,
+     "correction": "ضد «الإيجاز» هو «الإطناب».",
+     "explanation": "الإيجاز تقليل اللفظ مع وفاء المعنى، والإطناب زيادة اللفظ لفائدة. أما الاختصار والتلخيص فقريبان من الإيجاز."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-038",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما معنى كلمة «الحصافة»؟",
+     "choices": [
+      "جودة الرأي وسداده",
+      "كثرة الكلام",
+      "شدة الغضب",
+      "سرعة المشي"
+     ],
+     "correctIndex": 0,
+     "correction": "الحصافة هي جودة الرأي وسداده.",
+     "explanation": "يقال: رجل حصيف الرأي، أي محكم العقل بعيد عن التسرع. وهي صفة يُثنى بها في سياق تحمل المسؤولية."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-039",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما معنى «النزاهة» في السياق الإداري؟",
+     "choices": [
+      "البعد عن المصالح الشخصية وعن كل ما يشين",
+      "سرعة إنجاز الملفات",
+      "كثرة الاجتماعات",
+      "الاطلاع الواسع"
+     ],
+     "correctIndex": 0,
+     "correction": "النزاهة هي البعد عن المصالح الشخصية وعن كل ما يشين.",
+     "explanation": "النزاهة من القيم الأساسية للمرفق العام، وتقترن بالشفافية والحياد وربط المسؤولية بالمحاسبة."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-040",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما مرادف كلمة «الشفافية»؟",
+     "choices": [
+      "الوضوح",
+      "الغموض",
+      "الإبهام",
+      "الكتمان"
+     ],
+     "correctIndex": 0,
+     "correction": "مرادف «الشفافية» هو «الوضوح».",
+     "explanation": "الشفافية تعني وضوح القواعد والمساطر وإمكانية الاطلاع عليها. أما الغموض والإبهام والكتمان فمن أضدادها."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-041",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما معنى «التعليل» في تحرير القرارات الإدارية؟",
+     "choices": [
+      "ذكر الأسباب الواقعية والقانونية التي بُني عليها القرار",
+      "إلغاء القرار",
+      "تأجيل تنفيذ القرار",
+      "نشر القرار بالجريدة الرسمية"
+     ],
+     "correctIndex": 0,
+     "correction": "التعليل هو ذكر الأسباب الواقعية والقانونية التي بُني عليها القرار.",
+     "explanation": "التعليل يمكّن المعني بالأمر من فهم القرار ومن ممارسة حقه في الطعن، ويُعد ضمانة أساسية في العلاقة بين الإدارة والمرتفق."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-042",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما المقصود بـ«المرتفق» في الأدبيات الإدارية المغربية؟",
+     "choices": [
+      "المستفيد من خدمات المرفق العام",
+      "الموظف المكلف بالاستقبال",
+      "رئيس المصلحة",
+      "المفتش الإداري"
+     ],
+     "correctIndex": 0,
+     "correction": "المرتفق هو المستفيد من خدمات المرفق العام.",
+     "explanation": "يقابل المصطلح «l'usager» بالفرنسية، ويشمل كل شخص ذاتي أو اعتباري يتعامل مع الإدارة للحصول على خدمة."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-043",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما مرادف كلمة «الحيّز» في قولنا: «حيّز التنفيذ»؟",
+     "choices": [
+      "النطاق أو المجال",
+      "التأخير",
+      "الإلغاء",
+      "الطعن"
+     ],
+     "correctIndex": 0,
+     "correction": "«الحيّز» هنا يعني النطاق أو المجال.",
+     "explanation": "دخول نص «حيّز التنفيذ» يعني بدء سريان أحكامه. وغالبًا ما يرتبط ذلك بالنشر بالجريدة الرسمية أو بتاريخ يحدده النص نفسه."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-044",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما ضد كلمة «الإنصاف»؟",
+     "choices": [
+      "الحيف",
+      "العدل",
+      "القسط",
+      "الاستقامة"
+     ],
+     "correctIndex": 0,
+     "correction": "ضد «الإنصاف» هو «الحيف».",
+     "explanation": "الإنصاف إعطاء كل ذي حق حقه، والحيف هو الظلم والجور. أما العدل والقسط والاستقامة فمرادفات للإنصاف أو قريبة منه."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-045",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما معنى «الاستعجال» في المسطرة القضائية؟",
+     "choices": [
+      "اتخاذ تدابير سريعة ومؤقتة لا تمسّ جوهر النزاع",
+      "إلغاء الدعوى",
+      "تأجيل الجلسة",
+      "تنفيذ الحكم بعد سنة"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستعجال هو اتخاذ تدابير سريعة ومؤقتة لا تمسّ جوهر النزاع.",
+     "explanation": "قاضي المستعجلات يبتّ في ما يقتضي السرعة دون أن يفصل في الموضوع، ويظل الفصل في الجوهر من اختصاص قاضي الموضوع."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-046",
+   "category": "arabe",
+   "subcategory": "تعبير",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "أي جملة مكتوبة بأسلوب إداري سليم؟",
+     "choices": [
+      "يشرفني أن أوافيكم بالمعطيات المطلوبة",
+      "راه غادي نصيفط ليكم المعطيات",
+      "بغيت نقول ليكم بلي المعطيات جاهزة",
+      "المعطيات ديالكم واجدة"
+     ],
+     "correctIndex": 0,
+     "correction": "الجملة السليمة هي: «يشرفني أن أوافيكم بالمعطيات المطلوبة».",
+     "explanation": "الأسلوب الإداري يعتمد العربية الفصحى وصيغ التأدب والحياد، ويتجنب العامية والتعابير المألوفة في الحديث اليومي."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-047",
+   "category": "arabe",
+   "subcategory": "تعبير",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما الصيغة المناسبة لخاتمة رسالة إدارية؟",
+     "choices": [
+      "وتفضلوا بقبول فائق عبارات التقدير والاحترام",
+      "إلى اللقاء قريبًا",
+      "مع أطيب التحيات وأشواقي",
+      "بانتظار ردك السريع يا صديقي"
+     ],
+     "correctIndex": 0,
+     "correction": "الصيغة المناسبة هي: «وتفضلوا بقبول فائق عبارات التقدير والاحترام».",
+     "explanation": "خاتمة الرسالة الإدارية صيغة مسكوكة تعبّر عن الاحترام دون مودة شخصية. أما الصيغ الودية فتُستعمل في المراسلات الخاصة."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-048",
+   "category": "arabe",
+   "subcategory": "تعبير",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما الفرق بين «التقرير» و«المحضر»؟",
+     "choices": [
+      "التقرير يتضمن تحليلًا واقتراحات، أما المحضر فيسجّل الوقائع كما جرت",
+      "التقرير أقصر دائمًا من المحضر",
+      "المحضر يتضمن رأي المحرر والتقرير لا يتضمنه",
+      "لا فرق بينهما"
+     ],
+     "correctIndex": 0,
+     "correction": "التقرير يتضمن تحليلًا واقتراحات، أما المحضر فيسجّل الوقائع كما جرت.",
+     "explanation": "المحضر وثيقة إثبات تلتزم الأمانة في نقل ما وقع، بينما يُنتظر من التقرير أن يضيف قراءة للمعطيات وخلاصات وتوصيات قابلة للتنفيذ."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-049",
+   "category": "arabe",
+   "subcategory": "تعبير",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما وظيفة «المقدمة» في موضوع إنشائي؟",
+     "choices": [
+      "تمهّد للموضوع وتطرح الإشكالية",
+      "تعرض النتائج النهائية",
+      "تلخّص المراجع المستعملة",
+      "تكرّر العنوان فقط"
+     ],
+     "correctIndex": 0,
+     "correction": "المقدمة تمهّد للموضوع وتطرح الإشكالية.",
+     "explanation": "المقدمة الجيدة تنتقل من العام إلى الخاص، وتحدد الإشكالية بوضوح، وتعلن خطة المعالجة دون أن تكشف الخلاصة."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-050",
+   "category": "arabe",
+   "subcategory": "تعبير",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما الأداة المناسبة للربط بين فكرتين متعارضتين؟",
+     "choices": [
+      "غير أنّ",
+      "لأنّ",
+      "بما أنّ",
+      "نظرًا لـ"
+     ],
+     "correctIndex": 0,
+     "correction": "الأداة المناسبة هي «غير أنّ».",
+     "explanation": "«غير أنّ» و«بيد أنّ» و«لكن» تفيد الاستدراك والتعارض. أما «لأنّ» و«بما أنّ» و«نظرًا لـ» فتفيد التعليل والسببية."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-051",
+   "category": "arabe",
+   "subcategory": "تعبير",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما الأداة التي تفيد النتيجة؟",
+     "choices": [
+      "وبالتالي",
+      "بالرغم من",
+      "غير أنّ",
+      "على العكس"
+     ],
+     "correctIndex": 0,
+     "correction": "الأداة التي تفيد النتيجة هي «وبالتالي».",
+     "explanation": "«وبالتالي» و«ومن ثمّ» و«لذلك» تربط السبب بالنتيجة. أما «بالرغم من» و«غير أنّ» و«على العكس» فتفيد التعارض."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-052",
+   "category": "arabe",
+   "subcategory": "تعبير",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما الخطأ في الجملة: «تم تنفيذ القرار من طرف اللجنة بشكل عاجل»؟",
+     "choices": [
+      "لا خطأ فيها، وهي سليمة التركيب",
+      "الفعل مبني للمجهول ولا يجوز ذلك مطلقًا",
+      "«اللجنة» يجب أن تُنصب",
+      "«عاجل» يجب أن تُجمع"
+     ],
+     "correctIndex": 0,
+     "correction": "الجملة سليمة التركيب.",
+     "explanation": "بناء الفعل للمجهول جائز، وذكر الفاعل بعده بصيغة «من طرف» شائع في اللغة الإدارية المعاصرة وإن فضّل بعض اللغويين البناء للمعلوم لأنه أوضح في تحديد المسؤولية."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-053",
+   "category": "arabe",
+   "subcategory": "تعبير",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "أي عبارة أنسب لطلب وثيقة من إدارة؟",
+     "choices": [
+      "ألتمس من سيادتكم تسليمي نسخة من الوثيقة المذكورة أعلاه",
+      "أريد الوثيقة الآن",
+      "أرسل لي الورقة بسرعة",
+      "أنا محتاج الوثيقة اليوم"
+     ],
+     "correctIndex": 0,
+     "correction": "العبارة الأنسب هي: «ألتمس من سيادتكم تسليمي نسخة من الوثيقة المذكورة أعلاه».",
+     "explanation": "الطلب الإداري يعتمد صيغة الالتماس، ويحدد الوثيقة بدقة، ويتجنب صيغ الأمر والاستعجال الشخصي."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-054",
+   "category": "arabe",
+   "subcategory": "تعبير",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما وظيفة الفقرة الانتقالية في موضوع مطوّل؟",
+     "choices": [
+      "الربط بين محورين والتمهيد للمحور الموالي",
+      "تكرار المقدمة",
+      "عرض المراجع",
+      "إضافة معطيات إحصائية فقط"
+     ],
+     "correctIndex": 0,
+     "correction": "وظيفتها الربط بين محورين والتمهيد للمحور الموالي.",
+     "explanation": "الفقرة الانتقالية تلخّص باقتضاب ما سبق ثم تطرح ما سيأتي، فتحافظ على تماسك النص وتيسّر تتبع القارئ للتدرج المنطقي."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-055",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما معنى «الحكامة الجيدة»؟",
+     "choices": [
+      "أسلوب في التدبير يقوم على الشفافية والمشاركة وربط المسؤولية بالمحاسبة",
+      "زيادة عدد الموظفين",
+      "تقليص مدة العطل",
+      "نقل المقر الإداري"
+     ],
+     "correctIndex": 0,
+     "correction": "الحكامة الجيدة أسلوب في التدبير يقوم على الشفافية والمشاركة وربط المسؤولية بالمحاسبة.",
+     "explanation": "تشمل الحكامة الجيدة كذلك النجاعة في استعمال الموارد العمومية وتقييم السياسات وإشراك المرتفقين في التقييم."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-056",
+   "category": "arabe",
+   "subcategory": "مفردات",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما معنى «التفويض» في التدبير الإداري؟",
+     "choices": [
+      "إسناد بعض الاختصاصات إلى جهة أخرى مع بقاء المسؤولية العامة",
+      "إلغاء المهام نهائيًا",
+      "توقيف الموظف",
+      "تحويل الميزانية إلى مصلحة أخرى"
+     ],
+     "correctIndex": 0,
+     "correction": "التفويض هو إسناد بعض الاختصاصات إلى جهة أخرى مع بقاء المسؤولية العامة.",
+     "explanation": "يميّز الفقه بين تفويض الاختصاص المرتبط بالمنصب وتفويض التوقيع المرتبط بشخص المفوَّض إليه، وكلاهما يجب أن يستند إلى نص يجيزه."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-057",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما نوع «الذي» في جملة: حضر الموظفُ الذي أنجز التقرير؟",
+     "choices": [
+      "اسم موصول",
+      "اسم إشارة",
+      "ضمير منفصل",
+      "حرف جر"
+     ],
+     "correctIndex": 0,
+     "correction": "«الذي» اسم موصول.",
+     "explanation": "الاسم الموصول يربط بين الاسم السابق والجملة التي تليه وتسمى صلة الموصول. و«الذي» للمفرد المذكر، و«التي» للمفردة المؤنثة، و«الذين» لجمع المذكر العاقل."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-058",
+   "category": "arabe",
+   "subcategory": "نحو",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما إعراب «طالبًا» في جملة: كم طالبًا حضر الامتحان؟",
+     "choices": [
+      "تمييز منصوب",
+      "مفعول به منصوب",
+      "حال منصوب",
+      "نعت منصوب"
+     ],
+     "correctIndex": 0,
+     "correction": "«طالبًا» تمييز منصوب.",
+     "explanation": "«كم» الاستفهامية يأتي تمييزها مفردًا منصوبًا. أما «كم» الخبرية فيأتي تمييزها مفردًا أو جمعًا مجرورًا."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-059",
+   "category": "arabe",
+   "subcategory": "صرف",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما جمع كلمة «مبدأ»؟",
+     "choices": [
+      "مبادئ",
+      "مبدآت",
+      "مبدأون",
+      "مبادىء"
+     ],
+     "correctIndex": 0,
+     "correction": "جمع «مبدأ» هو «مبادئ».",
+     "explanation": "«مبادئ» جمع تكسير على وزن «مفاعل»، وتُرسم الهمزة على نبرة لأنها متطرفة بعد كسر. ويكثر استعمال هذا الجمع في النصوص القانونية والإدارية."
+    }
+   }
+  },
+  {
+   "id": "CM-ARA-060",
+   "category": "arabe",
+   "subcategory": "إملاء",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar"
+   ],
+   "l10n": {
+    "ar": {
+     "text": "ما الكتابة الصحيحة: «إن شاء الله» أم «إنشاء الله»؟",
+     "choices": [
+      "إن شاء الله",
+      "إنشاء الله",
+      "انشاء الله",
+      "أن شاء الله"
+     ],
+     "correctIndex": 0,
+     "correction": "الكتابة الصحيحة هي «إن شاء الله».",
+     "explanation": "التركيب يتكون من «إنْ» الشرطية و«شاء» فعل ماضٍ ولفظ الجلالة فاعل، فالمعنى: إن أراد الله. أما «إنشاء» فمصدر الفعل «أنشأ» ويعني البناء أو التأسيس، وهو معنى مختلف تمامًا."
+    }
+   }
+  }
+ ]
+}

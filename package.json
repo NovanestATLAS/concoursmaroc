@@ -1,0 +1,15 @@
+{
+  "name": "concoursmaroc",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Concours Maroc — guide des concours au Maroc après le bac, QCM corrigés et outils (site statique pour GitHub Pages).",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs && node scripts/build.mjs --check",
+    "serve": "npx --yes http-server docs -p 8080 -c-1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

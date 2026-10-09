@@ -1,0 +1,6131 @@
+{
+ "category": "logique",
+ "contentVersion": "1.0.0",
+ "labels": {
+  "fr": "Logique et tests psychotechniques",
+  "ar": "المنطق والاختبارات السيكوتقنية"
+ },
+ "count": 120,
+ "questions": [
+  {
+   "id": "CM-LOG-001",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 3, 7, 11, 15, 19, ... ?",
+     "choices": [
+      "23",
+      "27",
+      "19",
+      "24"
+     ],
+     "correctIndex": 0,
+     "correction": "La suite continue par 23.",
+     "explanation": "Règle de la suite : on ajoute 4 à chaque terme. En appliquant cette règle au dernier terme affiché, on obtient 23."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 3, 7, 11, 15, 19، ... ؟",
+     "choices": [
+      "23",
+      "27",
+      "19",
+      "24"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر المتتالية بالعدد 23.",
+     "explanation": "قاعدة المتتالية: يُضاف 4 إلى كل حد. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 23."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-002",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 7, 12, 17, 22, 27, ... ?",
+     "choices": [
+      "37",
+      "32",
+      "27",
+      "33"
+     ],
+     "correctIndex": 1,
+     "correction": "La suite continue par 32.",
+     "explanation": "Règle de la suite : on ajoute 5 à chaque terme. En appliquant cette règle au dernier terme affiché, on obtient 32."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 7, 12, 17, 22, 27، ... ؟",
+     "choices": [
+      "37",
+      "32",
+      "27",
+      "33"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر المتتالية بالعدد 32.",
+     "explanation": "قاعدة المتتالية: يُضاف 5 إلى كل حد. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 32."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-003",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 12, 18, 24, 30, 36, ... ?",
+     "choices": [
+      "48",
+      "36",
+      "42",
+      "43"
+     ],
+     "correctIndex": 2,
+     "correction": "La suite continue par 42.",
+     "explanation": "Règle de la suite : on ajoute 6 à chaque terme. En appliquant cette règle au dernier terme affiché, on obtient 42."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 12, 18, 24, 30, 36، ... ؟",
+     "choices": [
+      "48",
+      "36",
+      "42",
+      "43"
+     ],
+     "correctIndex": 2,
+     "correction": "تستمر المتتالية بالعدد 42.",
+     "explanation": "قاعدة المتتالية: يُضاف 6 إلى كل حد. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 42."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-004",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 2, 11, 20, 29, 38, ... ?",
+     "choices": [
+      "56",
+      "38",
+      "48",
+      "47"
+     ],
+     "correctIndex": 3,
+     "correction": "La suite continue par 47.",
+     "explanation": "Règle de la suite : on ajoute 9 à chaque terme. En appliquant cette règle au dernier terme affiché, on obtient 47."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 2, 11, 20, 29, 38، ... ؟",
+     "choices": [
+      "56",
+      "38",
+      "48",
+      "47"
+     ],
+     "correctIndex": 3,
+     "correction": "تستمر المتتالية بالعدد 47.",
+     "explanation": "قاعدة المتتالية: يُضاف 9 إلى كل حد. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 47."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-005",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 45, 38, 31, 24, 17, ... ?",
+     "choices": [
+      "10",
+      "3",
+      "17",
+      "11"
+     ],
+     "correctIndex": 0,
+     "correction": "La suite continue par 10.",
+     "explanation": "Règle de la suite : on retranche 7 à chaque terme. En appliquant cette règle au dernier terme affiché, on obtient 10."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 45, 38, 31, 24, 17، ... ؟",
+     "choices": [
+      "10",
+      "3",
+      "17",
+      "11"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر المتتالية بالعدد 10.",
+     "explanation": "قاعدة المتتالية: يُطرح 7 من كل حد. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 10."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-006",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 100, 88, 76, 64, 52, ... ?",
+     "choices": [
+      "28",
+      "40",
+      "52",
+      "41"
+     ],
+     "correctIndex": 1,
+     "correction": "La suite continue par 40.",
+     "explanation": "Règle de la suite : on retranche 12 à chaque terme. En appliquant cette règle au dernier terme affiché, on obtient 40."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 100, 88, 76, 64, 52، ... ؟",
+     "choices": [
+      "28",
+      "40",
+      "52",
+      "41"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر المتتالية بالعدد 40.",
+     "explanation": "قاعدة المتتالية: يُطرح 12 من كل حد. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 40."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-007",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 11, 24, 37, 50, 63, ... ?",
+     "choices": [
+      "89",
+      "63",
+      "76",
+      "77"
+     ],
+     "correctIndex": 2,
+     "correction": "La suite continue par 76.",
+     "explanation": "Règle de la suite : on ajoute 13 à chaque terme. En appliquant cette règle au dernier terme affiché, on obtient 76."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 11, 24, 37, 50, 63، ... ؟",
+     "choices": [
+      "89",
+      "63",
+      "76",
+      "77"
+     ],
+     "correctIndex": 2,
+     "correction": "تستمر المتتالية بالعدد 76.",
+     "explanation": "قاعدة المتتالية: يُضاف 13 إلى كل حد. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 76."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-008",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 2, 6, 18, 54, ... ?",
+     "choices": [
+      "162",
+      "216",
+      "108",
+      "164"
+     ],
+     "correctIndex": 0,
+     "correction": "La suite continue par 162.",
+     "explanation": "Règle de la suite : chaque terme est multiplié par 3. En appliquant cette règle au dernier terme affiché, on obtient 162."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 2, 6, 18, 54، ... ؟",
+     "choices": [
+      "162",
+      "216",
+      "108",
+      "164"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر المتتالية بالعدد 162.",
+     "explanation": "قاعدة المتتالية: يُضرب كل حد في 3. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 162."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-009",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 5, 10, 20, 40, ... ?",
+     "choices": [
+      "120",
+      "80",
+      "40",
+      "82"
+     ],
+     "correctIndex": 1,
+     "correction": "La suite continue par 80.",
+     "explanation": "Règle de la suite : chaque terme est multiplié par 2. En appliquant cette règle au dernier terme affiché, on obtient 80."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 5, 10, 20, 40، ... ؟",
+     "choices": [
+      "120",
+      "80",
+      "40",
+      "82"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر المتتالية بالعدد 80.",
+     "explanation": "قاعدة المتتالية: يُضرب كل حد في 2. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 80."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-010",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 3, 12, 48, 192, ... ?",
+     "choices": [
+      "960",
+      "576",
+      "768",
+      "770"
+     ],
+     "correctIndex": 2,
+     "correction": "La suite continue par 768.",
+     "explanation": "Règle de la suite : chaque terme est multiplié par 4. En appliquant cette règle au dernier terme affiché, on obtient 768."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 3, 12, 48, 192، ... ؟",
+     "choices": [
+      "960",
+      "576",
+      "768",
+      "770"
+     ],
+     "correctIndex": 2,
+     "correction": "تستمر المتتالية بالعدد 768.",
+     "explanation": "قاعدة المتتالية: يُضرب كل حد في 4. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 768."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-011",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 1, 6, 36, 216, ... ?",
+     "choices": [
+      "1512",
+      "1080",
+      "1298",
+      "1296"
+     ],
+     "correctIndex": 3,
+     "correction": "La suite continue par 1296.",
+     "explanation": "Règle de la suite : chaque terme est multiplié par 6. En appliquant cette règle au dernier terme affiché, on obtient 1296."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 1, 6, 36, 216، ... ؟",
+     "choices": [
+      "1512",
+      "1080",
+      "1298",
+      "1296"
+     ],
+     "correctIndex": 3,
+     "correction": "تستمر المتتالية بالعدد 1296.",
+     "explanation": "قاعدة المتتالية: يُضرب كل حد في 6. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 1296."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-012",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 128, 64, 32, 16, ... ?",
+     "choices": [
+      "8",
+      "24",
+      "10",
+      "16"
+     ],
+     "correctIndex": 0,
+     "correction": "La suite continue par 8.",
+     "explanation": "Règle de la suite : chaque terme est divisé par 2. En appliquant cette règle au dernier terme affiché, on obtient 8."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 128, 64, 32, 16، ... ؟",
+     "choices": [
+      "8",
+      "24",
+      "10",
+      "16"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر المتتالية بالعدد 8.",
+     "explanation": "قاعدة المتتالية: يُقسم كل حد على 2. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 8."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-013",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 2, 10, 50, 250, ... ?",
+     "choices": [
+      "1500",
+      "1250",
+      "1000",
+      "1252"
+     ],
+     "correctIndex": 1,
+     "correction": "La suite continue par 1250.",
+     "explanation": "Règle de la suite : chaque terme est multiplié par 5. En appliquant cette règle au dernier terme affiché, on obtient 1250."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 2, 10, 50, 250، ... ؟",
+     "choices": [
+      "1500",
+      "1250",
+      "1000",
+      "1252"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر المتتالية بالعدد 1250.",
+     "explanation": "قاعدة المتتالية: يُضرب كل حد في 5. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 1250."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-014",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 1, 4, 9, 16, 25, ... ?",
+     "choices": [
+      "36",
+      "30",
+      "35",
+      "49"
+     ],
+     "correctIndex": 0,
+     "correction": "La suite continue par 36.",
+     "explanation": "Règle de la suite : ce sont les carrés des entiers successifs. En appliquant cette règle au dernier terme affiché, on obtient 36."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 1, 4, 9, 16, 25، ... ؟",
+     "choices": [
+      "36",
+      "30",
+      "35",
+      "49"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر المتتالية بالعدد 36.",
+     "explanation": "قاعدة المتتالية: هي مربعات الأعداد الصحيحة المتتالية. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 36."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-015",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 1, 8, 27, 64, ... ?",
+     "choices": [
+      "100",
+      "125",
+      "128",
+      "216"
+     ],
+     "correctIndex": 1,
+     "correction": "La suite continue par 125.",
+     "explanation": "Règle de la suite : ce sont les cubes des entiers successifs. En appliquant cette règle au dernier terme affiché, on obtient 125."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 1, 8, 27, 64، ... ؟",
+     "choices": [
+      "100",
+      "125",
+      "128",
+      "216"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر المتتالية بالعدد 125.",
+     "explanation": "قاعدة المتتالية: هي مكعبات الأعداد الصحيحة المتتالية. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 125."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-016",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 2, 6, 12, 20, 30, ... ?",
+     "choices": [
+      "40",
+      "44",
+      "42",
+      "36"
+     ],
+     "correctIndex": 2,
+     "correction": "La suite continue par 42.",
+     "explanation": "Règle de la suite : l'écart entre deux termes augmente de 2 à chaque fois. En appliquant cette règle au dernier terme affiché, on obtient 42."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 2, 6, 12, 20, 30، ... ؟",
+     "choices": [
+      "40",
+      "44",
+      "42",
+      "36"
+     ],
+     "correctIndex": 2,
+     "correction": "تستمر المتتالية بالعدد 42.",
+     "explanation": "قاعدة المتتالية: الفرق بين كل حدين يزداد بمقدار 2 في كل مرة. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 42."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-017",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 1, 1, 2, 3, 5, 8, ... ?",
+     "choices": [
+      "11",
+      "12",
+      "16",
+      "13"
+     ],
+     "correctIndex": 3,
+     "correction": "La suite continue par 13.",
+     "explanation": "Règle de la suite : chaque terme est la somme des deux précédents. En appliquant cette règle au dernier terme affiché, on obtient 13."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 1, 1, 2, 3, 5, 8، ... ؟",
+     "choices": [
+      "11",
+      "12",
+      "16",
+      "13"
+     ],
+     "correctIndex": 3,
+     "correction": "تستمر المتتالية بالعدد 13.",
+     "explanation": "قاعدة المتتالية: كل حد هو مجموع الحدين السابقين. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 13."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-018",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 2, 3, 5, 8, 13, ... ?",
+     "choices": [
+      "21",
+      "18",
+      "20",
+      "26"
+     ],
+     "correctIndex": 0,
+     "correction": "La suite continue par 21.",
+     "explanation": "Règle de la suite : chaque terme est la somme des deux précédents. En appliquant cette règle au dernier terme affiché, on obtient 21."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 2, 3, 5, 8, 13، ... ؟",
+     "choices": [
+      "21",
+      "18",
+      "20",
+      "26"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر المتتالية بالعدد 21.",
+     "explanation": "قاعدة المتتالية: كل حد هو مجموع الحدين السابقين. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 21."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-019",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 1, 3, 7, 15, 31, ... ?",
+     "choices": [
+      "62",
+      "63",
+      "47",
+      "64"
+     ],
+     "correctIndex": 1,
+     "correction": "La suite continue par 63.",
+     "explanation": "Règle de la suite : chaque terme vaut le double du précédent plus 1. En appliquant cette règle au dernier terme affiché, on obtient 63."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 1, 3, 7, 15, 31، ... ؟",
+     "choices": [
+      "62",
+      "63",
+      "47",
+      "64"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر المتتالية بالعدد 63.",
+     "explanation": "قاعدة المتتالية: كل حد يساوي ضعف الحد السابق زائد 1. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 63."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-020",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 5, 11, 23, 47, ... ?",
+     "choices": [
+      "94",
+      "71",
+      "95",
+      "96"
+     ],
+     "correctIndex": 2,
+     "correction": "La suite continue par 95.",
+     "explanation": "Règle de la suite : chaque terme vaut le double du précédent plus 1. En appliquant cette règle au dernier terme affiché, on obtient 95."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 5, 11, 23, 47، ... ؟",
+     "choices": [
+      "94",
+      "71",
+      "95",
+      "96"
+     ],
+     "correctIndex": 2,
+     "correction": "تستمر المتتالية بالعدد 95.",
+     "explanation": "قاعدة المتتالية: كل حد يساوي ضعف الحد السابق زائد 1. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 95."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-021",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 3, 6, 12, 24, 48, ... ?",
+     "choices": [
+      "72",
+      "60",
+      "108",
+      "96"
+     ],
+     "correctIndex": 3,
+     "correction": "La suite continue par 96.",
+     "explanation": "Règle de la suite : chaque terme est le double du précédent. En appliquant cette règle au dernier terme affiché, on obtient 96."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 3, 6, 12, 24, 48، ... ؟",
+     "choices": [
+      "72",
+      "60",
+      "108",
+      "96"
+     ],
+     "correctIndex": 3,
+     "correction": "تستمر المتتالية بالعدد 96.",
+     "explanation": "قاعدة المتتالية: كل حد هو ضعف الحد السابق. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 96."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-022",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 100, 50, 25, ... ?",
+     "choices": [
+      "12.5",
+      "12",
+      "15",
+      "20"
+     ],
+     "correctIndex": 0,
+     "correction": "La suite continue par 12.5.",
+     "explanation": "Règle de la suite : chaque terme est la moitié du précédent. En appliquant cette règle au dernier terme affiché, on obtient 12.5."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 100, 50, 25، ... ؟",
+     "choices": [
+      "12.5",
+      "12",
+      "15",
+      "20"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر المتتالية بالعدد 12.5.",
+     "explanation": "قاعدة المتتالية: كل حد هو نصف الحد السابق. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 12.5."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-023",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 81, 27, 9, 3, ... ?",
+     "choices": [
+      "2",
+      "1",
+      "1.5",
+      "6"
+     ],
+     "correctIndex": 1,
+     "correction": "La suite continue par 1.",
+     "explanation": "Règle de la suite : chaque terme est divisé par 3. En appliquant cette règle au dernier terme affiché, on obtient 1."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 81, 27, 9, 3، ... ؟",
+     "choices": [
+      "2",
+      "1",
+      "1.5",
+      "6"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر المتتالية بالعدد 1.",
+     "explanation": "قاعدة المتتالية: يُقسم كل حد على 3. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 1."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-024",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 2, 4, 8, 14, 22, ... ?",
+     "choices": [
+      "30",
+      "34",
+      "32",
+      "28"
+     ],
+     "correctIndex": 2,
+     "correction": "La suite continue par 32.",
+     "explanation": "Règle de la suite : l'écart entre deux termes augmente de 2 à chaque fois. En appliquant cette règle au dernier terme affiché, on obtient 32."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 2, 4, 8, 14, 22، ... ؟",
+     "choices": [
+      "30",
+      "34",
+      "32",
+      "28"
+     ],
+     "correctIndex": 2,
+     "correction": "تستمر المتتالية بالعدد 32.",
+     "explanation": "قاعدة المتتالية: الفرق بين كل حدين يزداد بمقدار 2 في كل مرة. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 32."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-025",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 1, 2, 6, 24, ... ?",
+     "choices": [
+      "96",
+      "144",
+      "100",
+      "120"
+     ],
+     "correctIndex": 3,
+     "correction": "La suite continue par 120.",
+     "explanation": "Règle de la suite : chaque terme est multiplié par un facteur croissant : 2, 3, 4, puis 5. En appliquant cette règle au dernier terme affiché, on obtient 120."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 1, 2, 6, 24، ... ؟",
+     "choices": [
+      "96",
+      "144",
+      "100",
+      "120"
+     ],
+     "correctIndex": 3,
+     "correction": "تستمر المتتالية بالعدد 120.",
+     "explanation": "قاعدة المتتالية: يُضرب كل حد في عامل متزايد: 2 ثم 3 ثم 4 ثم 5. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 120."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-026",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 10, 9, 11, 8, 12, ... ?",
+     "choices": [
+      "7",
+      "13",
+      "6",
+      "14"
+     ],
+     "correctIndex": 0,
+     "correction": "La suite continue par 7.",
+     "explanation": "Règle de la suite : on alterne en retranchant puis en ajoutant un nombre croissant. En appliquant cette règle au dernier terme affiché, on obtient 7."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 10, 9, 11, 8, 12، ... ؟",
+     "choices": [
+      "7",
+      "13",
+      "6",
+      "14"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر المتتالية بالعدد 7.",
+     "explanation": "قاعدة المتتالية: يتم التناوب بين الطرح والإضافة بعدد متزايد. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 7."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-027",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 4, 9, 16, 25, 36, ... ?",
+     "choices": [
+      "42",
+      "49",
+      "48",
+      "64"
+     ],
+     "correctIndex": 1,
+     "correction": "La suite continue par 49.",
+     "explanation": "Règle de la suite : ce sont les carrés des entiers à partir de 2. En appliquant cette règle au dernier terme affiché, on obtient 49."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 4, 9, 16, 25, 36، ... ؟",
+     "choices": [
+      "42",
+      "49",
+      "48",
+      "64"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر المتتالية بالعدد 49.",
+     "explanation": "قاعدة المتتالية: هي مربعات الأعداد الصحيحة ابتداءً من 2. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 49."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-028",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 7, 14, 28, 56, ... ?",
+     "choices": [
+      "84",
+      "96",
+      "112",
+      "128"
+     ],
+     "correctIndex": 2,
+     "correction": "La suite continue par 112.",
+     "explanation": "Règle de la suite : chaque terme est le double du précédent. En appliquant cette règle au dernier terme affiché, on obtient 112."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 7, 14, 28, 56، ... ؟",
+     "choices": [
+      "84",
+      "96",
+      "112",
+      "128"
+     ],
+     "correctIndex": 2,
+     "correction": "تستمر المتتالية بالعدد 112.",
+     "explanation": "قاعدة المتتالية: كل حد هو ضعف الحد السابق. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 112."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-029",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 90, 78, 66, 54, ... ?",
+     "choices": [
+      "44",
+      "40",
+      "46",
+      "42"
+     ],
+     "correctIndex": 3,
+     "correction": "La suite continue par 42.",
+     "explanation": "Règle de la suite : on retranche 12 à chaque terme. En appliquant cette règle au dernier terme affiché, on obtient 42."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 90, 78, 66, 54، ... ؟",
+     "choices": [
+      "44",
+      "40",
+      "46",
+      "42"
+     ],
+     "correctIndex": 3,
+     "correction": "تستمر المتتالية بالعدد 42.",
+     "explanation": "قاعدة المتتالية: يُطرح 12 من كل حد. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 42."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-030",
+   "category": "logique",
+   "subcategory": "suites",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel nombre complète la suite : 1, 4, 13, 40, ... ?",
+     "choices": [
+      "121",
+      "120",
+      "118",
+      "130"
+     ],
+     "correctIndex": 0,
+     "correction": "La suite continue par 121.",
+     "explanation": "Règle de la suite : chaque terme est le triple du précédent plus 1. En appliquant cette règle au dernier terme affiché, on obtient 121."
+    },
+    "ar": {
+     "text": "ما هو العدد الذي يُكمل المتتالية: 1, 4, 13, 40، ... ؟",
+     "choices": [
+      "121",
+      "120",
+      "118",
+      "130"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر المتتالية بالعدد 121.",
+     "explanation": "قاعدة المتتالية: كل حد يساوي ثلاثة أمثال الحد السابق زائد 1. وبتطبيق هذه القاعدة على الحد الأخير المعروض نحصل على 121."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-031",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : A, C, E, G, I, ... ?",
+     "choices": [
+      "K",
+      "L",
+      "J",
+      "M"
+     ],
+     "correctIndex": 0,
+     "correction": "La série se poursuit par la lettre K.",
+     "explanation": "Règle de la série : on avance de 2 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc K."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: A, C, E, G, I، ... ؟",
+     "choices": [
+      "K",
+      "L",
+      "J",
+      "M"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر السلسلة بالحرف K.",
+     "explanation": "قاعدة السلسلة: نتقدم بـ 2 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو K."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-032",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : A, D, G, J, M, ... ?",
+     "choices": [
+      "Q",
+      "P",
+      "O",
+      "R"
+     ],
+     "correctIndex": 1,
+     "correction": "La série se poursuit par la lettre P.",
+     "explanation": "Règle de la série : on avance de 3 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc P."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: A, D, G, J, M، ... ؟",
+     "choices": [
+      "Q",
+      "P",
+      "O",
+      "R"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر السلسلة بالحرف P.",
+     "explanation": "قاعدة السلسلة: نتقدم بـ 3 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو P."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-033",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : B, F, J, N, ... ?",
+     "choices": [
+      "S",
+      "Q",
+      "R",
+      "T"
+     ],
+     "correctIndex": 2,
+     "correction": "La série se poursuit par la lettre R.",
+     "explanation": "Règle de la série : on avance de 4 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc R."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: B, F, J, N، ... ؟",
+     "choices": [
+      "S",
+      "Q",
+      "R",
+      "T"
+     ],
+     "correctIndex": 2,
+     "correction": "تستمر السلسلة بالحرف R.",
+     "explanation": "قاعدة السلسلة: نتقدم بـ 4 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو R."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-034",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : C, D, E, F, G, H, ... ?",
+     "choices": [
+      "J",
+      "H",
+      "K",
+      "I"
+     ],
+     "correctIndex": 3,
+     "correction": "La série se poursuit par la lettre I.",
+     "explanation": "Règle de la série : on avance de 1 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc I."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: C, D, E, F, G, H، ... ؟",
+     "choices": [
+      "J",
+      "H",
+      "K",
+      "I"
+     ],
+     "correctIndex": 3,
+     "correction": "تستمر السلسلة بالحرف I.",
+     "explanation": "قاعدة السلسلة: نتقدم بـ 1 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو I."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-035",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : A, F, K, P, ... ?",
+     "choices": [
+      "U",
+      "V",
+      "T",
+      "W"
+     ],
+     "correctIndex": 0,
+     "correction": "La série se poursuit par la lettre U.",
+     "explanation": "Règle de la série : on avance de 5 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc U."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: A, F, K, P، ... ؟",
+     "choices": [
+      "U",
+      "V",
+      "T",
+      "W"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر السلسلة بالحرف U.",
+     "explanation": "قاعدة السلسلة: نتقدم بـ 5 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو U."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-036",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : D, F, H, J, L, N, ... ?",
+     "choices": [
+      "Q",
+      "P",
+      "O",
+      "R"
+     ],
+     "correctIndex": 1,
+     "correction": "La série se poursuit par la lettre P.",
+     "explanation": "Règle de la série : on avance de 2 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc P."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: D, F, H, J, L, N، ... ؟",
+     "choices": [
+      "Q",
+      "P",
+      "O",
+      "R"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر السلسلة بالحرف P.",
+     "explanation": "قاعدة السلسلة: نتقدم بـ 2 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو P."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-037",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : F, I, L, O, ... ?",
+     "choices": [
+      "S",
+      "Q",
+      "R",
+      "T"
+     ],
+     "correctIndex": 2,
+     "correction": "La série se poursuit par la lettre R.",
+     "explanation": "Règle de la série : on avance de 3 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc R."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: F, I, L, O، ... ؟",
+     "choices": [
+      "S",
+      "Q",
+      "R",
+      "T"
+     ],
+     "correctIndex": 2,
+     "correction": "تستمر السلسلة بالحرف R.",
+     "explanation": "قاعدة السلسلة: نتقدم بـ 3 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو R."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-038",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : A, E, I, M, Q, ... ?",
+     "choices": [
+      "V",
+      "T",
+      "W",
+      "U"
+     ],
+     "correctIndex": 3,
+     "correction": "La série se poursuit par la lettre U.",
+     "explanation": "Règle de la série : on avance de 4 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc U."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: A, E, I, M, Q، ... ؟",
+     "choices": [
+      "V",
+      "T",
+      "W",
+      "U"
+     ],
+     "correctIndex": 3,
+     "correction": "تستمر السلسلة بالحرف U.",
+     "explanation": "قاعدة السلسلة: نتقدم بـ 4 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو U."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-039",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : C, I, O, U, ... ?",
+     "choices": [
+      "A",
+      "B",
+      "Z",
+      "C"
+     ],
+     "correctIndex": 0,
+     "correction": "La série se poursuit par la lettre A.",
+     "explanation": "Règle de la série : on avance de 6 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc A."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: C, I, O, U، ... ؟",
+     "choices": [
+      "A",
+      "B",
+      "Z",
+      "C"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر السلسلة بالحرف A.",
+     "explanation": "قاعدة السلسلة: نتقدم بـ 6 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو A."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-040",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : B, G, L, Q, ... ?",
+     "choices": [
+      "W",
+      "V",
+      "U",
+      "X"
+     ],
+     "correctIndex": 1,
+     "correction": "La série se poursuit par la lettre V.",
+     "explanation": "Règle de la série : on avance de 5 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc V."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: B, G, L, Q، ... ؟",
+     "choices": [
+      "W",
+      "V",
+      "U",
+      "X"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر السلسلة بالحرف V.",
+     "explanation": "قاعدة السلسلة: نتقدم بـ 5 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو V."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-041",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : A, C, F, J, ... ?",
+     "choices": [
+      "O",
+      "N",
+      "P",
+      "M"
+     ],
+     "correctIndex": 0,
+     "correction": "La série se poursuit par la lettre O.",
+     "explanation": "Règle de la série : l'écart croît de 1 à chaque étape : +2, +3, +4, puis +5. La lettre suivante est donc O."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: A, C, F, J، ... ؟",
+     "choices": [
+      "O",
+      "N",
+      "P",
+      "M"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر السلسلة بالحرف O.",
+     "explanation": "قاعدة السلسلة: يزداد الفرق بمقدار 1 في كل خطوة: ‎+2 ثم ‎+3 ثم ‎+4 ثم ‎+5. وبالتالي فالحرف الموالي هو O."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-042",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 1,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : B, D, G, K, ... ?",
+     "choices": [
+      "O",
+      "P",
+      "Q",
+      "N"
+     ],
+     "correctIndex": 1,
+     "correction": "La série se poursuit par la lettre P.",
+     "explanation": "Règle de la série : l'écart croît de 1 à chaque étape : +2, +3, +4, puis +5. La lettre suivante est donc P."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: B, D, G, K، ... ؟",
+     "choices": [
+      "O",
+      "P",
+      "Q",
+      "N"
+     ],
+     "correctIndex": 1,
+     "correction": "تستمر السلسلة بالحرف P.",
+     "explanation": "قاعدة السلسلة: يزداد الفرق بمقدار 1 في كل خطوة: ‎+2 ثم ‎+3 ثم ‎+4 ثم ‎+5. وبالتالي فالحرف الموالي هو P."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-043",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : Z, W, T, Q, ... ?",
+     "choices": [
+      "M",
+      "O",
+      "N",
+      "P"
+     ],
+     "correctIndex": 2,
+     "correction": "La série se poursuit par la lettre N.",
+     "explanation": "Règle de la série : on recule de 3 lettres à chaque étape. La lettre suivante est donc N."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: Z, W, T, Q، ... ؟",
+     "choices": [
+      "M",
+      "O",
+      "N",
+      "P"
+     ],
+     "correctIndex": 2,
+     "correction": "تستمر السلسلة بالحرف N.",
+     "explanation": "قاعدة السلسلة: نتراجع بثلاثة حروف في كل خطوة. وبالتالي فالحرف الموالي هو N."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-044",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : A, B, D, H, ... ?",
+     "choices": [
+      "O",
+      "N",
+      "L",
+      "P"
+     ],
+     "correctIndex": 3,
+     "correction": "La série se poursuit par la lettre P.",
+     "explanation": "Règle de la série : l'écart double à chaque étape : +1, +2, +4, puis +8. La lettre suivante est donc P."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: A, B, D, H، ... ؟",
+     "choices": [
+      "O",
+      "N",
+      "L",
+      "P"
+     ],
+     "correctIndex": 3,
+     "correction": "تستمر السلسلة بالحرف P.",
+     "explanation": "قاعدة السلسلة: يتضاعف الفرق في كل خطوة: ‎+1 ثم ‎+2 ثم ‎+4 ثم ‎+8. وبالتالي فالحرف الموالي هو P."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-045",
+   "category": "logique",
+   "subcategory": "series-lettres",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quelle lettre complète la série : Y, V, S, P, ... ?",
+     "choices": [
+      "M",
+      "N",
+      "L",
+      "O"
+     ],
+     "correctIndex": 0,
+     "correction": "La série se poursuit par la lettre M.",
+     "explanation": "Règle de la série : on recule de 3 lettres à chaque étape. La lettre suivante est donc M."
+    },
+    "ar": {
+     "text": "ما هو الحرف الذي يُكمل السلسلة: Y, V, S, P، ... ؟",
+     "choices": [
+      "M",
+      "N",
+      "L",
+      "O"
+     ],
+     "correctIndex": 0,
+     "correction": "تستمر السلسلة بالحرف M.",
+     "explanation": "قاعدة السلسلة: نتراجع بثلاثة حروف في كل خطوة. وبالتالي فالحرف الموالي هو M."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-046",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Chien, Chat, Cheval, Aigle ?",
+     "choices": [
+      "Chien",
+      "Chat",
+      "Cheval",
+      "Aigle"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « Aigle ».",
+     "explanation": "L'aigle est le seul oiseau ; les trois autres sont des mammifères."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: كلب، قط، حصان، نسر؟",
+     "choices": [
+      "كلب",
+      "قط",
+      "حصان",
+      "نسر"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «نسر».",
+     "explanation": "النسر هو الطائر الوحيد، أما الثلاثة الأخرى فثدييات."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-047",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Rabat, Fès, Oujda, Le Caire ?",
+     "choices": [
+      "Rabat",
+      "Fès",
+      "Oujda",
+      "Le Caire"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « Le Caire ».",
+     "explanation": "Le Caire est la seule ville située hors du Maroc."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: الرباط، فاس، وجدة، القاهرة؟",
+     "choices": [
+      "الرباط",
+      "فاس",
+      "وجدة",
+      "القاهرة"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «القاهرة».",
+     "explanation": "القاهرة هي المدينة الوحيدة خارج المغرب."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-048",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Cuivre, Fer, Bois, Aluminium ?",
+     "choices": [
+      "Cuivre",
+      "Fer",
+      "Bois",
+      "Aluminium"
+     ],
+     "correctIndex": 2,
+     "correction": "L'intrus est « Bois ».",
+     "explanation": "Le bois est le seul matériau non métallique."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: نحاس، حديد، خشب، ألمنيوم؟",
+     "choices": [
+      "نحاس",
+      "حديد",
+      "خشب",
+      "ألمنيوم"
+     ],
+     "correctIndex": 2,
+     "correction": "العنصر الدخيل هو «خشب».",
+     "explanation": "الخشب هو المادة الوحيدة غير المعدنية."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-049",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : 9, 16, 25, 30 ?",
+     "choices": [
+      "9",
+      "16",
+      "25",
+      "30"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « 30 ».",
+     "explanation": "30 est le seul nombre qui n'est pas un carré parfait."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: 9، 16، 25، 30؟",
+     "choices": [
+      "9",
+      "16",
+      "25",
+      "30"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «30».",
+     "explanation": "العدد 30 هو الوحيد الذي ليس مربعًا كاملًا."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-050",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : 2, 3, 5, 9 ?",
+     "choices": [
+      "2",
+      "3",
+      "5",
+      "9"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « 9 ».",
+     "explanation": "9 est le seul nombre non premier de la liste."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: 2، 3، 5، 9؟",
+     "choices": [
+      "2",
+      "3",
+      "5",
+      "9"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «9».",
+     "explanation": "العدد 9 هو الوحيد غير الأولي في اللائحة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-051",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Triangle, Carré, Cercle, Rectangle ?",
+     "choices": [
+      "Triangle",
+      "Carré",
+      "Cercle",
+      "Rectangle"
+     ],
+     "correctIndex": 2,
+     "correction": "L'intrus est « Cercle ».",
+     "explanation": "Le cercle est la seule figure sans côté droit."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: مثلث، مربع، دائرة، مستطيل؟",
+     "choices": [
+      "مثلث",
+      "مربع",
+      "دائرة",
+      "مستطيل"
+     ],
+     "correctIndex": 2,
+     "correction": "العنصر الدخيل هو «دائرة».",
+     "explanation": "الدائرة هي الشكل الوحيد بلا أضلاع مستقيمة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-052",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Marteau, Tournevis, Pince, Ciment ?",
+     "choices": [
+      "Marteau",
+      "Tournevis",
+      "Pince",
+      "Ciment"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « Ciment ».",
+     "explanation": "Le ciment est un matériau, les autres sont des outils."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: مطرقة، مفك، كماشة، إسمنت؟",
+     "choices": [
+      "مطرقة",
+      "مفك",
+      "كماشة",
+      "إسمنت"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «إسمنت».",
+     "explanation": "الإسمنت مادة بناء، أما البقية فأدوات."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-053",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Atlantique, Méditerranée, Sahara, Manche ?",
+     "choices": [
+      "Atlantique",
+      "Méditerranée",
+      "Sahara",
+      "Manche"
+     ],
+     "correctIndex": 2,
+     "correction": "L'intrus est « Sahara ».",
+     "explanation": "Le Sahara est le seul élément qui n'est pas une étendue d'eau."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: الأطلسي، المتوسط، الصحراء، المانش؟",
+     "choices": [
+      "الأطلسي",
+      "المتوسط",
+      "الصحراء",
+      "المانش"
+     ],
+     "correctIndex": 2,
+     "correction": "العنصر الدخيل هو «الصحراء».",
+     "explanation": "الصحراء هي العنصر الوحيد الذي ليس مسطحًا مائيًا."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-054",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 2,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Janvier, Mars, Mardi, Juillet ?",
+     "choices": [
+      "Janvier",
+      "Mars",
+      "Mardi",
+      "Juillet"
+     ],
+     "correctIndex": 2,
+     "correction": "L'intrus est « Mardi ».",
+     "explanation": "Mardi est un jour de la semaine, les autres sont des mois."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: يناير، مارس، الثلاثاء، يوليوز؟",
+     "choices": [
+      "يناير",
+      "مارس",
+      "الثلاثاء",
+      "يوليوز"
+     ],
+     "correctIndex": 2,
+     "correction": "العنصر الدخيل هو «الثلاثاء».",
+     "explanation": "الثلاثاء يوم من أيام الأسبوع، أما البقية فأشهر."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-055",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Médecin, Infirmier, Pharmacien, Architecte ?",
+     "choices": [
+      "Médecin",
+      "Infirmier",
+      "Pharmacien",
+      "Architecte"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « Architecte ».",
+     "explanation": "L'architecte est le seul métier qui n'appartient pas au domaine de la santé."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: طبيب، ممرض، صيدلي، مهندس معماري؟",
+     "choices": [
+      "طبيب",
+      "ممرض",
+      "صيدلي",
+      "مهندس معماري"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «مهندس معماري».",
+     "explanation": "المهندس المعماري هو المهنة الوحيدة خارج مجال الصحة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-056",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Kilogramme, Gramme, Tonne, Litre ?",
+     "choices": [
+      "Kilogramme",
+      "Gramme",
+      "Tonne",
+      "Litre"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « Litre ».",
+     "explanation": "Le litre mesure un volume, les autres mesurent une masse."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: كيلوغرام، غرام، طن، لتر؟",
+     "choices": [
+      "كيلوغرام",
+      "غرام",
+      "طن",
+      "لتر"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «لتر».",
+     "explanation": "اللتر يقيس الحجم، أما البقية فتقيس الكتلة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-057",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : 12, 18, 24, 27 ?",
+     "choices": [
+      "12",
+      "18",
+      "24",
+      "27"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « 27 ».",
+     "explanation": "27 est le seul nombre impair de la liste."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: 12، 18، 24، 27؟",
+     "choices": [
+      "12",
+      "18",
+      "24",
+      "27"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «27».",
+     "explanation": "العدد 27 هو الوحيد الفردي في اللائحة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-058",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Blé, Orge, Maïs, Olivier ?",
+     "choices": [
+      "Blé",
+      "Orge",
+      "Maïs",
+      "Olivier"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « Olivier ».",
+     "explanation": "L'olivier est un arbre, les autres sont des céréales."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: قمح، شعير، ذرة، زيتون؟",
+     "choices": [
+      "قمح",
+      "شعير",
+      "ذرة",
+      "زيتون"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «زيتون».",
+     "explanation": "الزيتون شجرة، أما البقية فحبوب."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-059",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Poumon, Foie, Rein, Fémur ?",
+     "choices": [
+      "Poumon",
+      "Foie",
+      "Rein",
+      "Fémur"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « Fémur ».",
+     "explanation": "Le fémur est un os, les autres sont des organes internes."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: رئة، كبد، كلية، عظم الفخذ؟",
+     "choices": [
+      "رئة",
+      "كبد",
+      "كلية",
+      "عظم الفخذ"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «عظم الفخذ».",
+     "explanation": "عظم الفخذ عظم، أما البقية فأعضاء داخلية."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-060",
+   "category": "logique",
+   "subcategory": "intrus",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 3,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quel est l'intrus dans cette liste : Voiture, Camion, Autobus, Bateau ?",
+     "choices": [
+      "Voiture",
+      "Camion",
+      "Autobus",
+      "Bateau"
+     ],
+     "correctIndex": 3,
+     "correction": "L'intrus est « Bateau ».",
+     "explanation": "Le bateau est le seul véhicule qui ne circule pas sur route."
+    },
+    "ar": {
+     "text": "ما هو العنصر الدخيل في هذه اللائحة: سيارة، شاحنة، حافلة، سفينة؟",
+     "choices": [
+      "سيارة",
+      "شاحنة",
+      "حافلة",
+      "سفينة"
+     ],
+     "correctIndex": 3,
+     "correction": "العنصر الدخيل هو «سفينة».",
+     "explanation": "السفينة هي المركبة الوحيدة التي لا تسير على الطريق."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-061",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Médecin est à hôpital ce que enseignant est à … ?",
+     "choices": [
+      "école",
+      "hôpital",
+      "usine",
+      "tribunal"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « école ».",
+     "explanation": "Le médecin exerce à l'hôpital comme l'enseignant exerce à l'école : la relation est « professionnel / lieu de travail »."
+    },
+    "ar": {
+     "text": "طبيب بالنسبة إلى مستشفى مثل أستاذ بالنسبة إلى … ؟",
+     "choices": [
+      "مدرسة",
+      "مستشفى",
+      "معمل",
+      "محكمة"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «مدرسة».",
+     "explanation": "الطبيب يعمل في المستشفى كما يعمل الأستاذ في المدرسة، فالعلاقة هي «مهني / مكان العمل»."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-062",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Livre est à lire ce que aliment est à … ?",
+     "choices": [
+      "manger",
+      "cuire",
+      "vendre",
+      "acheter"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « manger ».",
+     "explanation": "On lit un livre comme on mange un aliment : la relation est « objet / usage principal »."
+    },
+    "ar": {
+     "text": "كتاب بالنسبة إلى قراءة مثل طعام بالنسبة إلى … ؟",
+     "choices": [
+      "أكل",
+      "طبخ",
+      "بيع",
+      "شراء"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «أكل».",
+     "explanation": "يُقرأ الكتاب كما يُؤكل الطعام، فالعلاقة هي «شيء / استعماله الأساسي»."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-063",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Oiseau est à voler ce que poisson est à … ?",
+     "choices": [
+      "nager",
+      "marcher",
+      "grimper",
+      "ramper"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « nager ».",
+     "explanation": "L'oiseau vole comme le poisson nage : la relation est « animal / mode de déplacement »."
+    },
+    "ar": {
+     "text": "طائر بالنسبة إلى طيران مثل سمكة بالنسبة إلى … ؟",
+     "choices": [
+      "سباحة",
+      "مشي",
+      "تسلق",
+      "زحف"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «سباحة».",
+     "explanation": "الطائر يطير كما تسبح السمكة، فالعلاقة هي «حيوان / طريقة التنقل»."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-064",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Chaud est à froid ce que haut est à … ?",
+     "choices": [
+      "bas",
+      "large",
+      "long",
+      "lourd"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « bas ».",
+     "explanation": "Chaud et froid sont des antonymes, comme haut et bas."
+    },
+    "ar": {
+     "text": "حار بالنسبة إلى بارد مثل عالٍ بالنسبة إلى … ؟",
+     "choices": [
+      "منخفض",
+      "عريض",
+      "طويل",
+      "ثقيل"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «منخفض».",
+     "explanation": "حار وبارد ضدان، وكذلك عالٍ ومنخفض."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-065",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Main est à gant ce que pied est à … ?",
+     "choices": [
+      "chaussure",
+      "chapeau",
+      "ceinture",
+      "écharpe"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « chaussure ».",
+     "explanation": "Le gant protège la main comme la chaussure protège le pied."
+    },
+    "ar": {
+     "text": "يد بالنسبة إلى قفاز مثل قدم بالنسبة إلى … ؟",
+     "choices": [
+      "حذاء",
+      "قبعة",
+      "حزام",
+      "وشاح"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «حذاء».",
+     "explanation": "القفاز يحمي اليد كما يحمي الحذاء القدم."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-066",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "beginner",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Farine est à pain ce que raisin est à … ?",
+     "choices": [
+      "vin",
+      "verre",
+      "arbre",
+      "sucre"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « vin ».",
+     "explanation": "La farine est la matière première du pain comme le raisin l'est du vin : la relation est « matière première / produit obtenu »."
+    },
+    "ar": {
+     "text": "دقيق بالنسبة إلى خبز مثل زيتون بالنسبة إلى … ؟",
+     "choices": [
+      "زيت",
+      "كأس",
+      "شجرة",
+      "سكر"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «زيت».",
+     "explanation": "الدقيق مادة أولية للخبز كما أن الزيتون مادة أولية للزيت، فالعلاقة هي «مادة أولية / منتَج»."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-067",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Kilomètre est à distance ce que kilogramme est à … ?",
+     "choices": [
+      "masse",
+      "temps",
+      "volume",
+      "vitesse"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « masse ».",
+     "explanation": "Le kilomètre mesure une distance comme le kilogramme mesure une masse : la relation est « unité / grandeur mesurée »."
+    },
+    "ar": {
+     "text": "كيلومتر بالنسبة إلى مسافة مثل كيلوغرام بالنسبة إلى … ؟",
+     "choices": [
+      "كتلة",
+      "زمن",
+      "حجم",
+      "سرعة"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «كتلة».",
+     "explanation": "الكيلومتر يقيس المسافة كما يقيس الكيلوغرام الكتلة، فالعلاقة هي «وحدة / مقدار مقيس»."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-068",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Juge est à tribunal ce que pilote est à … ?",
+     "choices": [
+      "avion",
+      "gare",
+      "port",
+      "hôpital"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « avion ».",
+     "explanation": "Le juge exerce au tribunal comme le pilote exerce dans un avion."
+    },
+    "ar": {
+     "text": "قاضٍ بالنسبة إلى محكمة مثل طيار بالنسبة إلى … ؟",
+     "choices": [
+      "طائرة",
+      "محطة",
+      "ميناء",
+      "مستشفى"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «طائرة».",
+     "explanation": "القاضي يعمل في المحكمة كما يعمل الطيار في الطائرة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-069",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Semaine est à jour ce que année est à … ?",
+     "choices": [
+      "mois",
+      "heure",
+      "siècle",
+      "minute"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « mois ».",
+     "explanation": "La semaine se divise en jours comme l'année se divise en mois : la relation est « ensemble / subdivision immédiate »."
+    },
+    "ar": {
+     "text": "أسبوع بالنسبة إلى يوم مثل سنة بالنسبة إلى … ؟",
+     "choices": [
+      "شهر",
+      "ساعة",
+      "قرن",
+      "دقيقة"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «شهر».",
+     "explanation": "ينقسم الأسبوع إلى أيام كما تنقسم السنة إلى أشهر، فالعلاقة هي «كل / تقسيمه المباشر»."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-070",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Thermomètre est à température ce que balance est à … ?",
+     "choices": [
+      "masse",
+      "longueur",
+      "pression",
+      "temps"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « masse ».",
+     "explanation": "Le thermomètre mesure la température comme la balance mesure une masse."
+    },
+    "ar": {
+     "text": "مقياس الحرارة بالنسبة إلى درجة الحرارة مثل ميزان بالنسبة إلى … ؟",
+     "choices": [
+      "كتلة",
+      "طول",
+      "ضغط",
+      "زمن"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «كتلة».",
+     "explanation": "مقياس الحرارة يقيس درجة الحرارة كما يقيس الميزان الكتلة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-071",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Abeille est à ruche ce que oiseau est à … ?",
+     "choices": [
+      "nid",
+      "terrier",
+      "étable",
+      "tanière"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « nid ».",
+     "explanation": "L'abeille vit dans une ruche comme l'oiseau vit dans un nid : la relation est « animal / habitat »."
+    },
+    "ar": {
+     "text": "نحلة بالنسبة إلى خلية مثل طائر بالنسبة إلى … ؟",
+     "choices": [
+      "عش",
+      "جحر",
+      "إسطبل",
+      "وكر"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «عش».",
+     "explanation": "تعيش النحلة في الخلية كما يعيش الطائر في العش، فالعلاقة هي «حيوان / مسكن»."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-072",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Sécheresse est à pluie ce que obscurité est à … ?",
+     "choices": [
+      "lumière",
+      "nuage",
+      "vent",
+      "chaleur"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « lumière ».",
+     "explanation": "La sécheresse est l'absence de pluie comme l'obscurité est l'absence de lumière."
+    },
+    "ar": {
+     "text": "جفاف بالنسبة إلى مطر مثل ظلام بالنسبة إلى … ؟",
+     "choices": [
+      "ضوء",
+      "سحاب",
+      "ريح",
+      "حرارة"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «ضوء».",
+     "explanation": "الجفاف هو غياب المطر كما أن الظلام هو غياب الضوء."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-073",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Auteur est à roman ce que compositeur est à … ?",
+     "choices": [
+      "symphonie",
+      "tableau",
+      "statue",
+      "poème"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « symphonie ».",
+     "explanation": "L'auteur écrit un roman comme le compositeur écrit une symphonie : la relation est « créateur / œuvre »."
+    },
+    "ar": {
+     "text": "مؤلف بالنسبة إلى رواية مثل ملحّن بالنسبة إلى … ؟",
+     "choices": [
+      "سمفونية",
+      "لوحة",
+      "تمثال",
+      "قصيدة"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «سمفونية».",
+     "explanation": "المؤلف يكتب رواية كما يؤلف الملحّن سمفونية، فالعلاقة هي «مبدع / عمل»."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-074",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Clé est à serrure ce que mot de passe est à … ?",
+     "choices": [
+      "compte",
+      "clavier",
+      "écran",
+      "câble"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « compte ».",
+     "explanation": "La clé ouvre une serrure comme le mot de passe donne accès à un compte."
+    },
+    "ar": {
+     "text": "مفتاح بالنسبة إلى قفل مثل كلمة السر بالنسبة إلى … ؟",
+     "choices": [
+      "حساب",
+      "لوحة مفاتيح",
+      "شاشة",
+      "كابل"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «حساب».",
+     "explanation": "المفتاح يفتح القفل كما تتيح كلمة السر الولوج إلى الحساب."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-075",
+   "category": "logique",
+   "subcategory": "analogies",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Élève est à apprendre ce que juge est à … ?",
+     "choices": [
+      "juger",
+      "enseigner",
+      "soigner",
+      "construire"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « juger ».",
+     "explanation": "L'élève apprend comme le juge juge : la relation est « acteur / action caractéristique »."
+    },
+    "ar": {
+     "text": "تلميذ بالنسبة إلى تعلّم مثل قاضٍ بالنسبة إلى … ؟",
+     "choices": [
+      "الحكم",
+      "التدريس",
+      "العلاج",
+      "البناء"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «الحكم».",
+     "explanation": "التلميذ يتعلّم كما يحكم القاضي، فالعلاقة هي «فاعل / فعله المميز»."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-076",
+   "category": "logique",
+   "subcategory": "deduction",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Tous les agents du service portent un badge. Karim ne porte pas de badge. Quelle conclusion est nécessairement vraie ?",
+     "choices": [
+      "Karim n'est pas agent de ce service",
+      "Karim a oublié son badge",
+      "Karim est un visiteur",
+      "Karim est le chef du service"
+     ],
+     "correctIndex": 0,
+     "correction": "La conclusion nécessairement vraie est : « Karim n'est pas agent de ce service ».",
+     "explanation": "Si tous les agents portent un badge, alors une personne sans badge ne peut pas être un agent de ce service. Les autres propositions ajoutent une information qui n'est pas contenue dans l'énoncé."
+    },
+    "ar": {
+     "text": "كل أعوان المصلحة يحملون شارة. كريم لا يحمل شارة. ما هو الاستنتاج الصحيح بالضرورة؟",
+     "choices": [
+      "كريم ليس عونًا بهذه المصلحة",
+      "كريم نسي شارته",
+      "كريم زائر",
+      "كريم هو رئيس المصلحة"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستنتاج الصحيح بالضرورة هو: «كريم ليس عونًا بهذه المصلحة».",
+     "explanation": "إذا كان كل الأعوان يحملون شارة، فإن شخصًا بلا شارة لا يمكن أن يكون عونًا بهذه المصلحة. أما الاقتراحات الأخرى فتضيف معلومة غير واردة في النص."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-077",
+   "category": "logique",
+   "subcategory": "deduction",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Aucun dossier incomplet n'est accepté. Le dossier de Salma a été accepté. Quelle conclusion est nécessairement vraie ?",
+     "choices": [
+      "Le dossier de Salma était complet",
+      "Le dossier de Salma a été déposé en retard",
+      "Salma a été convoquée",
+      "Salma sera reçue au concours"
+     ],
+     "correctIndex": 0,
+     "correction": "La conclusion nécessairement vraie est : « Le dossier de Salma était complet ».",
+     "explanation": "L'énoncé exclut totalement l'acceptation d'un dossier incomplet. Puisque le dossier a été accepté, il était donc complet. Rien ne permet de conclure sur la convocation ou la réussite."
+    },
+    "ar": {
+     "text": "لا يُقبل أي ملف ناقص. وقد قُبل ملف سلمى. ما هو الاستنتاج الصحيح بالضرورة؟",
+     "choices": [
+      "ملف سلمى كان كاملًا",
+      "ملف سلمى أُودع متأخرًا",
+      "استُدعيت سلمى",
+      "ستنجح سلمى في المباراة"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستنتاج الصحيح بالضرورة هو: «ملف سلمى كان كاملًا».",
+     "explanation": "يستبعد النص كليًا قبول ملف ناقص. وبما أن الملف قُبل فقد كان كاملًا. ولا شيء يسمح بالاستنتاج بخصوص الاستدعاء أو النجاح."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-078",
+   "category": "logique",
+   "subcategory": "deduction",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Certains candidats parlent trois langues. Tous ceux qui parlent trois langues obtiennent des points supplémentaires. Quelle conclusion est nécessairement vraie ?",
+     "choices": [
+      "Certains candidats obtiennent des points supplémentaires",
+      "Tous les candidats obtiennent des points supplémentaires",
+      "Aucun candidat n'obtient de points supplémentaires",
+      "Seuls les candidats trilingues sont admis"
+     ],
+     "correctIndex": 0,
+     "correction": "La conclusion nécessairement vraie est : « Certains candidats obtiennent des points supplémentaires ».",
+     "explanation": "De « certains A sont B » et « tous les B sont C », on déduit seulement que « certains A sont C ». Généraliser à tous les candidats dépasse ce que dit l'énoncé."
+    },
+    "ar": {
+     "text": "بعض المترشحين يتكلمون ثلاث لغات. وكل من يتكلم ثلاث لغات يحصل على نقط إضافية. ما هو الاستنتاج الصحيح بالضرورة؟",
+     "choices": [
+      "بعض المترشحين يحصلون على نقط إضافية",
+      "كل المترشحين يحصلون على نقط إضافية",
+      "لا أحد من المترشحين يحصل على نقط إضافية",
+      "لا يُقبل إلا المترشحون المتقنون لثلاث لغات"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستنتاج الصحيح بالضرورة هو: «بعض المترشحين يحصلون على نقط إضافية».",
+     "explanation": "من «بعض أ هم ب» و«كل ب هم ج» نستنتج فقط أن «بعض أ هم ج». أما التعميم على كل المترشحين فيتجاوز ما ورد في النص."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-079",
+   "category": "logique",
+   "subcategory": "deduction",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Si le barrage est plein, alors l'irrigation est assurée. L'irrigation n'est pas assurée. Quelle conclusion est nécessairement vraie ?",
+     "choices": [
+      "Le barrage n'est pas plein",
+      "Le barrage est plein",
+      "Il a plu récemment",
+      "L'irrigation sera assurée demain"
+     ],
+     "correctIndex": 0,
+     "correction": "La conclusion nécessairement vraie est : « Le barrage n'est pas plein ».",
+     "explanation": "C'est un raisonnement par contraposée : si A implique B, alors l'absence de B implique l'absence de A. L'irrigation n'étant pas assurée, le barrage ne peut pas être plein."
+    },
+    "ar": {
+     "text": "إذا كان السد ممتلئًا فإن السقي مضمون. والسقي غير مضمون. ما هو الاستنتاج الصحيح بالضرورة؟",
+     "choices": [
+      "السد ليس ممتلئًا",
+      "السد ممتلئ",
+      "أمطرت مؤخرًا",
+      "سيكون السقي مضمونًا غدًا"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستنتاج الصحيح بالضرورة هو: «السد ليس ممتلئًا».",
+     "explanation": "هذا استدلال بعكس النقيض: إذا كان أ يستلزم ب فإن انتفاء ب يستلزم انتفاء أ. وبما أن السقي غير مضمون فالسد ليس ممتلئًا."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-080",
+   "category": "logique",
+   "subcategory": "deduction",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Tous les véhicules de service sont assurés. Certains véhicules assurés sont électriques. Quelle conclusion est nécessairement vraie ?",
+     "choices": [
+      "On ne peut pas conclure que des véhicules de service sont électriques",
+      "Tous les véhicules de service sont électriques",
+      "Aucun véhicule de service n'est électrique",
+      "Tous les véhicules électriques sont de service"
+     ],
+     "correctIndex": 0,
+     "correction": "La conclusion nécessairement vraie est : « On ne peut pas conclure que des véhicules de service sont électriques ».",
+     "explanation": "Les véhicules assurés forment un ensemble plus large que les véhicules de service. Le fait que certains véhicules assurés soient électriques ne dit rien de ceux qui sont des véhicules de service."
+    },
+    "ar": {
+     "text": "كل سيارات المصلحة مؤمَّنة. وبعض السيارات المؤمَّنة كهربائية. ما هو الاستنتاج الصحيح بالضرورة؟",
+     "choices": [
+      "لا يمكن استنتاج أن بعض سيارات المصلحة كهربائية",
+      "كل سيارات المصلحة كهربائية",
+      "لا توجد أي سيارة مصلحة كهربائية",
+      "كل السيارات الكهربائية تابعة للمصلحة"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستنتاج الصحيح بالضرورة هو: «لا يمكن استنتاج أن بعض سيارات المصلحة كهربائية».",
+     "explanation": "مجموعة السيارات المؤمَّنة أوسع من مجموعة سيارات المصلحة، وكون بعض المؤمَّنة كهربائية لا يقول شيئًا عن سيارات المصلحة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-081",
+   "category": "logique",
+   "subcategory": "deduction",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Aucun agent en congé n'est présent au bureau. Youssef est présent au bureau. Quelle conclusion est nécessairement vraie ?",
+     "choices": [
+      "Youssef n'est pas en congé",
+      "Youssef est en congé",
+      "Youssef travaille le week-end",
+      "Youssef remplace un collègue"
+     ],
+     "correctIndex": 0,
+     "correction": "La conclusion nécessairement vraie est : « Youssef n'est pas en congé ».",
+     "explanation": "L'énoncé pose une incompatibilité totale entre « être en congé » et « être présent au bureau ». La présence de Youssef exclut donc qu'il soit en congé."
+    },
+    "ar": {
+     "text": "لا أحد من الأعوان في عطلة يكون حاضرًا بالمكتب. ويوسف حاضر بالمكتب. ما هو الاستنتاج الصحيح بالضرورة؟",
+     "choices": [
+      "يوسف ليس في عطلة",
+      "يوسف في عطلة",
+      "يوسف يعمل في عطلة نهاية الأسبوع",
+      "يوسف يعوّض زميلًا"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستنتاج الصحيح بالضرورة هو: «يوسف ليس في عطلة».",
+     "explanation": "يضع النص تعارضًا تامًا بين «أن يكون في عطلة» و«أن يكون حاضرًا بالمكتب»، فحضور يوسف يستبعد أن يكون في عطلة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-082",
+   "category": "logique",
+   "subcategory": "deduction",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Amine est plus âgé que Bilal. Bilal est plus âgé que Chaïma. Quelle conclusion est nécessairement vraie ?",
+     "choices": [
+      "Amine est plus âgé que Chaïma",
+      "Chaïma est plus âgée qu'Amine",
+      "Bilal est le plus âgé des trois",
+      "Amine et Chaïma ont le même âge"
+     ],
+     "correctIndex": 0,
+     "correction": "La conclusion nécessairement vraie est : « Amine est plus âgé que Chaïma ».",
+     "explanation": "La relation « être plus âgé que » est transitive : si A est plus âgé que B et B plus âgé que C, alors A est plus âgé que C."
+    },
+    "ar": {
+     "text": "أمين أكبر سنًا من بلال. وبلال أكبر سنًا من شيماء. ما هو الاستنتاج الصحيح بالضرورة؟",
+     "choices": [
+      "أمين أكبر سنًا من شيماء",
+      "شيماء أكبر سنًا من أمين",
+      "بلال هو الأكبر بين الثلاثة",
+      "أمين وشيماء في السن نفسه"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستنتاج الصحيح بالضرورة هو: «أمين أكبر سنًا من شيماء».",
+     "explanation": "علاقة «أكبر سنًا من» متعدّية: إذا كان أ أكبر من ب وب أكبر من ج فإن أ أكبر من ج."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-083",
+   "category": "logique",
+   "subcategory": "deduction",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans une file, Nadia est devant Omar et derrière Rachid. Quelle conclusion est nécessairement vraie ?",
+     "choices": [
+      "Rachid est devant Omar",
+      "Omar est devant Rachid",
+      "Nadia est la première",
+      "Omar est le premier"
+     ],
+     "correctIndex": 0,
+     "correction": "La conclusion nécessairement vraie est : « Rachid est devant Omar ».",
+     "explanation": "L'ordre est donc Rachid, puis Nadia, puis Omar. Rachid précède bien Omar, tandis que Nadia n'est pas la première."
+    },
+    "ar": {
+     "text": "في صف، نادية أمام عمر وخلف رشيد. ما هو الاستنتاج الصحيح بالضرورة؟",
+     "choices": [
+      "رشيد أمام عمر",
+      "عمر أمام رشيد",
+      "نادية هي الأولى",
+      "عمر هو الأول"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستنتاج الصحيح بالضرورة هو: «رشيد أمام عمر».",
+     "explanation": "الترتيب إذن: رشيد ثم نادية ثم عمر. فرشيد يسبق عمر فعلًا، بينما ليست نادية هي الأولى."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-084",
+   "category": "logique",
+   "subcategory": "deduction",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Le concours a lieu si et seulement si le nombre de candidats dépasse 50. Il y a 38 candidats. Quelle conclusion est nécessairement vraie ?",
+     "choices": [
+      "Le concours n'a pas lieu",
+      "Le concours a lieu",
+      "Le concours est reporté d'un mois",
+      "Le concours a lieu avec 50 places"
+     ],
+     "correctIndex": 0,
+     "correction": "La conclusion nécessairement vraie est : « Le concours n'a pas lieu ».",
+     "explanation": "L'expression « si et seulement si » pose une équivalence stricte : le concours a lieu exactement quand la condition est remplie. Avec 38 candidats, la condition ne l'est pas."
+    },
+    "ar": {
+     "text": "تُجرى المباراة إذا وفقط إذا تجاوز عدد المترشحين 50. وعدد المترشحين 38. ما هو الاستنتاج الصحيح بالضرورة؟",
+     "choices": [
+      "لا تُجرى المباراة",
+      "تُجرى المباراة",
+      "تُؤجَّل المباراة شهرًا",
+      "تُجرى المباراة بخمسين منصبًا"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستنتاج الصحيح بالضرورة هو: «لا تُجرى المباراة».",
+     "explanation": "عبارة «إذا وفقط إذا» تضع تكافؤًا صارمًا: تُجرى المباراة بالضبط عندما يتحقق الشرط. وبـ38 مترشحًا لا يتحقق الشرط."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-085",
+   "category": "logique",
+   "subcategory": "deduction",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Toute demande signée est enregistrée. La demande de Hind n'est pas enregistrée. Quelle conclusion est nécessairement vraie ?",
+     "choices": [
+      "La demande de Hind n'est pas signée",
+      "La demande de Hind est signée",
+      "Hind n'a pas déposé de demande",
+      "La demande de Hind a été rejetée"
+     ],
+     "correctIndex": 0,
+     "correction": "La conclusion nécessairement vraie est : « La demande de Hind n'est pas signée ».",
+     "explanation": "Par contraposée : si toute demande signée est enregistrée, une demande non enregistrée ne peut pas avoir été signée. On ne peut pas conclure à un rejet, qui est une notion différente."
+    },
+    "ar": {
+     "text": "كل طلب موقَّع يُسجَّل. وطلب هند غير مسجَّل. ما هو الاستنتاج الصحيح بالضرورة؟",
+     "choices": [
+      "طلب هند غير موقَّع",
+      "طلب هند موقَّع",
+      "هند لم تودع أي طلب",
+      "طلب هند رُفض"
+     ],
+     "correctIndex": 0,
+     "correction": "الاستنتاج الصحيح بالضرورة هو: «طلب هند غير موقَّع».",
+     "explanation": "بعكس النقيض: إذا كان كل طلب موقَّع يُسجَّل فإن طلبًا غير مسجَّل لا يمكن أن يكون موقَّعًا. ولا يمكن الاستنتاج بالرفض فهو مفهوم مختلف."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-086",
+   "category": "logique",
+   "subcategory": "codage",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un code, CHAT s'écrit DIBU. Comment s'écrit LION ?",
+     "choices": [
+      "MJPO",
+      "KHNM",
+      "MKQP",
+      "LJPO"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est MJPO.",
+     "explanation": "Chaque lettre est remplacée par la suivante dans l'alphabet : C→D, H→I, A→B, T→U. En appliquant la même règle à LION on obtient MJPO."
+    },
+    "ar": {
+     "text": "في شيفرة ما، تُكتب CHAT هكذا: DIBU. كيف تُكتب LION؟",
+     "choices": [
+      "MJPO",
+      "KHNM",
+      "MKQP",
+      "LJPO"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو MJPO.",
+     "explanation": "في هذه الشيفرة يُعوَّض كل حرف بالحرف الموالي في الأبجدية: C→D وH→I وA→B وT→U. وبتطبيق القاعدة نفسها على LION نحصل على MJPO."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-087",
+   "category": "logique",
+   "subcategory": "codage",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un code, 2 s'écrit 6, 3 s'écrit 9 et 4 s'écrit 12. Comment s'écrit 7 ?",
+     "choices": [
+      "21",
+      "14",
+      "18",
+      "28"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 21.",
+     "explanation": "Chaque nombre est multiplié par 3. Donc 7 devient 7 × 3 = 21."
+    },
+    "ar": {
+     "text": "في شيفرة ما، يُكتب 2 هكذا 6، و3 هكذا 9، و4 هكذا 12. كيف يُكتب 7؟",
+     "choices": [
+      "21",
+      "14",
+      "18",
+      "28"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 21.",
+     "explanation": "يُضرب كل عدد في 3. إذن 7 يصبح 7 × 3 = 21."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-088",
+   "category": "logique",
+   "subcategory": "codage",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un code, MER s'écrit NFS. Comment s'écrit SEL ?",
+     "choices": [
+      "TFM",
+      "RDK",
+      "TGN",
+      "SFM"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est TFM.",
+     "explanation": "Chaque lettre avance d'un rang dans l'alphabet : M→N, E→F, R→S. Pour SEL, on obtient T, F puis M."
+    },
+    "ar": {
+     "text": "في شيفرة ما، تُكتب MER هكذا NFS. كيف تُكتب SEL؟",
+     "choices": [
+      "TFM",
+      "RDK",
+      "TGN",
+      "SFM"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو TFM.",
+     "explanation": "يتقدم كل حرف رتبة واحدة في الأبجدية: M→N وE→F وR→S. وبالنسبة لـSEL نحصل على T ثم F ثم M."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-089",
+   "category": "logique",
+   "subcategory": "codage",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un code, chaque nombre est remplacé par son double diminué de 1. Si le code obtenu est 15, quel était le nombre de départ ?",
+     "choices": [
+      "8",
+      "7",
+      "16",
+      "30"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 8.",
+     "explanation": "Si 2n − 1 = 15, alors 2n = 16 et n = 8. On vérifie : 2 × 8 − 1 = 15."
+    },
+    "ar": {
+     "text": "في شيفرة ما، يُعوَّض كل عدد بضعفه ناقص 1. إذا كان الرمز الناتج 15، فما هو العدد الأصلي؟",
+     "choices": [
+      "8",
+      "7",
+      "16",
+      "30"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 8.",
+     "explanation": "إذا كان 2ن − 1 = 15 فإن 2ن = 16 ومنه ن = 8. وبالتحقق: 2 × 8 − 1 = 15."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-090",
+   "category": "logique",
+   "subcategory": "codage",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un code, ROUGE s'écrit 5 et BLEU s'écrit 4. Comment s'écrit VERT ?",
+     "choices": [
+      "4",
+      "5",
+      "3",
+      "6"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 4.",
+     "explanation": "Le code correspond au nombre de lettres du mot : ROUGE en compte 5 et BLEU en compte 4. VERT compte 4 lettres."
+    },
+    "ar": {
+     "text": "في شيفرة ما، تُكتب ROUGE هكذا 5 وBLEU هكذا 4. كيف تُكتب VERT؟",
+     "choices": [
+      "4",
+      "5",
+      "3",
+      "6"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 4.",
+     "explanation": "الرمز يقابل عدد حروف الكلمة: ROUGE فيها 5 حروف وBLEU فيها 4. وVERT فيها 4 حروف."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-091",
+   "category": "logique",
+   "subcategory": "codage",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un code, A vaut 1, B vaut 2 et ainsi de suite jusqu'à Z qui vaut 26. Quelle est la valeur du mot RIZ ?",
+     "choices": [
+      "53",
+      "51",
+      "55",
+      "47"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 53.",
+     "explanation": "R occupe le 18e rang, I le 9e et Z le 26e. La valeur du mot est donc 18 + 9 + 26 = 53."
+    },
+    "ar": {
+     "text": "في شيفرة ما، A تساوي 1 وB تساوي 2 وهكذا إلى Z التي تساوي 26. ما قيمة كلمة RIZ؟",
+     "choices": [
+      "53",
+      "51",
+      "55",
+      "47"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 53.",
+     "explanation": "الحرف R يحتل الرتبة 18 وI الرتبة 9 وZ الرتبة 26. فقيمة الكلمة هي 18 + 9 + 26 = 53."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-092",
+   "category": "logique",
+   "subcategory": "codage",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un code, le mot est écrit à l'envers. Comment s'écrit PORTE ?",
+     "choices": [
+      "ETROP",
+      "TROPE",
+      "PETRO",
+      "REPOT"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est ETROP.",
+     "explanation": "Il suffit de lire le mot de droite à gauche : P-O-R-T-E devient E-T-R-O-P."
+    },
+    "ar": {
+     "text": "في شيفرة ما، تُكتب الكلمة معكوسة. كيف تُكتب PORTE؟",
+     "choices": [
+      "ETROP",
+      "TROPE",
+      "PETRO",
+      "REPOT"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو ETROP.",
+     "explanation": "يكفي قراءة الكلمة من اليمين إلى اليسار: P-O-R-T-E تصبح E-T-R-O-P."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-093",
+   "category": "logique",
+   "subcategory": "codage",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un code, 12 s'écrit 3 et 20 s'écrit 5. Comment s'écrit 36 ?",
+     "choices": [
+      "9",
+      "6",
+      "12",
+      "8"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 9.",
+     "explanation": "Chaque nombre est divisé par 4 : 12 ÷ 4 = 3 et 20 ÷ 4 = 5. Donc 36 ÷ 4 = 9."
+    },
+    "ar": {
+     "text": "في شيفرة ما، يُكتب 12 هكذا 3 و20 هكذا 5. كيف يُكتب 36؟",
+     "choices": [
+      "9",
+      "6",
+      "12",
+      "8"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 9.",
+     "explanation": "يُقسم كل عدد على 4: 12 ÷ 4 = 3 و20 ÷ 4 = 5. إذن 36 ÷ 4 = 9."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-094",
+   "category": "logique",
+   "subcategory": "codage",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un code, chaque lettre recule de deux rangs. Comment s'écrit CIEL ?",
+     "choices": [
+      "AGCJ",
+      "EKGN",
+      "BHDK",
+      "AFCI"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est AGCJ.",
+     "explanation": "C recule en A, I en G, E en C et L en J. Le mot codé est donc AGCJ."
+    },
+    "ar": {
+     "text": "في شيفرة ما، يتراجع كل حرف رتبتين. كيف تُكتب CIEL؟",
+     "choices": [
+      "AGCJ",
+      "EKGN",
+      "BHDK",
+      "AFCI"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو AGCJ.",
+     "explanation": "C تتراجع إلى A وI إلى G وE إلى C وL إلى J. فالكلمة المشفَّرة هي AGCJ."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-095",
+   "category": "logique",
+   "subcategory": "codage",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un code, 3 s'écrit 10, 5 s'écrit 26 et 6 s'écrit 37. Comment s'écrit 4 ?",
+     "choices": [
+      "17",
+      "15",
+      "18",
+      "20"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 17.",
+     "explanation": "Chaque nombre est élevé au carré puis augmenté de 1 : 3² + 1 = 10, 5² + 1 = 26 et 6² + 1 = 37. Donc 4² + 1 = 17."
+    },
+    "ar": {
+     "text": "في شيفرة ما، يُكتب 3 هكذا 10 و5 هكذا 26 و6 هكذا 37. كيف يُكتب 4؟",
+     "choices": [
+      "17",
+      "15",
+      "18",
+      "20"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 17.",
+     "explanation": "يُربَّع كل عدد ثم يُضاف إليه 1: ‎3² + 1 = 10 و‎5² + 1 = 26 و‎6² + 1 = 37. إذن ‎4² + 1 = 17."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-096",
+   "category": "logique",
+   "subcategory": "raisonnement",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un tableau, la troisième colonne est toujours la somme des deux premières. Sur la première ligne on lit 4, 7 et 11 ; sur la deuxième 6, 9 et 15. Sur la troisième ligne on lit 8, 5 et … ?",
+     "choices": [
+      "13",
+      "12",
+      "14",
+      "40"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 13.",
+     "explanation": "La règle est A + B = C : 4 + 7 = 11 et 6 + 9 = 15. Donc 8 + 5 = 13."
+    },
+    "ar": {
+     "text": "في جدول، العمود الثالث هو دائمًا مجموع العمودين الأولين. في السطر الأول نقرأ 4 و7 و11، وفي الثاني 6 و9 و15. ماذا نقرأ في السطر الثالث: 8 و5 و…؟",
+     "choices": [
+      "13",
+      "12",
+      "14",
+      "40"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 13.",
+     "explanation": "القاعدة هي أ + ب = ج: 4 + 7 = 11 و6 + 9 = 15. إذن 8 + 5 = 13."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-097",
+   "category": "logique",
+   "subcategory": "raisonnement",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un tableau, le troisième nombre est le produit des deux premiers diminué de 2. On lit 3, 4 et 10 ; puis 5, 2 et 8. Que vaut le troisième nombre de la ligne 6, 3 et … ?",
+     "choices": [
+      "16",
+      "18",
+      "15",
+      "14"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 16.",
+     "explanation": "La règle est (A × B) − 2 : (3 × 4) − 2 = 10 et (5 × 2) − 2 = 8. Donc (6 × 3) − 2 = 16."
+    },
+    "ar": {
+     "text": "في جدول، العدد الثالث هو جداء العددين الأولين ناقص 2. نقرأ 3 و4 و10، ثم 5 و2 و8. فما هو العدد الثالث في السطر 6 و3 و…؟",
+     "choices": [
+      "16",
+      "18",
+      "15",
+      "14"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 16.",
+     "explanation": "القاعدة هي (أ × ب) − 2: ‏(3 × 4) − 2 = 10 و(5 × 2) − 2 = 8. إذن (6 × 3) − 2 = 16."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-098",
+   "category": "logique",
+   "subcategory": "raisonnement",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Sur trois lignes, on lit : 2 → 5, 4 → 9 et 7 → … ?",
+     "choices": [
+      "15",
+      "14",
+      "16",
+      "13"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 15.",
+     "explanation": "La règle est « le double plus 1 » : 2 × 2 + 1 = 5 et 4 × 2 + 1 = 9. Donc 7 × 2 + 1 = 15."
+    },
+    "ar": {
+     "text": "في ثلاثة أسطر نقرأ: 2 ← 5 و4 ← 9 و7 ← …؟",
+     "choices": [
+      "15",
+      "14",
+      "16",
+      "13"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 15.",
+     "explanation": "القاعدة هي «الضعف زائد 1»: 2 × 2 + 1 = 5 و4 × 2 + 1 = 9. إذن 7 × 2 + 1 = 15."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-099",
+   "category": "logique",
+   "subcategory": "raisonnement",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Si 5 ★ 3 = 16 et 7 ★ 2 = 18, que vaut 9 ★ 4 ?",
+     "choices": [
+      "26",
+      "24",
+      "28",
+      "36"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 26.",
+     "explanation": "L'opération ★ correspond à (A + B) × 2 : (5 + 3) × 2 = 16 et (7 + 2) × 2 = 18. Donc (9 + 4) × 2 = 26."
+    },
+    "ar": {
+     "text": "إذا كان 5 ★ 3 = 16 و7 ★ 2 = 18، فما قيمة 9 ★ 4؟",
+     "choices": [
+      "26",
+      "24",
+      "28",
+      "36"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 26.",
+     "explanation": "العملية ★ تقابل (أ + ب) × 2: ‏(5 + 3) × 2 = 16 و(7 + 2) × 2 = 18. إذن (9 + 4) × 2 = 26."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-100",
+   "category": "logique",
+   "subcategory": "raisonnement",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Si 6 ◆ 2 = 4 et 10 ◆ 3 = 7, que vaut 15 ◆ 5 ?",
+     "choices": [
+      "10",
+      "12",
+      "8",
+      "20"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 10.",
+     "explanation": "L'opération ◆ correspond à la soustraction A − B : 6 − 2 = 4 et 10 − 3 = 7. Donc 15 − 5 = 10."
+    },
+    "ar": {
+     "text": "إذا كان 6 ◆ 2 = 4 و10 ◆ 3 = 7، فما قيمة 15 ◆ 5؟",
+     "choices": [
+      "10",
+      "12",
+      "8",
+      "20"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 10.",
+     "explanation": "العملية ◆ تقابل الطرح أ − ب: 6 − 2 = 4 و10 − 3 = 7. إذن 15 − 5 = 10."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-101",
+   "category": "logique",
+   "subcategory": "raisonnement",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans une grille, chaque case vaut la somme des deux cases situées au-dessus d'elle. Si la ligne supérieure est 3, 5 et 8, quelle est la ligne suivante ?",
+     "choices": [
+      "8 et 13",
+      "8 et 12",
+      "9 et 13",
+      "15 et 8"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 8 et 13.",
+     "explanation": "On additionne les cases voisines : 3 + 5 = 8 puis 5 + 8 = 13. La ligne suivante est donc 8 et 13."
+    },
+    "ar": {
+     "text": "في شبكة، تساوي كل خانة مجموع الخانتين اللتين فوقها. إذا كان السطر العلوي 3 و5 و8، فما هو السطر الموالي؟",
+     "choices": [
+      "8 et 13",
+      "8 et 12",
+      "9 et 13",
+      "15 et 8"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 8 et 13.",
+     "explanation": "نجمع الخانات المتجاورة: 3 + 5 = 8 ثم 5 + 8 = 13. فالسطر الموالي هو 8 و13."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-102",
+   "category": "logique",
+   "subcategory": "raisonnement",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Si le triple d'un nombre augmenté de 4 vaut 25, quel est ce nombre ?",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 7.",
+     "explanation": "On résout 3n + 4 = 25, donc 3n = 21 et n = 7. Vérification : 3 × 7 + 4 = 25."
+    },
+    "ar": {
+     "text": "إذا كان ثلاثة أمثال عدد مضافًا إليها 4 يساوي 25، فما هو هذا العدد؟",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 7.",
+     "explanation": "نحل المعادلة 3ن + 4 = 25، إذن 3ن = 21 ومنه ن = 7. وبالتحقق: 3 × 7 + 4 = 25."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-103",
+   "category": "logique",
+   "subcategory": "raisonnement",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Quatre nombres suivent la règle « chaque terme est la moyenne des deux précédents ». Les deux premiers sont 8 et 12. Quel est le quatrième terme ?",
+     "choices": [
+      "11",
+      "10",
+      "12",
+      "9"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 11.",
+     "explanation": "Le troisième terme vaut (8 + 12) ÷ 2 = 10, puis le quatrième vaut (12 + 10) ÷ 2 = 11."
+    },
+    "ar": {
+     "text": "أربعة أعداد تتبع قاعدة «كل حد هو متوسط الحدين السابقين». الحدان الأولان 8 و12. فما هو الحد الرابع؟",
+     "choices": [
+      "11",
+      "10",
+      "12",
+      "9"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 11.",
+     "explanation": "الحد الثالث هو (8 + 12) ÷ 2 = 10، ثم الحد الرابع هو (12 + 10) ÷ 2 = 11."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-104",
+   "category": "logique",
+   "subcategory": "raisonnement",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Trois collègues se partagent 60 dossiers. Le deuxième en traite le double du premier, et le troisième autant que les deux autres réunis. Combien le premier en traite-t-il ?",
+     "choices": [
+      "10",
+      "12",
+      "15",
+      "20"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 10.",
+     "explanation": "Si le premier traite n dossiers, le deuxième en traite 2n et le troisième 3n, soit 6n au total. De 6n = 60 on tire n = 10."
+    },
+    "ar": {
+     "text": "ثلاثة زملاء يتقاسمون 60 ملفًا. الثاني يعالج ضعف ما يعالجه الأول، والثالث يعالج ما يعالجه الاثنان معًا. كم ملفًا يعالج الأول؟",
+     "choices": [
+      "10",
+      "12",
+      "15",
+      "20"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 10.",
+     "explanation": "إذا عالج الأول ن ملفًا فالثاني يعالج 2ن والثالث 3ن، أي 6ن في المجموع. ومن 6ن = 60 نستنتج ن = 10."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-105",
+   "category": "logique",
+   "subcategory": "raisonnement",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans une file d'attente de 20 personnes, Samir est le 7e à partir du début. Quel est son rang à partir de la fin ?",
+     "choices": [
+      "14",
+      "13",
+      "15",
+      "12"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est 14.",
+     "explanation": "Le rang depuis la fin vaut (total − rang depuis le début) + 1, soit (20 − 7) + 1 = 14."
+    },
+    "ar": {
+     "text": "في صف انتظار من 20 شخصًا، سمير هو السابع ابتداءً من البداية. ما هي رتبته ابتداءً من النهاية؟",
+     "choices": [
+      "14",
+      "13",
+      "15",
+      "12"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو 14.",
+     "explanation": "الرتبة من النهاية تساوي (المجموع − الرتبة من البداية) + 1، أي (20 − 7) + 1 = 14."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-106",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Vous marchez vers le nord, puis vous tournez à droite, puis encore à droite. Dans quelle direction avancez-vous ?",
+     "choices": [
+      "Vers le sud",
+      "Vers l'est",
+      "Vers l'ouest",
+      "Vers le nord"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « Vers le sud ».",
+     "explanation": "Un premier quart de tour à droite depuis le nord conduit vers l'est ; un second quart de tour à droite conduit vers le sud."
+    },
+    "ar": {
+     "text": "تسير نحو الشمال ثم تنعطف يمينًا ثم يمينًا مرة أخرى. في أي اتجاه تتقدم؟",
+     "choices": [
+      "نحو الجنوب",
+      "نحو الشرق",
+      "نحو الغرب",
+      "نحو الشمال"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «نحو الجنوب».",
+     "explanation": "أول ربع دورة يمينًا انطلاقًا من الشمال يقود نحو الشرق، وربع الدورة الثاني يمينًا يقود نحو الجنوب."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-107",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Vous marchez vers l'est, puis vous tournez à gauche. Dans quelle direction avancez-vous ?",
+     "choices": [
+      "Vers le nord",
+      "Vers le sud",
+      "Vers l'ouest",
+      "Vers l'est"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « Vers le nord ».",
+     "explanation": "Depuis l'est, un quart de tour à gauche amène face au nord."
+    },
+    "ar": {
+     "text": "تسير نحو الشرق ثم تنعطف يسارًا. في أي اتجاه تتقدم؟",
+     "choices": [
+      "نحو الشمال",
+      "نحو الجنوب",
+      "نحو الغرب",
+      "نحو الشرق"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «نحو الشمال».",
+     "explanation": "انطلاقًا من الشرق، ربع دورة يسارًا يجعلك في مواجهة الشمال."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-108",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Vous partez d'un point, marchez 3 km vers le nord, puis 4 km vers l'est. À quelle distance à vol d'oiseau êtes-vous du point de départ ?",
+     "choices": [
+      "5 km",
+      "7 km",
+      "4 km",
+      "6 km"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « 5 km ».",
+     "explanation": "Les deux trajets forment un angle droit. D'après le théorème de Pythagore, la distance vaut la racine carrée de 3² + 4², soit la racine de 25, c'est-à-dire 5 km."
+    },
+    "ar": {
+     "text": "تنطلق من نقطة وتسير 3 كلم نحو الشمال ثم 4 كلم نحو الشرق. كم تبعد عن نقطة الانطلاق في خط مستقيم؟",
+     "choices": [
+      "5 كلم",
+      "7 كلم",
+      "4 كلم",
+      "6 كلم"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «5 كلم».",
+     "explanation": "يشكّل المساران زاوية قائمة. وحسب مبرهنة فيتاغورس تساوي المسافة الجذر المربع لـ‎3² + 4²، أي جذر 25 أي 5 كلم."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-109",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Si aujourd'hui est un mercredi, quel jour sera-t-il dans 10 jours ?",
+     "choices": [
+      "Samedi",
+      "Vendredi",
+      "Dimanche",
+      "Lundi"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « Samedi ».",
+     "explanation": "10 jours correspondent à une semaine complète plus 3 jours. Trois jours après mercredi, on est samedi."
+    },
+    "ar": {
+     "text": "إذا كان اليوم أربعاء، فأي يوم سيكون بعد 10 أيام؟",
+     "choices": [
+      "السبت",
+      "الجمعة",
+      "الأحد",
+      "الاثنين"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «السبت».",
+     "explanation": "عشرة أيام تعادل أسبوعًا كاملًا وثلاثة أيام. وبعد ثلاثة أيام من الأربعاء يكون السبت."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-110",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Si avant-hier était un lundi, quel jour sera-t-il demain ?",
+     "choices": [
+      "Jeudi",
+      "Mercredi",
+      "Vendredi",
+      "Mardi"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « Jeudi ».",
+     "explanation": "Si avant-hier était lundi, alors aujourd'hui est mercredi et demain sera jeudi."
+    },
+    "ar": {
+     "text": "إذا كان أول أمس يوم اثنين، فأي يوم سيكون غدًا؟",
+     "choices": [
+      "الخميس",
+      "الأربعاء",
+      "الجمعة",
+      "الثلاثاء"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «الخميس».",
+     "explanation": "إذا كان أول أمس اثنين فاليوم هو الأربعاء وغدًا سيكون الخميس."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-111",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Une horloge indique 15 h 20. Quel est l'angle formé par la grande aiguille avec le chiffre 12 ?",
+     "choices": [
+      "120 degrés",
+      "90 degrés",
+      "150 degrés",
+      "60 degrés"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « 120 degrés ».",
+     "explanation": "La grande aiguille parcourt 360 degrés en 60 minutes, soit 6 degrés par minute. À 20 minutes, elle a parcouru 20 × 6 = 120 degrés."
+    },
+    "ar": {
+     "text": "تشير ساعة إلى 15:20. ما هي الزاوية التي تشكلها العقرب الكبير مع الرقم 12؟",
+     "choices": [
+      "120 درجة",
+      "90 درجة",
+      "150 درجة",
+      "60 درجة"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «120 درجة».",
+     "explanation": "يقطع العقرب الكبير 360 درجة في 60 دقيقة، أي 6 درجات في الدقيقة. وعند الدقيقة 20 يكون قد قطع 20 × 6 = 120 درجة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-112",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Un train part à 8 h 45 et arrive à 12 h 15. Quelle est la durée du trajet ?",
+     "choices": [
+      "3 h 30",
+      "3 h 45",
+      "4 h 30",
+      "3 h 15"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « 3 h 30 ».",
+     "explanation": "De 8 h 45 à 12 h 45 il y aurait 4 heures ; l'arrivée à 12 h 15 retire 30 minutes, soit 3 h 30 au total."
+    },
+    "ar": {
+     "text": "ينطلق قطار على الساعة 8:45 ويصل على الساعة 12:15. ما هي مدة الرحلة؟",
+     "choices": [
+      "3 ساعات و30 دقيقة",
+      "3 ساعات و45 دقيقة",
+      "4 ساعات و30 دقيقة",
+      "3 ساعات و15 دقيقة"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «3 ساعات و30 دقيقة».",
+     "explanation": "من 8:45 إلى 12:45 تكون المدة 4 ساعات، والوصول على 12:15 ينقص 30 دقيقة، أي 3 ساعات و30 دقيقة."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-113",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "intermediate",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Une garde commence à 22 h et dure 9 heures. À quelle heure se termine-t-elle ?",
+     "choices": [
+      "7 h",
+      "6 h",
+      "8 h",
+      "9 h"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « 7 h ».",
+     "explanation": "De 22 h à minuit il s'écoule 2 heures ; il reste 7 heures après minuit, donc la garde se termine à 7 h du matin."
+    },
+    "ar": {
+     "text": "تبدأ حراسة على الساعة 22 وتدوم 9 ساعات. في أي ساعة تنتهي؟",
+     "choices": [
+      "الساعة 7",
+      "الساعة 6",
+      "الساعة 8",
+      "الساعة 9"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «الساعة 7».",
+     "explanation": "من الساعة 22 إلى منتصف الليل تمر ساعتان، وتبقى 7 ساعات بعد منتصف الليل، فتنتهي الحراسة على الساعة 7 صباحًا."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-114",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Dans un miroir, une horloge semble indiquer 3 h. Quelle heure indique-t-elle réellement ?",
+     "choices": [
+      "9 h",
+      "3 h",
+      "6 h",
+      "12 h"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « 9 h ».",
+     "explanation": "L'image dans un miroir correspond à 12 h moins l'heure vue. Ici, 12 h − 3 h = 9 h."
+    },
+    "ar": {
+     "text": "في مرآة، تبدو ساعة وكأنها تشير إلى الثالثة. فما هي الساعة الحقيقية؟",
+     "choices": [
+      "الساعة 9",
+      "الساعة 3",
+      "الساعة 6",
+      "الساعة 12"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «الساعة 9».",
+     "explanation": "الصورة في المرآة تقابل 12 ناقص الساعة المرئية. وهنا 12 − 3 = 9."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-115",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Six équipes disputent un tournoi où chaque équipe rencontre chacune des autres une seule fois. Combien de matchs sont joués au total ?",
+     "choices": [
+      "15",
+      "12",
+      "30",
+      "20"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « 15 ».",
+     "explanation": "Le nombre de rencontres vaut n × (n − 1) ÷ 2, soit 6 × 5 ÷ 2 = 15."
+    },
+    "ar": {
+     "text": "ست فرق تخوض دورة تلتقي فيها كل فرقة بكل الفرق الأخرى مرة واحدة. كم عدد المباريات الإجمالي؟",
+     "choices": [
+      "15",
+      "12",
+      "30",
+      "20"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «15».",
+     "explanation": "عدد المواجهات يساوي ن × (ن − 1) ÷ 2، أي 6 × 5 ÷ 2 = 15."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-116",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "On plante des arbres le long d'une allée droite de 100 mètres, tous les 10 mètres, en commençant et en terminant aux deux extrémités. Combien d'arbres faut-il ?",
+     "choices": [
+      "11",
+      "10",
+      "12",
+      "9"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « 11 ».",
+     "explanation": "Un intervalle de 10 mètres sur 100 mètres donne 10 intervalles, donc 11 emplacements en comptant les deux extrémités."
+    },
+    "ar": {
+     "text": "تُغرس أشجار على طول ممر مستقيم طوله 100 متر، كل 10 أمتار، بدءًا من الطرفين وانتهاءً بهما. كم شجرة يلزم؟",
+     "choices": [
+      "11",
+      "10",
+      "12",
+      "9"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «11».",
+     "explanation": "مسافة 10 أمتار على طول 100 متر تعطي 10 مجالات، أي 11 موضعًا مع احتساب الطرفين."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-117",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Trois collègues sont assis en ligne. Amal n'est pas à côté de Zineb. Où est assis Karim ?",
+     "choices": [
+      "Au milieu",
+      "À gauche",
+      "À droite",
+      "On ne peut pas le savoir"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « Au milieu ».",
+     "explanation": "Dans une rangée de trois, seules les deux places extrêmes ne sont pas voisines. Amal et Zineb occupent donc ces extrémités, ce qui place Karim au milieu."
+    },
+    "ar": {
+     "text": "ثلاثة زملاء يجلسون في صف واحد. أمل ليست بجانب زينب. أين يجلس كريم؟",
+     "choices": [
+      "في الوسط",
+      "على اليسار",
+      "على اليمين",
+      "لا يمكن معرفة ذلك"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «في الوسط».",
+     "explanation": "في صف من ثلاثة مقاعد، المقعدان الطرفيان وحدهما غير متجاورين. فأمل وزينب تشغلان الطرفين، مما يضع كريم في الوسط."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-118",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Une réunion mensuelle a lieu le premier lundi de chaque mois. Si le 1er du mois tombe un jeudi, quel jour du mois aura lieu la réunion ?",
+     "choices": [
+      "Le 5",
+      "Le 4",
+      "Le 6",
+      "Le 8"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « Le 5 ».",
+     "explanation": "Si le 1er est un jeudi, alors le 2 est vendredi, le 3 samedi, le 4 dimanche et le 5 lundi. Le premier lundi tombe donc le 5."
+    },
+    "ar": {
+     "text": "يُعقد اجتماع شهري في أول اثنين من كل شهر. إذا صادف فاتح الشهر يوم خميس، ففي أي يوم من الشهر سيُعقد الاجتماع؟",
+     "choices": [
+      "يوم 5",
+      "يوم 4",
+      "يوم 6",
+      "يوم 8"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «يوم 5».",
+     "explanation": "إذا كان الفاتح خميسًا فإن 2 جمعة و3 سبت و4 أحد و5 اثنين. فأول اثنين هو يوم 5."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-119",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Un cube en bois peint sur toutes ses faces est découpé en 27 petits cubes identiques. Combien de petits cubes n'ont aucune face peinte ?",
+     "choices": [
+      "1",
+      "6",
+      "8",
+      "12"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « 1 ».",
+     "explanation": "Dans un découpage 3 × 3 × 3, seul le petit cube situé exactement au centre n'a aucune face en contact avec l'extérieur."
+    },
+    "ar": {
+     "text": "مكعب خشبي مطلي من جميع وجوهه قُطّع إلى 27 مكعبًا صغيرًا متطابقًا. كم مكعبًا صغيرًا لا يحمل أي وجه مطلي؟",
+     "choices": [
+      "1",
+      "6",
+      "8",
+      "12"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «1».",
+     "explanation": "في تقطيع 3 × 3 × 3، المكعب الصغير الموجود في المركز تمامًا هو وحده الذي لا يلامس أي وجه منه الخارج."
+    }
+   }
+  },
+  {
+   "id": "CM-LOG-120",
+   "category": "logique",
+   "subcategory": "spatio-temporel",
+   "difficulty": "advanced",
+   "exams": [
+    "police",
+    "gendarmerie",
+    "far",
+    "protection-civile",
+    "douane",
+    "cnss",
+    "ofppt",
+    "education"
+   ],
+   "sourceId": "src-general",
+   "correctIndex": 0,
+   "timeSensitive": false,
+   "verifiedOn": "2026-08-11",
+   "contentVersion": "1.0.0",
+   "languages": [
+    "ar",
+    "fr"
+   ],
+   "l10n": {
+    "fr": {
+     "text": "Il est 9 h 30 lundi. Quelle heure et quel jour seront-ils 50 heures plus tard ?",
+     "choices": [
+      "11 h 30 mercredi",
+      "9 h 30 mercredi",
+      "11 h 30 jeudi",
+      "7 h 30 mercredi"
+     ],
+     "correctIndex": 0,
+     "correction": "La réponse est « 11 h 30 mercredi ».",
+     "explanation": "50 heures correspondent à 2 jours complets, soit 48 heures, plus 2 heures. On arrive donc au mercredi à 11 h 30."
+    },
+    "ar": {
+     "text": "الساعة 9:30 يوم الاثنين. ما هي الساعة واليوم بعد 50 ساعة؟",
+     "choices": [
+      "11:30 يوم الأربعاء",
+      "9:30 يوم الأربعاء",
+      "11:30 يوم الخميس",
+      "7:30 يوم الأربعاء"
+     ],
+     "correctIndex": 0,
+     "correction": "الجواب هو «11:30 يوم الأربعاء».",
+     "explanation": "خمسون ساعة تعادل يومين كاملين، أي 48 ساعة، زائد ساعتين. فنصل إلى الأربعاء على الساعة 11:30."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Concours Maroc — guide et entraînement aux concours",
+  "short_name": "Concours Maroc",
+  "description": "Guide des concours au Maroc après le bac, QCM corrigés et outils de préparation, utilisables hors ligne.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "./entrainement/?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f3",
+  "theme_color": "#0b6e4f",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "assets/img/concours-maroc-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/concours-maroc-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/concours-maroc-icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Entraînement",
+      "url": "./entrainement/"
+    },
+    {
+      "name": "Calendrier des concours",
+      "url": "./outils/calendrier-concours/"
+    },
+    {
+      "name": "Calcul de la note du bac",
+      "url": "./outils/calcul-note-bac/"
+    }
+  ]
+}

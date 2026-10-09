@@ -1,0 +1,63 @@
+export default {
+  id: 'iav-apesa',
+  order: 28,
+  group: 'ingenierie',
+  level: 'postbac',
+  type: 'public',
+  icon: 'leaf',
+  bac: ['SM', 'PC', 'SVT', 'AGRO'],
+  seuils: { year: '2026', formula: null, rows: [], note: { fr: "Pas de seuil officiel publié : présélection sur dossier selon les notes du bac. Les estimations qui circulent (15,5 à 17/20) ne sont pas officielles.", ar: 'لا توجد عتبة رسمية منشورة: انتقاء أولي بالملف حسب نقط البكالوريا.' } },
+  age: { max: 22, ref: '09-01', at: { fr: 'moins de 23 ans au 1er septembre de l’année du concours', ar: 'أقل من 23 سنة في فاتح شتنبر' } },
+  practice: {
+    subjects: ['maths', 'physique', 'chimie', 'svt'],
+    mock: { minutes: 90, sections: [{ subjects: ['maths'], count: 10 }, { subjects: ['physique', 'chimie'], count: 10 }, { subjects: ['svt'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+  },
+  related: ['medecine', 'ensa', 'fst', 'cpge'],
+  official: [
+    { label: 'IAV Hassan II', url: 'https://www.iav.ac.ma' },
+    { label: 'Préinscription APESA', url: 'https://apesa.iav.ac.ma' },
+  ],
+  sources: [
+    { title: '9rayti — Concours APESA (IAV Hassan II) 2026-2027', url: 'https://www.9rayti.com/concoursa/concours-apesa-iav-hassan-ii-2026-2027-candidatures-ouvertes-pour-les-bacheliers', date: '2026-06' },
+    { title: 'Tawjih.info — Avis APESA 2026 (PDF)', url: 'https://tawjih.info/2026/apesa.pdf', date: '2026' },
+  ],
+  fr: {
+    short: 'IAV Hassan II (APESA)',
+    name: 'Institut Agronomique et Vétérinaire Hassan II — Année préparatoire APESA',
+    title: 'Concours IAV Hassan II (APESA) 2027 : conditions, âge, test écrit et calendrier',
+    description: "Accès post-bac à l'IAV Hassan II via l'APESA : bacs scientifiques, âge maximum, présélection, test écrit, oral, débouchés (ingénieur agronome, vétérinaire, topographe) et calendrier.",
+    keywords: ['iav hassan ii', 'apesa', 'concours iav', 'vétérinaire maroc', 'ingénieur agronome'],
+    intro: "L'**IAV Hassan II** (Rabat) recrute ses bacheliers par l'**APESA** (Année préparatoire aux études supérieures agronomiques). Après cette préparation, les étudiants poursuivent vers les cycles d'**ingénieur agronome**, de **docteur vétérinaire** ou d'**ingénieur topographe**, entre autres.",
+    facts: [
+      ['Public', 'Bacheliers scientifiques de l’année'],
+      ['Âge', 'Moins de 23 ans au 1er septembre'],
+      ['Sélection', 'Présélection sur dossier + test écrit (+ oral selon les années)'],
+      ['Inscription', 'apesa.iav.ac.ma (juin–juillet)'],
+      ['Test 2026', 'Prévu le 19 juillet 2026'],
+    ],
+    sections: [
+      { id: 'conditions', h: "Conditions d'accès", blocks: [ { ul: ["Bac scientifique **de l'année** : sciences physiques, SVT, sciences mathématiques A ou B, sciences agronomiques, ou bac scientifique des missions étrangères.", 'Avoir **moins de 23 ans au 1er septembre** de l’année du concours (avis 2026).', 'Préinscription en ligne : création de compte, validation par e-mail, paiement des frais de dossier.'] } ] },
+      { id: 'selection', h: 'Sélection', blocks: [ { steps: ['**Présélection** sur la base des notes du baccalauréat.', '**Test écrit** pour les présélectionnés (prévu le 19 juillet en 2026, sous réserve de confirmation).', "**Oral** : il figurait dans le processus 2025 ; vérifiez s'il est maintenu dans l'avis de votre session."] } ] },
+      { id: 'parcours', h: 'Après l’APESA', blocks: [ { p: "Selon les résultats de l'année préparatoire, les étudiants accèdent aux filières de l'IAV : agronomie (production végétale et animale, agroéconomie, industries agroalimentaires, eau et environnement…), **médecine vétérinaire**, **topographie**, ou génie rural selon l'organisation en vigueur." } ] },
+      { id: 'preparation', h: 'Préparation', blocks: [ { ul: ['Le test porte sur les matières scientifiques du bac : consolidez maths, physique-chimie et SVT.', 'La filière vétérinaire est très demandée : visez un excellent classement dès la préparation.'] }, { practice: true } ] },
+    ],
+    faq: [
+      { q: 'Quel âge maximum pour l’APESA ?', a: 'Moins de 23 ans au 1er septembre de l’année du concours, selon l’avis 2026.' },
+      { q: 'Comment devenir vétérinaire au Maroc ?', a: "La formation publique de docteur vétérinaire est assurée par l'IAV Hassan II, accessible après l'APESA (ou par d'autres voies réglementées). Le classement en fin d'année préparatoire est décisif." },
+    ],
+  },
+  ar: {
+    short: 'معهد الحسن الثاني (APESA)',
+    name: 'معهد الحسن الثاني للزراعة والبيطرة — السنة التحضيرية APESA',
+    title: 'مباراة معهد الحسن الثاني للزراعة والبيطرة (APESA) 2027: الشروط والسن والاختبار',
+    description: 'الولوج بعد البكالوريا إلى معهد الحسن الثاني عبر السنة التحضيرية APESA: الشعب العلمية، السن الأقصى، الانتقاء، الاختبار الكتابي والآفاق.',
+    keywords: ['معهد الحسن الثاني للزراعة والبيطرة', 'APESA', 'البيطرة'],
+    intro: 'يستقبل **معهد الحسن الثاني للزراعة والبيطرة** الحاصلين على البكالوريا عبر **السنة التحضيرية APESA**، ثم يتوجه الطلبة إلى أسلاك **مهندس زراعي** أو **طبيب بيطري** أو **مهندس طبوغرافي**.',
+    facts: [['الفئة', 'حاملو بكالوريا علمية للسنة الجارية'], ['السن', 'أقل من 23 سنة في فاتح شتنبر'], ['الانتقاء', 'بالملف + اختبار كتابي'], ['التسجيل', 'apesa.iav.ac.ma']],
+    sections: [
+      { id: 'conditions', h: 'شروط الولوج', blocks: [ { ul: ['بكالوريا علمية للسنة الجارية: ع. فيزيائية، ع. الحياة والأرض، ع. رياضية، ع. زراعية.', 'أقل من 23 سنة في فاتح شتنبر (إعلان 2026).', 'تسجيل قبلي إلكتروني وأداء واجبات الملف.'] } ] },
+      { id: 'selection', h: 'الانتقاء', blocks: [ { steps: ['انتقاء أولي على أساس نقط البكالوريا.', 'اختبار كتابي (19 يوليوز 2026 حسب الإعلان).', 'مقابلة شفوية حسب السنوات.'] }, { practice: true } ] },
+    ],
+    faq: [ { q: 'ما هو السن الأقصى؟', a: 'أقل من 23 سنة في فاتح شتنبر حسب إعلان 2026.' } ],
+  },
+};

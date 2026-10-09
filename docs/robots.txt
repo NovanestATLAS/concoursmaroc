@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /data/questions/
+
+Sitemap: https://novanestatlas.github.io/concoursmaroc/sitemap.xml
