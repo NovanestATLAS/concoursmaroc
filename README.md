@@ -70,7 +70,10 @@ publicité AdMob (admob-plus-cordova, consentement UMP). Il garde la structure d
 - politique de confidentialité de l'application, à indiquer sur Google Play :
   `https://www.maroc-concour.com/application/confidentialite/`.
 
-Après une modification du contenu, `npm run build:app` régénère `dist/cordova/www/` et le zip de `cordova/`.
+Après une modification du contenu, `npm run build:app` régénère `dist/cordova/www/` et le zip de `cordova/`
+(en mode test : blocs d'annonces de démonstration de Google). Les identifiants AdMob de production restent hors
+du dépôt public, dans `cordova/admob.local.json` (modèle : `admob.local.exemple.json`) ; le build produit alors
+aussi `dist/cordova/production/www_concours_maroc.zip`.
 
 ## Travailler sur le site
 

@@ -25,7 +25,8 @@
  *     after at least 10 answered questions, and never within MIN_GAP of the
  *     previous one;
  *   - rewarded ads only ever unlock extras; the answer, the short correction
- *     and the detailed explanation stay free;
+ *     and the detailed explanation stay free. No screen offers one yet, so
+ *     none is requested (showRewarded loads on demand);
  *   - a reward is granted only when the native reward callback fires, or, if
  *     no ad could be served at all, through an honest non-ad fallback.
  */
@@ -36,10 +37,9 @@
 
   /* Google's official demo ad units for Android.
      Source: https://developers.google.com/admob/android/test-ads
-     These are the ONLY identifiers shipped. Production IDs are injected at
-     build time (see PRIVACY_AND_ADMOB.md) and must never be committed here. */
+     Production units are never committed: the build writes them into
+     js/ads-config.js from cordova/admob.local.json (ignored by git). */
   var TEST_IDS = {
-    appId: 'ca-app-pub-3940256099942544~3347511713',
     banner: 'ca-app-pub-3940256099942544/9214589741',      // anchored adaptive
     interstitial: 'ca-app-pub-3940256099942544/1033173712',
     rewarded: 'ca-app-pub-3940256099942544/5224354917'
@@ -48,23 +48,25 @@
   var config = {
     enabled: true,
     testMode: true,
-    ids: TEST_IDS,
+    ids: Object.assign({}, TEST_IDS),
     minQuestionsBeforeInterstitial: 10,
     minGapMs: 3 * 60 * 1000,
     freeFirstSession: true,
     banner: 'auto'
   };
 
-  /* js/ads-config.js defines window.CM_ADS_CONFIG. While it only contains
-     the defaults, Google's demo identifiers above stay in force, so no
-     private ID ever needs to be committed and the app still runs. */
+  /* js/ads-config.js defines window.CM_ADS_CONFIG. In test mode Google's
+     demo units are used whatever the file lists, so a test build never
+     requests a real ad. With testMode false the file's units are used, and a
+     format without a unit is simply never requested. */
   (function applyBuildConfig() {
     var c = global.CM_ADS_CONFIG;
     if (!c || typeof c !== 'object') return;
-    if (c.ids) Object.keys(c.ids).forEach(function (k) {
-      if (c.ids[k]) TEST_IDS[k] = c.ids[k];
-    });
     if (typeof c.testMode === 'boolean') config.testMode = c.testMode;
+    if (!config.testMode) {
+      config.ids = {};
+      Object.keys(c.ids || {}).forEach(function (k) { if (c.ids[k]) config.ids[k] = c.ids[k]; });
+    }
     if (typeof c.minQuestionsBeforeInterstitial === 'number') {
       config.minQuestionsBeforeInterstitial = c.minQuestionsBeforeInterstitial;
     }
@@ -161,7 +163,7 @@
         mode: state.mode,
         enabled: config.enabled,
         testMode: config.testMode,
-        banner: state.mode === 'native' && bannerSupported(),
+        banner: state.mode === 'native' && bannerSupported() && !!config.ids.banner,
         started: state.started,
         consent: state.consent,
         bannerVisible: state.bannerVisible,
@@ -197,7 +199,6 @@
           state.started = true;
           emit('ready', Ads.status());
           Ads.preloadInterstitial();
-          Ads.preloadRewarded();
           return Ads.status();
         })
         .catch(function (err) {
@@ -270,8 +271,8 @@
         emit('banner', { shown: false, reason: 'mock' });
         return Promise.resolve(false);
       }
-      if (!bannerSupported() || !state.online) {
-        emit('banner', { shown: false, reason: state.online ? 'unsupported' : 'offline' });
+      if (!bannerSupported() || !config.ids.banner || !state.online) {
+        emit('banner', { shown: false, reason: !state.online ? 'offline' : (config.ids.banner ? 'unsupported' : 'no-unit') });
         return Promise.resolve(false);
       }
       try {
@@ -304,7 +305,7 @@
 
     // ------------------------------------------------------- interstitial
     preloadInterstitial: function () {
-      if (state.mode !== 'native' || !config.enabled || !state.online) return Promise.resolve(false);
+      if (state.mode !== 'native' || !config.enabled || !state.online || !config.ids.interstitial) return Promise.resolve(false);
       try {
         if (!state.interstitial) {
           state.interstitial = new global.admob.InterstitialAd({ adUnitId: config.ids.interstitial });
@@ -374,7 +375,7 @@
 
     // ----------------------------------------------------------- rewarded
     preloadRewarded: function () {
-      if (state.mode !== 'native' || !config.enabled || !state.online) return Promise.resolve(false);
+      if (state.mode !== 'native' || !config.enabled || !state.online || !config.ids.rewarded) return Promise.resolve(false);
       try {
         if (!state.rewarded) {
           state.rewarded = new global.admob.RewardedAd({ adUnitId: config.ids.rewarded });

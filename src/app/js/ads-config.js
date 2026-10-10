@@ -1,16 +1,17 @@
 /* Concours Maroc (Android app) — AdMob configuration.
  *
- * While testing, keep this file as it is: Google's official demo ad units are
- * used (https://developers.google.com/admob/android/test-ads) and no real
- * impression is ever counted.
+ * testMode: true  -> Google's demo ad units, whatever `ids` lists: no real
+ *                    ad is ever requested (https://developers.google.com/admob/android/test-ads).
+ * testMode: false -> the units in `ids`; a format without a unit is never
+ *                    requested.
  *
- * Before publishing on Google Play:
- *   1. create the app and its ad units in AdMob;
- *   2. put the ad unit identifiers below and set testMode to false;
- *   3. declare the AdMob *App ID* when installing the plugin:
- *        cordova plugin add admob-plus-cordova --save \
- *          --variable APP_ID_ANDROID=ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN
- *   4. never click on your own ads.
+ * Production units are not committed to the public repository: put them in
+ * cordova/admob.local.json (see admob.local.exemple.json) and run
+ * `npm run build:app`, which writes them here in a separate production zip.
+ * The AdMob *App ID* is not set here but when installing the plugin:
+ *   cordova plugin add admob-plus-cordova --save \
+ *     --variable APP_ID_ANDROID=ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN
+ * Never click on your own ads; declare your phone as a test device in AdMob.
  */
 window.CM_ADS_CONFIG = {
   testMode: true,

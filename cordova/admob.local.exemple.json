@@ -1,0 +1,7 @@
+{
+  "appId": "ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN",
+  "ids": {
+    "banner": "ca-app-pub-XXXXXXXXXXXXXXXX/NNNNNNNNNN",
+    "interstitial": "ca-app-pub-XXXXXXXXXXXXXXXX/NNNNNNNNNN"
+  }
+}

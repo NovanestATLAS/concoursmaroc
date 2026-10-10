@@ -87,11 +87,13 @@ async function main() {
   fs.mkdirSync(OUT, { recursive: true });
 
   // Cache-busting token for CSS/JS URLs (changes whenever an asset changes).
+  // src/app/ belongs to the Android app only and is left out.
   const ah = crypto.createHash('sha256');
   (function walk(dir) {
     if (!fs.existsSync(dir)) return;
     for (const e of fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
       const full = path.join(dir, e.name);
+      if (full === path.join(ROOT, 'src', 'app')) continue;
       if (e.isDirectory()) walk(full); else ah.update(fs.readFileSync(full));
     }
   })(path.join(ROOT, 'src'));

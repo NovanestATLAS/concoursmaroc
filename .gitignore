@@ -5,3 +5,5 @@ node_modules/
 .idea/
 # app build output (the zip is copied to cordova/)
 dist/
+# production AdMob units, kept out of the public repository
+cordova/admob.local.json

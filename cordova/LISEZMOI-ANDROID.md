@@ -60,12 +60,13 @@ cordova platform add android@15.1.0
 cordova plugin add cordova-plugin-tts-advanced@0.5.3
 cordova plugin add cordova-plugin-consent@3.0.0-alpha.9
 cordova plugin add admob-plus-cordova@2.0.0-alpha.19 --save \
-  --variable APP_ID_ANDROID=ca-app-pub-3940256099942544~3347511713
+  --variable APP_ID_ANDROID=ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN
 ```
 
-L’identifiant ci-dessus est l’**App ID de test** de Google. Avant de publier,
-remplacez-le par le vôtre (retirez le plugin, puis ajoutez-le à nouveau avec
-votre `APP_ID_ANDROID`).
+Mettez directement l’**App ID** de votre application AdMob (celui avec un
+`~`), dès la première installation : Google l’autorise aussi pendant les
+tests. Changer d’App ID plus tard demande la procédure de la section 8,
+sinon la compilation échoue sur un `APPLICATION_ID` en double.
 
 Plugin facultatif : `cordova plugin add cordova-plugin-x-socialsharing@6.0.4`
 pour le bouton Partager natif (sinon le lien de la page du site est copié).
@@ -74,14 +75,26 @@ barre d’état lui-même) et `cordova-plugin-inappbrowser`.
 
 ## 5. Publicité (AdMob)
 
-Tous les réglages sont dans `www/js/ads-config.js`. Tant qu’il n’est pas
-modifié, seuls les blocs d’annonces de test de Google sont utilisés.
+Tous les réglages sont dans `www/js/ads-config.js` :
 
-Avant la publication :
+- `testMode: true` : blocs d’annonces de démonstration de Google, quels que
+  soient les identifiants indiqués (aucune vraie annonce) ;
+- `testMode: false` : vos blocs d’annonces (`ids`).
 
-1. créez l’application et ses blocs d’annonces dans AdMob ;
-2. mettez leurs identifiants dans `ids` et passez `testMode` à `false` ;
-3. installez le plugin avec votre App ID (étape 4).
+Le zip du dépôt GitHub est en mode test : vos identifiants n’y figurent pas,
+le dépôt étant public. La version de production se génère avec vos blocs
+d’annonces : copiez `admob.local.exemple.json` en `admob.local.json` (ignoré
+par git), remplissez-le, puis `npm run build:app` écrit
+`dist/cordova/production/www_concours_maroc.zip`.
+
+Formats utilisés : bannière (voir ci-dessous) et interstitiel. Aucun écran ne
+propose encore de récompense : un bloc « interstitiel avec récompense » peut
+être indiqué (`rewardedInterstitial`) mais n’est pas demandé.
+
+Avant d’ouvrir une version de production sur votre téléphone, déclarez-le
+comme appareil de test dans AdMob (Paramètres → Appareils de test, avec
+l’identifiant publicitaire du téléphone) et ne cliquez jamais sur vos propres
+annonces.
 
 Règles appliquées par l’application : jamais de publicité pendant une
 question, première session sans publicité, au plus un interstitiel par
@@ -144,3 +157,33 @@ npm run build:app
 
 Le dossier est écrit dans `dist/cordova/www/` et le zip copié dans
 `cordova/www_concours_maroc.zip`.
+
+## 8. Dépannage
+
+**`Element meta-data#com.google.android.gms.ads.APPLICATION_ID … duplicated`**
+(tâche `processDebugMainManifest`). Le manifeste Android contient deux App ID
+AdMob, en général l’App ID de test et le vôtre : le plugin a été installé
+deux fois avec des valeurs différentes, ou le `config.xml` ajoute lui-même
+cette balise. Dans le dossier du projet Cordova (invite de commandes) :
+
+1. ouvrez `config.xml` et supprimez tout bloc `<config-file>` ou
+   `<edit-config>` qui contient `com.google.android.gms.ads.APPLICATION_ID`
+   (le plugin l’ajoute lui-même) ;
+2. dans `config.xml` et `package.json`, la variable `APP_ID_ANDROID`
+   d’`admob-plus-cordova` doit valoir votre App ID partout ;
+3. `cordova plugin ls` : un seul plugin AdMob (`admob-plus-cordova`) ; retirez
+   les autres avec `cordova plugin rm <nom> --save` ;
+4. repartez d’une plate-forme propre :
+
+   ```bat
+   cordova plugin rm admob-plus-cordova --save
+   cordova platform rm android
+   rmdir /s /q platforms
+   rmdir /s /q plugins
+   cordova platform add android@15.1.0
+   cordova plugin add admob-plus-cordova@2.0.0-alpha.19 --save --variable APP_ID_ANDROID=ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN
+   cordova build android
+   ```
+
+Si un script `.bat` recrée le projet à chaque compilation, faites ces
+corrections dans le script et les fichiers qu’il copie.

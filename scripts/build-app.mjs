@@ -228,6 +228,32 @@ ${scripts.map((s) => `<script src="${s}"></script>`).join('\n')}
 `;
 }
 
+/* --------------------------------------------------------------- AdMob */
+/* Reads cordova/admob.local.json, if present, and returns the production
+   js/ads-config.js: the committed file with testMode false and its units. */
+function adMobProduction() {
+  const file = path.join(ROOT, 'cordova/admob.local.json');
+  if (!fs.existsSync(file)) return null;
+  const local = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const UNIT = /^ca-app-pub-\d{16}\/\d{10}$/;
+  const KNOWN = ['banner', 'interstitial', 'rewarded', 'rewardedInterstitial'];
+  const ids = {};
+  for (const [k, v] of Object.entries(local.ids || {})) {
+    if (!KNOWN.includes(k)) throw new Error(`admob.local.json: unknown format "${k}" (${KNOWN.join(', ')})`);
+    if (!UNIT.test(v)) throw new Error(`admob.local.json: "${k}" is not an ad unit ID (ca-app-pub-…/…): ${v}`);
+    ids[k] = v;
+  }
+  if (local.appId && !/^ca-app-pub-\d{16}~\d{10}$/.test(local.appId)) throw new Error(`admob.local.json: appId is not an App ID (ca-app-pub-…~…): ${local.appId}`);
+  const src = read('src/app/js/ads-config.js');
+  const idsRe = /\n {2}ids: \{[\s\S]*?\n {2}\},/;
+  if (!/\n {2}testMode: true,/.test(src) || !idsRe.test(src)) throw new Error('src/app/js/ads-config.js: testMode/ids block not found');
+  const lines = Object.entries(ids).map(([k, v]) => `    ${k}: '${v}'${k === 'rewardedInterstitial' ? ' /* not used yet: no screen offers a reward */' : ''}`);
+  const config = src
+    .replace(/\n {2}testMode: true,/, '\n  testMode: false,   // production build (cordova/admob.local.json)')
+    .replace(idsRe, `\n  ids: {\n${lines.join(',\n')}\n  },`);
+  return { config, appId: local.appId || '' };
+}
+
 /* ------------------------------------------------------------------ checks */
 function checkLinks(where, markup, registry) {
   const problems = [];
@@ -395,6 +421,18 @@ async function main() {
   fs.copyFileSync(path.join(DIST, zipName), path.join(ROOT, 'cordova', zipName));
   for (const f of ['config.xml.exemple', 'LISEZMOI-ANDROID.md']) {
     if (fs.existsSync(path.join(ROOT, 'cordova', f))) fs.copyFileSync(path.join(ROOT, 'cordova', f), path.join(DIST, f));
+  }
+
+  // Production zip: the same www with the AdMob units of cordova/admob.local.json
+  // (ignored by git, so the units never reach the public repository).
+  const prod = adMobProduction();
+  if (prod) {
+    write('js/ads-config.js', prod.config);
+    fs.utimesSync(path.join(OUT, 'js/ads-config.js'), stamp, stamp);
+    fs.mkdirSync(path.join(DIST, 'production'), { recursive: true });
+    execFileSync('zip', ['-q', '-X', '-D', `production/${zipName}`, '-@'], { cwd: DIST, input: entries.join('\n') + '\n', env: { ...process.env, TZ: 'UTC' } });
+    console.log(`Production zip with the AdMob units of cordova/admob.local.json → dist/cordova/production/${zipName}`);
+    if (prod.appId) console.log(`  plugin: cordova plugin add admob-plus-cordova@2.0.0-alpha.19 --save --variable APP_ID_ANDROID=${prod.appId}`);
   }
 
   const size = (p) => { let n = 0; (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else n += fs.statSync(f).size; } })(p); return n; };
