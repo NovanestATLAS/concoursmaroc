@@ -29,6 +29,6 @@ export default {
   // Google Analytics 4 measurement ID, e.g. 'G-XXXXXXXXXX'.
   ga4: '',
   // Google AdSense publisher ID, e.g. 'ca-pub-1234567890123456'.
-  // When set, the AdSense script is added to every page and ads.txt is generated.
-  adsenseClient: '',
+  // When set, the AdSense script is added to every content page and ads.txt is generated.
+  adsenseClient: 'ca-pub-3709043100488694',
 };

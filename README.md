@@ -54,7 +54,11 @@ Tout se règle dans `content/site.mjs`, puis `npm run build` :
 |---|---|
 | `googleSiteVerification` | Ajoute la balise de vérification Search Console. Déclarez ensuite `sitemap.xml` dans la Search Console. |
 | `ga4` | Ajoute Google Analytics 4 (identifiant `G-XXXXXXXXXX`). |
-| `adsenseClient` | Ajoute le script AdSense (identifiant `ca-pub-…`) et génère `ads.txt`. |
+| `adsenseClient` | Ajoute le script AdSense (identifiant `ca-pub-…`) sur les pages de contenu (pas sur 404 ni hors ligne), génère `ads.txt` et complète la politique de confidentialité. |
+
+AdSense est configuré avec `ca-pub-3709043100488694`. Après validation du site par Google, activez les annonces
+automatiques dans AdSense, ainsi que le message de consentement (Confidentialité et messages → Réglementations
+européennes) pour les visiteurs de l'Espace économique européen, du Royaume-Uni et de la Suisse.
 
 ## Application Android (Cordova)
 
