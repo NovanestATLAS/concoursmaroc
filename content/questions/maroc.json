@@ -25,7 +25,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -75,8 +75,8 @@
    ],
    "sourceId": "src-parlement",
    "correctIndex": 0,
-   "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "timeSensitive": true,
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -84,7 +84,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Combien de membres compte la Chambre des représentants ?",
+     "text": "Combien de membres compte la Chambre des représentants (effectif fixé par la loi organique n° 27-11, appliqué lors des législatives du 23 septembre 2026) ?",
      "choices": [
       "395",
       "270",
@@ -93,10 +93,10 @@
      ],
      "correctIndex": 0,
      "correction": "La Chambre des représentants compte 395 membres.",
-     "explanation": "Ces 395 députés sont élus pour cinq ans au suffrage universel direct, au scrutin de liste à la représentation proportionnelle. La Chambre des représentants est la chambre basse ; elle seule investit le gouvernement et peut le renverser par une motion de censure."
+     "explanation": "Fixé à 395 par la loi organique n° 27-11 relative à la Chambre des représentants (2011, modifiée), cet effectif a de nouveau été renouvelé lors des élections législatives du 23 septembre 2026. Les députés sont élus pour cinq ans au suffrage universel direct, au scrutin de liste à la représentation proportionnelle. Seule la Chambre des représentants investit le gouvernement (article 88) et peut le renverser par une motion de censure (article 105)."
     },
     "ar": {
-     "text": "كم عدد أعضاء مجلس النواب؟",
+     "text": "كم عدد أعضاء مجلس النواب (وفق القانون التنظيمي رقم 27.11، وهو العدد المعتمد في الانتخابات التشريعية ليوم 23 شتنبر 2026)؟",
      "choices": [
       "395",
       "270",
@@ -105,7 +105,7 @@
      ],
      "correctIndex": 0,
      "correction": "يتكون مجلس النواب من 395 عضوًا.",
-     "explanation": "يُنتخب هؤلاء النواب لمدة خمس سنوات بالاقتراع العام المباشر باللائحة والتمثيل النسبي. ومجلس النواب هو الغرفة الأولى، وهو وحده الذي يمنح الثقة للحكومة ويمكنه إسقاطها بملتمس الرقابة."
+     "explanation": "حدّد القانون التنظيمي رقم 27.11 المتعلق بمجلس النواب (2011، كما وقع تغييره) عدد الأعضاء في 395، وقد جرى تجديدهم مرة أخرى في الانتخابات التشريعية ليوم 23 شتنبر 2026. ويُنتخب النواب لمدة خمس سنوات بالاقتراع العام المباشر باللائحة وبالتمثيل النسبي. ومجلس النواب وحده يمنح الثقة للحكومة (الفصل 88) ويمكنه إسقاطها بملتمس الرقابة (الفصل 105)."
     }
    }
   },
@@ -127,7 +127,7 @@
    "sourceId": "src-parlement",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -178,7 +178,7 @@
    "sourceId": "src-parlement",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -229,7 +229,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -280,7 +280,7 @@
    "sourceId": "src-ct-decoupage",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -331,7 +331,7 @@
    "sourceId": "src-ct-decoupage",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -382,7 +382,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -433,7 +433,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -450,7 +450,7 @@
      ],
      "correctIndex": 0,
      "correction": "C'est la Cour constitutionnelle.",
-     "explanation": "La Constitution de 2011 a remplacé le Conseil constitutionnel par une Cour constitutionnelle. Elle se prononce sur la conformité des lois organiques et des règlements des chambres avant leur mise en application, statue sur la régularité des élections parlementaires et connaît des exceptions d'inconstitutionnalité."
+     "explanation": "La Constitution de 2011 a remplacé le Conseil constitutionnel par une Cour constitutionnelle. Elle se prononce sur la conformité des lois organiques et des règlements des chambres avant leur mise en application, et statue sur la régularité des élections parlementaires. L'article 133 lui confie aussi les exceptions d'inconstitutionnalité soulevées au cours d'un procès, mécanisme dont la mise en œuvre est organisée par une loi organique."
     },
     "ar": {
      "text": "ما هي الهيئة القضائية التي تراقب دستورية القوانين بالمغرب منذ 2011؟",
@@ -462,7 +462,7 @@
      ],
      "correctIndex": 0,
      "correction": "إنها المحكمة الدستورية.",
-     "explanation": "عوّض دستور 2011 المجلس الدستوري بمحكمة دستورية. وتبتّ في مطابقة القوانين التنظيمية والأنظمة الداخلية للمجلسين قبل تطبيقها، وفي صحة الانتخابات البرلمانية، وتنظر في الدفع بعدم الدستورية."
+     "explanation": "عوّض دستور 2011 المجلس الدستوري بمحكمة دستورية، تبتّ في مطابقة القوانين التنظيمية والأنظمة الداخلية لمجلسي البرلمان للدستور قبل تطبيقها، وفي صحة انتخاب أعضاء البرلمان. كما يُسند إليها الفصل 133 النظر في الدفع بعدم دستورية قانون أُثير أثناء النظر في قضية، وهي آلية يحدد قانون تنظيمي شروط تطبيقها."
     }
    }
   },
@@ -481,7 +481,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -529,7 +529,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -576,7 +576,7 @@
    "sourceId": "src-dgsn",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -623,7 +623,7 @@
    "sourceId": "src-gr",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -670,7 +670,7 @@
    "sourceId": "src-far",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -717,7 +717,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -725,7 +725,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Qui est, selon la Constitution, le Chef Suprême et Chef d'État-Major Général des Forces Armées Royales ?",
+     "text": "Selon l'article 53 de la Constitution, qui est le Chef Suprême des Forces Armées Royales ?",
      "choices": [
       "Le Roi",
       "Le Chef du gouvernement",
@@ -733,11 +733,11 @@
       "Le Président de la Chambre des représentants"
      ],
      "correctIndex": 0,
-     "correction": "Le Roi est le Chef Suprême et Chef d'État-Major Général des FAR.",
-     "explanation": "Cette prérogative figure à l'article 53 de la Constitution de 2011 : le Roi est Chef Suprême des Forces Armées Royales, il nomme aux emplois militaires et peut déléguer ce droit."
+     "correction": "C'est le Roi.",
+     "explanation": "L'article 53 de la Constitution de 2011 dispose que le Roi est le Chef Suprême des Forces Armées Royales ; il nomme aux emplois militaires et peut déléguer ce droit. Le Roi porte également le titre de Chef d'État-Major Général des FAR."
     },
     "ar": {
-     "text": "من هو، حسب الدستور، القائد الأعلى ورئيس أركان الحرب العامة للقوات المسلحة الملكية؟",
+     "text": "حسب الفصل 53 من الدستور، من هو القائد الأعلى للقوات المسلحة الملكية؟",
      "choices": [
       "الملك",
       "رئيس الحكومة",
@@ -745,8 +745,8 @@
       "رئيس مجلس النواب"
      ],
      "correctIndex": 0,
-     "correction": "الملك هو القائد الأعلى ورئيس أركان الحرب العامة للقوات المسلحة الملكية.",
-     "explanation": "ينص على ذلك الفصل 53 من دستور 2011: الملك هو القائد الأعلى للقوات المسلحة الملكية، وله حق التعيين في الوظائف العسكرية، وله أن يفوض هذا الحق."
+     "correction": "الملك هو القائد الأعلى للقوات المسلحة الملكية.",
+     "explanation": "ينص الفصل 53 من دستور 2011 على أن الملك هو القائد الأعلى للقوات المسلحة الملكية، وله حق التعيين في الوظائف العسكرية، وله أن يفوّض لغيره ممارسة هذا الحق. ويحمل الملك أيضًا صفة رئيس أركان الحرب العامة للقوات المسلحة الملكية."
     }
    }
   },
@@ -764,7 +764,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -807,8 +807,8 @@
    ],
    "sourceId": "src-cnss",
    "correctIndex": 0,
-   "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "timeSensitive": true,
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -816,7 +816,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "La CNSS gère le régime de sécurité sociale de quels travailleurs ?",
+     "text": "Le régime de sécurité sociale institué par le dahir de 1959 et géré par la CNSS couvre principalement quels travailleurs ?",
      "choices": [
       "Les salariés du secteur privé",
       "Les fonctionnaires de l'État",
@@ -824,11 +824,11 @@
       "Les élus locaux uniquement"
      ],
      "correctIndex": 0,
-     "correction": "La CNSS couvre les salariés du secteur privé.",
-     "explanation": "Instituée par le dahir du 31 décembre 1959, la Caisse Nationale de Sécurité Sociale gère le régime obligatoire des salariés de l'industrie, du commerce, des services et des professions libérales. Le régime des fonctionnaires civils relève, lui, principalement de la Caisse Marocaine des Retraites."
+     "correction": "Il couvre principalement les salariés du secteur privé.",
+     "explanation": "Institué par le dahir du 31 décembre 1959 et refondu en 1972, ce régime obligatoire s'applique aux salariés de l'industrie, du commerce, des services, de l'agriculture et de l'artisanat. Les pensions des fonctionnaires civils relèvent, elles, principalement de la Caisse Marocaine des Retraites. À noter : la loi n° 54-23, publiée au Bulletin officiel début 2026, transfère à terme à la CNSS la gestion de l'assurance maladie obligatoire du secteur public jusque-là confiée à la CNOPS, sans fusionner le régime de sécurité sociale des salariés du privé avec celui des fonctionnaires."
     },
     "ar": {
-     "text": "يدير الصندوق الوطني للضمان الاجتماعي نظام الحماية الاجتماعية لأي فئة؟",
+     "text": "يغطي نظام الضمان الاجتماعي المُحدَث بظهير 1959، والذي يدبّره الصندوق الوطني للضمان الاجتماعي، أساسًا أيّ فئة من الشغيلة؟",
      "choices": [
       "أُجراء القطاع الخاص",
       "موظفو الدولة",
@@ -836,8 +836,8 @@
       "المنتخبون المحليون فقط"
      ],
      "correctIndex": 0,
-     "correction": "يغطي الصندوق الوطني للضمان الاجتماعي أُجراء القطاع الخاص.",
-     "explanation": "أُحدث بمقتضى ظهير 31 دجنبر 1959، ويدير النظام الإجباري لأجراء الصناعة والتجارة والخدمات والمهن الحرة. أما نظام الموظفين المدنيين فيخضع أساسًا للصندوق المغربي للتقاعد."
+     "correction": "يغطي أساسًا أُجراء القطاع الخاص.",
+     "explanation": "أُحدث هذا النظام الإجباري بظهير 31 دجنبر 1959 وأُعيدت صياغته سنة 1972، ويسري على أجراء الصناعة والتجارة والخدمات والفلاحة والصناعة التقليدية. أما معاشات الموظفين المدنيين فتخضع أساسًا للصندوق المغربي للتقاعد. وتجدر الإشارة إلى أن القانون رقم 54.23، المنشور بالجريدة الرسمية مطلع 2026، ينقل مستقبلًا إلى الصندوق الوطني للضمان الاجتماعي تدبير التأمين الإجباري عن المرض الخاص بالقطاع العام الذي كان يتولاه الصندوق الوطني لمنظمات الاحتياط الاجتماعي، دون دمج نظام الضمان الاجتماعي لأجراء القطاع الخاص مع نظام الموظفين."
     }
    }
   },
@@ -852,7 +852,7 @@
    "sourceId": "src-cnss",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -869,7 +869,7 @@
      ],
      "correctIndex": 0,
      "correction": "Le régime a été institué en 1959.",
-     "explanation": "Le dahir n° 1-59-148 du 31 décembre 1959 institue le régime de sécurité sociale. Il a ensuite été refondu par le dahir portant loi du 27 juillet 1972, puis élargi à d'autres catégories d'actifs, notamment les travailleurs agricoles en 1981."
+     "explanation": "Le dahir n° 1-59-148 du 31 décembre 1959 institue le régime de sécurité sociale, entré en fonctionnement en 1961. Il a été refondu par le dahir portant loi du 27 juillet 1972, puis étendu aux exploitations agricoles et forestières par la loi n° 26-79 promulguée en 1981, et à l'artisanat en 1993."
     },
     "ar": {
      "text": "في أي سنة أُحدث نظام الضمان الاجتماعي الذي يديره الصندوق الوطني للضمان الاجتماعي؟",
@@ -881,7 +881,7 @@
      ],
      "correctIndex": 0,
      "correction": "أُحدث النظام سنة 1959.",
-     "explanation": "أحدث الظهير رقم 1.59.148 بتاريخ 31 دجنبر 1959 نظام الضمان الاجتماعي، ثم أُعيدت صياغته بالظهير بمثابة قانون بتاريخ 27 يوليوز 1972، وتم توسيعه لفئات أخرى، ومنها العمال الفلاحيون سنة 1981."
+     "explanation": "أحدث الظهير رقم 1.59.148 بتاريخ 31 دجنبر 1959 نظام الضمان الاجتماعي الذي بدأ العمل به سنة 1961، ثم أُعيدت صياغته بالظهير بمثابة قانون بتاريخ 27 يوليوز 1972، ووُسّع ليشمل الاستغلاليات الفلاحية والغابوية بموجب القانون رقم 26.79 الصادر سنة 1981، ثم الصناعة التقليدية سنة 1993."
     }
    }
   },
@@ -896,7 +896,7 @@
    "sourceId": "src-adii",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -940,7 +940,7 @@
    "sourceId": "src-ofppt",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -988,7 +988,7 @@
    "sourceId": "src-bam",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1036,7 +1036,7 @@
    "sourceId": "src-emploi-public",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1087,7 +1087,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1104,7 +1104,7 @@
      ],
      "correctIndex": 0,
      "correction": "CIN signifie Carte d'Identité Nationale.",
-     "explanation": "La Carte d'Identité Nationale est le document officiel d'identification des citoyens marocains. Elle est délivrée par la Direction Générale de la Sûreté Nationale et son numéro sert d'identifiant dans la plupart des démarches administratives."
+     "explanation": "La Carte d'Identité Nationale est le document officiel d'identification des citoyens marocains. Délivrée par la Direction Générale de la Sûreté Nationale, elle existe aujourd'hui sous forme électronique (CNIE, Carte Nationale d'Identité Électronique), et son numéro sert d'identifiant dans la plupart des démarches administratives."
     },
     "ar": {
      "text": "ماذا يعني الاختصار CIN في وثيقة إدارية مغربية؟",
@@ -1116,7 +1116,7 @@
      ],
      "correctIndex": 0,
      "correction": "CIN تعني البطاقة الوطنية للتعريف.",
-     "explanation": "البطاقة الوطنية للتعريف هي الوثيقة الرسمية لتعريف المواطنين المغاربة، تسلّمها المديرية العامة للأمن الوطني، ويُستعمل رقمها معرّفًا في أغلب المساطر الإدارية."
+     "explanation": "البطاقة الوطنية للتعريف هي الوثيقة الرسمية لتعريف المواطنين المغاربة، تسلّمها المديرية العامة للأمن الوطني، وهي متوفرة اليوم في صيغة إلكترونية (البطاقة الوطنية للتعريف الإلكترونية)، ويُستعمل رقمها معرّفًا في أغلب المساطر الإدارية."
     }
    }
   },
@@ -1135,10 +1135,10 @@
     "ofppt",
     "education"
    ],
-   "sourceId": "src-general",
+   "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1155,7 +1155,7 @@
      ],
      "correctIndex": 0,
      "correction": "La devise nationale est « Dieu, la Patrie, le Roi ».",
-     "explanation": "Cette devise figure notamment sur les armoiries du Royaume. Elle exprime les trois références fondatrices sur lesquelles repose l'identité institutionnelle marocaine."
+     "explanation": "L'article 4 de la Constitution de 2011 dispose : « La devise du Royaume est DIEU, LA PATRIE, LE ROI. » Elle exprime les trois références fondatrices de l'identité institutionnelle marocaine."
     },
     "ar": {
      "text": "ما هو الشعار الوطني للمملكة المغربية؟",
@@ -1167,7 +1167,7 @@
      ],
      "correctIndex": 0,
      "correction": "الشعار الوطني هو «الله، الوطن، الملك».",
-     "explanation": "يرد هذا الشعار على الخصوص في شعار المملكة، ويعبّر عن المرجعيات الثلاث المؤسِّسة التي تقوم عليها الهوية المؤسساتية المغربية."
+     "explanation": "ينص الفصل 4 من دستور 2011 على أن «شعار المملكة: الله، الوطن، الملك». ويعبّر هذا الشعار عن المرجعيات الثلاث المؤسِّسة للهوية المؤسساتية المغربية."
     }
    }
   },
@@ -1186,10 +1186,10 @@
     "ofppt",
     "education"
    ],
-   "sourceId": "src-general",
+   "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1206,7 +1206,7 @@
      ],
      "correctIndex": 0,
      "correction": "Le drapeau marocain porte une étoile verte à cinq branches.",
-     "explanation": "Le drapeau national est rouge, chargé en son centre d'un pentagramme vert entrelacé, appelé « sceau de Salomon ». Il a été adopté sous cette forme en 1915."
+     "explanation": "Selon l'article 4 de la Constitution de 2011, l'emblème du Royaume est le drapeau rouge frappé en son centre d'une étoile verte à cinq branches. L'étoile verte a été ajoutée au drapeau rouge alaouite par le dahir du 17 novembre 1915."
     },
     "ar": {
      "text": "ما هو الشكل الهندسي الذي يتوسط العلم المغربي؟",
@@ -1218,7 +1218,7 @@
      ],
      "correctIndex": 0,
      "correction": "يحمل العلم المغربي نجمة خضراء خماسية.",
-     "explanation": "العلم الوطني أحمر تتوسطه نجمة خماسية خضراء متشابكة الأضلاع تسمى «خاتم سليمان»، وقد اعتُمد بهذا الشكل سنة 1915."
+     "explanation": "حسب الفصل 4 من دستور 2011، علم المملكة هو اللواء الأحمر الذي تتوسطه نجمة خضراء خماسية الفروع. وقد أُضيفت النجمة الخضراء إلى اللواء الأحمر العلوي بمقتضى ظهير 17 نونبر 1915."
     }
    }
   },
@@ -1237,7 +1237,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1285,7 +1285,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1333,7 +1333,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1381,7 +1381,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1429,7 +1429,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1477,7 +1477,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1525,7 +1525,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1573,7 +1573,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1621,7 +1621,7 @@
    "sourceId": "src-ct-decoupage",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1669,7 +1669,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1717,7 +1717,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1765,7 +1765,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1790,7 +1790,7 @@
       "الضريبة على القيمة المضافة",
       "ضريبة المدن والتجمعات",
       "الضريبة على المبيعات السنوية",
-      "التأمين الاختياري"
+      "الرسم الاختياري على التأمين"
      ],
      "correctIndex": 0,
      "correction": "TVA تعني الضريبة على القيمة المضافة.",
@@ -1813,7 +1813,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1864,7 +1864,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1915,7 +1915,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1963,10 +1963,10 @@
     "ofppt",
     "education"
    ],
-   "sourceId": "src-general",
+   "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1983,7 +1983,7 @@
      ],
      "correctIndex": 0,
      "correction": "C'est l'égal accès des citoyens aux emplois publics, selon le mérite.",
-     "explanation": "Ce principe est de valeur constitutionnelle. Il se traduit concrètement par le recrutement sur concours, l'anonymat des épreuves écrites et la publication des avis et des résultats, garanties destinées à assurer l'objectivité de la sélection."
+     "explanation": "L'article 31 de la Constitution de 2011 inclut l'accès aux fonctions publiques selon le mérite parmi les droits que l'État doit rendre effectifs. Ce principe se traduit concrètement par le recrutement sur concours ouvert et par la publication des avis et des résultats, garanties destinées à assurer l'objectivité de la sélection."
     },
     "ar": {
      "text": "ما هو المبدأ الأساسي لولوج الوظائف العمومية بالمغرب؟",
@@ -1995,7 +1995,7 @@
      ],
      "correctIndex": 0,
      "correction": "هو تساوي المواطنين في ولوج الوظائف العمومية حسب الاستحقاق.",
-     "explanation": "هذا المبدأ ذو قيمة دستورية، ويتجسد عمليًا في التوظيف بالمباراة وفي عدم كشف هوية المترشحين في الاختبارات الكتابية وفي نشر الإعلانات والنتائج، وهي ضمانات تهدف إلى موضوعية الانتقاء."
+     "explanation": "يدرج الفصل 31 من دستور 2011 ولوج الوظائف العمومية حسب الاستحقاق ضمن الحقوق التي تعمل الدولة على تيسير استفادة المواطنين منها. ويتجسد هذا المبدأ عمليًا في التوظيف عن طريق المباراة المفتوحة وفي نشر الإعلانات والنتائج، وهي ضمانات تهدف إلى موضوعية الانتقاء."
     }
    }
   },
@@ -2017,7 +2017,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2068,7 +2068,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2119,7 +2119,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2170,7 +2170,7 @@
    "sourceId": "src-hcp-rgph2024",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2221,7 +2221,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2272,7 +2272,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2323,7 +2323,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2374,7 +2374,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2425,7 +2425,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2476,7 +2476,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2527,7 +2527,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2578,7 +2578,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2595,7 +2595,7 @@
      ],
      "correctIndex": 0,
      "correction": "Ce sont les Idrissides.",
-     "explanation": "Fondée par Idriss Ier et développée par Idriss II au tournant des VIIIe et IXe siècles, Fès devient la capitale du premier État musulman structuré au Maroc. Les Almoravides installeront plus tard leur capitale à Marrakech."
+     "explanation": "Fondée par Idriss Ier et développée par Idriss II au tournant des VIIIe et IXe siècles, Fès devient la capitale de l'État idrisside, souvent présenté comme le premier État musulman centralisé du Maroc. Les Almoravides installeront plus tard leur capitale à Marrakech."
     },
     "ar": {
      "text": "أي دولة اتخذت من فاس عاصمة لها في أواخر القرن الثامن الميلادي؟",
@@ -2607,7 +2607,7 @@
      ],
      "correctIndex": 0,
      "correction": "إنهم الأدارسة.",
-     "explanation": "أسّس إدريس الأول مدينة فاس وطوّرها إدريس الثاني في مطلع القرنين الثامن والتاسع، فصارت عاصمة أول دولة إسلامية منظمة بالمغرب. أما المرابطون فاتخذوا لاحقًا مراكش عاصمة لهم."
+     "explanation": "أسّس إدريس الأول مدينة فاس وطوّرها إدريس الثاني في مطلع القرنين الثامن والتاسع، فصارت عاصمة الدولة الإدريسية التي تُقدَّم غالبًا بوصفها أول دولة إسلامية مركزية بالمغرب. أما المرابطون فاتخذوا لاحقًا مراكش عاصمة لهم."
     }
    }
   },
@@ -2629,7 +2629,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2680,7 +2680,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2731,7 +2731,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2782,7 +2782,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2833,7 +2833,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2884,7 +2884,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2935,7 +2935,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2986,7 +2986,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3037,7 +3037,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3088,7 +3088,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3139,7 +3139,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3190,7 +3190,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3241,7 +3241,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3292,7 +3292,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3343,7 +3343,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3394,7 +3394,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3445,7 +3445,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3496,7 +3496,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3544,10 +3544,10 @@
     "ofppt",
     "education"
    ],
-   "sourceId": "src-general",
+   "sourceId": "src-onu-ares-1111",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3564,7 +3564,7 @@
      ],
      "correctIndex": 0,
      "correction": "Le Maroc a adhéré à l'ONU en 1956.",
-     "explanation": "L'adhésion intervient l'année même de l'indépendance, en novembre 1956. Le Maroc est ensuite devenu l'un des principaux contributeurs africains aux opérations de maintien de la paix des Nations unies."
+     "explanation": "L'Assemblée générale a admis le Maroc le 12 novembre 1956 par sa résolution 1111 (XI), l'année même de l'indépendance. Le Maroc est ensuite devenu l'un des principaux contributeurs africains aux opérations de maintien de la paix des Nations unies."
     },
     "ar": {
      "text": "المغرب عضو في منظمة الأمم المتحدة منذ:",
@@ -3576,7 +3576,7 @@
      ],
      "correctIndex": 0,
      "correction": "انضم المغرب إلى الأمم المتحدة سنة 1956.",
-     "explanation": "تم الانضمام في نونبر 1956، أي في سنة الاستقلال نفسها. وأصبح المغرب لاحقًا من أبرز المساهمين الأفارقة في عمليات حفظ السلام الأممية."
+     "explanation": "قبلت الجمعية العامة عضوية المغرب يوم 12 نونبر 1956 بموجب قرارها 1111 (الدورة 11)، أي في سنة الاستقلال نفسها. وأصبح المغرب لاحقًا من أبرز المساهمين الأفارقة في عمليات حفظ السلام الأممية."
     }
    }
   },
@@ -3598,7 +3598,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3606,7 +3606,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "En quelle année le Maroc a-t-il réintégré l'Union africaine ?",
+     "text": "En quelle année le Maroc a-t-il rejoint l'Union africaine, mettant fin à son absence de l'organisation panafricaine ?",
      "choices": [
       "2017",
       "2002",
@@ -3614,11 +3614,11 @@
       "1984"
      ],
      "correctIndex": 0,
-     "correction": "Le Maroc a réintégré l'Union africaine en 2017.",
-     "explanation": "Le Royaume avait quitté l'Organisation de l'unité africaine en 1984. Son retour a été acté lors du sommet de l'Union africaine tenu à Addis-Abeba en janvier 2017."
+     "correction": "Le Maroc a rejoint l'Union africaine en 2017.",
+     "explanation": "Le Royaume avait quitté l'Organisation de l'unité africaine (OUA) en 1984. L'Union africaine, qui a succédé à l'OUA en 2002, a admis le Maroc lors de son sommet tenu à Addis-Abeba le 30 janvier 2017."
     },
     "ar": {
-     "text": "في أي سنة عاد المغرب إلى الاتحاد الإفريقي؟",
+     "text": "في أي سنة انضم المغرب إلى الاتحاد الإفريقي، منهيًا غيابه عن المنظمة الإفريقية؟",
      "choices": [
       "2017",
       "2002",
@@ -3626,8 +3626,8 @@
       "1984"
      ],
      "correctIndex": 0,
-     "correction": "عاد المغرب إلى الاتحاد الإفريقي سنة 2017.",
-     "explanation": "كانت المملكة قد انسحبت من منظمة الوحدة الإفريقية سنة 1984، وتمت العودة خلال قمة الاتحاد الإفريقي المنعقدة بأديس أبابا في يناير 2017."
+     "correction": "انضم المغرب إلى الاتحاد الإفريقي سنة 2017.",
+     "explanation": "كانت المملكة قد انسحبت من منظمة الوحدة الإفريقية سنة 1984. وقد قبل الاتحاد الإفريقي، الذي خلف هذه المنظمة سنة 2002، عضوية المغرب خلال قمته المنعقدة بأديس أبابا يوم 30 يناير 2017."
     }
    }
   },
@@ -3649,7 +3649,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3700,7 +3700,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3751,7 +3751,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3802,7 +3802,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3853,7 +3853,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3904,7 +3904,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3955,7 +3955,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4006,7 +4006,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4057,7 +4057,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4108,7 +4108,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4156,10 +4156,10 @@
     "ofppt",
     "education"
    ],
-   "sourceId": "src-general",
+   "sourceId": "src-us-morocco-treaty-1786",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4176,7 +4176,7 @@
      ],
      "correctIndex": 0,
      "correction": "Il s'agit du traité de paix et d'amitié maroco-américain.",
-     "explanation": "Le Maroc avait déjà ouvert ses ports aux navires américains en 1777. Le traité négocié en 1786 sous Mohammed III est souvent présenté comme le plus ancien traité d'amitié ininterrompu des États-Unis."
+     "explanation": "Le Maroc avait reconnu les États-Unis dès 1777. Le traité de paix et d'amitié, signé à Marrakech en 1786 sous le règne de Mohammed III et ratifié par le Congrès américain en 1787, est présenté par le Département d'État comme le plus ancien traité ininterrompu des États-Unis."
     },
     "ar": {
      "text": "أي معاهدة سنة 1786 تجعل العلاقات المغربية الأمريكية من أقدم الاتفاقات من هذا النوع التي ما تزال سارية؟",
@@ -4188,7 +4188,7 @@
      ],
      "correctIndex": 0,
      "correction": "إنها معاهدة السلم والصداقة المغربية الأمريكية.",
-     "explanation": "كان المغرب قد فتح موانئه أمام السفن الأمريكية سنة 1777، وتُقدَّم المعاهدة المبرمة سنة 1786 في عهد محمد الثالث بوصفها أقدم معاهدة صداقة أمريكية متواصلة."
+     "explanation": "اعترف المغرب بالولايات المتحدة منذ سنة 1777. وتقدّم وزارة الخارجية الأمريكية معاهدة السلم والصداقة، الموقّعة بمراكش سنة 1786 في عهد محمد الثالث والمصادَق عليها من الكونغرس سنة 1787، بوصفها أقدم معاهدة متواصلة للولايات المتحدة."
     }
    }
   },
@@ -4207,10 +4207,10 @@
     "ofppt",
     "education"
    ],
-   "sourceId": "src-general",
+   "sourceId": "src-istiqlal",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4218,7 +4218,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Le mouvement national marocain s'est structuré autour de partis politiques dont le plus ancien encore actif est :",
+     "text": "Parmi les partis politiques marocains suivants, lequel est le plus ancien ?",
      "choices": [
       "Le Parti de l'Istiqlal",
       "Le Rassemblement National des Indépendants",
@@ -4226,11 +4226,11 @@
       "L'Union Constitutionnelle"
      ],
      "correctIndex": 0,
-     "correction": "Le Parti de l'Istiqlal est le plus ancien parti encore actif.",
-     "explanation": "Fondé en 1944, l'Istiqlal a porté le Manifeste de l'Indépendance. Le Mouvement Populaire est créé en 1957, le RNI en 1978 et l'Union Constitutionnelle en 1983."
+     "correction": "Le Parti de l'Istiqlal, fondé en décembre 1943.",
+     "explanation": "Fondé le 10 décembre 1943, notamment autour d'Allal El Fassi et d'Ahmed Balafrej, l'Istiqlal a porté le Manifeste de l'Indépendance du 11 janvier 1944. Le Mouvement Populaire a été créé en 1957, le RNI en 1978 et l'Union Constitutionnelle en 1983."
     },
     "ar": {
-     "text": "تشكّلت الحركة الوطنية المغربية حول أحزاب سياسية أقدمها ما زال نشطًا هو:",
+     "text": "أيّ الأحزاب السياسية المغربية التالية هو الأقدم؟",
      "choices": [
       "حزب الاستقلال",
       "التجمع الوطني للأحرار",
@@ -4238,8 +4238,8 @@
       "الاتحاد الدستوري"
      ],
      "correctIndex": 0,
-     "correction": "حزب الاستقلال هو أقدم حزب ما زال نشطًا.",
-     "explanation": "تأسس سنة 1944 وقدّم وثيقة المطالبة بالاستقلال. أما الحركة الشعبية فأُحدثت سنة 1957، والتجمع الوطني للأحرار سنة 1978، والاتحاد الدستوري سنة 1983."
+     "correction": "حزب الاستقلال، الذي تأسس في دجنبر 1943.",
+     "explanation": "تأسس حزب الاستقلال يوم 10 دجنبر 1943، ومن أبرز وجوهه علال الفاسي وأحمد بلافريج، وحمل وثيقة المطالبة بالاستقلال المقدَّمة في 11 يناير 1944. أما الحركة الشعبية فأُحدثت سنة 1957، والتجمع الوطني للأحرار سنة 1978، والاتحاد الدستوري سنة 1983."
     }
    }
   },
@@ -4261,7 +4261,7 @@
    "sourceId": "src-toubkal",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4312,7 +4312,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4363,7 +4363,7 @@
    "sourceId": "src-hcp-rgph2024",
    "correctIndex": 0,
    "timeSensitive": true,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4414,7 +4414,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4465,7 +4465,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4516,7 +4516,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4567,7 +4567,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4618,7 +4618,7 @@
    "sourceId": "src-oumerrbia",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4669,7 +4669,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4720,7 +4720,7 @@
    "sourceId": "src-ct-decoupage",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4771,7 +4771,7 @@
    "sourceId": "src-ct-decoupage",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4822,7 +4822,7 @@
    "sourceId": "src-ct-decoupage",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4839,7 +4839,7 @@
      ],
      "correctIndex": 0,
      "correction": "Le chef-lieu de Souss-Massa est Agadir.",
-     "explanation": "La région comprend la préfecture d'Agadir Ida-Outanane et les provinces d'Inezgane-Aït Melloul, Chtouka-Aït Baha, Taroudant, Tiznit et Tata. Elle associe agriculture d'exportation, pêche et tourisme."
+     "explanation": "La région comprend les préfectures d'Agadir Ida-Outanane et d'Inezgane-Aït Melloul ainsi que les provinces de Chtouka-Aït Baha, Taroudant, Tiznit et Tata. Elle associe agriculture d'exportation, pêche et tourisme."
     },
     "ar": {
      "text": "ما هو مركز جهة سوس ماسة؟",
@@ -4851,7 +4851,7 @@
      ],
      "correctIndex": 0,
      "correction": "مركز جهة سوس ماسة هو أكادير.",
-     "explanation": "تضم الجهة عمالة أكادير إداوتنان وأقاليم إنزكان آيت ملول وشتوكة آيت باها وتارودانت وتيزنيت وطاطا، وتجمع بين الفلاحة التصديرية والصيد البحري والسياحة."
+     "explanation": "تضم الجهة عمالتي أكادير إداوتنان وإنزكان آيت ملول وأقاليم شتوكة آيت باها وتارودانت وتيزنيت وطاطا، وتجمع بين الفلاحة التصديرية والصيد البحري والسياحة."
     }
    }
   },
@@ -4873,7 +4873,7 @@
    "sourceId": "src-ct-decoupage",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4924,7 +4924,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -4975,7 +4975,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5026,7 +5026,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5077,7 +5077,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5128,7 +5128,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5179,7 +5179,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5230,7 +5230,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5281,7 +5281,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5332,7 +5332,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5342,26 +5342,26 @@
     "fr": {
      "text": "Le secteur primaire regroupe principalement :",
      "choices": [
-      "L'agriculture, la pêche, la forêt et les mines",
+      "L'agriculture, l'élevage, la pêche et l'exploitation forestière",
       "L'industrie manufacturière",
       "Les banques et les assurances",
       "Le commerce de détail"
      ],
      "correctIndex": 0,
-     "correction": "Le secteur primaire regroupe les activités d'extraction et de production de matières premières.",
-     "explanation": "Le secteur secondaire correspond à la transformation industrielle et à la construction ; le secteur tertiaire aux services, y compris le commerce, la banque, le transport et l'administration."
+     "correction": "Le secteur primaire regroupe l'agriculture, l'élevage, la pêche et l'exploitation forestière.",
+     "explanation": "Le secteur primaire rassemble les activités d'exploitation directe des ressources naturelles ; selon les nomenclatures, les industries extractives (mines) y sont rattachées ou classées dans le secondaire. Le secteur secondaire correspond à la transformation industrielle et à la construction ; le secteur tertiaire aux services, y compris le commerce, la banque, le transport et l'administration."
     },
     "ar": {
      "text": "يضم القطاع الأولي أساسًا:",
      "choices": [
-      "الفلاحة والصيد والغابة والمعادن",
+      "الفلاحة وتربية الماشية والصيد البحري واستغلال الغابات",
       "الصناعة التحويلية",
       "الأبناك والتأمينات",
       "تجارة التقسيط"
      ],
      "correctIndex": 0,
-     "correction": "يضم القطاع الأولي أنشطة الاستخراج وإنتاج المواد الأولية.",
-     "explanation": "أما القطاع الثاني فيقابل التحويل الصناعي والبناء، والقطاع الثالث يشمل الخدمات بما فيها التجارة والأبناك والنقل والإدارة."
+     "correction": "يضم القطاع الأولي الفلاحة وتربية الماشية والصيد البحري واستغلال الغابات.",
+     "explanation": "يضم القطاع الأولي أنشطة الاستغلال المباشر للموارد الطبيعية، وحسب التصنيفات تُلحق الصناعات الاستخراجية (المناجم) به أو بالقطاع الثانوي. أما القطاع الثانوي فيقابل التحويل الصناعي والبناء، والقطاع الثالثي يشمل الخدمات بما فيها التجارة والأبناك والنقل والإدارة."
     }
    }
   },
@@ -5383,7 +5383,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5434,7 +5434,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5446,12 +5446,12 @@
      "choices": [
       "Le zellige",
       "Le tadelakt",
-      "Le sgraffito",
+      "La gebs (plâtre sculpté)",
       "La marqueterie de thuya"
      ],
      "correctIndex": 0,
      "correction": "Il s'agit du zellige.",
-     "explanation": "Le zellige orne fontaines, murs et sols dans l'architecture marocaine, notamment à Fès et Meknès. Le tadelakt est un enduit de chaux poli, et la marqueterie de thuya une spécialité d'Essaouira."
+     "explanation": "Le zellige orne fontaines, murs et sols dans l'architecture marocaine, notamment à Fès et Meknès. Le tadelakt est un enduit de chaux poli, la gebs un décor de plâtre ciselé et la marqueterie de thuya une spécialité d'Essaouira."
     },
     "ar": {
      "text": "أي فن زخرفي مغربي يقوم على تركيب قطع خزفية منحوتة في أشكال هندسية؟",
@@ -5463,7 +5463,7 @@
      ],
      "correctIndex": 0,
      "correction": "إنه الزليج.",
-     "explanation": "يزيّن الزليج النافورات والجدران والأرضيات في العمارة المغربية، خاصة بفاس ومكناس. أما التادلاكت فطلاء جيري مصقول، وتطعيم خشب العرعار من اختصاصات الصويرة."
+     "explanation": "يزيّن الزليج النافورات والجدران والأرضيات في العمارة المغربية، خاصة بفاس ومكناس. أما التادلاكت فطلاء جيري مصقول، والحفر على الجبس زخرفة جصية منقوشة، وتطعيم خشب العرعار من اختصاصات الصويرة."
     }
    }
   },
@@ -5485,7 +5485,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5536,7 +5536,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5587,7 +5587,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5635,10 +5635,10 @@
     "ofppt",
     "education"
    ],
-   "sourceId": "src-general",
+   "sourceId": "src-unesco-whc-444",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5646,7 +5646,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quel ksar de la vallée du Drâa, inscrit au patrimoine mondial, est célèbre pour son architecture en pisé ?",
+     "text": "Quel ksar de la province de Ouarzazate, au pied du versant sud du Haut Atlas, est inscrit au patrimoine mondial de l'UNESCO pour son architecture en terre ?",
      "choices": [
       "Aït-Ben-Haddou",
       "Chellah",
@@ -5655,10 +5655,10 @@
      ],
      "correctIndex": 0,
      "correction": "Il s'agit du ksar d'Aït-Ben-Haddou.",
-     "explanation": "Ce village fortifié en terre crue, près de Ouarzazate, illustre l'architecture présaharienne du sud marocain. Volubilis et Lixus sont des sites antiques, et Chellah une nécropole mérinide à Rabat."
+     "explanation": "Inscrit au patrimoine mondial en 1987, ce village fortifié en terre crue de la vallée de l'Ounila illustre l'architecture présaharienne du sud marocain ; il jalonnait une ancienne route caravanière transsaharienne. Volubilis et Lixus sont des sites antiques, et Chellah une nécropole mérinide à Rabat."
     },
     "ar": {
-     "text": "أي قصر بوادي درعة، مصنف ضمن التراث العالمي، اشتهر بعمارته الترابية؟",
+     "text": "أيّ قصر بإقليم ورزازات، عند سفوح الأطلس الكبير الجنوبية، مصنف ضمن التراث العالمي لليونسكو بفضل عمارته الترابية؟",
      "choices": [
       "آيت بن حدو",
       "شالة",
@@ -5667,7 +5667,7 @@
      ],
      "correctIndex": 0,
      "correction": "إنه قصر آيت بن حدو.",
-     "explanation": "هذا القصر المحصن المبني بالتراب قرب ورزازات يجسّد العمارة شبه الصحراوية بجنوب المغرب. أما وليلي وليكسوس فموقعان أثريان قديمان، وشالة مقبرة مرينية بالرباط."
+     "explanation": "صُنّف هذا القصر المحصّن المبني بالتراب، الواقع بوادي أونيلة، ضمن التراث العالمي سنة 1987، وهو يجسّد العمارة شبه الصحراوية بجنوب المغرب، وكان محطة على إحدى طرق القوافل العابرة للصحراء. أما وليلي وليكسوس فموقعان أثريان قديمان، وشالة مقبرة مرينية بالرباط."
     }
    }
   },
@@ -5689,7 +5689,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5740,7 +5740,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5791,7 +5791,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5842,7 +5842,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5893,7 +5893,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5901,28 +5901,28 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quelle est la principale conséquence géographique du barrage vert et des programmes de reboisement au Maroc ?",
+     "text": "Quel est l'objectif géographique principal des programmes de reboisement et de fixation des dunes menés au Maroc, comme la stratégie « Forêts du Maroc 2020-2030 » ?",
      "choices": [
-      "Lutter contre l'érosion et l'avancée de la désertification",
+      "Lutter contre l'érosion des sols et la désertification",
       "Augmenter la production de pétrole",
       "Créer de nouvelles îles",
       "Modifier le tracé des frontières"
      ],
      "correctIndex": 0,
-     "correction": "Ils visent à lutter contre l'érosion et la désertification.",
-     "explanation": "Le couvert végétal fixe les sols, ralentit le ruissellement, limite l'envasement des barrages et protège les terres agricoles du sud et de l'est du pays, particulièrement exposées à l'aridité."
+     "correction": "Ils visent à lutter contre l'érosion des sols et la désertification.",
+     "explanation": "Le couvert végétal fixe les sols, ralentit le ruissellement, limite l'envasement des barrages, freine l'ensablement et protège les terres agricoles, notamment dans le sud et l'est du pays, particulièrement exposés à l'aridité."
     },
     "ar": {
-     "text": "ما هي النتيجة الجغرافية الأساسية للحزام الأخضر وبرامج التشجير بالمغرب؟",
+     "text": "ما هو الهدف الجغرافي الأساسي لبرامج التشجير وتثبيت الكثبان الرملية التي ينجزها المغرب، مثل استراتيجية «غابات المغرب 2020-2030»؟",
      "choices": [
-      "محاربة التعرية وزحف التصحر",
+      "محاربة تعرية التربة والتصحر",
       "رفع إنتاج البترول",
       "خلق جزر جديدة",
       "تغيير مسار الحدود"
      ],
      "correctIndex": 0,
-     "correction": "تهدف إلى محاربة التعرية والتصحر.",
-     "explanation": "يثبّت الغطاء النباتي التربة ويبطئ الجريان السطحي ويحد من توحّل السدود ويحمي الأراضي الفلاحية بجنوب البلاد وشرقها، وهي الأكثر تعرضًا للجفاف."
+     "correction": "تهدف إلى محاربة تعرية التربة والتصحر.",
+     "explanation": "يثبّت الغطاء النباتي التربة ويبطئ الجريان السطحي ويحدّ من توحّل السدود ومن زحف الرمال، ويحمي الأراضي الفلاحية، خاصة بجنوب البلاد وشرقها الأكثر تعرضًا للجفاف."
     }
    }
   },
@@ -5944,7 +5944,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -5995,7 +5995,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6043,10 +6043,10 @@
     "ofppt",
     "education"
    ],
-   "sourceId": "src-general",
+   "sourceId": "src-hcp-rgph2024",
    "correctIndex": 0,
-   "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "timeSensitive": true,
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6063,7 +6063,7 @@
      ],
      "correctIndex": 0,
      "correction": "Casablanca est le premier pôle économique et la ville la plus peuplée.",
-     "explanation": "Casablanca concentre le principal port de commerce du pays, la Bourse, le siège de nombreuses banques et une part importante de l'industrie nationale."
+     "explanation": "Selon le recensement général de 2024, Casablanca reste la ville la plus peuplée du Royaume. Elle concentre un grand port de commerce, la Bourse, le siège de nombreuses banques et une part importante de l'industrie nationale."
     },
     "ar": {
      "text": "أي مدينة مغربية تُعد القطب الاقتصادي الأول والأكثر سكانًا بالمملكة؟",
@@ -6075,7 +6075,7 @@
      ],
      "correctIndex": 0,
      "correction": "الدار البيضاء هي القطب الاقتصادي الأول والمدينة الأكثر سكانًا.",
-     "explanation": "تتركز بالدار البيضاء أهم موانئ التجارة بالبلاد والبورصة ومقرات عدد كبير من الأبناك وجزء مهم من الصناعة الوطنية."
+     "explanation": "حسب الإحصاء العام لسنة 2024، تظل الدار البيضاء المدينة الأكثر سكانًا بالمملكة. وتضم ميناءً تجاريًا كبيرًا والبورصة ومقرات عدد كبير من الأبناك وجزءًا مهمًا من الصناعة الوطنية."
     }
    }
   },
@@ -6097,7 +6097,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6148,7 +6148,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6199,7 +6199,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6250,7 +6250,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6296,8 +6296,8 @@
    ],
    "sourceId": "src-general",
    "correctIndex": 0,
-   "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "timeSensitive": true,
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6314,7 +6314,7 @@
      ],
      "correctIndex": 0,
      "correction": "Le 15 est le numéro de la Protection Civile.",
-     "explanation": "Au Maroc, le 15 correspond aux secours de la Protection Civile, le 19 à la police secours en milieu urbain et le 177 à la Gendarmerie Royale. Le 112 est un numéro d'urgence européen également accessible depuis certains réseaux."
+     "explanation": "Au Maroc, le 15 correspond aux secours de la Protection Civile (sapeurs-pompiers et secours aux victimes), le 19 à la police secours et le 177 à la Gendarmerie Royale. Le 112, numéro d'urgence européen, n'est pas le numéro dédié à la Protection Civile au Maroc."
     },
     "ar": {
      "text": "ما هو الرقم الذي يُطلب بالمغرب للاتصال بالوقاية المدنية؟",
@@ -6326,7 +6326,7 @@
      ],
      "correctIndex": 0,
      "correction": "الرقم 15 هو رقم الوقاية المدنية.",
-     "explanation": "بالمغرب يقابل الرقم 15 نجدة الوقاية المدنية، والرقم 19 نجدة الشرطة بالوسط الحضري، والرقم 177 الدرك الملكي. أما 112 فرقم استعجالي أوروبي يمكن الوصول إليه أيضًا من بعض الشبكات."
+     "explanation": "بالمغرب يقابل الرقم 15 نجدة الوقاية المدنية (الإطفاء وإسعاف الضحايا)، والرقم 19 نجدة الشرطة، والرقم 177 الدرك الملكي. أما الرقم 112، وهو رقم استعجالي أوروبي، فليس الرقم المخصص للوقاية المدنية بالمغرب."
     }
    }
   },
@@ -6343,8 +6343,8 @@
    ],
    "sourceId": "src-general",
    "correctIndex": 0,
-   "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "timeSensitive": true,
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6391,7 +6391,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6438,7 +6438,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6485,7 +6485,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6536,7 +6536,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6587,7 +6587,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6638,7 +6638,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6689,7 +6689,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6737,10 +6737,10 @@
     "ofppt",
     "education"
    ],
-   "sourceId": "src-general",
+   "sourceId": "src-yennayer-ferie",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6757,7 +6757,7 @@
      ],
      "correctIndex": 0,
      "correction": "Il s'agit de Yennayer.",
-     "explanation": "Yennayer marque le début de l'année agricole amazighe et donne lieu à des repas et rituels traditionnels. Il est reconnu comme jour férié national au Maroc. Achoura et Aïd Al-Mawlid relèvent, elles, du calendrier hégirien."
+     "explanation": "Yennayer marque le début de l'année agricole amazighe. Décrété fête nationale par le Roi en mai 2023, il est jour férié payé depuis le 14 janvier 2024, date retenue par le gouvernement. Achoura et Aïd Al-Mawlid relèvent, eux, du calendrier hégirien."
     },
     "ar": {
      "text": "أي احتفال يخلّد رأس السنة الأمازيغية في شهر يناير من كل سنة؟",
@@ -6769,7 +6769,7 @@
      ],
      "correctIndex": 0,
      "correction": "إنه ينّاير.",
-     "explanation": "يخلّد ينّاير بداية السنة الفلاحية الأمازيغية وتصاحبه وجبات وطقوس تقليدية، وهو معترف به عطلة وطنية بالمغرب. أما عاشوراء وعيد المولد فيتبعان التقويم الهجري."
+     "explanation": "يخلّد ينّاير بداية السنة الفلاحية الأمازيغية. وقد قرر الملك في ماي 2023 اعتماده عيدًا وطنيًا رسميًا، وأصبح يوم عطلة مؤدى عنها ابتداءً من 14 يناير 2024، وهو التاريخ الذي اعتمدته الحكومة. أما عاشوراء وعيد المولد فيتبعان التقويم الهجري."
     }
    }
   },
@@ -6791,7 +6791,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6839,10 +6839,10 @@
     "ofppt",
     "education"
    ],
-   "sourceId": "src-general",
+   "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6859,7 +6859,7 @@
      ],
      "correctIndex": 0,
      "correction": "L'âge minimum pour voter est de 18 ans.",
-     "explanation": "L'inscription sur les listes électorales est la condition pratique de l'exercice du droit de vote. Les conditions d'éligibilité, elles, peuvent exiger un âge supérieur selon le type de scrutin."
+     "explanation": "L'article 30 de la Constitution reconnaît la qualité d'électeur aux citoyennes et citoyens majeurs jouissant de leurs droits civils et politiques ; la loi n° 57-11 relative aux listes électorales générales fixe l'âge d'inscription à 18 ans révolus. L'inscription sur les listes électorales est la condition pratique de l'exercice du droit de vote."
     },
     "ar": {
      "text": "ما هو السن الأدنى للتصويت في الانتخابات بالمغرب؟",
@@ -6871,7 +6871,7 @@
      ],
      "correctIndex": 0,
      "correction": "السن الأدنى للتصويت هو 18 سنة.",
-     "explanation": "التقييد في اللوائح الانتخابية شرط عملي لممارسة حق التصويت. أما شروط الترشح فقد تتطلب سنًّا أعلى حسب نوع الاقتراع."
+     "explanation": "يخوّل الفصل 30 من الدستور صفة الناخب للمواطنات والمواطنين الراشدين المتمتعين بحقوقهم المدنية والسياسية، ويحدد القانون رقم 57.11 المتعلق باللوائح الانتخابية العامة سن التقييد في 18 سنة شمسية كاملة. والتقييد في اللوائح الانتخابية شرط عملي لممارسة حق التصويت."
     }
    }
   },
@@ -6893,7 +6893,7 @@
    "sourceId": "src-constitution-2011",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6944,7 +6944,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -6995,7 +6995,7 @@
    "sourceId": "src-emploi-public",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",

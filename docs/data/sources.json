@@ -279,6 +279,66 @@
       "lastVerified": "2026-10-10",
       "validFrom": null,
       "validUntil": null
+    },
+    {
+      "id": "src-onu-ares-1111",
+      "title": "Résolution A/RES/1111 (XI) — Admission du Maroc à l'Organisation des Nations unies (12 novembre 1956)",
+      "org": "Assemblée générale des Nations unies",
+      "url": "https://digitallibrary.un.org/record/207993",
+      "topic": "Adhésion du Maroc à l'ONU",
+      "reliability": "primary",
+      "accessed": "2026-10-10",
+      "lastVerified": "2026-10-10",
+      "validFrom": null,
+      "validUntil": null
+    },
+    {
+      "id": "src-us-morocco-treaty-1786",
+      "title": "The First U.S. Legation — Moroccan-American Treaty of Peace and Friendship (1786)",
+      "org": "U.S. Department of State, Office of Cultural Heritage",
+      "url": "https://oboculturalheritage.state.gov/?p=21138",
+      "topic": "Traité maroco-américain de 1786",
+      "reliability": "primary",
+      "accessed": "2026-10-10",
+      "lastVerified": "2026-10-10",
+      "validFrom": null,
+      "validUntil": null
+    },
+    {
+      "id": "src-istiqlal",
+      "title": "Istiqlal (political party, Morocco)",
+      "org": "Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/topic/Istiqlal",
+      "topic": "Fondation du Parti de l'Istiqlal (10 décembre 1943)",
+      "reliability": "reference",
+      "accessed": "2026-10-10",
+      "lastVerified": "2026-10-10",
+      "validFrom": null,
+      "validUntil": null
+    },
+    {
+      "id": "src-unesco-whc-444",
+      "title": "Ksar of Ait-Ben-Haddou (World Heritage List n° 444)",
+      "org": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/444/",
+      "topic": "Patrimoine mondial, province de Ouarzazate",
+      "reliability": "primary",
+      "accessed": "2026-10-10",
+      "lastVerified": "2026-10-10",
+      "validFrom": null,
+      "validUntil": null
+    },
+    {
+      "id": "src-yennayer-ferie",
+      "title": "Nouvel An amazigh : le 14 janvier désormais jour férié national officiellement rémunéré",
+      "org": "TelQuel",
+      "url": "https://telquel.ma/instant-t/2023/08/07/nouvel-an-amazigh-le-14-janvier-desormais-jour-ferie-national-officiellement-remunere_1825156/",
+      "topic": "Yennayer, jours fériés",
+      "reliability": "secondary",
+      "accessed": "2026-10-10",
+      "lastVerified": "2026-10-10",
+      "validFrom": null,
+      "validUntil": null
     }
   ]
 }
