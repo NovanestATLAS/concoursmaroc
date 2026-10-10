@@ -5,6 +5,7 @@ import { linker, faqLd } from '../layout.mjs';
 import { t } from '../strings.mjs';
 import { concoursCard, guidePath } from './concours.mjs';
 import { GROUPS, SUBJECTS } from '../../../content/taxonomy.mjs';
+import { qcmPath } from './qcm.mjs';
 import { CALENDAR } from '../../../content/calendar.mjs';
 import { deadlineItem } from './tools.mjs';
 
@@ -149,7 +150,7 @@ export function buildHome(site, all, lang, banks) {
 
 <section class="section"><div class="container">
 <div class="section-head"><div><h2>${x.practiceH}</h2><p>${x.practiceLead}</p></div><a class="btn" href="${link(pfx + 'entrainement/')}">${icon('play')} ${x.ctaPractice}</a></div>
-<div class="chips">${SUBJECTS.filter((s) => (banks[s.id] || []).length).map((s) => html`<a class="chip" href="${link(pfx + 'qcm/' + s.slug + '/')}">${s[lang]} · ${(banks[s.id] || []).length}</a>`)}</div>
+<div class="chips">${SUBJECTS.filter((s) => (banks[s.id] || []).length).map((s) => html`<a class="chip" href="${link(qcmPath(s, lang, banks))}">${s[lang]} · ${(banks[s.id] || []).length}</a>`)}</div>
 </div></section>
 
 <section class="section"><div class="container">

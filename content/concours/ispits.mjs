@@ -39,7 +39,7 @@ export default {
   fr: {
     short: 'ISPITS (infirmiers)',
     name: 'Instituts Supérieurs des Professions Infirmières et Techniques de Santé (ISPITS)',
-    title: 'Concours ISPITS 2027 : infirmier, sage-femme, techniques de santé — conditions et épreuves',
+    title: 'Concours ISPITS 2027 : infirmier, sage-femme — conditions et épreuves',
     description: "Concours d'accès aux ISPITS : filières (infirmier polyvalent, sage-femme, kinésithérapie, radiologie…), bacs acceptés, présélection 75/25, épreuves, nombre de places et calendrier.",
     keywords: ['concours ispits', 'ispits', 'concours infirmier maroc', 'sage femme', 'kinésithérapie', 'ispits sante gov ma'],
     intro: "Les **ISPITS** forment en 3 ans (licence) les infirmiers, sages-femmes et techniciens de santé du secteur public. Le concours, ouvert aux bacheliers de l'année et de l'année précédente, combine une **présélection sur les notes du bac (75 % national + 25 % régional)** et une **épreuve écrite** ; près de **5 000 places** ont été annoncées pour 2026.",

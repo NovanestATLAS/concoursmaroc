@@ -22,7 +22,7 @@ export default {
   fr: {
     short: 'CNC (après prépa)',
     name: "Concours National Commun d'accès aux écoles d'ingénieurs (CNC)",
-    title: 'CNC Maroc 2027 : écoles, épreuves, places et calendrier du Concours National Commun',
+    title: 'CNC Maroc 2027 : écoles, épreuves, places et calendrier',
     description: "Le CNC permet aux élèves de CPGE (MP, PSI, TSI) d'intégrer les grandes écoles d'ingénieurs marocaines : conditions, épreuves écrites et TIPE, écoles et places, calendrier.",
     keywords: ['cnc maroc', 'concours national commun', 'cnc 2027', 'écoles ingénieurs maroc', 'tipe'],
     intro: "Le **Concours National Commun (CNC)** clôt les deux années de classes préparatoires scientifiques. Il donne accès aux **grandes écoles d'ingénieurs** publiques (EMI, EHTP, ENSIAS, INPT, INSEA, ENSMR, ENSAM, ENSA en cycle ingénieur…) selon le rang obtenu.",

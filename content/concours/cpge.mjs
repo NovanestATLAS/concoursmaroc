@@ -25,7 +25,7 @@ export default {
   fr: {
     short: 'CPGE (classes prépas)',
     name: 'Classes Préparatoires aux Grandes Écoles (CPGE)',
-    title: 'CPGE Maroc 2027 : filières, conditions, inscription et accès aux grandes écoles',
+    title: 'CPGE Maroc 2027 : filières, conditions et inscription',
     description: "Classes préparatoires au Maroc : filières MPSI, PCSI, TSI, ECS et ECT, bacs acceptés, conditions de mention et d'âge, inscription sur cpge.ac.ma, listes d'attente et concours CNC/CNAEM.",
     keywords: ['cpge maroc', 'classes préparatoires', 'inscription cpge', 'mpsi', 'pcsi', 'tsi', 'ecs', 'ect', 'cpge.ac.ma'],
     intro: "Les **CPGE** préparent en deux ans aux concours des grandes écoles d'ingénieurs (via le **CNC**) et de commerce (via le **CNAEM**). L'admission se fait **sur dossier**, sans concours, au classement des moyennes du bac et selon des quotas par série, sur la plateforme **cpge.ac.ma**.",
@@ -101,7 +101,7 @@ export default {
   ar: {
     short: 'الأقسام التحضيرية',
     name: 'الأقسام التحضيرية للمدارس العليا (CPGE)',
-    title: 'الأقسام التحضيرية بالمغرب 2027: المسالك، الشروط، الترشيح والولوج إلى المدارس الكبرى',
+    title: 'الأقسام التحضيرية بالمغرب 2027: المسالك والشروط والترشيح',
     description: 'الأقسام التحضيرية للمدارس العليا: مسالك MPSI وPCSI وTSI وECS وECT، الشعب المقبولة، شروط الميزة والسن، الترشيح عبر cpge.ac.ma ولوائح الانتظار.',
     keywords: ['الأقسام التحضيرية', 'CPGE'],
     intro: 'تحضّر **الأقسام التحضيرية** في سنتين لمباريات مدارس المهندسين (عبر **المباراة الوطنية المشتركة CNC**) ومدارس التسيير (عبر **CNAEM**). يتم القبول **بالملف** حسب ترتيب معدلات البكالوريا وحصص المقاعد، عبر منصة **cpge.ac.ma**.',

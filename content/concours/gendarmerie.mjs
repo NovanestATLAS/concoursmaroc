@@ -23,7 +23,7 @@ export default {
   fr: {
     short: 'Gendarmerie Royale',
     name: 'Gendarmerie Royale — recrutement des élèves-gendarmes',
-    title: 'Concours Gendarmerie Royale 2027 : élèves-gendarmes — âge, taille, bac, épreuves',
+    title: 'Concours Gendarmerie Royale 2027 : âge, taille, bac et épreuves',
     description: "Recrutement des élèves-gendarmes de la Gendarmerie Royale : bac de l'année ou précédente, 18–24 ans, taille minimale, célibat, présélection, tests médicaux, psychotechniques et sportifs.",
     keywords: ['concours gendarmerie royale', 'élève gendarme', 'recrutement gr ma', 'gendarmerie maroc'],
     intro: "La **Gendarmerie Royale** recrute des **élèves-gendarmes** parmi les **bacheliers** de **18 à 24 ans**, toutes séries confondues. Pour 2026, **1 500 postes** ont été annoncés, avec une préinscription au printemps sur **recrutement.gr.ma**.",

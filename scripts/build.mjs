@@ -134,11 +134,18 @@ async function main() {
     subjects: c.practice.subjects, mock: c.practice.mock || null,
     guide: { fr: guidePath(c, 'fr'), ar: c.ar ? guidePath(c, 'ar') : guidePath(c, 'fr') },
   }));
+  // Where candidates register (platform field, else the "Inscription" fact of the guide).
+  const platformOf = (c) => {
+    if (c.platform) return c.platform.label;
+    const f = (c.fr.facts || []).find(([k]) => /^(Inscription|Candidature|Plateforme)$/.test(k));
+    return f ? f[1] : null;
+  };
   const toolsConcours = all.map((c) => ({
     id: c.id, group: c.group, level: c.level, type: c.type, bac: c.bac || [], seuils: c.seuils || null, age: c.age || null,
     noBac: !!c.noBac, name: { fr: c.fr.name, ar: (c.ar || c.fr).name }, short: { fr: c.fr.short, ar: (c.ar || c.fr).short },
     guide: { fr: guidePath(c, 'fr'), ar: c.ar ? guidePath(c, 'ar') : guidePath(c, 'fr') },
     practice: c.practice ? { subjects: c.practice.subjects } : null,
+    platform: platformOf(c),
     calendar: c.calendar || [],
   }));
   write('data/concours.json', JSON.stringify({ updated: site.updated, groups: GROUPS, subjects: SUBJECTS, bac: BAC, concours: practiceConcours }));

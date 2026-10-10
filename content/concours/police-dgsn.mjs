@@ -23,7 +23,7 @@ export default {
   fr: {
     short: 'Police (DGSN)',
     name: 'Direction Générale de la Sûreté Nationale (DGSN) — concours de la police',
-    title: 'Concours police DGSN 2026-2027 : gardien de la paix, inspecteur, officier — conditions',
+    title: 'Concours police DGSN 2026-2027 : grades, conditions et épreuves',
     description: "Concours de la Sûreté Nationale : postes (gardiens de la paix, inspecteurs, officiers, commissaires), diplôme, âge 21–30 ans, taille, épreuves écrites, sportives et orales, calendrier (écrits annoncés le 22 novembre 2026).",
     keywords: ['concours police', 'concours dgsn', 'gardien de la paix maroc', 'inspecteur de police', 'concours dgsn gov ma', 'مباراة الأمن الوطني'],
     intro: "La **DGSN** recrute chaque année plusieurs milliers de policiers par concours : **gardiens de la paix** (niveau **bac**), **inspecteurs**, **officiers de police**, **officiers de paix** et **commissaires** (diplômes supérieurs). Pour 2026, **8 427 postes** ont été annoncés, avec des écrits relayés pour le **22 novembre 2026**.",

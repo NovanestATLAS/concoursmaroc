@@ -1,0 +1,454 @@
+# Culture générale du monde : géographie, histoire, sciences, organisations
+# internationales, arts, sport (concours ENCG, ISCAE, ISIC, ISIT, police…).
+@category culture
+@source src-general
+
+[CUL-001] geographie | beginner
+Q: Quel est le plus long fleuve d'Afrique ?
+* Le Nil
+- Le Congo
+- Le Niger
+- Le Zambèze
+C: Le Nil.
+E: Le Nil (environ 6 650 km) traverse notamment l'Ouganda, le Soudan et l'Égypte avant de se jeter dans la Méditerranée.
+
+[CUL-002] geographie | beginner
+Q: Quel est le plus grand océan du monde ?
+* L'océan Pacifique
+- L'océan Atlantique
+- L'océan Indien
+- L'océan Arctique
+C: Le Pacifique.
+E: Il couvre environ un tiers de la surface de la Terre, davantage que l'ensemble des terres émergées.
+
+[CUL-003] geographie | beginner
+Q: Quelle est la capitale du Canada ?
+* Ottawa
+- Toronto
+- Montréal
+- Vancouver
+C: Ottawa.
+E: Toronto est la plus grande ville du pays, mais la capitale fédérale est Ottawa, dans la province de l'Ontario.
+
+[CUL-004] geographie | intermediate
+Q: Quel est le plus vaste pays d'Afrique ?
+* L'Algérie
+- La République démocratique du Congo
+- Le Soudan
+- La Libye
+C: L'Algérie (environ 2,38 millions de km²).
+E: Depuis l'indépendance du Soudan du Sud en 2011, l'Algérie est le plus grand pays d'Afrique, devant la RD Congo.
+
+[CUL-005] geographie | beginner
+Q: Quelle est la plus haute montagne du monde ?
+* L'Everest
+- Le K2
+- Le Kilimandjaro
+- Le mont Blanc
+C: L'Everest (environ 8 849 m).
+E: Il se situe dans l'Himalaya, à la frontière entre le Népal et la Chine. Le K2 (8 611 m) est le deuxième sommet du monde.
+
+[CUL-006] geographie | intermediate
+Q: Quel est le plus haut sommet d'Afrique ?
+* Le Kilimandjaro
+- Le Toubkal
+- Le mont Kenya
+- Le Ras Dashen
+C: Le Kilimandjaro (5 895 m), en Tanzanie.
+E: Le Toubkal (4 167 m), dans le Haut Atlas, est le plus haut sommet du Maroc et d'Afrique du Nord.
+
+[CUL-007] geographie | intermediate
+Q: Quel est le plus grand désert chaud du monde ?
+* Le Sahara
+- Le Kalahari
+- Le désert de Gobi
+- Le désert d'Arabie
+C: Le Sahara.
+E: Il couvre environ 9 millions de km² en Afrique du Nord. L'Antarctique, désert froid, est encore plus vaste.
+
+[CUL-008] geographie | intermediate
+Q: Quelle est la capitale de l'Australie ?
+* Canberra
+- Sydney
+- Melbourne
+- Perth
+C: Canberra.
+E: Canberra a été construite pour être la capitale, entre les deux grandes villes rivales, Sydney et Melbourne.
+
+[CUL-009] geographie | intermediate
+Q: Lequel de ces pays est traversé par l'équateur ?
+* Le Kenya
+- L'Égypte
+- Le Maroc
+- L'Afrique du Sud
+C: Le Kenya.
+E: En Afrique, l'équateur traverse notamment le Gabon, le Congo, la RD Congo, l'Ouganda, le Kenya et la Somalie ; ailleurs, l'Équateur, la Colombie, le Brésil et l'Indonésie.
+
+[CUL-010] geographie | beginner
+Q: Quel canal relie la mer Méditerranée à la mer Rouge ?
+* Le canal de Suez
+- Le canal de Panama
+- Le canal de Corinthe
+- Le canal de Kiel
+C: Le canal de Suez.
+E: Inauguré en 1869 en Égypte, il évite aux navires de contourner l'Afrique. Le canal de Panama relie l'Atlantique au Pacifique.
+
+[CUL-011] histoire | beginner
+Q: En quelle année a commencé la Première Guerre mondiale ?
+* 1914
+- 1918
+- 1939
+- 1905
+C: 1914.
+E: La Première Guerre mondiale a duré de 1914 à 1918, la Seconde de 1939 à 1945.
+
+[CUL-012] histoire | beginner
+Q: En quelle année s'est achevée la Seconde Guerre mondiale ?
+* 1945
+- 1944
+- 1939
+- 1950
+C: 1945.
+E: Elle s'achève en Europe le 8 mai 1945 et en Asie le 2 septembre 1945, avec la capitulation du Japon.
+
+[CUL-013] histoire | intermediate
+Q: En quelle année le mur de Berlin est-il tombé ?
+* 1989
+- 1991
+- 1961
+- 1975
+C: Le 9 novembre 1989.
+E: Construit en 1961, le mur tombe en 1989 ; l'Allemagne est réunifiée en 1990 et l'URSS disparaît fin 1991.
+
+[CUL-014] histoire | beginner
+Q: Qui fut le premier homme à marcher sur la Lune ?
+* Neil Armstrong
+- Youri Gagarine
+- Buzz Aldrin
+- John Glenn
+C: Neil Armstrong (juillet 1969, mission Apollo 11).
+E: Buzz Aldrin l'a rejoint quelques minutes plus tard. Youri Gagarine fut, en 1961, le premier homme dans l'espace.
+
+[CUL-015] histoire | beginner
+Q: Quelle organisation internationale a été créée en 1945 pour maintenir la paix et la sécurité internationales ?
+* L'Organisation des Nations unies (ONU)
+- La Société des Nations
+- L'OTAN
+- L'Union africaine
+C: L'ONU.
+E: La Charte des Nations unies a été signée à San Francisco en juin 1945. La Société des Nations, créée après la Première Guerre mondiale, l'avait précédée.
+
+[CUL-016] organisations | beginner
+Q: Où se trouve le siège de l'ONU ?
+* À New York
+- À Genève
+- À Paris
+- À Bruxelles
+C: À New York.
+E: L'ONU a aussi des offices à Genève, Vienne et Nairobi. Paris accueille le siège de l'UNESCO.
+
+[CUL-017] organisations | intermediate
+Q: Combien de membres permanents compte le Conseil de sécurité de l'ONU ?
+* 5
+- 10
+- 15
+- 7
+C: 5 membres permanents.
+E: La Chine, les États-Unis, la France, le Royaume-Uni et la Russie disposent d'un droit de veto. Le Conseil compte 15 membres, dont 10 non permanents élus pour deux ans.
+
+[CUL-018] organisations | intermediate
+Q: Quelle institution spécialisée des Nations unies est chargée de la santé ?
+* L'OMS
+- L'UNESCO
+- La FAO
+- L'OIT
+C: L'Organisation mondiale de la santé.
+E: OMS : santé (siège à Genève). UNESCO : éducation, science et culture. FAO : alimentation et agriculture. OIT : travail.
+
+[CUL-019] organisations | intermediate
+Q: Où se trouve le siège de l'Union africaine ?
+* À Addis-Abeba (Éthiopie)
+- Au Caire (Égypte)
+- À Rabat (Maroc)
+- À Nairobi (Kenya)
+C: À Addis-Abeba.
+E: L'Union africaine a succédé en 2002 à l'Organisation de l'unité africaine (OUA), fondée en 1963 à Addis-Abeba.
+
+[CUL-020] organisations | intermediate
+Q: Que signifie le sigle FMI ?
+* Fonds monétaire international
+- Fédération mondiale de l'industrie
+- Fonds marocain d'investissement
+- Forum mondial des institutions
+C: Fonds monétaire international.
+E: Créé en 1944 par les accords de Bretton Woods, comme la Banque mondiale, le FMI veille à la stabilité du système monétaire international. Son siège est à Washington.
+
+[CUL-021] sciences | beginner
+Q: Qui a formulé la théorie de la relativité ?
+* Albert Einstein
+- Isaac Newton
+- Galilée
+- Marie Curie
+C: Albert Einstein.
+E: Relativité restreinte en 1905, relativité générale en 1915. Newton a formulé la loi de la gravitation universelle au XVIIᵉ siècle.
+
+[CUL-022] sciences | beginner
+Q: Qui a découvert la pénicilline en 1928 ?
+* Alexander Fleming
+- Louis Pasteur
+- Robert Koch
+- Marie Curie
+C: Alexander Fleming.
+E: Le médecin écossais a observé l'effet d'une moisissure (Penicillium) sur des bactéries. Pasteur est connu pour le vaccin contre la rage et la pasteurisation.
+
+[CUL-023] sciences | beginner
+Q: Quelle est la planète la plus proche du Soleil ?
+* Mercure
+- Vénus
+- Mars
+- La Terre
+C: Mercure.
+E: Ordre des planètes : Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune.
+
+[CUL-024] sciences | beginner
+Q: Quelle est la plus grande planète du système solaire ?
+* Jupiter
+- Saturne
+- La Terre
+- Neptune
+C: Jupiter.
+E: Jupiter est une planète géante gazeuse dont le diamètre vaut environ 11 fois celui de la Terre.
+
+[CUL-025] sciences | intermediate
+Q: Qui a publié en 1869 une classification périodique des éléments ?
+* Dmitri Mendeleïev
+- Antoine Lavoisier
+- John Dalton
+- Niels Bohr
+C: Mendeleïev.
+E: Le chimiste russe a classé les éléments par masse atomique croissante en laissant des cases vides pour des éléments alors inconnus, dont il a prédit les propriétés.
+
+[CUL-026] sciences | intermediate
+Q: Quel savant est l'auteur du « Canon de la médecine » (Al-Qanûn fi at-Tibb) ?
+* Ibn Sina (Avicenne)
+- Ibn Rochd (Averroès)
+- Al-Khwarizmi
+- Ibn Khaldoun
+C: Ibn Sina (Avicenne).
+E: Ce traité du début du XIᵉ siècle a été enseigné dans les universités européennes jusqu'au XVIIᵉ siècle.
+
+[CUL-027] sciences | intermediate
+Q: Le mot « algorithme » vient du nom de quel mathématicien ?
+* Al-Khwarizmi
+- Euclide
+- Pythagore
+- Ibn al-Haytham
+C: Al-Khwarizmi.
+E: Ce savant du IXᵉ siècle travaillait à Bagdad ; le titre de son traité (al-jabr) a aussi donné le mot « algèbre ».
+
+[CUL-028] histoire | intermediate
+Q: Quel penseur est l'auteur de la « Muqaddima » ?
+* Ibn Khaldoun
+- Ibn Battouta
+- Al-Idrissi
+- Ibn Rochd
+C: Ibn Khaldoun.
+E: Né à Tunis en 1332, il a notamment séjourné à Fès. La Muqaddima est considérée comme une œuvre fondatrice de l'histoire et de la sociologie.
+
+[CUL-029] histoire | intermediate
+Q: Le géographe Al-Idrissi, né à Ceuta, a réalisé vers 1154 une célèbre carte du monde pour :
+* Le roi Roger II de Sicile
+- Le calife Haroun al-Rachid
+- Le sultan Saladin
+- L'empereur Charlemagne
+C: Roger II de Sicile.
+E: Son ouvrage, souvent appelé « Livre de Roger » (Tabula Rogeriana), est l'une des représentations du monde les plus précises du Moyen Âge.
+
+[CUL-030] litterature | beginner
+Q: Qui a écrit « Les Misérables » ?
+* Victor Hugo
+- Émile Zola
+- Gustave Flaubert
+- Honoré de Balzac
+C: Victor Hugo (1862).
+E: Zola a écrit « Germinal », Flaubert « Madame Bovary » et Balzac « La Comédie humaine ».
+
+[CUL-031] litterature | intermediate
+Q: Quel écrivain égyptien a reçu le prix Nobel de littérature en 1988 ?
+* Naguib Mahfouz
+- Taha Hussein
+- Tawfiq al-Hakim
+- Ahmed Chawqi
+C: Naguib Mahfouz.
+E: Auteur de la « Trilogie du Caire », il est le premier écrivain de langue arabe récompensé par ce prix.
+
+[CUL-032] litterature | beginner
+Q: Qui est l'auteur de la pièce « Roméo et Juliette » ?
+* William Shakespeare
+- Molière
+- Jean Racine
+- Victor Hugo
+C: Shakespeare.
+E: Le dramaturge anglais (1564-1616) a aussi écrit « Hamlet », « Macbeth » et « Othello ». Molière est l'auteur du « Malade imaginaire ».
+
+[CUL-033] arts | beginner
+Q: Qui a peint « La Joconde » ?
+* Léonard de Vinci
+- Michel-Ange
+- Raphaël
+- Pablo Picasso
+C: Léonard de Vinci.
+E: Peinte au début du XVIᵉ siècle, elle est exposée au musée du Louvre à Paris. Michel-Ange a peint le plafond de la chapelle Sixtine.
+
+[CUL-034] arts | intermediate
+Q: Quel peintre a réalisé « Guernica » en 1937 ?
+* Pablo Picasso
+- Salvador Dalí
+- Joan Miró
+- Henri Matisse
+C: Picasso.
+E: L'œuvre dénonce le bombardement de la ville basque de Guernica pendant la guerre d'Espagne. Elle est conservée au musée Reina Sofía, à Madrid.
+
+[CUL-035] sport | beginner
+Q: Les Jeux olympiques d'été ont lieu :
+* Tous les quatre ans
+- Tous les deux ans
+- Tous les cinq ans
+- Chaque année
+C: Tous les quatre ans.
+E: Les Jeux d'été et d'hiver alternent tous les deux ans. Paris a accueilli les Jeux d'été en 2024 ; Los Angeles les accueillera en 2028.
+
+[CUL-036] sport | intermediate | ts
+Q: Quel athlète marocain a établi en 1998 le record du monde du 1 500 m (3 min 26 s 00) ?
+* Hicham El Guerrouj
+- Saïd Aouita
+- Brahim Boutayeb
+- Khalid Skah
+C: Hicham El Guerrouj.
+E: Établi à Rome le 14 juillet 1998, ce record tenait toujours en 2026. El Guerrouj a aussi remporté le 1 500 m et le 5 000 m aux Jeux d'Athènes en 2004.
+
+[CUL-037] sport | intermediate
+Q: Quelle athlète marocaine, victorieuse du 400 m haies aux Jeux de Los Angeles en 1984, est devenue la première championne olympique arabe et musulmane ?
+* Nawal El Moutawakel
+- Hasna Benhassi
+- Nezha Bidouane
+- Zhor El Kamch
+C: Nawal El Moutawakel.
+E: Elle a été la première médaillée d'or olympique de l'histoire du Maroc, quelques jours avant Saïd Aouita (5 000 m). Elle a ensuite été ministre de la Jeunesse et des Sports et membre du CIO.
+
+[CUL-038] sport | beginner
+Q: En 2022, le Maroc est devenu la première sélection africaine et arabe à atteindre les demi-finales de la Coupe du monde de football. Dans quel pays se déroulait cette édition ?
+* Au Qatar
+- En Russie
+- En Afrique du Sud
+- Au Brésil
+C: Au Qatar.
+E: Les Lions de l'Atlas ont terminé 4ᵉ du tournoi après avoir éliminé l'Espagne puis le Portugal.
+
+[CUL-039] sport | intermediate
+Q: Quels pays organisent ensemble la Coupe du monde de football 2030 ?
+* Le Maroc, l'Espagne et le Portugal
+- Le Maroc et l'Algérie
+- L'Espagne et la France
+- Le Maroc et l'Égypte
+C: Maroc, Espagne et Portugal.
+E: La FIFA a officialisé ce choix en décembre 2024. Trois matchs d'ouverture se joueront en Uruguay, en Argentine et au Paraguay pour célébrer le centenaire de la compétition.
+
+[CUL-040] economie-monde | beginner
+Q: Quelle est la monnaie du Japon ?
+* Le yen
+- Le yuan
+- Le won
+- Le ringgit
+C: Le yen.
+E: Le yuan (renminbi) est la monnaie de la Chine, le won celle de la Corée du Sud et le ringgit celle de la Malaisie.
+
+[CUL-041] organisations | intermediate
+Q: Quelle ville accueille le siège de la Commission européenne ?
+* Bruxelles
+- Strasbourg
+- Luxembourg
+- Genève
+C: Bruxelles.
+E: Le Parlement européen tient ses sessions plénières à Strasbourg, mais la Commission et le Conseil de l'Union européenne siègent à Bruxelles. Genève n'est pas dans l'Union européenne.
+
+[CUL-042] environnement | intermediate
+Q: Quelle ville marocaine a accueilli la COP22 sur le climat en 2016 ?
+* Marrakech
+- Rabat
+- Casablanca
+- Tanger
+C: Marrakech.
+E: La COP22 s'est tenue en novembre 2016, un an après l'accord de Paris (COP21). Marrakech avait déjà accueilli la COP7 en 2001.
+
+[CUL-043] environnement | intermediate
+Q: Quel accord international adopté en 2015 vise à contenir le réchauffement climatique « nettement en dessous de 2 °C » ?
+* L'accord de Paris
+- Le protocole de Kyoto
+- Le protocole de Montréal
+- La convention de Ramsar
+C: L'accord de Paris (COP21).
+E: Le protocole de Kyoto (1997) fixait des réductions d'émissions aux pays industrialisés ; celui de Montréal (1987) protège la couche d'ozone ; la convention de Ramsar protège les zones humides.
+
+[CUL-044] numerique | beginner
+Q: Que signifie le sigle « IA » ?
+* Intelligence artificielle
+- Interface automatique
+- Information analogique
+- Internet avancé
+C: Intelligence artificielle.
+E: L'IA regroupe les techniques qui permettent à des machines d'accomplir des tâches associées à l'intelligence humaine : reconnaissance d'images, traduction, génération de texte…
+
+[CUL-045] numerique | intermediate
+Q: Qui est considéré comme l'inventeur du World Wide Web ?
+* Tim Berners-Lee
+- Bill Gates
+- Steve Jobs
+- Alan Turing
+C: Tim Berners-Lee.
+E: Chercheur au CERN, près de Genève, il a conçu le Web (HTTP, HTML, URL) entre 1989 et 1991. Internet, le réseau, existait déjà avant lui.
+
+[CUL-046] histoire | intermediate
+Q: Quel pays a été le premier à envoyer un homme dans l'espace, en 1961 ?
+* L'URSS
+- Les États-Unis
+- La Chine
+- La France
+C: L'URSS, avec Youri Gagarine.
+E: Le 12 avril 1961, Gagarine a fait le tour de la Terre à bord de Vostok 1. Les États-Unis ont réussi le premier alunissage habité en 1969.
+
+[CUL-047] geographie | intermediate | ts
+Q: Selon les estimations des Nations unies, quel est le pays le plus peuplé du monde depuis 2023 ?
+* L'Inde
+- La Chine
+- Les États-Unis
+- L'Indonésie
+C: L'Inde.
+E: Selon l'ONU, l'Inde a dépassé la Chine en 2023, avec plus de 1,4 milliard d'habitants.
+
+[CUL-048] geographie | beginner
+Q: Quel fleuve traverse Paris ?
+* La Seine
+- La Loire
+- Le Rhône
+- La Garonne
+C: La Seine.
+E: La Loire est le plus long fleuve de France ; le Rhône passe à Lyon et la Garonne à Toulouse et Bordeaux.
+
+[CUL-049] arts | intermediate
+Q: Quel compositeur a écrit la Neuvième symphonie dont l'« Ode à la joie » est devenue l'hymne européen ?
+* Ludwig van Beethoven
+- Wolfgang Amadeus Mozart
+- Jean-Sébastien Bach
+- Frédéric Chopin
+C: Beethoven.
+E: La 9ᵉ symphonie a été créée à Vienne en 1824. Son finale, l'« Ode à la joie », est l'hymne de l'Union européenne.
+
+[CUL-050] histoire | intermediate
+Q: En quelle année l'Algérie a-t-elle accédé à l'indépendance ?
+* 1962
+- 1956
+- 1954
+- 1960
+C: 1962.
+E: La guerre d'Algérie a duré de 1954 à 1962. Le Maroc et la Tunisie avaient obtenu leur indépendance en 1956.

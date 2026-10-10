@@ -366,7 +366,7 @@ export function buildToolsPages(site, all, lang) {
 <div class="container">
 <header class="page-head"><span class="eyebrow">${x.tools}</span><h1>${meta.h1}</h1><p class="lead">${meta.lead}</p>
 <p class="updated"><span>${t(lang, 'updated')} ${formatDate(site.updated, lang)}</span></p></header>
-<div class="layout"><div class="prose" style="max-width:none">
+<div class="layout tool-layout"><div class="prose" style="max-width:none">
 <noscript><div class="callout warn">${x.noscript}</div></noscript>
 ${widget(tool, lang, all, link)}
 ${extra}
@@ -386,7 +386,7 @@ ${content.faq && content.faq.length ? html`<section class="faq"><h2>${t(lang, 'f
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'MAD' }, description: meta.desc,
       }, faqLd(content.faq, lang)],
       body,
-      scripts: [tool === 'calendrier-concours' ? 'assets/js/echeances.js' : `assets/js/outils/${tool}.js`],
+      scripts: tool === 'calendrier-concours' ? ['assets/js/echeances.js'] : ['assets/js/outils/commun.js', `assets/js/outils/${tool}.js`],
       ogImage: `assets/img/og/outil-${tool}.png`,
     });
   }

@@ -1,0 +1,770 @@
+# Mathématiques — niveau 2e année bac (Sciences Maths, PC, SVT).
+# Questions originales, conformes au programme marocain ; style des QCM
+# de médecine, ENSA, ENSAM, CPGE, FST, IAV.
+@category maths
+@source src-programme-bac
+
+[MAT-001] limites | beginner
+Q: Que vaut lim (x→+∞) (3x² − x + 1)/(x² + 5) ?
+* 3
+- 0
+- +∞
+- 1/5
+C: La limite vaut 3.
+E: En +∞, une fonction rationnelle a la même limite que le quotient de ses termes de plus haut degré : 3x²/x² = 3.
+
+[MAT-002] limites | intermediate
+Q: Que vaut lim (x→0) sin(3x)/x ?
+* 3
+- 1
+- 0
+- 1/3
+C: La limite vaut 3.
+E: On écrit sin(3x)/x = 3 × sin(3x)/(3x). Comme lim (u→0) sin(u)/u = 1, la limite est 3 × 1 = 3.
+
+[MAT-003] limites | intermediate
+Q: Que vaut lim (x→+∞) ln(x)/x ?
+* 0
+- 1
+- +∞
+- e
+C: La limite vaut 0.
+E: Croissances comparées : x croît beaucoup plus vite que ln x en +∞, donc ln(x)/x → 0.
+
+[MAT-004] limites | intermediate
+Q: Que vaut lim (x→+∞) eˣ/x³ ?
+* +∞
+- 0
+- 1
+- 3
+C: La limite est +∞.
+E: Croissances comparées : pour tout entier n, eˣ/xⁿ → +∞ quand x → +∞ ; l'exponentielle l'emporte sur toute puissance de x.
+
+[MAT-005] limites | intermediate
+Q: Que vaut lim (x→0⁺) x·ln(x) ?
+* 0
+- −∞
+- 1
+- +∞
+C: La limite vaut 0.
+E: Limite de référence (croissances comparées) : en 0⁺, x tend vers 0 « plus vite » que ln x ne tend vers −∞, donc x·ln x → 0.
+
+[MAT-006] limites | intermediate
+Q: Que vaut lim (x→0) (eˣ − 1)/x ?
+* 1
+- 0
+- e
+- +∞
+C: La limite vaut 1.
+E: C'est le nombre dérivé de exp en 0 : (eˣ − e⁰)/(x − 0) → exp'(0) = e⁰ = 1.
+
+[MAT-007] limites | advanced
+Q: Que vaut lim (x→+∞) (√(x² + x) − x) ?
+* 1/2
+- 0
+- 1
+- +∞
+C: La limite vaut 1/2.
+E: Quantité conjuguée : √(x² + x) − x = x/(√(x² + x) + x) = 1/(√(1 + 1/x) + 1) → 1/(1 + 1) = 1/2.
+
+[MAT-008] limites | advanced
+Q: Que vaut lim (x→+∞) (1 + 1/x)ˣ ?
+* e
+- 1
+- +∞
+- 0
+C: La limite vaut e.
+E: (1 + 1/x)ˣ = exp(x·ln(1 + 1/x)). Avec h = 1/x → 0, x·ln(1 + 1/x) = ln(1 + h)/h → 1. La limite est donc e¹ = e.
+
+[MAT-009] continuite | intermediate
+Q: f est continue sur [a, b] avec f(a) < 0 < f(b). Que peut-on affirmer ?
+* L'équation f(x) = 0 admet au moins une solution dans ]a, b[
+- L'équation f(x) = 0 admet exactement une solution dans ]a, b[
+- f est strictement croissante sur [a, b]
+- f s'annule en (a + b)/2
+C: Au moins une solution, d'après le théorème des valeurs intermédiaires.
+E: Le TVI garantit l'existence d'au moins un réel c de ]a, b[ tel que f(c) = 0. L'unicité demande en plus que f soit strictement monotone.
+
+[MAT-010] continuite | intermediate
+Q: L'équation x³ + x − 1 = 0 admet une unique solution réelle α. Dans quel intervalle se trouve α ?
+* ]0,5 ; 1[
+- ]0 ; 0,5[
+- ]1 ; 1,5[
+- ]−1 ; 0[
+C: α ∈ ]0,5 ; 1[.
+E: f(x) = x³ + x − 1 est strictement croissante (f'(x) = 3x² + 1 > 0). f(0,5) = −0,375 < 0 et f(1) = 1 > 0 : d'après le TVI, α ∈ ]0,5 ; 1[ (α ≈ 0,68).
+
+[MAT-011] derivation | beginner
+Q: Quelle est la dérivée de f(x) = x³ − 4x + 7 ?
+* f'(x) = 3x² − 4
+- f'(x) = 3x² − 4x
+- f'(x) = x² − 4
+- f'(x) = 3x² + 7
+C: f'(x) = 3x² − 4.
+E: (xⁿ)' = n·xⁿ⁻¹ ; la dérivée de −4x est −4 et celle d'une constante est 0.
+
+[MAT-012] derivation | intermediate
+Q: Quelle est la dérivée de f(x) = x·eˣ ?
+* f'(x) = (x + 1)eˣ
+- f'(x) = eˣ
+- f'(x) = x·eˣ
+- f'(x) = (x − 1)eˣ
+C: f'(x) = (x + 1)eˣ.
+E: Dérivée d'un produit : (uv)' = u'v + uv' = 1·eˣ + x·eˣ = (x + 1)eˣ.
+
+[MAT-013] derivation | intermediate
+Q: Quelle est la dérivée de f(x) = ln(x² + 1) ?
+* f'(x) = 2x/(x² + 1)
+- f'(x) = 1/(x² + 1)
+- f'(x) = 2x·ln(x² + 1)
+- f'(x) = 1/(2x)
+C: f'(x) = 2x/(x² + 1).
+E: (ln u)' = u'/u avec u = x² + 1 > 0 et u' = 2x.
+
+[MAT-014] derivation | intermediate
+Q: Quelle est la dérivée de f(x) = √(2x + 1) sur ]−1/2 ; +∞[ ?
+* f'(x) = 1/√(2x + 1)
+- f'(x) = 1/(2√(2x + 1))
+- f'(x) = 2√(2x + 1)
+- f'(x) = √2
+C: f'(x) = 1/√(2x + 1).
+E: (√u)' = u'/(2√u) avec u' = 2, donc f'(x) = 2/(2√(2x + 1)) = 1/√(2x + 1).
+
+[MAT-015] derivation | intermediate
+Q: Quelle est la dérivée de f(x) = cos(2x) ?
+* f'(x) = −2 sin(2x)
+- f'(x) = 2 sin(2x)
+- f'(x) = −sin(2x)
+- f'(x) = 2 cos(2x)
+C: f'(x) = −2 sin(2x).
+E: (cos u)' = −u'·sin u, avec u = 2x et u' = 2.
+
+[MAT-016] derivation | intermediate
+Q: Quelle est l'équation de la tangente à la courbe de f(x) = x² au point d'abscisse 1 ?
+* y = 2x − 1
+- y = 2x + 1
+- y = x + 1
+- y = 2x
+C: y = 2x − 1.
+E: y = f'(1)(x − 1) + f(1) avec f(1) = 1 et f'(1) = 2 : y = 2(x − 1) + 1 = 2x − 1.
+
+[MAT-017] derivation | advanced
+Q: Quelle est la dérivée de la fonction arctan (programme Sciences Maths) ?
+* x ↦ 1/(1 + x²)
+- x ↦ 1/√(1 − x²)
+- x ↦ −1/(1 + x²)
+- x ↦ 1 + tan²(x)
+C: arctan'(x) = 1/(1 + x²).
+E: arctan est la réciproque de tan sur ]−π/2 ; π/2[ : arctan'(x) = 1/tan'(arctan x) = 1/(1 + tan²(arctan x)) = 1/(1 + x²).
+
+[MAT-018] derivation | intermediate
+Q: Quelle est la dérivée de f(x) = (2x + 1)/(x − 1) sur ]1 ; +∞[ ?
+* f'(x) = −3/(x − 1)²
+- f'(x) = 3/(x − 1)²
+- f'(x) = 2
+- f'(x) = (4x − 1)/(x − 1)²
+C: f'(x) = −3/(x − 1)².
+E: (u/v)' = (u'v − uv')/v² = (2(x − 1) − (2x + 1))/(x − 1)² = −3/(x − 1)².
+
+[MAT-019] fonctions | intermediate
+Q: Sur quel intervalle la fonction f(x) = x³ − 3x est-elle décroissante ?
+* [−1 ; 1]
+- [0 ; 3]
+- ]−∞ ; −1]
+- [1 ; +∞[
+C: Sur [−1 ; 1].
+E: f'(x) = 3x² − 3 = 3(x − 1)(x + 1) est négative entre les racines −1 et 1 : f est décroissante sur [−1 ; 1].
+
+[MAT-020] fonctions | intermediate
+Q: Quelle droite est asymptote oblique à la courbe de f(x) = x + 2 + 1/x en +∞ ?
+* y = x + 2
+- y = x
+- y = 2
+- x = 0
+C: La droite y = x + 2.
+E: f(x) − (x + 2) = 1/x → 0 quand x → +∞, donc y = x + 2 est asymptote oblique. La droite x = 0 est, elle, une asymptote verticale.
+
+[MAT-021] fonctions | intermediate
+Q: Si f'' s'annule en x₀ en changeant de signe, que représente le point de la courbe d'abscisse x₀ ?
+* Un point d'inflexion
+- Un maximum local
+- Un minimum local
+- Un point anguleux
+C: Un point d'inflexion.
+E: Quand la dérivée seconde change de signe, la concavité de la courbe change : la courbe traverse sa tangente en ce point d'inflexion.
+
+[MAT-022] fonctions | beginner
+Q: La courbe d'une fonction paire est symétrique par rapport à :
+* L'axe des ordonnées
+- L'axe des abscisses
+- L'origine du repère
+- La droite y = x
+C: L'axe des ordonnées.
+E: f paire ⇔ f(−x) = f(x) : les points (x ; y) et (−x ; y) appartiennent tous deux à la courbe. Une fonction impaire est symétrique par rapport à l'origine.
+
+[MAT-023] fonctions | advanced
+Q: Dans un repère orthonormé, les courbes de f et de sa réciproque f⁻¹ sont symétriques par rapport à :
+* La droite d'équation y = x
+- L'axe des abscisses
+- L'origine
+- La droite d'équation y = −x
+C: La première bissectrice y = x.
+E: Si (a ; b) est sur la courbe de f, alors (b ; a) est sur celle de f⁻¹ ; ces deux points sont symétriques par rapport à la droite y = x.
+
+[MAT-024] logarithme | beginner
+Q: Que vaut ln(e³) ?
+* 3
+- e³
+- 3e
+- 1/3
+C: ln(e³) = 3.
+E: ln et exp sont réciproques l'une de l'autre : ln(eˣ) = x pour tout réel x.
+
+[MAT-025] logarithme | beginner
+Q: Que vaut ln(8) − ln(2) ?
+* ln(4)
+- ln(6)
+- 3
+- ln(16)
+C: ln(4).
+E: ln a − ln b = ln(a/b) : ln(8/2) = ln 4, qui vaut aussi 2 ln 2.
+
+[MAT-026] logarithme | intermediate
+Q: Quelle est la solution de l'équation ln(x) = 2 ?
+* x = e²
+- x = 2e
+- x = ln 2
+- x = √e
+C: x = e².
+E: ln x = 2 ⇔ x = e² (environ 7,39), car exp est la réciproque de ln.
+
+[MAT-027] logarithme | intermediate
+Q: Quel est l'ensemble de définition de f(x) = ln(x − 3) ?
+* ]3 ; +∞[
+- [3 ; +∞[
+- ]0 ; +∞[
+- ℝ
+C: ]3 ; +∞[.
+E: ln u n'est défini que si u > 0 : x − 3 > 0 ⇔ x > 3.
+
+[MAT-028] logarithme | intermediate
+Q: Quelles sont les solutions de ln(x) + ln(x − 1) = ln(2) ?
+* x = 2 uniquement
+- x = 2 et x = −1
+- x = −1 uniquement
+- Aucune solution
+C: x = 2 seulement.
+E: Il faut x > 1. L'équation devient ln(x(x − 1)) = ln 2, soit x² − x − 2 = 0, de racines 2 et −1. Seule 2 vérifie x > 1.
+
+[MAT-029] logarithme | beginner
+Q: Que vaut log(1000), logarithme décimal de 1000 ?
+* 3
+- 10
+- 100
+- 1/3
+C: log(1000) = 3.
+E: log x = ln x / ln 10 et log(10ⁿ) = n ; or 1000 = 10³.
+
+[MAT-030] exponentielle | beginner
+Q: Que vaut e^(ln 5) ?
+* 5
+- ln 5
+- e⁵
+- 1/5
+C: e^(ln 5) = 5.
+E: Pour tout x > 0, e^(ln x) = x.
+
+[MAT-031] exponentielle | intermediate
+Q: Quelle est la solution de l'équation e^(2x) = 3 ?
+* x = ln(3)/2
+- x = ln(6)
+- x = 3/2
+- x = 2 ln(3)
+C: x = ln(3)/2.
+E: e^(2x) = 3 ⇔ 2x = ln 3 ⇔ x = (ln 3)/2.
+
+[MAT-032] exponentielle | intermediate
+Q: Quelle est une primitive de f(x) = e^(3x) sur ℝ ?
+* F(x) = e^(3x)/3
+- F(x) = 3e^(3x)
+- F(x) = e^(3x)
+- F(x) = e^(3x+1)/(3x + 1)
+C: F(x) = e^(3x)/3.
+E: Une primitive de e^(ax) (a ≠ 0) est e^(ax)/a : la dérivée de e^(3x)/3 est bien e^(3x).
+
+[MAT-033] exponentielle | intermediate
+Q: Quel est l'ensemble des solutions de l'inéquation eˣ > 1 ?
+* ]0 ; +∞[
+- ]1 ; +∞[
+- ℝ
+- ]−∞ ; 0[
+C: ]0 ; +∞[.
+E: eˣ > e⁰ ⇔ x > 0, car exp est strictement croissante sur ℝ.
+
+[MAT-034] exponentielle | beginner
+Q: Pour tous réels a et b, eᵃ × eᵇ est égal à :
+* e^(a + b)
+- e^(ab)
+- e^(a − b)
+- e^(a/b)
+C: e^(a + b).
+E: C'est la propriété fondamentale de l'exponentielle : elle transforme une somme en produit.
+
+[MAT-035] suites | beginner
+Q: Une suite arithmétique a pour premier terme u₀ = 5 et pour raison r = 3. Que vaut u₁₀ ?
+* 35
+- 30
+- 38
+- 15
+C: u₁₀ = 35.
+E: uₙ = u₀ + n·r = 5 + 10 × 3 = 35.
+
+[MAT-036] suites | beginner
+Q: Une suite géométrique a pour premier terme u₀ = 2 et pour raison q = 3. Que vaut u₄ ?
+* 162
+- 54
+- 486
+- 14
+C: u₄ = 162.
+E: uₙ = u₀·qⁿ = 2 × 3⁴ = 2 × 81 = 162.
+
+[MAT-037] suites | intermediate
+Q: Que vaut la somme 1 + 2 + 3 + … + 100 ?
+* 5 050
+- 5 000
+- 10 100
+- 4 950
+C: 5 050.
+E: 1 + 2 + … + n = n(n + 1)/2 = 100 × 101/2 = 5 050.
+
+[MAT-038] suites | intermediate
+Q: Que vaut la somme 1 + 2 + 4 + 8 + … + 2¹⁰ ?
+* 2 047
+- 2 048
+- 1 023
+- 1 024
+C: 2 047.
+E: C'est la somme de 11 termes d'une suite géométrique de raison 2 : (2¹¹ − 1)/(2 − 1) = 2 048 − 1 = 2 047.
+
+[MAT-039] suites | beginner
+Q: Quelle est la limite de la suite uₙ = (1/2)ⁿ ?
+* 0
+- 1/2
+- 1
+- +∞
+C: La limite est 0.
+E: Si −1 < q < 1, alors qⁿ → 0 ; ici q = 1/2.
+
+[MAT-040] suites | intermediate
+Q: Une suite croissante et majorée est nécessairement :
+* Convergente
+- Divergente vers +∞
+- Constante
+- Périodique
+C: Elle est convergente.
+E: Théorème de la limite monotone : toute suite croissante et majorée converge, vers une limite inférieure ou égale à tout majorant.
+
+[MAT-041] suites | advanced
+Q: La suite définie par u₀ = 1 et uₙ₊₁ = (1/2)uₙ + 3 converge. Quelle est sa limite ?
+* 6
+- 3
+- 2
+- 1
+C: La limite est 6.
+E: La limite ℓ vérifie ℓ = ℓ/2 + 3 (la fonction x ↦ x/2 + 3 est continue), soit ℓ/2 = 3 et ℓ = 6.
+
+[MAT-042] suites | advanced
+Q: On pose uₙ₊₁ = 2uₙ − 3 avec u₀ = 4, et vₙ = uₙ − 3. Quelle est la nature de la suite (vₙ) ?
+* Géométrique de raison 2
+- Arithmétique de raison −3
+- Géométrique de raison −3
+- Arithmétique de raison 2
+C: Géométrique de raison 2.
+E: vₙ₊₁ = uₙ₊₁ − 3 = 2uₙ − 6 = 2(uₙ − 3) = 2vₙ. Avec v₀ = 1 : vₙ = 2ⁿ et uₙ = 2ⁿ + 3.
+
+[MAT-043] integrales | beginner
+Q: Que vaut l'intégrale de 0 à 1 de 2x dx ?
+* 1
+- 2
+- 1/2
+- 0
+C: 1.
+E: Une primitive de 2x est x² : [x²] de 0 à 1 = 1 − 0 = 1.
+
+[MAT-044] integrales | intermediate
+Q: Que vaut l'intégrale de 1 à e de (1/x) dx ?
+* 1
+- e
+- e − 1
+- 0
+C: 1.
+E: Une primitive de 1/x sur ]0 ; +∞[ est ln x : ln e − ln 1 = 1 − 0 = 1.
+
+[MAT-045] integrales | intermediate
+Q: Que vaut l'intégrale de 0 à π de sin(x) dx ?
+* 2
+- 0
+- 1
+- π
+C: 2.
+E: Une primitive de sin est −cos : [−cos x] de 0 à π = −cos π + cos 0 = 1 + 1 = 2.
+
+[MAT-046] integrales | beginner
+Q: Que vaut l'intégrale de 0 à 1 de eˣ dx ?
+* e − 1
+- e
+- 1
+- e + 1
+C: e − 1.
+E: [eˣ] de 0 à 1 = e¹ − e⁰ = e − 1.
+
+[MAT-047] integrales | intermediate
+Q: Quelle est la valeur moyenne de f(x) = x² sur l'intervalle [0 ; 3] ?
+* 3
+- 9
+- 4,5
+- 1
+C: 3.
+E: Valeur moyenne = (1/(b − a)) × ∫ f = (1/3) × [x³/3] de 0 à 3 = (1/3) × 9 = 3.
+
+[MAT-048] integrales | advanced
+Q: Par intégration par parties, que vaut l'intégrale de 0 à 1 de x·eˣ dx ?
+* 1
+- e
+- e − 1
+- 2e − 1
+C: 1.
+E: Avec u = x et v' = eˣ : ∫ x eˣ dx = [x eˣ] − ∫ eˣ dx = [x eˣ − eˣ] de 0 à 1 = (e − e) − (0 − 1) = 1.
+
+[MAT-049] integrales | intermediate
+Q: Quelle est une primitive de f(x) = 2x/(x² + 1) sur ℝ ?
+* ln(x² + 1)
+- 1/(x² + 1)
+- 2 ln(x)
+- arctan(x)
+C: ln(x² + 1).
+E: f est de la forme u'/u avec u = x² + 1 > 0 ; une primitive est ln(u).
+
+[MAT-050] integrales | intermediate
+Q: Quelle est l'aire (en unités d'aire) du domaine limité par la courbe de f(x) = x², l'axe des abscisses et les droites x = 0 et x = 3 ?
+* 9
+- 27
+- 3
+- 6
+C: 9 u.a.
+E: f ≥ 0 sur [0 ; 3], donc l'aire vaut ∫ de 0 à 3 de x² dx = [x³/3] = 27/3 = 9.
+
+[MAT-051] complexes | beginner
+Q: Dans ℂ, que vaut i³ ?
+* −i
+- i
+- −1
+- 1
+C: i³ = −i.
+E: i² = −1, donc i³ = i² × i = −i (et i⁴ = 1).
+
+[MAT-052] complexes | beginner
+Q: Quel est le module du nombre complexe z = 3 + 4i ?
+* 5
+- 7
+- 25
+- √7
+C: |z| = 5.
+E: |a + ib| = √(a² + b²) = √(9 + 16) = √25 = 5.
+
+[MAT-053] complexes | beginner
+Q: Quel est le conjugué de z = 2 − 5i ?
+* 2 + 5i
+- −2 + 5i
+- −2 − 5i
+- 5 − 2i
+C: z̄ = 2 + 5i.
+E: Le conjugué de a + ib est a − ib : on change le signe de la partie imaginaire.
+
+[MAT-054] complexes | intermediate
+Q: Quel est un argument de z = 1 + i ?
+* π/4
+- π/2
+- π/3
+- π
+C: π/4.
+E: |z| = √2 et z = √2(cos π/4 + i sin π/4), car cos π/4 = sin π/4 = √2/2.
+
+[MAT-055] complexes | intermediate
+Q: Quelle est la forme algébrique de (1 + i)/(1 − i) ?
+* i
+- 1
+- −i
+- (1 + i)/2
+C: i.
+E: On multiplie par le conjugué du dénominateur : (1 + i)²/((1 − i)(1 + i)) = (1 + 2i − 1)/2 = 2i/2 = i.
+
+[MAT-056] complexes | intermediate
+Q: Quelles sont les solutions dans ℂ de l'équation z² + 4 = 0 ?
+* 2i et −2i
+- 2 et −2
+- 4i et −4i
+- Aucune solution
+C: z = 2i ou z = −2i.
+E: z² = −4 = (2i)². Dans ℂ, tout réel strictement négatif admet deux racines carrées imaginaires opposées.
+
+[MAT-057] complexes | advanced
+Q: Quelles sont les solutions dans ℂ de l'équation z² − 2z + 2 = 0 ?
+* 1 + i et 1 − i
+- 2 + i et 2 − i
+- −1 + i et −1 − i
+- 1 et 2
+C: z = 1 + i ou z = 1 − i.
+E: Δ = 4 − 8 = −4 = (2i)², donc z = (2 ± 2i)/2 = 1 ± i.
+
+[MAT-058] complexes | advanced
+Q: Que vaut (1 + i)⁸ ?
+* 16
+- 256
+- −16
+- 16i
+C: (1 + i)⁸ = 16.
+E: (1 + i)² = 2i, donc (1 + i)⁸ = (2i)⁴ = 16 × i⁴ = 16. Avec Moivre : (√2)⁸ × e^(i·8π/4) = 16 × e^(2iπ) = 16.
+
+[MAT-059] complexes | advanced
+Q: Dans le plan complexe, l'application qui au point M d'affixe z associe le point M' d'affixe z' = iz est :
+* La rotation de centre O et d'angle π/2
+- La translation de vecteur d'affixe i
+- L'homothétie de centre O et de rapport 2
+- La symétrie par rapport à l'axe des abscisses
+C: La rotation de centre O d'angle π/2.
+E: i = e^(iπ/2) : multiplier par e^(iθ) fait tourner le point de l'angle θ autour de l'origine sans changer son module.
+
+[MAT-060] probabilites | beginner
+Q: Combien y a-t-il de façons de choisir 2 personnes parmi 5, sans tenir compte de l'ordre ?
+* 10
+- 20
+- 25
+- 5
+C: C(5, 2) = 10.
+E: C(5, 2) = 5!/(2!·3!) = (5 × 4)/2 = 10.
+
+[MAT-061] probabilites | beginner
+Q: De combien de façons peut-on ranger 4 livres différents sur une étagère ?
+* 24
+- 16
+- 4
+- 12
+C: 4! = 24.
+E: Le nombre de permutations de 4 objets distincts est 4! = 4 × 3 × 2 × 1 = 24.
+
+[MAT-062] probabilites | intermediate
+Q: On lance deux dés équilibrés. Quelle est la probabilité d'obtenir une somme égale à 7 ?
+* 1/6
+- 1/12
+- 7/36
+- 1/36
+C: 6/36 = 1/6.
+E: Il y a 36 issues équiprobables ; la somme 7 s'obtient avec (1,6), (2,5), (3,4), (4,3), (5,2) et (6,1), soit 6 issues.
+
+[MAT-063] probabilites | intermediate
+Q: A et B sont deux événements indépendants avec P(A) = 0,5 et P(B) = 0,4. Que vaut P(A ∩ B) ?
+* 0,2
+- 0,9
+- 0,1
+- 0,45
+C: 0,2.
+E: Pour des événements indépendants, P(A ∩ B) = P(A) × P(B) = 0,5 × 0,4 = 0,2.
+
+[MAT-064] probabilites | intermediate
+Q: Une urne contient 3 boules rouges et 2 vertes. On tire successivement 2 boules sans remise. Quelle est la probabilité d'obtenir 2 boules rouges ?
+* 3/10
+- 9/25
+- 6/25
+- 1/2
+C: 3/10.
+E: P = (3/5) × (2/4) = 6/20 = 3/10 : après le premier tirage, il reste 2 rouges sur 4 boules.
+
+[MAT-065] probabilites | intermediate
+Q: X suit une loi binomiale de paramètres n = 10 et p = 0,3. Que vaut l'espérance E(X) ?
+* 3
+- 0,3
+- 2,1
+- 7
+C: E(X) = 3.
+E: Pour une loi binomiale B(n, p), E(X) = n·p = 10 × 0,3 = 3 (et la variance vaut np(1 − p) = 2,1).
+
+[MAT-066] probabilites | advanced
+Q: On lance 3 fois une pièce équilibrée. Quelle est la probabilité d'obtenir exactement 2 fois « pile » ?
+* 3/8
+- 1/4
+- 1/2
+- 2/3
+C: 3/8.
+E: Loi binomiale B(3 ; 1/2) : P(X = 2) = C(3, 2) × (1/2)² × (1/2) = 3 × 1/8 = 3/8.
+
+[MAT-067] probabilites | advanced
+Q: P(A) = 0,6, P(B) = 0,5 et P(A ∪ B) = 0,8. Que vaut P(A ∩ B) ?
+* 0,3
+- 0,1
+- 0,5
+- 0,2
+C: 0,3.
+E: P(A ∪ B) = P(A) + P(B) − P(A ∩ B), donc P(A ∩ B) = 0,6 + 0,5 − 0,8 = 0,3.
+
+[MAT-068] probabilites | intermediate
+Q: P(A) = 0,4 et la probabilité de B sachant A vaut 0,5. Que vaut P(A ∩ B) ?
+* 0,2
+- 0,9
+- 0,8
+- 0,1
+C: 0,2.
+E: P(A ∩ B) = P(A) × P_A(B) = 0,4 × 0,5 = 0,2.
+
+[MAT-069] equations-differentielles | intermediate
+Q: Quelles sont les solutions de l'équation différentielle y' = 2y ?
+* y = k·e^(2x), k ∈ ℝ
+- y = 2eˣ + k, k ∈ ℝ
+- y = k·e^(x/2), k ∈ ℝ
+- y = x² + k, k ∈ ℝ
+C: y(x) = k·e^(2x).
+E: Les solutions de y' = ay sont les fonctions x ↦ k·e^(ax), k réel.
+
+[MAT-070] equations-differentielles | intermediate
+Q: Quelle est la solution de y' = −y vérifiant y(0) = 3 ?
+* y = 3e^(−x)
+- y = −3eˣ
+- y = 3eˣ
+- y = e^(−3x)
+C: y(x) = 3e^(−x).
+E: Les solutions sont y = k·e^(−x) ; la condition y(0) = k = 3 fixe la constante.
+
+[MAT-071] equations-differentielles | advanced
+Q: Quelle est la solution constante de l'équation différentielle y' = 2y − 6 ?
+* y = 3
+- y = −3
+- y = 6
+- y = 2
+C: y = 3.
+E: Une solution constante vérifie y' = 0, soit 2y − 6 = 0 et y = 3. Les solutions générales sont y = k·e^(2x) + 3.
+
+[MAT-072] equations-differentielles | advanced
+Q: Quelles sont les solutions de l'équation y'' + 4y = 0 ?
+* y = A cos(2x) + B sin(2x)
+- y = A e^(2x) + B e^(−2x)
+- y = (Ax + B)e^(2x)
+- y = A cos(4x) + B sin(4x)
+C: y = A cos 2x + B sin 2x.
+E: L'équation caractéristique r² + 4 = 0 a pour racines ±2i : les solutions sont y = A cos(2x) + B sin(2x), A et B réels.
+
+[MAT-073] equations-differentielles | advanced
+Q: Quelles sont les solutions de l'équation y'' − 3y' + 2y = 0 ?
+* y = A eˣ + B e^(2x)
+- y = A e^(−x) + B e^(−2x)
+- y = (Ax + B)eˣ
+- y = A cos x + B sin x
+C: y = A eˣ + B e^(2x).
+E: L'équation caractéristique r² − 3r + 2 = 0 a pour racines 1 et 2 : y = A eˣ + B e^(2x), A et B réels.
+
+[MAT-074] geometrie-espace | intermediate
+Q: Que vaut le produit scalaire des vecteurs u(1 ; 2 ; −1) et v(3 ; 0 ; 2) ?
+* 1
+- 3
+- 5
+- −1
+C: u·v = 1.
+E: Dans un repère orthonormé, u·v = 1×3 + 2×0 + (−1)×2 = 3 + 0 − 2 = 1.
+
+[MAT-075] geometrie-espace | beginner
+Q: Quel vecteur est normal au plan d'équation 2x − y + 3z − 5 = 0 ?
+* n(2 ; −1 ; 3)
+- n(2 ; 1 ; 3)
+- n(−5 ; 0 ; 0)
+- n(1 ; −1 ; 1)
+C: n(2 ; −1 ; 3).
+E: Le plan d'équation ax + by + cz + d = 0 admet n(a ; b ; c) comme vecteur normal.
+
+[MAT-076] geometrie-espace | advanced
+Q: Quelle est la distance de l'origine O au plan d'équation 2x − y + 2z − 3 = 0 ?
+* 1
+- 3
+- 1/3
+- 3/5
+C: d = 1.
+E: d = |2×0 − 0 + 2×0 − 3|/√(2² + (−1)² + 2²) = 3/√9 = 3/3 = 1.
+
+[MAT-077] geometrie-espace | intermediate
+Q: Quels sont le centre et le rayon de la sphère d'équation (x − 1)² + (y + 2)² + z² = 9 ?
+* Centre (1 ; −2 ; 0), rayon 3
+- Centre (−1 ; 2 ; 0), rayon 3
+- Centre (1 ; −2 ; 0), rayon 9
+- Centre (1 ; 2 ; 0), rayon 3
+C: Centre Ω(1 ; −2 ; 0), rayon 3.
+E: (x − a)² + (y − b)² + (z − c)² = R² est l'équation de la sphère de centre (a ; b ; c) et de rayon R.
+
+[MAT-078] geometrie-espace | advanced
+Q: Dans une base orthonormée directe (i, j, k), que vaut le produit vectoriel i ∧ j ?
+* k
+- −k
+- Le vecteur nul
+- i + j
+C: i ∧ j = k.
+E: Dans une base orthonormée directe : i ∧ j = k, j ∧ k = i, k ∧ i = j, et j ∧ i = −k.
+
+[MAT-079] arithmetique | intermediate
+Q: Quel est le PGCD de 84 et 120 ?
+* 12
+- 6
+- 24
+- 4
+C: PGCD(84, 120) = 12.
+E: 84 = 2² × 3 × 7 et 120 = 2³ × 3 × 5, donc PGCD = 2² × 3 = 12. Par Euclide : 120 = 84 + 36, 84 = 2 × 36 + 12, 36 = 3 × 12.
+
+[MAT-080] arithmetique | intermediate
+Q: Quel est le reste de la division euclidienne de 2¹⁰ par 7 ?
+* 2
+- 1
+- 4
+- 3
+C: Le reste est 2.
+E: 2³ = 8 ≡ 1 (mod 7), donc 2⁹ = (2³)³ ≡ 1 et 2¹⁰ ≡ 2 (mod 7). Vérification : 1 024 = 7 × 146 + 2.
+
+[MAT-081] arithmetique | advanced
+Q: Combien le nombre 360 possède-t-il de diviseurs positifs ?
+* 24
+- 12
+- 18
+- 36
+C: 24 diviseurs.
+E: 360 = 2³ × 3² × 5, donc le nombre de diviseurs est (3 + 1)(2 + 1)(1 + 1) = 24.
+
+[MAT-082] trigonometrie | beginner
+Q: Que vaut cos(π/3) ?
+* 1/2
+- √3/2
+- √2/2
+- 0
+C: cos(π/3) = 1/2.
+E: Valeurs remarquables : cos(π/3) = 1/2, sin(π/3) = √3/2, cos(π/4) = sin(π/4) = √2/2.
+
+[MAT-083] trigonometrie | beginner
+Q: Pour tout réel x, cos²(x) + sin²(x) vaut :
+* 1
+- 0
+- cos(2x)
+- 2
+C: 1.
+E: C'est la relation fondamentale de la trigonométrie, conséquence du théorème de Pythagore dans le cercle trigonométrique.
+
+[MAT-084] trigonometrie | intermediate
+Q: Pour tout réel x, cos(2x) est égal à :
+* cos²(x) − sin²(x)
+- 2 sin(x) cos(x)
+- cos²(x) + sin²(x)
+- 2 cos(x)
+C: cos(2x) = cos²x − sin²x.
+E: Formules de duplication : cos 2x = cos²x − sin²x = 2cos²x − 1 = 1 − 2sin²x, et sin 2x = 2 sin x cos x.
+
+[MAT-085] calcul-algebrique | beginner
+Q: Quelles sont les solutions de l'équation x² − 5x + 6 = 0 ?
+* 2 et 3
+- −2 et −3
+- 1 et 6
+- −1 et 6
+C: x = 2 ou x = 3.
+E: Δ = 25 − 24 = 1 et x = (5 ± 1)/2. Vérification : la somme des racines vaut 5 et leur produit 6.

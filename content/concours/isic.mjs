@@ -21,7 +21,7 @@ export default {
   fr: {
     short: 'ISIC (journalisme)',
     name: "Institut Supérieur de l'Information et de la Communication (ISIC, Rabat)",
-    title: 'Concours ISIC 2027 : licence journalisme et communication — conditions et épreuves',
+    title: 'Concours ISIC 2027 : licence journalisme, conditions et épreuves',
     description: "Concours d'accès à la licence en information et communication de l'ISIC (Rabat) : conditions (moyenne ≥ 14, notes de langues ≥ 14, 17–25 ans), présélection, écrit et oral, calendrier.",
     keywords: ['concours isic', 'isic rabat', 'école de journalisme maroc', 'licence communication'],
     intro: "L'**ISIC**, école publique de journalisme et de communication à Rabat, recrute en 1re année de **licence en information et communication** des bacheliers de **toutes séries** ayant d'excellentes notes de langues. Sélection : **dossier, écrit et oral**.",

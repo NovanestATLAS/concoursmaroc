@@ -1,0 +1,274 @@
+# Économie générale, gestion, comptabilité et marketing (ENCG / TAFEM,
+# ISCAE, douane, concours administratifs à profil économique).
+@category economie
+@source src-general
+
+[ECO-001] economie-generale | beginner
+Q: Que mesure le produit intérieur brut (PIB) ?
+* La valeur des biens et services produits sur un territoire pendant une période donnée
+- La quantité de monnaie en circulation
+- Le total des exportations d'un pays
+- La fortune des ménages les plus riches
+C: La richesse produite sur un territoire.
+E: Le PIB additionne les valeurs ajoutées des unités résidentes ; sa variation mesure la croissance économique.
+
+[ECO-002] economie-generale | beginner
+Q: Qu'appelle-t-on l'inflation ?
+* Une hausse générale et durable du niveau des prix
+- Une baisse générale des prix
+- Une hausse du chômage
+- Une augmentation des exportations
+C: Hausse générale et durable des prix.
+E: L'inflation réduit le pouvoir d'achat de la monnaie. Une baisse générale et durable des prix s'appelle la déflation.
+
+[ECO-003] economie-generale | intermediate
+Q: Quelle institution conduit la politique monétaire au Maroc ?
+* Bank Al-Maghrib
+- Le ministère de l'Économie et des Finances
+- La Bourse de Casablanca
+- La Cour des comptes
+C: Bank Al-Maghrib, la banque centrale.
+E: Bank Al-Maghrib fixe notamment le taux directeur ; sa mission principale est la stabilité des prix.
+
+[ECO-004] economie-generale | intermediate
+Q: Lorsqu'une banque centrale relève son taux directeur, elle cherche généralement à :
+* Freiner l'inflation en renchérissant le crédit
+- Relancer la consommation grâce à un crédit moins cher
+- Augmenter les impôts
+- Faire baisser les exportations
+C: Freiner l'inflation.
+E: Un taux directeur plus élevé rend le crédit plus cher, ce qui modère la demande et donc la hausse des prix. Une baisse du taux vise au contraire à soutenir l'activité.
+
+[ECO-005] economie-generale | intermediate
+Q: La balance commerciale d'un pays est déficitaire lorsque :
+* La valeur de ses importations dépasse celle de ses exportations
+- Ses exportations dépassent ses importations
+- Le budget de l'État est en déficit
+- Sa monnaie s'apprécie
+C: Importations supérieures aux exportations.
+E: Le taux de couverture (exportations/importations × 100) est alors inférieur à 100 %. Le déficit budgétaire, lui, concerne les finances publiques.
+
+[ECO-006] economie-generale | beginner
+Q: Le taux de chômage rapporte le nombre de chômeurs :
+* À la population active
+- À la population totale
+- Au nombre d'entreprises
+- Au nombre de retraités
+C: À la population active.
+E: La population active regroupe les personnes ayant un emploi et les chômeurs : taux de chômage = chômeurs / population active × 100.
+
+[ECO-007] economie-generale | beginner
+Q: Si la demande d'un bien augmente alors que l'offre reste stable, son prix tend à :
+* Augmenter
+- Baisser
+- Rester stable
+- Devenir nul
+C: Augmenter.
+E: Sur un marché concurrentiel, le prix d'équilibre se fixe à la rencontre de l'offre et de la demande ; une demande plus forte déplace l'équilibre vers un prix plus élevé.
+
+[ECO-008] fiscalite | intermediate
+Q: Quel impôt est supporté par le consommateur final lors de l'achat d'un bien ?
+* La taxe sur la valeur ajoutée (TVA)
+- L'impôt sur les sociétés (IS)
+- L'impôt sur le revenu (IR)
+- La taxe professionnelle
+C: La TVA.
+E: La TVA est un impôt indirect sur la consommation, collecté par les entreprises et supporté par le consommateur final. Au Maroc, son taux normal est de 20 %.
+
+[ECO-009] economie-generale | intermediate
+Q: Comment calcule-t-on la valeur ajoutée d'une entreprise ?
+* Production − consommations intermédiaires
+- Chiffre d'affaires − salaires
+- Bénéfice + impôts
+- Capital − dettes
+C: Production − consommations intermédiaires.
+E: Les consommations intermédiaires sont les biens et services détruits ou transformés pendant la production (matières premières, énergie…). La somme des valeurs ajoutées forme le PIB.
+
+[ECO-010] economie-generale | beginner
+Q: Un prix passe de 200 DH à 250 DH. Quel est son taux de variation ?
+* +25 %
+- +50 %
+- +20 %
+- +2,5 %
+C: +25 %.
+E: Taux de variation = (250 − 200)/200 × 100 = 25 %.
+
+[ECO-011] economie-generale | intermediate
+Q: Le pouvoir d'achat d'un ménage augmente lorsque :
+* Ses revenus augmentent plus vite que les prix
+- Les prix augmentent plus vite que ses revenus
+- L'inflation dépasse la hausse des salaires
+- Les impôts augmentent sans hausse de revenu
+C: Revenus en hausse plus rapide que les prix.
+E: Le pouvoir d'achat mesure la quantité de biens qu'un revenu permet d'acheter ; il progresse si le revenu nominal croît plus vite que l'inflation.
+
+[ECO-012] entreprise | beginner
+Q: Que signifie le sigle SARL ?
+* Société à responsabilité limitée
+- Société anonyme à responsabilité large
+- Service administratif régional local
+- Société associative à rentabilité limitée
+C: Société à responsabilité limitée.
+E: Dans une SARL, la responsabilité des associés est limitée à leurs apports. La société anonyme (SA) est une autre forme de société de capitaux.
+
+[ECO-013] entreprise | beginner
+Q: Le chiffre d'affaires d'une entreprise correspond :
+* Au montant total de ses ventes sur une période
+- Au bénéfice net
+- Au capital social
+- Au total des salaires versés
+C: Au total des ventes.
+E: Chiffre d'affaires = prix de vente hors taxes × quantités vendues. Le bénéfice s'obtient après déduction de toutes les charges.
+
+[ECO-014] entreprise | intermediate
+Q: Le seuil de rentabilité est le chiffre d'affaires pour lequel :
+* Le résultat est nul (ni bénéfice ni perte)
+- Le bénéfice est maximal
+- Les charges fixes sont nulles
+- L'entreprise paie le plus d'impôts
+C: Résultat nul.
+E: Seuil de rentabilité = charges fixes / taux de marge sur coût variable. Au-delà, l'entreprise réalise des bénéfices.
+
+[ECO-015] entreprise | advanced
+Q: Une entreprise supporte 60 000 DH de charges fixes et dégage un taux de marge sur coût variable de 30 %. Quel est son seuil de rentabilité ?
+* 200 000 DH
+- 18 000 DH
+- 180 000 DH
+- 90 000 DH
+C: 200 000 DH.
+E: SR = charges fixes / taux de MCV = 60 000 / 0,30 = 200 000 DH.
+
+[ECO-016] comptabilite | intermediate
+Q: Dans le bilan, l'actif regroupe :
+* Ce que l'entreprise possède et ce qu'on lui doit (les emplois)
+- Les ressources : capitaux propres et dettes
+- Uniquement les dettes
+- Les charges et les produits
+C: Les emplois.
+E: Actif = emplois (immobilisations, stocks, créances, trésorerie) ; passif = ressources (capitaux propres, dettes). Le compte de produits et charges (CPC) présente les charges et les produits.
+
+[ECO-017] comptabilite | beginner
+Q: Dans un bilan, le total de l'actif est toujours :
+* Égal au total du passif
+- Supérieur au total du passif
+- Inférieur au total du passif
+- Égal au chiffre d'affaires
+C: Égal au total du passif.
+E: Chaque ressource finance un emploi : le bilan est toujours équilibré. Le résultat de l'exercice figure au passif, dans les capitaux propres.
+
+[ECO-018] comptabilite | intermediate
+Q: L'amortissement constate comptablement :
+* La perte de valeur d'une immobilisation due à l'usage ou au temps
+- Le remboursement d'un emprunt
+- Une augmentation de capital
+- Une hausse des ventes
+C: La dépréciation d'une immobilisation.
+E: Il répartit le coût d'un bien durable (machine, véhicule, ordinateur) sur sa durée d'utilisation.
+
+[ECO-019] comptabilite | beginner
+Q: Une machine achetée 50 000 DH est amortie linéairement sur 5 ans. Quelle est la dotation annuelle ?
+* 10 000 DH
+- 5 000 DH
+- 25 000 DH
+- 50 000 DH
+C: 10 000 DH par an.
+E: Amortissement linéaire : valeur d'origine / durée = 50 000 / 5 = 10 000 DH, soit un taux de 20 %.
+
+[ECO-020] marketing | beginner
+Q: Les « 4 P » du marketing-mix désignent :
+* Le produit, le prix, la distribution (place) et la communication (promotion)
+- La publicité, la prospection, le profit et le personnel
+- La production, la planification, le paiement et le prix
+- Le partenariat, le prix, le patrimoine et la promotion
+C: Product, Price, Place, Promotion.
+E: Le marketing-mix combine les décisions sur le produit, le prix, la distribution et la communication pour atteindre la cible choisie.
+
+[ECO-021] marketing | intermediate
+Q: La segmentation d'un marché consiste à :
+* Découper la clientèle en groupes homogènes
+- Fixer le prix le plus bas possible
+- Supprimer les intermédiaires
+- Augmenter le capital de l'entreprise
+C: Diviser le marché en groupes homogènes.
+E: Les segments sont définis selon des critères (âge, revenu, lieu, comportement) ; l'entreprise choisit ensuite ses cibles et son positionnement.
+
+[ECO-022] management | intermediate
+Q: L'analyse SWOT étudie :
+* Les forces, les faiblesses, les opportunités et les menaces
+- Les salaires, la trésorerie, les objectifs et le temps
+- Les ventes, le web, les offres et le transport
+- Les stocks et les fournisseurs uniquement
+C: Forces et faiblesses (internes), opportunités et menaces (externes).
+E: Strengths, Weaknesses, Opportunities, Threats : un outil de diagnostic stratégique très utilisé en management.
+
+[ECO-023] management | intermediate
+Q: Henri Fayol résume les fonctions de l'administration par le sigle POCCC. Que signifie le premier « P » ?
+* Prévoir
+- Produire
+- Payer
+- Promouvoir
+C: Prévoir.
+E: Pour Fayol, administrer, c'est prévoir, organiser, commander, coordonner et contrôler.
+
+[ECO-024] economie-generale | beginner
+Q: Le secteur primaire regroupe notamment :
+* L'agriculture, la pêche et la sylviculture
+- L'industrie manufacturière
+- Le commerce et les services
+- Les banques et les assurances
+C: Les activités d'exploitation des ressources naturelles.
+E: Secteur primaire : agriculture, pêche, forêt ; secondaire : industrie et BTP ; tertiaire : services. Selon les classifications, les mines sont rattachées au primaire ou au secondaire.
+
+[ECO-025] economie-generale | intermediate
+Q: Quel groupe public marocain est un leader mondial des phosphates et des engrais ?
+* Le groupe OCP
+- L'ONEE
+- La RAM
+- L'ONCF
+C: Le groupe OCP.
+E: L'OCP (ex-Office chérifien des phosphates, créé en 1920) exploite les phosphates et produit des engrais. L'ONEE gère l'électricité et l'eau potable, la RAM est la compagnie aérienne et l'ONCF les chemins de fer.
+
+[ECO-026] economie-generale | intermediate
+Q: Qu'est-ce qu'une délocalisation ?
+* Le transfert d'une activité de production vers un autre pays
+- L'ouverture d'un nouveau magasin dans la même ville
+- La fusion de deux entreprises
+- La baisse des prix de vente
+C: Un transfert d'activité à l'étranger.
+E: Les entreprises délocalisent souvent pour réduire leurs coûts. Le Maroc accueille ainsi des activités d'offshoring (centres de relation client, automobile, aéronautique).
+
+[ECO-027] economie-generale | advanced
+Q: Si le dirham se déprécie par rapport à l'euro, les produits marocains vendus en Europe deviennent en principe :
+* Moins chers pour les acheteurs européens
+- Plus chers pour les acheteurs européens
+- Interdits à l'exportation
+- Inchangés en prix
+C: Moins chers en euros.
+E: Une dépréciation de la monnaie nationale améliore la compétitivité-prix des exportations mais renchérit les importations.
+
+[ECO-028] finance | intermediate
+Q: On place 10 000 DH à intérêts simples au taux annuel de 5 % pendant 3 ans. Quel est le montant des intérêts ?
+* 1 500 DH
+- 500 DH
+- 1 576,25 DH
+- 15 000 DH
+C: 1 500 DH.
+E: Intérêts simples : I = C × t × n = 10 000 × 0,05 × 3 = 1 500 DH. Des intérêts composés donneraient 1 576,25 DH.
+
+[ECO-029] finance | intermediate
+Q: Une action est :
+* Un titre de propriété représentant une part du capital d'une société
+- Un titre de créance remboursable à date fixe
+- Un prêt bancaire
+- Un impôt
+C: Un titre de propriété.
+E: L'actionnaire peut percevoir des dividendes et vote en assemblée générale. Une obligation est un titre de créance : son détenteur a prêté de l'argent à l'émetteur.
+
+[ECO-030] finance | intermediate
+Q: Quel est le principal indice de la Bourse de Casablanca ?
+* Le MASI
+- Le CAC 40
+- Le Dow Jones
+- Le Nikkei
+C: Le MASI.
+E: Le MASI (Moroccan All Shares Index) suit l'ensemble des valeurs cotées à Casablanca. Le CAC 40 est l'indice de Paris, le Dow Jones celui de New York et le Nikkei celui de Tokyo.

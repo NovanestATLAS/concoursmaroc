@@ -7,6 +7,11 @@
     ? { today: 'اليوم', tomorrow: 'غدًا', inDays: 'بعد {n} يومًا', ongoing: 'جارٍ حتى {d}', past: 'انتهى', est: 'تقدير', add: 'أضف إلى المفكرة' }
     : { today: "Aujourd'hui", tomorrow: 'Demain', inDays: 'Dans {n} jours', ongoing: "En cours jusqu'au {d}", past: 'Passé', est: 'Estimation', add: 'Ajouter à mon agenda' };
 
+  /* Arabic number agreement: 2 -> dual, 3 to 10 -> plural, otherwise singular accusative. */
+  function inDays(n) {
+    if (LANG === 'ar') return n === 2 ? 'بعد يومين' : n <= 10 ? 'بعد ' + n + ' أيام' : 'بعد ' + n + ' يومًا';
+    return T.inDays.replace('{n}', n);
+  }
   function parse(d) { var p = d.split('-').map(Number); return new Date(p[0], p[1] - 1, p[2] || 1); }
   function daysUntil(d) {
     var now = new Date(); now.setHours(0, 0, 0, 0);
@@ -63,7 +68,7 @@
           li.classList.add('past');
           if (left) left.textContent = T.past;
         } else if (left) {
-          left.textContent = start && started && n > 0 ? T.ongoing.replace('{d}', fmt(date)) : n === 0 ? T.today : n === 1 ? T.tomorrow : T.inDays.replace('{n}', n);
+          left.textContent = start && started && n > 0 ? T.ongoing.replace('{d}', fmt(date)) : n === 0 ? T.today : n === 1 ? T.tomorrow : inDays(n);
           if (n <= 7) li.classList.add('soon');
         }
       } else if (left) {

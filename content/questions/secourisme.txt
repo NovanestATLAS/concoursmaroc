@@ -1,0 +1,618 @@
+# Secourisme et sécurité (Protection civile, Forces auxiliaires,
+# Gendarmerie, Police, DGAPR). Gestes conformes aux recommandations
+# internationales de premiers secours ; numéros d'urgence du Maroc.
+# Version arabe pour chaque question.
+@category secourisme
+@source src-secourisme
+
+[SEC-001] alerte | beginner
+Q: Quel numéro faut-il appeler au Maroc pour joindre la Protection civile (incendie, secours, ambulance) ?
+* 15
+- 19
+- 177
+- 190
+C: Le 15.
+E: Au Maroc : 15 pour la Protection civile, 19 pour la police en ville (190 depuis un mobile selon les opérateurs), 177 pour la Gendarmerie royale et 141 pour le SAMU (urgences médicales).
+AR:
+Q: ما هو الرقم الذي يجب الاتصال به في المغرب للوصول إلى الوقاية المدنية (الحرائق، الإسعاف، سيارة الإسعاف)؟
+* 15
+- 19
+- 177
+- 190
+C: الرقم 15.
+E: في المغرب: 15 للوقاية المدنية، و19 للشرطة داخل المدن (190 من الهاتف المحمول حسب الشركات)، و177 للدرك الملكي، و141 للمساعدة الطبية الاستعجالية (SAMU).
+
+[SEC-002] alerte | beginner
+Q: Quel numéro permet de joindre la Gendarmerie royale ?
+* 177
+- 15
+- 19
+- 141
+C: Le 177.
+E: La Gendarmerie royale intervient surtout en milieu rural et sur les routes hors agglomération. En ville, la police répond au 19.
+AR:
+Q: ما هو رقم الدرك الملكي؟
+* 177
+- 15
+- 19
+- 141
+C: الرقم 177.
+E: يتدخل الدرك الملكي أساسًا في الوسط القروي وعلى الطرق خارج المدن، أما داخل المدن فتجيب الشرطة على الرقم 19.
+
+[SEC-003] alerte | beginner
+Q: Lors d'un appel aux secours, quelle information faut-il donner en priorité ?
+* Le lieu précis et la nature de l'accident
+- Le nom complet de toutes les victimes
+- La marque des véhicules impliqués
+- Son numéro de carte d'identité
+C: Le lieu exact et ce qui s'est passé.
+E: Message d'alerte : se présenter, donner le lieu exact, la nature de l'accident, le nombre de victimes et leur état apparent, les gestes déjà faits. On ne raccroche que lorsque l'opérateur l'autorise.
+AR:
+Q: عند الاتصال بالإسعاف، ما هي المعلومة التي يجب تقديمها أولًا؟
+* المكان الدقيق للحادث وطبيعته
+- الاسم الكامل لجميع الضحايا
+- علامة السيارات المتورطة
+- رقم بطاقة التعريف الخاصة بك
+C: المكان الدقيق وما الذي حدث.
+E: رسالة الإنذار: تقديم النفس، وتحديد المكان بدقة، وطبيعة الحادث، وعدد الضحايا وحالتهم الظاهرة، والإسعافات التي قُدمت. ولا يُقطع الاتصال إلا بعد إذن المخاطَب.
+
+[SEC-004] protection | beginner
+Q: Quelle est la première action à mener face à un accident ?
+* Protéger : supprimer ou signaler le danger pour éviter un suraccident
+- Déplacer immédiatement toutes les victimes
+- Donner à boire aux blessés
+- Prendre des photos
+C: Protéger.
+E: L'ordre des actions est : protéger, alerter, secourir. On ne déplace une victime qu'en cas de danger réel et immédiat (incendie, risque d'effondrement…).
+AR:
+Q: ما هو أول إجراء يجب القيام به أمام حادث؟
+* الحماية: إزالة الخطر أو التنبيه إليه لتفادي حادث ثانٍ
+- نقل جميع الضحايا فورًا
+- إعطاء الماء للمصابين
+- التقاط الصور
+C: الحماية.
+E: ترتيب الإجراءات: الحماية ثم الإنذار ثم الإسعاف. ولا يُنقل المصاب إلا في حالة خطر حقيقي وفوري (حريق، خطر انهيار…).
+
+[SEC-005] inconscience | intermediate
+Q: Une victime ne répond pas mais respire normalement. Que faut-il faire ?
+* La mettre en position latérale de sécurité (PLS), alerter et surveiller sa respiration
+- Commencer immédiatement les compressions thoraciques
+- Lui donner à boire
+- La laisser sur le dos sans surveillance
+C: PLS, alerte et surveillance.
+E: La PLS garde les voies aériennes libres et permet l'écoulement des vomissements. On surveille ensuite la respiration en attendant les secours.
+AR:
+Q: مصاب لا يستجيب لكنه يتنفس بشكل عادي. ماذا يجب فعله؟
+* وضعه في وضعية الأمان الجانبية، ثم الإنذار ومراقبة تنفسه
+- البدء فورًا في الضغط على الصدر
+- إعطاؤه الماء
+- تركه على ظهره دون مراقبة
+C: وضعية الأمان الجانبية ثم الإنذار والمراقبة.
+E: تحافظ وضعية الأمان الجانبية على تحرر المسالك التنفسية وتسمح بخروج القيء، ثم تُراقب عملية التنفس في انتظار وصول الإسعاف.
+
+[SEC-006] inconscience | intermediate
+Q: Comment libérer les voies aériennes d'une victime inconsciente allongée sur le dos ?
+* Basculer prudemment la tête en arrière et élever le menton
+- Pencher la tête en avant
+- Asseoir la victime
+- Lui donner des claques dans le dos
+C: Bascule de la tête en arrière et élévation du menton.
+E: Ce geste éloigne la langue du fond de la gorge. On vérifie ensuite la respiration pendant 10 secondes au plus : regarder, écouter, sentir.
+AR:
+Q: كيف نحرر المسالك التنفسية لمصاب فاقد للوعي ممدد على ظهره؟
+* إمالة الرأس بحذر إلى الخلف ورفع الذقن
+- إمالة الرأس إلى الأمام
+- إجلاس المصاب
+- ضربه على ظهره
+C: إمالة الرأس إلى الخلف ورفع الذقن.
+E: تُبعد هذه الحركة اللسان عن مؤخرة الحلق، ثم نتحقق من التنفس لمدة لا تتجاوز 10 ثوانٍ: ننظر ونسمع ونحس.
+
+[SEC-007] rcp | intermediate
+Q: Une victime ne répond pas et ne respire pas, ou respire anormalement. Que faire ?
+* Alerter, commencer immédiatement les compressions thoraciques et utiliser un défibrillateur dès que possible
+- La mettre en PLS et attendre
+- Lui jeter de l'eau froide au visage
+- Attendre les secours sans rien faire
+C: Alerter, masser, défibriller.
+E: C'est un arrêt cardiaque : chaque minute sans réanimation réduit fortement les chances de survie. Les compressions entretiennent une circulation minimale jusqu'à la défibrillation.
+AR:
+Q: مصاب لا يستجيب ولا يتنفس، أو يتنفس بشكل غير طبيعي. ماذا نفعل؟
+* الإنذار، والبدء فورًا في الضغط على الصدر، واستعمال جهاز إزالة الرجفان في أقرب وقت
+- وضعه في وضعية الأمان الجانبية والانتظار
+- رش الماء البارد على وجهه
+- انتظار الإسعاف دون فعل أي شيء
+C: الإنذار، التدليك القلبي، إزالة الرجفان.
+E: إنها حالة توقف القلب: كل دقيقة دون إنعاش تقلل كثيرًا من فرص النجاة، والضغط على الصدر يحافظ على حد أدنى من الدورة الدموية إلى حين استعمال جهاز إزالة الرجفان.
+
+[SEC-008] rcp | intermediate
+Q: Chez l'adulte, à quel rythme faut-il réaliser les compressions thoraciques ?
+* 100 à 120 compressions par minute
+- 30 à 40 compressions par minute
+- 60 compressions par minute
+- 200 compressions par minute
+C: 100 à 120 par minute.
+E: Les recommandations internationales préconisent 100 à 120 compressions par minute, en laissant la poitrine reprendre sa forme entre deux compressions.
+AR:
+Q: عند الشخص البالغ، ما هو الإيقاع الموصى به للضغط على الصدر؟
+* من 100 إلى 120 ضغطة في الدقيقة
+- من 30 إلى 40 ضغطة في الدقيقة
+- 60 ضغطة في الدقيقة
+- 200 ضغطة في الدقيقة
+C: من 100 إلى 120 ضغطة في الدقيقة.
+E: توصي المعايير الدولية بما بين 100 و120 ضغطة في الدقيقة، مع ترك الصدر يعود إلى وضعه الطبيعي بين كل ضغطتين.
+
+[SEC-009] rcp | intermediate
+Q: Chez l'adulte, quelle profondeur de compression thoracique est recommandée ?
+* 5 à 6 cm
+- 1 à 2 cm
+- 10 à 12 cm
+- 2 à 3 mm
+C: 5 à 6 cm.
+E: On appuie au centre de la poitrine, bras tendus, avec le talon des mains, la victime étant allongée sur une surface dure.
+AR:
+Q: عند الشخص البالغ، ما هو عمق الضغط على الصدر الموصى به؟
+* من 5 إلى 6 سنتيمترات
+- من 1 إلى 2 سنتيمتر
+- من 10 إلى 12 سنتيمترًا
+- من 2 إلى 3 ملمترات
+C: من 5 إلى 6 سنتيمترات.
+E: نضغط في وسط الصدر بذراعين ممدودتين وبباطن اليدين، والمصاب ممدد على سطح صلب.
+
+[SEC-010] rcp | intermediate
+Q: Pour la réanimation d'un adulte par un secouriste formé, quel est le rapport compressions/insufflations ?
+* 30 compressions pour 2 insufflations
+- 15 compressions pour 1 insufflation
+- 5 compressions pour 1 insufflation
+- 2 compressions pour 30 insufflations
+C: 30/2.
+E: Le secouriste formé alterne 30 compressions et 2 insufflations. Une personne non formée peut pratiquer des compressions thoraciques continues.
+AR:
+Q: في إنعاش شخص بالغ من طرف مسعف مكوَّن، ما هي النسبة بين الضغطات والنفخات؟
+* 30 ضغطة مقابل نفختين
+- 15 ضغطة مقابل نفخة واحدة
+- 5 ضغطات مقابل نفخة واحدة
+- ضغطتان مقابل 30 نفخة
+C: 30 ضغطة مقابل نفختين.
+E: يتناوب المسعف المكوَّن بين 30 ضغطة ونفختين، أما الشخص غير المكوَّن فيمكنه الاكتفاء بالضغط المتواصل على الصدر.
+
+[SEC-011] rcp | beginner
+Q: Où place-t-on les mains pour les compressions thoraciques chez l'adulte ?
+* Au centre de la poitrine, sur la moitié inférieure du sternum
+- Sur le ventre, au niveau du nombril
+- Sur le côté gauche du thorax, sous l'aisselle
+- Sur le cou
+C: Au centre de la poitrine.
+E: Le talon d'une main est placé au milieu de la poitrine (moitié inférieure du sternum), l'autre main par-dessus, doigts relevés.
+AR:
+Q: أين توضع اليدان للضغط على الصدر عند الشخص البالغ؟
+* في وسط الصدر، على النصف السفلي لعظم القص
+- على البطن، في مستوى السرة
+- على الجانب الأيسر من الصدر، تحت الإبط
+- على العنق
+C: في وسط الصدر.
+E: يوضع باطن إحدى اليدين في وسط الصدر (النصف السفلي لعظم القص) واليد الأخرى فوقها، مع رفع الأصابع.
+
+[SEC-012] defibrillateur | intermediate
+Q: À quoi sert un défibrillateur automatisé externe (DAE) ?
+* À analyser le rythme cardiaque et à délivrer un choc électrique si nécessaire
+- À mesurer la tension artérielle
+- À administrer de l'oxygène
+- À immobiliser une fracture
+C: Analyser le cœur et délivrer un choc si besoin.
+E: Le DAE guide l'utilisateur par la voix et ne délivre un choc que s'il détecte un rythme qui le justifie. Il peut être utilisé par tout le monde.
+AR:
+Q: ما فائدة جهاز إزالة الرجفان الآلي الخارجي؟
+* تحليل نظم القلب وإعطاء صدمة كهربائية عند الحاجة
+- قياس الضغط الدموي
+- إعطاء الأكسجين
+- تثبيت الكسور
+C: تحليل نظم القلب وإعطاء صدمة عند الحاجة.
+E: يوجه الجهاز المستعمل بالصوت ولا يعطي الصدمة إلا إذا رصد نظمًا قلبيًا يستدعيها، ويمكن لأي شخص استعماله.
+
+[SEC-013] defibrillateur | intermediate
+Q: Pendant que le défibrillateur analyse le rythme cardiaque ou délivre un choc, il faut :
+* Ne pas toucher la victime
+- Continuer à la secouer
+- Lui donner à boire
+- Retirer les électrodes
+C: Ne pas toucher la victime.
+E: Toucher la victime fausserait l'analyse et exposerait au choc. On reprend les compressions immédiatement après le choc, selon les instructions de l'appareil.
+AR:
+Q: أثناء تحليل جهاز إزالة الرجفان لنظم القلب أو إعطائه الصدمة، يجب:
+* عدم لمس المصاب
+- الاستمرار في تحريكه
+- إعطاؤه الماء
+- نزع الأقطاب
+C: عدم لمس المصاب.
+E: لمس المصاب يفسد التحليل ويعرض الشخص للصدمة الكهربائية، ثم نستأنف الضغط على الصدر مباشرة بعد الصدمة حسب تعليمات الجهاز.
+
+[SEC-014] hemorragie | beginner
+Q: Face à un saignement abondant (hémorragie externe), quel est le premier geste ?
+* Appuyer fortement et directement sur la plaie
+- Poser immédiatement un garrot sur toute blessure
+- Laver la plaie à grande eau
+- Faire marcher la victime
+C: La compression directe.
+E: On comprime la plaie avec la main protégée (gants, tissu propre) ou un pansement compressif, on allonge la victime et on alerte. Le garrot est réservé aux cas où la compression est impossible ou inefficace.
+AR:
+Q: أمام نزيف خارجي غزير، ما هي أول حركة؟
+* الضغط بقوة ومباشرة على الجرح
+- وضع رباط ضاغط (garrot) فورًا على أي جرح
+- غسل الجرح بكمية كبيرة من الماء
+- جعل المصاب يمشي
+C: الضغط المباشر على الجرح.
+E: نضغط على الجرح باليد المحمية (قفازات أو قطعة قماش نظيفة) أو بضمادة ضاغطة، ثم نمدد المصاب ونطلب الإسعاف. ويُلجأ إلى الرباط الضاغط فقط عندما يكون الضغط مستحيلًا أو غير فعال.
+
+[SEC-015] hemorragie | intermediate
+Q: Une personne saigne du nez. Que faut-il lui conseiller ?
+* S'asseoir, pencher la tête en avant, se moucher puis comprimer les narines
+- S'allonger et pencher la tête en arrière
+- Mettre la tête entre les jambes en restant debout
+- Boire de l'eau froide
+C: Tête penchée en avant et compression des narines.
+E: Pencher la tête en arrière fait couler le sang dans la gorge, avec un risque de vomissement. On comprime les deux narines pendant environ 10 minutes ; si le saignement persiste, on demande un avis médical.
+AR:
+Q: شخص ينزف من أنفه. بماذا ننصحه؟
+* الجلوس وإمالة الرأس إلى الأمام، ثم التمخط والضغط على فتحتي الأنف
+- الاستلقاء وإمالة الرأس إلى الخلف
+- وضع الرأس بين الرجلين وهو واقف
+- شرب الماء البارد
+C: إمالة الرأس إلى الأمام والضغط على فتحتي الأنف.
+E: إمالة الرأس إلى الخلف تجعل الدم يسيل إلى الحلق مع خطر التقيؤ. نضغط على فتحتي الأنف حوالي 10 دقائق، وإذا استمر النزيف نطلب رأيًا طبيًا.
+
+[SEC-016] brulure | beginner
+Q: Que faut-il faire immédiatement sur une brûlure thermique ?
+* La refroidir sous l'eau tempérée pendant une vingtaine de minutes
+- Appliquer du beurre ou du dentifrice
+- Percer les cloques
+- La couvrir de coton
+C: La refroidir à l'eau tempérée.
+E: Le refroidissement (eau à environ 15–25 °C, pendant une vingtaine de minutes) limite l'aggravation de la brûlure et la douleur. Ne jamais appliquer de corps gras ni percer les cloques.
+AR:
+Q: ماذا يجب فعله فورًا عند الإصابة بحرق حراري؟
+* تبريده بالماء المعتدل الحرارة لمدة عشرين دقيقة تقريبًا
+- وضع الزبدة أو معجون الأسنان
+- ثقب الفقاعات
+- تغطيته بالقطن
+C: تبريده بالماء المعتدل.
+E: يحد التبريد (ماء بين 15 و25 درجة تقريبًا لمدة عشرين دقيقة) من تفاقم الحرق ومن الألم. ولا يجب أبدًا وضع المواد الدهنية أو ثقب الفقاعات.
+
+[SEC-017] brulure | intermediate
+Q: Les vêtements d'une personne prennent feu. Que faut-il faire ?
+* L'empêcher de courir, l'allonger et étouffer les flammes avec une couverture non synthétique ou en la faisant rouler au sol
+- La faire courir vers un point d'eau
+- Lui jeter de l'huile
+- La laisser se débrouiller pour ne pas se brûler
+C: L'allonger et étouffer les flammes.
+E: Courir attise les flammes. On étouffe le feu avec une couverture en laine ou en coton (pas en tissu synthétique) ou en faisant rouler la victime au sol, puis on refroidit la brûlure.
+AR:
+Q: اشتعلت النار في ملابس شخص. ماذا يجب فعله؟
+* منعه من الجري، ومدّه على الأرض، وإخماد اللهب بغطاء غير اصطناعي أو بجعله يتدحرج على الأرض
+- جعله يجري نحو مصدر للماء
+- رمي الزيت عليه
+- تركه يتصرف وحده لتفادي الاحتراق
+C: مدّه على الأرض وإخماد اللهب.
+E: الجري يزيد من اشتعال اللهب. نخمد النار بغطاء من الصوف أو القطن (وليس من نسيج اصطناعي) أو بجعل المصاب يتدحرج على الأرض، ثم نبرد الحرق.
+
+[SEC-018] etouffement | intermediate
+Q: Un adulte s'étouffe : il ne peut plus parler, ni tousser, ni respirer. Quel est le premier geste ?
+* Donner jusqu'à 5 claques vigoureuses dans le dos, entre les omoplates
+- Lui donner à boire
+- L'allonger sur le dos
+- Attendre que cela passe
+C: Jusqu'à 5 claques dans le dos.
+E: Si les claques sont inefficaces, on pratique jusqu'à 5 compressions abdominales (méthode de Heimlich), en alternant. Si la victime perd connaissance, on commence la réanimation.
+AR:
+Q: شخص بالغ يختنق: لم يعد قادرًا على الكلام ولا السعال ولا التنفس. ما هي أول حركة؟
+* إعطاء ما يصل إلى 5 ضربات قوية على الظهر بين لوحي الكتف
+- إعطاؤه الماء
+- مدّه على ظهره
+- الانتظار حتى يزول الاختناق
+C: ما يصل إلى 5 ضربات على الظهر.
+E: إذا لم تنجح الضربات، نقوم بما يصل إلى 5 ضغطات على البطن (طريقة هايمليك) بالتناوب. وإذا فقد المصاب وعيه نبدأ الإنعاش.
+
+[SEC-019] etouffement | intermediate
+Q: Une personne qui s'étouffe peut encore tousser et parler (obstruction partielle). Que faire ?
+* L'encourager à tousser et la surveiller, sans lui donner de claques
+- Pratiquer immédiatement la méthode de Heimlich
+- Lui donner à boire
+- L'allonger sur le ventre
+C: L'encourager à tousser.
+E: La toux est le moyen le plus efficace d'expulser le corps étranger. Les claques et les compressions abdominales sont réservées à l'obstruction totale.
+AR:
+Q: شخص يختنق لكنه ما زال قادرًا على السعال والكلام (انسداد جزئي). ماذا نفعل؟
+* تشجيعه على السعال ومراقبته دون ضربه على الظهر
+- القيام فورًا بطريقة هايمليك
+- إعطاؤه الماء
+- مدّه على بطنه
+C: تشجيعه على السعال.
+E: السعال هو أنجع وسيلة لطرد الجسم الغريب، أما الضربات على الظهر والضغط على البطن فخاصة بالانسداد الكلي.
+
+[SEC-020] etouffement | intermediate
+Q: La méthode de Heimlich consiste à :
+* Réaliser des compressions abdominales, poing au creux de l'estomac, en tirant vers soi et vers le haut
+- Souffler dans la bouche de la victime
+- Appuyer sur le sternum de la victime allongée
+- Donner à boire par petites gorgées
+C: Des compressions abdominales vers soi et vers le haut.
+E: Debout derrière la victime penchée en avant, le poing placé entre le nombril et le bas du sternum, on tire brusquement vers soi et vers le haut pour chasser l'air et le corps étranger.
+AR:
+Q: تتمثل طريقة هايمليك في:
+* الضغط على البطن بقبضة اليد في أعلى البطن، مع السحب نحو الداخل ونحو الأعلى
+- النفخ في فم المصاب
+- الضغط على عظم القص والمصاب ممدد
+- إعطاء الماء على جرعات صغيرة
+C: الضغط على البطن نحو الداخل والأعلى.
+E: نقف خلف المصاب المنحني إلى الأمام، ونضع القبضة بين السرة وأسفل عظم القص، ثم نسحب بقوة نحونا ونحو الأعلى لطرد الهواء والجسم الغريب.
+
+[SEC-021] traumatisme | intermediate
+Q: On suspecte une fracture du bras. Que faut-il faire ?
+* Ne pas bouger le membre, le maintenir dans la position où il se trouve et alerter
+- Remettre l'os en place
+- Masser la zone douloureuse
+- Faire bouger le bras pour vérifier
+C: Immobiliser sans réduire, puis alerter.
+E: Toute manipulation risque d'aggraver les lésions (vaisseaux, nerfs). On maintient le membre, par exemple avec une écharpe, sans chercher à le redresser.
+AR:
+Q: نشك في وجود كسر في الذراع. ماذا يجب فعله؟
+* عدم تحريك الطرف، وتثبيته في الوضعية التي هو عليها، ثم الإنذار
+- إرجاع العظم إلى مكانه
+- تدليك المنطقة المؤلمة
+- تحريك الذراع للتأكد
+C: التثبيت دون محاولة الإرجاع، ثم الإنذار.
+E: أي تحريك قد يزيد الإصابة خطورة (الأوعية الدموية والأعصاب). نثبت الطرف، مثلًا بوشاح، دون محاولة تقويمه.
+
+[SEC-022] traumatisme | advanced
+Q: Une victime d'accident de la route se plaint du cou. Que faut-il faire ?
+* Lui demander de ne pas bouger et maintenir sa tête dans l'axe du corps
+- L'asseoir pour qu'elle respire mieux
+- Lui retirer immédiatement son casque
+- La faire marcher pour vérifier
+C: Ne pas la bouger et maintenir sa tête.
+E: Une lésion de la colonne vertébrale est possible : un mouvement peut provoquer une paralysie. On maintient la tête à deux mains en attendant les secours, sauf détresse vitale qui impose d'agir.
+AR:
+Q: مصاب في حادثة سير يشتكي من ألم في العنق. ماذا يجب فعله؟
+* أن نطلب منه عدم الحركة ونثبت رأسه في محور الجسم
+- إجلاسه ليتنفس بشكل أفضل
+- نزع خوذته فورًا
+- جعله يمشي للتأكد
+C: عدم تحريكه وتثبيت رأسه.
+E: قد تكون هناك إصابة في العمود الفقري، وأي حركة قد تسبب الشلل. نثبت الرأس باليدين في انتظار الإسعاف، إلا في حالة خطر على الحياة يستوجب التدخل.
+
+[SEC-023] malaise | intermediate
+Q: Une personne diabétique fait un malaise avec sueurs et tremblements, mais reste consciente. Que lui donner ?
+* Du sucre (morceaux de sucre, jus de fruit)
+- De l'insuline
+- De l'eau salée
+- Rien, il faut attendre
+C: Du sucre.
+E: Ces signes évoquent une hypoglycémie. Si la victime est consciente et peut avaler, le sucre la corrige rapidement ; sinon, PLS et alerte.
+AR:
+Q: شخص مصاب بالسكري أصيب بوعكة مع تعرق وارتعاش لكنه ما زال واعيًا. ماذا نعطيه؟
+* السكر (قطع السكر أو عصير الفواكه)
+- الأنسولين
+- الماء المالح
+- لا شيء، يجب الانتظار
+C: السكر.
+E: تدل هذه العلامات على انخفاض نسبة السكر في الدم. إذا كان المصاب واعيًا وقادرًا على البلع فإن السكر يصحح الحالة بسرعة، وإلا نضعه في وضعية الأمان الجانبية ونطلب الإسعاف.
+
+[SEC-024] malaise | intermediate
+Q: Que faire face à une personne consciente victime d'un malaise ?
+* La mettre au repos, l'interroger et demander un avis médical
+- La faire marcher pour qu'elle reprenne ses esprits
+- Lui donner un médicament au hasard
+- La laisser seule
+C: Repos, questions, avis médical.
+E: On l'installe dans la position où elle se sent le mieux (souvent allongée, ou demi-assise si elle respire mal), on recherche les signes inquiétants (douleur thoracique, troubles de la parole…) et on demande un avis médical au 141 ou au 15.
+AR:
+Q: ماذا نفعل أمام شخص واعٍ أصيب بوعكة صحية؟
+* جعله يرتاح وطرح الأسئلة عليه وطلب رأي طبي
+- جعله يمشي ليستعيد وعيه
+- إعطاؤه دواء بشكل عشوائي
+- تركه وحده
+C: الراحة والأسئلة وطلب رأي طبي.
+E: نضعه في الوضعية التي يرتاح فيها (غالبًا ممددًا، أو نصف جالس إذا كان يجد صعوبة في التنفس)، ونبحث عن العلامات المقلقة (ألم في الصدر، اضطراب في الكلام…)، ونطلب رأيًا طبيًا على الرقم 141 أو 15.
+
+[SEC-025] malaise | advanced
+Q: Une personne présente soudain une déformation de la bouche, une faiblesse d'un bras et des troubles de la parole. Que faut-il suspecter ?
+* Un accident vasculaire cérébral (AVC)
+- Une simple fatigue
+- Une indigestion
+- Une crise d'asthme
+C: Un AVC.
+E: Visage paralysé, bras faible, parole troublée : on alerte immédiatement en notant l'heure d'apparition des signes, car le traitement doit être très rapide.
+AR:
+Q: ظهرت فجأة على شخص علامات اعوجاج الفم وضعف في أحد الذراعين واضطراب في الكلام. بماذا نشك؟
+* سكتة دماغية
+- تعب بسيط
+- عسر الهضم
+- نوبة ربو
+C: سكتة دماغية.
+E: شلل في الوجه وضعف في الذراع واضطراب في الكلام: نطلب الإسعاف فورًا مع تسجيل ساعة ظهور العلامات، لأن العلاج يجب أن يكون سريعًا جدًا.
+
+[SEC-026] incendie | beginner
+Q: Quels sont les trois éléments du triangle du feu ?
+* Un combustible, un comburant (le dioxygène) et une énergie d'activation (la chaleur)
+- L'eau, le sable et l'air
+- Le bois, le papier et le carton
+- La fumée, les flammes et les cendres
+C: Combustible, comburant et énergie d'activation.
+E: Il suffit de supprimer un de ces éléments pour éteindre le feu : refroidir (eau), étouffer (couverture, sable) ou retirer le combustible.
+AR:
+Q: ما هي العناصر الثلاثة لمثلث النار؟
+* مادة قابلة للاحتراق، ومادة مساعدة على الاحتراق (الأكسجين)، وطاقة التنشيط (الحرارة)
+- الماء والرمل والهواء
+- الخشب والورق والكرتون
+- الدخان واللهب والرماد
+C: المادة القابلة للاحتراق، والأكسجين، والحرارة.
+E: يكفي حذف عنصر واحد لإخماد النار: التبريد (الماء)، أو الخنق (غطاء، رمل)، أو إبعاد المادة القابلة للاحتراق.
+
+[SEC-027] incendie | intermediate
+Q: Pourquoi ne faut-il jamais verser d'eau sur de l'huile de cuisson en feu ?
+* L'eau se vaporise brutalement et projette l'huile enflammée
+- L'eau est inefficace sur tous les feux
+- L'eau refroidit l'huile trop lentement
+- Cela produit seulement un gaz toxique
+C: Risque de projection violente d'huile enflammée.
+E: Il faut couper le feu (gaz ou plaque), couvrir le récipient avec un couvercle ou un linge humide bien essoré pour étouffer les flammes, et ne pas le déplacer.
+AR:
+Q: لماذا لا يجب أبدًا صب الماء على زيت الطهي المشتعل؟
+* لأن الماء يتبخر فجأة ويقذف الزيت المشتعل
+- لأن الماء غير فعال في جميع الحرائق
+- لأن الماء يبرد الزيت ببطء شديد
+- لأن ذلك ينتج غازًا سامًا فقط
+C: خطر قذف الزيت المشتعل بقوة.
+E: يجب إطفاء مصدر الحرارة (الغاز أو الصفيحة الكهربائية)، وتغطية الإناء بغطاء أو بقطعة قماش مبللة جيدة العصر لخنق اللهب، وعدم تحريكه.
+
+[SEC-028] incendie | intermediate
+Q: Quel extincteur est adapté à un feu d'origine électrique ?
+* Un extincteur à dioxyde de carbone (CO₂)
+- Un extincteur à eau en jet plein
+- Un seau d'eau
+- Aucun : il faut souffler sur les flammes
+C: L'extincteur à CO₂.
+E: Le CO₂ ne conduit pas l'électricité et ne laisse pas de résidus ; la poudre polyvalente convient aussi. Il faut si possible couper le courant avant d'intervenir.
+AR:
+Q: ما هي المطفأة المناسبة لحريق ناتج عن الكهرباء؟
+* مطفأة ثاني أكسيد الكربون (CO₂)
+- مطفأة الماء بالرش المباشر
+- دلو من الماء
+- لا شيء، يكفي النفخ على اللهب
+C: مطفأة ثاني أكسيد الكربون.
+E: ثاني أكسيد الكربون لا يوصل الكهرباء ولا يترك بقايا، ويمكن أيضًا استعمال مطفأة المسحوق متعدد الاستعمالات، مع قطع التيار الكهربائي إن أمكن قبل التدخل.
+
+[SEC-029] incendie | beginner
+Q: Comment se déplacer dans une pièce enfumée ?
+* Se baisser près du sol, où l'air est moins chaud et moins enfumé
+- Rester debout et courir
+- Monter sur une chaise
+- Ouvrir toutes les fenêtres et rester au centre de la pièce
+C: Se baisser.
+E: Les fumées chaudes et toxiques montent : l'air respirable se trouve près du sol. On se protège le nez et la bouche avec un linge humide si possible.
+AR:
+Q: كيف نتنقل داخل غرفة مليئة بالدخان؟
+* بالانحناء قرب الأرض حيث يكون الهواء أقل حرارة وأقل دخانًا
+- بالبقاء واقفين والجري
+- بالصعود فوق كرسي
+- بفتح جميع النوافذ والبقاء في وسط الغرفة
+C: الانحناء قرب الأرض.
+E: الدخان الساخن والسام يصعد إلى الأعلى، والهواء الصالح للتنفس يوجد قرب الأرض. نحمي الأنف والفم بقطعة قماش مبللة إن أمكن.
+
+[SEC-030] incendie | intermediate
+Q: Si l'on est bloqué dans une pièce par un incendie, il faut :
+* Fermer la porte, calfeutrer les ouvertures avec des linges mouillés et se signaler à la fenêtre
+- Ouvrir la porte pour évaluer l'étendue du feu
+- Se cacher sous le lit
+- Prendre l'ascenseur
+C: Fermer, calfeutrer, se signaler.
+E: Une porte fermée retarde la progression du feu et des fumées. Il ne faut jamais utiliser l'ascenseur pendant un incendie.
+AR:
+Q: إذا حاصرنا حريق داخل غرفة، يجب:
+* إغلاق الباب، وسد الفتحات بأقمشة مبللة، وإثارة الانتباه من النافذة
+- فتح الباب لتقدير حجم الحريق
+- الاختباء تحت السرير
+- استعمال المصعد
+C: الإغلاق، وسد الفتحات، وإثارة الانتباه.
+E: الباب المغلق يؤخر انتشار النار والدخان، ولا يجب أبدًا استعمال المصعد أثناء الحريق.
+
+[SEC-031] intoxication | intermediate
+Q: Quels signes doivent faire penser à une intoxication au monoxyde de carbone (chauffe-eau à gaz, brasero) ?
+* Maux de tête, nausées et vertiges touchant plusieurs personnes d'un même lieu
+- Une forte odeur d'œuf pourri
+- Une fièvre élevée isolée
+- Des démangeaisons de la peau
+C: Maux de tête, nausées, vertiges, souvent collectifs.
+E: Le monoxyde de carbone est incolore et inodore. Il faut aérer, faire sortir les personnes, arrêter l'appareil si possible et appeler les secours. Ce risque est fréquent en hiver avec les chauffe-eau mal ventilés.
+AR:
+Q: ما هي العلامات التي تجعلنا نشك في تسمم بأحادي أكسيد الكربون (سخان الماء بالغاز، المجمر)؟
+* صداع وغثيان ودوار يصيب عدة أشخاص في المكان نفسه
+- رائحة قوية تشبه رائحة البيض الفاسد
+- حمى مرتفعة منعزلة
+- حكة في الجلد
+C: صداع وغثيان ودوار، غالبًا عند عدة أشخاص.
+E: أحادي أكسيد الكربون غاز عديم اللون والرائحة. يجب التهوية وإخراج الأشخاص وإطفاء الجهاز إن أمكن والاتصال بالإسعاف. ويكثر هذا الخطر في الشتاء مع سخانات الماء سيئة التهوية.
+
+[SEC-032] intoxication | intermediate
+Q: Un enfant a avalé un produit ménager. Que ne faut-il surtout pas faire ?
+* Le faire vomir
+- Appeler le centre antipoison ou les secours
+- Garder l'emballage du produit
+- Surveiller sa respiration
+C: Le faire vomir.
+E: Faire vomir peut aggraver les brûlures de l'œsophage et provoquer une fausse route. Au Maroc, le Centre antipoison et de pharmacovigilance (CAPM) répond 24 h/24 au 0801 000 180.
+AR:
+Q: ابتلع طفل مادة تنظيف منزلية. ما الذي لا يجب فعله إطلاقًا؟
+* جعله يتقيأ
+- الاتصال بمركز محاربة التسمم أو بالإسعاف
+- الاحتفاظ بعلبة المنتوج
+- مراقبة تنفسه
+C: جعله يتقيأ.
+E: التقيؤ قد يزيد من حروق المريء ويسبب دخول المادة إلى المسالك التنفسية. في المغرب، يجيب المركز المغربي لمحاربة التسمم واليقظة الدوائية على مدار الساعة على الرقم 0801000180.
+
+[SEC-033] noyade | intermediate
+Q: Une personne sortie de l'eau est inconsciente et ne respire pas. Que faire en priorité ?
+* Alerter et commencer la réanimation, en débutant par 5 insufflations si l'on est formé
+- La mettre la tête en bas pour vider l'eau
+- La frictionner et attendre
+- L'asseoir
+C: Alerter et réanimer.
+E: Chez le noyé, l'arrêt cardiaque est dû au manque d'oxygène : les secouristes formés commencent par 5 insufflations avant les compressions. Il ne faut jamais perdre de temps à « vider l'eau ».
+AR:
+Q: شخص أُخرج من الماء فاقدًا للوعي ولا يتنفس. ماذا نفعل أولًا؟
+* الإنذار والبدء في الإنعاش، مع البدء بخمس نفخات إذا كنا مكوَّنين
+- قلبه رأسًا على عقب لإخراج الماء
+- دلكه والانتظار
+- إجلاسه
+C: الإنذار والإنعاش.
+E: عند الغريق يتوقف القلب بسبب نقص الأكسجين، لذلك يبدأ المسعفون المكوَّنون بخمس نفخات قبل الضغط على الصدر. ولا يجب أبدًا إضاعة الوقت في محاولة إخراج الماء.
+
+[SEC-034] chaleur | intermediate
+Q: Une personne a la peau chaude, une température très élevée et elle est confuse après une exposition à la chaleur. Que faire ?
+* La mettre au frais, la rafraîchir et alerter : c'est un coup de chaleur
+- La couvrir chaudement
+- Lui donner un sirop contre la toux
+- La faire courir pour transpirer
+C: Mettre au frais, rafraîchir, alerter.
+E: Le coup de chaleur est une urgence : on installe la victime à l'ombre, on la déshabille en partie, on la rafraîchit (linges humides, ventilation) et on alerte.
+AR:
+Q: شخص جلده ساخن وحرارته مرتفعة جدًا ويبدو مشوشًا بعد تعرضه للحرارة. ماذا نفعل؟
+* نضعه في مكان بارد ونبرد جسمه ونطلب الإسعاف: إنها ضربة حرارة
+- نغطيه بغطاء دافئ
+- نعطيه دواء للسعال
+- نجعله يجري ليتعرق
+C: مكان بارد، وتبريد، وطلب الإسعاف.
+E: ضربة الحرارة حالة مستعجلة: نضع المصاب في الظل، وننزع جزءًا من ملابسه، ونبرد جسمه (أقمشة مبللة، تهوية)، ونطلب الإسعاف.
+
+[SEC-035] piqure | intermediate
+Q: Une personne vient d'être piquée par un scorpion. Que faut-il faire ?
+* La calmer, la garder au repos, ne pas inciser ni sucer la plaie, et appeler les secours ou le centre antipoison
+- Inciser la plaie et aspirer le venin
+- Poser un garrot serré pendant plusieurs heures
+- Lui faire faire un effort pour éliminer le venin
+C: Repos, ni incision ni garrot, alerte.
+E: Les piqûres de scorpion sont fréquentes au Maroc en été et peuvent être graves, surtout chez l'enfant. L'incision, la succion et le garrot sont inefficaces et dangereux.
+AR:
+Q: تعرض شخص للدغة عقرب. ماذا يجب فعله؟
+* تهدئته وإبقاؤه في راحة، وعدم شق الجرح أو مصه، والاتصال بالإسعاف أو بمركز محاربة التسمم
+- شق الجرح ومص السم
+- وضع رباط ضاغط مشدود لعدة ساعات
+- جعله يبذل مجهودًا لطرد السم
+C: الراحة، دون شق ولا رباط ضاغط، وطلب الإسعاف.
+E: لدغات العقارب كثيرة في المغرب خلال الصيف وقد تكون خطيرة خاصة عند الأطفال. وشق الجرح ومصه ووضع الرباط الضاغط ممارسات غير فعالة وخطيرة.
+
+[SEC-036] secourisme-general | beginner
+Q: Pourquoi le secouriste doit-il se protéger les mains face à une plaie qui saigne ?
+* Pour éviter la transmission de maladies par le sang
+- Pour mieux appuyer sur la plaie
+- Pour ne pas se salir les mains
+- Ce n'est jamais utile
+C: Pour éviter les infections transmises par le sang.
+E: Le contact avec le sang expose à des maladies comme les hépatites ou le VIH. À défaut de gants, on peut utiliser un sac plastique ou demander à la victime de comprimer elle-même sa plaie.
+AR:
+Q: لماذا يجب على المسعف حماية يديه أمام جرح ينزف؟
+* لتفادي انتقال الأمراض عن طريق الدم
+- ليضغط بشكل أفضل على الجرح
+- لكي لا تتسخ يداه
+- لا فائدة من ذلك أبدًا
+C: لتفادي العدوى المنقولة عبر الدم.
+E: ملامسة الدم قد تنقل أمراضًا مثل التهاب الكبد الفيروسي وفيروس فقدان المناعة. وفي غياب القفازات يمكن استعمال كيس بلاستيكي أو مطالبة المصاب بالضغط على جرحه بنفسه.

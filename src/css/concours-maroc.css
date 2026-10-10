@@ -329,6 +329,7 @@ html[dir="rtl"] .breadcrumb li + li::before { content: "‹"; }
 
 .layout { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 34px; align-items: start; padding-bottom: 40px; }
 @media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } .layout aside { order: -1; } }
+@media (max-width: 1000px) { .tool-layout aside { order: 0; } }
 .prose { max-width: var(--readw); }
 .prose h2 { padding-top: .2em; border-top: 1px solid var(--line); padding-top: 1em; }
 .prose h2:first-child { border-top: 0; padding-top: 0; margin-top: .5em; }
@@ -338,7 +339,8 @@ html[dir="rtl"] .breadcrumb li + li::before { content: "‹"; }
 @media (max-width: 1000px) { .aside-sticky { position: static; } }
 
 .toc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 14px 16px; font-size: var(--fs-sm); }
-.toc strong { display: block; margin-bottom: 6px; }
+.toc strong { display: inline; }
+.toc summary { cursor: pointer; margin-bottom: 6px; }
 .toc ol { margin: 0; padding-inline-start: 1.1em; }
 .toc a { color: var(--ink-2); text-decoration: none; }
 .toc a:hover { color: var(--accent); text-decoration: underline; }
@@ -456,6 +458,31 @@ html[dir="rtl"] .faq .faq-a { padding: 0 48px 14px 16px; }
 .meter > i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
 .meter.warn > i { background: var(--gold); }
 .meter.bad > i { background: var(--flag-red); }
+
+/* tools: results */
+.result-line { font-weight: 700; margin: 6px 0 12px; }
+.wavg-row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr) 40px; gap: 8px; margin-bottom: 8px; align-items: center; }
+.wavg-row input { width: 100%; min-height: 42px; padding: 8px 10px; font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-sm); }
+.wavg-row .icon-btn, .tool-icon-btn { width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 1.2rem; cursor: pointer; }
+.field input[aria-invalid="true"] { border-color: var(--flag-red); }
+.orient-list { margin-bottom: 18px; }
+.orient-card .card-title { display: block; color: var(--ink); text-decoration: none; }
+.orient-card .card-title:hover { color: var(--accent); text-decoration: underline; }
+.orient-card .card-meta .badge { white-space: normal; text-align: start; }
+.orient-card.dim { opacity: .72; }
+.check-items { list-style: none; padding: 0; margin: 0 0 8px; }
+.check-items li { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid var(--line); margin: 0; }
+.check-items input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--accent); flex: none; }
+.check-items label { cursor: pointer; }
+.check-items input:checked + label { color: var(--muted); text-decoration: line-through; }
+.plan-weeks { display: grid; gap: 12px; }
+.plan-week { padding: 14px 16px; }
+.plan-head { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin-bottom: 10px; }
+.plan-week .checklist { margin: 10px 0; font-size: var(--fs-sm); }
+.plan-bars { display: grid; gap: 6px; }
+.plan-bar-label { display: flex; justify-content: space-between; font-size: var(--fs-sm); }
+@media (max-width: 620px) { .wavg-row { grid-template-columns: minmax(0, 1fr) 72px 72px 40px; } }
+@media print { .plan-week { break-inside: avoid; } .check-items input { accent-color: #000; } }
 
 /* QCM sample pages */
 .qcm-list { list-style: none; padding: 0; margin: 0; counter-reset: q; }

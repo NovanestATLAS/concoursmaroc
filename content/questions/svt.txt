@@ -1,0 +1,580 @@
+# SVT — biologie et géologie, niveau 2e année bac (programme marocain).
+# Style des QCM de médecine, pharmacie, ISPITS, IAV, FST, ERSSM.
+@category svt
+@source src-programme-bac
+
+[SVT-001] respiration | beginner
+Q: Dans quel compartiment cellulaire se déroule le cycle de Krebs ?
+* La matrice mitochondriale
+- Le noyau
+- Le chloroplaste
+- L'appareil de Golgi
+C: Dans la matrice de la mitochondrie.
+E: La glycolyse a lieu dans le hyaloplasme ; le cycle de Krebs dans la matrice mitochondriale et la chaîne respiratoire dans la membrane interne de la mitochondrie.
+
+[SVT-002] respiration | beginner
+Q: Où se déroule la glycolyse ?
+* Dans le hyaloplasme (cytosol)
+- Dans la matrice mitochondriale
+- Dans la membrane interne de la mitochondrie
+- Dans le noyau
+C: Dans le hyaloplasme.
+E: La glycolyse dégrade une molécule de glucose en deux molécules d'acide pyruvique, avec un gain net de 2 ATP et la réduction de 2 NAD⁺. Elle ne nécessite pas de dioxygène.
+
+[SVT-003] respiration | intermediate
+Q: Quel est le bilan net en ATP de la glycolyse pour une molécule de glucose ?
+* 2 ATP
+- 36 ATP
+- 4 ATP
+- 0 ATP
+C: 2 ATP (gain net).
+E: 4 ATP sont produits mais 2 sont consommés au début de la glycolyse : le gain net est de 2 ATP par glucose.
+
+[SVT-004] respiration | intermediate
+Q: Quel est l'accepteur final des électrons de la chaîne respiratoire ?
+* Le dioxygène
+- Le NAD⁺
+- Le dioxyde de carbone
+- Le glucose
+C: Le dioxygène (O₂).
+E: Les électrons cédés par les transporteurs réduits (NADH,H⁺ et FADH₂) circulent le long de la chaîne respiratoire jusqu'au dioxygène, réduit en eau. Ce transfert crée un gradient de protons utilisé par l'ATP synthase.
+
+[SVT-005] respiration | intermediate
+Q: Selon les valeurs classiques des manuels, la respiration cellulaire produit environ combien de molécules d'ATP par molécule de glucose ?
+* 36 à 38
+- 2
+- 4
+- 100
+C: Environ 36 à 38 ATP.
+E: Les manuels retiennent 36 ou 38 ATP par glucose pour la respiration (les estimations récentes donnent plutôt 30 à 32). La fermentation n'en produit que 2.
+
+[SVT-006] fermentation | beginner
+Q: La fermentation alcoolique réalisée par les levures produit :
+* De l'éthanol et du CO₂
+- De l'acide lactique uniquement
+- De l'eau et du CO₂
+- Du glucose et du dioxygène
+C: Éthanol et dioxyde de carbone.
+E: En anaérobiose, l'acide pyruvique est transformé en éthanol et CO₂, ce qui régénère le NAD⁺. La fermentation lactique (muscle, bactéries lactiques) produit de l'acide lactique.
+
+[SVT-007] fermentation | intermediate
+Q: Le rendement énergétique de la fermentation est faible car :
+* La dégradation du glucose est incomplète
+- Elle se déroule dans la mitochondrie
+- Elle consomme beaucoup de dioxygène
+- Elle ne produit aucun ATP
+C: Dégradation incomplète du glucose.
+E: Les produits de fermentation (éthanol, acide lactique) contiennent encore beaucoup d'énergie. Seule la glycolyse fournit de l'ATP, soit 2 par glucose.
+
+[SVT-008] muscle | beginner
+Q: Lors de la contraction musculaire, quelles protéines glissent les unes par rapport aux autres ?
+* L'actine et la myosine
+- L'hémoglobine et la myoglobine
+- La kératine et le collagène
+- L'insuline et le glucagon
+C: L'actine et la myosine.
+E: Les têtes de myosine se fixent sur les filaments fins d'actine et les font glisser en hydrolysant de l'ATP : le sarcomère se raccourcit.
+
+[SVT-009] muscle | advanced
+Q: Quel ion déclenche la contraction musculaire en démasquant les sites de fixation de la myosine sur l'actine ?
+* Ca²⁺
+- Na⁺
+- Cl⁻
+- Fe²⁺
+C: L'ion calcium.
+E: Le potentiel d'action musculaire provoque la libération de Ca²⁺ par le réticulum sarcoplasmique ; le calcium se fixe sur la troponine, ce qui libère les sites de l'actine.
+
+[SVT-010] muscle | intermediate
+Q: Lors de la contraction d'un sarcomère :
+* La bande I et la zone H raccourcissent, la bande A garde sa longueur
+- La bande A raccourcit et la bande I s'allonge
+- Toutes les bandes gardent leur longueur
+- Les filaments d'actine raccourcissent
+C: Bande I et zone H raccourcissent ; bande A constante.
+E: Les filaments ne changent pas de longueur : ils glissent les uns sur les autres. La bande A correspond à la longueur des filaments de myosine, elle reste donc constante.
+
+[SVT-011] muscle | intermediate
+Q: Quelle voie de régénération de l'ATP est la plus rapide, mais aussi la plus brève, lors d'un effort intense ?
+* La voie de la phosphocréatine
+- La respiration cellulaire
+- La fermentation lactique
+- La dégradation des acides gras
+C: La phosphocréatine.
+E: La phosphocréatine régénère très vite l'ATP pendant quelques secondes. La fermentation lactique prend le relais à court terme, puis la respiration assure les efforts prolongés.
+
+[SVT-012] adn | beginner
+Q: Quelles sont les quatre bases azotées de l'ADN ?
+* Adénine, thymine, guanine, cytosine
+- Adénine, uracile, guanine, cytosine
+- Adénine, thymine, glycine, cytosine
+- Alanine, thymine, guanine, cytosine
+C: A, T, G et C.
+E: Dans l'ARN, la thymine est remplacée par l'uracile (U). La glycine et l'alanine sont des acides aminés.
+
+[SVT-013] adn | beginner
+Q: Dans la double hélice d'ADN, l'adénine est associée à :
+* La thymine
+- La guanine
+- La cytosine
+- L'uracile
+C: La thymine (A–T).
+E: Complémentarité des bases : A–T (2 liaisons hydrogène) et G–C (3 liaisons hydrogène).
+
+[SVT-014] adn | intermediate
+Q: Une molécule d'ADN double brin contient 30 % de guanine. Quel est son pourcentage de thymine ?
+* 20 %
+- 30 %
+- 40 %
+- 70 %
+C: 20 %.
+E: G = C = 30 %, donc G + C = 60 % et A + T = 40 %. Comme A = T, on obtient T = 20 % (règle de Chargaff).
+
+[SVT-015] adn | intermediate
+Q: La réplication de l'ADN est dite semi-conservative car :
+* Chaque nouvelle molécule contient un brin parental et un brin nouvellement synthétisé
+- La moitié de l'ADN est détruite
+- Seule la moitié des gènes est copiée
+- Les deux brins parentaux restent associés
+C: Un brin ancien et un brin nouveau.
+E: Démontrée par Meselson et Stahl (1958) : chaque brin parental sert de matrice à la synthèse d'un brin complémentaire.
+
+[SVT-016] adn | beginner
+Q: Pendant quelle phase du cycle cellulaire l'ADN est-il répliqué ?
+* La phase S de l'interphase
+- La prophase
+- La métaphase
+- L'anaphase
+C: Pendant la phase S.
+E: Le cycle cellulaire comprend l'interphase (G1, S, G2) et la mitose. La quantité d'ADN double pendant la phase S : chaque chromosome est alors formé de deux chromatides.
+
+[SVT-017] mitose | intermediate
+Q: Au cours de quelle phase de la mitose les chromatides sœurs se séparent-elles ?
+* L'anaphase
+- La prophase
+- La métaphase
+- La télophase
+C: L'anaphase.
+E: En métaphase, les chromosomes s'alignent sur la plaque équatoriale ; en anaphase, les chromatides sœurs migrent vers les pôles opposés.
+
+[SVT-018] mitose | beginner
+Q: À partir d'une cellule mère diploïde, la mitose produit :
+* Deux cellules filles diploïdes génétiquement identiques
+- Quatre cellules haploïdes différentes
+- Deux cellules haploïdes
+- Une seule cellule tétraploïde
+C: Deux cellules identiques à la cellule mère.
+E: La mitose conserve le nombre de chromosomes et l'information génétique ; c'est la méiose qui produit des cellules haploïdes.
+
+[SVT-019] expression | beginner
+Q: La transcription est la synthèse :
+* D'un ARN messager à partir d'un brin d'ADN
+- D'une protéine à partir de l'ARN messager
+- D'un brin d'ADN à partir d'un autre brin d'ADN
+- D'acides aminés à partir du glucose
+C: D'un ARNm à partir de l'ADN.
+E: Chez les eucaryotes, la transcription a lieu dans le noyau ; la traduction (synthèse de la protéine) se déroule dans le cytoplasme, au niveau des ribosomes.
+
+[SVT-020] expression | beginner
+Q: Où se déroule la traduction de l'ARNm en protéine ?
+* Au niveau des ribosomes, dans le cytoplasme
+- Dans le noyau
+- Uniquement dans la mitochondrie
+- Dans le lysosome
+C: Sur les ribosomes du cytoplasme.
+E: Les ribosomes lisent l'ARNm codon par codon ; les ARN de transfert apportent les acides aminés correspondants.
+
+[SVT-021] expression | beginner
+Q: Un codon est formé de :
+* Trois nucléotides consécutifs de l'ARNm
+- Deux nucléotides
+- Un acide aminé
+- Quatre bases azotées
+C: Trois nucléotides.
+E: Avec 4 bases, il existe 4³ = 64 codons : 61 codent des acides aminés et 3 sont des codons stop (UAA, UAG, UGA).
+
+[SVT-022] expression | intermediate
+Q: Quel est le codon d'initiation de la traduction ?
+* AUG
+- UAA
+- UGA
+- GGG
+C: AUG, qui code la méthionine.
+E: AUG marque le début de la traduction ; UAA, UAG et UGA sont des codons stop qui y mettent fin.
+
+[SVT-023] expression | advanced
+Q: Le code génétique est dit redondant (ou dégénéré) parce que :
+* Plusieurs codons peuvent coder le même acide aminé
+- Un codon peut coder plusieurs acides aminés
+- Il est différent selon les espèces
+- Il ne comporte aucun codon stop
+C: Plusieurs codons pour un même acide aminé.
+E: 61 codons codent 20 acides aminés. Le code est aussi univoque (un codon correspond à un seul acide aminé) et quasi universel.
+
+[SVT-024] expression | intermediate
+Q: Le brin transcrit d'un fragment d'ADN porte la séquence TAC GGA. Quelle est la séquence de l'ARNm correspondant ?
+* AUG CCU
+- ATG CCT
+- UAC GGA
+- TUC CCU
+C: AUG CCU.
+E: L'ARNm est complémentaire du brin transcrit, avec U à la place de T : T→A, A→U, C→G, G→C.
+
+[SVT-025] mutations | intermediate
+Q: Une mutation par substitution d'un nucléotide peut être silencieuse car :
+* Le nouveau codon peut coder le même acide aminé
+- Elle supprime tout le gène
+- Elle touche toujours un intron
+- Elle ne modifie pas la séquence de l'ADN
+C: Grâce à la redondance du code génétique.
+E: Si le codon muté code le même acide aminé, la protéine est inchangée. Une substitution peut aussi être faux-sens (acide aminé différent) ou non-sens (apparition d'un codon stop).
+
+[SVT-026] mutations | advanced
+Q: Quelle mutation entraîne généralement le plus de modifications dans la protéine ?
+* L'insertion ou la délétion d'un nucléotide, qui décale le cadre de lecture
+- Une substitution silencieuse
+- Une substitution dans un intron
+- Une substitution remplaçant un acide aminé par un autre de propriétés voisines
+C: Insertion ou délétion d'un nucléotide.
+E: L'ajout ou la perte d'un nucléotide décale le cadre de lecture : tous les codons situés en aval changent, et un codon stop apparaît souvent prématurément.
+
+[SVT-027] mutations | intermediate
+Q: La drépanocytose est due à une mutation du gène codant :
+* La β-globine de l'hémoglobine
+- L'insuline
+- La mélanine
+- La kératine
+C: Le gène de la β-globine.
+E: Une substitution (GAG → GTG) remplace l'acide glutamique par la valine en position 6 : l'hémoglobine S polymérise et déforme les hématies en faucille.
+
+[SVT-028] meiose | beginner
+Q: À partir d'une cellule diploïde (2n), la méiose produit :
+* Quatre cellules haploïdes (n)
+- Deux cellules diploïdes identiques
+- Quatre cellules diploïdes
+- Une cellule haploïde
+C: Quatre cellules haploïdes.
+E: La méiose comprend deux divisions : la première, réductionnelle, sépare les chromosomes homologues ; la seconde, équationnelle, sépare les chromatides.
+
+[SVT-029] meiose | intermediate
+Q: Le brassage interchromosomique se produit lors de :
+* L'anaphase I de la méiose
+- La prophase de la mitose
+- L'anaphase II de la méiose
+- La fécondation uniquement
+C: L'anaphase I.
+E: Les chromosomes homologues de chaque paire se répartissent au hasard et indépendamment entre les deux pôles, ce qui crée 2ⁿ combinaisons de gamètes (2²³ chez l'être humain).
+
+[SVT-030] meiose | intermediate
+Q: Le crossing-over (brassage intrachromosomique) a lieu pendant :
+* La prophase I de la méiose
+- L'anaphase II
+- L'interphase
+- La télophase de la mitose
+C: La prophase I.
+E: Les chromosomes homologues appariés échangent des segments de chromatides au niveau des chiasmas, ce qui crée de nouvelles associations d'allèles.
+
+[SVT-031] meiose | beginner
+Q: Combien de chromosomes contient un gamète humain normal ?
+* 23
+- 46
+- 22
+- 92
+C: 23 chromosomes.
+E: Les cellules somatiques humaines sont diploïdes (2n = 46) ; les gamètes sont haploïdes (n = 23), dont un chromosome sexuel.
+
+[SVT-032] meiose | advanced
+Q: Une espèce a 2n = 8 chromosomes. Combien de types de gamètes génétiquement différents peut-elle produire par le seul brassage interchromosomique ?
+* 16
+- 8
+- 4
+- 64
+C: 2⁴ = 16.
+E: Il y a n = 4 paires de chromosomes, chacune se répartissant indépendamment : 2ⁿ = 2⁴ = 16 combinaisons.
+
+[SVT-033] genetique | beginner
+Q: On croise deux lignées pures de pois, l'une à graines jaunes, l'autre à graines vertes. Toute la F1 est jaune. Que peut-on conclure ?
+* L'allèle « jaune » est dominant
+- L'allèle « vert » est dominant
+- Les deux allèles sont codominants
+- Le gène est lié au sexe
+C: L'allèle jaune est dominant.
+E: Première loi de Mendel (uniformité des hybrides de première génération) : le phénotype de la F1 révèle l'allèle dominant.
+
+[SVT-034] genetique | intermediate
+Q: En croisant entre eux des individus F1 hétérozygotes (monohybridisme, dominance complète), quelles proportions phénotypiques obtient-on en F2 ?
+* 3/4 de phénotype dominant et 1/4 de phénotype récessif
+- 1/2 dominant et 1/2 récessif
+- 100 % de phénotype dominant
+- 1/4, 1/2 et 1/4 de trois phénotypes
+C: 3/4 – 1/4.
+E: Aa × Aa donne 1/4 AA, 1/2 Aa et 1/4 aa, soit 3/4 de phénotype dominant. Les proportions 1/4, 1/2, 1/4 s'observent en cas de codominance.
+
+[SVT-035] genetique | intermediate
+Q: Un croisement-test consiste à croiser un individu de phénotype dominant avec :
+* Un individu homozygote récessif
+- Un individu hétérozygote
+- Un individu homozygote dominant
+- Un individu de la F1
+C: Un homozygote récessif.
+E: L'homozygote récessif ne fournit que des allèles récessifs : les phénotypes des descendants révèlent directement les gamètes produits par l'individu testé.
+
+[SVT-036] genetique | advanced
+Q: Un croisement-test réalisé avec un individu dihybride donne quatre phénotypes en proportions égales (25 % chacun). Que peut-on conclure ?
+* Les deux gènes sont indépendants
+- Les deux gènes sont liés, sans crossing-over
+- Les deux gènes sont liés au sexe
+- L'un des allèles est létal
+C: Gènes indépendants.
+E: Quatre phénotypes équiprobables traduisent quatre types de gamètes produits en proportions égales : les gènes sont portés par des chromosomes différents. Des gènes liés donneraient deux phénotypes parentaux majoritaires.
+
+[SVT-037] genetique | advanced
+Q: Un croisement-test avec un dihybride donne 42 % + 42 % de phénotypes parentaux et 8 % + 8 % de phénotypes recombinés. Quelle est la distance entre les deux gènes ?
+* 16 cM
+- 8 cM
+- 42 cM
+- 84 cM
+C: 16 centimorgans.
+E: Les gènes sont liés. Le pourcentage de recombinés vaut 8 + 8 = 16 %, ce qui correspond à une distance de 16 cM sur la carte factorielle.
+
+[SVT-038] genetique | intermediate
+Q: Une maladie récessive liée au chromosome X, comme l'hémophilie, touche plus souvent :
+* Les garçons
+- Les filles
+- Autant les filles que les garçons
+- Uniquement les filles
+C: Les garçons.
+E: Les garçons (XY) n'ont qu'un chromosome X : un seul allèle muté suffit. Les filles (XX) doivent porter deux allèles mutés pour être atteintes.
+
+[SVT-039] genetique | intermediate
+Q: Un couple sain a un enfant atteint d'une maladie héréditaire autosomique. Le mode de transmission le plus probable est :
+* Autosomique récessif, les deux parents étant hétérozygotes
+- Autosomique dominant
+- Lié au chromosome Y
+- Dominant lié au chromosome X
+C: Autosomique récessif.
+E: Un enfant atteint né de parents sains : l'allèle est récessif et chaque parent en porte une copie. Le risque pour chaque nouvel enfant est de 1/4.
+
+[SVT-040] genetique-populations | advanced
+Q: Dans une population à l'équilibre de Hardy-Weinberg, la fréquence de l'allèle récessif a est q = 0,1. Quelle est la fréquence des hétérozygotes ?
+* 0,18
+- 0,01
+- 0,81
+- 0,1
+C: 2pq = 0,18.
+E: p = 1 − q = 0,9. Fréquences génotypiques : AA = p² = 0,81 ; Aa = 2pq = 0,18 ; aa = q² = 0,01.
+
+[SVT-041] genetique-populations | advanced
+Q: Dans une population à l'équilibre de Hardy-Weinberg, 4 % des individus présentent le phénotype récessif. Quelle est la fréquence de l'allèle récessif ?
+* 0,2
+- 0,04
+- 0,16
+- 0,96
+C: q = 0,2.
+E: q² = 0,04, donc q = √0,04 = 0,2 et p = 0,8.
+
+[SVT-042] genetique-populations | intermediate
+Q: Parmi ces facteurs, lequel ne modifie pas les fréquences alléliques d'une population ?
+* Des unions au hasard (panmixie)
+- Les mutations
+- La sélection naturelle
+- La dérive génétique
+C: La panmixie.
+E: L'équilibre de Hardy-Weinberg suppose une grande population panmictique, sans mutation, sans sélection et sans migration. Mutations, sélection, migrations et dérive modifient les fréquences alléliques.
+
+[SVT-043] immunologie | beginner
+Q: Quelles cellules produisent les anticorps ?
+* Les plasmocytes, issus des lymphocytes B
+- Les lymphocytes T cytotoxiques
+- Les hématies
+- Les plaquettes
+C: Les plasmocytes.
+E: Après activation par un antigène et coopération avec les lymphocytes T4, les lymphocytes B se différencient en plasmocytes sécréteurs d'anticorps.
+
+[SVT-044] immunologie | beginner
+Q: Le VIH infecte principalement :
+* Les lymphocytes T4 (porteurs du récepteur CD4)
+- Les hématies
+- Les lymphocytes B
+- Les neurones
+C: Les lymphocytes T4.
+E: Le VIH se fixe sur le récepteur CD4. La destruction progressive des LT4, qui coordonnent la réponse immunitaire, conduit au SIDA et aux maladies opportunistes.
+
+[SVT-045] immunologie | intermediate
+Q: Quelle est la structure générale d'une molécule d'anticorps ?
+* En forme de Y, avec deux chaînes lourdes et deux chaînes légères
+- Une hélice simple
+- Un anneau fermé
+- Une seule chaîne en forme de T
+C: En Y : 2 chaînes lourdes et 2 chaînes légères.
+E: Chaque anticorps possède deux sites de fixation de l'antigène (parties variables) et une partie constante ; il forme avec l'antigène un complexe immun.
+
+[SVT-046] immunologie | intermediate
+Q: La réponse immunitaire à médiation cellulaire est assurée principalement par :
+* Les lymphocytes T cytotoxiques
+- Les anticorps circulants
+- Les plasmocytes
+- Les globules rouges
+C: Les LT cytotoxiques.
+E: Les LTc, issus des LT8, détruisent les cellules infectées ou cancéreuses, notamment grâce à la perforine. La réponse à médiation humorale repose sur les anticorps.
+
+[SVT-047] immunologie | beginner
+Q: La phagocytose est un mécanisme de l'immunité :
+* Innée (non spécifique)
+- Adaptative à médiation humorale
+- Adaptative à médiation cellulaire uniquement
+- Acquise par la seule vaccination
+C: Innée.
+E: Les phagocytes (macrophages, granulocytes) ingèrent et digèrent les éléments étrangers. Ils jouent aussi le rôle de cellules présentatrices de l'antigène.
+
+[SVT-048] immunologie | intermediate
+Q: La vaccination repose sur :
+* La formation de cellules mémoire
+- L'injection d'anticorps tout prêts
+- La destruction des lymphocytes
+- L'augmentation du nombre de globules rouges
+C: La mémoire immunitaire.
+E: Le vaccin contient un antigène rendu inoffensif : il déclenche une réponse primaire et la formation de lymphocytes mémoire, qui assureront une réponse secondaire plus rapide et plus intense. L'injection d'anticorps est la sérothérapie, une protection immédiate mais transitoire.
+
+[SVT-049] immunologie | advanced
+Q: Les molécules du CMH (système HLA chez l'être humain) permettent :
+* La reconnaissance du soi et la présentation de l'antigène aux lymphocytes T
+- La production des anticorps
+- Le transport du dioxygène
+- La coagulation du sang
+C: Marqueurs du soi et présentation de l'antigène.
+E: Les lymphocytes T ne reconnaissent un peptide antigénique que s'il est présenté par une molécule du CMH (double reconnaissance). Le CMH explique aussi le rejet des greffes.
+
+[SVT-050] immunologie | intermediate
+Q: Une personne du groupe sanguin O possède dans son plasma :
+* Des anticorps anti-A et anti-B
+- Aucun anticorps anti-A ni anti-B
+- Des anticorps anti-A seulement
+- Des anticorps anti-B seulement
+C: Anti-A et anti-B.
+E: Les hématies du groupe O ne portent ni antigène A ni antigène B, et le plasma contient les deux anticorps. À l'inverse, le groupe AB ne possède aucun de ces anticorps.
+
+[SVT-051] nerveux | intermediate
+Q: Au repos, la face interne de la membrane d'un neurone est chargée :
+* Négativement par rapport à la face externe (environ −70 mV)
+- Positivement par rapport à la face externe
+- De façon neutre
+- Positivement, à +70 mV
+C: Négativement (potentiel de repos ≈ −70 mV).
+E: Le potentiel de repos résulte de la répartition inégale des ions (K⁺ plus concentré à l'intérieur, Na⁺ à l'extérieur), maintenue notamment par la pompe Na⁺/K⁺.
+
+[SVT-052] nerveux | intermediate
+Q: La phase de dépolarisation du potentiel d'action est due à :
+* L'entrée massive d'ions Na⁺
+- La sortie d'ions K⁺
+- L'entrée d'ions Cl⁻
+- L'arrêt de la pompe Na⁺/K⁺
+C: L'entrée de Na⁺.
+E: L'ouverture des canaux Na⁺ voltage-dépendants provoque la dépolarisation ; la repolarisation est due à la sortie d'ions K⁺.
+
+[SVT-053] nerveux | beginner
+Q: Au niveau d'une synapse chimique, le message nerveux est transmis par :
+* Un neurotransmetteur libéré dans la fente synaptique
+- Le passage direct du courant électrique
+- Le sang
+- Des anticorps
+C: Un neurotransmetteur.
+E: L'arrivée du potentiel d'action provoque l'exocytose du neurotransmetteur (par exemple l'acétylcholine), qui se fixe sur des récepteurs de la membrane post-synaptique.
+
+[SVT-054] nerveux | intermediate
+Q: Dans une fibre nerveuse, l'intensité d'une stimulation est codée par :
+* La fréquence des potentiels d'action
+- L'amplitude des potentiels d'action
+- La vitesse de propagation
+- La durée de chaque potentiel d'action
+C: La fréquence des potentiels d'action.
+E: Le potentiel d'action obéit à la loi du tout ou rien : son amplitude est constante. Plus la stimulation est intense, plus la fréquence des potentiels d'action est élevée.
+
+[SVT-055] geologie | beginner
+Q: Au niveau d'une dorsale océanique, les plaques lithosphériques :
+* S'écartent, et une nouvelle lithosphère océanique se forme
+- Se rapprochent, et l'une plonge sous l'autre
+- Coulissent sans création ni destruction
+- Restent immobiles
+C: Elles divergent.
+E: L'accrétion à l'axe des dorsales crée de la lithosphère océanique ; celle-ci disparaît au niveau des zones de subduction.
+
+[SVT-056] geologie | intermediate
+Q: La subduction est :
+* Le plongement d'une lithosphère océanique sous une autre lithosphère
+- La collision de deux continents
+- L'écartement de deux plaques
+- L'érosion d'une chaîne de montagnes
+C: Le plongement d'une lithosphère océanique.
+E: Refroidie et devenue plus dense, la lithosphère océanique plonge dans le manteau. La subduction s'accompagne de séismes, d'un volcanisme andésitique et d'un métamorphisme de haute pression et basse température.
+
+[SVT-057] geologie | intermediate
+Q: L'obduction correspond :
+* Au charriage d'une portion de lithosphère océanique sur une marge continentale
+- Au plongement d'un continent sous un océan
+- À la formation d'une dorsale
+- À la fusion totale de la croûte continentale
+C: Au chevauchement de lithosphère océanique sur un continent.
+E: Les ophiolites sont des fragments de lithosphère océanique obductés, comme en Oman ou, au Maroc, dans l'Anti-Atlas (Bou Azzer).
+
+[SVT-058] geologie | intermediate
+Q: Le métamorphisme est la transformation d'une roche :
+* À l'état solide, sous l'effet de la température et de la pression
+- Par fusion complète puis refroidissement
+- Par érosion puis sédimentation
+- Sous la seule action de l'eau de pluie
+C: À l'état solide, sous l'effet de P et T.
+E: Les minéraux se transforment sans fusion : une argile peut devenir schiste, micaschiste puis gneiss quand la pression et la température augmentent. La fusion partielle conduit à l'anatexie.
+
+[SVT-059] geologie | intermediate
+Q: Les chaînes de montagnes de collision, comme l'Himalaya, résultent :
+* De l'affrontement de deux lithosphères continentales après la fermeture d'un océan
+- De l'écartement de deux plaques océaniques
+- De l'activité d'un point chaud isolé
+- De la subduction d'un continent sous un océan
+C: De la collision de deux continents.
+E: Après la disparition de la lithosphère océanique par subduction, les deux continents entrent en collision : raccourcissement et épaississement de la croûte, plis, failles inverses, chevauchements et nappes de charriage.
+
+[SVT-060] geologie | beginner
+Q: Le granite est une roche :
+* Magmatique plutonique
+- Sédimentaire
+- Magmatique volcanique
+- Métamorphique de basse pression
+C: Magmatique plutonique.
+E: Le granite cristallise lentement en profondeur : ses cristaux de quartz, feldspaths et micas sont visibles à l'œil nu (structure grenue). Le basalte, refroidi rapidement en surface, est une roche volcanique.
+
+[SVT-061] environnement | beginner
+Q: Quel gaz contribue le plus au renforcement de l'effet de serre d'origine humaine ?
+* Le dioxyde de carbone (CO₂)
+- Le dioxygène (O₂)
+- Le diazote (N₂)
+- L'argon
+C: Le CO₂.
+E: La combustion des énergies fossiles et la déforestation augmentent la teneur en CO₂ de l'atmosphère. Le méthane et le protoxyde d'azote sont d'autres gaz à effet de serre.
+
+[SVT-062] environnement | intermediate
+Q: L'eutrophisation d'un lac est principalement causée par :
+* Un excès de nitrates et de phosphates
+- Un manque de lumière
+- Une baisse de la température
+- Un excès de dioxygène dissous
+C: Un excès de nutriments (nitrates, phosphates).
+E: Les engrais et les eaux usées enrichissent l'eau en nutriments : les algues prolifèrent puis leur décomposition consomme le dioxygène dissous, ce qui asphyxie le milieu.
+
+[SVT-063] photosynthese | beginner
+Q: Dans quel organite se déroule la photosynthèse ?
+* Le chloroplaste
+- La mitochondrie
+- Le noyau
+- Le ribosome
+C: Le chloroplaste.
+E: La chlorophylle des chloroplastes capte l'énergie lumineuse, qui permet de produire de la matière organique à partir de CO₂ et d'eau en libérant du dioxygène.
+
+[SVT-064] cellule | beginner
+Q: Quelle structure est présente dans une cellule végétale mais absente d'une cellule animale ?
+* La paroi pectocellulosique
+- La membrane plasmique
+- Le noyau
+- Les mitochondries
+C: La paroi pectocellulosique.
+E: La cellule végétale possède aussi des chloroplastes et une grande vacuole. La membrane plasmique, le noyau et les mitochondries sont communs aux cellules animales et végétales.

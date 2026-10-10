@@ -9,9 +9,28 @@ import { SUBJECTS } from '../../../content/taxonomy.mjs';
 const PER_PAGE = 30;
 const DIFF = { fr: { beginner: 'Débutant', intermediate: 'Intermédiaire', advanced: 'Avancé' }, ar: { beginner: 'مبتدئ', intermediate: 'متوسط', advanced: 'متقدم' } };
 
+// Search-result titles per subject (front-loaded keywords, about 60 characters).
+const SEO_TITLE = {
+  maroc: 'QCM Maroc corrigés : histoire, géographie et institutions',
+  culture: 'QCM culture générale corrigés : monde, sciences, arts, sport',
+  logique: 'Tests psychotechniques et QCM de logique corrigés',
+  calcul: 'QCM calcul et raisonnement numérique corrigés',
+  maths: 'QCM mathématiques niveau bac corrigés pour les concours',
+  physique: 'QCM physique niveau bac corrigés pour les concours',
+  chimie: 'QCM chimie niveau bac corrigés pour les concours',
+  svt: 'QCM SVT corrigés : biologie et géologie niveau bac',
+  francais: 'QCM français corrigés : grammaire, orthographe, vocabulaire',
+  arabe: 'QCM langue arabe corrigés : grammaire, orthographe, rhétorique',
+  anglais: 'QCM anglais corrigés : grammaire et vocabulaire',
+  economie: 'QCM économie et gestion corrigés (ENCG, ISCAE, douane)',
+  sciences: 'QCM sciences, numérique et administration corrigés',
+  secourisme: 'QCM secourisme corrigés : premiers secours et incendie',
+  architecture: 'QCM architecture et art corrigés (concours ENA)',
+};
+
 const TXT = {
   fr: {
-    qcm: 'QCM corrigés', title: (s) => `QCM ${s.fr.toLowerCase()} corrigés — entraînement aux concours`,
+    qcm: 'QCM corrigés', title: (s) => SEO_TITLE[s.id] || `QCM ${s.short.fr} corrigés pour les concours`,
     desc: (s, n) => `${n} questions corrigées de ${s.fr.toLowerCase()} pour préparer les concours au Maroc, avec réponse et explication détaillée. Entraînez-vous gratuitement.`,
     h1: (s) => `QCM corrigés : ${s.fr}`,
     lead: (n, total) => `${n} questions d'exemple sur ${total} disponibles dans l'entraînement, avec la bonne réponse et une explication. Cliquez sur « Voir la réponse » après avoir réfléchi.`,
@@ -31,6 +50,14 @@ const TXT = {
     notice: 'أسئلة أصلية محررة للتمرين: تحاكي أسلوب الاختبارات ومستواها وليست مواضيع رسمية.',
   },
 };
+
+/* Site-relative path of the QCM page of a subject for a UI language: Arabic
+ * pages exist only for subjects with enough Arabic questions, otherwise the
+ * French page is used. */
+export function qcmPath(s, lang, banks) {
+  const ar = (banks[s.id] || []).filter((q) => q.l10n.ar).length;
+  return `${lang === 'ar' && ar >= 15 ? 'ar/' : ''}qcm/${s.slug}/`;
+}
 
 /* Picks a representative, stable sample: round-robin over subcategories,
  * mixing difficulties, deterministic so the page does not change between builds. */

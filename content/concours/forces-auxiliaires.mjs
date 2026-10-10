@@ -23,7 +23,7 @@ export default {
   fr: {
     short: 'Forces Auxiliaires',
     name: 'Forces Auxiliaires — recrutement des mokhaznis et des élèves officiers',
-    title: 'Concours Forces Auxiliaires 2026-2027 : mokhaznis sans bac — conditions et dates',
+    title: 'Concours Forces Auxiliaires 2026-2027 : mokhaznis sans bac, dates',
     description: "Recrutement des mokhaznis des Forces Auxiliaires : niveau secondaire qualifiant (bac non exigé), 18–24 ans, taille, acuité visuelle, inscription avant le 16 octobre 2026, épreuves du 20 novembre au 16 décembre 2026.",
     keywords: ['concours forces auxiliaires', 'mokhazni', 'recrutement fa gov ma', 'القوات المساعدة'],
     intro: "Les **Forces Auxiliaires** recrutent des **mokhaznis** sans exiger le baccalauréat : le **niveau secondaire qualifiant** ou un **diplôme de qualification professionnelle** suffit. La session 2026/2027 est ouverte : **inscription jusqu'au 16 octobre 2026**, épreuves **du 20 novembre au 16 décembre 2026** (selon les informations relayées).",

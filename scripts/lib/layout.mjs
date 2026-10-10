@@ -118,7 +118,8 @@ export function layout(site, page, footerLinks) {
   const altUrl = page.alternate ? absUrl(site, page.alternate) : null;
   const frUrl = lang === 'fr' ? canonical : altUrl;
   const ogImage = absUrl(site, page.ogImage || 'assets/img/og/concours-maroc.png');
-  const fullTitle = page.titleFull || (page.title.includes('Concours Maroc') ? page.title : `${page.title} | Concours Maroc`);
+  // The brand is appended only when it still fits in what search results display.
+  const fullTitle = page.titleFull || (page.title.includes('Concours Maroc') || page.title.length > 52 ? page.title : `${page.title} | Concours Maroc`);
   const jsonld = (page.jsonld || []).filter(Boolean);
 
   const themeInit = `(function(){try{var t=localStorage.getItem('cm.theme');if(!t||t==='auto'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();`;

@@ -4,6 +4,7 @@ import { icon } from '../icons.mjs';
 import { linker, breadcrumb, breadcrumbLd } from '../layout.mjs';
 import { t } from '../strings.mjs';
 import { SUBJECTS, GROUPS } from '../../../content/taxonomy.mjs';
+import { qcmPath } from './qcm.mjs';
 
 const TXT = {
   fr: {
@@ -64,7 +65,7 @@ ${GROUPS.map((g) => {
   if (!items.length) return '';
   return html`<h3>${g[lang]}</h3><div class="chips">${items.map((c) => html`<a class="chip" href="?concours=${c.id}" data-pick-concours="${c.id}">${c[lang].short}</a>`)}</div>`;
 })}</section>
-<section class="section"><h2>${x.bySubject}</h2><div class="chips">${SUBJECTS.filter((s) => (banks[s.id] || []).length).map((s) => html`<a class="chip" href="${link(pfx + 'qcm/' + s.slug + '/')}">${s[lang]} · ${banks[s.id].length}</a>`)}</div></section>
+<section class="section"><h2>${x.bySubject}</h2><div class="chips">${SUBJECTS.filter((s) => (banks[s.id] || []).length).map((s) => html`<a class="chip" href="${link(qcmPath(s, lang, banks))}">${s[lang]} · ${banks[s.id].length}</a>`)}</div></section>
 </div>`;
   return {
     path, lang, title: x.title, description: x.desc, section: 'navPractice', alternate: `${lang === 'ar' ? '' : 'ar/'}entrainement/`,

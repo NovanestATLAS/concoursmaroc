@@ -1,0 +1,408 @@
+# Chimie — niveau 2e année bac (PC, SM, SVT) et notions de 1re année bac.
+@category chimie
+@source src-programme-bac
+
+[CHI-001] quantite-matiere | beginner
+Q: Combien de moles y a-t-il dans 36 g d'eau ? (M(H) = 1 g/mol ; M(O) = 16 g/mol)
+* 2 mol
+- 18 mol
+- 0,5 mol
+- 36 mol
+C: n = 2 mol.
+E: M(H₂O) = 2 × 1 + 16 = 18 g/mol, donc n = m/M = 36/18 = 2 mol.
+
+[CHI-002] quantite-matiere | beginner
+Q: On dissout 0,1 mol de soluté pour obtenir 500 mL de solution. Quelle est la concentration molaire ?
+* 0,2 mol/L
+- 0,05 mol/L
+- 50 mol/L
+- 5 mol/L
+C: C = 0,2 mol/L.
+E: C = n/V = 0,1/0,5 = 0,2 mol/L : le volume doit être exprimé en litres.
+
+[CHI-003] quantite-matiere | beginner
+Q: Quelle est la valeur approximative de la constante d'Avogadro ?
+* 6,02 × 10²³ mol⁻¹
+- 6,02 × 10⁻²³ mol⁻¹
+- 3 × 10⁸ mol⁻¹
+- 1,6 × 10⁻¹⁹ mol⁻¹
+C: N_A ≈ 6,02 × 10²³ mol⁻¹.
+E: Une mole contient 6,02 × 10²³ entités. 3 × 10⁸ m/s est la célérité de la lumière et 1,6 × 10⁻¹⁹ C la charge élémentaire.
+
+[CHI-004] quantite-matiere | intermediate
+Q: On dilue 10 fois une solution de concentration 0,5 mol/L. Quelle est la concentration de la solution fille ?
+* 0,05 mol/L
+- 5 mol/L
+- 0,5 mol/L
+- 0,1 mol/L
+C: 0,05 mol/L.
+E: Lors d'une dilution, la quantité de soluté se conserve : C₁V₁ = C₂V₂. Diluer 10 fois divise la concentration par 10.
+
+[CHI-005] quantite-matiere | beginner
+Q: Quel volume occupent 0,5 mol de gaz dans des conditions où le volume molaire vaut 24 L/mol ?
+* 12 L
+- 48 L
+- 24 L
+- 0,02 L
+C: V = 12 L.
+E: V = n × Vm = 0,5 × 24 = 12 L.
+
+[CHI-006] cinetique | beginner
+Q: Parmi ces paramètres, lequel n'est pas un facteur cinétique ?
+* La couleur de l'étiquette du flacon de réactif
+- La température
+- La concentration des réactifs
+- La présence d'un catalyseur
+C: La couleur de l'étiquette.
+E: La température, les concentrations initiales des réactifs et les catalyseurs modifient la vitesse d'une réaction chimique.
+
+[CHI-007] cinetique | intermediate
+Q: Le temps de demi-réaction t½ est la durée au bout de laquelle :
+* L'avancement atteint la moitié de sa valeur finale
+- La moitié des produits a disparu
+- La réaction s'arrête
+- La vitesse de réaction double
+C: x(t½) = x_f/2.
+E: t½ permet d'estimer la durée d'une transformation : on la considère pratiquement achevée au bout de quelques t½.
+
+[CHI-008] cinetique | beginner
+Q: En général, quand la température augmente, la vitesse d'une réaction chimique :
+* Augmente
+- Diminue
+- Reste constante
+- S'annule
+C: Elle augmente.
+E: L'agitation thermique augmente la fréquence et l'efficacité des chocs entre entités réactives. C'est pourquoi on refroidit brusquement un mélange (trempe) pour bloquer une réaction.
+
+[CHI-009] cinetique | intermediate
+Q: Un catalyseur :
+* Accélère une réaction sans être consommé et sans modifier l'état final
+- Augmente le rendement final de la réaction
+- Est un réactif consommé par la réaction
+- Rend possible une réaction thermodynamiquement impossible
+C: Il accélère la réaction sans modifier l'état final.
+E: Le catalyseur est régénéré en fin de réaction ; il permet d'atteindre plus vite l'état d'équilibre mais ne modifie ni la constante d'équilibre ni la composition finale.
+
+[CHI-010] cinetique | advanced
+Q: La vitesse volumique de réaction est définie par :
+* v = (1/V)·dx/dt
+- v = V·dx/dt
+- v = dx/dV
+- v = x/t½
+C: v = (1/V)·(dx/dt).
+E: x est l'avancement (mol) et V le volume du mélange (L). dx/dt est le coefficient directeur de la tangente à la courbe x(t) ; v diminue généralement au cours du temps car les réactifs s'épuisent.
+
+[CHI-011] acide-base | beginner
+Q: Selon Brønsted, un acide est une espèce chimique capable de :
+* Céder un proton H⁺
+- Capter un proton H⁺
+- Céder un électron
+- Capter un électron
+C: Céder un proton H⁺.
+E: Une base est capable de capter un proton. L'échange d'électrons caractérise les réactions d'oxydoréduction.
+
+[CHI-012] acide-base | beginner
+Q: Quel est le pH d'une solution dont la concentration en ions H₃O⁺ vaut 10⁻³ mol/L ?
+* 3
+- −3
+- 11
+- 0,001
+C: pH = 3.
+E: pH = −log[H₃O⁺] = −log(10⁻³) = 3.
+
+[CHI-013] acide-base | beginner
+Q: À 25 °C, une solution aqueuse de pH = 9 est :
+* Basique
+- Acide
+- Neutre
+- Impossible à caractériser
+C: Basique.
+E: À 25 °C : pH < 7 acide, pH = 7 neutre, pH > 7 basique.
+
+[CHI-014] acide-base | intermediate
+Q: À 25 °C, quelle est la valeur du produit ionique de l'eau Ke = [H₃O⁺]·[HO⁻] ?
+* 10⁻¹⁴
+- 10⁻⁷
+- 10¹⁴
+- 7
+C: Ke = 10⁻¹⁴ (pKe = 14).
+E: Dans toute solution aqueuse à 25 °C, [H₃O⁺]·[HO⁻] = 10⁻¹⁴. Dans l'eau pure, [H₃O⁺] = [HO⁻] = 10⁻⁷ mol/L.
+
+[CHI-015] acide-base | intermediate
+Q: Quel est le pH à 25 °C d'une solution d'hydroxyde de sodium (base forte) de concentration 10⁻² mol/L ?
+* 12
+- 2
+- 10
+- 7
+C: pH = 12.
+E: [HO⁻] = 10⁻² mol/L, donc [H₃O⁺] = 10⁻¹⁴/10⁻² = 10⁻¹² mol/L et pH = 12.
+
+[CHI-016] acide-base | intermediate
+Q: Pour un couple acide/base AH/A⁻, lorsque pH = pKa :
+* [AH] = [A⁻]
+- [AH] > [A⁻]
+- [A⁻] = 0
+- La solution est obligatoirement neutre
+C: Les deux formes ont la même concentration.
+E: pH = pKa + log([A⁻]/[AH]). Si pH = pKa, le logarithme est nul et [A⁻] = [AH]. Si pH > pKa, la forme basique prédomine.
+
+[CHI-017] acide-base | beginner
+Q: Quelle est la base conjuguée de l'acide éthanoïque CH₃COOH ?
+* L'ion éthanoate CH₃COO⁻
+- L'ion oxonium H₃O⁺
+- L'éthanol CH₃CH₂OH
+- L'ion hydroxyde HO⁻
+C: CH₃COO⁻.
+E: Couple CH₃COOH/CH₃COO⁻ : l'acide cède un proton pour donner sa base conjuguée.
+
+[CHI-018] acide-base | advanced
+Q: À l'équivalence d'un dosage acide-base :
+* Les réactifs ont été mélangés dans les proportions stœchiométriques
+- Le pH vaut toujours 7
+- Il reste de l'acide en excès
+- La réaction s'arrête par manque de catalyseur
+C: Proportions stœchiométriques.
+E: À l'équivalence, le réactif limitant change. Le pH vaut 7 seulement pour le dosage d'un acide fort par une base forte à 25 °C ; pour un acide faible dosé par une base forte, il est supérieur à 7.
+
+[CHI-019] acide-base | intermediate
+Q: On dose 20 mL d'acide chlorhydrique par une solution d'hydroxyde de sodium à 0,1 mol/L ; l'équivalence est atteinte pour 10 mL versés. Quelle est la concentration de l'acide ?
+* 0,05 mol/L
+- 0,2 mol/L
+- 0,1 mol/L
+- 0,5 mol/L
+C: C_A = 0,05 mol/L.
+E: À l'équivalence, C_A·V_A = C_B·V_E, d'où C_A = 0,1 × 10/20 = 0,05 mol/L.
+
+[CHI-020] acide-base | advanced
+Q: Plus le pKa d'un acide est petit :
+* Plus l'acide est fort (il se dissocie davantage dans l'eau)
+- Plus l'acide est faible
+- Plus sa base conjuguée est forte
+- Plus le pH de sa solution est élevé, à concentration égale
+C: Plus l'acide est fort.
+E: Ka = 10^(−pKa) : un petit pKa correspond à un grand Ka, donc à une dissociation plus avancée. Sa base conjuguée est alors plus faible.
+
+[CHI-021] equilibre | intermediate
+Q: Le taux d'avancement final τ d'une réaction est défini par :
+* τ = x_f/x_max
+- τ = x_max/x_f
+- τ = x_f × x_max
+- τ = 1 − x_f
+C: τ = x_f/x_max.
+E: τ = 1 pour une transformation totale ; τ < 1 pour une transformation limitée, qui conduit à un état d'équilibre.
+
+[CHI-022] equilibre | intermediate
+Q: Si le quotient de réaction Qr d'un système est inférieur à la constante d'équilibre K :
+* Le système évolue spontanément dans le sens direct
+- Le système évolue dans le sens inverse
+- Le système est à l'équilibre
+- La réaction est impossible
+C: Évolution dans le sens direct.
+E: Critère d'évolution spontanée : Qr < K → sens direct ; Qr > K → sens inverse ; Qr = K → équilibre.
+
+[CHI-023] equilibre | intermediate
+Q: La constante d'équilibre K associée à une réaction dépend :
+* Uniquement de la température
+- Des concentrations initiales des réactifs
+- De la présence d'un catalyseur
+- Du volume de la solution
+C: Seulement de la température.
+E: K est caractéristique de la réaction et ne dépend que de la température, contrairement à l'avancement final, qui dépend aussi de l'état initial.
+
+[CHI-024] equilibre | intermediate
+Q: Dans l'expression du quotient de réaction, on ne fait pas figurer :
+* L'eau solvant et les espèces solides
+- Les ions en solution
+- Les espèces dissoutes
+- Les produits de la réaction
+C: L'eau (solvant) et les solides.
+E: Par convention, leur activité vaut 1 ; seules les concentrations (en mol/L) des espèces dissoutes interviennent dans Qr.
+
+[CHI-025] oxydoreduction | beginner
+Q: Une oxydation correspond à :
+* Une perte d'électrons
+- Un gain d'électrons
+- Un gain de protons
+- Une perte de protons
+C: Une perte d'électrons.
+E: L'oxydation est une perte d'électrons et la réduction un gain d'électrons. Le réducteur est l'espèce qui cède des électrons.
+
+[CHI-026] oxydoreduction | beginner
+Q: Dans la demi-équation Cu²⁺ + 2e⁻ ⇄ Cu, quel est l'oxydant ?
+* Cu²⁺
+- Cu
+- e⁻
+- Il n'y a pas d'oxydant
+C: L'ion Cu²⁺.
+E: L'oxydant est l'espèce qui capte des électrons : Cu²⁺ est l'oxydant du couple Cu²⁺/Cu et Cu le réducteur.
+
+[CHI-027] piles | intermediate
+Q: Dans une pile en fonctionnement, la borne négative (anode) est l'électrode où se produit :
+* Une oxydation
+- Une réduction
+- Une neutralisation acide-base
+- Aucune réaction
+C: Une oxydation.
+E: À l'anode (pôle −), le réducteur s'oxyde et libère des électrons qui circulent dans le circuit extérieur jusqu'à la cathode (pôle +), siège d'une réduction.
+
+[CHI-028] piles | intermediate
+Q: Dans une pile, le pont salin sert à :
+* Fermer le circuit et maintenir la neutralité électrique des deux solutions
+- Fournir des électrons au circuit
+- Empêcher toute réaction chimique
+- Augmenter la tension à vide de la pile
+C: Fermer le circuit et maintenir l'électroneutralité.
+E: Les ions du pont salin migrent vers les deux compartiments pour compenser l'apparition ou la disparition d'ions ; les électrons, eux, ne circulent que dans le circuit extérieur.
+
+[CHI-029] piles | advanced
+Q: Une pile débite un courant de 0,1 A pendant 965 s. Quelle quantité d'électrons a circulé ? (F = 96 500 C/mol)
+* 1,0 × 10⁻³ mol
+- 1,0 × 10⁻² mol
+- 0,1 mol
+- 96,5 mol
+C: n(e⁻) = 10⁻³ mol.
+E: Q = I·Δt = 0,1 × 965 = 96,5 C et n(e⁻) = Q/F = 96,5/96 500 = 10⁻³ mol.
+
+[CHI-030] electrolyse | intermediate
+Q: Une électrolyse est une transformation :
+* Forcée, imposée par un générateur
+- Spontanée, qui produit de l'électricité
+- Toujours totale et instantanée
+- Acido-basique
+C: Une transformation forcée.
+E: Le générateur impose un sens d'évolution opposé au sens spontané. Applications : affinage du cuivre, production d'aluminium, recharge des accumulateurs.
+
+[CHI-031] electrolyse | advanced
+Q: Lors d'une électrolyse, à quelle électrode se produit l'oxydation ?
+* À l'anode, reliée au pôle positif du générateur
+- À la cathode, reliée au pôle négatif du générateur
+- À l'anode, reliée au pôle négatif du générateur
+- Aux deux électrodes à la fois
+C: À l'anode (pôle + du générateur).
+E: Dans une pile comme dans un électrolyseur, l'anode est le siège de l'oxydation et la cathode celui de la réduction ; seule la polarité change.
+
+[CHI-032] esterification | beginner
+Q: La réaction entre un acide carboxylique et un alcool donne :
+* Un ester et de l'eau
+- Un alcane et du dioxygène
+- Un savon et du glycérol
+- Un aldéhyde et du dihydrogène
+C: Un ester et de l'eau.
+E: Estérification : acide + alcool ⇄ ester + eau. Elle est lente, limitée et athermique.
+
+[CHI-033] esterification | intermediate
+Q: Pour un mélange équimolaire d'acide carboxylique et d'alcool primaire, le rendement de l'estérification à l'équilibre est d'environ :
+* 67 %
+- 100 %
+- 33 %
+- 10 %
+C: Environ 67 % (2/3).
+E: L'estérification est limitée par la réaction inverse, l'hydrolyse de l'ester (K ≈ 4).
+
+[CHI-034] esterification | intermediate
+Q: Comment augmenter le rendement d'une estérification ?
+* Mettre un réactif en excès ou éliminer l'eau au fur et à mesure de sa formation
+- Ajouter un catalyseur
+- Augmenter seulement la température
+- Ajouter de l'eau au mélange
+C: Excès d'un réactif ou élimination d'un produit.
+E: Un catalyseur (ions H⁺) et la température accélèrent la réaction mais ne changent pas le rendement à l'équilibre. Déplacer l'équilibre (excès d'alcool, élimination de l'eau ou de l'ester) augmente le rendement.
+
+[CHI-035] esterification | advanced
+Q: Pour obtenir un ester par une réaction rapide et totale, on remplace l'acide carboxylique par :
+* Un anhydride d'acide
+- Un alcane
+- Un aldéhyde
+- De l'eau
+C: Un anhydride d'acide.
+E: La réaction d'un anhydride d'acide avec un alcool est rapide et totale ; elle donne un ester et un acide carboxylique. C'est ainsi qu'on synthétise l'aspirine.
+
+[CHI-036] esterification | advanced
+Q: L'hydrolyse basique d'un ester (saponification) est :
+* Totale, et donne un ion carboxylate et un alcool
+- Limitée, et donne un acide et un alcool
+- Impossible
+- Une réaction d'oxydoréduction
+C: Totale ; elle donne un carboxylate et un alcool.
+E: Ester + HO⁻ → RCOO⁻ + R'OH. Appliquée aux triglycérides (corps gras), elle donne des savons et du glycérol.
+
+[CHI-037] chimie-organique | beginner
+Q: Quelle est la formule brute du méthane ?
+* CH₄
+- C₂H₆
+- CH₃OH
+- C₂H₄
+C: CH₄.
+E: Les alcanes ont pour formule CₙH₂ₙ₊₂ : méthane CH₄ (n = 1), éthane C₂H₆, propane C₃H₈.
+
+[CHI-038] chimie-organique | beginner
+Q: Quel groupe caractéristique possède la molécule d'éthanol CH₃–CH₂–OH ?
+* Le groupe hydroxyle (alcool)
+- Le groupe carboxyle (acide)
+- Le groupe carbonyle (cétone)
+- Le groupe amine
+C: Le groupe hydroxyle –OH.
+E: Un alcool possède un groupe –OH porté par un carbone tétragonal. Le groupe carboxyle –COOH caractérise les acides carboxyliques.
+
+[CHI-039] chimie-organique | intermediate
+Q: L'oxydation ménagée d'un alcool primaire peut donner :
+* Un aldéhyde, puis un acide carboxylique
+- Une cétone uniquement
+- Un alcane
+- Un alcool tertiaire
+C: Un aldéhyde, puis un acide carboxylique.
+E: Un alcool secondaire donne une cétone ; un alcool tertiaire ne subit pas d'oxydation ménagée.
+
+[CHI-040] chimie-organique | intermediate
+Q: Quel est le nom de l'ester de formule CH₃–COO–CH₂–CH₃ ?
+* Éthanoate d'éthyle
+- Méthanoate de propyle
+- Propanoate de méthyle
+- Éthanoate de méthyle
+C: L'éthanoate d'éthyle.
+E: La partie CH₃–COO– provient de l'acide éthanoïque (éthanoate) et la partie –CH₂–CH₃ de l'éthanol (éthyle).
+
+[CHI-041] conductimetrie | intermediate
+Q: La conductance d'une solution ionique diluée :
+* Augmente avec la concentration des ions
+- Ne dépend pas de la concentration
+- Diminue quand la concentration augmente
+- Est nulle pour une solution ionique
+C: Elle augmente avec la concentration.
+E: Pour une solution diluée, la conductivité σ = Σ λᵢ[Xᵢ] est proportionnelle aux concentrations : c'est le principe des dosages par étalonnage.
+
+[CHI-042] general | beginner
+Q: Quel gaz trouble l'eau de chaux ?
+* Le dioxyde de carbone
+- Le dioxygène
+- Le dihydrogène
+- Le diazote
+C: Le CO₂.
+E: Le dioxyde de carbone réagit avec l'eau de chaux (hydroxyde de calcium) pour former du carbonate de calcium, insoluble, qui la trouble.
+
+[CHI-043] general | beginner
+Q: Quel est le symbole chimique du sodium ?
+* Na
+- So
+- S
+- Sd
+C: Na, du latin natrium.
+E: S est le symbole du soufre. Le chlorure de sodium (sel de cuisine) a pour formule NaCl.
+
+[CHI-044] acide-base | intermediate
+Q: Le pKa du couple NH₄⁺/NH₃ vaut 9,2. Dans une solution de pH = 11, quelle espèce prédomine ?
+* NH₃
+- NH₄⁺
+- Les deux à égalité
+- Aucune des deux
+C: L'ammoniac NH₃.
+E: pH > pKa : la forme basique prédomine. Diagramme de prédominance : NH₄⁺ pour pH < 9,2, NH₃ pour pH > 9,2.
+
+[CHI-045] cinetique | advanced
+Q: On suit une réaction par mesure de pression ; la courbe x(t) devient horizontale. Cela signifie que :
+* L'état final est atteint : la vitesse de réaction est nulle
+- La réaction s'accélère
+- La température a augmenté
+- Le catalyseur a été consommé
+C: Le système a atteint son état final.
+E: La vitesse est proportionnelle au coefficient directeur de la tangente à x(t) ; une courbe horizontale signifie dx/dt = 0, donc la fin de l'évolution (état final ou équilibre).

@@ -337,6 +337,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/qcm/culture-generale-maroc/"/>
   </url>
   <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/qcm/culture-generale/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://novanestatlas.github.io/concoursmaroc/qcm/tests-psychotechniques-logique/</loc>
     <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
@@ -353,6 +358,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/qcm/calcul-raisonnement-numerique/"/>
   </url>
   <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/qcm/mathematiques-bac/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/qcm/physique-bac/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/qcm/chimie-bac/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/qcm/svt-biologie/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://novanestatlas.github.io/concoursmaroc/qcm/francais/</loc>
     <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
@@ -366,6 +391,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/qcm/langue-arabe/"/>
   </url>
   <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/qcm/anglais/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/qcm/economie-gestion/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://novanestatlas.github.io/concoursmaroc/qcm/sciences-numerique-administration/</loc>
     <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
@@ -374,12 +409,80 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/qcm/sciences-numerique-administration/"/>
   </url>
   <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/qcm/secourisme-premiers-secours/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/qcm/secourisme-premiers-secours/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/qcm/secourisme-premiers-secours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/qcm/secourisme-premiers-secours/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/qcm/architecture-art/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://novanestatlas.github.io/concoursmaroc/qcm/</loc>
     <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/qcm/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/qcm/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/qcm/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/guides/orientation-apres-bac-maroc/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/guides/orientation-apres-bac-maroc/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/guides/orientation-apres-bac-maroc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/guides/orientation-apres-bac-maroc/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/guides/cursus-sup-inscription/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/guides/cursus-sup-inscription/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/guides/cursus-sup-inscription/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/guides/cursus-sup-inscription/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/guides/reussir-qcm-concours/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/guides/reussir-qcm-concours/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/guides/reussir-qcm-concours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/guides/reussir-qcm-concours/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/guides/bourse-minhaty-logement/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/guides/bourse-minhaty-logement/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/guides/bourse-minhaty-logement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/guides/bourse-minhaty-logement/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/guides/concours-sans-bac-niveau-bac/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/guides/concours-sans-bac-niveau-bac/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/guides/concours-sans-bac-niveau-bac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/guides/concours-sans-bac-niveau-bac/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/guides/epreuves-sportives-concours/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/guides/tests-psychotechniques/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/guides/entretien-oral/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://novanestatlas.github.io/concoursmaroc/guides/</loc>
@@ -795,12 +898,60 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/qcm/sciences-numerique-administration/"/>
   </url>
   <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/ar/qcm/secourisme-premiers-secours/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/qcm/secourisme-premiers-secours/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/qcm/secourisme-premiers-secours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/qcm/secourisme-premiers-secours/"/>
+  </url>
+  <url>
     <loc>https://novanestatlas.github.io/concoursmaroc/ar/qcm/</loc>
     <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/qcm/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/qcm/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/qcm/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/ar/guides/orientation-apres-bac-maroc/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/guides/orientation-apres-bac-maroc/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/guides/orientation-apres-bac-maroc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/guides/orientation-apres-bac-maroc/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/ar/guides/cursus-sup-inscription/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/guides/cursus-sup-inscription/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/guides/cursus-sup-inscription/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/guides/cursus-sup-inscription/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/ar/guides/reussir-qcm-concours/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/guides/reussir-qcm-concours/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/guides/reussir-qcm-concours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/guides/reussir-qcm-concours/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/ar/guides/bourse-minhaty-logement/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/guides/bourse-minhaty-logement/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/guides/bourse-minhaty-logement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/guides/bourse-minhaty-logement/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/ar/guides/concours-sans-bac-niveau-bac/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/guides/concours-sans-bac-niveau-bac/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/guides/concours-sans-bac-niveau-bac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/guides/concours-sans-bac-niveau-bac/"/>
   </url>
   <url>
     <loc>https://novanestatlas.github.io/concoursmaroc/ar/guides/</loc>

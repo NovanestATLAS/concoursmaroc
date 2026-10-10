@@ -1,0 +1,436 @@
+# Anglais — grammaire, vocabulaire et compréhension (ISCAE, ISIT, ISIC,
+# écoles militaires, douane). Questions en anglais, corrections en français.
+@category anglais
+@source src-general
+
+[ANG-001] grammar | beginner
+Q: She ___ to school every day.
+* goes
+- go
+- going
+- is go
+C: « goes ».
+E: Présent simple, 3e personne du singulier : on ajoute -s ou -es au verbe (she goes). « Every day » indique une habitude.
+
+[ANG-002] grammar | beginner
+Q: I ___ my homework yesterday.
+* did
+- do
+- have done
+- was do
+C: « did ».
+E: « Yesterday » situe l'action dans un passé terminé : on emploie le prétérit (did). Le present perfect ne s'emploie pas avec un repère passé précis.
+
+[ANG-003] grammar | intermediate
+Q: She has lived in Rabat ___ 2015.
+* since
+- for
+- from
+- during
+C: « since ».
+E: « Since » + point de départ (since 2015) ; « for » + durée (for ten years). Avec le present perfect : She has lived here since 2015.
+
+[ANG-004] grammar | intermediate
+Q: If I ___ rich, I would travel around the world.
+* were
+- am
+- will be
+- had been
+C: « were ».
+E: Conditionnel de type 2 (hypothèse irréelle dans le présent) : If + prétérit, would + base verbale. En anglais soigné, on emploie « were » à toutes les personnes.
+
+[ANG-005] grammar | beginner
+Q: If it rains tomorrow, we ___ at home.
+* will stay
+- would stay
+- stayed
+- would have stayed
+C: « will stay ».
+E: Conditionnel de type 1 (situation possible) : If + présent simple, will + base verbale.
+
+[ANG-006] grammar | advanced
+Q: If you had studied harder, you ___ the exam.
+* would have passed
+- would pass
+- will pass
+- passed
+C: « would have passed ».
+E: Conditionnel de type 3 (regret portant sur le passé) : If + past perfect, would have + participe passé.
+
+[ANG-007] grammar | beginner
+Q: This is ___ book I told you about.
+* the
+- a
+- an
+- (no article)
+C: « the ».
+E: L'article défini « the » désigne un élément précis, déjà identifié : le livre dont je t'ai parlé.
+
+[ANG-008] grammar | beginner
+Q: Choose the correct sentence.
+* There are many students in the classroom.
+- There is many students in the classroom.
+- There are much students in the classroom.
+- There have many students in the classroom.
+C: « There are many students in the classroom. »
+E: « There are » + nom pluriel. « Many » s'emploie avec les noms dénombrables (many students), « much » avec les indénombrables (much water).
+
+[ANG-009] grammar | intermediate
+Q: The letter ___ by the manager last week.
+* was signed
+- signed
+- is signed
+- has signed
+C: « was signed ».
+E: Voix passive au prétérit : was/were + participe passé. « Last week » impose le passé.
+
+[ANG-010] grammar | beginner
+Q: English ___ in many countries.
+* is spoken
+- speaks
+- is speaking
+- spoke
+C: « is spoken ».
+E: Voix passive au présent simple : am/is/are + participe passé (speak → spoken).
+
+[ANG-011] grammar | intermediate
+Q: He is the man ___ car was stolen.
+* whose
+- who
+- which
+- whom
+C: « whose ».
+E: « Whose » exprime la possession (l'homme dont la voiture a été volée). « Who » renvoie à une personne sujet, « which » à une chose.
+
+[ANG-012] grammar | intermediate
+Q: When I arrived, they ___ dinner.
+* were having
+- have
+- are having
+- has had
+C: « were having ».
+E: Past continuous (was/were + V-ing) pour une action en cours au moment où une autre action passée (arrived) se produit.
+
+[ANG-013] grammar | beginner
+Q: My sister is ___ than me.
+* taller
+- more tall
+- tallest
+- the tallest
+C: « taller ».
+E: Comparatif des adjectifs courts : adjectif + -er + than. Avec les adjectifs longs : more + adjectif (more interesting).
+
+[ANG-014] grammar | intermediate
+Q: This is the ___ film I have ever seen.
+* most interesting
+- more interesting
+- interestingest
+- much interesting
+C: « most interesting ».
+E: Superlatif des adjectifs longs : the most + adjectif. « Ever » accompagne souvent le superlatif.
+
+[ANG-015] grammar | beginner
+Q: You ___ wear a seatbelt; it's the law.
+* must
+- might
+- can
+- would
+C: « must ».
+E: « Must » exprime l'obligation. « Might » exprime une faible probabilité et « can » la capacité ou la permission.
+
+[ANG-016] grammar | intermediate
+Q: I look forward to ___ from you.
+* hearing
+- hear
+- heard
+- be hearing
+C: « hearing ».
+E: Dans « look forward to », « to » est une préposition : elle est suivie de la forme en -ing. Formule très courante en fin de lettre ou d'e-mail.
+
+[ANG-017] grammar | intermediate
+Q: She is used to ___ early.
+* getting up
+- get up
+- got up
+- gets up
+C: « getting up ».
+E: « Be used to + V-ing » signifie « être habitué à ». À ne pas confondre avec « used to + base verbale », qui exprime une habitude passée révolue (I used to smoke).
+
+[ANG-018] grammar | intermediate
+Q: He asked me where ___.
+* I lived
+- did I live
+- do I live
+- I do live
+C: « I lived ».
+E: Au discours indirect, la question perd l'inversion et l'auxiliaire « do », et les temps reculent : « Where do you live? » devient « He asked me where I lived ».
+
+[ANG-019] grammar | beginner
+Q: How ___ money do you have?
+* much
+- many
+- lot
+- few
+C: « much ».
+E: « Money » est indénombrable : how much. On emploie « how many » avec un nom dénombrable au pluriel (how many books).
+
+[ANG-020] grammar | intermediate
+Q: By the time we got to the station, the train ___.
+* had left
+- has left
+- leaves
+- was leave
+C: « had left ».
+E: Le past perfect (had + participe passé) exprime une action antérieure à une autre action passée (got to the station).
+
+[ANG-021] grammar | advanced
+Q: Hardly ___ the house when it started to rain.
+* had I left
+- I had left
+- I left
+- did I leave
+C: « had I left ».
+E: Après un adverbe restrictif placé en tête de phrase (hardly, no sooner, never), on inverse le sujet et l'auxiliaire : Hardly had I left the house when…
+
+[ANG-022] grammar | intermediate
+Q: I wish I ___ speak Chinese.
+* could
+- can
+- will
+- may
+C: « could ».
+E: « I wish » + prétérit exprime un souhait irréel ou un regret dans le présent : I wish I could speak Chinese (j'aimerais savoir parler chinois).
+
+[ANG-023] grammar | beginner
+Q: They ___ football right now.
+* are playing
+- play
+- played
+- plays
+C: « are playing ».
+E: Présent continu (be + V-ing) pour une action en cours au moment où l'on parle (right now).
+
+[ANG-024] grammar | intermediate
+Q: She suggested ___ to the museum.
+* going
+- to go
+- go
+- went
+C: « going ».
+E: « Suggest » est suivi de la forme en -ing ou de « that + sujet + base verbale ». On ne dit pas « suggest to go ».
+
+[ANG-025] vocabulary | beginner
+Q: What is the opposite of "expensive"?
+* cheap
+- costly
+- rich
+- valuable
+C: « cheap ».
+E: Expensive (cher) s'oppose à cheap (bon marché). Costly est un synonyme d'expensive.
+
+[ANG-026] vocabulary | beginner
+Q: Choose the synonym of "huge".
+* enormous
+- tiny
+- narrow
+- weak
+C: « enormous ».
+E: Huge = enormous = immense. Tiny signifie « minuscule ».
+
+[ANG-027] vocabulary | beginner
+Q: A person who designs buildings is called an ___.
+* architect
+- engineer
+- electrician
+- accountant
+C: « architect ».
+E: L'architecte conçoit les bâtiments. L'engineer (ingénieur) conçoit et calcule des ouvrages techniques ; l'accountant est le comptable.
+
+[ANG-028] vocabulary | intermediate
+Q: What does "to apply for a job" mean?
+* To formally ask to be considered for a job
+- To leave a job
+- To be promoted
+- To hire someone
+C: Postuler à un emploi.
+E: Apply for a job = poser sa candidature. Leave ou resign = quitter son poste ; be promoted = obtenir une promotion ; hire = embaucher.
+
+[ANG-029] vocabulary | intermediate
+Q: Complete: "The company's profits ___ by 20% last year."
+* increased
+- raised
+- grew up
+- rose up
+C: « increased ».
+E: « Increase » est ici intransitif (les bénéfices ont augmenté). « Raise » est transitif (raise prices) et « grow up » signifie grandir, pour une personne.
+
+[ANG-030] vocabulary | intermediate
+Q: Complete with the right verb: "I need to ___ a decision."
+* make
+- do
+- give
+- put
+C: « make a decision ».
+E: Collocations : make a decision, make a mistake, make money ; do homework, do business, do one's best. L'anglais britannique accepte aussi « take a decision ».
+
+[ANG-031] vocabulary | beginner
+Q: What is a "deadline"?
+* The latest time by which something must be done
+- A dangerous line on the road
+- The end of a phone call
+- A type of contract
+C: La date limite.
+E: Deadline = date ou heure limite. Exemple : The application deadline is 16 October.
+
+[ANG-032] vocabulary | intermediate
+Q: "Actually" means:
+* In fact
+- Currently
+- Nowadays
+- Immediately
+C: « In fact » (en fait).
+E: Faux ami : « actually » signifie « en fait, en réalité » et non « actuellement », qui se dit currently ou at present.
+
+[ANG-033] vocabulary | intermediate
+Q: "Eventually" means:
+* Finally, in the end
+- Possibly
+- Occasionally
+- Immediately
+C: « Finally » (finalement).
+E: Faux ami : eventually = finalement, à la longue. « Éventuellement » se traduit par possibly ou if necessary.
+
+[ANG-034] vocabulary | beginner
+Q: Which word means "a person who travels to another country for pleasure"?
+* tourist
+- immigrant
+- refugee
+- citizen
+C: « tourist ».
+E: Un tourist voyage pour le loisir. Immigrant : personne qui s'installe dans un autre pays ; refugee : personne qui fuit un danger ; citizen : citoyen.
+
+[ANG-035] vocabulary | beginner
+Q: The plural of "child" is:
+* children
+- childs
+- childrens
+- childes
+C: « children ».
+E: Pluriels irréguliers courants : child → children, man → men, woman → women, foot → feet, tooth → teeth, mouse → mice.
+
+[ANG-036] grammar | beginner
+Q: The past participle of "write" is:
+* written
+- wrote
+- writed
+- writing
+C: « written ».
+E: Verbe irrégulier : write – wrote – written.
+
+[ANG-037] grammar | beginner
+Q: The simple past of "go" is:
+* went
+- gone
+- goed
+- going
+C: « went ».
+E: Verbe irrégulier : go – went – gone.
+
+[ANG-038] grammar | intermediate
+Q: Neither my brother ___ my sister likes coffee.
+* nor
+- or
+- and
+- but
+C: « nor ».
+E: Corrélations : neither… nor (ni… ni) ; either… or (soit… soit).
+
+[ANG-039] grammar | intermediate
+Q: You're coming tonight, ___?
+* aren't you
+- isn't it
+- don't you
+- won't you
+C: « aren't you ».
+E: Question tag : on reprend l'auxiliaire de la phrase (are) à la forme négative quand la phrase est affirmative, avec le même sujet (you).
+
+[ANG-040] grammar | intermediate
+Q: ___ the rain, the match continued.
+* Despite
+- Although
+- Even though
+- However
+C: « Despite ».
+E: Despite / in spite of + nom ou V-ing. Although / even though + proposition (Although it was raining, …). However est un adverbe de liaison.
+
+[ANG-041] reading | intermediate
+Q: "The meeting has been postponed." This means that the meeting:
+* will take place later
+- has been cancelled forever
+- has started early
+- is happening now
+C: Elle a été reportée.
+E: Postpone = put off = reporter à plus tard. Annuler se dit cancel.
+
+[ANG-042] reading | intermediate
+Q: "Applicants must hold a baccalaureate in science." Who can apply?
+* Only people who have a science baccalaureate
+- Anyone, with or without a baccalaureate
+- Only people who teach science
+- Only students currently in high school
+C: Seuls les titulaires d'un bac scientifique.
+E: « Must hold » = doivent être titulaires de ; « applicants » = les candidats.
+
+[ANG-043] vocabulary | intermediate
+Q: Which word is closest in meaning to "skills"?
+* abilities
+- salaries
+- diplomas
+- hobbies
+C: « abilities ».
+E: Skills = compétences, savoir-faire. Salaries = salaires ; diplomas = diplômes ; hobbies = loisirs.
+
+[ANG-044] vocabulary | intermediate
+Q: In a hotel, the "front desk" is:
+* the reception
+- the restaurant
+- the swimming pool
+- the manager's private office
+C: La réception.
+E: Front desk = reception desk : c'est là que l'on fait le check-in et le check-out.
+
+[ANG-045] grammar | advanced
+Q: It's high time we ___.
+* left
+- leave
+- will leave
+- are leaving
+C: « left ».
+E: « It's (high) time + sujet + prétérit » signifie qu'une action aurait déjà dû avoir lieu : It's high time we left (il est grand temps de partir).
+
+[ANG-046] grammar | beginner
+Q: He has been working here ___ ten years.
+* for
+- since
+- ago
+- during
+C: « for ».
+E: For + durée (ten years) ; since + point de départ ; « ago » s'emploie avec le prétérit (ten years ago).
+
+[ANG-047] grammar | intermediate
+Q: Which sentence is correct?
+* I have been waiting for two hours.
+- I am waiting since two hours.
+- I wait since two hours.
+- I have waited since two hours.
+C: « I have been waiting for two hours. »
+E: Pour une action commencée dans le passé et qui dure encore, on emploie le present perfect (souvent continu) avec for + durée. « Since two hours » est un calque fautif du français.
+
+[ANG-048] grammar | intermediate
+Q: The more you practise, ___ you become.
+* the better
+- the best
+- better
+- more good
+C: « the better ».
+E: Structure « the + comparatif…, the + comparatif… » : the more…, the better… (plus…, plus…).

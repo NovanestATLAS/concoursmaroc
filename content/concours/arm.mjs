@@ -25,7 +25,7 @@ export default {
   fr: {
     short: 'ARM Meknès (officiers)',
     name: 'Académie Royale Militaire de Meknès (ARM) — cycle des élèves officiers',
-    title: 'Concours ARM Meknès 2027 : devenir officier — conditions, âge, taille, épreuves',
+    title: 'Concours ARM Meknès 2027 : devenir officier, conditions et épreuves',
     description: "Concours des élèves officiers de l'Académie Royale Militaire de Meknès : bac de l'année avec mention, 18–22 ans, taille minimale, épreuves (médicale, sportive, psychotechnique, entretien), calendrier.",
     keywords: ['concours arm', 'académie royale militaire', 'arm meknès', 'devenir officier maroc', 'recrutement far'],
     intro: "L'**Académie Royale Militaire** forme les **officiers** des Forces Armées Royales. Le concours s'adresse aux **bacheliers de l'année** ayant au moins la **mention « Assez bien »**. Il n'y a pas d'épreuve académique type QCM : la sélection repose sur la **visite médicale**, les **tests physiques**, les **tests psychotechniques et psychologiques** et un **entretien**.",
@@ -46,7 +46,7 @@ export default {
   ar: {
     short: 'الأكاديمية الملكية العسكرية',
     name: 'الأكاديمية الملكية العسكرية بمكناس — سلك التلاميذ الضباط',
-    title: 'مباراة الأكاديمية الملكية العسكرية بمكناس 2027: الشروط والسن والقامة والاختبارات',
+    title: 'مباراة الأكاديمية الملكية العسكرية بمكناس 2027: الشروط والاختبارات',
     description: 'مباراة التلاميذ الضباط بالأكاديمية الملكية العسكرية: بكالوريا السنة بميزة، 18–22 سنة، القامة الدنيا، الاختبارات الطبية والبدنية والسيكوتقنية والمقابلة.',
     keywords: ['الأكاديمية الملكية العسكرية', 'مباراة الضباط', 'القوات المسلحة الملكية'],
     intro: 'تكوّن **الأكاديمية الملكية العسكرية** ضباط القوات المسلحة الملكية. المباراة مفتوحة لحاملي **بكالوريا السنة** بميزة **مستحسن على الأقل**، والانتقاء يعتمد على **الفحص الطبي** و**الاختبارات البدنية** و**السيكوتقنية** و**المقابلة**.',
