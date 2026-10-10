@@ -71,6 +71,8 @@ publicité AdMob (admob-plus-cordova, consentement UMP). Il garde la structure d
 - [`cordova/LISEZMOI-ANDROID.md`](cordova/LISEZMOI-ANDROID.md) : remplacer le `www/` du projet Cordova,
   plate-forme cordova-android 15 (API 36), plugins, identifiants AdMob, test et publication sur Google Play ;
 - [`cordova/config.xml.exemple`](cordova/config.xml.exemple) : réglages à reporter dans `config.xml` ;
+- [`cordova/package.json.exemple`](cordova/package.json.exemple) : plate-forme et plugins du projet Cordova
+  (`npm install` puis `cordova prepare android`) ;
 - `cordova/res/` : icônes (classiques et adaptatives) et écran de démarrage, à copier à la racine du
   projet Cordova ;
 - [`cordova/FICHE-PLAY-STORE.md`](cordova/FICHE-PLAY-STORE.md) : fiche Google Play prête à copier (nom,

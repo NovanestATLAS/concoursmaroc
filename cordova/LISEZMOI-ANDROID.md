@@ -81,6 +81,13 @@ cordova plugin add admob-plus-cordova@2.0.0-alpha.19 --save \
   --variable APP_ID_ANDROID=ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN
 ```
 
+Plus simple : copiez `package.json.exemple` sous le nom `package.json` à la
+racine du projet (mettez-y votre App ID AdMob), puis `npm install` et
+`cordova prepare android` installent d’un coup la plate-forme et les trois
+plugins aux bonnes versions. Vérifié le 10/10/2026 avec Cordova 13 : projet
+`com.novanest.concoursmaroc`, API 36, icônes adaptatives et écran de
+démarrage générés, un seul `APPLICATION_ID` dans le manifeste.
+
 Mettez directement l’**App ID** de votre application AdMob (celui avec un
 `~`), dès la première installation : Google l’autorise aussi pendant les
 tests. Changer d’App ID plus tard demande la procédure de la section 8,

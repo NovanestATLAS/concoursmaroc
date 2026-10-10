@@ -1,0 +1,31 @@
+{
+  "name": "com.novanest.concoursmaroc",
+  "displayName": "Concours Maroc",
+  "version": "2.0.0",
+  "description": "Concours Maroc : guide des concours au Maroc, QCM corrigés et examens blancs (application Android Cordova).",
+  "private": true,
+  "author": "Novanest ATLAS",
+  "scripts": {
+    "prepare-android": "cordova prepare android",
+    "run-android": "cordova run android",
+    "build-release": "cordova build android --release -- --packageType=bundle"
+  },
+  "devDependencies": {
+    "admob-plus-cordova": "2.0.0-alpha.19",
+    "cordova-android": "15.1.0",
+    "cordova-plugin-consent": "3.0.0-alpha.9",
+    "cordova-plugin-tts-advanced": "0.5.3"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-tts-advanced": {},
+      "cordova-plugin-consent": {},
+      "admob-plus-cordova": {
+        "APP_ID_ANDROID": "ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN"
+      }
+    }
+  }
+}
