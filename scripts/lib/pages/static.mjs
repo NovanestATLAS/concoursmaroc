@@ -7,6 +7,7 @@ import { icon } from '../icons.mjs';
 import { linker, breadcrumb, breadcrumbLd, basePath } from '../layout.mjs';
 import { t, formatDate } from '../strings.mjs';
 import { guidePath } from './concours.mjs';
+import { appPrivacyTitle, appPrivacyContent } from './app-privacy.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 
@@ -36,7 +37,7 @@ export function buildStaticPages(site, all, lang, banks) {
   pages.push(simplePage(site, lang, 'a-propos',
     ar ? 'من نحن ومنهجيتنا' : 'À propos de Concours Maroc et méthode de vérification',
     ar ? 'Concours Maroc دليل مستقل ومجاني للمباريات بالمغرب: كيف نجمع المعلومات ونتحقق منها ونحدّثها.' : "Concours Maroc est un guide indépendant et gratuit des concours au Maroc : comment les informations sont collectées, vérifiées, datées et mises à jour.",
-    () => ar ? html`${P('Concours Maroc دليل مستقل ومجاني يساعد الحاصلين على البكالوريا والمترشحين بمستوى البكالوريا على فهم المباريات والتحضير لها.')}
+    (link, pfx) => ar ? html`${P('Concours Maroc دليل مستقل ومجاني يساعد الحاصلين على البكالوريا والمترشحين بمستوى البكالوريا على فهم المباريات والتحضير لها.')}
 ${H2('منهجيتنا')}${UL(['نعتمد أولًا الإعلانات الرسمية للمؤسسات والمنصات الحكومية (Cursus Sup، بوابات التوظيف…).', 'كل معلومة غير مؤكدة رسميًا يُشار إليها بوضوح مع مصدرها وتاريخها.', 'الأسئلة التدريبية أصلية ومتحقق منها، وتحاكي أسلوب الاختبارات دون نسخ مواضيع رسمية.', 'نراجع الصفحات قبل كل دورة ونحدث تاريخ آخر تحقق.'])}
 ${H2('استقلالية')}${P('الموقع غير تابع لأي إدارة أو مؤسسة مذكورة. الإعلان الرسمي لكل دورة هو المرجع الوحيد.')}`
       : html`${P("Concours Maroc est un guide **indépendant et gratuit** pour les bacheliers et les candidats de niveau bac qui préparent un concours au Maroc. Il réunit, pour chaque concours, les conditions d'accès, le mode de sélection, les épreuves, le nombre de places connu et le calendrier, avec un entraînement adapté.")}
@@ -47,7 +48,7 @@ ${H2('Notre méthode')}${UL([
   "**Mise à jour par session** : les fiches sont revues avant chaque campagne d'inscription. Les dates à venir sont distinguées des estimations.",
 ])}
 ${H2('Indépendance')}${P("Concours Maroc n'est affilié à aucune administration, force de sécurité, institution militaire ou établissement cité. Les noms des concours ne sont utilisés que pour décrire le contenu. **Seul l'avis officiel de chaque session fait foi.**")}
-${H2('Signaler une erreur')}${P(`Une date a changé, un seuil est publié ? Signalez-le depuis la page [contact](@contact). Chaque correction vérifiée est intégrée rapidement.`.replace('@contact', '../contact/'))}`,
+${H2('Signaler une erreur')}${P(`Une date a changé, un seuil est publié ? Signalez-le depuis la page [contact](@contact). Chaque correction vérifiée est intégrée rapidement.`.replace('@contact', link(pfx + 'contact/')))}`,
     { crumb: ar ? 'من نحن' : 'À propos' }));
 
   pages.push(simplePage(site, lang, 'contact',
@@ -61,14 +62,22 @@ ${P(ar ? 'لا نجيب عن طلبات النتائج الفردية: النت�
   pages.push(simplePage(site, lang, 'confidentialite',
     ar ? 'سياسة الخصوصية' : 'Politique de confidentialité',
     ar ? 'كيف يتعامل Concours Maroc مع بياناتك: لا حساب، والتقدم محفوظ على جهازك فقط.' : 'Comment Concours Maroc traite vos données : pas de compte, progression enregistrée uniquement sur votre appareil.',
-    () => ar ? html`${P('لا يطلب الموقع إنشاء حساب ولا يجمع هويتك. يُحفظ تقدمك في التمرين (النتائج، المفضلة، الملاحظات، البرنامج) في المتصفح على جهازك فقط عبر localStorage، ويمكنك حذفه من الإعدادات.')}
+    (link, pfx) => ar ? html`${P('لا يطلب الموقع إنشاء حساب ولا يجمع هويتك. يُحفظ تقدمك في التمرين (النتائج، المفضلة، الملاحظات، البرنامج) في المتصفح على جهازك فقط عبر localStorage، ويمكنك حذفه من الإعدادات.')}
 ${H2('خدمات الطرف الثالث')}${P('قد تُضاف لاحقًا أداة لقياس الزيارات (Google Analytics) وإعلانات (Google AdSense). عند تفعيلها، قد تستعمل هذه الخدمات ملفات تعريف الارتباط، وسيتم تحديث هذه الصفحة وعرض طلب الموافقة عند الاقتضاء.')}
+${H2('تطبيق أندرويد')}${P(`لتطبيق Concours Maroc على أندرويد [سياسة خصوصية خاصة به](${link(pfx + 'application/confidentialite/')}) (الإعلانات والموافقة والقراءة بصوت مرتفع).`)}
 ${H2('حقوقك')}${P('وفقًا للقانون 09-08 المتعلق بحماية الأشخاص الذاتيين تجاه معالجة المعطيات ذات الطابع الشخصي، يمكنك التواصل معنا عبر صفحة الاتصال.')}`
       : html`${P("Concours Maroc ne demande **aucun compte** et ne collecte pas votre identité. Votre progression d'entraînement (scores, favoris, notes, planning, checklist) est enregistrée **uniquement dans votre navigateur** (localStorage). Vous pouvez l'exporter ou l'effacer à tout moment depuis les réglages de l'entraînement.")}
 ${H2('Mesure d’audience et publicité')}${P("Le site pourra utiliser ultérieurement un outil de mesure d'audience (Google Analytics) et de la publicité (Google AdSense) pour financer son fonctionnement. Le cas échéant, ces services peuvent déposer des cookies ; cette page sera mise à jour et un recueil du consentement sera proposé lorsque la réglementation l'exige.")}
 ${H2('Hébergement')}${P("Le site est hébergé par GitHub Pages (GitHub, Inc.), qui peut conserver des journaux techniques (adresse IP) pour des raisons de sécurité.")}
+${H2('Application Android')}${P(`L'application Android Concours Maroc a sa propre [politique de confidentialité](${link(pfx + 'application/confidentialite/')}) (publicité, consentement, lecture à voix haute).`)}
 ${H2('Vos droits')}${P("Conformément à la loi n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel, vous pouvez nous contacter pour toute question via la page contact.")}`,
     { crumb: ar ? 'الخصوصية' : 'Confidentialité' }));
+
+  pages.push(simplePage(site, lang, 'application/confidentialite',
+    appPrivacyTitle(lang),
+    ar ? 'سياسة خصوصية تطبيق Concours Maroc على أندرويد: بدون حساب، تقدم محفوظ على الهاتف، إعلانات Google AdMob وطلب الموافقة.' : "Confidentialité de l'application Android Concours Maroc : pas de compte, progression gardée sur le téléphone, publicité Google AdMob et consentement.",
+    (link) => appPrivacyContent(site, lang, link),
+    { crumb: ar ? 'خصوصية التطبيق' : 'Application' }));
 
   pages.push(simplePage(site, lang, 'mentions-legales',
     ar ? 'إشعار قانوني' : 'Mentions légales',

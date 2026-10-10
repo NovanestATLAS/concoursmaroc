@@ -1,5 +1,6 @@
 # Vérifie à chaque push que le site est cohérent : liens internes, SEO de base,
 # banques de questions, et que docs/ correspond bien aux sources (npm run build).
+# Construit aussi le www/ de l'application Android, qui refuse tout lien cassé.
 name: Vérification du site
 
 on:
@@ -18,3 +19,4 @@ jobs:
         with:
           node-version: 20
       - run: npm run check
+      - run: npm run build:app

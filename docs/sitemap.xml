@@ -517,6 +517,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/confidentialite/"/>
   </url>
   <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/application/confidentialite/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/application/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/application/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/application/confidentialite/"/>
+  </url>
+  <url>
     <loc>https://novanestatlas.github.io/concoursmaroc/mentions-legales/</loc>
     <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
@@ -984,6 +992,14 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/confidentialite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/confidentialite/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/confidentialite/"/>
+  </url>
+  <url>
+    <loc>https://novanestatlas.github.io/concoursmaroc/ar/application/confidentialite/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://novanestatlas.github.io/concoursmaroc/application/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://novanestatlas.github.io/concoursmaroc/ar/application/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novanestatlas.github.io/concoursmaroc/application/confidentialite/"/>
   </url>
   <url>
     <loc>https://novanestatlas.github.io/concoursmaroc/ar/mentions-legales/</loc>

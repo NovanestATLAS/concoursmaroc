@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  Concours Maroc — exemple de config.xml pour Apache Cordova (Android)
+  =====================================================================
+  À fusionner avec le config.xml de votre projet (voir LISEZMOI-ANDROID.md).
+  Les lignes marquées ★ sont nécessaires au nouveau dossier www.
+
+  Vérifié le 10/10/2026 avec cordova-android 15.1.0 (API cible 36, exigée par
+  Google Play pour les nouvelles applications et les mises à jour depuis le
+  31 août 2026), admob-plus-cordova 2.0.0-alpha.19,
+  cordova-plugin-consent 3.0.0-alpha.9 et cordova-plugin-tts-advanced 0.5.3.
+
+  - id : gardez l'identifiant de votre application. S'il est déjà publié sur
+    Google Play, il ne doit plus jamais changer. (Google Play refuse
+    « com.example… » : impossible de l'oublier.)
+  - version : à augmenter à chaque envoi sur Google Play. Sans
+    android-versionCode, Cordova le calcule (2.0.0 → 20000), ce qui reste
+    supérieur à celui d'une version 1.x.
+-->
+<widget id="com.example.concoursmaroc" version="2.0.0"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name short="Concours Maroc">Concours Maroc</name>
+    <description>Guide des concours au Maroc après le bac : conditions, seuils, calendrier, QCM corrigés, examens blancs et outils. En français et en arabe, utilisable hors ligne.</description>
+    <author href="https://novanestatlas.github.io/concoursmaroc/">Concours Maroc</author>
+
+    <content src="index.html" />
+
+    <!-- ★ Liens externes (sources officielles, inscriptions, e-mail…) :
+         ouverts dans le navigateur ou l'application du téléphone, jamais
+         dans l'appli. Aucune page distante n'est chargée dans l'appli,
+         d'où l'absence de <access> et de <allow-navigation>. -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+
+    <platform name="android">
+        <preference name="android-minSdkVersion" value="24" />
+        <preference name="android-targetSdkVersion" value="36" />
+
+        <!-- ★ L'appli est servie depuis https://localhost/ (valeurs par
+             défaut de Cordova 10 et plus). Gardez les mêmes valeurs que la
+             version précédente : la progression des élèves (questions vues,
+             révisions, statistiques) est enregistrée pour cette adresse. -->
+        <preference name="scheme" value="https" />
+        <preference name="hostname" value="localhost" />
+
+        <!-- ★ admob-plus-cordova et cordova-plugin-consent sont écrits en
+             Kotlin : sans cette ligne, leur code n'est pas compilé. -->
+        <preference name="GradlePluginKotlinEnabled" value="true" />
+
+        <!-- ★ Barres système en dehors de la page (valeur par défaut) :
+             l'en-tête et la barre d'onglets ne passent jamais dessous. La
+             couleur de la barre d'état suit ensuite le thème choisi dans
+             l'appli (clair ou sombre). -->
+        <preference name="AndroidEdgeToEdge" value="false" />
+
+        <!-- ★ Lecture à voix haute (cordova-plugin-tts-advanced) : depuis
+             Android 11, une appli ne voit les moteurs de synthèse vocale du
+             téléphone que si elle le déclare, et ce plugin ne le fait pas. -->
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <queries>
+                <intent>
+                    <action android:name="android.intent.action.TTS_SERVICE" />
+                </intent>
+            </queries>
+        </config-file>
+
+        <!-- Icône et écran de démarrage : l'icône n'a pas changé
+             (www/img/icon.svg), gardez les PNG de la première version.
+             Exemple, chemins relatifs à la racine du projet :
+
+        <icon density="mdpi"    src="res/icon/android/mipmap-mdpi.png" />
+        <icon density="hdpi"    src="res/icon/android/mipmap-hdpi.png" />
+        <icon density="xhdpi"   src="res/icon/android/mipmap-xhdpi.png" />
+        <icon density="xxhdpi"  src="res/icon/android/mipmap-xxhdpi.png" />
+        <icon density="xxxhdpi" src="res/icon/android/mipmap-xxxhdpi.png" />
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-icon.png" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#0B6E4F" />
+        -->
+    </platform>
+
+    <!-- Les plugins sont enregistrés dans package.json par « cordova plugin
+         add » (commandes dans LISEZMOI-ANDROID.md). -->
+</widget>

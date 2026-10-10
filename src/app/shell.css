@@ -1,0 +1,104 @@
+/* =========================================================================
+   Concours Maroc — Android app shell (appended to css/app.css)
+   Top bar with back arrow, menu drawer at every width, bottom tab bar,
+   advertising slot preview (in the APK the AdMob plugin shrinks the WebView
+   above its banner, so the slot is only drawn in a desktop browser), Android
+   safe areas.
+   ========================================================================= */
+
+:root {
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-l: env(safe-area-inset-left, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
+  --banner-h: 0px;
+  --tab-h: 62px;
+}
+
+html[data-app] { -webkit-tap-highlight-color: transparent; }
+html[data-app] body {
+  padding-bottom: calc(var(--tab-h) + var(--banner-h) + var(--safe-b));
+  overscroll-behavior-y: none;
+}
+
+/* ---- top bar ---- */
+html[data-app] .site-header { padding-top: var(--safe-t); }
+html[data-app] .site-header .bar { position: relative; gap: 6px; }
+html[data-app] .brand { gap: 8px; font-size: 1rem; min-width: 0; }
+html[data-app] .brand span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.app-back[hidden] { display: none !important; }
+html[dir="rtl"] .app-back svg { transform: scaleX(-1); }
+
+/* the menu is a drawer at every width inside the app */
+html[data-app] .menu-btn { display: inline-flex; }
+html[data-app] .hdr-tools { margin-inline-start: auto; }
+html[data-app] .nav {
+  display: none; position: absolute; inset-inline: 0; top: 100%;
+  flex-direction: column; align-items: stretch; gap: 0;
+  max-height: calc(100vh - var(--header-h) - var(--safe-t) - var(--tab-h) - var(--banner-h) - var(--safe-b) - 12px);
+  overflow-y: auto;
+  background: var(--surface); border-bottom: 1px solid var(--line); box-shadow: var(--shadow-lift);
+  padding: 8px var(--pad) 14px; margin: 0;
+}
+html[data-app] .nav.open { display: flex; }
+html[data-app] .nav a { padding: 12px 10px; font-size: var(--fs-md); border-radius: 10px; }
+html[data-app] .nav .nav-sep { height: 1px; background: var(--line); margin: 8px 4px; }
+
+/* ---- content ---- */
+.app-view { display: block; min-height: 60vh; outline: none; }
+.app-view > .state { padding: 60px 20px; }
+.app-loading { position: fixed; top: calc(var(--header-h) + var(--safe-t)); inset-inline: 0; height: 3px; z-index: 55; overflow: hidden; pointer-events: none; opacity: 0; transition: opacity .15s; }
+.app-loading.on { opacity: 1; }
+.app-loading i { display: block; height: 100%; width: 40%; background: var(--accent); animation: app-load 1s ease-in-out infinite; }
+@keyframes app-load { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
+html[dir="rtl"] .app-loading i { animation-direction: reverse; }
+
+/* features that need a desktop browser are hidden in the app */
+html[data-app] [data-print], html[data-app] .no-app, html[data-app] #ics-all { display: none !important; }
+
+/* ---- bottom tab bar ---- */
+.tabbar {
+  position: fixed; inset-inline: 0; z-index: 40;
+  bottom: calc(var(--banner-h) + var(--safe-b));
+  height: var(--tab-h);
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  background: var(--surface); border-top: 1px solid var(--line);
+  padding-inline: var(--safe-l) var(--safe-r);
+}
+.tabbar a {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+  text-decoration: none; color: var(--muted); font-size: .72rem; font-weight: 700; line-height: 1.1;
+  padding: 6px 2px; min-width: 0;
+}
+.tabbar a span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tabbar svg { width: 24px; height: 24px; fill: currentColor; }
+.tabbar a[aria-current="page"] { color: var(--accent); }
+.tabbar a[aria-current="page"] svg { transform: translateY(-1px); }
+html[dir="rtl"] .tabbar a { font-size: .78rem; }
+
+/* toast above the tab bar */
+html[data-app] .toast { bottom: calc(var(--tab-h) + var(--banner-h) + var(--safe-b) + 14px); }
+
+/* ---- advertising slot: desktop preview of where the banner goes ---- */
+#ad-banner {
+  position: fixed; inset-inline: 0; bottom: 0; z-index: 30;
+  height: calc(var(--banner-h) + var(--safe-b));
+  padding-bottom: var(--safe-b);
+  display: none; align-items: center; justify-content: center;
+  background: var(--surface-2); border-top: 1px solid var(--line);
+}
+#ad-banner.on { display: flex; }
+#ad-banner .ad-mock { font-size: var(--fs-xs); color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+body.has-banner { --banner-h: 56px; }
+
+/* ---- start-up and errors ---- */
+.app-boot { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; min-height: 70vh; text-align: center; padding: 30px 20px; }
+.app-boot svg.logo { width: 72px; height: 72px; }
+.app-boot .err { max-width: 46ch; color: var(--muted); font-size: var(--fs-sm); word-break: break-word; }
+
+/* ---- settings page ---- */
+.app-settings .set-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.app-settings .set-row:last-child { border-bottom: 0; }
+.app-settings .set-row > div { min-width: 0; }
+.app-settings .set-row small { display: block; color: var(--muted); }
+.app-settings select { min-height: 42px; padding: 8px 10px; font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; max-width: 60vw; }

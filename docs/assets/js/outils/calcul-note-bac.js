@@ -120,7 +120,15 @@
     ]);
   }
 
+  /* The "change" event fired when a field loses focus must not rebuild the
+     results under a finger that is tapping one of their links: re-render
+     only when an input really changed. */
+  var lastSig = null;
+  function signature() { return [F.reg.value, F.cc.value, F.nat.value, F.bac.value].join('|'); }
+  function update() { if (signature() !== lastSig) render(); }
+
   function render() {
+    lastSig = signature();
     var reg = read(F.reg), cc = read(F.cc), nat = read(F.nat), bac = F.bac.value;
     C.store.set('note', { reg: F.reg.value, cc: F.cc.value, nat: F.nat.value, bac: bac });
     C.clear(out);
@@ -223,8 +231,8 @@
     if (saved.bac) F.bac.value = saved.bac;
   }
   form.addEventListener('submit', function (e) { e.preventDefault(); render(); });
-  form.addEventListener('input', render);
-  form.addEventListener('change', render);
+  form.addEventListener('input', update);
+  form.addEventListener('change', update);
   weighted();
   render();
   C.data('outils').then(function (d) { data = d; render(); }).catch(function (err) { if (window.console) console.error(err); });

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 500" width="1024" height="500">
+  <!-- Play Store feature graphic, 1024x500. Export to PNG before uploading. -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123329"/>
+      <stop offset="1" stop-color="#081913"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="500" fill="url(#g)"/>
+  <g opacity="0.13" fill="#0b6e4f">
+    <path d="M880 60 897 96 933 79 916 115 952 132 916 149 933 185 897 168 880 204 863 168 827 185 844 149 808 132 844 115 827 79 863 96Z"/>
+    <path d="M120 320 137 356 173 339 156 375 192 392 156 409 173 445 137 428 120 464 103 428 67 445 84 409 48 392 84 375 67 339 103 356Z"/>
+  </g>
+  <path fill="#0b6e4f"
+        d="M132 190 145 222 177 209 164 241 196 254 164 267 177 299 145 286 132 318 119 286 87 299 100 267 68 254 100 241 87 209 119 222Z"/>
+  <text x="240" y="238" fill="#f4f6f3" font-family="Segoe UI, Roboto, Arial, sans-serif"
+        font-size="70" font-weight="700">Concours Maroc</text>
+  <text x="240" y="292" fill="#b98b1f" font-family="Segoe UI, Roboto, Arial, sans-serif"
+        font-size="34" font-weight="600">500 questions · Français &amp; العربية · 100% hors ligne</text>
+  <text x="240" y="342" fill="#9bb0a7" font-family="Segoe UI, Roboto, Arial, sans-serif"
+        font-size="27">Police · Gendarmerie · FAR · Protection Civile · Douane · CNSS · OFPPT</text>
+</svg>

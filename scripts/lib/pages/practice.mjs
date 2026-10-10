@@ -1,7 +1,7 @@
 /* Practice app page (/entrainement/): crawlable intro + the QCM trainer. */
 import { html } from '../html.mjs';
 import { icon } from '../icons.mjs';
-import { linker, breadcrumb, breadcrumbLd } from '../layout.mjs';
+import { linker, breadcrumb, breadcrumbLd, linkMode } from '../layout.mjs';
 import { t } from '../strings.mjs';
 import { SUBJECTS, GROUPS } from '../../../content/taxonomy.mjs';
 import { qcmPath } from './qcm.mjs';
@@ -52,7 +52,7 @@ export function buildPracticePage(site, all, lang, banks) {
 <div class="container practice-head">
 <header class="page-head" style="padding-bottom:0"><span class="eyebrow">${t(lang, 'navPractice')}</span><h1>${x.h1}</h1><p class="lead">${x.lead}</p></header>
 </div>
-<div id="cm-app" class="cm-app" data-lang="${lang}" data-data="${link('data/')}" data-guides="${link('')}">
+<div id="cm-app" class="cm-app" data-lang="${lang}" data-data="${link('data/')}" data-i18n="${link('data/i18n/')}" data-guides="${link('')}" data-route-base="${linkMode() === 'app' ? pfx + 'entrainement/' : ''}">
 <section class="screen is-active" id="screen-boot" aria-live="polite"><div class="state"><div class="spinner"></div><p>${x.loading}</p></div></section>
 <noscript><div class="callout warn">${x.noscript}</div></noscript>
 </div>
@@ -63,7 +63,7 @@ export function buildPracticePage(site, all, lang, banks) {
 ${GROUPS.map((g) => {
   const items = practiceList.filter((c) => c.group === g.id);
   if (!items.length) return '';
-  return html`<h3>${g[lang]}</h3><div class="chips">${items.map((c) => html`<a class="chip" href="?concours=${c.id}" data-pick-concours="${c.id}">${c[lang].short}</a>`)}</div>`;
+  return html`<h3>${g[lang]}</h3><div class="chips">${items.map((c) => html`<a class="chip" href="${link(pfx + 'entrainement/')}?concours=${c.id}" data-pick-concours="${c.id}">${c[lang].short}</a>`)}</div>`;
 })}</section>
 <section class="section"><h2>${x.bySubject}</h2><div class="chips">${SUBJECTS.filter((s) => (banks[s.id] || []).length).map((s) => html`<a class="chip" href="${link(qcmPath(s, lang, banks))}">${s[lang]} · ${banks[s.id].length}</a>`)}</div></section>
 </div>`;

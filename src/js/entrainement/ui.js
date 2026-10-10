@@ -502,8 +502,10 @@
       UI.toast(on ? t('quiz.bookmarked') : t('quiz.unbookmarked'));
     };
     top.appendChild(starBtn);
-    if (TTS.isAvailable() && TTS.hasVoice(view.lang === 'ar' ? 'ar' : 'fr')) {
-      var speakBtn = U.el('button', { class: 'icon-btn', type: 'button', 'aria-label': t('quiz.readAloud'), onclick: function () { if (TTS.isSpeaking()) TTS.stop(); else TTS.speakQuestion(view.body, view.lang); } });
+    // English questions are read with an English voice.
+    var speechLang = view.question.category === 'anglais' ? 'en' : view.lang === 'ar' ? 'ar' : 'fr';
+    if (TTS.isAvailable() && TTS.hasVoice(speechLang)) {
+      var speakBtn = U.el('button', { class: 'icon-btn', type: 'button', 'aria-label': t('quiz.readAloud'), onclick: function () { if (TTS.isSpeaking()) TTS.stop(); else TTS.speakQuestion(view.body, speechLang); } });
       speakBtn.appendChild(icon('sound'));
       top.appendChild(speakBtn);
     }
@@ -565,9 +567,17 @@
     el.appendChild(foot);
     el.appendChild(U.el('p', { class: 'kbd-hint', text: exam ? t('quiz.kbdExam') : t('quiz.kbd') }));
 
+    // A question answered before the session was left (back button, another
+    // page, app closed) reopens answered, with its correction, instead of
+    // looking fresh while refusing every tap.
+    var alreadyAnswered = !exam && view.state.answeredIndex !== null;
+    if (alreadyAnswered) {
+      showAnswered({ correct: view.state.correct, correctDisplayIndex: view.correctDisplayIndex, body: view.body, question: view.question, lang: view.lang }, view.state.answeredIndex);
+    }
+
     questionStartedAt = Date.now();
     startTimer(timerEl);
-    if (Store.getProfile().tts && Store.getProfile().tts.autoRead && TTS.isAvailable()) TTS.speakQuestion(view.body, view.lang);
+    if (!alreadyAnswered && Store.getProfile().tts && Store.getProfile().tts.autoRead && TTS.isAvailable()) TTS.speakQuestion(view.body, speechLang);
 
     function onAnswer(displayIndex) {
       var res = Quiz.answer(displayIndex, Date.now() - questionStartedAt);
@@ -581,6 +591,11 @@
       }
       TTS.stop();
       haptic(res.correct);
+      showAnswered(res, displayIndex);
+      nextBtn.focus({ preventScroll: true });
+    }
+
+    function showAnswered(res, displayIndex) {
       buttons.forEach(function (b, i) {
         b.disabled = true;
         if (i === res.correctDisplayIndex) b.setAttribute('data-state', 'correct');
@@ -589,7 +604,6 @@
       skipBtn.style.display = 'none';
       nextBtn.style.display = '';
       renderFeedback(res);
-      nextBtn.focus({ preventScroll: true });
     }
 
     function renderFeedback(res) {

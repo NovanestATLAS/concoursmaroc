@@ -4,7 +4,13 @@
   'use strict';
   var doc = document.documentElement;
   var ROOT = doc.getAttribute('data-root') || './';
-  var LANG = doc.getAttribute('data-lang') || 'fr';
+  // Android app: pages are routes of a single-page shell and change language
+  // without a reload, so the language is always read at call time.
+  var APP = doc.hasAttribute('data-app');
+  function lang() { return doc.getAttribute('data-lang') || 'fr'; }
+  function searchUrl() {
+    return (doc.getAttribute('data-search') || ROOT + 'assets/search-{lang}.json').replace('{lang}', lang());
+  }
 
   function $(sel, root) { return (root || document).querySelector(sel); }
   function $$(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
@@ -51,15 +57,22 @@
 
   // ---------------------------------------------------------------- search
   var index = null;
+  var indexLang = null;
   var loading = null;
   function norm(s) {
     return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
       .replace(/[ً-ْـ]/g, '').replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي');
   }
+  function getJson(url) {
+    if (window.CM && window.CM.load) return window.CM.load.json(url);
+    return fetch(url).then(function (r) { return r.json(); });
+  }
   function loadIndex() {
-    if (index) return Promise.resolve(index);
-    if (loading) return loading;
-    loading = fetch(ROOT + 'assets/search-' + LANG + '.json').then(function (r) { return r.json(); })
+    if (index && indexLang === lang()) return Promise.resolve(index);
+    if (loading && indexLang === lang()) return loading;
+    indexLang = lang();
+    index = null;
+    loading = getJson(searchUrl())
       .then(function (data) {
         index = data.map(function (e) { e._t = norm(e.t); e._all = norm(e.t + ' ' + e.d + ' ' + e.k + ' ' + e.u); return e; });
         return index;
@@ -90,7 +103,7 @@
       if (!res.length) {
         var li = document.createElement('li');
         li.innerHTML = '<small style="padding:9px 10px;display:block"></small>';
-        li.firstChild.textContent = LANG === 'ar' ? 'لا توجد نتائج.' : 'Aucun résultat. Essayez « ENSA », « médecine » ou « police ».';
+        li.firstChild.textContent = lang() === 'ar' ? 'لا توجد نتائج.' : 'Aucun résultat. Essayez « ENSA », « médecine » ou « police ».';
         list.appendChild(li);
         return;
       }
@@ -141,26 +154,43 @@
     });
   }
   bindSearch($('#search-input'), $('#search-results'));
-  $$('[data-search-input]').forEach(function (inp) {
-    bindSearch(inp, inp.parentNode.querySelector('[data-search-results]'));
-  });
 
-  // ---------------------------------------------------------------- print & share
-  $$('[data-print]').forEach(function (b) { b.addEventListener('click', function () { window.print(); }); });
-  $$('[data-share]').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var data = { title: document.title, url: location.href };
-      if (navigator.share) { navigator.share(data).catch(function () {}); return; }
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(location.href).then(function () {
-          window.cmToast(LANG === 'ar' ? 'تم نسخ الرابط' : 'Lien copié dans le presse-papiers');
-        });
-      }
+  // ---------------------------------------------------------------- page content
+  /* In the app, the page's address is local (https://localhost/#/…): share
+     the same page of the website instead. */
+  function shareUrl() {
+    if (!APP) return location.href;
+    var base = document.documentElement.getAttribute('data-site-url') || '';
+    var cur = window.CM && CM.shell && CM.shell.current ? CM.shell.current() : null;
+    var key = (cur && cur.key) || '';
+    if (/^(ar\/)?app\//.test(key)) key = lang() === 'ar' ? 'ar/' : '';   // app-only pages
+    return base + key;
+  }
+  function share() {
+    var data = { title: document.title, url: shareUrl() };
+    var sharing = window.plugins && window.plugins.socialsharing;
+    if (sharing && sharing.shareWithOptions) { sharing.shareWithOptions({ subject: data.title, message: data.title, url: data.url }); return; }
+    if (navigator.share) { navigator.share(data).catch(function () {}); return; }
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(data.url).then(function () {
+        window.cmToast(lang() === 'ar' ? 'تم نسخ الرابط' : 'Lien copié dans le presse-papiers');
+      });
+    }
+  }
+  /* Behaviour attached to elements of the page body. Called once on the
+     website, and by the app router after every page swap. */
+  function bindContent(root) {
+    $$('[data-search-input]', root).forEach(function (inp) {
+      bindSearch(inp, inp.parentNode.querySelector('[data-search-results]'));
     });
-  });
+    $$('[data-print]', root).forEach(function (b) { b.addEventListener('click', function () { window.print(); }); });
+    $$('[data-share]', root).forEach(function (b) { b.addEventListener('click', share); });
+  }
+  window.CMSite = { bindContent: bindContent, loadIndex: loadIndex };
+  if (!APP) bindContent(document);
 
   // ---------------------------------------------------------------- service worker
-  if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  if (!APP && 'serviceWorker' in navigator && location.protocol === 'https:') {
     window.addEventListener('load', function () {
       navigator.serviceWorker.register(ROOT + 'sw.js').catch(function () { /* optional */ });
     });

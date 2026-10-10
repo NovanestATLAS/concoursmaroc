@@ -23,6 +23,7 @@ import { buildQcmPages } from './lib/pages/qcm.mjs';
 import { buildGuidesPages } from './lib/pages/guides.mjs';
 import { buildStaticPages } from './lib/pages/static.mjs';
 import { loadQuestionBanks } from './lib/questions.mjs';
+import { dataFiles, searchIndex } from './lib/data.mjs';
 import { sitemapXml, robotsTxt, manifestJson } from './lib/seo.mjs';
 import { GROUPS, SUBJECTS, BAC } from '../content/taxonomy.mjs';
 import { CALENDAR } from '../content/calendar.mjs';
@@ -127,54 +128,11 @@ async function main() {
   copyDir(path.join(ROOT, 'src/img'), path.join(OUT, 'assets/img'));
   copyDir(path.join(ROOT, 'src/root'), OUT); // favicon, icons, etc.
 
-  // Data for the practice app and the tools
-  const practiceConcours = all.filter((c) => c.practice).map((c) => ({
-    id: c.id, group: c.group, level: c.level, icon: c.icon,
-    name: { fr: c.fr.name, ar: (c.ar || c.fr).name }, short: { fr: c.fr.short, ar: (c.ar || c.fr).short },
-    subjects: c.practice.subjects, mock: c.practice.mock || null,
-    guide: { fr: guidePath(c, 'fr'), ar: c.ar ? guidePath(c, 'ar') : guidePath(c, 'fr') },
-  }));
-  // Where candidates register (platform field, else the "Inscription" fact of the guide).
-  const platformOf = (c) => {
-    if (c.platform) return c.platform.label;
-    const f = (c.fr.facts || []).find(([k]) => /^(Inscription|Candidature|Plateforme)$/.test(k));
-    return f ? f[1] : null;
-  };
-  const toolsConcours = all.map((c) => ({
-    id: c.id, group: c.group, level: c.level, type: c.type, bac: c.bac || [], seuils: c.seuils || null, age: c.age || null,
-    noBac: !!c.noBac, name: { fr: c.fr.name, ar: (c.ar || c.fr).name }, short: { fr: c.fr.short, ar: (c.ar || c.fr).short },
-    guide: { fr: guidePath(c, 'fr'), ar: c.ar ? guidePath(c, 'ar') : guidePath(c, 'fr') },
-    practice: c.practice ? { subjects: c.practice.subjects } : null,
-    platform: platformOf(c),
-    calendar: c.calendar || [],
-  }));
-  write('data/concours.json', JSON.stringify({ updated: site.updated, groups: GROUPS, subjects: SUBJECTS, bac: BAC, concours: practiceConcours }));
-  write('data/outils.json', JSON.stringify({ updated: site.updated, session: site.session, nextSession: site.nextSession, groups: GROUPS, bac: BAC, concours: toolsConcours, calendar: CALENDAR }));
-  const manifest = { contentVersion: `2.0.0-${site.updated}`, updated: site.updated, totalQuestions: 0, categories: [] };
-  for (const s of SUBJECTS) {
-    const qs = banks[s.id] || [];
-    if (!qs.length) continue;
-    write(`data/questions/${s.id}.json`, JSON.stringify({ category: s.id, count: qs.length, questions: qs }));
-    const langs = new Set();
-    qs.forEach((q) => (q.languages || []).forEach((l) => langs.add(l)));
-    manifest.categories.push({ id: s.id, file: `questions/${s.id}.json`, labels: { fr: s.fr, ar: s.ar }, short: s.short, count: qs.length, languages: [...langs].sort() });
-    manifest.totalQuestions += qs.length;
-  }
-  write('data/manifest.json', JSON.stringify(manifest));
-  write('data/sources.json', fs.readFileSync(path.join(ROOT, 'content/sources.json'), 'utf8'));
+  // Data for the practice app and the tools, search indexes
+  const { files: data, manifest } = dataFiles(site, all, banks, ROOT);
+  for (const [rel, content] of Object.entries(data)) write(rel, content);
   copyDir(path.join(ROOT, 'src/i18n'), path.join(OUT, 'data/i18n'));
-
-  // Search index (per language)
-  for (const lang of site.languages) {
-    const idx = pages.filter((p) => p.lang === lang && !p.noindex && !p.noSearch).map((p) => ({
-      u: p.path.replace(/index\.html$/, ''),
-      t: p.searchTitle || p.title,
-      d: (p.description || '').slice(0, 150),
-      k: p.keywords ? p.keywords.join(' ') : '',
-      g: p.searchGroup || '',
-    }));
-    write(`assets/search-${lang}.json`, JSON.stringify(idx));
-  }
+  for (const lang of site.languages) write(`assets/search-${lang}.json`, searchIndex(pages, lang));
 
   // SEO files
   write('sitemap.xml', sitemapXml(site, pages));

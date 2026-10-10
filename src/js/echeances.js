@@ -3,6 +3,7 @@
 (function () {
   'use strict';
   var LANG = document.documentElement.getAttribute('data-lang') || 'fr';
+  var APP = document.documentElement.hasAttribute('data-app');
   var T = LANG === 'ar'
     ? { today: 'اليوم', tomorrow: 'غدًا', inDays: 'بعد {n} يومًا', ongoing: 'جارٍ حتى {d}', past: 'انتهى', est: 'تقدير', add: 'أضف إلى المفكرة' }
     : { today: "Aujourd'hui", tomorrow: 'Demain', inDays: 'Dans {n} jours', ongoing: "En cours jusqu'au {d}", past: 'Passé', est: 'Estimation', add: 'Ajouter à mon agenda' };
@@ -54,7 +55,8 @@
 
   Array.prototype.slice.call(document.querySelectorAll('[data-deadlines]')).forEach(function (list) {
     var limit = parseInt(list.getAttribute('data-limit') || '0', 10);
-    var withIcs = list.hasAttribute('data-ics');
+    // No file downloads inside the Android WebView: calendar export is web-only.
+    var withIcs = list.hasAttribute('data-ics') && !APP;
     var shown = 0;
     Array.prototype.slice.call(list.children).forEach(function (li) {
       var date = li.getAttribute('data-date');
@@ -89,7 +91,8 @@
   });
 
   var all = document.getElementById('ics-all');
-  if (all) {
+  if (all && APP) all.hidden = true;
+  if (all && !APP) {
     all.addEventListener('click', function () {
       var events = Array.prototype.slice.call(document.querySelectorAll('[data-deadlines] > li:not(.past)')).map(vevent).filter(Boolean);
       download('concours-maroc-calendrier.ics', events);

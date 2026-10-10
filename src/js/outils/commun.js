@@ -6,13 +6,27 @@
   'use strict';
 
   var doc = document.documentElement;
+  // Page links start with ROOT ("../../" on the website, "#/" in the Android
+  // app); data files with ASSETS (the www root in the app).
   var ROOT = doc.getAttribute('data-root') || './';
+  var ASSETS = doc.hasAttribute('data-asset-root') ? doc.getAttribute('data-asset-root') : ROOT;
+  var APP = doc.hasAttribute('data-app');
   var LANG = doc.getAttribute('data-lang') || 'fr';
   var AR = LANG === 'ar';
   var cache = {};
 
+  /* Parameters of the current URL: the query string on the website, the
+     part after "?" in the route ("#/outils/x/?bac=SM") in the app. */
+  function params() {
+    var q = location.search;
+    var h = location.hash.indexOf('?');
+    if (h !== -1) q = location.hash.slice(h);
+    try { return new URLSearchParams(q); } catch (e) { return null; }
+  }
+
   var CMT = {
     ROOT: ROOT,
+    APP: APP,
     LANG: LANG,
     AR: AR,
 
@@ -67,7 +81,8 @@
     /* JSON from /data/, fetched once per page. */
     data: function (name) {
       if (!cache[name]) {
-        cache[name] = fetch(ROOT + 'data/' + name + '.json').then(function (r) {
+        var url = ASSETS + 'data/' + name + '.json';
+        cache[name] = global.CM && global.CM.load ? global.CM.load.json(url) : fetch(url).then(function (r) {
           if (!r.ok) throw new Error('HTTP ' + r.status);
           return r.json();
         });
@@ -89,13 +104,22 @@
 
     /* Query string parameters (?bac=SM&note=14.2). */
     param: function (name) {
-      try { return new URLSearchParams(location.search).get(name); } catch (e) { return null; }
+      var p = params();
+      return p ? p.get(name) : null;
     },
 
     L: function (obj) { return obj ? (obj[LANG] || obj.fr || '') : ''; },
 
     guideHref: function (c) { return ROOT + (c.guide ? (c.guide[LANG] || c.guide.fr) : ''); },
-    practiceHref: function (id) { return ROOT + (AR ? 'ar/' : '') + 'entrainement/?concours=' + encodeURIComponent(id); },
+    /* Link to the trainer with a concours selected, optionally on a given
+       screen ("mock"). The screen is a hash route on the website and a path
+       segment of the route in the app. */
+    practiceHref: function (id, screen) {
+      var base = ROOT + (AR ? 'ar/' : '') + 'entrainement/';
+      var q = '?concours=' + encodeURIComponent(id);
+      if (APP) return base + (screen || '') + q;
+      return base + q + (screen ? '#/' + screen : '');
+    },
 
     today: function () {
       var d = new Date();

@@ -10,8 +10,42 @@ export function rootOf(pagePath) {
   return depth === 0 ? './' : '../'.repeat(depth);
 }
 
+/* Link mode. "site" (default): relative links between static pages.
+ * "app" (Cordova build, scripts/build-app.mjs): every page is a route of the
+ * single-page shell ("#/concours/ensa/") and assets are addressed from the
+ * www root with the folder names of the app (css/, js/, img/, data/, i18n/). */
+let LINK_MODE = 'site';
+export function setLinkMode(mode) { LINK_MODE = mode; }
+export function linkMode() { return LINK_MODE; }
+
+const APP_ASSET_MAP = [
+  [/^assets\/css\//, 'css/'],
+  [/^assets\/js\//, 'js/'],
+  [/^assets\/img\//, 'img/'],
+  [/^assets\/search-/, 'data/search-'],
+  [/^data\/i18n\//, 'i18n/'],
+];
+export function appAsset(target) {
+  const t = String(target || '').replace(/^\//, '');
+  for (const [re, rep] of APP_ASSET_MAP) if (re.test(t)) return t.replace(re, rep);
+  return t;
+}
+export function isAssetPath(target) {
+  const p = String(target || '').replace(/^\//, '').split(/[?#]/)[0];
+  if (/^(assets|data)\//.test(p)) return true;
+  if (/\.html$/.test(p)) return false;
+  return /\.[a-z0-9]+$/i.test(p);
+}
+
 /* Builds a relative link from the current page to a site-relative target. */
 export function linker(pagePath) {
+  if (LINK_MODE === 'app') {
+    return (target) => {
+      const tgt = String(target || '').replace(/^\//, '');
+      if (isAssetPath(tgt)) return appAsset(tgt);
+      return '#/' + tgt.replace(/index\.html(?=$|[?#])/, '');
+    };
+  }
   const root = rootOf(pagePath);
   return (target) => {
     const tgt = String(target || '').replace(/^\//, '');

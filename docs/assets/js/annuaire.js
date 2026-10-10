@@ -8,6 +8,7 @@
   var none = document.getElementById('f-none');
   if (!q || !bac || !level) return;
   var LANG = document.documentElement.getAttribute('data-lang') || 'fr';
+  var APP = document.documentElement.hasAttribute('data-app');
   var cards = Array.prototype.slice.call(document.querySelectorAll('[data-concours]'));
   var sections = Array.prototype.slice.call(document.querySelectorAll('[data-group-section]'));
 
@@ -36,6 +37,7 @@
     });
     if (count) count.textContent = shown + (LANG === 'ar' ? ' مباراة' : ' concours');
     if (none) none.hidden = shown !== 0;
+    if (APP) return; // the app keeps its route untouched
     try {
       var params = new URLSearchParams();
       if (q.value) params.set('q', q.value);
@@ -46,7 +48,8 @@
     } catch (e) { /* old browser */ }
   }
   try {
-    var p = new URLSearchParams(location.search);
+    var hq = location.hash.indexOf('?');
+    var p = new URLSearchParams(APP && hq !== -1 ? location.hash.slice(hq) : location.search);
     if (p.get('q')) q.value = p.get('q');
     if (p.get('bac')) bac.value = p.get('bac');
     if (p.get('niveau')) level.value = p.get('niveau');

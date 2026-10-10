@@ -176,7 +176,7 @@
       P.tasks.forEach(function (t) { tasks.appendChild(el('li', { text: C.tr(t[0], t[1]) })); });
       if (i === weeks - 1) tasks.appendChild(el('li', null, [el('strong', { text: tr('Dernière ligne droite : ', 'المرحلة الأخيرة: ') }), tr('alléger le rythme, dormir suffisamment, préparer convocation, CNIE et matériel.', 'خفف الإيقاع، ونم جيدًا، وحضّر الاستدعاء والبطاقة الوطنية والأدوات.')]));
       var link = phase === 'mock'
-        ? el('a', { class: 'btn sm no-print', href: C.practiceHref(c.id) + '#/mock', text: tr('Lancer un examen blanc', 'بدء امتحان تجريبي') })
+        ? el('a', { class: 'btn sm no-print', href: C.practiceHref(c.id, 'mock'), text: tr('Lancer un examen blanc', 'بدء امتحان تجريبي') })
         : el('a', { class: 'btn sm ghost no-print', href: C.practiceHref(c.id), text: tr('Ouvrir l’entraînement', 'فتح التمرين') });
       list.appendChild(el('section', { class: 'card plan-week' }, [
         el('div', { class: 'plan-head' }, [

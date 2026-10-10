@@ -98,8 +98,15 @@
     ]);
   }
 
+  /* Same guard as the grade calculator: a blur "change" must not rebuild
+     the cards while one of their links is being tapped. */
+  var lastSig = null;
+  function signature() { return [F.bac.value, F.note.value, F.birth.value, F.group.value].join('|'); }
+  function update() { if (signature() !== lastSig) render(); }
+
   function render() {
     if (!data) return;
+    lastSig = signature();
     var bac = F.bac.value;
     var note = C.num(F.note.value);
     if (F.note.value !== '' && !(note >= 0 && note <= 20)) { note = NaN; F.note.setAttribute('aria-invalid', 'true'); } else F.note.setAttribute('aria-invalid', 'false');
@@ -175,7 +182,7 @@
   F.group.value = saved.group || '';
 
   form.addEventListener('submit', function (e) { e.preventDefault(); render(); });
-  form.addEventListener('input', render);
-  form.addEventListener('change', render);
+  form.addEventListener('input', update);
+  form.addEventListener('change', update);
   C.data('outils').then(function (d) { data = d; render(); }).catch(function (err) { C.fail(out, err); });
 })();

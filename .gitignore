@@ -3,3 +3,5 @@ node_modules/
 *.log
 .vscode/
 .idea/
+# app build output (the zip is copied to cordova/)
+dist/
