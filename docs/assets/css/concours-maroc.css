@@ -285,6 +285,12 @@ html[dir="rtl"] .brand { letter-spacing: 0; }
   border-radius: var(--r-lg); box-shadow: var(--shadow-lift); padding: 12px; z-index: 60;
 }
 .search-panel.open { display: block; }
+/* phones: the panel spans the header bar instead of hanging off the search
+   button, which sits away from the edge (theme and menu buttons follow it) */
+@media (max-width: 920px) {
+  .search-wrap { position: static; }
+  .search-panel { inset-inline: 8px; width: auto; top: calc(100% + 6px); }
+}
 .search-panel input {
   width: 100%; min-height: var(--tap); padding: 10px 14px; font: inherit; color: var(--ink);
   background: var(--bg); border: 1px solid var(--line); border-radius: 12px;

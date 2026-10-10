@@ -153,6 +153,8 @@ ${aside}
     section: 'navConcours',
     type: 'article',
     updated,
+    // feeds the search box: short and long names, then the content keywords
+    keywords: [d.short, d.name, ...(d.keywords || [])],
     ogImage: `assets/img/og/concours-${c.id}.png`,
     jsonld,
     body,

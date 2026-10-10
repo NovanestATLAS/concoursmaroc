@@ -61,8 +61,11 @@
   var loading = null;
   function norm(s) {
     return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
-      .replace(/[ً-ْـ]/g, '').replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي');
+      .replace(/[ً-ْـ]/g, '').replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي')
+      .replace(/[’'`´\-_\/.,;:!?()«»"]+/g, ' ');
   }
+  // words that say nothing about what is searched ("école de l'air", "marine ou air")
+  var STOP = { de: 1, du: 1, des: 1, la: 1, le: 1, les: 1, l: 1, d: 1, et: 1, ou: 1, en: 1, a: 1, au: 1, aux: 1, un: 1, une: 1, pour: 1, concours: 1, 'في': 1, 'من': 1, 'و': 1, 'مباراه': 1 };
   function getJson(url) {
     if (window.CM && window.CM.load) return window.CM.load.json(url);
     return fetch(url).then(function (r) { return r.json(); });
@@ -80,17 +83,27 @@
     return loading;
   }
   function search(q) {
-    var terms = norm(q).split(/\s+/).filter(Boolean);
+    var all = norm(q).split(/\s+/).filter(Boolean);
+    var terms = all.filter(function (t) { return !STOP[t]; });
+    if (!terms.length) terms = all;
     if (!terms.length || !index) return [];
-    return index.map(function (e) {
-      var score = 0;
+    var scored = index.map(function (e) {
+      var hits = 0, score = 0;
       for (var i = 0; i < terms.length; i++) {
-        if (e._all.indexOf(terms[i]) === -1) return null;
+        if (e._all.indexOf(terms[i]) === -1) continue;
+        hits++;
+        score += 2;
         if (e._t.indexOf(terms[i]) !== -1) score += 3;
-        if (e.u.indexOf('concours/') !== -1) score += 1;
       }
-      return { e: e, s: score };
-    }).filter(Boolean).sort(function (a, b) { return b.s - a.s; }).slice(0, 8).map(function (x) { return x.e; });
+      if (!hits) return null;
+      if (e.u.indexOf('concours/') !== -1) score += 1;
+      return { e: e, h: hits, s: score };
+    }).filter(Boolean);
+    // pages matching every word first, then those matching most of them
+    // ("marine royale ou école de l'air" names two schools at once)
+    var min = Math.min(2, terms.length);
+    return scored.filter(function (x) { return x.h >= min; })
+      .sort(function (a, b) { return b.h - a.h || b.s - a.s; }).slice(0, 8).map(function (x) { return x.e; });
   }
   function bindSearch(input, list) {
     if (!input || !list) return;
@@ -143,9 +156,13 @@
       sBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
       if (open) { loadIndex(); $('#search-input').focus(); }
     });
+    function closeSearch() { sPanel.classList.remove('open'); sBtn.setAttribute('aria-expanded', 'false'); }
     document.addEventListener('click', function (e) {
-      if (!sPanel.contains(e.target) && !sBtn.contains(e.target)) { sPanel.classList.remove('open'); sBtn.setAttribute('aria-expanded', 'false'); }
+      if (!sPanel.contains(e.target) && !sBtn.contains(e.target)) closeSearch();
+      // a result was chosen: the panel must not stay over the next page
+      else if (e.target.closest && e.target.closest('#search-results a')) closeSearch();
     });
+    document.addEventListener('cm:page', closeSearch);
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && sPanel.classList.contains('open')) { sPanel.classList.remove('open'); sBtn.focus(); }
       if (e.key === '/' && !/input|textarea|select/i.test((document.activeElement || {}).tagName || '')) {

@@ -73,6 +73,14 @@
   }
   document.addEventListener('cm:theme', syncStatusBar);
 
+  /* Edge-to-edge (WebView drawn under the status bar) only when the page is
+     as tall as the screen; otherwise the safe areas are ignored (shell.css). */
+  function detectEdge() {
+    var gap = (global.screen && global.screen.height ? global.screen.height : 0) - global.innerHeight;
+    document.documentElement.toggleAttribute('data-edge', gap < 8);
+  }
+  detectEdge();
+
   // ------------------------------------------------------------ advertising
   var onPlay = false;
   var pageBanner = true;

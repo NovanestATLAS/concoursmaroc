@@ -25,7 +25,7 @@ export default {
     name: "École Royale de l'Air de Marrakech (ERA) — élèves officiers pilotes",
     title: "École Royale de l'Air 2027 : concours pilote, conditions et épreuves",
     description: "Concours des élèves officiers pilotes de l'École Royale de l'Air : bac SM ou PC, 18–20 ans, taille, acuité visuelle, présélection avec mention, visite médicale, tests physiques et psychotechniques, écrit et oral.",
-    keywords: ['école royale de l air', 'era marrakech', 'devenir pilote maroc', 'concours pilote', 'forces royales air'],
+    keywords: ['école royale de l air', 'era marrakech', 'devenir pilote maroc', 'concours pilote', 'forces royales air', 'aviation', 'armée de l air'],
     intro: "L'**École Royale de l'Air** de Marrakech forme les **officiers pilotes** des Forces Royales Air (cursus de licence, option pilotage). Le concours est très sélectif : **bac SM ou PC**, **18 à 20 ans**, **excellente vue** et aptitude médicale stricte.",
     facts: [['Bac', 'Sciences mathématiques ou sciences physiques'], ['Âge', '18 à 20 ans au 31 décembre'], ['Taille', '1,65 m (garçons) · 1,60 m (filles)'], ['Mention', '« Assez bien » minimum'], ['Candidature 2026', 'Jusqu’au 3 avril 2026']],
     sections: [

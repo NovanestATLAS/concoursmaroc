@@ -14,6 +14,14 @@
   --banner-h: 0px;
   --tab-h: 62px;
 }
+/* Without AndroidEdgeToEdge, cordova-android already places the WebView
+   between the system bars; recent WebViews still report the bars as safe
+   areas, which doubled the gap under the status bar. app.js sets data-edge
+   only when the page really runs under the system bars. */
+html[data-app]:not([data-edge]) {
+  --safe-t: 0px;
+  --safe-b: 0px;
+}
 
 html[data-app] { -webkit-tap-highlight-color: transparent; }
 html[data-app] body {
@@ -24,6 +32,9 @@ html[data-app] body {
 /* ---- top bar ---- */
 html[data-app] .site-header { padding-top: var(--safe-t); }
 html[data-app] .site-header .bar { position: relative; gap: 6px; }
+html[data-app] .search-wrap { position: static; }
+html[data-app] .search-panel { inset-inline: 8px; width: auto; top: calc(100% + 6px); }
+html[data-app] .search-results { max-height: min(60vh, calc(100vh - var(--header-h) - 140px)); }
 html[data-app] .brand { gap: 8px; font-size: 1rem; min-width: 0; }
 html[data-app] .brand span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 /* the name is Latin text: in Arabic pages, cut its end, not its start */
