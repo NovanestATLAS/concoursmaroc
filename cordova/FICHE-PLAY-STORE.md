@@ -33,18 +33,18 @@ Concours Maroc - QCM corrigés
 Concours au Maroc : fiches, 960 QCM corrigés et examens blancs, en FR et en AR
 ```
 
-**Description complète** (3 348/4 000)
+**Description complète** (3 414/4 000)
 
 ```text
 Concours Maroc vous accompagne dans la préparation des concours au Maroc : concours d'accès aux écoles après le bac et concours de recrutement de niveau bac. Pour chaque concours, une fiche claire, des QCM corrigés et des examens blancs, en français et en arabe.
 
-31 CONCOURS EXPLIQUÉS
+32 CONCOURS EXPLIQUÉS
 • Santé : médecine, pharmacie et dentaire, ISPITS
 • Ingénierie : ENSA, ENSAM, CPGE et CNC, IAV Hassan II (APESA), FST, EST
 • Commerce : ENCG (TAFEM), ISCAE
 • Architecture, arts et médias : ENA, ISIC, ISMAC et ISADAC, ISIT
 • Enseignement : ENS
-• Écoles militaires : ARM Meknès, École Royale de l'Air, École Royale Navale, santé militaire (ERSSM)
+• Écoles militaires : ARM Meknès, École Royale de l'Air, École Royale Navale, santé militaire (ERSSM), officiers du rang FAR (Marine Royale – CIMR, Forces Royales Air)
 • Sécurité et administration : police (DGSN), Gendarmerie Royale, Forces Auxiliaires, Protection civile, administration pénitentiaire, douane, fonction publique
 • Formation : BTS, OFPPT, école 1337, université
 Chaque fiche présente les conditions d'accès (bac, âge, taille…), le mode de sélection, les derniers seuils connus, les épreuves, le nombre de postes annoncé, le calendrier et les liens officiels.
@@ -84,7 +84,7 @@ Une erreur dans une question ou une fiche ? Signalez-la depuis la rubrique « Co
 **Notes de version** (212/500)
 
 ```text
-Nouvelle version : 31 fiches concours, 960 QCM corrigés et expliqués, examens blancs au format de chaque concours, outils (note du bac, orientation, calendrier) et guides, en français et en arabe. Nouvelle icône.
+Nouvelle version : 32 fiches concours, 960 QCM corrigés et expliqués, examens blancs au format de chaque concours, outils (note du bac, orientation, calendrier) et guides, en français et en arabe. Nouvelle icône.
 ```
 
 ## العربية (traduction arabe)
@@ -101,18 +101,18 @@ Concours Maroc مباريات المغرب
 استعد لمباريات المغرب: 960 سؤالًا مصححًا وامتحانات تجريبية بالعربية والفرنسية
 ```
 
-**الوصف الكامل** (2 828/4 000)
+**الوصف الكامل** (2 911/4 000)
 
 ```text
 يرافقك تطبيق Concours Maroc في التحضير للمباريات بالمغرب: مباريات ولوج المدارس بعد البكالوريا ومباريات التوظيف بمستوى البكالوريا. لكل مباراة بطاقة واضحة وأسئلة متعددة الاختيارات مصححة وامتحانات تجريبية، بالعربية والفرنسية.
 
-31 مباراة مشروحة
+32 مباراة مشروحة
 • الصحة: الطب والصيدلة وطب الأسنان، ISPITS
 • الهندسة: ENSA وENSAM، الأقسام التحضيرية وCNC، معهد الحسن الثاني (APESA)، كليات العلوم والتقنيات، المدارس العليا للتكنولوجيا
 • التجارة: ENCG (TAFEM) وISCAE
 • الهندسة المعمارية والفنون والإعلام: ENA وISIC وISMAC وISADAC وISIT
 • التعليم: المدارس العليا للأساتذة
-• المدارس العسكرية: الأكاديمية الملكية العسكرية، المدرسة الملكية الجوية، المدرسة الملكية البحرية، الصحة العسكرية
+• المدارس العسكرية: الأكاديمية الملكية العسكرية، المدرسة الملكية الجوية، المدرسة الملكية البحرية، الصحة العسكرية، ضباط الصف بالقوات المسلحة الملكية (البحرية الملكية – CIMR، القوات الملكية الجوية)
 • الأمن والإدارة: الأمن الوطني، الدرك الملكي، القوات المساعدة، الوقاية المدنية، إدارة السجون، الجمارك، الوظيفة العمومية
 • التكوين: شهادة التقني العالي، التكوين المهني، مدرسة 1337، الجامعة
 تعرض كل بطاقة شروط الولوج (البكالوريا، السن، القامة…)، وطريقة الانتقاء، وآخر العتبات المعروفة، والاختبارات، وعدد المناصب المعلن، والمواعيد، والروابط الرسمية.
@@ -152,7 +152,7 @@ Concours Maroc تطبيق مستقل تنشره Novanest ATLAS. لا يمثل أ
 **ملاحظات الإصدار** (174/500)
 
 ```text
-نسخة جديدة: 31 بطاقة مباراة، 960 سؤالًا مصححًا ومشروحًا، امتحانات تجريبية بصيغة كل مباراة، أدوات (معدل البكالوريا، التوجيه، المواعيد) وأدلة، بالعربية والفرنسية. أيقونة جديدة.
+نسخة جديدة: 32 بطاقة مباراة، 960 سؤالًا مصححًا ومشروحًا، امتحانات تجريبية بصيغة كل مباراة، أدوات (معدل البكالوريا، التوجيه، المواعيد) وأدلة، بالعربية والفرنسية. أيقونة جديدة.
 ```
 
 ## Éléments graphiques
