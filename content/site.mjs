@@ -1,18 +1,16 @@
 /* Global site configuration.
  *
- * When you buy the domain:
- *   1. set `siteUrl` to the final address (e.g. 'https://concoursmaroc.com')
- *   2. set `customDomain` to the bare host (e.g. 'concoursmaroc.com') — the build
- *      then writes docs/CNAME, which GitHub Pages needs
- *   3. run `npm run build`, commit, push
- * Everything else (canonical URLs, sitemap, hreflang, Open Graph) follows.
+ * Domain: `siteUrl` is the public address and `customDomain` the host that
+ * GitHub Pages serves (the build writes it to docs/CNAME). Changing them is
+ * enough: canonical URLs, sitemap, hreflang and Open Graph follow. The DNS
+ * side is described in README.md.
  */
 export default {
   name: 'Concours Maroc',
   // Public address of the site, without trailing slash.
-  siteUrl: 'https://novanestatlas.github.io/concoursmaroc',
-  // Bare host name for GitHub Pages custom domains ('' = none yet).
-  customDomain: '',
+  siteUrl: 'https://www.maroc-concour.com',
+  // Host name for the GitHub Pages custom domain ('' = none).
+  customDomain: 'www.maroc-concour.com',
   defaultLang: 'fr',
   languages: ['fr', 'ar'],
   // Editorial date shown on pages and used as <lastmod> in the sitemap.

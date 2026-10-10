@@ -24,7 +24,7 @@
 
     <name short="Concours Maroc">Concours Maroc</name>
     <description>Guide des concours au Maroc après le bac : conditions, seuils, calendrier, QCM corrigés, examens blancs et outils. En français et en arabe, utilisable hors ligne.</description>
-    <author href="https://novanestatlas.github.io/concoursmaroc/">Concours Maroc</author>
+    <author href="https://www.maroc-concour.com/">Concours Maroc</author>
 
     <content src="index.html" />
 

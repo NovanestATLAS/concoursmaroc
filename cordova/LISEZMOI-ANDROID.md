@@ -127,7 +127,7 @@ signature en lieu sûr : sans elle, plus aucune mise à jour n’est possible.
 Fiche Google Play :
 
 - politique de confidentialité :
-  <https://novanestatlas.github.io/concoursmaroc/application/confidentialite/>
+  <https://www.maroc-concour.com/application/confidentialite/>
   (en arabe : `…/ar/application/confidentialite/`) ;
 - section « Sécurité des données » : aucune donnée personnelle collectée par
   l’application elle-même ; déclarez celles du SDK Google Mobile Ads

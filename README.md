@@ -25,23 +25,26 @@ fil d'Ariane…), `sitemap.xml`, `robots.txt`, images de partage par page, pages
 2. Dans **Build and deployment**, choisissez **Source : Deploy from a branch**.
 3. Choisissez la branche qui contient le site (aujourd'hui `claude/concoursmaroc-github-site-x6v5br`, branche par défaut du dépôt) et le dossier **`/docs`**, puis **Save**.
 4. Après une à deux minutes, le site est en ligne à l'adresse
-   **https://novanestatlas.github.io/concoursmaroc/**.
+   **https://www.maroc-concour.com/** (l'ancienne adresse
+   `novanestatlas.github.io/concoursmaroc/` y redirige automatiquement).
 
 Chaque nouveau commit sur cette branche met le site à jour automatiquement.
 
-## Brancher un nom de domaine
+## Nom de domaine : www.maroc-concour.com
 
-1. Achetez le domaine (par exemple `concoursmaroc.com`).
-2. Dans `content/site.mjs`, renseignez :
-   ```js
-   siteUrl: 'https://concoursmaroc.com',
-   customDomain: 'concoursmaroc.com',
-   ```
-3. Lancez `npm run build`, puis committez et poussez (le fichier `docs/CNAME` est généré).
-4. Chez le registrar, créez les enregistrements DNS :
-   - `A` pour `@` vers `185.199.108.153`, `185.199.109.153`, `185.199.110.153` et `185.199.111.153` ;
-   - `CNAME` pour `www` vers `novanestatlas.github.io`.
-5. Dans **Settings → Pages**, saisissez le domaine puis cochez **Enforce HTTPS** quand c'est proposé.
+Le domaine `maroc-concour.com` est enregistré chez Spaceship.
+
+- Dans `content/site.mjs` : `siteUrl: 'https://www.maroc-concour.com'` et
+  `customDomain: 'www.maroc-concour.com'` ; le build écrit `docs/CNAME`, que GitHub Pages lit.
+- DNS chez Spaceship (serveurs de noms Spaceship par défaut) :
+  - `A` pour `@` vers `185.199.108.153`, `185.199.109.153`, `185.199.110.153` et `185.199.111.153` ;
+  - `AAAA` pour `@` vers `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153` et `2606:50c0:8003::153` ;
+  - `CNAME` pour `www` vers `novanestatlas.github.io`.
+- `maroc-concour.com` (sans www) redirige vers `www.maroc-concour.com`.
+- Dans **Settings → Pages**, cochez **Enforce HTTPS** dès que GitHub a émis le certificat
+  (de quelques minutes à 24 h après la configuration DNS).
+
+Pour changer de domaine plus tard : modifiez ces deux valeurs, `npm run build`, commit, puis adaptez les DNS.
 
 ## Google Search Console, Analytics et AdSense
 
@@ -65,7 +68,7 @@ publicité AdMob (admob-plus-cordova, consentement UMP). Il garde la structure d
   plate-forme cordova-android 15 (API 36), plugins, identifiants AdMob, test et publication sur Google Play ;
 - [`cordova/config.xml.exemple`](cordova/config.xml.exemple) : réglages à reporter dans `config.xml` ;
 - politique de confidentialité de l'application, à indiquer sur Google Play :
-  `https://novanestatlas.github.io/concoursmaroc/application/confidentialite/`.
+  `https://www.maroc-concour.com/application/confidentialite/`.
 
 Après une modification du contenu, `npm run build:app` régénère `dist/cordova/www/` et le zip de `cordova/`.
 
