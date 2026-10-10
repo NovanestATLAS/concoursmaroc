@@ -678,16 +678,16 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Complétez : « Ni l'un ni l'autre … accepté la proposition. »",
+     "text": "Complétez : « C'est nous qui … ce rapport. »",
      "choices": [
-      "n'ont",
-      "non",
-      "n'a",
-      "nont"
+      "avons rédigé",
+      "ont rédigé",
+      "a rédigé",
+      "avez rédigé"
      ],
      "correctIndex": 0,
-     "correction": "On écrit « n'ont ».",
-     "explanation": "Avec « ni l'un ni l'autre », l'accord au pluriel est le plus courant lorsque l'action peut être attribuée aux deux sujets. La négation exige par ailleurs l'élision « n' » devant la voyelle."
+     "correction": "On écrit « C'est nous qui avons rédigé ce rapport. »",
+     "explanation": "Après « qui », le verbe s'accorde avec l'antécédent du pronom relatif, ici « nous » : première personne du pluriel. On écrit de même « c'est toi qui as raison » et « c'est moi qui suis responsable »."
     }
    }
   },
@@ -944,16 +944,16 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quelle est la forme correcte : « Il … que le dossier soit complet » ?",
+     "text": "Complétez : « Le jury exige que le dossier … complet. »",
      "choices": [
-      "exige",
-      "exigera qu'il est",
-      "exige qu'il est",
-      "exigeait qu'il est"
+      "soit",
+      "est",
+      "sera",
+      "serait"
      ],
      "correctIndex": 0,
-     "correction": "La forme correcte est « Il exige que le dossier soit complet ».",
-     "explanation": "Les verbes exprimant la volonté ou l'exigence sont suivis du subjonctif dans la subordonnée. L'indicatif « est » serait fautif après « exiger que »."
+     "correction": "On écrit « que le dossier soit complet ».",
+     "explanation": "Les verbes de volonté et d'exigence (exiger, vouloir, souhaiter, ordonner) sont suivis du subjonctif dans la subordonnée introduite par « que ». L'indicatif « est » ou « sera » serait fautif."
     }
    }
   },
@@ -1979,7 +1979,7 @@
      ],
      "correctIndex": 0,
      "correction": "La forme correcte est « parmi les candidats ».",
-     "explanation": "« Parmi » ne prend jamais de s final, à la différence de « malgré » qui n'en prend pas non plus mais que certains écrivent à tort « malgrés »."
+     "explanation": "« Parmi » est une préposition invariable qui ne prend jamais de s final, contrairement à « hormis », qui s'écrit toujours avec un s."
     }
    }
   },
@@ -2160,16 +2160,16 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Complétez : « Les documents … joints à la présente. »",
+     "text": "Complétez : « Vous trouverez les pièces … à la présente demande. »",
      "choices": [
-      "ci-joints",
+      "ci-jointes",
       "ci-joint",
-      "cijoints",
-      "ci joints"
+      "ci-joints",
+      "ci-jointe"
      ],
      "correctIndex": 0,
-     "correction": "On écrit « ci-joints ».",
-     "explanation": "Placé après le nom et fonctionnant comme un adjectif, « ci-joint » s'accorde. Il reste invariable lorsqu'il est placé en tête de phrase ou immédiatement devant un nom sans déterminant."
+     "correction": "On écrit « les pièces ci-jointes ».",
+     "explanation": "Placé après le nom auquel il se rapporte, « ci-joint » s'accorde comme un adjectif : « pièces » est féminin pluriel, d'où « ci-jointes ». Il reste invariable en tête de phrase ou devant un nom sans déterminant : « Ci-joint les pièces demandées »."
     }
    }
   },

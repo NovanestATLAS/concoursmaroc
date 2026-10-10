@@ -1106,14 +1106,14 @@
     "fr": {
      "text": "Quel nombre complète la suite : 100, 50, 25, ... ?",
      "choices": [
-      "12.5",
+      "12,5",
       "12",
       "15",
       "20"
      ],
      "correctIndex": 0,
-     "correction": "La suite continue par 12.5.",
-     "explanation": "Règle de la suite : chaque terme est la moitié du précédent. En appliquant cette règle au dernier terme affiché, on obtient 12.5."
+     "correction": "La suite continue par 12,5.",
+     "explanation": "Règle de la suite : chaque terme est la moitié du précédent. La moitié de 25 est 12,5."
     },
     "ar": {
      "text": "ما هو العدد الذي يُكمل المتتالية: 100, 50, 25، ... ؟",
@@ -1159,7 +1159,7 @@
      "choices": [
       "2",
       "1",
-      "1.5",
+      "1,5",
       "6"
      ],
      "correctIndex": 1,
@@ -1971,28 +1971,28 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quelle lettre complète la série : C, I, O, U, ... ?",
+     "text": "Quelle lettre complète la série : B, H, N, T, ... ?",
      "choices": [
-      "A",
-      "B",
       "Z",
-      "C"
+      "Y",
+      "X",
+      "U"
      ],
      "correctIndex": 0,
-     "correction": "La série se poursuit par la lettre A.",
-     "explanation": "Règle de la série : on avance de 6 lettre(s) dans l'alphabet à chaque étape. La lettre suivante est donc A."
+     "correction": "La série continue par Z.",
+     "explanation": "Règle de la série : on avance de 6 lettres dans l'alphabet à chaque étape (B→H→N→T). Six lettres après T, on arrive à Z."
     },
     "ar": {
-     "text": "ما هو الحرف الذي يُكمل السلسلة: C, I, O, U، ... ؟",
+     "text": "ما هو الحرف الذي يُكمل السلسلة: B, H, N, T، ... ؟",
      "choices": [
-      "A",
-      "B",
       "Z",
-      "C"
+      "Y",
+      "X",
+      "U"
      ],
      "correctIndex": 0,
-     "correction": "تستمر السلسلة بالحرف A.",
-     "explanation": "قاعدة السلسلة: نتقدم بـ 6 حرف/حروف في الأبجدية في كل خطوة. وبالتالي فالحرف الموالي هو A."
+     "correction": "تستمر السلسلة بالحرف Z.",
+     "explanation": "قاعدة السلسلة: نتقدم بستة حروف في الأبجدية في كل خطوة (B←H←N←T). وبعد T بستة حروف نصل إلى Z."
     }
    }
   },
@@ -3348,16 +3348,16 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Farine est à pain ce que raisin est à … ?",
+     "text": "Farine est à pain ce que olive est à … ?",
      "choices": [
-      "vin",
+      "huile",
       "verre",
       "arbre",
       "sucre"
      ],
      "correctIndex": 0,
-     "correction": "La réponse est « vin ».",
-     "explanation": "La farine est la matière première du pain comme le raisin l'est du vin : la relation est « matière première / produit obtenu »."
+     "correction": "La réponse est « huile ».",
+     "explanation": "La farine est la matière première du pain comme l'olive est la matière première de l'huile d'olive : la relation est « matière première / produit obtenu »."
     },
     "ar": {
      "text": "دقيق بالنسبة إلى خبز مثل زيتون بالنسبة إلى … ؟",

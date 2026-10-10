@@ -237,7 +237,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Combien font 8 % de 1250 ?",
+     "text": "Combien font 8 % de 1 250 ?",
      "choices": [
       "100",
       "110",
@@ -246,7 +246,7 @@
      ],
      "correctIndex": 0,
      "correction": "La réponse est 100.",
-     "explanation": "On multiplie 1250 par 8 puis on divise par 100 : 1250 × 8 ÷ 100 = 100."
+     "explanation": "On multiplie 1 250 par 8 puis on divise par 100 : 1 250 × 8 ÷ 100 = 100."
     },
     "ar": {
      "text": "كم يساوي 8 % من 1250؟",
@@ -492,16 +492,16 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Un prix de 1200 DH baisse de 10 %. Quel est le nouveau prix ?",
+     "text": "Un prix de 1 200 DH baisse de 10 %. Quel est le nouveau prix ?",
      "choices": [
-      "1200 DH",
-      "1080 DH",
-      "1090 DH",
-      "1070 DH"
+      "1 200 DH",
+      "1 080 DH",
+      "1 090 DH",
+      "1 070 DH"
      ],
      "correctIndex": 1,
-     "correction": "La réponse est 1080 DH.",
-     "explanation": "La remise vaut 1200 × 10 ÷ 100 = 120 DH. Le nouveau prix est donc 1200 − 120 = 1080 DH."
+     "correction": "La réponse est 1 080 DH.",
+     "explanation": "La remise vaut 1 200 × 10 ÷ 100 = 120 DH. Le nouveau prix est donc 1 200 − 120 = 1 080 DH."
     },
     "ar": {
      "text": "ثمن قدره 1200 درهم ينخفض بنسبة 10 %. ما هو الثمن الجديد؟",
@@ -594,16 +594,16 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Un prix de 2400 DH baisse de 12 %. Quel est le nouveau prix ?",
+     "text": "Un prix de 2 400 DH baisse de 12 %. Quel est le nouveau prix ?",
      "choices": [
-      "2400 DH",
-      "2124 DH",
-      "2100 DH",
-      "2112 DH"
+      "2 400 DH",
+      "2 124 DH",
+      "2 100 DH",
+      "2 112 DH"
      ],
      "correctIndex": 3,
-     "correction": "La réponse est 2112 DH.",
-     "explanation": "La remise vaut 2400 × 12 ÷ 100 = 288 DH. Le nouveau prix est donc 2400 − 288 = 2112 DH."
+     "correction": "La réponse est 2 112 DH.",
+     "explanation": "La remise vaut 2 400 × 12 ÷ 100 = 288 DH. Le nouveau prix est donc 2 400 − 288 = 2 112 DH."
     },
     "ar": {
      "text": "ثمن قدره 2400 درهم ينخفض بنسبة 12 %. ما هو الثمن الجديد؟",
@@ -2379,7 +2379,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quel est l'intérêt simple produit par un capital de 10000 DH placé à 4 % pendant 1 an(s) ?",
+     "text": "Quel est l'intérêt simple produit par un capital de 10 000 DH placé à 4 % pendant 1 an ?",
      "choices": [
       "400 DH",
       "500 DH",
@@ -2388,7 +2388,7 @@
      ],
      "correctIndex": 0,
      "correction": "La réponse est 400 DH.",
-     "explanation": "L'intérêt simple vaut capital × taux × durée ÷ 100 : 10000 × 4 × 1 ÷ 100 = 400 DH."
+     "explanation": "L'intérêt simple vaut capital × taux × durée ÷ 100 : 10 000 × 4 × 1 ÷ 100 = 400 DH."
     },
     "ar": {
      "text": "ما هي الفائدة البسيطة الناتجة عن رأسمال قدره 10000 درهم موظَّف بنسبة 4 % لمدة 1 سنة/سنوات؟",
@@ -2430,7 +2430,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quel est l'intérêt simple produit par un capital de 5000 DH placé à 6 % pendant 2 an(s) ?",
+     "text": "Quel est l'intérêt simple produit par un capital de 5 000 DH placé à 6 % pendant 2 ans ?",
      "choices": [
       "700 DH",
       "600 DH",
@@ -2439,7 +2439,7 @@
      ],
      "correctIndex": 1,
      "correction": "La réponse est 600 DH.",
-     "explanation": "L'intérêt simple vaut capital × taux × durée ÷ 100 : 5000 × 6 × 2 ÷ 100 = 600 DH."
+     "explanation": "L'intérêt simple vaut capital × taux × durée ÷ 100 : 5 000 × 6 × 2 ÷ 100 = 600 DH."
     },
     "ar": {
      "text": "ما هي الفائدة البسيطة الناتجة عن رأسمال قدره 5000 درهم موظَّف بنسبة 6 % لمدة 2 سنة/سنوات؟",
@@ -2481,16 +2481,16 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quel est l'intérêt simple produit par un capital de 20000 DH placé à 3 % pendant 1 an(s) ?",
+     "text": "Quel est l'intérêt simple produit par un capital de 20 000 DH placé à 3 % pendant 1 an ?",
      "choices": [
       "700 DH",
       "500 DH",
       "600 DH",
-      "1200 DH"
+      "1 200 DH"
      ],
      "correctIndex": 2,
      "correction": "La réponse est 600 DH.",
-     "explanation": "L'intérêt simple vaut capital × taux × durée ÷ 100 : 20000 × 3 × 1 ÷ 100 = 600 DH."
+     "explanation": "L'intérêt simple vaut capital × taux × durée ÷ 100 : 20 000 × 3 × 1 ÷ 100 = 600 DH."
     },
     "ar": {
      "text": "ما هي الفائدة البسيطة الناتجة عن رأسمال قدره 20000 درهم موظَّف بنسبة 3 % لمدة 1 سنة/سنوات؟",
@@ -2532,16 +2532,16 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quel est l'intérêt simple produit par un capital de 8000 DH placé à 5 % pendant 3 an(s) ?",
+     "text": "Quel est l'intérêt simple produit par un capital de 8 000 DH placé à 5 % pendant 3 ans ?",
      "choices": [
-      "1300 DH",
-      "1100 DH",
+      "1 300 DH",
+      "1 100 DH",
       "400 DH",
-      "1200 DH"
+      "1 200 DH"
      ],
      "correctIndex": 3,
-     "correction": "La réponse est 1200 DH.",
-     "explanation": "L'intérêt simple vaut capital × taux × durée ÷ 100 : 8000 × 5 × 3 ÷ 100 = 1200 DH."
+     "correction": "La réponse est 1 200 DH.",
+     "explanation": "L'intérêt simple vaut capital × taux × durée ÷ 100 : 8 000 × 5 × 3 ÷ 100 = 1 200 DH."
     },
     "ar": {
      "text": "ما هي الفائدة البسيطة الناتجة عن رأسمال قدره 8000 درهم موظَّف بنسبة 5 % لمدة 3 سنة/سنوات؟",
@@ -2583,16 +2583,16 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Un article affiché à 1200 DH bénéficie d'une remise de 30 %. Quel est le prix à payer ?",
+     "text": "Un article affiché à 1 200 DH bénéficie d'une remise de 30 %. Quel est le prix à payer ?",
      "choices": [
-      "1170 DH",
+      "1 170 DH",
       "840 DH",
       "890 DH",
       "790 DH"
      ],
      "correctIndex": 1,
      "correction": "La réponse est 840 DH.",
-     "explanation": "La remise vaut 1200 × 30 ÷ 100 = 360 DH. Le prix à payer est 1200 − 360 = 840 DH."
+     "explanation": "La remise vaut 1 200 × 30 ÷ 100 = 360 DH. Le prix à payer est 1 200 − 360 = 840 DH."
     },
     "ar": {
      "text": "سلعة معروضة بـ1200 درهم تستفيد من تخفيض بنسبة 30 %. ما هو الثمن الواجب أداؤه؟",
@@ -2685,16 +2685,16 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Un article affiché à 2500 DH bénéficie d'une remise de 15 %. Quel est le prix à payer ?",
+     "text": "Un article affiché à 2 500 DH bénéficie d'une remise de 15 %. Quel est le prix à payer ?",
      "choices": [
-      "2485 DH",
-      "2175 DH",
-      "2075 DH",
-      "2125 DH"
+      "2 485 DH",
+      "2 175 DH",
+      "2 075 DH",
+      "2 125 DH"
      ],
      "correctIndex": 3,
-     "correction": "La réponse est 2125 DH.",
-     "explanation": "La remise vaut 2500 × 15 ÷ 100 = 375 DH. Le prix à payer est 2500 − 375 = 2125 DH."
+     "correction": "La réponse est 2 125 DH.",
+     "explanation": "La remise vaut 2 500 × 15 ÷ 100 = 375 DH. Le prix à payer est 2 500 − 375 = 2 125 DH."
     },
     "ar": {
      "text": "سلعة معروضة بـ2500 درهم تستفيد من تخفيض بنسبة 15 %. ما هو الثمن الواجب أداؤه؟",
@@ -2994,12 +2994,12 @@
      "text": "Combien de mètres carrés représente un terrain de 0,5 hectare ?",
      "choices": [
       "500 m²",
-      "5000 m²",
-      "50000 m²",
-      "1000 m²"
+      "5 000 m²",
+      "50 000 m²",
+      "1 000 m²"
      ],
      "correctIndex": 1,
-     "correction": "La réponse est 5000 m².",
+     "correction": "La réponse est 5 000 m².",
      "explanation": "Un hectare vaut 10 000 m². La moitié d'un hectare représente donc 5 000 m²."
     },
     "ar": {
@@ -3045,12 +3045,12 @@
      "text": "Un réservoir contient 2,5 m³ d'eau. Combien de litres cela représente-t-il ?",
      "choices": [
       "250 L",
-      "25000 L",
-      "2500 L",
+      "25 000 L",
+      "2 500 L",
       "25 L"
      ],
      "correctIndex": 2,
-     "correction": "La réponse est 2500 L.",
+     "correction": "La réponse est 2 500 L.",
      "explanation": "Un mètre cube équivaut à 1 000 litres. Donc 2,5 m³ correspondent à 2 500 litres."
     },
     "ar": {

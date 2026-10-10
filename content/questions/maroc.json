@@ -687,7 +687,7 @@
      ],
      "correctIndex": 0,
      "correction": "Les FAR ont été instituées en 1956.",
-     "explanation": "Le dahir du 25 juin 1956, complété la même année, fixe la création des Forces Armées Royales avec effet au 12 mai 1956. Elles ont été constituées à partir des militaires marocains issus des armées française et espagnole et de combattants de l'Armée de libération."
+     "explanation": "Les Forces Armées Royales ont été constituées en mai 1956, quelques semaines après l'indépendance ; leur anniversaire est célébré chaque année le 14 mai. Elles ont été formées à partir des militaires marocains issus des armées française et espagnole et de combattants de l'Armée de libération."
     },
     "ar": {
      "text": "أُحدثت القوات المسلحة الملكية رسميًا:",
@@ -699,7 +699,7 @@
      ],
      "correctIndex": 0,
      "correction": "أُحدثت القوات المسلحة الملكية سنة 1956.",
-     "explanation": "حدّد ظهير 25 يونيو 1956، المتمم في السنة نفسها، إحداث القوات المسلحة الملكية بأثر يبتدئ من 12 ماي 1956. وقد تكوّنت من العسكريين المغاربة المنحدرين من الجيشين الفرنسي والإسباني ومن مقاتلي جيش التحرير."
+     "explanation": "تأسست القوات المسلحة الملكية في ماي 1956، أسابيع قليلة بعد الاستقلال، وتُخلَّد ذكرى تأسيسها كل سنة يوم 14 ماي. وقد تكوّنت من العسكريين المغاربة المنحدرين من الجيشين الفرنسي والإسباني ومن مقاتلي جيش التحرير."
     }
    }
   },
@@ -1638,7 +1638,7 @@
      ],
      "correctIndex": 0,
      "correction": "Ce sont les régions, les préfectures et provinces, et les communes.",
-     "explanation": "L'article 135 de la Constitution énumère ces trois catégories, dotées de la personnalité morale, de l'autonomie administrative et financière et gérées par des conseils élus au suffrage universel direct. Les cercles, caïdats et pachaliks sont, eux, des circonscriptions administratives déconcentrées, sans conseil élu."
+     "explanation": "L'article 135 de la Constitution énumère ces trois catégories, dotées de la personnalité morale et de l'autonomie administrative et financière. Elles sont gérées par des conseils élus : au suffrage universel direct pour les régions et les communes, au suffrage indirect pour les préfectures et provinces. Les cercles, caïdats et pachaliks sont, eux, des circonscriptions administratives sans conseil élu."
     },
     "ar": {
      "text": "ما هي الأصناف الثلاثة للجماعات الترابية التي يقرّها دستور 2011؟",
@@ -1650,7 +1650,7 @@
      ],
      "correctIndex": 0,
      "correction": "هي الجهات والعمالات والأقاليم والجماعات.",
-     "explanation": "يعدّد الفصل 135 من الدستور هذه الأصناف الثلاثة، وهي تتمتع بالشخصية الاعتبارية والاستقلال الإداري والمالي، وتُدبَّر بمجالس منتخبة بالاقتراع العام المباشر. أما الدوائر والقيادات والباشويات فهي دوائر إدارية ممركزة لا مجالس منتخبة لها."
+     "explanation": "يعدّد الفصل 135 من الدستور هذه الأصناف الثلاثة، وهي تتمتع بالشخصية الاعتبارية والاستقلال الإداري والمالي، وتُدبَّر بمجالس منتخبة: بالاقتراع العام المباشر بالنسبة للجهات والجماعات، وبالاقتراع غير المباشر بالنسبة للعمالات والأقاليم. أما الدوائر والقيادات والباشويات فهي دوائر إدارية لا مجالس منتخبة لها."
     }
    }
   },
@@ -2484,28 +2484,28 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quel sultan almoravide a fondé la ville de Marrakech ?",
+     "text": "Sous quelle dynastie la ville de Marrakech a-t-elle été fondée, au XIe siècle ?",
      "choices": [
-      "Youssef Ibn Tachfine",
-      "Abdelmoumen",
-      "Yacoub El Mansour",
-      "Idriss Ier"
+      "Les Almoravides",
+      "Les Almohades",
+      "Les Mérinides",
+      "Les Saadiens"
      ],
      "correctIndex": 0,
-     "correction": "Marrakech a été fondée sous les Almoravides, associée à Youssef Ibn Tachfine.",
-     "explanation": "La fondation de Marrakech au XIe siècle est attribuée aux Almoravides ; Youssef Ibn Tachfine en fit la capitale d'un empire s'étendant du Sahara à l'Andalousie. Abdelmoumen et Yacoub El Mansour sont, eux, des souverains almohades."
+     "correction": "Marrakech a été fondée par les Almoravides.",
+     "explanation": "Marrakech est fondée vers 1070 par les Almoravides ; la tradition associe sa fondation à l'émir Abou Bakr Ibn Omar et à Youssef Ibn Tachfine, qui en fit la capitale d'un empire s'étendant du Sahara à l'Andalousie. Les Almohades, Mérinides et Saadiens sont des dynasties postérieures."
     },
     "ar": {
-     "text": "أي سلطان مرابطي يرتبط اسمه بتأسيس مدينة مراكش؟",
+     "text": "في عهد أي دولة تأسست مدينة مراكش خلال القرن الحادي عشر؟",
      "choices": [
-      "يوسف بن تاشفين",
-      "عبد المومن",
-      "يعقوب المنصور",
-      "إدريس الأول"
+      "المرابطون",
+      "الموحدون",
+      "المرينيون",
+      "السعديون"
      ],
      "correctIndex": 0,
-     "correction": "تأسست مراكش في العهد المرابطي ويرتبط اسمها بيوسف بن تاشفين.",
-     "explanation": "يُنسب تأسيس مراكش في القرن الحادي عشر إلى المرابطين، وقد جعلها يوسف بن تاشفين عاصمة إمبراطورية امتدت من الصحراء إلى الأندلس. أما عبد المومن ويعقوب المنصور فسلطانان موحديان."
+     "correction": "تأسست مراكش في عهد المرابطين.",
+     "explanation": "تأسست مراكش حوالي سنة 1070 على يد المرابطين، وتربط الرواية تأسيسها بالأمير أبي بكر بن عمر وبيوسف بن تاشفين الذي جعلها عاصمة إمبراطورية امتدت من الصحراء إلى الأندلس. أما الموحدون والمرينيون والسعديون فدول لاحقة."
     }
    }
   },

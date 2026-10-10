@@ -316,7 +316,7 @@
   {
    "id": "CM-SCI-007",
    "category": "sciences",
-   "subcategory": "physique",
+   "subcategory": "chimie",
    "difficulty": "beginner",
    "exams": [
     "police",
@@ -2124,27 +2124,27 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Que signifie « accuser un dossier de pièces manquantes » ?",
+     "text": "Lorsqu'une administration constate qu'un dossier de candidature est incomplet, quelle pratique est recommandée ?",
      "choices": [
-      "Informer le demandeur que son dossier est incomplet et préciser les pièces à fournir",
-      "Rejeter définitivement la demande",
+      "Informer le demandeur en précisant les pièces manquantes et le délai pour les fournir",
+      "Rejeter définitivement la demande sans explication",
       "Transmettre le dossier au tribunal",
       "Classer le dossier sans suite immédiatement"
      ],
      "correctIndex": 0,
-     "correction": "C'est informer le demandeur que son dossier est incomplet et préciser les pièces à fournir.",
-     "explanation": "Cette pratique évite un rejet purement formel et permet au demandeur de régulariser sa situation dans le délai indiqué. Elle traduit le principe d'accompagnement de l'usager."
+     "correction": "Il faut informer le demandeur des pièces manquantes et du délai pour les fournir.",
+     "explanation": "Cette pratique évite un rejet purement formel et permet au demandeur de régulariser sa situation dans le délai indiqué. Elle traduit le principe d'accompagnement de l'usager du service public."
     },
     "ar": {
-     "text": "ماذا يعني إشعار صاحب ملف بنقص في الوثائق؟",
+     "text": "عندما تلاحظ الإدارة أن ملف الترشيح ناقص، ما هي الممارسة الموصى بها؟",
      "choices": [
-      "إخبار الطالب بأن ملفه ناقص وتحديد الوثائق الواجب الإدلاء بها",
-      "رفض الطلب نهائيًا",
+      "إخبار الطالب بالوثائق الناقصة وبأجل الإدلاء بها",
+      "رفض الطلب نهائيًا دون تعليل",
       "إحالة الملف على المحكمة",
       "حفظ الملف فورًا"
      ],
      "correctIndex": 0,
-     "correction": "هو إخبار الطالب بأن ملفه ناقص وتحديد الوثائق الواجب الإدلاء بها.",
+     "correction": "يجب إخبار الطالب بالوثائق الناقصة وبأجل الإدلاء بها.",
      "explanation": "تتفادى هذه الممارسة رفضًا شكليًا محضًا وتتيح للطالب تسوية وضعيته داخل الأجل المحدد، وتجسّد مبدأ مواكبة المرتفق."
     }
    }
