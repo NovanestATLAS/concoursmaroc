@@ -35,9 +35,9 @@ Q: If I ___ rich, I would travel around the world.
 * were
 - am
 - will be
-- had been
+- would be
 C: « were ».
-E: Conditionnel de type 2 (hypothèse irréelle dans le présent) : If + prétérit, would + base verbale. En anglais soigné, on emploie « were » à toutes les personnes.
+E: Conditionnel de type 2 (hypothèse irréelle dans le présent) : If + prétérit, would + base verbale. En anglais soigné, on emploie « were » à toutes les personnes (« was » est courant à l'oral). « Will » et « would » ne s'emploient pas dans la subordonnée en « if ».
 
 [ANG-005] grammar | beginner
 Q: If it rains tomorrow, we ___ at home.
@@ -49,22 +49,22 @@ C: « will stay ».
 E: Conditionnel de type 1 (situation possible) : If + présent simple, will + base verbale.
 
 [ANG-006] grammar | advanced
-Q: If you had studied harder, you ___ the exam.
+Q: If you had studied harder, you ___ the exam last year.
 * would have passed
 - would pass
 - will pass
 - passed
 C: « would have passed ».
-E: Conditionnel de type 3 (regret portant sur le passé) : If + past perfect, would have + participe passé.
+E: Conditionnel de type 3 (hypothèse irréelle portant sur le passé) : If + past perfect, would have + participe passé. « Last year » situe le résultat dans le passé, ce qui exclut « would pass ».
 
 [ANG-007] grammar | beginner
-Q: This is ___ book I told you about.
+Q: Rabat is ___ capital of Morocco.
 * the
 - a
 - an
 - (no article)
 C: « the ».
-E: L'article défini « the » désigne un élément précis, déjà identifié : le livre dont je t'ai parlé.
+E: L'article défini « the » désigne un élément unique ou précisément identifié : un pays n'a qu'une capitale, d'où « the capital of Morocco ». « A/an » présenterait la capitale comme une parmi d'autres.
 
 [ANG-008] grammar | beginner
 Q: Choose the correct sentence.
@@ -188,9 +188,9 @@ Q: Hardly ___ the house when it started to rain.
 * had I left
 - I had left
 - I left
-- did I leave
+- have I left
 C: « had I left ».
-E: Après un adverbe restrictif placé en tête de phrase (hardly, no sooner, never), on inverse le sujet et l'auxiliaire : Hardly had I left the house when…
+E: Après un adverbe restrictif placé en tête de phrase (hardly, scarcely, no sooner, never), on inverse le sujet et l'auxiliaire. « Hardly… when » exprime l'antériorité immédiate dans le passé et se construit avec le past perfect : Hardly had I left the house when it started to rain.
 
 [ANG-022] grammar | intermediate
 Q: I wish I ___ speak Chinese.
@@ -240,11 +240,11 @@ E: Huge = enormous = immense. Tiny signifie « minuscule ».
 [ANG-027] vocabulary | beginner
 Q: A person who designs buildings is called an ___.
 * architect
-- engineer
+- optician
 - electrician
 - accountant
 C: « architect ».
-E: L'architecte conçoit les bâtiments. L'engineer (ingénieur) conçoit et calcule des ouvrages techniques ; l'accountant est le comptable.
+E: L'architect (architecte) conçoit les bâtiments. L'optician est l'opticien, l'electrician l'électricien et l'accountant le comptable.
 
 [ANG-028] vocabulary | intermediate
 Q: What does "to apply for a job" mean?
@@ -262,7 +262,7 @@ Q: Complete: "The company's profits ___ by 20% last year."
 - grew up
 - rose up
 C: « increased ».
-E: « Increase » est ici intransitif (les bénéfices ont augmenté). « Raise » est transitif (raise prices) et « grow up » signifie grandir, pour une personne.
+E: « Increase » est ici intransitif (les bénéfices ont augmenté). « Raise » est transitif (raise prices) ; « grow up » signifie grandir, pour une personne ; « rise » seul conviendrait (profits rose by 20%), mais pas « rise up », qui signifie se soulever ou s'élever.
 
 [ANG-030] vocabulary | intermediate
 Q: Complete with the right verb: "I need to ___ a decision."

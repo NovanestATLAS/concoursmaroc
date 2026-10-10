@@ -25,7 +25,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -63,7 +63,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -101,7 +101,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -139,7 +139,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -177,7 +177,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -193,7 +193,7 @@
      ],
      "correctIndex": 0,
      "correction": "يُنصب المثنى بالياء.",
-     "explanation": "المثنى يُرفع بالألف ويُنصب ويُجر بالياء، نحو: جاء الطالبان، ورأيتُ الطالبين، ومررتُ بالطالبين. وتُفتح النون في المثنى وتُكسر في جمع المذكر السالم."
+     "explanation": "المثنى يُرفع بالألف ويُنصب ويُجر بالياء، نحو: جاء الطالبانِ، ورأيتُ الطالبَيْنِ، ومررتُ بالطالبَيْنِ. ونون المثنى مكسورة، أما نون جمع المذكر السالم فمفتوحة، نحو: المعلمونَ والمعلمينَ."
     }
    }
   },
@@ -215,7 +215,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -253,7 +253,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -291,7 +291,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -329,7 +329,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -345,7 +345,7 @@
      ],
      "correctIndex": 0,
      "correction": "يُنصب الفعل المضارع بعد «لن».",
-     "explanation": "«لن» من أدوات النصب مثل «أن» و«كي» و«حتى»، نحو: لن أتأخرَ. أما أدوات الجزم فمنها «لم» و«لا» الناهية و«لام الأمر»."
+     "explanation": "«لن» حرف نفي ونصب واستقبال، وهي من نواصب المضارع مثل «أنْ» و«كي» و«إذن»، نحو: لن أتأخرَ. أما أدوات الجزم فمنها «لم» و«لمّا» و«لا» الناهية و«لام الأمر»."
     }
    }
   },
@@ -367,7 +367,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -405,7 +405,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -443,14 +443,14 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
    ],
    "l10n": {
     "ar": {
-     "text": "ما إعراب «مجتهدًا» في جملة: عاد التلميذُ مجتهدًا؟",
+     "text": "ما إعراب «مبتسمًا» في جملة: حضر التلميذُ مبتسمًا؟",
      "choices": [
       "حال منصوب",
       "خبر منصوب",
@@ -458,8 +458,8 @@
       "نعت منصوب"
      ],
      "correctIndex": 0,
-     "correction": "«مجتهدًا» حال منصوب.",
-     "explanation": "الحال وصف فضلة يبيّن هيئة صاحبه عند وقوع الفعل، وهو منصوب دائمًا. ويُعرف بأنه يقع جوابًا عن سؤال «كيف؟»."
+     "correction": "«مبتسمًا» حال منصوب.",
+     "explanation": "الفعل «حضر» تامّ لازم، و«التلميذُ» فاعله، و«مبتسمًا» وصف فضلة يبيّن هيئة الفاعل عند وقوع الفعل، فهو حال منصوب وعلامة نصبه الفتحة الظاهرة. ويُعرف الحال بأنه يقع جوابًا عن سؤال «كيف؟»: كيف حضر التلميذ؟ مبتسمًا."
     }
    }
   },
@@ -481,7 +481,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -519,7 +519,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -535,7 +535,7 @@
      ],
      "correctIndex": 0,
      "correction": "جمع «كتاب» هو «كُتُب».",
-     "explanation": "«كُتُب» جمع تكسير لكلمة «كتاب». أما «كاتبون» فجمع مذكر سالم لـ«كاتب»، و«مكاتب» جمع «مكتب»."
+     "explanation": "«كُتُب» جمع تكسير لكلمة «كتاب» على وزن «فُعُل». أما «كاتبون» فجمع مذكر سالم لـ«كاتب»، و«مكاتب» جمع «مكتب»، و«كتابات» جمع مؤنث سالم لـ«كتابة»."
     }
    }
   },
@@ -557,7 +557,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -595,7 +595,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -633,7 +633,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -671,7 +671,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -709,7 +709,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -747,7 +747,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -785,7 +785,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -801,7 +801,7 @@
      ],
      "correctIndex": 0,
      "correction": "«مصنع» اسم مكان.",
-     "explanation": "اسم المكان من الثلاثي يأتي على وزن «مَفْعَل» أو «مَفْعِل» ويدل على مكان وقوع الفعل. أما اسم الآلة فيأتي على أوزان مثل «مِفْعَل» و«مِفْعال» و«مِفْعَلة»."
+     "explanation": "اسم المكان من الثلاثي يأتي على وزن «مَفْعَل» أو «مَفْعِل» ويدل على مكان وقوع الفعل، و«مَصْنَع» مكان الصنع. ويشترك وزن «مَفْعَل» بين اسم المكان واسم الزمان والمصدر الميمي، والمعنى هو الذي يحدد النوع. أما اسم الآلة فيأتي على أوزان مثل «مِفْعَل» و«مِفْعال» و«مِفْعَلة» بكسر الميم."
     }
    }
   },
@@ -823,7 +823,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -861,7 +861,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -899,7 +899,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -909,13 +909,13 @@
      "text": "أي كتابة صحيحة إملائيًا؟",
      "choices": [
       "مسؤولية",
-      "مسئولية",
+      "مسأولية",
       "مسؤليّة",
       "مسؤولييّة"
      ],
      "correctIndex": 0,
      "correction": "الكتابة الصحيحة هي «مسؤولية».",
-     "explanation": "الهمزة المتوسطة تُكتب على واو لأنها مضمومة وما قبلها ساكن، ثم تأتي الواو ثم لام وياء وتاء مربوطة. وكتابتها على نبرة قليلة الشيوع في المعايير الإملائية المعتمدة."
+     "explanation": "في «مسؤولية» همزة متوسطة مضمومة وما قبلها (السين) ساكن، والضمة أقوى من السكون، فتُكتب على واو، ثم تليها واو المدّ فاللام فالياء المشددة فالتاء المربوطة. وتُرسم أحيانًا على نبرة «مسئولية» تجنبًا لتوالي واوين، وهو مذهب لبعض المجامع، غير أن الرسم على الواو هو المعتمد في المغرب. أما «مسأولية» فخطأ لأن الفتحة ليست حركة الهمزة ولا حركة ما قبلها."
     }
    }
   },
@@ -937,7 +937,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -975,7 +975,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -987,11 +987,11 @@
       "السؤال",
       "السئال",
       "السأال",
-      "السـؤءال"
+      "السءال"
      ],
      "correctIndex": 0,
      "correction": "الكتابة الصحيحة هي «السؤال».",
-     "explanation": "الهمزة هنا متوسطة مضمومة وما قبلها ساكن، والضمة أقوى من السكون، فتُكتب على واو."
+     "explanation": "في «السُّؤَال» همزة متوسطة مفتوحة وما قبلها (السين) مضموم، والضمة أقوى من الفتحة، فتُكتب على واو تبعًا للحركة الأقوى. ومثلها: «فُؤَاد» و«مُؤَسَّسة»."
     }
    }
   },
@@ -1013,7 +1013,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1025,11 +1025,11 @@
       "هذا",
       "هاذا",
       "هذاء",
-      "هذى"
+      "هاذه"
      ],
      "correctIndex": 0,
      "correction": "الكتابة الصحيحة هي «هذا».",
-     "explanation": "«هذا» اسم إشارة تُحذف ألفه في الكتابة وإن نُطقت، وهي من الكلمات التي جرت العادة على كتابتها هكذا، مثل «لكن» و«الرحمن»."
+     "explanation": "«هذا» اسم إشارة تُحذف ألفه بعد الهاء في الكتابة وإن نُطقت، وكذلك «هذه» و«ذلك» و«هؤلاء»، وهي من الكلمات التي جرت العادة على كتابتها هكذا، مثل «لكن» و«الرحمن». فكتابة «هاذا» و«هاذه» بالألف خطأ، و«هذاء» بزيادة همزة خطأ كذلك."
     }
    }
   },
@@ -1051,7 +1051,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1067,7 +1067,7 @@
      ],
      "correctIndex": 0,
      "correction": "تُكتب ياءً إذا كان أصلها ياءً.",
-     "explanation": "نعرف الأصل بالتثنية أو بالمصدر: «فتى» تُثنّى «فتيان» فتُكتب بالياء، أما «عصا» فتُثنّى «عصوان» فتُكتب بالألف."
+     "explanation": "نعرف أصل الألف في الاسم الثلاثي بالتثنية أو بالجمع أو بالرجوع إلى الفعل المشتق منه: «فتى» تُثنّى «فتيان» فتُكتب بالياء، أما «عصا» فتُثنّى «عصوان» فتُكتب بالألف القائمة."
     }
    }
   },
@@ -1089,7 +1089,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1105,7 +1105,7 @@
      ],
      "correctIndex": 0,
      "correction": "همزة الفعل الخماسي «اجتهد» همزة وصل تُكتب ألفًا بلا رسم للهمزة.",
-     "explanation": "همزة الوصل تسقط في النطق عند الوصل وتثبت في الابتداء، وتكون في الأفعال الخماسية والسداسية وأمرها ومصدرها، وفي «ال» التعريف. أما همزة القطع فتُرسم دائمًا وتُنطق في كل الأحوال."
+     "explanation": "همزة الوصل تسقط في النطق عند الوصل وتثبت في الابتداء، ولا تُرسم عليها الهمزة. وتكون في ماضي الفعل الخماسي والسداسي وأمرهما ومصدرهما، وفي أمر الفعل الثلاثي (اكتبْ)، وفي «ال» التعريف، وفي أسماء مسموعة مثل: اسم وابن وامرأة. و«اجتهد» فعل ماضٍ خماسي، فهمزته همزة وصل. أما همزة القطع فتُرسم وتُنطق في الابتداء والوصل."
     }
    }
   },
@@ -1127,7 +1127,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1165,7 +1165,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1203,7 +1203,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1241,7 +1241,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1279,7 +1279,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1317,14 +1317,14 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
    ],
    "l10n": {
     "ar": {
-     "text": "في قولنا «سالَ الوادي»، ما نوع المجاز في كلمة «الوادي»؟",
+     "text": "في قولنا «قرّر المجلسُ تأجيلَ الاجتماع»، ما نوع المجاز في كلمة «المجلس»؟",
      "choices": [
       "مجاز مرسل علاقته المحلية",
       "استعارة تصريحية",
@@ -1333,7 +1333,7 @@
      ],
      "correctIndex": 0,
      "correction": "هو مجاز مرسل علاقته المحلية.",
-     "explanation": "الوادي لا يسيل، وإنما يسيل الماء الذي يجري فيه؛ فقد أُطلق المحل وهو «الوادي» وأُريد الحالّ فيه وهو الماء. والعلاقة المحلية من علاقات المجاز المرسل المشهورة، إلى جانب السببية والجزئية والكلية. أما قولنا «شربتُ ماءَ النهر» فحقيقة لا مجاز فيها."
+     "explanation": "المجلس، وهو مكان الاجتماع، لا يقرر، وإنما يقرر الأعضاء الذين يجتمعون فيه؛ فقد أُطلق المحل وهو «المجلس» وأُريد الحالّ فيه وهم الأعضاء، والقرينة المانعة من إرادة المعنى الأصلي عقلية. وليس استعارة لأن العلاقة ليست المشابهة. والعلاقة المحلية من علاقات المجاز المرسل المشهورة، إلى جانب السببية والمسببية والجزئية والكلية والحالية."
     }
    }
   },
@@ -1355,7 +1355,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1393,7 +1393,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1431,7 +1431,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1469,7 +1469,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1507,7 +1507,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1545,7 +1545,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1583,7 +1583,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1621,7 +1621,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1659,7 +1659,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1697,7 +1697,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1735,7 +1735,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1773,7 +1773,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1811,7 +1811,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1849,7 +1849,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1887,7 +1887,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1899,11 +1899,11 @@
       "غير أنّ",
       "لأنّ",
       "بما أنّ",
-      "نظرًا لـ"
+      "نظرًا إلى"
      ],
      "correctIndex": 0,
      "correction": "الأداة المناسبة هي «غير أنّ».",
-     "explanation": "«غير أنّ» و«بيد أنّ» و«لكن» تفيد الاستدراك والتعارض. أما «لأنّ» و«بما أنّ» و«نظرًا لـ» فتفيد التعليل والسببية."
+     "explanation": "«غير أنّ» و«بيد أنّ» و«لكنّ» تفيد الاستدراك والتعارض بين فكرتين. أما «لأنّ» و«بما أنّ» و«نظرًا إلى» فتفيد التعليل والسببية."
     }
    }
   },
@@ -1925,7 +1925,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -1934,14 +1934,14 @@
     "ar": {
      "text": "ما الأداة التي تفيد النتيجة؟",
      "choices": [
-      "وبالتالي",
+      "لذلك",
       "بالرغم من",
       "غير أنّ",
       "على العكس"
      ],
      "correctIndex": 0,
-     "correction": "الأداة التي تفيد النتيجة هي «وبالتالي».",
-     "explanation": "«وبالتالي» و«ومن ثمّ» و«لذلك» تربط السبب بالنتيجة. أما «بالرغم من» و«غير أنّ» و«على العكس» فتفيد التعارض."
+     "correction": "الأداة التي تفيد النتيجة هي «لذلك».",
+     "explanation": "«لذلك» و«ومن ثَمّ» و«وعليه» تربط السبب بنتيجته. أما «بالرغم من» و«غير أنّ» و«على العكس» فتفيد التعارض أو الاستدراك."
     }
    }
   },
@@ -1963,7 +1963,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -2001,7 +2001,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -2039,7 +2039,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -2077,7 +2077,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -2115,7 +2115,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -2153,7 +2153,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -2191,7 +2191,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -2229,7 +2229,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"
@@ -2241,11 +2241,11 @@
       "مبادئ",
       "مبدآت",
       "مبدأون",
-      "مبادىء"
+      "مبدءات"
      ],
      "correctIndex": 0,
      "correction": "جمع «مبدأ» هو «مبادئ».",
-     "explanation": "«مبادئ» جمع تكسير على وزن «مفاعل»، وتُرسم الهمزة على نبرة لأنها متطرفة بعد كسر. ويكثر استعمال هذا الجمع في النصوص القانونية والإدارية."
+     "explanation": "«مبادِئ» جمع تكسير على وزن «مَفاعِل». والهمزة فيه متطرفة مسبوقة بكسر، فتُكتب على ياء غير منقوطة (ئ) تبعًا لحركة ما قبلها. أما «مبدآت» و«مبدءات» و«مبدأون» فصيغ غير مستعملة لجمع «مبدأ». ويكثر استعمال «مبادئ» في النصوص القانونية والإدارية."
     }
    }
   },
@@ -2267,7 +2267,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar"

@@ -25,7 +25,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -63,7 +63,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -101,7 +101,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -139,7 +139,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -177,7 +177,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -193,7 +193,7 @@
      ],
      "correctIndex": 0,
      "correction": "La forme correcte est « quelle que soit la situation ».",
-     "explanation": "Devant le verbe « être », on écrit « quel que » en deux mots, et « quel » s'accorde avec le sujet qui suit. « Situation » étant féminin singulier, on écrit « quelle que soit »."
+     "explanation": "Devant un verbe au subjonctif (le plus souvent « être » : quel que soit, quelle que puisse être), on écrit « quel que » en deux mots, et « quel » s'accorde en genre et en nombre avec le sujet qui suit. « Situation » étant féminin singulier, on écrit « quelle que soit ». « Quelque » en un mot se place devant un nom ou un adjectif."
     }
    }
   },
@@ -215,7 +215,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -253,14 +253,14 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
    ],
    "l10n": {
     "fr": {
-     "text": "Complétez : « … candidats ont été convoqués. »",
+     "text": "Complétez : « … candidats-là ont été convoqués. »",
      "choices": [
       "Ces",
       "Ses",
@@ -269,7 +269,7 @@
      ],
      "correctIndex": 0,
      "correction": "Il faut écrire « Ces candidats ».",
-     "explanation": "« Ces » est un déterminant démonstratif pluriel, remplaçable par « ces … -là ». « Ses » marque la possession et se rapporte à un possesseur mentionné auparavant."
+     "explanation": "« Ces » est un déterminant démonstratif pluriel ; il est seul possible devant un nom suivi de « -là ». « Ses » est un déterminant possessif (ses candidats = les candidats de quelqu'un) ; « c'est » (cela est) et « s'est » (pronom « se » + auxiliaire « être ») ne peuvent pas précéder un nom."
     }
    }
   },
@@ -291,7 +291,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -329,7 +329,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -345,7 +345,7 @@
      ],
      "correctIndex": 0,
      "correction": "Le pluriel est « travaux ».",
-     "explanation": "Les noms en -ail forment généralement leur pluriel en -ails, mais quelques-uns font exception : travail, vitrail, corail, émail et bail donnent travaux, vitraux, coraux, émaux et baux."
+     "explanation": "Les noms en -ail forment généralement leur pluriel en -ails (des détails, des éventails), mais quelques-uns font exception et prennent -aux : bail, corail, émail, soupirail, travail, vantail et vitrail donnent baux, coraux, émaux, soupiraux, travaux, vantaux et vitraux."
     }
    }
   },
@@ -367,7 +367,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -405,7 +405,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -443,7 +443,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -481,7 +481,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -519,7 +519,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -557,7 +557,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -595,7 +595,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -633,7 +633,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -671,7 +671,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -709,7 +709,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -747,7 +747,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -785,7 +785,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -801,7 +801,7 @@
      ],
      "correctIndex": 0,
      "correction": "La forme correcte est « j'irai ».",
-     "explanation": "Le verbe « aller » est irrégulier et emprunte au radical « ir- » au futur simple. « J'irais » avec un s est le conditionnel présent, qui exprime une éventualité et non un fait à venir."
+     "explanation": "Le verbe « aller » est irrégulier et emprunte le radical « ir- » au futur simple : j'irai, tu iras… « J'irais » avec un s est le conditionnel présent, qui exprime une éventualité et non un fait à venir."
     }
    }
   },
@@ -823,7 +823,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -861,7 +861,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -899,7 +899,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -915,7 +915,7 @@
      ],
      "correctIndex": 0,
      "correction": "La forme est « va ».",
-     "explanation": "Les verbes du premier groupe et « aller » perdent le s final à l'impératif présent, deuxième personne du singulier. Ce s réapparaît devant les pronoms « en » et « y » : vas-y."
+     "explanation": "À l'impératif présent, deuxième personne du singulier, les verbes du premier groupe, le verbe « aller » et quelques verbes comme « ouvrir » ou « cueillir » s'écrivent sans s : va, mange, ouvre. Ce s réapparaît, pour la liaison, devant les pronoms « en » et « y » : vas-y, manges-en."
     }
    }
   },
@@ -937,7 +937,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -975,7 +975,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1013,7 +1013,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1051,7 +1051,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1067,7 +1067,7 @@
      ],
      "correctIndex": 0,
      "correction": "La forme correcte est « Puis-je ».",
-     "explanation": "L'inversion à la première personne impose la forme ancienne « puis », employée uniquement dans cette construction interrogative. En dehors de l'inversion, on écrit « je peux »."
+     "explanation": "À la première personne du singulier, l'inversion du sujet impose la forme « puis » : on dit « puis-je ? » et jamais « peux-je ? ». Hors inversion, on emploie couramment « je peux » ; « je puis » subsiste seulement dans la langue soutenue (« je ne puis accepter »)."
     }
    }
   },
@@ -1089,7 +1089,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1127,7 +1127,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1165,7 +1165,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1203,7 +1203,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1241,7 +1241,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1279,7 +1279,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1317,7 +1317,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1355,7 +1355,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1393,7 +1393,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1431,7 +1431,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1469,7 +1469,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1507,7 +1507,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1545,7 +1545,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1583,7 +1583,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1621,7 +1621,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1659,7 +1659,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1697,7 +1697,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1735,7 +1735,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1773,7 +1773,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1811,7 +1811,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1849,7 +1849,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1887,7 +1887,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1925,7 +1925,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -1963,7 +1963,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -2001,7 +2001,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -2039,7 +2039,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -2077,7 +2077,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -2086,7 +2086,7 @@
     "fr": {
      "text": "Quelle phrase comporte un participe présent et non un adjectif verbal ?",
      "choices": [
-      "Les agents, provoquant un attroupement, ont été dispersés.",
+      "Les manifestants, provoquant un attroupement, ont été dispersés.",
       "Une situation provocante.",
       "Des propos provocants.",
       "Une attitude provocante."
@@ -2115,7 +2115,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -2153,7 +2153,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -2191,7 +2191,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -2229,7 +2229,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
@@ -2267,7 +2267,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "fr"
