@@ -54,7 +54,7 @@ Tout se règle dans `content/site.mjs`, puis `npm run build` :
 |---|---|
 | `googleSiteVerification` | Ajoute la balise de vérification Search Console. Déclarez ensuite `sitemap.xml` dans la Search Console. |
 | `ga4` | Ajoute Google Analytics 4 (identifiant `G-XXXXXXXXXX`). |
-| `adsenseClient` | Ajoute le script AdSense (identifiant `ca-pub-…`) sur les pages de contenu (pas sur 404 ni hors ligne), génère `ads.txt` et complète la politique de confidentialité. |
+| `adsenseClient` | Ajoute le script AdSense (identifiant `ca-pub-…`) sur les pages de contenu (pas sur 404 ni hors ligne), génère `ads.txt` (et `app-ads.txt`, le même éditeur servant l’application Android via AdMob) et complète la politique de confidentialité. |
 
 AdSense est configuré avec `ca-pub-3709043100488694`. Après validation du site par Google, activez les annonces
 automatiques dans AdSense, ainsi que le message de consentement (Confidentialité et messages → Réglementations
@@ -71,8 +71,15 @@ publicité AdMob (admob-plus-cordova, consentement UMP). Il garde la structure d
 - [`cordova/LISEZMOI-ANDROID.md`](cordova/LISEZMOI-ANDROID.md) : remplacer le `www/` du projet Cordova,
   plate-forme cordova-android 15 (API 36), plugins, identifiants AdMob, test et publication sur Google Play ;
 - [`cordova/config.xml.exemple`](cordova/config.xml.exemple) : réglages à reporter dans `config.xml` ;
+- `cordova/res/` : icônes (classiques et adaptatives) et écran de démarrage, à copier à la racine du
+  projet Cordova ;
+- [`cordova/FICHE-PLAY-STORE.md`](cordova/FICHE-PLAY-STORE.md) : fiche Google Play prête à copier (nom,
+  descriptions en français et en arabe, sécurité des données, classification) ;
+- `cordova/concours_maroc_play_store.zip` : tout pour la Play Console en un fichier (icône 512 px,
+  bandeaux 1024 × 500, 8 captures par langue, textes de la fiche, `res/` et icône source) ;
 - politique de confidentialité de l'application, à indiquer sur Google Play :
-  `https://www.maroc-concour.com/application/confidentialite/`.
+  `https://novanestatlas.github.io/concours-privacy.html` (même contenu que
+  `https://www.maroc-concour.com/application/confidentialite/`, affichée dans l'application).
 
 Après une modification du contenu, `npm run build:app` régénère `dist/cordova/www/` et le zip de `cordova/`
 (en mode test : blocs d'annonces de démonstration de Google). Les identifiants AdMob de production restent hors
@@ -108,7 +115,7 @@ scripts/              générateur du site (build.mjs), de l'appli (build-app.mj
 src/                  CSS, JavaScript (entraînement, outils), textes de l'application, images
 src/app/              coquille de l'application Android (routeur, bouton Retour, synthèse vocale, AdMob)
 docs/                 site généré, publié par GitHub Pages (ne pas modifier à la main)
-cordova/              www de l'application (zip), exemple de config.xml, notice de construction Android
+cordova/              www de l'application (zip), exemple de config.xml, notice Android, icônes (res/), fiche et zip Google Play
 ```
 
 ### Ajouter des questions

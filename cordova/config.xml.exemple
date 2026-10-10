@@ -10,21 +10,23 @@
   31 août 2026), admob-plus-cordova 2.0.0-alpha.19,
   cordova-plugin-consent 3.0.0-alpha.9 et cordova-plugin-tts-advanced 0.5.3.
 
-  - id : gardez l'identifiant de votre application. S'il est déjà publié sur
-    Google Play, il ne doit plus jamais changer. (Google Play refuse
-    « com.example… » : impossible de l'oublier.)
+  - id : com.novanest.concoursmaroc, dans la lignée des autres applications
+    Novanest ATLAS (com.novanest.…) ; c'est lui que donnent les liens Google
+    Play du site novanestatlas.github.io. Si l'application est déjà publiée
+    avec un autre identifiant, gardez le vôtre : il ne doit plus jamais
+    changer une fois sur Google Play.
   - version : à augmenter à chaque envoi sur Google Play. Sans
     android-versionCode, Cordova le calcule (2.0.0 → 20000), ce qui reste
     supérieur à celui d'une version 1.x.
 -->
-<widget id="com.example.concoursmaroc" version="2.0.0"
+<widget id="com.novanest.concoursmaroc" version="2.0.0"
         xmlns="http://www.w3.org/ns/widgets"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:cdv="http://cordova.apache.org/ns/1.0">
 
     <name short="Concours Maroc">Concours Maroc</name>
     <description>Guide des concours au Maroc après le bac : conditions, seuils, calendrier, QCM corrigés, examens blancs et outils. En français et en arabe, utilisable hors ligne.</description>
-    <author href="https://www.maroc-concour.com/">Concours Maroc</author>
+    <author href="https://www.maroc-concour.com/">Novanest ATLAS</author>
 
     <content src="index.html" />
 
@@ -72,18 +74,20 @@
             </queries>
         </config-file>
 
-        <!-- Icône et écran de démarrage : l'icône n'a pas changé
-             (www/img/icon.svg), gardez les PNG de la première version.
-             Exemple, chemins relatifs à la racine du projet :
-
-        <icon density="mdpi"    src="res/icon/android/mipmap-mdpi.png" />
-        <icon density="hdpi"    src="res/icon/android/mipmap-hdpi.png" />
-        <icon density="xhdpi"   src="res/icon/android/mipmap-xhdpi.png" />
-        <icon density="xxhdpi"  src="res/icon/android/mipmap-xxhdpi.png" />
-        <icon density="xxxhdpi" src="res/icon/android/mipmap-xxxhdpi.png" />
+        <!-- ★ Icône et écran de démarrage. Copiez le dossier cordova/res/ de
+             ce dépôt à la racine du projet Cordova (à côté de config.xml).
+             Android 7 : icône classique (src) ; Android 8 et plus : icône
+             adaptative (foreground + background), découpée par le téléphone
+             en cercle, carré arrondi… ; Android 12 et plus : écran de
+             démarrage, sur un fond de la couleur de l'icône. -->
+        <icon density="ldpi"    src="res/icon/android/ldpi.png"    foreground="res/icon/android/ldpi-foreground.png"    background="res/icon/android/ldpi-background.png" />
+        <icon density="mdpi"    src="res/icon/android/mdpi.png"    foreground="res/icon/android/mdpi-foreground.png"    background="res/icon/android/mdpi-background.png" />
+        <icon density="hdpi"    src="res/icon/android/hdpi.png"    foreground="res/icon/android/hdpi-foreground.png"    background="res/icon/android/hdpi-background.png" />
+        <icon density="xhdpi"   src="res/icon/android/xhdpi.png"   foreground="res/icon/android/xhdpi-foreground.png"   background="res/icon/android/xhdpi-background.png" />
+        <icon density="xxhdpi"  src="res/icon/android/xxhdpi.png"  foreground="res/icon/android/xxhdpi-foreground.png"  background="res/icon/android/xxhdpi-background.png" />
+        <icon density="xxxhdpi" src="res/icon/android/xxxhdpi.png" foreground="res/icon/android/xxxhdpi-foreground.png" background="res/icon/android/xxxhdpi-background.png" />
         <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-icon.png" />
-        <preference name="AndroidWindowSplashScreenBackground" value="#101A3D" />
-        -->
+        <preference name="AndroidWindowSplashScreenBackground" value="#F9F7F4" />
     </platform>
 
     <!-- Les plugins sont enregistrés dans package.json par « cordova plugin

@@ -143,7 +143,14 @@ async function main() {
   write('manifest.webmanifest', manifestJson(site));
   write('.nojekyll', '');
   if (site.customDomain) write('CNAME', `${site.customDomain}\n`);
-  if (site.adsenseClient) write('ads.txt', `google.com, ${site.adsenseClient.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`);
+  if (site.adsenseClient) {
+    // AdSense (site) and AdMob (Android app) share the publisher ID: ads.txt
+    // for the site, app-ads.txt for the app when this domain is the
+    // developer website of its Google Play listing.
+    const sellers = `google.com, ${site.adsenseClient.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`;
+    write('ads.txt', sellers);
+    write('app-ads.txt', sellers);
+  }
 
   // Service worker: precache the shell, version = hash of every output file.
   const hash = crypto.createHash('sha256');

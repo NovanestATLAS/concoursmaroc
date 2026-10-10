@@ -26,6 +26,8 @@ html[data-app] .site-header { padding-top: var(--safe-t); }
 html[data-app] .site-header .bar { position: relative; gap: 6px; }
 html[data-app] .brand { gap: 8px; font-size: 1rem; min-width: 0; }
 html[data-app] .brand span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* the name is Latin text: in Arabic pages, cut its end, not its start */
+html[data-app][dir="rtl"] .brand span { direction: ltr; }
 .app-back[hidden] { display: none !important; }
 html[dir="rtl"] .app-back svg { transform: scaleX(-1); }
 

@@ -46,6 +46,24 @@ indispensables y sont marquées ★ :
 - `scheme` et `hostname` : gardez ceux de la première version, sinon la
   progression enregistrée sur les téléphones n’est plus retrouvée.
 
+### Icône et écran de démarrage
+
+Copiez le dossier `res/` de ce dépôt (`cordova/res/`) à la racine du projet
+Cordova, à côté de `config.xml`, puis reprenez les lignes `<icon>` et les deux
+préférences `AndroidWindowSplashScreen…` de `config.xml.exemple` :
+
+| Fichiers | Rôle |
+|---|---|
+| `res/icon/android/{densité}.png` (36 à 192 px) | icône classique, Android 7 |
+| `res/icon/android/{densité}-foreground.png` et `-background.png` (81 à 432 px) | icône adaptative, Android 8 et plus : le téléphone la découpe en cercle, carré arrondi… ; le dessin reste dans la zone sûre de 66 dp |
+| `res/screen/android/splash-icon.png` (1152 px) | écran de démarrage, Android 12 et plus, sur le fond `#F9F7F4` (la couleur de l’icône) |
+
+Le visuel est l’icône fournie par l’éditeur, sans la mosquée, en carré plein
+(Google Play et Android appliquent eux-mêmes l’arrondi). L’icône 512 px, le
+bandeau 1024 × 500 et les captures pour la fiche Google Play sont dans
+`concours_maroc_play_store.zip`, avec le texte de la fiche
+(`FICHE-PLAY-STORE.md`).
+
 ## 4. Plate-forme Android et plugins
 
 Google Play exige depuis le 31 août 2026 que les nouvelles applications et
@@ -137,11 +155,16 @@ signature en lieu sûr : sans elle, plus aucune mise à jour n’est possible.
 - mode avion : toutes les pages, l’entraînement et les outils restent
   disponibles.
 
-Fiche Google Play :
+Fiche Google Play : textes prêts à copier (nom, descriptions courte et
+complète en français et en arabe), réponses « Sécurité des données » et
+réglages dans [`FICHE-PLAY-STORE.md`](FICHE-PLAY-STORE.md). En bref :
 
 - politique de confidentialité :
-  <https://www.maroc-concour.com/application/confidentialite/>
-  (en arabe : `…/ar/application/confidentialite/`) ;
+  <https://novanestatlas.github.io/concours-privacy.html> (même contenu que
+  <https://www.maroc-concour.com/application/confidentialite/>, affichée
+  dans l’application) ;
+- site web du développeur : <https://novanestatlas.github.io/> (il porte le
+  fichier `app-ads.txt` de toutes les applications Novanest ATLAS) ;
 - section « Sécurité des données » : aucune donnée personnelle collectée par
   l’application elle-même ; déclarez celles du SDK Google Mobile Ads
   (identifiant publicitaire, adresse IP, interactions avec les annonces) ;

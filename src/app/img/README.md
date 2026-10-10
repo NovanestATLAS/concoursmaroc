@@ -1,23 +1,21 @@
 # Icônes et visuels
 
-Tous les fichiers de ce dossier sont des **créations originales** réalisées pour
+Les fichiers de ce dossier sont des **créations originales** réalisées pour
 Concours Maroc. Aucun emblème officiel, armoirie, logo institutionnel ou visuel
 sous droits d'auteur tiers n'est utilisé.
 
 | Fichier | Usage |
 |---|---|
-| `icon.svg` | Icône de l'application (source vectorielle) |
+| `icon.svg` | Logo de l'interface (en-tête, icône de l'onglet) |
 | `mark.svg` | Étoile zellij seule, utilisée dans l'interface |
-| `feature-graphic.svg` | Bandeau Play Store 1024×500 (à exporter en PNG) |
+| `feature-graphic.svg` | Ancien bandeau 1024×500, remplacé par celui du zip Google Play |
 
-## Export pour Google Play
+## Icône de l'application et fiche Google Play
 
-Google Play exige des PNG. Le script `tools/make_icons.sh` fait la conversion si
-`rsvg-convert`, `inkscape` ou ImageMagick est installé :
+L'icône de lancement Android et celle de la fiche Google Play sont
+l'illustration fournie par l'éditeur (étoile, toque, livres), en PNG :
 
-```
-bash tools/make_icons.sh
-```
-
-Tailles produites : 512×512 (icône Play), 1024×500 (bandeau), et le jeu
-`mipmap-*` pour `res/`.
+- `cordova/res/` du dépôt, à copier à la racine du projet Cordova (icônes
+  classiques et adaptatives, écran de démarrage) ;
+- `cordova/concours_maroc_play_store.zip` : icône 512 px, bandeau
+  1024×500, captures d'écran et texte de la fiche.
