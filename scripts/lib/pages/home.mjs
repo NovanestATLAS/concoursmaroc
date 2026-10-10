@@ -1,19 +1,29 @@
 /* Home page (FR and AR). */
 import { html, raw } from '../html.mjs';
 import { icon } from '../icons.mjs';
-import { linker, faqLd } from '../layout.mjs';
+import { linker, faqLd, practiceHref } from '../layout.mjs';
 import { t } from '../strings.mjs';
 import { concoursCard, guidePath } from './concours.mjs';
 import { GROUPS, SUBJECTS } from '../../../content/taxonomy.mjs';
 import { qcmPath } from './qcm.mjs';
 import { CALENDAR } from '../../../content/calendar.mjs';
 import { deadlineItem } from './tools.mjs';
+import { hue, subjectArt } from '../art.mjs';
 
 const TXT = {
   fr: {
     title: 'Concours Maroc 2027 : guide des concours après le bac, QCM corrigés et outils',
     desc: "Le guide gratuit des concours au Maroc après le bac et avec le niveau bac : médecine, ENSA, ENCG, CPGE, ISPITS, police, gendarmerie, FAR… Conditions, seuils, calendrier, QCM corrigés et outils.",
     h1: 'Tous les concours au Maroc, expliqués et préparés',
+    h1Parts: ['Tous les concours au Maroc,', 'expliqués et préparés'],
+    trust: [
+      ['check', 'Vérifié et sourcé', 'Chaque fiche cite ses sources officielles et sa date de mise à jour.'],
+      ['star', '100 % gratuit', 'QCM, examens blancs et outils, sans inscription.'],
+      ['phone', 'Pensé pour le mobile', "L'entraînement fonctionne même hors ligne."],
+      ['ع', 'Français et arabe', 'Tout le guide est disponible dans les deux langues.'],
+    ],
+    eyebrows: { start: 'Pour commencer', popular: 'Les plus consultés', domains: 'Par domaine', tools: 'Outils', practice: 'Entraînement', guides: 'Guides', faq: 'FAQ' },
+    ctaH: 'Prêt à passer à la pratique ?', ctaP: 'Choisis ton concours et lance un examen blanc chronométré au barème officiel, ou révise matière par matière.', ctaMock: 'Examen blanc',
     lead: "Conditions d'accès, seuils, épreuves, nombre de places, calendrier : un guide clair pour chaque concours après le bac ou avec le niveau bac, avec des QCM corrigés et des examens blancs pour s'entraîner gratuitement.",
     ctaFind: 'Trouver mes concours', ctaPractice: "S'entraîner aux QCM",
     stats: (nc, nq) => [[nc, 'concours expliqués'], [nq, 'QCM corrigés'], ['6', 'outils gratuits'], ['FR · ع', 'bilingue, hors ligne']],
@@ -38,10 +48,10 @@ const TXT = {
     practiceH: 'Entraînement par matière', practiceLead: 'Questions originales vérifiées, avec correction et explication détaillée.',
     guidesH: 'Guides pratiques',
     guides: [
-      ['compass', 'Orientation après le bac au Maroc', 'guides/orientation-apres-bac-maroc/'],
-      ['doc', 'Cursus Sup : mode d’emploi', 'guides/cursus-sup-inscription/'],
-      ['star', 'Réussir un QCM de concours', 'guides/reussir-qcm-concours/'],
-      ['wallet', 'Bourse Minhaty et logement', 'guides/bourse-minhaty-logement/'],
+      ['compass', 'Orientation après le bac au Maroc', 'guides/orientation-apres-bac-maroc/', 'Choisir sa voie selon sa série, sa note et ses envies.'],
+      ['doc', 'Cursus Sup : mode d’emploi', 'guides/cursus-sup-inscription/', 'Créer son compte, classer ses écoles, suivre les résultats.'],
+      ['star', 'Réussir un QCM de concours', 'guides/reussir-qcm-concours/', 'Méthode, gestion du temps et points négatifs.'],
+      ['wallet', 'Bourse Minhaty et logement', 'guides/bourse-minhaty-logement/', 'Conditions, dossier et calendrier de la bourse.'],
     ],
     faqH: 'Questions fréquentes',
     faq: [
@@ -56,6 +66,15 @@ const TXT = {
     title: 'Concours Maroc 2027: دليل المباريات بعد البكالوريا، أسئلة مصححة وأدوات',
     desc: 'الدليل المجاني للمباريات بالمغرب بعد البكالوريا وبمستوى البكالوريا: الطب، ENSA، ENCG، الأقسام التحضيرية، ISPITS، الشرطة، الدرك، القوات المسلحة… الشروط، العتبات، الأجندة وأسئلة مصححة.',
     h1: 'جميع المباريات بالمغرب: شرح وتحضير',
+    h1Parts: ['جميع المباريات بالمغرب:', 'شرح وتحضير'],
+    trust: [
+      ['check', 'معلومات موثقة', 'كل بطاقة تذكر مصادرها الرسمية وتاريخ آخر تحديث.'],
+      ['star', 'مجاني بالكامل', 'أسئلة وامتحانات تجريبية وأدوات، بدون تسجيل.'],
+      ['phone', 'مصمم للهاتف', 'التمرين يعمل حتى بدون إنترنت.'],
+      ['Fr', 'بالعربية والفرنسية', 'الدليل كاملًا متوفر باللغتين.'],
+    ],
+    eyebrows: { start: 'للبداية', popular: 'الأكثر زيارة', domains: 'حسب المجال', tools: 'أدوات', practice: 'التمرين', guides: 'أدلة', faq: 'أسئلة' },
+    ctaH: 'مستعد للتطبيق؟', ctaP: 'اختر مباراتك وابدأ امتحانًا تجريبيًا موقتًا بسلم التنقيط الرسمي، أو راجع مادة بمادة.', ctaMock: 'امتحان تجريبي',
     lead: 'شروط الولوج، العتبات، الاختبارات، عدد المقاعد والأجندة: دليل واضح لكل مباراة بعد البكالوريا أو بمستوى البكالوريا، مع أسئلة مصححة وامتحانات تجريبية للتمرن مجانًا.',
     ctaFind: 'اكتشف المباريات المناسبة لي', ctaPractice: 'تمرّن على الأسئلة',
     stats: (nc, nq) => [[nc, 'مباراة مشروحة'], [nq, 'سؤالًا مصححًا'], ['6', 'أدوات مجانية'], ['FR · ع', 'ثنائي اللغة، بدون إنترنت']],
@@ -80,10 +99,10 @@ const TXT = {
     practiceH: 'التمرين حسب المادة', practiceLead: 'أسئلة أصلية متحقق منها مع التصحيح والشرح المفصل.',
     guidesH: 'أدلة عملية',
     guides: [
-      ['compass', 'التوجيه بعد البكالوريا بالمغرب', 'guides/orientation-apres-bac-maroc/'],
-      ['doc', 'منصة Cursus Sup: طريقة الاستعمال', 'guides/cursus-sup-inscription/'],
-      ['star', 'النجاح في الأسئلة متعددة الاختيارات', 'guides/reussir-qcm-concours/'],
-      ['wallet', 'منحة منحتي والسكن الجامعي', 'guides/bourse-minhaty-logement/'],
+      ['compass', 'التوجيه بعد البكالوريا بالمغرب', 'guides/orientation-apres-bac-maroc/', 'اختيار المسار حسب الشعبة والنقطة والميولات.'],
+      ['doc', 'منصة Cursus Sup: طريقة الاستعمال', 'guides/cursus-sup-inscription/', 'إنشاء الحساب وترتيب المؤسسات وتتبع النتائج.'],
+      ['star', 'النجاح في الأسئلة متعددة الاختيارات', 'guides/reussir-qcm-concours/', 'المنهجية وتدبير الوقت والتنقيط السلبي.'],
+      ['wallet', 'منحة منحتي والسكن الجامعي', 'guides/bourse-minhaty-logement/', 'الشروط والملف وأجندة المنحة.'],
     ],
     faqH: 'أسئلة شائعة',
     faq: [
@@ -108,58 +127,71 @@ export function buildHome(site, all, lang, banks) {
   const today = site.updated;
   const upcoming = CALENDAR.filter((e) => e.date && e.date >= today).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 4);
 
+  const sec = (key, h2, extra = '') => html`<div class="section-head"><div><span class="eyebrow">${x.eyebrows[key]}</span><h2>${h2}</h2></div>${extra}</div>`;
+  const more = (href, label) => html`<a class="more-link" href="${link(href)}">${label} ${icon('arrow')}</a>`;
   const body = html`<section class="hero"><div class="container hero-grid">
 <div>
 <span class="eyebrow">${t(lang, 'tagline')}</span>
-<h1>${x.h1}</h1>
+<h1>${x.h1Parts[0]} <span class="hl">${x.h1Parts[1]}</span></h1>
 <p class="lead">${x.lead}</p>
-<div class="big-search" role="search" style="margin:18px 0 14px">${icon('search')}<label class="visually-hidden" for="home-search">${t(lang, 'search')}</label><input id="home-search" type="search" autocomplete="off" placeholder="${t(lang, 'searchPlaceholder')}" data-search-input><ul class="search-results" data-search-results></ul></div>
+<div class="big-search" role="search">${icon('search')}<label class="visually-hidden" for="home-search">${t(lang, 'search')}</label><input id="home-search" type="search" autocomplete="off" placeholder="${t(lang, 'searchPlaceholder')}" data-search-input><ul class="search-results" data-search-results></ul></div>
 <div class="btn-row"><a class="btn" href="${link(pfx + 'outils/orientation-apres-bac/')}">${icon('compass')} ${x.ctaFind}</a><a class="btn ghost" href="${link(pfx + 'entrainement/')}">${icon('play')} ${x.ctaPractice}</a></div>
 <ul class="stat-row">${x.stats(nc, nq).map(([n, l]) => html`<li><b>${n}</b> ${l}</li>`)}</ul>
 </div>
 <div class="hero-art">
 <h2 class="mt-0" style="font-size:1.1rem">${icon('calendar')} ${x.upcoming}</h2>
 <ul class="deadlines" data-deadlines data-limit="4">${upcoming.map((e) => deadlineItem(e, lang, link, all))}</ul>
-<p style="margin:12px 0 0"><a href="${link(pfx + 'outils/calendrier-concours/')}">${x.upcomingMore} →</a></p>
+<p style="margin:14px 0 0">${more(pfx + 'outils/calendrier-concours/', x.upcomingMore)}</p>
 </div>
 </div></section>
 
-<section class="section"><div class="container">
-<div class="section-head"><h2>${x.start}</h2></div>
-<div class="grid cols-4">${x.paths.map(([ic, h, p, href]) => html`<a class="card path-card" href="${link(pfx + href)}"><div class="card-top"><span class="card-ico">${icon(ic)}</span><span class="card-title">${h}</span></div><p class="card-sub">${p}</p></a>`)}</div>
-</div></section>
+<div class="container"><ul class="trust" role="list">${x.trust.map(([ic, b, sub], i) => html`<li class="t-item ${hue([6, 3, 4, 5][i])}"><span class="t-ico">${ic.length <= 2 ? html`<b aria-hidden="true" style="font-size:1.05rem">${ic}</b>` : icon(ic)}</span><div><b>${b}</b><span>${sub}</span></div></li>`)}</ul></div>
 
 <section class="section"><div class="container">
-<div class="section-head"><h2>${x.popular}</h2><a href="${link(pfx + 'concours/')}">${x.all} →</a></div>
+${sec('start', x.start)}
+<div class="grid cols-4">${x.paths.map(([ic, h, p, href], i) => html`<a class="card path-card ${hue([1, 0, 4, 2][i])}" href="${link(pfx + href)}"><div class="card-top"><span class="card-ico">${icon(ic)}</span><span class="card-title">${h}</span></div><p class="card-sub">${p}</p></a>`)}</div>
+</div></section>
+
+<section class="section" style="padding-top:8px"><div class="container">
+${sec('popular', x.popular, more(pfx + 'concours/', x.all))}
 <div class="grid cols-4">${popular.map((c) => concoursCard(c, lang, link))}</div>
 </div></section>
 
-<section class="section"><div class="container">
-<div class="section-head"><h2>${x.domains}</h2></div>
-<div class="grid cols-4">${GROUPS.map((g) => {
+<section class="section alt"><div class="container">
+${sec('domains', x.domains)}
+<div class="domain-grid">${GROUPS.map((g) => {
   const items = all.filter((c) => c.group === g.id && c[lang]);
   if (!items.length) return '';
-  return html`<div class="card"><div class="card-top"><span class="card-ico">${icon(g.icon)}</span><span class="card-title">${g[lang]}</span></div><ul style="margin:0;padding-inline-start:1.1em;font-size:var(--fs-sm)">${items.map((c) => html`<li><a href="${link(guidePath(c, lang))}">${c[lang].short}</a></li>`)}</ul></div>`;
+  return html`<div class="card domain-card" data-group="${g.id}"><div class="card-top"><span class="card-ico">${icon(g.icon)}</span><span class="card-title">${g[lang]}</span><span class="d-count">${items.length}</span></div><ul class="domain-links">${items.map((c) => html`<li><a href="${link(guidePath(c, lang))}">${c[lang].short}</a></li>`)}</ul></div>`;
 })}</div>
 </div></section>
 
 <section class="section"><div class="container">
-<div class="section-head"><h2>${x.tools}</h2></div>
-<div class="grid cols-3">${x.toolList.map(([ic, h, p, href]) => html`<a class="card path-card" href="${link(pfx + href)}"><div class="card-top"><span class="card-ico">${icon(ic)}</span><span class="card-title">${h}</span></div><p class="card-sub">${p}</p></a>`)}</div>
+${sec('tools', x.tools, more(pfx + 'outils/', lang === 'ar' ? 'كل الأدوات' : 'Tous les outils'))}
+<div class="grid cols-3">${x.toolList.map(([ic, h, p, href], i) => html`<a class="card path-card ${hue([0, 1, 5, 4, 3, 6][i])}" href="${link(pfx + href)}"><div class="card-top"><span class="card-ico">${icon(ic)}</span><span class="card-title">${h}</span></div><p class="card-sub">${p}</p></a>`)}</div>
+</div></section>
+
+<section class="section alt"><div class="container">
+${sec('practice', x.practiceH, html`<a class="btn" href="${link(pfx + 'entrainement/')}">${icon('play')} ${x.ctaPractice}</a>`)}
+<p class="muted" style="margin:-10px 0 18px">${x.practiceLead}</p>
+<div class="subject-grid">${SUBJECTS.filter((s) => (banks[s.id] || []).length).map((s) => {
+  const art = subjectArt(s.id);
+  return html`<a class="subject ${art.cls}" href="${link(qcmPath(s, lang, banks))}"><span class="s-ico">${art.ico}</span><span><span class="s-name">${s.short ? s.short[lang] : s[lang]}</span><span class="s-count">${(banks[s.id] || []).length} ${lang === 'ar' ? 'سؤالًا مصححًا' : 'QCM corrigés'}</span></span></a>`;
+})}</div>
 </div></section>
 
 <section class="section"><div class="container">
-<div class="section-head"><div><h2>${x.practiceH}</h2><p>${x.practiceLead}</p></div><a class="btn" href="${link(pfx + 'entrainement/')}">${icon('play')} ${x.ctaPractice}</a></div>
-<div class="chips">${SUBJECTS.filter((s) => (banks[s.id] || []).length).map((s) => html`<a class="chip" href="${link(qcmPath(s, lang, banks))}">${s[lang]} · ${(banks[s.id] || []).length}</a>`)}</div>
+${sec('guides', x.guidesH, more(pfx + 'guides/', lang === 'ar' ? 'كل الأدلة' : 'Tous les guides'))}
+<div class="grid cols-4">${x.guides.map(([ic, h, href, sub], i) => html`<a class="card path-card guide-card ${hue([1, 6, 3, 4][i])}" href="${link(pfx + href)}"><div class="cover">${icon(ic === 'wallet' ? 'briefcase' : ic)}</div><div class="g-body"><span class="card-title">${h}</span><p class="card-sub">${sub}</p></div></a>`)}</div>
 </div></section>
 
-<section class="section"><div class="container">
-<div class="section-head"><h2>${x.guidesH}</h2><a href="${link(pfx + 'guides/')}">${lang === 'ar' ? 'كل الأدلة' : 'Tous les guides'} →</a></div>
-<div class="grid cols-4">${x.guides.map(([ic, h, href]) => html`<a class="card path-card" href="${link(pfx + href)}"><div class="card-top"><span class="card-ico">${icon(ic === 'wallet' ? 'briefcase' : ic)}</span><span class="card-title">${h}</span></div></a>`)}</div>
+<section class="section" style="padding-top:8px"><div class="container">
+<div class="cta-band"><div><h2>${x.ctaH}</h2><p>${x.ctaP}</p></div><div class="btn-row"><a class="btn" href="${link(pfx + 'entrainement/')}">${icon('play')} ${x.ctaPractice}</a><a class="btn ghost" href="${practiceHref(link, pfx, 'mock')}">${icon('clock')} ${x.ctaMock}</a></div></div>
 </div></section>
 
-<section class="section"><div class="container narrow faq">
-<h2>${x.faqH}</h2>
+<section class="section" style="padding-top:12px"><div class="container narrow faq">
+<span class="eyebrow">${x.eyebrows.faq}</span>
+<h2 class="mt-0">${x.faqH}</h2>
 ${x.faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${f.a}</p></div></details>`)}
 <div class="callout warn" style="margin-top:18px">${t(lang, 'disclaimerShort')}</div>
 </div></section>`;

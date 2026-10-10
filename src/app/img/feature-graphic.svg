@@ -2,21 +2,41 @@
   <!-- Play Store feature graphic, 1024x500. Export to PNG before uploading. -->
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#123329"/>
-      <stop offset="1" stop-color="#081913"/>
+      <stop offset="0" stop-color="#0b1229"/>
+      <stop offset=".55" stop-color="#101a3d"/>
+      <stop offset="1" stop-color="#172456"/>
     </linearGradient>
+    <radialGradient id="glow" cx=".88" cy=".1" r=".6">
+      <stop offset="0" stop-color="#3a49d6" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#3a49d6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a37b0"/>
+      <stop offset="1" stop-color="#101a3d"/>
+    </linearGradient>
+    <pattern id="z" width="72" height="72" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="1.2">
+        <path d="M22 22h28v28H22z"/><path d="M36 16.2 55.8 36 36 55.8 16.2 36z"/>
+        <path d="M36 16.2V0M55.8 36H72M36 55.8V72M16.2 36H0M22 22 0 0M50 22 72 0M50 50l22 22M22 50 0 72"/>
+      </g>
+    </pattern>
   </defs>
   <rect width="1024" height="500" fill="url(#g)"/>
-  <g opacity="0.13" fill="#0b6e4f">
-    <path d="M880 60 897 96 933 79 916 115 952 132 916 149 933 185 897 168 880 204 863 168 827 185 844 149 808 132 844 115 827 79 863 96Z"/>
-    <path d="M120 320 137 356 173 339 156 375 192 392 156 409 173 445 137 428 120 464 103 428 67 445 84 409 48 392 84 375 67 339 103 356Z"/>
+  <rect width="1024" height="500" fill="url(#z)"/>
+  <rect width="1024" height="500" fill="url(#glow)"/>
+  <g transform="translate(760 120) scale(.82)" opacity=".9">
+    <path fill="#f5a524" d="M324 92 352 160 420 188 392 256 420 324 352 352 324 420 256 392 188 420 160 352 92 324 120 256 92 188 160 160 188 92 256 120Z"/>
+    <path fill="none" stroke="#101a3d" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" d="M178 262 232 316 340 204"/>
   </g>
-  <path fill="#0b6e4f"
-        d="M132 190 145 222 177 209 164 241 196 254 164 267 177 299 145 286 132 318 119 286 87 299 100 267 68 254 100 241 87 209 119 222Z"/>
-  <text x="240" y="238" fill="#f4f6f3" font-family="Segoe UI, Roboto, Arial, sans-serif"
-        font-size="70" font-weight="700">Concours Maroc</text>
-  <text x="240" y="292" fill="#b98b1f" font-family="Segoe UI, Roboto, Arial, sans-serif"
-        font-size="34" font-weight="600">500 questions · Français &amp; العربية · 100% hors ligne</text>
-  <text x="240" y="342" fill="#9bb0a7" font-family="Segoe UI, Roboto, Arial, sans-serif"
-        font-size="27">Police · Gendarmerie · FAR · Protection Civile · Douane · CNSS · OFPPT</text>
+  <g transform="translate(64 150) scale(.25)">
+    <rect width="512" height="512" rx="116" fill="url(#tile)"/>
+    <path fill="#f5a524" d="M324 92 352 160 420 188 392 256 420 324 352 352 324 420 256 392 188 420 160 352 92 324 120 256 92 188 160 160 188 92 256 120Z"/>
+    <path fill="none" stroke="#101a3d" stroke-width="44" stroke-linecap="round" stroke-linejoin="round" d="M178 262 232 316 340 204"/>
+  </g>
+  <text x="208" y="222" fill="#ffffff" font-family="Plus Jakarta Sans, Segoe UI, Roboto, Arial, sans-serif"
+        font-size="64" font-weight="800">Concours <tspan fill="#f5a524">Maroc</tspan></text>
+  <text x="66" y="318" fill="#c9d2ea" font-family="Plus Jakarta Sans, Segoe UI, Roboto, Arial, sans-serif"
+        font-size="32" font-weight="600">31 concours · 960 QCM corrigés · Français &amp; العربية</text>
+  <text x="66" y="366" fill="#aeb9d9" font-family="Plus Jakarta Sans, Segoe UI, Roboto, Arial, sans-serif"
+        font-size="25">Médecine · ENSA · ENCG · Police · Gendarmerie · FAR · OFPPT</text>
 </svg>

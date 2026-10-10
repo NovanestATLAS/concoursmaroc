@@ -13,7 +13,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
-import { logo } from './lib/icons.mjs';
+import { logo, MARK } from './lib/icons.mjs';
 import { GROUPS } from '../content/taxonomy.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -33,8 +33,11 @@ const inner = String(logo(512)).replace(/^<svg[^>]*>/, '').replace(/<\/svg>$/, '
 const svgFile = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">${inner}</svg>\n`;
 fs.writeFileSync(out('src/root/favicon.svg'), svgFile);
 // Maskable: full-bleed background, mark inside the 80 % safe zone.
-const markOnly = inner.replace(/<rect width="512" height="512" rx="112" fill="#0d2620"\/>/, '');
-const maskable = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="#0d2620"/><g transform="translate(64 64) scale(.75)">${markOnly}</g></svg>`;
+const maskable = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="m" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a37b0"/><stop offset="1" stop-color="#101a3d"/></linearGradient></defs><rect width="512" height="512" fill="url(#m)"/><g transform="translate(64 64) scale(.75)"><path fill="#f5a524" d="${MARK.star}"/><path fill="none" stroke="#101a3d" stroke-width="44" stroke-linecap="round" stroke-linejoin="round" d="${MARK.check}"/></g></svg>`;
+// The site fonts, embedded so that the share images use them too.
+const font = (f) => `data:font/woff2;base64,${fs.readFileSync(path.join(ROOT, 'src/fonts', f)).toString('base64')}`;
+const FONTS = `@font-face{font-family:"CM Sans";src:url(${font('plus-jakarta-sans-latin-wght-normal.woff2')}) format("woff2");font-weight:200 800}
+@font-face{font-family:"CM Sans";src:url(${font('readex-pro-arabic-wght-normal.woff2')}) format("woff2");font-weight:160 700;unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFC}`;
 
 // ------------------------------------------------------------ data
 const concours = [];
@@ -54,31 +57,32 @@ const TOOLS = [
 ];
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const STAR = encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><path fill="none" stroke="#1f5a47" stroke-width="2" d="M60 14 70 40 96 30 86 56 112 60 86 64 96 90 70 80 60 106 50 80 24 90 34 64 8 60 34 56 24 30 50 40Z"/></svg>');
+const PATTERN = encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><g fill='none' stroke='#FFFFFF' stroke-opacity='.07' stroke-width='1.2'><path d='M22 22h28v28H22z'/><path d='M36 16.2 55.8 36 36 55.8 16.2 36z'/><path d='M36 16.2V0M55.8 36H72M36 55.8V72M16.2 36H0M22 22 0 0M50 22 72 0M50 50l22 22M22 50 0 72'/></g></svg>");
 
 function og({ eyebrow, title, subtitle, arabic, chips }) {
-  const size = title.length > 30 ? 66 : title.length > 20 ? 78 : 96;
+  const size = title.length > 30 ? 64 : title.length > 20 ? 76 : 92;
   return `<!doctype html><html><head><meta charset="utf-8"><style>
+  ${FONTS}
   *{box-sizing:border-box;margin:0}
-  body{width:1200px;height:630px;overflow:hidden;font-family:Inter,'DejaVu Sans',sans-serif;color:#f4f6f3;
-    background:#0d2620 url("data:image/svg+xml,${STAR}") 0 0/120px 120px;}
-  .wrap{position:absolute;inset:0;padding:64px 72px;display:flex;flex-direction:column;
-    background:linear-gradient(100deg,rgba(13,38,32,.97) 0%,rgba(13,38,32,.93) 58%,rgba(13,38,32,.55) 100%)}
-  .brand{display:flex;align-items:center;gap:16px;font-weight:800;font-size:30px;letter-spacing:.2px}
-  .brand b{color:#d9ab3e}
-  .eyebrow{margin-top:46px;font-size:24px;font-weight:700;color:#d9ab3e;text-transform:uppercase;letter-spacing:2px}
-  h1{margin-top:12px;font-size:${size}px;line-height:1.04;font-weight:850;max-width:960px}
-  .sub{margin-top:20px;font-size:32px;line-height:1.3;color:#cfe3da;max-width:900px}
-  .ar{margin-top:14px;font-family:'DejaVu Sans',sans-serif;font-size:28px;color:#9cc8b6;direction:rtl;text-align:left;unicode-bidi:plaintext}
+  body{width:1200px;height:630px;overflow:hidden;font-family:"CM Sans",'DejaVu Sans',sans-serif;color:#fff;
+    background:radial-gradient(620px 420px at 92% 8%,rgba(58,73,214,.6),transparent 70%),radial-gradient(520px 360px at 0% 100%,rgba(245,165,36,.16),transparent 70%),url("data:image/svg+xml,${PATTERN}") 0 0/72px 72px,linear-gradient(160deg,#0b1229 0%,#101a3d 55%,#172456 100%)}
+  .wrap{position:absolute;inset:0;padding:60px 72px;display:flex;flex-direction:column}
+  .brand{display:flex;align-items:center;gap:16px;font-weight:800;font-size:30px;letter-spacing:-.3px}
+  .brand b{color:#f5a524}
+  .eyebrow{margin-top:44px;font-size:22px;font-weight:750;color:#ffc266;text-transform:uppercase;letter-spacing:3px;display:flex;align-items:center;gap:12px}
+  .eyebrow i{width:16px;height:16px;background:#f5a524;clip-path:polygon(50% 0%,61.7% 21.7%,85.4% 14.6%,78.3% 38.3%,100% 50%,78.3% 61.7%,85.4% 85.4%,61.7% 78.3%,50% 100%,38.3% 78.3%,14.6% 85.4%,21.7% 61.7%,0% 50%,21.7% 38.3%,14.6% 14.6%,38.3% 21.7%)}
+  h1{margin-top:14px;font-size:${size}px;line-height:1.06;font-weight:800;letter-spacing:-1.5px;max-width:900px}
+  .sub{margin-top:20px;font-size:30px;line-height:1.35;color:#c9d2ea;max-width:860px}
+  .ar{margin-top:14px;font-size:30px;color:#aeb9d9;direction:rtl;text-align:left;unicode-bidi:plaintext;font-weight:500}
   .chips{margin-top:auto;display:flex;gap:12px;flex-wrap:wrap}
-  .chip{padding:10px 20px;border-radius:999px;background:#0b6e4f;font-size:24px;font-weight:700}
-  .chip.gold{background:#d9ab3e;color:#0d2620}
-  .star{position:absolute;right:-90px;top:120px;width:520px;height:520px;opacity:.9}
+  .chip{padding:10px 20px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);font-size:22px;font-weight:700}
+  .chip.gold{background:#f5a524;border-color:#f5a524;color:#0b1229}
+  .art{position:absolute;right:-120px;top:96px;width:560px;height:560px}
   </style></head><body>
-  <svg class="star" viewBox="0 0 512 512"><path fill="#0b6e4f" d="M256 60 292 148 380 112 344 200 432 236 344 272 380 360 292 324 256 412 220 324 132 360 168 272 80 236 168 200 132 112 220 148Z"/><path fill="none" stroke="#d9ab3e" stroke-width="10" d="M256 110 282 174 346 148 320 212 384 236 320 260 346 324 282 298 256 362 230 298 166 324 192 260 128 236 192 212 166 148 230 174Z"/></svg>
+  <svg class="art" viewBox="0 0 512 512"><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5a524" stop-opacity=".95"/><stop offset="1" stop-color="#f5a524" stop-opacity=".55"/></linearGradient></defs><path fill="url(#a)" d="${MARK.star}"/><path fill="none" stroke="#101a3d" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" d="${MARK.check}" opacity=".9"/><path fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="3" transform="translate(256 256) scale(1.22) translate(-256 -256)" d="${MARK.star}"/></svg>
   <div class="wrap">
     <div class="brand">${logo(58)}<span>Concours <b>Maroc</b></span></div>
-    <div class="eyebrow">${esc(eyebrow)}</div>
+    <div class="eyebrow"><i></i>${esc(eyebrow)}</div>
     <h1>${esc(title)}</h1>
     <div class="sub">${esc(subtitle)}</div>
     ${arabic ? `<div class="ar">${esc(arabic)}</div>` : ''}
@@ -95,7 +99,7 @@ async function svgPng(svg, size, file) {
   await page.screenshot({ path: out(file), omitBackground: true, clip: { x: 0, y: 0, width: size, height: size } });
 }
 await svgPng(svgFile, 32, 'src/root/favicon-32.png');
-await svgPng(svgFile.replace('rx="112"', 'rx="0"'), 180, 'src/root/apple-touch-icon.png');
+await svgPng(svgFile.replace('rx="116"', 'rx="0"'), 180, 'src/root/apple-touch-icon.png');
 await svgPng(svgFile, 192, 'src/img/concours-maroc-icon-192.png');
 await svgPng(svgFile, 512, 'src/img/concours-maroc-icon-512.png');
 await svgPng(svgFile, 512, 'src/img/concours-maroc-logo-512.png');

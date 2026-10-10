@@ -3,7 +3,7 @@ import { raw } from './html.mjs';
 
 export const PATHS = {
   play: 'M8 5v14l11-7z',
-  clock: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m1 5h-2v6l5 3 1-1.7-4-2.3z',
+  clock: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16m1 3h-2v6l5 3 1-1.7-4-2.3z',
   star: 'M12 2l2.5 6.5L21 9.5l-5 4.3 1.6 6.7L12 17l-5.6 3.5L8 13.8l-5-4.3 6.5-1z',
   target: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 4a6 6 0 1 1 0 12 6 6 0 0 1 0-12m0 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4z',
   chart: 'M4 20h16v2H4zM6 10h3v8H6zm5-6h3v14h-3zm5 3h3v11h-3z',
@@ -40,6 +40,11 @@ export const PATHS = {
   share: 'M18 16a3 3 0 0 0-2.4 1.2l-6.7-3.4a3 3 0 0 0 0-1.6l6.7-3.4A3 3 0 1 0 15 7c0 .3 0 .5.1.8L8.4 11.2a3 3 0 1 0 0 3.6l6.7 3.4A3 3 0 1 0 18 16z',
   print: 'M6 2h12v5H6zM4 8h16a2 2 0 0 1 2 2v6h-4v4H6v-4H2v-6a2 2 0 0 1 2-2m4 7v3h8v-3z',
   info: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m1 15h-2v-6h2zm0-8h-2V7h2z',
+  sigma: 'M5 3h14v4h-2V5H8.4l5.2 7-5.2 7H17v-2h2v4H5v-1.6L11 12 5 4.6z',
+  bolt: 'M13 2 4 14h6.5L9.5 22 20 9h-6.5z',
+  flask: 'M9 2h6v2h-1v5.4l5.6 9.4A1.5 1.5 0 0 1 18.3 21H5.7a1.5 1.5 0 0 1-1.3-2.2L10 9.4V4H9z',
+  phone: 'M8 1h8a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2m0 3v15h8V4z',
+  arrow: 'M4 11h12.2l-5.6-5.6L12 4l8 8-8 8-1.4-1.4 5.6-5.6H4z',
 };
 
 export function icon(name, cls) {
@@ -47,7 +52,12 @@ export function icon(name, cls) {
   return raw(`<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"${cls ? ` class="${cls}"` : ''}><path d="${d}"/></svg>`);
 }
 
-/* Brand mark: eight-point zellij star holding an exam sheet with a tick. */
+/* Brand mark: a saffron eight-point zellij star carrying a check mark, on a
+   Majorelle-to-night-blue tile (the seal of a concours passed). */
+export const MARK = {
+  star: 'M324 92 352 160 420 188 392 256 420 324 352 352 324 420 256 392 188 420 160 352 92 324 120 256 92 188 160 160 188 92 256 120Z',
+  check: 'M178 262 232 316 340 204',
+};
 export function logo(size = 34) {
-  return raw(`<svg viewBox="0 0 512 512" width="${size}" height="${size}" aria-hidden="true" focusable="false"><rect width="512" height="512" rx="112" fill="#0d2620"/><path fill="#0b6e4f" d="M256 60 292 148 380 112 344 200 432 236 344 272 380 360 292 324 256 412 220 324 132 360 168 272 80 236 168 200 132 112 220 148Z"/><rect x="196" y="168" width="120" height="152" rx="12" fill="#f4f6f3"/><rect x="216" y="196" width="80" height="12" rx="6" fill="#0b6e4f"/><rect x="216" y="224" width="62" height="12" rx="6" fill="#0b6e4f"/><path fill="none" stroke="#d9ab3e" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M220 274 244 298 296 246"/></svg>`);
+  return raw(`<svg viewBox="0 0 512 512" width="${size}" height="${size}" aria-hidden="true" focusable="false"><defs><linearGradient id="cm-logo-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a37b0"/><stop offset="1" stop-color="#101a3d"/></linearGradient></defs><rect width="512" height="512" rx="116" fill="url(#cm-logo-bg)"/><path fill="#f5a524" d="${MARK.star}"/><path fill="none" stroke="#101a3d" stroke-width="44" stroke-linecap="round" stroke-linejoin="round" d="${MARK.check}"/></svg>`);
 }

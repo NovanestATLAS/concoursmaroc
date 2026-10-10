@@ -7,8 +7,8 @@
   "start_url": "./entrainement/?source=pwa",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f4f6f3",
-  "theme_color": "#0b6e4f",
+  "background_color": "#f5f7fb",
+  "theme_color": "#101a3d",
   "icons": [
     {
       "src": "favicon.svg",

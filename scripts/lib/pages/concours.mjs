@@ -1,7 +1,7 @@
 /* Concours guide pages and the concours directory. */
 import { html, raw, L, esc } from '../html.mjs';
 import { icon } from '../icons.mjs';
-import { linker, breadcrumb, breadcrumbLd, faqLd } from '../layout.mjs';
+import { linker, breadcrumb, breadcrumbLd, faqLd, practiceHref } from '../layout.mjs';
 import { renderBlocks, makeText } from '../blocks.mjs';
 import { t, formatDate } from '../strings.mjs';
 import { GROUPS, BAC, BAC_SHORT } from '../../../content/taxonomy.mjs';
@@ -86,11 +86,10 @@ ${sections.map((s) => html`<li><a href="#${s.id}">${s.h}</a></li>`)}
 ${d.faq && d.faq.length ? html`<li><a href="#faq">${t(lang, 'faq')}</a></li>` : ''}
 <li><a href="#sources">${t(lang, 'sources')}</a></li></ol></details></nav>`;
 
-  const practiceBase = link(`${pfx}entrainement/`);
   const aside = html`<aside><div class="aside-sticky">
 ${toc}
 ${c.practice ? html`<div class="cta-box no-print"><h3>${x.practiceAside}</h3><p>${x.practiceAsideText}</p>
-<div class="btn-row"><a class="btn sm" href="${practiceBase}?concours=${c.id}">${icon('play')} ${t(lang, 'practice')}</a><a class="btn sm ghost" href="${practiceBase}?concours=${c.id}#/mock">${icon('clock')} ${t(lang, 'mock')}</a></div></div>` : ''}
+<div class="btn-row"><a class="btn sm" href="${practiceHref(link, pfx, '', c.id)}">${icon('play')} ${t(lang, 'practice')}</a><a class="btn sm ghost" href="${practiceHref(link, pfx, 'mock', c.id)}">${icon('clock')} ${t(lang, 'mock')}</a></div></div>` : ''}
 <div class="card" style="padding:14px 16px"><strong>${x.tools}</strong><ul class="checklist" style="margin:.5em 0 0;font-size:var(--fs-sm)">
 <li><a href="${link(pfx + 'outils/calcul-note-bac/')}">${x.toolNote}</a></li>
 <li><a href="${link(pfx + 'outils/orientation-apres-bac/')}?concours=${c.id}">${x.toolOrient}</a></li>
@@ -179,7 +178,7 @@ export function buildDirectory(site, all, lang) {
 ${GROUPS.map((g) => {
   const items = list.filter((c) => c.group === g.id);
   if (!items.length) return '';
-  return html`<section class="section" data-group-section="${g.id}" style="padding-top:8px"><div class="section-head"><h2 id="${g.id}">${g[lang + 'Long']}</h2></div><div class="grid cols-3">${items.map((c) => concoursCard(c, lang, link))}</div></section>`;
+  return html`<section class="section" data-group-section="${g.id}" style="padding-top:8px"><div class="section-head"><h2 id="${g.id}" class="group-title" data-group="${g.id}"><span class="g-ico">${icon(g.icon)}</span><span>${g[lang + 'Long']}</span><span class="g-count">${items.length}</span></h2></div><div class="grid cols-3">${items.map((c) => concoursCard(c, lang, link))}</div></section>`;
 })}
 <p class="muted" id="f-none" hidden>${x.none}</p>
 </div>`;

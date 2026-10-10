@@ -6,6 +6,7 @@ import { icon } from '../icons.mjs';
 import { linker, breadcrumb, breadcrumbLd, faqLd } from '../layout.mjs';
 import { parseFrontMatter, markdown } from '../markdown.mjs';
 import { t, formatDate } from '../strings.mjs';
+import { hue } from '../art.mjs';
 
 const TXT = {
   fr: { guides: 'Guides', h1: 'Guides pratiques pour réussir son orientation et ses concours', lead: 'Méthodes, démarches et conseils concrets, de la candidature au jour du concours.',
@@ -75,7 +76,7 @@ ${g.meta.lead ? html`<p class="lead">${g.meta.lead}</p>` : ''}
     alternate: `${lang === 'ar' ? '' : 'ar/'}guides/`,
     jsonld: [breadcrumbLd(site, crumbs)],
     body: html`${breadcrumb(lang, link, crumbs)}<div class="container"><header class="page-head"><span class="eyebrow">${x.guides}</span><h1>${x.h1}</h1><p class="lead">${x.lead}</p></header>
-<div class="grid cols-3" style="margin-bottom:30px">${guides.map((g) => html`<a class="card path-card" href="${link(`${pfx}guides/${g.slug}/`)}"><div class="card-top"><span class="card-ico">${icon(g.meta.icon || 'book')}</span><span class="card-title">${g.meta.short || g.meta.title}</span></div><p class="card-sub">${g.meta.description}</p></a>`)}</div></div>`,
+<div class="grid cols-3" style="margin-bottom:30px">${guides.map((g, i) => html`<a class="card path-card guide-card ${hue(i)}" href="${link(`${pfx}guides/${g.slug}/`)}"><div class="cover">${icon(g.meta.icon || 'book')}</div><div class="g-body"><span class="card-title">${g.meta.short || g.meta.title}</span><p class="card-sub">${g.meta.description}</p></div></a>`)}</div></div>`,
   });
   return pages;
 }

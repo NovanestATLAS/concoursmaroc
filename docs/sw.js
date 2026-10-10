@@ -1,9 +1,9 @@
 /* Concours Maroc — service worker.
  * Network-first for pages (always fresh when online), cache-first for static
  * assets and question banks (instant and offline after the first visit). */
-var VERSION = '1e2cd9bd2674';
+var VERSION = '93266a0edf79';
 var CACHE = 'cm-' + VERSION;
-var PRECACHE = ["ar/entrainement/index.html","ar/index.html","assets/css/concours-maroc.css","assets/css/entrainement.css","assets/js/annuaire.js","assets/js/echeances.js","assets/js/entrainement/app.js","assets/js/entrainement/data-loader.js","assets/js/entrainement/i18n.js","assets/js/entrainement/quiz-engine.js","assets/js/entrainement/stats.js","assets/js/entrainement/storage.js","assets/js/entrainement/tts.js","assets/js/entrainement/ui.js","assets/js/entrainement/utils.js","assets/js/outils/calcul-note-bac.js","assets/js/outils/checklist-dossier.js","assets/js/outils/commun.js","assets/js/outils/orientation-apres-bac.js","assets/js/outils/planning-revision.js","assets/js/outils/simulateur-qcm.js","assets/js/site.js","data/concours.json","data/i18n/ar.json","data/i18n/fr.json","data/manifest.json","data/outils.json","data/sources.json","entrainement/index.html","favicon.svg","index.html","manifest.webmanifest","offline.html"];
+var PRECACHE = ["ar/entrainement/index.html","ar/index.html","assets/css/concours-maroc.css","assets/css/entrainement.css","assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2","assets/fonts/readex-pro-arabic-wght-normal.woff2","assets/js/annuaire.js","assets/js/echeances.js","assets/js/entrainement/app.js","assets/js/entrainement/data-loader.js","assets/js/entrainement/i18n.js","assets/js/entrainement/quiz-engine.js","assets/js/entrainement/stats.js","assets/js/entrainement/storage.js","assets/js/entrainement/tts.js","assets/js/entrainement/ui.js","assets/js/entrainement/utils.js","assets/js/outils/calcul-note-bac.js","assets/js/outils/checklist-dossier.js","assets/js/outils/commun.js","assets/js/outils/orientation-apres-bac.js","assets/js/outils/planning-revision.js","assets/js/outils/simulateur-qcm.js","assets/js/site.js","data/concours.json","data/i18n/ar.json","data/i18n/fr.json","data/manifest.json","data/outils.json","data/sources.json","entrainement/index.html","favicon.svg","index.html","manifest.webmanifest","offline.html"];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(

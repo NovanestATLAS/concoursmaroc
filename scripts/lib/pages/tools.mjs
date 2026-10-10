@@ -7,6 +7,7 @@ import { t, formatDate, STR } from '../strings.mjs';
 import { guidePath } from './concours.mjs';
 import { BAC, GROUPS } from '../../../content/taxonomy.mjs';
 import { CALENDAR } from '../../../content/calendar.mjs';
+import { hue } from '../art.mjs';
 
 const TYPE = {
   fr: { inscription: 'Inscriptions', ecrit: 'Épreuves', resultats: 'Résultats', deadline: 'Date limite', estimation: 'Estimation', annonce: 'Annoncé', officiel: 'Officiel' },
@@ -339,7 +340,7 @@ export function buildToolsPages(site, all, lang) {
       path: p, lang, title: x.toolsTitle, description: x.toolsDesc, section: 'navTools', alternate: `${lang === 'ar' ? '' : 'ar/'}outils/`,
       jsonld: [breadcrumbLd(site, crumbs)],
       body: html`${breadcrumb(lang, link, crumbs)}<div class="container"><header class="page-head"><span class="eyebrow">${x.tools}</span><h1>${x.toolsH}</h1><p class="lead">${x.toolsLead}</p></header>
-<div class="grid cols-3" style="margin-bottom:30px">${TOOLS.map((tool) => html`<a class="card path-card" href="${link(`${pfx}outils/${tool}/`)}"><div class="card-top"><span class="card-ico">${icon(x[tool].icon)}</span><span class="card-title">${x[tool].short}</span></div><p class="card-sub">${x[tool].desc}</p></a>`)}</div></div>`,
+<div class="grid cols-3" style="margin-bottom:30px">${TOOLS.map((tool, i) => html`<a class="card path-card ${hue(i)}" href="${link(`${pfx}outils/${tool}/`)}"><div class="card-top"><span class="card-ico">${icon(x[tool].icon)}</span><span class="card-title">${x[tool].short}</span></div><p class="card-sub">${x[tool].desc}</p></a>`)}</div></div>`,
     });
   }
 

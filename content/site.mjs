@@ -21,7 +21,7 @@ export default {
   repoUrl: 'https://github.com/NovanestATLAS/concoursmaroc',
   // Optional public contact address. Empty = contact goes through GitHub issues.
   contactEmail: '',
-  themeColor: '#0b6e4f',
+  themeColor: '#101a3d',
 
   // ---- services you will add later (leave empty until then) ----
   // Google Search Console HTML-tag verification code (content="..." value only).

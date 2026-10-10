@@ -58,7 +58,7 @@
   // ------------------------------------------------------------ status bar
   function syncStatusBar() {
     var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-    var color = dark ? '#081913' : '#f4f6f3';   // --bg of the header, per theme
+    var color = dark ? '#0f1730' : '#ffffff';   // background of the header, per theme
     try {
       if (global.StatusBar && typeof global.StatusBar.backgroundColorByHexString === 'function') {
         // cordova-plugin-statusbar, when installed: it also needs the icon style

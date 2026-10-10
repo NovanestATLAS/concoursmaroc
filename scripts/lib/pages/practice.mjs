@@ -5,6 +5,7 @@ import { linker, breadcrumb, breadcrumbLd, linkMode } from '../layout.mjs';
 import { t } from '../strings.mjs';
 import { SUBJECTS, GROUPS } from '../../../content/taxonomy.mjs';
 import { qcmPath } from './qcm.mjs';
+import { hue } from '../art.mjs';
 
 const TXT = {
   fr: {
@@ -58,7 +59,7 @@ export function buildPracticePage(site, all, lang, banks) {
 </div>
 <div class="sheet-back" id="sheet"></div>
 <div class="container practice-extra">
-<section class="section"><h2>${x.features}</h2><div class="grid cols-3">${x.feats.map(([ic, h, p]) => html`<div class="card"><div class="card-top"><span class="card-ico">${icon(ic)}</span><span class="card-title">${h}</span></div><p class="card-sub">${p}</p></div>`)}</div></section>
+<section class="section"><h2>${x.features}</h2><div class="grid cols-3">${x.feats.map(([ic, h, p], i) => html`<div class="card ${hue(i)}"><div class="card-top"><span class="card-ico">${icon(ic)}</span><span class="card-title">${h}</span></div><p class="card-sub">${p}</p></div>`)}</div></section>
 <section class="section"><h2>${x.byConcours}</h2>
 ${GROUPS.map((g) => {
   const items = practiceList.filter((c) => c.group === g.id);

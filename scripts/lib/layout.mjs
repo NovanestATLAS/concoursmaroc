@@ -18,6 +18,15 @@ let LINK_MODE = 'site';
 export function setLinkMode(mode) { LINK_MODE = mode; }
 export function linkMode() { return LINK_MODE; }
 
+/* Link to a screen of the trainer ('' = its home, 'mock', 'setup'…), optionally
+   for one concours. Website: entrainement/?concours=ensa#/mock; app (routes of
+   the shell): #/entrainement/mock?concours=ensa. */
+export function practiceHref(link, pfx, screen = '', concours = '') {
+  const q = concours ? `?concours=${concours}` : '';
+  const base = link(`${pfx}entrainement/`);
+  return LINK_MODE === 'app' ? `${base}${screen}${q}` : `${base}${q}${screen ? `#/${screen}` : ''}`;
+}
+
 const APP_ASSET_MAP = [
   [/^assets\/css\//, 'css/'],
   [/^assets\/js\//, 'js/'],
@@ -115,7 +124,7 @@ function footer(lang, link, site, footerLinks) {
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="${link(p)}" style="color:#fff">${logo(30)}<span>Concours <b style="color:#d9ab3e">Maroc</b></span></a>
+        <a class="brand" href="${link(p)}">${logo(32)}<span>Concours <b>Maroc</b></span></a>
         <p>${t(lang, 'footerAbout')}</p>
       </div>
       ${col(t(lang, 'footerConcours'), footerLinks.postbac)}
@@ -192,6 +201,8 @@ ${site.googleSiteVerification ? html`<meta name="google-site-verification" conte
 <link rel="icon" href="${root}favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="${root}apple-touch-icon.png">
 <link rel="manifest" href="${root}manifest.webmanifest">
+<link rel="preload" href="${root}assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+${lang === 'ar' ? html`<link rel="preload" href="${root}assets/fonts/readex-pro-arabic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>` : ''}
 <link rel="stylesheet" href="${root}assets/css/concours-maroc.css?v=${site.assetVersion || '1'}">
 ${(page.styles || []).map((s) => html`<link rel="stylesheet" href="${root}${s}?v=${site.assetVersion || '1'}">`)}
 <script>${raw(themeInit)}</script>

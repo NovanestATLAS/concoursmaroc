@@ -82,7 +82,7 @@
         <icon density="xxhdpi"  src="res/icon/android/mipmap-xxhdpi.png" />
         <icon density="xxxhdpi" src="res/icon/android/mipmap-xxxhdpi.png" />
         <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-icon.png" />
-        <preference name="AndroidWindowSplashScreenBackground" value="#0B6E4F" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#101A3D" />
         -->
     </platform>
 

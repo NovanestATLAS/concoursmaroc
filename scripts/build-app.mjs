@@ -17,7 +17,8 @@
  *   data/             question banks, concours data, pages.json, search
  *   i18n/             trainer strings (fr, ar)
  *   pages/            one HTML fragment per page of the website
- *   img/, fonts/      unchanged assets of the first version
+ *   img/              icons of the app
+ *   fonts/            Plus Jakarta Sans and Readex Pro (SIL OFL), as on the site
  *
  * Links inside pages are routes of the shell (#/concours/ensa/), so nothing
  * depends on directory index files, which the Cordova WebView does not serve.
@@ -355,6 +356,7 @@ async function main() {
   for (const f of fs.readdirSync(path.join(ROOT, 'src/js/outils'))) copy(`src/js/outils/${f}`, `js/outils/${f}`);
   for (const f of fs.readdirSync(path.join(ROOT, 'src/app/img'))) copy(`src/app/img/${f}`, `img/${f}`);
   copy('src/app/fonts/README.md', 'fonts/README.md');
+  for (const f of fs.readdirSync(path.join(ROOT, 'src/fonts'))) copy(`src/fonts/${f}`, `fonts/${f}`);
 
   // Data, translations, search indexes.
   const { files: data, manifest } = dataFiles(site, all, banks, ROOT);

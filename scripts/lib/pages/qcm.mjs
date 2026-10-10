@@ -5,6 +5,7 @@ import { icon } from '../icons.mjs';
 import { linker, breadcrumb, breadcrumbLd } from '../layout.mjs';
 import { t } from '../strings.mjs';
 import { SUBJECTS } from '../../../content/taxonomy.mjs';
+import { subjectArt } from '../art.mjs';
 
 const PER_PAGE = 30;
 const DIFF = { fr: { beginner: 'Débutant', intermediate: 'Intermédiaire', advanced: 'Avancé' }, ar: { beginner: 'مبتدئ', intermediate: 'متوسط', advanced: 'متقدم' } };
@@ -145,7 +146,7 @@ export function buildQcmPages(site, all, lang, banks) {
     path: ip, lang, title: x.idxTitle, description: x.idxDesc, section: 'navPractice', alternate: `${lang === 'ar' ? '' : 'ar/'}qcm/`,
     jsonld: [breadcrumbLd(site, crumbs)],
     body: html`${breadcrumb(lang, link, crumbs)}<div class="container"><header class="page-head"><span class="eyebrow">${x.qcm}</span><h1>${x.idxH1}</h1><p class="lead">${x.idxLead}</p></header>
-<div class="grid cols-3" style="margin-bottom:30px">${subjects.map((s) => html`<a class="card path-card" href="${link(`${pfx}qcm/${s.slug}/`)}"><div class="card-top"><span class="card-ico">${icon('doc')}</span><span class="card-title">${s[lang]}</span></div><p class="card-sub">${banks[s.id].length} ${lang === 'ar' ? 'سؤال' : 'questions'}</p></a>`)}</div></div>`,
+<div class="grid cols-3" style="margin-bottom:30px">${subjects.map((s) => html`<a class="card path-card ${subjectArt(s.id).cls}" href="${link(`${pfx}qcm/${s.slug}/`)}"><div class="card-top"><span class="card-ico">${subjectArt(s.id).ico}</span><span class="card-title">${s[lang]}</span></div><p class="card-sub">${banks[s.id].length} ${lang === 'ar' ? 'سؤال' : 'questions'}</p></a>`)}</div></div>`,
   });
   return pages;
 }

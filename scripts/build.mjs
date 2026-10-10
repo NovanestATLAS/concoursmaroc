@@ -128,6 +128,7 @@ async function main() {
   copyDir(path.join(ROOT, 'src/css'), path.join(OUT, 'assets/css'));
   copyDir(path.join(ROOT, 'src/js'), path.join(OUT, 'assets/js'));
   copyDir(path.join(ROOT, 'src/img'), path.join(OUT, 'assets/img'));
+  copyDir(path.join(ROOT, 'src/fonts'), path.join(OUT, 'assets/fonts'));
   copyDir(path.join(ROOT, 'src/root'), OUT); // favicon, icons, etc.
 
   // Data for the practice app and the tools, search indexes
@@ -155,7 +156,7 @@ async function main() {
     }
   })(OUT);
   const version = hash.digest('hex').slice(0, 12);
-  const precache = files.filter((f) => /^(assets\/(css|js)\/|data\/(manifest|concours|outils|sources)\.json|data\/i18n\/|favicon\.svg|manifest\.webmanifest|entrainement\/index\.html|ar\/entrainement\/index\.html|index\.html|ar\/index\.html|offline\.html)/.test(f));
+  const precache = files.filter((f) => /^(assets\/(css|js)\/|assets\/fonts\/.*\.woff2$|data\/(manifest|concours|outils|sources)\.json|data\/i18n\/|favicon\.svg|manifest\.webmanifest|entrainement\/index\.html|ar\/entrainement\/index\.html|index\.html|ar\/index\.html|offline\.html)/.test(f));
   const sw = fs.readFileSync(path.join(ROOT, 'src/sw.template.js'), 'utf8')
     .replace('__VERSION__', version)
     .replace('__PRECACHE__', JSON.stringify(precache));

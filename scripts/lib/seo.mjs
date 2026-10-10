@@ -35,7 +35,7 @@ export function manifestJson(site) {
     start_url: './entrainement/?source=pwa',
     scope: './',
     display: 'standalone',
-    background_color: '#f4f6f3',
+    background_color: '#f5f7fb',
     theme_color: site.themeColor,
     icons: [
       { src: 'favicon.svg', sizes: 'any', type: 'image/svg+xml' },
