@@ -1,0 +1,58 @@
+# Vérifie le site publié, depuis Internet : DNS du domaine, HTTPS, et ads.txt
+# tel que le robot AdSense le cherche (domaine racine, redirections suivies).
+# Lancement manuel (onglet Actions → « Vérification du site en ligne » → Run
+# workflow) et chaque lundi matin.
+name: Vérification du site en ligne
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: docs/CNAME
+          sparse-checkout-cone-mode: false
+
+      - name: Domaine et DNS
+        run: |
+          HOST=$(tr -d '[:space:]' < docs/CNAME)
+          ROOT=${HOST#www.}
+          echo "HOST=$HOST" >> "$GITHUB_ENV"
+          echo "ROOT=$ROOT" >> "$GITHUB_ENV"
+          command -v dig >/dev/null || sudo apt-get install -y -qq dnsutils >/dev/null
+          echo "$ROOT A:";        dig +short "$ROOT" A
+          echo "$ROOT AAAA:";     dig +short "$ROOT" AAAA
+          echo "$HOST CNAME:";    dig +short "$HOST" CNAME
+          echo "Serveurs de noms:"; dig +short "$ROOT" NS
+
+      - name: Page d'accueil et certificat HTTPS
+        run: |
+          curl -sS -o /dev/null -w "https://$HOST/ -> %{http_code}\n" --max-time 30 "https://$HOST/"
+          for h in "$HOST" "$ROOT"; do
+            echo "== certificat servi pour $h"
+            echo | openssl s_client -connect "$h:443" -servername "$h" 2>/dev/null \
+              | openssl x509 -noout -subject -issuer -enddate -ext subjectAltName || echo "(pas de certificat valide pour $h)"
+          done
+
+      - name: ads.txt, comme le robot AdSense
+        run: |
+          ok=0
+          for u in "http://$ROOT/ads.txt" "https://$ROOT/ads.txt" "https://$HOST/ads.txt"; do
+            echo "== $u"
+            curl -sSIL --max-time 30 "$u" 2>&1 | grep -iE '^(HTTP/|location:|curl:)' || true
+            body=$(curl -sSL --max-time 30 "$u" 2>/dev/null || true)
+            echo "$body"
+            if echo "$body" | grep -q '^google\.com, pub-'; then
+              [ "$u" = "http://$ROOT/ads.txt" ] || [ "$u" = "https://$ROOT/ads.txt" ] && ok=1
+            fi
+          done
+          [ "$ok" = 1 ] || { echo "::error::ads.txt n'est pas accessible depuis le domaine racine $ROOT"; exit 1; }
+          echo "ads.txt est accessible depuis $ROOT : AdSense le trouvera à son prochain passage."
