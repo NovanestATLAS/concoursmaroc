@@ -79,12 +79,32 @@ cordova plugin add cordova-plugin-tts-advanced@0.5.3
 cordova plugin add cordova-plugin-consent@3.0.0-alpha.9
 cordova plugin add admob-plus-cordova@2.0.0-alpha.19 --save \
   --variable APP_ID_ANDROID=ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN
+cordova plugin add cordova-launch-review@4.2.0
+cordova plugin add ./local-plugins/cordova-plugin-play-update
 ```
+
+Les deux derniers plugins servent à Google Play :
+
+- **cordova-launch-review** : la fenêtre d’avis de Google Play (API In-App
+  Review), demandée après une session réussie (≥ 60 %), à partir de la
+  4e session et du 3e jour d’utilisation, au plus une fois tous les 90 jours.
+  Google décide lui-même de l’afficher. Bouton « Noter l’application » dans
+  les paramètres.
+- **cordova-plugin-play-update** (dossier `local-plugins/` de ce dépôt, à
+  copier à la racine du projet) : quand une version plus récente est publiée
+  sur Google Play, une fenêtre propose « Mettre à jour » (écran de mise à jour
+  de Google Play) ou « Plus tard » (3 jours). Bouton « Rechercher une mise à
+  jour » dans les paramètres. Il utilise la bibliothèque officielle
+  `com.google.android.play:app-update` ; l’ancien plugin `cordova-in-app-update`
+  n’est pas utilisable (il impose `compileSdkVersion 28`).
+
+Ces deux fonctions n’agissent que sur une application installée depuis
+Google Play (test interne compris), pas sur un APK installé à la main.
 
 Plus simple : copiez `package.json.exemple` sous le nom `package.json` à la
 racine du projet (mettez-y votre App ID AdMob), puis `npm install` et
-`cordova prepare android` installent d’un coup la plate-forme et les trois
-plugins aux bonnes versions. Vérifié le 10/10/2026 avec Cordova 13 : projet
+`cordova prepare android` installent d’un coup la plate-forme et les cinq
+plugins aux bonnes versions (copiez aussi le dossier `local-plugins/`). Vérifié le 10/10/2026 avec Cordova 13 : projet
 `com.novanest.concoursmaroc`, API 36, icônes adaptatives et écran de
 démarrage générés, un seul `APPLICATION_ID` dans le manifeste.
 

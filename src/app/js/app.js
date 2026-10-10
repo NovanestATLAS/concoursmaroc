@@ -12,6 +12,7 @@
   var Store = global.CM.store;
   var TTS = global.CM.tts;
   var Ads = global.CM.ads;
+  var Play = global.CM.play;
   var booted = false;
 
   function tr(fr, ar) { return Shell.lang() === 'ar' ? ar : fr; }
@@ -110,6 +111,8 @@
       if (!sum || handled[sum.sessionId]) return;
       handled[sum.sessionId] = true;
       Ads.noteSessionCompleted();
+      // Google Play's review card replaces the interstitial that time
+      if (Play && Play.sessionFinished(sum)) return;
       setTimeout(function () {
         Ads.maybeShowInterstitial({
           questionsAnswered: (sum.total || 0) - (sum.skipped || 0),
@@ -164,6 +167,10 @@
   });
 
   // ------------------------------------------------------------ lifecycle
+  document.addEventListener('resume', function () {
+    if (Play) Play.checkUpdate();
+  }, false);
+
   document.addEventListener('pause', function () {
     if (TTS) TTS.stop();
     var Q = global.CM.quiz;
@@ -175,6 +182,7 @@
     withTimeout(TTS.init(Store.getProfile().tts), 6000, 'tts')
       .then(function (s) { if (s && s.available) console.info('[app] tts prête (' + s.engine + ', ' + s.voiceCount + ' voix)'); })
       .catch(function (e) { console.warn('[app] tts indisponible :', e.message); });
+    if (Play) setTimeout(function () { Play.checkUpdate(); }, 4000);
     withTimeout(Ads.init(Store.getProfile().ads), 10000, 'ads')
       .then(syncBanner)
       .catch(function (e) { console.warn('[app] publicité indisponible :', e.message); });
@@ -278,6 +286,22 @@
       consent.hidden = !(global.consent && typeof global.consent.requestInfoUpdate === 'function');
       consent.addEventListener('click', function () {
         Ads.showConsentForm().then(function () { adsText(); toast(tr('Choix enregistrés', 'تم حفظ اختياراتك')); });
+      });
+    }
+
+    var rate = root.querySelector('#set-rate');
+    if (rate && Play) {
+      rate.hidden = !(global.LaunchReview || global.PlayUpdate);
+      rate.addEventListener('click', function () { Play.openStorePage(); });
+    }
+    var upd = root.querySelector('#set-update');
+    if (upd && Play) {
+      upd.hidden = !Play.updateAvailable();
+      upd.addEventListener('click', function () {
+        Play.checkUpdate(true).then(function (info) {
+          if (!info) toast(tr('Vérification impossible pour le moment', 'تعذر التحقق حاليًا'));
+          else if (info.availability !== 'available' && info.availability !== 'in_progress') toast(tr('Vous avez la dernière version', 'لديك أحدث نسخة'));
+        });
       });
     }
 

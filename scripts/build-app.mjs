@@ -95,6 +95,7 @@ ${card(ar ? 'التمرين' : 'Entraînement', html`<p>${ar ? 'النتائج �
 ${card(ar ? 'الإعلانات والخصوصية' : 'Publicité et confidentialité', html`<p class="muted" id="set-ads-status"></p>
 <div class="btn-row"><button class="btn sm" type="button" id="set-consent" hidden>${ar ? 'تعديل اختيارات الخصوصية' : 'Modifier mes choix de confidentialité'}</button><a class="btn sm ghost" href="${link(pfx + 'confidentialite/')}">${ar ? 'سياسة الخصوصية' : 'Politique de confidentialité'}</a></div>`)}
 ${card(ar ? 'حول التطبيق' : 'À propos', html`<p>${ar ? 'نسخة المحتوى:' : 'Version du contenu :'} <span id="set-version"></span></p>
+<div class="btn-row" style="margin-bottom:10px"><button class="btn sm" type="button" id="set-rate" hidden>${ar ? 'قيّم التطبيق على Google Play' : 'Noter l’application sur Google Play'}</button><button class="btn sm ghost" type="button" id="set-update" hidden>${ar ? 'البحث عن تحديث' : 'Rechercher une mise à jour'}</button></div>
 <div class="btn-row"><a class="btn sm ghost" href="${link(pfx + 'a-propos/')}">${ar ? 'من نحن' : 'À propos'}</a><a class="btn sm ghost" href="${link(pfx + 'sources/')}">${ar ? 'المصادر' : 'Sources'}</a><a class="btn sm ghost" href="${link(pfx + 'contact/')}">${ar ? 'اتصل بنا' : 'Contact'}</a></div>
 <p class="muted" style="font-size:var(--fs-sm);margin-top:10px">${t(lang, 'disclaimerShort')}</p>`)}
 </div>`;
@@ -157,7 +158,7 @@ function shellHtml(version) {
     'js/boot-guard.js', 'cordova.js', 'js/loader.js',
     'js/utils.js', 'js/storage.js', 'js/i18n.js', 'js/data-loader.js', 'js/tts-service.js',
     'js/ads-config.js', 'js/ads-service.js', 'js/stats.js', 'js/quiz-engine.js', 'js/ui.js', 'js/entrainement.js',
-    'js/site.js', 'js/router.js', 'js/app.js',
+    'js/site.js', 'js/router.js', 'js/play-service.js', 'js/app.js',
   ];
   return `<!DOCTYPE html>
 <!-- Concours Maroc — application Android (Apache Cordova). Généré par
@@ -348,6 +349,7 @@ async function main() {
     'js/entrainement.js': 'src/js/entrainement/app.js',
     'js/site.js': 'src/js/site.js',
     'js/router.js': 'src/app/js/router.js',
+    'js/play-service.js': 'src/app/js/play-service.js',
     'js/app.js': 'src/app/js/app.js',
     'js/echeances.js': 'src/js/echeances.js',
     'js/annuaire.js': 'src/js/annuaire.js',

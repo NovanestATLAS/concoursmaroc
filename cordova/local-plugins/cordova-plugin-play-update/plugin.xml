@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-play-update" version="1.0.0">
+    <name>Play Update</name>
+    <description>Google Play in-app updates: tells the app when a newer version is on Google Play and opens Google Play's update screen.</description>
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova-android" version=">=12.0.0" />
+    </engines>
+
+    <js-module src="www/playUpdate.js" name="PlayUpdate">
+        <clobbers target="PlayUpdate" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PlayUpdate">
+                <param name="android-package" value="com.novanest.playupdate.PlayUpdate" />
+            </feature>
+        </config-file>
+        <!-- Google Play In-App Updates (not the deprecated play-core library) -->
+        <framework src="com.google.android.play:app-update:2.1.0" />
+        <source-file src="src/android/PlayUpdate.java" target-dir="src/com/novanest/playupdate" />
+    </platform>
+</plugin>

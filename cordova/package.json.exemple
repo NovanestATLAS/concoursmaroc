@@ -13,7 +13,9 @@
   "devDependencies": {
     "admob-plus-cordova": "2.0.0-alpha.19",
     "cordova-android": "15.1.0",
+    "cordova-launch-review": "4.2.0",
     "cordova-plugin-consent": "3.0.0-alpha.9",
+    "cordova-plugin-play-update": "file:local-plugins/cordova-plugin-play-update",
     "cordova-plugin-tts-advanced": "0.5.3"
   },
   "cordova": {
@@ -25,7 +27,9 @@
       "cordova-plugin-consent": {},
       "admob-plus-cordova": {
         "APP_ID_ANDROID": "ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN"
-      }
+      },
+      "cordova-launch-review": {},
+      "cordova-plugin-play-update": {}
     }
   }
 }

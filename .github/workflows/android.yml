@@ -1,0 +1,63 @@
+# Compiles the Android app as Google Play will get it: cordova-android 15
+# (API 36) with every plugin (AdMob, consent, read-aloud, review prompt,
+# in-app updates), the icons and the www/ of the repository. Uses Google's
+# demo AdMob App ID and test ad units; the result is a debug APK to install
+# on a phone (Actions tab → this run → Artifacts).
+name: Application Android (APK de test)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'cordova/**'
+      - 'src/app/**'
+      - '.github/workflows/android.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: SDK Android 36
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "build-tools;36.0.0" > /dev/null
+
+      - name: Projet Cordova (fichiers du dossier cordova/)
+        run: |
+          mkdir app && cd app
+          cp ../cordova/config.xml.exemple config.xml
+          cp -r ../cordova/res res
+          cp -r ../cordova/local-plugins local-plugins
+          # App ID de démonstration de Google : jamais l'identifiant de production ici
+          sed 's/ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN/ca-app-pub-3940256099942544~3347511713/' ../cordova/package.json.exemple > package.json
+          unzip -q ../cordova/www_concours_maroc.zip
+          npm install -g cordova@13.0.0
+          npm install --no-audit --no-fund
+
+      - name: Compilation (debug)
+        working-directory: app
+        run: |
+          cordova prepare android
+          cordova build android --debug
+          ls -la platforms/android/app/build/outputs/apk/debug/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: concours-maroc-debug-apk
+          path: app/platforms/android/app/build/outputs/apk/debug/*.apk
+          retention-days: 14
