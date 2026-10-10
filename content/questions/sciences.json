@@ -25,7 +25,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -76,7 +76,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -127,7 +127,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -178,7 +178,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -229,7 +229,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -280,7 +280,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -331,7 +331,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -382,7 +382,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -433,7 +433,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -484,7 +484,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -535,7 +535,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -586,7 +586,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -637,7 +637,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -688,7 +688,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -739,7 +739,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -790,7 +790,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -841,7 +841,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -851,26 +851,26 @@
     "fr": {
      "text": "Qu'est-ce que la désertification ?",
      "choices": [
-      "La dégradation des terres dans les zones arides et semi-arides",
+      "La dégradation des terres dans les zones arides, semi-arides et subhumides sèches",
       "L'extension naturelle des forêts",
       "La formation de nouveaux lacs",
       "L'augmentation des précipitations"
      ],
      "correctIndex": 0,
-     "correction": "C'est la dégradation des terres dans les zones arides et semi-arides.",
-     "explanation": "Elle résulte de la combinaison de facteurs climatiques et d'activités humaines comme le surpâturage, la déforestation et les pratiques culturales inadaptées. Elle réduit durablement la productivité des sols."
+     "correction": "C'est la dégradation des terres dans les zones arides, semi-arides et subhumides sèches.",
+     "explanation": "Selon la Convention des Nations unies sur la lutte contre la désertification, elle résulte de la combinaison de variations climatiques et d'activités humaines comme le surpâturage, la déforestation et les pratiques culturales inadaptées. Elle réduit durablement la productivité des sols."
     },
     "ar": {
      "text": "ما هو التصحر؟",
      "choices": [
-      "تدهور الأراضي في المناطق الجافة وشبه الجافة",
+      "تدهور الأراضي في المناطق القاحلة وشبه القاحلة والجافة شبه الرطبة",
       "الامتداد الطبيعي للغابات",
       "تكوّن بحيرات جديدة",
       "ارتفاع التساقطات"
      ],
      "correctIndex": 0,
-     "correction": "هو تدهور الأراضي في المناطق الجافة وشبه الجافة.",
-     "explanation": "ينتج التصحر عن تضافر عوامل مناخية وأنشطة بشرية كالرعي الجائر واجتثاث الغابات والممارسات الزراعية غير الملائمة، ويقلّص إنتاجية التربة بشكل دائم."
+     "correction": "هو تدهور الأراضي في المناطق القاحلة وشبه القاحلة والجافة شبه الرطبة.",
+     "explanation": "حسب اتفاقية الأمم المتحدة لمكافحة التصحر، ينتج التصحر عن تضافر تغيرات مناخية وأنشطة بشرية كالرعي الجائر واجتثاث الغابات والممارسات الزراعية غير الملائمة، ويقلّص إنتاجية التربة بشكل دائم."
     }
    }
   },
@@ -892,7 +892,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -943,7 +943,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -994,7 +994,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1045,7 +1045,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1096,7 +1096,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1116,7 +1116,7 @@
      "explanation": "Ce format restitue le document de façon identique quel que soit l'appareil utilisé, ce qui explique son usage courant pour les pièces administratives et les convocations de concours."
     },
     "ar": {
-     "text": "ماذا تعني امتداد الملف «.pdf»؟",
+     "text": "ماذا يعني امتداد الملف «.pdf»؟",
      "choices": [
       "صيغة وثيقة تحافظ على تنسيق الصفحة",
       "ملف موسيقي",
@@ -1147,7 +1147,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1198,7 +1198,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1249,7 +1249,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1300,7 +1300,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1351,7 +1351,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1402,7 +1402,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1453,7 +1453,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1475,13 +1475,13 @@
     "ar": {
      "text": "ما الذي يجب التحقق منه قبل استعمال معلومة من الإنترنت في عمل جدي؟",
      "choices": [
-      "المصدر وتاريخه وإمكانية مقاطعته بمصادر أخرى",
+      "المصدر وتاريخه وإمكانية التحقق منه بمقارنته بمصادر أخرى",
       "عدد الإعجابات",
       "طول النص",
       "لون الموقع"
      ],
      "correctIndex": 0,
-     "correction": "يجب التحقق من المصدر وتاريخه وإمكانية مقاطعته.",
+     "correction": "يجب التحقق من المصدر وتاريخه وإمكانية مقارنته بمصادر أخرى.",
      "explanation": "المعلومة الموثوقة مؤرخة ومنسوبة إلى جهة معروفة ومؤكَّدة بمصدر مستقل واحد على الأقل. أما رواج المنشور فلا يقول شيئًا عن دقته."
     }
    }
@@ -1504,7 +1504,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1555,7 +1555,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1606,7 +1606,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1657,7 +1657,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1708,7 +1708,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1759,7 +1759,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1810,7 +1810,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1861,7 +1861,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1912,7 +1912,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1963,7 +1963,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -1985,13 +1985,13 @@
     "ar": {
      "text": "ما الفرق بين الدورية والمرسوم؟",
      "choices": [
-      "الدورية تفسّر تطبيق نص وتوجّهه، أما المرسوم فقرار تنظيمي صادر عن السلطة التنفيذية",
+      "الدورية تفسّر تطبيق نص وتوجّهه، أما المرسوم فنص تنظيمي صادر عن السلطة التنفيذية",
       "الدورية أعلى قيمة من المرسوم",
       "المرسوم وثيقة داخلية لا تُنشر",
       "لهما الأثر القانوني نفسه تمامًا"
      ],
      "correctIndex": 0,
-     "correction": "الدورية توجّه تطبيق نص، أما المرسوم فقرار تنظيمي صادر عن السلطة التنفيذية.",
+     "correction": "الدورية توجّه تطبيق نص، أما المرسوم فنص تنظيمي صادر عن السلطة التنفيذية.",
      "explanation": "ينشئ المرسوم قواعد قانونية ويُنشر بالجريدة الرسمية. أما الدورية الموجهة إلى المصالح فتشرح كيفية تطبيق قاعدة قائمة، ولا يمكنها قانونًا إضافة التزام جديد."
     }
    }
@@ -2014,7 +2014,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2065,7 +2065,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2116,7 +2116,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2167,7 +2167,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2218,7 +2218,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2269,7 +2269,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2320,7 +2320,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2371,7 +2371,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2422,7 +2422,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2473,7 +2473,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2524,7 +2524,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2575,7 +2575,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2626,7 +2626,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2677,7 +2677,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2728,7 +2728,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2736,7 +2736,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quelle mesure d'hygiène limite le plus efficacement la transmission des infections respiratoires ?",
+     "text": "Parmi les mesures d'hygiène suivantes, laquelle limite le plus efficacement la transmission des infections respiratoires ?",
      "choices": [
       "Le lavage régulier des mains",
       "L'ouverture des fenêtres une fois par mois",
@@ -2745,10 +2745,10 @@
      ],
      "correctIndex": 0,
      "correction": "Le lavage régulier des mains est la mesure la plus efficace.",
-     "explanation": "Les mains constituent le principal vecteur de transmission par contact. L'aération fréquente des locaux et l'hygiène respiratoire complètent utilement cette mesure de base."
+     "explanation": "Les mains transportent les germes déposés par la toux, les éternuements ou les surfaces contaminées vers la bouche, le nez et les yeux. L'aération fréquente des locaux et l'hygiène respiratoire (tousser dans son coude, porter un masque en cas de symptômes) complètent utilement cette mesure de base."
     },
     "ar": {
-     "text": "أي إجراء صحي يحد بفعالية أكبر من انتقال العدوى التنفسية؟",
+     "text": "من بين الإجراءات الصحية التالية، أيها يحد بفعالية أكبر من انتقال العدوى التنفسية؟",
      "choices": [
       "غسل اليدين بانتظام",
       "فتح النوافذ مرة في الشهر",
@@ -2757,7 +2757,7 @@
      ],
      "correctIndex": 0,
      "correction": "غسل اليدين بانتظام هو الإجراء الأكثر فعالية.",
-     "explanation": "اليدان هما الناقل الرئيسي للعدوى بالملامسة. وتُكمل تهوية المحلات المتكررة وآداب العطاس والسعال هذا الإجراء الأساسي."
+     "explanation": "تنقل اليدان الجراثيم الناتجة عن السعال والعطاس أو الموجودة على الأسطح الملوثة إلى الفم والأنف والعينين. وتُكمل التهوية المتكررة للمحلات وآداب العطاس والسعال (السعال في المرفق، وارتداء الكمامة عند ظهور الأعراض) هذا الإجراء الأساسي."
     }
    }
   },
@@ -2779,7 +2779,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2830,7 +2830,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2881,7 +2881,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2889,7 +2889,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Quelle ressource naturelle le Maroc cherche à préserver par les programmes d'économie d'eau ?",
+     "text": "Quelle ressource naturelle le Maroc cherche-t-il à préserver par ses programmes d'économie d'eau ?",
      "choices": [
       "Les ressources hydriques superficielles et souterraines",
       "Les gisements de gaz",
@@ -2932,7 +2932,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -2983,7 +2983,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",
@@ -3034,7 +3034,7 @@
    "sourceId": "src-general",
    "correctIndex": 0,
    "timeSensitive": false,
-   "verifiedOn": "2026-08-11",
+   "verifiedOn": "2026-10-10",
    "contentVersion": "1.0.0",
    "languages": [
     "ar",

@@ -61,6 +61,9 @@ export const SUBJECTS = [
   { id: 'sciences', fr: 'Sciences générales, numérique et administration', ar: 'العلوم العامة والرقميات والإدارة', short: { fr: 'Sciences & admin.', ar: 'علوم وإدارة' }, slug: 'sciences-numerique-administration' },
   { id: 'secourisme', fr: 'Secourisme et sécurité', ar: 'الإسعافات الأولية والسلامة', short: { fr: 'Secourisme', ar: 'الإسعاف' }, slug: 'secourisme-premiers-secours' },
   { id: 'architecture', fr: 'Architecture, art et perception', ar: 'الهندسة المعمارية والفن والإدراك', short: { fr: 'Archi & art', ar: 'معمار وفن' }, slug: 'architecture-art' },
+  { id: 'securite', fr: 'Sécurité, institutions et citoyenneté', ar: 'الأمن والمؤسسات والمواطنة', short: { fr: 'Sécurité & citoyenneté', ar: 'الأمن والمواطنة' }, slug: 'securite-citoyennete' },
+  { id: 'defense', fr: 'Défense et culture militaire', ar: 'الدفاع والثقافة العسكرية', short: { fr: 'Culture militaire', ar: 'الثقافة العسكرية' }, slug: 'culture-militaire-far' },
+  { id: 'education', fr: 'Système éducatif et pédagogie', ar: 'المنظومة التربوية والبيداغوجيا', short: { fr: 'Éducation & pédagogie', ar: 'التربية والبيداغوجيا' }, slug: 'systeme-educatif-pedagogie' },
 ];
 
 export const LANGUAGE_SUBJECTS = ['francais', 'arabe', 'anglais'];

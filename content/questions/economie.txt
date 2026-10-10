@@ -10,7 +10,7 @@ Q: Que mesure le produit intérieur brut (PIB) ?
 - Le total des exportations d'un pays
 - La fortune des ménages les plus riches
 C: La richesse produite sur un territoire.
-E: Le PIB additionne les valeurs ajoutées des unités résidentes ; sa variation mesure la croissance économique.
+E: Le PIB est égal à la somme des valeurs ajoutées des unités productrices résidentes, augmentée des impôts sur les produits nets des subventions ; sa variation en volume mesure la croissance économique.
 
 [ECO-002] economie-generale | beginner
 Q: Qu'appelle-t-on l'inflation ?
@@ -28,7 +28,8 @@ Q: Quelle institution conduit la politique monétaire au Maroc ?
 - La Bourse de Casablanca
 - La Cour des comptes
 C: Bank Al-Maghrib, la banque centrale.
-E: Bank Al-Maghrib fixe notamment le taux directeur ; sa mission principale est la stabilité des prix.
+E: Bank Al-Maghrib fixe notamment le taux directeur ; selon son statut (loi n° 40-17), sa mission principale est la stabilité des prix.
+S: src-bam
 
 [ECO-004] economie-generale | intermediate
 Q: Lorsqu'une banque centrale relève son taux directeur, elle cherche généralement à :
@@ -66,14 +67,15 @@ Q: Si la demande d'un bien augmente alors que l'offre reste stable, son prix ten
 C: Augmenter.
 E: Sur un marché concurrentiel, le prix d'équilibre se fixe à la rencontre de l'offre et de la demande ; une demande plus forte déplace l'équilibre vers un prix plus élevé.
 
-[ECO-008] fiscalite | intermediate
+[ECO-008] fiscalite | intermediate | ts
 Q: Quel impôt est supporté par le consommateur final lors de l'achat d'un bien ?
 * La taxe sur la valeur ajoutée (TVA)
 - L'impôt sur les sociétés (IS)
 - L'impôt sur le revenu (IR)
 - La taxe professionnelle
 C: La TVA.
-E: La TVA est un impôt indirect sur la consommation, collecté par les entreprises et supporté par le consommateur final. Au Maroc, son taux normal est de 20 %.
+E: La TVA est un impôt indirect sur la consommation, collecté par les entreprises et supporté par le consommateur final. Au Maroc, en 2026, son taux normal est de 20 % (taux réduit : 10 %).
+S: src-dgi-cgi
 
 [ECO-009] economie-generale | intermediate
 Q: Comment calcule-t-on la valeur ajoutée d'une entreprise ?
@@ -82,7 +84,7 @@ Q: Comment calcule-t-on la valeur ajoutée d'une entreprise ?
 - Bénéfice + impôts
 - Capital − dettes
 C: Production − consommations intermédiaires.
-E: Les consommations intermédiaires sont les biens et services détruits ou transformés pendant la production (matières premières, énergie…). La somme des valeurs ajoutées forme le PIB.
+E: Les consommations intermédiaires sont les biens et services détruits ou transformés pendant la production (matières premières, énergie…). La somme des valeurs ajoutées (augmentée des impôts sur les produits nets des subventions) forme le PIB.
 
 [ECO-010] economie-generale | beginner
 Q: Un prix passe de 200 DH à 250 DH. Quel est son taux de variation ?

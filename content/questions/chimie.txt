@@ -48,13 +48,13 @@ C: V = 12 L.
 E: V = n × Vm = 0,5 × 24 = 12 L.
 
 [CHI-006] cinetique | beginner
-Q: Parmi ces paramètres, lequel n'est pas un facteur cinétique ?
-* La couleur de l'étiquette du flacon de réactif
-- La température
-- La concentration des réactifs
-- La présence d'un catalyseur
-C: La couleur de l'étiquette.
-E: La température, les concentrations initiales des réactifs et les catalyseurs modifient la vitesse d'une réaction chimique.
+Q: On ajoute un catalyseur à un mélange réactionnel. Quelle grandeur reste inchangée ?
+* L'état final du système (avancement final)
+- La vitesse volumique de réaction
+- Le temps de demi-réaction t½
+- La durée de la transformation
+C: L'état final ne change pas.
+E: Un catalyseur accélère une transformation (vitesse plus grande, t½ et durée plus courts) sans être consommé ; il ne modifie ni la constante d'équilibre ni l'état final du système.
 
 [CHI-007] cinetique | intermediate
 Q: Le temps de demi-réaction t½ est la durée au bout de laquelle :
@@ -162,7 +162,7 @@ Q: À l'équivalence d'un dosage acide-base :
 - Il reste de l'acide en excès
 - La réaction s'arrête par manque de catalyseur
 C: Proportions stœchiométriques.
-E: À l'équivalence, le réactif limitant change. Le pH vaut 7 seulement pour le dosage d'un acide fort par une base forte à 25 °C ; pour un acide faible dosé par une base forte, il est supérieur à 7.
+E: À l'équivalence, l'acide et la base ont été entièrement consommés : il y a changement de réactif limitant. Le pH vaut 7 seulement pour un dosage acide fort–base forte à 25 °C ; pour un acide faible dosé par une base forte, il est supérieur à 7.
 
 [CHI-019] acide-base | intermediate
 Q: On dose 20 mL d'acide chlorhydrique par une solution d'hydroxyde de sodium à 0,1 mol/L ; l'équivalence est atteinte pour 10 mL versés. Quelle est la concentration de l'acide ?

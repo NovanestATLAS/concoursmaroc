@@ -45,7 +45,7 @@ const TXT = {
       ['check', 'Checklist du dossier', 'Les pièces à préparer pour ne rien oublier.', 'outils/checklist-dossier/'],
       ['scales', 'Simulateur de barème QCM', 'Faut-il répondre au hasard avec des points négatifs ?', 'outils/simulateur-qcm/'],
     ],
-    practiceH: 'Entraînement par matière', practiceLead: 'Questions originales vérifiées, avec correction et explication détaillée.',
+    practiceH: 'Entraînement par matière', practiceLead: 'Questions originales relues, avec correction et explication détaillée, et la source quand un fait en dépend.',
     guidesH: 'Guides pratiques',
     guides: [
       ['compass', 'Orientation après le bac au Maroc', 'guides/orientation-apres-bac-maroc/', 'Choisir sa voie selon sa série, sa note et ses envies.'],
@@ -96,7 +96,7 @@ const TXT = {
       ['check', 'لائحة وثائق الملف', 'الوثائق التي يجب تحضيرها.', 'outils/checklist-dossier/'],
       ['scales', 'محاكي سلم التنقيط', 'هل تجيب عشوائيًا مع التنقيط السلبي؟', 'outils/simulateur-qcm/'],
     ],
-    practiceH: 'التمرين حسب المادة', practiceLead: 'أسئلة أصلية متحقق منها مع التصحيح والشرح المفصل.',
+    practiceH: 'التمرين حسب المادة', practiceLead: 'أسئلة أصلية مُراجَعة مع التصحيح والشرح المفصل، والمصدر عندما تعتمد على معلومة محددة.',
     guidesH: 'أدلة عملية',
     guides: [
       ['compass', 'التوجيه بعد البكالوريا بالمغرب', 'guides/orientation-apres-bac-maroc/', 'اختيار المسار حسب الشعبة والنقطة والميولات.'],

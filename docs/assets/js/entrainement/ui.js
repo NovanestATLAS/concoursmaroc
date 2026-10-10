@@ -180,7 +180,8 @@
     var m = p.mock;
     var n = m.sections.reduce(function (s, x) { return s + x.count; }, 0);
     return t('mock.format', { n: n, d: fmtDuration(m.minutes) }) +
-      (m.scoring && m.scoring.wrong < 0 ? ' · ' + t('mock.penalty', { s: scoringLabel(m.scoring) }) : '');
+      (m.scoring && m.scoring.wrong < 0 ? ' · ' + t('mock.penalty', { s: scoringLabel(m.scoring) }) : '') +
+      (m.official ? '' : ' · ' + t('mock.indicative'));
   }
 
   function ensure(cats) {

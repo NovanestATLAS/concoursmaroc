@@ -14,13 +14,13 @@ C: À Casablanca.
 E: Inaugurée en 1993 et en partie construite sur la mer, elle a été conçue par l'architecte Michel Pinseau. Son minaret dépasse 200 m de hauteur.
 
 [ARC-002] patrimoine-maroc | intermediate
-Q: Le minaret almohade de la Koutoubia, à Marrakech, a servi de modèle à quel célèbre monument d'Espagne ?
+Q: Le minaret almohade de la Koutoubia, à Marrakech, est considéré comme le modèle de quel célèbre monument d'Espagne ?
 * La Giralda de Séville
 - L'Alhambra de Grenade
 - La Sagrada Família de Barcelone
 - Le palais royal de Madrid
 C: La Giralda de Séville.
-E: La Giralda, ancien minaret de la grande mosquée almohade de Séville, est de la même famille que la Koutoubia et que la tour Hassan de Rabat (XIIᵉ siècle).
+E: La Giralda, ancien minaret de la grande mosquée almohade de Séville (achevé en 1198), forme avec la Koutoubia et la tour Hassan de Rabat les « trois sœurs » almohades de la fin du XIIᵉ siècle.
 
 [ARC-003] patrimoine-maroc | intermediate
 Q: La médersa Bou Inania de Fès a été construite sous quelle dynastie ?
@@ -148,14 +148,15 @@ Q: Quel architecte a conçu la villa Savoye et le système de proportions « Mod
 C: Le Corbusier.
 E: Il a formulé les « cinq points de l'architecture moderne » : pilotis, toit-terrasse, plan libre, fenêtre en bandeau et façade libre.
 
-[ARC-017] histoire-architecture | beginner
+[ARC-017] histoire-architecture | beginner | ts
 Q: La Sagrada Família de Barcelone est l'œuvre de :
 * Antoni Gaudí
 - Le Corbusier
 - Zaha Hadid
 - Oscar Niemeyer
 C: Antoni Gaudí.
-E: Commencée en 1882, la basilique est toujours en construction. Gaudí est une figure majeure du modernisme catalan.
+E: Commencée en 1882, la basilique n'est pas encore entièrement achevée : la tour de Jésus-Christ, la plus haute (172,5 m), a été couronnée en février 2026, mais la façade de la Gloire et des travaux intérieurs restent à réaliser. Gaudí est une figure majeure du modernisme catalan.
+S: src-sagrada-familia-2026
 
 [ARC-018] histoire-architecture | intermediate
 Q: Quelle architecte irako-britannique, première femme lauréate du prix Pritzker (2004), a laissé son nom à l'agence qui a conçu le Grand Théâtre de Rabat ?
@@ -194,13 +195,13 @@ C: Gothique.
 E: Ces innovations (XIIᵉ–XVᵉ siècles) ont permis d'élever des murs plus hauts et plus ajourés, comme à Notre-Dame de Paris ou à la cathédrale de Chartres.
 
 [ARC-022] patrimoine-maroc | intermediate
-Q: Quelle ville impériale fut la capitale du sultan Moulay Ismaïl, qui y fit édifier la porte Bab Mansour ?
+Q: Quelle ville impériale fut la capitale du sultan Moulay Ismaïl et abrite la porte monumentale Bab Mansour ?
 * Meknès
 - Fès
 - Marrakech
 - Rabat
 C: Meknès.
-E: Moulay Ismaïl (1672-1727) y a construit une immense cité impériale : remparts, greniers d'Héri es-Souani et porte Bab Mansour. La ville historique est inscrite par l'UNESCO depuis 1996.
+E: Moulay Ismaïl (1672-1727) y a construit une immense cité impériale : remparts, greniers d'Héri es-Souani… La porte Bab Mansour, commencée à la fin de son règne, a été achevée en 1732 par son fils Moulay Abdallah. La ville historique est inscrite par l'UNESCO depuis 1996.
 
 [ARC-023] histoire-architecture | advanced
 Q: Quelle école, fondée en Allemagne en 1919 par Walter Gropius, a uni art, artisanat et industrie ?

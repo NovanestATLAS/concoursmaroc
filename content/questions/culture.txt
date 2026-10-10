@@ -325,7 +325,8 @@ Q: Quel athlète marocain a établi en 1998 le record du monde du 1 500 m (3 min
 - Brahim Boutayeb
 - Khalid Skah
 C: Hicham El Guerrouj.
-E: Établi à Rome le 14 juillet 1998, ce record tenait toujours en 2026. El Guerrouj a aussi remporté le 1 500 m et le 5 000 m aux Jeux d'Athènes en 2004.
+E: Établi à Rome le 14 juillet 1998, ce record du monde tenait toujours en octobre 2026. El Guerrouj a aussi remporté le 1 500 m et le 5 000 m aux Jeux d'Athènes en 2004.
+S: src-wa-records
 
 [CUL-037] sport | intermediate
 Q: Quelle athlète marocaine, victorieuse du 400 m haies aux Jeux de Los Angeles en 1984, est devenue la première championne olympique arabe et musulmane ?
@@ -353,6 +354,7 @@ Q: Quels pays organisent ensemble la Coupe du monde de football 2030 ?
 - Le Maroc et l'Égypte
 C: Maroc, Espagne et Portugal.
 E: La FIFA a officialisé ce choix en décembre 2024. Trois matchs d'ouverture se joueront en Uruguay, en Argentine et au Paraguay pour célébrer le centenaire de la compétition.
+S: src-fifa-2030
 
 [CUL-040] economie-monde | beginner
 Q: Quelle est la monnaie du Japon ?
@@ -424,7 +426,8 @@ Q: Selon les estimations des Nations unies, quel est le pays le plus peuplé du 
 - Les États-Unis
 - L'Indonésie
 C: L'Inde.
-E: Selon l'ONU, l'Inde a dépassé la Chine en 2023, avec plus de 1,4 milliard d'habitants.
+E: Selon les projections démographiques des Nations unies (World Population Prospects), l'Inde a dépassé la Chine en 2023, avec plus de 1,4 milliard d'habitants.
+S: src-un-wpp
 
 [CUL-048] geographie | beginner
 Q: Quel fleuve traverse Paris ?

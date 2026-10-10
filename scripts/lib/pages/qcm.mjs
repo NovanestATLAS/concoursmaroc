@@ -27,6 +27,9 @@ const SEO_TITLE = {
   sciences: 'QCM sciences, numérique et administration corrigés',
   secourisme: 'QCM secourisme corrigés : premiers secours et incendie',
   architecture: 'QCM architecture et art corrigés (concours ENA)',
+  securite: 'QCM sécurité et citoyenneté corrigés (police, gendarmerie)',
+  defense: 'QCM culture militaire corrigés (FAR, écoles militaires)',
+  education: 'QCM système éducatif et pédagogie corrigés (ENS, CRMEF)',
 };
 
 const TXT = {
@@ -36,8 +39,8 @@ const TXT = {
     h1: (s) => `QCM corrigés : ${s.fr}`,
     lead: (n, total) => `${n} questions d'exemple sur ${total} disponibles dans l'entraînement, avec la bonne réponse et une explication. Cliquez sur « Voir la réponse » après avoir réfléchi.`,
     show: 'Voir la réponse et l’explication', answer: 'Bonne réponse', train: 'S’entraîner sur cette matière (chronométré, corrigé)',
-    idxTitle: 'QCM corrigés par matière pour les concours au Maroc', idxDesc: 'QCM corrigés gratuits par matière : culture générale, Maroc, logique, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie, secourisme.',
-    idxH1: 'QCM corrigés par matière', idxLead: 'Toutes les questions sont originales, vérifiées et accompagnées d’une explication. Choisissez une matière.',
+    idxTitle: 'QCM corrigés par matière pour les concours au Maroc', idxDesc: 'QCM corrigés gratuits par matière : culture générale, Maroc, logique, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie, secourisme, sécurité, culture militaire, pédagogie.',
+    idxH1: 'QCM corrigés par matière', idxLead: 'Toutes les questions sont originales, relues et accompagnées d’une explication. Une erreur ? Signalez-la depuis la page contact. Choisissez une matière.',
     notice: 'Questions originales rédigées pour l’entraînement : elles reproduisent le style et le niveau des épreuves, pas des sujets officiels.',
   },
   ar: {
@@ -47,7 +50,7 @@ const TXT = {
     lead: (n, total) => `${n} سؤالًا نموذجيًا من أصل ${total} متاحة في التمرين، مع الجواب الصحيح والشرح.`,
     show: 'عرض الجواب والشرح', answer: 'الجواب الصحيح', train: 'تمرّن على هذه المادة (موقت ومصحح)',
     idxTitle: 'أسئلة مصححة حسب المادة للتحضير للمباريات بالمغرب', idxDesc: 'أسئلة مصححة مجانية حسب المادة: الثقافة العامة، المغرب، المنطق، الحساب، اللغة العربية، العلوم.',
-    idxH1: 'أسئلة مصححة حسب المادة', idxLead: 'كل الأسئلة أصلية ومتحقق منها ومرفقة بشرح. اختر مادة.',
+    idxH1: 'أسئلة مصححة حسب المادة', idxLead: 'كل الأسئلة أصلية ومُراجَعة ومرفقة بشرح. وجدت خطأ؟ أبلغ عنه من صفحة الاتصال. اختر مادة.',
     notice: 'أسئلة أصلية محررة للتمرين: تحاكي أسلوب الاختبارات ومستواها وليست مواضيع رسمية.',
   },
 };

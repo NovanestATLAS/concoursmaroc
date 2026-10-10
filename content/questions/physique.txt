@@ -58,13 +58,13 @@ C: Quand a est comparable ou inférieure à λ.
 E: La diffraction est importante lorsque la dimension de l'ouverture est comparable ou inférieure à la longueur d'onde ; elle devient négligeable pour a ≫ λ.
 
 [PHY-007] ondes-lumineuses | intermediate
-Q: L'écart angulaire θ de la tache centrale de diffraction par une fente de largeur a, éclairée par une lumière de longueur d'onde λ, vérifie :
+Q: L'écart angulaire θ entre le milieu de la tache centrale de diffraction et la première extinction, pour une fente de largeur a éclairée par une lumière de longueur d'onde λ, vérifie :
 * θ = λ/a
 - θ = a/λ
 - θ = λ·a
 - θ = 2a/λ
 C: θ = λ/a (θ en radians).
-E: Pour les petits angles, θ = λ/a : plus la fente est fine, plus la tache centrale est large.
+E: Pour les petits angles, θ = λ/a (demi-largeur angulaire ; la tache centrale a une largeur angulaire 2θ = 2λ/a) : plus la fente est fine, plus la tache centrale est large.
 
 [PHY-008] ondes-lumineuses | beginner
 Q: Quelle est la célérité de la lumière dans le vide ?

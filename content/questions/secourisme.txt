@@ -12,7 +12,8 @@ Q: Quel numéro faut-il appeler au Maroc pour joindre la Protection civile (ince
 - 177
 - 190
 C: Le 15.
-E: Au Maroc : 15 pour la Protection civile, 19 pour la police en ville (190 depuis un mobile selon les opérateurs), 177 pour la Gendarmerie royale et 141 pour le SAMU (urgences médicales).
+E: Au Maroc : 15 pour la Protection civile (sapeurs-pompiers, secours et évacuation des blessés), 19 pour la police en ville, 177 pour la Gendarmerie royale et 141 pour le SAMU (régulation médicale). Le 190 n'est pas le numéro de la Protection civile : il est parfois cité comme variante du numéro de la police.
+S: src-urgences-maroc
 AR:
 Q: ما هو الرقم الذي يجب الاتصال به في المغرب للوصول إلى الوقاية المدنية (الحرائق، الإسعاف، سيارة الإسعاف)؟
 * 15
@@ -20,7 +21,7 @@ Q: ما هو الرقم الذي يجب الاتصال به في المغرب ل
 - 177
 - 190
 C: الرقم 15.
-E: في المغرب: 15 للوقاية المدنية، و19 للشرطة داخل المدن (190 من الهاتف المحمول حسب الشركات)، و177 للدرك الملكي، و141 للمساعدة الطبية الاستعجالية (SAMU).
+E: في المغرب: 15 للوقاية المدنية (رجال المطافئ والإسعاف ونقل المصابين)، و19 للشرطة داخل المدن، و177 للدرك الملكي، و141 للمساعدة الطبية الاستعجالية (SAMU). أما الرقم 190 فليس رقم الوقاية المدنية، وقد يُذكر أحيانًا رقمًا بديلًا للشرطة.
 
 [SEC-002] alerte | beginner
 Q: Quel numéro permet de joindre la Gendarmerie royale ?
@@ -51,7 +52,7 @@ AR:
 Q: عند الاتصال بالإسعاف، ما هي المعلومة التي يجب تقديمها أولًا؟
 * المكان الدقيق للحادث وطبيعته
 - الاسم الكامل لجميع الضحايا
-- علامة السيارات المتورطة
+- العلامة التجارية للسيارات المعنية بالحادث
 - رقم بطاقة التعريف الخاصة بك
 C: المكان الدقيق وما الذي حدث.
 E: رسالة الإنذار: تقديم النفس، وتحديد المكان بدقة، وطبيعة الحادث، وعدد الضحايا وحالتهم الظاهرة، والإسعافات التي قُدمت. ولا يُقطع الاتصال إلا بعد إذن المخاطَب.
@@ -154,7 +155,7 @@ Q: عند الشخص البالغ، ما هو عمق الضغط على الصد�
 * من 5 إلى 6 سنتيمترات
 - من 1 إلى 2 سنتيمتر
 - من 10 إلى 12 سنتيمترًا
-- من 2 إلى 3 ملمترات
+- من 2 إلى 3 مليمترات
 C: من 5 إلى 6 سنتيمترات.
 E: نضغط في وسط الصدر بذراعين ممدودتين وبباطن اليدين، والمصاب ممدد على سطح صلب.
 
@@ -233,7 +234,7 @@ Q: Face à un saignement abondant (hémorragie externe), quel est le premier ges
 - Laver la plaie à grande eau
 - Faire marcher la victime
 C: La compression directe.
-E: On comprime la plaie avec la main protégée (gants, tissu propre) ou un pansement compressif, on allonge la victime et on alerte. Le garrot est réservé aux cas où la compression est impossible ou inefficace.
+E: On comprime la plaie avec la main protégée (gants, tissu propre) ou un pansement compressif, on allonge la victime et on alerte. Si la compression directe est impossible ou ne suffit pas à arrêter une hémorragie grave d'un membre, on pose un garrot le plus tôt possible (recommandations ERC 2025).
 AR:
 Q: أمام نزيف خارجي غزير، ما هي أول حركة؟
 * الضغط بقوة ومباشرة على الجرح
@@ -241,7 +242,7 @@ Q: أمام نزيف خارجي غزير، ما هي أول حركة؟
 - غسل الجرح بكمية كبيرة من الماء
 - جعل المصاب يمشي
 C: الضغط المباشر على الجرح.
-E: نضغط على الجرح باليد المحمية (قفازات أو قطعة قماش نظيفة) أو بضمادة ضاغطة، ثم نمدد المصاب ونطلب الإسعاف. ويُلجأ إلى الرباط الضاغط فقط عندما يكون الضغط مستحيلًا أو غير فعال.
+E: نضغط على الجرح باليد المحمية (قفازات أو قطعة قماش نظيفة) أو بضمادة ضاغطة، ثم نمدد المصاب ونطلب الإسعاف. وإذا كان الضغط المباشر مستحيلًا أو غير كافٍ لإيقاف نزيف خطير في أحد الأطراف، يُوضع الرباط الضاغط في أسرع وقت ممكن (توصيات المجلس الأوروبي للإنعاش 2025).
 
 [SEC-015] hemorragie | intermediate
 Q: Une personne saigne du nez. Que faut-il lui conseiller ?
@@ -338,11 +339,11 @@ C: Des compressions abdominales vers soi et vers le haut.
 E: Debout derrière la victime penchée en avant, le poing placé entre le nombril et le bas du sternum, on tire brusquement vers soi et vers le haut pour chasser l'air et le corps étranger.
 AR:
 Q: تتمثل طريقة هايمليك في:
-* الضغط على البطن بقبضة اليد في أعلى البطن، مع السحب نحو الداخل ونحو الأعلى
+* الضغط على البطن بقبضة اليد في أعلى البطن، مع السحب نحو المسعف ونحو الأعلى
 - النفخ في فم المصاب
 - الضغط على عظم القص والمصاب ممدد
 - إعطاء الماء على جرعات صغيرة
-C: الضغط على البطن نحو الداخل والأعلى.
+C: الضغط على البطن نحو المسعف ونحو الأعلى.
 E: نقف خلف المصاب المنحني إلى الأمام، ونضع القبضة بين السرة وأسفل عظم القص، ثم نسحب بقوة نحونا ونحو الأعلى لطرد الهواء والجسم الغريب.
 
 [SEC-021] traumatisme | intermediate

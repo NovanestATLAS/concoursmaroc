@@ -83,7 +83,8 @@
     "rule2": "Pas de correction pendant l'épreuve : vous pouvez changer vos réponses et naviguer entre les questions.",
     "rule3": "À la fin : note sur 20 selon le barème, détail par épreuve et correction complète.",
     "start": "Commencer l'examen blanc",
-    "short": "La banque ne contient pas encore assez de questions pour toutes les épreuves : la durée a été ajustée."
+    "short": "La banque ne contient pas encore assez de questions pour toutes les épreuves : la durée a été ajustée.",
+    "indicative": "format indicatif"
   },
   "setup": {
     "title": "Configurer la session",
@@ -256,7 +257,7 @@
     "resetConfirm": "Tout effacer",
     "resetDone": "Progression effacée.",
     "about": "À propos",
-    "aboutText": "Questions originales rédigées et vérifiées pour l'entraînement. Concours Maroc est indépendant : seul l'avis officiel de chaque concours fait foi.",
+    "aboutText": "Questions originales rédigées et relues pour l'entraînement (pas des sujets officiels). Concours Maroc est indépendant : seul l'avis officiel de chaque concours fait foi.",
     "version": "Version du contenu",
     "memoryOnly": "stockage temporaire (navigation privée)"
   }
