@@ -665,18 +665,6 @@
       "validUntil": null
     },
     {
-      "id": "src-code-route",
-      "title": "Loi n° 52-05 portant Code de la route (dahir n° 1-10-07 du 11 février 2010) — permis à points",
-      "org": "Ministère de la Justice — portail Adala",
-      "url": "https://adala.justice.gov.ma/",
-      "topic": "Permis à points (30 points, 20 pour le permis probatoire)",
-      "reliability": "primary",
-      "accessed": "2026-10-11",
-      "lastVerified": "2026-10-11",
-      "validFrom": "2010-10-01",
-      "validUntil": null
-    },
-    {
       "id": "src-narsa",
       "title": "Dahir n° 1-18-16 du 22 février 2018 portant promulgation de la loi n° 103-14 portant création de l’Agence nationale de la sécurité routière (NARSA), opérationnelle depuis le 1er janvier 2020",
       "org": "Ministère de la Justice — portail Adala",
@@ -701,30 +689,6 @@
       "validUntil": null
     },
     {
-      "id": "src-service-militaire",
-      "title": "Dahir n° 1-19-03 du 23 janvier 2019 portant promulgation de la loi n° 44-18 relative au service militaire ; décret n° 2-19-47 du 19 février 2019 (soldes des appelés)",
-      "org": "Ministère de la Justice — portail Adala",
-      "url": "https://adala.justice.gov.ma/api/uploads/2025/10/22/dahir%20n%C2%B0%201-19-03%20portant%20promulgation%20de%20la%20loi%20n%C2%B0%2044-18%20relative%20au%20service%20militaire-1761130206928.pdf",
-      "topic": "Service militaire : 19 à 25 ans, 12 mois, exemptions",
-      "reliability": "primary",
-      "accessed": "2026-10-11",
-      "lastVerified": "2026-10-11",
-      "validFrom": "2019-01-23",
-      "validUntil": null
-    },
-    {
-      "id": "src-sgfp",
-      "title": "Dahir n° 1-58-008 du 24 février 1958 portant statut général de la fonction publique (article 18 : discrétion professionnelle)",
-      "org": "Ministère de la Justice — portail Adala",
-      "url": "https://adala.justice.gov.ma/",
-      "topic": "Obligations du fonctionnaire",
-      "reliability": "primary",
-      "accessed": "2026-10-11",
-      "lastVerified": "2026-10-11",
-      "validFrom": "1958-02-24",
-      "validUntil": null
-    },
-    {
       "id": "src-samu-141",
       "title": "Santé : lancement d’un SAMU nouvelle génération à Rabat-Salé-Kénitra (numéro national unique 141)",
       "org": "Infomédiaire",
@@ -734,42 +698,6 @@
       "accessed": "2026-10-11",
       "lastVerified": "2026-10-11",
       "validFrom": "2026-03-30",
-      "validUntil": null
-    },
-    {
-      "id": "src-arm-meknes",
-      "title": "Académie royale militaire de Meknès (héritière de l’école militaire de Dar El Beïda, 1918)",
-      "org": "Wikipédia (notice de référence)",
-      "url": "https://fr.wikipedia.org/wiki/Acad%C3%A9mie_royale_militaire_de_Mekn%C3%A8s",
-      "topic": "Formation des officiers des FAR",
-      "reliability": "reference",
-      "accessed": "2026-10-11",
-      "lastVerified": "2026-10-11",
-      "validFrom": null,
-      "validUntil": null
-    },
-    {
-      "id": "src-ern",
-      "title": "Portail de recrutement des Forces Armées Royales — écoles de formation des officiers, dont l’École Royale Navale (Casablanca)",
-      "org": "Forces Armées Royales",
-      "url": "https://www.recrutement.far.ma/",
-      "topic": "Écoles des FAR, candidatures",
-      "reliability": "primary",
-      "accessed": "2026-10-11",
-      "lastVerified": "2026-10-11",
-      "validFrom": null,
-      "validUntil": null
-    },
-    {
-      "id": "src-casques-bleus",
-      "title": "Défense : les précédentes interventions des FAR sur des théâtres étrangers (dont l’ONUC, Congo, 1960)",
-      "org": "Médias24",
-      "url": "https://medias24.com/2014/11/28/defense-les-precedentes-interventions-des-far-sur-des-theatres-etrangers/",
-      "topic": "Participation des FAR aux opérations de maintien de la paix",
-      "reliability": "secondary",
-      "accessed": "2026-10-11",
-      "lastVerified": "2026-10-11",
-      "validFrom": null,
       "validUntil": null
     }
   ]

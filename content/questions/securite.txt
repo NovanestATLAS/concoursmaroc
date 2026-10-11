@@ -1,11 +1,10 @@
-# Sécurité, institutions et citoyenneté : culture générale des concours de
-# niveau bac de la Police (gardiens de la paix), de la Gendarmerie royale, des
-# Forces auxiliaires, de la Protection civile et de la DGAPR (écrit de culture
-# générale et entretien). Institutions, numéros d'urgence, droits et devoirs
-# du citoyen, sécurité routière, déontologie.
-# Pas de droit pénal ni de procédure (garde à vue, textes de loi) : ces
-# matières ne figurent pas aux épreuves de ces concours ; seuls les concours de
-# niveau supérieur (commissaires de police, par exemple) ont une épreuve de droit.
+# Institutions de sécurité et services d'urgence : culture générale des
+# concours de niveau bac de la Police (gardiens de la paix), de la Gendarmerie
+# royale, des Forces auxiliaires, de la Protection civile et de la DGAPR :
+# création, tutelle et missions des institutions, responsables, numéros
+# d'urgence, sécurité routière.
+# Aucune question de droit, de lois ou de culture militaire : ces matières ne
+# figurent pas aux épreuves de ces concours.
 # Faits vérifiés le 2026-10-11. Questions originales, non copiées d'épreuves
 # officielles. Version arabe pour chaque question. Les questions marquées
 # « ts » portent sur des faits susceptibles d'évoluer.
@@ -55,7 +54,7 @@ Q: Quelle affirmation sur la Gendarmerie royale est exacte ?
 - Créée en 2008, elle est rattachée au Chef du gouvernement
 - C'est un service civil placé sous l'autorité des walis et gouverneurs
 C: Créée en 1957, elle est une force militaire intégrée aux FAR.
-E: La Gendarmerie royale a été créée par un dahir du 29 avril 1957. Le dahir du 14 janvier 1958 sur le service de la gendarmerie la définit comme une force publique chargée de veiller à la sûreté publique, d'assurer le maintien de l'ordre et l'exécution des lois ; elle fait partie intégrante des Forces armées royales. Elle intervient surtout en milieu rural et sur le réseau routier hors agglomération, et se joint au 177.
+E: La Gendarmerie royale a été créée le 29 avril 1957. C'est une force à statut militaire, qui fait partie des Forces armées royales. Elle assure la sécurité surtout en milieu rural et sur les routes hors agglomération ; on la joint au 177.
 S: src-gr
 AR:
 Q: أي عبارة صحيحة بخصوص الدرك الملكي؟
@@ -64,7 +63,7 @@ Q: أي عبارة صحيحة بخصوص الدرك الملكي؟
 - أُحدث سنة 2008 ويتبع لرئيس الحكومة
 - مصلحة مدنية تخضع لسلطة الولاة والعمال
 C: أُحدث سنة 1957، وهو قوة عسكرية مندمجة في القوات المسلحة الملكية.
-E: أُحدث الدرك الملكي بموجب ظهير شريف صادر في 29 أبريل 1957. ويعرّفه ظهير 14 يناير 1958 المتعلق بمصلحة الدرك بأنه قوة عمومية مكلفة بالسهر على الأمن العام وحفظ النظام وتنفيذ القوانين، وهو جزء لا يتجزأ من القوات المسلحة الملكية. يتدخل أساسًا في الوسط القروي وعلى الطرق خارج المدارات الحضرية، ورقمه 177.
+E: أُحدث الدرك الملكي في 29 أبريل 1957، وهو قوة ذات طابع عسكري تشكل جزءًا من القوات المسلحة الملكية. يسهر على الأمن أساسًا في الوسط القروي وعلى الطرق خارج المدارات الحضرية، ورقمه 177.
 
 [CIV-004] institutions | beginner
 Q: Quel département ministériel a autorité sur les Forces auxiliaires ?
@@ -73,7 +72,7 @@ Q: Quel département ministériel a autorité sur les Forces auxiliaires ?
 - Le ministère de l'Économie et des Finances
 - Le ministère de la Santé et de la Protection sociale
 C: Le ministère de l'Intérieur.
-E: Les Forces auxiliaires relèvent du ministère de l'Intérieur. Leur cadre juridique a été refondu : un nouveau dahir fixe leur organisation générale et le statut de leur personnel, et la loi n° 67-17, présentée par le ministre de l'Intérieur et adoptée par le Parlement en 2018, a abrogé les anciens dahirs de 1973 et de 1976. Cette réforme consacre leur caractère militaire tout en préservant leurs missions d'origine.
+E: Les Forces auxiliaires relèvent du ministère de l'Intérieur. Leur caractère militaire a été confirmé par la réforme de leur statut en 2018, qui a préservé leurs missions d'origine.
 S: src-forces-auxiliaires
 AR:
 Q: ما هو القطاع الوزاري الذي تخضع لسلطته القوات المساعدة؟
@@ -82,7 +81,7 @@ Q: ما هو القطاع الوزاري الذي تخضع لسلطته القو
 - وزارة الاقتصاد والمالية
 - وزارة الصحة والحماية الاجتماعية
 C: وزارة الداخلية.
-E: تتبع القوات المساعدة لوزارة الداخلية. وقد أُعيد تنظيم إطارها القانوني: ظهير شريف جديد يحدد تنظيمها العام والنظام الأساسي لأفرادها، والقانون رقم 67.17، الذي قدّمه وزير الداخلية وصادق عليه البرلمان سنة 2018، نسخ ظهيري 1973 و1976. ويكرّس هذا الإصلاح الطابعَ العسكري لهذه القوات مع الحفاظ على مهامها الأصلية.
+E: تتبع القوات المساعدة لوزارة الداخلية، وقد أكد إصلاح نظامها الأساسي سنة 2018 طابعها العسكري مع الحفاظ على مهامها الأصلية.
 
 [CIV-005] institutions | beginner
 Q: À quel ministère la Direction générale de la Protection civile est-elle rattachée ?
@@ -127,7 +126,7 @@ Q: À quelle autorité la Délégation générale à l'administration pénitenti
 - Au ministre de l'Intérieur
 - À l'Administration de la Défense nationale
 C: Au Chef du gouvernement.
-E: La DGAPR a été créée en avril 2008 (dahir n° 1-08-49 du 29 avril 2008). Détachée du ministère de la Justice, elle est placée sous l'autorité du Chef du gouvernement (appelé Premier ministre avant la Constitution de 2011). Elle met en œuvre la politique de l'État en matière de sécurité pénitentiaire et de réinsertion des détenus.
+E: La DGAPR a été créée en avril 2008. Détachée du ministère de la Justice, elle est placée sous l'autorité du Chef du gouvernement (appelé Premier ministre avant 2011). Elle gère les établissements pénitentiaires et la réinsertion des détenus.
 S: src-dgapr
 AR:
 Q: لأي سلطة تابعة المندوبية العامة لإدارة السجون وإعادة الإدماج؟
@@ -136,7 +135,7 @@ Q: لأي سلطة تابعة المندوبية العامة لإدارة ال�
 - لوزير الداخلية
 - لإدارة الدفاع الوطني
 C: لرئيس الحكومة.
-E: أُحدثت المندوبية العامة لإدارة السجون وإعادة الإدماج في أبريل 2008 (الظهير الشريف رقم 1.08.49 الصادر في 29 أبريل 2008). وقد فُصلت عن وزارة العدل ووُضعت تحت سلطة رئيس الحكومة (الوزير الأول قبل دستور 2011)، وتتولى تنفيذ سياسة الدولة في مجال الأمن داخل المؤسسات السجنية وإعادة إدماج السجناء.
+E: أُحدثت المندوبية العامة لإدارة السجون وإعادة الإدماج في أبريل 2008، وقد فُصلت عن وزارة العدل ووُضعت تحت سلطة رئيس الحكومة (الوزير الأول قبل 2011)، وتتولى تدبير المؤسسات السجنية وإعادة إدماج السجناء.
 
 [CIV-008] institutions | beginner
 Q: De quel ministère relève l'Administration des douanes et impôts indirects (ADII) ?
@@ -192,14 +191,14 @@ Q: من يتولى في آن واحد إدارة المديرية العامة �
 C: عبد اللطيف حموشي.
 E: عيّن جلالة الملك محمد السادس عبد اللطيف حموشي مديرًا عامًا للأمن الوطني في 15 ماي 2015 خلفًا لبوشعيب ارميل، مع احتفاظه بإدارة المديرية العامة لمراقبة التراب الوطني التي يتولاها منذ 2005. وقد تولى حسني بنسليمان قيادة الدرك الملكي لفترة طويلة، وكان عبد الحق الخيام أول مدير للمكتب المركزي للأبحاث القضائية. معلومة محققة سنة 2026 وتُحيَّن عند أي تعيين جديد.
 
-[CIV-012] citoyennete | beginner
+[CIV-012] institutions | beginner
 Q: Quelle institution établit et délivre la carte nationale d'identité électronique (CNIE) ?
 * La Direction générale de la Sûreté nationale
 - Le bureau d'état civil de la commune
 - Le ministère de la Justice
 - La Gendarmerie royale
 C: La DGSN.
-E: La CNIE est établie et délivrée par la DGSN. La nouvelle génération de la carte est régie par la loi n° 04-20 (promulguée par le dahir n° 1-20-80 du 8 août 2020), qui a remplacé la loi n° 35-06.
+E: La carte nationale d'identité électronique (CNIE) est établie et délivrée par la DGSN. Le bureau d'état civil de la commune délivre d'autres documents, comme les extraits d'acte de naissance.
 S: src-cnie-loi-04-20
 AR:
 Q: ما هي المؤسسة التي تُعِدّ وتسلّم البطاقة الوطنية للتعريف الإلكترونية؟
@@ -208,88 +207,16 @@ Q: ما هي المؤسسة التي تُعِدّ وتسلّم البطاقة ا
 - وزارة العدل
 - الدرك الملكي
 C: المديرية العامة للأمن الوطني.
-E: تتولى المديرية العامة للأمن الوطني إعداد وتسليم البطاقة الوطنية للتعريف الإلكترونية. ويؤطر الجيلَ الجديد منها القانونُ رقم 04.20 (الصادر بتنفيذه الظهير الشريف رقم 1.20.80 بتاريخ 8 غشت 2020)، الذي عوّض القانون رقم 35.06.
+E: تتولى المديرية العامة للأمن الوطني إعداد وتسليم البطاقة الوطنية للتعريف الإلكترونية. أما مكتب الحالة المدنية بالجماعة فيسلّم وثائق أخرى، مثل نسخ رسوم الولادة.
 
-[CIV-013] droits | intermediate
-Q: Selon l'article 21 de la Constitution de 2011, les pouvoirs publics assurent la sécurité des populations et du territoire national…
-* dans le respect des libertés et droits fondamentaux garantis à tous
-- sans aucune limite lorsque l'ordre public est menacé
-- sous le seul contrôle de l'autorité militaire
-- uniquement en dehors des agglomérations urbaines
-C: …dans le respect des libertés et droits fondamentaux garantis à tous.
-E: L'article 21 dispose que chacun a droit à la sécurité de sa personne et de ses proches et à la protection de ses biens, et que les pouvoirs publics assurent la sécurité des populations et du territoire national dans le respect des libertés et droits fondamentaux garantis à tous. Sécurité et respect des droits vont donc ensemble.
-S: src-constitution-2011
-AR:
-Q: حسب الفصل 21 من دستور 2011، تضمن السلطات العمومية سلامة السكان وسلامة التراب الوطني…
-* في إطار احترام الحريات والحقوق الأساسية المكفولة للجميع
-- دون أي حدود عندما يكون النظام العام مهددًا
-- تحت مراقبة السلطة العسكرية وحدها
-- خارج المدارات الحضرية فقط
-C: …في إطار احترام الحريات والحقوق الأساسية المكفولة للجميع.
-E: ينص الفصل 21 على أن لكل فرد الحق في سلامة شخصه وأقربائه وحماية ممتلكاته، وعلى أن السلطات العمومية تضمن سلامة السكان وسلامة التراب الوطني في إطار احترام الحريات والحقوق الأساسية المكفولة للجميع. فالأمن واحترام الحقوق متلازمان.
-
-[CIV-014] droits | intermediate
-Q: Que prévoit la Constitution de 2011 au sujet de la torture ?
-* Sa pratique, sous toutes ses formes et par quiconque, est un crime puni par la loi
-- Elle peut être autorisée par le parquet dans les affaires de terrorisme
-- Elle constitue une simple faute disciplinaire pour les agents publics
-- Elle n'est interdite qu'en temps de paix
-C: La torture, sous toutes ses formes et par quiconque, est un crime puni par la loi.
-E: L'article 22 interdit de porter atteinte à l'intégrité physique ou morale de quiconque, en quelque circonstance que ce soit, et d'infliger un traitement cruel, inhumain ou dégradant. Il qualifie la torture, sous toutes ses formes et par quiconque, de crime puni par la loi. Aucune circonstance ni aucun ordre ne la justifie.
-S: src-constitution-2011
-AR:
-Q: ماذا ينص عليه دستور 2011 بخصوص التعذيب؟
-* ممارسة التعذيب بكافة أشكاله ومن قبل أي أحد جريمة يعاقب عليها القانون
-- يمكن أن تأذن به النيابة العامة في قضايا الإرهاب
-- يعدّ مجرد خطأ تأديبي بالنسبة للموظفين العموميين
-- لا يُمنع إلا في زمن السلم
-C: ممارسة التعذيب بكافة أشكاله ومن قبل أي أحد جريمة يعاقب عليها القانون.
-E: يمنع الفصل 22 المس بالسلامة الجسدية أو المعنوية لأي شخص، في أي ظرف ومن قبل أي جهة كانت، كما يمنع معاملة الغير معاملة قاسية أو لاإنسانية أو مهينة. ويعتبر ممارسة التعذيب بكافة أشكاله ومن قبل أي أحد جريمة يعاقب عليها القانون، ولا يبررها أي ظرف أو أمر.
-
-[CIV-016] droits | beginner
-Q: Quel principe signifie qu'une personne poursuivie est considérée comme non coupable tant que sa culpabilité n'a pas été établie par un jugement définitif ?
-* La présomption d'innocence
-- L'autorité de la chose jugée
-- Le flagrant délit
-- La prescription de l'action publique
-C: La présomption d'innocence.
-E: La présomption d'innocence et le droit à un procès équitable sont garantis par l'article 23 de la Constitution de 2011. Concrètement, un agent ne doit jamais présenter un suspect comme coupable : seul un jugement définitif peut établir la culpabilité.
-S: src-constitution-2011
-AR:
-Q: ما هو المبدأ الذي يعني أن الشخص المتابَع يُعتبر غير مذنب ما لم تثبت إدانته بحكم نهائي؟
-* قرينة البراءة
-- حجية الشيء المقضي به
-- حالة التلبس
-- تقادم الدعوى العمومية
-C: قرينة البراءة.
-E: يضمن الفصل 23 من دستور 2011 قرينة البراءة والحق في محاكمة عادلة. وعمليًا، لا يجوز للموظف أبدًا أن يقدّم المشتبه فيه على أنه مذنب، فالإدانة لا تثبت إلا بحكم نهائي.
-
-[CIV-019] droits | beginner
-Q: Qui est le Chef suprême des Forces armées royales ?
-* Le Roi
-- Le Chef du gouvernement
-- Le ministre délégué chargé de l'Administration de la Défense nationale
-- Le commandant de la Gendarmerie royale
-C: Le Roi.
-E: Selon l'article 53 de la Constitution, le Roi est le Chef suprême des Forces armées royales ; il nomme aux emplois militaires et peut déléguer ce droit. La Gendarmerie royale fait partie des FAR.
-S: src-constitution-2011
-AR:
-Q: من هو القائد الأعلى للقوات المسلحة الملكية؟
-* الملك
-- رئيس الحكومة
-- الوزير المنتدب المكلف بإدارة الدفاع الوطني
-- قائد الدرك الملكي
-C: الملك.
-E: حسب الفصل 53 من الدستور، الملك هو القائد الأعلى للقوات المسلحة الملكية، ويتولى التعيين في الوظائف العسكرية، وله أن يفوض لغيره ممارسة هذا الحق. والدرك الملكي جزء من القوات المسلحة الملكية.
-
-[CIV-020] droits | intermediate
+[CIV-020] institutions | intermediate
 Q: Quelle institution constitutionnelle est chargée de la protection et de la promotion des droits de l'Homme ?
 * Le Conseil national des droits de l'Homme (CNDH)
 - L'Institution du Médiateur
 - L'Instance nationale de la probité, de la prévention et de la lutte contre la corruption
 - Le Conseil économique, social et environnemental
 C: Le CNDH.
-E: L'article 161 fait du CNDH une institution nationale pluraliste et indépendante chargée de connaître de toutes les questions relatives à la défense et à la protection des droits de l'Homme et des libertés. Créé en mars 2011, il a succédé au Conseil consultatif des droits de l'Homme (CCDH, créé en 1990). Le Médiateur (art. 162) traite des relations entre l'administration et les usagers ; l'Instance de la probité (art. 167) lutte contre la corruption.
+E: Le CNDH est une institution nationale indépendante chargée de la défense et de la protection des droits de l'Homme et des libertés. Créé en 2011, il a succédé au Conseil consultatif des droits de l'Homme (CCDH). Le Médiateur traite des relations entre l'administration et les usagers ; l'Instance de la probité lutte contre la corruption.
 S: src-constitution-2011
 AR:
 Q: ما هي المؤسسة الدستورية المكلفة بحماية حقوق الإنسان والنهوض بها؟
@@ -298,16 +225,16 @@ Q: ما هي المؤسسة الدستورية المكلفة بحماية حق�
 - الهيئة الوطنية للنزاهة والوقاية من الرشوة ومحاربتها
 - المجلس الاقتصادي والاجتماعي والبيئي
 C: المجلس الوطني لحقوق الإنسان.
-E: يجعل الفصل 161 المجلس الوطني لحقوق الإنسان مؤسسة وطنية تعددية ومستقلة، تتولى النظر في جميع القضايا المتعلقة بالدفاع عن حقوق الإنسان والحريات وحمايتها. أُحدث في مارس 2011 خلفًا للمجلس الاستشاري لحقوق الإنسان (المحدث سنة 1990). أما مؤسسة الوسيط (الفصل 162) فتهتم بالعلاقات بين الإدارة والمرتفقين، والهيئة الوطنية للنزاهة (الفصل 167) بمحاربة الرشوة.
+E: المجلس الوطني لحقوق الإنسان مؤسسة وطنية مستقلة تتولى الدفاع عن حقوق الإنسان والحريات وحمايتها. أُحدث سنة 2011 خلفًا للمجلس الاستشاري لحقوق الإنسان. أما مؤسسة الوسيط فتهتم بالعلاقات بين الإدارة والمرتفقين، والهيئة الوطنية للنزاهة بمحاربة الرشوة.
 
-[CIV-022] droits | advanced
+[CIV-022] institutions | advanced
 Q: Quelle institution a remplacé Diwan Al Madhalim en 2011 ?
 * L'Institution du Médiateur
 - Le Conseil national des droits de l'Homme
 - L'Instance nationale de la probité, de la prévention et de la lutte contre la corruption
 - La Commission du droit d'accès à l'information
 C: L'Institution du Médiateur.
-E: L'Institution du Médiateur a été créée par le dahir n° 1-11-25 du 17 mars 2011 en remplacement de Diwan Al Madhalim. L'article 162 de la Constitution en fait une institution nationale indépendante et spécialisée, chargée de défendre les droits dans le cadre des relations entre l'administration et les usagers. Elle est aujourd'hui régie par la loi n° 14-16 (dahir n° 1-19-43 du 11 mars 2019). Le CNDH, lui, a succédé au CCDH.
+E: L'Institution du Médiateur a remplacé Diwan Al Madhalim en 2011. Elle défend les droits des usagers dans leurs relations avec l'administration. Le CNDH, lui, a succédé au CCDH.
 S: src-mediateur
 AR:
 Q: ما هي المؤسسة التي حلت محل ديوان المظالم سنة 2011؟
@@ -316,25 +243,7 @@ Q: ما هي المؤسسة التي حلت محل ديوان المظالم س�
 - الهيئة الوطنية للنزاهة والوقاية من الرشوة ومحاربتها
 - لجنة الحق في الحصول على المعلومات
 C: مؤسسة الوسيط.
-E: أُحدثت مؤسسة الوسيط بموجب الظهير الشريف رقم 1.11.25 الصادر في 17 مارس 2011 لتحل محل ديوان المظالم. ويجعل منها الفصل 162 من الدستور مؤسسة وطنية مستقلة ومتخصصة، مهمتها الدفاع عن الحقوق في نطاق العلاقات بين الإدارة والمرتفقين. ويؤطرها حاليًا القانون رقم 14.16 (الظهير الشريف رقم 1.19.43 بتاريخ 11 مارس 2019). أما المجلس الوطني لحقوق الإنسان فقد خلف المجلس الاستشاري لحقوق الإنسان.
-
-[CIV-029] route | intermediate
-Q: Quel est le capital maximal de points d'un permis de conduire définitif selon le Code de la route ?
-* 30 points
-- 12 points
-- 20 points
-- 40 points
-C: 30 points.
-E: Le Code de la route (loi 52-05) a instauré un permis à points dont le capital maximal est de 30 points pour le permis définitif. Le permis probatoire des nouveaux conducteurs est doté de 20 points. Des points sont retirés selon la gravité des infractions, et un stage de sensibilisation permet d'en récupérer.
-S: src-code-route
-AR:
-Q: ما هو الرصيد الأقصى من النقط لرخصة السياقة النهائية حسب مدونة السير؟
-* 30 نقطة
-- 12 نقطة
-- 20 نقطة
-- 40 نقطة
-C: 30 نقطة.
-E: أحدثت مدونة السير (القانون 52.05) رخصة السياقة بالنقط، ورصيدها الأقصى 30 نقطة بالنسبة للرخصة النهائية، بينما تُمنح رخصة السياقة الاختبارية للسائقين الجدد 20 نقطة. وتُخصم النقط حسب خطورة المخالفات، ويمكن استرجاع بعضها بعد دورة تحسيسية.
+E: حلت مؤسسة الوسيط محل ديوان المظالم سنة 2011، وهي تدافع عن حقوق المرتفقين في علاقاتهم بالإدارة. أما المجلس الوطني لحقوق الإنسان فقد خلف المجلس الاستشاري لحقوق الإنسان.
 
 [CIV-031] route | intermediate
 Q: Quel organisme a remplacé le Comité national de prévention des accidents de la circulation (CNPAC) à partir du 1er janvier 2020 ?
@@ -343,7 +252,7 @@ Q: Quel organisme a remplacé le Comité national de prévention des accidents d
 - L'Office national des aéroports (ONDA)
 - La Direction générale de la Protection civile
 C: La NARSA.
-E: La NARSA a été créée par la loi n° 103-14, promulguée par le dahir n° 1-18-16 du 22 février 2018. C'est un établissement public doté de la personnalité morale et de l'autonomie financière, placé sous la tutelle de l'État ; il a pris le relais du CNPAC le 1er janvier 2020. Elle mène les actions de sécurité routière et intervient notamment dans l'organisation de l'examen du permis de conduire.
+E: La NARSA, établissement public créé en 2018, a pris le relais du CNPAC le 1er janvier 2020. Elle mène les actions de sécurité routière et intervient notamment dans l'organisation de l'examen du permis de conduire.
 S: src-narsa
 AR:
 Q: ما هي الهيئة التي حلت محل اللجنة الوطنية للوقاية من حوادث السير ابتداء من فاتح يناير 2020؟
@@ -352,7 +261,7 @@ Q: ما هي الهيئة التي حلت محل اللجنة الوطنية ل�
 - المكتب الوطني للمطارات
 - المديرية العامة للوقاية المدنية
 C: الوكالة الوطنية للسلامة الطرقية.
-E: أُحدثت الوكالة الوطنية للسلامة الطرقية بموجب القانون رقم 103.14 الصادر بتنفيذه الظهير الشريف رقم 1.18.16 بتاريخ 22 فبراير 2018، وهي مؤسسة عمومية تتمتع بالشخصية الاعتبارية والاستقلال المالي وتخضع لوصاية الدولة، وقد خلفت اللجنة الوطنية للوقاية من حوادث السير في فاتح يناير 2020. وتتولى أنشطة السلامة الطرقية وتتدخل خصوصًا في تنظيم امتحان رخصة السياقة.
+E: الوكالة الوطنية للسلامة الطرقية مؤسسة عمومية أُحدثت سنة 2018، وقد خلفت اللجنة الوطنية للوقاية من حوادث السير في فاتح يناير 2020. وتتولى أنشطة السلامة الطرقية وتتدخل خصوصًا في تنظيم امتحان رخصة السياقة.
 
 [CIV-032] route | intermediate
 Q: À quelle date le Maroc célèbre-t-il chaque année la Journée nationale de la sécurité routière ?
@@ -361,7 +270,7 @@ Q: À quelle date le Maroc célèbre-t-il chaque année la Journée nationale de
 - Le 16 mai
 - Le 1er octobre
 C: Le 18 février.
-E: La Journée nationale de la sécurité routière est célébrée chaque 18 février. Elle est l'occasion de dresser le bilan de la lutte contre les accidents de la circulation et de mener des campagnes de sensibilisation, aujourd'hui animées par la NARSA. Le 1er octobre 2010 est la date d'entrée en vigueur du Code de la route.
+E: La Journée nationale de la sécurité routière est célébrée chaque 18 février. Elle est l'occasion de dresser le bilan de la lutte contre les accidents de la circulation et de mener des campagnes de sensibilisation, aujourd'hui animées par la NARSA. Le 1er mars est la Journée mondiale de la protection civile et le 16 mai l'anniversaire de la DGSN.
 S: src-journee-securite-routiere
 AR:
 Q: في أي تاريخ يحتفل المغرب كل سنة باليوم الوطني للسلامة الطرقية؟
@@ -370,97 +279,7 @@ Q: في أي تاريخ يحتفل المغرب كل سنة باليوم الو�
 - 16 ماي
 - فاتح أكتوبر
 C: 18 فبراير.
-E: يُحتفل باليوم الوطني للسلامة الطرقية في 18 فبراير من كل سنة، وهو مناسبة لتقييم حصيلة محاربة حوادث السير وتنظيم حملات تحسيسية تشرف عليها اليوم الوكالة الوطنية للسلامة الطرقية. أما فاتح أكتوبر 2010 فهو تاريخ دخول مدونة السير حيز التنفيذ.
-
-[CIV-033] citoyennete | intermediate
-Q: Selon la loi n° 04-20, à partir de quel âge la carte nationale d'identité électronique devient-elle obligatoire ?
-* 16 ans révolus
-- 12 ans révolus
-- 18 ans révolus
-- 21 ans révolus
-C: À 16 ans révolus.
-E: La loi n° 04-20 relative à la CNIE (dahir n° 1-20-80 du 8 août 2020) impose à tout Marocain âgé de 16 ans révolus d'en être titulaire. La carte peut aussi être délivrée à un mineur plus jeune, quel que soit son âge, à la demande de son représentant légal.
-S: src-cnie-loi-04-20
-AR:
-Q: حسب القانون رقم 04.20، ابتداء من أي سن تصبح البطاقة الوطنية للتعريف الإلكترونية إجبارية؟
-* 16 سنة كاملة
-- 12 سنة كاملة
-- 18 سنة كاملة
-- 21 سنة كاملة
-C: ابتداء من 16 سنة كاملة.
-E: يُلزم القانون رقم 04.20 المتعلق بالبطاقة الوطنية للتعريف الإلكترونية (الظهير الشريف رقم 1.20.80 بتاريخ 8 غشت 2020) كل مغربي بلغ 16 سنة شمسية كاملة بالحصول عليها، ويمكن أيضًا تسليمها للقاصر الأصغر سنًا، أيًا كان عمره، بطلب من نائبه الشرعي.
-
-[CIV-035] citoyennete | intermediate
-Q: Le service militaire concerne quelle tranche d'âge, et pour quelle durée ?
-* De 19 à 25 ans, pour 12 mois
-- De 18 à 30 ans, pour 24 mois
-- De 16 à 18 ans, pour 6 mois
-- De 25 à 40 ans, pour 18 mois
-C: De 19 à 25 ans, pour 12 mois.
-E: La loi n° 44-18 vise les jeunes de 19 à 25 ans pour un service de 12 mois. Des dispenses sont prévues, notamment pour inaptitude physique, charge de famille ou poursuite d'études ; une personne dispensée peut être appelée jusqu'à 40 ans si le motif de dispense disparaît. Les appelés perçoivent une solde mensuelle fixée par décret (décret n° 2-19-47 du 19 février 2019).
-S: src-service-militaire
-AR:
-Q: ما هي الفئة العمرية المعنية بالخدمة العسكرية، وما مدتها؟
-* من 19 إلى 25 سنة، لمدة 12 شهرًا
-- من 18 إلى 30 سنة، لمدة 24 شهرًا
-- من 16 إلى 18 سنة، لمدة 6 أشهر
-- من 25 إلى 40 سنة، لمدة 18 شهرًا
-C: من 19 إلى 25 سنة، لمدة 12 شهرًا.
-E: يستهدف القانون رقم 44.18 الشباب البالغين من 19 إلى 25 سنة لخدمة مدتها 12 شهرًا. ويتضمن حالات للإعفاء، منها عدم الأهلية البدنية أو الصحية، والتكفل بالأسرة، ومتابعة الدراسة؛ ويمكن استدعاء المعفى إلى حدود 40 سنة إذا زال سبب الإعفاء. ويتقاضى المجندون أجرة شهرية يحددها مرسوم (المرسوم رقم 2.19.47 الصادر في 19 فبراير 2019).
-
-[CIV-036] citoyennete | beginner
-Q: Quel devoir civique la Constitution de 2011 impose-t-elle à tous ?
-* Supporter, en proportion de ses facultés contributives, les charges publiques que seule la loi peut créer
-- Adhérer à un syndicat professionnel
-- Posséder un passeport en cours de validité
-- Résider dans sa commune de naissance
-C: Contribuer aux charges publiques (l'impôt) selon ses moyens.
-E: L'article 39 dispose que tous supportent, en proportion de leurs facultés contributives, les charges publiques que seule la loi peut, dans les formes prévues par la Constitution, créer et répartir. L'article 38, lui, prévoit que tous les citoyens et citoyennes contribuent à la défense de la patrie et de son intégrité territoriale contre toute agression ou menace.
-S: src-constitution-2011
-AR:
-Q: ما هو الواجب المدني الذي يفرضه دستور 2011 على الجميع؟
-* تحمّل التكاليف العمومية، كلٌّ حسب استطاعته، والتي للقانون وحده إحداثها
-- الانخراط في نقابة مهنية
-- حيازة جواز سفر ساري المفعول
-- الإقامة في الجماعة التي وُلد فيها
-C: المساهمة في التكاليف العمومية (الضرائب) حسب الاستطاعة.
-E: ينص الفصل 39 على أنه على الجميع أن يتحمل، كلٌّ على قدر استطاعته، التكاليف العمومية التي للقانون وحده إحداثها وتوزيعها وفق الإجراءات المنصوص عليها في الدستور. أما الفصل 38 فينص على أن تساهم كل المواطنات والمواطنين في الدفاع عن الوطن ووحدته الترابية تجاه أي عدوان أو تهديد.
-
-[CIV-037] deontologie | intermediate
-Q: Selon la Constitution, selon quels principes les agents des services publics exercent-ils leurs fonctions ?
-* Respect de la loi, neutralité, transparence, probité et intérêt général
-- Obéissance politique, discrétion absolue et rentabilité
-- Loyauté envers le parti majoritaire, efficacité et ancienneté
-- Hiérarchie, confidentialité et intérêt du service avant celui des usagers
-C: Respect de la loi, neutralité, transparence, probité et intérêt général.
-E: L'article 155 prévoit que les agents des services publics exercent leurs fonctions selon les principes de respect de la loi, de neutralité, de transparence, de probité et d'intérêt général. Pour un policier, un gendarme ou un douanier, la neutralité signifie traiter tous les usagers de la même manière, sans considération d'opinion, d'origine ou de relations personnelles.
-S: src-constitution-2011
-AR:
-Q: حسب الدستور، وفق أي مبادئ يمارس أعوان المرافق العمومية وظائفهم؟
-* احترام القانون والحياد والشفافية والنزاهة والمصلحة العامة
-- الطاعة السياسية والكتمان المطلق والمردودية
-- الولاء لحزب الأغلبية والفعالية والأقدمية
-- التسلسل الإداري والسرية وتقديم مصلحة المرفق على مصلحة المرتفقين
-C: احترام القانون والحياد والشفافية والنزاهة والمصلحة العامة.
-E: ينص الفصل 155 على أن أعوان المرافق العمومية يمارسون وظائفهم وفقًا لمبادئ احترام القانون والحياد والشفافية والنزاهة والمصلحة العامة. وبالنسبة لرجل الأمن أو الدركي أو الجمركي، يعني الحياد معاملة جميع المرتفقين على قدم المساواة، دون اعتبار للرأي أو الأصل أو العلاقات الشخصية.
-
-[CIV-038] deontologie | intermediate
-Q: Un fonctionnaire prend connaissance, dans son service, d'informations sur un dossier en cours. Que lui impose le Statut général de la fonction publique ?
-* La discrétion professionnelle sur les faits et informations connus dans l'exercice ou à l'occasion de ses fonctions
-- Rien, tant qu'il n'en parle qu'à sa famille et à ses amis
-- Le secret uniquement pour les documents portant la mention « confidentiel »
-- Le secret seulement s'il pourrait tirer un profit de ces informations
-C: Il est tenu à la discrétion professionnelle.
-E: L'article 18 du Statut général de la fonction publique (dahir n° 1-58-008 du 24 février 1958) impose à tout fonctionnaire la discrétion professionnelle pour tout ce qui concerne les faits et informations dont il a connaissance dans l'exercice ou à l'occasion de l'exercice de ses fonctions. Cette obligation est particulièrement stricte pour les agents de sécurité et de douane, qui manipulent des données personnelles et des informations d'enquête.
-S: src-sgfp
-AR:
-Q: اطّلع موظف، داخل مصلحته، على معلومات تخص ملفًا قيد المعالجة. ماذا يفرض عليه النظام الأساسي العام للوظيفة العمومية؟
-* كتمان السر المهني في كل ما يتعلق بالوقائع والمعلومات التي يطّلع عليها أثناء تأدية مهامه أو بمناسبتها
-- لا شيء، ما دام لا يتحدث عنها إلا مع أسرته وأصدقائه
-- الكتمان بالنسبة للوثائق التي تحمل عبارة «سري» فقط
-- الكتمان فقط إذا كان بإمكانه تحقيق منفعة من تلك المعلومات
-C: هو ملزم بكتمان السر المهني.
-E: يفرض الفصل 18 من النظام الأساسي العام للوظيفة العمومية (الظهير الشريف رقم 1.58.008 بتاريخ 24 فبراير 1958) على كل موظف كتمان السر المهني في كل ما يخص الأعمال والأخبار التي يعلمها أثناء تأدية مهامه أو بمناسبة مزاولتها. ويكتسي هذا الالتزام صرامة خاصة بالنسبة لموظفي الأمن والجمارك، لتعاملهم مع معطيات شخصية ومعلومات تتعلق بالأبحاث.
+E: يُحتفل باليوم الوطني للسلامة الطرقية في 18 فبراير من كل سنة، وهو مناسبة لتقييم حصيلة محاربة حوادث السير وتنظيم حملات تحسيسية تشرف عليها اليوم الوكالة الوطنية للسلامة الطرقية. أما فاتح مارس فهو اليوم العالمي للوقاية المدنية، و16 ماي ذكرى تأسيس المديرية العامة للأمن الوطني.
 
 [CIV-039] urgences | beginner
 Q: En ville, quel numéro faut-il composer pour joindre Police secours ?

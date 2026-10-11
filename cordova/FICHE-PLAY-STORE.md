@@ -33,7 +33,7 @@ Concours Maroc - QCM corrigés
 Concours au Maroc : fiches, plus de 1 000 QCM corrigés, examens blancs, FR et AR
 ```
 
-**Description complète** (3 681/4 000)
+**Description complète** (3 652/4 000)
 
 ```text
 Concours Maroc vous accompagne dans la préparation des concours au Maroc : concours d'accès aux écoles après le bac et concours de recrutement de niveau bac. Pour chaque concours, une fiche claire, des QCM corrigés et des examens blancs, en français et en arabe.
@@ -50,7 +50,7 @@ Concours Maroc vous accompagne dans la préparation des concours au Maroc : conc
 Chaque fiche présente les conditions d'accès (bac, âge, taille…), le mode de sélection, les derniers seuils connus, les épreuves, le nombre de postes annoncé, le calendrier et les liens officiels.
 
 PLUS DE 1 000 QCM CORRIGÉS
-18 matières : Maroc (histoire, géographie, institutions), culture générale, logique et tests psychotechniques, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie et gestion, sciences et administration, secourisme, architecture et arts, sécurité et citoyenneté, culture FAR pour l'entretien, système éducatif et pédagogie. Chaque question est suivie de la bonne réponse, d'une explication et de sa source.
+17 matières : Maroc (histoire, géographie, institutions), culture générale, logique et tests psychotechniques, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie et gestion, sciences et administration, secourisme, architecture et arts, institutions de sécurité, système éducatif et pédagogie. Chaque question est suivie de la bonne réponse, d'une explication et de sa source.
 
 UN ENTRAÎNEMENT ADAPTÉ À VOTRE CONCOURS
 • Examen blanc chronométré au format du concours choisi : nombre de questions, durée, barème
@@ -102,7 +102,7 @@ Concours Maroc مباريات المغرب
 حضّر مباريات المغرب: أكثر من 1000 سؤال مصحح وامتحانات تجريبية بالعربية والفرنسية
 ```
 
-**الوصف الكامل** (3 077/4 000)
+**الوصف الكامل** (3 047/4 000)
 
 ```text
 يرافقك تطبيق Concours Maroc في التحضير للمباريات بالمغرب: مباريات ولوج المدارس بعد البكالوريا ومباريات التوظيف بمستوى البكالوريا. لكل مباراة بطاقة واضحة وأسئلة متعددة الاختيارات مصححة وامتحانات تجريبية، بالعربية والفرنسية.
@@ -119,7 +119,7 @@ Concours Maroc مباريات المغرب
 تعرض كل بطاقة شروط الولوج (البكالوريا، السن، القامة…)، وطريقة الانتقاء، وآخر العتبات المعروفة، والاختبارات، وعدد المناصب المعلن، والمواعيد، والروابط الرسمية.
 
 أكثر من 1000 سؤال مصحح
-18 مادة: المغرب (التاريخ والجغرافيا والمؤسسات)، الثقافة العامة، المنطق والاختبارات السيكوتقنية، الحساب، الرياضيات، الفيزياء، الكيمياء، علوم الحياة والأرض، الفرنسية، العربية، الإنجليزية، الاقتصاد والتدبير، العلوم والإدارة، الإسعافات الأولية، الهندسة المعمارية والفنون، الأمن والمواطنة، الثقافة العسكرية للمقابلة، المنظومة التربوية والبيداغوجيا. كل سؤال متبوع بالجواب الصحيح وشرحه ومصدره.
+17 مادة: المغرب (التاريخ والجغرافيا والمؤسسات)، الثقافة العامة، المنطق والاختبارات السيكوتقنية، الحساب، الرياضيات، الفيزياء، الكيمياء، علوم الحياة والأرض، الفرنسية، العربية، الإنجليزية، الاقتصاد والتدبير، العلوم والإدارة، الإسعافات الأولية، الهندسة المعمارية والفنون، مؤسسات الأمن، المنظومة التربوية والبيداغوجيا. كل سؤال متبوع بالجواب الصحيح وشرحه ومصدره.
 
 تمرين على مقاس مباراتك
 • امتحان تجريبي بتوقيت محدد وبصيغة المباراة المختارة: عدد الأسئلة، المدة، سلّم التنقيط

@@ -84,7 +84,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Combien de membres compte la Chambre des représentants (effectif fixé par la loi organique n° 27-11, appliqué lors des législatives du 23 septembre 2026) ?",
+     "text": "Combien de membres compte la Chambre des représentants ?",
      "choices": [
       "395",
       "270",
@@ -96,7 +96,7 @@
      "explanation": "Fixé à 395 par la loi organique n° 27-11 relative à la Chambre des représentants (2011, modifiée), cet effectif a de nouveau été renouvelé lors des élections législatives du 23 septembre 2026. Les députés sont élus pour cinq ans au suffrage universel direct, au scrutin de liste à la représentation proportionnelle. Seule la Chambre des représentants investit le gouvernement (article 88) et peut le renverser par une motion de censure (article 105)."
     },
     "ar": {
-     "text": "كم عدد أعضاء مجلس النواب (وفق القانون التنظيمي رقم 27.11، وهو العدد المعتمد في الانتخابات التشريعية ليوم 23 شتنبر 2026)؟",
+     "text": "كم عدد أعضاء مجلس النواب؟",
      "choices": [
       "395",
       "270",
@@ -725,7 +725,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Selon l'article 53 de la Constitution, qui est le Chef Suprême des Forces Armées Royales ?",
+     "text": "Qui est le Chef suprême des Forces Armées Royales ?",
      "choices": [
       "Le Roi",
       "Le Chef du gouvernement",
@@ -737,7 +737,7 @@
      "explanation": "L'article 53 de la Constitution de 2011 dispose que le Roi est le Chef Suprême des Forces Armées Royales ; il nomme aux emplois militaires et peut déléguer ce droit. Le Roi porte également le titre de Chef d'État-Major Général des FAR."
     },
     "ar": {
-     "text": "حسب الفصل 53 من الدستور، من هو القائد الأعلى للقوات المسلحة الملكية؟",
+     "text": "من هو القائد الأعلى للقوات المسلحة الملكية؟",
      "choices": [
       "الملك",
       "رئيس الحكومة",
@@ -816,7 +816,7 @@
    ],
    "l10n": {
     "fr": {
-     "text": "Le régime de sécurité sociale institué par le dahir de 1959 et géré par la CNSS couvre principalement quels travailleurs ?",
+     "text": "Le régime de sécurité sociale géré par la CNSS couvre principalement quels travailleurs ?",
      "choices": [
       "Les salariés du secteur privé",
       "Les fonctionnaires de l'État",
@@ -828,7 +828,7 @@
      "explanation": "Institué par le dahir du 31 décembre 1959 et refondu en 1972, ce régime obligatoire s'applique aux salariés de l'industrie, du commerce, des services, de l'agriculture et de l'artisanat. Les pensions des fonctionnaires civils relèvent, elles, principalement de la Caisse Marocaine des Retraites. À noter : la loi n° 54-23, publiée au Bulletin officiel début 2026, transfère à terme à la CNSS la gestion de l'assurance maladie obligatoire du secteur public jusque-là confiée à la CNOPS, sans fusionner le régime de sécurité sociale des salariés du privé avec celui des fonctionnaires."
     },
     "ar": {
-     "text": "يغطي نظام الضمان الاجتماعي المُحدَث بظهير 1959، والذي يدبّره الصندوق الوطني للضمان الاجتماعي، أساسًا أيّ فئة من الشغيلة؟",
+     "text": "يغطي نظام الضمان الاجتماعي الذي يدبّره الصندوق الوطني للضمان الاجتماعي أساسًا أيّ فئة من الشغيلة؟",
      "choices": [
       "أُجراء القطاع الخاص",
       "موظفو الدولة",

@@ -10,7 +10,7 @@ export default {
   minMention: 12,
   age: { min: 18, max: 20, ref: '12-31', at: { fr: 'au 31 décembre de l’année du concours', ar: 'في 31 دجنبر من سنة المباراة' } },
   height: { m: 1.70, f: 1.60 },
-  practice: { subjects: ['maths', 'physique', 'logique', 'anglais', 'defense'], mock: null, difficulty: 'tres-selectif' },
+  practice: { subjects: ['maths', 'physique', 'logique', 'anglais'], mock: null, difficulty: 'tres-selectif' },
   related: ['arm', 'era', 'cpge'],
   official: [{ label: 'Portail de recrutement des Forces Armées Royales', url: 'https://recrutement.far.ma' }],
   sources: [{ title: 'Tawjihnet — Concours ERN Casablanca officiers 2026-2027 (avis)', url: 'https://www.tawjihnet.net/concours-ern-casa-casablanca-officiers-2026-2027/', date: '2026-05' }, { title: '9rayti — École Royale Navale : concours d’accès au cycle des élèves officiers 2026', url: 'https://www.9rayti.com/concoursa/ecole-royale-navale-de-casablanca-concours-dacces-au-cycle-des-eleves-officiers-2026', date: '2026' }],

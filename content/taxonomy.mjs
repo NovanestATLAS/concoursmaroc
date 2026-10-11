@@ -61,8 +61,7 @@ export const SUBJECTS = [
   { id: 'sciences', fr: 'Sciences générales, numérique et administration', ar: 'العلوم العامة والرقميات والإدارة', short: { fr: 'Sciences & admin.', ar: 'علوم وإدارة' }, slug: 'sciences-numerique-administration' },
   { id: 'secourisme', fr: 'Secourisme et sécurité', ar: 'الإسعافات الأولية والسلامة', short: { fr: 'Secourisme', ar: 'الإسعاف' }, slug: 'secourisme-premiers-secours' },
   { id: 'architecture', fr: 'Architecture, art et perception', ar: 'الهندسة المعمارية والفن والإدراك', short: { fr: 'Archi & art', ar: 'معمار وفن' }, slug: 'architecture-art' },
-  { id: 'securite', fr: 'Sécurité, institutions et citoyenneté', ar: 'الأمن والمؤسسات والمواطنة', short: { fr: 'Sécurité & citoyenneté', ar: 'الأمن والمواطنة' }, slug: 'securite-citoyennete' },
-  { id: 'defense', fr: 'Culture FAR pour l’entretien', ar: 'ثقافة القوات المسلحة الملكية للمقابلة', short: { fr: 'Culture FAR', ar: 'ثقافة عسكرية' }, slug: 'culture-militaire-far' },
+  { id: 'securite', fr: 'Institutions de sécurité et services d’urgence', ar: 'مؤسسات الأمن وخدمات الطوارئ', short: { fr: 'Institutions de sécurité', ar: 'مؤسسات الأمن' }, slug: 'institutions-securite' },
   { id: 'education', fr: 'Système éducatif et pédagogie', ar: 'المنظومة التربوية والبيداغوجيا', short: { fr: 'Éducation & pédagogie', ar: 'التربية والبيداغوجيا' }, slug: 'systeme-educatif-pedagogie' },
 ];
 
