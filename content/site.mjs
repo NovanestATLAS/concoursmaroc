@@ -30,7 +30,7 @@ export default {
   // Web). When set, every page of the website gets the tag and the trainer sends
   // events (select_concours, quiz_start, quiz_complete, search); the Android app
   // never loads it.
-  ga4: '',
+  ga4: 'G-11QRJ1VXW0',
   // Google AdSense publisher ID, e.g. 'ca-pub-1234567890123456'.
   // When set, the AdSense script is added to every content page and ads.txt is generated.
   adsenseClient: 'ca-pub-3709043100488694',
