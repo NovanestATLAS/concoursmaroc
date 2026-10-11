@@ -168,7 +168,7 @@ export function layout(site, page, footerLinks) {
 
   const themeInit = `(function(){try{var t=localStorage.getItem('cm.theme');if(!t||t==='auto'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();`;
 
-  const ga = site.ga4 ? raw(`<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(site.ga4)}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${esc(site.ga4)}',{anonymize_ip:true});</script>`) : '';
+  const ga = site.ga4 ? raw(`<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(site.ga4)}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${esc(site.ga4)}');</script>`) : '';
   const ads = site.adsenseClient && !page.noAds ? raw(`<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(site.adsenseClient)}" crossorigin="anonymous"></script>`) : '';
 
   return `<!DOCTYPE html>

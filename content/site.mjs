@@ -26,7 +26,10 @@ export default {
   // ---- services you will add later (leave empty until then) ----
   // Google Search Console HTML-tag verification code (content="..." value only).
   googleSiteVerification: '',
-  // Google Analytics 4 measurement ID, e.g. 'G-XXXXXXXXXX'.
+  // Google Analytics 4 measurement ID, e.g. 'G-XXXXXXXXXX' (Admin → Data streams →
+  // Web). When set, every page of the website gets the tag and the trainer sends
+  // events (select_concours, quiz_start, quiz_complete, search); the Android app
+  // never loads it.
   ga4: '',
   // Google AdSense publisher ID, e.g. 'ca-pub-1234567890123456'.
   // When set, the AdSense script is added to every content page and ads.txt is generated.

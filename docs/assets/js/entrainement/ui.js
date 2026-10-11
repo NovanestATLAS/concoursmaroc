@@ -63,6 +63,10 @@
 
   // ---------------------------------------------------------------- helpers
   function t(k, v) { return T.t(k, v); }
+  /* Google Analytics event when the website has the GA4 tag (never in the app). */
+  function track(name, params) {
+    try { if (typeof global.gtag === 'function') global.gtag('event', name, params || {}); } catch (e) { /* ignore */ }
+  }
   function L(obj) { return obj ? (obj[T.lang] || obj.fr || '') : ''; }
 
   function catInfo(id) {
@@ -251,6 +255,7 @@
       holder.remove();
       var built = builder();
       if (!built) { UI.toast(t('setup.notEnough')); return; }
+      track('quiz_start', { mode: built.mode, concours_id: built.concours || 'general', question_count: built.items.length });
       app.go('quiz');
     });
   }
@@ -263,6 +268,7 @@
     function choose(id) {
       Store.patchProfile({ targetExam: id || null });
       setup.difficulty = null;
+      track('select_concours', { concours_id: id || 'general' });
       UI.closeSheet();
       UI.toast(id ? t('picker.chosen', { name: L(byId(id).short) }) : t('picker.general'));
       if (onDone) onDone(id);
@@ -779,6 +785,7 @@
     stopTimer();
     TTS.stop();
     var summary = Quiz.finish();
+    track('quiz_complete', { mode: summary.mode, concours_id: summary.concours || 'general', question_count: summary.total, score: summary.accuracy });
     summary.review = Quiz.review();
     lastSummary = summary;
     Store.write('lastSummary', summary);

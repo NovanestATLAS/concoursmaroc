@@ -53,7 +53,7 @@ Tout se règle dans `content/site.mjs`, puis `npm run build` :
 | Champ | Effet |
 |---|---|
 | `googleSiteVerification` | Ajoute la balise de vérification Search Console. Déclarez ensuite `sitemap.xml` dans la Search Console. |
-| `ga4` | Ajoute Google Analytics 4 (identifiant `G-XXXXXXXXXX`). |
+| `ga4` | Ajoute Google Analytics 4 (identifiant `G-XXXXXXXXXX`) sur toutes les pages du site, jamais dans l’application Android. L’entraînement envoie aussi les événements `select_concours`, `quiz_start`, `quiz_complete` (mode, concours, score) et la recherche du site l’événement `search` ; la politique de confidentialité se met à jour toute seule. |
 | `adsenseClient` | Ajoute le script AdSense (identifiant `ca-pub-…`) sur les pages de contenu (pas sur 404 ni hors ligne), génère `ads.txt` (et `app-ads.txt`, le même éditeur servant l’application Android via AdMob) et complète la politique de confidentialité. |
 
 AdSense est configuré avec `ca-pub-3709043100488694`. Après validation du site par Google, activez les annonces

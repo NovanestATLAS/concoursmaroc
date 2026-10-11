@@ -160,7 +160,12 @@
     document.addEventListener('click', function (e) {
       if (!sPanel.contains(e.target) && !sBtn.contains(e.target)) closeSearch();
       // a result was chosen: the panel must not stay over the next page
-      else if (e.target.closest && e.target.closest('#search-results a')) closeSearch();
+      else if (e.target.closest && e.target.closest('#search-results a')) {
+        // Google Analytics (website only, when the GA4 tag is configured)
+        var term = ($('#search-input') || {}).value;
+        if (term && typeof window.gtag === 'function') window.gtag('event', 'search', { search_term: term.trim().slice(0, 80) });
+        closeSearch();
+      }
     });
     document.addEventListener('cm:page', closeSearch);
     document.addEventListener('keydown', function (e) {
