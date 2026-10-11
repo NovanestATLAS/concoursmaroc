@@ -63,6 +63,12 @@
 
   // ---------------------------------------------------------------- helpers
   function t(k, v) { return T.t(k, v); }
+  /* Element whose text may hold formulas written $...$ (typeset by KaTeX). */
+  function mtext(tag, attrs, s) {
+    var el = U.el(tag, attrs);
+    if (global.CM.math) global.CM.math.set(el, s); else el.textContent = s == null ? '' : s;
+    return el;
+  }
   /* Google Analytics event when the website has the GA4 tag (never in the app). */
   function track(name, params) {
     try { if (typeof global.gtag === 'function') global.gtag('event', name, params || {}); } catch (e) { /* ignore */ }
@@ -611,17 +617,20 @@
     var card = U.el('div', { class: 'q-card' });
     var meta = U.el('div', { class: 'q-meta' });
     meta.appendChild(U.el('span', { class: 'badge', text: t('difficulty.' + view.question.difficulty) }));
+    // Questions taken from a past concours carry its name (source "badge", e.g. "Médecine 2024")
+    var qsrc = (sourcesDoc.sources || []).filter(function (s) { return s.id === view.question.sourceId; })[0];
+    if (qsrc && qsrc.badge) meta.appendChild(U.el('span', { class: 'badge gold', text: L(qsrc.badge) }));
     if (view.lang !== T.lang && view.question.category !== 'arabe' && view.question.category !== 'francais' && view.question.category !== 'anglais') {
       meta.appendChild(U.el('span', { class: 'badge blue', text: view.lang === 'ar' ? t('quiz.inArabic') : t('quiz.inFrench') }));
     }
     card.appendChild(meta);
     var qlang = view.question.category === 'anglais' ? 'en' : view.lang;
-    card.appendChild(U.el('div', { class: 'q-text', lang: qlang, dir: view.lang === 'ar' ? 'rtl' : 'ltr', text: view.body.text }));
+    card.appendChild(mtext('div', { class: 'q-text', lang: qlang, dir: view.lang === 'ar' ? 'rtl' : 'ltr' }, view.body.text));
     var optionsEl = U.el('div', { class: 'options', role: 'group', 'aria-label': t('quiz.choices'), lang: qlang, dir: view.lang === 'ar' ? 'rtl' : 'ltr' });
-    var letters = view.lang === 'ar' ? ['أ', 'ب', 'ج', 'د'] : ['A', 'B', 'C', 'D'];
+    var letters = view.lang === 'ar' ? ['أ', 'ب', 'ج', 'د', 'هـ'] : ['A', 'B', 'C', 'D', 'E'];
     var buttons = [];
     view.choices.forEach(function (choice, i) {
-      var b = U.el('button', { class: 'opt', type: 'button' }, [U.el('span', { class: 'opt-key', text: letters[i] }), U.el('span', { class: 'opt-label', text: choice })]);
+      var b = U.el('button', { class: 'opt', type: 'button' }, [U.el('span', { class: 'opt-key', text: letters[i] }), mtext('span', { class: 'opt-label' }, choice)]);
       if (exam && view.state.answeredIndex === i) b.setAttribute('data-state', 'selected');
       b.onclick = function () { onAnswer(i); };
       buttons.push(b);
@@ -694,10 +703,10 @@
       U.clear(feedbackHost);
       var box = U.el('div', { class: 'feedback ' + (res.correct ? 'good' : 'bad'), role: 'status' });
       box.appendChild(U.el('div', { class: 'fb-head', text: res.correct ? t('quiz.correct') : t('quiz.incorrect') }));
-      box.appendChild(U.el('p', { lang: res.lang, text: res.body.correction }));
-      if (!res.correct) box.appendChild(U.el('p', { class: 'legal', text: t('quiz.correctAnswerIs') + ' ' + res.body.choices[res.body.correctIndex] }));
+      box.appendChild(mtext('p', { lang: res.lang }, res.body.correction));
+      if (!res.correct) box.appendChild(mtext('p', { class: 'legal' }, t('quiz.correctAnswerIs') + ' ' + res.body.choices[res.body.correctIndex]));
       var expBox = U.el('div', { class: 'explain', lang: res.lang, dir: res.lang === 'ar' ? 'rtl' : 'ltr' });
-      expBox.appendChild(U.el('div', { text: res.body.explanation }));
+      expBox.appendChild(mtext('div', {}, res.body.explanation));
       var src = (sourcesDoc.sources || []).filter(function (s) { return s.id === res.question.sourceId; })[0];
       if (src && src.url) {
         var a = U.el('a', { href: src.url, target: '_blank', rel: 'noopener nofollow', class: 'src' }, [t('quiz.source') + ' : ' + src.title]);
@@ -740,8 +749,8 @@
     UI._keys = function (e) {
       if (UI.isSheetOpen() || /input|textarea|select/i.test((document.activeElement || {}).tagName || '')) return;
       var k = e.key.toLowerCase();
-      var map = { '1': 0, '2': 1, '3': 2, '4': 3, a: 0, b: 1, c: 2, d: 3 };
-      if (Object.prototype.hasOwnProperty.call(map, k)) { e.preventDefault(); if (!buttons[map[k]].disabled) onAnswer(map[k]); return; }
+      var map = { '1': 0, '2': 1, '3': 2, '4': 3, '5': 4, a: 0, b: 1, c: 2, d: 3, e: 4 };
+      if (Object.prototype.hasOwnProperty.call(map, k) && buttons[map[k]]) { e.preventDefault(); if (!buttons[map[k]].disabled) onAnswer(map[k]); return; }
       if (exam) {
         var rtl = document.documentElement.dir === 'rtl';
         if (k === (rtl ? 'arrowleft' : 'arrowright')) { if (!Quiz.isLast()) { stopTimer(); Quiz.next(); UI.renderQuiz(); } }
@@ -886,14 +895,14 @@
       var rest = items.length - limit;
       items.slice(0, limit).forEach(function (r) {
         var box = U.el('div', { class: 'review-item ' + (r.correct ? 'ok' : r.answered ? 'ko' : 'skip'), lang: r.lang, dir: r.lang === 'ar' ? 'rtl' : 'ltr' });
-        box.appendChild(U.el('div', { class: 'ri-q', text: (r.index + 1) + '. ' + r.body.text }));
+        box.appendChild(mtext('div', { class: 'ri-q' }, (r.index + 1) + '. ' + r.body.text));
         if (r.correct) {
-          box.appendChild(U.el('div', { class: 'ri-a', text: '✓ ' + r.chosen }));
+          box.appendChild(mtext('div', { class: 'ri-a' }, '✓ ' + r.chosen));
         } else {
-          box.appendChild(U.el('div', { class: 'ri-a', text: r.answered ? '✗ ' + r.chosen : '— ' + t('results.noAnswer') }));
-          box.appendChild(U.el('div', { class: 'ri-a', text: '✓ ' + r.expected }));
+          box.appendChild(mtext('div', { class: 'ri-a' }, r.answered ? '✗ ' + r.chosen : '— ' + t('results.noAnswer')));
+          box.appendChild(mtext('div', { class: 'ri-a' }, '✓ ' + r.expected));
         }
-        box.appendChild(U.el('div', { class: 'ri-a legal', text: r.body.explanation }));
+        box.appendChild(mtext('div', { class: 'ri-a legal' }, r.body.explanation));
         listHost.appendChild(box);
       });
       if (rest > 0) {
@@ -990,8 +999,8 @@
           var note = Quiz.getNote(id);
           list.appendChild(U.el('div', { class: 'list-row' }, [
             U.el('div', { class: 'lr-main', lang: picked.lang, dir: picked.lang === 'ar' ? 'rtl' : 'ltr' }, [
-              U.el('div', { text: picked.body.text }),
-              U.el('div', { class: 'lr-sub', text: catLabel(q.category) + ' · ✓ ' + picked.body.choices[picked.body.correctIndex] + (note ? ' · 📝 ' + note : '') })
+              mtext('div', {}, picked.body.text),
+              mtext('div', { class: 'lr-sub' }, catLabel(q.category) + ' · ✓ ' + picked.body.choices[picked.body.correctIndex] + (note ? ' · 📝 ' + note : ''))
             ]),
             U.el('button', { class: 'btn sm ghost', type: 'button', onclick: function () { Quiz.removeBookmark(id); paint(); } }, [t('bookmarks.remove')])
           ]));

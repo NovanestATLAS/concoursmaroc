@@ -22,7 +22,7 @@
     return voices.filter(function (v) { return String(v.lang || '').toLowerCase().indexOf(lang) === 0; });
   }
 
-  var LETTERS = { ar: ['أ', 'ب', 'ج', 'د'], fr: ['A', 'B', 'C', 'D'] };
+  var LETTERS = { ar: ['أ', 'ب', 'ج', 'د', 'هـ'], fr: ['A', 'B', 'C', 'D', 'E'] };
 
   var TTS = {
     isAvailable: function () { return !!synth && typeof global.SpeechSynthesisUtterance === 'function'; },
@@ -52,10 +52,12 @@
     },
 
     speakQuestion: function (body, lang) {
-      var text = body.text;
+      var M = global.CM.math;
+      var say = function (s) { return M ? M.speech(s) : s; };   // formulas in words
+      var text = say(body.text);
       if (prefs.readChoices) {
         var letters = LETTERS[lang === 'ar' ? 'ar' : 'fr'];
-        text += '. ' + body.choices.map(function (c, i) { return letters[i] + ' : ' + c; }).join('. ');
+        text += '. ' + body.choices.map(function (c, i) { return letters[i] + ' : ' + say(c); }).join('. ');
       }
       return TTS.speak(text, lang);
     }

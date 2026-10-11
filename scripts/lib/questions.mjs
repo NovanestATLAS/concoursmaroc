@@ -16,7 +16,8 @@
  *   S: src-xyz                     (optional source id for this question)
  *   AR:                            (optional Arabic version, same keys follow)
  *
- * Exactly four choices and exactly one "*" per language block.
+ * Four choices (five for questions in the medicine concours format) and exactly
+ * one "*" per language block; every language has the same number of choices.
  * Choices are shuffled at build time (same permutation for every language,
  * stable per question id), so the order in the source does not matter.
  * Add the flag "keep" to the header line to keep the source order, e.g.
@@ -100,13 +101,14 @@ function finalize(q, file) {
     const b = q.l10n[l];
     const where = `${file}: ${q.id} [${l}]`;
     if (!b.text) throw new Error(`${where}: missing Q:`);
-    if (b.choices.length !== 4) throw new Error(`${where}: needs exactly 4 choices, found ${b.choices.length}`);
+    if (b.choices.length !== 4 && b.choices.length !== 5) throw new Error(`${where}: needs 4 or 5 choices, found ${b.choices.length}`);
     if (b.correctIndex < 0) throw new Error(`${where}: no correct choice marked with "*"`);
-    if (new Set(b.choices.map((c) => c.toLowerCase())).size !== 4) throw new Error(`${where}: duplicate choices`);
+    if (new Set(b.choices.map((c) => c.toLowerCase())).size !== b.choices.length) throw new Error(`${where}: duplicate choices`);
     if (!b.correction) throw new Error(`${where}: missing C:`);
     if (!b.explanation) throw new Error(`${where}: missing E:`);
   }
   const base = q.l10n.fr || q.l10n[langs[0]];
+  if (langs.some((l) => q.l10n[l].choices.length !== base.choices.length)) throw new Error(`${file}: ${q.id}: every language needs the same number of choices`);
   delete q._line;
   return {
     id: q.id,
@@ -128,16 +130,16 @@ export function validateQuestion(q, file) {
   if (!DIFFS.includes(q.difficulty)) throw new Error(`${where}: bad difficulty ${q.difficulty}`);
   for (const l of Object.keys(q.l10n || {})) {
     const b = q.l10n[l];
-    if (!Array.isArray(b.choices) || b.choices.length !== 4) throw new Error(`${where} [${l}]: 4 choices required`);
-    if (!(b.correctIndex >= 0 && b.correctIndex < 4)) throw new Error(`${where} [${l}]: bad correctIndex`);
-    if (new Set(b.choices.map((c) => String(c).toLowerCase())).size !== 4) throw new Error(`${where} [${l}]: duplicate choices`);
+    if (!Array.isArray(b.choices) || (b.choices.length !== 4 && b.choices.length !== 5)) throw new Error(`${where} [${l}]: 4 or 5 choices required`);
+    if (!(b.correctIndex >= 0 && b.correctIndex < b.choices.length)) throw new Error(`${where} [${l}]: bad correctIndex`);
+    if (new Set(b.choices.map((c) => String(c).toLowerCase())).size !== b.choices.length) throw new Error(`${where} [${l}]: duplicate choices`);
     if (!b.text || !b.correction || !b.explanation) throw new Error(`${where} [${l}]: text/correction/explanation required`);
   }
 }
 
-/* Stable pseudo-random permutation of the four choices, seeded by the id
+/* Stable pseudo-random permutation of the n choices, seeded by the id
    (FNV-1a + mulberry32), applied identically to every language block. */
-function seededOrder(id) {
+function seededOrder(id, n) {
   let h = 2166136261;
   for (let i = 0; i < id.length; i++) { h ^= id.charCodeAt(i); h = Math.imul(h, 16777619); }
   let a = h >>> 0;
@@ -148,15 +150,16 @@ function seededOrder(id) {
     t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
-  const order = [0, 1, 2, 3];
-  for (let i = 3; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
+  const order = Array.from({ length: n }, (_, i) => i);
+  for (let i = n - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
   return order;
 }
 
 export function shuffleChoices(q) {
   const { keepOrder, ...rest } = q;
   if (keepOrder) return rest;
-  const order = seededOrder(q.id);
+  const base0 = q.l10n.fr || q.l10n[Object.keys(q.l10n)[0]];
+  const order = seededOrder(q.id, base0.choices.length);
   const l10n = {};
   for (const [l, b] of Object.entries(q.l10n)) {
     l10n[l] = { ...b, choices: order.map((i) => b.choices[i]), correctIndex: order.indexOf(b.correctIndex) };

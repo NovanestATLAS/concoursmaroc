@@ -23,6 +23,7 @@ import { buildQcmPages } from './lib/pages/qcm.mjs';
 import { buildGuidesPages } from './lib/pages/guides.mjs';
 import { buildStaticPages } from './lib/pages/static.mjs';
 import { loadQuestionBanks } from './lib/questions.mjs';
+import { checkBanks } from './lib/math.mjs';
 import { dataFiles, searchIndex } from './lib/data.mjs';
 import { sitemapXml, robotsTxt, manifestJson } from './lib/seo.mjs';
 import { GROUPS, SUBJECTS, BAC } from '../content/taxonomy.mjs';
@@ -43,6 +44,7 @@ function copyDir(src, dest) {
   for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
     const s = path.join(src, entry.name);
     const d = path.join(dest, entry.name);
+    if (entry.name === 'package.json') continue; // vendor/katex: Node module type only
     if (entry.isDirectory()) copyDir(s, d);
     else { fs.mkdirSync(path.dirname(d), { recursive: true }); fs.copyFileSync(s, d); }
   }
@@ -101,6 +103,7 @@ async function main() {
 
   const all = await loadConcours();
   const banks = loadQuestionBanks(path.join(ROOT, 'content/questions'));
+  checkBanks(banks); // every $...$ formula must be valid LaTeX
   const links = footerLinks(all);
   const pages = [];
   const add = (p) => { if (p) pages.push(p); };
@@ -129,6 +132,7 @@ async function main() {
   copyDir(path.join(ROOT, 'src/js'), path.join(OUT, 'assets/js'));
   copyDir(path.join(ROOT, 'src/img'), path.join(OUT, 'assets/img'));
   copyDir(path.join(ROOT, 'src/fonts'), path.join(OUT, 'assets/fonts'));
+  copyDir(path.join(ROOT, 'src/vendor'), path.join(OUT, 'assets/vendor')); // KaTeX
   copyDir(path.join(ROOT, 'src/root'), OUT); // favicon, icons, etc.
 
   // Data for the practice app and the tools, search indexes
@@ -163,7 +167,7 @@ async function main() {
     }
   })(OUT);
   const version = hash.digest('hex').slice(0, 12);
-  const precache = files.filter((f) => /^(assets\/(css|js)\/|assets\/fonts\/.*\.woff2$|data\/(manifest|concours|outils|sources)\.json|data\/i18n\/|favicon\.svg|manifest\.webmanifest|entrainement\/index\.html|ar\/entrainement\/index\.html|index\.html|ar\/index\.html|offline\.html)/.test(f));
+  const precache = files.filter((f) => /^(assets\/(css|js)\/|assets\/fonts\/.*\.woff2$|assets\/vendor\/katex\/(katex\.min\.(js|css)|fonts\/.*\.woff2)$|data\/(manifest|concours|outils|sources)\.json|data\/i18n\/|favicon\.svg|manifest\.webmanifest|entrainement\/index\.html|ar\/entrainement\/index\.html|index\.html|ar\/index\.html|offline\.html)/.test(f));
   const sw = fs.readFileSync(path.join(ROOT, 'src/sw.template.js'), 'utf8')
     .replace('__VERSION__', version)
     .replace('__PRECACHE__', JSON.stringify(precache));

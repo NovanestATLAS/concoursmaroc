@@ -156,6 +156,7 @@ function shellHtml(version) {
   const sec = (s) => (s ? ` data-section="${s}"` : '');
   const scripts = [
     'js/boot-guard.js', 'cordova.js', 'js/loader.js',
+    'vendor/katex/katex.min.js', 'js/math.js',
     'js/utils.js', 'js/storage.js', 'js/i18n.js', 'js/data-loader.js', 'js/tts-service.js',
     'js/ads-config.js', 'js/ads-service.js', 'js/stats.js', 'js/quiz-engine.js', 'js/ui.js', 'js/entrainement.js',
     'js/site.js', 'js/router.js', 'js/play-service.js', 'js/app.js',
@@ -184,6 +185,7 @@ function shellHtml(version) {
 <meta name="description" content="Guide des concours au Maroc après le bac, QCM corrigés, examens blancs et outils, utilisable hors ligne.">
 <title>Concours Maroc</title>
 <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
 <link rel="stylesheet" href="css/app.css">
 <script src="js/boot-theme.js"></script>
 </head>
@@ -336,6 +338,7 @@ async function main() {
     'js/boot-theme.js': 'src/app/js/boot-theme.js',
     'js/boot-guard.js': 'src/app/js/boot-guard.js',
     'js/loader.js': 'src/app/js/loader.js',
+    'js/math.js': 'src/js/entrainement/math.js',
     'js/utils.js': 'src/js/entrainement/utils.js',
     'js/storage.js': 'src/js/entrainement/storage.js',
     'js/i18n.js': 'src/js/entrainement/i18n.js',
@@ -359,6 +362,9 @@ async function main() {
   for (const f of fs.readdirSync(path.join(ROOT, 'src/app/img'))) copy(`src/app/img/${f}`, `img/${f}`);
   copy('src/app/fonts/README.md', 'fonts/README.md');
   for (const f of fs.readdirSync(path.join(ROOT, 'src/fonts'))) copy(`src/fonts/${f}`, `fonts/${f}`);
+  // KaTeX (typesets the $...$ formulas of the question banks)
+  for (const f of ['katex.min.js', 'katex.min.css', 'LICENSE']) copy(`src/vendor/katex/${f}`, `vendor/katex/${f}`);
+  for (const f of fs.readdirSync(path.join(ROOT, 'src/vendor/katex/fonts'))) copy(`src/vendor/katex/fonts/${f}`, `vendor/katex/fonts/${f}`);
 
   // Data, translations, search indexes.
   const { files: data, manifest } = dataFiles(site, all, banks, ROOT);

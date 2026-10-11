@@ -6,6 +6,13 @@ import { linker, breadcrumb, breadcrumbLd } from '../layout.mjs';
 import { t } from '../strings.mjs';
 import { SUBJECTS } from '../../../content/taxonomy.mjs';
 import { subjectArt } from '../art.mjs';
+import { renderMath, plainMath, hasMath, KATEX_CSS } from '../math.mjs';
+import fs from 'node:fs';
+
+const SOURCES = JSON.parse(fs.readFileSync(new URL('../../../content/sources.json', import.meta.url), 'utf8'));
+
+// Past-concours questions show the concours name (source "badge").
+const BADGE = new Map((SOURCES.sources || []).filter((s) => s.badge).map((s) => [s.id, s.badge]));
 
 const PER_PAGE = 30;
 const DIFF = { fr: { beginner: 'Débutant', intermediate: 'Intermédiaire', advanced: 'Avancé' }, ar: { beginner: 'مبتدئ', intermediate: 'متوسط', advanced: 'متقدم' } };
@@ -127,10 +134,10 @@ ${SCOPE[lang][s.id] ? html`<p class="callout warn">${SCOPE[lang][s.id]}</p>` : '
   const b = q.l10n[useLang];
   const ql = useLang;
   return html`<li class="qcm-item" lang="${ql}" dir="${ql === 'ar' ? 'rtl' : 'ltr'}">
-<div class="meta"><span class="badge">${DIFF[lang][q.difficulty]}</span></div>
-<div class="q" style="white-space:pre-line">${b.text}</div>
-<ol class="opts">${b.choices.map((c) => html`<li>${c}</li>`)}</ol>
-<details><summary>${x.show}</summary><div class="answer"><strong>${x.answer} : ${b.choices[b.correctIndex]}</strong><br>${b.explanation}</div></details>
+<div class="meta"><span class="badge">${DIFF[lang][q.difficulty]}</span>${BADGE.has(q.sourceId) ? html` <span class="badge gold">${BADGE.get(q.sourceId)[lang] || BADGE.get(q.sourceId).fr}</span>` : ''}</div>
+<div class="q" style="white-space:pre-line">${raw(renderMath(b.text))}</div>
+<ol class="opts">${b.choices.map((c) => html`<li>${raw(renderMath(c))}</li>`)}</ol>
+<details><summary>${x.show}</summary><div class="answer"><strong>${x.answer} : ${raw(renderMath(b.choices[b.correctIndex]))}</strong><br>${raw(renderMath(b.explanation))}</div></details>
 </li>`;
 })}</ol>
 <div class="cta-box no-print" style="margin:20px 0 40px"><h3>${x.train}</h3><a class="btn" href="${link(pfx + 'entrainement/')}#/setup?subject=${s.id}">${icon('play')} ${t(lang, 'practice')}</a></div>
@@ -141,9 +148,9 @@ ${SCOPE[lang][s.id] ? html`<p class="callout warn">${SCOPE[lang][s.id]}</p>` : '
       hasPart: list.slice(0, 20).map((q) => {
         const b = q.l10n[useLang];
         return {
-          '@type': 'Question', eduQuestionType: 'Multiple choice', text: b.text,
-          acceptedAnswer: { '@type': 'Answer', text: b.choices[b.correctIndex] },
-          suggestedAnswer: b.choices.filter((_, i) => i !== b.correctIndex).map((c) => ({ '@type': 'Answer', text: c })),
+          '@type': 'Question', eduQuestionType: 'Multiple choice', text: plainMath(b.text),
+          acceptedAnswer: { '@type': 'Answer', text: plainMath(b.choices[b.correctIndex]) },
+          suggestedAnswer: b.choices.filter((_, i) => i !== b.correctIndex).map((c) => ({ '@type': 'Answer', text: plainMath(c) })),
         };
       }),
     };
@@ -151,6 +158,8 @@ ${SCOPE[lang][s.id] ? html`<p class="callout warn">${SCOPE[lang][s.id]}</p>` : '
       path: p, lang, title: x.title(s), description: x.desc(s, qs.length), section: 'navPractice',
       alternate: otherHas ? `${lang === 'ar' ? '' : 'ar/'}qcm/${s.slug}/` : null,
       jsonld: [breadcrumbLd(site, crumbs), quizLd], body, keywords: [`qcm ${s.fr.toLowerCase()}`],
+      // formulas are typeset at build time: only the KaTeX stylesheet is needed
+      styles: list.some((q) => { const b = q.l10n[useLang]; return [b.text, b.explanation, ...b.choices].some(hasMath); }) ? [KATEX_CSS] : [],
     });
   }
   // index

@@ -75,8 +75,8 @@ ${GROUPS.map((g) => {
       operatingSystem: 'Web', inLanguage: lang, url: `${site.siteUrl}/${pfx}entrainement/`, offers: { '@type': 'Offer', price: '0', priceCurrency: 'MAD' },
     }],
     body,
-    styles: ['assets/css/entrainement.css'],
-    scripts: ['assets/js/entrainement/utils.js', 'assets/js/entrainement/storage.js', 'assets/js/entrainement/i18n.js', 'assets/js/entrainement/data-loader.js',
+    styles: ['assets/vendor/katex/katex.min.css', 'assets/css/entrainement.css'],
+    scripts: ['assets/vendor/katex/katex.min.js', 'assets/js/entrainement/math.js', 'assets/js/entrainement/utils.js', 'assets/js/entrainement/storage.js', 'assets/js/entrainement/i18n.js', 'assets/js/entrainement/data-loader.js',
       'assets/js/entrainement/tts.js', 'assets/js/entrainement/stats.js', 'assets/js/entrainement/quiz-engine.js', 'assets/js/entrainement/ui.js', 'assets/js/entrainement/app.js'],
     keywords: ['qcm concours maroc', 'entrainement concours', 'examen blanc'],
   };

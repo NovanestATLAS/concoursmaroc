@@ -1,0 +1,4 @@
+{
+  "//": "KaTeX is a UMD script: Node loads it as CommonJS (scripts/lib/math.mjs).",
+  "type": "commonjs"
+}

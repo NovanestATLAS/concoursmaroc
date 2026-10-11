@@ -478,7 +478,7 @@
       items: picked.map(function (q) {
         return {
           qid: q.id,
-          order: U.shuffle([0, 1, 2, 3], rand),
+          order: U.shuffle(choiceIndexes(q), rand),
           answeredIndex: null,
           correct: null,
           skipped: false,
@@ -491,6 +491,15 @@
   }
 
   function uniq(a) { return a.filter(function (x, i) { return a.indexOf(x) === i; }); }
+
+  /* [0 … n-1] for a question with n choices (4, or 5 in the medicine format). */
+  function choiceIndexes(q) {
+    var b = q.l10n && (q.l10n.fr || q.l10n[Object.keys(q.l10n)[0]]);
+    var n = b && b.choices ? b.choices.length : 4;
+    var out = [];
+    for (var i = 0; i < n; i++) out.push(i);
+    return out;
+  }
 
   function weightedPick(candidates, n, weights, rand) {
     var buckets = {};

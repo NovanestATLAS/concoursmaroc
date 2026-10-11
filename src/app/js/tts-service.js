@@ -288,12 +288,13 @@
        engine is unavailable — it never rejects for an absent engine, so the
        caller does not need a try/catch around every read-aloud button. */
     speakQuestion: function (body, lang) {
-      var parts = [normalise(body.ttsText || body.text, lang)];
+      var M = global.CM && global.CM.math;
+      var say = function (s) { return M ? M.speech(s) : s; };   // formulas in words
+      var parts = [normalise(say(body.ttsText || body.text), lang)];
       if (state.prefs.readChoices && body.choices) {
-        var letters = lang === 'ar' ? ['أ', 'ب', 'ج', 'د'] : ['A', 'B', 'C', 'D'];
-        if (lang === 'en') letters = ['A', 'B', 'C', 'D'];
+        var letters = lang === 'ar' ? ['أ', 'ب', 'ج', 'د', 'هـ'] : ['A', 'B', 'C', 'D', 'E'];
         body.choices.forEach(function (c, i) {
-          parts.push(letters[i] + '. ' + normalise(c, lang));
+          parts.push(letters[i] + '. ' + normalise(say(c), lang));
         });
       }
       return TTSService.speak(parts.join(' '), lang);

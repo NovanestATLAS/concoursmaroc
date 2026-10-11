@@ -237,3 +237,8 @@ body[data-cm-route="quiz"] .breadcrumb,
 body[data-cm-route="memoire"] .practice-head { display: none; }
 body[data-cm-route]:not([data-cm-route="home"]) .practice-head .lead { display: none; }
 body[data-cm-route="quiz"] .cm-app { padding-top: 6px; }
+
+/* Formulas typeset by KaTeX ($...$ in the question banks) */
+.math { unicode-bidi: isolate; }
+.q-text .katex, .opt-label .katex, .feedback .katex, .review-item .katex { font-size: 1.08em; }
+.opt-label .katex { line-height: 1.2; }

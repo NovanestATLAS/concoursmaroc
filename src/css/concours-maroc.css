@@ -826,3 +826,7 @@ html[dir="rtl"] .footer-grid h2 { letter-spacing: 0; font-size: var(--fs-sm); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
 }
+
+/* Formulas typeset by KaTeX on the QCM pages */
+.math { unicode-bidi: isolate; }
+.qcm-item .katex { font-size: 1.08em; }
