@@ -26,6 +26,7 @@ export default {
       scoring: { correct: 1, wrong: 0, blank: 0 },
       official: false,
     },
+    difficulty: 'selectif',
   },
   related: ['iscae', 'cpge', 'ena-architecture', 'universite'],
   official: [

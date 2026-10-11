@@ -9,8 +9,9 @@ export default {
   seuils: null,
   age: { min: 21, max: 30, ref: '01-01', at: { fr: 'au 1er janvier (prolongation possible jusqu’à 35 ans selon les services antérieurs)', ar: 'في فاتح يناير (تمديد ممكن إلى 35 سنة)' } },
   practice: {
-    subjects: ['maroc', 'culture', 'logique', 'arabe', 'francais', 'sciences'],
-    mock: { minutes: 45, sections: [{ subjects: ['maroc', 'culture'], count: 12 }, { subjects: ['logique'], count: 8 }, { subjects: ['arabe', 'francais'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    subjects: ['maroc', 'culture', 'securite', 'logique', 'arabe', 'francais', 'sciences'],
+    mock: { minutes: 45, sections: [{ subjects: ['maroc', 'culture', 'securite'], count: 12 }, { subjects: ['logique'], count: 8 }, { subjects: ['arabe', 'francais'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'accessible',
   },
   related: ['police-dgsn', 'fonction-publique', 'forces-auxiliaires'],
   official: [{ label: 'Portail de l’emploi public', url: 'https://www.emploi-public.ma' }],

@@ -11,6 +11,7 @@ export default {
   practice: {
     subjects: ['culture', 'maroc', 'francais', 'arabe', 'anglais'],
     mock: { minutes: 60, sections: [{ subjects: ['culture', 'maroc'], count: 16 }, { subjects: ['francais'], count: 8 }, { subjects: ['arabe'], count: 8 }, { subjects: ['anglais'], count: 8 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'standard',
   },
   related: ['ismac-isadac', 'encg-tafem', 'universite'],
   official: [{ label: 'ISIC — préinscription', url: 'https://preinscription.isic.ma' }],

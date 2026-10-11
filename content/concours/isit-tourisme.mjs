@@ -11,6 +11,7 @@ export default {
   practice: {
     subjects: ['culture', 'maroc', 'francais', 'anglais', 'logique'],
     mock: { minutes: 60, sections: [{ subjects: ['culture', 'maroc'], count: 15 }, { subjects: ['francais'], count: 10 }, { subjects: ['anglais'], count: 10 }, { subjects: ['logique'], count: 5 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'standard',
   },
   related: ['encg-tafem', 'ofppt', 'isic'],
   official: [],

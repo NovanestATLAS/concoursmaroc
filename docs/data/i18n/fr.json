@@ -84,7 +84,8 @@
     "rule3": "À la fin : note sur 20 selon le barème, détail par épreuve et correction complète.",
     "start": "Commencer l'examen blanc",
     "short": "La banque ne contient pas encore assez de questions pour toutes les épreuves : la durée a été ajustée.",
-    "indicative": "format indicatif"
+    "indicative": "format indicatif",
+    "level": "Niveau des questions"
   },
   "setup": {
     "title": "Configurer la session",
@@ -101,7 +102,9 @@
     "available": "{n} questions disponibles dans ces matières",
     "pickSubject": "Choisissez au moins une matière.",
     "notEnough": "Aucune question ne correspond à ces filtres. Élargissez la sélection.",
-    "startSession": "Lancer la session"
+    "startSession": "Lancer la session",
+    "levelOption": "Niveau du concours",
+    "track": "Grade visé"
   },
   "difficulty": {
     "beginner": "Débutant",
@@ -260,5 +263,9 @@
     "aboutText": "Questions originales rédigées et relues pour l'entraînement (pas des sujets officiels). Concours Maroc est indépendant : seul l'avis officiel de chaque concours fait foi.",
     "version": "Version du contenu",
     "memoryOnly": "stockage temporaire (navigation privée)"
+  },
+  "level": {
+    "of": "Niveau : {level}",
+    "mix": "{b} % débutant · {i} % intermédiaire · {a} % avancé"
   }
 }

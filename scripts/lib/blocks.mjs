@@ -5,7 +5,7 @@
  * written as (@/path/) are resolved to the same-language page. */
 import { html, raw, inline, esc } from './html.mjs';
 import { icon } from './icons.mjs';
-import { BAC_SHORT } from '../../content/taxonomy.mjs';
+import { BAC_SHORT, LEVELS, DEFAULT_LEVEL } from '../../content/taxonomy.mjs';
 
 export function makeText(ctx) {
   const prefix = ctx.lang === 'ar' ? 'ar/' : '';
@@ -22,14 +22,32 @@ const LABELS = {
     noSeuil: "Pas de seuil national publié : la sélection se fait sur dossier, au classement des moyennes.",
     practiceTitle: 'Entraînez-vous maintenant', practiceText: 'QCM corrigés et examen blanc chronométré adaptés à ce concours, gratuits et utilisables hors ligne.',
     practiceBtn: "Commencer l'entraînement", mockBtn: "Passer l'examen blanc",
+    level: 'Niveau des questions', mix: (b, i, a) => `${b} % débutant, ${i} % intermédiaire, ${a} % avancé`,
   },
   ar: {
     serie: 'شعبة البكالوريا', seuil: 'العتبة', session: 'الدورة', formula75: 'نقطة الانتقاء = 75% الامتحان الوطني + 25% الامتحان الجهوي.',
     noSeuil: 'لا توجد عتبة وطنية منشورة: يتم الانتقاء بناءً على الملف وترتيب المعدلات.',
     practiceTitle: 'تمرّن الآن', practiceText: 'أسئلة مصححة وامتحان تجريبي موقت ملائم لهذه المباراة، مجانًا وبدون إنترنت.',
     practiceBtn: 'ابدأ التمرين', mockBtn: 'اجتز الامتحان التجريبي',
+    level: 'مستوى الأسئلة', mix: (b, i, a) => `${b}% مبتدئ، ${i}% متوسط، ${a}% متقدم`,
   },
 };
+
+/* "Niveau des questions : Sélectif (15 % débutant, …)", one entry per track
+ * when the grades of the concours differ. */
+function levelText(practice, lang, lab) {
+  const one = (id) => {
+    const lv = LEVELS.find((l) => l.id === id) || LEVELS.find((l) => l.id === DEFAULT_LEVEL);
+    const pc = (x) => Math.round(x * 100);
+    return `${lv[lang] || lv.fr} (${lab.mix(pc(lv.mix.beginner), pc(lv.mix.intermediate), pc(lv.mix.advanced))})`;
+  };
+  const sep = lang === 'ar' ? ': ' : ' : ';
+  const tracks = practice.tracks || [];
+  const body = tracks.length
+    ? tracks.map((tr) => `${(lang === 'ar' && tr.ar) || tr.fr}${sep}${one(tr.difficulty)}`).join(' · ')
+    : one(practice.difficulty);
+  return `${lab.level}${tracks.length ? ' — ' : sep}${body}`;
+}
 
 export function renderBlocks(blocks, ctx) {
   const T = makeText(ctx);
@@ -66,6 +84,7 @@ ${s.note ? html`<p class="muted"><small>${T(s.note[ctx.lang] || s.note.fr)}</sma
       const base = ctx.link((ctx.lang === 'ar' ? 'ar/' : '') + 'entrainement/');
       return html`<div class="cta-box no-print" style="margin:1.2em 0">
 <h3>${lab.practiceTitle}</h3><p>${lab.practiceText}</p>
+${ctx.concours.practice ? html`<p class="muted"><small>${levelText(ctx.concours.practice, ctx.lang, lab)}</small></p>` : ''}
 <div class="btn-row"><a class="btn" href="${base}?concours=${id}">${icon('play')} ${lab.practiceBtn}</a>
 <a class="btn ghost" href="${base}?concours=${id}#/mock">${icon('clock')} ${lab.mockBtn}</a></div></div>`;
     }

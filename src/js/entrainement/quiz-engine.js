@@ -66,13 +66,17 @@
     countAvailable: function (filters) { return Engine.filter(filters).length; },
 
     // ------------------------------------------------------------ build
+    /* opts.mix ({ beginner, intermediate, advanced } shares) draws the
+       questions at the level of the concours instead of uniformly. */
     build: function (opts) {
       var o = opts || {};
       var candidates = Engine.filter({ categories: o.categories, difficulties: o.difficulties, ids: o.ids });
       if (!candidates.length) return null;
       var rand = o.seed !== undefined && o.seed !== null ? U.rng(o.seed) : Math.random;
       var wanted = Math.min(o.count || 10, candidates.length);
-      var picked = (o.weighted && o.weights) ? weightedPick(candidates, wanted, o.weights, rand) : U.sample(candidates, wanted, rand);
+      var picked = (o.weighted && o.weights) ? weightedPick(candidates, wanted, o.weights, rand)
+        : o.mix ? pickByMix(candidates, wanted, o.mix, rand)
+        : U.sample(candidates, wanted, rand);
       if (o.ids && o.keepOrder) {
         picked = o.ids.map(function (id) { return byId[id]; }).filter(Boolean).slice(0, wanted);
       }
@@ -80,23 +84,19 @@
     },
 
     /* Mock exam following the concours format: sections in a fixed order,
-       questions drawn per section, official-like scoring and timer. */
-    buildMock: function (profile, lang) {
+       questions drawn per section at the level of the concours (or of the
+       chosen grade: `mix`), official-like scoring and timer. */
+    buildMock: function (profile, lang, mix) {
       var mock = profile && profile.mock;
       if (!mock) return null;
       var rand = Math.random;
       var picked = [];
       var sections = [];
       var short = [];
-      mock.sections.forEach(function (sec, si) {
-        var cands = U.shuffle(Engine.filter({ categories: sec.subjects }), rand);
-        // Prefer exam-level questions, keep a few easier ones for balance.
-        cands.sort(function (a, b) { return rank(b.difficulty) - rank(a.difficulty); });
-        var hard = cands.filter(function (q) { return q.difficulty !== 'beginner'; });
-        var easy = cands.filter(function (q) { return q.difficulty === 'beginner'; });
-        var chosen = U.shuffle(hard, rand).slice(0, sec.count);
-        if (chosen.length < sec.count) chosen = chosen.concat(U.shuffle(easy, rand).slice(0, sec.count - chosen.length));
-        chosen = chosen.filter(function (q) { return picked.indexOf(q) === -1; });
+      var m = mix || DEFAULT_MIX;
+      mock.sections.forEach(function (sec) {
+        var cands = Engine.filter({ categories: sec.subjects, exclude: picked.map(function (q) { return q.id; }) });
+        var chosen = pickByMix(cands, sec.count, m, rand);
         if (chosen.length < sec.count) short.push(sec.subjects.join('+'));
         var startIdx = picked.length;
         picked = picked.concat(U.shuffle(chosen, rand));
@@ -132,11 +132,11 @@
       return Engine.build(o);
     },
 
-    /* Same ten questions for everyone on a given day and concours. */
-    buildDaily: function (concoursId, categories) {
+    /* Same ten questions for everyone on a given day, concours and level. */
+    buildDaily: function (concoursId, categories, mix) {
       var key = U.todayKey();
       return Engine.build({
-        mode: 'daily', count: 10, categories: categories,
+        mode: 'daily', count: 10, categories: categories, mix: mix || null,
         seed: U.hash('concours-maroc-daily-' + key + '-' + (concoursId || 'all')), concours: concoursId
       });
     },
@@ -415,7 +415,40 @@
   };
 
   // ------------------------------------------------------------ helpers
-  function rank(d) { return d === 'advanced' ? 2 : d === 'intermediate' ? 1 : 0; }
+  var DIFFS = ['beginner', 'intermediate', 'advanced'];
+  var DEFAULT_MIX = { beginner: 0.3, intermediate: 0.5, advanced: 0.2 };
+
+  /* Draws n questions whose difficulties follow `mix`. When the bank lacks a
+     difficulty, the nearest one fills the gap (the harder one first for a
+     demanding concours, the easier one first otherwise). */
+  function pickByMix(candidates, n, mix, rand) {
+    n = Math.min(n, candidates.length);
+    var buckets = { beginner: [], intermediate: [], advanced: [] };
+    U.shuffle(candidates, rand).forEach(function (q) { (buckets[q.difficulty] || buckets.intermediate).push(q); });
+    // Largest-remainder rounding so that the three targets add up to n.
+    var exact = DIFFS.map(function (d) { return n * (mix[d] || 0); });
+    var want = exact.map(Math.floor);
+    var left = n - want.reduce(function (s, x) { return s + x; }, 0);
+    [0, 1, 2].sort(function (a, b) { return (exact[b] - want[b]) - (exact[a] - want[a]); })
+      .slice(0, left).forEach(function (i) { want[i]++; });
+    var harderFirst = (mix.advanced || 0) >= (mix.beginner || 0);
+    var out = [];
+    var missing = [0, 0, 0];
+    DIFFS.forEach(function (d, i) {
+      var got = buckets[d].splice(0, want[i]);
+      out = out.concat(got);
+      missing[i] = want[i] - got.length;
+    });
+    DIFFS.forEach(function (d, i) {
+      [0, 1, 2].filter(function (j) { return j !== i; }).sort(function (a, b) {
+        var da = Math.abs(a - i), db = Math.abs(b - i);
+        return da !== db ? da - db : (harderFirst ? b - a : a - b);
+      }).forEach(function (j) {
+        while (missing[i] > 0 && buckets[DIFFS[j]].length) { out.push(buckets[DIFFS[j]].shift()); missing[i]--; }
+      });
+    });
+    return U.shuffle(out, rand);
+  }
 
   function sectionOf(idx) {
     if (!session || !session.sections) return null;

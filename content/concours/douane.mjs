@@ -11,6 +11,7 @@ export default {
   practice: {
     subjects: ['economie', 'maroc', 'culture', 'logique', 'calcul', 'francais', 'anglais'],
     mock: { minutes: 60, sections: [{ subjects: ['economie'], count: 12 }, { subjects: ['maroc', 'culture'], count: 10 }, { subjects: ['logique', 'calcul'], count: 10 }, { subjects: ['francais', 'anglais'], count: 8 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'selectif',
   },
   related: ['fonction-publique', 'encg-tafem', 'iscae'],
   official: [{ label: 'Administration des Douanes et Impôts Indirects', url: 'https://www.douane.gov.ma' }, { label: 'Portail de l’emploi public', url: 'https://www.emploi-public.ma' }],

@@ -28,8 +28,22 @@ const SEO_TITLE = {
   secourisme: 'QCM secourisme corrigés : premiers secours et incendie',
   architecture: 'QCM architecture et art corrigés (concours ENA)',
   securite: 'QCM sécurité et citoyenneté corrigés (police, gendarmerie)',
-  defense: 'QCM culture militaire corrigés (FAR, écoles militaires)',
-  education: 'QCM système éducatif et pédagogie corrigés (ENS, CRMEF)',
+  defense: 'QCM culture FAR corrigés : préparer l’entretien (ARM, ERA, ERN)',
+  education: 'QCM système éducatif et pédagogie corrigés (concours enseignants)',
+};
+
+// Who the subject is for, when it is not a written test of bac-level concours.
+const SCOPE = {
+  fr: {
+    securite: 'Culture générale des concours de niveau bac (police, gendarmerie, forces auxiliaires, protection civile, DGAPR) : institutions, numéros d’urgence, droits et devoirs du citoyen. Pas de droit pénal ni de procédure : ils ne figurent pas à ces épreuves.',
+    defense: 'Aucun concours des écoles militaires n’a d’épreuve écrite de culture militaire : ces bases (création des FAR, Chef suprême, écoles, grades) servent à préparer l’entretien de motivation.',
+    education: 'Pour le concours de recrutement des enseignants des académies régionales (après la licence) : système éducatif, pédagogie et sciences de l’éducation. Les questions « système éducatif » aident aussi à préparer l’entretien d’entrée en licence d’éducation.',
+  },
+  ar: {
+    securite: 'ثقافة عامة لمباريات مستوى البكالوريا (الأمن الوطني، الدرك، القوات المساعدة، الوقاية المدنية، إدارة السجون): المؤسسات، أرقام الطوارئ، حقوق المواطن وواجباته. لا تتضمن القانون الجنائي ولا المسطرة، فهما غير مطلوبين في هذه الاختبارات.',
+    defense: 'لا تتضمن مباريات المدارس العسكرية أي اختبار كتابي في الثقافة العسكرية: هذه الأساسيات (تأسيس القوات المسلحة الملكية، القائد الأعلى، المدارس، الرتب) مفيدة للتحضير لمقابلة التحفيز.',
+    education: 'لمباراة توظيف الأساتذة بالأكاديميات الجهوية (بعد الإجازة): المنظومة التربوية والبيداغوجيا وعلوم التربية. وتساعد أسئلة «المنظومة التربوية» أيضًا على التحضير لمقابلة ولوج إجازة التربية.',
+  },
 };
 
 const TXT = {
@@ -39,7 +53,7 @@ const TXT = {
     h1: (s) => `QCM corrigés : ${s.fr}`,
     lead: (n, total) => `${n} questions d'exemple sur ${total} disponibles dans l'entraînement, avec la bonne réponse et une explication. Cliquez sur « Voir la réponse » après avoir réfléchi.`,
     show: 'Voir la réponse et l’explication', answer: 'Bonne réponse', train: 'S’entraîner sur cette matière (chronométré, corrigé)',
-    idxTitle: 'QCM corrigés par matière pour les concours au Maroc', idxDesc: 'QCM corrigés gratuits par matière : culture générale, Maroc, logique, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie, secourisme, sécurité, culture militaire, pédagogie.',
+    idxTitle: 'QCM corrigés par matière pour les concours au Maroc', idxDesc: 'QCM corrigés gratuits par matière : culture générale, Maroc, logique, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie, secourisme, sécurité, culture FAR, pédagogie.',
     idxH1: 'QCM corrigés par matière', idxLead: 'Toutes les questions sont originales, relues et accompagnées d’une explication. Une erreur ? Signalez-la depuis la page contact. Choisissez une matière.',
     notice: 'Questions originales rédigées pour l’entraînement : elles reproduisent le style et le niveau des épreuves, pas des sujets officiels.',
   },
@@ -111,6 +125,7 @@ export function buildQcmPages(site, all, lang, banks) {
 <header class="page-head"><span class="eyebrow">${x.qcm}</span><h1>${x.h1(s)}</h1><p class="lead">${x.lead(list.length, qs.length)}</p>
 <a class="btn no-print" href="${link(pfx + 'entrainement/')}#/setup?subject=${s.id}">${icon('play')} ${x.train}</a></header>
 <p class="callout info">${x.notice}</p>
+${SCOPE[lang][s.id] ? html`<p class="callout warn">${SCOPE[lang][s.id]}</p>` : ''}
 <ol class="qcm-list">${list.map((q) => {
   const b = q.l10n[useLang];
   const ql = useLang;

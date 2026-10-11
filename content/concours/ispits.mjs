@@ -25,6 +25,7 @@ export default {
       scoring: { correct: 1, wrong: 0, blank: 0 },
       official: false,
     },
+    difficulty: 'selectif',
   },
   related: ['medecine', 'erssm', 'est', 'ofppt'],
   official: [

@@ -8,7 +8,7 @@ export default {
   bac: ['SM', 'PC', 'SVT'],
   seuils: { year: '2026', formula: 'moyenne', rows: [], note: { fr: 'Classement sur la moyenne obtenue au baccalauréat (session normale).', ar: 'الترتيب حسب معدل البكالوريا (الدورة العادية).' } },
   age: { min: 18, max: 22, ref: '12-31', at: { fr: 'au 31 décembre de l’année du concours', ar: 'في 31 دجنبر من سنة المباراة' } },
-  practice: { subjects: ['svt', 'chimie', 'physique', 'logique'], mock: null },
+  practice: { subjects: ['svt', 'chimie', 'physique', 'logique'], mock: null, difficulty: 'tres-selectif' },
   related: ['medecine', 'arm', 'ispits'],
   official: [{ label: 'Portail de recrutement des Forces Armées Royales', url: 'https://recrutement.far.ma' }],
   sources: [{ title: 'Tawjihnet — Concours ERSSM santé militaire Rabat 2026-2027 (avis)', url: 'https://www.tawjihnet.net/concours-erssm-sante-militaire-rabat-2026-2027/', date: '2026-05' }],

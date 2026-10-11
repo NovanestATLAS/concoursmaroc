@@ -62,8 +62,20 @@ export const SUBJECTS = [
   { id: 'secourisme', fr: 'Secourisme et sécurité', ar: 'الإسعافات الأولية والسلامة', short: { fr: 'Secourisme', ar: 'الإسعاف' }, slug: 'secourisme-premiers-secours' },
   { id: 'architecture', fr: 'Architecture, art et perception', ar: 'الهندسة المعمارية والفن والإدراك', short: { fr: 'Archi & art', ar: 'معمار وفن' }, slug: 'architecture-art' },
   { id: 'securite', fr: 'Sécurité, institutions et citoyenneté', ar: 'الأمن والمؤسسات والمواطنة', short: { fr: 'Sécurité & citoyenneté', ar: 'الأمن والمواطنة' }, slug: 'securite-citoyennete' },
-  { id: 'defense', fr: 'Défense et culture militaire', ar: 'الدفاع والثقافة العسكرية', short: { fr: 'Culture militaire', ar: 'الثقافة العسكرية' }, slug: 'culture-militaire-far' },
+  { id: 'defense', fr: 'Culture FAR pour l’entretien', ar: 'ثقافة القوات المسلحة الملكية للمقابلة', short: { fr: 'Culture FAR', ar: 'ثقافة عسكرية' }, slug: 'culture-militaire-far' },
   { id: 'education', fr: 'Système éducatif et pédagogie', ar: 'المنظومة التربوية والبيداغوجيا', short: { fr: 'Éducation & pédagogie', ar: 'التربية والبيداغوجيا' }, slug: 'systeme-educatif-pedagogie' },
 ];
+
+/* How demanding a concours is. Practice "at the concours level", the daily
+ * challenge and the mock exam draw beginner / intermediate / advanced
+ * questions in these proportions (a concours sets practice.difficulty, or one
+ * per track when its grades differ, e.g. gardien de la paix vs inspecteur). */
+export const LEVELS = [
+  { id: 'accessible', fr: 'Accessible', ar: 'في المتناول', mix: { beginner: 0.5, intermediate: 0.4, advanced: 0.1 } },
+  { id: 'standard', fr: 'Standard', ar: 'عادي', mix: { beginner: 0.3, intermediate: 0.5, advanced: 0.2 } },
+  { id: 'selectif', fr: 'Sélectif', ar: 'انتقائي', mix: { beginner: 0.15, intermediate: 0.5, advanced: 0.35 } },
+  { id: 'tres-selectif', fr: 'Très sélectif', ar: 'انتقائي جدًا', mix: { beginner: 0.05, intermediate: 0.4, advanced: 0.55 } },
+];
+export const DEFAULT_LEVEL = 'standard';
 
 export const LANGUAGE_SUBJECTS = ['francais', 'arabe', 'anglais'];

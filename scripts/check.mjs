@@ -118,6 +118,23 @@ for (const c of manifest.categories) {
     if (!sourceIds.has(q.sourceId)) err(`question ${q.id}: unknown sourceId "${q.sourceId}"`);
   }
 }
+// Practice profiles: every subject has a bank, every level is defined.
+const concoursDoc = JSON.parse(fs.readFileSync(path.join(DOCS, 'data/concours.json'), 'utf8'));
+const levelIds = new Set((concoursDoc.levels || []).map((l) => l.id));
+for (const l of concoursDoc.levels || []) {
+  const sum = l.mix.beginner + l.mix.intermediate + l.mix.advanced;
+  if (Math.abs(sum - 1) > 1e-9) err(`level ${l.id}: mix adds up to ${sum}, not 1`);
+}
+const bankIds = new Set(manifest.categories.map((c) => c.id));
+for (const c of concoursDoc.concours) {
+  if (!levelIds.has(c.difficulty)) err(`concours ${c.id}: unknown difficulty "${c.difficulty}"`);
+  for (const tr of c.tracks || []) if (!levelIds.has(tr.difficulty)) err(`concours ${c.id}: track ${tr.id} has unknown difficulty "${tr.difficulty}"`);
+  for (const s of c.subjects) if (!bankIds.has(s)) err(`concours ${c.id}: subject "${s}" has no question bank`);
+  for (const sec of (c.mock && c.mock.sections) || []) {
+    for (const s of sec.subjects) if (!bankIds.has(s)) err(`concours ${c.id}: mock subject "${s}" has no question bank`);
+  }
+}
+
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
 for (const e of CALENDAR) {
   if (!e.id || !e.type) err(`calendar: entry without id/type (${JSON.stringify(e).slice(0, 80)})`);

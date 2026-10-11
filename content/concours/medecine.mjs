@@ -27,6 +27,7 @@ export default {
       eliminatory: 3,
       official: false,
     },
+    difficulty: 'tres-selectif',
   },
   related: ['ispits', 'erssm', 'ensa', 'iav-apesa'],
   official: [

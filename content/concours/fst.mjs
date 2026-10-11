@@ -8,7 +8,7 @@ export default {
   bac: ['SM', 'PC', 'SVT', 'AGRO', 'STE', 'STM'],
   seuils: { year: '2026', formula: '75/25', rows: [], note: { fr: "Sélection sur dossier par classement (liste principale puis listes d'attente) ; les seuils varient selon la faculté et le tronc commun.", ar: 'انتقاء بالملف حسب الترتيب (لائحة رئيسية ثم لوائح انتظار).' } },
   age: null,
-  practice: { subjects: ['maths', 'physique', 'chimie', 'svt'], mock: null },
+  practice: { subjects: ['maths', 'physique', 'chimie', 'svt'], mock: null, difficulty: 'standard' },
   related: ['est', 'ensa', 'cpge', 'universite'],
   official: [{ label: 'Cursus Sup', url: 'https://www.cursussup.gov.ma' }],
   sources: [

@@ -11,8 +11,9 @@ export default {
   age: { min: 18, max: 20, ref: '12-31', at: { fr: 'au 31 décembre de l’année du concours', ar: 'في 31 دجنبر من سنة المباراة' } },
   height: { m: 1.65, f: 1.60 },
   practice: {
-    subjects: ['maths', 'physique', 'logique', 'anglais', 'francais'],
+    subjects: ['maths', 'physique', 'logique', 'anglais', 'francais', 'defense'],
     mock: { minutes: 90, sections: [{ subjects: ['maths'], count: 12 }, { subjects: ['physique'], count: 12 }, { subjects: ['logique'], count: 10 }, { subjects: ['anglais'], count: 6 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'tres-selectif',
   },
   related: ['arm', 'ern', 'ensa', 'cpge'],
   official: [{ label: 'Portail de recrutement des Forces Armées Royales', url: 'https://recrutement.far.ma' }],

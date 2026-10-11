@@ -24,6 +24,7 @@ export default {
       scoring: { correct: 2, wrong: -1, blank: 0 },
       official: false,
     },
+    difficulty: 'selectif',
   },
   related: ['ensa', 'cpge', 'est', 'fst'],
   official: [

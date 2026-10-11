@@ -9,7 +9,7 @@ export default {
   noBac: true,
   seuils: null,
   age: { min: 18, max: 30, ref: '11-01', at: { fr: 'au 1er novembre de l’année d’admission', ar: 'في فاتح نونبر من سنة القبول' } },
-  practice: { subjects: ['logique', 'calcul'], mock: { minutes: 30, sections: [{ subjects: ['logique'], count: 20 }, { subjects: ['calcul'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false } },
+  practice: { subjects: ['logique', 'calcul'], mock: { minutes: 30, sections: [{ subjects: ['logique'], count: 20 }, { subjects: ['calcul'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false }, difficulty: 'selectif' },
   related: ['ofppt', 'est', 'fst'],
   official: [{ label: '1337 — site officiel', url: 'https://1337.ma' }],
   sources: [{ title: '1337 — Étapes de candidature', url: 'https://1337.ma/en/steps/', date: '2026' }, { title: 'Wikipedia — 1337 Coding School', url: 'https://en.wikipedia.org/wiki/1337_Coding_School', date: '2026' }],

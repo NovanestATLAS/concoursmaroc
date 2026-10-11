@@ -430,6 +430,30 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.maroc-concour.com/qcm/securite-citoyennete/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.maroc-concour.com/qcm/securite-citoyennete/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.maroc-concour.com/ar/qcm/securite-citoyennete/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.maroc-concour.com/qcm/securite-citoyennete/"/>
+  </url>
+  <url>
+    <loc>https://www.maroc-concour.com/qcm/culture-militaire-far/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.maroc-concour.com/qcm/culture-militaire-far/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.maroc-concour.com/ar/qcm/culture-militaire-far/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.maroc-concour.com/qcm/culture-militaire-far/"/>
+  </url>
+  <url>
+    <loc>https://www.maroc-concour.com/qcm/systeme-educatif-pedagogie/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.maroc-concour.com/qcm/systeme-educatif-pedagogie/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.maroc-concour.com/ar/qcm/systeme-educatif-pedagogie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.maroc-concour.com/qcm/systeme-educatif-pedagogie/"/>
+  </url>
+  <url>
     <loc>https://www.maroc-concour.com/qcm/</loc>
     <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
@@ -928,6 +952,30 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.maroc-concour.com/qcm/secourisme-premiers-secours/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.maroc-concour.com/ar/qcm/secourisme-premiers-secours/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.maroc-concour.com/qcm/secourisme-premiers-secours/"/>
+  </url>
+  <url>
+    <loc>https://www.maroc-concour.com/ar/qcm/securite-citoyennete/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.maroc-concour.com/qcm/securite-citoyennete/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.maroc-concour.com/ar/qcm/securite-citoyennete/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.maroc-concour.com/qcm/securite-citoyennete/"/>
+  </url>
+  <url>
+    <loc>https://www.maroc-concour.com/ar/qcm/culture-militaire-far/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.maroc-concour.com/qcm/culture-militaire-far/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.maroc-concour.com/ar/qcm/culture-militaire-far/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.maroc-concour.com/qcm/culture-militaire-far/"/>
+  </url>
+  <url>
+    <loc>https://www.maroc-concour.com/ar/qcm/systeme-educatif-pedagogie/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.maroc-concour.com/qcm/systeme-educatif-pedagogie/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.maroc-concour.com/ar/qcm/systeme-educatif-pedagogie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.maroc-concour.com/qcm/systeme-educatif-pedagogie/"/>
   </url>
   <url>
     <loc>https://www.maroc-concour.com/ar/qcm/</loc>

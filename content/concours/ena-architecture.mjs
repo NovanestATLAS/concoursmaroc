@@ -16,6 +16,7 @@ export default {
   practice: {
     subjects: ['architecture', 'culture', 'logique', 'francais'],
     mock: { minutes: 50, sections: [{ subjects: ['culture', 'maroc'], count: 10 }, { subjects: ['architecture'], count: 10 }, { subjects: ['logique'], count: 10 }, { subjects: ['francais'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'selectif',
   },
   related: ['ismac-isadac', 'ensa', 'encg-tafem', 'isic'],
   official: [{ label: 'Plateforme du concours ENA', url: 'https://www.concoursena.ma' }],

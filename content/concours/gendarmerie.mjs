@@ -10,8 +10,9 @@ export default {
   age: { min: 18, max: 24, ref: '09-01', at: { fr: 'au 1er septembre de l’année du concours', ar: 'في فاتح شتنبر من سنة المباراة' } },
   height: { m: 1.70, f: 1.68 },
   practice: {
-    subjects: ['maroc', 'logique', 'calcul', 'francais', 'arabe', 'secourisme', 'culture'],
-    mock: { minutes: 45, sections: [{ subjects: ['logique'], count: 15 }, { subjects: ['maroc', 'culture'], count: 10 }, { subjects: ['calcul'], count: 5 }, { subjects: ['arabe', 'francais'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    subjects: ['maroc', 'logique', 'calcul', 'francais', 'arabe', 'secourisme', 'culture', 'securite'],
+    mock: { minutes: 45, sections: [{ subjects: ['logique'], count: 15 }, { subjects: ['maroc', 'culture', 'securite'], count: 10 }, { subjects: ['calcul'], count: 5 }, { subjects: ['arabe', 'francais'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'standard',
   },
   related: ['police-dgsn', 'forces-auxiliaires', 'arm', 'protection-civile'],
   official: [{ label: 'Portail de recrutement de la Gendarmerie Royale', url: 'https://recrutement.gr.ma' }],

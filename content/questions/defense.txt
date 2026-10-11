@@ -1,0 +1,311 @@
+# Culture FAR : les bases sur les Forces Armées Royales (création, Chef
+# suprême, écoles, grades, missions) utiles pour l'entretien de motivation des
+# concours de l'ARM, de l'ERA, de l'ERN et des officiers du rang.
+# Ces connaissances ne font l'objet d'aucune épreuve écrite : la sélection
+# repose sur la moyenne du bac, les tests (médicaux, physiques,
+# psychotechniques) et l'entretien. Pas d'articles de loi ni de détails
+# institutionnels avancés. Les faits susceptibles de changer portent le
+# drapeau "ts". Aucune question n'est copiée d'une épreuve officielle.
+# Vérifié le 2026-10-11. Version arabe pour chaque question.
+@category defense
+@source src-general
+
+[DEF-001] histoire | beginner
+Q: Quelle date est retenue comme celle de la création des Forces Armées Royales (FAR) ?
+* 14 mai 1956
+- 2 mars 1956
+- 18 novembre 1955
+- 6 novembre 1975
+C: Le 14 mai 1956.
+E: Les FAR ont été créées le 14 mai 1956, quelques semaines après l'indépendance, sous le règne de Mohammed V. Leur anniversaire est célébré chaque 14 mai. Le 2 mars 1956 marque la fin du protectorat français, le 18 novembre la fête de l'Indépendance et le 6 novembre 1975 la Marche Verte.
+S: src-far
+AR:
+Q: ما هو التاريخ المعتمد لتأسيس القوات المسلحة الملكية؟
+* 14 ماي 1956
+- 2 مارس 1956
+- 18 نونبر 1955
+- 6 نونبر 1975
+C: 14 ماي 1956.
+E: تأسست القوات المسلحة الملكية يوم 14 ماي 1956، بعد أسابيع قليلة من الاستقلال، في عهد جلالة الملك محمد الخامس، ويُحتفل بذكرى تأسيسها كل 14 ماي. أما 2 مارس 1956 فيوافق نهاية الحماية الفرنسية، و18 نونبر عيد الاستقلال، و6 نونبر 1975 المسيرة الخضراء.
+
+[DEF-002] histoire | beginner
+Q: Quel souverain était le Chef suprême des FAR au moment de leur création en 1956 ?
+* Mohammed V
+- Hassan II
+- Moulay Youssef
+- Mohammed VI
+C: Mohammed V.
+E: Les FAR ont été créées en 1956 par feu Mohammed V, qui en fut le premier Chef suprême ; il confia la fonction de Chef d'état-major général au Prince héritier Moulay Hassan, futur Hassan II.
+S: src-far
+AR:
+Q: من هو الملك الذي كان القائد الأعلى للقوات المسلحة الملكية عند تأسيسها سنة 1956؟
+* محمد الخامس
+- الحسن الثاني
+- مولاي يوسف
+- محمد السادس
+C: جلالة الملك محمد الخامس.
+E: أسس جلالة المغفور له محمد الخامس القوات المسلحة الملكية سنة 1956، وكان أول قائد أعلى لها، وأسند مهمة رئيس الأركان العامة إلى ولي العهد آنذاك الأمير مولاي الحسن، الملك الحسن الثاني لاحقًا.
+
+[DEF-003] histoire | intermediate
+Q: Qui fut le premier Chef d'état-major général des FAR en 1956 ?
+* Le Prince héritier Moulay Hassan (futur Hassan II)
+- Le Sultan Moulay Youssef
+- Le général Mohamed Oufkir
+- Mbarek Bekkaï
+C: Le Prince héritier Moulay Hassan.
+E: Dès leur création au printemps 1956, les FAR furent placées sous l'autorité directe de Mohammed V, Chef suprême, et confiées au Prince héritier Moulay Hassan, premier Chef d'état-major général. Mbarek Bekkaï était le président du Conseil (chef du gouvernement) qui signa la déclaration du 2 mars 1956.
+S: src-far
+AR:
+Q: من كان أول رئيس للأركان العامة للقوات المسلحة الملكية سنة 1956؟
+* ولي العهد الأمير مولاي الحسن (الملك الحسن الثاني لاحقًا)
+- السلطان مولاي يوسف
+- الجنرال محمد أوفقير
+- امبارك البكاي
+C: ولي العهد الأمير مولاي الحسن.
+E: منذ تأسيسها في ربيع 1956، وُضعت القوات المسلحة الملكية تحت السلطة المباشرة لجلالة الملك محمد الخامس بصفته قائدًا أعلى، وأسندت رئاسة أركانها العامة إلى ولي العهد الأمير مولاي الحسن. أما امبارك البكاي فكان رئيس الحكومة الذي وقّع تصريح 2 مارس 1956.
+
+[DEF-004] histoire | intermediate
+Q: Quel anniversaire de leur création les FAR ont-elles célébré le 14 mai 2026 ?
+* Le 70e anniversaire
+- Le 60e anniversaire
+- Le 65e anniversaire
+- Le 75e anniversaire
+C: Le 70e anniversaire (1956 + 70 = 2026).
+E: Créées le 14 mai 1956, les FAR ont fêté leurs 70 ans le 14 mai 2026. Comme chaque année, l'anniversaire est marqué par l'Ordre du jour que le Roi, Chef suprême, adresse aux FAR.
+S: src-far
+AR:
+Q: ما هي ذكرى التأسيس التي احتفلت بها القوات المسلحة الملكية يوم 14 ماي 2026؟
+* الذكرى السبعون
+- الذكرى الستون
+- الذكرى الخامسة والستون
+- الذكرى الخامسة والسبعون
+C: الذكرى السبعون (1956 + 70 = 2026).
+E: تأسست القوات المسلحة الملكية يوم 14 ماي 1956، فاحتفلت بذكراها السبعين يوم 14 ماي 2026. وكما في كل سنة، تتميز هذه الذكرى بالأمر اليومي الذي يوجهه الملك، القائد الأعلى، إلى القوات المسلحة الملكية.
+
+[DEF-011] institutions | beginner
+Q: Quel titre porte le Roi à l'égard des Forces Armées Royales ?
+* Chef suprême et Chef d'état-major général des FAR
+- Ministre de la Défense nationale
+- Inspecteur général des FAR
+- Commandant de la Gendarmerie royale
+C: Chef suprême et Chef d'état-major général des FAR.
+E: L'article 53 de la Constitution dispose que le Roi est le Chef suprême des Forces Armées Royales ; il porte également le titre de Chef d'état-major général des FAR. Les militaires sont placés directement sous sa haute autorité.
+S: src-constitution-2011
+AR:
+Q: ما هي الصفة التي يحملها الملك تجاه القوات المسلحة الملكية؟
+* القائد الأعلى ورئيس أركان الحرب العامة للقوات المسلحة الملكية
+- وزير الدفاع الوطني
+- المفتش العام للقوات المسلحة الملكية
+- قائد الدرك الملكي
+C: القائد الأعلى ورئيس أركان الحرب العامة للقوات المسلحة الملكية.
+E: ينص الفصل 53 من الدستور على أن الملك هو القائد الأعلى للقوات المسلحة الملكية، كما يحمل صفة رئيس أركان الحرب العامة للقوات المسلحة الملكية، ويوضع العسكريون مباشرة تحت سلطته السامية.
+
+[DEF-020] organisation | beginner
+Q: Dans quelle ville se trouve l'Académie Royale Militaire (ARM), qui forme les officiers d'active des armes et services ?
+* Meknès
+- Kénitra
+- Rabat
+- Fès
+C: À Meknès.
+E: L'Académie Royale Militaire est installée à Meknès, dans l'ancien palais Dar El Beïda. Elle assure la formation des élèves officiers des armes et des services des FAR.
+S: src-arm-meknes
+AR:
+Q: في أي مدينة توجد الأكاديمية الملكية العسكرية التي تكوّن الضباط العاملين في مختلف الأسلحة والمصالح؟
+* مكناس
+- القنيطرة
+- الرباط
+- فاس
+C: في مكناس.
+E: توجد الأكاديمية الملكية العسكرية بمكناس، في قصر دار البيضاء القديم، وتتولى تكوين التلاميذ الضباط في مختلف أسلحة ومصالح القوات المسلحة الملكية.
+
+[DEF-021] organisation | beginner
+Q: Dans quelle ville se trouve l'École Royale de l'Air (ERA), qui forme les officiers des Forces Royales Air ?
+* Marrakech
+- Meknès
+- Casablanca
+- Agadir
+C: À Marrakech.
+E: L'École Royale de l'Air de Marrakech forme les élèves officiers des Forces Royales Air ; les candidatures se font en ligne sur le portail de recrutement des FAR.
+AR:
+Q: في أي مدينة توجد المدرسة الملكية الجوية التي تكوّن ضباط القوات الملكية الجوية؟
+* مراكش
+- مكناس
+- الدار البيضاء
+- أكادير
+C: في مراكش.
+E: تتولى المدرسة الملكية الجوية بمراكش تكوين التلاميذ الضباط للقوات الملكية الجوية، ويتم الترشح عبر بوابة التوظيف الإلكترونية للقوات المسلحة الملكية.
+
+[DEF-022] organisation | beginner
+Q: Dans quelle ville se trouve l'École Royale Navale (ERN), qui forme les officiers de la Marine Royale ?
+* Casablanca
+- Tanger
+- Agadir
+- Al Hoceima
+C: À Casablanca.
+E: L'École Royale Navale, établie à Casablanca, assure la formation des officiers de la Marine Royale ; les candidatures se font sur le portail de recrutement des FAR.
+S: src-ern
+AR:
+Q: في أي مدينة توجد المدرسة الملكية البحرية التي تكوّن ضباط البحرية الملكية؟
+* الدار البيضاء
+- طنجة
+- أكادير
+- الحسيمة
+C: في الدار البيضاء.
+E: تتولى المدرسة الملكية البحرية بالدار البيضاء تكوين ضباط البحرية الملكية، ويتم الترشح عبر بوابة التوظيف للقوات المسلحة الملكية.
+
+[DEF-023] organisation | beginner
+Q: Dans quelle ville se trouve l'École Royale du Service de Santé Militaire (ERSSM) ?
+* Rabat
+- Marrakech
+- Meknès
+- Oujda
+C: À Rabat.
+E: L'ERSSM de Rabat forme les élèves officiers médecins, pharmaciens, médecins dentistes et vétérinaires du Service de santé des FAR, en lien avec les hôpitaux militaires d'instruction, dont l'Hôpital Militaire d'Instruction Mohammed V de Rabat.
+AR:
+Q: في أي مدينة توجد المدرسة الملكية لمصلحة الصحة العسكرية؟
+* الرباط
+- مراكش
+- مكناس
+- وجدة
+C: في الرباط.
+E: تكوّن المدرسة الملكية لمصلحة الصحة العسكرية بالرباط التلاميذ الضباط الأطباء والصيادلة وجراحي الأسنان والبياطرة لمصلحة الصحة التابعة للقوات المسلحة الملكية، بتنسيق مع المستشفيات العسكرية للتعليم، ومنها المستشفى العسكري للتعليم محمد الخامس بالرباط.
+
+[DEF-025] organisation | intermediate
+Q: Quel est le statut de la Gendarmerie royale par rapport aux Forces Armées Royales ?
+* Elle fait partie intégrante des FAR
+- Elle relève du ministère de l'Intérieur, comme la Sûreté nationale
+- C'est un corps civil rattaché au ministère de la Justice
+- C'est une police municipale placée sous l'autorité des communes
+C: Elle fait partie intégrante des FAR.
+E: Créée par dahir du 29 avril 1957, la Gendarmerie royale fait partie intégrante des Forces Armées Royales (dahir n° 1-57-280 du 14 janvier 1958). Elle exerce des missions de sécurité, surtout en milieu rural et sur les routes, et de police judiciaire. La Sûreté nationale (DGSN) et les Forces auxiliaires relèvent, elles, du ministère de l'Intérieur.
+S: src-gr
+AR:
+Q: ما هو وضع الدرك الملكي بالنسبة إلى القوات المسلحة الملكية؟
+* جزء لا يتجزأ من القوات المسلحة الملكية
+- تابع لوزارة الداخلية مثل الأمن الوطني
+- هيئة مدنية تابعة لوزارة العدل
+- شرطة جماعية تابعة لسلطة الجماعات
+C: الدرك الملكي جزء لا يتجزأ من القوات المسلحة الملكية.
+E: أُحدث الدرك الملكي بظهير 29 أبريل 1957، وهو جزء لا يتجزأ من القوات المسلحة الملكية (الظهير رقم 1.57.280 بتاريخ 14 يناير 1958). يمارس مهام أمنية، خاصة في الوسط القروي وعلى الطرق، ومهام الشرطة القضائية. أما المديرية العامة للأمن الوطني والقوات المساعدة فتابعة لوزارة الداخلية.
+
+[DEF-026] organisation | intermediate
+Q: Parmi ces corps, lequel ne fait PAS partie des Forces Armées Royales ?
+* La Direction générale de la Sûreté nationale (DGSN)
+- La Marine Royale
+- Les Forces Royales Air
+- La Gendarmerie royale
+C: La DGSN, qui relève du ministère de l'Intérieur.
+E: Les FAR regroupent les forces terrestres, les Forces Royales Air, la Marine Royale et la Gendarmerie royale (« Terre, Air, Marine et Gendarmerie royale »). La DGSN, créée en 1956, est la police nationale, rattachée au ministère de l'Intérieur.
+AR:
+Q: من بين الهيئات التالية، أيها لا تنتمي إلى القوات المسلحة الملكية؟
+* المديرية العامة للأمن الوطني
+- البحرية الملكية
+- القوات الملكية الجوية
+- الدرك الملكي
+C: المديرية العامة للأمن الوطني، وهي تابعة لوزارة الداخلية.
+E: تضم القوات المسلحة الملكية القوات البرية والقوات الملكية الجوية والبحرية الملكية والدرك الملكي («البر والجو والبحر والدرك الملكي»). أما المديرية العامة للأمن الوطني، المحدثة سنة 1956، فهي الشرطة الوطنية التابعة لوزارة الداخلية.
+
+[DEF-027] valeurs | intermediate
+Q: Chaque 14 mai, à l'occasion de l'anniversaire de la création des FAR, que adresse le Roi, Chef suprême, aux officiers, sous-officiers et militaires du rang ?
+* Un Ordre du jour
+- Le discours du Trône
+- Un message au Parlement réuni en séance commune
+- Un dahir de mobilisation générale
+C: Un Ordre du jour, lu dans toutes les garnisons.
+E: Le 14 mai, le Roi adresse aux FAR un Ordre du jour, lu lors des cérémonies organisées dans les places d'armes et garnisons (levée des couleurs, remise de décorations, défilés). Le discours du Trône est prononcé le 30 juillet, à l'occasion de la fête du Trône.
+S: src-far
+AR:
+Q: كل 14 ماي، بمناسبة ذكرى تأسيس القوات المسلحة الملكية، ماذا يوجه الملك، القائد الأعلى، إلى الضباط وضباط الصف والجنود؟
+* أمرًا يوميًا
+- خطاب العرش
+- رسالة إلى البرلمان المنعقد بمجلسيه
+- ظهير التعبئة العامة
+C: أمرًا يوميًا يُتلى في جميع الحاميات.
+E: يوم 14 ماي يوجه الملك أمرًا يوميًا إلى القوات المسلحة الملكية، يُتلى خلال الحفلات المنظمة في الساحات والحاميات العسكرية (رفع العلم، توشيح الأوسمة، الاستعراضات). أما خطاب العرش فيُلقى يوم 30 يوليوز بمناسبة عيد العرش.
+
+[DEF-028] grades | beginner
+Q: Parmi ces grades d'officier des FAR, lequel est le moins élevé ?
+* Sous-lieutenant
+- Lieutenant
+- Capitaine
+- Commandant
+C: Le sous-lieutenant.
+E: Officiers subalternes, dans l'ordre croissant : sous-lieutenant, lieutenant, capitaine. Viennent ensuite les officiers supérieurs (commandant, lieutenant-colonel, colonel, colonel-major) puis les officiers généraux. Dans les FAR, les grades sont désignés par leur nom français.
+AR:
+Q: من بين رتب الضباط التالية في القوات المسلحة الملكية، ما هي الرتبة الأدنى؟
+* سو ليوتنان (Sous-lieutenant)
+- ليوتنان (Lieutenant)
+- كابيتان (Capitaine)
+- كومندان (Commandant)
+C: سو ليوتنان (Sous-lieutenant).
+E: الضباط الصغار حسب الترتيب التصاعدي: سو ليوتنان، ليوتنان، كابيتان، ثم الضباط السامون (كومندان، ليوتنان كولونيل، كولونيل، كولونيل ماجور)، ثم الجنرالات. وتُستعمل في القوات المسلحة الملكية التسميات الفرنسية للرتب.
+
+[DEF-029] grades | intermediate
+Q: Quel grade vient immédiatement au-dessus de celui de capitaine dans l'Armée de Terre des FAR ?
+* Commandant
+- Lieutenant-colonel
+- Lieutenant
+- Adjudant-chef
+C: Le commandant.
+E: Ordre croissant : capitaine, commandant, lieutenant-colonel, colonel. Le commandant est le premier grade d'officier supérieur ; l'adjudant-chef est un sous-officier.
+AR:
+Q: ما هي الرتبة التي تأتي مباشرة فوق رتبة كابيتان (Capitaine) في القوات البرية للقوات المسلحة الملكية؟
+* كومندان (Commandant)
+- ليوتنان كولونيل (Lieutenant-colonel)
+- ليوتنان (Lieutenant)
+- أدجودان شاف (Adjudant-chef)
+C: كومندان (Commandant).
+E: الترتيب التصاعدي: كابيتان، كومندان، ليوتنان كولونيل، كولونيل. ورتبة كومندان هي أول رتبة في فئة الضباط السامين، أما أدجودان شاف فهي رتبة من رتب ضباط الصف.
+
+[DEF-032] grades | intermediate
+Q: Parmi ces grades de sous-officier, lequel est le plus élevé ?
+* Adjudant-chef
+- Adjudant
+- Sergent-chef
+- Sergent
+C: L'adjudant-chef.
+E: Sous-officiers, dans l'ordre croissant : sergent, sergent-chef, adjudant, adjudant-chef.
+AR:
+Q: من بين رتب ضباط الصف التالية، ما هي الرتبة الأعلى؟
+* أدجودان شاف (Adjudant-chef)
+- أدجودان (Adjudant)
+- سيرجان شاف (Sergent-chef)
+- سيرجان (Sergent)
+C: أدجودان شاف (Adjudant-chef).
+E: رتب ضباط الصف حسب الترتيب التصاعدي: سيرجان، سيرجان شاف، أدجودان، أدجودان شاف.
+
+[DEF-033] missions | intermediate
+Q: Dans quel pays le Maroc a-t-il participé pour la première fois à une opération de maintien de la paix de l'ONU, en 1960 ?
+* Le Congo
+- Le Liban
+- Chypre
+- La Somalie
+C: Au Congo (Opération des Nations Unies au Congo, ONUC).
+E: Le Maroc participe aux opérations de maintien de la paix depuis 1960, année où des unités des FAR ont été déployées au Congo dans le cadre de l'ONUC, pour préserver l'intégrité territoriale de ce pays. Il a depuis contribué à de nombreuses missions onusiennes en Afrique, en Europe et en Asie.
+S: src-casques-bleus
+AR:
+Q: في أي بلد شارك المغرب لأول مرة في عملية لحفظ السلام تابعة للأمم المتحدة، سنة 1960؟
+* الكونغو
+- لبنان
+- قبرص
+- الصومال
+C: في الكونغو (عملية الأمم المتحدة في الكونغو).
+E: يشارك المغرب في عمليات حفظ السلام منذ سنة 1960، حين نُشرت وحدات من القوات المسلحة الملكية في الكونغو ضمن عملية الأمم المتحدة هناك للحفاظ على الوحدة الترابية لهذا البلد، وساهم منذ ذلك الحين في بعثات أممية عديدة في إفريقيا وأوروبا وآسيا.
+
+[DEF-040] valeurs | beginner
+Q: Quelle est la devise du Royaume, que les militaires des FAR servent ?
+* Dieu, la Patrie, le Roi
+- Unité, Travail, Progrès
+- Honneur, Fidélité, Discipline
+- Liberté, Égalité, Fraternité
+C: « Dieu, la Patrie, le Roi ».
+E: L'article 4 de la Constitution de 2011 dispose que la devise du Royaume est « Dieu, la Patrie, le Roi » et décrit l'emblème national : un drapeau rouge frappé en son centre d'une étoile verte à cinq branches.
+S: src-constitution-2011
+AR:
+Q: ما هو شعار المملكة الذي يخدمه أفراد القوات المسلحة الملكية؟
+* الله، الوطن، الملك
+- الوحدة، العمل، التقدم
+- الشرف، الوفاء، الانضباط
+- الحرية، المساواة، الأخوة
+C: «الله، الوطن، الملك».
+E: ينص الفصل 4 من دستور 2011 على أن شعار المملكة هو «الله، الوطن، الملك»، ويصف علمها الوطني: لواء أحمر تتوسطه نجمة خضراء خماسية الفروع.

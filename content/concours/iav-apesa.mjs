@@ -11,6 +11,7 @@ export default {
   practice: {
     subjects: ['maths', 'physique', 'chimie', 'svt'],
     mock: { minutes: 90, sections: [{ subjects: ['maths'], count: 10 }, { subjects: ['physique', 'chimie'], count: 10 }, { subjects: ['svt'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'selectif',
   },
   related: ['medecine', 'ensa', 'fst', 'cpge'],
   official: [

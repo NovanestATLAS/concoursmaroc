@@ -11,6 +11,7 @@ export default {
   practice: {
     subjects: ['maroc', 'sciences', 'culture', 'francais', 'arabe', 'logique', 'calcul'],
     mock: { minutes: 60, sections: [{ subjects: ['maroc'], count: 12 }, { subjects: ['sciences'], count: 10 }, { subjects: ['francais', 'arabe'], count: 10 }, { subjects: ['logique', 'calcul'], count: 8 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'standard',
   },
   related: ['police-dgsn', 'dgapr', 'douane', 'ens-education'],
   official: [{ label: 'Portail de l’emploi public', url: 'https://www.emploi-public.ma' }],

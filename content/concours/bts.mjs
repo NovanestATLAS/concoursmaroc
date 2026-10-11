@@ -8,7 +8,7 @@ export default {
   bac: ['SM', 'PC', 'SVT', 'AGRO', 'STE', 'STM', 'ECO', 'SGC', 'ARTS', 'PRO'],
   seuils: { year: '2026', formula: null, rows: [], note: { fr: 'Sélection sur la moyenne générale du bac, par section (30 étudiants au maximum par section).', ar: 'الانتقاء حسب المعدل العام للبكالوريا.' } },
   age: { max: 23, ref: '09-30', at: { fr: 'au 30 septembre de l’année d’entrée', ar: 'في 30 شتنبر من سنة الولوج' } },
-  practice: { subjects: ['maths', 'francais', 'logique', 'calcul'], mock: null },
+  practice: { subjects: ['maths', 'francais', 'logique', 'calcul'], mock: null, difficulty: 'standard' },
   related: ['est', 'ofppt', 'fst'],
   official: [{ label: "Ministère de l'Éducation nationale", url: 'https://www.men.gov.ma' }],
   sources: [

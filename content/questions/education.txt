@@ -1,0 +1,714 @@
+# Éducation et métier d'enseignant : ENS (licence en éducation), CRMEF,
+# concours de recrutement des cadres des AREF.
+# Système éducatif marocain (structure, AREF, CSEFRS, Vision stratégique
+# 2015-2030, loi-cadre n° 51-17, Feuille de route 2022-2026), pédagogie
+# générale, psychologie de l'apprentissage, vie scolaire et déontologie.
+# Taxonomie de Bloom : la version utilisée est indiquée dans chaque question
+# (Bloom 1956 ou révision d'Anderson & Krathwohl 2001).
+# Vérifié le 2026-10-10. Version arabe pour chaque question.
+@category education
+@source src-general
+
+[EDU-001] systeme | beginner
+Q: Au Maroc, combien d'années dure l'enseignement primaire ?
+* 6 ans
+- 5 ans
+- 4 ans
+- 3 ans
+C: Six ans (de la 1re à la 6e année du primaire).
+E: L'enseignement scolaire marocain comprend le préscolaire (2 ans, enfants de 4 à 6 ans), le primaire (6 ans), le secondaire collégial (3 ans) et le secondaire qualifiant (3 ans : tronc commun, 1re et 2e années du baccalauréat).
+AR:
+Q: كم سنة تدوم مرحلة التعليم الابتدائي في المغرب؟
+* 6 سنوات
+- 5 سنوات
+- 4 سنوات
+- 3 سنوات
+C: ست سنوات (من السنة الأولى إلى السنة السادسة ابتدائي).
+E: يتكون التعليم المدرسي بالمغرب من التعليم الأولي (سنتان، للأطفال من 4 إلى 6 سنوات)، والتعليم الابتدائي (6 سنوات)، والتعليم الثانوي الإعدادي (3 سنوات)، والتعليم الثانوي التأهيلي (3 سنوات: الجذع المشترك، والسنة الأولى والسنة الثانية من سلك البكالوريا).
+
+[EDU-002] systeme | beginner
+Q: Comment est organisé le secondaire qualifiant (lycée) au Maroc ?
+* Tronc commun, puis 1re année et 2e année du baccalauréat (3 ans)
+- Deux années de baccalauréat seulement, sans tronc commun
+- Quatre années de baccalauréat après le collège
+- Trois années de collège suivies d'un tronc commun
+C: Trois ans : tronc commun, 1re année bac, 2e année bac.
+E: Après les 3 années du secondaire collégial, l'élève entre au secondaire qualifiant : une année de tronc commun, puis le cycle du baccalauréat en deux ans (1re et 2e années), dans une filière choisie selon l'orientation.
+AR:
+Q: كيف ينظم التعليم الثانوي التأهيلي في المغرب؟
+* الجذع المشترك، ثم السنة الأولى والسنة الثانية من سلك البكالوريا (3 سنوات)
+- سنتان من البكالوريا فقط دون جذع مشترك
+- أربع سنوات من البكالوريا بعد الإعدادي
+- ثلاث سنوات من الإعدادي يليها جذع مشترك
+C: ثلاث سنوات: الجذع المشترك، ثم الأولى بكالوريا، ثم الثانية بكالوريا.
+E: بعد السنوات الثلاث للتعليم الثانوي الإعدادي، يلج التلميذ التعليم الثانوي التأهيلي: سنة الجذع المشترك، ثم سلك البكالوريا في سنتين (الأولى والثانية) في المسلك الذي يتم التوجيه إليه.
+
+[EDU-003] systeme | beginner
+Q: À quel âge s'adresse l'enseignement préscolaire au Maroc ?
+* Aux enfants de 4 à 6 ans
+- Aux enfants de 2 à 4 ans
+- Aux enfants de 6 à 8 ans
+- Aux enfants de 3 à 7 ans
+C: De 4 à 6 ans (deux années avant le primaire).
+E: Le préscolaire (التعليم الأولي) accueille les enfants de 4 à 6 ans pendant deux ans. La Vision stratégique 2015-2030 et la loi-cadre n° 51-17 prévoient sa généralisation et son caractère obligatoire, avec une intégration progressive au primaire.
+AR:
+Q: لأي فئة عمرية يوجه التعليم الأولي في المغرب؟
+* للأطفال من 4 إلى 6 سنوات
+- للأطفال من سنتين إلى 4 سنوات
+- للأطفال من 6 إلى 8 سنوات
+- للأطفال من 3 إلى 7 سنوات
+C: من 4 إلى 6 سنوات (سنتان قبل الابتدائي).
+E: يستقبل التعليم الأولي الأطفال من 4 إلى 6 سنوات لمدة سنتين. وتنص الرؤية الاستراتيجية 2015-2030 والقانون الإطار رقم 51.17 على تعميمه وإلزاميته وإدماجه التدريجي في التعليم الابتدائي.
+
+[EDU-004] systeme | intermediate
+Q: Combien d'Académies régionales d'éducation et de formation (AREF) compte le Maroc depuis l'application du découpage régional de 2015 ?
+* 12
+- 16
+- 10
+- 14
+C: 12 AREF, une par région.
+E: Créées en 2000-2001 dans les 16 anciennes régions, les AREF ont été réorganisées après le découpage de 2015 en 12 régions : on est passé de 16 à 12 académies, opérationnelles à partir de février 2016.
+S: src-telquel-aref-2016
+AR:
+Q: كم عدد الأكاديميات الجهوية للتربية والتكوين في المغرب منذ تطبيق التقسيم الجهوي لسنة 2015؟
+* 12
+- 16
+- 10
+- 14
+C: 12 أكاديمية، واحدة في كل جهة.
+E: أحدثت الأكاديميات سنتي 2000-2001 في الجهات الست عشرة السابقة، ثم أعيد تنظيمها بعد التقسيم الجهوي لسنة 2015 إلى 12 جهة: انتقل عددها من 16 إلى 12 أكاديمية، شرعت في العمل ابتداء من فبراير 2016.
+
+[EDU-005] systeme | advanced
+Q: Quel texte a créé les Académies régionales d'éducation et de formation (AREF) en tant qu'établissements publics ?
+* La loi n° 07-00 (dahir n° 1-00-203 du 19 mai 2000)
+- La loi-cadre n° 51-17 de 2019
+- La loi n° 105-12 de 2014
+- Le décret n° 2-11-672 de 2011
+C: La loi n° 07-00 de 2000.
+E: Les AREF sont des établissements publics dotés de la personnalité morale et de l'autonomie financière, régis par la loi n° 07-00 promulguée par le dahir n° 1-00-203 du 19 mai 2000. La loi 105-12 concerne le CSEFRS, la loi-cadre 51-17 le système d'éducation, et le décret 2-11-672 les CRMEF.
+S: src-loi-07-00
+AR:
+Q: ما هو النص الذي أحدث الأكاديميات الجهوية للتربية والتكوين باعتبارها مؤسسات عمومية؟
+* القانون رقم 07.00 (الظهير رقم 1.00.203 الصادر في 19 ماي 2000)
+- القانون الإطار رقم 51.17 لسنة 2019
+- القانون رقم 105.12 لسنة 2014
+- المرسوم رقم 2.11.672 لسنة 2011
+C: القانون رقم 07.00 لسنة 2000.
+E: الأكاديميات الجهوية مؤسسات عمومية تتمتع بالشخصية المعنوية والاستقلال المالي، ويحكمها القانون رقم 07.00 الصادر بتنفيذه الظهير رقم 1.00.203 بتاريخ 19 ماي 2000. أما القانون 105.12 فيتعلق بالمجلس الأعلى للتربية والتكوين والبحث العلمي، والقانون الإطار 51.17 بمنظومة التربية والتكوين، والمرسوم 2.11.672 بالمراكز الجهوية لمهن التربية والتكوين.
+
+[EDU-006] systeme | intermediate
+Q: Le Conseil supérieur de l'éducation, de la formation et de la recherche scientifique (CSEFRS) est une instance…
+* consultative prévue par l'article 168 de la Constitution de 2011
+- exécutive qui remplace le ministère de l'Éducation nationale
+- judiciaire chargée des litiges entre enseignants et AREF
+- régionale rattachée à chaque AREF
+C: Une instance consultative constitutionnelle (article 168).
+E: L'article 168 de la Constitution de 2011 crée le CSEFRS, instance consultative qui donne son avis sur les politiques publiques et les questions nationales d'éducation, de formation et de recherche scientifique, et évalue les programmes de ces domaines. Il a été mis en place par la loi n° 105-12 (dahir du 16 mai 2014) et a remplacé le Conseil supérieur de l'enseignement.
+S: src-csefrs
+AR:
+Q: المجلس الأعلى للتربية والتكوين والبحث العلمي هيئة…
+* استشارية منصوص عليها في الفصل 168 من دستور 2011
+- تنفيذية تحل محل وزارة التربية الوطنية
+- قضائية تبت في النزاعات بين الأساتذة والأكاديميات
+- جهوية تابعة لكل أكاديمية
+C: هيئة استشارية دستورية (الفصل 168).
+E: أحدث الفصل 168 من دستور 2011 المجلس الأعلى للتربية والتكوين والبحث العلمي، وهو هيئة استشارية تبدي رأيها في السياسات العمومية والقضايا الوطنية المتعلقة بالتربية والتكوين والبحث العلمي، وتقيم البرامج في هذه المجالات. وقد تم تنصيبه بموجب القانون رقم 105.12 (ظهير 16 ماي 2014)، وعوض المجلس الأعلى للتعليم.
+
+[EDU-007] systeme | intermediate | ts
+Q: Qui préside le Conseil supérieur de l'éducation, de la formation et de la recherche scientifique (CSEFRS) depuis sa nomination par le Roi en mars 2025 ?
+* Rahma Bourqia
+- Habib El Malki
+- Omar Azziman
+- Chakib Benmoussa
+C: Rahma Bourqia (nommée le 28 mars 2025).
+E: Rahma Bourqia, sociologue, ancienne directrice de l'Instance nationale d'évaluation du CSEFRS, a été nommée présidente le 28 mars 2025 ; elle a succédé à Habib El Malki (président de novembre 2022 à 2025), lui-même successeur d'Omar Azziman. Chakib Benmoussa est un ancien ministre de l'Éducation nationale. (Information à vérifier si une nouvelle nomination intervient.)
+S: src-csefrs-presidence-2025
+AR:
+Q: من يرأس المجلس الأعلى للتربية والتكوين والبحث العلمي منذ تعيينها من طرف جلالة الملك في مارس 2025؟
+* رحمة بورقية
+- الحبيب المالكي
+- عمر عزيمان
+- شكيب بنموسى
+C: رحمة بورقية (عينت في 28 مارس 2025).
+E: عينت رحمة بورقية، عالمة الاجتماع والمديرة السابقة للهيئة الوطنية للتقييم لدى المجلس، رئيسة له في 28 مارس 2025، خلفا للحبيب المالكي (رئيس المجلس من نونبر 2022 إلى 2025)، الذي خلف بدوره عمر عزيمان. أما شكيب بنموسى فهو وزير سابق للتربية الوطنية. (معلومة ينبغي تحيينها في حال تعيين جديد.)
+
+[EDU-008] systeme | intermediate
+Q: La Vision stratégique de la réforme 2015-2030 élaborée par le CSEFRS s'intitule « Pour une école de… »
+* l'équité, de la qualité et de la promotion
+- l'excellence, de l'innovation et de la compétitivité
+- la réussite, de la citoyenneté et du numérique
+- la gratuité, de l'obligation et de la laïcité
+C: « Pour une école de l'équité, de la qualité et de la promotion ».
+E: Présentée au Roi en mai 2015, la Vision repose sur trois fondements : une école de l'équité et de l'égalité des chances, une école de qualité pour tous, et une école de la promotion de l'individu et de la société.
+S: src-vision-2015-2030
+AR:
+Q: ما هو عنوان الرؤية الاستراتيجية للإصلاح 2015-2030 التي أعدها المجلس الأعلى للتربية والتكوين والبحث العلمي؟
+* من أجل مدرسة الإنصاف والجودة والارتقاء
+- من أجل مدرسة التميز والابتكار والتنافسية
+- من أجل مدرسة النجاح والمواطنة والرقمنة
+- من أجل مدرسة المجانية والإلزامية والعلمانية
+C: «من أجل مدرسة الإنصاف والجودة والارتقاء».
+E: قدمت الرؤية إلى جلالة الملك في ماي 2015، وتقوم على ثلاث دعامات: مدرسة الإنصاف وتكافؤ الفرص، ومدرسة الجودة للجميع، ومدرسة الارتقاء بالفرد والمجتمع.
+
+[EDU-009] systeme | advanced
+Q: Combien de leviers de changement la Vision stratégique 2015-2030 comporte-t-elle ?
+* 23
+- 12
+- 15
+- 30
+C: 23 leviers.
+E: Selon la présentation faite par le président du CSEFRS Omar Azziman, la Vision compte 23 leviers : 8 pour l'équité et l'égalité des chances, 7 pour la qualité pour tous, 6 pour la promotion de l'individu et de la société, et 2 pour la conduite du changement (leadership et gestion de la réforme).
+S: src-vision-2015-2030
+AR:
+Q: كم عدد رافعات التغيير التي تتضمنها الرؤية الاستراتيجية 2015-2030؟
+* 23
+- 12
+- 15
+- 30
+C: 23 رافعة.
+E: حسب العرض الذي قدمه رئيس المجلس عمر عزيمان، تضم الرؤية 23 رافعة: 8 للإنصاف وتكافؤ الفرص، و7 للجودة للجميع، و6 للارتقاء بالفرد والمجتمع، و2 لقيادة التغيير (الريادة وتدبير الإصلاح).
+
+[EDU-010] systeme | beginner
+Q: En quelle année la loi-cadre n° 51-17 relative au système d'éducation, de formation et de recherche scientifique a-t-elle été promulguée ?
+* 2019
+- 2015
+- 2011
+- 2022
+C: En 2019 (dahir n° 1-19-113 du 9 août 2019).
+E: Adoptée par le Parlement en juillet-août 2019, la loi-cadre 51-17 a été promulguée par le dahir n° 1-19-113 du 7 hija 1440 (9 août 2019) et publiée au Bulletin officiel (édition arabe n° 6805 du 19 août 2019). Elle donne une force juridique aux choix de la Vision stratégique 2015-2030.
+S: src-loi-cadre-51-17
+AR:
+Q: في أي سنة صدر الأمر بتنفيذ القانون الإطار رقم 51.17 المتعلق بمنظومة التربية والتكوين والبحث العلمي؟
+* 2019
+- 2015
+- 2011
+- 2022
+C: سنة 2019 (الظهير رقم 1.19.113 بتاريخ 9 غشت 2019).
+E: صادق البرلمان على القانون الإطار 51.17 في يوليوز-غشت 2019، وصدر الظهير رقم 1.19.113 بتنفيذه في 7 ذي الحجة 1440 (9 غشت 2019)، ونشر بالجريدة الرسمية عدد 6805 بتاريخ 19 غشت 2019. وهو يمنح قوة قانونية لاختيارات الرؤية الاستراتيجية 2015-2030.
+
+[EDU-011] systeme | intermediate
+Q: Dans la loi-cadre n° 51-17, que désigne l'« alternance linguistique » ?
+* L'enseignement de certaines matières, notamment scientifiques et techniques, dans une ou plusieurs langues étrangères
+- La suppression de l'enseignement de l'arabe au lycée
+- L'alternance entre cours le matin et activités l'après-midi
+- Le choix libre, par chaque enseignant, de la langue d'enseignement
+C: Enseigner certains contenus ou matières, surtout scientifiques et techniques, en langue(s) étrangère(s).
+E: L'article 2 de la loi-cadre définit l'alternance linguistique comme une approche pédagogique et un choix éducatif progressif visant à diversifier les langues d'enseignement, à côté des deux langues officielles (arabe et amazighe), par l'enseignement de certaines matières, notamment scientifiques et techniques, dans une ou plusieurs langues étrangères. Ce point (articles 2 et 31) a été le plus débattu au Parlement.
+S: src-loi-cadre-51-17
+AR:
+Q: ماذا يقصد بـ«التناوب اللغوي» في القانون الإطار رقم 51.17؟
+* تدريس بعض المواد، ولا سيما العلمية والتقنية، بلغة أو لغات أجنبية
+- إلغاء تدريس اللغة العربية في الثانوي التأهيلي
+- التناوب بين الدروس صباحا والأنشطة مساء
+- اختيار كل أستاذ بحرية للغة التدريس
+C: تدريس بعض المضامين أو المواد، خاصة العلمية والتقنية، بلغة أو لغات أجنبية.
+E: تعرف المادة 2 من القانون الإطار التناوب اللغوي بأنه مقاربة بيداغوجية واختيار تربوي متدرج يهدف إلى تنويع لغات التدريس، إلى جانب اللغتين الرسميتين (العربية والأمازيغية)، وذلك بتدريس بعض المواد، ولا سيما العلمية والتقنية، بلغة أو لغات أجنبية. وكانت هذه النقطة (المادتان 2 و31) الأكثر إثارة للنقاش في البرلمان.
+
+[EDU-012] systeme | advanced
+Q: Selon la loi-cadre n° 51-17, l'enseignement est obligatoire pour les enfants âgés de…
+* 4 à 16 ans
+- 6 à 15 ans
+- 6 à 18 ans
+- 5 à 14 ans
+C: De 4 à 16 ans (préscolaire inclus).
+E: La loi-cadre étend l'obligation scolaire à la tranche 4-16 ans : elle couvre désormais le préscolaire (dès 4 ans) et va jusqu'à 16 ans, la première version du projet s'arrêtant à 15 ans. L'État et les familles en partagent la responsabilité.
+S: src-loi-cadre-51-17
+AR:
+Q: حسب القانون الإطار رقم 51.17، يكون التعليم إلزاميا بالنسبة للأطفال البالغين من العمر…
+* من 4 إلى 16 سنة
+- من 6 إلى 15 سنة
+- من 6 إلى 18 سنة
+- من 5 إلى 14 سنة
+C: من 4 إلى 16 سنة (بما في ذلك التعليم الأولي).
+E: وسع القانون الإطار إلزامية التعليم لتشمل الفئة العمرية من 4 إلى 16 سنة: أي من التعليم الأولي (ابتداء من 4 سنوات) إلى 16 سنة، بعدما كانت الصيغة الأولى للمشروع تقف عند 15 سنة. وتتقاسم الدولة والأسر هذه المسؤولية.
+
+[EDU-013] systeme | intermediate
+Q: Sur quels trois axes repose la Feuille de route 2022-2026 « pour une école publique de qualité » ?
+* L'élève, l'enseignant et l'établissement scolaire
+- Les parents, les syndicats et les collectivités territoriales
+- Les programmes, les manuels et les examens
+- Le préscolaire, le collège et l'université
+C: Élève, enseignant, établissement.
+E: Présentée en novembre 2022 par le ministre Chakib Benmoussa, la Feuille de route 2022-2026 s'articule autour de trois axes (l'élève, l'enseignant, l'établissement), de 12 engagements et de 3 objectifs stratégiques à l'horizon 2026 : maîtrise des apprentissages fondamentaux, accès aux activités parascolaires et réduction du décrochage scolaire.
+S: src-feuille-de-route-2022-2026
+AR:
+Q: على أي محاور ثلاثة ترتكز خارطة الطريق 2022-2026 «من أجل مدرسة عمومية ذات جودة»؟
+* التلميذ، والأستاذ، والمؤسسة التعليمية
+- الآباء، والنقابات، والجماعات الترابية
+- المناهج، والكتب المدرسية، والامتحانات
+- التعليم الأولي، والإعدادي، والجامعة
+C: التلميذ، الأستاذ، المؤسسة.
+E: قدمها الوزير شكيب بنموسى في نونبر 2022، وتتمحور خارطة الطريق 2022-2026 حول ثلاثة محاور (التلميذ، الأستاذ، المؤسسة)، و12 التزاما، و3 أهداف استراتيجية في أفق 2026: التحكم في التعلمات الأساس، والولوج إلى الأنشطة الموازية، والتقليص من الهدر المدرسي.
+
+[EDU-014] systeme | intermediate | ts
+Q: Le projet « Écoles pionnières » (مدارس الريادة), lancé à la rentrée 2023-2024 dans des écoles primaires publiques, repose notamment sur…
+* une remédiation selon le niveau réel des élèves (approche TaRL) et l'enseignement explicite
+- la suppression des évaluations en classe
+- le redoublement systématique des élèves en difficulté
+- l'enseignement exclusivement à distance
+C: TaRL (« enseigner au bon niveau ») et enseignement explicite.
+E: Le modèle combine un volet curatif, la remédiation TaRL (Teaching at the Right Level) qui regroupe temporairement les élèves selon leur niveau réel en arabe, français et mathématiques, et un volet préventif, l'enseignement explicite (leçons structurées, évaluations formatives régulières). Lancé en 2023-2024, il est étendu chaque année et, depuis 2024-2025, aux collèges (« collèges pionniers »).
+S: src-ecoles-pionnieres
+AR:
+Q: يرتكز مشروع «مدارس الريادة»، الذي انطلق في الموسم الدراسي 2023-2024 بمدارس ابتدائية عمومية، أساسا على…
+* الدعم حسب المستوى الحقيقي للتلاميذ (مقاربة TaRL) والتدريس الصريح
+- إلغاء التقويم داخل القسم
+- التكرار المنهجي للتلاميذ المتعثرين
+- التدريس عن بعد حصريا
+C: مقاربة TaRL («التدريس وفق المستوى المناسب») والتدريس الصريح.
+E: يجمع النموذج بين شق علاجي، هو الدعم وفق مقاربة TaRL التي تجمع التلاميذ مؤقتا حسب مستواهم الحقيقي في العربية والفرنسية والرياضيات، وشق وقائي هو التدريس الصريح (دروس مهيكلة وتقويمات تكوينية منتظمة). انطلق المشروع سنة 2023-2024 ويتم توسيعه سنويا، وامتد منذ 2024-2025 إلى الإعداديات («إعداديات الريادة»).
+
+[EDU-015] systeme | beginner
+Q: Au Maroc, l'examen de fin de 1re année du baccalauréat est un examen…
+* régional
+- national
+- provincial
+- international
+C: Régional (organisé par l'AREF).
+E: Au cycle du baccalauréat, l'examen régional se passe en fin de 1re année et l'examen national en fin de 2e année. L'examen de fin de 3e année du collège est également régional, et celui de 6e année du primaire est provincial.
+AR:
+Q: في المغرب، يعد امتحان نهاية السنة الأولى من سلك البكالوريا امتحانا…
+* جهويا
+- وطنيا
+- إقليميا
+- دوليا
+C: جهوي (تنظمه الأكاديمية الجهوية).
+E: في سلك البكالوريا، يجتاز التلميذ الامتحان الجهوي في نهاية السنة الأولى والامتحان الوطني في نهاية السنة الثانية. كما أن امتحان السنة الثالثة إعدادي جهوي، وامتحان السنة السادسة ابتدائي إقليمي.
+
+[EDU-016] systeme | intermediate
+Q: Quelle est la mission principale des Centres régionaux des métiers de l'éducation et de la formation (CRMEF), créés par le décret n° 2-11-672 de 2011 ?
+* La formation initiale et continue des enseignants et des cadres éducatifs
+- La gestion des examens du baccalauréat
+- La délivrance des diplômes de licence universitaire
+- L'inspection financière des AREF
+C: Former les enseignants (formation initiale et continue) et les cadres éducatifs.
+E: Le décret n° 2-11-672 du 27 moharrem 1433 (23 décembre 2011) crée et organise les CRMEF, chargés notamment de la formation initiale des enseignants du primaire et du secondaire et de cadres administratifs et éducatifs, de la formation continue, de la recherche pédagogique et de la préparation à certains concours. Les lauréats des concours des AREF y suivent leur formation qualifiante.
+S: src-decret-crmef
+AR:
+Q: ما هي المهمة الأساسية للمراكز الجهوية لمهن التربية والتكوين المحدثة بموجب المرسوم رقم 2.11.672 لسنة 2011؟
+* التكوين الأساس والمستمر للأساتذة وأطر التربية
+- تدبير امتحانات البكالوريا
+- منح شهادات الإجازة الجامعية
+- التفتيش المالي للأكاديميات
+C: تكوين الأساتذة (تكوينا أساسا ومستمرا) وأطر التربية.
+E: يحدث المرسوم رقم 2.11.672 الصادر في 27 محرم 1433 (23 دجنبر 2011) المراكز الجهوية لمهن التربية والتكوين وينظمها، وتتولى خصوصا التكوين الأساس لأساتذة التعليم الابتدائي والثانوي ولأطر الإدارة التربوية، والتكوين المستمر، والبحث التربوي، والتحضير لبعض المباريات. ويتابع الناجحون في مباريات الأكاديميات تكوينهم التأهيلي بهذه المراكز.
+
+[EDU-017] systeme | intermediate
+Q: En quelle année le Maroc a-t-il participé pour la première fois à l'enquête internationale PISA de l'OCDE ?
+* 2018
+- 2000
+- 2009
+- 2022
+C: En 2018 (puis de nouveau en 2022).
+E: Le Maroc a participé pour la première fois à PISA en 2018 ; l'Instance nationale d'évaluation du CSEFRS en a publié le rapport national. Il a de nouveau participé à PISA 2022. Avant cela, le Maroc participait déjà à d'autres enquêtes internationales comme TIMSS et PIRLS.
+S: src-csefrs-pisa2018
+AR:
+Q: في أي سنة شارك المغرب لأول مرة في البرنامج الدولي لتقييم التلاميذ PISA التابع لمنظمة التعاون والتنمية الاقتصادية؟
+* 2018
+- 2000
+- 2009
+- 2022
+C: سنة 2018 (ثم مجددا سنة 2022).
+E: شارك المغرب لأول مرة في PISA سنة 2018، وأصدرت الهيئة الوطنية للتقييم لدى المجلس الأعلى للتربية والتكوين والبحث العلمي التقرير الوطني الخاص به، ثم شارك مجددا في دورة 2022. وقبل ذلك كان المغرب يشارك في دراسات دولية أخرى مثل TIMSS وPIRLS.
+
+[EDU-018] pedagogie | beginner
+Q: Dans la taxonomie originale de Bloom (1956) pour le domaine cognitif, quel est le premier niveau, le plus simple ?
+* La connaissance
+- La compréhension
+- L'application
+- L'évaluation
+C: La connaissance (mémoriser, restituer).
+E: Ordre de Bloom (1956) : connaissance, compréhension, application, analyse, synthèse, évaluation. Dans la révision d'Anderson et Krathwohl (2001), le premier niveau devient « se souvenir » (mémoriser).
+S: src-bloom-taxonomie
+AR:
+Q: في تصنيف بلوم الأصلي (1956) للمجال المعرفي، ما هو المستوى الأول والأبسط؟
+* المعرفة (التذكر)
+- الفهم
+- التطبيق
+- التقويم
+C: المعرفة (الحفظ والاسترجاع).
+E: ترتيب بلوم (1956): المعرفة، الفهم، التطبيق، التحليل، التركيب، التقويم. وفي مراجعة أندرسون وكراثوول (2001) أصبح المستوى الأول هو «التذكر».
+
+[EDU-019] pedagogie | intermediate
+Q: Dans la taxonomie de Bloom révisée par Anderson et Krathwohl (2001), quel est le niveau le plus élevé ?
+* Créer
+- Évaluer
+- Analyser
+- Appliquer
+C: Créer.
+E: Version révisée (2001), exprimée par des verbes : se souvenir, comprendre, appliquer, analyser, évaluer, créer. Par rapport à 1956, « synthèse » est devenue « créer » et passe au sommet, au-dessus d'« évaluer ».
+S: src-bloom-taxonomie
+AR:
+Q: في تصنيف بلوم المراجع من طرف أندرسون وكراثوول (2001)، ما هو المستوى الأعلى؟
+* الإبداع (الابتكار)
+- التقويم
+- التحليل
+- التطبيق
+C: الإبداع.
+E: النسخة المراجعة (2001) صيغت بأفعال: التذكر، الفهم، التطبيق، التحليل، التقويم، الإبداع. ومقارنة بنسخة 1956، تحول «التركيب» إلى «الإبداع» وانتقل إلى القمة فوق «التقويم».
+
+[EDU-020] pedagogie | advanced
+Q: Dans la taxonomie originale de Bloom (1956), quel niveau occupe le sommet, juste au-dessus de la synthèse ?
+* L'évaluation
+- La création
+- L'analyse
+- L'application
+C: L'évaluation (dans la version de 1956).
+E: En 1956, l'ordre est : connaissance, compréhension, application, analyse, synthèse, évaluation. « Créer » n'existe que dans la révision de 2001, où il remplace la synthèse et se place au-dessus d'« évaluer » : les deux versions inversent donc les deux niveaux supérieurs.
+S: src-bloom-taxonomie
+AR:
+Q: في تصنيف بلوم الأصلي (1956)، ما هو المستوى الذي يوجد في القمة مباشرة فوق التركيب؟
+* التقويم
+- الإبداع
+- التحليل
+- التطبيق
+C: التقويم (في نسخة 1956).
+E: ترتيب 1956 هو: المعرفة، الفهم، التطبيق، التحليل، التركيب، التقويم. أما «الإبداع» فلا يوجد إلا في مراجعة 2001، حيث عوض التركيب ووضع فوق «التقويم»؛ أي أن النسختين تعكسان ترتيب المستويين الأعليين.
+
+[EDU-021] pedagogie | beginner
+Q: Quelle évaluation se pratique avant un apprentissage pour repérer les acquis et les prérequis des élèves ?
+* L'évaluation diagnostique
+- L'évaluation sommative
+- L'évaluation certificative
+- L'évaluation normative
+C: L'évaluation diagnostique.
+E: L'évaluation diagnostique, en début d'année ou de séquence, permet d'identifier les acquis, les lacunes et les prérequis afin d'adapter l'enseignement. Elle se distingue de l'évaluation formative (pendant l'apprentissage) et de l'évaluation sommative (à la fin, pour faire le bilan).
+AR:
+Q: ما نوع التقويم الذي يجرى قبل التعلم لرصد مكتسبات التلاميذ ومتطلباتهم القبلية؟
+* التقويم التشخيصي
+- التقويم الإجمالي
+- التقويم الإشهادي
+- التقويم المعياري
+C: التقويم التشخيصي.
+E: يجرى التقويم التشخيصي في بداية السنة أو المقطع التعلمي لتحديد المكتسبات والثغرات والمتطلبات القبلية قصد تكييف التدريس. ويتميز عن التقويم التكويني (أثناء التعلم) وعن التقويم الإجمالي (في النهاية لإنجاز الحصيلة).
+
+[EDU-022] pedagogie | intermediate
+Q: Quelle est la fonction principale de l'évaluation formative ?
+* Réguler l'apprentissage en cours, en informant l'élève et l'enseignant pour ajuster
+- Classer les élèves en fin d'année
+- Délivrer un diplôme ou un certificat
+- Sélectionner les candidats à un concours
+C: Réguler (ajuster) l'enseignement et l'apprentissage pendant qu'ils se déroulent.
+E: Les termes « formatif » et « sommatif » ont été proposés par Michael Scriven (1967) pour l'évaluation des programmes, puis appliqués aux apprentissages des élèves par Benjamin Bloom. L'évaluation formative a lieu pendant l'apprentissage ; elle sert à repérer les difficultés et à remédier, sans but de sanction.
+AR:
+Q: ما هي الوظيفة الأساسية للتقويم التكويني؟
+* تعديل التعلم أثناء سيره بإخبار التلميذ والمدرس من أجل التصحيح
+- ترتيب التلاميذ في نهاية السنة
+- منح شهادة أو دبلوم
+- انتقاء المترشحين لمباراة
+C: الضبط والتعديل للتدريس والتعلم أثناء حدوثهما.
+E: اقترح مايكل سكريفن (1967) مصطلحي «التكويني» و«الإجمالي» لتقويم البرامج، ثم طبقهما بنجامين بلوم على تعلمات التلاميذ. يجرى التقويم التكويني أثناء التعلم لرصد الصعوبات ومعالجتها، دون غاية زجرية.
+
+[EDU-023] pedagogie | beginner
+Q: Un contrôle de fin d'unité qui dresse le bilan des acquis et aboutit à une note relève de l'évaluation…
+* sommative
+- diagnostique
+- formative
+- pronostique
+C: Sommative.
+E: L'évaluation sommative intervient au terme d'un apprentissage (unité, semestre, année) pour faire le bilan des acquis ; elle peut être certificative (diplôme) ou servir aux décisions de passage.
+AR:
+Q: فرض في نهاية الوحدة ينجز حصيلة المكتسبات ويفضي إلى نقطة يندرج ضمن التقويم…
+* الإجمالي
+- التشخيصي
+- التكويني
+- التنبئي
+C: الإجمالي.
+E: يأتي التقويم الإجمالي في نهاية التعلم (وحدة، أسدس، سنة) لإنجاز حصيلة المكتسبات، وقد يكون إشهاديا (شهادة) أو يستعمل في قرارات الانتقال.
+
+[EDU-024] pedagogie | intermediate
+Q: Dans le triangle pédagogique de Jean Houssaye (1988), quel processus relie l'élève au savoir ?
+* Apprendre
+- Enseigner
+- Former
+- Évaluer
+C: Apprendre.
+E: Le triangle de Houssaye a trois sommets : savoir, enseignant, élève. Chaque côté est un processus : « enseigner » (enseignant–savoir), « former » (enseignant–élève) et « apprendre » (élève–savoir). Dans chaque situation, un sommet occupe la « place du mort ».
+S: src-houssaye-1988
+AR:
+Q: في المثلث البيداغوجي لجان هوساي (1988)، ما هي السيرورة التي تربط المتعلم بالمعرفة؟
+* التعلم
+- التدريس
+- التكوين
+- التقويم
+C: التعلم.
+E: للمثلث البيداغوجي لهوساي ثلاثة رؤوس: المعرفة، والمدرس، والمتعلم. ويمثل كل ضلع سيرورة: «التدريس» (المدرس–المعرفة)، و«التكوين» (المدرس–المتعلم)، و«التعلم» (المتعلم–المعرفة). وفي كل وضعية، يحتل أحد الرؤوس «مكان الميت».
+
+[EDU-025] pedagogie | intermediate
+Q: Selon Vygotski, la « zone proximale de développement » (ZPD) correspond à…
+* l'écart entre ce que l'enfant réussit seul et ce qu'il réussit avec l'aide d'un adulte ou d'un pair plus compétent
+- l'âge auquel l'enfant atteint le stade opératoire formel
+- la zone de la classe la plus proche du tableau
+- l'ensemble des connaissances que l'enfant maîtrise déjà parfaitement
+C: La distance entre le niveau actuel (seul) et le niveau potentiel (avec aide).
+E: Pour Vygotski (socioconstructivisme), l'apprentissage efficace se situe dans la ZPD : des tâches que l'élève ne peut pas encore réussir seul, mais qu'il réussit avec la médiation d'un adulte ou d'un pair plus avancé. L'interaction sociale y joue un rôle central.
+AR:
+Q: حسب فيجوتسكي، تقابل «منطقة النمو الوشيك (القريب)»…
+* المسافة بين ما ينجزه الطفل بمفرده وما ينجزه بمساعدة راشد أو قرين أكثر كفاءة
+- السن التي يبلغ فيها الطفل مرحلة العمليات المجردة
+- المنطقة الأقرب إلى السبورة داخل القسم
+- مجموع المعارف التي يتقنها الطفل تماما
+C: المسافة بين المستوى الحالي (بمفرده) والمستوى الممكن (بالمساعدة).
+E: يرى فيجوتسكي (البنائية الاجتماعية) أن التعلم الفعال يقع داخل منطقة النمو الوشيك: مهام لا يستطيع المتعلم إنجازها بمفرده بعد، لكنه ينجزها بوساطة راشد أو قرين أكثر تقدما. ويلعب التفاعل الاجتماعي فيها دورا محوريا.
+
+[EDU-026] pedagogie | advanced
+Q: Qui a introduit la notion d'« étayage » (scaffolding) dans un article de 1976 sur le rôle du tuteur dans la résolution de problèmes ?
+* Wood, Bruner et Ross
+- Piaget et Inhelder
+- Skinner et Holland
+- Bloom et Krathwohl
+C: David Wood, Jerome Bruner et Gail Ross (1976).
+E: Dans « The Role of Tutoring in Problem Solving » (1976), Wood, Bruner et Ross décrivent l'étayage : l'adulte prend en charge les éléments de la tâche qui dépassent la capacité de l'enfant, pour que celui-ci se concentre sur ce qu'il peut faire, puis retire progressivement son aide. La notion est souvent rapprochée de la ZPD de Vygotski.
+S: src-wood-bruner-ross-1976
+AR:
+Q: من أدخل مفهوم «السقالات» أو التدعيم (scaffolding) في مقال سنة 1976 حول دور المرشد في حل المشكلات؟
+* وود وبرونر وروس
+- بياجي وإنهلدر
+- سكينر وهولاند
+- بلوم وكراثوول
+C: ديفيد وود وجيروم برونر وغيل روس (1976).
+E: في مقال «دور الإرشاد في حل المشكلات» (1976)، وصف وود وبرونر وروس التدعيم: يتكفل الراشد بعناصر المهمة التي تتجاوز قدرة الطفل، ليركز هذا الأخير على ما يستطيع إنجازه، ثم يسحب الراشد مساعدته تدريجيا. وكثيرا ما يقرن هذا المفهوم بمنطقة النمو الوشيك عند فيجوتسكي.
+
+[EDU-027] pedagogie | intermediate
+Q: L'enseignement programmé (petites étapes, réponse active, renforcement immédiat) découle de quel courant ?
+* Le behaviorisme de B. F. Skinner
+- Le constructivisme de Jean Piaget
+- Le socioconstructivisme de Lev Vygotski
+- La pédagogie de projet de William Kilpatrick
+C: Le behaviorisme (conditionnement opérant de Skinner).
+E: Skinner applique le conditionnement opérant à l'école : découper le contenu en petites étapes, faire répondre l'élève, renforcer immédiatement la bonne réponse. Son article « The Science of Learning and the Art of Teaching » (1954) lance l'enseignement programmé et les machines à enseigner.
+AR:
+Q: من أي تيار ينحدر التعليم المبرمج (خطوات صغيرة، استجابة نشطة، تعزيز فوري)؟
+* السلوكية عند ب. ف. سكينر
+- البنائية عند جان بياجي
+- البنائية الاجتماعية عند ليف فيجوتسكي
+- بيداغوجيا المشروع عند وليام كيلباتريك
+C: السلوكية (الإشراط الإجرائي عند سكينر).
+E: طبق سكينر الإشراط الإجرائي في المدرسة: تقسيم المحتوى إلى خطوات صغيرة، وجعل التلميذ يستجيب، وتعزيز الاستجابة الصحيحة فورا. وقد أطلق مقاله «علم التعلم وفن التدريس» (1954) التعليم المبرمج وآلات التعليم.
+
+[EDU-028] pedagogie | advanced
+Q: Selon Robert Mager (1962), un objectif pédagogique opérationnel précise trois éléments. Lesquels ?
+* Le comportement observable attendu, les conditions de réalisation et le critère de réussite
+- Le titre de la leçon, la durée et le matériel
+- Le niveau de la classe, l'âge des élèves et la matière
+- La compétence, la situation d'intégration et la note finale
+C: Comportement (performance) observable, conditions, critère.
+E: Dans « Preparing Instructional Objectives » (1962), Mager demande de formuler l'objectif par un verbe d'action observable, d'indiquer les conditions dans lesquelles l'élève agit (outils, documents, aides) et le critère de performance acceptable (seuil de réussite, temps, précision).
+S: src-mager-1962
+AR:
+Q: حسب روبرت ماجر (1962)، يحدد الهدف الإجرائي ثلاثة عناصر. ما هي؟
+* السلوك القابل للملاحظة، وشروط الإنجاز، ومعيار النجاح
+- عنوان الدرس، والمدة، والوسائل
+- مستوى القسم، وسن التلاميذ، والمادة
+- الكفاية، والوضعية الإدماجية، والنقطة النهائية
+C: السلوك (الأداء) القابل للملاحظة، والشروط، والمعيار.
+E: في كتاب «إعداد الأهداف التعليمية» (1962)، يشترط ماجر صياغة الهدف بفعل إنجازي قابل للملاحظة، وتحديد الشروط التي ينجز فيها التلميذ المهمة (أدوات، وثائق، وسائل مساعدة)، ومعيار الأداء المقبول (عتبة النجاح، الزمن، الدقة).
+
+[EDU-029] pedagogie | intermediate
+Q: Dans la pédagogie de l'intégration (Xavier Roegiers), qu'est-ce qu'une « situation d'intégration » ?
+* Une situation complexe et significative où l'élève mobilise et combine plusieurs acquis pour résoudre un problème
+- Un exercice de répétition portant sur une seule notion
+- Une activité d'accueil des nouveaux élèves dans l'établissement
+- Une séance de lecture silencieuse sans consigne
+C: Une situation complexe qui exige de mobiliser et d'articuler plusieurs ressources.
+E: La pédagogie de l'intégration, cadre méthodologique de mise en œuvre de l'approche par compétences, propose aux élèves des situations complexes (familles de situations) pour qu'ils intègrent leurs acquis plutôt que de les juxtaposer. Elle a été expérimentée et diffusée au Maroc à partir de 2008-2009 dans le cadre du Programme d'urgence.
+AR:
+Q: في بيداغوجيا الإدماج (كزافيي روجرز)، ما المقصود بـ«الوضعية الإدماجية»؟
+* وضعية مركبة ودالة يعبئ فيها المتعلم عدة مكتسبات ويدمجها لحل مشكلة
+- تمرين تكراري يتعلق بمفهوم واحد
+- نشاط لاستقبال التلاميذ الجدد بالمؤسسة
+- حصة قراءة صامتة دون تعليمات
+C: وضعية مركبة تقتضي تعبئة عدة موارد والربط بينها.
+E: بيداغوجيا الإدماج إطار منهجي لتنزيل المقاربة بالكفايات، تقترح على المتعلمين وضعيات مركبة (فئات من الوضعيات) لكي يدمجوا مكتسباتهم بدل مراكمتها. وقد جربت وعممت بالمغرب ابتداء من 2008-2009 في إطار البرنامج الاستعجالي.
+
+[EDU-030] pedagogie | beginner
+Q: Qu'appelle-t-on « différenciation pédagogique » ?
+* Adapter les contenus, démarches, supports ou rythmes aux besoins variés des élèves pour viser les mêmes objectifs
+- Séparer définitivement les bons et les mauvais élèves dans des classes différentes
+- Donner des notes différentes pour un même travail selon l'élève
+- Enseigner une matière différente à chaque élève
+C: Varier les moyens pour que des élèves différents atteignent les objectifs communs.
+E: La pédagogie différenciée part de l'hétérogénéité de la classe : l'enseignant diversifie les dispositifs (groupes de besoin, tâches graduées, aides, supports, temps) tout en maintenant des objectifs communs. Elle ne consiste ni à exclure ni à noter de manière inéquitable.
+AR:
+Q: ماذا يقصد بـ«البيداغوجيا الفارقية»؟
+* تكييف المحتويات والطرائق والوسائل والإيقاعات مع حاجات التلاميذ المتنوعة لبلوغ الأهداف نفسها
+- الفصل النهائي بين التلاميذ المتفوقين والمتعثرين في أقسام مختلفة
+- منح نقط مختلفة لنفس العمل حسب التلميذ
+- تدريس مادة مختلفة لكل تلميذ
+C: تنويع الوسائل لكي يبلغ تلاميذ مختلفون أهدافا مشتركة.
+E: تنطلق البيداغوجيا الفارقية من عدم تجانس القسم: ينوع المدرس الصيغ (مجموعات حسب الحاجة، مهام متدرجة، أشكال دعم، وسائل، زمن) مع الحفاظ على أهداف مشتركة. ولا تعني الإقصاء ولا التنقيط غير المنصف.
+
+[EDU-031] pedagogie | intermediate
+Q: À quel pédagogue américain doit-on l'article fondateur « The Project Method » (1918), à l'origine de la pédagogie de projet ?
+* William H. Kilpatrick
+- Burrhus F. Skinner
+- Benjamin Bloom
+- Robert Mager
+C: William Heard Kilpatrick, disciple de John Dewey.
+E: Dans « The Project Method » (Teachers College Record, 1918), Kilpatrick définit le projet comme une activité intentionnelle menée dans un contexte social. La pédagogie de projet fait réaliser aux élèves une production concrète, en mobilisant planification, réalisation et évaluation.
+AR:
+Q: إلى أي مرب أمريكي يعود المقال المؤسس «طريقة المشروع» (1918) الذي نشأت عنه بيداغوجيا المشروع؟
+* وليام هـ. كيلباتريك
+- بورهوس ف. سكينر
+- بنجامين بلوم
+- روبرت ماجر
+C: وليام هيرد كيلباتريك، تلميذ جون ديوي.
+E: في مقال «طريقة المشروع» (1918)، عرف كيلباتريك المشروع بأنه نشاط هادف ينجز في سياق اجتماعي. وتقوم بيداغوجيا المشروع على جعل التلاميذ ينجزون منتوجا ملموسا من خلال التخطيط والإنجاز والتقويم.
+
+[EDU-032] pedagogie | intermediate
+Q: Dans l'approche par compétences, adoptée au Maroc avec la révision des curricula du Livre blanc (2002), une compétence est…
+* la capacité de mobiliser de manière intégrée des ressources (savoirs, savoir-faire, savoir-être) pour traiter une famille de situations
+- la capacité de réciter par cœur une leçon
+- une note supérieure à 10/20
+- un objectif limité à un seul comportement isolé
+C: Mobiliser de façon intégrée des ressources pour résoudre des situations.
+E: L'approche par compétences (المقاربة بالكفايات) vise à dépasser l'accumulation de savoirs : l'élève doit savoir agir en situation en combinant ses ressources. Le curriculum issu du Livre blanc (2002), dans le prolongement de la Charte nationale d'éducation et de formation (1999), s'en réclame.
+AR:
+Q: في المقاربة بالكفايات، التي اعتمدها المغرب مع مراجعة المناهج في إطار الكتاب الأبيض (2002)، تعد الكفاية…
+* القدرة على تعبئة موارد (معارف ومهارات ومواقف) بشكل مندمج لمعالجة فئة من الوضعيات
+- القدرة على استظهار درس عن ظهر قلب
+- نقطة تفوق 10 على 20
+- هدفا يقتصر على سلوك واحد معزول
+C: تعبئة موارد بشكل مندمج لحل وضعيات.
+E: تسعى المقاربة بالكفايات إلى تجاوز مراكمة المعارف: يجب أن يتمكن المتعلم من التصرف في وضعية بتوظيف موارده مجتمعة. وقد تبنتها المناهج المنبثقة عن الكتاب الأبيض (2002) امتدادا للميثاق الوطني للتربية والتكوين (1999).
+
+[EDU-033] psychologie | beginner
+Q: Selon Piaget, à quel stade l'enfant acquiert-il la notion de conservation (par exemple, la quantité de liquide ne change pas quand on le verse dans un verre de forme différente) ?
+* Le stade des opérations concrètes (environ 7 à 11-12 ans)
+- Le stade sensori-moteur (0 à 2 ans)
+- Le stade préopératoire (2 à 7 ans)
+- Le stade des opérations formelles (à partir de 11-12 ans)
+C: Au stade opératoire concret.
+E: Les quatre stades de Piaget (âges indicatifs, l'ordre étant invariable) : sensori-moteur (0-2 ans, permanence de l'objet), préopératoire (2-7 ans, pensée symbolique, égocentrisme), opératoire concret (7-11/12 ans, conservation, classification sur du concret), opératoire formel (dès 11/12 ans, raisonnement hypothético-déductif).
+AR:
+Q: حسب بياجي، في أي مرحلة يكتسب الطفل مفهوم الاحتفاظ (مثلا: لا تتغير كمية السائل عند صبه في كأس مختلف الشكل)؟
+* مرحلة العمليات المحسوسة (من 7 إلى 11-12 سنة تقريبا)
+- المرحلة الحسية الحركية (من 0 إلى سنتين)
+- مرحلة ما قبل العمليات (من 2 إلى 7 سنوات)
+- مرحلة العمليات المجردة (ابتداء من 11-12 سنة)
+C: في مرحلة العمليات المحسوسة.
+E: مراحل بياجي الأربع (الأعمار تقريبية والترتيب ثابت): الحسية الحركية (0-2 سنة، ديمومة الشيء)، ما قبل العمليات (2-7 سنوات، التفكير الرمزي، التمركز حول الذات)، العمليات المحسوسة (7-11/12 سنة، الاحتفاظ والتصنيف على المحسوس)، العمليات المجردة أو الصورية (ابتداء من 11/12 سنة، الاستدلال الفرضي الاستنباطي).
+
+[EDU-034] psychologie | intermediate
+Q: Chez Piaget, comment appelle-t-on la modification des schèmes existants pour s'adapter à une situation nouvelle ?
+* L'accommodation
+- L'assimilation
+- Le conditionnement
+- La transposition
+C: L'accommodation.
+E: Pour Piaget, l'adaptation combine l'assimilation (intégrer une situation nouvelle dans les schèmes existants) et l'accommodation (transformer ses schèmes quand ils ne suffisent pas). L'équilibration régule ces deux processus et fait progresser l'intelligence (constructivisme).
+AR:
+Q: عند بياجي، ما اسم عملية تعديل الخطاطات (الصور الإجمالية) الموجودة للتكيف مع وضعية جديدة؟
+* الملاءمة
+- الاستيعاب
+- الإشراط
+- النقل
+C: الملاءمة.
+E: يرى بياجي أن التكيف يجمع بين الاستيعاب (إدماج وضعية جديدة في الخطاطات الموجودة) والملاءمة (تعديل الخطاطات حين لا تكفي). وتضبط عملية التوازن هاتين السيرورتين وتطور الذكاء (البنائية).
+
+[EDU-035] psychologie | beginner
+Q: Un élève qui lit des livres de sciences par pur plaisir, sans attendre de note ni de récompense, fait preuve d'une motivation…
+* intrinsèque
+- extrinsèque
+- négative
+- conditionnée
+C: Intrinsèque.
+E: La motivation intrinsèque vient de l'intérêt ou du plaisir trouvé dans l'activité elle-même ; la motivation extrinsèque dépend de conséquences externes (notes, récompenses, punitions, approbation). La théorie de l'autodétermination de Deci et Ryan (1985) relie la motivation autonome à trois besoins : autonomie, compétence et appartenance sociale.
+AR:
+Q: تلميذ يقرأ كتبا علمية لمجرد المتعة، دون انتظار نقطة أو مكافأة، يبدي دافعية…
+* داخلية (ذاتية)
+- خارجية
+- سلبية
+- مشروطة
+C: داخلية.
+E: تنبع الدافعية الداخلية من الاهتمام أو المتعة في النشاط نفسه، أما الدافعية الخارجية فترتبط بنتائج خارجية (نقط، مكافآت، عقوبات، استحسان). وتربط نظرية تقرير الذات لديسي وريان (1985) الدافعية المستقلة بثلاث حاجات: الاستقلالية، والكفاءة، والانتماء الاجتماعي.
+
+[EDU-036] psychologie | intermediate
+Q: Que disent les recherches sur l'idée qu'il faut adapter l'enseignement au « style d'apprentissage » de chaque élève (visuel, auditif, kinesthésique) ?
+* Les études rigoureuses n'apportent pas de preuve que cet appariement améliore les apprentissages
+- Il est prouvé que chaque élève apprend nettement mieux dans son style dominant
+- Les styles d'apprentissage sont déterminés génétiquement et mesurables par IRM
+- Cette méthode est imposée par la loi-cadre n° 51-17
+C: Aucune preuve solide : l'hypothèse de l'appariement (« meshing ») n'est pas confirmée.
+E: La revue de Pashler, McDaniel, Rohrer et Bjork (Psychological Science in the Public Interest, 2008) conclut que les rares études au protocole adéquat ne montrent pas d'effet de l'enseignement adapté au style déclaré de l'élève. Les élèves ont certes des préférences, mais varier les supports doit dépendre du contenu à enseigner, non d'un « style » supposé.
+S: src-pashler-2008
+AR:
+Q: ماذا تقول الأبحاث بشأن فكرة تكييف التدريس مع «نمط التعلم» الخاص بكل تلميذ (بصري، سمعي، حركي)؟
+* لا تقدم الدراسات الصارمة دليلا على أن هذه المواءمة تحسن التعلم
+- ثبت أن كل تلميذ يتعلم أفضل بكثير وفق نمطه الغالب
+- أنماط التعلم محددة وراثيا ويمكن قياسها بالتصوير بالرنين المغناطيسي
+- هذه الطريقة يفرضها القانون الإطار رقم 51.17
+C: لا يوجد دليل متين: فرضية المواءمة (meshing) غير مؤكدة.
+E: خلصت مراجعة باشلر وماكدانيال وروهرر وبيورك (2008) إلى أن الدراسات القليلة ذات المنهجية الملائمة لا تظهر أثرا للتدريس المكيف مع النمط المعلن للتلميذ. صحيح أن للتلاميذ تفضيلات، لكن تنويع الوسائل ينبغي أن يرتبط بطبيعة المحتوى المدرس لا بـ«نمط» مفترض.
+
+[EDU-037] psychologie | advanced
+Q: Des enfants qui aimaient déjà dessiner dessinent moins spontanément après avoir reçu une récompense attendue pour le faire. Comment nomme-t-on ce phénomène ?
+* L'effet de surjustification (effet délétère des récompenses sur la motivation intrinsèque)
+- L'effet Pygmalion
+- L'apprentissage vicariant
+- La zone proximale de développement
+C: L'effet de surjustification.
+E: Mis en évidence par Lepper, Greene et Nisbett (1973) et étudié par Deci, Koestner et Ryan (méta-analyse de 1999), cet effet montre qu'une récompense attendue et liée à la réalisation d'une tâche déjà intéressante peut réduire la motivation intrinsèque. L'effet dépend du type de récompense : les encouragements verbaux et les récompenses inattendues ne produisent pas cet effet.
+S: src-deci-koestner-ryan-1999
+AR:
+Q: أطفال يحبون الرسم أصلا، أصبحوا يرسمون تلقائيا بشكل أقل بعدما تلقوا مكافأة منتظرة مقابل ذلك. ما اسم هذه الظاهرة؟
+* أثر التبرير المفرط (الأثر السلبي للمكافآت على الدافعية الداخلية)
+- أثر بيجماليون
+- التعلم بالملاحظة (بالنيابة)
+- منطقة النمو الوشيك
+C: أثر التبرير المفرط.
+E: أبرز هذا الأثر ليبر وغرين ونيسبت (1973)، ودرسه ديسي وكوستنر وريان (تحليل بعدي سنة 1999): قد تقلص مكافأة منتظرة ومرتبطة بإنجاز مهمة ممتعة أصلا من الدافعية الداخلية. ويتوقف هذا الأثر على نوع المكافأة: فالتشجيع اللفظي والمكافآت غير المنتظرة لا تحدثه.
+
+[EDU-038] vie scolaire | intermediate
+Q: Dans un établissement public marocain, quel conseil prend en fin d'année les décisions de passage ou de redoublement des élèves d'une classe ?
+* Le conseil de classe
+- Le conseil de gestion
+- L'association des parents d'élèves
+- Le conseil d'administration de l'AREF
+C: Le conseil de classe.
+E: Le décret n° 2-02-376 du 17 juillet 2002 portant statut particulier des établissements d'éducation et d'enseignement public institue le conseil de gestion, le conseil pédagogique, les conseils d'enseignement et les conseils de classe. Le conseil de classe, composé notamment des enseignants de la classe, examine les résultats des élèves et décide du passage ou du redoublement ; ses délibérations sont confidentielles.
+S: src-decret-2-02-376
+AR:
+Q: في مؤسسة عمومية مغربية، أي مجلس يتخذ في نهاية السنة قرارات انتقال تلاميذ القسم أو تكرارهم؟
+* مجلس القسم
+- مجلس التدبير
+- جمعية آباء وأمهات وأولياء التلاميذ
+- المجلس الإداري للأكاديمية
+C: مجلس القسم.
+E: ينص المرسوم رقم 2.02.376 الصادر في 17 يوليوز 2002 بمثابة النظام الأساسي الخاص بمؤسسات التربية والتعليم العمومي على إحداث مجلس التدبير، والمجلس التربوي، والمجالس التعليمية، ومجالس الأقسام. ويدرس مجلس القسم، الذي يضم خصوصا أساتذة القسم، نتائج التلاميذ ويقرر انتقالهم أو تكرارهم، وتكون مداولاته سرية.
+
+[EDU-039] vie scolaire | beginner
+Q: Sur le plan de la déontologie, qu'interdit une note du ministère de l'Éducation nationale (décembre 2014) aux enseignants du public ?
+* D'organiser des cours de soutien payants au profit de leurs propres élèves
+- De donner des devoirs à la maison
+- De participer à la formation continue
+- De rencontrer les parents d'élèves
+C: Les cours de soutien payants donnés à ses propres élèves.
+E: La note ministérielle du 18 décembre 2014 interdit formellement aux enseignants d'organiser des cours de soutien payants au profit de leurs propres élèves, pratique qui crée un conflit d'intérêts et une inégalité entre élèves. Cette interdiction découle déjà des règles de la fonction publique sur le cumul d'activités lucratives.
+S: src-note-soutien-2014
+AR:
+Q: من الناحية الأخلاقية والمهنية، ماذا تمنع مذكرة لوزارة التربية الوطنية (دجنبر 2014) على أساتذة التعليم العمومي؟
+* تنظيم دروس دعم مؤدى عنها لفائدة تلاميذهم
+- تكليف التلاميذ بواجبات منزلية
+- المشاركة في التكوين المستمر
+- لقاء آباء وأولياء التلاميذ
+C: دروس الدعم المؤدى عنها لفائدة تلاميذ الأستاذ نفسه.
+E: تمنع المذكرة الوزارية الصادرة في 18 دجنبر 2014 منعا كليا على الأساتذة تنظيم دروس دعم مؤدى عنها لفائدة تلاميذهم، لأن هذه الممارسة تخلق تضاربا في المصالح وتفاوتا بين التلاميذ. وهذا المنع مستمد أصلا من قواعد الوظيفة العمومية المتعلقة بالجمع بين الوظيفة وأنشطة مدرة للدخل.
+
+[EDU-040] vie scolaire | advanced
+Q: En gestion de classe, Jacob Kounin (1970) a décrit la « withitness ». De quoi s'agit-il ?
+* La capacité de l'enseignant à montrer aux élèves qu'il est conscient de tout ce qui se passe dans la classe
+- La punition immédiate et sévère de tout écart de conduite
+- Le fait de laisser les élèves établir seuls les règles sans intervention
+- L'utilisation d'outils numériques pendant la leçon
+C: La vigilance perçue : l'enseignant « a des yeux partout » et le fait savoir.
+E: Dans « Discipline and Group Management in Classrooms » (1970), Kounin montre que la prévention des problèmes de comportement dépend surtout de la gestion du groupe : la « withitness » (être au courant de tout et le montrer), le chevauchement (« overlapping », gérer deux choses à la fois), la fluidité des transitions et le maintien de l'attention du groupe.
+S: src-kounin-1970
+AR:
+Q: في تدبير القسم، وصف جاكوب كونين (1970) مفهوم «withitness». ما المقصود به؟
+* قدرة المدرس على إظهار وعيه للتلاميذ بكل ما يجري داخل القسم
+- المعاقبة الفورية والصارمة لكل مخالفة
+- ترك التلاميذ يضعون القواعد بمفردهم دون تدخل
+- استعمال الأدوات الرقمية أثناء الدرس
+C: اليقظة المدركة: المدرس «يرى كل شيء» ويشعر التلاميذ بذلك.
+E: في كتاب «الانضباط وتدبير الجماعة في الأقسام» (1970)، بين كونين أن الوقاية من مشكلات السلوك ترتبط أساسا بتدبير الجماعة: اليقظة الشاملة (العلم بكل ما يجري وإظهار ذلك)، والتداخل (تدبير أمرين في آن واحد)، وسلاسة الانتقالات، والحفاظ على انتباه الجماعة.

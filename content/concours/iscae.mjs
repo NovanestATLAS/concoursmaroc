@@ -11,6 +11,7 @@ export default {
   practice: {
     subjects: ['maths', 'anglais', 'culture', 'logique', 'economie'],
     mock: { minutes: 90, sections: [{ subjects: ['maths', 'logique'], count: 20 }, { subjects: ['anglais'], count: 20 }, { subjects: ['culture', 'economie'], count: 20 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'selectif',
   },
   related: ['encg-tafem', 'cpge', 'universite'],
   official: [{ label: 'Groupe ISCAE', url: 'https://www.iscae.ma' }],

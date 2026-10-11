@@ -10,7 +10,12 @@ export default {
   seuils: { year: '2026', formula: 'moyenne', rows: [], note: { fr: 'Présélection sur la moyenne générale du bac ; voie ISTA : sur la moyenne des deux années de formation.', ar: 'انتقاء أولي على المعدل العام للبكالوريا؛ مسلك ISTA: على معدل سنتي التكوين.' } },
   age: { min: 18, max: 23, ref: '08-16', at: { fr: 'au 16 août de l’année du concours', ar: 'في 16 غشت من سنة المباراة' } },
   height: { m: 1.70, f: 1.60 },
-  practice: { subjects: ['logique', 'maths', 'physique', 'francais', 'culture'], mock: null },
+  practice: {
+    subjects: ['logique', 'maths', 'physique', 'francais', 'culture', 'defense'],
+    // Psychotechnical tests and interview: no written knowledge exam (indicative format).
+    mock: { minutes: 35, sections: [{ subjects: ['logique'], count: 20 }, { subjects: ['maroc', 'culture'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'standard',
+  },
   related: ['ern', 'era', 'arm', 'gendarmerie'],
   official: [{ label: 'Portail de recrutement des Forces Armées Royales', url: 'https://recrutement.far.ma' }],
   sources: [

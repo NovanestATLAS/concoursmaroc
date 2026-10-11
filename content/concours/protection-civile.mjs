@@ -11,8 +11,9 @@ export default {
   age: { min: 18, max: 26, ref: '01-01', at: { fr: 'au 1er janvier de l’année du concours', ar: 'في فاتح يناير من سنة المباراة' } },
   height: { m: 1.70, f: null },
   practice: {
-    subjects: ['secourisme', 'maroc', 'logique', 'calcul', 'sciences'],
-    mock: { minutes: 40, sections: [{ subjects: ['secourisme'], count: 12 }, { subjects: ['logique', 'calcul'], count: 10 }, { subjects: ['maroc', 'sciences'], count: 8 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    subjects: ['secourisme', 'maroc', 'securite', 'logique', 'calcul', 'sciences'],
+    mock: { minutes: 40, sections: [{ subjects: ['secourisme'], count: 12 }, { subjects: ['logique', 'calcul'], count: 10 }, { subjects: ['maroc', 'sciences', 'securite'], count: 8 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'accessible',
   },
   related: ['forces-auxiliaires', 'gendarmerie', 'police-dgsn'],
   official: [{ label: 'Portail de recrutement de la Protection Civile', url: 'https://recrutement.protectioncivile.ma' }],

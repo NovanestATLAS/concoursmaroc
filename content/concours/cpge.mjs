@@ -11,6 +11,7 @@ export default {
   practice: {
     subjects: ['maths', 'physique', 'chimie'],
     mock: { minutes: 90, sections: [{ subjects: ['maths'], count: 20 }, { subjects: ['physique', 'chimie'], count: 15 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'tres-selectif',
   },
   related: ['cnc', 'ensa', 'ensam', 'iscae'],
   official: [

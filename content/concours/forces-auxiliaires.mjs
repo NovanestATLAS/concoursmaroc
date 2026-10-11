@@ -11,8 +11,13 @@ export default {
   age: { min: 18, max: 24, ref: '02-01+1', at: { fr: 'au 1er février de l’année suivante (session 2026/2027)', ar: 'في فاتح فبراير 2027 (دورة 2026/2027)' } },
   height: { m: 1.70, f: 1.65 },
   practice: {
-    subjects: ['maroc', 'logique', 'calcul', 'arabe', 'francais', 'secourisme'],
-    mock: { minutes: 40, sections: [{ subjects: ['logique'], count: 10 }, { subjects: ['maroc'], count: 10 }, { subjects: ['calcul'], count: 5 }, { subjects: ['arabe'], count: 5 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    subjects: ['maroc', 'securite', 'logique', 'calcul', 'arabe', 'francais', 'secourisme'],
+    mock: { minutes: 40, sections: [{ subjects: ['logique'], count: 10 }, { subjects: ['maroc', 'securite'], count: 10 }, { subjects: ['calcul'], count: 5 }, { subjects: ['arabe'], count: 5 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'accessible',
+    tracks: [
+      { id: 'mokhazni', fr: 'Mokhazni', ar: 'مخزني', difficulty: 'accessible' },
+      { id: 'eleve-officier', fr: 'Élève officier', ar: 'تلميذ ضابط', difficulty: 'selectif' },
+    ],
   },
   related: ['gendarmerie', 'police-dgsn', 'protection-civile', 'arm'],
   official: [{ label: 'Portail de recrutement des Forces Auxiliaires', url: 'https://recrutement.fa.gov.ma' }],

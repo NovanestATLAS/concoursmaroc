@@ -4,7 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { guidePath } from './pages/concours.mjs';
-import { GROUPS, SUBJECTS, BAC } from '../../content/taxonomy.mjs';
+import { GROUPS, SUBJECTS, BAC, LEVELS, DEFAULT_LEVEL } from '../../content/taxonomy.mjs';
 import { CALENDAR } from '../../content/calendar.mjs';
 
 // Where candidates register (platform field, else the "Inscription" fact of the guide).
@@ -20,6 +20,8 @@ export function dataFiles(site, all, banks, root) {
     id: c.id, group: c.group, level: c.level, icon: c.icon,
     name: { fr: c.fr.name, ar: (c.ar || c.fr).name }, short: { fr: c.fr.short, ar: (c.ar || c.fr).short },
     subjects: c.practice.subjects, mock: c.practice.mock || null,
+    difficulty: c.practice.difficulty || DEFAULT_LEVEL,
+    tracks: (c.practice.tracks || []).map((tr) => ({ id: tr.id, name: { fr: tr.fr, ar: tr.ar || tr.fr }, difficulty: tr.difficulty })),
     guide: { fr: guidePath(c, 'fr'), ar: c.ar ? guidePath(c, 'ar') : guidePath(c, 'fr') },
   }));
   const toolsConcours = all.map((c) => ({
@@ -30,7 +32,7 @@ export function dataFiles(site, all, banks, root) {
     platform: platformOf(c),
     calendar: c.calendar || [],
   }));
-  files['data/concours.json'] = JSON.stringify({ updated: site.updated, groups: GROUPS, subjects: SUBJECTS, bac: BAC, concours: practiceConcours });
+  files['data/concours.json'] = JSON.stringify({ updated: site.updated, groups: GROUPS, subjects: SUBJECTS, bac: BAC, levels: LEVELS, concours: practiceConcours });
   files['data/outils.json'] = JSON.stringify({ updated: site.updated, session: site.session, nextSession: site.nextSession, groups: GROUPS, bac: BAC, concours: toolsConcours, calendar: CALENDAR });
   const manifest = { contentVersion: `2.0.0-${site.updated}`, updated: site.updated, totalQuestions: 0, categories: [] };
   for (const s of SUBJECTS) {

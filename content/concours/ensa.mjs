@@ -24,6 +24,7 @@ export default {
       scoring: { correct: 2, wrong: -1, blank: 0 },
       official: true,
     },
+    difficulty: 'selectif',
   },
   related: ['ensam', 'cpge', 'fst', 'est', 'medecine'],
   official: [

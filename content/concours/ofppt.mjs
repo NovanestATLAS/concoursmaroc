@@ -12,6 +12,7 @@ export default {
   practice: {
     subjects: ['logique', 'calcul', 'francais', 'sciences'],
     mock: { minutes: 30, sections: [{ subjects: ['logique'], count: 15 }, { subjects: ['calcul'], count: 10 }, { subjects: ['francais'], count: 5 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'accessible',
   },
   related: ['bts', 'est', 'ecole-1337', 'forces-auxiliaires'],
   official: [{ label: 'MyWay — inscription OFPPT', url: 'https://www.myway.ac.ma' }, { label: 'OFPPT', url: 'https://www.ofppt.ma' }],

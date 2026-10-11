@@ -8,7 +8,7 @@ export default {
   bac: ['SM', 'PC', 'SVT', 'AGRO', 'STE', 'STM', 'ECO', 'SGC'],
   seuils: { year: '2026', formula: '75/25', rows: [], note: { fr: 'Sélection sur dossier selon la note 75 % national + 25 % régional ; le type de bac exigé dépend de la filière DUT.', ar: 'انتقاء بالملف حسب نقطة 75% وطني + 25% جهوي؛ نوع البكالوريا حسب الشعبة.' } },
   age: null,
-  practice: { subjects: ['maths', 'physique', 'francais', 'logique'], mock: null },
+  practice: { subjects: ['maths', 'physique', 'francais', 'logique'], mock: null, difficulty: 'standard' },
   related: ['fst', 'bts', 'ensa', 'ofppt'],
   official: [{ label: 'Cursus Sup — candidature EST', url: 'https://www.cursussup.gov.ma' }],
   sources: [

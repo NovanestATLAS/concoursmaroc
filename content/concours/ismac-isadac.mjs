@@ -8,7 +8,7 @@ export default {
   bac: ['SM', 'PC', 'SVT', 'AGRO', 'STE', 'STM', 'ECO', 'SGC', 'LET', 'SH', 'ORIG', 'ARTS', 'PRO'],
   seuils: null,
   age: { min: 17, max: 23, ref: '07-18', at: { fr: 'ISADAC : 17 à 23 ans (au 18 juillet en 2026) ; ISMAC : 17 à 25 ans à la date du concours', ar: 'ISADAC: من 17 إلى 23 سنة؛ ISMAC: من 17 إلى 25 سنة' } },
-  practice: { subjects: ['culture', 'francais', 'arabe', 'maroc'], mock: null },
+  practice: { subjects: ['culture', 'francais', 'arabe', 'maroc'], mock: null, difficulty: 'standard' },
   related: ['isic', 'ena-architecture', 'universite'],
   official: [],
   sources: [

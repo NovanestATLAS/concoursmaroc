@@ -10,8 +10,13 @@ export default {
   age: { min: 21, max: 30, ref: 'exam', at: { fr: 'de 21 à 30 ans pour gardiens, inspecteurs et officiers (21 à 35 ans pour les commissaires), selon l’avis', ar: 'من 21 إلى 30 سنة (21 إلى 35 للعمداء) حسب الإعلان' } },
   height: { m: 1.73, f: 1.67 },
   practice: {
-    subjects: ['maroc', 'culture', 'logique', 'francais', 'arabe', 'calcul', 'sciences'],
-    mock: { minutes: 60, sections: [{ subjects: ['maroc', 'culture'], count: 15 }, { subjects: ['logique', 'calcul'], count: 10 }, { subjects: ['arabe'], count: 8 }, { subjects: ['francais'], count: 7 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    subjects: ['maroc', 'culture', 'securite', 'logique', 'francais', 'arabe', 'calcul', 'sciences'],
+    mock: { minutes: 60, sections: [{ subjects: ['maroc', 'culture', 'securite'], count: 15 }, { subjects: ['logique', 'calcul'], count: 10 }, { subjects: ['arabe'], count: 8 }, { subjects: ['francais'], count: 7 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'accessible',
+    tracks: [
+      { id: 'gardien', fr: 'Gardien de la paix', ar: 'حارس الأمن', difficulty: 'accessible' },
+      { id: 'inspecteur-officier', fr: 'Inspecteur ou officier', ar: 'مفتش أو ضابط', difficulty: 'selectif' },
+    ],
   },
   related: ['gendarmerie', 'forces-auxiliaires', 'protection-civile', 'dgapr'],
   official: [{ label: 'Portail des concours de la DGSN', url: 'https://concours.dgsn.gov.ma' }, { label: 'DGSN', url: 'https://www.dgsn.gov.ma' }],
@@ -19,6 +24,7 @@ export default {
     { title: 'Wadifa-info — Concours DGSN 2026 : 8 427 postes', url: 'https://www.wadifa-info.com/fr/concours-dgsn-gov-ma', date: '2026-09' },
     { title: 'Alouadifa — Concours DGSN 2026 : gardiens, inspecteurs, officiers', url: 'https://alouadifa.ma/emploi-public/concours-dgsn-8427-agents-police-gardiens-inspecteurs-officiers/', date: '2026-09' },
     { title: 'Wadifa Public — Guide du concours DGSN', url: 'https://www.wadifapublic.ma/fr/emploi-public/articles/guide-concours-dgsn-police-maroc', date: '2026' },
+    { title: 'Alwadifa-Maroc — Épreuves écrites, orales et sportives des concours de la Sûreté nationale (Bulletin officiel n° 6453)', url: 'https://alwadifa-maroc.com/actualite/show/id/415', date: '2016' },
   ],
   fr: {
     short: 'Police (DGSN)',
@@ -33,7 +39,7 @@ export default {
         { table: { head: ['Grade', 'Postes 2026', 'Diplôme', 'Taille (H / F)'], rows: [['Gardien de la paix', '4 890', 'Baccalauréat', '1,73 m / 1,67 m'], ['Inspecteur de police', '2 800', 'Niveau bac+1 à bac+2 selon les sources', '1,70 m / 1,67 m'], ['Officier de police', '450', 'Bac+2 (DEUG, DUT, BTS, TS) ou licence selon les sources', '1,70 m / 1,67 m'], ['Officier de paix', '50', 'Diplôme universitaire bac+2', '1,73 m / 1,67 m'], ['Commissaire de police', '97', 'Licence ou master', '—']] } },
         { callout: 'warn', text: "Les conditions de diplôme varient entre les sources pour les inspecteurs et les officiers : **seul l'avis publié sur concours.dgsn.gov.ma fait foi**. L'âge requis est de **21 à 30 ans** pour la plupart des grades." },
       ] },
-      { id: 'epreuves', h: 'Épreuves', blocks: [ { steps: ['**Inscription en ligne** et présélection (conditions d’âge, diplôme, taille).', '**Épreuves écrites** : culture générale, langues (arabe, français), raisonnement ; programme précisé par grade dans l’avis.', '**Épreuves sportives** (course, endurance…) et **visite médicale**.', '**Entretien oral** pour les admissibles.'] }, { p: "Selon la FAQ du portail relayée par les sites spécialisés, la moyenne exigée ne doit pas être inférieure à **10/20**." } ] },
+      { id: 'epreuves', h: 'Épreuves', blocks: [ { steps: ['**Inscription en ligne** et présélection (conditions d’âge, diplôme, taille).', '**Épreuves écrites** : culture générale, langues (arabe, français), raisonnement ; programme précisé par grade dans l’avis.', '**Épreuves sportives** (course, endurance…) et **visite médicale**.', '**Entretien oral** pour les admissibles.'] }, { callout: 'info', text: "Le contenu de l'écrit dépend du grade. Pour les **gardiens de la paix**, c'est un sujet général ou des questions générales en arabe, suivis d'un **oral de culture générale** (arrêtés du directeur général de la Sûreté nationale, Bulletin officiel n° 6453 de 2016) : aucun programme de droit ou de procédure pénale. Les **commissaires** ont en plus des **questions juridiques** : cette épreuve de droit n'est pas couverte par notre entraînement." }, { p: "Selon la FAQ du portail relayée par les sites spécialisés, la moyenne exigée ne doit pas être inférieure à **10/20**." } ] },
       { id: 'calendrier', h: 'Calendrier', blocks: [ { table: { head: ['Étape', 'Session 2026'], rows: [['Inscriptions', '7 – 22 septembre 2026 (relayé)'], ['Épreuves écrites', '22 novembre 2026 (relayé)'], ['Épreuves sportives et orales', 'Après les écrits']] } }, { p: "Ajoutez la date des écrits à votre agenda depuis notre [calendrier](@/outils/calendrier-concours/)." } ] },
       { id: 'preparation', h: 'Préparation', blocks: [ { ul: ['Culture générale : institutions, Constitution de 2011, histoire et géographie du Maroc, actualité.', 'Langues : grammaire arabe et française, rédaction d’un texte court et structuré.', 'Logique et calcul : suites, pourcentages, problèmes simples.', 'Sport : préparation progressive à la course et à l’endurance dès maintenant.'] }, { practice: true } ] },
     ],
@@ -52,7 +58,7 @@ export default {
     facts: [['المناصب 2026', '8427 (منها 4890 حارس أمن)'], ['حارس الأمن', 'البكالوريا'], ['السن', '21 إلى 30 سنة'], ['القامة', '1.73 م (ذكور) · 1.67 م (إناث)'], ['التسجيل', 'concours.dgsn.gov.ma']],
     sections: [
       { id: 'grades', h: 'الرتب والشروط', blocks: [ { table: { head: ['الرتبة', 'المناصب', 'الشهادة'], rows: [['حارس الأمن', '4890', 'البكالوريا'], ['مفتش الشرطة', '2800', 'باك+1 إلى باك+2 حسب المصادر'], ['ضابط الشرطة', '450', 'باك+2 أو إجازة حسب المصادر'], ['ضابط الأمن', '50', 'باك+2'], ['عميد الشرطة', '97', 'إجازة أو ماستر']] } } ] },
-      { id: 'epreuves', h: 'الاختبارات', blocks: [ { steps: ['التسجيل الإلكتروني والانتقاء الأولي.', 'اختبارات كتابية: ثقافة عامة، لغات، استدلال.', 'اختبارات رياضية وفحص طبي.', 'مقابلة شفوية.'] }, { practice: true } ] },
+      { id: 'epreuves', h: 'الاختبارات', blocks: [ { steps: ['التسجيل الإلكتروني والانتقاء الأولي.', 'اختبارات كتابية: ثقافة عامة، لغات، استدلال.', 'اختبارات رياضية وفحص طبي.', 'مقابلة شفوية.'] }, { callout: 'info', text: 'يختلف مضمون الاختبار الكتابي حسب الرتبة: بالنسبة لـ**حراس الأمن** يتعلق الأمر بموضوع عام أو أسئلة عامة باللغة العربية، يليه **اختبار شفوي في الثقافة العامة** (قرارات المدير العام للأمن الوطني، الجريدة الرسمية عدد 6453 لسنة 2016)، دون برنامج في القانون أو المسطرة الجنائية. أما **العمداء** فلهم أيضًا **أسئلة قانونية**، وهو اختبار لا يغطيه تمريننا.' }, { practice: true } ] },
     ],
     faq: [ { q: 'متى الاختبارات الكتابية لمباراة 2026؟', a: 'أُعلن عن يوم 22 نونبر 2026، بعد التسجيل من 7 إلى 22 شتنبر 2026.' } ],
   },

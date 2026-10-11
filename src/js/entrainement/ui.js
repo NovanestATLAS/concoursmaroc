@@ -26,7 +26,8 @@
   var lastSummary = null;
   var quizTimer = null;
   var questionStartedAt = 0;
-  var setup = { count: 10, subjects: null, difficulty: 'all', timed: false };
+  // difficulty: null = automatic (level of the targeted concours, else all)
+  var setup = { count: 10, subjects: null, difficulty: null, timed: false };
 
   // ---------------------------------------------------------------- icons
   var ICONS = {
@@ -82,6 +83,58 @@
     var p = profile();
     var subs = p ? p.subjects : (manifest.categories || []).map(function (c) { return c.id; });
     return subs.filter(function (s) { return !!catInfo(s); });
+  }
+
+  // ---------------------------------------------------------------- levels
+  /* Each concours has a level (accessible … très sélectif) that sets the
+     share of beginner / intermediate / advanced questions; a concours whose
+     grades differ (police: gardien de la paix, inspecteur…) has one per track. */
+  function levelDef(id) {
+    return (concoursDoc.levels || []).filter(function (l) { return l.id === id; })[0] || null;
+  }
+  function tracksOf(p) { return p && p.tracks && p.tracks.length ? p.tracks : null; }
+  function currentTrack(p) {
+    var tr = tracksOf(p);
+    if (!tr) return null;
+    var chosen = (Store.getProfile().tracks || {})[p.id];
+    return tr.filter(function (x) { return x.id === chosen; })[0] || tr[0];
+  }
+  function levelOf(p) {
+    if (!p) return null;
+    var tr = currentTrack(p);
+    return levelDef(tr ? tr.difficulty : p.difficulty) || levelDef('standard');
+  }
+  function levelMix(p) { var lv = levelOf(p); return lv ? lv.mix : null; }
+  function mixLabel(lv) {
+    var m = lv.mix;
+    return t('level.mix', { b: Math.round(m.beginner * 100), i: Math.round(m.intermediate * 100), a: Math.round(m.advanced * 100) });
+  }
+  function levelLine(p) {
+    var lv = levelOf(p);
+    if (!lv) return '';
+    var tr = currentTrack(p);
+    return (tr ? L(tr.name) + ' · ' : '') + t('level.of', { level: L(lv) });
+  }
+  /* Grade picker for concours with tracks; the choice is remembered per concours. */
+  function trackPicker(parent, p, onChange) {
+    var tr = tracksOf(p);
+    if (!tr) return;
+    var cur = currentTrack(p);
+    var f = U.el('div', { class: 'field' });
+    f.appendChild(U.el('span', { class: 'label', text: t('setup.track') }));
+    var s = U.el('div', { class: 'seg' });
+    tr.forEach(function (x) {
+      var b = U.el('button', { type: 'button', text: L(x.name), 'aria-pressed': x.id === cur.id ? 'true' : 'false' });
+      b.onclick = function () {
+        var map = {};
+        map[p.id] = x.id;
+        Store.patchProfile({ tracks: map });
+        onChange();
+      };
+      s.appendChild(b);
+    });
+    f.appendChild(s);
+    parent.appendChild(f);
   }
 
   function screen() {
@@ -179,8 +232,10 @@
   function mockSummary(p) {
     var m = p.mock;
     var n = m.sections.reduce(function (s, x) { return s + x.count; }, 0);
+    var lv = levelOf(p);
     return t('mock.format', { n: n, d: fmtDuration(m.minutes) }) +
       (m.scoring && m.scoring.wrong < 0 ? ' · ' + t('mock.penalty', { s: scoringLabel(m.scoring) }) : '') +
+      (lv ? ' · ' + t('level.of', { level: L(lv) }) : '') +
       (m.official ? '' : ' · ' + t('mock.indicative'));
   }
 
@@ -207,6 +262,7 @@
     var current = Store.getProfile().targetExam;
     function choose(id) {
       Store.patchProfile({ targetExam: id || null });
+      setup.difficulty = null;
       UI.closeSheet();
       UI.toast(id ? t('picker.chosen', { name: L(byId(id).short) }) : t('picker.general'));
       if (onDone) onDone(id);
@@ -252,6 +308,7 @@
     body.appendChild(U.el('div', { class: 'tg-lab', text: t('home.target') }));
     body.appendChild(U.el('div', { class: 'tg-name', text: p ? L(p.name) : t('home.noTarget') }));
     body.appendChild(U.el('div', { class: 'tg-sub', text: p ? targetSubjects().map(function (s) { return catLabel(s, true); }).join(' · ') : t('home.noTargetHint') }));
+    if (p) body.appendChild(U.el('div', { class: 'tg-sub tg-level', text: levelLine(p) }));
     banner.appendChild(body);
     var btns = U.el('div', { class: 'btn-row' });
     btns.appendChild(U.el('button', { class: 'btn sm', type: 'button', onclick: function () { UI.pickConcours(function () { UI.renderHome(); }); } }, [p ? t('home.change') : t('home.choose')]));
@@ -300,7 +357,7 @@
       icon: 'target', title: t('home.daily'), hint: daily.done ? t('home.dailyDone') : t('home.dailyHint'),
       onclick: function () {
         var subs = targetSubjects();
-        startWith(subs, function () { return Quiz.buildDaily(p ? p.id : null, subs); });
+        startWith(subs, function () { return Quiz.buildDaily(p ? p.id : null, subs, levelMix(p)); });
       }
     }));
     tiles.appendChild(tile({
@@ -351,6 +408,8 @@
       return;
     }
     var m = p.mock;
+    trackPicker(el, p, function () { UI.renderMock(); });
+    var lv = levelOf(p);
     var card = U.el('div', { class: 'card' });
     card.appendChild(U.el('h3', { text: t('mock.of', { name: L(p.name) }) }));
     var rows = [
@@ -359,6 +418,7 @@
       [t('mock.scoring'), scoringLabel(m.scoring) + (m.scoring.wrong < 0 ? ' — ' + t('mock.negative') : '')],
       [t('mock.sections'), m.sections.map(function (s) { return s.subjects.map(function (x) { return catLabel(x, true); }).join(' + ') + ' (' + s.count + ')'; }).join(' · ')]
     ];
+    if (lv) rows.push([t('mock.level'), levelLine(p) + ' — ' + mixLabel(lv)]);
     if (m.eliminatory) rows.push([t('mock.elim'), t('mock.elimRule', { n: m.eliminatory })]);
     rows.forEach(function (r) {
       card.appendChild(U.el('div', { class: 'list-row' }, [U.el('div', { class: 'lr-main' }, [U.el('div', { class: 'lr-sub', text: r[0] }), U.el('div', { text: r[1] })])]));
@@ -375,7 +435,7 @@
         var cats = [];
         m.sections.forEach(function (s) { s.subjects.forEach(function (x) { if (cats.indexOf(x) === -1) cats.push(x); }); });
         startWith(cats, function () {
-          var s = Quiz.buildMock(p, T.lang);
+          var s = Quiz.buildMock(p, T.lang, levelMix(p));
           if (s && s.shortSections && s.shortSections.length) UI.toast(t('mock.short'));
           return s;
         });
@@ -396,9 +456,20 @@
     head.appendChild(U.el('a', { href: '#', onclick: function (e) { e.preventDefault(); UI.pickConcours(function () { setup.subjects = null; UI.renderSetup(); }); } }, [t('home.change')]));
     el.appendChild(head);
 
-    var availEl, startBtn;
+    var availEl, startBtn, mixEl;
+    var lv = levelOf(p);
+    // 'level' = questions drawn at the level of the concours (default when one is targeted)
+    function diff() {
+      var d = setup.difficulty || (lv ? 'level' : 'all');
+      return d === 'level' && !lv ? 'all' : d;
+    }
     function filters() {
-      return { categories: selected, difficulties: setup.difficulty === 'all' ? null : [setup.difficulty] };
+      var d = diff();
+      return { categories: selected, difficulties: d === 'all' || d === 'level' ? null : [d], mix: d === 'level' ? lv.mix : null };
+    }
+    function paintMix() {
+      mixEl.textContent = diff() === 'level' ? levelLine(p) + ' — ' + mixLabel(lv) : '';
+      mixEl.style.display = diff() === 'level' ? '' : 'none';
     }
     function refresh() {
       var n = selected.reduce(function (s, c) { return s + catCount(c); }, 0);
@@ -446,7 +517,13 @@
       el.appendChild(f);
     }
     seg(t('setup.length'), [[5, '5'], [10, '10'], [20, '20'], [40, '40']], setup.count, function (v) { setup.count = v; });
-    seg(t('setup.difficulty'), [['all', t('setup.allDifficulties')], ['beginner', t('difficulty.beginner')], ['intermediate', t('difficulty.intermediate')], ['advanced', t('difficulty.advanced')]], setup.difficulty, function (v) { setup.difficulty = v; });
+    trackPicker(el, p, function () { UI.renderSetup(); });
+    var diffOptions = [['all', t('setup.allDifficulties')], ['beginner', t('difficulty.beginner')], ['intermediate', t('difficulty.intermediate')], ['advanced', t('difficulty.advanced')]];
+    if (lv) diffOptions.unshift(['level', t('setup.levelOption')]);
+    seg(t('setup.difficulty'), diffOptions, diff(), function (v) { setup.difficulty = v; paintMix(); });
+    mixEl = U.el('p', { class: 'legal', style: 'margin-top:-6px' });
+    el.appendChild(mixEl);
+    paintMix();
     seg(t('setup.timer'), [[false, t('setup.timerOff')], [true, t('setup.timerOn')]], setup.timed, function (v) { setup.timed = v; });
 
     availEl = U.el('p', { class: 'legal' });
@@ -457,7 +534,7 @@
         var f = filters();
         startWith(f.categories, function () {
           return Quiz.build({
-            count: setup.count, categories: f.categories, difficulties: f.difficulties,
+            count: setup.count, categories: f.categories, difficulties: f.difficulties, mix: f.mix,
             mode: 'practice', concours: p ? p.id : null,
             limitMs: setup.timed ? setup.count * 90 * 1000 : 0
           });

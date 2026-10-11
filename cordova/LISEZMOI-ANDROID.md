@@ -12,7 +12,7 @@ cordova-plugin-tts-advanced 0.5.3.
 
 | | Première version | Cette version |
 |---|---|---|
-| Contenu | 500 questions, 6 matières | tout le site : 31 fiches concours, guides, outils, 960 questions, examens blancs (FR et AR) |
+| Contenu | 500 questions, 6 matières | tout le site : 31 fiches concours, guides, outils, 1 044 questions, examens blancs (FR et AR) |
 | Navigation | écrans de l’entraînement | barre d’onglets, menu, recherche, bouton Retour qui remonte l’historique puis quitte après deux appuis |
 | Structure de `www/` | `index.html`, `css/app.css`, `js/`, `data/`, `i18n/`, `img/`, `fonts/` | les mêmes dossiers, plus `pages/` (une page HTML par page du site) et `js/outils/` |
 | Progression enregistrée | clés `cm.v1.*` | les mêmes clés et les mêmes identifiants de questions : rien n’est perdu à la mise à jour |
