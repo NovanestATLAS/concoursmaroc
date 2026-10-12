@@ -641,3 +641,458 @@ Q: Dans quelle ville se trouve le siège de la Banque mondiale ?
 - Londres
 C: Washington.
 E: La Banque mondiale et le Fonds monétaire international (FMI), créés à Bretton Woods en 1944, ont tous deux leur siège à Washington.
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions de niveau bac dans l'esprit des épreuves TAFEM (ENCG),
+# ENA architecture et ISCAE.
+@source src-general
+
+[CUL-201] geographie | beginner
+Q: Quel est le plus long fleuve d'Afrique ?
+* Le Nil
+- Le Congo
+- Le Niger
+- Le Zambèze
+C: Le Nil (environ 6 650 km).
+E: Le Nil traverse notamment l'Ouganda, le Soudan et l'Égypte avant de se jeter dans la Méditerranée. Le Congo est le plus puissant par son débit.
+
+[CUL-202] geographie | beginner
+Q: Quel est le plus grand océan du monde ?
+* L'océan Pacifique
+- L'océan Atlantique
+- L'océan Indien
+- L'océan Arctique
+C: Le Pacifique.
+E: Il couvre environ un tiers de la surface de la Terre, davantage que l'ensemble des terres émergées.
+
+[CUL-203] geographie | beginner
+Q: Quelle est la capitale de l'Égypte ?
+* Le Caire
+- Alexandrie
+- Louxor
+- Assouan
+C: Le Caire.
+E: Le Caire, sur le Nil, est l'une des plus grandes villes d'Afrique. Alexandrie est le grand port méditerranéen du pays.
+
+[CUL-204] geographie | intermediate
+Q: Quel pays d'Afrique est le plus vaste par sa superficie ?
+* L'Algérie
+- La République démocratique du Congo
+- Le Soudan
+- La Libye
+C: L'Algérie (environ 2,38 millions de km²).
+E: Depuis l'indépendance du Soudan du Sud en 2011, l'Algérie est le plus grand pays d'Afrique, devant la RDC.
+
+[CUL-205] geographie | intermediate
+Q: Le détroit de Gibraltar sépare :
+* L'Europe et l'Afrique, le Maroc et l'Espagne
+- L'Asie et l'Europe
+- La France et l'Angleterre
+- L'Afrique et l'Asie
+C: Le Maroc et l'Espagne.
+E: Large d'environ 14 km en son point le plus étroit, il relie la Méditerranée à l'océan Atlantique. Le Bosphore sépare l'Europe et l'Asie à Istanbul.
+
+[CUL-206] geographie | intermediate
+Q: Quelle est la capitale de l'Australie ?
+* Canberra
+- Sydney
+- Melbourne
+- Perth
+C: Canberra.
+E: Canberra a été construite pour être la capitale, afin de départager Sydney et Melbourne, les deux plus grandes villes du pays.
+
+[CUL-207] geographie | beginner
+Q: Quel est le pays le plus peuplé du monde depuis 2023 ?
+* L'Inde
+- La Chine
+- Les États-Unis
+- L'Indonésie
+C: L'Inde.
+E: Selon les estimations des Nations unies, l'Inde a dépassé la Chine en 2023 et compte plus de 1,4 milliard d'habitants.
+
+[CUL-208] histoire | beginner
+Q: En quelle année a commencé la Seconde Guerre mondiale ?
+* 1939
+- 1914
+- 1945
+- 1929
+C: 1939.
+E: Elle débute en septembre 1939 avec l'invasion de la Pologne par l'Allemagne et se termine en 1945. La Première Guerre mondiale a duré de 1914 à 1918.
+
+[CUL-209] histoire | intermediate
+Q: La Déclaration universelle des droits de l'homme a été adoptée par l'ONU en :
+* 1948
+- 1789
+- 1945
+- 1960
+C: 1948, à Paris.
+E: Elle a été adoptée le 10 décembre 1948 par l'Assemblée générale des Nations unies. 1789 est l'année de la Déclaration des droits de l'homme et du citoyen en France.
+
+[CUL-210] histoire | intermediate
+Q: Qui a été le premier homme à marcher sur la Lune, en 1969 ?
+* Neil Armstrong
+- Youri Gagarine
+- Buzz Aldrin
+- John Glenn
+C: Neil Armstrong (mission Apollo 11).
+E: Il a posé le pied sur la Lune le 21 juillet 1969 (heure universelle), suivi de Buzz Aldrin. Youri Gagarine a été le premier homme dans l'espace en 1961.
+
+[CUL-211] histoire | intermediate
+Q: La révolution industrielle a commencé au XVIIIe siècle :
+* En Angleterre
+- En France
+- Aux États-Unis
+- En Allemagne
+C: En Angleterre (Grande-Bretagne).
+E: Elle repose sur la machine à vapeur (améliorée par James Watt), le charbon et l'industrie textile, avant de s'étendre au reste de l'Europe et aux États-Unis au XIXe siècle.
+
+[CUL-212] histoire | intermediate
+Q: Le célèbre voyageur Ibn Battuta, auteur d'une Rihla, était originaire de :
+* Tanger
+- Fès
+- Bagdad
+- Grenade
+C: Tanger (XIVe siècle).
+E: Ibn Battuta a parcouru pendant près de trente ans l'Afrique, le Moyen-Orient, l'Asie centrale, l'Inde et la Chine. Le récit de ses voyages a été rédigé à Fès à la demande du sultan mérinide.
+
+[CUL-213] histoire | intermediate
+Q: Quel savant andalou, né à Cordoue au XIIe siècle, est célèbre pour ses commentaires d'Aristote ?
+* Averroès (Ibn Rochd)
+- Avicenne (Ibn Sina)
+- Al-Khwarizmi
+- Ibn Khaldoun
+C: Averroès.
+E: Philosophe, médecin et juriste, Ibn Rochd a vécu notamment à Marrakech, où il est mort en 1198. Avicenne était persan ; Al-Khwarizmi a donné son nom à l'algorithme.
+
+[CUL-214] sciences | beginner
+Q: Quel est le symbole chimique de l'or ?
+* Au
+- Ag
+- Or
+- Fe
+C: Au (du latin aurum).
+E: Ag est l'argent (argentum), Fe le fer (ferrum).
+
+[CUL-215] sciences | beginner
+Q: Qui a formulé la théorie de la relativité ?
+* Albert Einstein
+- Isaac Newton
+- Galilée
+- Marie Curie
+C: Albert Einstein.
+E: Einstein a publié la relativité restreinte en 1905 et la relativité générale en 1915 ; il a reçu le prix Nobel en 1921 pour l'effet photoélectrique.
+
+[CUL-216] sciences | beginner
+Q: Combien d'os compte le squelette d'un adulte ?
+* Environ 206
+- Environ 150
+- Environ 300
+- Environ 106
+C: 206 os.
+E: Le nouveau-né en compte davantage (environ 300) ; certains os se soudent pendant la croissance. Le fémur est le plus long, l'étrier (oreille) le plus petit.
+
+[CUL-217] sciences | intermediate
+Q: Qui a découvert la pénicilline en 1928 ?
+* Alexander Fleming
+- Louis Pasteur
+- Robert Koch
+- Marie Curie
+C: Alexander Fleming.
+E: Fleming a observé qu'une moisissure (Penicillium) empêchait le développement de bactéries. La pénicilline, premier antibiotique largement utilisé, a été produite en masse dans les années 1940.
+
+[CUL-218] sciences | intermediate
+Q: La vitesse de la lumière dans le vide est d'environ :
+* 300 000 km/s
+- 300 km/s
+- 30 000 km/s
+- 340 m/s
+C: 300 000 km/s.
+E: Plus précisément 299 792 km/s. La lumière du Soleil met environ 8 minutes à nous parvenir. 340 m/s est la vitesse du son dans l'air.
+
+[CUL-219] sciences | beginner
+Q: Quel organe du corps humain produit l'insuline ?
+* Le pancréas
+- Le foie
+- Le rein
+- L'estomac
+C: Le pancréas.
+E: Les cellules β des îlots de Langerhans du pancréas sécrètent l'insuline, hormone qui fait baisser la glycémie. Un défaut d'insuline provoque le diabète.
+
+[CUL-220] arts | beginner
+Q: Qui a peint « La Joconde » ?
+* Léonard de Vinci
+- Michel-Ange
+- Raphaël
+- Rembrandt
+C: Léonard de Vinci.
+E: Peinte au début du XVIe siècle, la Joconde est exposée au musée du Louvre à Paris.
+
+[CUL-221] arts | intermediate
+Q: Quel compositeur, devenu sourd, a composé la Neuvième Symphonie ?
+* Ludwig van Beethoven
+- Wolfgang Amadeus Mozart
+- Jean-Sébastien Bach
+- Frédéric Chopin
+C: Beethoven.
+E: Beethoven a composé sa Neuvième Symphonie (1824) alors qu'il était presque totalement sourd. Son finale, l'« Ode à la joie », est devenu l'hymne de l'Union européenne.
+
+[CUL-222] litterature | beginner
+Q: Qui est l'auteur des « Misérables » ?
+* Victor Hugo
+- Émile Zola
+- Honoré de Balzac
+- Gustave Flaubert
+C: Victor Hugo (1862).
+E: Victor Hugo est aussi l'auteur de « Notre-Dame de Paris » et du « Dernier Jour d'un condamné », œuvre étudiée au lycée au Maroc.
+
+[CUL-223] litterature | intermediate
+Q: « La Boîte à merveilles », roman étudié au lycée au Maroc, a été écrit par :
+* Ahmed Sefrioui
+- Driss Chraïbi
+- Tahar Ben Jelloun
+- Mohamed Choukri
+C: Ahmed Sefrioui (1954).
+E: Le roman raconte l'enfance de Sidi Mohammed dans la médina de Fès. Driss Chraïbi a écrit « Le Passé simple », Mohamed Choukri « Le Pain nu ».
+
+[CUL-224] litterature | intermediate
+Q: Quel écrivain marocain a reçu le prix Goncourt en 1987 pour « La Nuit sacrée » ?
+* Tahar Ben Jelloun
+- Abdellatif Laâbi
+- Fouad Laroui
+- Leïla Slimani
+C: Tahar Ben Jelloun.
+E: Leïla Slimani a reçu le prix Goncourt en 2016 pour « Chanson douce ». Abdellatif Laâbi a reçu le prix Goncourt de la poésie en 2009.
+
+[CUL-225] litterature | intermediate
+Q: Le roman « L'Alchimiste », qui se déroule en partie au Maroc, est l'œuvre de :
+* Paulo Coelho
+- Gabriel García Márquez
+- Albert Camus
+- Antoine de Saint-Exupéry
+C: Paulo Coelho (1988).
+E: L'écrivain brésilien y raconte le voyage d'un berger andalou qui traverse le détroit, passe par Tanger et le Sahara jusqu'aux pyramides d'Égypte.
+
+[CUL-226] organisations | beginner
+Q: Quel est le siège de l'Union africaine ?
+* Addis-Abeba (Éthiopie)
+- Le Caire (Égypte)
+- Rabat (Maroc)
+- Johannesburg (Afrique du Sud)
+C: Addis-Abeba.
+E: L'Union africaine a succédé en 2002 à l'Organisation de l'unité africaine (OUA, créée en 1963). Le Maroc l'a rejointe en janvier 2017.
+
+[CUL-227] organisations | intermediate
+Q: Que signifie le sigle OMS ?
+* Organisation mondiale de la santé
+- Organisation mondiale du sport
+- Office marocain de la santé
+- Organisation militaire de sécurité
+C: Organisation mondiale de la santé.
+E: Institution spécialisée des Nations unies, l'OMS a son siège à Genève. L'OMC (commerce) y a aussi son siège.
+
+[CUL-228] organisations | intermediate
+Q: Quelle organisation internationale est chargée de l'éducation, de la science et de la culture et dresse la liste du patrimoine mondial ?
+* L'UNESCO
+- L'UNICEF
+- La FAO
+- Le PNUD
+C: L'UNESCO (siège à Paris).
+E: L'UNESCO inscrit les sites au patrimoine mondial (au Maroc : médinas de Fès et Marrakech, Volubilis, Aït-Ben-Haddou…). L'UNICEF s'occupe de l'enfance, la FAO de l'alimentation et de l'agriculture.
+
+[CUL-229] organisations | intermediate
+Q: Combien de pays membres compte l'Organisation des Nations unies ?
+* 193
+- 150
+- 210
+- 175
+C: 193 États membres.
+E: Le Soudan du Sud, admis en 2011, est le dernier membre en date. Le Conseil de sécurité compte 5 membres permanents dotés du droit de veto.
+
+[CUL-230] organisations | intermediate
+Q: Lequel de ces pays n'est PAS membre permanent du Conseil de sécurité de l'ONU ?
+* L'Allemagne
+- La Chine
+- La Russie
+- Le Royaume-Uni
+C: L'Allemagne.
+E: Les cinq membres permanents sont les États-Unis, la Russie, la Chine, la France et le Royaume-Uni. Dix autres membres sont élus pour deux ans.
+
+[CUL-231] sport | beginner
+Q: Quel pays a remporté la Coupe du monde de football 2022 au Qatar ?
+* L'Argentine
+- La France
+- Le Brésil
+- Le Maroc
+C: L'Argentine.
+E: L'Argentine a battu la France en finale aux tirs au but. Le Maroc a atteint les demi-finales, une première pour une équipe africaine et arabe.
+
+[CUL-232] sport | intermediate
+Q: Tous les combien d'années ont lieu les Jeux olympiques d'été ?
+* 4 ans
+- 2 ans
+- 5 ans
+- 3 ans
+C: Tous les 4 ans.
+E: Les Jeux d'été et d'hiver alternent tous les deux ans. Paris a accueilli les Jeux d'été en 2024 ; Los Angeles les accueillera en 2028.
+
+[CUL-233] sport | intermediate
+Q: Combien de joueurs une équipe de basket-ball compte-t-elle sur le terrain ?
+* 5
+- 6
+- 7
+- 11
+C: 5 joueurs.
+E: Le volley-ball se joue à 6, le handball à 7 et le football à 11.
+
+[CUL-234] environnement | beginner
+Q: Quelle source d'énergie est renouvelable ?
+* L'énergie éolienne
+- Le charbon
+- Le gaz naturel
+- Le pétrole
+C: L'éolien.
+E: Le vent, le soleil, l'eau et la biomasse se renouvellent ; le charbon, le pétrole et le gaz sont des énergies fossiles, en quantité limitée et émettrices de CO₂.
+
+[CUL-235] environnement | intermediate
+Q: L'accord de Paris sur le climat, conclu en 2015, vise à limiter le réchauffement climatique :
+* Nettement en dessous de 2 °C par rapport à l'ère préindustrielle
+- À 5 °C d'ici 2030
+- À 0 °C
+- Uniquement en Europe
+C: Bien en dessous de 2 °C (si possible 1,5 °C).
+E: Adopté lors de la COP21, il engage la quasi-totalité des pays à réduire leurs émissions de gaz à effet de serre. La COP22 s'est tenue à Marrakech en 2016.
+
+[CUL-236] numerique | beginner
+Q: Que signifie le sigle « IA » ?
+* Intelligence artificielle
+- Information automatique
+- Internet avancé
+- Informatique appliquée
+C: Intelligence artificielle.
+E: L'IA désigne les techniques qui permettent à des machines d'accomplir des tâches associant raisonnement, apprentissage ou compréhension du langage.
+
+[CUL-237] numerique | intermediate
+Q: Le « cloud computing » désigne :
+* L'utilisation de serveurs distants, via Internet, pour stocker des données et faire fonctionner des services
+- La prévision météorologique par ordinateur
+- Un type de virus informatique
+- Un réseau social
+C: L'informatique en nuage.
+E: Les données sont hébergées dans des centres de données (data centers). La loi marocaine 05-20 relative à la cybersécurité encadre l'hébergement des données sensibles.
+
+[CUL-238] economie-monde | intermediate
+Q: Quelle est la monnaie du Japon ?
+* Le yen
+- Le yuan
+- Le won
+- La roupie
+C: Le yen.
+E: Le yuan (renminbi) est la monnaie de la Chine, le won celle de la Corée du Sud, la roupie celle de l'Inde.
+
+[CUL-239] economie-monde | intermediate
+Q: Le G20 regroupe :
+* Les principales économies du monde (19 pays, l'Union européenne et l'Union africaine)
+- 20 pays africains
+- Les 20 pays les plus peuplés
+- 20 entreprises internationales
+C: Les grandes économies mondiales.
+E: Le G20 réunit les grandes puissances économiques et émergentes ; l'Union africaine en est devenue membre en 2023. Le G7 ne compte que sept pays industrialisés.
+
+[CUL-240] histoire | intermediate
+Q: Quelle civilisation a construit les pyramides de Gizeh ?
+* L'Égypte ancienne
+- La Mésopotamie
+- La Grèce antique
+- L'Empire romain
+C: L'Égypte des pharaons.
+E: La grande pyramide de Khéops, construite vers 2560 avant notre ère, est la seule des sept merveilles du monde antique encore debout.
+
+[CUL-241] geographie | intermediate
+Q: Quelle chaîne de montagnes sépare la France de l'Espagne ?
+* Les Pyrénées
+- Les Alpes
+- L'Atlas
+- Les Carpates
+C: Les Pyrénées.
+E: Les Alpes séparent notamment la France de l'Italie ; l'Atlas traverse le Maroc, l'Algérie et la Tunisie.
+
+[CUL-242] geographie | intermediate
+Q: Combien y a-t-il de continents si l'on distingue l'Amérique du Nord et l'Amérique du Sud ?
+* 7
+- 5
+- 6
+- 8
+C: 7 continents.
+E: Afrique, Amérique du Nord, Amérique du Sud, Antarctique, Asie, Europe, Océanie. Selon d'autres découpages, on en compte 5 ou 6.
+
+[CUL-243] sciences | intermediate
+Q: L'unité de mesure de la tension électrique est :
+* Le volt
+- L'ampère
+- L'ohm
+- Le watt
+C: Le volt (V).
+E: L'ampère mesure l'intensité, l'ohm la résistance et le watt la puissance. Le nom vient du physicien italien Alessandro Volta.
+
+[CUL-244] sciences | intermediate
+Q: L'ADN se trouve principalement :
+* Dans le noyau des cellules
+- Dans les globules rouges uniquement
+- Dans la membrane cellulaire
+- Dans le plasma sanguin
+C: Dans le noyau.
+E: L'ADN porte l'information génétique. On en trouve aussi un peu dans les mitochondries. Les globules rouges des mammifères n'ont pas de noyau.
+
+[CUL-245] arts | intermediate
+Q: Le mouvement artistique de Claude Monet, dont le nom vient de son tableau « Impression, soleil levant », est :
+* L'impressionnisme
+- Le cubisme
+- Le surréalisme
+- Le romantisme
+C: L'impressionnisme.
+E: Les impressionnistes (Monet, Renoir, Degas…) cherchaient à saisir la lumière et l'instant, souvent en plein air. Le cubisme est né avec Picasso et Braque.
+
+[CUL-246] litterature | intermediate
+Q: « Antigone », tragédie étudiée en 1re année du baccalauréat au Maroc, a été réécrite au XXe siècle par :
+* Jean Anouilh
+- Jean Racine
+- Molière
+- Sophocle
+C: Jean Anouilh (1944).
+E: Le mythe vient du dramaturge grec Sophocle (Ve siècle av. J.-C.). Anouilh en a donné une version moderne, jouée pendant l'Occupation.
+
+[CUL-247] histoire | beginner
+Q: En quelle année a été proclamée l'indépendance de l'Algérie ?
+* 1962
+- 1956
+- 1954
+- 1960
+C: 1962.
+E: Le Maroc et la Tunisie ont obtenu leur indépendance en 1956 ; la guerre d'Algérie (1954-1962) a abouti à l'indépendance de l'Algérie le 5 juillet 1962.
+
+[CUL-248] organisations | intermediate
+Q: L'OTAN est :
+* Une alliance militaire fondée en 1949
+- Une organisation commerciale
+- Une agence de l'ONU pour l'alimentation
+- Un tribunal international
+C: Organisation du traité de l'Atlantique Nord.
+E: Alliance politico-militaire entre l'Amérique du Nord et des pays européens, l'OTAN a son siège à Bruxelles. La Finlande (2023) et la Suède (2024) l'ont rejointe récemment.
+
+[CUL-249] sport | intermediate | ts
+Q: Quel pays a organisé la Coupe d'Afrique des nations de football 2025 (CAN 2025) ?
+* Le Maroc
+- La Côte d'Ivoire
+- L'Égypte
+- Le Sénégal
+C: Le Maroc.
+E: La CAN 2025 s'est déroulée au Maroc de décembre 2025 à janvier 2026, dans plusieurs villes du royaume. La précédente édition (2023) avait eu lieu en Côte d'Ivoire.
+
+[CUL-250] numerique | intermediate
+Q: Qu'est-ce qu'un logiciel « open source » ?
+* Un logiciel dont le code source est public et peut être étudié, modifié et redistribué
+- Un logiciel payant
+- Un virus informatique
+- Un logiciel réservé aux administrations
+C: Code source ouvert.
+E: Linux, Firefox ou LibreOffice sont des logiciels libres et open source. Leur code peut être examiné et amélioré par une communauté de développeurs.

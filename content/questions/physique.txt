@@ -1543,3 +1543,508 @@ Q: Dans une bobine d'inductance $L = 0{,}50\ \mathrm{H}$, l'intensité du couran
 - $500\ \mathrm{V}$
 C: $|e| = L\left|\frac{\Delta i}{\Delta t}\right| = 50\ \mathrm{V}$.
 E: $e = -L\frac{di}{dt}$ et $\left|\frac{di}{dt}\right| = \frac{0{,}20}{2{,}0 \times 10^{-3}} = 100\ \mathrm{A\,s^{-1}}$, d'où $|e| = 0{,}50 \times 100 = 50\ \mathrm{V}$. Une coupure brutale du courant dans une bobine provoque ainsi des surtensions (étincelle à l'ouverture de l'interrupteur).
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions sur l'ensemble du programme de 2e année du baccalauréat
+# (sciences mathématiques, PC, SVT), dans l'esprit des concours médecine et ENSA.
+@source src-programme-bac
+
+[PHY-301] ondes | beginner
+Q: Une onde mécanique est dite transversale lorsque :
+* La perturbation est perpendiculaire à la direction de propagation
+- La perturbation est parallèle à la direction de propagation
+- Elle se propage dans le vide
+- Elle transporte de la matière
+- Elle ne se propage que dans les gaz
+C: Perturbation ⟂ propagation.
+E: Une onde le long d'une corde est transversale ; une onde sonore dans l'air ou le long d'un ressort comprimé est longitudinale (perturbation parallèle à la propagation). Une onde mécanique a toujours besoin d'un milieu matériel.
+
+[PHY-302] ondes | beginner
+Q: La célérité d'une onde mécanique le long d'une corde dépend :
+* Des propriétés du milieu (tension et masse linéique de la corde)
+- De l'amplitude de la perturbation
+- De la forme de la perturbation
+- De la durée de la perturbation
+- De la position de l'observateur
+C: Du milieu de propagation.
+E: Pour une corde, $v = \sqrt{\frac{T}{\mu}}$ : elle augmente avec la tension et diminue avec la masse linéique. Elle ne dépend ni de l'amplitude ni de la forme du signal.
+
+[PHY-303] ondes | intermediate
+Q: Une onde sinusoïdale de fréquence $50\ \mathrm{Hz}$ se propage le long d'une corde à $10\ \mathrm{m\,s^{-1}}$. Deux points de la corde distants de $30\ \mathrm{cm}$ vibrent :
+* En opposition de phase
+- En phase
+- En quadrature de phase
+- Avec des fréquences différentes
+- L'un d'eux ne vibre pas
+C: $d = 1{,}5\lambda$ : opposition de phase.
+E: $\lambda = \frac{v}{N} = \frac{10}{50} = 0{,}20$ m. La distance $0{,}30$ m vaut $1{,}5\lambda$, un multiple impair de $\frac{\lambda}{2}$ : les deux points vibrent en opposition de phase.
+
+[PHY-304] ondes | intermediate
+Q: Un stroboscope éclaire une corde parcourue par une onde de fréquence $100\ \mathrm{Hz}$. La corde paraît immobile pour une fréquence des éclairs de :
+* $50\ \mathrm{Hz}$
+- $150\ \mathrm{Hz}$
+- $300\ \mathrm{Hz}$
+- $75\ \mathrm{Hz}$
+- $120\ \mathrm{Hz}$
+C: $N_e = \frac{N}{k}$, par exemple 50 Hz.
+E: L'immobilité apparente est obtenue lorsque la période de l'onde est contenue un nombre entier de fois entre deux éclairs : $N_e = \frac{N}{k}$ ($k$ entier), soit 100 Hz, 50 Hz, 33,3 Hz… Avec une fréquence d'éclairs légèrement inférieure, on observe un mouvement ralenti.
+
+[PHY-305] ondes | intermediate
+Q: Un milieu est dit dispersif lorsque :
+* La célérité des ondes y dépend de leur fréquence
+- Les ondes y sont amorties
+- Les ondes y sont réfléchies
+- La fréquence change lors de la propagation
+- Les ondes ne peuvent pas s'y propager
+C: $v$ dépend de la fréquence.
+E: Le verre est dispersif pour la lumière (d'où la décomposition de la lumière blanche par un prisme), la surface de l'eau pour les vagues. L'air est pratiquement non dispersif pour le son : toutes les fréquences y voyagent à la même vitesse.
+
+[PHY-306] ondes-lumineuses | intermediate
+Q: Lors de la traversée d'un prisme par la lumière blanche, la radiation la plus déviée est :
+* Le violet
+- Le rouge
+- Le jaune
+- Le vert
+- Toutes sont déviées de la même façon
+C: Le violet.
+E: L'indice du verre est plus grand pour les courtes longueurs d'onde (violet) que pour les grandes (rouge). D'après la loi de Snell-Descartes, le violet est donc davantage dévié : c'est la dispersion.
+
+[PHY-307] ondes-lumineuses | intermediate
+Q: Un rayon passe de l'air ($n = 1$) dans l'eau ($n = 1{,}33$) sous une incidence de $30^{\circ}$. L'angle de réfraction $r$ vérifie :
+* $\sin r = \frac{0{,}5}{1{,}33} \approx 0{,}38$
+- $\sin r = 0{,}5 \times 1{,}33 \approx 0{,}67$
+- $r = 30^{\circ}$
+- $r = 40^{\circ}$
+- $\sin r = 1{,}33$
+C: $\sin r \approx 0{,}38$, soit $r \approx 22^{\circ}$.
+E: Loi de Snell-Descartes : $n_1\sin i = n_2\sin r$, donc $\sin r = \frac{1 \times \sin 30^{\circ}}{1{,}33} \approx 0{,}38$. Le rayon se rapproche de la normale en entrant dans un milieu plus réfringent.
+
+[PHY-308] ondes-lumineuses | beginner
+Q: Le phénomène de diffraction est d'autant plus marqué que :
+* La taille de l'ouverture est proche de la longueur d'onde, voire plus petite
+- L'ouverture est très grande devant la longueur d'onde
+- La lumière est intense
+- L'écran est proche de l'ouverture
+- La lumière est blanche
+C: Ouverture de l'ordre de λ.
+E: L'écart angulaire $\theta = \frac{\lambda}{a}$ augmente quand la largeur $a$ diminue. Une ouverture très large devant $\lambda$ laisse passer la lumière en ligne droite, sans diffraction notable.
+
+[PHY-309] ondes-lumineuses | intermediate
+Q: On éclaire une fente fine avec une lumière blanche. Le centre de la figure de diffraction est blanc et les bords sont irisés car :
+* Chaque radiation donne une tache centrale de largeur proportionnelle à sa longueur d'onde
+- La fente absorbe le rouge
+- La lumière blanche n'est pas diffractée
+- Le violet est plus diffracté que le rouge
+- La fréquence change à la traversée de la fente
+C: Les taches de chaque couleur ont des largeurs différentes.
+E: La largeur $L = \frac{2\lambda D}{a}$ est plus grande pour le rouge que pour le violet. Au centre, toutes les couleurs se superposent (blanc) ; sur les bords, seules certaines subsistent, d'où les irisations. Le rouge est le plus diffracté.
+
+[PHY-310] nucleaire | beginner
+Q: Des noyaux isotopes ont :
+* Le même nombre de protons et des nombres de neutrons différents
+- Le même nombre de neutrons
+- Le même nombre de nucléons
+- Des nombres de protons différents
+- La même masse
+C: Même $Z$, $A$ différents.
+E: Les isotopes sont des noyaux d'un même élément chimique : par exemple ${}^{12}_{6}\mathrm{C}$ et ${}^{14}_{6}\mathrm{C}$ (6 protons, 6 ou 8 neutrons). Ils ont les mêmes propriétés chimiques mais pas la même stabilité nucléaire.
+
+[PHY-311] nucleaire | intermediate
+Q: Lors d'une désintégration $\beta^+$ :
+* Un proton se transforme en neutron avec émission d'un positon
+- Un neutron se transforme en proton avec émission d'un électron
+- Le noyau émet un noyau d'hélium
+- Le noyau émet seulement un photon
+- Le nombre de masse diminue de 4
+C: p → n + e⁺ (+ neutrino).
+E: Le noyau fils a le même nombre de masse $A$ et un numéro atomique $Z - 1$. La radioactivité $\beta^+$ est utilisée en imagerie médicale (tomographie par émission de positons, avec le fluor 18).
+
+[PHY-312] nucleaire | intermediate
+Q: La relation entre la constante radioactive $\lambda$ et la demi-vie $t_{1/2}$ est :
+* $t_{1/2} = \frac{\ln 2}{\lambda}$
+- $t_{1/2} = \lambda\ln 2$
+- $t_{1/2} = \frac{\lambda}{\ln 2}$
+- $t_{1/2} = \frac{1}{\lambda}$
+- $t_{1/2} = \frac{\lambda}{2}$
+C: $t_{1/2} = \frac{\ln 2}{\lambda}$.
+E: À $t = t_{1/2}$, $N = \frac{N_0}{2}$ : $e^{-\lambda t_{1/2}} = \frac{1}{2}$, donc $\lambda t_{1/2} = \ln 2$. La grandeur $\tau = \frac{1}{\lambda}$ est la constante de temps.
+
+[PHY-313] nucleaire | intermediate
+Q: Le défaut de masse d'un noyau est :
+* La différence entre la masse des nucléons séparés et la masse du noyau
+- La masse des électrons de l'atome
+- La masse perdue lors d'une désintégration $\alpha$
+- La masse d'un neutron
+- La différence entre deux isotopes
+C: $\Delta m = Zm_p + (A - Z)m_n - m_{noyau} > 0$.
+E: Le noyau est moins lourd que ses nucléons séparés ; cette différence correspond à l'énergie de liaison $E_l = \Delta m\,c^2$, qu'il faut fournir pour séparer les nucléons.
+
+[PHY-314] nucleaire | intermediate
+Q: Une unité de masse atomique ($1\ \mathrm{u}$) correspond à une énergie d'environ $931{,}5\ \mathrm{MeV}$. Un défaut de masse de $0{,}0304\ \mathrm{u}$ correspond à une énergie de liaison d'environ :
+* $28{,}3\ \mathrm{MeV}$
+- $2{,}83\ \mathrm{MeV}$
+- $283\ \mathrm{MeV}$
+- $0{,}0304\ \mathrm{MeV}$
+- $31{,}6\ \mathrm{MeV}$
+C: $E_l \approx 28{,}3\ \mathrm{MeV}$.
+E: $E_l = \Delta m\,c^2 = 0{,}0304 \times 931{,}5 \approx 28{,}3\ \mathrm{MeV}$. C'est l'ordre de grandeur de l'énergie de liaison du noyau d'hélium 4 (7,1 MeV par nucléon).
+
+[PHY-315] nucleaire | beginner
+Q: La fusion nucléaire concerne :
+* Des noyaux légers qui s'unissent pour former un noyau plus lourd
+- Un noyau lourd qui se scinde en deux
+- Uniquement les noyaux d'uranium
+- Les électrons de l'atome
+- Les noyaux les plus stables comme le fer
+C: L'union de noyaux légers.
+E: Exemple : ${}^{2}_{1}\mathrm{H} + {}^{3}_{1}\mathrm{H} \to {}^{4}_{2}\mathrm{He} + {}^{1}_{0}n$. Elle libère beaucoup d'énergie et alimente les étoiles ; elle exige des températures de plusieurs millions de degrés pour vaincre la répulsion entre noyaux.
+
+[PHY-316] electricite-rc | beginner
+Q: La charge $q$ d'un condensateur de capacité $C$ soumis à une tension $u_C$ vaut :
+* $q = Cu_C$
+- $q = \frac{u_C}{C}$
+- $q = \frac{C}{u_C}$
+- $q = Cu_C^2$
+- $q = \frac{1}{2}Cu_C^2$
+C: $q = Cu_C$.
+E: La charge est proportionnelle à la tension ; la capacité s'exprime en farads (F). L'énergie emmagasinée vaut $\mathcal{E}_e = \frac{1}{2}Cu_C^2 = \frac{q^2}{2C}$.
+
+[PHY-317] electricite-rc | intermediate
+Q: Dans un circuit RC en charge, la tension $u_C$ atteint 63 % de sa valeur finale au bout de $\tau = 2{,}0\ \mathrm{ms}$. Avec $R = 1{,}0\ \mathrm{k\Omega}$, la capacité vaut :
+* $2{,}0\ \mu\mathrm{F}$
+- $2{,}0\ \mathrm{mF}$
+- $0{,}5\ \mu\mathrm{F}$
+- $20\ \mu\mathrm{F}$
+- $2{,}0\ \mathrm{nF}$
+C: $C = \frac{\tau}{R} = 2{,}0\ \mu\mathrm{F}$.
+E: À $t = \tau$, $u_C = E(1 - e^{-1}) \approx 0{,}63E$. Donc $\tau = RC = 2{,}0 \times 10^{-3}$ s et $C = \frac{2{,}0 \times 10^{-3}}{1{,}0 \times 10^{3}} = 2{,}0 \times 10^{-6}$ F.
+
+[PHY-318] electricite-rc | intermediate
+Q: Pour déterminer graphiquement la constante de temps $\tau$ d'un dipôle RC en charge, on peut :
+* Tracer la tangente à l'origine à la courbe $u_C(t)$ : elle coupe l'asymptote $u_C = E$ à $t = \tau$
+- Lire l'instant où $u_C = 0$
+- Lire l'instant où $u_C = \frac{E}{2}$
+- Mesurer la pente de l'asymptote
+- Lire l'instant où $u_C = E$ exactement
+C: Tangente à l'origine ou lecture de 0,63E.
+E: La tangente à l'origine a pour pente $\frac{E}{\tau}$ ; elle atteint $E$ à $t = \tau$. On peut aussi lire l'instant où $u_C = 0{,}63E$. La valeur $\frac{E}{2}$ est atteinte à $t = \tau\ln 2 \approx 0{,}69\tau$.
+
+[PHY-319] electricite-rl | beginner
+Q: La tension aux bornes d'une bobine d'inductance $L$ et de résistance $r$ parcourue par un courant $i$ s'écrit :
+* $u_L = ri + L\frac{di}{dt}$
+- $u_L = Li$
+- $u_L = \frac{1}{L}\frac{di}{dt}$
+- $u_L = ri - L\frac{di}{dt}$
+- $u_L = L\frac{di}{dt}$ seulement, même si $r \neq 0$
+C: $u_L = ri + L\frac{di}{dt}$.
+E: Le terme $L\frac{di}{dt}$ traduit l'auto-induction : la bobine s'oppose aux variations du courant. En régime permanent ($i$ constant), la bobine se comporte comme un conducteur ohmique de résistance $r$.
+
+[PHY-320] electricite-rl | intermediate
+Q: À la fermeture d'un circuit RL série alimenté par un générateur de tension continue, l'intensité du courant :
+* Augmente progressivement jusqu'à une valeur limite
+- Passe instantanément à sa valeur maximale
+- Reste nulle
+- Oscille indéfiniment
+- Diminue exponentiellement
+C: Établissement progressif du courant.
+E: La bobine retarde l'établissement du courant : $i(t) = I_p\left(1 - e^{-\frac{t}{\tau}}\right)$ avec $\tau = \frac{L}{R_{tot}}$ et $I_p = \frac{E}{R_{tot}}$. L'intensité est une fonction continue du temps dans un circuit contenant une bobine.
+
+[PHY-321] electricite-rlc | intermediate
+Q: Dans un circuit RLC série en régime libre, l'amplitude des oscillations diminue au cours du temps à cause :
+* De l'énergie dissipée par effet Joule dans la résistance
+- De la capacité du condensateur
+- De l'inductance de la bobine
+- De l'absence de générateur
+- De la fréquence des oscillations
+C: Dissipation par effet Joule.
+E: L'énergie totale $\mathcal{E} = \frac{1}{2}Cu_C^2 + \frac{1}{2}Li^2$ diminue : $\frac{d\mathcal{E}}{dt} = -Ri^2$. Selon la valeur de $R$, on observe un régime pseudo-périodique, critique ou apériodique.
+
+[PHY-322] electricite-rlc | intermediate
+Q: Dans un circuit LC idéal, les échanges d'énergie se font :
+* Entre le condensateur (énergie électrique) et la bobine (énergie magnétique), l'énergie totale restant constante
+- Uniquement dans le condensateur
+- Entre la bobine et la résistance
+- En perdant de l'énergie à chaque oscillation
+- Uniquement dans la bobine
+C: Échange C ↔ L, énergie totale constante.
+E: Quand $u_C$ est maximale, $i = 0$ et toute l'énergie est électrique ; quand $u_C = 0$, $|i|$ est maximale et toute l'énergie est magnétique. Ces échanges ont lieu deux fois par période.
+
+[PHY-323] ondes-electromagnetiques | intermediate
+Q: En modulation d'amplitude, le signal modulant (information) est :
+* Un signal de basse fréquence qui fait varier l'amplitude d'une porteuse de haute fréquence
+- Un signal de haute fréquence
+- Un signal identique à la porteuse
+- La fréquence de la porteuse elle-même
+- Un signal continu sans variation
+C: BF modulant l'amplitude d'une porteuse HF.
+E: Le signal audio (basse fréquence) ne peut pas être émis efficacement par une antenne ; on fait varier l'amplitude d'une porteuse haute fréquence. Pour une bonne modulation, il faut une fréquence porteuse très supérieure à celle du signal et un taux de modulation inférieur à 1.
+
+[PHY-324] ondes-electromagnetiques | advanced
+Q: Lors de la démodulation d'un signal modulé en amplitude, le détecteur d'enveloppe (diode + circuit RC parallèle) doit vérifier :
+* $T_p \ll RC < T_s$, avec $T_p$ la période de la porteuse et $T_s$ celle du signal modulant
+- $RC \ll T_p$
+- $RC > T_s$
+- $RC = T_p$
+- $RC = 0$
+C: $T_p \ll RC < T_s$.
+E: La constante de temps doit être grande devant la période de la porteuse (pour lisser ses oscillations) et inférieure à la période du signal (pour suivre l'enveloppe). Un filtre passe-haut élimine ensuite la composante continue.
+
+[PHY-325] mecanique-newton | beginner
+Q: Dans un référentiel galiléen, la deuxième loi de Newton s'écrit :
+* $\sum\vec{F}_{ext} = m\,\vec{a}_G$
+- $\sum\vec{F}_{ext} = m\,\vec{v}_G$
+- $\sum\vec{F}_{ext} = \vec{0}$ dans tous les cas
+- $\sum\vec{F}_{ext} = \frac{m}{\vec{a}_G}$
+- $\vec{a}_G = m\sum\vec{F}_{ext}$
+C: $\sum\vec{F}_{ext} = m\vec{a}_G$.
+E: La somme des forces extérieures appliquées à un solide est égale au produit de sa masse par l'accélération de son centre d'inertie. Si cette somme est nulle, $\vec{a}_G = \vec{0}$ et le mouvement est rectiligne uniforme (première loi).
+
+[PHY-326] mecanique-newton | intermediate
+Q: Un ascenseur de masse $m = 500\ \mathrm{kg}$ monte avec une accélération de $2{,}0\ \mathrm{m\,s^{-2}}$ ($g = 10\ \mathrm{m\,s^{-2}}$). La tension du câble vaut :
+* $6\,000\ \mathrm{N}$
+- $5\,000\ \mathrm{N}$
+- $4\,000\ \mathrm{N}$
+- $1\,000\ \mathrm{N}$
+- $7\,000\ \mathrm{N}$
+C: $T = m(g + a) = 6\,000\ \mathrm{N}$.
+E: Sur un axe vertical orienté vers le haut : $T - mg = ma$, donc $T = 500 \times (10 + 2{,}0) = 6\,000$ N. La tension est supérieure au poids quand l'accélération est dirigée vers le haut.
+
+[PHY-327] mecanique-chute | intermediate
+Q: Une bille tombe verticalement dans un liquide visqueux. Après un régime transitoire, elle atteint une vitesse limite. À ce moment :
+* La somme des forces (poids, poussée d'Archimède, frottement) est nulle
+- Le poids est nul
+- L'accélération est égale à $g$
+- La force de frottement est nulle
+- La poussée d'Archimède est supérieure au poids
+C: Forces qui se compensent : mouvement uniforme.
+E: La force de frottement augmente avec la vitesse jusqu'à compenser le poids diminué de la poussée d'Archimède. L'accélération devient nulle et la vitesse reste constante : c'est la vitesse limite.
+
+[PHY-328] mecanique-chute | advanced
+Q: Une bille en chute verticale dans un fluide obéit à $\frac{dv}{dt} = A - Bv$ avec $A = 9{,}0\ \mathrm{m\,s^{-2}}$ et $B = 6{,}0\ \mathrm{s^{-1}}$. Sa vitesse limite et le temps caractéristique valent :
+* $v_{lim} = 1{,}5\ \mathrm{m\,s^{-1}}$ et $\tau \approx 0{,}17\ \mathrm{s}$
+- $v_{lim} = 54\ \mathrm{m\,s^{-1}}$ et $\tau = 6{,}0\ \mathrm{s}$
+- $v_{lim} = 0{,}67\ \mathrm{m\,s^{-1}}$ et $\tau \approx 0{,}17\ \mathrm{s}$
+- $v_{lim} = 1{,}5\ \mathrm{m\,s^{-1}}$ et $\tau = 6{,}0\ \mathrm{s}$
+- $v_{lim} = 9{,}0\ \mathrm{m\,s^{-1}}$ et $\tau = 1{,}5\ \mathrm{s}$
+C: $v_{lim} = \frac{A}{B} = 1{,}5\ \mathrm{m\,s^{-1}}$ ; $\tau = \frac{1}{B}$.
+E: En régime permanent, $\frac{dv}{dt} = 0$, donc $v_{lim} = \frac{A}{B} = \frac{9{,}0}{6{,}0} = 1{,}5\ \mathrm{m\,s^{-1}}$. La solution s'écrit $v = v_{lim}\left(1 - e^{-t/\tau}\right)$ avec $\tau = \frac{1}{B} \approx 0{,}17$ s.
+
+[PHY-329] mecanique-chute | intermediate
+Q: La méthode d'Euler permet de calculer pas à pas la vitesse d'un corps en chute avec frottement grâce à la relation :
+* $v_{n+1} = v_n + a_n\,\Delta t$
+- $v_{n+1} = v_n \times a_n$
+- $v_{n+1} = a_n + \Delta t$
+- $v_{n+1} = v_n - \Delta t$
+- $v_{n+1} = \frac{v_n}{\Delta t}$
+C: $v_{n+1} = v_n + a_n\Delta t$.
+E: On calcule l'accélération $a_n = A - Bv_n$ à l'instant $t_n$, puis on l'utilise pour estimer la vitesse au pas suivant. Plus le pas $\Delta t$ est petit devant le temps caractéristique, plus la solution approchée est précise.
+
+[PHY-330] mecanique-projectile | intermediate
+Q: Dans le mouvement d'un projectile lancé dans le champ de pesanteur uniforme, sans frottement, la composante horizontale de la vitesse :
+* Reste constante
+- Augmente régulièrement
+- Diminue jusqu'à s'annuler au sommet
+- Est nulle
+- Change de signe au sommet
+C: $v_x = v_0\cos\alpha$, constante.
+E: Seul le poids, vertical, agit : $a_x = 0$ et $a_y = -g$. La composante horizontale garde sa valeur initiale ; c'est la composante verticale qui s'annule au sommet de la trajectoire parabolique.
+
+[PHY-331] mecanique-projectile | intermediate
+Q: Pour une même vitesse initiale et un sol horizontal, la portée d'un projectile est maximale pour un angle de tir de :
+* $45^{\circ}$
+- $30^{\circ}$
+- $60^{\circ}$
+- $90^{\circ}$
+- $15^{\circ}$
+C: $45^{\circ}$.
+E: La portée vaut $\frac{v_0^2\sin 2\alpha}{g}$, maximale quand $\sin 2\alpha = 1$, soit $\alpha = 45^{\circ}$. Deux angles complémentaires (30° et 60°) donnent la même portée.
+
+[PHY-332] mecanique | advanced
+Q: Une particule de charge $q > 0$ et de masse $m$ entre avec une vitesse $\vec{v}_0$ horizontale entre deux plaques où règne un champ électrique uniforme vertical $\vec{E}$. Son mouvement entre les plaques est :
+* Parabolique, comme celui d'un projectile
+- Rectiligne uniforme
+- Circulaire uniforme
+- Rectiligne uniformément accéléré dans la direction de $\vec{v}_0$
+- Sinusoïdal
+C: Trajectoire parabolique.
+E: La force $q\vec{E}$ est constante et perpendiculaire à $\vec{v}_0$ (le poids est négligeable) : l'accélération $\vec{a} = \frac{q\vec{E}}{m}$ est constante, comme $\vec{g}$ pour un projectile. C'est le principe de la déviation d'un faisceau d'électrons dans un oscilloscope.
+
+[PHY-333] mecanique-satellites | intermediate
+Q: La troisième loi de Kepler, pour des satellites en orbite circulaire autour d'un même astre, s'écrit :
+* $\frac{T^2}{r^3}$ = constante
+- $\frac{T}{r}$ = constante
+- $T \times r$ = constante
+- $\frac{T^3}{r^2}$ = constante
+- $\frac{T^2}{r}$ = constante
+C: $\frac{T^2}{r^3} = \frac{4\pi^2}{GM}$.
+E: La vitesse d'un satellite vaut $v = \sqrt{\frac{GM}{r}}$ et sa période $T = \frac{2\pi r}{v}$, d'où $T^2 = \frac{4\pi^2}{GM}r^3$. La constante ne dépend que de la masse de l'astre attracteur.
+
+[PHY-334] mecanique-satellites | intermediate
+Q: Un satellite géostationnaire :
+* Tourne dans le plan de l'équateur, dans le sens de rotation de la Terre, avec une période de 24 h environ
+- Tourne autour des pôles
+- Est immobile dans le référentiel héliocentrique
+- A une période de 12 h
+- Peut être placé au-dessus de n'importe quel point du globe
+C: Orbite équatoriale, période d'un jour sidéral.
+E: Il reste à la verticale d'un même point de l'équateur, à environ 36 000 km d'altitude, avec une période égale à celle de la rotation propre de la Terre (environ 23 h 56 min). Il sert aux télécommunications et à la météorologie.
+
+[PHY-335] oscillateurs | beginner
+Q: La période propre d'un pendule simple de longueur $\ell$, pour de petites oscillations, est :
+* $T_0 = 2\pi\sqrt{\frac{\ell}{g}}$
+- $T_0 = 2\pi\sqrt{\frac{g}{\ell}}$
+- $T_0 = 2\pi\sqrt{\frac{m}{k}}$
+- $T_0 = \frac{\ell}{g}$
+- $T_0 = 2\pi\,\ell\,g$
+C: $T_0 = 2\pi\sqrt{\frac{\ell}{g}}$.
+E: Pour de petites amplitudes, la période ne dépend ni de la masse ni de l'amplitude (isochronisme). Elle augmente avec la longueur du fil. $2\pi\sqrt{\frac{m}{k}}$ est la période du pendule élastique.
+
+[PHY-336] oscillateurs | intermediate
+Q: On quadruple la masse accrochée à un ressort horizontal. La période propre des oscillations :
+* Double
+- Est multipliée par 4
+- Est divisée par 2
+- Ne change pas
+- Est multipliée par 16
+C: Elle double.
+E: $T_0 = 2\pi\sqrt{\frac{m}{K}}$ est proportionnelle à $\sqrt{m}$ : multiplier $m$ par 4 multiplie $T_0$ par $\sqrt{4} = 2$.
+
+[PHY-337] oscillateurs | intermediate
+Q: Pour un oscillateur mécanique libre et amorti, le phénomène de résonance apparaît lorsque :
+* Il est excité par une force périodique de fréquence proche de sa fréquence propre
+- On augmente fortement les frottements
+- On le lâche sans vitesse initiale
+- On double sa masse
+- On l'immobilise
+C: Fréquence excitatrice ≈ fréquence propre.
+E: En oscillations forcées, l'amplitude devient maximale quand la fréquence de l'excitateur est proche de la fréquence propre du résonateur. Plus l'amortissement est faible, plus la résonance est aiguë (amplitude élevée et pic étroit).
+
+[PHY-338] energie | intermediate
+Q: Un pendule simple de longueur $1{,}25\ \mathrm{m}$ est écarté jusqu'à ce que sa masse soit $0{,}20\ \mathrm{m}$ plus haut que sa position d'équilibre, puis lâché sans vitesse ($g = 10\ \mathrm{m\,s^{-2}}$, sans frottement). Sa vitesse au passage par l'équilibre vaut :
+* $2{,}0\ \mathrm{m\,s^{-1}}$
+- $4{,}0\ \mathrm{m\,s^{-1}}$
+- $1{,}4\ \mathrm{m\,s^{-1}}$
+- $5{,}0\ \mathrm{m\,s^{-1}}$
+- $0{,}20\ \mathrm{m\,s^{-1}}$
+C: $v = \sqrt{2gh} = 2{,}0\ \mathrm{m\,s^{-1}}$.
+E: L'énergie mécanique se conserve : $mgh = \frac{1}{2}mv^2$, donc $v = \sqrt{2 \times 10 \times 0{,}20} = 2{,}0\ \mathrm{m\,s^{-1}}$. La longueur du fil n'intervient pas ; la tension du fil, perpendiculaire à la vitesse, ne travaille pas.
+
+[PHY-339] energie | beginner
+Q: Le travail du poids d'un corps de masse $m$ qui descend d'une hauteur $h$ vaut :
+* $W = +mgh$
+- $W = -mgh$
+- $W = 0$
+- $W = mg$
+- $W = \frac{1}{2}mgh$
+C: Travail moteur $+mgh$.
+E: Le travail du poids ne dépend que de la différence d'altitude : $W = mg(z_A - z_B)$. Il est positif (moteur) quand le corps descend, négatif (résistant) quand il monte, quel que soit le chemin suivi.
+
+[PHY-340] energie | intermediate
+Q: Un solide de masse $2{,}0\ \mathrm{kg}$ passe de $3{,}0\ \mathrm{m\,s^{-1}}$ à $5{,}0\ \mathrm{m\,s^{-1}}$. La variation de son énergie cinétique vaut :
+* $16\ \mathrm{J}$
+- $4{,}0\ \mathrm{J}$
+- $8{,}0\ \mathrm{J}$
+- $34\ \mathrm{J}$
+- $2{,}0\ \mathrm{J}$
+C: $\Delta E_c = 16\ \mathrm{J}$.
+E: $\Delta E_c = \frac{1}{2}m(v_2^2 - v_1^2) = \frac{1}{2} \times 2{,}0 \times (25 - 9) = 16$ J. D'après le théorème de l'énergie cinétique, c'est le travail total des forces appliquées.
+
+[PHY-341] mecanique | intermediate
+Q: Un pendule de torsion est constitué d'une tige de moment d'inertie $J_\Delta$ suspendue à un fil de constante de torsion $C$. Sa période propre est :
+* $T_0 = 2\pi\sqrt{\frac{J_\Delta}{C}}$
+- $T_0 = 2\pi\sqrt{\frac{C}{J_\Delta}}$
+- $T_0 = 2\pi\sqrt{\frac{\ell}{g}}$
+- $T_0 = \frac{J_\Delta}{C}$
+- $T_0 = 2\pi J_\Delta C$
+C: $T_0 = 2\pi\sqrt{\frac{J_\Delta}{C}}$.
+E: La relation fondamentale de la dynamique en rotation donne $J_\Delta\ddot{\theta} = -C\theta$, soit $\ddot{\theta} + \frac{C}{J_\Delta}\theta = 0$ : mouvement sinusoïdal de pulsation $\sqrt{\frac{C}{J_\Delta}}$.
+
+[PHY-342] mecanique | intermediate
+Q: Un disque tourne à vitesse angulaire constante de $10\ \mathrm{rad\,s^{-1}}$. Un point situé à $20\ \mathrm{cm}$ de l'axe a une vitesse linéaire de :
+* $2{,}0\ \mathrm{m\,s^{-1}}$
+- $0{,}50\ \mathrm{m\,s^{-1}}$
+- $200\ \mathrm{m\,s^{-1}}$
+- $20\ \mathrm{m\,s^{-1}}$
+- $0{,}02\ \mathrm{m\,s^{-1}}$
+C: $v = r\omega = 2{,}0\ \mathrm{m\,s^{-1}}$.
+E: $v = r\omega = 0{,}20 \times 10 = 2{,}0\ \mathrm{m\,s^{-1}}$. Tous les points du disque ont la même vitesse angulaire, mais leur vitesse linéaire augmente avec la distance à l'axe.
+
+[PHY-343] atome | intermediate
+Q: Un atome passe d'un niveau d'énergie $E_3 = -1{,}51\ \mathrm{eV}$ au niveau $E_2 = -3{,}40\ \mathrm{eV}$. Il émet un photon d'énergie :
+* $1{,}89\ \mathrm{eV}$
+- $4{,}91\ \mathrm{eV}$
+- $3{,}40\ \mathrm{eV}$
+- $1{,}51\ \mathrm{eV}$
+- $0{,}89\ \mathrm{eV}$
+C: $E = E_3 - E_2 = 1{,}89\ \mathrm{eV}$.
+E: Lors d'une désexcitation, l'atome émet un photon d'énergie égale à la différence des niveaux : $-1{,}51 - (-3{,}40) = 1{,}89$ eV. C'est la raie rouge Hα de l'hydrogène ($\lambda \approx 656$ nm). Les niveaux d'énergie sont quantifiés.
+
+[PHY-344] atome | intermediate
+Q: Un photon a une énergie $E = 3{,}0\ \mathrm{eV}$. Sa longueur d'onde vaut environ ($hc \approx 1\,240\ \mathrm{eV\,nm}$) :
+* $413\ \mathrm{nm}$
+- $3\,720\ \mathrm{nm}$
+- $41\ \mathrm{nm}$
+- $620\ \mathrm{nm}$
+- $1\,240\ \mathrm{nm}$
+C: $\lambda = \frac{hc}{E} \approx 413\ \mathrm{nm}$.
+E: $E = \frac{hc}{\lambda}$, donc $\lambda = \frac{1\,240}{3{,}0} \approx 413$ nm, dans le violet. Plus l'énergie du photon est grande, plus sa longueur d'onde est courte.
+
+[PHY-345] electricite | beginner
+Q: Trois conducteurs ohmiques de $30\ \Omega$ sont associés en parallèle. La résistance équivalente vaut :
+* $10\ \Omega$
+- $90\ \Omega$
+- $30\ \Omega$
+- $3\ \Omega$
+- $60\ \Omega$
+C: $R_{eq} = \frac{30}{3} = 10\ \Omega$.
+E: En parallèle, $\frac{1}{R_{eq}} = \frac{1}{30} + \frac{1}{30} + \frac{1}{30} = \frac{1}{10}$. En série, les résistances s'ajoutent (90 Ω). La résistance équivalente en parallèle est toujours inférieure à la plus petite des résistances.
+
+[PHY-346] electricite-rc | advanced
+Q: Un condensateur de $10\ \mu\mathrm{F}$ chargé sous $20\ \mathrm{V}$ est relié à un condensateur identique initialement déchargé. Une fois l'équilibre atteint, l'énergie totale stockée vaut :
+* $1{,}0\ \mathrm{mJ}$
+- $2{,}0\ \mathrm{mJ}$
+- $4{,}0\ \mathrm{mJ}$
+- $0{,}50\ \mathrm{mJ}$
+- $0$
+C: $1{,}0\ \mathrm{mJ}$ (la moitié de l'énergie initiale).
+E: Énergie initiale : $\frac{1}{2} \times 10^{-5} \times 400 = 2{,}0$ mJ. La charge $Q = 2{,}0 \times 10^{-4}$ C se répartit sur $2C$ : $U = \frac{Q}{2C} = 10$ V. Énergie finale : $\frac{1}{2} \times 2 \times 10^{-5} \times 100 = 1{,}0$ mJ. La moitié a été dissipée dans les fils (effet Joule, rayonnement).
+
+[PHY-347] ondes | beginner
+Q: Le domaine des ultrasons correspond à des fréquences :
+* Supérieures à $20\ \mathrm{kHz}$
+- Inférieures à $20\ \mathrm{Hz}$
+- Comprises entre $20\ \mathrm{Hz}$ et $20\ \mathrm{kHz}$
+- Égales à $440\ \mathrm{Hz}$
+- Supérieures à $10^{14}\ \mathrm{Hz}$
+C: Au-delà de 20 kHz.
+E: L'oreille humaine perçoit de 20 Hz à 20 kHz environ ; en dessous ce sont les infrasons, au-dessus les ultrasons, utilisés en échographie médicale, en sonar et par les chauves-souris.
+
+[PHY-348] ondes | intermediate
+Q: En échographie, un écho revient $40\ \mu\mathrm{s}$ après l'émission d'une impulsion ultrasonore. La célérité des ultrasons dans les tissus est de $1\,500\ \mathrm{m\,s^{-1}}$. La profondeur de l'organe est :
+* $3{,}0\ \mathrm{cm}$
+- $6{,}0\ \mathrm{cm}$
+- $1{,}5\ \mathrm{cm}$
+- $30\ \mathrm{cm}$
+- $0{,}6\ \mathrm{cm}$
+C: $d = \frac{v\,\Delta t}{2} = 3{,}0\ \mathrm{cm}$.
+E: L'onde fait l'aller-retour : $2d = 1\,500 \times 40 \times 10^{-6} = 0{,}060$ m, donc $d = 0{,}030$ m. Oublier le facteur 2 donne 6,0 cm.
+
+[PHY-349] nucleaire | advanced
+Q: Un échantillon contient initialement $N_0$ noyaux radioactifs. Le nombre de noyaux désintégrés au bout d'une durée $t$ s'écrit :
+* $N_0\left(1 - e^{-\lambda t}\right)$
+- $N_0e^{-\lambda t}$
+- $N_0\lambda t$
+- $N_0e^{\lambda t}$
+- $\frac{N_0}{\lambda t}$
+C: $N_d = N_0 - N(t) = N_0(1 - e^{-\lambda t})$.
+E: Le nombre de noyaux restants suit $N(t) = N_0e^{-\lambda t}$ ; les noyaux désintégrés sont ceux qui manquent. Au bout d'une demi-vie, $N_d = \frac{N_0}{2}$.
+
+[PHY-350] electricite-rlc | advanced
+Q: Dans un circuit LC, on remplace le condensateur par un condensateur de capacité 4 fois plus grande. La fréquence propre des oscillations :
+* Est divisée par 2
+- Est multipliée par 2
+- Est divisée par 4
+- Est multipliée par 4
+- Ne change pas
+C: Divisée par 2.
+E: $f_0 = \frac{1}{2\pi\sqrt{LC}}$ est inversement proportionnelle à $\sqrt{C}$ : multiplier $C$ par 4 divise $f_0$ par $\sqrt{4} = 2$. C'est le principe de l'accord d'un récepteur radio avec un condensateur variable.

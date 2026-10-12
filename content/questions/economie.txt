@@ -370,3 +370,458 @@ Q: Le chiffre d'affaires d'une entreprise correspond :
 - À la valeur de ses machines
 C: Le total des ventes.
 E: Le chiffre d'affaires mesure l'activité commerciale (prix × quantités vendues). Le bénéfice, lui, est ce qui reste après déduction de toutes les charges : une entreprise peut avoir un chiffre d'affaires élevé et être en perte.
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions de niveau bac dans l'esprit des épreuves TAFEM (ENCG),
+# ENA architecture et ISCAE.
+@source src-general
+
+[ECO-201] economie-generale | beginner
+Q: La croissance économique se mesure principalement par :
+* Le taux de variation du PIB réel
+- Le taux de chômage
+- Le taux d'inflation
+- Le solde de la balance commerciale
+C: La variation du PIB réel.
+E: On utilise le PIB en volume (réel), corrigé de la hausse des prix, pour mesurer l'augmentation durable de la production d'un pays.
+
+[ECO-202] economie-generale | intermediate
+Q: Le PIB nominal passe de 1 000 à 1 080 milliards et les prix augmentent de 3 %. La croissance réelle est d'environ :
+* 5 %
+- 8 %
+- 11 %
+- 3 %
+C: Environ 8 % − 3 % = 5 %.
+E: Plus précisément, $\frac{1{,}08}{1{,}03} \approx 1{,}0485$, soit une croissance réelle d'environ 4,9 %. On retire l'effet des prix pour obtenir la croissance en volume.
+
+[ECO-203] economie-generale | beginner
+Q: Le développement économique se distingue de la croissance car il intègre :
+* L'amélioration des conditions de vie (santé, éducation, revenus) de la population
+- Uniquement l'augmentation du PIB
+- La hausse des exportations
+- La baisse des impôts
+C: Une dimension qualitative et sociale.
+E: La croissance est quantitative (hausse du PIB) ; le développement est qualitatif. Il est mesuré par exemple par l'indice de développement humain (IDH), qui combine revenu, santé et éducation.
+
+[ECO-204] economie-generale | intermediate
+Q: L'indice de développement humain (IDH), publié par le PNUD, combine :
+* Le revenu par habitant, l'espérance de vie et le niveau d'éducation
+- Le PIB, l'inflation et le chômage
+- Les exportations, les importations et la dette
+- La population, la superficie et le climat
+C: Revenu, santé, éducation.
+E: L'IDH varie entre 0 et 1. Il complète le PIB par habitant en tenant compte de la santé (espérance de vie à la naissance) et de l'éducation (durée de scolarisation).
+
+[ECO-205] economie-generale | intermediate
+Q: Les facteurs de production sont :
+* Le travail et le capital
+- L'offre et la demande
+- Les prix et les salaires
+- L'épargne et la consommation
+C: Travail et capital.
+E: Les entreprises combinent le travail (main-d'œuvre) et le capital (machines, bâtiments, technologies) pour produire. Le progrès technique améliore leur productivité.
+
+[ECO-206] economie-generale | intermediate
+Q: La productivité du travail se mesure par :
+* La production réalisée par travailleur (ou par heure de travail)
+- Le salaire moyen
+- Le nombre d'heures travaillées
+- Le prix des produits
+C: Production / quantité de travail.
+E: Si 10 ouvriers produisent 500 pièces par jour, la productivité vaut 50 pièces par ouvrier et par jour. Les gains de productivité sont une source majeure de croissance.
+
+[ECO-207] economie-generale | beginner
+Q: L'épargne d'un ménage correspond :
+* À la partie du revenu disponible qui n'est pas consommée
+- À la totalité de ses dépenses
+- À ses impôts
+- À ses emprunts
+C: Revenu disponible − consommation.
+E: Le revenu disponible est soit consommé, soit épargné. Le taux d'épargne est le rapport de l'épargne au revenu disponible.
+
+[ECO-208] economie-generale | intermediate
+Q: Un ménage dispose d'un revenu de 10 000 DH et consomme 8 500 DH. Sa propension moyenne à consommer est :
+* 0,85
+- 0,15
+- 1,5
+- 8,5
+C: $\frac{8\,500}{10\,000} = 0{,}85$.
+E: La propension moyenne à consommer est le rapport consommation/revenu ; la propension à épargner vaut ici $1 - 0{,}85 = 0{,}15$.
+
+[ECO-209] economie-generale | intermediate
+Q: Le chômage frictionnel correspond :
+* Au temps nécessaire pour passer d'un emploi à un autre ou trouver un premier emploi
+- À une crise économique générale
+- À la disparition d'un secteur d'activité
+- Au travail saisonnier uniquement
+C: Le chômage de transition.
+E: Il existe même en période de plein emploi. Le chômage conjoncturel est lié au ralentissement de l'activité ; le chômage structurel à l'inadéquation entre les qualifications et les emplois disponibles.
+
+[ECO-210] economie-generale | intermediate
+Q: La politique budgétaire est menée par :
+* L'État, à travers les dépenses publiques et les impôts
+- La banque centrale, à travers les taux d'intérêt
+- Les entreprises privées
+- Les ménages
+C: L'État (budget).
+E: Elle utilise la loi de finances : augmenter les dépenses publiques ou baisser les impôts soutient l'activité (politique de relance). La politique monétaire, elle, relève de Bank Al-Maghrib.
+
+[ECO-211] economie-generale | intermediate
+Q: Quand Bank Al-Maghrib augmente son taux directeur, elle cherche en général à :
+* Freiner l'inflation en rendant le crédit plus coûteux
+- Relancer la consommation
+- Augmenter les exportations
+- Baisser le taux de chômage à court terme
+C: Lutter contre l'inflation.
+E: Un taux directeur plus élevé renchérit le crédit : la demande ralentit, ce qui modère la hausse des prix. Une baisse du taux vise au contraire à soutenir l'activité.
+
+[ECO-212] economie-generale | intermediate
+Q: Le déficit budgétaire de l'État apparaît lorsque :
+* Les dépenses publiques sont supérieures aux recettes publiques
+- Les importations dépassent les exportations
+- Les prix augmentent
+- Le PIB diminue
+C: Dépenses > recettes de l'État.
+E: Il est souvent exprimé en pourcentage du PIB et financé par l'emprunt, ce qui augmente la dette publique. Il ne faut pas le confondre avec le déficit commercial.
+
+[ECO-213] economie-generale | intermediate
+Q: Une dévaluation de la monnaie nationale a pour effet attendu :
+* De rendre les exportations moins chères pour les étrangers et les importations plus chères
+- De rendre les importations moins chères
+- De faire baisser tous les prix intérieurs
+- De supprimer la dette extérieure
+C: Favoriser les exportations.
+E: Avec une monnaie moins chère, les produits nationaux deviennent plus compétitifs à l'étranger, mais les produits importés (énergie, matières premières) coûtent plus cher.
+
+[ECO-214] economie-generale | intermediate
+Q: Le libre-échange consiste à :
+* Réduire ou supprimer les obstacles (droits de douane, quotas) aux échanges entre pays
+- Augmenter les droits de douane
+- Interdire les importations
+- Fixer les prix par l'État
+C: Supprimer les barrières commerciales.
+E: Le protectionnisme fait l'inverse pour protéger les productions nationales. Le Maroc a signé plusieurs accords de libre-échange (Union européenne, États-Unis, Zone de libre-échange continentale africaine).
+
+[ECO-215] economie-generale | intermediate
+Q: La mondialisation désigne :
+* L'intensification des échanges de biens, de services, de capitaux et d'informations à l'échelle mondiale
+- La création d'un gouvernement mondial
+- La disparition des frontières physiques
+- La fin du commerce international
+C: L'interdépendance croissante des économies.
+E: Elle s'appuie sur la baisse des coûts de transport, les technologies de l'information et l'ouverture commerciale ; les firmes multinationales en sont des acteurs majeurs.
+
+[ECO-216] entreprise | beginner
+Q: Une société anonyme (SA) est une entreprise :
+* Dont le capital est divisé en actions détenues par des actionnaires
+- Appartenant obligatoirement à l'État
+- Dont le propriétaire est inconnu
+- Sans capital
+C: Capital divisé en actions.
+E: Les actionnaires sont responsables à hauteur de leurs apports. La SARL (société à responsabilité limitée) a un capital divisé en parts sociales.
+
+[ECO-217] entreprise | intermediate
+Q: La valeur ajoutée d'une entreprise se calcule ainsi :
+* Chiffre d'affaires − consommations intermédiaires
+- Chiffre d'affaires − salaires
+- Bénéfice + impôts
+- Capital + dettes
+C: Production − consommations intermédiaires.
+E: La valeur ajoutée mesure la richesse réellement créée par l'entreprise. Elle sert ensuite à rémunérer les salariés, l'État (impôts), les prêteurs, les actionnaires et l'entreprise elle-même.
+
+[ECO-218] entreprise | intermediate
+Q: Une entreprise vend pour 500 000 DH et achète pour 200 000 DH de matières premières et de services. Sa valeur ajoutée est :
+* 300 000 DH
+- 700 000 DH
+- 200 000 DH
+- 500 000 DH
+C: 300 000 DH.
+E: Valeur ajoutée $= 500\,000 - 200\,000 = 300\,000$ DH. La somme des valeurs ajoutées des entreprises d'un pays est la base du PIB.
+
+[ECO-219] management | beginner
+Q: Les fonctions de l'entreprise comprennent notamment :
+* La production, la commercialisation, la finance et les ressources humaines
+- La législation et la justice
+- La défense nationale
+- L'émission de monnaie
+C: Les fonctions de l'entreprise.
+E: Henri Fayol distinguait aussi les fonctions technique, commerciale, financière, de sécurité, comptable et administrative.
+
+[ECO-220] management | intermediate
+Q: Selon Henri Fayol, les fonctions du management (administration) sont :
+* Prévoir, organiser, commander, coordonner et contrôler
+- Produire, vendre, acheter, stocker
+- Recruter, former, licencier
+- Épargner, investir, emprunter
+C: Le « POCCC ».
+E: Fayol, ingénieur français du début du XXe siècle, est l'un des fondateurs de la théorie classique des organisations.
+
+[ECO-221] marketing | beginner
+Q: Le marketing-mix (les « 4 P ») regroupe :
+* Le produit, le prix, la distribution (place) et la communication (promotion)
+- La production, la paie, le personnel et le patrimoine
+- Le profit, la part de marché, la publicité et le prix
+- Le plan, le projet, le pilotage et la performance
+C: Product, Price, Place, Promotion.
+E: L'entreprise ajuste ces quatre variables pour atteindre sa cible. Par exemple, un produit haut de gamme est associé à un prix élevé et à une distribution sélective.
+
+[ECO-222] marketing | intermediate
+Q: La segmentation du marché consiste à :
+* Découper le marché en groupes de consommateurs homogènes (âge, revenu, habitudes…)
+- Diviser l'entreprise en services
+- Fixer un prix unique pour tous
+- Supprimer la concurrence
+C: Former des groupes homogènes de clients.
+E: Elle permet de choisir une cible et d'adapter l'offre. Exemple : une marque de téléphones propose des modèles d'entrée de gamme et des modèles haut de gamme.
+
+[ECO-223] comptabilite | beginner
+Q: Le principe de la partie double en comptabilité signifie que :
+* Chaque opération est enregistrée au débit d'un compte et au crédit d'un autre pour le même montant
+- Chaque opération est enregistrée deux fois dans le même compte
+- Les montants sont doublés
+- Il faut deux comptables
+C: Débit = crédit.
+E: Le total des débits est toujours égal au total des crédits. Exemple : un achat payé par chèque débite un compte d'achats et crédite le compte « banque ».
+
+[ECO-224] comptabilite | intermediate
+Q: Dans le bilan, les capitaux propres figurent :
+* Au passif
+- À l'actif
+- Dans le compte de résultat
+- Hors bilan
+C: Au passif.
+E: Le passif présente les ressources : capitaux propres (capital, réserves, résultat) et dettes. L'actif présente les emplois : immobilisations, stocks, créances, trésorerie.
+
+[ECO-225] comptabilite | intermediate
+Q: Le compte de produits et charges (CPC) permet de déterminer :
+* Le résultat de l'exercice (bénéfice ou perte)
+- La valeur totale du patrimoine
+- Le montant des dettes
+- La trésorerie disponible
+C: Résultat = produits − charges.
+E: Si les produits dépassent les charges, l'entreprise réalise un bénéfice ; sinon, une perte. Le bilan, lui, présente le patrimoine à une date donnée.
+
+[ECO-226] comptabilite | intermediate
+Q: L'amortissement d'une machine correspond :
+* À la constatation comptable de sa perte de valeur liée à l'usure et au temps
+- Au remboursement d'un emprunt
+- Au prix d'achat de la machine
+- À sa revente
+C: La dépréciation irréversible d'une immobilisation.
+E: Une machine achetée 100 000 DH et amortie sur 5 ans selon le mode linéaire subit une dotation annuelle de 20 000 DH.
+
+[ECO-227] comptabilite | intermediate
+Q: Une machine achetée 120 000 DH est amortie linéairement sur 6 ans. Sa valeur nette comptable après 2 ans est :
+* 80 000 DH
+- 100 000 DH
+- 40 000 DH
+- 60 000 DH
+C: 80 000 DH.
+E: Dotation annuelle : $\frac{120\,000}{6} = 20\,000$ DH. Après 2 ans : $120\,000 - 2 \times 20\,000 = 80\,000$ DH.
+
+[ECO-228] comptabilite | advanced
+Q: Une entreprise a un actif total de 900 000 DH et des dettes de 350 000 DH. Ses capitaux propres s'élèvent à :
+* 550 000 DH
+- 1 250 000 DH
+- 350 000 DH
+- 900 000 DH
+C: 550 000 DH.
+E: Actif = capitaux propres + dettes, donc capitaux propres $= 900\,000 - 350\,000 = 550\,000$ DH.
+
+[ECO-229] finance | intermediate
+Q: Le fonds de roulement d'une entreprise est positif lorsque :
+* Ses ressources stables financent entièrement ses emplois stables, avec un excédent
+- Ses dettes à court terme dépassent ses actifs
+- Elle n'a aucun stock
+- Son chiffre d'affaires est nul
+C: Ressources stables > emplois stables.
+E: Le fonds de roulement est la marge de sécurité qui permet de financer une partie de l'actif circulant (stocks, créances).
+
+[ECO-230] finance | intermediate
+Q: Une action est :
+* Un titre de propriété représentant une part du capital d'une société
+- Un titre de créance sur l'État
+- Un prêt bancaire
+- Une assurance
+C: Un titre de propriété.
+E: L'actionnaire peut recevoir des dividendes et vote aux assemblées générales. Une obligation, au contraire, est un titre de créance qui rapporte des intérêts.
+
+[ECO-231] finance | intermediate
+Q: Le dividende est :
+* La part du bénéfice distribuée aux actionnaires
+- L'intérêt versé aux banques
+- Le salaire des dirigeants
+- L'impôt payé par l'entreprise
+C: Bénéfice distribué aux actionnaires.
+E: L'assemblée générale décide de la part du bénéfice distribuée en dividendes et de celle mise en réserve pour financer l'entreprise (autofinancement).
+
+[ECO-232] fiscalite | intermediate
+Q: L'impôt sur les sociétés (IS) est calculé sur :
+* Le bénéfice fiscal des entreprises soumises à cet impôt
+- Le chiffre d'affaires
+- Les salaires versés
+- La consommation des ménages
+C: Le bénéfice.
+E: L'IS est un impôt direct sur le résultat fiscal. La TVA est un impôt indirect sur la consommation ; l'IR (impôt sur le revenu) concerne les revenus des personnes physiques.
+
+[ECO-233] fiscalite | intermediate
+Q: Un impôt est dit progressif lorsque :
+* Son taux augmente avec le revenu imposable
+- Son taux est le même pour tous
+- Il diminue chaque année
+- Il ne concerne que les entreprises
+C: Taux croissant avec le revenu.
+E: L'impôt sur le revenu au Maroc est progressif (barème par tranches). Un impôt proportionnel applique le même taux à tous (comme la TVA sur un même produit).
+
+[ECO-234] economie-generale | intermediate
+Q: Le secteur tertiaire regroupe :
+* Les activités de services (commerce, banque, transport, santé, éducation, tourisme)
+- L'agriculture et la pêche
+- L'industrie et le bâtiment
+- Les mines uniquement
+C: Les services.
+E: Le secteur primaire concerne l'exploitation des ressources naturelles (agriculture, pêche, mines), le secondaire la transformation (industrie, BTP), le tertiaire les services.
+
+[ECO-235] economie-generale | intermediate
+Q: L'économie informelle désigne :
+* Les activités économiques non déclarées ni enregistrées auprès de l'administration
+- Les entreprises publiques
+- Les activités bancaires
+- Les échanges internationaux
+C: Activités non déclarées.
+E: Très présente au Maroc (commerce ambulant, petits métiers), elle échappe aux impôts et à la protection sociale. La généralisation de la couverture sociale cherche notamment à intégrer ces travailleurs.
+
+[ECO-236] economie-generale | intermediate
+Q: Le taux d'inflation annuel est de 2 %. Un produit qui coûtait 50 DH coûtera environ après un an :
+* 51 DH
+- 52 DH
+- 50,20 DH
+- 60 DH
+C: $50 \times 1{,}02 = 51$ DH.
+E: Une inflation de 2 % signifie que le niveau général des prix augmente de 2 % en un an : 2 % de 50 DH = 1 DH.
+
+[ECO-237] economie-generale | intermediate
+Q: Le pouvoir d'achat d'un salarié augmente lorsque :
+* Son salaire augmente plus vite que les prix
+- Les prix augmentent plus vite que son salaire
+- Son salaire et les prix augmentent au même rythme
+- Son salaire reste fixe pendant l'inflation
+C: Salaire > inflation.
+E: Le pouvoir d'achat est la quantité de biens qu'un revenu permet d'acheter. Il dépend du revenu réel, c'est-à-dire du revenu corrigé de l'inflation.
+
+[ECO-238] economie-generale | intermediate
+Q: La balance des paiements enregistre :
+* L'ensemble des opérations économiques et financières d'un pays avec le reste du monde
+- Uniquement le budget de l'État
+- Les échanges entre régions d'un même pays
+- Les salaires du secteur public
+C: Toutes les opérations avec l'étranger.
+E: Elle comprend le compte courant (biens, services, revenus, transferts comme ceux des Marocains du monde) et le compte financier (investissements, prêts).
+
+[ECO-239] economie-generale | intermediate
+Q: Les investissements directs étrangers (IDE) correspondent :
+* Aux investissements par lesquels une entreprise étrangère crée ou contrôle durablement une entreprise dans le pays
+- Aux achats de produits importés
+- Aux aides humanitaires
+- Aux transferts des émigrés
+C: Prise de contrôle durable.
+E: Exemples : l'implantation des usines Renault à Tanger ou Stellantis à Kénitra. Les IDE apportent des capitaux, des emplois et des technologies.
+
+[ECO-240] management | intermediate
+Q: L'analyse SWOT d'une entreprise étudie :
+* Ses forces, faiblesses, opportunités et menaces
+- Ses salaires, ses objectifs, ses ventes et sa trésorerie
+- Uniquement ses concurrents
+- Uniquement ses clients
+C: Strengths, Weaknesses, Opportunities, Threats.
+E: Les forces et faiblesses relèvent de l'entreprise (diagnostic interne), les opportunités et menaces de son environnement (diagnostic externe).
+
+[ECO-241] management | intermediate
+Q: La gestion des ressources humaines concerne principalement :
+* Le recrutement, la formation, la rémunération et la gestion des carrières des salariés
+- L'achat des matières premières
+- La fixation des prix de vente
+- La comptabilité des stocks
+C: La gestion du personnel.
+E: La fonction RH vise à disposer des compétences nécessaires et à motiver les salariés, dans le respect du Code du travail.
+
+[ECO-242] entreprise | intermediate
+Q: Une PME se caractérise principalement par :
+* Un effectif et un chiffre d'affaires limités
+- Un capital entièrement public
+- Une implantation dans plusieurs pays
+- L'absence de salariés
+C: Petite ou moyenne taille.
+E: Les PME représentent la grande majorité des entreprises marocaines. Les seuils (effectif, chiffre d'affaires) dépendent des définitions officielles.
+
+[ECO-243] economie-generale | advanced
+Q: La loi de l'offre indique que, toutes choses égales par ailleurs, lorsque le prix d'un bien augmente :
+* Les producteurs souhaitent en offrir davantage
+- Les producteurs en offrent moins
+- La quantité demandée augmente
+- Le prix d'équilibre baisse
+C: L'offre augmente avec le prix.
+E: La courbe d'offre est croissante, celle de demande décroissante. Leur intersection détermine le prix et la quantité d'équilibre du marché.
+
+[ECO-244] economie-generale | advanced
+Q: Une situation de monopole existe lorsque :
+* Une seule entreprise offre un bien face à de nombreux acheteurs
+- De nombreuses entreprises se font concurrence
+- Il y a un seul acheteur face à de nombreux vendeurs
+- Les prix sont fixés par les consommateurs
+C: Un seul vendeur.
+E: Le monopole peut fixer ses prix plus librement. Un seul acheteur face à de nombreux vendeurs constitue un monopsone. Le Conseil de la concurrence veille au bon fonctionnement des marchés au Maroc.
+
+[ECO-245] economie-generale | intermediate
+Q: Le taux de change exprime :
+* Le prix d'une monnaie exprimé dans une autre monnaie
+- Le taux d'intérêt des banques
+- La variation des prix intérieurs
+- Le rapport entre exportations et importations
+C: Le prix d'une devise.
+E: Le dirham est rattaché à un panier composé de l'euro et du dollar, avec une bande de fluctuation élargie progressivement depuis 2018.
+
+[ECO-246] economie-generale | intermediate
+Q: Le taux de couverture des importations par les exportations se calcule ainsi :
+* $\frac{\text{exportations}}{\text{importations}} \times 100$
+- $\frac{\text{importations}}{\text{exportations}} \times 100$
+- $\text{exportations} - \text{importations}$
+- $\frac{\text{exportations}}{\text{PIB}} \times 100$
+C: Exportations / importations × 100.
+E: Un taux inférieur à 100 % indique un déficit commercial. Exemple : 60 milliards d'exportations pour 100 milliards d'importations donnent un taux de couverture de 60 %.
+
+[ECO-247] entreprise | intermediate
+Q: Le seuil de rentabilité est le chiffre d'affaires pour lequel :
+* Le résultat de l'entreprise est nul (ni bénéfice ni perte)
+- Le bénéfice est maximal
+- Les charges sont nulles
+- L'entreprise paie le plus d'impôts
+C: Résultat = 0.
+E: Au-delà de ce chiffre d'affaires, l'entreprise réalise des bénéfices ; en dessous, elle est en perte. Il dépend des charges fixes et de la marge sur coût variable.
+
+[ECO-248] entreprise | advanced
+Q: Une entreprise a 60 000 DH de charges fixes et un taux de marge sur coût variable de 30 %. Son seuil de rentabilité est :
+* 200 000 DH
+- 180 000 DH
+- 60 000 DH
+- 18 000 DH
+C: $\frac{60\,000}{0{,}30} = 200\,000$ DH.
+E: Au seuil, la marge sur coût variable couvre exactement les charges fixes : $0{,}30 \times CA = 60\,000$, d'où $CA = 200\,000$ DH.
+
+[ECO-249] economie-generale | beginner
+Q: La consommation finale des ménages correspond :
+* Aux achats de biens et services destinés à satisfaire directement leurs besoins
+- Aux achats de machines par les entreprises
+- Aux impôts payés
+- À l'épargne bancaire
+C: Les dépenses de consommation.
+E: Elle est la principale composante de la demande intérieure au Maroc, avec l'investissement (formation brute de capital fixe) et les dépenses publiques.
+
+[ECO-250] economie-generale | intermediate
+Q: Le taux d'activité d'une population désigne :
+* La part des actifs (occupés et chômeurs) dans la population en âge de travailler
+- La part des chômeurs dans la population active
+- La part des retraités
+- Le nombre d'emplois créés
+C: Actifs / population en âge de travailler.
+E: Il est particulièrement faible pour les femmes au Maroc. Le taux de chômage, lui, rapporte le nombre de chômeurs à la population active.

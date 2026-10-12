@@ -1271,3 +1271,508 @@ Q: On mélange 1 mol d'acide éthanoïque et 2 mol d'éthanol, avec un catalyseu
 - $50\ \%$
 C: $x_f \approx 0{,}85\ \mathrm{mol}$, rendement d'environ 85 %.
 E: À l'équilibre : $K = \frac{x^2}{(1 - x)(2 - x)} = 4$, soit $3x^2 - 12x + 8 = 0$, d'où $x = \frac{12 - \sqrt{48}}{6} \approx 0{,}85\ \mathrm{mol}$ (l'autre racine dépasse 1). Le rendement, rapporté à l'acide limitant, vaut environ 85 % : un excès d'alcool déplace l'équilibre et améliore le rendement par rapport aux 67 % du mélange équimolaire.
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions sur l'ensemble du programme de 2e année du baccalauréat
+# (sciences mathématiques, PC, SVT), dans l'esprit des concours médecine et ENSA.
+@source src-programme-bac
+
+[CHI-301] cinetique | beginner
+Q: Parmi ces méthodes, laquelle permet de suivre l'évolution temporelle d'une réaction qui produit des ions ?
+* La conductimétrie
+- La pesée de la verrerie
+- La mesure de la température ambiante
+- La chromatographie sur couche mince seulement
+- La mesure de la masse volumique de l'air
+C: La conductimétrie.
+E: Si la réaction fait apparaître ou disparaître des ions, la conductivité de la solution varie avec l'avancement. On peut aussi suivre une réaction par spectrophotométrie (espèce colorée), par mesure de pression (gaz) ou par titrages successifs après trempe.
+
+[CHI-302] cinetique | intermediate
+Q: On suit la formation du diiode (coloré) par spectrophotométrie. D'après la loi de Beer-Lambert, l'absorbance $A$ est :
+* Proportionnelle à la concentration du diiode
+- Inversement proportionnelle à la concentration
+- Indépendante de la concentration
+- Proportionnelle au volume de la solution
+- Proportionnelle à la température
+C: $A = k[\mathrm{I_2}]$.
+E: Pour une longueur d'onde et une cuve données, $A = \varepsilon\,\ell\,c$ : l'absorbance est proportionnelle à la concentration de l'espèce colorée, donc à l'avancement. On en déduit $x(t)$ à partir de $A(t)$.
+
+[CHI-303] cinetique | intermediate
+Q: Le temps de demi-réaction d'une transformation est de 6 min. Si l'on refait l'expérience à une température plus élevée, avec les mêmes concentrations initiales, le temps de demi-réaction :
+* Diminue
+- Augmente
+- Reste égal à 6 min
+- Devient nul
+- Double obligatoirement
+C: Il diminue.
+E: La température étant un facteur cinétique, la transformation est plus rapide et atteint plus vite la moitié de son avancement final. L'avancement final, lui, ne dépend que des quantités initiales (pour une transformation totale).
+
+[CHI-304] cinetique | intermediate
+Q: Pour la réaction $\mathrm{2H_2O_2 \to 2H_2O + O_2}$, la vitesse volumique peut s'écrire à partir de la concentration en eau oxygénée :
+* $v = -\frac{1}{2}\frac{d[\mathrm{H_2O_2}]}{dt}$
+- $v = \frac{d[\mathrm{H_2O_2}]}{dt}$
+- $v = -2\frac{d[\mathrm{H_2O_2}]}{dt}$
+- $v = \frac{1}{2}\frac{d[\mathrm{H_2O_2}]}{dt}$
+- $v = -\frac{d[\mathrm{O_2}]}{dt}$
+C: $v = -\frac{1}{2}\frac{d[\mathrm{H_2O_2}]}{dt}$.
+E: $[\mathrm{H_2O_2}] = \frac{n_0 - 2x}{V}$, donc $\frac{d[\mathrm{H_2O_2}]}{dt} = -\frac{2}{V}\frac{dx}{dt} = -2v$. La catalyse de cette réaction par les ions fer(III) ou par la catalase illustre la catalyse homogène et enzymatique.
+
+[CHI-305] cinetique | beginner
+Q: L'enzyme catalase, présente dans le sang, est un exemple de :
+* Catalyseur biologique (catalyse enzymatique)
+- Réactif limitant
+- Produit de la réaction
+- Inhibiteur
+- Indicateur coloré
+C: Un catalyseur enzymatique.
+E: Les enzymes sont des protéines qui catalysent de façon spécifique les réactions biologiques. La catalase accélère fortement la décomposition de l'eau oxygénée, toxique pour les cellules, en eau et dioxygène.
+
+[CHI-306] equilibre | intermediate
+Q: Pour la réaction $\mathrm{CH_3COOH + H_2O \rightleftharpoons CH_3COO^- + H_3O^+}$, l'expression du quotient de réaction est :
+* $Q_r = \frac{[\mathrm{CH_3COO^-}][\mathrm{H_3O^+}]}{[\mathrm{CH_3COOH}]}$
+- $Q_r = \frac{[\mathrm{CH_3COOH}][\mathrm{H_2O}]}{[\mathrm{CH_3COO^-}][\mathrm{H_3O^+}]}$
+- $Q_r = \frac{[\mathrm{CH_3COO^-}][\mathrm{H_3O^+}]}{[\mathrm{CH_3COOH}][\mathrm{H_2O}]}$
+- $Q_r = [\mathrm{CH_3COO^-}] + [\mathrm{H_3O^+}]$
+- $Q_r = \frac{[\mathrm{CH_3COOH}]}{[\mathrm{H_3O^+}]}$
+C: L'eau, solvant, n'apparaît pas.
+E: Le quotient de réaction est le rapport des concentrations des produits sur celles des réactifs, chacune élevée à la puissance de son coefficient. Le solvant (l'eau) et les solides n'y figurent pas. À l'équilibre, $Q_r = K_A$.
+
+[CHI-307] equilibre | intermediate
+Q: Le taux d'avancement final d'une transformation ne dépend :
+* Que de la constante d'équilibre et de l'état initial du système
+- Que du catalyseur utilisé
+- Que de la vitesse de la réaction
+- Que du temps écoulé
+- De rien, il vaut toujours 1
+C: De $K$ et des conditions initiales.
+E: Pour un acide faible par exemple, $\tau$ augmente quand la concentration diminue (dilution) et quand $K_A$ est grande. Un catalyseur ne change ni $K$ ni $\tau$ : il permet seulement d'atteindre l'équilibre plus vite.
+
+[CHI-308] acide-base | beginner
+Q: À 25 °C, une solution aqueuse est acide si :
+* Son pH est inférieur à 7
+- Son pH est supérieur à 7
+- Son pH est égal à 7
+- $[\mathrm{H_3O^+}] < [\mathrm{HO^-}]$
+- Elle ne contient pas d'ions $\mathrm{HO^-}$
+C: pH < 7.
+E: À 25 °C, $[\mathrm{H_3O^+}][\mathrm{HO^-}] = 10^{-14}$. Une solution est acide si $[\mathrm{H_3O^+}] > [\mathrm{HO^-}]$, soit pH < 7. Toute solution aqueuse contient à la fois des ions $\mathrm{H_3O^+}$ et $\mathrm{HO^-}$.
+
+[CHI-309] acide-base | intermediate
+Q: Une solution d'hydroxyde de sodium a une concentration $C = 1{,}0 \times 10^{-3}\ \mathrm{mol\,L^{-1}}$. Son pH à 25 °C vaut :
+* $11$
+- $3$
+- $7$
+- $13$
+- $10$
+C: pH = 14 + log C = 11.
+E: La soude est une base forte, totalement dissociée : $[\mathrm{HO^-}] = C = 10^{-3}$ mol/L, donc $[\mathrm{H_3O^+}] = \frac{10^{-14}}{10^{-3}} = 10^{-11}$ mol/L et pH = 11.
+
+[CHI-310] acide-base | intermediate
+Q: Le pH d'une solution d'acide chlorhydrique de concentration $C = 2{,}0 \times 10^{-2}\ \mathrm{mol\,L^{-1}}$ vaut environ ($\log 2 \approx 0{,}3$) :
+* $1{,}7$
+- $2{,}3$
+- $2{,}0$
+- $12{,}3$
+- $0{,}3$
+C: pH = −log(2,0 × 10⁻²) ≈ 1,7.
+E: L'acide chlorhydrique est un acide fort : $[\mathrm{H_3O^+}] = C$. Donc $\mathrm{pH} = -\log 2 - \log 10^{-2} = 2 - 0{,}3 = 1{,}7$.
+
+[CHI-311] acide-base | intermediate
+Q: L'ion hydrogénocarbonate $\mathrm{HCO_3^-}$ appartient aux couples $\mathrm{H_2CO_3/HCO_3^-}$ et $\mathrm{HCO_3^-/CO_3^{2-}}$. On dit que c'est :
+* Une espèce amphotère (ampholyte)
+- Un acide fort
+- Une base forte
+- Un oxydant
+- Un indicateur coloré
+C: Un ampholyte.
+E: Il peut céder un proton (il est l'acide du couple $\mathrm{HCO_3^-/CO_3^{2-}}$) ou en capter un (il est la base du couple $\mathrm{H_2CO_3/HCO_3^-}$). L'eau est aussi un ampholyte ($\mathrm{H_3O^+/H_2O}$ et $\mathrm{H_2O/HO^-}$). Ce couple joue un rôle de tampon dans le sang.
+
+[CHI-312] acide-base | intermediate
+Q: Pour le couple $\mathrm{NH_4^+/NH_3}$ ($\mathrm{p}K_A = 9{,}2$), dans une solution de pH = 11, l'espèce prédominante est :
+* $\mathrm{NH_3}$
+- $\mathrm{NH_4^+}$
+- Les deux en concentrations égales
+- $\mathrm{H_3O^+}$
+- On ne peut pas savoir
+C: $\mathrm{NH_3}$ car pH > pKa.
+E: Quand $\mathrm{pH} > \mathrm{p}K_A$, la forme basique prédomine. Ici $\frac{[\mathrm{NH_3}]}{[\mathrm{NH_4^+}]} = 10^{11 - 9{,}2} = 10^{1{,}8} \approx 63$.
+
+[CHI-313] acide-base | intermediate
+Q: Le bleu de bromothymol a une zone de virage de pH 6,0 à 7,6. Il convient pour repérer l'équivalence du dosage :
+* D'un acide fort par une base forte
+- D'un acide faible ($\mathrm{p}K_A = 4{,}8$) par une base forte, équivalence à pH 8,7
+- D'une base faible par un acide fort, équivalence à pH 5,2
+- De tous les dosages acide-base
+- D'aucun dosage acide-base
+C: Acide fort / base forte (pH équivalence = 7).
+E: Un indicateur convient si sa zone de virage contient le pH à l'équivalence. Pour un acide fort dosé par une base forte, $\mathrm{pH_E} = 7$ à 25 °C. Pour l'acide éthanoïque dosé par la soude, on choisit plutôt la phénolphtaléine (8,2 – 10).
+
+[CHI-314] acide-base | advanced
+Q: On dose $20{,}0\ \mathrm{mL}$ d'une solution d'acide éthanoïque par de la soude à $0{,}10\ \mathrm{mol\,L^{-1}}$. L'équivalence est atteinte pour $V_E = 16{,}0\ \mathrm{mL}$. Au point de demi-équivalence, pH = 4,8. La concentration de l'acide et son $\mathrm{p}K_A$ valent :
+* $C_A = 0{,}080\ \mathrm{mol\,L^{-1}}$ et $\mathrm{p}K_A = 4{,}8$
+- $C_A = 0{,}125\ \mathrm{mol\,L^{-1}}$ et $\mathrm{p}K_A = 4{,}8$
+- $C_A = 0{,}080\ \mathrm{mol\,L^{-1}}$ et $\mathrm{p}K_A = 9{,}6$
+- $C_A = 0{,}040\ \mathrm{mol\,L^{-1}}$ et $\mathrm{p}K_A = 2{,}4$
+- $C_A = 0{,}10\ \mathrm{mol\,L^{-1}}$ et $\mathrm{p}K_A = 4{,}8$
+C: $C_A = \frac{C_BV_E}{V_A} = 0{,}080$ ; pKa = pH à la demi-équivalence.
+E: À l'équivalence, $C_AV_A = C_BV_E$, donc $C_A = \frac{0{,}10 \times 16{,}0}{20{,}0} = 0{,}080\ \mathrm{mol\,L^{-1}}$. À la demi-équivalence ($V = 8{,}0$ mL), $[\mathrm{CH_3COOH}] = [\mathrm{CH_3COO^-}]$ et pH = pKa = 4,8.
+
+[CHI-315] acide-base | intermediate
+Q: La réaction de dosage d'un acide faible AH par la soude s'écrit $\mathrm{AH + HO^- \to A^- + H_2O}$. Sa constante d'équilibre vaut :
+* $K = \frac{K_A}{K_e}$
+- $K = K_A \times K_e$
+- $K = \frac{K_e}{K_A}$
+- $K = K_A$
+- $K = \frac{1}{K_A}$
+C: $K = \frac{K_A}{K_e} = 10^{14 - \mathrm{p}K_A}$.
+E: En multipliant numérateur et dénominateur par $[\mathrm{H_3O^+}]$ : $K = \frac{[\mathrm{A^-}]}{[\mathrm{AH}][\mathrm{HO^-}]} = \frac{K_A}{K_e}$. Pour $\mathrm{p}K_A = 4{,}8$, $K = 10^{9{,}2}$ : la réaction est totale, condition nécessaire pour un dosage.
+
+[CHI-316] oxydoreduction | beginner
+Q: Dans le couple $\mathrm{Cu^{2+}/Cu}$, l'oxydant est :
+* L'ion $\mathrm{Cu^{2+}}$
+- Le métal Cu
+- L'électron
+- L'ion $\mathrm{H^+}$
+- Les deux espèces à la fois
+C: $\mathrm{Cu^{2+}}$.
+E: Un oxydant capte des électrons : $\mathrm{Cu^{2+} + 2e^- \rightleftharpoons Cu}$. Dans un couple, on écrit toujours l'oxydant en premier (Ox/Red).
+
+[CHI-317] piles | intermediate
+Q: Dans une pile Daniell (zinc-cuivre), le pont salin permet :
+* D'assurer la circulation du courant entre les deux compartiments et leur électroneutralité
+- De faire passer les électrons d'une solution à l'autre
+- De mélanger les deux solutions
+- D'augmenter la tension de la pile
+- De produire des ions $\mathrm{Cu^{2+}}$
+C: Fermer le circuit par migration d'ions.
+E: Le pont salin contient un électrolyte (par exemple $\mathrm{K^+ + NO_3^-}$) : ses ions migrent pour compenser l'apparition des ions $\mathrm{Zn^{2+}}$ et la disparition des ions $\mathrm{Cu^{2+}}$. Les électrons, eux, circulent uniquement dans les fils et les électrodes.
+
+[CHI-318] piles | intermediate
+Q: Dans la pile $\mathrm{Zn | Zn^{2+} || Cu^{2+} | Cu}$, en fonctionnement :
+* Le zinc est oxydé à l'anode (pôle −) et les ions $\mathrm{Cu^{2+}}$ sont réduits à la cathode (pôle +)
+- Le cuivre est oxydé au pôle +
+- Les ions $\mathrm{Zn^{2+}}$ sont réduits
+- Les électrons vont du cuivre vers le zinc dans le circuit extérieur
+- La masse de l'électrode de cuivre diminue
+C: Zn → Zn²⁺ (−) ; Cu²⁺ → Cu (+).
+E: L'électrode de zinc s'use (sa masse diminue) et du cuivre se dépose sur l'électrode de cuivre. Les électrons circulent dans le circuit extérieur du zinc (pôle −) vers le cuivre (pôle +).
+
+[CHI-319] piles | advanced
+Q: Une pile débite un courant de $0{,}20\ \mathrm{A}$ pendant $1\ \mathrm{h}\ 20\ \mathrm{min}$. La quantité d'électricité débitée et la quantité de matière d'électrons échangés valent ($F = 96\,500\ \mathrm{C\,mol^{-1}}$) :
+* $Q = 960\ \mathrm{C}$ et $n(e^-) \approx 1{,}0 \times 10^{-2}\ \mathrm{mol}$
+- $Q = 16\ \mathrm{C}$ et $n(e^-) \approx 1{,}7 \times 10^{-4}\ \mathrm{mol}$
+- $Q = 960\ \mathrm{C}$ et $n(e^-) \approx 9{,}3 \times 10^{4}\ \mathrm{mol}$
+- $Q = 4\,800\ \mathrm{C}$ et $n(e^-) = 5{,}0 \times 10^{-2}\ \mathrm{mol}$
+- $Q = 0{,}27\ \mathrm{C}$ et $n(e^-) \approx 2{,}8 \times 10^{-6}\ \mathrm{mol}$
+C: $Q = It = 960$ C ; $n = \frac{Q}{F} \approx 0{,}010$ mol.
+E: $\Delta t = 80$ min $= 4\,800$ s, donc $Q = 0{,}20 \times 4\,800 = 960$ C et $n(e^-) = \frac{960}{96\,500} \approx 9{,}9 \times 10^{-3}$ mol. Le temps doit être exprimé en secondes.
+
+[CHI-320] electrolyse | intermediate
+Q: Lors de la recharge d'un accumulateur au plomb :
+* Le système évolue dans le sens inverse de son sens spontané : c'est une électrolyse
+- Le système évolue spontanément
+- Aucune réaction chimique n'a lieu
+- L'accumulateur fournit de l'énergie électrique
+- La constante d'équilibre change de valeur
+C: Une transformation forcée.
+E: Pendant la décharge, l'accumulateur fonctionne comme une pile (transformation spontanée). Pendant la charge, un générateur extérieur impose le sens inverse : il convertit de l'énergie électrique en énergie chimique.
+
+[CHI-321] electrolyse | intermediate
+Q: L'électrolyse de l'eau (légèrement acidifiée) produit :
+* Du dihydrogène à la cathode et du dioxygène à l'anode, en volumes de rapport 2/1
+- Du dioxygène à la cathode et du dihydrogène à l'anode
+- Du dihydrogène et du dioxygène en volumes égaux
+- Uniquement du dihydrogène
+- De l'eau oxygénée
+C: H₂ (cathode) : O₂ (anode) = 2 : 1.
+E: Bilan : $\mathrm{2H_2O \to 2H_2 + O_2}$. La réduction ($\mathrm{2H^+ + 2e^- \to H_2}$) a lieu à la cathode, l'oxydation ($\mathrm{2H_2O \to O_2 + 4H^+ + 4e^-}$) à l'anode. Pour 4 électrons, on obtient 2 H₂ pour 1 O₂.
+
+[CHI-322] esterification | beginner
+Q: L'estérification est une réaction :
+* Lente, limitée et athermique
+- Rapide et totale
+- Lente et totale
+- Rapide et fortement exothermique
+- Instantanée en l'absence de catalyseur
+C: Lente, limitée, athermique.
+E: L'estérification (acide + alcool ⇌ ester + eau) et l'hydrolyse inverse conduisent au même état d'équilibre. La température et un catalyseur (ions $\mathrm{H^+}$) accélèrent la réaction sans modifier le rendement, car la réaction est pratiquement athermique.
+
+[CHI-323] esterification | intermediate
+Q: Pour augmenter le rendement d'une estérification, on peut :
+* Éliminer l'eau au fur et à mesure qu'elle se forme
+- Ajouter un catalyseur
+- Chauffer davantage
+- Ajouter de l'eau
+- Diminuer la quantité d'alcool
+C: Déplacer l'équilibre en retirant un produit.
+E: Retirer l'eau (ou l'ester, par distillation) ou utiliser un réactif en excès fait évoluer le système dans le sens direct. Le catalyseur et le chauffage n'agissent que sur la vitesse.
+
+[CHI-324] esterification | intermediate
+Q: La saponification d'un ester par la soude est :
+* Rapide à chaud et totale, et produit un ion carboxylate et un alcool
+- Lente et limitée
+- Une réaction d'estérification
+- Une réaction qui produit de l'eau et un ester
+- Une réaction d'oxydoréduction
+C: Totale : ester + HO⁻ → RCOO⁻ + R'OH.
+E: L'ion hydroxyde réagit avec l'ester pour donner l'ion carboxylate, qui ne réagit pas avec l'alcool : la réaction est totale. Avec des triglycérides (corps gras), on obtient du glycérol et des savons.
+
+[CHI-325] chimie-organique | beginner
+Q: Le groupe caractéristique d'un ester est :
+* $\mathrm{{-}COO{-}}$ lié à deux chaînes carbonées
+- $\mathrm{{-}COOH}$
+- $\mathrm{{-}OH}$
+- $\mathrm{{-}CHO}$
+- $\mathrm{{-}NH_2}$
+C: $\mathrm{R{-}COO{-}R'}$.
+E: $\mathrm{{-}COOH}$ est le groupe carboxyle (acides), $\mathrm{{-}OH}$ le groupe hydroxyle (alcools), $\mathrm{{-}CHO}$ le groupe des aldéhydes et $\mathrm{{-}NH_2}$ celui des amines. Les esters ont souvent une odeur fruitée.
+
+[CHI-326] quantite-matiere | beginner
+Q: La masse molaire du dioxyde de carbone $\mathrm{CO_2}$ vaut ($M(\mathrm{C}) = 12$ ; $M(\mathrm{O}) = 16\ \mathrm{g\,mol^{-1}}$) :
+* $44\ \mathrm{g\,mol^{-1}}$
+- $28\ \mathrm{g\,mol^{-1}}$
+- $32\ \mathrm{g\,mol^{-1}}$
+- $60\ \mathrm{g\,mol^{-1}}$
+- $22\ \mathrm{g\,mol^{-1}}$
+C: $12 + 2 \times 16 = 44\ \mathrm{g\,mol^{-1}}$.
+E: La masse molaire moléculaire est la somme des masses molaires atomiques de tous les atomes de la molécule.
+
+[CHI-327] quantite-matiere | intermediate
+Q: Dans les conditions où le volume molaire vaut $24\ \mathrm{L\,mol^{-1}}$, un volume de $1{,}2\ \mathrm{L}$ de dioxygène contient :
+* $0{,}050\ \mathrm{mol}$
+- $0{,}50\ \mathrm{mol}$
+- $28{,}8\ \mathrm{mol}$
+- $20\ \mathrm{mol}$
+- $0{,}020\ \mathrm{mol}$
+C: $n = \frac{V}{V_m} = 0{,}050\ \mathrm{mol}$.
+E: $n = \frac{1{,}2}{24} = 0{,}050$ mol. Le volume molaire d'un gaz ne dépend que de la température et de la pression, pas de la nature du gaz.
+
+[CHI-328] quantite-matiere | intermediate
+Q: On dilue 50 fois une solution mère à $0{,}50\ \mathrm{mol\,L^{-1}}$. La concentration de la solution fille vaut :
+* $1{,}0 \times 10^{-2}\ \mathrm{mol\,L^{-1}}$
+- $25\ \mathrm{mol\,L^{-1}}$
+- $0{,}10\ \mathrm{mol\,L^{-1}}$
+- $1{,}0 \times 10^{-3}\ \mathrm{mol\,L^{-1}}$
+- $0{,}45\ \mathrm{mol\,L^{-1}}$
+C: $C_f = \frac{C_m}{F} = 0{,}010\ \mathrm{mol\,L^{-1}}$.
+E: Le facteur de dilution $F = \frac{C_m}{C_f} = \frac{V_f}{V_m}$. Diluer 50 fois divise la concentration par 50 : $\frac{0{,}50}{50} = 0{,}010\ \mathrm{mol\,L^{-1}}$.
+
+[CHI-329] conductimetrie | intermediate
+Q: La conductivité d'une solution ionique diluée :
+* Augmente avec la concentration des ions et dépend de leur nature
+- Ne dépend que du volume de la solution
+- Est la même pour toutes les solutions de même concentration
+- Diminue quand la concentration augmente
+- Ne dépend pas de la température
+C: $\sigma = \sum \lambda_i[X_i]$.
+E: Chaque ion contribue selon sa conductivité molaire ionique $\lambda_i$ et sa concentration. Les ions $\mathrm{H_3O^+}$ et $\mathrm{HO^-}$ sont particulièrement conducteurs. La conductivité augmente aussi avec la température.
+
+[CHI-330] conductimetrie | advanced
+Q: Une solution de chlorure de sodium à $2{,}0 \times 10^{-3}\ \mathrm{mol\,L^{-1}}$ ($\lambda(\mathrm{Na^+}) = 5{,}0$ et $\lambda(\mathrm{Cl^-}) = 7{,}6\ \mathrm{mS\,m^2\,mol^{-1}}$) a une conductivité de :
+* $25{,}2\ \mathrm{mS\,m^{-1}}$
+- $2{,}52\ \mathrm{mS\,m^{-1}}$
+- $12{,}6\ \mathrm{mS\,m^{-1}}$
+- $0{,}0252\ \mathrm{mS\,m^{-1}}$
+- $252\ \mathrm{mS\,m^{-1}}$
+C: $\sigma = (5{,}0 + 7{,}6) \times 2{,}0 = 25{,}2\ \mathrm{mS\,m^{-1}}$.
+E: La concentration doit être en $\mathrm{mol\,m^{-3}}$ : $2{,}0 \times 10^{-3}\ \mathrm{mol\,L^{-1}} = 2{,}0\ \mathrm{mol\,m^{-3}}$. Donc $\sigma = 12{,}6 \times 2{,}0 = 25{,}2\ \mathrm{mS\,m^{-1}}$.
+
+[CHI-331] equilibre | intermediate
+Q: Pour un système chimique, si le quotient de réaction initial $Q_{r,i}$ est supérieur à la constante d'équilibre $K$ :
+* Le système évolue spontanément dans le sens inverse
+- Le système évolue spontanément dans le sens direct
+- Le système est à l'équilibre
+- La réaction est totale dans le sens direct
+- Le système ne peut pas évoluer
+C: $Q_{r,i} > K$ : sens inverse.
+E: Critère d'évolution spontanée : le système évolue de façon que $Q_r$ tende vers $K$. Si $Q_{r,i} > K$, $Q_r$ doit diminuer : les produits réagissent pour reformer les réactifs.
+
+[CHI-332] acide-base | intermediate
+Q: Le produit ionique de l'eau, à 25 °C, est :
+* $K_e = [\mathrm{H_3O^+}][\mathrm{HO^-}] = 1{,}0 \times 10^{-14}$
+- $K_e = [\mathrm{H_3O^+}] + [\mathrm{HO^-}] = 14$
+- $K_e = \frac{[\mathrm{H_3O^+}]}{[\mathrm{HO^-}]} = 1$
+- $K_e = 10^{-7}$
+- $K_e = 7$
+C: $K_e = 10^{-14}$, $\mathrm{p}K_e = 14$.
+E: L'autoprotolyse de l'eau ($\mathrm{2H_2O \rightleftharpoons H_3O^+ + HO^-}$) a pour constante $K_e = 10^{-14}$ à 25 °C. Dans l'eau pure, $[\mathrm{H_3O^+}] = [\mathrm{HO^-}] = 10^{-7}\ \mathrm{mol\,L^{-1}}$.
+
+[CHI-333] acide-base | intermediate
+Q: Plus le $\mathrm{p}K_A$ d'un couple acide/base est petit :
+* Plus l'acide du couple est fort (plus il se dissocie dans l'eau)
+- Plus l'acide est faible
+- Plus la base est forte
+- Plus le pH de la solution est élevé
+- Plus la solution est diluée
+C: pKa petit = acide plus fort.
+E: $\mathrm{p}K_A = -\log K_A$ : un petit $\mathrm{p}K_A$ correspond à une grande constante d'acidité, donc à un acide qui réagit davantage avec l'eau. Sa base conjuguée est alors plus faible.
+
+[CHI-334] acide-base | advanced
+Q: Une solution tampon a un pH qui varie peu lorsque :
+* On ajoute de petites quantités d'acide ou de base, ou qu'on la dilue modérément
+- On ajoute une grande quantité d'acide fort
+- On la chauffe fortement
+- On y ajoute du sel
+- On l'évapore complètement
+C: Le pH résiste aux petits ajouts.
+E: Une solution tampon contient un acide faible et sa base conjuguée en quantités voisines, pour un pH proche du $\mathrm{p}K_A$. Le sang est tamponné vers pH 7,4, notamment par le couple $\mathrm{H_2CO_3/HCO_3^-}$.
+
+[CHI-335] oxydoreduction | intermediate
+Q: L'équation de la réaction entre les ions permanganate et les ions fer(II) en milieu acide est :
+* $\mathrm{MnO_4^- + 5Fe^{2+} + 8H^+ \to Mn^{2+} + 5Fe^{3+} + 4H_2O}$
+- $\mathrm{MnO_4^- + Fe^{2+} + 8H^+ \to Mn^{2+} + Fe^{3+} + 4H_2O}$
+- $\mathrm{MnO_4^- + 5Fe^{3+} + 8H^+ \to Mn^{2+} + 5Fe^{2+} + 4H_2O}$
+- $\mathrm{MnO_4^- + 5Fe^{2+} \to Mn^{2+} + 5Fe^{3+}}$
+- $\mathrm{2MnO_4^- + 5Fe^{2+} + 16H^+ \to 2Mn^{2+} + 5Fe^{3+} + 8H_2O}$
+C: 1 MnO₄⁻ pour 5 Fe²⁺.
+E: Demi-équations : $\mathrm{MnO_4^- + 8H^+ + 5e^- \to Mn^{2+} + 4H_2O}$ et $\mathrm{Fe^{2+} \to Fe^{3+} + e^-}$ (×5). On vérifie la conservation des charges : $-1 + 10 + 8 = +17$ à gauche, $2 + 15 = +17$ à droite.
+
+[CHI-336] oxydoreduction | intermediate
+Q: Le nombre d'oxydation du manganèse dans l'ion permanganate $\mathrm{MnO_4^-}$ est :
+* $+7$
+- $+2$
+- $+4$
+- $-1$
+- $+8$
+C: +VII.
+E: L'oxygène vaut −II : $x + 4 \times (-2) = -1$, donc $x = +7$. Lors de la réduction en $\mathrm{Mn^{2+}}$, le nombre d'oxydation passe de +VII à +II : 5 électrons sont captés.
+
+[CHI-337] piles | beginner
+Q: Une pile usée :
+* A atteint l'état d'équilibre : son quotient de réaction est égal à sa constante d'équilibre
+- Contient encore tous ses réactifs
+- A un quotient de réaction nul
+- Fonctionne en sens inverse
+- A une constante d'équilibre nulle
+C: $Q_r = K$, la pile ne débite plus.
+E: Une pile débite tant que le système n'est pas à l'équilibre ($Q_r < K$). Quand $Q_r = K$, la tension à vide devient nulle : la pile est « usée », souvent parce qu'un réactif a été entièrement consommé.
+
+[CHI-338] chimie-organique | intermediate
+Q: L'acide 2-méthylpropanoïque a pour formule semi-développée :
+* $\mathrm{CH_3{-}CH(CH_3){-}COOH}$
+- $\mathrm{CH_3{-}CH_2{-}CH_2{-}COOH}$
+- $\mathrm{CH_3{-}CH_2{-}COOH}$
+- $\mathrm{(CH_3)_3C{-}COOH}$
+- $\mathrm{CH_3{-}CH(CH_3){-}CH_2OH}$
+C: $\mathrm{(CH_3)_2CH{-}COOH}$.
+E: La chaîne principale compte 3 carbones (propanoïque), carbone du groupe carboxyle numéroté 1, avec un groupe méthyle sur le carbone 2. C'est un isomère de l'acide butanoïque ($\mathrm{C_4H_8O_2}$).
+
+[CHI-339] chimie-organique | intermediate
+Q: L'anhydride éthanoïque a pour formule :
+* $\mathrm{CH_3{-}CO{-}O{-}CO{-}CH_3}$
+- $\mathrm{CH_3{-}COOH}$
+- $\mathrm{CH_3{-}COO{-}CH_3}$
+- $\mathrm{CH_3{-}COCl}$
+- $\mathrm{CH_3{-}CO{-}CH_3}$
+C: Deux groupes acétyle reliés par un oxygène.
+E: Un anhydride d'acide résulte formellement de la déshydratation de deux molécules d'acide. Avec un alcool, il donne un ester et un acide carboxylique, de façon rapide et totale.
+
+[CHI-340] esterification | advanced
+Q: On fait réagir 0,40 mol d'anhydride éthanoïque avec 0,30 mol d'éthanol. On obtient 0,24 mol d'éthanoate d'éthyle. Le rendement de la synthèse vaut :
+* 80 %
+- 60 %
+- 67 %
+- 100 %
+- 24 %
+C: $r = \frac{0{,}24}{0{,}30} = 80\ \%$.
+E: La réaction est totale ; le réactif limitant est l'éthanol (0,30 mol < 0,40 mol), donc $n_{max}(\mathrm{ester}) = 0{,}30$ mol. Le rendement vaut $\frac{0{,}24}{0{,}30} = 0{,}80$ ; les pertes sont dues aux manipulations (extraction, purification).
+
+[CHI-341] esterification | intermediate
+Q: Le savon est obtenu par :
+* La saponification d'un corps gras (triglycéride) par une base forte
+- L'estérification d'un alcool par un acide
+- L'hydrolyse acide d'un ester
+- L'électrolyse de l'eau salée
+- L'oxydation d'un alcool
+C: Saponification des triglycérides.
+E: Un triglycéride (triester du glycérol) réagit avec la soude ou la potasse : on obtient du glycérol et des ions carboxylate à longue chaîne, qui constituent le savon. Leur tête hydrophile et leur queue hydrophobe expliquent le pouvoir lavant.
+
+[CHI-342] cinetique | intermediate
+Q: Pour une transformation lente suivie au cours du temps, la courbe $x(t)$ :
+* Croît puis tend vers une valeur limite $x_f$, avec une pente qui diminue
+- Croît linéairement sans limite
+- Décroît au cours du temps
+- Reste constante
+- Croît de plus en plus vite
+C: Croissante, concave, tend vers $x_f$.
+E: La pente de la tangente, proportionnelle à la vitesse volumique, diminue car les réactifs s'épuisent. La courbe tend vers l'avancement final : $x_{max}$ pour une transformation totale, $x_f < x_{max}$ sinon.
+
+[CHI-343] acide-base | intermediate
+Q: On mélange des volumes égaux de solutions d'acide chlorhydrique et de soude de même concentration. Le pH du mélange à 25 °C est :
+* $7$
+- $1$
+- $14$
+- $3{,}5$
+- $10{,}5$
+C: pH = 7 (mélange stœchiométrique).
+E: Les quantités d'ions $\mathrm{H_3O^+}$ et $\mathrm{HO^-}$ sont égales : la réaction $\mathrm{H_3O^+ + HO^- \to 2H_2O}$, totale, les consomme entièrement. Il reste des ions $\mathrm{Na^+}$ et $\mathrm{Cl^-}$ spectateurs : la solution est neutre.
+
+[CHI-344] acide-base | advanced
+Q: La constante d'équilibre de la réaction entre l'acide méthanoïque ($\mathrm{p}K_{A1} = 3{,}8$) et l'ion éthanoate ($\mathrm{p}K_{A2} = 4{,}8$) vaut :
+* $10$
+- $0{,}1$
+- $10^{8{,}6}$
+- $1$
+- $10^{-8{,}6}$
+C: $K = 10^{\mathrm{p}K_{A2} - \mathrm{p}K_{A1}} = 10^{1}$.
+E: $\mathrm{HCOOH + CH_3COO^- \rightleftharpoons HCOO^- + CH_3COOH}$ : $K = \frac{K_{A1}}{K_{A2}} = 10^{4{,}8 - 3{,}8} = 10$. La réaction n'est pas totale ($K < 10^{4}$) : il faut calculer l'état d'équilibre.
+
+[CHI-345] electrolyse | advanced
+Q: Pour déposer $0{,}59\ \mathrm{g}$ de nickel ($\mathrm{Ni^{2+} + 2e^- \to Ni}$ ; $M(\mathrm{Ni}) = 59\ \mathrm{g\,mol^{-1}}$) par électrolyse sous $1{,}0\ \mathrm{A}$, il faut une durée d'environ ($F = 96\,500\ \mathrm{C\,mol^{-1}}$) :
+* $32\ \mathrm{min}$
+- $16\ \mathrm{min}$
+- $1\ \mathrm{h}\ 04\ \mathrm{min}$
+- $3{,}2\ \mathrm{min}$
+- $5\ \mathrm{h}\ 22\ \mathrm{min}$
+C: $\Delta t = \frac{2nF}{I} = 1\,930\ \mathrm{s} \approx 32\ \mathrm{min}$.
+E: $n(\mathrm{Ni}) = \frac{0{,}59}{59} = 0{,}010$ mol, donc $n(e^-) = 0{,}020$ mol et $Q = 0{,}020 \times 96\,500 = 1\,930$ C. Avec $I = 1{,}0$ A, $\Delta t = 1\,930$ s ≈ 32 min. Oublier le facteur 2 donne 16 min.
+
+[CHI-346] general | beginner
+Q: Quel matériel faut-il pour prélever avec précision $10{,}0\ \mathrm{mL}$ d'une solution ?
+* Une pipette jaugée de 10 mL munie d'une propipette
+- Un bécher de 100 mL
+- Une éprouvette de 250 mL
+- Un erlenmeyer
+- Un entonnoir
+C: La pipette jaugée.
+E: La pipette jaugée et la fiole jaugée sont des instruments de précision. Le bécher et l'erlenmeyer servent à contenir ou mélanger ; l'éprouvette graduée donne une mesure approximative.
+
+[CHI-347] cinetique | beginner
+Q: Le facteur cinétique « surface de contact » explique pourquoi :
+* Un solide en poudre réagit plus vite qu'un solide en gros morceaux
+- Une réaction est plus rapide à basse température
+- Un catalyseur n'est pas consommé
+- Une réaction est totale
+- Les gaz réagissent lentement
+C: Plus la surface de contact est grande, plus la réaction est rapide.
+E: Diviser un solide augmente la surface exposée aux autres réactifs, donc le nombre de chocs efficaces par unité de temps. C'est pour cela que la poudre de zinc réagit plus vite avec l'acide qu'une grenaille.
+
+[CHI-348] acide-base | beginner
+Q: Le pH d'une solution d'acide faible augmente lorsqu'on la dilue :
+* Vrai, mais de moins d'une unité pour une dilution par 10
+- Faux, il diminue
+- Faux, il reste constant
+- Vrai, d'exactement une unité par dilution par 10
+- Vrai, de deux unités par dilution par 10
+C: Il augmente de moins d'une unité.
+E: La dilution diminue $[\mathrm{H_3O^+}]$, mais elle augmente aussi le taux d'avancement de l'acide faible, ce qui compense en partie. Pour un acide fort, une dilution par 10 augmente le pH d'exactement une unité.
+
+[CHI-349] oxydoreduction | intermediate
+Q: Un réducteur est une espèce chimique capable de :
+* Céder un ou plusieurs électrons
+- Capter un ou plusieurs électrons
+- Céder un proton
+- Capter un proton
+- Accélérer une réaction
+C: Céder des électrons.
+E: Dans une réaction d'oxydoréduction, le réducteur d'un couple cède des électrons à l'oxydant d'un autre couple. Céder ou capter des protons relève des réactions acide-base.
+
+[CHI-350] equilibre | advanced
+Q: On mélange 1,0 mol d'acide éthanoïque, 1,0 mol d'éthanol, 1,0 mol d'éthanoate d'éthyle et 1,0 mol d'eau ($K = 4$ pour l'estérification). Le système :
+* Évolue dans le sens de l'estérification, car $Q_{r,i} = 1 < K$
+- Évolue dans le sens de l'hydrolyse
+- Est à l'équilibre
+- Ne peut pas évoluer sans catalyseur
+- Évolue jusqu'à disparition totale de l'acide
+C: $Q_{r,i} = 1 < 4$ : sens direct.
+E: $Q_{r,i} = \frac{n(\mathrm{ester})\,n(\mathrm{eau})}{n(\mathrm{acide})\,n(\mathrm{alcool})} = 1$. Comme $Q_{r,i} < K$, l'estérification progresse jusqu'à l'équilibre (ici l'eau n'est pas le solvant et figure dans le quotient). La transformation reste limitée.

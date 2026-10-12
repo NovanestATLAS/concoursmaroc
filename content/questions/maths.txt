@@ -2044,3 +2044,508 @@ Q: Le système $2x + 3y = 13$ et $x - y = -1$ a pour solution :
 - $x = 5$ et $y = 1$
 C: $(2 ; 3)$.
 E: De la seconde équation, $x = y - 1$. En remplaçant : $2(y - 1) + 3y = 13$, soit $5y = 15$ et $y = 3$, puis $x = 2$. Vérification : $4 + 9 = 13$ et $2 - 3 = -1$.
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions sur l'ensemble du programme de 2e année du baccalauréat
+# (sciences mathématiques, PC, SVT), dans l'esprit des concours médecine et ENSA.
+@source src-programme-bac
+
+[MAT-301] limites | beginner
+Q: La limite $\lim_{x \to +\infty} \frac{2x^3 - x + 5}{4x^3 + x^2}$ vaut :
+* $\frac{1}{2}$
+- $2$
+- $0$
+- $+\infty$
+- $\frac{5}{4}$
+C: $\frac{1}{2}$.
+E: En $+\infty$, une fraction rationnelle a la même limite que le quotient de ses termes de plus haut degré : $\frac{2x^3}{4x^3} = \frac{1}{2}$.
+
+[MAT-302] limites | intermediate
+Q: La limite $\lim_{x \to 0} \frac{\sin 5x}{\tan 2x}$ vaut :
+* $\frac{5}{2}$
+- $\frac{2}{5}$
+- $1$
+- $0$
+- $10$
+C: $\frac{5}{2}$.
+E: $\frac{\sin 5x}{\tan 2x} = \frac{\sin 5x}{5x} \times \frac{2x}{\tan 2x} \times \frac{5}{2}$, et $\lim_{u \to 0}\frac{\sin u}{u} = \lim_{u \to 0}\frac{\tan u}{u} = 1$.
+
+[MAT-303] limites | intermediate
+Q: La limite $\lim_{x \to 0} \frac{1 - \cos x}{x^2}$ vaut :
+* $\frac{1}{2}$
+- $0$
+- $1$
+- $2$
+- $+\infty$
+C: $\frac{1}{2}$.
+E: $1 - \cos x = 2\sin^2\frac{x}{2}$, donc $\frac{1 - \cos x}{x^2} = \frac{1}{2}\left(\frac{\sin(x/2)}{x/2}\right)^2 \to \frac{1}{2}$.
+
+[MAT-304] continuite | intermediate
+Q: L'équation $x^3 + x - 1 = 0$ admet dans $\mathbb{R}$ :
+* Une unique solution, comprise entre 0 et 1
+- Trois solutions
+- Aucune solution
+- Deux solutions
+- Une unique solution, comprise entre 1 et 2
+C: Une unique solution $\alpha \in\ ]0 ; 1[$.
+E: $f(x) = x^3 + x - 1$ est continue et strictement croissante ($f'(x) = 3x^2 + 1 > 0$). $f(0) = -1 < 0$ et $f(1) = 1 > 0$ : d'après le théorème des valeurs intermédiaires, l'équation admet une unique solution dans $]0 ; 1[$.
+
+[MAT-305] fonctions | intermediate
+Q: Dans le programme de 2e année bac, la fonction racine cubique $x \mapsto \sqrt[3]{x}$ est définie comme la réciproque de $x \mapsto x^3$ sur l'intervalle :
+* $[0 ; +\infty[$
+- $]0 ; +\infty[$
+- $\mathbb{R}^*$
+- $]-\infty ; 0]$
+- $[1 ; +\infty[$
+C: $\sqrt[n]{x}$ est définie sur $[0 ; +\infty[$.
+E: La fonction $x \mapsto x^n$ est continue et strictement croissante sur $[0 ; +\infty[$ : elle y admet une fonction réciproque, la racine $n$-ième, définie sur $[0 ; +\infty[$. Elle vérifie $\left(\sqrt[n]{x}\right)^n = x$ et $\sqrt[n]{x} = x^{\frac{1}{n}}$, et $\sqrt[3]{8} = 2$.
+
+[MAT-306] fonctions | intermediate
+Q: Pour $x > 0$, l'expression $\frac{\sqrt[3]{x^2}\,\sqrt{x}}{\sqrt[6]{x}}$ est égale à :
+* $x$
+- $x^2$
+- $\sqrt{x}$
+- $x^{\frac{5}{6}}$
+- $1$
+C: $x^{\frac{2}{3} + \frac{1}{2} - \frac{1}{6}} = x^{1}$.
+E: On écrit chaque racine sous forme de puissance : $x^{\frac{2}{3}} \times x^{\frac{1}{2}} \div x^{\frac{1}{6}} = x^{\frac{4 + 3 - 1}{6}} = x^{1} = x$.
+
+[MAT-307] derivation | beginner
+Q: La dérivée de $f(x) = \ln(x^2 + 1)$ est :
+* $f'(x) = \frac{2x}{x^2 + 1}$
+- $f'(x) = \frac{1}{x^2 + 1}$
+- $f'(x) = \frac{2}{x}$
+- $f'(x) = 2x\ln(x^2 + 1)$
+- $f'(x) = \frac{x^2 + 1}{2x}$
+C: $(\ln u)' = \frac{u'}{u}$.
+E: Avec $u(x) = x^2 + 1 > 0$, $u'(x) = 2x$, donc $f'(x) = \frac{2x}{x^2 + 1}$.
+
+[MAT-308] derivation | intermediate
+Q: La dérivée de $f(x) = e^{x^2 - 3x}$ est :
+* $f'(x) = (2x - 3)e^{x^2 - 3x}$
+- $f'(x) = e^{2x - 3}$
+- $f'(x) = (x^2 - 3x)e^{x^2 - 3x - 1}$
+- $f'(x) = e^{x^2 - 3x}$
+- $f'(x) = 2x\,e^{x^2 - 3x}$
+C: $(e^{u})' = u'e^{u}$.
+E: Avec $u(x) = x^2 - 3x$, $u'(x) = 2x - 3$, d'où $f'(x) = (2x - 3)e^{x^2 - 3x}$.
+
+[MAT-309] derivation | intermediate
+Q: La fonction $f$ est dérivable en $a$ avec $f(a) = 3$ et $f'(a) = -2$. L'équation de la tangente à sa courbe au point d'abscisse $a$ est :
+* $y = -2(x - a) + 3$
+- $y = 3(x - a) - 2$
+- $y = -2x + 3$
+- $y = 3x - 2$
+- $y = -2(x + a) + 3$
+C: $y = f'(a)(x - a) + f(a)$.
+E: La tangente passe par $(a ; f(a))$ et a pour coefficient directeur $f'(a)$. Elle se confond avec $y = -2x + 3$ seulement si $a = 0$.
+
+[MAT-310] derivation | advanced
+Q: Soit $f$ une bijection dérivable de $I$ sur $J$, avec $f(1) = 2$ et $f'(1) = 4$. La dérivée de la fonction réciproque $f^{-1}$ au point 2 vaut :
+* $\frac{1}{4}$
+- $4$
+- $\frac{1}{2}$
+- $2$
+- $-\frac{1}{4}$
+C: $(f^{-1})'(2) = \frac{1}{f'(1)} = \frac{1}{4}$.
+E: Pour $y = f(x)$ avec $f'(x) \neq 0$ : $(f^{-1})'(y) = \frac{1}{f'(f^{-1}(y))}$. Ici $f^{-1}(2) = 1$, donc $(f^{-1})'(2) = \frac{1}{f'(1)} = \frac{1}{4}$.
+
+[MAT-311] fonctions | intermediate
+Q: La courbe de $f(x) = \frac{x^3}{x^2 + 1}$ admet, au voisinage de $+\infty$, une asymptote oblique d'équation :
+* $y = x$
+- $y = x + 1$
+- $y = 0$
+- $y = x^2$
+- $y = 1$
+C: $y = x$.
+E: $f(x) - x = \frac{x^3 - x^3 - x}{x^2 + 1} = \frac{-x}{x^2 + 1} \to 0$ en $+\infty$. La courbe est d'ailleurs en dessous de l'asymptote pour $x > 0$.
+
+[MAT-312] fonctions | intermediate
+Q: La courbe d'une fonction $f$ admet un point d'inflexion en $x_0$ lorsque :
+* $f''$ s'annule en changeant de signe en $x_0$
+- $f'$ s'annule en $x_0$
+- $f(x_0) = 0$
+- $f''(x_0) > 0$
+- $f'$ change de signe en $x_0$
+C: Changement de concavité.
+E: En un point d'inflexion, la courbe traverse sa tangente et la concavité change : $f''$ s'annule et change de signe. Si $f'$ s'annule en changeant de signe, il s'agit d'un extremum.
+
+[MAT-313] fonctions | advanced
+Q: Combien de points d'inflexion la courbe de $f(x) = \frac{1 + \ln x}{x}$ possède-t-elle sur $]0 ; +\infty[$ ?
+* 1
+- 0
+- 2
+- 3
+- Une infinité
+C: Un point d'inflexion, en $x = e^{\frac{1}{2}}$.
+E: $f'(x) = \frac{-\ln x}{x^2}$ et $f''(x) = \frac{-x + 2x\ln x}{x^4} = \frac{2\ln x - 1}{x^3}$. $f''$ s'annule et change de signe uniquement en $\ln x = \frac{1}{2}$, soit $x = \sqrt{e}$.
+
+[MAT-314] logarithme | beginner
+Q: Pour $a > 0$ et $b > 0$, $\ln\left(\frac{a^3}{b}\right)$ est égal à :
+* $3\ln a - \ln b$
+- $\ln a^3 \times \ln b$
+- $\frac{3\ln a}{\ln b}$
+- $3\ln(a - b)$
+- $\ln(3a) - \ln b$
+C: $3\ln a - \ln b$.
+E: $\ln\frac{x}{y} = \ln x - \ln y$ et $\ln x^n = n\ln x$. Attention : $\ln(a - b) \neq \ln a - \ln b$.
+
+[MAT-315] logarithme | intermediate
+Q: L'ensemble des solutions de l'équation $\ln(x - 1) + \ln(x + 1) = \ln 3$ est :
+* $\{2\}$
+- $\{-2 ; 2\}$
+- $\{\sqrt{3}\}$
+- $\{4\}$
+- $\emptyset$
+C: $S = \{2\}$.
+E: Domaine : $x > 1$. L'équation donne $\ln(x^2 - 1) = \ln 3$, soit $x^2 = 4$, donc $x = 2$ ou $x = -2$ ; seul 2 appartient au domaine.
+
+[MAT-316] logarithme | intermediate
+Q: La limite $\lim_{x \to +\infty} \frac{(\ln x)^2}{x}$ vaut :
+* $0$
+- $+\infty$
+- $1$
+- $2$
+- $-\infty$
+C: $0$ par croissances comparées.
+E: Pour tout $n$, $\lim_{x \to +\infty}\frac{(\ln x)^n}{x} = 0$ : toute puissance de $x$ l'emporte sur les puissances de $\ln x$.
+
+[MAT-317] logarithme | beginner
+Q: Le logarithme décimal de 0,001 vaut :
+* $-3$
+- $3$
+- $-2$
+- $0{,}001$
+- $-\frac{1}{3}$
+C: $\log(10^{-3}) = -3$.
+E: Le logarithme décimal vérifie $\log x = \frac{\ln x}{\ln 10}$ et $\log 10^{n} = n$. Il sert notamment à définir le pH : $\mathrm{pH} = -\log[\mathrm{H_3O^+}]$.
+
+[MAT-318] exponentielle | beginner
+Q: Pour tous réels $a$ et $b$, $\frac{e^{2a}}{e^{a - b}}$ est égal à :
+* $e^{a + b}$
+- $e^{a - b}$
+- $e^{3a - b}$
+- $e^{2}$
+- $e^{ab}$
+C: $e^{2a - (a - b)} = e^{a + b}$.
+E: $\frac{e^{x}}{e^{y}} = e^{x - y}$, d'où $e^{2a - a + b} = e^{a + b}$.
+
+[MAT-319] exponentielle | intermediate
+Q: L'ensemble des solutions de l'équation $e^{2x} - 3e^{x} + 2 = 0$ est :
+* $\{0 ; \ln 2\}$
+- $\{1 ; 2\}$
+- $\{0\}$
+- $\{\ln 2\}$
+- $\{-\ln 2 ; 0\}$
+C: $S = \{0 ; \ln 2\}$.
+E: On pose $X = e^{x} > 0$ : $X^2 - 3X + 2 = (X - 1)(X - 2) = 0$, donc $e^{x} = 1$ ou $e^{x} = 2$, soit $x = 0$ ou $x = \ln 2$.
+
+[MAT-320] exponentielle | intermediate
+Q: L'ensemble des solutions de l'inéquation $e^{2x - 1} > 1$ est :
+* $\left]\frac{1}{2} ; +\infty\right[$
+- $]1 ; +\infty[$
+- $]0 ; +\infty[$
+- $\left]-\infty ; \frac{1}{2}\right[$
+- $\mathbb{R}$
+C: $x > \frac{1}{2}$.
+E: $e^{2x - 1} > e^{0}$ équivaut à $2x - 1 > 0$, car la fonction exponentielle est strictement croissante.
+
+[MAT-321] exponentielle | intermediate
+Q: La limite $\lim_{x \to -\infty} x\,e^{x}$ vaut :
+* $0$
+- $-\infty$
+- $+\infty$
+- $1$
+- $-1$
+C: $0$.
+E: C'est une limite de référence (croissances comparées) : en $-\infty$, l'exponentielle tend vers 0 plus vite que $x$ ne tend vers $-\infty$.
+
+[MAT-322] suites | beginner
+Q: $(u_n)$ est une suite arithmétique de raison 3 et de premier terme $u_0 = 2$. Le terme $u_{20}$ vaut :
+* $62$
+- $60$
+- $65$
+- $23$
+- $59$
+C: $u_{20} = 2 + 20 \times 3 = 62$.
+E: Pour une suite arithmétique, $u_n = u_0 + nr$.
+
+[MAT-323] suites | intermediate
+Q: La suite $u_n = \left(\frac{3}{2}\right)^n$ :
+* Diverge vers $+\infty$
+- Converge vers 0
+- Converge vers $\frac{3}{2}$
+- Est décroissante
+- Converge vers 1
+C: $q > 1$ : diverge vers $+\infty$.
+E: Une suite géométrique $q^n$ tend vers $+\infty$ si $q > 1$, vers 0 si $|q| < 1$ et vaut 1 si $q = 1$. Si $q \leq -1$, elle n'a pas de limite.
+
+[MAT-324] suites | intermediate
+Q: Une suite croissante et majorée :
+* Est convergente
+- Diverge vers $+\infty$
+- Est constante
+- Converge forcément vers son majorant donné
+- N'a pas de limite
+C: Elle converge.
+E: Théorème : toute suite croissante majorée converge (vers une limite inférieure ou égale à tout majorant). Attention, la limite n'est pas forcément le majorant proposé : $1 - \frac{1}{n}$ est majorée par 5 mais converge vers 1.
+
+[MAT-325] suites | advanced
+Q: Soit $(u_n)$ définie par $u_0 = 3$ et $u_{n+1} = \frac{u_n}{1 + u_n}$. On pose $v_n = \frac{1}{u_n}$. Alors :
+* $(v_n)$ est arithmétique de raison 1 et $u_n = \frac{3}{1 + 3n}$
+- $(v_n)$ est géométrique de raison 1
+- $(v_n)$ est arithmétique de raison 3
+- $u_n = \frac{1}{n}$
+- $\lim u_n = 1$
+C: $v_{n+1} = v_n + 1$ et $u_n = \frac{1}{\frac{1}{3} + n}$.
+E: $v_{n+1} = \frac{1 + u_n}{u_n} = v_n + 1$ et $v_0 = \frac{1}{3}$, donc $v_n = \frac{1}{3} + n = \frac{1 + 3n}{3}$ et $u_n = \frac{3}{1 + 3n}$, qui tend vers 0.
+
+[MAT-326] integrales | beginner
+Q: L'intégrale $\int_1^{e} \frac{dx}{x}$ vaut :
+* $1$
+- $e$
+- $0$
+- $e - 1$
+- $\frac{1}{e}$
+C: $[\ln x]_1^{e} = 1$.
+E: Une primitive de $\frac{1}{x}$ sur $]0 ; +\infty[$ est $\ln x$ ; $\ln e - \ln 1 = 1 - 0 = 1$.
+
+[MAT-327] integrales | intermediate
+Q: L'intégrale $\int_0^{\frac{\pi}{2}} \cos^2 x\,dx$ vaut :
+* $\frac{\pi}{4}$
+- $\frac{\pi}{2}$
+- $1$
+- $0$
+- $\frac{1}{2}$
+C: $\frac{\pi}{4}$.
+E: On linéarise : $\cos^2 x = \frac{1 + \cos 2x}{2}$. Une primitive est $\frac{x}{2} + \frac{\sin 2x}{4}$, d'où $\frac{\pi}{4} + 0 - 0 = \frac{\pi}{4}$.
+
+[MAT-328] integrales | intermediate
+Q: Si $f$ est continue et impaire sur $[-a ; a]$, alors $\int_{-a}^{a} f(x)\,dx$ vaut :
+* $0$
+- $2\int_0^{a} f(x)\,dx$
+- $a$
+- $f(a) - f(-a)$
+- $2a f(a)$
+C: L'intégrale d'une fonction impaire sur un intervalle symétrique est nulle.
+E: Les aires de part et d'autre de 0 sont égales et de signes opposés. Pour une fonction paire, on aurait $2\int_0^{a} f(x)\,dx$. Exemple : $\int_{-1}^{1} x^3\,dx = 0$.
+
+[MAT-329] integrales | intermediate
+Q: L'aire, en unités d'aire, du domaine compris entre la courbe de $f(x) = x^2$, l'axe des abscisses et les droites $x = 0$ et $x = 3$ vaut :
+* $9$
+- $27$
+- $3$
+- $6$
+- $18$
+C: $\int_0^3 x^2\,dx = 9$.
+E: $f$ est positive sur $[0 ; 3]$, donc l'aire vaut $\left[\frac{x^3}{3}\right]_0^3 = \frac{27}{3} = 9$.
+
+[MAT-330] integrales | advanced
+Q: L'intégrale $\int_1^{e} \ln x\,dx$ vaut :
+* $1$
+- $e$
+- $e - 1$
+- $0$
+- $e + 1$
+C: $[x\ln x - x]_1^{e} = 1$.
+E: Par intégration par parties ($u = \ln x$, $v' = 1$), une primitive de $\ln x$ est $x\ln x - x$. D'où $(e - e) - (0 - 1) = 1$.
+
+[MAT-331] integrales | intermediate
+Q: La valeur moyenne de $f(x) = 2x + 1$ sur $[0 ; 4]$ est :
+* $5$
+- $20$
+- $9$
+- $4$
+- $1$
+C: $\mu = \frac{1}{4}\int_0^4 (2x + 1)\,dx = 5$.
+E: $\int_0^4 (2x + 1)\,dx = [x^2 + x]_0^4 = 20$, puis $\mu = \frac{20}{4} = 5$. Pour une fonction affine, c'est aussi la moyenne de $f(0) = 1$ et $f(4) = 9$.
+
+[MAT-332] equations-differentielles | beginner
+Q: Les solutions de l'équation différentielle $y' = 3y$ sont les fonctions :
+* $y(x) = Ce^{3x}$, $C \in \mathbb{R}$
+- $y(x) = 3e^{x}$
+- $y(x) = Ce^{-3x}$
+- $y(x) = 3x + C$
+- $y(x) = e^{x} + 3$
+C: $y = Ce^{3x}$.
+E: Les solutions de $y' = ay$ sont $x \mapsto Ce^{ax}$. Une condition initiale fixe la constante : si $y(0) = 2$, alors $C = 2$.
+
+[MAT-333] equations-differentielles | intermediate
+Q: L'équation caractéristique de $y'' - 5y' + 6y = 0$ a pour racines 2 et 3. Les solutions sont :
+* $y(x) = Ae^{2x} + Be^{3x}$
+- $y(x) = (Ax + B)e^{2x}$
+- $y(x) = A\cos 2x + B\sin 3x$
+- $y(x) = Ae^{-2x} + Be^{-3x}$
+- $y(x) = Ae^{6x}$
+C: Deux racines réelles distinctes.
+E: $r^2 - 5r + 6 = (r - 2)(r - 3)$. Avec deux racines réelles distinctes $r_1$ et $r_2$, les solutions sont $Ae^{r_1x} + Be^{r_2x}$.
+
+[MAT-334] equations-differentielles | advanced
+Q: Les solutions de $y'' + 2y' + 5y = 0$ sont ($A$ et $B$ réels) :
+* $y(x) = e^{-x}(A\cos 2x + B\sin 2x)$
+- $y(x) = e^{x}(A\cos 2x + B\sin 2x)$
+- $y(x) = Ae^{-x} + Be^{-5x}$
+- $y(x) = e^{-2x}(A\cos x + B\sin x)$
+- $y(x) = A\cos\sqrt{5}x + B\sin\sqrt{5}x$
+C: Racines complexes $-1 \pm 2i$.
+E: $\Delta = 4 - 20 = -16$ : $r = \frac{-2 \pm 4i}{2} = -1 \pm 2i$. Pour $r = \alpha \pm i\beta$, les solutions sont $e^{\alpha x}(A\cos\beta x + B\sin\beta x)$.
+
+[MAT-335] complexes | beginner
+Q: Le conjugué du nombre complexe $z = (2 - 3i)(1 + i)$ est :
+* $5 + i$
+- $5 - i$
+- $-1 + 5i$
+- $2 + 3i$
+- $-5 - i$
+C: $z = 5 - i$, donc $\bar{z} = 5 + i$.
+E: $(2 - 3i)(1 + i) = 2 + 2i - 3i - 3i^2 = 2 - i + 3 = 5 - i$. Le conjugué change le signe de la partie imaginaire.
+
+[MAT-336] complexes | intermediate
+Q: Un argument du nombre complexe $z = -1 + i$ est :
+* $\frac{3\pi}{4}$
+- $\frac{\pi}{4}$
+- $-\frac{\pi}{4}$
+- $\frac{5\pi}{4}$
+- $\pi$
+C: $\arg z = \frac{3\pi}{4}$.
+E: $|z| = \sqrt{2}$, $\cos\theta = -\frac{1}{\sqrt{2}}$ et $\sin\theta = \frac{1}{\sqrt{2}}$ : $\theta = \frac{3\pi}{4}$ (2e quadrant). Donc $z = \sqrt{2}e^{i\frac{3\pi}{4}}$.
+
+[MAT-337] complexes | intermediate
+Q: Les solutions dans $\mathbb{C}$ de l'équation $z^2 - 2z + 5 = 0$ sont :
+* $1 + 2i$ et $1 - 2i$
+- $-1 + 2i$ et $-1 - 2i$
+- $2 + i$ et $2 - i$
+- $1$ et $5$
+- $1 + 4i$ et $1 - 4i$
+C: $z = 1 \pm 2i$.
+E: $\Delta = 4 - 20 = -16 = (4i)^2$, donc $z = \frac{2 \pm 4i}{2} = 1 \pm 2i$. Les solutions d'une équation à coefficients réels sont conjuguées.
+
+[MAT-338] complexes | intermediate
+Q: L'écriture complexe de l'homothétie de centre $\Omega(1)$ et de rapport 3 est :
+* $z' = 3z - 2$
+- $z' = 3z$
+- $z' = 3z + 1$
+- $z' = z + 3$
+- $z' = 3z + 2$
+C: $z' - 1 = 3(z - 1)$.
+E: L'homothétie de centre $\omega$ et de rapport $k$ s'écrit $z' - \omega = k(z - \omega)$, soit ici $z' = 3z - 3 + 1 = 3z - 2$.
+
+[MAT-339] complexes | advanced
+Q: La transformation $z \mapsto z' = iz + 1 + i$ est :
+* La rotation de centre $\Omega(i)$ et d'angle $\frac{\pi}{2}$
+- La translation de vecteur $1 + i$
+- L'homothétie de rapport $i$
+- La rotation de centre $O$ et d'angle $\frac{\pi}{2}$
+- La rotation de centre $\Omega(1 + i)$ et d'angle $\pi$
+C: Rotation d'angle $\frac{\pi}{2}$ de centre $\omega = i$.
+E: $i = e^{i\frac{\pi}{2}}$ : c'est une rotation d'angle $\frac{\pi}{2}$. Son centre vérifie $\omega = i\omega + 1 + i$, soit $\omega(1 - i) = 1 + i$, d'où $\omega = \frac{1 + i}{1 - i} = i$.
+
+[MAT-340] complexes | intermediate
+Q: Le nombre complexe $z = \frac{1 + i\sqrt{3}}{2}$ vérifie :
+* $z^6 = 1$
+- $z^3 = 1$
+- $z^2 = 1$
+- $z^6 = -1$
+- $|z| = 2$
+C: $z = e^{i\frac{\pi}{3}}$, donc $z^6 = e^{2i\pi} = 1$.
+E: $|z| = 1$ et $\arg z = \frac{\pi}{3}$. Alors $z^3 = e^{i\pi} = -1$ et $z^6 = 1$ : $z$ est une racine sixième de l'unité.
+
+[MAT-341] geometrie-espace | beginner
+Q: Les vecteurs $\vec{u}(1 ; 2 ; -1)$ et $\vec{v}(3 ; -1 ; 1)$ sont :
+* Orthogonaux
+- Colinéaires
+- De même norme
+- Égaux
+- Opposés
+C: $\vec{u} \cdot \vec{v} = 0$.
+E: $\vec{u} \cdot \vec{v} = 3 - 2 - 1 = 0$ : les vecteurs sont orthogonaux. Ils ne sont pas colinéaires (pas proportionnels) et $\|\vec{u}\| = \sqrt{6} \neq \|\vec{v}\| = \sqrt{11}$.
+
+[MAT-342] geometrie-espace | intermediate
+Q: Un vecteur normal au plan d'équation $2x - y + 3z - 5 = 0$ est :
+* $\vec{n}(2 ; -1 ; 3)$
+- $\vec{n}(2 ; 1 ; 3)$
+- $\vec{n}(-5 ; 0 ; 0)$
+- $\vec{n}(1 ; 2 ; 0)$
+- $\vec{n}(2 ; -1 ; -5)$
+C: Les coefficients de $x$, $y$, $z$.
+E: Le plan $ax + by + cz + d = 0$ admet $\vec{n}(a ; b ; c)$ comme vecteur normal. Tout vecteur colinéaire, comme $(-4 ; 2 ; -6)$, convient aussi.
+
+[MAT-343] geometrie-espace | intermediate
+Q: L'équation $x^2 + y^2 + z^2 - 4x + 2z - 4 = 0$ est celle d'une sphère de centre et de rayon :
+* $\Omega(2 ; 0 ; -1)$ et $R = 3$
+- $\Omega(-2 ; 0 ; 1)$ et $R = 3$
+- $\Omega(2 ; 0 ; -1)$ et $R = 9$
+- $\Omega(4 ; 0 ; -2)$ et $R = 2$
+- $\Omega(2 ; 1 ; -1)$ et $R = \sqrt{3}$
+C: $(x - 2)^2 + y^2 + (z + 1)^2 = 9$.
+E: On complète les carrés : $x^2 - 4x = (x - 2)^2 - 4$ et $z^2 + 2z = (z + 1)^2 - 1$. L'équation devient $(x - 2)^2 + y^2 + (z + 1)^2 = 4 + 1 + 4 = 9$.
+
+[MAT-344] geometrie-espace | advanced
+Q: Le produit vectoriel $\vec{u} \wedge \vec{v}$ des vecteurs $\vec{u}(1 ; 0 ; 2)$ et $\vec{v}(0 ; 1 ; 1)$ vaut :
+* $(-2 ; -1 ; 1)$
+- $(2 ; 1 ; -1)$
+- $(0 ; 0 ; 2)$
+- $(1 ; 1 ; 3)$
+- $(-2 ; 1 ; 1)$
+C: $(0 \cdot 1 - 2 \cdot 1 ;\ 2 \cdot 0 - 1 \cdot 1 ;\ 1 \cdot 1 - 0 \cdot 0)$.
+E: $\vec{u} \wedge \vec{v} = (u_yv_z - u_zv_y ;\ u_zv_x - u_xv_z ;\ u_xv_y - u_yv_x) = (-2 ; -1 ; 1)$. Ce vecteur est orthogonal à $\vec{u}$ et à $\vec{v}$, et sa norme $\sqrt{6}$ est l'aire du parallélogramme qu'ils forment.
+
+[MAT-345] geometrie-espace | intermediate
+Q: L'aire du triangle $ABC$ avec $A(0 ; 0 ; 0)$, $B(1 ; 0 ; 2)$ et $C(0 ; 1 ; 1)$ vaut :
+* $\frac{\sqrt{6}}{2}$
+- $\sqrt{6}$
+- $3$
+- $\frac{3}{2}$
+- $\frac{\sqrt{3}}{2}$
+C: $\frac{1}{2}\|\overrightarrow{AB} \wedge \overrightarrow{AC}\|$.
+E: $\overrightarrow{AB} \wedge \overrightarrow{AC} = (-2 ; -1 ; 1)$, de norme $\sqrt{6}$. L'aire du triangle est la moitié de celle du parallélogramme : $\frac{\sqrt{6}}{2}$.
+
+[MAT-346] probabilites | beginner
+Q: Le nombre de façons de choisir 3 élèves parmi 10 pour former un groupe (sans ordre) est :
+* $120$
+- $720$
+- $30$
+- $1\,000$
+- $10$
+C: $C_{10}^{3} = 120$.
+E: $C_{10}^{3} = \frac{10 \times 9 \times 8}{3 \times 2 \times 1} = 120$. Si l'ordre comptait (délégué, adjoint, secrétaire), on aurait $A_{10}^{3} = 720$.
+
+[MAT-347] probabilites | intermediate
+Q: Deux événements $A$ et $B$ sont indépendants avec $P(A) = 0{,}4$ et $P(B) = 0{,}5$. Alors $P(A \cup B)$ vaut :
+* $0{,}7$
+- $0{,}9$
+- $0{,}2$
+- $0{,}5$
+- $0{,}1$
+C: $0{,}4 + 0{,}5 - 0{,}4 \times 0{,}5 = 0{,}7$.
+E: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ et, par indépendance, $P(A \cap B) = P(A)P(B) = 0{,}2$.
+
+[MAT-348] probabilites | intermediate
+Q: Une variable aléatoire $X$ suit la loi binomiale $\mathcal{B}(10 ; 0{,}3)$. Son espérance et sa variance valent :
+* $E(X) = 3$ et $V(X) = 2{,}1$
+- $E(X) = 3$ et $V(X) = 0{,}21$
+- $E(X) = 0{,}3$ et $V(X) = 2{,}1$
+- $E(X) = 7$ et $V(X) = 2{,}1$
+- $E(X) = 3$ et $V(X) = 3$
+C: $E = np = 3$ ; $V = np(1 - p) = 2{,}1$.
+E: Pour $\mathcal{B}(n ; p)$ : $E(X) = np = 10 \times 0{,}3 = 3$ et $V(X) = np(1 - p) = 3 \times 0{,}7 = 2{,}1$, d'où un écart-type d'environ 1,45.
+
+[MAT-349] probabilites | advanced
+Q: On lance deux dés équilibrés. Sachant que la somme vaut 8, la probabilité que les deux dés indiquent le même chiffre est :
+* $\frac{1}{5}$
+- $\frac{1}{6}$
+- $\frac{5}{36}$
+- $\frac{1}{36}$
+- $\frac{1}{8}$
+C: $\frac{1}{5}$.
+E: Les issues de somme 8 sont (2,6), (3,5), (4,4), (5,3), (6,2) : 5 issues équiprobables. Une seule est un double (4,4), d'où $\frac{1}{5}$.
+
+[MAT-350] arithmetique | intermediate
+Q: Le PGCD de 84 et 126 est :
+* $42$
+- $14$
+- $21$
+- $6$
+- $252$
+C: $\mathrm{PGCD}(84, 126) = 42$.
+E: $84 = 2^2 \times 3 \times 7$ et $126 = 2 \times 3^2 \times 7$ : PGCD $= 2 \times 3 \times 7 = 42$. Par l'algorithme d'Euclide : $126 = 84 + 42$ et $84 = 2 \times 42$. Le PPCM vaut 252.

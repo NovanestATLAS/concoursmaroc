@@ -748,3 +748,458 @@ Q: D'un seul point de vue, combien de faces d'un cube opaque peut-on voir au max
 - 6
 C: 3 faces.
 E: Quel que soit le point de vue, on voit au plus trois faces, qui se rejoignent en un sommet : c'est ce que montre une perspective isométrique ou cavalière d'un cube.
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions de niveau bac dans l'esprit des épreuves TAFEM (ENCG),
+# ENA architecture et ISCAE.
+@source src-general
+
+[ARC-201] histoire-architecture | beginner
+Q: Le Parthénon, sur l'Acropole d'Athènes, est un temple de style :
+* Grec dorique
+- Romain corinthien
+- Gothique
+- Roman
+C: Ordre dorique (Ve siècle av. J.-C.).
+E: L'architecture grecque distingue trois ordres : dorique (chapiteau simple), ionique (volutes) et corinthien (feuilles d'acanthe). Le Parthénon est l'exemple le plus célèbre de l'ordre dorique.
+
+[ARC-202] histoire-architecture | intermediate
+Q: L'arc-boutant et la voûte sur croisée d'ogives caractérisent l'architecture :
+* Gothique
+- Romane
+- Baroque
+- Grecque antique
+C: Gothique (XIIe-XVe siècles).
+E: Ces éléments reportent la poussée des voûtes vers l'extérieur, ce qui permet de construire plus haut et d'ouvrir de grands vitraux (Notre-Dame de Paris, cathédrale de Chartres). L'art roman a des murs épais et des voûtes en berceau.
+
+[ARC-203] histoire-architecture | intermediate
+Q: Le Colisée de Rome est :
+* Un amphithéâtre antique destiné aux spectacles
+- Un temple grec
+- Un palais de la Renaissance
+- Une cathédrale gothique
+C: Un amphithéâtre romain (Ier siècle).
+E: Il accueillait des combats de gladiateurs et pouvait recevoir environ 50 000 spectateurs. Les Romains maîtrisaient l'arc, la voûte et le béton romain.
+
+[ARC-204] histoire-architecture | intermediate
+Q: Quel architecte catalan a conçu la Sagrada Família à Barcelone ?
+* Antoni Gaudí
+- Le Corbusier
+- Frank Lloyd Wright
+- Renzo Piano
+C: Antoni Gaudí.
+E: Commencée en 1882, la basilique est toujours en construction. Gaudí est une figure majeure du modernisme catalan, aux formes inspirées de la nature.
+
+[ARC-205] histoire-architecture | intermediate
+Q: Quel architecte a conçu la Villa Savoye et la Cité radieuse de Marseille ?
+* Le Corbusier
+- Walter Gropius
+- Auguste Perret
+- Jean Nouvel
+C: Le Corbusier.
+E: La Villa Savoye (1931) applique ses « cinq points » (pilotis, toit-terrasse, plan libre, façade libre, fenêtre en bandeau). La Cité radieuse est une « unité d'habitation » verticale.
+
+[ARC-206] histoire-architecture | intermediate
+Q: L'opéra de Sydney, en Australie, est célèbre pour :
+* Ses toits en forme de coquilles ou de voiles
+- Sa coupole en verre
+- Son style gothique
+- Sa forme pyramidale
+C: Ses « voiles ».
+E: Conçu par le Danois Jørn Utzon et inauguré en 1973, il est inscrit au patrimoine mondial de l'UNESCO.
+
+[ARC-207] histoire-architecture | intermediate
+Q: La pyramide de verre du Louvre a été conçue par l'architecte :
+* Ieoh Ming Pei
+- Frank Gehry
+- Norman Foster
+- Zaha Hadid
+C: I. M. Pei (1989).
+E: L'architecte sino-américain a créé cette pyramide comme nouvelle entrée du musée, contrastant avec le palais classique.
+
+[ARC-208] histoire-architecture | advanced
+Q: Le Burj Khalifa, à Dubaï, inauguré en 2010, mesure environ :
+* 828 mètres
+- 541 mètres
+- 452 mètres
+- 1 000 mètres
+C: Environ 828 m.
+E: C'est la plus haute tour du monde depuis 2010. One World Trade Center (New York) mesure 541 m, les tours Petronas (Kuala Lumpur) 452 m.
+
+[ARC-209] patrimoine-maroc | beginner
+Q: La médina de Fès (Fès el-Bali) est inscrite au patrimoine mondial de l'UNESCO depuis :
+* 1981
+- 2012
+- 1997
+- 2001
+C: 1981, premier site marocain inscrit.
+E: Fès el-Bali est l'une des plus grandes zones piétonnes du monde. La médina de Marrakech a été inscrite en 1985, Rabat en 2012.
+
+[ARC-210] patrimoine-maroc | intermediate
+Q: Les tombeaux saadiens, redécouverts en 1917, se trouvent à :
+* Marrakech
+- Fès
+- Meknès
+- Taroudant
+C: Marrakech (XVIe siècle).
+E: Ils abritent la nécropole de la dynastie saadienne, dont la salle des Douze Colonnes, richement décorée de zelliges, stucs et marbre de Carrare.
+
+[ARC-211] patrimoine-maroc | intermediate
+Q: Le palais El Badi à Marrakech a été construit par :
+* Ahmed al-Mansour (dynastie saadienne)
+- Moulay Ismaïl
+- Youssef Ibn Tachfine
+- Hassan II
+C: Ahmed al-Mansour, après 1578.
+E: Construit après la victoire de la bataille des Trois Rois, ce palais somptueux fut en grande partie démantelé par Moulay Ismaïl, qui en réutilisa les matériaux à Meknès.
+
+[ARC-212] patrimoine-maroc | intermediate
+Q: Bab Mansour, l'une des portes monumentales les plus célèbres du Maroc, se trouve à :
+* Meknès
+- Fès
+- Rabat
+- Marrakech
+C: Meknès.
+E: Achevée au XVIIIe siècle sous Moulay Abdallah, elle ouvre sur la place El Hedim. Elle illustre la grandeur de la capitale de Moulay Ismaïl.
+
+[ARC-213] patrimoine-maroc | intermediate
+Q: Un « agadir », dans le sud marocain, est :
+* Un grenier collectif fortifié
+- Une mosquée de quartier
+- Une place de marché
+- Une maison à patio
+C: Grenier collectif fortifié.
+E: Chaque famille y possédait une case pour stocker grains et biens précieux. L'agadir d'Id Aïssa (Amtoudi) est l'un des plus célèbres.
+
+[ARC-214] patrimoine-maroc | intermediate
+Q: Le tadelakt est :
+* Un enduit à la chaux, poli à la pierre et traité au savon noir, imperméable
+- Une mosaïque de céramique
+- Un plafond en bois peint
+- Une technique de sculpture du plâtre
+C: Un enduit traditionnel de Marrakech.
+E: Imperméable et brillant, il est utilisé dans les hammams et les salles d'eau. La mosaïque de céramique est le zellige ; le plâtre sculpté est le gebs.
+
+[ARC-215] patrimoine-maroc | intermediate
+Q: Dans une mosquée, le mihrab est :
+* La niche qui indique la direction de La Mecque (qibla)
+- Le minaret
+- La salle des ablutions
+- La chaire du prédicateur
+C: La niche de la qibla.
+E: La chaire du prédicateur est le minbar ; le minaret sert à l'appel à la prière ; la salle des ablutions est souvent située près de la cour (sahn).
+
+[ARC-216] patrimoine-maroc | intermediate
+Q: La médina d'Essaouira (ancienne Mogador) a été aménagée au XVIIIe siècle sur ordre du sultan :
+* Mohammed ben Abdallah (Mohammed III)
+- Moulay Ismaïl
+- Ahmed al-Mansour
+- Moulay Rachid
+C: Mohammed III, à partir de 1765.
+E: Conçue avec l'aide de l'ingénieur français Théodore Cornut, Essaouira mêle tracé européen et architecture marocaine. Elle est inscrite au patrimoine mondial depuis 2001.
+
+[ARC-217] urbanisme | intermediate
+Q: Une « ville nouvelle » au Maroc, comme celles construites à l'époque du protectorat, désigne :
+* Un quartier moderne construit à côté de la médina
+- La médina elle-même
+- Un village rural
+- Une kasbah fortifiée
+C: Le quartier européen moderne.
+E: Sous le protectorat, le résident général Lyautey fit construire des villes nouvelles séparées des médinas, préservées. L'urbaniste Henri Prost a conçu les plans de Rabat et de Casablanca.
+
+[ARC-218] urbanisme | intermediate
+Q: L'écoquartier ou la « ville durable » cherche notamment à :
+* Réduire la consommation d'énergie, favoriser les transports doux et préserver les espaces verts
+- Multiplier les autoroutes urbaines
+- Supprimer les transports en commun
+- Construire uniquement des tours de grande hauteur
+C: Un urbanisme économe en ressources.
+E: La ville verte Mohammed VI de Benguérir, autour de l'Université Mohammed VI Polytechnique, est un exemple marocain de projet urbain durable.
+
+[ARC-219] urbanisme | beginner
+Q: Le plan d'aménagement d'une commune sert à :
+* Définir l'usage des sols : zones d'habitat, d'activités, d'équipements, espaces verts
+- Fixer les impôts des habitants
+- Recenser la population
+- Organiser les élections
+C: Réglementer l'usage des sols.
+E: Document d'urbanisme, il fixe ce que l'on peut construire, où et selon quelles règles (hauteur, densité). Il est élaboré par les agences urbaines au Maroc.
+
+[ARC-220] construction | beginner
+Q: Le béton armé est :
+* Du béton dans lequel sont noyées des barres d'acier pour résister aux efforts de traction
+- Du béton mélangé à du verre
+- Une pierre naturelle
+- Du béton sans ciment
+C: Béton + armatures en acier.
+E: Le béton résiste bien à la compression mais mal à la traction ; l'acier compense cette faiblesse. Le béton armé s'est généralisé au XXe siècle (Auguste Perret, Le Corbusier).
+
+[ARC-221] construction | intermediate
+Q: Les fondations d'un bâtiment servent à :
+* Transmettre les charges du bâtiment au sol
+- Isoler la toiture
+- Décorer la façade
+- Évacuer les eaux de pluie
+C: Reporter les charges sur le sol.
+E: Elles assurent la stabilité de l'ouvrage. Selon la qualité du sol, on utilise des fondations superficielles (semelles) ou profondes (pieux).
+
+[ARC-222] construction | intermediate
+Q: Dans un escalier, le giron désigne :
+* La profondeur d'une marche, mesurée horizontalement
+- La hauteur d'une marche
+- La rampe
+- Le palier
+C: La profondeur de marche.
+E: La hauteur de marche s'appelle aussi « contremarche ». La formule de Blondel ($2h + g \approx 60$ à $64$ cm) assure un escalier confortable.
+
+[ARC-223] construction | intermediate
+Q: L'acrotère est :
+* Le muret situé en bordure d'une toiture-terrasse
+- Une colonne décorative
+- La base d'un mur
+- Une fenêtre de toit
+C: Le relevé en bord de terrasse.
+E: L'acrotère protège la terrasse et permet de relever l'étanchéité. Sur un balcon, la protection contre les chutes est le garde-corps.
+
+[ARC-224] dessin | beginner
+Q: En dessin, une vue en plan est :
+* Une représentation vue de dessus, après une coupe horizontale du bâtiment
+- Une vue de face
+- Une vue en perspective
+- Un dessin d'ambiance
+C: Une coupe horizontale vue de dessus.
+E: Le plan montre la disposition des pièces, des murs, des portes et des fenêtres. La façade montre l'extérieur vu de face ; la coupe est une section verticale.
+
+[ARC-225] dessin | intermediate
+Q: Sur un plan à l'échelle 1/50, une pièce mesure 8 cm sur 6 cm. Ses dimensions réelles sont :
+* 4 m sur 3 m
+- 8 m sur 6 m
+- 40 m sur 30 m
+- 1,6 m sur 1,2 m
+C: 4 m × 3 m.
+E: 1 cm sur le plan représente 50 cm. Donc 8 cm → 400 cm = 4 m et 6 cm → 300 cm = 3 m. L'aire réelle est de 12 m².
+
+[ARC-226] dessin | intermediate
+Q: La perspective cavalière se caractérise par :
+* Des lignes fuyantes parallèles, tracées selon un angle et un coefficient de réduction choisis
+- Des lignes fuyantes qui convergent vers un point de fuite
+- L'absence de profondeur
+- Deux points de fuite sur la ligne d'horizon
+C: Fuyantes parallèles.
+E: En perspective cavalière, la face avant est en vraie grandeur et les fuyantes, parallèles, sont réduites (souvent de moitié, à 45°). En perspective conique, les fuyantes convergent vers un ou deux points de fuite.
+
+[ARC-227] dessin | intermediate
+Q: Dans une perspective à deux points de fuite, les deux points de fuite sont situés :
+* Sur la ligne d'horizon
+- En haut et en bas de la feuille
+- Au centre de l'objet
+- Sur la ligne de sol uniquement
+C: Sur la ligne d'horizon.
+E: Les arêtes horizontales de l'objet convergent vers deux points de fuite placés sur la ligne d'horizon, à hauteur des yeux ; les verticales restent verticales.
+
+[ARC-228] dessin | beginner
+Q: Pour dessiner un objet lointain plus petit qu'un objet proche de même taille, on applique le principe de :
+* La perspective
+- La symétrie
+- La transparence
+- La texture
+C: La perspective.
+E: Plus un objet s'éloigne, plus il paraît petit ; les lignes parallèles semblent converger. Les couleurs s'atténuent aussi avec la distance (perspective atmosphérique).
+
+[ARC-229] art | beginner
+Q: Les trois couleurs primaires en peinture (synthèse soustractive) sont :
+* Le magenta (rouge), le jaune et le cyan (bleu)
+- Le rouge, le vert et le bleu
+- Le noir, le blanc et le gris
+- L'orange, le violet et le vert
+C: Magenta, jaune, cyan.
+E: En mélangeant les pigments, on obtient les couleurs secondaires : orange, vert et violet. En lumière (synthèse additive), les primaires sont le rouge, le vert et le bleu.
+
+[ARC-230] art | intermediate
+Q: Une couleur « chaude » est :
+* Le rouge ou l'orange
+- Le bleu
+- Le vert
+- Le violet foncé
+C: Rouge, orange, jaune.
+E: Les couleurs chaudes évoquent le feu et le soleil et semblent avancer vers le spectateur ; les couleurs froides (bleu, vert) évoquent l'eau et semblent reculer.
+
+[ARC-231] art | intermediate
+Q: Une nature morte est :
+* Une peinture représentant des objets inanimés (fruits, vases, fleurs coupées)
+- Un portrait de défunt
+- Un paysage d'hiver
+- Une scène de bataille
+C: Représentation d'objets inanimés.
+E: Genre pictural très pratiqué depuis le XVIIe siècle, notamment aux Pays-Bas ; Cézanne en a peint de nombreuses avec des pommes.
+
+[ARC-232] art | intermediate
+Q: Le peintre marocain Mohamed Ben Ali R'bati, considéré comme un pionnier de la peinture au Maroc, est connu pour :
+* Ses scènes de la vie quotidienne marocaine, au début du XXe siècle
+- Ses sculptures en bronze
+- Ses films
+- Son architecture moderne
+C: Scènes de la vie marocaine.
+E: Né à Rabat en 1861, il est considéré comme l'un des premiers peintres de chevalet marocains. D'autres grands noms : Farid Belkahia, Jilali Gharbaoui, Chaïbia Talal.
+
+[ARC-233] art | intermediate
+Q: Le mouvement artistique « surréalisme », représenté notamment par Salvador Dalí, se caractérise par :
+* L'expression du rêve et de l'inconscient
+- La représentation fidèle de la réalité
+- La décomposition géométrique des formes
+- La recherche de la lumière en plein air
+C: Le rêve et l'inconscient.
+E: Fondé par André Breton en 1924, le surréalisme explore l'imaginaire et l'irrationnel. La décomposition géométrique caractérise le cubisme, la lumière en plein air l'impressionnisme.
+
+[ARC-234] art | intermediate
+Q: La calligraphie arabe de style « coufique » se caractérise par :
+* Des lettres anguleuses et géométriques
+- Des lettres très arrondies et liées
+- L'usage exclusif de la couleur rouge
+- L'écriture de droite à gauche en lignes verticales
+C: Écriture anguleuse.
+E: Le coufique, l'un des plus anciens styles, est très utilisé en architecture (frises des mosquées et médersas). Le naskhi et le thuluth sont plus cursifs ; le maghribi est propre au Maghreb.
+
+[ARC-235] perception | intermediate
+Q: Combien de faces possède un prisme à base hexagonale ?
+* 8
+- 6
+- 12
+- 7
+C: 8 faces.
+E: 2 bases hexagonales et 6 faces latérales rectangulaires. Il possède 12 sommets et 18 arêtes (relation d'Euler : 12 − 18 + 8 = 2).
+
+[ARC-236] perception | intermediate
+Q: Combien de sommets possède une pyramide à base carrée ?
+* 5
+- 4
+- 8
+- 6
+C: 5 sommets.
+E: 4 sommets à la base et un au sommet (apex). Elle a 5 faces (1 carré et 4 triangles) et 8 arêtes.
+
+[ARC-237] perception | intermediate
+Q: Quelle figure obtient-on en coupant un cylindre droit par un plan parallèle à sa base ?
+* Un cercle
+- Un rectangle
+- Une ellipse
+- Un triangle
+C: Un cercle.
+E: Une coupe parallèle à la base reproduit la base (un disque). Une coupe passant par l'axe donne un rectangle ; une coupe oblique donne une ellipse.
+
+[ARC-238] perception | intermediate
+Q: Quelle figure obtient-on en coupant un cube par un plan qui contient deux arêtes diagonalement opposées (par exemple l'arête avant-gauche et l'arête arrière-droite) ?
+* Un rectangle
+- Un carré
+- Un triangle
+- Un hexagone
+C: Un rectangle (diagonal).
+E: Si le cube a une arête $a$, ce rectangle mesure $a$ sur $a\sqrt{2}$ (la diagonale d'une face). Un plan coupant le cube au milieu de six arêtes donne un hexagone régulier.
+
+[ARC-239] perception | intermediate
+Q: Combien d'axes de symétrie possède un carré ?
+* 4
+- 2
+- 1
+- 8
+C: 4 axes.
+E: Les deux médianes (parallèles aux côtés) et les deux diagonales. Un rectangle non carré n'en a que 2, un triangle équilatéral 3, un cercle une infinité.
+
+[ARC-240] perception | intermediate
+Q: Quelle lettre majuscule possède à la fois un axe de symétrie vertical et un axe horizontal ?
+* H
+- A
+- E
+- N
+C: H.
+E: A a seulement un axe vertical, E seulement un axe horizontal, N aucun axe (mais un centre de symétrie). H, I, O et X ont les deux.
+
+[ARC-241] geometrie | intermediate
+Q: Quelle est l'aire d'un trapèze de bases 10 m et 6 m et de hauteur 4 m ?
+* 32 m²
+- 64 m²
+- 40 m²
+- 24 m²
+C: $\frac{(10 + 6) \times 4}{2} = 32$ m².
+E: L'aire d'un trapèze vaut la demi-somme des bases multipliée par la hauteur.
+
+[ARC-242] geometrie | intermediate
+Q: Une salle rectangulaire de 6 m sur 4 m doit être carrelée avec des carreaux de 40 cm × 40 cm. Combien faut-il de carreaux (sans perte) ?
+* 150
+- 60
+- 240
+- 96
+C: 150 carreaux.
+E: Aire de la salle : 24 m² ; aire d'un carreau : $0{,}4 \times 0{,}4 = 0{,}16$ m². Nombre : $\frac{24}{0{,}16} = 150$.
+
+[ARC-243] geometrie | intermediate
+Q: La diagonale d'un carré de 5 m de côté mesure environ :
+* 7,1 m
+- 10 m
+- 5 m
+- 25 m
+C: $5\sqrt{2} \approx 7{,}1$ m.
+E: D'après le théorème de Pythagore, $d = \sqrt{5^2 + 5^2} = 5\sqrt{2} \approx 7{,}07$ m.
+
+[ARC-244] geometrie | intermediate
+Q: Le volume d'une piscine rectangulaire de 10 m × 5 m et de 1,5 m de profondeur est :
+* 75 m³
+- 50 m³
+- 16,5 m³
+- 150 m³
+C: 75 m³, soit 75 000 litres.
+E: $V = 10 \times 5 \times 1{,}5 = 75$ m³, et 1 m³ = 1 000 L.
+
+[ARC-245] geometrie | advanced
+Q: Un cône a un rayon de base de 3 m et une hauteur de 4 m. Sa génératrice (distance du sommet à un point du cercle de base) mesure :
+* 5 m
+- 7 m
+- 12 m
+- 3,5 m
+C: $\sqrt{3^2 + 4^2} = 5$ m.
+E: La hauteur, le rayon et la génératrice forment un triangle rectangle. Le volume du cône vaut $\frac{1}{3}\pi r^2h = 12\pi \approx 37{,}7$ m³.
+
+[ARC-246] geometrie | intermediate
+Q: Combien mesure chaque angle intérieur d'un hexagone régulier ?
+* 120°
+- 108°
+- 135°
+- 60°
+C: 120°.
+E: Somme des angles : $(6 - 2) \times 180° = 720°$, soit $\frac{720°}{6} = 120°$ par angle. Les hexagones réguliers pavent le plan (alvéoles d'abeilles).
+
+[ARC-247] perception | intermediate
+Q: Avec quel polygone régulier ne peut-on PAS paver le plan sans trou ni chevauchement ?
+* Le pentagone régulier
+- Le triangle équilatéral
+- Le carré
+- L'hexagone régulier
+C: Le pentagone (angle de 108°).
+E: Pour paver le plan, il faut que l'angle intérieur divise 360° : 60° (triangle), 90° (carré) et 120° (hexagone) conviennent, mais pas 108°. Les zelliges combinent plusieurs formes pour obtenir des pavages complexes.
+
+[ARC-248] perception | intermediate
+Q: Une horloge vue dans un miroir indique 3 h 00. Quelle heure est-il réellement ?
+* 9 h 00
+- 3 h 00
+- 6 h 00
+- 12 h 00
+C: 9 h 00.
+E: Le miroir inverse la gauche et la droite : l'aiguille des heures, vue sur le 3, est en réalité sur le 9. On peut retrouver l'heure réelle en calculant 12 h − heure lue.
+
+[ARC-249] geometrie | intermediate
+Q: Une maquette de bâtiment est réalisée à l'échelle 1/200. La façade réelle mesure 30 m de long. Sur la maquette, elle mesure :
+* 15 cm
+- 1,5 cm
+- 60 cm
+- 6 cm
+C: 15 cm.
+E: 30 m = 3 000 cm ; $\frac{3\,000}{200} = 15$ cm.
+
+[ARC-250] histoire-architecture | intermediate
+Q: L'architecte égyptien Hassan Fathy est célèbre pour avoir défendu :
+* Une architecture en terre crue, adaptée au climat et aux savoir-faire locaux
+- Les gratte-ciel en verre et acier
+- Le style gothique
+- Les constructions en plastique
+C: L'architecture vernaculaire en terre.
+E: Avec le village de New Gourna (années 1940), Hassan Fathy a montré l'intérêt des voûtes et coupoles en briques de terre crue, économiques et confortables en climat chaud. Son œuvre inspire l'architecture durable.

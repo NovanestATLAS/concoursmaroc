@@ -114,3 +114,458 @@ Q: Un bénéfice de 18 000 DH est partagé entre trois associés proportionnelle
 - 7 200 DH
 C: 8 000 DH.
 E: Les apports totalisent 9 000 DH : cet associé a fourni $\frac{4\,000}{9\,000} = \frac{4}{9}$ du capital et reçoit $\frac{4}{9} \times 18\,000 = 8\,000$ DH. Les deux autres reçoivent 4 000 DH et 6 000 DH ; un partage égal (6 000 DH chacun) ne respecterait pas les apports.
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions de niveau bac dans l'esprit des épreuves TAFEM (ENCG),
+# ENA architecture et ISCAE.
+@source src-general
+
+[CAL-201] pourcentages | beginner
+Q: Combien font 15 % de 240 ?
+* 36
+- 24
+- 32
+- 160
+C: 36.
+E: $240 \times 0{,}15 = 24 + 12 = 36$ (10 % = 24 et 5 % = 12).
+
+[CAL-202] pourcentages | beginner
+Q: Un prix passe de 80 DH à 100 DH. Le pourcentage d'augmentation est :
+* 25 %
+- 20 %
+- 80 %
+- 125 %
+C: 25 %.
+E: $\frac{100 - 80}{80} = \frac{20}{80} = 0{,}25$. On divise toujours par la valeur de départ.
+
+[CAL-203] pourcentages | intermediate
+Q: Un prix passe de 100 DH à 80 DH. Le pourcentage de baisse est :
+* 20 %
+- 25 %
+- 80 %
+- 15 %
+C: 20 %.
+E: $\frac{100 - 80}{100} = 0{,}20$. Une hausse de 25 % suivie d'une baisse de 20 % ramène au prix de départ.
+
+[CAL-204] pourcentages | intermediate
+Q: Un salaire de 6 000 DH augmente de 5 % chaque année pendant 2 ans. Il vaut alors :
+* 6 615 DH
+- 6 600 DH
+- 6 300 DH
+- 6 610 DH
+C: 6 615 DH.
+E: $6\,000 \times 1{,}05^2 = 6\,000 \times 1{,}1025 = 6\,615$ DH. Les augmentations successives se multiplient : la deuxième s'applique au salaire déjà augmenté.
+
+[CAL-205] pourcentages | intermediate
+Q: Dans une classe de 32 élèves, 24 ont réussi l'examen. Le taux de réussite est :
+* 75 %
+- 24 %
+- 80 %
+- 66 %
+C: 75 %.
+E: $\frac{24}{32} = \frac{3}{4} = 75\ \%$.
+
+[CAL-206] pourcentages | advanced
+Q: Le prix TTC d'un article est de 360 DH, avec une TVA de 20 %. Son prix hors taxes est :
+* 300 DH
+- 288 DH
+- 340 DH
+- 432 DH
+C: 300 DH.
+E: TTC = HT × 1,2, donc HT = $\frac{360}{1{,}2} = 300$ DH. Retirer 20 % du prix TTC (288 DH) est l'erreur classique.
+
+[CAL-207] pourcentages | intermediate
+Q: Une population de 50 000 habitants diminue de 4 %. Elle compte alors :
+* 48 000 habitants
+- 46 000 habitants
+- 49 600 habitants
+- 52 000 habitants
+C: 48 000.
+E: $50\,000 \times 0{,}96 = 48\,000$ habitants (perte de 2 000 habitants).
+
+[CAL-208] proportions | beginner
+Q: 4 cahiers coûtent 28 DH. Combien coûtent 7 cahiers ?
+* 49 DH
+- 35 DH
+- 56 DH
+- 42 DH
+C: 49 DH.
+E: Un cahier coûte $\frac{28}{4} = 7$ DH, donc 7 cahiers coûtent 49 DH (règle de trois).
+
+[CAL-209] proportions | intermediate
+Q: Une voiture consomme 6 litres aux 100 km. Combien de litres lui faut-il pour 450 km ?
+* 27 litres
+- 24 litres
+- 30 litres
+- 45 litres
+C: 27 L.
+E: $\frac{6 \times 450}{100} = 27$ litres.
+
+[CAL-210] proportions | intermediate
+Q: Pour faire un gâteau pour 6 personnes, il faut 300 g de farine. Quelle quantité faut-il pour 10 personnes ?
+* 500 g
+- 400 g
+- 600 g
+- 450 g
+C: 500 g.
+E: 50 g par personne ($\frac{300}{6}$), donc $10 \times 50 = 500$ g.
+
+[CAL-211] proportions | intermediate
+Q: Un héritage de 72 000 DH est partagé entre trois enfants dans les proportions 2, 3 et 4. La plus petite part vaut :
+* 16 000 DH
+- 24 000 DH
+- 18 000 DH
+- 32 000 DH
+C: 16 000 DH.
+E: Il y a $2 + 3 + 4 = 9$ parts de $\frac{72\,000}{9} = 8\,000$ DH. Les parts valent 16 000, 24 000 et 32 000 DH.
+
+[CAL-212] fractions | beginner
+Q: Combien font $\frac{2}{3} + \frac{3}{4}$ ?
+* $\frac{17}{12}$
+- $\frac{5}{7}$
+- $\frac{5}{12}$
+- $\frac{6}{12}$
+C: $\frac{8}{12} + \frac{9}{12} = \frac{17}{12}$.
+E: On réduit au même dénominateur (12) avant d'ajouter. On n'additionne jamais numérateurs et dénominateurs entre eux.
+
+[CAL-213] fractions | intermediate
+Q: Un réservoir est rempli aux $\frac{3}{5}$. On ajoute 30 litres et il est alors rempli aux $\frac{4}{5}$. Quelle est sa capacité ?
+* 150 litres
+- 120 litres
+- 90 litres
+- 200 litres
+C: 150 L.
+E: 30 litres représentent $\frac{4}{5} - \frac{3}{5} = \frac{1}{5}$ de la capacité, donc la capacité vaut $5 \times 30 = 150$ L.
+
+[CAL-214] fractions | intermediate
+Q: Karim dépense $\frac{1}{4}$ de son argent, puis $\frac{1}{3}$ de ce qui reste. Il lui reste 300 DH. Combien avait-il au départ ?
+* 600 DH
+- 500 DH
+- 720 DH
+- 900 DH
+C: 600 DH.
+E: Après la 1re dépense, il reste $\frac{3}{4}$ ; après la 2e, il reste $\frac{2}{3} \times \frac{3}{4} = \frac{1}{2}$ de la somme initiale. Donc la somme vaut $2 \times 300 = 600$ DH.
+
+[CAL-215] fractions | intermediate
+Q: Quel est le plus grand nombre parmi : $\frac{5}{8}$ ; $\frac{3}{5}$ ; $\frac{7}{12}$ ; $\frac{2}{3}$ ?
+* $\frac{2}{3}$
+- $\frac{5}{8}$
+- $\frac{3}{5}$
+- $\frac{7}{12}$
+C: $\frac{2}{3} \approx 0{,}667$.
+E: En écriture décimale : 0,625 ; 0,6 ; 0,583 ; 0,667. La plus grande est $\frac{2}{3}$.
+
+[CAL-216] moyennes | beginner
+Q: Les notes d'un élève sont 12, 15, 9 et 16. Sa moyenne est :
+* 13
+- 12,5
+- 14
+- 52
+C: 13.
+E: $\frac{12 + 15 + 9 + 16}{4} = \frac{52}{4} = 13$.
+
+[CAL-217] moyennes | intermediate
+Q: Un élève a 14 (coefficient 3) en maths et 10 (coefficient 1) en français. Sa moyenne pondérée est :
+* 13
+- 12
+- 14
+- 11
+C: 13.
+E: $\frac{14 \times 3 + 10 \times 1}{3 + 1} = \frac{52}{4} = 13$.
+
+[CAL-218] moyennes | intermediate
+Q: La moyenne de 4 nombres est 15. Trois d'entre eux sont 12, 18 et 10. Le quatrième vaut :
+* 20
+- 15
+- 25
+- 18
+C: 20.
+E: Somme des 4 nombres : $4 \times 15 = 60$. Le quatrième vaut $60 - (12 + 18 + 10) = 20$.
+
+[CAL-219] moyennes | advanced
+Q: Une classe de 20 élèves a une moyenne de 11 ; une autre classe de 30 élèves a une moyenne de 13. La moyenne de l'ensemble des 50 élèves est :
+* 12,2
+- 12
+- 12,5
+- 24
+C: 12,2.
+E: $\frac{20 \times 11 + 30 \times 13}{50} = \frac{220 + 390}{50} = \frac{610}{50} = 12{,}2$. La moyenne simple (12) ne tient pas compte des effectifs.
+
+[CAL-220] vitesse | beginner
+Q: Un cycliste parcourt 45 km en 1 h 30. Sa vitesse moyenne est :
+* 30 km/h
+- 45 km/h
+- 35 km/h
+- 22,5 km/h
+C: 30 km/h.
+E: $v = \frac{45}{1{,}5} = 30$ km/h. Attention : 1 h 30 = 1,5 h, et non 1,3 h.
+
+[CAL-221] vitesse | intermediate
+Q: Combien font 72 km/h en m/s ?
+* 20 m/s
+- 7,2 m/s
+- 72 m/s
+- 25 m/s
+C: 20 m/s.
+E: On divise par 3,6 : $\frac{72}{3{,}6} = 20$ m/s (72 000 m en 3 600 s).
+
+[CAL-222] vitesse | intermediate
+Q: Un train roule à 120 km/h. Combien de temps met-il pour parcourir 50 km ?
+* 25 minutes
+- 24 minutes
+- 30 minutes
+- 40 minutes
+C: 25 min.
+E: $t = \frac{50}{120}$ h $= \frac{5}{12}$ h $= 25$ minutes.
+
+[CAL-223] vitesse | advanced
+Q: Deux voitures partent en même temps de Rabat et Casablanca (90 km) et roulent l'une vers l'autre à 80 km/h et 100 km/h. Elles se croisent au bout de :
+* 30 minutes
+- 45 minutes
+- 1 heure
+- 20 minutes
+C: 30 min.
+E: Elles se rapprochent de $80 + 100 = 180$ km par heure : $\frac{90}{180} = 0{,}5$ h.
+
+[CAL-224] vitesse | advanced
+Q: Une voiture rattrape un camion. Le camion roule à 70 km/h et a 15 km d'avance ; la voiture roule à 100 km/h. Elle le rattrape au bout de :
+* 30 minutes
+- 15 minutes
+- 9 minutes
+- 1 heure
+C: 30 min.
+E: L'écart diminue de $100 - 70 = 30$ km par heure : $\frac{15}{30} = 0{,}5$ h.
+
+[CAL-225] interets | intermediate
+Q: Un capital de 20 000 DH est placé à intérêts composés au taux annuel de 10 % pendant 2 ans. Sa valeur finale est :
+* 24 200 DH
+- 24 000 DH
+- 22 000 DH
+- 24 400 DH
+C: 24 200 DH.
+E: $20\,000 \times 1{,}1^2 = 20\,000 \times 1{,}21 = 24\,200$ DH. En intérêts simples, on obtiendrait 24 000 DH.
+
+[CAL-226] interets | intermediate
+Q: Un prêt de 30 000 DH est remboursé en une seule fois après un an, avec un intérêt de 6 %. La somme remboursée est :
+* 31 800 DH
+- 31 000 DH
+- 36 000 DH
+- 30 600 DH
+C: 31 800 DH.
+E: Intérêt : $30\,000 \times 0{,}06 = 1\,800$ DH. Somme remboursée : $30\,000 + 1\,800 = 31\,800$ DH.
+
+[CAL-227] geometrie | beginner
+Q: Un terrain rectangulaire mesure 25 m sur 16 m. Son aire est :
+* 400 m²
+- 82 m²
+- 41 m²
+- 800 m²
+C: 400 m².
+E: $25 \times 16 = 400$ m². Le périmètre, lui, vaut $2 \times (25 + 16) = 82$ m.
+
+[CAL-228] geometrie | intermediate
+Q: Un disque a un rayon de 10 cm. Son aire vaut environ ($\pi \approx 3{,}14$) :
+* 314 cm²
+- 62,8 cm²
+- 31,4 cm²
+- 100 cm²
+C: $\pi r^2 \approx 314$ cm².
+E: Aire : $\pi \times 10^2 \approx 314$ cm² ; périmètre : $2\pi r \approx 62{,}8$ cm.
+
+[CAL-229] geometrie | intermediate
+Q: Un triangle rectangle a des côtés de l'angle droit de 6 cm et 8 cm. Son hypoténuse mesure :
+* 10 cm
+- 14 cm
+- 12 cm
+- 48 cm
+C: 10 cm.
+E: Théorème de Pythagore : $\sqrt{6^2 + 8^2} = \sqrt{100} = 10$ cm.
+
+[CAL-230] geometrie | intermediate
+Q: Un aquarium mesure 50 cm × 30 cm × 40 cm. Sa contenance est de :
+* 60 litres
+- 6 litres
+- 600 litres
+- 120 litres
+C: 60 L.
+E: Volume : $50 \times 30 \times 40 = 60\,000$ cm³ = 60 dm³ = 60 L (1 L = 1 dm³ = 1 000 cm³).
+
+[CAL-231] geometrie | advanced
+Q: On augmente de 10 % la longueur et la largeur d'un rectangle. Son aire augmente de :
+* 21 %
+- 20 %
+- 10 %
+- 11 %
+C: 21 %.
+E: L'aire est multipliée par $1{,}1 \times 1{,}1 = 1{,}21$, soit une hausse de 21 %.
+
+[CAL-232] pourcentages | advanced
+Q: Un commerçant achète un article 400 DH et veut réaliser une marge de 25 % sur le prix de vente. Il doit le vendre :
+* 533 DH environ
+- 500 DH
+- 425 DH
+- 480 DH
+C: $P = \frac{400}{0{,}75} \approx 533$ DH.
+E: Si la marge représente 25 % du prix de vente, le coût d'achat en représente 75 % : $P = \frac{400}{0{,}75} \approx 533{,}33$ DH. Une marge de 25 % du prix d'achat donnerait 500 DH.
+
+[CAL-233] proportions | intermediate
+Q: Sur une carte à l'échelle 1/200 000, une route mesure 7,5 cm. Sa longueur réelle est :
+* 15 km
+- 1,5 km
+- 150 km
+- 75 km
+C: 15 km.
+E: $7{,}5 \times 200\,000 = 1\,500\,000$ cm $= 15\,000$ m $= 15$ km.
+
+[CAL-234] proportions | intermediate
+Q: 1 dirham vaut environ 0,092 euro. Combien d'euros obtient-on avec 5 000 DH ?
+* 460 €
+- 46 €
+- 4 600 €
+- 543 €
+C: 460 €.
+E: $5\,000 \times 0{,}092 = 460$ €. Pour convertir des euros en dirhams, on diviserait par 0,092.
+
+[CAL-235] fractions | intermediate
+Q: Le nombre $0{,}125$ s'écrit sous forme de fraction irréductible :
+* $\frac{1}{8}$
+- $\frac{125}{100}$
+- $\frac{1}{4}$
+- $\frac{12}{100}$
+C: $\frac{125}{1\,000} = \frac{1}{8}$.
+E: $0{,}125 = \frac{125}{1\,000}$ ; en simplifiant par 125, on obtient $\frac{1}{8}$.
+
+[CAL-236] moyennes | intermediate
+Q: Un candidat obtient 12 à l'examen national (coefficient 75 %) et 16 à l'examen régional (coefficient 25 %). Sa note de présélection est :
+* 13
+- 14
+- 12,5
+- 15
+C: $0{,}75 \times 12 + 0{,}25 \times 16 = 13$.
+E: $9 + 4 = 13$. C'est la formule 75/25 utilisée pour la présélection de nombreux concours (médecine, ENSA, ENCG…).
+
+[CAL-237] statistiques | intermediate
+Q: La médiane de la série 3 ; 7 ; 8 ; 12 ; 15 ; 20 est :
+* 10
+- 8
+- 12
+- 10,8
+C: 10.
+E: La série compte 6 valeurs rangées : la médiane est la moyenne des 3e et 4e valeurs, $\frac{8 + 12}{2} = 10$. La moyenne vaut environ 10,8.
+
+[CAL-238] statistiques | intermediate
+Q: Dans un sondage auprès de 400 personnes, 30 % préfèrent le train. Sur un diagramme circulaire, l'angle correspondant mesure :
+* 108°
+- 30°
+- 120°
+- 90°
+C: $0{,}30 \times 360° = 108°$.
+E: Le disque entier (360°) représente 100 % ; chaque pourcentage $p$ correspond à un angle $p \times 360°$.
+
+[CAL-239] statistiques | advanced
+Q: Les ventes d'une entreprise passent de 2 000 unités en 2023 à 2 500 en 2024. En prenant 2023 comme base 100, l'indice de 2024 vaut :
+* 125
+- 25
+- 120
+- 150
+C: 125.
+E: Indice $= \frac{2\,500}{2\,000} \times 100 = 125$ : les ventes ont augmenté de 25 %.
+
+[CAL-240] calcul-mental | beginner
+Q: Combien font $25 \times 48$ ?
+* 1 200
+- 1 000
+- 1 250
+- 1 150
+C: 1 200.
+E: $25 \times 48 = 25 \times 4 \times 12 = 100 \times 12 = 1\,200$.
+
+[CAL-241] calcul-mental | beginner
+Q: Combien font $0{,}5 \times 0{,}4$ ?
+* 0,2
+- 2
+- 0,02
+- 0,9
+C: 0,2.
+E: $5 \times 4 = 20$ et il y a deux chiffres après la virgule au total : 0,20.
+
+[CAL-242] calcul-mental | intermediate
+Q: Combien font $\frac{3}{4}$ de 2 h 40 min ?
+* 2 h
+- 1 h 50
+- 2 h 10
+- 1 h 30
+C: 2 heures.
+E: 2 h 40 = 160 min ; $\frac{3}{4} \times 160 = 120$ min = 2 h.
+
+[CAL-243] calcul-mental | intermediate
+Q: Combien font $99^2$ ?
+* 9 801
+- 9 999
+- 9 900
+- 9 081
+C: 9 801.
+E: $(100 - 1)^2 = 10\,000 - 200 + 1 = 9\,801$.
+
+[CAL-244] proportions | advanced
+Q: Un mélange contient de l'eau et du sirop dans le rapport 5 : 2. Pour 3,5 litres de mélange, il faut :
+* 1 litre de sirop
+- 1,5 litre de sirop
+- 0,7 litre de sirop
+- 2 litres de sirop
+C: 1 L de sirop et 2,5 L d'eau.
+E: Le mélange compte $5 + 2 = 7$ parts ; une part vaut $\frac{3{,}5}{7} = 0{,}5$ L. Sirop : $2 \times 0{,}5 = 1$ L.
+
+[CAL-245] pourcentages | intermediate
+Q: Après une hausse de 50 %, de quel pourcentage doit baisser un prix pour revenir à sa valeur initiale ?
+* 33,3 %
+- 50 %
+- 25 %
+- 66,7 %
+C: Environ 33,3 %.
+E: Le prix est multiplié par 1,5 ; pour revenir au départ, il faut le multiplier par $\frac{1}{1{,}5} = \frac{2}{3}$, soit une baisse d'un tiers.
+
+[CAL-246] vitesse | intermediate
+Q: Un piéton marche à 5 km/h. Combien de temps lui faut-il pour parcourir 2 km ?
+* 24 minutes
+- 20 minutes
+- 25 minutes
+- 40 minutes
+C: 24 min.
+E: $t = \frac{2}{5}$ h $= 0{,}4$ h $= 24$ minutes.
+
+[CAL-247] interets | advanced
+Q: Un placement rapporte 4 % par an à intérêts simples. En combien d'années un capital produit-il des intérêts égaux à sa moitié ?
+* 12,5 ans
+- 10 ans
+- 25 ans
+- 8 ans
+C: 12,5 ans.
+E: Les intérêts valent $C \times 0{,}04 \times n$ ; on veut $0{,}04n = 0{,}5$, soit $n = 12{,}5$ ans.
+
+[CAL-248] statistiques | intermediate
+Q: Les dépenses d'une famille sont : logement 3 000 DH, alimentation 2 500 DH, transport 1 000 DH, autres 1 500 DH. La part du logement dans le budget est :
+* 37,5 %
+- 30 %
+- 33,3 %
+- 40 %
+C: $\frac{3\,000}{8\,000} = 37{,}5\ \%$.
+E: Budget total : $3\,000 + 2\,500 + 1\,000 + 1\,500 = 8\,000$ DH. Part du logement : $\frac{3\,000}{8\,000} = 0{,}375$.
+
+[CAL-249] fractions | advanced
+Q: Combien font $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16}$ ?
+* $\frac{15}{16}$
+- $1$
+- $\frac{4}{30}$
+- $\frac{7}{8}$
+C: $\frac{15}{16}$.
+E: Au dénominateur 16 : $\frac{8 + 4 + 2 + 1}{16} = \frac{15}{16}$. Il ne manque que $\frac{1}{16}$ pour atteindre 1.
+
+[CAL-250] proportions | intermediate
+Q: Un ouvrier gagne 180 DH pour 8 heures de travail. Combien gagne-t-il pour 30 heures ?
+* 675 DH
+- 600 DH
+- 720 DH
+- 540 DH
+C: 675 DH.
+E: Salaire horaire : $\frac{180}{8} = 22{,}5$ DH ; pour 30 h : $30 \times 22{,}5 = 675$ DH.

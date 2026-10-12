@@ -204,3 +204,458 @@ Q: Quel nombre complète la suite : 2 ; 6 ; 12 ; 20 ; 30 ; … ?
 - 44
 C: 42.
 E: Les écarts sont 4, 6, 8, 10, puis 12 : $30 + 12 = 42$. On peut aussi voir les termes comme $1 \times 2$, $2 \times 3$, $3 \times 4$, $4 \times 5$, $5 \times 6$, puis $6 \times 7 = 42$.
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions de niveau bac dans l'esprit des épreuves TAFEM (ENCG),
+# ENA architecture et ISCAE.
+@source src-general
+
+[LOG-201] suites | beginner
+Q: Quel nombre complète la suite : 3 ; 6 ; 12 ; 24 ; … ?
+* 48
+- 36
+- 30
+- 42
+C: 48 (chaque terme est doublé).
+E: Suite géométrique de raison 2 : $24 \times 2 = 48$.
+
+[LOG-202] suites | beginner
+Q: Quel nombre complète la suite : 1 ; 4 ; 9 ; 16 ; 25 ; … ?
+* 36
+- 30
+- 35
+- 49
+C: 36.
+E: Ce sont les carrés des entiers : $1^2, 2^2, 3^2, 4^2, 5^2$, puis $6^2 = 36$.
+
+[LOG-203] suites | intermediate
+Q: Quel nombre complète la suite : 1 ; 1 ; 2 ; 3 ; 5 ; 8 ; 13 ; … ?
+* 21
+- 18
+- 20
+- 26
+C: 21 (suite de Fibonacci).
+E: Chaque terme est la somme des deux précédents : $8 + 13 = 21$.
+
+[LOG-204] suites | intermediate
+Q: Quel nombre complète la suite : 2 ; 3 ; 5 ; 7 ; 11 ; 13 ; … ?
+* 17
+- 15
+- 19
+- 16
+C: 17 (nombres premiers).
+E: Ce sont les nombres premiers successifs. 15 est divisible par 3 et 5 ; le suivant après 13 est 17.
+
+[LOG-205] suites | intermediate
+Q: Quel nombre complète la suite : 5 ; 7 ; 11 ; 19 ; 35 ; … ?
+* 67
+- 51
+- 70
+- 63
+C: 67.
+E: Les écarts doublent : +2, +4, +8, +16, puis +32 : $35 + 32 = 67$.
+
+[LOG-206] suites | intermediate
+Q: Quel nombre complète la suite : 2 ; 5 ; 11 ; 23 ; 47 ; … ?
+* 95
+- 94
+- 71
+- 93
+C: 95.
+E: Chaque terme est le double du précédent plus 1 : $47 \times 2 + 1 = 95$.
+
+[LOG-207] suites | advanced
+Q: Quel nombre complète la suite : 3 ; 4 ; 8 ; 17 ; 33 ; … ?
+* 58
+- 49
+- 50
+- 66
+C: 58.
+E: Les écarts sont des carrés : +1, +4, +9, +16, puis +25 : $33 + 25 = 58$.
+
+[LOG-208] suites | intermediate
+Q: Quel nombre complète la suite : 100 ; 50 ; 52 ; 26 ; 28 ; … ?
+* 14
+- 30
+- 13
+- 56
+C: 14.
+E: On alterne « diviser par 2 » et « ajouter 2 » : $100 \div 2 = 50$, $+2 = 52$, $\div 2 = 26$, $+2 = 28$, $\div 2 = 14$.
+
+[LOG-209] suites | advanced
+Q: Quel nombre complète la suite : 7 ; 10 ; 8 ; 11 ; 9 ; 12 ; … ?
+* 10
+- 13
+- 15
+- 8
+C: 10.
+E: On alterne +3 et −2 : 7, 10, 8, 11, 9, 12, puis $12 - 2 = 10$.
+
+[LOG-210] series-lettres | beginner
+Q: Quelle lettre complète la suite : B, D, F, H, … ?
+* J
+- I
+- K
+- L
+C: J.
+E: On saute une lettre à chaque fois (rangs 2, 4, 6, 8, puis 10) : J.
+
+[LOG-211] series-lettres | intermediate
+Q: Quel groupe complète la suite : AZ, BY, CX, DW, … ?
+* EV
+- EU
+- FV
+- EW
+C: EV.
+E: La première lettre avance dans l'alphabet (A, B, C, D, E) et la seconde recule à partir de Z (Z, Y, X, W, V).
+
+[LOG-212] series-lettres | intermediate
+Q: Quelle lettre complète la suite : Z, W, T, Q, … ?
+* N
+- O
+- M
+- P
+C: N.
+E: On recule de 3 lettres à chaque fois : Z (26), W (23), T (20), Q (17), puis 14 = N.
+
+[LOG-213] series-lettres | intermediate
+Q: Quelle lettre complète la suite : J, F, M, A, M, J, J, … ?
+* A
+- S
+- O
+- J
+C: A (août).
+E: Ce sont les initiales des mois de l'année : janvier, février, mars, avril, mai, juin, juillet, puis août.
+
+[LOG-214] analogies | beginner
+Q: Médecin est à hôpital ce que professeur est à :
+* École
+- Élève
+- Livre
+- Cours
+C: École (lieu de travail).
+E: L'analogie relie une profession à son lieu d'exercice : le médecin travaille à l'hôpital, le professeur à l'école.
+
+[LOG-215] analogies | beginner
+Q: Pied est à chaussure ce que main est à :
+* Gant
+- Doigt
+- Bras
+- Bague
+C: Gant.
+E: La chaussure couvre et protège le pied ; le gant couvre et protège la main.
+
+[LOG-216] analogies | intermediate
+Q: 3 est à 27 ce que 4 est à :
+* 64
+- 16
+- 12
+- 81
+C: 64 ($4^3$).
+E: $27 = 3^3$, donc on cherche $4^3 = 64$.
+
+[LOG-217] analogies | intermediate
+Q: Livre est à bibliothèque ce que tableau est à :
+* Musée
+- Peintre
+- Cadre
+- Couleur
+C: Musée.
+E: La bibliothèque rassemble et expose des livres ; le musée rassemble et expose des tableaux.
+
+[LOG-218] intrus | beginner
+Q: Quel est l'intrus : Rabat, Fès, Marrakech, Séville, Meknès ?
+* Séville
+- Rabat
+- Fès
+- Meknès
+C: Séville (ville espagnole).
+E: Rabat, Fès, Marrakech et Meknès sont les villes impériales du Maroc ; Séville est en Espagne.
+
+[LOG-219] intrus | intermediate
+Q: Quel est l'intrus : 121 ; 144 ; 169 ; 186 ; 196 ?
+* 186
+- 121
+- 144
+- 196
+C: 186.
+E: $121 = 11^2$, $144 = 12^2$, $169 = 13^2$, $196 = 14^2$ ; 186 n'est pas un carré parfait.
+
+[LOG-220] intrus | intermediate
+Q: Quel est l'intrus : carré, rectangle, losange, triangle, trapèze ?
+* Triangle
+- Carré
+- Losange
+- Trapèze
+C: Triangle (seul polygone à 3 côtés).
+E: Les autres figures sont des quadrilatères (4 côtés).
+
+[LOG-221] intrus | intermediate
+Q: Quel est l'intrus : 13 ; 17 ; 19 ; 21 ; 23 ?
+* 21
+- 13
+- 17
+- 23
+C: 21.
+E: 13, 17, 19 et 23 sont des nombres premiers ; $21 = 3 \times 7$.
+
+[LOG-222] intrus | intermediate
+Q: Quel est l'intrus : violon, guitare, flûte, luth, harpe ?
+* Flûte
+- Violon
+- Luth
+- Harpe
+C: Flûte (instrument à vent).
+E: Le violon, la guitare, le luth et la harpe sont des instruments à cordes ; la flûte est un instrument à vent.
+
+[LOG-223] deduction | beginner
+Q: Tous les élèves de la classe sont inscrits au club de lecture. Sara est dans la classe. On peut affirmer que :
+* Sara est inscrite au club de lecture
+- Tous les inscrits au club sont dans la classe
+- Sara n'aime pas lire
+- Aucune conclusion n'est possible
+C: Sara est inscrite.
+E: Si tous les éléments d'un ensemble ont une propriété, chacun de ses éléments l'a aussi. En revanche, on ne sait rien des inscrits qui ne sont pas dans la classe.
+
+[LOG-224] deduction | intermediate
+Q: « S'il pleut, la route est mouillée. » La route est sèche. On peut conclure que :
+* Il ne pleut pas
+- Il pleut
+- La route va bientôt être mouillée
+- On ne peut rien conclure
+C: Il ne pleut pas (contraposée).
+E: L'implication « A ⇒ B » équivaut à sa contraposée « non B ⇒ non A ». En revanche, une route mouillée ne prouve pas qu'il pleut (elle a pu être arrosée).
+
+[LOG-225] deduction | intermediate
+Q: « S'il pleut, la route est mouillée. » La route est mouillée. On peut conclure que :
+* On ne peut pas affirmer qu'il pleut
+- Il pleut forcément
+- Il ne pleut pas
+- La route est sèche
+C: Aucune conclusion certaine.
+E: Affirmer « B, donc A » à partir de « A ⇒ B » est une erreur de raisonnement (réciproque). La route peut être mouillée pour une autre raison.
+
+[LOG-226] deduction | advanced
+Q: Ali est plus grand que Brahim. Chama est plus petite que Brahim. Driss est plus grand qu'Ali. Qui est le plus petit ?
+* Chama
+- Brahim
+- Ali
+- Driss
+C: Chama.
+E: On range : Driss > Ali > Brahim > Chama. Chama est la plus petite et Driss le plus grand.
+
+[LOG-227] deduction | advanced
+Q: Trois amis, Amine, Badr et Chakib, pratiquent chacun un sport différent : football, tennis ou natation. Amine ne joue pas au football. Badr fait de la natation. Quel sport pratique Chakib ?
+* Le football
+- Le tennis
+- La natation
+- On ne peut pas savoir
+C: Le football.
+E: Badr fait de la natation. Il reste football et tennis pour Amine et Chakib ; Amine ne joue pas au football, il fait donc du tennis, et Chakib du football.
+
+[LOG-228] codage | intermediate
+Q: Si CHAT s'écrit DIBU (chaque lettre décalée d'un rang), comment s'écrit CHIEN ?
+* DIJFO
+- DIJEO
+- BGHDM
+- DJIFO
+C: DIJFO.
+E: Chaque lettre est remplacée par la suivante : C → D, H → I, I → J, E → F, N → O.
+
+[LOG-229] codage | intermediate
+Q: Dans un code, 2 = 6, 3 = 12, 4 = 20, 5 = 30. Que vaut 6 ?
+* 42
+- 36
+- 40
+- 48
+C: 42.
+E: Chaque nombre $n$ est codé par $n(n + 1)$ : $2 \times 3 = 6$, $3 \times 4 = 12$, … donc $6 \times 7 = 42$.
+
+[LOG-230] codage | advanced
+Q: Si ROSE = 6821 et SEL = 214 (avec le même code), alors ORSE s'écrit :
+* 8621
+- 6821
+- 8612
+- 2168
+C: 8621.
+E: Le code donne R = 6, O = 8, S = 2, E = 1 (et L = 4). ORSE s'écrit donc O-R-S-E = 8-6-2-1.
+
+[LOG-231] raisonnement | intermediate
+Q: Dans une ferme, il y a des poules et des moutons : 30 têtes et 84 pattes. Combien y a-t-il de moutons ?
+* 12
+- 18
+- 15
+- 10
+C: 12 moutons et 18 poules.
+E: Si les 30 animaux étaient des poules, on aurait 60 pattes. Chaque mouton ajoute 2 pattes : $\frac{84 - 60}{2} = 12$ moutons.
+
+[LOG-232] raisonnement | intermediate
+Q: La somme des âges d'une mère et de sa fille est 50 ans. La mère a 26 ans de plus que sa fille. Quel est l'âge de la fille ?
+* 12 ans
+- 24 ans
+- 13 ans
+- 38 ans
+C: 12 ans (la mère a 38 ans).
+E: $f + (f + 26) = 50$, soit $2f = 24$ et $f = 12$.
+
+[LOG-233] raisonnement | intermediate
+Q: Un robinet remplit une cuve en 3 heures ; un second la remplit en 6 heures. Ensemble, ils la remplissent en :
+* 2 heures
+- 4 h 30
+- 9 heures
+- 1 h 30
+C: 2 heures.
+E: En une heure : $\frac{1}{3} + \frac{1}{6} = \frac{1}{2}$ de la cuve. Il faut donc 2 heures.
+
+[LOG-234] raisonnement | advanced
+Q: Un groupe d'amis veut partager l'addition d'un restaurant. Si chacun paie 120 DH, il manque 60 DH ; si chacun paie 135 DH, il y a 30 DH de trop. Combien sont-ils ?
+* 6
+- 5
+- 8
+- 4
+C: 6 amis (addition : 780 DH).
+E: Passer de 120 à 135 DH par personne apporte $60 + 30 = 90$ DH de plus, soit 15 DH par personne : $\frac{90}{15} = 6$ amis. Addition : $6 \times 120 + 60 = 780$ DH.
+
+[LOG-235] raisonnement | advanced
+Q: Dans une course, vous dépassez le deuxième. Quelle est maintenant votre position ?
+* Deuxième
+- Premier
+- Troisième
+- On ne peut pas savoir
+C: Deuxième.
+E: En dépassant le deuxième, vous prenez sa place ; le premier est toujours devant vous.
+
+[LOG-236] raisonnement | intermediate
+Q: Un train part à 22 h 45 et arrive le lendemain à 6 h 20. Combien de temps dure le trajet ?
+* 7 h 35
+- 8 h 25
+- 7 h 25
+- 16 h 25
+C: 7 h 35.
+E: De 22 h 45 à minuit : 1 h 15 ; de minuit à 6 h 20 : 6 h 20. Total : 7 h 35.
+
+[LOG-237] spatio-temporel | intermediate
+Q: Si le 1er mars d'une année tombe un mardi, quel jour sera le 1er avril de la même année ?
+* Vendredi
+- Mardi
+- Jeudi
+- Samedi
+C: Vendredi.
+E: Mars compte 31 jours, soit 4 semaines et 3 jours. Le 1er avril tombe donc 3 jours après le mardi : vendredi.
+
+[LOG-238] spatio-temporel | intermediate
+Q: Je suis face au nord. Je tourne d'un quart de tour vers la droite, puis d'un demi-tour. Vers quelle direction suis-je tourné ?
+* L'ouest
+- L'est
+- Le sud
+- Le nord
+C: L'ouest.
+E: Un quart de tour à droite depuis le nord oriente vers l'est ; un demi-tour depuis l'est oriente vers l'ouest.
+
+[LOG-239] spatio-temporel | advanced
+Q: Une montre retarde de 2 minutes par heure. On la règle à l'heure exacte à midi. Quelle heure indique-t-elle à 18 h, heure exacte ?
+* 17 h 48
+- 17 h 52
+- 18 h 12
+- 17 h 58
+C: 17 h 48.
+E: En 6 heures, la montre prend $6 \times 2 = 12$ minutes de retard : elle indique 17 h 48.
+
+[LOG-240] spatio-temporel | intermediate
+Q: Combien de carrés de toutes tailles compte une grille de 3 × 3 petits carrés ?
+* 14
+- 9
+- 10
+- 13
+C: 14.
+E: 9 carrés de 1 × 1, 4 carrés de 2 × 2 et 1 carré de 3 × 3 : $9 + 4 + 1 = 14$.
+
+[LOG-241] spatio-temporel | intermediate
+Q: Un cube de 3 cm d'arête, peint en rouge sur toutes ses faces, est découpé en 27 petits cubes de 1 cm. Combien de petits cubes ont exactement deux faces peintes ?
+* 12
+- 8
+- 6
+- 1
+C: 12 (un par arête).
+E: Les cubes à 3 faces peintes sont aux 8 sommets ; ceux à 2 faces sont au milieu des 12 arêtes ; ceux à 1 face sont au centre des 6 faces ; le cube central n'a aucune face peinte. $8 + 12 + 6 + 1 = 27$.
+
+[LOG-242] deduction | intermediate
+Q: Quelle conclusion est correcte ? « Aucun reptile n'a de poils. Le serpent est un reptile. »
+* Le serpent n'a pas de poils
+- Certains serpents ont des poils
+- Tous les animaux sans poils sont des reptiles
+- Le serpent n'est pas un animal
+C: Le serpent n'a pas de poils.
+E: Syllogisme : la propriété « ne pas avoir de poils » s'applique à tous les reptiles, donc au serpent. La troisième proposition renverse la relation, ce qui n'est pas permis.
+
+[LOG-243] deduction | advanced
+Q: Quelle est la négation de « Il fait beau et je sors » ?
+* Il ne fait pas beau ou je ne sors pas
+- Il ne fait pas beau et je ne sors pas
+- Il fait beau et je ne sors pas
+- S'il fait beau, je ne sors pas
+C: non (A et B) = non A ou non B.
+E: Lois de De Morgan : pour que « A et B » soit faux, il suffit qu'une des deux propositions soit fausse.
+
+[LOG-244] raisonnement | intermediate
+Q: Le prix d'un livre et d'un stylo est de 110 DH. Le livre coûte 100 DH de plus que le stylo. Combien coûte le stylo ?
+* 5 DH
+- 10 DH
+- 15 DH
+- 1 DH
+C: 5 DH (livre : 105 DH).
+E: $s + (s + 100) = 110$, donc $2s = 10$ et $s = 5$. La réponse intuitive (10 DH) donnerait un livre à 110 DH, soit un total de 120 DH.
+
+[LOG-245] raisonnement | advanced
+Q: Un nénuphar double de surface chaque jour et couvre tout l'étang en 30 jours. En combien de jours couvrait-il la moitié de l'étang ?
+* 29 jours
+- 15 jours
+- 20 jours
+- 28 jours
+C: 29 jours.
+E: La surface double chaque jour : la veille du 30e jour, elle était la moitié de la surface finale.
+
+[LOG-246] raisonnement | intermediate
+Q: Dans un groupe de 25 étudiants, 15 parlent anglais, 12 parlent espagnol et 4 ne parlent aucune des deux langues. Combien parlent les deux langues ?
+* 6
+- 2
+- 4
+- 8
+C: 6.
+E: 21 étudiants parlent au moins une langue ($25 - 4$). Or $15 + 12 = 27$ : les 6 en trop sont comptés deux fois, ce sont ceux qui parlent les deux langues.
+
+[LOG-247] deduction | intermediate
+Q: Quelle valeur a la lettre X ? (1) X est un nombre pair compris entre 10 et 20. (2) X est un multiple de 7.
+* Les deux informations ensemble permettent de répondre, aucune ne suffit seule
+- L'information (1) suffit seule
+- L'information (2) suffit seule
+- Même ensemble, elles ne suffisent pas
+C: Il faut les deux : X = 14.
+E: (1) laisse 12, 14, 16, 18 ; (2) laisse 7, 14, 21… Ensemble, seul 14 convient.
+
+[LOG-248] analogies | intermediate
+Q: Complétez : 2 → 5 ; 3 → 10 ; 4 → 17 ; 5 → …
+* 26
+- 25
+- 24
+- 22
+C: 26.
+E: Chaque nombre $n$ est associé à $n^2 + 1$ : $5^2 + 1 = 26$.
+
+[LOG-249] raisonnement | intermediate
+Q: Si 5 machines fabriquent 5 objets en 5 minutes, combien de machines faut-il pour fabriquer 100 objets en 100 minutes ?
+* 5
+- 100
+- 20
+- 25
+C: 5 machines.
+E: Chaque machine fabrique un objet en 5 minutes, soit 20 objets en 100 minutes. Pour 100 objets en 100 minutes, il en faut $\frac{100}{20} = 5$.
+
+[LOG-250] suites | advanced
+Q: Quel nombre complète la suite : 1 ; 2 ; 6 ; 24 ; 120 ; … ?
+* 720
+- 240
+- 600
+- 144
+C: 720 ($6!$).
+E: On multiplie successivement par 2, 3, 4, 5, puis 6 : ce sont les factorielles, $120 \times 6 = 720$.

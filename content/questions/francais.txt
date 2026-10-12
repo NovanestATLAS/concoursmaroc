@@ -321,3 +321,458 @@ Q: Quel est le contraire de « urbain » ?
 - Moderne
 C: Rural.
 E: Urbain se rapporte à la ville (du latin urbs), rural à la campagne (du latin rus). Citadin (habitant de la ville) et municipal (qui concerne la commune) appartiennent au même champ que urbain.
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions de niveau bac dans l'esprit des épreuves TAFEM (ENCG),
+# ENA architecture et ISCAE.
+@source src-general
+
+[FRA-201] vocabulaire | beginner
+Q: Quel est le synonyme de « éphémère » ?
+* Passager
+- Durable
+- Éternel
+- Solide
+C: Passager.
+E: Éphémère qualifie ce qui dure peu de temps. Durable et éternel en sont des antonymes.
+
+[FRA-202] vocabulaire | beginner
+Q: Quel est l'antonyme de « optimiste » ?
+* Pessimiste
+- Joyeux
+- Confiant
+- Réaliste
+C: Pessimiste.
+E: L'optimiste voit le bon côté des choses, le pessimiste le mauvais. Confiant est proche d'optimiste.
+
+[FRA-203] vocabulaire | intermediate
+Q: « Un discours laconique » est un discours :
+* Bref et concis
+- Long et ennuyeux
+- Violent
+- Incompréhensible
+C: Bref.
+E: Laconique (du nom des Spartiates de Laconie, réputés pour parler peu) signifie « qui s'exprime en peu de mots ». Son contraire est prolixe ou bavard.
+
+[FRA-204] vocabulaire | intermediate
+Q: « Il a fait preuve d'une grande probité. » Le mot « probité » signifie :
+* Honnêteté, intégrité
+- Prudence
+- Intelligence
+- Richesse
+C: Honnêteté.
+E: La probité est le respect scrupuleux des devoirs et de la justice. On parle de la probité d'un juge ou d'un fonctionnaire.
+
+[FRA-205] vocabulaire | intermediate
+Q: Quel est le sens du mot « pérenniser » ?
+* Rendre durable
+- Supprimer
+- Accélérer
+- Partager
+C: Rendre durable.
+E: Pérenniser une entreprise ou un projet, c'est assurer sa continuité dans le temps (même famille que « pérenne »).
+
+[FRA-206] vocabulaire | intermediate
+Q: Complétez avec le mot juste : « Le témoin a fait une … très détaillée de l'accident. »
+* description
+- prescription
+- proscription
+- inscription
+C: description.
+E: Une description est un récit détaillé. Une prescription est une recommandation (médicale), une proscription une interdiction, une inscription un enregistrement ou un texte gravé.
+
+[FRA-207] vocabulaire | intermediate
+Q: Choisissez le mot correct : « Ce médicament est … pour les enfants. »
+* déconseillé
+- déconsidéré
+- décontenancé
+- déconcerté
+C: déconseillé.
+E: Déconseiller, c'est recommander de ne pas faire. Déconsidéré signifie discrédité ; décontenancé et déconcerté signifient troublé, désorienté.
+
+[FRA-208] vocabulaire | advanced
+Q: Quel mot est un paronyme de « conjecture » (supposition) ?
+* Conjoncture
+- Hypothèse
+- Supposition
+- Prévision
+C: Conjoncture.
+E: Les paronymes ont une forme proche et un sens différent : la conjoncture est la situation économique ou politique à un moment donné. Hypothèse et supposition sont des synonymes de conjecture.
+
+[FRA-209] grammaire | beginner
+Q: Dans « Les élèves regardent un film », quelle est la fonction de « un film » ?
+* Complément d'objet direct
+- Sujet
+- Attribut du sujet
+- Complément circonstanciel
+C: COD.
+E: Le COD répond à la question « quoi ? » ou « qui ? » posée après le verbe, sans préposition : regardent quoi ? un film.
+
+[FRA-210] grammaire | intermediate
+Q: Dans « Je pense à mes examens », quelle est la fonction de « à mes examens » ?
+* Complément d'objet indirect
+- Complément d'objet direct
+- Complément circonstanciel de lieu
+- Complément du nom
+C: COI.
+E: Le complément est introduit par une préposition (à) imposée par le verbe « penser à » : c'est un COI. Il se pronominalise en « y » : j'y pense.
+
+[FRA-211] grammaire | intermediate
+Q: Dans « La maison de mon oncle est grande », « de mon oncle » est :
+* Complément du nom
+- Complément d'objet indirect
+- Complément circonstanciel
+- Attribut du sujet
+C: Complément du nom « maison ».
+E: Il précise le nom « maison » et fait partie du groupe nominal sujet. « Grande » est l'attribut du sujet.
+
+[FRA-212] grammaire | intermediate
+Q: Quelle phrase contient une proposition subordonnée relative ?
+* Le livre que tu m'as prêté est passionnant
+- Je pense qu'il viendra demain
+- Quand il pleut, je reste chez moi
+- Il est parti parce qu'il était fatigué
+C: « que tu m'as prêté » complète le nom « livre ».
+E: La relative est introduite par un pronom relatif (qui, que, dont, où, lequel…) et complète un nom (son antécédent). Les autres phrases contiennent une complétive, une circonstancielle de temps et une circonstancielle de cause.
+
+[FRA-213] grammaire | intermediate
+Q: Complétez avec le pronom relatif correct : « C'est le projet … je t'ai parlé. »
+* dont
+- que
+- où
+- qui
+C: dont.
+E: On dit « parler de quelque chose » : le complément introduit par « de » est repris par « dont ». « Que » remplace un COD, « qui » un sujet, « où » un lieu ou un moment.
+
+[FRA-214] grammaire | intermediate
+Q: Complétez : « La ville … je suis né est au bord de la mer. »
+* où
+- dont
+- que
+- laquelle
+C: où.
+E: « Où » reprend un complément de lieu ou de temps : je suis né dans cette ville.
+
+[FRA-215] grammaire | advanced
+Q: Quelle est la nature du mot « bien » dans « Il travaille bien » ?
+* Adverbe
+- Adjectif
+- Nom
+- Conjonction
+C: Adverbe (de manière).
+E: « Bien » modifie le verbe « travaille » et est invariable. Il peut être un nom dans « les biens immobiliers » ou un adjectif dans « des gens bien ».
+
+[FRA-216] conjugaison | beginner
+Q: Conjuguez le verbe « finir » à la 1re personne du pluriel du présent de l'indicatif :
+* Nous finissons
+- Nous finions
+- Nous finirons
+- Nous finîmes
+C: Nous finissons (2e groupe).
+E: Les verbes du 2e groupe (en -ir, participe présent en -issant) prennent -iss- au pluriel du présent : nous finissons, vous finissez, ils finissent.
+
+[FRA-217] conjugaison | intermediate
+Q: Quelle est la forme correcte du passé simple de « venir » à la 3e personne du singulier ?
+* Il vint
+- Il venit
+- Il vena
+- Il viendit
+C: Il vint.
+E: Passé simple de venir : je vins, tu vins, il vint, nous vînmes, vous vîntes, ils vinrent. Au subjonctif imparfait, on écrit « qu'il vînt » avec un accent circonflexe.
+
+[FRA-218] conjugaison | intermediate
+Q: Complétez : « Il faut que tu … tes devoirs avant de sortir. »
+* fasses
+- fais
+- feras
+- ferais
+C: Subjonctif présent.
+E: « Il faut que » exige le subjonctif : que je fasse, que tu fasses, qu'il fasse.
+
+[FRA-219] conjugaison | intermediate
+Q: Complétez : « Quand il … ses études, il partira à l'étranger. »
+* aura terminé
+- a terminé
+- terminait
+- terminerait
+C: Futur antérieur.
+E: Le futur antérieur exprime une action future achevée avant une autre action future (« il partira »). On l'emploie souvent après quand, dès que, lorsque.
+
+[FRA-220] conjugaison | advanced
+Q: Quelle phrase est correcte ?
+* Si tu venais, nous serions contents
+- Si tu viendrais, nous serions contents
+- Si tu venais, nous serons contents
+- Si tu viendras, nous serions contents
+C: Si + imparfait, conditionnel présent.
+E: On ne met jamais de conditionnel ni de futur juste après le « si » de condition. Hypothèse sur le présent : si + imparfait, puis conditionnel présent.
+
+[FRA-221] orthographe | beginner
+Q: Quelle phrase est correctement orthographiée ?
+* Ils ont mangé à la cantine
+- Ils on mangé à la cantine
+- Ils ont mangés à la cantine
+- Ils ont manger à la cantine
+C: « ont mangé ».
+E: « Ont » est le verbe avoir (on peut le remplacer par « avaient »). Le participe passé « mangé » ne s'accorde pas avec le sujet quand il est employé avec avoir.
+
+[FRA-222] orthographe | beginner
+Q: Complétez : « … est-ce que tu as vu mon livre ? — Il est … sur la table. »
+* Où / là
+- Ou / la
+- Où / la
+- Ou / là
+C: « Où » (lieu) et « là » (adverbe).
+E: « Où » avec accent indique le lieu ; « ou » sans accent signifie « ou bien ». « Là » avec accent est un adverbe de lieu ; « la » est un article ou un pronom.
+
+[FRA-223] orthographe | intermediate
+Q: Complétez : « Les fleurs que j'ai … sont fanées. »
+* cueillies
+- cueilli
+- cueillis
+- cueillie
+C: Accord avec le COD placé avant (« que » = les fleurs).
+E: Avec l'auxiliaire avoir, le participe passé s'accorde avec le COD placé avant le verbe : « les fleurs » est féminin pluriel.
+
+[FRA-224] orthographe | intermediate
+Q: Complétez : « Elles se sont … de bonne heure. »
+* levées
+- levé
+- levés
+- lever
+C: levées.
+E: Avec un verbe pronominal réfléchi (se lever : lever soi-même), le participe s'accorde avec le pronom « se », COD, qui renvoie au sujet féminin pluriel.
+
+[FRA-225] orthographe | intermediate
+Q: Complétez : « Elles se sont … des cadeaux. »
+* offert
+- offertes
+- offerts
+- offerte
+C: offert (invariable).
+E: Le COD « des cadeaux » est placé après le verbe ; « se » est COI (offrir à soi). Le participe passé ne s'accorde donc pas.
+
+[FRA-226] orthographe | intermediate
+Q: Complétez : « Ces robes … sont très élégantes. »
+* bleu marine
+- bleues marines
+- bleus marine
+- bleues marine
+C: Adjectif de couleur composé : invariable.
+E: Les adjectifs de couleur composés (bleu marine, vert clair, gris foncé) et les noms employés comme couleur (marron, orange) restent invariables.
+
+[FRA-227] orthographe | intermediate
+Q: Complétez : « … que soient les difficultés, il faut continuer. »
+* Quelles
+- Quel
+- Quelque
+- Quelques
+C: « Quelles que soient » : accord avec « les difficultés ».
+E: « Quel que » s'écrit en deux mots devant le verbe être au subjonctif, et « quel » s'accorde avec le sujet : quel que soit le résultat, quelle que soit la note, quelles que soient les difficultés. « Quelque », en un mot, se place devant un nom ou un adjectif (quelque temps).
+
+[FRA-228] orthographe | intermediate
+Q: Complétez : « Chaque voyageur doit surveiller … propres bagages. »
+* ses
+- ces
+- c'est
+- s'est
+C: « ses » (déterminant possessif).
+E: « Propres » indique l'appartenance : ses bagages (les siens). « Ces » est un déterminant démonstratif ; « c'est » = cela est ; « s'est » = auxiliaire être d'un verbe pronominal (il s'est levé).
+
+[FRA-229] orthographe | advanced
+Q: Quelle est l'orthographe correcte ?
+* Un événement exceptionnel
+- Un évènement excéptionnel
+- Un évenement exceptionel
+- Un événemment exceptionnel
+C: événement (ou évènement) exceptionnel.
+E: « Exceptionnel » prend deux n et pas d'accent sur le e de « excep- ». « Événement » s'écrit aussi « évènement » depuis les rectifications orthographiques de 1990.
+
+[FRA-230] orthographe | intermediate
+Q: Complétez : « Leurs parents … ont donné … autorisation. »
+* leur / leur
+- leurs / leur
+- leur / leurs
+- leurs / leurs
+C: « leur » pronom invariable, puis déterminant singulier.
+E: Devant un verbe, « leur » est un pronom personnel, toujours invariable. Devant un nom, c'est un déterminant possessif qui s'accorde : une seule autorisation, donc « leur ».
+
+[FRA-231] syntaxe | intermediate
+Q: Transformez à la voix active : « Le contrat a été signé par le directeur. »
+* Le directeur a signé le contrat
+- Le directeur signe le contrat
+- Le contrat a signé le directeur
+- Le directeur avait signé le contrat
+C: Le complément d'agent devient sujet.
+E: Le verbe passif « a été signé » est au passé composé : le verbe actif garde ce temps, « a signé ».
+
+[FRA-232] syntaxe | intermediate
+Q: Rapportez au discours indirect : Elle demande : « As-tu fini ton travail ? »
+* Elle demande si j'ai fini mon travail
+- Elle demande si as-tu fini ton travail
+- Elle demande que j'ai fini mon travail
+- Elle demande est-ce que j'ai fini mon travail
+C: « si » + ordre sujet-verbe.
+E: L'interrogation totale devient une subordonnée introduite par « si », sans inversion. Les pronoms changent (tu → je, ton → mon) ; le verbe introducteur étant au présent, le temps ne change pas.
+
+[FRA-233] syntaxe | intermediate
+Q: Dans « Comme il pleuvait, nous sommes restés à la maison », la proposition « Comme il pleuvait » exprime :
+* La cause
+- Le temps
+- La comparaison
+- La conséquence
+C: La cause.
+E: Placé en tête de phrase et suivi de l'imparfait, « comme » introduit souvent la cause (= puisque). Dans « Il chante comme un rossignol », il exprime la comparaison.
+
+[FRA-234] syntaxe | intermediate
+Q: Quel connecteur exprime l'opposition ?
+* Cependant
+- Donc
+- Car
+- Ensuite
+C: Cependant.
+E: Cependant, pourtant, néanmoins, toutefois et mais expriment l'opposition. Donc exprime la conséquence, car la cause, ensuite la succession.
+
+[FRA-235] syntaxe | intermediate
+Q: Dans « Il a tellement travaillé qu'il a réussi », la subordonnée exprime :
+* La conséquence
+- La cause
+- Le but
+- La concession
+C: La conséquence.
+E: « Tellement … que », « si … que », « si bien que » introduisent une conséquence. Le but s'exprime avec « pour que, afin que » + subjonctif.
+
+[FRA-236] syntaxe | advanced
+Q: Quelle phrase exprime une concession ?
+* Bien qu'il soit malade, il est venu travailler
+- Puisqu'il est malade, il reste chez lui
+- Il est malade, donc il reste chez lui
+- Il est venu pour travailler
+C: « Bien que » + subjonctif.
+E: La concession exprime un fait qui aurait dû empêcher l'autre mais ne l'a pas fait. Les autres phrases expriment la cause, la conséquence et le but.
+
+[FRA-237] vocabulaire | intermediate
+Q: Quelle figure de style trouve-t-on dans « Cet homme est un lion » ?
+* Une métaphore
+- Une comparaison
+- Une personnification
+- Une antithèse
+C: Une métaphore.
+E: La métaphore rapproche deux éléments sans outil de comparaison. « Cet homme est courageux comme un lion » serait une comparaison (outil : comme).
+
+[FRA-238] vocabulaire | intermediate
+Q: « Je meurs de faim » est :
+* Une hyperbole
+- Une litote
+- Un euphémisme
+- Une métonymie
+C: Une hyperbole (exagération).
+E: L'hyperbole exagère pour frapper l'esprit. La litote dit moins pour suggérer plus (« ce n'est pas mal ») ; l'euphémisme atténue une réalité pénible (« il nous a quittés »).
+
+[FRA-239] vocabulaire | intermediate
+Q: « Boire un verre » est un exemple de :
+* Métonymie (le contenant pour le contenu)
+- Métaphore
+- Hyperbole
+- Antithèse
+C: Une métonymie.
+E: On désigne une chose par une autre qui lui est liée : on boit le contenu du verre. « Lire un Victor Hugo » (l'auteur pour l'œuvre) est aussi une métonymie.
+
+[FRA-240] vocabulaire | intermediate
+Q: « Le vent hurlait dans la nuit » est :
+* Une personnification
+- Une comparaison
+- Une litote
+- Une hyperbole
+C: Une personnification.
+E: On attribue au vent un comportement humain (hurler). La personnification anime un objet, un animal ou une idée.
+
+[FRA-241] vocabulaire | beginner
+Q: Quel est le nom de la famille du verbe « produire » qui désigne l'action ?
+* Production
+- Produit
+- Producteur
+- Productif
+C: Production.
+E: « Production » désigne l'action de produire ; « produit » est le résultat, « producteur » celui qui produit et « productif » un adjectif.
+
+[FRA-242] vocabulaire | intermediate
+Q: Le préfixe « anti- » dans « antidouleur » signifie :
+* Contre
+- Avant
+- Après
+- Autour
+C: Contre.
+E: Anti- (contre) ne doit pas être confondu avec anté- (avant), comme dans « antérieur ». Autres exemples : antivirus, antibiotique.
+
+[FRA-243] vocabulaire | intermediate
+Q: Que signifie l'expression « tirer son épingle du jeu » ?
+* Se dégager habilement d'une situation difficile
+- Tricher pendant un jeu
+- Abandonner une partie
+- Couper court à une discussion
+C: S'en sortir adroitement.
+E: L'expression vient d'un ancien jeu où l'on misait des épingles : celui qui récupérait la sienne sans perte s'en sortait bien.
+
+[FRA-244] vocabulaire | intermediate
+Q: Que signifie « avoir du pain sur la planche » ?
+* Avoir beaucoup de travail à faire
+- Être riche
+- Manquer de nourriture
+- Être en retard
+C: Beaucoup de travail.
+E: Expression familière courante : « Avec les révisions du concours, j'ai du pain sur la planche. »
+
+[FRA-245] orthographe | advanced
+Q: Quel est le pluriel de « un garde-malade » ?
+* Des gardes-malades
+- Des garde-malades
+- Des gardes-malade
+- Des garde-malade
+C: Des gardes-malades.
+E: Ici « garde » est un nom (la personne qui garde) : les deux éléments, noms, prennent la marque du pluriel. Dans « des garde-robes », « garde » est un verbe et reste invariable.
+
+[FRA-246] conjugaison | intermediate
+Q: Complétez au plus-que-parfait : « Quand je suis arrivé, le train … »
+* était déjà parti
+- est déjà parti
+- partait déjà
+- sera déjà parti
+C: Plus-que-parfait (antériorité dans le passé).
+E: Le plus-que-parfait marque une action passée antérieure à une autre action passée (« je suis arrivé »). Il se forme avec l'auxiliaire à l'imparfait.
+
+[FRA-247] syntaxe | beginner
+Q: Quel est le type de la phrase « Fermez la porte, s'il vous plaît. » ?
+* Injonctive (impérative)
+- Interrogative
+- Exclamative
+- Déclarative
+C: Phrase injonctive.
+E: Elle exprime un ordre ou une demande, avec un verbe à l'impératif. Les quatre types de phrases sont déclaratif, interrogatif, injonctif et exclamatif.
+
+[FRA-248] vocabulaire | intermediate
+Q: Le mot « hydrophobe » signifie :
+* Qui repousse l'eau
+- Qui aime l'eau
+- Qui a peur du feu
+- Qui vit dans l'eau
+C: Qui repousse l'eau.
+E: Du grec hydro (eau) et phobos (peur, répulsion). Son contraire est « hydrophile ». On retrouve « hydro- » dans hydraulique, hydratation.
+
+[FRA-249] grammaire | intermediate
+Q: Dans « Les enfants, que leurs parents attendaient, sont arrivés », le verbe « attendaient » a pour sujet :
+* leurs parents
+- les enfants
+- que
+- sont arrivés
+C: « leurs parents ».
+E: Dans la relative, « que » est COD (il reprend « les enfants ») ; le sujet de « attendaient » est « leurs parents », placé avant le verbe. Le verbe s'accorde donc au pluriel avec « parents ».
+
+[FRA-250] vocabulaire | beginner
+Q: Quel mot est un synonyme de « commencer » ?
+* Entamer
+- Achever
+- Terminer
+- Conclure
+C: Entamer.
+E: Entamer, débuter, amorcer sont des synonymes de commencer. Achever, terminer et conclure en sont les antonymes.

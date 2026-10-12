@@ -1475,3 +1475,508 @@ Q: Laquelle de ces défenses ne fait pas partie des barrières naturelles (premi
 - L'acidité de l'estomac
 C: Les LTc relèvent de l'immunité adaptative.
 E: Les barrières naturelles empêchent l'entrée des microbes : barrière mécanique de la peau et des muqueuses, mucus, sécrétions antimicrobiennes (lysozyme), acidité gastrique, flore normale. Les lymphocytes T cytotoxiques interviennent bien plus tard, dans la réponse spécifique à médiation cellulaire.
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions sur l'ensemble du programme de 2e année du baccalauréat
+# (sciences mathématiques, PC, SVT), dans l'esprit des concours médecine et ENSA.
+@source src-programme-bac
+
+[SVT-301] respiration | beginner
+Q: Le bilan de la respiration cellulaire d'une molécule de glucose s'écrit :
+* $\mathrm{C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O}$ + énergie
+- $\mathrm{C_6H_{12}O_6 \to 2C_2H_5OH + 2CO_2}$ + énergie
+- $\mathrm{C_6H_{12}O_6 \to 2C_3H_6O_3}$ + énergie
+- $\mathrm{6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2}$
+- $\mathrm{C_6H_{12}O_6 + 6CO_2 \to 6O_2 + 6H_2O}$
+C: Oxydation complète du glucose en CO₂ et H₂O.
+E: La respiration consomme du dioxygène et dégrade complètement le glucose, avec un rendement d'environ 36 à 38 ATP. Les deuxième et troisième équations sont les fermentations alcoolique et lactique ; la quatrième est le bilan de la photosynthèse.
+
+[SVT-302] respiration | intermediate
+Q: Le rendement énergétique de la respiration est d'environ 40 %. Cela signifie que :
+* Environ 40 % de l'énergie du glucose est récupérée sous forme d'ATP, le reste étant dissipé en chaleur
+- 40 % du glucose est dégradé, le reste est stocké
+- 40 % du dioxygène est consommé
+- La respiration produit 40 molécules d'ATP
+- 60 % de l'énergie est stockée sous forme de glycogène
+C: 40 % de l'énergie chimique est convertie en ATP.
+E: Le glucose libère environ 2 860 kJ/mol ; la synthèse de 36 ATP en stocke environ $36 \times 30{,}5 \approx 1\,100$ kJ, soit près de 40 %. Le reste est dissipé sous forme de chaleur, ce qui contribue à la température corporelle.
+
+[SVT-303] fermentation | beginner
+Q: La fermentation alcoolique réalisée par les levures produit :
+* De l'éthanol, du CO₂ et 2 ATP par glucose
+- De l'acide lactique et 2 ATP par glucose
+- De l'éthanol, de l'eau et 38 ATP par glucose
+- Du CO₂ et de l'eau seulement
+- Du glucose à partir d'éthanol
+C: Éthanol + CO₂ + 2 ATP.
+E: Après la glycolyse, le pyruvate est décarboxylé puis réduit en éthanol, ce qui régénère le NAD⁺. Le seul ATP produit vient de la glycolyse (2 ATP nets). Le CO₂ dégagé fait lever la pâte à pain.
+
+[SVT-304] respiration | intermediate
+Q: Dans une suspension de mitochondries isolées, on ajoute du glucose : la consommation de dioxygène ne change pas. On ajoute ensuite du pyruvate : elle augmente. On en déduit que :
+* La mitochondrie utilise le pyruvate mais pas le glucose, dont la dégradation commence dans le hyaloplasme
+- La mitochondrie dégrade directement le glucose
+- Le pyruvate empêche l'entrée du glucose
+- Le dioxygène est produit par la mitochondrie
+- La glycolyse a lieu dans la matrice
+C: La glycolyse est hyaloplasmique ; la mitochondrie oxyde le pyruvate.
+E: Le glucose doit d'abord être transformé en pyruvate dans le hyaloplasme (glycolyse). Le pyruvate entre dans la mitochondrie, où il est oxydé (décarboxylation, cycle de Krebs) ; les transporteurs réduits sont réoxydés par la chaîne respiratoire, qui consomme le dioxygène.
+
+[SVT-305] respiration | intermediate
+Q: Le cyanure bloque le dernier complexe de la chaîne respiratoire (cytochrome oxydase). Quelle est la conséquence immédiate ?
+* L'arrêt de la consommation de dioxygène et de la synthèse d'ATP mitochondriale
+- Une augmentation de la production d'ATP
+- L'arrêt de la glycolyse uniquement
+- L'accélération du cycle de Krebs
+- Une production accrue de CO₂ par la chaîne respiratoire
+C: Plus de transfert d'électrons vers O₂, donc plus d'ATP mitochondrial.
+E: Les électrons ne peuvent plus être cédés au dioxygène : la chaîne s'arrête, le gradient de protons n'est plus entretenu et l'ATP synthase ne fonctionne plus. Les NADH,H⁺ s'accumulent, ce qui bloque aussi le cycle de Krebs. Seule la glycolyse, avec la fermentation, peut encore produire un peu d'ATP.
+
+[SVT-306] muscle | beginner
+Q: La myoglobine, abondante dans les fibres musculaires rouges, a pour rôle :
+* De stocker et fournir du dioxygène aux mitochondries des fibres
+- De transporter le glucose dans le sang
+- De fixer les ions calcium
+- De produire de l'acide lactique
+- De relier l'actine à la myosine
+C: Une réserve de dioxygène dans le muscle.
+E: Les fibres rouges (lentes) sont riches en myoglobine et en mitochondries : elles fonctionnent surtout par respiration et résistent à la fatigue. Les fibres blanches (rapides) utilisent davantage la fermentation lactique.
+
+[SVT-307] muscle | intermediate
+Q: Lors d'une secousse musculaire enregistrée au myogramme, la période de latence correspond :
+* Au temps entre la stimulation et le début du raccourcissement du muscle
+- À la durée de la contraction
+- À la durée du relâchement
+- Au temps pendant lequel le muscle est tétanisé
+- Au temps de récupération de l'ATP
+C: Le délai entre l'excitation et la contraction.
+E: Une secousse comprend un temps de latence (propagation du potentiel d'action, libération du calcium), une phase de contraction puis une phase de relâchement. La latence est de l'ordre de quelques millisecondes.
+
+[SVT-308] muscle | intermediate
+Q: Au microscope électronique, quelle zone d'un sarcomère ne contient que des filaments de myosine ?
+* La zone H
+- La bande I
+- La strie Z
+- La totalité de la bande A
+- La bande I et la strie Z
+C: La zone H.
+E: La zone H, au centre de la bande A, ne contient que des filaments épais de myosine ; elle rétrécit lors de la contraction. La bande I ne contient que de l'actine ; le reste de la bande A contient les deux types de filaments.
+
+[SVT-309] muscle | intermediate
+Q: Lors de la contraction musculaire, les ions calcium proviennent principalement :
+* Du réticulum sarcoplasmique, après l'arrivée du potentiel d'action
+- Des mitochondries
+- Du noyau de la fibre
+- Du plasma sanguin, directement
+- Des filaments de myosine
+C: Du réticulum sarcoplasmique.
+E: Le potentiel d'action se propage le long du sarcolemme et des tubules transverses, ce qui provoque la libération du Ca²⁺ stocké dans le réticulum sarcoplasmique. Le calcium est ensuite repompé activement (avec consommation d'ATP), ce qui entraîne le relâchement.
+
+[SVT-310] adn | beginner
+Q: Le modèle de la double hélice d'ADN a été proposé en 1953 par :
+* Watson et Crick
+- Mendel
+- Morgan
+- Meselson et Stahl
+- Avery
+C: Watson et Crick.
+E: Watson et Crick ont proposé ce modèle grâce aux images de diffraction de Rosalind Franklin et aux règles de Chargaff. Meselson et Stahl ont démontré en 1958 que la réplication est semi-conservative.
+
+[SVT-311] adn | intermediate
+Q: Dans l'expérience de Meselson et Stahl, des bactéries cultivées sur azote lourd (¹⁵N) sont transférées sur azote léger (¹⁴N). Après une seule réplication, l'ADN obtenu est :
+* Entièrement hybride (une bande intermédiaire)
+- Pour moitié lourd et pour moitié léger
+- Entièrement léger
+- Entièrement lourd
+- Pour un quart hybride et trois quarts légers
+C: 100 % hybride ¹⁵N/¹⁴N.
+E: Chaque molécule fille garde un brin ancien (lourd) et reçoit un brin neuf (léger) : c'est la réplication semi-conservative. Après la deuxième réplication, on obtient 50 % d'ADN hybride et 50 % d'ADN léger.
+
+[SVT-312] mitose | beginner
+Q: Au cours de quelle phase de la mitose les chromosomes, très condensés, s'alignent-ils sur le plan équatorial ?
+* La métaphase
+- La prophase
+- L'anaphase
+- La télophase
+- L'interphase
+C: La métaphase.
+E: En prophase, les chromosomes se condensent et le fuseau se forme ; en métaphase, ils s'alignent en plaque équatoriale ; en anaphase, les chromatides sœurs se séparent ; en télophase, deux noyaux se reforment.
+
+[SVT-313] mitose | intermediate
+Q: Une cellule à 2n = 8 chromosomes est en anaphase de mitose. Combien de chromatides contient-elle à ce moment ?
+* 16
+- 8
+- 4
+- 32
+- 12
+C: 16 chromatides.
+E: Après la réplication, la cellule possède 8 chromosomes à deux chromatides, soit 16 chromatides. En anaphase, les chromatides sœurs se séparent : 16 chromosomes à une chromatide migrent, 8 vers chaque pôle.
+
+[SVT-314] adn | intermediate
+Q: Au cours du cycle cellulaire, la quantité d'ADN par noyau double pendant :
+* La phase S
+- La phase G1
+- La phase G2
+- La métaphase
+- La télophase
+C: La phase S (synthèse).
+E: L'interphase comprend G1 (croissance), S (réplication de l'ADN : la quantité passe de Q à 2Q) et G2. La quantité revient à Q dans chaque cellule fille à la fin de la mitose.
+
+[SVT-315] expression | beginner
+Q: Le code génétique est dit « redondant » (dégénéré) parce que :
+* Un même acide aminé peut être codé par plusieurs codons
+- Un codon peut coder plusieurs acides aminés
+- Il varie d'une espèce à l'autre
+- Il comporte 20 codons
+- Les codons se chevauchent
+C: Plusieurs codons pour un même acide aminé.
+E: Il existe 61 codons « sens » pour 20 acides aminés : la plupart des acides aminés ont plusieurs codons (la leucine en a 6). Le code est aussi non ambigu (un codon = un seul acide aminé) et quasi universel.
+
+[SVT-316] expression | intermediate
+Q: Un ARNm porte la séquence 5'-AUG GCU UGG UAA-3'. Le peptide traduit comprend :
+* 3 acides aminés
+- 4 acides aminés
+- 2 acides aminés
+- 12 acides aminés
+- Aucun acide aminé
+C: 3 acides aminés (Met-Ala-Trp).
+E: La traduction commence au codon AUG (méthionine) et s'arrête au codon stop UAA, qui ne code aucun acide aminé. Les codons GCU (alanine) et UGG (tryptophane) sont lus entre les deux.
+
+[SVT-317] expression | intermediate
+Q: Pendant la traduction, l'anticodon de l'ARNt qui apporte l'acide aminé correspondant au codon 5'-GCU-3' est :
+* 3'-CGA-5'
+- 5'-CGA-3'
+- 3'-GCU-5'
+- 3'-CGT-5'
+- 5'-GCU-3'
+C: 3'-CGA-5'.
+E: L'anticodon est complémentaire et antiparallèle au codon : G↔C, C↔G, U↔A, d'où 3'-CGA-5' (qui s'écrit aussi 5'-AGC-3'). Un ARN ne contient pas de thymine.
+
+[SVT-318] expression | intermediate
+Q: Chez les eucaryotes, l'épissage de l'ARN pré-messager consiste à :
+* Éliminer les introns et relier les exons
+- Éliminer les exons et relier les introns
+- Copier l'ARN en ADN
+- Ajouter des acides aminés à l'ARN
+- Dupliquer l'ARN messager
+C: Retirer les introns, souder les exons.
+E: Le gène eucaryote est morcelé : la transcription donne un ARN pré-messager qui contient des introns (non codants). Leur excision, dans le noyau, produit l'ARNm mature, plus court, qui passe dans le cytoplasme.
+
+[SVT-319] mutations | intermediate
+Q: La délétion d'un seul nucléotide au début de la séquence codante d'un gène entraîne le plus souvent :
+* Un décalage du cadre de lecture, qui modifie tous les acides aminés suivants
+- Le remplacement d'un seul acide aminé
+- Aucune modification de la protéine
+- L'ajout d'un acide aminé
+- Le doublement de la protéine
+C: Décalage du cadre de lecture.
+E: Les codons étant lus trois par trois, retirer un nucléotide décale la lecture : la séquence des acides aminés change à partir de la mutation et un codon stop apparaît souvent rapidement, donnant une protéine non fonctionnelle.
+
+[SVT-320] genie-genetique | beginner
+Q: Les enzymes de restriction sont utilisées en génie génétique pour :
+* Couper l'ADN au niveau de séquences spécifiques
+- Souder deux fragments d'ADN
+- Copier l'ARN en ADN
+- Synthétiser des protéines
+- Multiplier l'ADN par PCR
+C: Couper l'ADN à des sites précis.
+E: Chaque enzyme de restriction reconnaît une courte séquence (souvent palindromique, comme GAATTC pour EcoRI) et coupe l'ADN à cet endroit. La ligase soude les fragments, la transcriptase inverse fabrique l'ADNc, l'ADN polymérase thermostable sert à la PCR.
+
+[SVT-321] genie-genetique | intermediate
+Q: La PCR (amplification en chaîne par polymérase) permet :
+* De multiplier rapidement un fragment d'ADN précis en un très grand nombre de copies
+- De couper l'ADN en fragments
+- De séquencer une protéine
+- De transformer une bactérie
+- De traduire un ARNm in vitro
+C: Amplifier un fragment d'ADN.
+E: Chaque cycle (dénaturation à environ 95 °C, hybridation des amorces, élongation par une ADN polymérase thermostable) double le nombre de copies : après $n$ cycles, on a environ $2^{n}$ copies. Elle sert au diagnostic, à la médecine légale et aux tests de dépistage.
+
+[SVT-322] meiose | beginner
+Q: À l'issue de la méiose, une cellule mère diploïde (2n) donne :
+* Quatre cellules haploïdes (n), génétiquement différentes
+- Deux cellules diploïdes identiques
+- Quatre cellules diploïdes identiques
+- Deux cellules haploïdes identiques
+- Une seule cellule haploïde
+C: 4 cellules haploïdes différentes.
+E: La première division (réductionnelle) sépare les chromosomes homologues, la seconde (équationnelle) sépare les chromatides. Les brassages intra- et interchromosomiques rendent les quatre cellules génétiquement différentes.
+
+[SVT-323] meiose | intermediate
+Q: Pour une espèce à 2n = 6 chromosomes, le nombre de combinaisons chromosomiques différentes possibles dans les gamètes, dues au seul brassage interchromosomique, est :
+* 8
+- 6
+- 3
+- 64
+- 12
+C: $2^{n} = 2^{3} = 8$.
+E: À l'anaphase I, chaque paire d'homologues se sépare au hasard, indépendamment des autres. Avec $n = 3$ paires, il existe $2^{3} = 8$ combinaisons. Chez l'Homme ($n = 23$), on obtient $2^{23}$, soit plus de 8 millions.
+
+[SVT-324] meiose | intermediate
+Q: Au cours de la méiose, la quantité d'ADN par cellule est réduite de moitié une première fois :
+* À la fin de la première division (télophase I)
+- Pendant la phase S
+- Au début de la prophase I
+- À la métaphase II
+- Pendant les crossing-over
+C: En fin de division I.
+E: Après la réplication (2Q), la division réductionnelle sépare les homologues : chaque cellule a Q avec n chromosomes à deux chromatides. La division équationnelle donne ensuite des cellules à Q/2 et n chromosomes à une chromatide.
+
+[SVT-325] genetique | beginner
+Q: Le croisement d'une plante à graines lisses de lignée pure avec une plante à graines ridées de lignée pure donne une F1 à 100 % lisse. On peut conclure que :
+* L'allèle « lisse » est dominant et la F1 est hétérozygote
+- L'allèle « ridé » est dominant
+- Les deux allèles sont codominants
+- La F1 est homozygote
+- Le gène est lié au sexe
+C: Lisse dominant ; F1 hétérozygote.
+E: Les parents de lignée pure sont homozygotes ; la F1 reçoit un allèle de chacun. Elle exprime le phénotype lisse : cet allèle est dominant. C'est la première loi de Mendel, l'uniformité des hybrides de première génération.
+
+[SVT-326] genetique | intermediate
+Q: On croise deux hétérozygotes Aa (A dominant). Quelle proportion de la descendance a le phénotype dominant ?
+* 3/4
+- 1/2
+- 1/4
+- 1
+- 2/3
+C: 3/4.
+E: L'échiquier de croisement donne 1/4 AA, 1/2 Aa et 1/4 aa. Les génotypes AA et Aa expriment le phénotype dominant, soit 3/4 : c'est la proportion 3/4 – 1/4 de la deuxième loi de Mendel.
+
+[SVT-327] genetique | intermediate
+Q: Un croisement-test (test-cross) consiste à croiser un individu de génotype inconnu avec :
+* Un homozygote récessif
+- Un homozygote dominant
+- Un hétérozygote
+- Un individu de la F1
+- Un individu de même phénotype
+C: Avec un homozygote récessif.
+E: L'homozygote récessif ne fournit que des gamètes porteurs de l'allèle récessif : les phénotypes des descendants reflètent directement les gamètes de l'individu testé. 100 % de phénotype dominant indique un homozygote ; 50/50 indique un hétérozygote.
+
+[SVT-328] genetique | advanced
+Q: Chez la drosophile, on croise une F1 hétérozygote pour deux gènes indépendants avec un double récessif. Les proportions phénotypiques attendues sont :
+* 1/4 ; 1/4 ; 1/4 ; 1/4
+- 9/16 ; 3/16 ; 3/16 ; 1/16
+- 3/4 ; 1/4
+- 1/2 ; 1/2
+- 40 % ; 40 % ; 10 % ; 10 %
+C: Quatre phénotypes équiprobables.
+E: Avec deux gènes indépendants, l'hétérozygote produit quatre types de gamètes en proportions égales (brassage interchromosomique). Le test-cross révèle donc 25 % de chaque phénotype, dont 50 % de recombinés. La proportion 9/3/3/1 correspond au croisement F1 × F1.
+
+[SVT-329] genetique | advanced
+Q: Un test-cross donne 42 % [AB], 42 % [ab], 8 % [Ab] et 8 % [aB]. La distance entre les deux gènes est :
+* 16 cM
+- 8 cM
+- 42 cM
+- 84 cM
+- 50 cM
+C: 16 % de recombinés = 16 cM.
+E: Les phénotypes majoritaires sont parentaux ; les minoritaires (8 + 8 = 16 %) sont recombinés. Les gènes sont liés (moins de 50 % de recombinés), à 16 centimorgans l'un de l'autre.
+
+[SVT-330] genetique | intermediate
+Q: Chez une plante, le croisement de fleurs rouges par des fleurs blanches (lignées pures) donne des fleurs roses. On croise deux plantes roses : la proportion de fleurs roses dans la descendance est :
+* 1/2
+- 1/4
+- 3/4
+- 1
+- 0
+C: 1/2.
+E: Le rose traduit une codominance (ou dominance incomplète) : R/B donne rose. Le croisement R/B × R/B donne 1/4 R/R (rouge), 1/2 R/B (rose), 1/4 B/B (blanc).
+
+[SVT-331] genetique-humaine | intermediate
+Q: Les groupes sanguins A, B et O sont déterminés par trois allèles (A et B codominants, O récessif). Un enfant de groupe O peut-il naître de parents de groupes A et B ?
+* Oui, si les deux parents sont hétérozygotes (A/O et B/O)
+- Non, jamais
+- Oui, seulement si le père est de groupe O
+- Oui, seulement si les deux parents sont homozygotes
+- Non, car A et B sont dominants sur O chez l'enfant
+C: Oui, avec des parents A/O et B/O.
+E: Un parent A/O et un parent B/O peuvent chacun transmettre l'allèle O : l'enfant O/O est de groupe O, avec une probabilité de 1/4. Les autres enfants peuvent être AB, A ou B.
+
+[SVT-332] genetique-humaine | intermediate
+Q: Dans un arbre généalogique, une maladie touche des hommes et des femmes ; tout enfant atteint a au moins un parent atteint, et la maladie apparaît à chaque génération. Le mode de transmission le plus probable est :
+* Autosomique dominant
+- Autosomique récessif
+- Récessif lié à l'X
+- Lié au chromosome Y
+- Mitochondrial strict
+C: Autosomique dominant.
+E: Un allèle dominant s'exprime chez les hétérozygotes : la maladie ne « saute » pas de génération et chaque malade a un parent malade. Les deux sexes étant touchés, y compris de père à fils, le gène est autosomique (exemple : la chorée de Huntington).
+
+[SVT-333] genetique-humaine | advanced
+Q: Une femme dont le frère est atteint de mucoviscidose (maladie autosomique récessive), et dont les parents sont sains, n'est pas malade. Quelle est la probabilité qu'elle soit porteuse hétérozygote ?
+* 2/3
+- 1/2
+- 1/4
+- 3/4
+- 1/3
+C: 2/3.
+E: Les parents sont hétérozygotes (ils ont un enfant malade). Leurs enfants sont AA (1/4), Aa (1/2) ou aa (1/4). La femme n'est pas malade : on exclut aa, il reste AA (1/3) et Aa (2/3).
+
+[SVT-334] genetique-populations | intermediate
+Q: Dans une population à l'équilibre de Hardy-Weinberg, la fréquence d'une maladie autosomique récessive est de 1/2 500. La fréquence de l'allèle responsable est :
+* 1/50
+- 1/2 500
+- 1/25
+- 1/100
+- 49/50
+C: $q = \sqrt{1/2\,500} = 1/50$.
+E: Les malades sont homozygotes récessifs : $q^2 = \frac{1}{2\,500}$, donc $q = \frac{1}{50} = 0{,}02$. La fréquence des hétérozygotes porteurs vaut alors $2pq \approx 2 \times 0{,}98 \times 0{,}02 \approx 3{,}9\ \%$.
+
+[SVT-335] genetique-populations | beginner
+Q: Laquelle de ces conditions n'est PAS requise pour l'équilibre de Hardy-Weinberg ?
+* Une sélection naturelle forte
+- Une population de très grande taille
+- Des unions au hasard (panmixie)
+- L'absence de migrations
+- L'absence de mutations
+C: L'absence de sélection est requise, pas une sélection forte.
+E: Le modèle suppose une population idéale : très grande, panmictique, sans mutation, sans migration et sans sélection. Dans ces conditions, les fréquences alléliques et génotypiques restent constantes d'une génération à l'autre.
+
+[SVT-336] genetique-populations | intermediate
+Q: La spéciation désigne :
+* La formation d'une nouvelle espèce à partir d'une espèce ancestrale
+- La disparition d'une espèce
+- La mutation d'un gène
+- L'équilibre d'une population
+- Le croisement de deux espèces stériles
+C: L'apparition d'une nouvelle espèce.
+E: Elle se produit souvent après un isolement reproductif (barrière géographique, différences de comportement) : les deux populations accumulent des différences génétiques par mutations, sélection et dérive, jusqu'à ne plus pouvoir se reproduire entre elles.
+
+[SVT-337] immunologie | beginner
+Q: Le soi d'un individu est défini principalement par :
+* Les molécules du CMH portées par ses cellules
+- Ses anticorps
+- Ses globules rouges uniquement
+- Ses hormones
+- Le groupe sanguin seulement
+C: Les marqueurs du CMH (HLA chez l'Homme).
+E: Le soi est l'ensemble des molécules propres à l'individu, déterminées génétiquement, notamment les glycoprotéines du CMH. Les marqueurs des groupes sanguins (système ABO, rhésus) en font aussi partie. Le non-soi est tout ce qui est reconnu comme étranger.
+
+[SVT-338] immunologie | intermediate
+Q: La phagocytose se déroule dans l'ordre suivant :
+* Adhésion, ingestion (phagosome), digestion, rejet des déchets
+- Digestion, adhésion, ingestion, rejet
+- Ingestion, adhésion, rejet, digestion
+- Adhésion, digestion, ingestion, rejet
+- Rejet, adhésion, ingestion, digestion
+C: Adhésion → ingestion → digestion → exocytose.
+E: Le phagocyte adhère au microbe, l'englobe par des pseudopodes (phagosome), puis les lysosomes déversent leurs enzymes (phagolysosome) qui digèrent le microbe ; les débris sont rejetés. Le macrophage peut ensuite présenter des fragments antigéniques.
+
+[SVT-339] immunologie | intermediate
+Q: Un anticorps se fixe sur un antigène au niveau :
+* Des sites de reconnaissance situés aux extrémités de ses régions variables
+- De sa région constante
+- De ses ponts disulfure
+- De sa queue, fixée sur les phagocytes
+- De n'importe quelle partie de la molécule
+C: Les sites des régions variables.
+E: Chaque anticorps possède deux sites identiques, de forme complémentaire d'un déterminant antigénique (épitope). Cette complémentarité explique la spécificité. La région constante sert à la fixation sur les cellules immunitaires et à l'activation du complément.
+
+[SVT-340] immunologie | intermediate
+Q: La sérothérapie consiste à :
+* Injecter des anticorps déjà formés, pour une protection immédiate mais temporaire
+- Injecter un antigène atténué pour déclencher une immunité durable
+- Greffer de la moelle osseuse
+- Injecter des lymphocytes mémoires
+- Administrer un antibiotique
+C: Un transfert passif d'anticorps.
+E: La sérothérapie est utilisée en urgence (tétanos, envenimation) : les anticorps injectés agissent tout de suite mais sont éliminés en quelques semaines, sans mémoire immunitaire. La vaccination, au contraire, déclenche une immunité active et durable.
+
+[SVT-341] immunologie | advanced
+Q: Une personne de groupe sanguin A reçoit par erreur du sang de groupe B. On observe une agglutination des hématies transfusées car :
+* Le plasma du receveur contient des anticorps anti-B
+- Le plasma du receveur contient des anticorps anti-A
+- Les hématies du receveur portent l'antigène B
+- Le sang B ne contient aucun antigène
+- Le receveur fabrique des anticorps anti-A après la transfusion
+C: Les anti-B du receveur agglutinent les hématies B.
+E: Une personne de groupe A porte l'antigène A sur ses hématies et possède naturellement des anticorps anti-B dans son plasma. Ceux-ci se fixent sur les hématies B du donneur et les agglutinent. Le groupe O, sans antigène A ni B, est le donneur universel de globules rouges.
+
+[SVT-342] immunologie | intermediate
+Q: Parmi ces cellules, lesquelles sont la cible principale du VIH ?
+* Les lymphocytes T4 (CD4)
+- Les globules rouges
+- Les lymphocytes B
+- Les polynucléaires neutrophiles
+- Les plaquettes
+C: Les LT4.
+E: Le VIH se fixe sur la molécule CD4 (avec un corécepteur) des LT4 et de certains macrophages. La diminution progressive des LT4 affaiblit à la fois l'immunité humorale et l'immunité cellulaire.
+
+[SVT-343] geologie | beginner
+Q: Les chaînes de montagnes de type collision, comme l'Himalaya, se forment lorsque :
+* Deux plaques continentales entrent en contact après la fermeture d'un océan
+- Une plaque océanique s'éloigne d'une autre
+- Un volcan de point chaud se forme
+- Une dorsale océanique s'élargit
+- Une plaque océanique passe sous une autre plaque océanique
+C: Collision continent-continent.
+E: Après la subduction de la lithosphère océanique qui les séparait, deux lithosphères continentales, trop légères pour s'enfoncer, se heurtent : la croûte s'épaissit par plis, failles inverses et chevauchements (nappes de charriage).
+
+[SVT-344] geologie | intermediate
+Q: Quels indices caractérisent une zone de subduction ?
+* Une fosse océanique, des séismes de plus en plus profonds sous la plaque chevauchante et un volcanisme andésitique
+- Un fossé d'effondrement et des basaltes en coussins
+- Une dorsale avec des séismes superficiels uniquement
+- Des volcans de point chaud alignés
+- L'absence de toute activité sismique
+C: Fosse, plan de Wadati-Benioff, volcanisme explosif.
+E: La plaque océanique plonge sous l'autre : les foyers sismiques dessinent un plan incliné (plan de Wadati-Benioff). La déshydratation de la plaque plongeante favorise la fusion partielle du manteau sus-jacent, d'où un magmatisme andésitique (volcans explosifs, granitoïdes).
+
+[SVT-345] geologie | intermediate
+Q: Le métamorphisme est :
+* La transformation à l'état solide d'une roche sous l'effet de changements de pression et de température
+- La fusion complète d'une roche
+- La formation d'une roche sédimentaire par dépôt
+- L'altération des roches par l'eau de pluie
+- La solidification d'un magma en surface
+C: Transformation à l'état solide.
+E: Sans fondre, la roche voit ses minéraux se réorganiser ou changer (apparition de minéraux index) et souvent une foliation apparaître. Exemples : argile → schiste → micaschiste → gneiss. Au-delà d'une certaine température, la fusion partielle produit l'anatexie.
+
+[SVT-346] geologie | advanced
+Q: Dans une zone de subduction, on trouve dans un gabbro de la plaque plongeante des minéraux de glaucophane, puis plus en profondeur de grenat et de jadéite. Ces associations traduisent :
+* Une augmentation de pression à température relativement basse (faciès schistes bleus puis éclogites)
+- Une augmentation de température à basse pression
+- Une fusion totale de la roche
+- Un refroidissement en surface
+- Une altération par l'eau de mer uniquement
+C: Métamorphisme haute pression – basse température.
+E: La lithosphère océanique s'enfonce rapidement et reste froide alors que la pression augmente : le gabbro passe au faciès schistes verts, puis schistes bleus (glaucophane) puis éclogites (grenat, jadéite). C'est la signature d'une subduction.
+
+[SVT-347] geologie | intermediate
+Q: L'ophiolite est :
+* Un fragment de lithosphère océanique charrié sur un continent
+- Une roche volcanique de point chaud
+- Une roche sédimentaire continentale
+- Un granite issu de la fusion de la croûte
+- Un minéral du métamorphisme de contact
+C: De la lithosphère océanique obductée.
+E: Une ophiolite présente la succession typique d'un plancher océanique : péridotites, gabbros, basaltes en coussins et sédiments marins. Sa présence dans une chaîne de montagnes (Alpes, Oman) témoigne d'un ancien océan refermé.
+
+[SVT-348] environnement | beginner
+Q: L'effet de serre est principalement renforcé par l'augmentation dans l'atmosphère de :
+* Dioxyde de carbone et méthane
+- Dioxygène et diazote
+- Argon et hélium
+- Vapeur de mercure
+- Ozone stratosphérique uniquement
+C: CO₂ et CH₄ (gaz à effet de serre).
+E: Ces gaz absorbent le rayonnement infrarouge émis par la Terre et réchauffent l'atmosphère. Leur concentration augmente avec la combustion des énergies fossiles, la déforestation et l'élevage. L'azote et l'oxygène, majoritaires, n'ont pas cet effet.
+
+[SVT-349] environnement | intermediate
+Q: L'eutrophisation d'un lac est due principalement :
+* À un excès de nitrates et de phosphates qui provoque une prolifération d'algues puis un manque de dioxygène
+- À un excès de dioxygène dissous
+- À la baisse de la température de l'eau
+- À l'absence de lumière
+- À la disparition des algues
+C: Enrichissement excessif en nutriments.
+E: Les engrais et les eaux usées apportent nitrates et phosphates : les algues prolifèrent, meurent, et leur décomposition par les bactéries consomme le dioxygène dissous, ce qui asphyxie poissons et autres organismes.
+
+[SVT-350] environnement | beginner
+Q: Le compostage permet de :
+* Transformer les déchets organiques en amendement pour les sols grâce aux micro-organismes
+- Brûler les déchets plastiques
+- Stocker les déchets nucléaires
+- Recycler le verre
+- Produire de l'électricité directement
+C: Valoriser les déchets organiques.
+E: Les micro-organismes décomposent les déchets verts et alimentaires en présence d'air et produisent un compost riche en matière organique. Le compostage réduit le volume des déchets mis en décharge et les émissions de méthane.

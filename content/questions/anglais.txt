@@ -602,3 +602,458 @@ Q: Choose the correct option: "Hardly … the room when the phone rang."
 - he entered
 C: "Hardly had he entered…"
 E: When a negative adverb such as hardly, scarcely, no sooner or never begins the sentence, the subject and the auxiliary are inverted: "Hardly had he entered the room when the phone rang."
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions de niveau bac dans l'esprit des épreuves TAFEM (ENCG),
+# ENA architecture et ISCAE.
+@source src-general
+
+[ANG-201] grammar | beginner
+Q: Choose the correct option: "She … to school every day."
+* goes
+- go
+- going
+- is go
+C: goes.
+E: In the present simple, the third person singular (he, she, it) takes -s or -es: she goes, he watches, it works.
+
+[ANG-202] grammar | beginner
+Q: Choose the correct option: "Look! The children … in the garden."
+* are playing
+- play
+- plays
+- played
+C: are playing.
+E: "Look!" shows that the action is happening now: we use the present continuous (be + -ing).
+
+[ANG-203] grammar | beginner
+Q: Choose the correct option: "I … my homework yesterday evening."
+* did
+- have done
+- do
+- was doing yesterday
+C: did.
+E: "Yesterday evening" is a finished time in the past: we use the past simple. The present perfect cannot be used with a finished past time expression.
+
+[ANG-204] grammar | intermediate
+Q: Choose the correct option: "I … in Rabat since 2020."
+* have lived
+- live
+- lived
+- am living
+C: have lived.
+E: "Since" + a starting point shows an action that began in the past and continues now: present perfect (or present perfect continuous: have been living).
+
+[ANG-205] grammar | intermediate
+Q: Choose the correct option: "While I … TV, the phone rang."
+* was watching
+- watched
+- am watching
+- have watched
+C: was watching.
+E: The past continuous describes an action in progress (watching TV) interrupted by a shorter action in the past simple (the phone rang).
+
+[ANG-206] grammar | intermediate
+Q: Choose the correct option: "Look at those clouds! It … rain."
+* is going to
+- will
+- rains
+- would
+C: is going to.
+E: "Be going to" is used for predictions based on present evidence (the clouds). "Will" is used for spontaneous decisions and general predictions.
+
+[ANG-207] grammar | beginner
+Q: Choose the correct option: "Casablanca is … city in Morocco."
+* the largest
+- the larger
+- largest
+- more large
+C: the largest.
+E: The superlative of a short adjective is "the + adjective + -est". The comparative "larger than" compares two things.
+
+[ANG-208] grammar | intermediate
+Q: Choose the correct option: "This exam was … than the last one."
+* more difficult
+- difficulter
+- most difficult
+- the more difficult
+C: more difficult.
+E: Long adjectives (two or more syllables, except those ending in -y) form the comparative with "more": more difficult, more expensive.
+
+[ANG-209] grammar | intermediate
+Q: Choose the correct option: "He is not … to drive a car."
+* old enough
+- enough old
+- too old
+- so old
+C: old enough.
+E: "Enough" comes after an adjective (old enough) but before a noun (enough money).
+
+[ANG-210] grammar | intermediate
+Q: Choose the correct option: "If it rains tomorrow, we … at home."
+* will stay
+- would stay
+- stayed
+- stay will
+C: will stay.
+E: First conditional (a real possibility in the future): if + present simple, then will + base verb.
+
+[ANG-211] grammar | advanced
+Q: Choose the correct option: "If I had studied harder, I … the exam."
+* would have passed
+- would pass
+- will pass
+- had passed
+C: would have passed.
+E: Third conditional (an imaginary past situation): if + past perfect, then would have + past participle. It expresses regret or criticism about the past.
+
+[ANG-212] grammar | intermediate
+Q: Choose the correct option: "The new hospital … next year."
+* will be built
+- will build
+- builds
+- is building
+C: will be built.
+E: The hospital does not build itself: the passive voice is needed. Future passive: will be + past participle.
+
+[ANG-213] grammar | intermediate
+Q: Choose the correct option: "English … in many countries."
+* is spoken
+- speaks
+- is speaking
+- spoke
+C: is spoken.
+E: Present simple passive: am/is/are + past participle. The agent (by people) is not mentioned because it is obvious.
+
+[ANG-214] grammar | intermediate
+Q: Choose the correct relative pronoun: "The student … won the prize is my cousin."
+* who
+- which
+- whose
+- whom
+C: who.
+E: "Who" refers to people and is the subject of the relative clause. "Which" refers to things; "whose" shows possession.
+
+[ANG-215] grammar | intermediate
+Q: Choose the correct relative pronoun: "That's the man … car was stolen."
+* whose
+- who
+- which
+- that
+C: whose.
+E: "Whose" expresses possession (his car was stolen). It can refer to people or things.
+
+[ANG-216] grammar | intermediate
+Q: Report the sentence: She said, "I am tired."
+* She said that she was tired.
+- She said that I am tired.
+- She said that she is tired yesterday.
+- She said she has been tired tomorrow.
+C: She said that she was tired.
+E: In reported speech, after a reporting verb in the past, the tense moves back (am → was) and pronouns change (I → she).
+
+[ANG-217] grammar | intermediate
+Q: Choose the correct option: "You … wear a seat belt. It's the law."
+* must
+- mustn't
+- needn't
+- might
+C: must.
+E: "Must" expresses an obligation. "Mustn't" expresses a prohibition; "needn't" means it is not necessary.
+
+[ANG-218] grammar | intermediate
+Q: Choose the correct option: "She can't be at home; I … her at the library five minutes ago."
+* saw
+- have seen
+- see
+- had seen
+C: saw.
+E: "Five minutes ago" is a finished past time: past simple. "Can't be" expresses a logical deduction (impossibility).
+
+[ANG-219] grammar | intermediate
+Q: Choose the correct option: "There isn't … milk left in the fridge."
+* any
+- some
+- many
+- a few
+C: any.
+E: "Any" is used in negative and interrogative sentences. "Milk" is uncountable, so "many" and "a few" are not possible.
+
+[ANG-220] grammar | beginner
+Q: Choose the correct option: "How … money do you need?"
+* much
+- many
+- few
+- lot
+C: much.
+E: "Much" is used with uncountable nouns (money, water, information); "many" with countable nouns (books, students).
+
+[ANG-221] grammar | intermediate
+Q: Choose the correct option: "He decided … abroad after his graduation."
+* to work
+- working
+- work
+- to working
+C: to work.
+E: Some verbs are followed by the infinitive: decide, want, hope, plan, agree, refuse. Others take the -ing form: enjoy, avoid, finish, mind.
+
+[ANG-222] grammar | intermediate
+Q: Choose the correct option: "She is interested … economics."
+* in
+- on
+- at
+- for
+C: interested in.
+E: Fixed preposition: interested in, good at, afraid of, responsible for, depend on.
+
+[ANG-223] grammar | intermediate
+Q: Choose the correct option: "We arrived … the airport at 6 a.m."
+* at
+- to
+- in
+- on
+C: arrive at (a place, a point).
+E: We say "arrive at" a building or a precise place (the airport, the station) and "arrive in" a city or a country (arrive in Rabat).
+
+[ANG-224] grammar | intermediate
+Q: Choose the correct question tag: "You're a student, …?"
+* aren't you
+- isn't it
+- don't you
+- are you
+C: aren't you.
+E: A question tag uses the same auxiliary as the sentence, in the opposite form: positive sentence → negative tag (You are… aren't you?).
+
+[ANG-225] grammar | advanced
+Q: Choose the correct option: "I wish I … more time to prepare."
+* had
+- have
+- will have
+- am having
+C: had.
+E: "Wish" + past simple expresses a regret about the present (I don't have enough time). For a regret about the past: I wish I had had more time.
+
+[ANG-226] vocabulary | beginner
+Q: What is the opposite of "expensive"?
+* cheap
+- costly
+- rich
+- valuable
+C: cheap.
+E: Expensive means "costing a lot of money"; cheap (or inexpensive) is its opposite. Costly is a synonym.
+
+[ANG-227] vocabulary | intermediate
+Q: Choose the word that best completes the sentence: "The company made a big … last year: its income was much higher than its costs."
+* profit
+- loss
+- debt
+- budget
+C: profit.
+E: A profit is the money earned after paying all costs. A loss is the opposite; a debt is money owed; a budget is a financial plan.
+
+[ANG-228] vocabulary | intermediate
+Q: Choose the word that best completes the sentence: "She sent her … to several companies to find a job."
+* CV
+- receipt
+- invoice
+- salary
+C: CV (curriculum vitae).
+E: A CV (in American English, a résumé) presents your education and experience. An invoice is a bill for goods or services; a receipt proves that you paid.
+
+[ANG-229] vocabulary | intermediate
+Q: Choose the word that best completes the sentence: "The bank offers a low interest rate on this … ."
+* loan
+- lend
+- borrow
+- lent
+C: loan (noun).
+E: A loan is money that is borrowed. "Lend" (give) and "borrow" (receive) are verbs; "lent" is the past of lend.
+
+[ANG-230] vocabulary | intermediate
+Q: Which word means "a person who buys goods or services"?
+* customer
+- supplier
+- employee
+- shareholder
+C: customer.
+E: A supplier provides goods to a company, an employee works for it, and a shareholder owns part of it.
+
+[ANG-231] vocabulary | intermediate
+Q: Choose the correct phrasal verb: "Please … the form and give it to the secretary."
+* fill in
+- give up
+- look after
+- turn down
+C: fill in (complete).
+E: "Give up" = stop trying; "look after" = take care of; "turn down" = refuse or reduce the volume.
+
+[ANG-232] vocabulary | intermediate
+Q: Choose the correct phrasal verb: "He was offered a job in Dubai, but he … it … because of his family."
+* turned / down
+- gave / up
+- looked / after
+- put / off
+C: turned it down (refused it).
+E: "Turn down an offer" means refuse it. "Put off" means postpone.
+
+[ANG-233] vocabulary | intermediate
+Q: Choose the correct phrasal verb: "The meeting has been … until next Monday."
+* put off
+- put on
+- taken off
+- set up
+C: put off (postponed).
+E: "Put on" = wear or switch on; "take off" = remove (clothes) or leave the ground (a plane); "set up" = create or establish.
+
+[ANG-234] vocabulary | beginner
+Q: Which word is a synonym of "begin"?
+* start
+- finish
+- stop
+- end
+C: start.
+E: Begin, start and commence have the same meaning. Finish, stop and end are antonyms.
+
+[ANG-235] vocabulary | intermediate
+Q: Choose the correct word: "This decision will have a positive … on the economy."
+* effect
+- affect
+- effort
+- afford
+C: effect (noun).
+E: "Effect" is usually a noun (a result); "affect" is a verb (to influence): the decision will affect the economy.
+
+[ANG-236] vocabulary | intermediate
+Q: Choose the correct word: "The … of the population lives in cities."
+* majority
+- major
+- mayor
+- most
+C: majority.
+E: "The majority of" means most of. A "mayor" is the head of a town council.
+
+[ANG-237] vocabulary | advanced
+Q: Choose the word that best completes the sentence: "Climate change is one of the most … issues of our time."
+* pressing
+- pressed
+- impressing
+- pressure
+C: pressing (urgent).
+E: A pressing issue is an urgent problem that must be dealt with quickly.
+
+[ANG-238] vocabulary | intermediate
+Q: Choose the correct collocation: "to … a decision"
+* make
+- do
+- take part
+- have done
+C: make a decision.
+E: We "make" a decision, a mistake, a plan, money; we "do" homework, a job, business. ("Take a decision" is also used in British English.)
+
+[ANG-239] vocabulary | intermediate
+Q: Choose the correct collocation: "Students must … their homework before Friday."
+* do
+- make
+- create
+- take
+C: do homework.
+E: We "do" homework, exercises, research and the shopping, but we "make" an effort or a mistake.
+
+[ANG-240] vocabulary | advanced
+Q: What does the idiom "a piece of cake" mean?
+* Something very easy
+- Something very expensive
+- A small reward
+- A difficult task
+C: Very easy.
+E: "The test was a piece of cake" means it was very easy. Other idioms: "break the ice" (start a conversation), "under the weather" (slightly ill).
+
+[ANG-241] reading | intermediate
+Q: Read: "Despite the heavy rain, the match was not cancelled." This means that:
+* The match took place although it was raining heavily
+- The match was cancelled because of the rain
+- It did not rain during the match
+- The match was postponed
+C: The match was played anyway.
+E: "Despite" (+ noun) expresses contrast, like "although" (+ clause): although it was raining heavily, the match was not cancelled.
+
+[ANG-242] reading | intermediate
+Q: Read: "Unless you hurry, you will miss the bus." This means:
+* If you don't hurry, you will miss the bus
+- If you hurry, you will miss the bus
+- You will miss the bus anyway
+- You hurried and caught the bus
+C: Unless = if… not.
+E: "Unless" introduces a negative condition: unless you hurry = if you don't hurry.
+
+[ANG-243] reading | intermediate
+Q: Read: "Morocco's renewable energy share has grown steadily, mainly thanks to solar and wind projects." The main idea is that:
+* Solar and wind power have helped increase the share of renewable energy in Morocco
+- Morocco has stopped using fossil fuels
+- Wind projects have failed in Morocco
+- Renewable energy has decreased in Morocco
+C: Growth driven by solar and wind.
+E: "Has grown steadily" means it has increased regularly, and "mainly thanks to" gives the main causes. The text says nothing about stopping fossil fuels.
+
+[ANG-244] reading | advanced
+Q: Read: "The author argues that small classes improve learning, although critics point out their high cost." The word "although" introduces:
+* A contrasting point
+- A consequence
+- An example
+- A cause
+C: Contrast (concession).
+E: Although, though, even though, whereas and however introduce an opposing idea. Consequence: so, therefore; cause: because, since; example: for instance.
+
+[ANG-245] reading | intermediate
+Q: In the sentence "The firm hired fifty new employees last month", the word "hired" means:
+* Employed
+- Dismissed
+- Trained
+- Paid
+C: Hired = employed (recruited).
+E: To hire is to give someone a job. Its opposite is to fire (or dismiss, lay off).
+
+[ANG-246] grammar | advanced
+Q: Choose the correct option: "Not only … the exam, but she also got the highest mark."
+* did she pass
+- she passed
+- she did pass
+- passed she
+C: Inversion after "Not only".
+E: When a negative or restrictive expression (not only, never, rarely, hardly) starts the sentence, the auxiliary comes before the subject: Not only did she pass…
+
+[ANG-247] grammar | intermediate
+Q: Choose the correct option: "He used to … football when he was a child."
+* play
+- playing
+- played
+- plays
+C: used to + base verb.
+E: "Used to" + infinitive describes a past habit that no longer exists. "Be used to + -ing" means "be accustomed to".
+
+[ANG-248] grammar | intermediate
+Q: Choose the correct option: "Neither of the two answers … correct."
+* is
+- are
+- were both
+- have
+C: is.
+E: "Neither of" + plural noun normally takes a singular verb in formal English: neither of them is correct.
+
+[ANG-249] grammar | advanced
+Q: Choose the correct option: "It's high time we … for the exam."
+* started studying
+- start studying
+- will start studying
+- have started studying
+C: It's (high) time + past simple.
+E: "It's time / It's high time" + subject + past simple expresses that something should already be happening: It's high time we started.
+
+[ANG-250] vocabulary | intermediate
+Q: Choose the word that best completes the sentence: "The government plans to … unemployment by creating new jobs."
+* reduce
+- raise
+- reject
+- remain
+C: reduce (make smaller).
+E: To reduce unemployment is to lower it. "Raise" means increase, "reject" refuse, "remain" stay.

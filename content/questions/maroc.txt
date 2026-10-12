@@ -132,3 +132,458 @@ Q: Quelle fête nationale le Maroc célèbre-t-il chaque 30 juillet ?
 - La Révolution du Roi et du Peuple
 C: La fête du Trône.
 E: Elle commémore l'accession du Roi Mohammed VI au trône, le 30 juillet 1999. La fête de l'Indépendance est célébrée le 18 novembre, la Révolution du Roi et du Peuple le 20 août et la fête de la Jeunesse le 21 août.
+
+# ---------------------------------------------------------------------------
+# lot-2026-10-programme : questions de niveau bac dans l'esprit des épreuves TAFEM (ENCG),
+# ENA architecture et ISCAE.
+@source src-general
+
+[MAR-201] institutions | beginner
+Q: Selon l'article 1er de la Constitution de 2011, le régime politique du Maroc est :
+* Une monarchie constitutionnelle, démocratique, parlementaire et sociale
+- Une monarchie absolue
+- Une république parlementaire
+- Une fédération de régions
+C: Monarchie constitutionnelle, démocratique, parlementaire et sociale.
+E: La Constitution de 2011, adoptée par référendum le 1er juillet 2011, définit ce régime et repose sur la séparation, l'équilibre et la collaboration des pouvoirs.
+
+[MAR-202] institutions | intermediate
+Q: Selon la Constitution de 2011, le Chef du gouvernement est nommé par le Roi :
+* Au sein du parti politique arrivé en tête des élections des membres de la Chambre des représentants
+- Parmi les membres de la Chambre des conseillers
+- Librement, sans lien avec les élections
+- Parmi les walis des régions
+C: Au sein du parti arrivé premier aux législatives.
+E: L'article 47 de la Constitution prévoit cette nomination ; les ministres sont nommés sur proposition du Chef du gouvernement.
+
+[MAR-203] institutions | intermediate
+Q: Combien de membres compte la Chambre des représentants ?
+* 395
+- 120
+- 325
+- 450
+C: 395 députés.
+E: Ils sont élus au suffrage universel direct pour cinq ans. La Chambre des conseillers compte 120 membres élus au suffrage indirect pour six ans.
+
+[MAR-204] institutions | intermediate
+Q: Quelle institution contrôle la conformité des lois à la Constitution ?
+* La Cour constitutionnelle
+- La Cour des comptes
+- La Cour de cassation
+- Le Conseil économique, social et environnemental
+C: La Cour constitutionnelle.
+E: Créée par la Constitution de 2011 (en remplacement du Conseil constitutionnel), elle se prononce sur la constitutionnalité des lois. La Cour des comptes contrôle les finances publiques.
+
+[MAR-205] institutions | intermediate
+Q: Depuis le découpage territorial de 2015, le Maroc compte :
+* 12 régions
+- 16 régions
+- 10 régions
+- 14 régions
+C: 12 régions.
+E: Le découpage de 2015 a ramené le nombre de régions de 16 à 12, dans le cadre de la régionalisation avancée. Chaque région est dirigée par un conseil élu.
+
+[MAR-206] institutions | intermediate
+Q: Quelle est la région dont le chef-lieu est Rabat ?
+* Rabat-Salé-Kénitra
+- Casablanca-Settat
+- Fès-Meknès
+- Tanger-Tétouan-Al Hoceïma
+C: Rabat-Salé-Kénitra.
+E: Rabat est la capitale administrative du Royaume et le chef-lieu de la région Rabat-Salé-Kénitra.
+
+[MAR-207] institutions | beginner
+Q: Quelle est la devise du Royaume du Maroc ?
+* Dieu, la Patrie, le Roi
+- Liberté, Égalité, Fraternité
+- Unité, Travail, Progrès
+- Paix, Justice, Développement
+C: « Dieu, la Patrie, le Roi ».
+E: Elle est inscrite à l'article 4 de la Constitution. « Liberté, Égalité, Fraternité » est la devise de la France.
+
+[MAR-208] institutions | intermediate
+Q: Quelle institution est chargée de la protection et de la promotion des droits de l'homme au Maroc ?
+* Le Conseil national des droits de l'homme (CNDH)
+- La HACA
+- Bank Al-Maghrib
+- L'ANRT
+C: Le CNDH.
+E: Institution constitutionnelle indépendante, le CNDH veille au respect des droits de l'homme. La HACA régule l'audiovisuel, l'ANRT les télécommunications.
+
+[MAR-209] histoire | beginner
+Q: Qui a fondé la dynastie idrisside et le premier État marocain, à la fin du VIIIe siècle ?
+* Idriss Ier
+- Youssef Ibn Tachfine
+- Moulay Ismaïl
+- Ahmed al-Mansour
+C: Idriss Ier (788).
+E: Descendant du Prophète, Idriss Ier s'installe à Walili (Volubilis) en 788. Son fils Idriss II fonde ou développe Fès.
+
+[MAR-210] histoire | intermediate
+Q: Quelle dynastie a fondé la ville de Marrakech au XIe siècle ?
+* Les Almoravides
+- Les Almohades
+- Les Mérinides
+- Les Saadiens
+C: Les Almoravides (vers 1070).
+E: Fondée par Abou Bakr puis développée par Youssef Ibn Tachfine, Marrakech a donné son nom au pays dans plusieurs langues (Morocco, Marruecos).
+
+[MAR-211] histoire | intermediate
+Q: La bataille des Trois Rois (Oued El Makhazine), en 1578, a été remportée par :
+* Les Saadiens contre les Portugais
+- Les Almohades contre les Castillans
+- Les Alaouites contre les Ottomans
+- Les Mérinides contre les Espagnols
+C: Victoire saadienne sur les Portugais.
+E: Trois rois y moururent, dont Sébastien Ier du Portugal. Ahmed al-Mansour, frère du sultan défunt, monta sur le trône et marqua l'apogée de la dynastie saadienne.
+
+[MAR-212] histoire | intermediate
+Q: Quel sultan alaouite a fait de Meknès sa capitale impériale au XVIIe siècle ?
+* Moulay Ismaïl
+- Moulay Rachid
+- Mohammed III
+- Moulay Hassan Ier
+C: Moulay Ismaïl (1672-1727).
+E: Son règne de 55 ans est l'un des plus longs de l'histoire du Maroc. Il fit de Meknès une ville impériale entourée de longues murailles, avec la célèbre porte Bab Mansour.
+
+[MAR-213] histoire | intermediate
+Q: Le Maroc a été l'un des premiers pays à reconnaître l'indépendance des États-Unis, en :
+* 1777
+- 1830
+- 1912
+- 1956
+C: 1777, sous Mohammed III.
+E: Le sultan Mohammed ben Abdallah reconnaît les États-Unis en 1777 ; le traité d'amitié maroco-américain de 1786 est le plus ancien traité ininterrompu des États-Unis.
+
+[MAR-214] histoire | intermediate
+Q: Le traité de Fès, qui instaure le protectorat français, a été signé en :
+* 1912
+- 1906
+- 1830
+- 1944
+C: 1912.
+E: Le 30 mars 1912. L'Espagne exerce un protectorat sur le nord et le sud du pays ; Tanger reçoit un statut international. Le protectorat prend fin en 1956.
+
+[MAR-215] histoire | intermediate
+Q: Le Manifeste de l'Indépendance a été présenté le :
+* 11 janvier 1944
+- 18 novembre 1955
+- 20 août 1953
+- 2 mars 1956
+C: 11 janvier 1944.
+E: Présenté par le parti de l'Istiqlal, il réclamait l'indépendance du Maroc. Cette date est un jour férié national.
+
+[MAR-216] histoire | intermediate
+Q: La « Révolution du Roi et du Peuple », commémorée le 20 août, fait référence :
+* À l'exil du sultan Mohammed ben Youssef par les autorités du protectorat en 1953
+- À la Marche verte
+- À l'indépendance de 1956
+- À l'adoption de la Constitution de 2011
+C: L'exil de Mohammed V (20 août 1953).
+E: L'exil du sultan, en Corse puis à Madagascar, provoqua un soulèvement populaire. Son retour en novembre 1955 ouvrit la voie à l'indépendance, obtenue le 2 mars 1956 (fin du protectorat français).
+
+[MAR-217] histoire | beginner
+Q: La fête de l'Indépendance du Maroc est célébrée le :
+* 18 novembre
+- 30 juillet
+- 6 novembre
+- 11 janvier
+C: 18 novembre.
+E: Elle commémore le discours de Mohammed V du 18 novembre 1955, après son retour d'exil. Le 6 novembre commémore la Marche verte.
+
+[MAR-218] histoire | intermediate
+Q: Le roi Hassan II a régné de :
+* 1961 à 1999
+- 1956 à 1990
+- 1953 à 1961
+- 1999 à 2010
+C: 1961-1999.
+E: Il succède à Mohammed V le 3 mars 1961 et règne jusqu'à sa mort le 23 juillet 1999. Le roi Mohammed VI lui succède le 30 juillet 1999.
+
+[MAR-219] geographie | beginner
+Q: Quel est le plus long fleuve du Maroc ?
+* La Draa
+- Le Sebou
+- L'Oum Er-Rbia
+- La Moulouya
+C: La Draa (plus de 1 100 km).
+E: La Draa est le plus long, mais son débit est faible et irrégulier. Le Sebou a le plus fort débit ; l'Oum Er-Rbia est le plus long fleuve à écoulement permanent.
+
+[MAR-220] geographie | beginner
+Q: Quelle chaîne de montagnes est la plus septentrionale du Maroc, le long de la Méditerranée ?
+* Le Rif
+- Le Haut Atlas
+- L'Anti-Atlas
+- Le Moyen Atlas
+C: Le Rif.
+E: Le Rif borde la Méditerranée. Le Moyen Atlas, le Haut Atlas puis l'Anti-Atlas se succèdent vers le sud.
+
+[MAR-221] geographie | intermediate
+Q: Quelle ville marocaine est la plus peuplée ?
+* Casablanca
+- Rabat
+- Fès
+- Tanger
+C: Casablanca.
+E: Capitale économique, Casablanca compte plus de 3 millions d'habitants ; c'est le premier port et le premier pôle industriel et financier du pays.
+
+[MAR-222] geographie | intermediate
+Q: Le Maroc est bordé par deux façades maritimes :
+* La mer Méditerranée et l'océan Atlantique
+- La mer Rouge et l'océan Atlantique
+- L'océan Indien et la Méditerranée
+- La mer Noire et l'Atlantique
+C: Méditerranée au nord, Atlantique à l'ouest.
+E: Le Maroc possède environ 3 500 km de côtes, dont la plus grande partie sur l'Atlantique.
+
+[MAR-223] geographie | intermediate
+Q: Quel barrage marocain est le plus grand par sa capacité de stockage ?
+* Le barrage Al Wahda
+- Le barrage Bin El Ouidane
+- Le barrage Al Massira
+- Le barrage Idriss Ier
+C: Al Wahda (sur l'Ouergha).
+E: Situé dans la région de Ouezzane, Al Wahda a une capacité de près de 3,8 milliards de m³. La politique des barrages, lancée dans les années 1960, est essentielle pour l'irrigation et l'eau potable.
+
+[MAR-224] economie | intermediate
+Q: Le Maroc détient les plus grandes réserves mondiales de :
+* Phosphates
+- Pétrole
+- Or
+- Uranium extrait
+C: Phosphates (environ 70 % des réserves mondiales).
+E: Le groupe OCP exploite notamment les gisements de Khouribga, Benguérir et Youssoufia et transforme une partie des phosphates en engrais, principalement à Jorf Lasfar et Safi.
+
+[MAR-225] economie | intermediate
+Q: Quelle est la monnaie du Maroc et quelle institution l'émet ?
+* Le dirham, émis par Bank Al-Maghrib
+- Le dinar, émis par le Trésor
+- Le dirham, émis par le ministère des Finances
+- Le rial, émis par Bank Al-Maghrib
+C: Le dirham (MAD), Bank Al-Maghrib.
+E: Bank Al-Maghrib, la banque centrale créée en 1959, émet la monnaie et conduit la politique monétaire. Le dirham se divise en 100 centimes.
+
+[MAR-226] economie | intermediate
+Q: Quel secteur industriel est devenu le premier secteur exportateur du Maroc ces dernières années ?
+* L'automobile
+- Le textile
+- L'agroalimentaire
+- L'aéronautique
+C: L'automobile.
+E: Grâce aux usines de Renault (Tanger, Casablanca) et de Stellantis (Kénitra) et à leurs fournisseurs, l'automobile est devenue le premier secteur exportateur, devant les phosphates et dérivés.
+
+[MAR-227] economie | intermediate
+Q: Le Plan Maroc Vert, lancé en 2008, puis la stratégie « Génération Green 2020-2030 » concernent :
+* Le développement de l'agriculture
+- L'énergie solaire
+- Le tourisme
+- L'industrie automobile
+C: L'agriculture.
+E: Le Plan Maroc Vert visait à moderniser l'agriculture ; Génération Green prolonge cette stratégie en mettant l'accent sur le monde rural et une classe moyenne agricole.
+
+[MAR-228] economie | intermediate
+Q: Quelle agence est chargée de promouvoir les énergies renouvelables au Maroc, notamment le solaire ?
+* MASEN (Moroccan Agency for Sustainable Energy)
+- L'OCP
+- L'ONDA
+- La CDG
+C: MASEN.
+E: MASEN pilote notamment le complexe solaire Noor de Ouarzazate. L'ONDA gère les aéroports, la CDG est une institution financière publique.
+
+[MAR-229] economie | beginner
+Q: Que signifie le sigle ONCF ?
+* Office national des chemins de fer
+- Organisation nationale des centres de formation
+- Office national du commerce et des finances
+- Office national de la culture française
+C: Office national des chemins de fer.
+E: L'ONCF exploite le réseau ferroviaire marocain, dont la ligne à grande vitesse Al Boraq entre Tanger et Casablanca.
+
+[MAR-230] economie | intermediate | ts
+Q: Quelle stratégie numérique nationale a été lancée en 2024 pour la transformation digitale du Maroc à l'horizon 2030 ?
+* Maroc Digital 2030
+- Maroc Numeric 2013
+- Plan Azur
+- Vision 2010
+C: Maroc Digital 2030.
+E: Elle vise à digitaliser les services publics, développer l'économie numérique et former des talents dans ce domaine. Maroc Numeric 2013 était une stratégie antérieure ; le Plan Azur concernait le tourisme balnéaire.
+
+[MAR-231] culture | beginner
+Q: Quel instrument est emblématique de la musique gnaoua ?
+* Le guembri
+- Le violon
+- La cornemuse
+- Le piano
+C: Le guembri.
+E: Le guembri est un luth à trois cordes, accompagné des qraqeb (castagnettes métalliques). Le Festival Gnaoua d'Essaouira est célèbre dans le monde entier ; l'art gnaoua est inscrit au patrimoine immatériel de l'UNESCO depuis 2019.
+
+[MAR-232] culture | intermediate
+Q: La place Jemaa el-Fna, inscrite au patrimoine culturel immatériel de l'UNESCO, se trouve à :
+* Marrakech
+- Fès
+- Rabat
+- Essaouira
+C: Marrakech.
+E: Elle a été proclamée chef-d'œuvre du patrimoine oral et immatériel de l'humanité en 2001, pour ses conteurs, musiciens et artistes de rue.
+
+[MAR-233] culture | intermediate
+Q: Le festival Mawazine, consacré aux musiques du monde, se déroule à :
+* Rabat
+- Agadir
+- Fès
+- Tanger
+C: Rabat.
+E: Mawazine est l'un des plus grands festivals de musique d'Afrique. Fès accueille le Festival des musiques sacrées du monde, Agadir le festival Timitar.
+
+[MAR-234] culture | intermediate | ts
+Q: Quelle ville marocaine a été désignée « Capitale mondiale du livre » par l'UNESCO pour 2026 ?
+* Rabat
+- Casablanca
+- Marrakech
+- Tanger
+C: Rabat.
+E: L'UNESCO a désigné Rabat Capitale mondiale du livre 2026, pour la richesse de son patrimoine et son engagement en faveur de la lecture.
+
+[MAR-235] patrimoine | intermediate
+Q: Quel monument de Rabat est resté inachevé depuis la mort du calife almohade Yacoub El Mansour en 1199 ?
+* La tour Hassan
+- La Koutoubia
+- La kasbah des Oudayas
+- Le mausolée Mohammed V
+C: La tour Hassan.
+E: Elle devait être le minaret d'une immense mosquée. Le mausolée Mohammed V, achevé en 1971, a été construit sur la même esplanade.
+
+[MAR-236] patrimoine | intermediate
+Q: La médersa Bou Inania de Fès a été construite sous la dynastie des :
+* Mérinides
+- Almohades
+- Saadiens
+- Idrissides
+C: Les Mérinides (XIVe siècle).
+E: Les Mérinides ont construit de nombreuses médersas (écoles), réputées pour leurs zelliges, stucs et bois sculptés. Les tombeaux saadiens se trouvent à Marrakech.
+
+[MAR-237] patrimoine | intermediate
+Q: La cité portugaise de Mazagan, inscrite au patrimoine mondial, se trouve dans la ville de :
+* El Jadida
+- Essaouira
+- Safi
+- Asilah
+C: El Jadida.
+E: Fortifiée par les Portugais au XVIe siècle, elle est célèbre pour sa citerne souterraine. Essaouira (Mogador) est aussi inscrite au patrimoine mondial pour sa médina.
+
+[MAR-238] sport | intermediate
+Q: Quel athlète marocain détient le record du monde du 1 500 m (3 min 26 s), établi en 1998 ?
+* Hicham El Guerrouj
+- Saïd Aouita
+- Soufiane El Bakkali
+- Nawal El Moutawakel
+C: Hicham El Guerrouj.
+E: Il a établi ce record à Rome en 1998 et a remporté deux titres olympiques en 2004 (1 500 m et 5 000 m). Nawal El Moutawakel a été en 1984 la première femme africaine et arabe championne olympique.
+
+[MAR-239] sport | intermediate
+Q: Soufiane El Bakkali est champion olympique et champion du monde dans quelle discipline ?
+* Le 3 000 m steeple
+- Le marathon
+- Le 800 m
+- Le saut en longueur
+C: Le 3 000 m steeple.
+E: Il a remporté l'or olympique à Tokyo (2021) puis à Paris (2024), et plusieurs titres mondiaux dans cette discipline.
+
+[MAR-240] sport | beginner
+Q: À quelle phase de la Coupe du monde 2022 l'équipe du Maroc s'est-elle hissée, une première pour une sélection africaine ?
+* Les demi-finales
+- La finale
+- Les quarts de finale
+- Les huitièmes de finale
+C: Les demi-finales.
+E: Après avoir éliminé l'Espagne puis le Portugal, les Lions de l'Atlas ont terminé quatrièmes du tournoi au Qatar.
+
+[MAR-241] institutions | intermediate
+Q: Le chantier de la généralisation de la protection sociale, lancé en 2021, prévoit notamment :
+* L'extension de l'assurance maladie obligatoire (AMO) à l'ensemble de la population
+- La suppression de la CNSS
+- La privatisation des hôpitaux publics
+- La gratuité de tous les médicaments
+C: Généraliser l'AMO, puis les allocations familiales et la retraite.
+E: La loi-cadre 09-21 prévoit la généralisation de l'assurance maladie obligatoire, des allocations familiales (aide sociale directe), puis l'élargissement de la retraite et de l'indemnité pour perte d'emploi.
+
+[MAR-242] institutions | intermediate
+Q: Le Nouveau modèle de développement (NMD), présenté en 2021, fixe des objectifs à l'horizon :
+* 2035
+- 2025
+- 2050
+- 2030 uniquement pour l'agriculture
+C: 2035.
+E: Élaboré par une commission spéciale, le NMD vise notamment à doubler le PIB par habitant et à améliorer le capital humain (éducation, santé) d'ici 2035.
+
+[MAR-243] geographie | intermediate
+Q: Quelle ville est le chef-lieu de la région Souss-Massa ?
+* Agadir
+- Taroudant
+- Tiznit
+- Ouarzazate
+C: Agadir.
+E: Agadir est un grand port de pêche et une station balnéaire. Ouarzazate est le chef-lieu d'une province de la région Drâa-Tafilalet.
+
+[MAR-244] geographie | intermediate
+Q: Ifrane, dans le Moyen Atlas, est surnommée :
+* La « Suisse du Maroc »
+- La « ville bleue »
+- La « perle du Sud »
+- La « ville ocre »
+C: La « Suisse du Maroc ».
+E: Son architecture alpine, sa forêt de cèdres et ses hivers enneigés expliquent ce surnom. Chefchaouen est la « ville bleue », Marrakech la « ville ocre ».
+
+[MAR-245] histoire | intermediate
+Q: L'Instance Équité et Réconciliation (IER), créée en 2004, était chargée :
+* D'enquêter sur les violations graves des droits de l'homme commises entre 1956 et 1999
+- De réformer la Constitution
+- D'organiser la Marche verte
+- De gérer la régionalisation
+C: La justice transitionnelle.
+E: Présidée par Driss Benzekri, l'IER a établi la vérité sur les violations passées et proposé des réparations et des réformes.
+
+[MAR-246] institutions | intermediate
+Q: La Moudawana (Code de la famille) a été profondément réformée en :
+* 2004
+- 1957
+- 2011
+- 1993
+C: 2004.
+E: La réforme de 2004 a notamment instauré la coresponsabilité des époux, relevé l'âge du mariage à 18 ans et encadré la polygamie. Un nouveau chantier de révision a été lancé en 2023.
+
+[MAR-247] culture | beginner
+Q: Quel alphabet a été adopté au Maroc pour écrire la langue amazighe ?
+* Le tifinagh
+- Le latin
+- Le cyrillique
+- L'alphabet grec
+C: Le tifinagh.
+E: L'Institut royal de la culture amazighe (IRCAM), créé en 2001, a standardisé l'alphabet tifinagh, utilisé dans l'enseignement et sur les panneaux officiels.
+
+[MAR-248] institutions | intermediate
+Q: L'Institut royal de la culture amazighe (IRCAM) a été créé en :
+* 2001
+- 1956
+- 2011
+- 1990
+C: 2001 (dahir d'Ajdir).
+E: Annoncé dans le discours d'Ajdir du 17 octobre 2001, l'IRCAM œuvre à la promotion de la langue et de la culture amazighes, officialisées par la Constitution de 2011.
+
+[MAR-249] economie | intermediate
+Q: Le gazoduc Nigeria-Maroc, en projet, doit relier le Nigeria au Maroc en longeant :
+* La côte atlantique de l'Afrique de l'Ouest
+- Le désert du Sahara par le centre
+- La mer Méditerranée
+- Le fleuve Niger uniquement
+C: La façade atlantique.
+E: Ce projet de gazoduc africain atlantique doit traverser une dizaine de pays d'Afrique de l'Ouest et pourrait être prolongé vers l'Europe.
+
+[MAR-250] histoire | intermediate
+Q: La ville de Chefchaouen, surnommée la « perle bleue », a été fondée en 1471 par :
+* Moulay Ali Ben Rachid
+- Moulay Ismaïl
+- Youssef Ibn Tachfine
+- Idriss II
+C: Moulay Ali Ben Rachid.
+E: Fondée comme forteresse contre les incursions portugaises, Chefchaouen a accueilli des réfugiés andalous. Ses maisons bleues en ont fait une destination touristique majeure.
