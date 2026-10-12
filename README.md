@@ -11,7 +11,7 @@ Le même contenu est aussi empaqueté en **application Android** (Apache Cordova
 | Rubrique | Contenu |
 |---|---|
 | Fiches concours (`/concours/`) | 31 fiches en français et en arabe : médecine, ISPITS, ENSA, ENSAM, CPGE, CNC, IAV, FST, EST, BTS, ENCG, ISCAE, ENA, ISIC, ISMAC/ISADAC, ISIT, ENS, écoles militaires, police, gendarmerie, Forces Auxiliaires, Protection civile, DGAPR, douane, fonction publique, OFPPT, 1337, université |
-| Entraînement (`/entrainement/`) | 1 017 QCM corrigés dans 17 matières, tirés au niveau du concours choisi (accessible, standard, sélectif, très sélectif ; par grade pour la police et les forces auxiliaires), examen blanc au barème du concours, révisions espacées, défi du jour, favoris, statistiques ; le bouton retour du navigateur et du téléphone fonctionne |
+| Entraînement (`/entrainement/`) | 1 365 QCM corrigés dans 17 matières (dont 348 en SVT, physique, chimie et maths au format du concours de médecine, à 5 propositions), tirés au niveau du concours choisi (accessible, standard, sélectif, très sélectif ; par grade pour la police et les forces auxiliaires), examen blanc au barème du concours, révisions espacées, défi du jour, favoris, statistiques ; le bouton retour du navigateur et du téléphone fonctionne |
 | QCM corrigés (`/qcm/`) | Pages d'exemples par matière, avec réponses et explications (indexables par Google) |
 | Outils (`/outils/`) | Calcul de la note du bac et de la présélection 75/25, orientation selon la série, calendrier avec rappels, planning de révision, checklist du dossier, simulateur de barème QCM |
 | Guides (`/guides/`) | Orientation après le bac, Cursus Sup, bourse Minhaty, réussir un QCM, concours sans le bac, épreuves sportives, tests psychotechniques, entretien oral |
