@@ -30,7 +30,7 @@
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="preload" href="../../assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/readex-pro-arabic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/concours-maroc.css?v=169aa699e4">
+<link rel="stylesheet" href="../../assets/css/concours-maroc.css?v=7f31db4e82">
 
 <script>(function(){try{var t=localStorage.getItem('cm.theme');if(!t||t==='auto'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://www.maroc-concour.com/ar/"},{"@type":"ListItem","position":2,"name":"اتصل بنا","item":"https://www.maroc-concour.com/ar/contact/"}]}</script>
@@ -42,7 +42,7 @@
   <div class="container bar">
     <a class="brand" href="../../ar/" aria-label="Concours Maroc — الرئيسية"><svg viewBox="0 0 512 512" width="34" height="34" aria-hidden="true" focusable="false"><defs><linearGradient id="cm-logo-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a37b0"/><stop offset="1" stop-color="#101a3d"/></linearGradient></defs><rect width="512" height="512" rx="116" fill="url(#cm-logo-bg)"/><path fill="#f5a524" d="M324 92 352 160 420 188 392 256 420 324 352 352 324 420 256 392 188 420 160 352 92 324 120 256 92 188 160 160 188 92 256 120Z"/><path fill="none" stroke="#101a3d" stroke-width="44" stroke-linecap="round" stroke-linejoin="round" d="M178 262 232 316 340 204"/></svg><span>Concours <b>Maroc</b></span></a>
     <nav class="nav" id="site-nav" aria-label="التنقل الرئيسي">
-      <a href="../../ar/concours/">المباريات</a><a href="../../ar/entrainement/">التمرن</a><a href="../../ar/outils/">أدوات</a><a href="../../ar/outils/calendrier-concours/">الأجندة</a><a href="../../ar/guides/">أدلة</a>
+      <a href="../../ar/concours/">المباريات</a><a href="../../ar/entrainement/">التمرن</a><a href="../../ar/outils/">أدوات</a><a href="../../ar/outils/calendrier-concours/">الأجندة</a><a href="../../ar/guides/">أدلة</a><a href="../../ar/contact/" aria-current="page">اتصل بنا</a>
       <a class="lang-switch" href="../../contact/" hreflang="fr" lang="fr" title="النسخة الفرنسية">Français</a>
     </nav>
     <div class="hdr-tools">
@@ -64,6 +64,17 @@
 <li><a href="../../ar/">الرئيسية</a></li><li><span aria-current="page">اتصل بنا</span></li>
 </ol></nav><div class="container narrow" style="padding-bottom:40px"><header class="page-head"><h1>اتصل بنا وصحّح معلومة</h1></header>
 <p>لتصحيح معلومة أو اقتراح إضافة، يرجى ذكر الصفحة المعنية والمصدر الرسمي (رابط الإعلان).</p>
+<form class="cform" id="contact-form" data-key="d5dd4775-3f49-4699-8e24-f912ad749d75" novalidate>
+<div class="cf-row">
+<div class="field"><label for="cf-name">الاسم <small class="cf-opt">(اختياري)</small></label><input id="cf-name" name="name" type="text" autocomplete="name" maxlength="80"></div>
+<div class="field"><label for="cf-email">البريد الإلكتروني <small class="cf-opt">(اختياري، لنتمكن من الرد)</small></label><input id="cf-email" name="email" type="email" autocomplete="email" maxlength="120" inputmode="email" dir="ltr"></div>
+</div>
+<div class="field"><label for="cf-topic">الموضوع</label><select id="cf-topic" name="topic"><option value="erreur">خطأ في معلومة أو سؤال</option><option value="ajout">اقتراح مباراة أو إضافة</option><option value="probleme">مشكلة في الموقع أو التطبيق</option><option value="autre">موضوع آخر</option></select></div>
+<div class="field"><label for="cf-msg">الرسالة</label><textarea id="cf-msg" name="message" rows="7" maxlength="5000" required></textarea></div>
+<input class="cf-hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="cf-send"><button class="btn" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg> إرسال الرسالة</button><p class="cf-status" role="status" aria-live="polite"></p></div>
+</form>
+<p>يمكنك أيضًا فتح بلاغ عام على GitHub:</p>
 <div class="btn-row"><a class="btn ghost" href="https://github.com/NovanestATLAS/concoursmaroc/issues" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm0 2 5 5h-5zM8 13h8v2H8zm0 4h8v2H8z"/></svg> فتح بلاغ على GitHub</a></div>
 <p>لا نجيب عن طلبات النتائج الفردية: النتائج تُنشر فقط على المنصات الرسمية.</p></div>
 </main>
@@ -86,7 +97,7 @@
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="../../assets/js/site.js?v=169aa699e4" defer></script>
-
+<script src="../../assets/js/site.js?v=7f31db4e82" defer></script>
+<script src="../../assets/js/contact.js?v=7f31db4e82" defer></script>
 </body>
 </html>

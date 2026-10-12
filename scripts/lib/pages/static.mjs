@@ -18,7 +18,7 @@ function simplePage(site, lang, slug, title, description, blocks, extra = {}) {
   const crumbs = [[pfx, t(lang, 'home')], [`${pfx}${slug}/`, extra.crumb || title]];
   return {
     path: p, lang, title, description, alternate: `${lang === 'ar' ? '' : 'ar/'}${slug}/`,
-    jsonld: [breadcrumbLd(site, crumbs)], noSearch: extra.noSearch,
+    jsonld: [breadcrumbLd(site, crumbs)], noSearch: extra.noSearch, scripts: extra.scripts, section: extra.section,
     body: html`${breadcrumb(lang, link, crumbs)}<div class="container narrow" style="padding-bottom:40px"><header class="page-head"><h1>${extra.h1 || title}</h1>${extra.lead ? html`<p class="lead">${extra.lead}</p>` : ''}</header>
 ${blocks(link, pfx)}</div>`,
   };
@@ -55,9 +55,23 @@ ${H2('Signaler une erreur')}${P(`Une date a changé, un seuil est publié ? Sign
     ar ? 'اتصل بنا وصحّح معلومة' : 'Contact et signalement d’erreur',
     ar ? 'راسل Concours Maroc لتصحيح معلومة أو اقتراح مباراة.' : 'Contacter Concours Maroc : signaler une erreur, une nouvelle date ou proposer un concours à ajouter.',
     () => html`${P(ar ? 'لتصحيح معلومة أو اقتراح إضافة، يرجى ذكر الصفحة المعنية والمصدر الرسمي (رابط الإعلان).' : "Pour signaler une erreur ou proposer un ajout, indiquez la page concernée et, si possible, le lien vers l'avis officiel.")}
-<div class="btn-row">${site.contactEmail ? html`<a class="btn" href="mailto:${site.contactEmail}">${icon('pen')} ${site.contactEmail}</a>` : ''}<a class="btn ghost" href="${repoIssues}" rel="noopener" target="_blank">${icon('doc')} ${ar ? 'فتح بلاغ على GitHub' : 'Ouvrir un signalement sur GitHub'}</a></div>
+<form class="cform" id="contact-form" data-key="${site.contactKey || ''}" novalidate>
+<div class="cf-row">
+<div class="field"><label for="cf-name">${ar ? 'الاسم' : 'Votre nom'} <small class="cf-opt">${ar ? '(اختياري)' : '(facultatif)'}</small></label><input id="cf-name" name="name" type="text" autocomplete="name" maxlength="80"></div>
+<div class="field"><label for="cf-email">${ar ? 'البريد الإلكتروني' : 'Votre e-mail'} <small class="cf-opt">${ar ? '(اختياري، لنتمكن من الرد)' : '(facultatif, pour vous répondre)'}</small></label><input id="cf-email" name="email" type="email" autocomplete="email" maxlength="120" inputmode="email" dir="ltr"></div>
+</div>
+<div class="field"><label for="cf-topic">${ar ? 'الموضوع' : 'Objet'}</label><select id="cf-topic" name="topic">${(ar
+  ? [['erreur', 'خطأ في معلومة أو سؤال'], ['ajout', 'اقتراح مباراة أو إضافة'], ['probleme', 'مشكلة في الموقع أو التطبيق'], ['autre', 'موضوع آخر']]
+  : [['erreur', 'Une erreur dans une fiche ou un QCM'], ['ajout', 'Proposer un concours ou un ajout'], ['probleme', "Un problème sur le site ou l'application"], ['autre', 'Autre chose']]
+).map(([v, l]) => html`<option value="${v}">${l}</option>`)}</select></div>
+<div class="field"><label for="cf-msg">${ar ? 'الرسالة' : 'Message'}</label><textarea id="cf-msg" name="message" rows="7" maxlength="5000" required></textarea></div>
+<input class="cf-hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="cf-send"><button class="btn" type="submit">${icon('pen')} ${ar ? 'إرسال الرسالة' : 'Envoyer le message'}</button><p class="cf-status" role="status" aria-live="polite"></p></div>
+</form>
+${P(ar ? 'يمكنك أيضًا فتح بلاغ عام على GitHub:' : 'Vous pouvez aussi ouvrir un signalement public sur GitHub :')}
+<div class="btn-row"><a class="btn ghost" href="${repoIssues}" rel="noopener" target="_blank">${icon('doc')} ${ar ? 'فتح بلاغ على GitHub' : 'Ouvrir un signalement sur GitHub'}</a></div>
 ${P(ar ? 'لا نجيب عن طلبات النتائج الفردية: النتائج تُنشر فقط على المنصات الرسمية.' : "Nous ne pouvons pas répondre aux questions sur un dossier individuel : les résultats sont publiés uniquement par les plateformes officielles.")}`,
-    { crumb: ar ? 'اتصل بنا' : 'Contact' }));
+    { crumb: ar ? 'اتصل بنا' : 'Contact', scripts: ['assets/js/contact.js'], section: 'navContact' }));
 
   pages.push(simplePage(site, lang, 'confidentialite',
     ar ? 'سياسة الخصوصية' : 'Politique de confidentialité',
@@ -67,12 +81,14 @@ ${site.adsenseClient ? html`${H2('الإعلانات (Google AdSense)')}${P('ي�
 ${P('يمكنك إيقاف الإعلانات المخصصة من [إعدادات الإعلانات في Google](https://www.google.com/settings/ads)، أو إيقاف ملفات تعريف الارتباط الخاصة بالمزودين الآخرين عبر [www.aboutads.info](https://www.aboutads.info/choices). عندما يفرض القانون ذلك، يُعرض عليك طلب موافقة من Google. للمزيد: [كيف تستعمل Google المعلومات المستقاة من المواقع الشريكة](https://policies.google.com/technologies/partner-sites).')}` : ''}
 ${H2('قياس الزيارات')}${P(site.ga4 ? 'يستعمل الموقع Google Analytics 4 لقياس عدد الزيارات والصفحات الأكثر استعمالًا بشكل مجمّع (عبر ملفات تعريف الارتباط). لا يحتفظ Google Analytics 4 بعناوين IP، ولا تُرسل إليه هويتك ولا أجوبتك. يمكنك رفض هذا القياس عبر [إضافة إلغاء الاشتراك في Google Analytics](https://tools.google.com/dlpage/gaoptout).' : 'لا يستعمل الموقع حاليًا أي أداة لقياس الزيارات، وستُحدَّث هذه الصفحة إن تغير ذلك.')}
 ${H2('تطبيق أندرويد')}${P(`لتطبيق Concours Maroc على أندرويد [سياسة خصوصية خاصة به](${link(pfx + 'application/confidentialite/')}) (الإعلانات والموافقة والقراءة بصوت مرتفع).`)}
+${site.contactKey ? html`${H2('نموذج الاتصال')}${P('عند إرسال رسالة عبر [نموذج الاتصال](' + link(pfx + 'contact/') + ')، تُرسَل رسالتك (واسمك وبريدك الإلكتروني إن ذكرتهما) عبر خدمة Web3Forms إلى بريدنا. نستعملها فقط لقراءة رسالتك والرد عليها، ولا نشاركها مع أحد. ذكر الاسم والبريد اختياري.')}` : ''}
 ${H2('حقوقك')}${P('وفقًا للقانون 09-08 المتعلق بحماية الأشخاص الذاتيين تجاه معالجة المعطيات ذات الطابع الشخصي، يمكنك التواصل معنا عبر صفحة الاتصال.')}`
       : html`${P("Concours Maroc ne demande **aucun compte** et ne collecte pas votre identité. Votre progression d'entraînement (scores, favoris, notes, planning, checklist) est enregistrée **uniquement dans votre navigateur** (localStorage). Vous pouvez l'exporter ou l'effacer à tout moment depuis les réglages de l'entraînement.")}
 ${site.adsenseClient ? html`${H2('Publicité (Google AdSense)')}${P("Le site affiche des annonces fournies par **Google AdSense** pour financer son fonctionnement. Des fournisseurs tiers, dont Google, utilisent des cookies pour diffuser des annonces en fonction de vos visites précédentes sur ce site ou sur d'autres sites. Grâce aux cookies publicitaires, Google et ses partenaires adaptent les annonces à vos visites sur ce site et/ou sur d'autres sites Internet. D'autres réseaux publicitaires certifiés par Google peuvent aussi utiliser des cookies.")}
 ${P("Vous pouvez désactiver la publicité personnalisée dans les [paramètres des annonces Google](https://www.google.com/settings/ads), ou refuser les cookies d'autres fournisseurs sur [www.aboutads.info](https://www.aboutads.info/choices). Lorsque la réglementation l'exige, un formulaire de consentement de Google vous est présenté. En savoir plus : [comment Google utilise les informations des sites partenaires](https://policies.google.com/technologies/partner-sites).")}` : ''}
 ${H2('Mesure d’audience')}${P(site.ga4 ? "Le site utilise **Google Analytics 4** pour mesurer sa fréquentation de façon agrégée : pages vues, concours préparés, séances lancées et terminées (cookies de mesure). Google Analytics 4 ne conserve pas les adresses IP ; ni votre identité ni vos réponses ne lui sont envoyées. Vous pouvez refuser cette mesure avec le [module de désactivation de Google Analytics](https://tools.google.com/dlpage/gaoptout)." : "Le site n'utilise actuellement aucun outil de mesure d'audience ; cette page sera mise à jour si cela change.")}
 ${H2('Hébergement')}${P("Le site est hébergé par GitHub Pages (GitHub, Inc.), qui peut conserver des journaux techniques (adresse IP) pour des raisons de sécurité.")}
+${site.contactKey ? html`${H2('Formulaire de contact')}${P("Lorsque vous écrivez avec le [formulaire de contact](" + link(pfx + 'contact/') + "), votre message (et, si vous les indiquez, votre nom et votre adresse e-mail) est transmis par le service d'envoi **Web3Forms** jusqu'à notre boîte de réception. Il sert uniquement à lire votre message et à vous répondre ; il n'est partagé avec personne. Le nom et l'e-mail sont facultatifs.")}` : ''}
 ${H2('Application Android')}${P(`L'application Android Concours Maroc a sa propre [politique de confidentialité](${link(pfx + 'application/confidentialite/')}) (publicité, consentement, lecture à voix haute).`)}
 ${H2('Vos droits')}${P("Conformément à la loi n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel, vous pouvez nous contacter pour toute question via la page contact.")}`,
     { crumb: ar ? 'الخصوصية' : 'Confidentialité' }));
