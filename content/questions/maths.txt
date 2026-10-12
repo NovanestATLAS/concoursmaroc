@@ -768,3 +768,940 @@ Q: Quelles sont les solutions de l'équation $x^{2} - 5x + 6 = 0$ ?
 - $-1$ et $6$
 C: $x = 2$ ou $x = 3$.
 E: $\Delta = 25 - 24 = 1$ et $x = \frac{5 \pm 1}{2}$. Vérification : la somme des racines vaut $5$ et leur produit $6$.
+
+# ---------------------------------------------------------------------------
+# Format du concours de médecine (FMP, FMD) : 5 propositions, une seule juste.
+# Questions originales qui reprennent les notions et le niveau des sujets
+# officiels 2022 à 2026, de concours de facultés (Marrakech, Fès, Tanger) et de
+# concours blancs ; valeurs numériques et énoncés réécrits.
+@source src-annales-medecine
+
+[MAT-101] derivation | intermediate
+Q: Soit $f$ la fonction définie sur $]0, +\infty[$ par $f(x) = \frac{(\ln x)^2}{x}$. Sa dérivée est :
+* $f'(x) = \frac{2\ln x - (\ln x)^2}{x^2}$
+- $f'(x) = \frac{2\ln x + (\ln x)^2}{x^2}$
+- $f'(x) = \frac{2\ln x}{x^2}$
+- $f'(x) = \frac{2 - \ln x}{x^2}$
+- $f'(x) = \frac{(\ln x)^2 - 2\ln x}{x^2}$
+C: $f'(x) = \frac{2\ln x - (\ln x)^2}{x^2}$.
+E: On dérive le quotient $\frac{u}{v}$ avec $u = (\ln x)^2$, $u' = \frac{2\ln x}{x}$, $v = x$, $v' = 1$ : $f'(x) = \frac{u'v - uv'}{v^2} = \frac{2\ln x - (\ln x)^2}{x^2}$.
+
+[MAT-102] fonctions | advanced
+Q: La courbe de la fonction $g(x) = \ln\left(\frac{e^{2x} + 1}{e^{x} + 3}\right)$ admet, au voisinage de $+\infty$, une asymptote d'équation :
+* $y = x$
+- $y = 2x$
+- $y = -\ln 3$
+- $y = x - \ln 3$
+- $y = 0$
+C: $y = x$.
+E: $g(x) - x = \ln\left(\frac{e^{2x} + 1}{e^{x}(e^{x} + 3)}\right) = \ln\left(\frac{e^{2x} + 1}{e^{2x} + 3e^{x}}\right) = \ln\left(\frac{1 + e^{-2x}}{1 + 3e^{-x}}\right) \to \ln 1 = 0$ quand $x \to +\infty$. La droite $y = x$ est donc asymptote oblique en $+\infty$. En $-\infty$, $g(x) \to \ln\frac{1}{3} = -\ln 3$ : asymptote horizontale $y = -\ln 3$.
+
+[MAT-103] derivation | intermediate
+Q: Soit $h(x) = \frac{x^2 + 3}{x - 1}$ définie sur $\mathbb{R} \setminus \{1\}$. La courbe de $h$ admet une tangente horizontale aux points d'abscisses :
+* $-1$ et $3$
+- $1$ et $3$
+- $-3$ et $1$
+- $3$ seulement
+- Aucun point
+C: $x = -1$ et $x = 3$.
+E: $h'(x) = \frac{2x(x - 1) - (x^2 + 3)}{(x - 1)^2} = \frac{x^2 - 2x - 3}{(x - 1)^2} = \frac{(x - 3)(x + 1)}{(x - 1)^2}$. La tangente est horizontale quand $h'(x) = 0$, soit $x = 3$ ou $x = -1$ (toutes deux dans le domaine).
+
+[MAT-104] complexes | intermediate
+Q: Le nombre complexe $z = \frac{(1 + i)^8}{(\sqrt{3} - i)^3}$ est égal à :
+* $2i$
+- $-2i$
+- $2$
+- $16i$
+- $2e^{i\frac{\pi}{4}}$
+C: $z = 2i$.
+E: $(1 + i)^2 = 2i$, donc $(1 + i)^8 = (2i)^4 = 16$. $\sqrt{3} - i = 2e^{-i\frac{\pi}{6}}$, donc $(\sqrt{3} - i)^3 = 8e^{-i\frac{\pi}{2}} = -8i$. Ainsi $z = \frac{16}{-8i} = -\frac{2}{i} = 2i$.
+
+[MAT-105] complexes | intermediate
+Q: Les solutions dans $\mathbb{C}$ de l'équation $z^3 = 8$ sont :
+* $2$, $-1 + i\sqrt{3}$ et $-1 - i\sqrt{3}$
+- $2$, $1 + i\sqrt{3}$ et $1 - i\sqrt{3}$
+- $2$, $-2$ et $2i$
+- $2$ seulement
+- $2$, $2i$ et $-2i$
+C: $2$, $2e^{i\frac{2\pi}{3}}$ et $2e^{-i\frac{2\pi}{3}}$.
+E: Avec $z = re^{i\theta}$ : $r^3 = 8$ donc $r = 2$, et $3\theta = 2k\pi$, soit $\theta \in \{0, \frac{2\pi}{3}, -\frac{2\pi}{3}\}$. Or $2e^{i\frac{2\pi}{3}} = -1 + i\sqrt{3}$ et $2e^{-i\frac{2\pi}{3}} = -1 - i\sqrt{3}$. Les nombres $1 \pm i\sqrt{3}$ sont des racines cubiques de $-8$.
+
+[MAT-106] geometrie-espace | advanced
+Q: Dans un repère orthonormé de l'espace, on considère la sphère $(S) : x^2 + y^2 + z^2 - 2x + 4y - 4 = 0$ et le plan $(P_c) : 2x - y + 2z + c = 0$. Le plan $(P_c)$ est tangent à $(S)$ si et seulement si :
+* $c = 5$ ou $c = -13$
+- $c = 5$ seulement
+- $c = -5$ ou $c = 13$
+- $c = 9$ ou $c = -9$
+- $c = -4$
+C: $c = 5$ ou $c = -13$.
+E: $(S)$ s'écrit $(x - 1)^2 + (y + 2)^2 + z^2 = 9$ : centre $\Omega(1, -2, 0)$, rayon $R = 3$. Le plan est tangent si $d(\Omega, P_c) = R$ : $\frac{|2 + 2 + 0 + c|}{\sqrt{4 + 1 + 4}} = \frac{|4 + c|}{3} = 3$, soit $|4 + c| = 9$, donc $c = 5$ ou $c = -13$.
+
+[MAT-107] probabilites | beginner
+Q: Une association de 120 membres tire au sort un comité de 5 personnes, sans attribuer de rôles. Le nombre de comités possibles est :
+* $C_{120}^{5}$
+- $A_{120}^{5}$
+- $120^5$
+- $5^{120}$
+- $\frac{120!}{5!}$
+C: $C_{120}^{5}$ (combinaisons).
+E: Un comité est un sous-ensemble de 5 personnes : l'ordre ne compte pas et il n'y a pas de répétition, on compte donc des combinaisons, $C_{120}^{5} = \frac{120!}{5!\,115!}$. $A_{120}^{5}$ compterait des listes ordonnées (par exemple président, vice-président…).
+
+[MAT-108] probabilites | intermediate
+Q: Une association de 120 membres tire au hasard un comité de 5 personnes. Quelle est la probabilité qu'un membre donné fasse partie du comité ?
+* $\frac{1}{24}$
+- $\frac{1}{120}$
+- $\frac{5}{119}$
+- $\frac{1}{5}$
+- $\frac{1}{600}$
+C: $p = \frac{5}{120} = \frac{1}{24}$.
+E: Les comités contenant ce membre s'obtiennent en choisissant les 4 autres parmi 119 : $p = \frac{C_{119}^{4}}{C_{120}^{5}} = \frac{5}{120} = \frac{1}{24}$. Intuitivement, 5 places sur 120 membres, tous ayant la même chance.
+
+[MAT-109] suites | intermediate
+Q: La limite de la suite $u_n = n\ln\left(1 + \frac{2}{n}\right)$ quand $n \to +\infty$ est :
+* $2$
+- $0$
+- $1$
+- $+\infty$
+- $e^2$
+C: $\lim u_n = 2$.
+E: On pose $h = \frac{2}{n} \to 0$ : $u_n = 2 \times \frac{\ln(1 + h)}{h} \to 2 \times 1 = 2$, car $\lim_{h \to 0}\frac{\ln(1 + h)}{h} = 1$. La valeur $e^2$ est la limite de $\left(1 + \frac{2}{n}\right)^n = e^{u_n}$.
+
+[MAT-110] suites | advanced
+Q: Soit la suite $(u_n)$ définie par $u_0 = 0$ et $u_{n+1} = \frac{1}{2 - u_n}$. On pose $v_n = \frac{1}{u_n - 1}$. Quelle est la bonne réponse ?
+* $(v_n)$ est arithmétique de raison $-1$ et $u_n = \frac{n}{n + 1}$
+- $(v_n)$ est géométrique de raison $-1$
+- $(v_n)$ est arithmétique de raison $1$ et $u_n = \frac{n + 1}{n}$
+- $\lim u_n = 0$
+- $(u_n)$ est décroissante
+C: $v_{n+1} = v_n - 1$ et $u_n = \frac{n}{n + 1}$.
+E: $u_{n+1} - 1 = \frac{u_n - 1}{2 - u_n}$, donc $v_{n+1} = \frac{2 - u_n}{u_n - 1} = \frac{1 - (u_n - 1)}{u_n - 1} = v_n - 1$. Avec $v_0 = -1$ : $v_n = -1 - n$, puis $u_n = 1 + \frac{1}{v_n} = 1 - \frac{1}{n + 1} = \frac{n}{n + 1}$, suite croissante de limite 1.
+
+[MAT-111] logarithme | advanced
+Q: Dans $]0, +\infty[$, l'ensemble des solutions de l'équation $x^{\sqrt{x}} = \left(\sqrt{x}\right)^{x}$ est :
+* $\{1 ; 4\}$
+- $\{4\}$
+- $\{1\}$
+- $\{1 ; 2\}$
+- $\emptyset$
+C: $S = \{1 ; 4\}$.
+E: En passant au logarithme : $\sqrt{x}\ln x = \frac{x}{2}\ln x$, soit $\ln x\left(\sqrt{x} - \frac{x}{2}\right) = 0$. Donc $\ln x = 0$ ($x = 1$) ou $\sqrt{x} = \frac{x}{2}$, c'est-à-dire $\sqrt{x} = 2$ ($x = 4$). Vérification : $4^2 = 16 = 2^4$.
+
+[MAT-112] integrales | beginner
+Q: L'intégrale $I = \int_0^{\frac{\pi}{2}} \frac{\sin x}{1 + \cos x}\,dx$ vaut :
+* $\ln 2$
+- $-\ln 2$
+- $1$
+- $\ln 3$
+- $\frac{1}{2}$
+C: $I = \ln 2$.
+E: Avec $u(x) = 1 + \cos x > 0$, on a $u'(x) = -\sin x$, donc une primitive est $-\ln(1 + \cos x)$. $I = \left[-\ln(1 + \cos x)\right]_0^{\frac{\pi}{2}} = -\ln 1 + \ln 2 = \ln 2$.
+
+[MAT-113] fonctions | intermediate
+Q: Le domaine de définition de la fonction $f(x) = x\ln\left(1 - \frac{2}{x}\right)$ est :
+* $]-\infty, 0[ \cup ]2, +\infty[$
+- $]2, +\infty[$
+- $\mathbb{R}^*$
+- $]0, 2[$
+- $]-\infty, 0[ \cup [2, +\infty[$
+C: $D_f = ]-\infty, 0[ \cup ]2, +\infty[$.
+E: Il faut $x \neq 0$ et $1 - \frac{2}{x} = \frac{x - 2}{x} > 0$. Le tableau de signes du quotient donne $x < 0$ ou $x > 2$ ; $x = 2$ est exclu car $\ln 0$ n'existe pas.
+
+[MAT-114] continuite | intermediate
+Q: Soit $g(x) = x^2 + \ln x$ définie sur $]0, 1]$. Quelle est la bonne réponse ?
+* L'équation $g(x) = 0$ admet une unique solution dans $]0, 1[$
+- $g$ est majorée par 0 sur $]0, 1]$
+- $\lim_{x \to 0^+} g(x) = 0$
+- $g$ est décroissante sur $]0, 1]$
+- L'équation $g(x) = 0$ n'a pas de solution dans $]0, 1]$
+C: Une unique solution dans $]0, 1[$.
+E: $g'(x) = 2x + \frac{1}{x} > 0$ : $g$ est continue et strictement croissante. $\lim_{x \to 0^+} g(x) = -\infty$ et $g(1) = 1 > 0$. D'après le théorème des valeurs intermédiaires (cas d'une bijection), $g(x) = 0$ admet une unique solution $\alpha \in\ ]0, 1[$.
+
+[MAT-115] limites | intermediate
+Q: La limite $\lim_{x \to 0} \frac{\sqrt[3]{1 + x} - 1}{x}$ vaut :
+* $\frac{1}{3}$
+- $0$
+- $1$
+- $3$
+- $+\infty$
+C: $\frac{1}{3}$.
+E: C'est un taux d'accroissement : avec $g(x) = (1 + x)^{\frac{1}{3}}$, la limite vaut $g'(0) = \frac{1}{3}(1 + 0)^{-\frac{2}{3}} = \frac{1}{3}$. Plus généralement, $\lim_{x \to 0}\frac{(1 + x)^{r} - 1}{x} = r$.
+
+[MAT-116] derivation | intermediate
+Q: La dérivée de la fonction $f(x) = \sin x \cos^2 x$ est :
+* $f'(x) = \cos x\,(1 - 3\sin^2 x)$
+- $f'(x) = \cos x\,(1 + 3\sin^2 x)$
+- $f'(x) = -3\sin x\cos^2 x$
+- $f'(x) = \cos^3 x$
+- $f'(x) = \cos x\,(3\sin^2 x - 1)$
+C: $f'(x) = \cos x(1 - 3\sin^2 x)$.
+E: Produit $uv$ avec $u = \sin x$ et $v = \cos^2 x$ : $f'(x) = \cos x \cdot \cos^2 x + \sin x \cdot (-2\sin x\cos x) = \cos x(\cos^2 x - 2\sin^2 x)$. Avec $\cos^2 x = 1 - \sin^2 x$, on obtient $\cos x(1 - 3\sin^2 x)$.
+
+[MAT-117] fonctions | intermediate
+Q: La courbe de la fonction $f(x) = x^3 - 3x^2 + 2$ admet pour centre de symétrie le point :
+* $\Omega(1 ; 0)$
+- $\Omega(0 ; 2)$
+- $\Omega(2 ; -2)$
+- $\Omega(1 ; -2)$
+- $\Omega(-1 ; -2)$
+C: $\Omega(1 ; 0)$.
+E: $\Omega(a ; b)$ est centre de symétrie si $f(a + h) + f(a - h) = 2b$ pour tout $h$. Avec $a = 1$ : $f(1 + h) = (1 + h)^3 - 3(1 + h)^2 + 2 = h^3 - 3h$, fonction impaire de $h$, donc $f(1 + h) + f(1 - h) = 0$ et $b = 0$. Pour une fonction du troisième degré, le centre de symétrie est le point d'inflexion ($f''(x) = 6x - 6 = 0$ pour $x = 1$).
+
+[MAT-118] geometrie-espace | advanced
+Q: Dans un repère orthonormé de l'espace, on considère le point $A(1 ; 0 ; 2)$ et la droite $(D) : x = t,\ y = 1 + t,\ z = -t$ ($t \in \mathbb{R}$). La distance du point $A$ à la droite $(D)$ vaut :
+* $\frac{\sqrt{42}}{3}$
+- $\sqrt{14}$
+- $\sqrt{42}$
+- $\frac{\sqrt{14}}{3}$
+- $\frac{2\sqrt{3}}{3}$
+C: $d(A, D) = \frac{\sqrt{42}}{3}$.
+E: $B(0 ; 1 ; 0) \in (D)$ et $\vec{u}(1 ; 1 ; -1)$ dirige $(D)$. $\overrightarrow{BA}(1 ; -1 ; 2)$ et $\overrightarrow{BA} \wedge \vec{u} = (-1 ; 3 ; 2)$, de norme $\sqrt{14}$. Donc $d = \frac{\|\overrightarrow{BA} \wedge \vec{u}\|}{\|\vec{u}\|} = \frac{\sqrt{14}}{\sqrt{3}} = \frac{\sqrt{42}}{3}$. On retrouve ce résultat avec le projeté orthogonal $H\left(-\frac{2}{3} ; \frac{1}{3} ; \frac{2}{3}\right)$.
+
+[MAT-119] logarithme | beginner
+Q: Soit $x > 0$ tel que $\ln(2x) - \ln(\sqrt{3} - 1) = \ln(\sqrt{3} + 1)$. Alors :
+* $x = 1$
+- $x = 2$
+- $x = \sqrt{3}$
+- $x = \frac{1}{2}$
+- $x = 4$
+C: $x = 1$.
+E: L'équation équivaut à $\ln(2x) = \ln\left[(\sqrt{3} - 1)(\sqrt{3} + 1)\right] = \ln(3 - 1) = \ln 2$. Donc $2x = 2$ et $x = 1$.
+
+[MAT-120] calcul-algebrique | beginner
+Q: L'ensemble des solutions dans $\mathbb{R}$ de l'équation $(2x - 1)^3 + 27 = 0$ est :
+* $\{-1\}$
+- $\{2\}$
+- $\{-1 ; 2\}$
+- $\{1\}$
+- $\emptyset$
+C: $S = \{-1\}$.
+E: $(2x - 1)^3 = -27 = (-3)^3$. La fonction cube étant strictement croissante sur $\mathbb{R}$, $2x - 1 = -3$, donc $x = -1$.
+
+[MAT-121] logarithme | intermediate
+Q: L'ensemble des solutions de l'inéquation $\ln(2x - 3) \leq 0$ est :
+* $\left]\frac{3}{2} ; 2\right]$
+- $]-\infty ; 2]$
+- $\left[\frac{3}{2} ; 2\right]$
+- $[2 ; +\infty[$
+- $\left]\frac{3}{2} ; +\infty\right[$
+C: $S = \left]\frac{3}{2} ; 2\right]$.
+E: Il faut $2x - 3 > 0$, soit $x > \frac{3}{2}$, puis $\ln(2x - 3) \leq \ln 1$, soit $2x - 3 \leq 1$ par croissance de $\ln$, d'où $x \leq 2$. Ne pas oublier la condition d'existence.
+
+[MAT-122] integrales | intermediate
+Q: Une primitive sur $\mathbb{R}$ de la fonction $f(x) = \frac{e^{2x}}{e^{2x} + 1}$ est :
+* $F(x) = \frac{1}{2}\ln(e^{2x} + 1)$
+- $F(x) = \ln(e^{2x} + 1)$
+- $F(x) = 2\ln(e^{2x} + 1)$
+- $F(x) = \frac{e^{2x}}{2(e^{2x} + 1)}$
+- $F(x) = \ln(e^{x} + 1)$
+C: $F(x) = \frac{1}{2}\ln(e^{2x} + 1)$.
+E: Avec $u(x) = e^{2x} + 1 > 0$, on a $u'(x) = 2e^{2x}$, donc $f = \frac{1}{2}\frac{u'}{u}$ et $F = \frac{1}{2}\ln u$. Vérification : $F'(x) = \frac{1}{2}\cdot\frac{2e^{2x}}{e^{2x} + 1} = f(x)$.
+
+[MAT-123] exponentielle | beginner
+Q: L'ensemble des solutions dans $\mathbb{R}$ de l'équation $2^{x^2 - 3x} = \frac{1}{4}$ est :
+* $\{1 ; 2\}$
+- $\{-1 ; -2\}$
+- $\{1 ; -2\}$
+- $\{2\}$
+- $\emptyset$
+C: $S = \{1 ; 2\}$.
+E: $\frac{1}{4} = 2^{-2}$, donc $x^2 - 3x = -2$, soit $x^2 - 3x + 2 = (x - 1)(x - 2) = 0$ : $x = 1$ ou $x = 2$.
+
+[MAT-124] complexes | intermediate
+Q: Soient $x, y \in \mathbb{R}$ tels que $\left(\frac{1 + i}{1 - i}\right)^{2027} = x + iy$. Alors $(x ; y)$ est égal à :
+* $(0 ; -1)$
+- $(0 ; 1)$
+- $(1 ; 0)$
+- $(-1 ; 0)$
+- $(1 ; 1)$
+C: $(x ; y) = (0 ; -1)$.
+E: $\frac{1 + i}{1 - i} = \frac{(1 + i)^2}{(1 - i)(1 + i)} = \frac{2i}{2} = i$. Or $i^4 = 1$ et $2027 = 4 \times 506 + 3$, donc $i^{2027} = i^3 = -i$, soit $x = 0$ et $y = -1$.
+
+[MAT-125] suites | advanced
+Q: Soit $(u_n)$ définie par $u_0 = e^5$ et $u_{n+1} = e^2\sqrt[3]{u_n}$. On pose $v_n = \ln(u_n) - 3$. Quelle est la bonne réponse ?
+* $(v_n)$ est géométrique de raison $\frac{1}{3}$ et $\lim u_n = e^3$
+- $(v_n)$ est géométrique de raison $\frac{1}{3}$ et $\lim u_n = 3$
+- $(v_n)$ est géométrique de raison $3$ et $v_0 = 2$
+- $(v_n)$ est arithmétique de raison $2$
+- $(v_n)$ est géométrique de raison $\frac{1}{3}$ et $\lim u_n = 0$
+C: $v_{n+1} = \frac{1}{3}v_n$, $v_0 = 2$ et $u_n \to e^3$.
+E: $\ln u_{n+1} = 2 + \frac{1}{3}\ln u_n$, donc $v_{n+1} = \ln u_{n+1} - 3 = \frac{1}{3}\ln u_n - 1 = \frac{1}{3}(\ln u_n - 3) = \frac{1}{3}v_n$. Avec $v_0 = 5 - 3 = 2$ : $v_n = 2\left(\frac{1}{3}\right)^{n} \to 0$, donc $\ln u_n \to 3$ et $u_n \to e^3$.
+
+[MAT-126] probabilites | advanced
+Q: Un coureur doit franchir $n$ obstacles successifs. La probabilité de franchir l'obstacle numéro $k$ est $\frac{k}{k + 1}$, et les franchissements sont indépendants. La probabilité de franchir tous les obstacles est :
+* $\frac{1}{n + 1}$
+- $\frac{1}{n!}$
+- $\frac{n}{n + 1}$
+- $\frac{1}{2^{n}}$
+- $\frac{n!}{(n + 1)^{n}}$
+C: $p = \frac{1}{n + 1}$.
+E: Par indépendance, $p = \frac{1}{2} \times \frac{2}{3} \times \frac{3}{4} \times \cdots \times \frac{n}{n + 1}$. Le produit se télescope : chaque numérateur se simplifie avec le dénominateur précédent et il reste $\frac{1}{n + 1}$.
+
+[MAT-127] integrales | intermediate
+Q: La courbe d'une fonction $f$ sur $[0 ; 4]$ est formée des segments joignant les points $(0 ; 2)$, $(2 ; 0)$ et $(4 ; 3)$. On pose $I = \int_0^2 f(x)\,dx$, $J = \int_2^4 f(x)\,dx$ et $K = \int_0^4 f(x)\,dx$. Alors :
+* $I = 2$, $J = 3$ et $K = 5$
+- $I = 4$, $J = 6$ et $K = 10$
+- $I = 2$, $J = 6$ et $K = 8$
+- $I = 1$, $J = 3$ et $K = 4$
+- $I = 2$, $J = 3$ et $K = 1$
+C: $I = 2$, $J = 3$, $K = 5$.
+E: $f$ est positive : chaque intégrale est l'aire d'un triangle. $I = \frac{2 \times 2}{2} = 2$ et $J = \frac{2 \times 3}{2} = 3$. Par la relation de Chasles, $K = I + J = 5$.
+
+[MAT-128] probabilites | beginner
+Q: Combien de « mots » de 4 lettres distinctes (ayant un sens ou non) peut-on former avec les lettres du mot MAROC ?
+* $120$
+- $5$
+- $625$
+- $24$
+- $20$
+C: $A_5^4 = 120$.
+E: L'ordre compte et les lettres sont distinctes : ce sont des arrangements de 4 lettres parmi 5, $A_5^4 = 5 \times 4 \times 3 \times 2 = 120$. $5^4 = 625$ compterait les répétitions, et $24 = 4!$ seulement les permutations d'un jeu de 4 lettres fixé.
+
+[MAT-129] integrales | beginner
+Q: L'intégrale $I = \int_0^{2\pi} |\sin x|\,dx$ vaut :
+* $4$
+- $0$
+- $2$
+- $2\pi$
+- $1$
+C: $I = 4$.
+E: Sur $[0 ; \pi]$, $\sin x \geq 0$ et $\int_0^{\pi}\sin x\,dx = [-\cos x]_0^{\pi} = 2$. Sur $[\pi ; 2\pi]$, $|\sin x| = -\sin x$ et l'intégrale vaut aussi 2. Donc $I = 4$. Sans la valeur absolue, on trouverait 0.
+
+[MAT-130] integrales | intermediate
+Q: L'intégrale $J = \int_0^{2} \frac{x}{\sqrt{x^2 + 5}}\,dx$ vaut :
+* $3 - \sqrt{5}$
+- $3$
+- $\frac{3 - \sqrt{5}}{2}$
+- $2(3 - \sqrt{5})$
+- $\ln\frac{9}{5}$
+C: $J = 3 - \sqrt{5}$.
+E: Avec $u(x) = x^2 + 5$, $u'(x) = 2x$ et $\frac{x}{\sqrt{u}} = \frac{u'}{2\sqrt{u}}$, qui a pour primitive $\sqrt{u}$. Donc $J = \left[\sqrt{x^2 + 5}\right]_0^{2} = \sqrt{9} - \sqrt{5} = 3 - \sqrt{5}$.
+
+[MAT-131] suites | intermediate
+Q: Soit $(u_n)$ définie par $u_0 = 0$ et $u_{n+1} = \sqrt{6 + u_n}$. On admet que $(u_n)$ est croissante et majorée. Sa limite est :
+* $3$
+- $\sqrt{6}$
+- $-2$
+- $6$
+- $+\infty$
+C: $\lim u_n = 3$.
+E: La suite converge vers un réel $\ell \geq 0$ vérifiant $\ell = \sqrt{6 + \ell}$, soit $\ell^2 - \ell - 6 = 0$, d'où $\ell = 3$ ou $\ell = -2$. Comme tous les termes sont positifs, $\ell = 3$.
+
+[MAT-132] complexes | advanced
+Q: Soit $z$ un nombre complexe tel que $|z| = 1$ et $z \neq 1$. Le nombre $\frac{1 + z}{1 - z}$ est toujours :
+* Un imaginaire pur
+- Un réel non nul
+- De module 1
+- Nul
+- De module 2
+C: Un imaginaire pur.
+E: On écrit $z = e^{i\theta}$ et l'on factorise par $e^{i\frac{\theta}{2}}$ : $\frac{1 + z}{1 - z} = \frac{e^{-i\frac{\theta}{2}} + e^{i\frac{\theta}{2}}}{e^{-i\frac{\theta}{2}} - e^{i\frac{\theta}{2}}} = \frac{2\cos\frac{\theta}{2}}{-2i\sin\frac{\theta}{2}} = i\,\frac{\cos\frac{\theta}{2}}{\sin\frac{\theta}{2}}$, qui est imaginaire pur (nul seulement si $z = -1$).
+
+[MAT-133] complexes | intermediate
+Q: Soit $\omega = e^{i\frac{\pi}{4}}$. La somme $S = 1 + \omega + \omega^2 + \cdots + \omega^7$ vaut :
+* $0$
+- $1$
+- $8$
+- $-1$
+- $1 + i$
+C: $S = 0$.
+E: C'est la somme des 8 premiers termes d'une suite géométrique de raison $\omega \neq 1$ : $S = \frac{1 - \omega^8}{1 - \omega}$. Or $\omega^8 = e^{2i\pi} = 1$, donc $S = 0$. Géométriquement, ce sont les 8 racines huitièmes de l'unité, réparties régulièrement sur le cercle unité.
+
+[MAT-134] continuite | beginner
+Q: Soit $f$ définie par $f(x) = \frac{e^{2x} - 1}{x}$ pour $x \neq 0$ et $f(0) = a$. La fonction $f$ est continue en 0 si et seulement si :
+* $a = 2$
+- $a = 0$
+- $a = 1$
+- $a = \frac{1}{2}$
+- $a = e^2$
+C: $a = 2$.
+E: $\frac{e^{2x} - 1}{x} = 2 \times \frac{e^{2x} - 1}{2x} \to 2 \times 1 = 2$ quand $x \to 0$, car $\lim_{h \to 0}\frac{e^{h} - 1}{h} = 1$. La continuité en 0 impose $f(0) = \lim_{x \to 0} f(x)$, donc $a = 2$.
+
+[MAT-135] trigonometrie | intermediate
+Q: La valeur maximale de $f(x) = \sqrt{3}\sin x + \cos x$ sur $\mathbb{R}$ est :
+* $2$
+- $\sqrt{3} + 1$
+- $1$
+- $\sqrt{3}$
+- $4$
+C: $\max f = 2$.
+E: $\sqrt{3}\sin x + \cos x = 2\left(\frac{\sqrt{3}}{2}\sin x + \frac{1}{2}\cos x\right) = 2\sin\left(x + \frac{\pi}{6}\right)$, dont le maximum vaut 2 (atteint pour $x = \frac{\pi}{3}$). La valeur $\sqrt{3} + 1$ supposerait que $\sin x$ et $\cos x$ valent 1 en même temps, ce qui est impossible.
+
+[MAT-136] exponentielle | intermediate
+Q: L'ensemble des solutions dans $\mathbb{R}$ de l'équation $\frac{e^{3x}}{\sqrt{e^{2x + 2}}} = e^{3}$ est :
+* $\{2\}$
+- $\{1\}$
+- $\left\{\frac{3}{2}\right\}$
+- $\{-1\}$
+- $\{0\}$
+C: $S = \{2\}$.
+E: $\sqrt{e^{2x + 2}} = e^{x + 1}$, donc le premier membre vaut $e^{3x - x - 1} = e^{2x - 1}$. L'équation $e^{2x - 1} = e^{3}$ équivaut à $2x - 1 = 3$, soit $x = 2$.
+
+[MAT-137] probabilites | advanced
+Q: Une urne contient 4 boules rouges numérotées de 1 à 4 et 2 boules noires numérotées 1 et 2. On tire simultanément deux boules. On note A : « les deux boules sont de la même couleur » et B : « les deux boules portent un numéro pair ». La probabilité $P_A(B)$ vaut :
+* $\frac{1}{7}$
+- $\frac{1}{15}$
+- $\frac{7}{15}$
+- $\frac{2}{7}$
+- $\frac{1}{5}$
+C: $P_A(B) = \frac{1}{7}$.
+E: Il y a $C_6^2 = 15$ tirages. $A$ : $C_4^2 + C_2^2 = 6 + 1 = 7$ tirages. $A \cap B$ : deux boules de même couleur à numéros pairs ; seules les rouges 2 et 4 conviennent (une seule boule noire est paire), soit 1 tirage. Donc $P_A(B) = \frac{P(A \cap B)}{P(A)} = \frac{1/15}{7/15} = \frac{1}{7}$.
+
+[MAT-138] probabilites | intermediate
+Q: On lance trois fois un dé équilibré à 6 faces. La probabilité d'obtenir au moins un 6 est :
+* $\frac{91}{216}$
+- $\frac{1}{2}$
+- $\frac{125}{216}$
+- $\frac{1}{216}$
+- $\frac{1}{6}$
+C: $p = 1 - \left(\frac{5}{6}\right)^3 = \frac{91}{216}$.
+E: On passe par l'événement contraire « aucun 6 » : à chaque lancer, la probabilité de ne pas faire 6 est $\frac{5}{6}$ et les lancers sont indépendants, donc $P(\text{aucun } 6) = \frac{125}{216}$ et $p = 1 - \frac{125}{216} = \frac{91}{216}$. Additionner $\frac{1}{6}$ trois fois compterait plusieurs fois les cas à deux ou trois 6.
+
+[MAT-139] geometrie-espace | intermediate
+Q: On considère les vecteurs $\vec{u}(1 ; 2 ; 0)$, $\vec{v}(0 ; 1 ; 3)$ et $\vec{w}(2 ; 1 ; 1)$. Le produit mixte $(\vec{u} \wedge \vec{v}) \cdot \vec{w}$ vaut :
+* $10$
+- $0$
+- $-10$
+- $4$
+- $16$
+C: $(\vec{u} \wedge \vec{v}) \cdot \vec{w} = 10$.
+E: $\vec{u} \wedge \vec{v} = (2 \times 3 - 0 \times 1 ; 0 \times 0 - 1 \times 3 ; 1 \times 1 - 2 \times 0) = (6 ; -3 ; 1)$. Puis $(6 ; -3 ; 1) \cdot (2 ; 1 ; 1) = 12 - 3 + 1 = 10$. Ce résultat non nul montre que les trois vecteurs ne sont pas coplanaires.
+
+[MAT-140] derivation | intermediate
+Q: La courbe de la fonction $g(x) = \frac{e^{x} - 1}{x^2 + 2}$ admet au point d'abscisse 0 une tangente d'équation :
+* $y = \frac{x}{2}$
+- $y = x$
+- $y = 2x$
+- $y = \frac{x}{2} + 1$
+- $y = 0$
+C: $y = \frac{1}{2}x$.
+E: $g(0) = 0$ et $g'(x) = \frac{e^{x}(x^2 + 2) - (e^{x} - 1) \times 2x}{(x^2 + 2)^2}$, donc $g'(0) = \frac{1 \times 2 - 0}{4} = \frac{1}{2}$. La tangente a pour équation $y = g'(0)(x - 0) + g(0) = \frac{x}{2}$.
+
+[MAT-141] complexes | beginner
+Q: Le nombre complexe $(1 - i)^{12}$ est égal à :
+* $-64$
+- $64$
+- $64i$
+- $-64i$
+- $4\,096$
+C: $(1 - i)^{12} = -64$.
+E: $(1 - i)^2 = 1 - 2i + i^2 = -2i$, donc $(1 - i)^{12} = (-2i)^6 = 64\,i^6 = 64 \times (-1) = -64$. Sa partie imaginaire est nulle.
+
+[MAT-142] complexes | intermediate
+Q: Dans $\mathbb{C}$, l'ensemble des solutions de l'équation $\frac{3z - 5}{z - 1} = z$ est :
+* $\{2 + i ; 2 - i\}$
+- $\{-2 + i ; -2 - i\}$
+- $\{1 ; 5\}$
+- $\{1 + 2i ; 1 - 2i\}$
+- $\emptyset$
+C: $S = \{2 + i ; 2 - i\}$.
+E: Pour $z \neq 1$ : $3z - 5 = z(z - 1)$, soit $z^2 - 4z + 5 = 0$. $\Delta = 16 - 20 = -4 = (2i)^2$, donc $z = \frac{4 \pm 2i}{2} = 2 \pm i$, toutes deux différentes de 1.
+
+[MAT-143] equations-differentielles | intermediate
+Q: La solution de l'équation différentielle $y'' + 9y = 0$ qui vérifie $y(0) = 1$ et $y'(0) = 3$ est :
+* $y(x) = \cos 3x + \sin 3x$
+- $y(x) = \cos 3x + 3\sin 3x$
+- $y(x) = \cos 9x + \sin 9x$
+- $y(x) = e^{3x}$
+- $y(x) = \cos 3x - \sin 3x$
+C: $y = \cos 3x + \sin 3x$.
+E: Les solutions de $y'' + \omega^2 y = 0$ sont $y = A\cos\omega x + B\sin\omega x$ ; ici $\omega = 3$. $y(0) = A = 1$ et $y'(0) = 3B = 3$, donc $B = 1$.
+
+[MAT-144] equations-differentielles | intermediate
+Q: Les solutions sur $\mathbb{R}$ de l'équation différentielle $y'' - 4y' + 4y = 0$ sont les fonctions ($A$ et $B$ réels) :
+* $y(x) = (Ax + B)e^{2x}$
+- $y(x) = Ae^{2x} + Be^{-2x}$
+- $y(x) = A\cos 2x + B\sin 2x$
+- $y(x) = (Ax + B)e^{-2x}$
+- $y(x) = Ae^{4x} + B$
+C: $y = (Ax + B)e^{2x}$.
+E: L'équation caractéristique $r^2 - 4r + 4 = (r - 2)^2 = 0$ a une racine double $r = 2$ : les solutions sont $y = (Ax + B)e^{2x}$. Deux racines réelles distinctes $r_1$, $r_2$ donneraient $Ae^{r_1x} + Be^{r_2x}$.
+
+[MAT-145] complexes | intermediate
+Q: Soit $\theta \in\ ]-\pi ; \pi[$ et $z = 1 + e^{i\theta}$. Le module de $z$ est :
+* $2\cos\frac{\theta}{2}$
+- $2$
+- $2\cos\theta$
+- $2\sin\frac{\theta}{2}$
+- $1 + \cos\theta$
+C: $|z| = 2\cos\frac{\theta}{2}$.
+E: On factorise par l'angle moitié : $1 + e^{i\theta} = e^{i\frac{\theta}{2}}\left(e^{-i\frac{\theta}{2}} + e^{i\frac{\theta}{2}}\right) = 2\cos\frac{\theta}{2}\,e^{i\frac{\theta}{2}}$. Pour $\theta \in\ ]-\pi ; \pi[$, $\cos\frac{\theta}{2} > 0$, donc $|z| = 2\cos\frac{\theta}{2}$.
+
+[MAT-146] limites | beginner
+Q: La limite $\lim_{n \to +\infty} \left(\sqrt{n^2 + 4n} - n\right)$ vaut :
+* $2$
+- $0$
+- $4$
+- $+\infty$
+- $1$
+C: La limite vaut 2.
+E: On multiplie par la quantité conjuguée : $\sqrt{n^2 + 4n} - n = \frac{4n}{\sqrt{n^2 + 4n} + n} = \frac{4}{\sqrt{1 + \frac{4}{n}} + 1} \to \frac{4}{2} = 2$.
+
+[MAT-147] geometrie-espace | intermediate
+Q: Dans l'espace muni d'un repère orthonormé, on donne $A(1 ; 0 ; 2)$ et $B(3 ; 2 ; 0)$. L'ensemble des points $M$ équidistants de $A$ et $B$ est :
+* Le plan d'équation $x + y - z - 2 = 0$
+- Le plan d'équation $x + y - z = 0$
+- Le plan d'équation $x + y + z - 4 = 0$
+- La droite $(AB)$
+- La sphère de diamètre $[AB]$
+C: Le plan médiateur de $[AB]$ : $x + y - z - 2 = 0$.
+E: C'est le plan passant par le milieu $I(2 ; 1 ; 1)$ de $[AB]$ et de vecteur normal $\overrightarrow{AB}(2 ; 2 ; -2)$ : $2(x - 2) + 2(y - 1) - 2(z - 1) = 0$, soit $x + y - z - 2 = 0$. On le retrouve en écrivant $MA^2 = MB^2$.
+
+[MAT-148] complexes | advanced
+Q: Soit $z \in \mathbb{C}$ tel que $|z| = 2$ et $\arg(-z) \equiv \frac{\pi}{4}\ [2\pi]$. Alors $z^2$ est égal à :
+* $4i$
+- $-4i$
+- $4$
+- $-4$
+- $2i$
+C: $z^2 = 4i$.
+E: $-z = e^{i\pi}z$, donc $\arg z \equiv \frac{\pi}{4} - \pi = -\frac{3\pi}{4}\ [2\pi]$. Ainsi $z^2 = 4e^{-i\frac{3\pi}{2}} = 4e^{i\frac{\pi}{2}} = 4i$.
+
+[MAT-149] integrales | intermediate
+Q: L'intégrale $\int_0^1 \frac{e^{x}}{1 + e^{x}}\,dx$ vaut :
+* $\ln\frac{1 + e}{2}$
+- $\ln(1 + e)$
+- $\frac{1}{2}$
+- $\ln 2$
+- $\frac{e}{1 + e}$
+C: $\ln\frac{1 + e}{2}$.
+E: Avec $u = 1 + e^{x} > 0$, $u' = e^{x}$ : une primitive est $\ln(1 + e^{x})$. L'intégrale vaut $\ln(1 + e) - \ln 2 = \ln\frac{1 + e}{2}$.
+
+[MAT-150] complexes | advanced
+Q: Dans le plan complexe, on associe au point $M(z)$ le point $M'(z')$ tel que $z' = (1 - i)z + 2i$. Le point $\Omega$ d'affixe 2 est invariant. Pour $M \neq \Omega$, le rapport $\frac{\Omega M'}{\Omega M}$ et une mesure de l'angle $(\overrightarrow{\Omega M}, \overrightarrow{\Omega M'})$ sont :
+* $\sqrt{2}$ et $-\frac{\pi}{4}$
+- $\sqrt{2}$ et $\frac{\pi}{4}$
+- $2$ et $-\frac{\pi}{4}$
+- $1$ et $-\frac{\pi}{4}$
+- $\sqrt{2}$ et $-\frac{\pi}{2}$
+C: $\sqrt{2}$ et $-\frac{\pi}{4}$.
+E: $\Omega$ est invariant : $(1 - i) \times 2 + 2i = 2$. En soustrayant, $z' - 2 = (1 - i)(z - 2)$. Or $1 - i = \sqrt{2}\,e^{-i\frac{\pi}{4}}$ : la transformation est une similitude de centre $\Omega$, de rapport $\sqrt{2}$ et d'angle $-\frac{\pi}{4}$.
+
+[MAT-151] fonctions | beginner
+Q: Parmi tous les rectangles de périmètre $20\ \mathrm{cm}$, l'aire maximale vaut :
+* $25\ \mathrm{cm^2}$
+- $20\ \mathrm{cm^2}$
+- $24\ \mathrm{cm^2}$
+- $100\ \mathrm{cm^2}$
+- $16\ \mathrm{cm^2}$
+C: $25\ \mathrm{cm^2}$ (carré de côté 5 cm).
+E: Si un côté mesure $x$, l'autre mesure $10 - x$ et l'aire vaut $A(x) = x(10 - x) = -x^2 + 10x$. $A'(x) = 10 - 2x$ s'annule en $x = 5$ : l'aire est maximale pour le carré de côté 5, $A(5) = 25\ \mathrm{cm^2}$.
+
+[MAT-152] complexes | advanced
+Q: Soit $z \in \mathbb{C}$ tel que $|z| + z = 2 + 4i$. Le module de $z$ vaut :
+* $5$
+- $4$
+- $2$
+- $3$
+- $\sqrt{20}$
+C: $|z| = 5$ ($z = -3 + 4i$).
+E: On pose $z = a + ib$ : $|z| + a = 2$ et $b = 4$. Donc $\sqrt{a^2 + 16} = 2 - a$ ; en élevant au carré, $a^2 + 16 = 4 - 4a + a^2$, soit $a = -3$ (et $2 - a = 5 > 0$). Ainsi $z = -3 + 4i$ et $|z| = 5$.
+
+[MAT-153] complexes | intermediate
+Q: Dans le plan complexe, l'ensemble des points $M(z)$ tels que $|z - 2i| = |z + 2|$ est :
+* La droite d'équation $y = -x$
+- La droite d'équation $y = x$
+- Le cercle de centre $O$ et de rayon 2
+- Le point $O$ seulement
+- La droite passant par les points d'affixes $2i$ et $-2$
+C: La médiatrice du segment joignant $A(2i)$ et $B(-2)$ : $y = -x$.
+E: $|z - 2i| = AM$ et $|z + 2| = BM$ : l'ensemble cherché est la médiatrice de $[AB]$. Avec $z = x + iy$ : $x^2 + (y - 2)^2 = (x + 2)^2 + y^2$ donne $-4y = 4x$, soit $y = -x$.
+
+[MAT-154] exponentielle | advanced
+Q: Soit $a$ un réel tel que $\lim_{n \to +\infty} \left(1 + \frac{a}{n}\right)^{3n} = 8$. Alors $a$ est égal à :
+* $\ln 2$
+- $3\ln 2$
+- $\ln 8$
+- $2$
+- $\frac{\ln 2}{3}$
+C: $a = \ln 2$.
+E: $\left(1 + \frac{a}{n}\right)^{3n} = e^{3n\ln\left(1 + \frac{a}{n}\right)}$ et $n\ln\left(1 + \frac{a}{n}\right) \to a$, donc la limite vaut $e^{3a}$. $e^{3a} = 8 = 2^3$ donne $3a = 3\ln 2$, soit $a = \ln 2$.
+
+[MAT-155] probabilites | advanced
+Q: On lance un dé équilibré à 6 faces et on note $a$ le résultat. Dans l'espace muni d'un repère, quelle est la probabilité que le point $A(a^2 ; 4 ; 4a)$ appartienne au plan $(P) : x + y - z = 0$ ?
+* $\frac{1}{6}$
+- $\frac{1}{3}$
+- $\frac{1}{2}$
+- $0$
+- $\frac{2}{3}$
+C: $p = \frac{1}{6}$ (seul $a = 2$ convient).
+E: $A \in (P)$ équivaut à $a^2 + 4 - 4a = 0$, soit $(a - 2)^2 = 0$, donc $a = 2$. Un seul résultat favorable sur 6 équiprobables : $p = \frac{1}{6}$.
+
+[MAT-156] integrales | intermediate
+Q: La primitive $F$ sur $\mathbb{R}$ de $f(x) = 3e^{2x} - 4$ qui vérifie $F(0) = 1$ est :
+* $F(x) = \frac{3}{2}e^{2x} - 4x - \frac{1}{2}$
+- $F(x) = \frac{3}{2}e^{2x} - 4x + 1$
+- $F(x) = 6e^{2x} - 4x - 5$
+- $F(x) = \frac{3}{2}e^{2x} - 4x + \frac{5}{2}$
+- $F(x) = 3e^{2x} - 4x - 2$
+C: $F(x) = \frac{3}{2}e^{2x} - 4x - \frac{1}{2}$.
+E: Les primitives sont $F(x) = \frac{3}{2}e^{2x} - 4x + c$. $F(0) = \frac{3}{2} + c = 1$ donne $c = -\frac{1}{2}$. Attention : la primitive de $e^{2x}$ est $\frac{1}{2}e^{2x}$.
+
+[MAT-157] integrales | advanced
+Q: L'intégrale $\int_0^1 \frac{x + 1}{\sqrt{x^2 + 2x + 3}}\,dx$ vaut :
+* $\sqrt{6} - \sqrt{3}$
+- $2(\sqrt{6} - \sqrt{3})$
+- $\frac{\sqrt{6} - \sqrt{3}}{2}$
+- $\sqrt{3}$
+- $\ln 2$
+C: $\sqrt{6} - \sqrt{3}$.
+E: Avec $u(x) = x^2 + 2x + 3 > 0$, $u'(x) = 2(x + 1)$, l'intégrande vaut $\frac{u'}{2\sqrt{u}}$, de primitive $\sqrt{u}$. Donc l'intégrale vaut $\sqrt{6} - \sqrt{3}$.
+
+[MAT-158] suites | intermediate
+Q: Une suite $(v_n)_{n \geq 1}$ vérifie, pour tout $n \geq 1$, $v_1 + v_2 + \cdots + v_n = n^2 + 3n$. Alors $v_{10}$ vaut :
+* $22$
+- $130$
+- $20$
+- $24$
+- $13$
+C: $v_{10} = 22$.
+E: Avec $S_n = n^2 + 3n$ : $v_n = S_n - S_{n-1} = n^2 + 3n - (n - 1)^2 - 3(n - 1) = 2n + 2$ pour $n \geq 2$ (et $v_1 = S_1 = 4$ convient aussi). Donc $v_{10} = 22$. La valeur 130 est $S_{10}$.
+
+[MAT-159] derivation | intermediate
+Q: Soit $f$ une fonction dérivable sur $\mathbb{R}$ telle que, pour tout réel $x$, $f(3x + 1) = x^2 - x + 2$. Alors $f(4) + f'(4)$ vaut :
+* $\frac{7}{3}$
+- $3$
+- $2$
+- $\frac{5}{3}$
+- $\frac{1}{3}$
+C: $f(4) + f'(4) = 2 + \frac{1}{3} = \frac{7}{3}$.
+E: Avec $x = 1$ : $f(4) = 1 - 1 + 2 = 2$. En dérivant l'égalité : $3f'(3x + 1) = 2x - 1$ ; avec $x = 1$, $3f'(4) = 1$, donc $f'(4) = \frac{1}{3}$.
+
+[MAT-160] integrales | advanced
+Q: Pour tout entier naturel $n$, on pose $J_n = \int_0^1 x^n e^{x}\,dx$. Pour tout $n$, $J_{n+1} + (n + 1)J_n$ est égal à :
+* $e$
+- $1$
+- $e - 1$
+- $0$
+- $e^2$
+C: $J_{n+1} + (n + 1)J_n = e$.
+E: Intégration par parties avec $u = x^{n+1}$ et $v' = e^{x}$ : $J_{n+1} = \left[x^{n+1}e^{x}\right]_0^1 - (n + 1)\int_0^1 x^{n}e^{x}\,dx = e - (n + 1)J_n$. Exemple : $J_0 = e - 1$ et $J_1 = 1$, et l'on vérifie $J_1 + J_0 = e$.
+
+[MAT-161] derivation | intermediate
+Q: Soit $f(x) = 1 + x + x^2 + \cdots + x^{10}$. Le nombre $f'(1)$ vaut :
+* $55$
+- $11$
+- $10$
+- $45$
+- $66$
+C: $f'(1) = 55$.
+E: $f'(x) = 1 + 2x + 3x^2 + \cdots + 10x^9$, donc $f'(1) = 1 + 2 + \cdots + 10 = \frac{10 \times 11}{2} = 55$. La tangente en 1 a pour équation $y = 55(x - 1) + 11$, car $f(1) = 11$.
+
+[MAT-162] limites | intermediate
+Q: La limite $\lim_{x \to 0^+} x(\ln x)^2$ vaut :
+* $0$
+- $+\infty$
+- $-\infty$
+- $1$
+- $e$
+C: La limite vaut 0.
+E: On pose $x = t^2$ avec $t \to 0^+$ : $x(\ln x)^2 = t^2 \times 4(\ln t)^2 = 4(t\ln t)^2 \to 0$, car $\lim_{t \to 0^+} t\ln t = 0$. En $0^+$, toute puissance positive de $x$ l'emporte sur les puissances de $\ln x$.
+
+[MAT-163] continuite | intermediate
+Q: Soit $f$ définie sur $\mathbb{R}$ par $f(x) = e^{x}$ si $x < 0$ et $f(x) = \cos x$ si $x \geq 0$. Quelle est la bonne réponse ?
+* $f$ est continue en 0 mais n'est pas dérivable en 0
+- $f$ n'est pas continue en 0
+- $f$ est dérivable en 0 et $f'(0) = 1$
+- $f$ est dérivable en 0 et $f'(0) = 0$
+- $f$ n'est pas définie en 0
+C: Continue, non dérivable en 0.
+E: $\lim_{x \to 0^-} e^{x} = 1 = \cos 0 = f(0)$ : $f$ est continue en 0. Dérivée à gauche : $(e^{x})'(0) = 1$ ; dérivée à droite : $-\sin 0 = 0$. Elles sont différentes : la courbe présente un point anguleux en 0.
+
+[MAT-164] integrales | beginner
+Q: L'intégrale $\int_0^{\frac{\pi}{4}} \tan x\,dx$ vaut :
+* $\frac{1}{2}\ln 2$
+- $\ln 2$
+- $-\frac{1}{2}\ln 2$
+- $1$
+- $\frac{\pi}{4}$
+C: $\frac{1}{2}\ln 2$.
+E: $\tan x = \frac{\sin x}{\cos x} = -\frac{u'}{u}$ avec $u = \cos x > 0$ sur $\left[0 ; \frac{\pi}{4}\right]$. Une primitive est $-\ln(\cos x)$, d'où $\int_0^{\frac{\pi}{4}} \tan x\,dx = -\ln\frac{\sqrt{2}}{2} + \ln 1 = \ln\sqrt{2} = \frac{1}{2}\ln 2$.
+
+[MAT-165] integrales | intermediate
+Q: L'intégrale $\int_1^{e} x\ln x\,dx$ vaut :
+* $\frac{e^2 + 1}{4}$
+- $\frac{e^2}{4}$
+- $\frac{e^2 - 1}{4}$
+- $1$
+- $\frac{e}{2}$
+C: $\frac{e^2 + 1}{4}$.
+E: Intégration par parties avec $u = \ln x$ et $v' = x$ : $\int_1^{e} x\ln x\,dx = \left[\frac{x^2}{2}\ln x\right]_1^{e} - \int_1^{e}\frac{x}{2}\,dx = \frac{e^2}{2} - \left[\frac{x^2}{4}\right]_1^{e} = \frac{e^2}{2} - \frac{e^2}{4} + \frac{1}{4} = \frac{e^2 + 1}{4}$.
+
+[MAT-166] suites | beginner
+Q: La suite définie pour $n \geq 1$ par $u_n = \left(-\frac{1}{2}\right)^{n}$ :
+* Converge vers 0 sans être monotone
+- Est décroissante
+- Est croissante
+- Diverge
+- N'a que des termes négatifs
+C: Elle converge vers 0, en alternant de signe.
+E: C'est une suite géométrique de raison $q = -\frac{1}{2}$, avec $|q| < 1$ : elle converge vers 0. Ses termes changent de signe à chaque rang ($-\frac{1}{2}$, $\frac{1}{4}$, $-\frac{1}{8}$…) : elle n'est ni croissante ni décroissante.
+
+[MAT-167] probabilites | advanced
+Q: Une urne $U_1$ contient 3 boules blanches et 2 noires, une urne $U_2$ contient 1 boule blanche et 4 noires. On choisit une urne au hasard, puis on y tire une boule : elle est blanche. La probabilité qu'elle provienne de $U_1$ est :
+* $\frac{3}{4}$
+- $\frac{3}{5}$
+- $\frac{1}{2}$
+- $\frac{3}{10}$
+- $\frac{2}{5}$
+C: $P_B(U_1) = \frac{3}{4}$.
+E: $P(B) = \frac{1}{2} \times \frac{3}{5} + \frac{1}{2} \times \frac{1}{5} = \frac{2}{5}$ (formule des probabilités totales). Puis $P_B(U_1) = \frac{P(U_1 \cap B)}{P(B)} = \frac{3/10}{2/5} = \frac{3}{4}$. La valeur $\frac{3}{5}$ est $P_{U_1}(B)$, la probabilité inverse.
+
+[MAT-168] complexes | intermediate
+Q: La forme exponentielle du nombre complexe $z = \frac{1 + i}{1 - i\sqrt{3}}$ est :
+* $\frac{\sqrt{2}}{2}e^{i\frac{7\pi}{12}}$
+- $\frac{\sqrt{2}}{2}e^{-i\frac{\pi}{12}}$
+- $\sqrt{2}\,e^{i\frac{7\pi}{12}}$
+- $\frac{\sqrt{2}}{2}e^{i\frac{\pi}{12}}$
+- $2e^{i\frac{7\pi}{12}}$
+C: $z = \frac{\sqrt{2}}{2}e^{i\frac{7\pi}{12}}$.
+E: $1 + i = \sqrt{2}e^{i\frac{\pi}{4}}$ et $1 - i\sqrt{3} = 2e^{-i\frac{\pi}{3}}$. On divise les modules et on soustrait les arguments : $|z| = \frac{\sqrt{2}}{2}$ et $\arg z = \frac{\pi}{4} + \frac{\pi}{3} = \frac{7\pi}{12}$.
+
+[MAT-169] suites | intermediate
+Q: Soit $S_n = \sum_{k=1}^{n} \ln\frac{k}{k + 1}$. La limite de $S_n$ quand $n \to +\infty$ est :
+* $-\infty$
+- $0$
+- $\ln 2$
+- $-1$
+- $+\infty$
+C: $S_n = -\ln(n + 1) \to -\infty$.
+E: La somme se télescope : $S_n = \sum_{k=1}^{n}\left[\ln k - \ln(k + 1)\right] = \ln 1 - \ln(n + 1) = -\ln(n + 1)$, qui tend vers $-\infty$.
+
+[MAT-170] integrales | advanced
+Q: La limite $\lim_{x \to 1} \frac{1}{x - 1}\int_1^{x} e^{t^2}\,dt$ vaut :
+* $e$
+- $1$
+- $0$
+- $e^2$
+- $2e$
+C: La limite vaut $e$.
+E: Soit $F(x) = \int_1^{x} e^{t^2}\,dt$ : $F$ est la primitive de $t \mapsto e^{t^2}$ qui s'annule en 1. L'expression est le taux d'accroissement $\frac{F(x) - F(1)}{x - 1}$, qui tend vers $F'(1) = e^{1^2} = e$.
+
+[MAT-171] probabilites | intermediate
+Q: Une urne contient 6 boules blanches et 4 boules noires. On tire simultanément 3 boules. Le nombre de tirages contenant au moins une boule noire est :
+* $100$
+- $120$
+- $20$
+- $84$
+- $36$
+C: $C_{10}^{3} - C_{6}^{3} = 120 - 20 = 100$.
+E: On compte le contraire : les tirages sans boule noire sont formés de 3 boules blanches, $C_6^3 = 20$. Le nombre total de tirages est $C_{10}^{3} = 120$, d'où $120 - 20 = 100$ tirages avec au moins une boule noire.
+
+[MAT-172] complexes | beginner
+Q: Le module du nombre complexe $(3 + 4i)(1 - i)$ est :
+* $5\sqrt{2}$
+- $7$
+- $10$
+- $5$
+- $2\sqrt{5}$
+C: $|z| = 5\sqrt{2}$.
+E: Le module d'un produit est le produit des modules : $|3 + 4i| = \sqrt{9 + 16} = 5$ et $|1 - i| = \sqrt{2}$, donc $|z| = 5\sqrt{2}$. Vérification : $(3 + 4i)(1 - i) = 7 + i$ et $\sqrt{49 + 1} = \sqrt{50} = 5\sqrt{2}$.
+
+[MAT-173] geometrie-espace | advanced
+Q: L'intersection de la sphère de centre $\Omega(1 ; 2 ; -1)$ et de rayon 3 avec le plan $(P) : x + 2y + 2z + 4 = 0$ est :
+* Un cercle de rayon $\frac{4\sqrt{2}}{3}$
+- Un point
+- L'ensemble vide
+- Un cercle de rayon 3
+- Un cercle de rayon $\frac{7}{3}$
+C: Un cercle de rayon $\frac{4\sqrt{2}}{3}$.
+E: $d(\Omega, P) = \frac{|1 + 4 - 2 + 4|}{\sqrt{1 + 4 + 4}} = \frac{7}{3} < 3$ : le plan coupe la sphère suivant un cercle de rayon $r = \sqrt{R^2 - d^2} = \sqrt{9 - \frac{49}{9}} = \frac{\sqrt{32}}{3} = \frac{4\sqrt{2}}{3}$. Si $d = R$, on aurait un point ; si $d > R$, l'ensemble vide.
+
+[MAT-174] equations-differentielles | beginner
+Q: Soit $a$ un réel strictement positif. Les solutions sur $\mathbb{R}$ de l'équation différentielle $y'' + ay = 0$ sont les fonctions ($\alpha$ et $\beta$ réels) :
+* $y(x) = \alpha\cos(\sqrt{a}\,x) + \beta\sin(\sqrt{a}\,x)$
+- $y(x) = \alpha\cos(ax) + \beta\sin(ax)$
+- $y(x) = \alpha e^{\sqrt{a}\,x} + \beta e^{-\sqrt{a}\,x}$
+- $y(x) = (\alpha x + \beta)e^{ax}$
+- $y(x) = \alpha e^{ax} + \beta$
+C: $y = \alpha\cos(\sqrt{a}x) + \beta\sin(\sqrt{a}x)$.
+E: L'équation s'écrit $y'' + \omega^2y = 0$ avec $\omega = \sqrt{a}$ ; ses solutions sont $\alpha\cos(\omega x) + \beta\sin(\omega x)$. L'équation caractéristique $r^2 + a = 0$ a pour racines $\pm i\sqrt{a}$. Les exponentielles réelles correspondent à $y'' - ay = 0$.
+
+[MAT-175] integrales | intermediate
+Q: La primitive sur $]0 ; +\infty[$ de la fonction $\ln$ qui s'annule en 1 est :
+* $F(x) = x\ln x - x + 1$
+- $F(x) = x\ln x - x$
+- $F(x) = \frac{1}{x}$
+- $F(x) = x\ln x + x - 1$
+- $F(x) = \ln x - 1$
+C: $F(x) = x\ln x - x + 1$.
+E: $(x\ln x - x)' = \ln x + x \times \frac{1}{x} - 1 = \ln x$ : les primitives de $\ln$ sont $x\ln x - x + c$. $F(1) = 0 - 1 + c = 0$ donne $c = 1$. $\frac{1}{x}$ est la dérivée de $\ln$, pas une primitive.
+
+[MAT-176] suites | advanced
+Q: Soit $(u_n)$ définie par $u_0 = 5$ et $u_{n+1} = 1 + \ln u_n$. On admet qu'elle converge. Sa limite est :
+* $1$
+- $0$
+- $e$
+- $+\infty$
+- $\ln 5$
+C: $\lim u_n = 1$.
+E: La limite $\ell > 0$ vérifie $\ell = 1 + \ln\ell$, soit $\ln\ell = \ell - 1$. Or $\ln x \leq x - 1$ pour tout $x > 0$, avec égalité seulement en $x = 1$ (la tangente en 1 à la courbe de $\ln$ est au-dessus de la courbe). Donc $\ell = 1$.
+
+[MAT-177] limites | beginner
+Q: La limite $\lim_{x \to +\infty} \frac{x^3 + \ln x}{e^{x}}$ vaut :
+* $0$
+- $+\infty$
+- $1$
+- $-\infty$
+- $3$
+C: La limite vaut 0.
+E: $\frac{x^3 + \ln x}{e^{x}} = \frac{x^3}{e^{x}} + \frac{\ln x}{e^{x}}$. Par croissances comparées, $\lim_{x \to +\infty}\frac{x^n}{e^{x}} = 0$ et $\frac{\ln x}{e^{x}} \leq \frac{x}{e^{x}} \to 0$. L'exponentielle l'emporte sur toute puissance de $x$.
+
+[MAT-178] fonctions | intermediate
+Q: Soit $f(x) = ax^3 + bx^2 + cx + d$ une fonction polynôme de degré 3 ($a \neq 0$). Quelle affirmation est toujours vraie ?
+* L'équation $f(x) = 0$ admet au moins une solution réelle
+- $f$ admet une fonction réciproque définie sur $\mathbb{R}$
+- La courbe de $f$ admet un axe de symétrie
+- La courbe de $f$ coupe l'axe des abscisses en trois points
+- $f$ admet une valeur maximale
+C: Au moins une racine réelle.
+E: $f$ est continue et, si $a > 0$, $\lim_{-\infty} f = -\infty$ et $\lim_{+\infty} f = +\infty$ (inversement si $a < 0$) : d'après le théorème des valeurs intermédiaires, $f$ s'annule au moins une fois. Contre-exemples : $x^3 - x$ n'est pas bijective, $x^3$ ne coupe l'axe qu'en un point, et $f$ n'est pas bornée. Sa courbe a un centre de symétrie, pas un axe.
+
+[MAT-179] probabilites | advanced
+Q: Une urne contient 10 boules : 6 portent le numéro 1 et 4 le numéro 2. On tire simultanément deux boules et on note $X$ le plus petit des deux numéros. L'espérance de $X$ vaut :
+* $\frac{17}{15}$
+- $\frac{2}{15}$
+- $\frac{13}{15}$
+- $\frac{3}{2}$
+- $\frac{7}{5}$
+C: $E(X) = \frac{17}{15}$.
+E: $X = 2$ seulement si les deux boules portent le numéro 2 : $P(X = 2) = \frac{C_4^2}{C_{10}^2} = \frac{6}{45} = \frac{2}{15}$, et $P(X = 1) = \frac{13}{15}$. Donc $E(X) = 1 \times \frac{13}{15} + 2 \times \frac{2}{15} = \frac{17}{15}$.
+
+[MAT-180] suites | intermediate
+Q: La somme $S = 1 + \frac{1}{3} + \frac{1}{9} + \cdots + \frac{1}{3^6}$ vaut :
+* $\frac{1093}{729}$
+- $\frac{3}{2}$
+- $\frac{364}{243}$
+- $\frac{1094}{729}$
+- $\frac{1093}{2187}$
+C: $S = \frac{1093}{729}$.
+E: C'est la somme de 7 termes d'une suite géométrique de premier terme 1 et de raison $\frac{1}{3}$ : $S = \frac{1 - \left(\frac{1}{3}\right)^7}{1 - \frac{1}{3}} = \frac{3}{2}\left(1 - \frac{1}{2187}\right) = \frac{3}{2} \times \frac{2186}{2187} = \frac{1093}{729}$. Attention au nombre de termes : de $3^0$ à $3^6$, il y en a 7. La valeur $\frac{3}{2}$ est la limite de la somme infinie.
+
+[MAT-181] complexes | intermediate
+Q: Dans le plan complexe, l'ensemble des points $M(z)$ tels que $|z - 2| = |z - 2i|$ et $|z| = 2$ est formé de :
+* Deux points
+- Un segment
+- Un cercle
+- Un seul point
+- Aucun point
+C: Deux points : $(\sqrt{2} ; \sqrt{2})$ et $(-\sqrt{2} ; -\sqrt{2})$.
+E: $|z - 2| = |z - 2i|$ définit la médiatrice du segment joignant les points d'affixes 2 et $2i$, c'est-à-dire la droite $y = x$. $|z| = 2$ est le cercle de centre $O$ et de rayon 2. La droite passe par le centre : elle coupe le cercle en deux points, d'abscisses $x = \pm\sqrt{2}$.
+
+[MAT-182] geometrie-espace | advanced
+Q: Dans un repère orthonormé de l'espace, le symétrique du point $M(1 ; 2 ; 3)$ par rapport au plan $(P) : x + y + z = 0$ est le point :
+* $M'(-3 ; -2 ; -1)$
+- $M'(-1 ; 0 ; 1)$
+- $M'(3 ; 2 ; 1)$
+- $M'(-1 ; -2 ; -3)$
+- $M'(-2 ; -1 ; 0)$
+C: $M'(-3 ; -2 ; -1)$.
+E: Le projeté orthogonal $H$ de $M$ sur $(P)$ s'écrit $H = M + t\,\vec{n}$ avec $\vec{n}(1 ; 1 ; 1)$ : $(1 + t) + (2 + t) + (3 + t) = 0$ donne $t = -2$, soit $H(-1 ; 0 ; 1)$. $H$ est le milieu de $[MM']$, donc $M' = 2H - M = (-3 ; -2 ; -1)$.
+
+[MAT-183] integrales | intermediate
+Q: La valeur moyenne de la fonction $u(x) = \frac{1}{\sqrt{x + 1}}$ sur l'intervalle $[0 ; 3]$ est :
+* $\frac{2}{3}$
+- $2$
+- $\frac{1}{3}$
+- $1$
+- $\frac{4}{3}$
+C: $\mu = \frac{2}{3}$.
+E: La valeur moyenne vaut $\mu = \frac{1}{3 - 0}\int_0^3 \frac{dx}{\sqrt{x + 1}}$. Une primitive est $2\sqrt{x + 1}$, d'où $\int_0^3 = 2 \times 2 - 2 \times 1 = 2$ et $\mu = \frac{2}{3}$. La valeur 2 est l'intégrale, avant division par la longueur de l'intervalle.
+
+[MAT-184] derivation | advanced
+Q: Soit $f(x) = e^{-x} + x$. Sa courbe admet en $+\infty$ l'asymptote $(D) : y = x$. Au point P de la courbe, la tangente est perpendiculaire à $(D)$. L'ordonnée de P est :
+* $2 - \ln 2$
+- $\ln 2$
+- $2 + \ln 2$
+- $1$
+- $-\ln 2$
+C: $y_P = 2 - \ln 2$.
+E: Une droite perpendiculaire à $(D)$, de pente 1, a pour pente $-1$. $f'(x) = -e^{-x} + 1 = -1$ donne $e^{-x} = 2$, soit $x_P = -\ln 2$. Alors $y_P = f(-\ln 2) = e^{\ln 2} - \ln 2 = 2 - \ln 2$.
+
+[MAT-185] limites | intermediate
+Q: La limite $\lim_{x \to 2} \frac{3^{x} - 9}{x - 2}$ vaut :
+* $9\ln 3$
+- $9$
+- $\ln 3$
+- $3\ln 3$
+- $\frac{9}{\ln 3}$
+C: $9\ln 3$.
+E: C'est le taux d'accroissement en 2 de $g(x) = 3^{x} = e^{x\ln 3}$, puisque $g(2) = 9$. La limite vaut donc $g'(2) = \ln 3 \times 3^{2} = 9\ln 3$.
+
+[MAT-186] suites | beginner
+Q: $(U_n)$ est une suite géométrique telle que $U_1 = 3$ et $U_2 = 9$. La somme $S_n = U_0 + U_1 + \cdots + U_n$ vaut :
+* $\frac{3^{n+1} - 1}{2}$
+- $3^{n+1} - 1$
+- $\frac{3^{n} - 1}{2}$
+- $3^{n+1}$
+- $3^{n} - 1$
+C: $S_n = \frac{3^{n+1} - 1}{2}$.
+E: La raison vaut $q = \frac{U_2}{U_1} = 3$ et $U_0 = \frac{U_1}{q} = 1$. La somme des $n + 1$ premiers termes vaut $U_0\frac{q^{n+1} - 1}{q - 1} = \frac{3^{n+1} - 1}{2}$. Vérification pour $n = 1$ : $1 + 3 = 4 = \frac{9 - 1}{2}$.
+
+[MAT-187] complexes | intermediate
+Q: L'écriture complexe de la rotation de centre $\Omega(1 + i)$ et d'angle $\frac{\pi}{2}$ est :
+* $z' = iz + 2$
+- $z' = iz$
+- $z' = iz + 1 + i$
+- $z' = -iz + 2$
+- $z' = iz - 2$
+C: $z' = iz + 2$.
+E: Une rotation de centre $\omega$ et d'angle $\theta$ s'écrit $z' - \omega = e^{i\theta}(z - \omega)$. Avec $e^{i\frac{\pi}{2}} = i$ : $z' = iz + (1 + i) - i(1 + i) = iz + 1 + i - i + 1 = iz + 2$. Vérification : le centre est invariant, $i(1 + i) + 2 = 1 + i$.
+
+[MAT-188] complexes | intermediate
+Q: Dans le plan complexe, on considère les points $A$, $B$ et $C$ d'affixes $1$, $i$ et $-1$. Le triangle $ABC$ est :
+* Rectangle et isocèle en $B$
+- Équilatéral
+- Rectangle en $A$
+- Isocèle en $A$ sans être rectangle
+- Aplati
+C: Rectangle isocèle en $B$.
+E: $AB = |i - 1| = \sqrt{2}$, $BC = |-1 - i| = \sqrt{2}$ et $AC = |-1 - 1| = 2$. On a $AB = BC$ et $AB^2 + BC^2 = 4 = AC^2$ : le triangle est rectangle et isocèle en $B$. On peut aussi vérifier que $\frac{c - b}{a - b} = \frac{-1 - i}{1 - i} = -i$, imaginaire pur de module 1.
+
+[MAT-189] logarithme | beginner
+Q: La dérivée sur $]0 ; +\infty[$ de la fonction $f(x) = \log_2 x$ (logarithme de base 2) est :
+* $f'(x) = \frac{1}{x\ln 2}$
+- $f'(x) = \frac{\ln 2}{x}$
+- $f'(x) = \frac{1}{x}$
+- $f'(x) = \frac{2}{x}$
+- $f'(x) = x\ln 2$
+C: $f'(x) = \frac{1}{x\ln 2}$.
+E: Par définition, $\log_a x = \frac{\ln x}{\ln a}$. Donc $\log_2 x = \frac{\ln x}{\ln 2}$, dont la dérivée est $\frac{1}{\ln 2} \times \frac{1}{x}$. Seul le logarithme népérien a pour dérivée $\frac{1}{x}$.
+
+[MAT-190] fonctions | intermediate
+Q: La courbe de la fonction $f(x) = \frac{x + 5}{2x - 1}$ admet pour centre de symétrie le point :
+* $\Omega\left(\frac{1}{2} ; \frac{1}{2}\right)$
+- $\Omega\left(-5 ; \frac{1}{2}\right)$
+- $\Omega\left(\frac{1}{2} ; 1\right)$
+- $\Omega\left(1 ; \frac{1}{2}\right)$
+- $\Omega\left(\frac{1}{2} ; -5\right)$
+C: $\Omega\left(\frac{1}{2} ; \frac{1}{2}\right)$.
+E: La courbe d'une fonction homographique est une hyperbole dont le centre de symétrie est l'intersection des asymptotes. Asymptote verticale : $2x - 1 = 0$, soit $x = \frac{1}{2}$ ; asymptote horizontale : $y = \lim_{\pm\infty} f = \frac{1}{2}$ (quotient des coefficients de $x$).
+
+[MAT-191] complexes | beginner
+Q: La partie imaginaire du nombre complexe $z = \frac{1 + i\sqrt{3}}{1 - i}$ est :
+* $\frac{1 + \sqrt{3}}{2}$
+- $\frac{1 - \sqrt{3}}{2}$
+- $\sqrt{3}$
+- $\frac{1}{2}$
+- $\frac{\sqrt{3} - 1}{2}$
+C: $\mathrm{Im}(z) = \frac{1 + \sqrt{3}}{2}$.
+E: On multiplie par le conjugué du dénominateur : $z = \frac{(1 + i\sqrt{3})(1 + i)}{(1 - i)(1 + i)} = \frac{1 + i + i\sqrt{3} - \sqrt{3}}{2} = \frac{1 - \sqrt{3}}{2} + i\,\frac{1 + \sqrt{3}}{2}$. La valeur $\frac{1 - \sqrt{3}}{2}$ est la partie réelle.
+
+[MAT-192] integrales | intermediate
+Q: L'intégrale $\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} \frac{dx}{\cos^2 x}$ vaut :
+* $2$
+- $0$
+- $1$
+- $\frac{\pi}{2}$
+- $\sqrt{2}$
+C: $2$.
+E: Une primitive de $\frac{1}{\cos^2 x}$ est $\tan x$ sur $\left]-\frac{\pi}{2} ; \frac{\pi}{2}\right[$. L'intégrale vaut $\tan\frac{\pi}{4} - \tan\left(-\frac{\pi}{4}\right) = 1 - (-1) = 2$. Elle ne peut pas être nulle : la fonction intégrée est strictement positive.
+
+[MAT-193] integrales | advanced
+Q: La primitive sur $]0 ; +\infty[$ de $f(x) = \frac{\ln x}{x^3}$ qui s'annule en 1 est :
+* $F(x) = -\frac{\ln x}{2x^2} - \frac{1}{4x^2} + \frac{1}{4}$
+- $F(x) = -\frac{\ln x}{2x^2} - \frac{1}{4x^2}$
+- $F(x) = \frac{\ln x}{2x^2} + \frac{1}{4x^2} - \frac{1}{4}$
+- $F(x) = -\frac{\ln x}{2x^2} + \frac{1}{4x^2} - \frac{1}{4}$
+- $F(x) = \frac{(\ln x)^2}{2x^2}$
+C: $F(x) = -\frac{\ln x}{2x^2} - \frac{1}{4x^2} + \frac{1}{4}$.
+E: Intégration par parties avec $u = \ln x$ et $v' = x^{-3}$, donc $v = -\frac{1}{2x^2}$ : $\int \frac{\ln x}{x^3}dx = -\frac{\ln x}{2x^2} + \int \frac{1}{2x^3}dx = -\frac{\ln x}{2x^2} - \frac{1}{4x^2} + c$. La condition $F(1) = -\frac{1}{4} + c = 0$ donne $c = \frac{1}{4}$.

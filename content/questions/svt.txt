@@ -578,3 +578,900 @@ Q: Quelle structure est présente dans une cellule végétale mais absente d'une
 - Les mitochondries
 C: La paroi pectocellulosique.
 E: La cellule végétale possède aussi des chloroplastes et une grande vacuole. La membrane plasmique, le noyau et les mitochondries sont communs aux cellules animales et végétales.
+
+# ---------------------------------------------------------------------------
+# Format du concours de médecine (FMP, FMD) : 5 propositions, une seule juste.
+# Questions originales qui reprennent les notions et le niveau des sujets
+# officiels 2022 à 2026, de concours de facultés (Marrakech, Fès, Tanger) et de
+# concours blancs ; valeurs numériques et énoncés réécrits.
+@source src-annales-medecine
+
+[SVT-101] respiration | intermediate
+Q: Au cours d'un tour du cycle de Krebs, l'oxydation d'une molécule d'acétyl-CoA produit :
+* 3 NADH,H⁺, 1 FADH₂, 1 ATP (via le GTP) et 2 CO₂
+- 2 NADH,H⁺, 2 FADH₂, 2 ATP et 2 CO₂
+- 3 NADH,H⁺, 1 FADH₂, 2 ATP et 3 CO₂
+- 1 NADH,H⁺, 1 FADH₂, 1 ATP et 1 CO₂
+- 4 NADH,H⁺, 1 FADH₂, 1 ATP et 3 CO₂
+C: 3 NADH,H⁺ + 1 FADH₂ + 1 ATP + 2 CO₂ par acétyl-CoA.
+E: Le cycle de Krebs oxyde complètement le groupement acétyle (2 atomes de carbone) en 2 CO₂ ; l'énergie libérée est récupérée sous forme de 3 NADH,H⁺, 1 FADH₂ et 1 ATP (formé à partir du GTP). Une molécule de glucose donnant 2 acétyl-CoA, il faut doubler ces valeurs par glucose.
+
+[SVT-102] respiration | intermediate
+Q: Lors de la dégradation complète d'une molécule de glucose par la respiration cellulaire, la plus grande partie du CO₂ est libérée :
+* Dans la matrice mitochondriale, au cours du cycle de Krebs
+- Dans le hyaloplasme, au cours de la glycolyse
+- Au niveau de la chaîne respiratoire de la membrane interne
+- Dans l'espace intermembranaire, lors du pompage des protons
+- Lors de la phosphorylation de l'ADP par l'ATP synthase
+C: Dans la matrice, au cours du cycle de Krebs.
+E: La glycolyse ne libère aucun CO₂. Sur les 6 CO₂ produits par glucose, 2 sont libérés lors de la décarboxylation oxydative du pyruvate en acétyl-CoA et 4 au cours du cycle de Krebs, tous dans la matrice mitochondriale. La chaîne respiratoire et l'ATP synthase ne produisent pas de CO₂.
+
+[SVT-103] muscle | intermediate
+Q: Lors d'un effort intense et bref (sprint de 30 secondes), la fatigue musculaire rapide s'explique surtout par :
+* Une faible production d'ATP par la glycolyse anaérobie, avec accumulation d'acide lactique dans le muscle
+- Une forte production d'ATP par la respiration, avec accumulation de CO₂ dans la fibre
+- La transformation de l'acide lactique en acétyl-CoA, qui sature le cycle de Krebs
+- L'épuisement immédiat du glycogène du foie
+- L'utilisation de l'acide lactique pour synthétiser des protéines musculaires
+C: La fermentation lactique fournit peu d'ATP et l'acide lactique s'accumule.
+E: Quand l'apport de dioxygène est insuffisant, le muscle régénère son ATP par la glycolyse anaérobie (fermentation lactique) : le rendement est faible (2 ATP par glucose contre environ 36 à 38 par la respiration) et le pyruvate est réduit en acide lactique, qui s'accumule et acidifie la fibre, ce qui contribue à la fatigue. L'acide lactique est ensuite recyclé, surtout par le foie.
+
+[SVT-104] genie-genetique | intermediate
+Q: À propos de l'insuline humaine produite par génie génétique, quelle affirmation est exacte ?
+* On insère dans la bactérie un ADNc obtenu par transcription inverse de l'ARNm de l'insuline
+- On insère directement le gène humain avec ses introns, que la bactérie sait éliminer
+- L'insuline est sécrétée par les cellules α des îlots de Langerhans
+- L'insuline est une hormone hyperglycémiante
+- L'insuline est formée d'une seule chaîne de 15 acides aminés
+C: On utilise un ADNc, copie de l'ARNm mature sans introns.
+E: Les bactéries ne savent pas éliminer les introns : on prépare donc un ADNc à partir de l'ARNm mature grâce à la transcriptase inverse, puis on l'insère dans un plasmide. L'insuline, hormone hypoglycémiante sécrétée par les cellules β des îlots de Langerhans, est formée de deux chaînes (A : 21 acides aminés ; B : 30) reliées par des ponts disulfure.
+
+[SVT-105] adn | beginner
+Q: L'ADN polymérase est l'enzyme qui :
+* Synthétise un nouveau brin d'ADN complémentaire à partir d'un brin matrice
+- Sépare les deux brins de la double hélice en rompant les liaisons hydrogène
+- Transcrit l'ADN en ARN messager
+- Stabilise les brins d'ADN séparés
+- Relie les acides aminés au cours de la traduction
+C: Elle synthétise le brin complémentaire, dans le sens 5'→3'.
+E: Lors de la réplication semi-conservative, l'hélicase ouvre la double hélice ; l'ADN polymérase ajoute ensuite des nucléotides complémentaires du brin matrice (A–T, C–G), toujours dans le sens 5'→3'. La transcription de l'ADN en ARN est assurée par l'ARN polymérase.
+
+[SVT-106] genie-genetique | intermediate
+Q: La galle du collet est une tumeur végétale :
+* Provoquée par Agrobacterium tumefaciens, qui transfère un fragment de son plasmide Ti dans l'ADN de la cellule végétale
+- Provoquée par une exposition à une forte chaleur
+- Due à un virus qui détruit les cellules du collet
+- Dont les opines sont des substances de défense produites par les cellules saines
+- Qui disparaît dès que la bactérie est tuée
+C: Due à Agrobacterium tumefaciens et à l'ADN-T de son plasmide Ti.
+E: La bactérie transfère l'ADN-T de son plasmide Ti, qui s'intègre au génome végétal : les cellules transformées prolifèrent (tumeur) et fabriquent des opines, que la bactérie utilise comme nutriments. La tumeur persiste même sans la bactérie, puisque l'information est intégrée au génome. Ce mécanisme naturel sert à fabriquer des plantes transgéniques.
+
+[SVT-107] genetique-humaine | beginner
+Q: Le caryotype standard permet de détecter :
+* Les anomalies du nombre de chromosomes et les grandes anomalies de leur structure
+- Une mutation ponctuelle d'un gène
+- Toutes les maladies héréditaires, y compris la mucoviscidose
+- La séquence des nucléotides d'un gène
+- Une délétion de quelques nucléotides
+C: Les anomalies chromosomiques visibles au microscope.
+E: Le caryotype classe les chromosomes métaphasiques selon leur taille, la position du centromère et leurs bandes : il révèle les anomalies de nombre (trisomie 21, syndrome de Turner…) et les remaniements de grande taille (translocations, grandes délétions). Les mutations ponctuelles, comme celles de la mucoviscidose ou de la myopathie de Duchenne, demandent des techniques moléculaires (PCR, séquençage).
+
+[SVT-108] genetique-humaine | intermediate
+Q: La mucoviscidose :
+* Est une maladie autosomique récessive due à des mutations du gène CFTR, situé sur le chromosome 7
+- Est une maladie autosomique dominante
+- Est due à un mucus trop fluide
+- Est une maladie polygénique
+- Est une maladie liée au chromosome X
+C: Autosomique récessive, gène CFTR du chromosome 7.
+E: Le gène CFTR (chromosome 7) code une protéine canal à ions chlorure. Ses mutations (la plus fréquente est ΔF508) rendent le mucus épais et visqueux, d'où des troubles respiratoires et digestifs. Il faut deux allèles mutés pour être malade : les parents d'un enfant atteint sont en général des hétérozygotes sains.
+
+[SVT-109] genetique-humaine | intermediate
+Q: Deux parents sains ont une fille atteinte d'une maladie héréditaire. Quel est le seul mode de transmission compatible ?
+* Autosomique récessif
+- Autosomique dominant
+- Dominant lié au chromosome X
+- Récessif lié au chromosome X
+- Lié au chromosome Y
+C: Autosomique récessif.
+E: Des parents sains ont un enfant atteint : l'allèle est récessif et les parents sont porteurs. S'il était récessif lié à l'X, la fille atteinte (XᵃXᵃ) aurait reçu un Xᵃ de son père, qui serait donc malade : c'est exclu. Le mode lié à Y est exclu (une fille n'a pas de chromosome Y). Il reste le mode autosomique récessif.
+
+[SVT-110] genetique-humaine | advanced
+Q: Deux parents atteints d'une maladie héréditaire ont un fils sain et une fille saine. Quel mode de transmission est compatible avec cet arbre généalogique ?
+* Autosomique dominant
+- Autosomique récessif
+- Récessif lié au chromosome X
+- Dominant lié au chromosome X
+- Lié au chromosome Y
+C: Autosomique dominant, les deux parents étant hétérozygotes.
+E: Des parents atteints ont des enfants sains : l'allèle de la maladie est dominant et les parents sont hétérozygotes. Récessif : impossible, deux parents homozygotes malades n'auraient que des enfants malades. Dominant lié à l'X : un père atteint (XᴬY) transmet son Xᴬ à toutes ses filles, qui seraient atteintes ; la fille saine l'exclut. Lié à Y : le fils serait atteint. Seul le mode autosomique dominant convient.
+
+[SVT-111] genetique-humaine | intermediate
+Q: À propos de l'hémoglobine de l'adulte (HbA), quelle affirmation est exacte ?
+* Elle est formée de 2 chaînes α et de 2 chaînes β, chacune associée à un groupement hème
+- Les gènes des globines α et β sont tous deux portés par le chromosome 16
+- Elle contient 2 chaînes β et une seule chaîne α
+- Elle est uniquement constituée de groupements hème
+- La β-thalassémie est due à un excès de synthèse de la globine β
+C: Tétramère α₂β₂ portant 4 hèmes.
+E: L'HbA est un tétramère de deux globines α (141 acides aminés, gènes sur le chromosome 16) et de deux globines β (146 acides aminés, gène sur le chromosome 11), chacune liée à un hème qui fixe le dioxygène. La β-thalassémie est due à une synthèse insuffisante ou absente de la chaîne β.
+
+[SVT-112] genetique-humaine | intermediate
+Q: L'hémophilie A est une maladie récessive liée au chromosome X. Une femme conductrice (porteuse saine) et un homme sain ont un garçon. Quelle est la probabilité que ce garçon soit hémophile ?
+* 1/2
+- 1/4
+- 0
+- 1
+- 3/4
+C: 1/2.
+E: La mère est XᴴXʰ et le père XᴴY. Un garçon reçoit le Y de son père et l'un des deux X de sa mère, avec la même probabilité : il est hémophile (XʰY) dans 1 cas sur 2. Pour un enfant pris au hasard (garçon ou fille), la probabilité serait 1/4.
+
+[SVT-113] immunologie | beginner
+Q: Où se fait la maturation des lymphocytes B et des lymphocytes T chez l'Homme ?
+* Les lymphocytes B dans la moelle osseuse, les lymphocytes T dans le thymus
+- Les lymphocytes B dans le thymus, les lymphocytes T dans la moelle osseuse
+- Les deux dans le thymus
+- Les deux dans les ganglions lymphatiques
+- Les lymphocytes B dans la rate, les lymphocytes T dans le foie
+C: B : moelle osseuse ; T : thymus.
+E: Tous les lymphocytes naissent dans la moelle osseuse (organe lymphoïde central). Les LB y acquièrent leur immunocompétence ; les LT migrent et mûrissent dans le thymus. Les lymphocytes matures colonisent ensuite les organes lymphoïdes périphériques (ganglions, rate, amygdales…), où ils rencontrent les antigènes.
+
+[SVT-114] immunologie | intermediate
+Q: Le rejet d'une greffe de peau entre deux individus :
+* Se produit lorsque les molécules du CMH (système HLA) du donneur et du receveur sont différentes
+- Est une réaction immunitaire non spécifique
+- Est empêché par l'injection du sérum d'un individu ayant déjà rejeté la même greffe
+- Est une réaction à médiation exclusivement humorale
+- Ne se produit jamais entre deux frères
+C: Il est dû à une différence de CMH entre le donneur et le receveur.
+E: Le rejet de greffe est une réponse spécifique, surtout à médiation cellulaire : des LT8 devenus LTc détruisent les cellules qui portent un CMH étranger. Il se transmet par les lymphocytes, pas par le sérum. Entre vrais jumeaux (CMH identique), il n'y a pas de rejet ; entre frères et sœurs, la compatibilité n'est que probable.
+
+[SVT-115] immunologie | intermediate
+Q: Dans la réponse immunitaire spécifique à médiation cellulaire :
+* L'interleukine 2 sécrétée par les LT4 activés (LTh) stimule la prolifération des LT8 et leur différenciation en LTc
+- Les LT4 se différencient en lymphocytes T cytotoxiques
+- Les lymphocytes B deviennent des plasmocytes qui détruisent les cellules infectées
+- Les anticorps sont les principaux effecteurs
+- Aucune coopération entre cellules n'est nécessaire
+C: L'IL2 des LTh active les LT8, qui deviennent des LTc.
+E: Une cellule présentatrice (macrophage) présente l'antigène aux LT4 et aux LT8. Les LT4 deviennent des LT auxiliaires (LTh) qui sécrètent l'interleukine 2 ; celle-ci stimule la multiplication des LT8 et leur différenciation en LT cytotoxiques, qui détruisent les cellules infectées (perforine). Plasmocytes et anticorps relèvent de la réponse à médiation humorale.
+
+[SVT-116] respiration | beginner
+Q: Quelle étape du métabolisme énergétique est commune à la respiration cellulaire et à la fermentation ?
+* La glycolyse, qui se déroule dans le hyaloplasme
+- Le cycle de Krebs
+- La phosphorylation oxydative
+- L'utilisation du dioxygène comme accepteur final d'électrons
+- La décarboxylation oxydative du pyruvate dans la mitochondrie
+C: La glycolyse.
+E: Les deux voies commencent par la glycolyse (glucose → 2 pyruvate + 2 ATP + 2 NADH,H⁺) dans le hyaloplasme. Ensuite, la respiration se poursuit dans la mitochondrie (décarboxylation du pyruvate, cycle de Krebs, chaîne respiratoire avec le dioxygène comme accepteur final), alors que la fermentation reste dans le hyaloplasme : le pyruvate y est réduit en éthanol ou en acide lactique, ce qui régénère le NAD⁺.
+
+[SVT-117] fermentation | intermediate
+Q: Des levures cultivées sans dioxygène sur un milieu glucosé sont placées dans un milieu bien aéré. On observe principalement :
+* Une diminution de la production d'éthanol, car la respiration remplace la fermentation et fournit plus d'ATP par glucose
+- Une augmentation de la production d'éthanol
+- L'arrêt de la glycolyse
+- Une augmentation de la consommation de glucose par cellule pour produire la même quantité d'ATP
+- La mort des levures, qui ne peuvent vivre qu'en anaérobiose
+C: La respiration remplace la fermentation alcoolique.
+E: La levure est anaérobie facultative. En présence de dioxygène, le pyruvate entre dans la mitochondrie (cycle de Krebs, chaîne respiratoire) : la production d'éthanol chute et le rendement passe d'environ 2 ATP à environ 36 à 38 ATP par glucose. Pour une même quantité d'ATP, la cellule consomme donc moins de glucose. La glycolyse continue : elle est commune aux deux voies.
+
+[SVT-118] muscle | intermediate
+Q: Quelle voie régénère l'ATP le plus rapidement au tout début d'un effort musculaire intense ?
+* La phosphocréatine, qui cède directement un groupement phosphate à l'ADP
+- La respiration cellulaire
+- La fermentation lactique
+- La dégradation des lipides du tissu adipeux
+- La synthèse de glycogène dans le foie
+C: La voie de la phosphocréatine.
+E: La réaction phosphocréatine + ADP → créatine + ATP (créatine kinase) se fait en une seule étape : c'est la voie la plus rapide, mais la réserve s'épuise en quelques secondes. Prennent ensuite le relais la fermentation lactique (rapide, faible rendement) puis la respiration (lente à se mettre en place, fort rendement).
+
+[SVT-119] muscle | intermediate
+Q: On stimule un muscle isolé par une série de stimulations efficaces. Chaque stimulation l'atteint pendant la phase de relâchement de la secousse précédente. On obtient :
+* Un tétanos imparfait
+- Un tétanos parfait
+- Une série de secousses isolées d'amplitude constante
+- Une absence de réponse, le muscle étant en période réfractaire
+- Une contracture permanente, même après l'arrêt des stimulations
+C: Un tétanos imparfait (fusion incomplète des secousses).
+E: Si la stimulation arrive pendant la phase de relâchement, les secousses fusionnent partiellement : le tracé est ondulé et son amplitude augmente (tétanos imparfait). Si elle arrive pendant la phase de contraction, la fusion est complète : on obtient un plateau, le tétanos parfait. Les stimulations très espacées donnent des secousses isolées.
+
+[SVT-120] immunologie | intermediate
+Q: À propos de la réponse immunitaire spécifique à médiation humorale, quelle proposition est exacte ?
+* L'activation des lymphocytes B nécessite la reconnaissance de l'antigène et les interleukines sécrétées par les lymphocytes T auxiliaires
+- Les lymphocytes T cytotoxiques en sont les principaux effecteurs
+- Les anticorps détruisent eux-mêmes les antigènes par phagocytose
+- Les plasmocytes sont des cellules mémoires à longue durée de vie
+- Elle n'intervient que contre les cellules infectées par un virus
+C: Les LB ont besoin de l'antigène et des interleukines des LTh.
+E: Les LB reconnaissent l'antigène grâce à leurs récepteurs (anticorps membranaires) ; stimulés par les interleukines des LT4 devenus auxiliaires, ils se multiplient et se différencient en plasmocytes, qui sécrètent des anticorps, et en LB mémoires. Les anticorps neutralisent l'antigène en formant des complexes immuns, éliminés ensuite par phagocytose.
+
+[SVT-121] immunologie | beginner
+Q: Les lymphocytes T cytotoxiques (LTc) détruisent une cellule infectée :
+* Par contact direct, après reconnaissance spécifique, en libérant de la perforine
+- En produisant des anticorps spécifiques
+- En phagocytant la cellule cible
+- En activant le complément à la surface de la cellule
+- En sécrétant de l'histamine
+C: Par cytotoxicité directe (perforine).
+E: Le LTc reconnaît, grâce à son récepteur TCR, le peptide étranger présenté par le CMH de la cellule infectée. Il libère alors de la perforine, qui forme des pores dans la membrane de la cellule cible, ainsi que des enzymes qui provoquent sa mort. Les anticorps sont produits par les plasmocytes.
+
+[SVT-122] cellule | beginner
+Q: On coupe une amibe en deux fragments : l'un avec noyau, l'autre sans noyau. Que devient le fragment sans noyau ?
+* Il survit quelque temps, ne se divise pas et finit par mourir
+- Il régénère un nouveau noyau
+- Il se divise normalement
+- Il garde indéfiniment toutes ses fonctions
+- Il fusionne avec le fragment nucléé
+C: Il meurt sans se diviser.
+E: Cette expérience de mérotomie montre que le noyau contrôle la vie, la croissance et la division de la cellule : il contient l'information génétique nécessaire au renouvellement des protéines. Le fragment nucléé, lui, cicatrise, grandit et se divise.
+
+[SVT-123] mitose | beginner
+Q: Le rôle fondamental de la mitose dans la transmission de l'information génétique est :
+* De produire deux cellules filles ayant le même nombre de chromosomes et la même information génétique que la cellule mère
+- De réduire de moitié le nombre de chromosomes pour former les gamètes
+- De créer de la diversité génétique par brassage intrachromosomique
+- D'éliminer les chromosomes porteurs de mutations
+- De doubler le nombre de chromosomes des cellules filles
+C: Conserver le caryotype et l'information génétique.
+E: Grâce à la réplication de l'ADN (phase S de l'interphase) puis à la séparation des chromatides sœurs (anaphase), chaque cellule fille reçoit un exemplaire identique de chaque chromosome. Le brassage génétique et la réduction du nombre de chromosomes sont propres à la méiose.
+
+[SVT-124] adn | beginner
+Q: Les histones sont des protéines dont le rôle principal est :
+* L'enroulement et la compaction de l'ADN en nucléosomes, formant la chromatine
+- Le stockage de l'information génétique
+- La synthèse de l'ARN messager
+- La réplication de l'ADN
+- La formation de l'enveloppe nucléaire
+C: La compaction de l'ADN.
+E: L'ADN s'enroule autour d'octamères d'histones pour former des nucléosomes ; c'est le premier niveau de condensation de la chromatine, qui permet de loger environ 2 mètres d'ADN dans un noyau de quelques micromètres. L'information génétique est portée par la séquence des nucléotides de l'ADN, pas par les histones.
+
+[SVT-125] adn | intermediate
+Q: Un brin d'ADN a pour séquence 5'-GATTCAGC-3'. La séquence du brin complémentaire, écrite dans le sens 5'→3', est :
+* 5'-GCTGAATC-3'
+- 5'-CTAAGTCG-3'
+- 5'-CUAAGUCG-3'
+- 5'-GATTCAGC-3'
+- 5'-CGACTTAG-3'
+C: 5'-GCTGAATC-3'.
+E: Les brins sont complémentaires (A–T, G–C) et antiparallèles. Le brin complémentaire s'écrit d'abord 3'-CTAAGTCG-5', puis, lu de 5' vers 3' : 5'-GCTGAATC-3'. La séquence avec U serait un ARN ; 5'-CGACTTAG-3' est seulement le brin de départ lu à l'envers, sans complémentarité.
+
+[SVT-126] mutations | beginner
+Q: Dans la drépanocytose, l'hémoglobine S diffère de l'hémoglobine normale A par :
+* Le remplacement de l'acide glutamique par la valine en position 6 de la chaîne β
+- Le remplacement de la valine par l'acide glutamique en position 6 de la chaîne β
+- Le remplacement de l'acide glutamique par la lysine en position 6 de la chaîne α
+- La perte totale de la chaîne β
+- L'absence du groupement hème
+C: Glu → Val en position 6 de la globine β.
+E: Une substitution d'un seul nucléotide (codon GAG devenu GTG) remplace l'acide glutamique (hydrophile) par la valine (hydrophobe) en position 6 de la chaîne β. À faible pression en dioxygène, l'HbS polymérise et déforme les globules rouges en faucille. Le remplacement par la lysine en position 6 de la chaîne β correspond à l'hémoglobine C.
+
+[SVT-127] mutations | intermediate
+Q: Un gène code une protéine de 250 acides aminés. Après une substitution d'un seul nucléotide, la protéine obtenue ne compte plus que 120 acides aminés. L'explication la plus probable est :
+* L'apparition d'un codon stop prématuré à la place du 121e codon (mutation non-sens)
+- Un décalage du cadre de lecture à partir du codon muté
+- Une mutation faux-sens qui change un acide aminé
+- Une mutation silencieuse
+- L'inhibition de l'ARN polymérase pendant la transcription
+C: Une mutation non-sens (codon stop prématuré).
+E: Une substitution ne décale pas le cadre de lecture (c'est le cas des insertions et délétions). Si elle transforme un codon en codon stop (UAA, UAG ou UGA), la traduction s'arrête prématurément : ici, après le 120e acide aminé. Une mutation faux-sens changerait un acide aminé sans raccourcir la protéine ; une mutation silencieuse ne la changerait pas.
+
+[SVT-128] genie-genetique | beginner
+Q: Un plasmide recombinant est :
+* Un plasmide dans lequel on a inséré un fragment d'ADN étranger, par exemple un gène d'intérêt
+- Un plasmide bactérien naturel, jamais modifié
+- Un plasmide coupé et rendu linéaire par une enzyme de restriction
+- Une molécule d'ARN double brin servant de vecteur
+- Un chromosome bactérien entier
+C: Un vecteur portant un fragment d'ADN exogène.
+E: On coupe le plasmide et l'ADN d'intérêt avec la même enzyme de restriction (extrémités compatibles), puis la ligase les soude : on obtient un plasmide recombinant. Introduit dans une bactérie (transformation), il est répliqué et le gène inséré peut être exprimé, par exemple pour produire de l'insuline humaine.
+
+[SVT-129] genetique-humaine | intermediate
+Q: Quelle technique permet un diagnostic de certitude d'une anomalie chromosomique fœtale, comme la trisomie 21, avant la naissance ?
+* Le caryotype fœtal réalisé sur des cellules prélevées par amniocentèse ou choriocentèse
+- Le dosage des marqueurs sériques dans le sang maternel
+- L'échographie de la clarté nucale
+- L'établissement de l'arbre généalogique de la famille
+- La mesure de l'âge maternel
+C: Le caryotype fœtal après prélèvement.
+E: Les marqueurs sériques, la clarté nucale, l'âge maternel et même l'analyse de l'ADN fœtal libre dans le sang maternel sont des tests de dépistage : ils estiment un risque. Seul le caryotype fœtal (ou une analyse génétique équivalente) sur des cellules fœtales obtenues par amniocentèse ou biopsie de trophoblaste apporte une certitude.
+
+[SVT-130] respiration | beginner
+Q: À propos de la glycolyse, quelle affirmation est exacte ?
+* Elle consomme 2 ATP et en produit 4, soit un gain net de 2 ATP par glucose
+- Elle se déroule dans la mitochondrie et produit 36 ATP
+- Elle produit du CO₂, de l'acide pyruvique et du NADH,H⁺
+- Elle produit directement de l'acétyl-CoA
+- Elle nécessite obligatoirement du dioxygène
+C: Bilan : 2 pyruvate, 2 NADH,H⁺ et un gain net de 2 ATP.
+E: La glycolyse se déroule dans le hyaloplasme, avec ou sans dioxygène. La phase d'activation consomme 2 ATP, la phase de récupération en produit 4, d'où un gain net de 2 ATP ; elle forme aussi 2 NADH,H⁺ et 2 pyruvates. Aucun CO₂ n'est libéré : les décarboxylations ont lieu dans la mitochondrie (respiration) ou lors de la fermentation alcoolique.
+
+[SVT-131] respiration | intermediate
+Q: Concernant la chaîne respiratoire mitochondriale, quelle affirmation est exacte ?
+* Le retour des protons H⁺ vers la matrice, à travers l'ATP synthase, fournit l'énergie de la phosphorylation de l'ADP
+- Elle est située dans l'espace intermembranaire
+- Elle prélève des électrons sur le dioxygène
+- Elle pompe les protons de l'espace intermembranaire vers la matrice
+- Elle fonctionne sans dioxygène
+C: Le flux de protons à travers l'ATP synthase permet la synthèse d'ATP.
+E: Les transporteurs de la membrane interne reçoivent les électrons du NADH,H⁺ et du FADH₂ et les cèdent au dioxygène, accepteur final, qui est réduit en eau. Ce transfert pompe des protons de la matrice vers l'espace intermembranaire ; leur retour par l'ATP synthase fournit l'énergie de la phosphorylation de l'ADP en ATP (environ 3 ATP par NADH,H⁺ et 2 par FADH₂).
+
+[SVT-132] muscle | intermediate
+Q: Au cours de la contraction d'une fibre musculaire striée squelettique :
+* Les ions calcium se fixent sur la troponine, ce qui déplace la tropomyosine et libère les sites de fixation de la myosine sur l'actine
+- La tropomyosine se fixe sur la myosine, ce qui déclenche la contraction
+- L'hydrolyse de l'ATP libère les ions calcium du réticulum sarcoplasmique
+- Les filaments d'actine et de myosine se raccourcissent
+- L'ATP n'intervient que pendant le relâchement
+C: Ca²⁺ + troponine → déplacement de la tropomyosine → ponts actine-myosine.
+E: Le potentiel d'action libère les ions Ca²⁺ du réticulum sarcoplasmique. Fixés sur la troponine, ils déplacent la tropomyosine : les têtes de myosine se lient à l'actine et basculent (glissement des filaments, qui ne raccourcissent pas eux-mêmes). L'ATP sert au basculement et au détachement des têtes, puis au repompage du calcium lors du relâchement.
+
+[SVT-133] immunologie | intermediate
+Q: Les lymphocytes T cytotoxiques reconnaissent l'antigène lorsqu'il leur est présenté associé :
+* Aux molécules du CMH de classe I
+- Aux molécules du CMH de classe II
+- Aux immunoglobulines
+- Aux cytokines
+- Aux molécules du complément
+C: Au CMH de classe I.
+E: Le récepteur des LT8 (futurs LTc) reconnaît un peptide étranger associé au CMH I, présent sur presque toutes les cellules nucléées : un LTc peut donc reconnaître toute cellule infectée. Les LT4 reconnaissent le peptide associé au CMH II, porté par les cellules présentatrices (macrophages, cellules dendritiques, LB).
+
+[SVT-134] immunologie | beginner
+Q: Lors d'une blessure cutanée infectée par des bactéries, lequel de ces mécanismes n'appartient pas à la réponse immunitaire non spécifique (innée) ?
+* La sécrétion d'interleukines par des macrophages pour activer des lymphocytes T spécifiques
+- La libération d'histamine par les mastocytes, qui provoque une vasodilatation
+- La phagocytose des bactéries par les macrophages
+- L'afflux rapide des polynucléaires neutrophiles
+- La réaction inflammatoire (rougeur, chaleur, gonflement, douleur)
+C: L'activation de lymphocytes T spécifiques.
+E: La réaction inflammatoire (histamine, vasodilatation), l'arrivée des neutrophiles et la phagocytose sont immédiates et non spécifiques. L'activation des lymphocytes T, qui reconnaissent un antigène précis, relève de la réponse spécifique (adaptative), même si les macrophages y participent comme cellules présentatrices.
+
+[SVT-135] immunologie | beginner
+Q: Après l'ablation du thymus (thymectomie) chez un jeune animal, l'organisme ne peut plus produire :
+* De lymphocytes T matures
+- De globules rouges
+- De lymphocytes B
+- De macrophages
+- Aucune cellule immunitaire
+C: Des lymphocytes T immunocompétents.
+E: Le thymus est le lieu de maturation des lymphocytes T. Sans thymus, les réponses à médiation cellulaire (rejet de greffe, destruction des cellules infectées) disparaissent et la réponse humorale est très diminuée, faute de LT auxiliaires. Les LB, les globules rouges et les macrophages, produits par la moelle osseuse, sont toujours fabriqués.
+
+[SVT-136] expression | beginner
+Q: Chez les cellules humaines, l'ARN polymérase :
+* Synthétise un ARN messager complémentaire du brin transcrit de l'ADN, dans le noyau
+- Synthétise un brin d'ADN à partir d'un brin d'ARN
+- Agit au niveau des ribosomes
+- Se fixe uniquement à l'extrémité de chaque chromosome
+- Relie les acides aminés entre eux
+C: Elle transcrit l'ADN en ARN dans le noyau.
+E: Lors de la transcription, l'ARN polymérase se fixe au début d'un gène, ouvre localement la double hélice et assemble des ribonucléotides complémentaires du brin transcrit (A–U, T–A, G–C, C–G). La synthèse d'ADN à partir d'ARN est le fait de la transcriptase inverse ; l'assemblage des acides aminés a lieu sur les ribosomes.
+
+[SVT-137] genetique-humaine | beginner
+Q: La trisomie 21 :
+* Résulte le plus souvent d'une mauvaise séparation des chromosomes 21 pendant la méiose d'un parent
+- Est due à une mutation du gène CFTR
+- Résulte de l'absence d'un chromosome 21
+- Se transmet selon un mode autosomique récessif
+- Est due à une anomalie de l'ADN mitochondrial
+C: Une non-disjonction méiotique donnant 3 chromosomes 21.
+E: Le caryotype montre 47 chromosomes avec trois chromosomes 21. Dans la majorité des cas, la non-disjonction se produit lors de la méiose maternelle (le risque augmente avec l'âge de la mère) : un gamète à 24 chromosomes est fécondé par un gamète normal. Ce n'est ni une mutation génique ni une maladie à transmission mendélienne.
+
+[SVT-138] genetique-humaine | beginner
+Q: L'étude de la génétique humaine est difficile, notamment parce que :
+* La durée d'une génération est longue et le nombre de descendants est faible
+- On peut réaliser des croisements dirigés sur plusieurs générations
+- L'Homme ne possède que deux chromosomes
+- Le nombre de gènes humains est inférieur à celui des bactéries
+- Les gènes humains ne suivent pas les lois de Mendel
+C: Générations longues, peu de descendants, pas de croisements expérimentaux.
+E: On ne peut pas faire de croisements dirigés chez l'Homme ; on analyse donc des arbres généalogiques, complétés par le caryotype et les techniques de l'ADN. Les gènes humains suivent pourtant les lois de Mendel, et l'espèce humaine possède 46 chromosomes.
+
+[SVT-139] genetique-humaine | intermediate
+Q: Dans un arbre généalogique, seuls des garçons sont atteints, et ils sont nés de parents sains. L'hypothèse la plus probable est :
+* Une maladie due à un allèle récessif porté par le chromosome X
+- Une maladie due à un allèle dominant autosomique
+- Une maladie due à une mutation de l'ADN mitochondrial
+- Une maladie que seuls les pères transmettent
+- Une maladie due à un allèle dominant porté par le chromosome X
+C: Un allèle récessif lié à l'X.
+E: Des parents sains ayant des enfants atteints : l'allèle est récessif. Les garçons (XY) n'ont qu'un X, reçu de leur mère conductrice (XᴬXᵃ) : un seul allèle suffit pour qu'ils soient malades, alors que les filles devraient en recevoir deux. Une maladie mitochondriale est transmise par la mère à tous ses enfants, quel que soit leur sexe.
+
+[SVT-140] mutations | beginner
+Q: Parmi les propositions suivantes, laquelle est une mutation ponctuelle ?
+* La substitution d'un nucléotide par un autre
+- L'inversion d'un grand segment de chromosome
+- La perte d'un chromosome entier
+- La duplication d'un gène entier
+- La fusion de deux chromosomes
+C: La substitution d'un nucléotide.
+E: Une mutation ponctuelle (génique) ne touche qu'un ou quelques nucléotides : substitution, insertion ou délétion. Les inversions, translocations, duplications et anomalies du nombre de chromosomes sont des mutations chromosomiques, souvent visibles sur le caryotype.
+
+[SVT-141] muscle | intermediate
+Q: Dans le cycle de contraction musculaire, la fixation d'une molécule d'ATP sur la tête de myosine :
+* Provoque le détachement de la tête de myosine de l'actine ; l'hydrolyse de l'ATP la redresse ensuite pour un nouveau cycle
+- Provoque la fixation des ions calcium sur la troponine
+- Bloque définitivement la tête de myosine sur l'actine
+- Raccourcit les filaments d'actine
+- N'intervient que dans le pompage du calcium
+C: L'ATP détache la tête de myosine, son hydrolyse la réarme.
+E: Cycle d'une tête de myosine : fixation sur l'actine (sites libérés par le calcium), basculement qui fait glisser l'actine (libération d'ADP et de phosphate), fixation d'un ATP qui détache la tête, puis hydrolyse de l'ATP qui la redresse. Sans ATP, les têtes restent accrochées : c'est la rigidité cadavérique. L'ATP sert aussi à repomper le calcium dans le réticulum.
+
+[SVT-142] muscle | beginner
+Q: Au cours d'un effort long et d'intensité modérée (course de fond), l'ATP musculaire est surtout régénéré par :
+* La respiration cellulaire
+- La voie de la phosphocréatine
+- La fermentation lactique
+- La fermentation alcoolique
+- L'hydrolyse directe de l'ADP
+C: La respiration cellulaire.
+E: La phosphocréatine fournit l'ATP pendant quelques secondes (effort très bref), la fermentation lactique pendant un effort intense de courte durée ; pour un effort prolongé, c'est la respiration (glucose et acides gras, avec dioxygène) qui assure l'essentiel, grâce à son rendement élevé. La fermentation alcoolique n'existe pas dans le muscle humain.
+
+[SVT-143] muscle | intermediate
+Q: Chez un sprinteur, la concentration musculaire de phosphocréatine chute fortement pendant l'échauffement, puis la concentration sanguine d'acide lactique augmente pendant une course de 10 s, alors que l'ATP musculaire reste presque constant. On en déduit que l'ATP est régénéré :
+* Par la phosphocréatine puis par la fermentation lactique, deux voies du hyaloplasme
+- Par la phosphocréatine puis par la fermentation lactique, deux voies de la matrice mitochondriale
+- Par la respiration dans la matrice mitochondriale uniquement
+- Par la fermentation lactique puis par la phosphocréatine
+- Par aucune voie, l'ATP n'étant pas consommé
+C: Phosphocréatine, puis fermentation lactique, dans le hyaloplasme.
+E: La baisse de la phosphocréatine montre son utilisation pour régénérer l'ATP (créatine kinase) ; la hausse de l'acide lactique traduit la fermentation lactique. Ces deux voies anaérobies rapides se déroulent dans le hyaloplasme. L'ATP reste stable parce qu'il est régénéré aussi vite qu'il est consommé.
+
+[SVT-144] respiration | advanced
+Q: Quatre transporteurs de la chaîne respiratoire ont les potentiels d'oxydoréduction suivants : cytochrome a (+0,29 V), ubiquinone (+0,05 V), cytochrome c (+0,25 V), NADH déshydrogénase (−0,32 V). Les électrons du NADH,H⁺ parcourent ces transporteurs dans l'ordre :
+* NADH déshydrogénase → ubiquinone → cytochrome c → cytochrome a
+- Cytochrome a → cytochrome c → ubiquinone → NADH déshydrogénase
+- Ubiquinone → NADH déshydrogénase → cytochrome a → cytochrome c
+- NADH déshydrogénase → cytochrome c → ubiquinone → cytochrome a
+- Cytochrome c → cytochrome a → ubiquinone → NADH déshydrogénase
+C: Par potentiels croissants, jusqu'au dioxygène.
+E: Les électrons passent spontanément d'un transporteur de faible potentiel (fort pouvoir réducteur) à un transporteur de potentiel plus élevé, jusqu'au dioxygène (+0,82 V), accepteur final. Il suffit de classer les potentiels par ordre croissant : −0,32 ; +0,05 ; +0,25 ; +0,29 V. L'énergie libérée à chaque étape sert à pomper des protons.
+
+[SVT-145] genetique | intermediate
+Q: Le brassage intrachromosomique, au cours de la méiose, permet la recombinaison entre :
+* Des allèles de deux gènes liés, situés à des locus différents sur une même paire de chromosomes homologues
+- Des allèles de deux gènes situés sur des chromosomes non homologues
+- Deux allèles d'un même gène au même locus d'une chromatide
+- Des chromosomes entiers, lors de l'anaphase II
+- Des gènes de la mitochondrie et du noyau
+C: Des allèles de gènes liés, par crossing-over.
+E: Lors de la prophase I, des crossing-over échangent des segments entre chromatides de chromosomes homologues : de nouvelles combinaisons d'allèles de gènes liés apparaissent (gamètes recombinés). Le brassage interchromosomique, lui, résulte de la répartition aléatoire des chromosomes homologues à l'anaphase I et concerne les gènes indépendants.
+
+[SVT-146] adn | beginner
+Q: La réplication de l'ADN a lieu :
+* Pendant l'interphase (phase S), grâce à l'ADN polymérase
+- Pendant la prophase de la mitose, grâce à l'ARN polymérase
+- Uniquement avant la méiose, grâce à l'ARN polymérase
+- Entre les deux divisions de la méiose
+- Pendant l'anaphase, au moment de la séparation des chromatides
+C: Phase S de l'interphase, par l'ADN polymérase.
+E: Avant chaque mitose, et avant la première division de la méiose, l'ADN est répliqué pendant la phase S : chaque chromosome passe d'une à deux chromatides. Il n'y a pas de réplication entre les deux divisions de la méiose, ce qui permet d'obtenir des cellules haploïdes.
+
+[SVT-147] genetique | intermediate
+Q: Chez la drosophile, on mesure les fréquences de recombinaison : 8 % entre les gènes a et b, 5 % entre b et c, 13 % entre a et c. Quelle carte factorielle est compatible ?
+* a — 8 cM — b — 5 cM — c
+- a — 5 cM — c — 8 cM — b
+- b — 8 cM — a — 13 cM — c
+- c — 13 cM — b — 5 cM — a
+- Les trois gènes sont indépendants
+C: Ordre a-b-c, avec 1 % de recombinés = 1 cM.
+E: Une fréquence de recombinaison inférieure à 50 % indique des gènes liés. La distance en centimorgans est égale au pourcentage de recombinés. Comme $8 + 5 = 13$, le gène b est situé entre a et c.
+
+[SVT-148] genetique | intermediate
+Q: On mesure les fréquences de recombinaison entre trois gènes : A–B : 50 % ; A–C : 10 % ; B–C : 50 %. On peut en déduire que :
+* A et C sont liés, alors que B est indépendant de A et de C
+- Les trois gènes sont portés par le même chromosome, très proches
+- Les trois gènes sont indépendants
+- A et B sont liés, C est indépendant
+- B et C sont liés, A est indépendant
+C: A et C liés (10 cM), B indépendant.
+E: Une fréquence de 50 % correspond à un brassage interchromosomique (gènes indépendants, sur des chromosomes différents ou très éloignés). Une fréquence nettement inférieure à 50 % indique des gènes liés : A et C sont à environ 10 cM l'un de l'autre.
+
+[SVT-149] genetique | advanced
+Q: Chez une plante, la couleur des fleurs est codée par deux allèles sans dominance (rouge × blanc donne rose) et la grande taille domine la taille naine ; les deux gènes sont indépendants. On croise des plantes F1 roses et grandes entre elles. Quelle proportion de la F2 aura des fleurs roses et une taille naine ?
+* 1/8
+- 1/16
+- 3/16
+- 3/8
+- 1/4
+C: $\frac{1}{2} \times \frac{1}{4} = \frac{1}{8}$.
+E: Pour la couleur, le croisement de deux hétérozygotes donne 1/4 rouge, 1/2 rose, 1/4 blanc ; pour la taille, 3/4 grande et 1/4 naine. Les gènes étant indépendants, on multiplie : $\frac{1}{2} \times \frac{1}{4} = \frac{1}{8}$, soit 2/16. On obtient six phénotypes dans les proportions 6/16, 3/16, 3/16, 2/16, 1/16 et 1/16.
+
+[SVT-150] adn | beginner
+Q: Dans l'ADN double brin d'une espèce, l'adénine représente 22 % des bases. Les pourcentages des autres bases sont :
+* T : 22 % ; G : 28 % ; C : 28 %
+- T : 28 % ; G : 22 % ; C : 28 %
+- T : 22 % ; G : 56 % ; C : 0 %
+- T : 26 % ; G : 26 % ; C : 26 %
+- T : 11 % ; G : 33,5 % ; C : 33,5 %
+C: A = T = 22 % et G = C = 28 %.
+E: Dans l'ADN double brin, A s'apparie avec T et G avec C (règle de Chargaff) : $A = T = 22\ \%$, donc $G + C = 100 - 44 = 56\ \%$ et $G = C = 28\ \%$.
+
+[SVT-151] genetique-humaine | intermediate
+Q: Le daltonisme est dû à un allèle récessif lié au chromosome X. Une femme de vision normale, dont le père était daltonien, a des enfants avec un homme daltonien. Quelle est la probabilité que ce couple ait une fille daltonienne ?
+* 1/4
+- 0
+- 1/2
+- 3/4
+- 1
+C: $\frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$.
+E: La femme a reçu un Xᵈ de son père : elle est conductrice (XᴰXᵈ). L'homme est XᵈY. Une fille reçoit le Xᵈ de son père et un X de sa mère : elle est daltonienne (XᵈXᵈ) avec une probabilité 1/2. La probabilité d'avoir une fille est aussi 1/2, d'où 1/4 pour « une fille daltonienne » parmi tous les enfants.
+
+[SVT-152] genetique-humaine | intermediate
+Q: Pour une maladie héréditaire récessive liée au chromosome X, quelle affirmation est exacte ?
+* Une femme malade a toujours des fils malades
+- L'allèle se transmet du père à ses fils
+- Un homme malade a toujours des filles malades
+- Une femme saine porteuse n'a jamais de fils malade
+- Les filles sont plus souvent atteintes que les garçons
+C: Une femme malade (XᵃXᵃ) transmet Xᵃ à tous ses fils.
+E: Un fils reçoit son unique X de sa mère et le Y de son père. Si la mère est XᵃXᵃ, tous ses fils sont XᵃY, donc malades. Un père ne transmet jamais son X à ses fils ; il le transmet à toutes ses filles, qui sont au moins conductrices. Les garçons sont plus souvent atteints, car un seul allèle suffit.
+
+[SVT-153] genetique | intermediate
+Q: Le croisement de deux souris jaunes donne toujours 2/3 de souris jaunes et 1/3 de souris grises (agouti). L'explication la plus probable est :
+* L'allèle jaune est dominant et létal à l'état homozygote
+- L'allèle jaune est récessif
+- Les deux gènes sont liés au chromosome X
+- Il s'agit d'un brassage intrachromosomique
+- Les souris jaunes sont homozygotes
+C: Allèle jaune dominant, létal à l'état homozygote.
+E: Deux parents jaunes donnent des souris grises : ils sont hétérozygotes (J/+) et l'allèle jaune est dominant. On attendrait 1/4 J/J, 1/2 J/+ et 1/4 +/+ ; si les J/J meurent avant la naissance, il reste 2/3 de jaunes (J/+) et 1/3 de gris (+/+). Une souris jaune croisée avec une grise donne donc 1/2 jaunes et 1/2 grises.
+
+[SVT-154] genetique-populations | advanced
+Q: Dans une population à l'équilibre de Hardy-Weinberg, 84 % des individus présentent le phénotype dominant d'un caractère (allèles A dominant et a récessif). Les fréquences sont :
+* f(a) = 0,4 ; f(A) = 0,6 ; f(AA) = 0,36 ; f(Aa) = 0,48 ; f(aa) = 0,16
+- f(a) = 0,16 ; f(A) = 0,84 ; f(AA) = 0,71 ; f(Aa) = 0,13 ; f(aa) = 0,16
+- f(a) = 0,6 ; f(A) = 0,4 ; f(AA) = 0,16 ; f(Aa) = 0,48 ; f(aa) = 0,36
+- f(a) = 0,4 ; f(A) = 0,6 ; f(AA) = 0,48 ; f(Aa) = 0,36 ; f(aa) = 0,16
+- f(a) = 0,5 ; f(A) = 0,5 ; f(AA) = 0,25 ; f(Aa) = 0,50 ; f(aa) = 0,25
+C: q = 0,4 et p = 0,6.
+E: Le phénotype récessif représente $1 - 0{,}84 = 0{,}16 = q^2$, donc $q = f(a) = 0{,}4$ et $p = f(A) = 0{,}6$. Génotypes : $p^2 = 0{,}36$ (AA), $2pq = 0{,}48$ (Aa), $q^2 = 0{,}16$ (aa) ; leur somme vaut 1.
+
+[SVT-155] genetique-populations | beginner
+Q: Concernant la dérive génétique, on peut affirmer que :
+* Ses effets sont d'autant plus marqués que la population est petite, par exemple après un goulot d'étranglement
+- Ses effets sont plus marqués dans les grandes populations
+- Elle augmente la diversité génétique d'une population
+- C'est un phénomène déterministe, qui favorise les allèles avantageux
+- Elle ne peut pas agir en même temps que la sélection naturelle
+C: Elle agit surtout dans les petites populations.
+E: La dérive génétique est une variation aléatoire des fréquences alléliques d'une génération à l'autre, due au hasard de la reproduction. Dans une petite population (effet fondateur, goulot d'étranglement), elle peut fixer ou éliminer des allèles indépendamment de leur avantage, ce qui réduit la diversité. Elle agit en même temps que la sélection naturelle.
+
+[SVT-156] immunologie | intermediate
+Q: Concernant la reconnaissance de l'antigène, quelle proposition est exacte ?
+* Les LT4 reconnaissent un peptide antigénique présenté par le CMH II, les LT8 un peptide présenté par le CMH I
+- Les LT4 reconnaissent l'antigène présenté par le CMH I
+- Les LT8 reconnaissent l'antigène présenté par le CMH II
+- Les LB ne reconnaissent l'antigène qu'après sa présentation par le CMH I
+- Les LT reconnaissent l'antigène libre dans le plasma, sans présentation
+C: LT4 + CMH II ; LT8 + CMH I.
+E: Les lymphocytes T ne reconnaissent que des peptides présentés par le CMH (double reconnaissance) : CMH II des cellules présentatrices pour les LT4, CMH I de toute cellule nucléée pour les LT8. Les LB, eux, reconnaissent directement l'antigène natif grâce à leurs anticorps membranaires.
+
+[SVT-157] immunologie | intermediate
+Q: Lors du premier contact avec un allergène (phase de sensibilisation) :
+* Des LB se différencient en plasmocytes qui sécrètent des IgE, lesquelles se fixent sur les mastocytes
+- Des LT8 deviennent des LTc qui détruisent les mastocytes
+- Les mastocytes libèrent immédiatement de l'histamine
+- Des plasmocytes sécrètent des IgG qui se fixent sur les cellules dendritiques
+- Aucune cellule immunitaire n'intervient
+C: Production d'IgE qui se fixent sur les mastocytes.
+E: Au premier contact, l'allergène provoque la production d'IgE par des plasmocytes ; ces IgE se fixent sur la membrane des mastocytes, sans symptômes. Lors d'un contact ultérieur, l'allergène relie les IgE fixées : les mastocytes libèrent brutalement de l'histamine, responsable des symptômes de l'allergie.
+
+[SVT-158] immunologie | intermediate
+Q: On dépose sur des hématies portant un antigène viral le sérum de trois sujets : un sujet infecté (agglutination), un sujet sain non vacciné (pas d'agglutination) et un patient X (agglutination). On peut conclure que :
+* Le sérum du patient X contient des anticorps spécifiques de ce virus : il a été en contact avec le virus
+- Le patient X n'a jamais rencontré le virus
+- L'agglutination est due aux lymphocytes T cytotoxiques du sérum
+- L'agglutination est une réaction non spécifique
+- Le sérum du patient X contient le virus lui-même
+C: Présence d'anticorps antiviraux dans le sérum de X.
+E: L'agglutination résulte de la formation de complexes immuns entre les anticorps du sérum et les antigènes portés par les hématies : c'est une réaction spécifique de l'immunité humorale. Le sérum ne contient pas de lymphocytes. Le sérum de X se comporte comme celui du sujet infecté : X possède des anticorps anti-virus, signe d'un contact avec le virus (infection ou vaccination).
+
+[SVT-159] immunologie | intermediate
+Q: Au cours de l'infection par le VIH, la phase SIDA, plusieurs années après la contamination, se caractérise par :
+* Un effondrement du nombre de LT4, qui entraîne une immunodéficience et des maladies opportunistes
+- Une augmentation du nombre de LT4
+- La disparition complète du virus de l'organisme
+- Une diminution de la charge virale
+- Une réponse immunitaire humorale renforcée
+C: Effondrement des LT4, immunodéficience.
+E: Le VIH infecte les LT4 (récepteur CD4). Après la primo-infection, la réponse immunitaire contrôle partiellement le virus (phase asymptomatique), mais le nombre de LT4 diminue lentement. Quand il devient trop faible, les réponses humorale et cellulaire, qui dépendent des LT auxiliaires, s'effondrent : la charge virale augmente et des maladies opportunistes apparaissent.
+
+[SVT-160] muscle | beginner
+Q: Le sarcomère, unité contractile de la myofibrille, est délimité par :
+* Deux stries Z successives
+- Deux zones H successives
+- Deux bandes I successives
+- Deux noyaux successifs de la fibre
+- Deux mitochondries successives
+C: Entre deux stries Z.
+E: Le sarcomère va d'une strie Z à la suivante : il comprend une bande sombre A centrale (avec la zone H et la ligne M en son milieu) encadrée par deux demi-bandes claires I. La répétition des sarcomères donne la striation de la fibre.
+
+[SVT-161] muscle | intermediate
+Q: Dans un sarcomère au repos, la bande claire I contient :
+* Uniquement des filaments fins d'actine
+- Uniquement des filaments épais de myosine
+- Des filaments d'actine et de myosine qui se chevauchent
+- Uniquement des molécules d'ATP
+- Aucun filament
+C: Les filaments d'actine seuls.
+E: Les filaments d'actine sont fixés aux stries Z ; les filaments de myosine occupent toute la bande A. La bande I contient donc l'actine seule, la zone H (au centre de la bande A) la myosine seule, et le reste de la bande A une zone de chevauchement actine-myosine.
+
+[SVT-162] muscle | intermediate
+Q: Lors de la contraction d'une fibre musculaire, quelle longueur reste constante ?
+* Celle de la bande sombre A
+- Celle de la bande claire I
+- Celle de la zone H
+- Celle du sarcomère
+- La distance entre deux stries Z
+C: La bande A garde sa longueur.
+E: Les filaments ne se raccourcissent pas : l'actine glisse entre les filaments de myosine vers le centre du sarcomère. Les stries Z se rapprochent, la bande I et la zone H diminuent, mais la bande A, qui correspond à la longueur des filaments de myosine, reste constante.
+
+[SVT-163] muscle | beginner
+Q: La fibre musculaire striée squelettique est :
+* Une cellule géante à plusieurs noyaux situés à la périphérie, remplie de myofibrilles
+- Une cellule à un seul noyau central
+- Un ensemble de cellules séparées par des membranes
+- Une cellule sans réticulum sarcoplasmique
+- Une cellule dépourvue de mitochondries
+C: Une cellule plurinucléée, à noyaux périphériques.
+E: La fibre musculaire squelettique, issue de la fusion de cellules, contient de nombreux noyaux plaqués sous la membrane. Son cytoplasme (sarcoplasme) est occupé par des myofibrilles striées, entourées par le réticulum sarcoplasmique (réserve de calcium), et par de nombreuses mitochondries.
+
+[SVT-164] immunologie | beginner
+Q: Le virus de l'immunodéficience humaine (VIH) :
+* Est un rétrovirus à ARN qui infecte surtout les lymphocytes T portant la molécule CD4
+- Est un virus à ADN qui infecte les cellules du foie
+- Infecte principalement les lymphocytes T8
+- Se détecte par une simple analyse d'urine
+- Est une bactérie
+C: Rétrovirus à ARN ciblant les cellules CD4.
+E: Le VIH se fixe sur la molécule CD4 des LT4 (et de certains macrophages). Sa transcriptase inverse copie son ARN en ADN, qui s'intègre au génome de la cellule infectée. Le diagnostic repose sur la recherche d'anticorps anti-VIH ou du virus dans le sang (test de dépistage sérologique).
+
+[SVT-165] meiose | beginner
+Q: Au cours de quelle phase de la méiose les crossing-over se produisent-ils ?
+* La prophase I
+- La métaphase I
+- L'anaphase I
+- La télophase I
+- La prophase II
+C: En prophase I.
+E: Pendant la prophase I, les chromosomes homologues s'apparient (bivalents) et des chiasmas apparaissent : des segments de chromatides sont échangés, ce qui produit le brassage intrachromosomique. Le brassage interchromosomique a lieu à l'anaphase I, lors de la séparation aléatoire des homologues.
+
+[SVT-166] expression | beginner
+Q: Concernant l'ARN messager, quelle affirmation est exacte ?
+* Il contient de l'uracile à la place de la thymine
+- Il est formé de deux brins enroulés en hélice
+- Il contient du désoxyribose
+- Il est synthétisé dans le cytoplasme par l'ADN polymérase
+- Il porte des anticodons
+C: L'ARNm contient l'uracile (U) au lieu de la thymine (T).
+E: L'ARNm est un simple brin de ribonucléotides (sucre : ribose ; bases A, U, G, C). Chez les eucaryotes, il est synthétisé dans le noyau par l'ARN polymérase (transcription), puis passe dans le cytoplasme où il est traduit. Les anticodons sont portés par les ARN de transfert.
+
+[SVT-167] genetique-humaine | intermediate
+Q: Quelle association entre une anomalie chromosomique et son caryotype est exacte ?
+* Syndrome de Turner : 45,X (un seul chromosome sexuel X)
+- Syndrome de Klinefelter : 45,X
+- Syndrome de Turner : trisomie 21
+- Maladie du cri du chat : trisomie 5
+- Syndrome de Down : monosomie 21
+C: Turner = 45,X.
+E: Le syndrome de Turner (femme, 45,X) et le syndrome de Klinefelter (homme, 47,XXY) touchent les chromosomes sexuels. Le syndrome de Down (trisomie 21) est une anomalie d'autosome. La maladie du cri du chat est due à une délétion du bras court du chromosome 5 : c'est une anomalie de structure.
+
+[SVT-168] expression | intermediate
+Q: Concernant le code génétique, quelle affirmation est exacte ?
+* Il comporte 64 codons, dont 3 codons stop (UAA, UAG, UGA)
+- Il comporte 20 codons, un par acide aminé
+- Il comporte 30 codons
+- Chaque acide aminé correspond à un seul codon
+- AUG est un codon stop
+C: 64 codons : 61 codent des acides aminés, 3 sont des codons stop.
+E: Avec 4 bases lues par groupes de 3, il existe $4^3 = 64$ codons. 61 désignent les 20 acides aminés : le code est redondant (plusieurs codons pour un même acide aminé). AUG, qui code la méthionine, est le codon d'initiation. Le code est quasi universel.
+
+[SVT-169] mutations | beginner
+Q: Une mutation survenue dans une cellule de la peau (mutation somatique) :
+* Ne se transmet pas à la descendance de l'individu
+- Se transmet à tous les enfants de l'individu
+- Se transmet uniquement aux garçons
+- Modifie forcément la fonction d'une protéine
+- Touche toutes les cellules du corps
+C: Elle n'est pas transmise aux descendants.
+E: Seules les mutations des cellules de la lignée germinale (à l'origine des gamètes) sont transmissibles à la descendance. Une mutation somatique n'est transmise qu'aux cellules filles de la cellule mutée (elle peut par exemple être à l'origine d'un cancer). Une mutation peut aussi être neutre, sans effet sur la protéine.
+
+[SVT-170] adn | intermediate
+Q: Chez les cellules eucaryotes, la réplication de l'ADN :
+* Commence simultanément en de nombreux points de chaque chromosome (yeux de réplication)
+- Se déroule dans le cytoplasme
+- Est assurée par l'ARN polymérase
+- Commence en un seul point du chromosome
+- Est conservative : la molécule mère reste intacte
+C: Elle démarre en de multiples origines de réplication.
+E: Les chromosomes eucaryotes sont très longs : la réplication démarre en de nombreuses origines, formant des yeux de réplication qui s'agrandissent et fusionnent. Dans le noyau, l'hélicase sépare les brins et l'ADN polymérase synthétise les nouveaux brins (5'→3'). Chaque nouvelle molécule contient un brin ancien et un brin nouveau : la réplication est semi-conservative.
+
+[SVT-171] immunologie | intermediate
+Q: Le diabète de type 1 (diabète insulinodépendant du sujet jeune) est une maladie auto-immune. Il résulte :
+* De la destruction des cellules β des îlots de Langerhans par le système immunitaire
+- D'une résistance des cellules à l'insuline
+- D'une infection bactérienne du pancréas
+- D'une production excessive d'insuline
+- De la destruction des cellules α du pancréas
+C: Destruction auto-immune des cellules β.
+E: Dans une maladie auto-immune, le système immunitaire s'attaque à des constituants de l'organisme (rupture de la tolérance au soi). Dans le diabète de type 1, des LTc et des auto-anticorps détruisent les cellules β, d'où l'absence d'insuline et l'hyperglycémie. Le diabète de type 2 correspond plutôt à une résistance à l'insuline.
+
+[SVT-172] cellule | beginner
+Q: Dans une cellule sécrétrice, les protéines destinées à l'exportation suivent le trajet :
+* Réticulum endoplasmique rugueux → appareil de Golgi → vésicules de sécrétion → membrane plasmique
+- Noyau → mitochondrie → membrane plasmique
+- Appareil de Golgi → réticulum endoplasmique rugueux → noyau
+- Réticulum endoplasmique lisse → noyau → vésicules de sécrétion
+- Mitochondrie → appareil de Golgi → lysosome
+C: REG → Golgi → vésicules → exocytose.
+E: Les protéines sont synthétisées par les ribosomes du réticulum endoplasmique rugueux (granuleux), transitent par l'appareil de Golgi où elles sont modifiées et triées, puis sont emballées dans des vésicules de sécrétion qui fusionnent avec la membrane plasmique (exocytose). On le montre par autoradiographie avec des acides aminés radioactifs.
+
+[SVT-173] expression | beginner
+Q: Le ribosome :
+* Est formé de deux sous-unités de tailles différentes et assure la traduction de l'ARNm en protéine
+- Assure la transcription de l'ADN en ARN
+- Est situé uniquement dans le noyau
+- Contient le génome de la cellule
+- Est entouré d'une double membrane
+C: Deux sous-unités inégales ; lieu de la traduction.
+E: Le ribosome, formé d'ARN ribosomiques et de protéines, comprend une petite et une grande sous-unité. Il se déplace le long de l'ARNm et assemble les acides aminés apportés par les ARNt. On le trouve libre dans le cytoplasme ou fixé sur le réticulum endoplasmique rugueux. Il n'a pas de membrane.
+
+[SVT-174] genetique | intermediate
+Q: Le croisement de deux lignées pures donne une F1 où les mâles et les femelles ont des phénotypes différents, et le croisement réciproque donne un autre résultat. On en déduit que :
+* Le gène étudié est porté par un chromosome sexuel
+- Le gène est autosomique et dominant
+- La première loi de Mendel est fausse
+- Il s'agit de deux gènes liés autosomiques
+- Le caractère n'est pas héréditaire
+C: Le gène est lié au sexe (chromosome X chez l'Homme et la drosophile).
+E: Pour un gène autosomique, des parents de lignées pures donnent une F1 homogène, quel que soit le sens du croisement. Si les résultats dépendent du sexe des parents et diffèrent selon le sexe des descendants, le gène est porté par un chromosome sexuel : les mâles XY ne reçoivent leur X que de leur mère.
+
+[SVT-175] immunologie | beginner
+Q: Les molécules du CMH de classe I sont présentes :
+* À la surface de toutes les cellules nucléées de l'organisme
+- Uniquement à la surface des globules rouges
+- Uniquement dans le noyau des cellules
+- Uniquement sur les lymphocytes B
+- Uniquement sur les macrophages
+C: Sur toutes les cellules nucléées.
+E: Le CMH (système HLA chez l'Homme) est un ensemble de glycoprotéines membranaires qui constituent la carte d'identité biologique de l'individu. Le CMH I est porté par toutes les cellules nucléées (pas par les globules rouges, qui n'ont pas de noyau) ; le CMH II est réservé aux cellules présentatrices de l'antigène.
+
+[SVT-176] genetique-humaine | beginner
+Q: Laquelle de ces maladies héréditaires est due à un gène porté par le chromosome X ?
+* La myopathie de Duchenne
+- La mucoviscidose
+- La chorée de Huntington
+- La drépanocytose
+- La trisomie 21
+C: La myopathie de Duchenne.
+E: La myopathie de Duchenne, l'hémophilie et le daltonisme sont récessifs liés à l'X : ils touchent surtout les garçons. La mucoviscidose et la drépanocytose sont autosomiques récessives, la chorée de Huntington est autosomique dominante, et la trisomie 21 est une anomalie du nombre de chromosomes.
+
+[SVT-177] muscle | intermediate
+Q: Des fibres musculaires isolées se contractent quand on ajoute au milieu de l'ATP et des ions calcium. L'ajout d'une substance qui fixe les ions calcium (chélateur) provoque leur relâchement, alors que l'ATP est toujours présent. On en conclut que :
+* Les ions calcium sont nécessaires à la contraction ; l'ATP seul ne suffit pas
+- L'ATP seul suffit pour déclencher la contraction
+- Le calcium seul suffit, sans ATP
+- L'ADP est nécessaire à la contraction
+- Le chélateur détruit les myofilaments
+C: Le calcium est indispensable à la contraction.
+E: En présence d'ATP, la contraction cesse dès que le calcium est retiré : sans $\mathrm{Ca^{2+}}$ fixé sur la troponine, la tropomyosine masque les sites de fixation de la myosine sur l'actine. L'ATP fournit l'énergie, le calcium déclenche la contraction : les deux sont nécessaires.
+
+[SVT-178] respiration | intermediate
+Q: Dans la mitochondrie, l'oxydation complète d'une molécule d'acide pyruvique (décarboxylation oxydative, cycle de Krebs et chaîne respiratoire) produit environ :
+* 15 ATP
+- 38 ATP
+- 30 ATP
+- 2 ATP
+- 36 ATP
+C: Environ 15 ATP par pyruvate.
+E: Un pyruvate fournit 4 NADH,H⁺ (1 lors de sa transformation en acétyl-CoA, 3 dans le cycle de Krebs), 1 FADH₂ et 1 ATP. Avec 3 ATP par NADH,H⁺ et 2 par FADH₂ : $4 \times 3 + 2 + 1 = 15$ ATP. Pour un glucose (2 pyruvates, plus la glycolyse), on retrouve environ 36 à 38 ATP.
+
+[SVT-179] expression | intermediate
+Q: Le brin non transcrit (brin codant) d'un fragment d'ADN a pour séquence 5'-ATGGCTTAC-3'. L'ARN messager issu de la transcription a pour séquence :
+* 5'-AUGGCUUAC-3'
+- 5'-UACCGAAUG-3'
+- 5'-TACCGAATG-3'
+- 5'-AUGGCTTAC-3'
+- 5'-GUAAGCCAU-3'
+C: La séquence du brin codant, avec U à la place de T.
+E: L'ARNm est complémentaire du brin transcrit, donc identique au brin non transcrit (codant), la thymine étant remplacée par l'uracile. Il commence ici par le codon d'initiation AUG. Une séquence d'ARN ne contient jamais de T.
+
+[SVT-180] genetique | advanced
+Q: Deux gènes liés (A, a) et (B, b) présentent 20 % de recombinaison. On réalise un test-cross entre un hétérozygote AB//ab et un double récessif ab//ab. Les proportions attendues des phénotypes sont :
+* [AB] 40 % ; [ab] 40 % ; [Ab] 10 % ; [aB] 10 %
+- [AB] 25 % ; [ab] 25 % ; [Ab] 25 % ; [aB] 25 %
+- [AB] 10 % ; [ab] 10 % ; [Ab] 40 % ; [aB] 40 %
+- [AB] 20 % ; [ab] 20 % ; [Ab] 30 % ; [aB] 30 %
+- [AB] 50 % ; [ab] 50 %
+C: Parentaux 80 % (40 + 40), recombinés 20 % (10 + 10).
+E: L'hétérozygote AB//ab produit des gamètes parentaux AB et ab (80 % au total, 40 % chacun) et, grâce aux crossing-over, des gamètes recombinés Ab et aB (20 %, 10 % chacun). Le double récessif ne fournit que des gamètes ab : les phénotypes des descendants reflètent directement les gamètes de l'hétérozygote. Pour un hétérozygote Ab//aB, les proportions seraient inversées.
+
+[SVT-181] genetique-humaine | advanced
+Q: Une maladie est due à un allèle récessif lié au chromosome X. Une femme, dont les parents sont sains et dont le frère est atteint, a un enfant avec un homme sain. Quelle est la probabilité que cet enfant soit atteint ?
+* 1/8
+- 1/4
+- 1/2
+- 0
+- 1/16
+C: $\frac{1}{2} \times \frac{1}{4} = \frac{1}{8}$.
+E: Le frère atteint (XᵃY) a reçu Xᵃ de sa mère, qui est donc conductrice. La femme a une probabilité 1/2 d'être conductrice. Si elle l'est, un enfant est atteint s'il est un garçon (1/2) ayant reçu Xᵃ (1/2), soit 1/4 ; les filles, qui reçoivent le Xᴬ du père, sont saines. Au total : $\frac{1}{2} \times \frac{1}{4} = \frac{1}{8}$.
+
+[SVT-182] genetique-humaine | advanced
+Q: Une fille au caryotype 45,X (syndrome de Turner) est atteinte d'une maladie récessive liée à l'X. Son père est sain et sa mère est conductrice. L'explication la plus probable est :
+* La fécondation d'un ovocyte normal portant l'allèle muté par un spermatozoïde dépourvu de chromosome sexuel
+- La fécondation d'un ovocyte dépourvu de chromosome X par un spermatozoïde normal
+- La fécondation d'un ovocyte par deux spermatozoïdes
+- Une mutation du chromosome Y du père
+- Une trisomie du chromosome X
+C: Le seul X vient de la mère ; le spermatozoïde n'avait pas de chromosome sexuel.
+E: Avec un seul X, un allèle récessif suffit à rendre malade. Le père sain porte Xᴬ : s'il avait transmis son X, la fille ne serait pas atteinte. Son unique X, porteur de l'allèle muté, vient donc de la mère conductrice, et le spermatozoïde ne contenait aucun chromosome sexuel, à la suite d'une non-disjonction lors de la méiose paternelle.
+
+[SVT-183] immunologie | intermediate
+Q: L'agammaglobulinémie de Bruton est une maladie héréditaire où les lymphocytes B ne parviennent pas à maturité. Chez un enfant atteint, on observe surtout :
+* Un effondrement de l'immunité à médiation humorale (absence d'anticorps)
+- Une diminution du nombre de LT4
+- Un effondrement de l'immunité à médiation cellulaire
+- Une disparition des macrophages
+- Un rejet accéléré des greffes
+C: Pas de plasmocytes, donc pas d'anticorps.
+E: Sans lymphocytes B matures, il n'y a ni plasmocytes ni anticorps (immunoglobulines) : la réponse humorale est effondrée et l'enfant fait des infections bactériennes répétées. Les LT, les macrophages et la réponse à médiation cellulaire sont conservés. La maladie, récessive liée à l'X, touche surtout les garçons.
+
+[SVT-184] immunologie | beginner
+Q: Un individu est mis deux fois en contact avec le même antigène, à 50 jours d'intervalle. Lors du second contact, la réponse immunitaire spécifique est :
+* Plus rapide et plus intense, grâce aux lymphocytes mémoire
+- Plus lente et moins intense
+- Identique à la première
+- Inexistante, l'antigène étant déjà connu
+- Uniquement non spécifique
+C: Réponse secondaire rapide et intense.
+E: Le premier contact sélectionne et amplifie les clones de lymphocytes spécifiques et produit des cellules mémoire, à longue durée de vie. Au second contact, ces cellules répondent plus vite et produisent davantage d'anticorps (surtout des IgG) : c'est le principe de la vaccination et des rappels. Les anticorps sont fabriqués par les plasmocytes issus des LB, pas par les LT.
+
+[SVT-185] immunologie | beginner
+Q: Parmi les organes suivants, lequel n'est pas un organe lymphoïde ?
+* Le foie
+- Le thymus
+- La rate
+- Les ganglions lymphatiques
+- La moelle osseuse
+C: Le foie.
+E: Les organes lymphoïdes centraux (moelle osseuse, thymus) produisent les lymphocytes et assurent leur maturation ; les organes lymphoïdes périphériques (ganglions, rate, amygdales…) sont les lieux de rencontre entre lymphocytes et antigènes. Le foie n'en fait pas partie.
+
+[SVT-186] immunologie | beginner
+Q: Un macrophage peut assurer toutes les fonctions suivantes, sauf une. Laquelle ?
+* Sécréter des anticorps
+- Phagocyter des bactéries
+- Présenter des fragments d'antigène aux lymphocytes T
+- Sécréter des molécules qui favorisent l'inflammation
+- Participer à la réponse immunitaire innée
+C: Les anticorps sont sécrétés par les plasmocytes.
+E: Le macrophage est un phagocyte : il ingère et digère les microbes, déclenche l'inflammation et présente les peptides antigéniques associés au CMH II aux LT4. Il fait le lien entre immunité innée et immunité adaptative. Seuls les plasmocytes, issus des lymphocytes B, sécrètent des anticorps.
+
+[SVT-187] immunologie | intermediate
+Q: Une molécule d'anticorps de type IgG est formée de :
+* Deux chaînes lourdes et deux chaînes légères, avec deux sites de fixation de l'antigène identiques
+- Une seule chaîne polypeptidique
+- Deux chaînes lourdes seulement
+- Quatre chaînes toutes différentes
+- Un acide nucléique et une protéine
+C: 2 chaînes lourdes + 2 chaînes légères, en forme de Y.
+E: L'anticorps est une immunoglobuline en Y : deux chaînes lourdes identiques et deux chaînes légères identiques, reliées par des ponts disulfure. Les extrémités des bras portent les régions variables, qui forment deux sites identiques de fixation de l'antigène ; la région constante permet notamment la fixation sur les phagocytes et l'activation du complément.
+
+[SVT-188] immunologie | beginner
+Q: La vaccination, contrairement à la sérothérapie :
+* Déclenche une immunité active et durable, grâce à la formation de cellules mémoire
+- Apporte directement des anticorps prêts à l'emploi
+- Protège immédiatement mais pour quelques semaines seulement
+- Est surtout utilisée pour soigner une maladie déjà déclarée
+- Ne fait intervenir aucun lymphocyte
+C: Immunité active, durable et préventive.
+E: Le vaccin (microbe tué ou atténué, anatoxine, fragment antigénique…) provoque une réponse primaire sans maladie et la formation de lymphocytes mémoire : la protection est retardée mais durable. La sérothérapie injecte des anticorps déjà formés : protection immédiate, passive et de courte durée, utilisée en urgence (tétanos, envenimation).
+
+[SVT-189] immunologie | beginner
+Q: Laquelle de ces défenses ne fait pas partie des barrières naturelles (première ligne de défense) de l'organisme ?
+* Les lymphocytes T cytotoxiques
+- La peau
+- Les muqueuses et le mucus
+- Le lysozyme des larmes et de la salive
+- L'acidité de l'estomac
+C: Les LTc relèvent de l'immunité adaptative.
+E: Les barrières naturelles empêchent l'entrée des microbes : barrière mécanique de la peau et des muqueuses, mucus, sécrétions antimicrobiennes (lysozyme), acidité gastrique, flore normale. Les lymphocytes T cytotoxiques interviennent bien plus tard, dans la réponse spécifique à médiation cellulaire.
