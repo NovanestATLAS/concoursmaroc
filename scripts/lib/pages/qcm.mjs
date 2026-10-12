@@ -135,8 +135,8 @@ ${SCOPE[lang][s.id] ? html`<p class="callout warn">${SCOPE[lang][s.id]}</p>` : '
   const ql = useLang;
   return html`<li class="qcm-item" lang="${ql}" dir="${ql === 'ar' ? 'rtl' : 'ltr'}">
 <div class="meta"><span class="badge">${DIFF[lang][q.difficulty]}</span>${BADGE.has(q.sourceId) ? html` <span class="badge gold">${BADGE.get(q.sourceId)[lang] || BADGE.get(q.sourceId).fr}</span>` : ''}</div>
-<div class="q" style="white-space:pre-line">${raw(renderMath(b.text))}</div>
-<ol class="opts">${b.choices.map((c) => html`<li>${raw(renderMath(c))}</li>`)}</ol>
+<div class="q" style="white-space:pre-line">${raw(renderMath(b.text, true))}</div>
+<ol class="opts">${b.choices.map((c) => html`<li>${raw(renderMath(c, true))}</li>`)}</ol>
 <details><summary>${x.show}</summary><div class="answer"><strong>${x.answer} : ${raw(renderMath(b.choices[b.correctIndex]))}</strong><br>${raw(renderMath(b.explanation))}</div></details>
 </li>`;
 })}</ol>

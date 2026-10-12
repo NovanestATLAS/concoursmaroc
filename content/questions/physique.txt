@@ -25,55 +25,55 @@ E: Exemple : une onde le long d'une corde. Dans une onde longitudinale (le son, 
 Q: Le son peut-il se propager dans le vide ?
 * Non, il a besoin d'un milieu matériel
 - Oui, à la vitesse de la lumière
-- Oui, à 340 m/s
+- Oui, à $340\ \mathrm{m\,s^{-1}}$
 - Seulement les sons aigus
 C: Non.
 E: Le son est une onde mécanique : il se propage par compressions et dilatations successives d'un milieu matériel (air, eau, solide). Le vide ne contient pas de milieu.
 
 [PHY-004] ondes | intermediate
-Q: Une onde périodique de fréquence 50 Hz se propage à la célérité de 10 m/s. Quelle est sa longueur d'onde ?
-* 0,2 m
-- 500 m
-- 5 m
-- 0,5 m
-C: λ = 0,2 m.
-E: λ = v/f = 10/50 = 0,2 m. La longueur d'onde est la distance parcourue par l'onde pendant une période.
+Q: Une onde périodique de fréquence $f = 50\ \mathrm{Hz}$ se propage à la célérité $v = 10\ \mathrm{m\,s^{-1}}$. Quelle est sa longueur d'onde ?
+* $0{,}2\ \mathrm{m}$
+- $500\ \mathrm{m}$
+- $5\ \mathrm{m}$
+- $0{,}5\ \mathrm{m}$
+C: $\lambda = 0{,}2\ \mathrm{m}$.
+E: $\lambda = \frac{v}{f} = \frac{10}{50} = 0{,}2\ \mathrm{m}$. La longueur d'onde est la distance parcourue par l'onde pendant une période.
 
 [PHY-005] ondes | beginner
-Q: Une perturbation parcourt 6 m le long d'une corde en 0,2 s. Quelle est la célérité de l'onde ?
-* 30 m/s
-- 1,2 m/s
-- 3 m/s
-- 12 m/s
-C: v = 30 m/s.
-E: v = d/Δt = 6/0,2 = 30 m/s.
+Q: Une perturbation parcourt $d = 6\ \mathrm{m}$ le long d'une corde en $\Delta t = 0{,}2\ \mathrm{s}$. Quelle est la célérité de l'onde ?
+* $30\ \mathrm{m\,s^{-1}}$
+- $1{,}2\ \mathrm{m\,s^{-1}}$
+- $3\ \mathrm{m\,s^{-1}}$
+- $12\ \mathrm{m\,s^{-1}}$
+C: $v = 30\ \mathrm{m\,s^{-1}}$.
+E: $v = \frac{d}{\Delta t} = \frac{6}{0{,}2} = 30\ \mathrm{m\,s^{-1}}$.
 
 [PHY-006] ondes | intermediate
-Q: Le phénomène de diffraction d'une onde par une fente de largeur a est marqué lorsque :
-* a est du même ordre de grandeur que la longueur d'onde, ou plus petite
-- a est très grande devant la longueur d'onde
+Q: Le phénomène de diffraction d'une onde par une fente de largeur $a$ est marqué lorsque :
+* $a$ est du même ordre de grandeur que la longueur d'onde, ou plus petite
+- $a$ est très grande devant la longueur d'onde
 - La fréquence de l'onde est très élevée
 - L'onde se propage plus vite
-C: Quand a est comparable ou inférieure à λ.
-E: La diffraction est importante lorsque la dimension de l'ouverture est comparable ou inférieure à la longueur d'onde ; elle devient négligeable pour a ≫ λ.
+C: Quand $a$ est comparable ou inférieure à $\lambda$.
+E: La diffraction est importante lorsque la dimension de l'ouverture est comparable ou inférieure à la longueur d'onde ; elle devient négligeable pour $a \gg \lambda$.
 
 [PHY-007] ondes-lumineuses | intermediate
-Q: L'écart angulaire θ entre le milieu de la tache centrale de diffraction et la première extinction, pour une fente de largeur a éclairée par une lumière de longueur d'onde λ, vérifie :
-* θ = λ/a
-- θ = a/λ
-- θ = λ·a
-- θ = 2a/λ
-C: θ = λ/a (θ en radians).
-E: Pour les petits angles, θ = λ/a (demi-largeur angulaire ; la tache centrale a une largeur angulaire 2θ = 2λ/a) : plus la fente est fine, plus la tache centrale est large.
+Q: L'écart angulaire $\theta$ entre le milieu de la tache centrale de diffraction et la première extinction, pour une fente de largeur $a$ éclairée par une lumière de longueur d'onde $\lambda$, vérifie :
+* $\theta = \frac{\lambda}{a}$
+- $\theta = \frac{a}{\lambda}$
+- $\theta = \lambda a$
+- $\theta = \frac{2a}{\lambda}$
+C: $\theta = \frac{\lambda}{a}$ ($\theta$ en radians).
+E: Pour les petits angles, $\theta = \frac{\lambda}{a}$ (demi-largeur angulaire ; la tache centrale a une largeur angulaire $2\theta = \frac{2\lambda}{a}$) : plus la fente est fine, plus la tache centrale est large.
 
 [PHY-008] ondes-lumineuses | beginner
 Q: Quelle est la célérité de la lumière dans le vide ?
-* Environ 3 × 10⁸ m/s
-- Environ 3 × 10⁵ m/s
-- Environ 340 m/s
-- Environ 3 × 10⁶ km/s
-C: c ≈ 3 × 10⁸ m/s.
-E: c = 299 792 458 m/s, soit environ 300 000 km/s. 340 m/s est l'ordre de grandeur de la vitesse du son dans l'air.
+* Environ $3 \times 10^{8}\ \mathrm{m\,s^{-1}}$
+- Environ $3 \times 10^{5}\ \mathrm{m\,s^{-1}}$
+- Environ $340\ \mathrm{m\,s^{-1}}$
+- Environ $3 \times 10^{6}\ \mathrm{km\,s^{-1}}$
+C: $c \approx 3 \times 10^{8}\ \mathrm{m\,s^{-1}}$.
+E: $c = 299\,792\,458\ \mathrm{m\,s^{-1}}$, soit environ $300\,000\ \mathrm{km\,s^{-1}}$. La valeur $340\ \mathrm{m\,s^{-1}}$ est l'ordre de grandeur de la vitesse du son dans l'air.
 
 [PHY-009] ondes-lumineuses | intermediate
 Q: La dispersion de la lumière blanche par un prisme s'explique par le fait que :
@@ -81,7 +81,7 @@ Q: La dispersion de la lumière blanche par un prisme s'explique par le fait que
 - La lumière blanche est monochromatique
 - Le prisme absorbe certaines couleurs
 - La fréquence de la lumière change dans le verre
-C: L'indice n dépend de λ.
+C: L'indice $n$ dépend de $\lambda$.
 E: Le verre est un milieu dispersif : chaque radiation est déviée différemment (le violet davantage que le rouge). La fréquence d'une radiation ne change pas d'un milieu à l'autre.
 
 [PHY-010] ondes-lumineuses | intermediate
@@ -91,61 +91,61 @@ Q: Lorsqu'une radiation lumineuse passe de l'air dans le verre, quelle grandeur 
 - Sa célérité
 - Sa direction, quel que soit l'angle d'incidence
 C: La fréquence.
-E: La fréquence est imposée par la source. Dans le verre, la célérité diminue (v = c/n) et la longueur d'onde aussi (λ = v/f).
+E: La fréquence est imposée par la source. Dans le verre, la célérité diminue ($v = \frac{c}{n}$) et la longueur d'onde aussi ($\lambda = \frac{v}{f}$).
 
 [PHY-011] ondes-lumineuses | beginner
 Q: Le domaine des radiations visibles s'étend approximativement de :
-* 400 nm à 800 nm
-- 4 nm à 8 nm
-- 400 µm à 800 µm
-- 40 nm à 80 nm
-C: Environ 400 nm (violet) à 800 nm (rouge).
-E: En dessous de 400 nm : ultraviolets ; au-delà de 800 nm : infrarouges. Selon les manuels, on retient 400–800 nm ou 380–780 nm.
+* $400\ \mathrm{nm}$ à $800\ \mathrm{nm}$
+- $4\ \mathrm{nm}$ à $8\ \mathrm{nm}$
+- $400\ \mu\mathrm{m}$ à $800\ \mu\mathrm{m}$
+- $40\ \mathrm{nm}$ à $80\ \mathrm{nm}$
+C: Environ $400\ \mathrm{nm}$ (violet) à $800\ \mathrm{nm}$ (rouge).
+E: En dessous de $400\ \mathrm{nm}$ : ultraviolets ; au-delà de $800\ \mathrm{nm}$ : infrarouges. Selon les manuels, on retient de $400$ à $800\ \mathrm{nm}$ ou de $380$ à $780\ \mathrm{nm}$.
 
 [PHY-012] nucleaire | beginner
-Q: Le noyau d'uranium ²³⁵₉₂U contient :
+Q: Le noyau d'uranium ${}^{235}_{92}\mathrm{U}$ contient :
 * 92 protons et 143 neutrons
 - 92 protons et 235 neutrons
 - 143 protons et 92 neutrons
 - 235 protons et 92 neutrons
 C: 92 protons et 143 neutrons.
-E: Z = 92 protons et N = A − Z = 235 − 92 = 143 neutrons.
+E: $Z = 92$ protons et $N = A - Z = 235 - 92 = 143$ neutrons.
 
 [PHY-013] nucleaire | intermediate
-Q: Lors d'une désintégration α, un noyau père de nombre de masse A et de numéro atomique Z donne un noyau fils :
-* De nombre de masse A − 4 et de numéro atomique Z − 2
-- De nombre de masse A et de numéro atomique Z + 1
-- De nombre de masse A et de numéro atomique Z − 1
-- De nombre de masse A − 2 et de numéro atomique Z − 4
-C: A − 4 et Z − 2.
-E: La particule α est un noyau d'hélium ⁴₂He. Les lois de Soddy (conservation du nombre de masse et du nombre de charge) donnent A = (A − 4) + 4 et Z = (Z − 2) + 2.
+Q: Lors d'une désintégration $\alpha$, un noyau père de nombre de masse $A$ et de numéro atomique $Z$ donne un noyau fils :
+* De nombre de masse $A - 4$ et de numéro atomique $Z - 2$
+- De nombre de masse $A$ et de numéro atomique $Z + 1$
+- De nombre de masse $A$ et de numéro atomique $Z - 1$
+- De nombre de masse $A - 2$ et de numéro atomique $Z - 4$
+C: $A - 4$ et $Z - 2$.
+E: La particule $\alpha$ est un noyau d'hélium ${}^{4}_{2}\mathrm{He}$. Les lois de Soddy (conservation du nombre de masse et du nombre de charge) donnent $A = (A - 4) + 4$ et $Z = (Z - 2) + 2$.
 
 [PHY-014] nucleaire | intermediate
-Q: Lors d'une désintégration β⁻, il y a émission :
+Q: Lors d'une désintégration $\beta^{-}$, il y a émission :
 * D'un électron, un neutron du noyau se transformant en proton
 - D'un positon, un proton se transformant en neutron
 - D'un noyau d'hélium
 - D'un photon uniquement
-C: Émission d'un électron.
-E: En radioactivité β⁻, Z augmente de 1 et A est inchangé. La radioactivité β⁺ émet un positon (un proton devient neutron). Le rayonnement γ accompagne souvent la désexcitation du noyau fils.
+C: Émission d'un électron ${}^{0}_{-1}\mathrm{e}$.
+E: En radioactivité $\beta^{-}$, $Z$ augmente de 1 et $A$ est inchangé. La radioactivité $\beta^{+}$ émet un positon ${}^{0}_{1}\mathrm{e}$ (un proton devient neutron). Le rayonnement $\gamma$ accompagne souvent la désexcitation du noyau fils.
 
 [PHY-015] nucleaire | beginner
 Q: La demi-vie d'un nucléide radioactif est de 8 jours. Quelle fraction d'un échantillon reste-t-il au bout de 24 jours ?
-* 1/8
-- 1/3
-- 1/4
-- 1/24
-C: 1/8.
-E: 24 jours = 3 demi-vies : N = N₀ × (1/2)³ = N₀/8.
+* $\frac{1}{8}$
+- $\frac{1}{3}$
+- $\frac{1}{4}$
+- $\frac{1}{24}$
+C: $\frac{1}{8}$.
+E: 24 jours correspondent à 3 demi-vies : $N = N_0 \times \left(\frac{1}{2}\right)^{3} = \frac{N_0}{8}$.
 
 [PHY-016] nucleaire | intermediate
-Q: La loi de décroissance radioactive s'écrit N(t) = N₀·e^(−λt). Quelle relation lie la demi-vie t½ à la constante radioactive λ ?
-* t½ = ln 2/λ
-- t½ = λ/ln 2
-- t½ = 1/λ
-- t½ = 2λ
-C: t½ = ln 2/λ.
-E: À t = t½, N = N₀/2, donc e^(−λ·t½) = 1/2, soit λ·t½ = ln 2.
+Q: La loi de décroissance radioactive s'écrit $N(t) = N_0\, e^{-\lambda t}$. Quelle relation lie la demi-vie $t_{1/2}$ à la constante radioactive $\lambda$ ?
+* $t_{1/2} = \frac{\ln 2}{\lambda}$
+- $t_{1/2} = \frac{\lambda}{\ln 2}$
+- $t_{1/2} = \frac{1}{\lambda}$
+- $t_{1/2} = 2\lambda$
+C: $t_{1/2} = \frac{\ln 2}{\lambda}$.
+E: À $t = t_{1/2}$, $N = \frac{N_0}{2}$, donc $e^{-\lambda t_{1/2}} = \frac{1}{2}$, soit $\lambda t_{1/2} = \ln 2$.
 
 [PHY-017] nucleaire | beginner
 Q: L'activité d'une source radioactive s'exprime en :
@@ -154,70 +154,70 @@ Q: L'activité d'une source radioactive s'exprime en :
 - Sieverts (Sv)
 - Teslas (T)
 C: En becquerels.
-E: 1 Bq = 1 désintégration par seconde. Le gray mesure la dose absorbée et le sievert la dose équivalente (effet biologique).
+E: Un becquerel ($1\ \mathrm{Bq}$) correspond à 1 désintégration par seconde. Le gray mesure la dose absorbée et le sievert la dose équivalente (effet biologique).
 
 [PHY-018] nucleaire | advanced
-Q: La relation d'Einstein E = m·c² signifie que :
+Q: La relation d'Einstein $E = mc^{2}$ signifie que :
 * Une variation de masse correspond à une énergie libérée ou absorbée
 - La masse d'un noyau est égale à la somme des masses de ses nucléons
 - L'énergie d'un noyau est toujours nulle
 - La célérité de la lumière dépend de la masse
 C: Masse et énergie sont équivalentes.
-E: Dans une réaction nucléaire, la perte de masse Δm se traduit par une énergie libérée |ΔE| = |Δm|·c². La masse d'un noyau est inférieure à la somme des masses de ses nucléons : c'est le défaut de masse.
+E: Dans une réaction nucléaire, la perte de masse $\Delta m$ se traduit par une énergie libérée $|\Delta E| = |\Delta m|\, c^{2}$. La masse d'un noyau est inférieure à la somme des masses de ses nucléons : c'est le défaut de masse.
 
 [PHY-019] nucleaire | advanced
 Q: Laquelle de ces réactions est une fusion nucléaire ?
-* ²₁H + ³₁H → ⁴₂He + ¹₀n
-- ²³⁵₉₂U + ¹₀n → ⁹⁴₃₈Sr + ¹⁴⁰₅₄Xe + 2 ¹₀n
-- ¹⁴₆C → ¹⁴₇N + ⁰₋₁e
-- ²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He
+* ${}^{2}_{1}\mathrm{H} + {}^{3}_{1}\mathrm{H} \rightarrow {}^{4}_{2}\mathrm{He} + {}^{1}_{0}\mathrm{n}$
+- ${}^{235}_{92}\mathrm{U} + {}^{1}_{0}\mathrm{n} \rightarrow {}^{94}_{38}\mathrm{Sr} + {}^{140}_{54}\mathrm{Xe} + 2\,{}^{1}_{0}\mathrm{n}$
+- ${}^{14}_{6}\mathrm{C} \rightarrow {}^{14}_{7}\mathrm{N} + {}^{0}_{-1}\mathrm{e}$
+- ${}^{226}_{88}\mathrm{Ra} \rightarrow {}^{222}_{86}\mathrm{Rn} + {}^{4}_{2}\mathrm{He}$
 C: La réaction deutérium + tritium.
-E: La fusion réunit deux noyaux légers en un noyau plus lourd. La deuxième réaction est une fission ; les deux dernières sont des désintégrations β⁻ et α.
+E: La fusion réunit deux noyaux légers en un noyau plus lourd. La deuxième réaction est une fission ; les deux dernières sont des désintégrations $\beta^{-}$ et $\alpha$.
 
 [PHY-020] electricite-rc | intermediate
-Q: Quelle est la constante de temps d'un dipôle RC avec R = 1 kΩ et C = 100 µF ?
-* 0,1 s
-- 10 s
-- 100 s
-- 0,01 s
-C: τ = 0,1 s.
-E: τ = R·C = 10³ × 100 × 10⁻⁶ = 10⁻¹ s = 0,1 s.
+Q: Quelle est la constante de temps d'un dipôle RC avec $R = 1\ \mathrm{k}\Omega$ et $C = 100\ \mu\mathrm{F}$ ?
+* $0{,}1\ \mathrm{s}$
+- $10\ \mathrm{s}$
+- $100\ \mathrm{s}$
+- $0{,}01\ \mathrm{s}$
+C: $\tau = 0{,}1\ \mathrm{s}$.
+E: $\tau = RC = 10^{3} \times 100 \times 10^{-6} = 10^{-1}\ \mathrm{s} = 0{,}1\ \mathrm{s}$.
 
 [PHY-021] electricite-rc | intermediate
-Q: Lors de la charge d'un condensateur dans un circuit RC soumis à un échelon de tension E, quelle est la tension à ses bornes à l'instant t = τ ?
-* Environ 63 % de E
-- Environ 37 % de E
-- 50 % de E
-- 100 % de E
-C: u(τ) ≈ 0,63 E.
-E: u(t) = E(1 − e^(−t/τ)) ; à t = τ, u = E(1 − e⁻¹) ≈ 0,63 E. On considère la charge pratiquement terminée vers 5τ (99 %).
+Q: Lors de la charge d'un condensateur dans un circuit RC soumis à un échelon de tension $E$, quelle est la tension à ses bornes à l'instant $t = \tau$ ?
+* Environ $63\ \%$ de $E$
+- Environ $37\ \%$ de $E$
+- $50\ \%$ de $E$
+- $100\ \%$ de $E$
+C: $u(\tau) \approx 0{,}63\, E$.
+E: $u(t) = E\left(1 - e^{-t/\tau}\right)$ ; à $t = \tau$, $u = E\left(1 - e^{-1}\right) \approx 0{,}63\, E$. On considère la charge pratiquement terminée vers $5\tau$ ($99\ \%$).
 
 [PHY-022] electricite-rc | intermediate
-Q: Quelle est l'expression de l'énergie stockée dans un condensateur de capacité C sous une tension U ?
-* E = (1/2)·C·U²
-- E = C·U
-- E = (1/2)·C²·U
-- E = C·U²
-C: E = ½ C U².
-E: Elle s'exprime en joules si C est en farads et U en volts. Pour une bobine parcourue par un courant i, l'énergie vaut ½ L i².
+Q: Quelle est l'expression de l'énergie stockée dans un condensateur de capacité $C$ sous une tension $U$ ?
+* $E = \frac{1}{2}CU^{2}$
+- $E = CU$
+- $E = \frac{1}{2}C^{2}U$
+- $E = CU^{2}$
+C: $E = \frac{1}{2}CU^{2}$.
+E: Elle s'exprime en joules si $C$ est en farads et $U$ en volts. Pour une bobine parcourue par un courant $i$, l'énergie vaut $\frac{1}{2}Li^{2}$.
 
 [PHY-023] electricite-rc | beginner
-Q: La charge q d'un condensateur et la tension u à ses bornes sont liées par :
-* q = C·u
-- q = u/C
-- q = C/u
-- q = C·u²
-C: q = C·u.
-E: La capacité C (en farads) est le coefficient de proportionnalité entre la charge q (en coulombs) et la tension u (en volts).
+Q: La charge $q$ d'un condensateur et la tension $u$ à ses bornes sont liées par :
+* $q = Cu$
+- $q = \frac{u}{C}$
+- $q = \frac{C}{u}$
+- $q = Cu^{2}$
+C: $q = Cu$.
+E: La capacité $C$ (en farads) est le coefficient de proportionnalité entre la charge $q$ (en coulombs) et la tension $u$ (en volts).
 
 [PHY-024] electricite-rl | intermediate
 Q: Quelle est la constante de temps d'un dipôle RL ?
-* τ = L/R
-- τ = R·L
-- τ = R/L
-- τ = √(L·R)
-C: τ = L/R.
-E: Pour un dipôle RL, τ = L/R (L en henrys, R en ohms, τ en secondes). Pour un dipôle RC, τ = R·C.
+* $\tau = \frac{L}{R}$
+- $\tau = RL$
+- $\tau = \frac{R}{L}$
+- $\tau = \sqrt{LR}$
+C: $\tau = \frac{L}{R}$.
+E: Pour un dipôle RL, $\tau = \frac{L}{R}$ ($L$ en henrys, $R$ en ohms, $\tau$ en secondes). Pour un dipôle RC, $\tau = RC$.
 
 [PHY-025] electricite-rl | intermediate
 Q: En régime permanent, une bobine idéale traversée par un courant d'intensité constante se comporte comme :
@@ -226,16 +226,16 @@ Q: En régime permanent, une bobine idéale traversée par un courant d'intensit
 - Un condensateur
 - Un générateur
 C: Comme un fil.
-E: u = r·i + L·di/dt. En régime permanent, di/dt = 0 et, pour une bobine idéale (r = 0), u = 0. Une bobine s'oppose seulement aux variations du courant.
+E: $u = ri + L\frac{\mathrm{d}i}{\mathrm{d}t}$. En régime permanent, $\frac{\mathrm{d}i}{\mathrm{d}t} = 0$ et, pour une bobine idéale ($r = 0$), $u = 0$. Une bobine s'oppose seulement aux variations du courant.
 
 [PHY-026] electricite-rlc | intermediate
 Q: Quelle est la période propre d'un circuit LC idéal ?
-* T₀ = 2π√(L·C)
-- T₀ = 2π√(L/C)
-- T₀ = 2π/(L·C)
-- T₀ = √(L·C)/(2π)
-C: T₀ = 2π√(LC).
-E: L'équation q'' + q/(LC) = 0 admet des solutions sinusoïdales de pulsation ω₀ = 1/√(LC), donc T₀ = 2π√(LC).
+* $T_0 = 2\pi\sqrt{LC}$
+- $T_0 = 2\pi\sqrt{\frac{L}{C}}$
+- $T_0 = \frac{2\pi}{LC}$
+- $T_0 = \frac{\sqrt{LC}}{2\pi}$
+C: $T_0 = 2\pi\sqrt{LC}$.
+E: L'équation $\frac{\mathrm{d}^{2}q}{\mathrm{d}t^{2}} + \frac{q}{LC} = 0$ admet des solutions sinusoïdales de pulsation $\omega_0 = \frac{1}{\sqrt{LC}}$, donc $T_0 = 2\pi\sqrt{LC}$.
 
 [PHY-027] electricite-rlc | intermediate
 Q: Dans un circuit RLC série en régime libre, la résistance provoque :
@@ -244,43 +244,43 @@ Q: Dans un circuit RLC série en régime libre, la résistance provoque :
 - Des oscillations sinusoïdales non amorties
 - Une augmentation de l'énergie totale
 C: Un amortissement.
-E: La résistance dissipe de l'énergie par effet Joule : l'amplitude diminue (régime pseudo-périodique) ou les oscillations disparaissent (régime apériodique) si R est grande.
+E: La résistance dissipe de l'énergie par effet Joule : l'amplitude diminue (régime pseudo-périodique) ou les oscillations disparaissent (régime apériodique) si $R$ est grande.
 
 [PHY-028] electricite-rlc | advanced
 Q: Dans un circuit RLC série en régime sinusoïdal forcé, la résonance d'intensité est obtenue pour la fréquence :
-* f₀ = 1/(2π√(L·C))
-- f₀ = 2π√(L·C)
-- f₀ = R/(2πL)
-- f₀ = 1/(R·C)
-C: À la fréquence propre f₀ = 1/(2π√LC).
-E: À la résonance, l'impédance est minimale (Z = R), l'intensité efficace est maximale et la tension et l'intensité sont en phase.
+* $f_0 = \frac{1}{2\pi\sqrt{LC}}$
+- $f_0 = 2\pi\sqrt{LC}$
+- $f_0 = \frac{R}{2\pi L}$
+- $f_0 = \frac{1}{RC}$
+C: À la fréquence propre $f_0 = \frac{1}{2\pi\sqrt{LC}}$.
+E: À la résonance, l'impédance est minimale ($Z = R$), l'intensité efficace est maximale et la tension et l'intensité sont en phase.
 
 [PHY-029] electricite | beginner
-Q: Un conducteur ohmique de résistance R = 100 Ω est traversé par un courant de 0,2 A. Quelle est la tension à ses bornes ?
-* 20 V
-- 500 V
-- 0,002 V
-- 50 V
-C: U = 20 V.
-E: Loi d'Ohm : U = R·I = 100 × 0,2 = 20 V.
+Q: Un conducteur ohmique de résistance $R = 100\ \Omega$ est traversé par un courant d'intensité $I = 0{,}2\ \mathrm{A}$. Quelle est la tension à ses bornes ?
+* $20\ \mathrm{V}$
+- $500\ \mathrm{V}$
+- $0{,}002\ \mathrm{V}$
+- $50\ \mathrm{V}$
+C: $U = 20\ \mathrm{V}$.
+E: Loi d'Ohm : $U = RI = 100 \times 0{,}2 = 20\ \mathrm{V}$.
 
 [PHY-030] electricite | beginner
-Q: Quelle est la puissance électrique reçue par un radiateur alimenté sous 220 V et parcouru par un courant de 5 A ?
-* 1 100 W
-- 44 W
-- 225 W
-- 2 200 W
-C: P = 1 100 W.
-E: Pour un récepteur ohmique, P = U·I = 220 × 5 = 1 100 W.
+Q: Quelle est la puissance électrique reçue par un radiateur alimenté sous $220\ \mathrm{V}$ et parcouru par un courant de $5\ \mathrm{A}$ ?
+* $1\,100\ \mathrm{W}$
+- $44\ \mathrm{W}$
+- $225\ \mathrm{W}$
+- $2\,200\ \mathrm{W}$
+C: $P = 1\,100\ \mathrm{W}$.
+E: Pour un récepteur ohmique, $P = UI = 220 \times 5 = 1\,100\ \mathrm{W}$.
 
 [PHY-031] electricite | intermediate
-Q: Deux résistances de 6 Ω et 3 Ω sont montées en parallèle. Quelle est la résistance équivalente ?
-* 2 Ω
-- 9 Ω
-- 4,5 Ω
-- 18 Ω
-C: 2 Ω.
-E: 1/R = 1/6 + 1/3 = 3/6, donc R = 2 Ω ; on peut aussi calculer (6 × 3)/(6 + 3) = 18/9 = 2 Ω.
+Q: Deux résistances de $6\ \Omega$ et $3\ \Omega$ sont montées en parallèle. Quelle est la résistance équivalente ?
+* $2\ \Omega$
+- $9\ \Omega$
+- $4{,}5\ \Omega$
+- $18\ \Omega$
+C: $R = 2\ \Omega$.
+E: $\frac{1}{R} = \frac{1}{6} + \frac{1}{3} = \frac{3}{6}$, donc $R = 2\ \Omega$ ; on peut aussi calculer $\frac{6 \times 3}{6 + 3} = \frac{18}{9} = 2\ \Omega$.
 
 [PHY-032] mecanique-newton | beginner
 Q: D'après la deuxième loi de Newton, dans un référentiel galiléen :
@@ -288,80 +288,80 @@ Q: D'après la deuxième loi de Newton, dans un référentiel galiléen :
 - La somme des forces est toujours nulle
 - La vitesse est proportionnelle à la force
 - Toute force entraîne une vitesse constante
-C: ΣF = m·a.
-E: Le principe fondamental de la dynamique relie la résultante des forces à l'accélération du centre d'inertie. Si ΣF = 0, le centre d'inertie est au repos ou en mouvement rectiligne uniforme (1re loi).
+C: $\sum \vec{F} = m\,\vec{a}$.
+E: Le principe fondamental de la dynamique relie la résultante des forces à l'accélération du centre d'inertie. Si $\sum \vec{F} = \vec{0}$, le centre d'inertie est au repos ou en mouvement rectiligne uniforme (1re loi).
 
 [PHY-033] mecanique-newton | beginner
-Q: Selon le principe des actions réciproques, si un corps A exerce une force F sur un corps B, alors B exerce sur A :
-* Une force −F, de même intensité et de sens opposé
+Q: Selon le principe des actions réciproques, si un corps A exerce une force $\vec{F}$ sur un corps B, alors B exerce sur A :
+* Une force $-\vec{F}$, de même intensité et de sens opposé
 - Une force nulle
-- Une force 2F
-- Une force perpendiculaire à F
+- Une force $2\vec{F}$
+- Une force perpendiculaire à $\vec{F}$
 C: Une force opposée de même intensité.
 E: Troisième loi de Newton : les deux forces ont même droite d'action, même intensité et des sens opposés, qu'il y ait mouvement ou non.
 
 [PHY-034] mecanique-newton | beginner
-Q: Un corps de masse 2 kg est soumis à une force résultante de 10 N. Quelle est la valeur de son accélération ?
-* 5 m/s²
-- 20 m/s²
-- 0,2 m/s²
-- 12 m/s²
-C: a = 5 m/s².
-E: a = F/m = 10/2 = 5 m/s².
+Q: Un corps de masse $2\ \mathrm{kg}$ est soumis à une force résultante de $10\ \mathrm{N}$. Quelle est la valeur de son accélération ?
+* $5\ \mathrm{m\,s^{-2}}$
+- $20\ \mathrm{m\,s^{-2}}$
+- $0{,}2\ \mathrm{m\,s^{-2}}$
+- $12\ \mathrm{m\,s^{-2}}$
+C: $a = 5\ \mathrm{m\,s^{-2}}$.
+E: $a = \frac{F}{m} = \frac{10}{2} = 5\ \mathrm{m\,s^{-2}}$.
 
 [PHY-035] mecanique-chute | intermediate
-Q: Une bille est lâchée sans vitesse initiale en chute libre (g = 10 m/s²). Quelle est sa vitesse au bout de 3 s ?
-* 30 m/s
-- 45 m/s
-- 3,3 m/s
-- 90 m/s
-C: v = 30 m/s.
-E: En chute libre, v = g·t = 10 × 3 = 30 m/s. La distance parcourue est alors ½ g t² = 45 m.
+Q: Une bille est lâchée sans vitesse initiale en chute libre ($g = 10\ \mathrm{m\,s^{-2}}$). Quelle est sa vitesse au bout de $3\ \mathrm{s}$ ?
+* $30\ \mathrm{m\,s^{-1}}$
+- $45\ \mathrm{m\,s^{-1}}$
+- $3{,}3\ \mathrm{m\,s^{-1}}$
+- $90\ \mathrm{m\,s^{-1}}$
+C: $v = 30\ \mathrm{m\,s^{-1}}$.
+E: En chute libre, $v = gt = 10 \times 3 = 30\ \mathrm{m\,s^{-1}}$. La distance parcourue est alors $\frac{1}{2}gt^{2} = 45\ \mathrm{m}$.
 
 [PHY-036] mecanique-chute | intermediate
-Q: En chute libre, quelle distance parcourt en 2 s une bille lâchée sans vitesse initiale (g = 10 m/s²) ?
-* 20 m
-- 10 m
-- 40 m
-- 5 m
-C: 20 m.
-E: z = ½ g t² = ½ × 10 × 2² = 20 m.
+Q: En chute libre, quelle distance parcourt en $2\ \mathrm{s}$ une bille lâchée sans vitesse initiale ($g = 10\ \mathrm{m\,s^{-2}}$) ?
+* $20\ \mathrm{m}$
+- $10\ \mathrm{m}$
+- $40\ \mathrm{m}$
+- $5\ \mathrm{m}$
+C: $20\ \mathrm{m}$.
+E: $z = \frac{1}{2}gt^{2} = \frac{1}{2} \times 10 \times 2^{2} = 20\ \mathrm{m}$.
 
 [PHY-037] mecanique-chute | advanced
 Q: Lors d'une chute verticale avec frottement fluide, la vitesse limite est atteinte lorsque :
 * Le poids est compensé par la force de frottement et la poussée d'Archimède
 - La force de frottement devient nulle
-- L'accélération devient égale à g
+- L'accélération devient égale à $g$
 - Le poids devient nul
 C: Quand les forces se compensent.
 E: Lorsque la somme des forces s'annule, l'accélération est nulle : le mouvement devient rectiligne uniforme à la vitesse limite.
 
 [PHY-038] mecanique-projectile | advanced
-Q: Un projectile est lancé avec une vitesse v₀ faisant un angle α avec l'horizontale, frottements négligés. Quelle composante de la vitesse reste constante ?
-* La composante horizontale v₀·cos α
-- La composante verticale v₀·sin α
+Q: Un projectile est lancé avec une vitesse $\vec{v}_0$ faisant un angle $\alpha$ avec l'horizontale, frottements négligés. Quelle composante de la vitesse reste constante ?
+* La composante horizontale $v_0 \cos\alpha$
+- La composante verticale $v_0 \sin\alpha$
 - Les deux composantes
 - Aucune composante
 C: La composante horizontale.
-E: La seule force est le poids, vertical : l'accélération horizontale est nulle, donc vₓ = v₀ cos α reste constante, tandis que v_z = −g·t + v₀ sin α varie.
+E: La seule force est le poids, vertical : l'accélération horizontale est nulle, donc $v_x = v_0 \cos\alpha$ reste constante, tandis que $v_z = -gt + v_0 \sin\alpha$ varie.
 
 [PHY-039] mecanique-projectile | advanced
 Q: Pour une même vitesse initiale, quel angle de tir donne la portée maximale sur un sol horizontal, frottements négligés ?
-* 45°
-- 30°
-- 60°
-- 90°
-C: 45°.
-E: La portée vaut v₀²·sin(2α)/g ; elle est maximale quand sin(2α) = 1, soit α = 45°.
+* $45^{\circ}$
+- $30^{\circ}$
+- $60^{\circ}$
+- $90^{\circ}$
+C: $45^{\circ}$.
+E: La portée vaut $\frac{v_0^{2} \sin(2\alpha)}{g}$ ; elle est maximale quand $\sin(2\alpha) = 1$, soit $\alpha = 45^{\circ}$.
 
 [PHY-040] mecanique-satellites | advanced
-Q: Selon la troisième loi de Kepler, pour les planètes tournant autour du Soleil, le rapport T²/a³ (T période, a demi-grand axe) est :
+Q: Selon la troisième loi de Kepler, pour les planètes tournant autour du Soleil, le rapport $\frac{T^{2}}{a^{3}}$ ($T$ période, $a$ demi-grand axe) est :
 * Le même pour toutes les planètes
 - Proportionnel à la masse de la planète
 - Égal à 1
-- Proportionnel à a
+- Proportionnel à $a$
 C: Constant.
-E: T²/a³ = 4π²/(G·M), où M est la masse de l'astre attracteur : ce rapport ne dépend pas de la planète considérée.
+E: $\frac{T^{2}}{a^{3}} = \frac{4\pi^{2}}{GM}$, où $M$ est la masse de l'astre attracteur : ce rapport ne dépend pas de la planète considérée.
 
 [PHY-041] mecanique-satellites | advanced
 Q: Un satellite géostationnaire :
@@ -369,26 +369,26 @@ Q: Un satellite géostationnaire :
 - Est immobile dans le référentiel géocentrique
 - Survole les deux pôles à chaque révolution
 - A une période de 24 jours
-C: Orbite équatoriale, période d'environ 23 h 56 min.
-E: Il tourne dans le même sens que la Terre, dans le plan équatorial, à environ 36 000 km d'altitude : il paraît fixe pour un observateur terrestre.
+C: Orbite équatoriale, période d'environ $23\ \mathrm{h}\ 56\ \mathrm{min}$.
+E: Il tourne dans le même sens que la Terre, dans le plan équatorial, à environ $36\,000\ \mathrm{km}$ d'altitude : il paraît fixe pour un observateur terrestre.
 
 [PHY-042] mecanique-satellites | advanced
-Q: Quelle est la vitesse d'un satellite en orbite circulaire de rayon r autour de la Terre de masse M ?
-* v = √(G·M/r)
-- v = G·M/r²
-- v = √(r/(G·M))
-- v = G·M·r
-C: v = √(GM/r).
-E: La deuxième loi de Newton donne G·M·m/r² = m·v²/r, d'où v² = G·M/r. La vitesse ne dépend pas de la masse du satellite.
+Q: Quelle est la vitesse d'un satellite en orbite circulaire de rayon $r$ autour de la Terre de masse $M$ ?
+* $v = \sqrt{\frac{GM}{r}}$
+- $v = \frac{GM}{r^{2}}$
+- $v = \sqrt{\frac{r}{GM}}$
+- $v = GMr$
+C: $v = \sqrt{\frac{GM}{r}}$.
+E: La deuxième loi de Newton donne $\frac{GMm}{r^{2}} = \frac{mv^{2}}{r}$, d'où $v^{2} = \frac{GM}{r}$. La vitesse ne dépend pas de la masse du satellite.
 
 [PHY-043] oscillateurs | intermediate
-Q: Quelle est la période propre d'un pendule élastique horizontal (masse m, ressort de raideur k) ?
-* T₀ = 2π√(m/k)
-- T₀ = 2π√(k/m)
-- T₀ = 2π·m·k
-- T₀ = √(m·k)
-C: T₀ = 2π√(m/k).
-E: L'équation m·x'' + k·x = 0 donne ω₀ = √(k/m) et T₀ = 2π/ω₀ = 2π√(m/k).
+Q: Quelle est la période propre d'un pendule élastique horizontal (masse $m$, ressort de raideur $k$) ?
+* $T_0 = 2\pi\sqrt{\frac{m}{k}}$
+- $T_0 = 2\pi\sqrt{\frac{k}{m}}$
+- $T_0 = 2\pi mk$
+- $T_0 = \sqrt{mk}$
+C: $T_0 = 2\pi\sqrt{\frac{m}{k}}$.
+E: L'équation $m\ddot{x} + kx = 0$ donne $\omega_0 = \sqrt{\frac{k}{m}}$ et $T_0 = \frac{2\pi}{\omega_0} = 2\pi\sqrt{\frac{m}{k}}$.
 
 [PHY-044] oscillateurs | intermediate
 Q: Pour un pendule simple oscillant avec une faible amplitude, la période dépend :
@@ -396,8 +396,8 @@ Q: Pour un pendule simple oscillant avec une faible amplitude, la période dépe
 - De la masse suspendue
 - De l'amplitude des oscillations
 - De la couleur du fil
-C: De la longueur l et de g.
-E: T₀ = 2π√(l/g) : la période ne dépend ni de la masse ni, pour de petites amplitudes, de l'amplitude.
+C: De la longueur $l$ et de $g$.
+E: $T_0 = 2\pi\sqrt{\frac{l}{g}}$ : la période ne dépend ni de la masse ni, pour de petites amplitudes, de l'amplitude.
 
 [PHY-045] oscillateurs | intermediate
 Q: Si l'on multiplie par 4 la masse accrochée à un pendule élastique (même ressort), sa période propre est :
@@ -406,25 +406,25 @@ Q: Si l'on multiplie par 4 la masse accrochée à un pendule élastique (même r
 - Divisée par 2
 - Inchangée
 C: Multipliée par 2.
-E: T₀ = 2π√(m/k) : quand m est multipliée par 4, √m est multipliée par 2.
+E: $T_0 = 2\pi\sqrt{\frac{m}{k}}$ : quand $m$ est multipliée par 4, $\sqrt{m}$ est multipliée par 2.
 
 [PHY-046] energie | beginner
-Q: Quelle est l'énergie cinétique d'un corps de 2 kg se déplaçant à 3 m/s ?
-* 9 J
-- 6 J
-- 18 J
-- 3 J
-C: Ec = 9 J.
-E: Ec = ½ m v² = ½ × 2 × 3² = 9 J.
+Q: Quelle est l'énergie cinétique d'un corps de $2\ \mathrm{kg}$ se déplaçant à $3\ \mathrm{m\,s^{-1}}$ ?
+* $9\ \mathrm{J}$
+- $6\ \mathrm{J}$
+- $18\ \mathrm{J}$
+- $3\ \mathrm{J}$
+C: $E_c = 9\ \mathrm{J}$.
+E: $E_c = \frac{1}{2}mv^{2} = \frac{1}{2} \times 2 \times 3^{2} = 9\ \mathrm{J}$.
 
 [PHY-047] energie | intermediate
-Q: Un objet de 1 kg est lâché sans vitesse d'une hauteur de 5 m, frottements négligés (g = 10 m/s²). Quelle est sa vitesse en arrivant au sol ?
-* 10 m/s
-- 50 m/s
-- 5 m/s
-- 100 m/s
-C: v = 10 m/s.
-E: Conservation de l'énergie mécanique : m·g·h = ½ m v², donc v = √(2gh) = √100 = 10 m/s.
+Q: Un objet de $1\ \mathrm{kg}$ est lâché sans vitesse d'une hauteur $h = 5\ \mathrm{m}$, frottements négligés ($g = 10\ \mathrm{m\,s^{-2}}$). Quelle est sa vitesse en arrivant au sol ?
+* $10\ \mathrm{m\,s^{-1}}$
+- $50\ \mathrm{m\,s^{-1}}$
+- $5\ \mathrm{m\,s^{-1}}$
+- $100\ \mathrm{m\,s^{-1}}$
+C: $v = 10\ \mathrm{m\,s^{-1}}$.
+E: Conservation de l'énergie mécanique : $mgh = \frac{1}{2}mv^{2}$, donc $v = \sqrt{2gh} = \sqrt{100} = 10\ \mathrm{m\,s^{-1}}$.
 
 [PHY-048] energie | beginner
 Q: Le travail du poids d'un corps qui monte verticalement est :
@@ -433,7 +433,7 @@ Q: Le travail du poids d'un corps qui monte verticalement est :
 - Toujours nul
 - Indépendant de la hauteur
 C: Résistant.
-E: W(P) = m·g·(z_A − z_B) : quand le corps monte, z_B > z_A et le travail est négatif ; le poids s'oppose au mouvement.
+E: $W(\vec{P}) = mg\,(z_A - z_B)$ : quand le corps monte, $z_B > z_A$ et le travail est négatif ; le poids s'oppose au mouvement.
 
 [PHY-049] energie | beginner
 Q: Quelle est l'unité de la puissance dans le Système international ?
@@ -442,16 +442,16 @@ Q: Quelle est l'unité de la puissance dans le Système international ?
 - Le newton (N)
 - Le kilowattheure (kWh)
 C: Le watt.
-E: 1 W = 1 J/s. Le kilowattheure est une unité d'énergie : 1 kWh = 3,6 × 10⁶ J.
+E: $1\ \mathrm{W} = 1\ \mathrm{J\,s^{-1}}$. Le kilowattheure est une unité d'énergie : $1\ \mathrm{kWh} = 3{,}6 \times 10^{6}\ \mathrm{J}$.
 
 [PHY-050] optique | intermediate
-Q: Une lentille convergente a une distance focale de 20 cm. Quelle est sa vergence ?
-* 5 δ
-- 20 δ
-- 0,05 δ
-- 2 δ
-C: C = 5 dioptries.
-E: C = 1/f' avec f' en mètres : 1/0,20 = 5 δ.
+Q: Une lentille convergente a une distance focale $f' = 20\ \mathrm{cm}$. Quelle est sa vergence ?
+* $5\ \delta$
+- $20\ \delta$
+- $0{,}05\ \delta$
+- $2\ \delta$
+C: $C = 5\ \delta$, soit 5 dioptries.
+E: $C = \frac{1}{f'}$ avec $f'$ en mètres : $C = \frac{1}{0{,}20} = 5\ \delta$.
 
 [PHY-051] optique | intermediate
 Q: Un objet est placé devant une lentille convergente, à une distance supérieure au double de sa distance focale. L'image obtenue est :
@@ -460,7 +460,7 @@ Q: Un objet est placé devant une lentille convergente, à une distance supérie
 - Réelle, droite et agrandie
 - Inexistante
 C: Réelle, renversée, réduite.
-E: Pour un objet situé au-delà de 2f', l'image se forme entre f' et 2f' de l'autre côté de la lentille : elle est réelle, renversée et réduite (principe de l'appareil photo).
+E: Pour un objet situé au-delà de $2f'$, l'image se forme entre $f'$ et $2f'$ de l'autre côté de la lentille : elle est réelle, renversée et réduite (principe de l'appareil photo).
 
 [PHY-052] ondes-electromagnetiques | intermediate
 Q: Comment appelle-t-on le procédé qui fait varier l'amplitude d'une onde porteuse de haute fréquence au rythme d'un signal audio, pour le transmettre ?
@@ -478,43 +478,43 @@ Q: Laquelle de ces ondes n'est pas une onde électromagnétique ?
 - Les ondes radio
 - Les infrarouges
 C: Les ultrasons.
-E: Les ultrasons sont des ondes mécaniques (sonores, de fréquence supérieure à 20 kHz). Les rayons X, les ondes radio et les infrarouges sont électromagnétiques et se propagent aussi dans le vide.
+E: Les ultrasons sont des ondes mécaniques (sonores, de fréquence supérieure à $20\ \mathrm{kHz}$). Les rayons X, les ondes radio et les infrarouges sont électromagnétiques et se propagent aussi dans le vide.
 
 [PHY-054] ondes | beginner
 Q: Le domaine des sons audibles par l'oreille humaine s'étend approximativement de :
-* 20 Hz à 20 kHz
-- 2 Hz à 2 kHz
-- 200 Hz à 200 kHz
-- 20 kHz à 20 MHz
-C: De 20 Hz à 20 kHz.
-E: En dessous de 20 Hz : infrasons ; au-dessus de 20 kHz : ultrasons, utilisés en échographie et par les chauves-souris.
+* $20\ \mathrm{Hz}$ à $20\ \mathrm{kHz}$
+- $2\ \mathrm{Hz}$ à $2\ \mathrm{kHz}$
+- $200\ \mathrm{Hz}$ à $200\ \mathrm{kHz}$
+- $20\ \mathrm{kHz}$ à $20\ \mathrm{MHz}$
+C: De $20\ \mathrm{Hz}$ à $20\ \mathrm{kHz}$.
+E: En dessous de $20\ \mathrm{Hz}$ : infrasons ; au-dessus de $20\ \mathrm{kHz}$ : ultrasons, utilisés en échographie et par les chauves-souris.
 
 [PHY-055] mecanique | beginner
-Q: Quelle est l'intensité du poids d'un corps de masse 5 kg sur Terre (g = 9,8 N/kg) ?
-* 49 N
-- 5 N
-- 4,9 N
-- 0,5 N
-C: P = 49 N.
-E: P = m·g = 5 × 9,8 = 49 N. La masse (en kg) est la même partout ; le poids (en N) dépend de l'astre.
+Q: Quelle est l'intensité du poids d'un corps de masse $5\ \mathrm{kg}$ sur Terre ($g = 9{,}8\ \mathrm{N\,kg^{-1}}$) ?
+* $49\ \mathrm{N}$
+- $5\ \mathrm{N}$
+- $4{,}9\ \mathrm{N}$
+- $0{,}5\ \mathrm{N}$
+C: $P = 49\ \mathrm{N}$.
+E: $P = mg = 5 \times 9{,}8 = 49\ \mathrm{N}$. La masse (en kg) est la même partout ; le poids (en N) dépend de l'astre.
 
 [PHY-056] mecanique | intermediate
-Q: Un véhicule passe de 0 à 72 km/h en 10 s, d'un mouvement rectiligne uniformément accéléré. Quelle est son accélération ?
-* 2 m/s²
-- 7,2 m/s²
-- 20 m/s²
-- 0,5 m/s²
-C: a = 2 m/s².
-E: 72 km/h = 72/3,6 = 20 m/s ; a = Δv/Δt = 20/10 = 2 m/s².
+Q: Un véhicule passe de $0$ à $72\ \mathrm{km\,h^{-1}}$ en $10\ \mathrm{s}$, d'un mouvement rectiligne uniformément accéléré. Quelle est son accélération ?
+* $2\ \mathrm{m\,s^{-2}}$
+- $7{,}2\ \mathrm{m\,s^{-2}}$
+- $20\ \mathrm{m\,s^{-2}}$
+- $0{,}5\ \mathrm{m\,s^{-2}}$
+C: $a = 2\ \mathrm{m\,s^{-2}}$.
+E: $72\ \mathrm{km\,h^{-1}} = \frac{72}{3{,}6}\ \mathrm{m\,s^{-1}} = 20\ \mathrm{m\,s^{-1}}$ ; $a = \frac{\Delta v}{\Delta t} = \frac{20}{10} = 2\ \mathrm{m\,s^{-2}}$.
 
 [PHY-057] mecanique | intermediate
-Q: Un solide en mouvement circulaire uniforme de rayon R, à la vitesse v, a une accélération :
-* Centripète, de valeur v²/R
+Q: Un solide en mouvement circulaire uniforme de rayon $R$, à la vitesse $v$, a une accélération :
+* Centripète, de valeur $\frac{v^{2}}{R}$
 - Nulle, car la vitesse est constante
-- Tangentielle, de valeur v/R
-- Dirigée vers l'extérieur, de valeur v·R
-C: Centripète, a = v²/R.
-E: La valeur de la vitesse est constante mais sa direction change : l'accélération est dirigée vers le centre de la trajectoire et vaut v²/R.
+- Tangentielle, de valeur $\frac{v}{R}$
+- Dirigée vers l'extérieur, de valeur $vR$
+C: Centripète, $a = \frac{v^{2}}{R}$.
+E: La valeur de la vitesse est constante mais sa direction change : l'accélération est dirigée vers le centre de la trajectoire et vaut $\frac{v^{2}}{R}$.
 
 [PHY-058] nucleaire | beginner
 Q: Des noyaux isotopes ont :
@@ -522,23 +522,23 @@ Q: Des noyaux isotopes ont :
 - Le même nombre de neutrons et des nombres de protons différents
 - Le même nombre de masse et des numéros atomiques différents
 - Des propriétés chimiques différentes
-C: Même Z, nombre de neutrons différent.
-E: Exemple : ¹²C, ¹³C et ¹⁴C (Z = 6). Ils appartiennent au même élément chimique et ont les mêmes propriétés chimiques.
+C: Même $Z$, nombre de neutrons différent.
+E: Exemple : ${}^{12}_{6}\mathrm{C}$, ${}^{13}_{6}\mathrm{C}$ et ${}^{14}_{6}\mathrm{C}$ ($Z = 6$). Ils appartiennent au même élément chimique et ont les mêmes propriétés chimiques.
 
 [PHY-059] nucleaire | advanced
-Q: Le carbone 14 a une demi-vie d'environ 5 730 ans. Un bois ancien a une activité égale au quart de celle d'un bois récent. Quel est son âge approximatif ?
-* Environ 11 460 ans
-- Environ 5 730 ans
-- Environ 22 920 ans
-- Environ 1 430 ans
-C: Environ 11 460 ans, soit 2 demi-vies.
-E: Activité divisée par 4 = (1/2)² : il s'est écoulé 2 demi-vies, soit 2 × 5 730 = 11 460 ans.
+Q: Le carbone 14 a une demi-vie d'environ $5\,730$ ans. Un bois ancien a une activité égale au quart de celle d'un bois récent. Quel est son âge approximatif ?
+* Environ $11\,460$ ans
+- Environ $5\,730$ ans
+- Environ $22\,920$ ans
+- Environ $1\,430$ ans
+C: Environ $11\,460$ ans, soit 2 demi-vies.
+E: L'activité est divisée par 4 et $\frac{1}{4} = \left(\frac{1}{2}\right)^{2}$ : il s'est écoulé 2 demi-vies, soit $2 \times 5\,730 = 11\,460$ ans.
 
 [PHY-060] electricite | intermediate
-Q: Quelle énergie consomme une lampe de 60 W allumée pendant 5 heures ?
-* 0,3 kWh
-- 300 kWh
-- 12 kWh
-- 3 kWh
-C: 0,3 kWh.
-E: E = P·t = 60 W × 5 h = 300 Wh = 0,3 kWh, soit 1,08 × 10⁶ J.
+Q: Quelle énergie consomme une lampe de $60\ \mathrm{W}$ allumée pendant 5 heures ?
+* $0{,}3\ \mathrm{kWh}$
+- $300\ \mathrm{kWh}$
+- $12\ \mathrm{kWh}$
+- $3\ \mathrm{kWh}$
+C: $0{,}3\ \mathrm{kWh}$.
+E: $E = P\,t = 60\ \mathrm{W} \times 5\ \mathrm{h} = 300\ \mathrm{Wh} = 0{,}3\ \mathrm{kWh}$, soit $1{,}08 \times 10^{6}\ \mathrm{J}$.

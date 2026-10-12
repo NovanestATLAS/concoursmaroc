@@ -64,9 +64,9 @@
   // ---------------------------------------------------------------- helpers
   function t(k, v) { return T.t(k, v); }
   /* Element whose text may hold formulas written $...$ (typeset by KaTeX). */
-  function mtext(tag, attrs, s) {
+  function mtext(tag, attrs, s, big) {
     var el = U.el(tag, attrs);
-    if (global.CM.math) global.CM.math.set(el, s); else el.textContent = s == null ? '' : s;
+    if (global.CM.math) global.CM.math.set(el, s, big); else el.textContent = s == null ? '' : s;
     return el;
   }
   /* Google Analytics event when the website has the GA4 tag (never in the app). */
@@ -625,12 +625,12 @@
     }
     card.appendChild(meta);
     var qlang = view.question.category === 'anglais' ? 'en' : view.lang;
-    card.appendChild(mtext('div', { class: 'q-text', lang: qlang, dir: view.lang === 'ar' ? 'rtl' : 'ltr' }, view.body.text));
+    card.appendChild(mtext('div', { class: 'q-text', lang: qlang, dir: view.lang === 'ar' ? 'rtl' : 'ltr' }, view.body.text, true));
     var optionsEl = U.el('div', { class: 'options', role: 'group', 'aria-label': t('quiz.choices'), lang: qlang, dir: view.lang === 'ar' ? 'rtl' : 'ltr' });
     var letters = view.lang === 'ar' ? ['أ', 'ب', 'ج', 'د', 'هـ'] : ['A', 'B', 'C', 'D', 'E'];
     var buttons = [];
     view.choices.forEach(function (choice, i) {
-      var b = U.el('button', { class: 'opt', type: 'button' }, [U.el('span', { class: 'opt-key', text: letters[i] }), mtext('span', { class: 'opt-label' }, choice)]);
+      var b = U.el('button', { class: 'opt', type: 'button' }, [U.el('span', { class: 'opt-key', text: letters[i] }), mtext('span', { class: 'opt-label' }, choice, true)]);
       if (exam && view.state.answeredIndex === i) b.setAttribute('data-state', 'selected');
       b.onclick = function () { onAnswer(i); };
       buttons.push(b);

@@ -18,14 +18,18 @@ export const KATEX_CSS = 'assets/vendor/katex/katex.min.css';
 
 export function hasMath(s) { return typeof s === 'string' && s.includes('$'); }
 
-export function renderMath(s) {
+// Fractions, integrals, sums and limits drawn full size (question and choices).
+const TALL = /\\(?:d?frac|int|sum|prod|lim|binom)/;
+
+export function renderMath(s, big = false) {
   const str = s == null ? '' : String(s);
   if (!hasMath(str)) return esc(str);
   let out = '';
   let last = 0;
   for (const m of str.matchAll(RE)) {
     out += esc(str.slice(last, m.index));
-    out += `<span class="math" dir="ltr">${katex.renderToString(m[1], { throwOnError: false })}</span>`;
+    const tex = big && TALL.test(m[1]) ? `\\displaystyle ${m[1]}` : m[1];
+    out += `<span class="math" dir="ltr">${katex.renderToString(tex, { throwOnError: false })}</span>`;
     last = m.index + m[0].length;
   }
   return out + esc(str.slice(last));
