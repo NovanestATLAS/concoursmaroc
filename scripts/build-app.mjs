@@ -356,6 +356,7 @@ async function main() {
     'js/app.js': 'src/app/js/app.js',
     'js/echeances.js': 'src/js/echeances.js',
     'js/annuaire.js': 'src/js/annuaire.js',
+    'js/contact.js': 'src/js/contact.js',
   };
   for (const [to, from] of Object.entries(js)) copy(from, to);
   for (const f of fs.readdirSync(path.join(ROOT, 'src/js/outils'))) copy(`src/js/outils/${f}`, `js/outils/${f}`);

@@ -9,8 +9,8 @@ export default {
   seuils: null,
   age: null,
   practice: {
-    subjects: ['francais', 'arabe', 'culture', 'logique', 'maths'],
-    mock: { minutes: 60, sections: [{ subjects: ['francais'], count: 10 }, { subjects: ['arabe'], count: 10 }, { subjects: ['culture', 'maroc'], count: 10 }, { subjects: ['logique'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    subjects: ['education', 'francais', 'arabe', 'culture', 'maroc', 'logique', 'maths'],
+    mock: { minutes: 60, sections: [{ subjects: ['francais'], count: 10 }, { subjects: ['arabe'], count: 10 }, { subjects: ['culture', 'maroc', 'education'], count: 10 }, { subjects: ['logique'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
     difficulty: 'standard',
   },
   related: ['universite', 'fonction-publique', 'cpge'],

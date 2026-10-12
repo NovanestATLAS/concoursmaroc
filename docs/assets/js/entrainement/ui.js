@@ -27,7 +27,7 @@
   var quizTimer = null;
   var questionStartedAt = 0;
   // difficulty: null = automatic (level of the targeted concours, else all)
-  var setup = { count: 10, subjects: null, difficulty: null, timed: false };
+  var setup = { count: 10, subjects: null, linked: null, difficulty: null, timed: false };
 
   // ---------------------------------------------------------------- icons
   var ICONS = {
@@ -349,7 +349,7 @@
         }
       }));
     }
-    tiles.appendChild(tile({ icon: 'play', cls: saved ? '' : 'primary', title: t('home.practice'), hint: t('home.practiceHint'), onclick: function () { setup.subjects = null; app.go('setup'); } }));
+    tiles.appendChild(tile({ icon: 'play', cls: saved ? '' : 'primary', title: t('home.practice'), hint: t('home.practiceHint'), onclick: function () { setup.subjects = null; setup.linked = null; app.go('setup'); } }));
     if (p && p.mock) {
       tiles.appendChild(tile({ icon: 'clock', title: t('home.mock', { name: L(p.short) }), hint: mockSummary(p), onclick: function () { app.go('mock'); } }));
     } else {
@@ -395,7 +395,7 @@
       var pct = U.pct(d.correct, d.answered);
       var row = U.el('div', { class: 'bar-row' + (d.answered && pct < 50 ? ' weak' : '') });
       var label = U.el('span', { text: catLabel(s) + ' · ' + t('home.inBank', { n: catCount(s) }) });
-      var go = U.el('button', { class: 'btn sm quiet', type: 'button', style: 'min-height:30px;padding:3px 10px', onclick: function () { setup.subjects = [s]; app.go('setup'); } }, [t('home.train')]);
+      var go = U.el('button', { class: 'btn sm quiet', type: 'button', style: 'min-height:30px;padding:3px 10px', onclick: function () { setup.subjects = [s]; setup.linked = null; app.go('setup'); } }, [t('home.train')]);
       row.appendChild(U.el('div', { class: 'b-top' }, [label, U.el('span', { text: d.answered ? pct + ' % · ' + d.answered : '—' })]));
       var track = U.el('div', { class: 'b-track' });
       var fill = U.el('div', { class: 'b-fill' });
@@ -460,12 +460,17 @@
     var el = screen();
     appbar(el, t('setup.title'));
     var p = profile();
-    if (params && params.subject && catInfo(params.subject)) setup.subjects = [params.subject];
+    if (params && params.subject && catInfo(params.subject)) { setup.subjects = [params.subject]; setup.linked = params.subject; }
     var all = (manifest.categories || []).map(function (c) { return c.id; });
-    var selected = setup.subjects ? setup.subjects.slice() : targetSubjects();
+    // A targeted concours shows only its own subjects (plus a subject opened
+    // from a link, e.g. a QCM page); without a target, every subject.
+    var order = p ? targetSubjects() : all;
+    if (p && setup.linked && catInfo(setup.linked) && order.indexOf(setup.linked) === -1) order = order.concat([setup.linked]);
+    var selected = (setup.subjects || targetSubjects()).filter(function (c) { return order.indexOf(c) !== -1; });
+    if (!selected.length) selected = targetSubjects();
 
     var head = U.el('p', { class: 'legal' }, [t('setup.forConcours') + ' ', U.el('strong', { text: p ? L(p.short) : t('home.noTarget') }), ' · ']);
-    head.appendChild(U.el('a', { href: '#', onclick: function (e) { e.preventDefault(); UI.pickConcours(function () { setup.subjects = null; UI.renderSetup(); }); } }, [t('home.change')]));
+    head.appendChild(U.el('a', { href: '#', onclick: function (e) { e.preventDefault(); UI.pickConcours(function () { setup.subjects = null; setup.linked = null; UI.renderSetup(); }); } }, [t('home.change')]));
     el.appendChild(head);
 
     var availEl, startBtn, mixEl;
@@ -493,7 +498,6 @@
     var f0 = U.el('div', { class: 'field' });
     f0.appendChild(U.el('span', { class: 'label', text: t('setup.subjects') }));
     var grid = U.el('div', { class: 'subject-grid' });
-    var order = targetSubjects().concat(all.filter(function (c) { return targetSubjects().indexOf(c) === -1; }));
     order.forEach(function (c) {
       var b = U.el('button', { type: 'button', 'aria-pressed': selected.indexOf(c) !== -1 ? 'true' : 'false', text: catLabel(c, true) + ' (' + catCount(c) + ')' });
       b.onclick = function () {
@@ -508,7 +512,7 @@
     f0.appendChild(grid);
     var quick = U.el('div', { class: 'btn-row', style: 'margin-top:8px' });
     quick.appendChild(U.el('button', { class: 'btn sm quiet', type: 'button', onclick: function () { setup.subjects = targetSubjects(); UI.renderSetup(); } }, [t('setup.concoursSubjects')]));
-    quick.appendChild(U.el('button', { class: 'btn sm quiet', type: 'button', onclick: function () { setup.subjects = all.slice(); UI.renderSetup(); } }, [t('setup.allSubjects')]));
+    if (!p) quick.appendChild(U.el('button', { class: 'btn sm quiet', type: 'button', onclick: function () { setup.subjects = all.slice(); UI.renderSetup(); } }, [t('setup.allSubjects')]));
     f0.appendChild(quick);
     el.appendChild(f0);
 

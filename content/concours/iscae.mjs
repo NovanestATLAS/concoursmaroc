@@ -9,7 +9,7 @@ export default {
   seuils: { year: '2026', formula: null, rows: [], note: { fr: 'Présélection sur dossier selon les notes du bac ; pas de seuil national publié.', ar: 'انتقاء أولي بالملف حسب نقط البكالوريا.' } },
   age: { max: 21, ref: '12-31', at: { fr: 'au 31 décembre de l’année du concours (licence)', ar: 'في 31 دجنبر من سنة المباراة (الإجازة)' } },
   practice: {
-    subjects: ['maths', 'anglais', 'culture', 'logique', 'economie'],
+    subjects: ['maths', 'anglais', 'culture', 'maroc', 'francais', 'economie'],
     // 2025 written tests: maths 2 h (coef. 2), English 1 h (coef. 1) and general
     // culture in French 1 h 30 (coef. 1, written essay, not a QCM). The mock covers
     // the two QCM papers with the scoring printed on the published maths paper.

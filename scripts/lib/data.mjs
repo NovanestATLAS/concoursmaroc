@@ -49,13 +49,47 @@ export function dataFiles(site, all, banks, root) {
   return { files, manifest };
 }
 
-/* Search index of one language: url, title, description, keywords, group. */
+/* Same normalisation as the search box (src/js/site.js): lower case, no
+ * accents, Arabic letter variants folded, punctuation turned into spaces. */
+function normWords(s) {
+  return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[ً-ٕـ]/g, '').replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي')
+    .split(/[^a-z0-9ء-ي]+/).filter(Boolean);
+}
+// Frequent words that never identify a page: left out of the body words.
+const COMMON = new Set(('avec dans pour plus sont vous votre vos leur leurs cette ces cela elle elles '
+  + 'etre fait faire peut tout tous toute toutes comme mais selon apres avant entre sans sous chaque '
+  + 'aussi encore donc ainsi alors deux trois autre autres meme bien tres ensuite depuis lors quand '
+  + 'dont nous ils sont ont avoir etait sera seront reponse question questions voir page site').split(' '));
+
+/* Distinct words of a page body (headings, tables, lists, paragraphs), so
+ * that a city, a school or a subject named only in the text is found. */
+function bodyWords(body, known) {
+  const text = String(body || '')
+    .replace(/<script[\s\S]*?<\/script>/g, ' ')
+    .replace(/<nav[\s\S]*?<\/nav>/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&[a-z#0-9]+;/g, ' ');
+  const out = new Set();
+  for (const w of normWords(text)) {
+    if (w.length < 4 || COMMON.has(w) || known.has(w) || /^\d+$/.test(w) && w.length > 4) continue;
+    out.add(w);
+  }
+  return [...out].join(' ');
+}
+
+/* Search index of one language: url, title, description, keywords, group,
+ * and the words of the page body (w). */
 export function searchIndex(pages, lang) {
-  return JSON.stringify(pages.filter((p) => p.lang === lang && !p.noindex && !p.noSearch).map((p) => ({
-    u: p.path.replace(/index\.html$/, ''),
-    t: p.searchTitle || p.title,
-    d: (p.description || '').slice(0, 150),
-    k: p.keywords ? p.keywords.join(' ') : '',
-    g: p.searchGroup || '',
-  })));
+  return JSON.stringify(pages.filter((p) => p.lang === lang && !p.noindex && !p.noSearch).map((p) => {
+    const e = {
+      u: p.path.replace(/index\.html$/, ''),
+      t: p.searchTitle || p.title,
+      d: (p.description || '').slice(0, 150),
+      k: p.keywords ? p.keywords.join(' ') : '',
+      g: p.searchGroup || '',
+    };
+    e.w = bodyWords(p.body, new Set(normWords(`${e.t} ${e.d} ${e.k}`)));
+    return e;
+  }));
 }

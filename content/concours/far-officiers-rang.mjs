@@ -11,7 +11,7 @@ export default {
   age: { min: 18, max: 23, ref: '08-16', at: { fr: 'au 16 août de l’année du concours', ar: 'في 16 غشت من سنة المباراة' } },
   height: { m: 1.70, f: 1.60 },
   practice: {
-    subjects: ['logique', 'maths', 'physique', 'francais', 'culture'],
+    subjects: ['logique', 'maths', 'physique', 'francais', 'culture', 'maroc'],
     // Psychotechnical tests and interview: no written knowledge exam (indicative format).
     mock: { minutes: 35, sections: [{ subjects: ['logique'], count: 20 }, { subjects: ['maroc', 'culture'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
     difficulty: 'standard',
