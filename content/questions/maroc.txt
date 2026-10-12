@@ -1,0 +1,134 @@
+# Questions complémentaires (format texte), chargées avec maroc.json.
+@category maroc
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[MAR-101] patrimoine | beginner
+Q: Qui a fondé, en 859 à Fès, l'université Al Quaraouiyine, considérée comme la plus ancienne université encore en activité ?
+* Fatima al-Fihriya
+- Idriss II
+- Youssef Ibn Tachfine
+- Ibn Khaldoun
+C: Fatima al-Fihriya.
+E: Fatima al-Fihriya, originaire de Kairouan, a financé la fondation de la mosquée-université Al Quaraouiyine en 859. Idriss II avait fondé la ville de Fès au début du IXe siècle.
+
+[MAR-102] histoire | intermediate
+Q: Quel est l'ordre chronologique de ces dynasties marocaines ?
+* Idrissides, Almoravides, Almohades, Mérinides, Saadiens, Alaouites
+- Almoravides, Idrissides, Almohades, Saadiens, Mérinides, Alaouites
+- Idrissides, Almohades, Almoravides, Mérinides, Alaouites, Saadiens
+- Almohades, Almoravides, Idrissides, Saadiens, Mérinides, Alaouites
+C: Idrissides → Almoravides → Almohades → Mérinides → Saadiens → Alaouites.
+E: Les Idrissides (fin du VIIIe siècle) fondent le premier État marocain ; les Almoravides (XIe siècle) fondent Marrakech ; les Almohades (XIIe siècle) bâtissent la Koutoubia et la tour Hassan ; puis viennent les Mérinides, les Saadiens (XVIe siècle) et les Alaouites (depuis le XVIIe siècle).
+
+[MAR-103] institutions | beginner
+Q: Depuis la Constitution de 2011, quelles sont les langues officielles du Maroc ?
+* L'arabe et l'amazighe
+- L'arabe et le français
+- L'arabe seulement
+- L'arabe, l'amazighe et le français
+C: L'arabe et l'amazighe.
+E: L'article 5 de la Constitution de 2011 fait de l'arabe et de l'amazighe les langues officielles de l'État. Le français est une langue étrangère très utilisée dans l'administration, l'économie et l'enseignement, sans statut officiel.
+
+[MAR-104] culture | beginner
+Q: Le Nouvel An amazigh (Yennayer), devenu jour férié national au Maroc, est célébré au mois de :
+* Janvier
+- Mars
+- Septembre
+- Décembre
+C: En janvier (le 14).
+E: Yennayer marque le début de l'année agraire amazighe, le 14 janvier. Le Roi Mohammed VI a décidé en 2023 d'en faire un jour férié national, chômé et payé, célébré à ce titre depuis janvier 2024.
+
+[MAR-105] economie | intermediate | ts
+Q: Quel est le premier port à conteneurs d'Afrique et de Méditerranée, situé au Maroc ?
+* Tanger Med
+- Casablanca
+- Agadir
+- Nador West Med
+C: Tanger Med.
+E: Mis en service à partir de 2007 sur le détroit de Gibraltar, Tanger Med est devenu le premier port à conteneurs de Méditerranée et d'Afrique, avec plus de 10 millions de conteneurs EVP traités par an. Nador West Med est un nouveau port en cours de mise en service.
+
+[MAR-106] economie | beginner
+Q: Le train à grande vitesse Al Boraq, inauguré en 2018, relie :
+* Tanger et Casablanca
+- Rabat et Marrakech
+- Casablanca et Agadir
+- Fès et Oujda
+C: Tanger et Casablanca (via Kénitra et Rabat).
+E: Al Boraq est la première ligne à grande vitesse d'Afrique ; elle met Tanger à environ 2 h 10 de Casablanca. Son prolongement de Kénitra vers Marrakech est en cours de réalisation.
+
+[MAR-107] economie | beginner
+Q: Le complexe solaire Noor, l'un des plus grands du monde, est situé près de :
+* Ouarzazate
+- Laâyoune
+- Errachidia
+- Oujda
+C: Ouarzazate.
+E: Le complexe Noor Ouarzazate, mis en service à partir de 2016, utilise surtout le solaire thermodynamique à concentration. Il s'inscrit dans la stratégie énergétique du Maroc, qui vise une forte part d'énergies renouvelables dans la production d'électricité.
+
+[MAR-108] histoire | beginner
+Q: En quelle année a eu lieu la Marche verte ?
+* 1975
+- 1956
+- 1963
+- 1999
+C: Le 6 novembre 1975.
+E: Lancée par le Roi Hassan II, la Marche verte a réuni 350 000 volontaires vers le Sahara. On la commémore chaque 6 novembre. 1956 est l'année de l'indépendance du Maroc.
+
+[MAR-109] institutions | intermediate
+Q: Quelle institution publie au Maroc les statistiques officielles (recensement, chômage, inflation) ?
+* Le Haut-Commissariat au Plan (HCP)
+- Bank Al-Maghrib
+- La HACA
+- L'ANRT
+C: Le Haut-Commissariat au Plan.
+E: Le HCP réalise le recensement général de la population (le dernier en 2024) et publie le taux de chômage, l'indice des prix à la consommation et les comptes nationaux. Bank Al-Maghrib est la banque centrale ; la HACA régule l'audiovisuel et l'ANRT les télécommunications.
+
+[MAR-110] geographie | intermediate | ts
+Q: Selon le recensement général de la population de 2024, la population légale du Maroc est d'environ :
+* 36,8 millions d'habitants
+- 33,8 millions d'habitants
+- 40,2 millions d'habitants
+- 30,5 millions d'habitants
+C: Environ 36,8 millions d'habitants.
+E: Le RGPH 2024, réalisé par le HCP en septembre 2024, a recensé 36 828 330 habitants, contre 33,8 millions en 2014. La croissance démographique ralentit et la population est de plus en plus urbaine.
+
+[MAR-111] institutions | intermediate
+Q: Combien de membres compte la Chambre des conseillers, seconde chambre du Parlement marocain ?
+* 120
+- 395
+- 90
+- 270
+C: 120 membres.
+E: Le Parlement comprend la Chambre des représentants (395 députés élus au suffrage direct pour 5 ans) et la Chambre des conseillers (120 membres élus au suffrage indirect pour 6 ans, représentant notamment les collectivités territoriales, les salariés et les entreprises).
+
+[MAR-112] geographie | beginner
+Q: Quel est le point culminant du Maroc ?
+* Le Toubkal
+- Le Jbel Ayachi
+- Le M'Goun
+- Le Jbel Saghro
+C: Le Toubkal (4 167 m).
+E: Situé dans le Haut Atlas, près de Marrakech, le Toubkal est le plus haut sommet d'Afrique du Nord. Le Jbel Ayachi et l'Ighil M'Goun dépassent aussi 3 700 m.
+
+[MAR-113] patrimoine | beginner
+Q: Dans quelle ville se trouve la mosquée Hassan II, inaugurée en 1993 ?
+* Casablanca
+- Rabat
+- Fès
+- Tanger
+C: Casablanca.
+E: Construite en partie sur la mer, la mosquée Hassan II possède l'un des plus hauts minarets du monde (environ 210 m). À Rabat se trouvent la tour Hassan (XIIe siècle, inachevée) et le mausolée Mohammed V.
+
+[MAR-114] histoire | beginner
+Q: Quelle fête nationale le Maroc célèbre-t-il chaque 30 juillet ?
+* La fête du Trône
+- La fête de l'Indépendance
+- La fête de la Jeunesse
+- La Révolution du Roi et du Peuple
+C: La fête du Trône.
+E: Elle commémore l'accession du Roi Mohammed VI au trône, le 30 juillet 1999. La fête de l'Indépendance est célébrée le 18 novembre, la Révolution du Roi et du Peuple le 20 août et la fête de la Jeunesse le 21 août.

@@ -382,3 +382,369 @@ Q: L'architecture bioclimatique cherche notamment à :
 - Construire le plus haut possible
 C: Économiser l'énergie et les ressources.
 E: L'architecture traditionnelle marocaine (patios, murs épais en pisé, ruelles étroites et ombragées) applique déjà ces principes.
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[ARC-101] art | beginner
+Q: Un bas-relief est :
+* Une sculpture qui se détache légèrement d'un fond auquel elle reste attachée
+- Une peinture réalisée sur un mur humide
+- Une statue en ronde-bosse, visible de tous les côtés
+- Un dessin préparatoire au crayon
+C: Une sculpture peu saillante sur un fond.
+E: Dans un bas-relief, les motifs sortent peu du fond (la saillie est faible) ; dans un haut-relief, ils s'en détachent fortement. La ronde-bosse est une sculpture autonome, dont on peut faire le tour. La peinture sur enduit frais est une fresque.
+
+[ARC-102] patrimoine-maroc | beginner
+Q: Le zellige, élément majeur de l'architecture marocaine, est :
+* Une mosaïque de petits carreaux de terre cuite émaillée, taillés à la main
+- Un enduit à la chaux poli à la pierre
+- Une sculpture sur bois de cèdre
+- Une grille en fer forgé
+C: Une mosaïque de terre cuite émaillée.
+E: Les zelliges, taillés à la main en formes géométriques puis assemblés, revêtent murs, sols et fontaines (Fès en est un grand centre). L'enduit poli à la chaux est le tadelakt ; le bois de cèdre sculpté et peint orne plafonds et portes.
+
+[ARC-103] patrimoine-maroc | beginner
+Q: Le moucharabieh est :
+* Une grille ou un panneau de bois ajouré qui permet de voir sans être vu
+- Une fontaine murale
+- Une coupole de mosquée
+- Un plafond en plâtre sculpté
+C: Un écran de bois ajouré.
+E: Le moucharabieh filtre la lumière et ventile tout en préservant l'intimité : on voit l'extérieur sans être vu. Il est typique de l'architecture arabo-musulmane, notamment des maisons à patio.
+
+[ARC-104] patrimoine-maroc | beginner
+Q: Un riad est :
+* Une maison traditionnelle organisée autour d'un jardin intérieur, souvent planté
+- Une forteresse en terre crue du sud du Maroc
+- Un grenier collectif fortifié
+- Un marché couvert de la médina
+C: Une maison à jardin intérieur.
+E: Le riad, fermé sur la rue, s'ouvre sur un jardin intérieur, souvent divisé en quatre parterres autour d'une fontaine ; le dar a plutôt un patio sans jardin. La kasbah est une forteresse en terre, l'agadir un grenier collectif fortifié.
+
+[ARC-105] histoire-architecture | intermediate
+Q: La mosquée de la Koutoubia à Marrakech, au minaret de 77 mètres, a été construite au XIIe siècle sous la dynastie des :
+* Almohades
+- Almoravides
+- Mérinides
+- Saadiens
+C: Les Almohades.
+E: Le minaret de la Koutoubia, achevé sous le calife almohade Yacoub El Mansour, a servi de modèle à la Giralda de Séville et à la tour Hassan de Rabat. Les Mérinides ont construit de nombreuses médersas (Bou Inania à Fès), les Saadiens leurs tombeaux à Marrakech.
+
+[ARC-106] histoire-architecture | intermediate
+Q: Le Grand Théâtre de Rabat, aux formes fluides et sinueuses, a été conçu par l'agence de l'architecte :
+* Zaha Hadid
+- Frank Gehry
+- Jean Nouvel
+- Norman Foster
+C: Zaha Hadid.
+E: L'architecte irako-britannique Zaha Hadid (1950-2016), première femme lauréate du prix Pritzker, est connue pour ses courbes et ses formes fluides. Le projet, situé dans la vallée du Bouregreg, a été achevé par son agence après sa mort.
+
+[ARC-107] histoire-architecture | intermediate | ts
+Q: La tour Mohammed VI, plus haute tour d'Afrique (environ 250 m), se trouve :
+* À Salé, sur la rive du Bouregreg face à Rabat
+- À Casablanca, près de la mosquée Hassan II
+- À Tanger, face au détroit
+- À Marrakech, dans la palmeraie
+C: À Salé, dans la vallée du Bouregreg.
+E: Haute d'environ 250 m, la tour Mohammed VI domine la vallée du Bouregreg, entre Rabat et Salé. Elle accueille bureaux, hôtel et logements.
+
+[ARC-108] histoire-architecture | beginner
+Q: Le centre-ville de Casablanca est réputé pour ses nombreux immeubles des années 1920-1930 de style :
+* Art déco
+- Gothique
+- Baroque
+- Roman
+C: Art déco.
+E: Casablanca possède l'un des plus riches ensembles art déco au monde : façades géométriques, ferronneries, motifs stylisés, souvent mêlés à des éléments décoratifs marocains (style dit néo-mauresque). Le gothique et le roman sont des styles médiévaux européens.
+
+[ARC-109] histoire-architecture | intermediate
+Q: L'école du Bauhaus, qui a profondément influencé l'architecture et le design modernes, a été fondée en 1919 en Allemagne par :
+* Walter Gropius
+- Le Corbusier
+- Antoni Gaudí
+- Oscar Niemeyer
+C: Walter Gropius.
+E: Le Bauhaus, fondé à Weimar par Walter Gropius, associait art, artisanat et industrie, et a diffusé un design fonctionnel et épuré. Le Corbusier est français d'adoption, Gaudí catalan et Niemeyer brésilien.
+
+[ARC-110] histoire-architecture | intermediate
+Q: Le Corbusier a énoncé les « cinq points de l'architecture moderne ». Lequel n'en fait pas partie ?
+* La façade richement ornée de sculptures
+- Les pilotis
+- Le toit-terrasse
+- La fenêtre en bandeau
+C: L'ornement n'en fait pas partie.
+E: Les cinq points sont : les pilotis, le toit-terrasse (ou toit-jardin), le plan libre, la fenêtre en bandeau et la façade libre. Ils deviennent possibles grâce à l'ossature en béton armé, qui libère les murs de leur rôle porteur.
+
+[ARC-111] histoire-architecture | beginner
+Q: Le musée Guggenheim de Bilbao (1997), couvert de titane, est l'œuvre de l'architecte :
+* Frank Gehry
+- Renzo Piano
+- Ieoh Ming Pei
+- Tadao Ando
+C: Frank Gehry.
+E: Le Guggenheim de Bilbao est un symbole de l'architecture déconstructiviste ; son succès a donné son nom à l'« effet Bilbao » (un équipement culturel qui transforme une ville). I. M. Pei a conçu la pyramide du Louvre, Renzo Piano le Centre Pompidou avec Richard Rogers.
+
+[ARC-112] art | beginner
+Q: Dans le cercle chromatique, quelle est la couleur complémentaire du rouge ?
+* Le vert
+- Le bleu
+- Le jaune
+- L'orange
+C: Le vert.
+E: La complémentaire d'une couleur primaire est le mélange des deux autres primaires : rouge ↔ vert (bleu + jaune), bleu ↔ orange, jaune ↔ violet. Deux complémentaires juxtaposées se renforcent mutuellement.
+
+[ARC-113] patrimoine-maroc | intermediate
+Q: L'arc en fer à cheval (arc outrepassé), très présent dans les mosquées et les portes du Maroc et d'Al-Andalus, se caractérise par :
+* Une courbe qui se prolonge au-delà du demi-cercle et se resserre à la base
+- Un sommet en pointe formé de deux arcs de cercle
+- Une forme parfaitement semi-circulaire
+- Un tracé plat et horizontal
+C: Il dépasse le demi-cercle.
+E: L'arc outrepassé est plus grand qu'un demi-cercle, ce qui lui donne une forme de fer à cheval ; il est typique de l'art hispano-mauresque (mosquée de Cordoue). L'arc en plein cintre est un demi-cercle, l'arc brisé (gothique) a un sommet en pointe.
+
+[ARC-114] construction | beginner
+Q: Le pisé, utilisé pour construire de nombreuses kasbahs du sud marocain, est :
+* De la terre crue compactée dans un coffrage
+- De la brique cuite au four
+- De la pierre taillée
+- Du béton armé
+C: De la terre crue damée.
+E: Le pisé est un mélange de terre (avec parfois de la paille et de la chaux) tassé couche par couche entre des planches. Il offre une bonne inertie thermique, utile dans les climats chauds et secs.
+
+[ARC-115] patrimoine-maroc | intermediate
+Q: Quel ksar du sud marocain, en terre crue, est inscrit au patrimoine mondial de l'UNESCO depuis 1987 ?
+* Aït-Ben-Haddou
+- La Kasbah des Oudayas
+- Le ksar de Tinmel
+- La Kasbah de Taourirt
+C: Le ksar d'Aït-Ben-Haddou, près de Ouarzazate.
+E: Ensemble de maisons fortifiées en terre crue, Aït-Ben-Haddou illustre l'architecture traditionnelle présaharienne ; il a servi de décor à de nombreux films. La Kasbah des Oudayas fait partie du site de Rabat, inscrit en 2012.
+
+[ARC-116] patrimoine-maroc | beginner
+Q: Le site archéologique de Volubilis, près de Meknès, conserve surtout les vestiges d'une ville :
+* Romaine
+- Phénicienne
+- Almohade
+- Portugaise
+C: Romaine.
+E: Volubilis, capitale de la Maurétanie tingitane, garde un arc de triomphe, une basilique et de remarquables mosaïques de l'époque romaine (IIe-IIIe siècles). Elle est inscrite au patrimoine mondial depuis 1997. El Jadida (Mazagan) garde, elle, une cité portugaise.
+
+[ARC-117] art | beginner
+Q: Quel art désigne-t-on comme le « septième art » ?
+* Le cinéma
+- La photographie
+- La bande dessinée
+- La télévision
+C: Le cinéma.
+E: L'expression, popularisée dans les années 1920, ajoute le cinéma aux six arts traditionnels (architecture, sculpture, peinture, musique, danse, poésie). La bande dessinée est souvent appelée le « neuvième art ».
+
+[ARC-118] dessin | intermediate
+Q: Dans un dessin en perspective à un seul point de fuite :
+* Les lignes perpendiculaires au plan du tableau convergent vers un point situé sur la ligne d'horizon
+- Toutes les lignes restent parallèles
+- Les verticales convergent vers le haut
+- Les objets lointains sont dessinés plus grands
+C: Les fuyantes convergent vers un point de fuite sur l'horizon.
+E: La ligne d'horizon est à hauteur des yeux de l'observateur. En perspective centrale, les lignes qui s'éloignent du spectateur convergent vers le point de fuite ; les verticales et les horizontales parallèles au tableau restent parallèles. Plus un objet est lointain, plus il paraît petit.
+
+[ARC-119] dessin | beginner
+Q: Sur un plan à l'échelle 1/100, une longueur réelle de 4,5 m est représentée par :
+* 4,5 cm
+- 45 cm
+- 4,5 mm
+- 45 mm
+C: 4,5 cm.
+E: À l'échelle 1/100, 1 cm sur le plan représente 100 cm, soit 1 m. Donc 4,5 m sont représentés par 4,5 cm.
+
+[ARC-120] dessin | beginner
+Q: En dessin d'architecture, une coupe est :
+* La représentation d'un bâtiment sectionné par un plan vertical imaginaire
+- La vue de dessus d'un étage
+- Le dessin d'une façade vue de face
+- Le plan de situation du terrain dans le quartier
+C: Une section verticale du bâtiment.
+E: Le plan est une coupe horizontale (vue de dessus à environ 1 m du sol), la coupe une section verticale qui montre hauteurs, planchers et escaliers, la façade (ou élévation) une vue extérieure. Le plan de situation localise le terrain.
+
+[ARC-121] construction | beginner
+Q: Le linteau est :
+* La pièce horizontale placée au-dessus d'une porte ou d'une fenêtre pour supporter la maçonnerie
+- Le muret qui borde une toiture-terrasse
+- La première marche d'un escalier
+- Le poteau central d'une charpente
+C: Le linteau, au-dessus d'une ouverture.
+E: Le linteau reprend le poids du mur au-dessus de l'ouverture et le reporte sur les côtés. Le muret en bordure de toiture-terrasse est l'acrotère ; un balcon est bordé d'un garde-corps.
+
+[ARC-122] geometrie | intermediate
+Q: Une rampe d'accès doit permettre de monter de 1,5 m avec une pente de 6 %. Quelle est sa longueur horizontale ?
+* 25 m
+- 9 m
+- 15 m
+- 90 m
+C: 25 m.
+E: Une pente de 6 % signifie 6 cm de dénivelé pour 100 cm de distance horizontale. Pour 1,5 m : $\frac{1{,}5}{0{,}06} = 25$ m.
+
+[ARC-123] geometrie | intermediate
+Q: Un toit à deux pentes symétriques a une largeur totale de 8 m et son faîtage est 2 m plus haut que les murs. La pente de chaque versant vaut :
+* 50 %
+- 25 %
+- 33 %
+- 66 %
+C: 50 %.
+E: Chaque versant couvre une demi-largeur de 4 m pour une hauteur de 2 m : pente $= \frac{2}{4} = 0{,}50 = 50\ \%$, soit un angle d'environ 27°. Utiliser la largeur totale donnerait 25 % à tort.
+
+[ARC-124] geometrie | intermediate
+Q: On repeint, en une couche, les quatre murs et le plafond d'une pièce de 4 m × 3 m et de 2,5 m de hauteur (on néglige les ouvertures). Un pot couvre 10 m². Combien de pots faut-il acheter au minimum ?
+* 5
+- 4
+- 6
+- 7
+C: 5 pots (47 m² à peindre).
+E: Murs : périmètre $2 \times (4 + 3) = 14$ m, multiplié par la hauteur 2,5 m, soit 35 m². Plafond : $4 \times 3 = 12$ m². Total : 47 m², soit 4,7 pots : il faut en acheter 5.
+
+[ARC-125] geometrie | beginner
+Q: Un losange a des diagonales de 10 cm et 6 cm. Son aire vaut :
+* 30 cm²
+- 60 cm²
+- 16 cm²
+- 15 cm²
+C: 30 cm².
+E: L'aire d'un losange est le demi-produit de ses diagonales : $\frac{10 \times 6}{2} = 30$ cm². Le produit sans division (60 cm²) donne l'aire du rectangle qui l'entoure.
+
+[ARC-126] geometrie | intermediate
+Q: Si l'on double la longueur des arêtes d'un cube, son volume est multiplié par :
+* 8
+- 2
+- 4
+- 6
+C: Par $2^3 = 8$.
+E: Le volume est proportionnel au cube des longueurs : $(2a)^3 = 8a^3$. L'aire de chaque face, elle, est multipliée par $2^2 = 4$.
+
+[ARC-127] perception | intermediate
+Q: Une statue de 1,5 m de haut pèse 270 kg. On en réalise une maquette pleine dans le même matériau, à l'échelle 1/3. Elle pèse :
+* 10 kg
+- 90 kg
+- 30 kg
+- 3 kg
+C: 10 kg.
+E: À l'échelle $\frac{1}{3}$, toutes les longueurs sont divisées par 3, donc le volume (et la masse) par $3^3 = 27$ : $\frac{270}{27} = 10$ kg.
+
+[ARC-128] geometrie | intermediate
+Q: Quelle est l'aire totale (deux disques et surface latérale) d'un cylindre de rayon 2 m et de hauteur 5 m ? ($\pi \approx 3{,}14$)
+* Environ 88 m²
+- Environ 63 m²
+- Environ 75 m²
+- Environ 126 m²
+C: $28\pi \approx 88$ m².
+E: Aire latérale : $2\pi rh = 2\pi \times 2 \times 5 = 20\pi$. Deux disques : $2\pi r^2 = 8\pi$. Total : $28\pi \approx 88$ m². La valeur 63 m² est l'aire latérale seule.
+
+[ARC-129] geometrie | intermediate
+Q: Combien mesure chaque angle intérieur d'un octogone régulier ?
+* 135°
+- 120°
+- 140°
+- 108°
+C: 135°.
+E: La somme des angles intérieurs d'un polygone à $n$ côtés vaut $(n - 2) \times 180°$, soit $6 \times 180° = 1\,080°$ pour l'octogone, et $\frac{1\,080°}{8} = 135°$ par angle. L'hexagone régulier a des angles de 120°, le pentagone de 108°.
+
+[ARC-130] perception | beginner
+Q: Combien un cube possède-t-il d'arêtes ?
+* 12
+- 8
+- 6
+- 24
+C: 12 arêtes.
+E: Un cube a 6 faces carrées, 8 sommets et 12 arêtes. On vérifie la relation d'Euler pour les polyèdres convexes : sommets − arêtes + faces $= 8 - 12 + 6 = 2$.
+
+[ARC-131] perception | advanced
+Q: Combien existe-t-il de patrons (développements) différents d'un cube, à rotation et symétrie près ?
+* 11
+- 6
+- 8
+- 16
+C: 11 patrons.
+E: Il existe exactement 11 façons de déplier un cube en six carrés reliés par leurs côtés. Une croix (4 carrés en ligne avec un carré de chaque côté) en est un ; une ligne de 5 carrés ou un carré de 2 × 2 avec deux carrés n'en sont jamais.
+
+[ARC-132] geometrie | intermediate
+Q: Quel est le nombre maximal de points d'intersection entre un cercle et un carré ?
+* 8
+- 4
+- 6
+- 2
+C: 8.
+E: Un cercle coupe une droite (donc un côté) en au plus 2 points. Avec 4 côtés, on obtient au plus $4 \times 2 = 8$ points, par exemple un cercle de même centre, légèrement plus grand que le cercle inscrit.
+
+[ARC-133] construction | intermediate
+Q: Un escalier doit monter une hauteur de 2,89 m avec des marches de 17 cm de hauteur. Combien de marches faut-il ?
+* 17
+- 15
+- 16
+- 18
+C: 17 marches.
+E: $\frac{289}{17} = 17$. On vérifie le confort avec la loi de Blondel ($2h + g \approx 63$ cm) : avec $h = 17$ cm, le giron (profondeur de marche) vaut environ 29 cm.
+
+[ARC-134] perception | intermediate
+Q: Un poteau de 2 m de haut projette au sol une ombre de 3 m. Au même moment, un immeuble voisin projette une ombre de 24 m. Quelle est la hauteur de l'immeuble ?
+* 16 m
+- 36 m
+- 12 m
+- 18 m
+C: 16 m.
+E: Les rayons du soleil sont parallèles : les triangles formés sont semblables (théorème de Thalès). Le rapport hauteur/ombre est constant : $\frac{2}{3} = \frac{h}{24}$, donc $h = 16$ m.
+
+[ARC-135] geometrie | beginner
+Q: Une pièce en forme de L est obtenue en retirant un carré de 2 m de côté dans un angle d'un rectangle de 6 m × 4 m. Son aire est :
+* 20 m²
+- 24 m²
+- 22 m²
+- 16 m²
+C: 20 m².
+E: Aire du rectangle : $6 \times 4 = 24$ m² ; on retire le carré de $2 \times 2 = 4$ m², d'où 20 m².
+
+[ARC-136] perception | beginner
+Q: Une figure subit deux rotations successives de 90° dans le sens des aiguilles d'une montre, autour du même point. Cela revient à :
+* Une symétrie centrale (rotation de 180°)
+- Une symétrie axiale
+- Une translation
+- Laisser la figure inchangée
+C: Une rotation de 180°, c'est-à-dire une symétrie centrale.
+E: Les angles de rotations de même centre s'ajoutent : 90° + 90° = 180°. Une rotation de 180° est une symétrie centrale ; il faudrait quatre quarts de tour pour revenir à la position de départ.
+
+[ARC-137] perception | beginner
+Q: Quelle est la vue de dessus d'un cône posé sur sa base ?
+* Un disque (avec son sommet au centre)
+- Un triangle
+- Un carré
+- Un trapèze
+C: Un disque.
+E: Vu de dessus, le cône montre sa base circulaire, avec le sommet projeté au centre. Vu de face ou de côté, il apparaît comme un triangle isocèle ; un cylindre debout donne un disque vu de dessus et un rectangle vu de face.
+
+[ARC-138] perception | intermediate
+Q: Sur un dé classique, la somme des faces opposées vaut 7. Le dé est posé avec le 2 sur le dessus et le 3 face à vous. Quel nombre est sur la face du dessous ?
+* 5
+- 4
+- 6
+- 1
+C: 5.
+E: La face du dessous est opposée à celle du dessus : $7 - 2 = 5$. La face arrière, opposée au 3, porte le 4.
+
+[ARC-139] perception | intermediate
+Q: Trois roues dentées sont engrenées en ligne : la première entraîne la deuxième, qui entraîne la troisième. Si la première tourne dans le sens des aiguilles d'une montre, la troisième tourne :
+* Dans le sens des aiguilles d'une montre
+- Dans le sens inverse des aiguilles d'une montre
+- Alternativement dans un sens puis dans l'autre
+- Elle ne tourne pas
+C: Dans le même sens que la première.
+E: Deux roues engrenées tournent en sens contraires : la deuxième tourne dans le sens inverse, la troisième à nouveau dans le sens des aiguilles d'une montre. Avec un nombre pair de roues en ligne, la dernière tourne en sens inverse de la première.
+
+[ARC-140] perception | beginner
+Q: D'un seul point de vue, combien de faces d'un cube opaque peut-on voir au maximum ?
+* 3
+- 2
+- 4
+- 6
+C: 3 faces.
+E: Quel que soit le point de vue, on voit au plus trois faces, qui se rejoignent en un sommet : c'est ce que montre une perspective isométrique ou cavalière d'un cube.

@@ -200,6 +200,15 @@
       "accessed": "2026-10-12"
     },
     {
+      "id": "src-annales-ecoles",
+      "title": "Sujets publiés des concours ENSA (2013, 2017), TAFEM-ENCG (2021, 2024, 2025), ENA architecture (2015, 2017, 2019) et licence ISCAE (2018), avec les modalités des sessions 2025-2026",
+      "org": "Réseau des ENSA ; ENCG (Cursus Sup) ; Écoles nationales d'architecture ; Groupe ISCAE",
+      "url": "https://www.cursussup.gov.ma",
+      "topic": "Notions, niveau et format des QCM de ces concours ; questions originales, valeurs et textes réécrits",
+      "reliability": "primary",
+      "accessed": "2026-10-12"
+    },
+    {
       "id": "src-secourisme",
       "title": "Gestes de premiers secours : protéger, alerter, secourir (référentiels internationaux de secourisme)",
       "org": "Croissant-Rouge / Croix-Rouge — recommandations de premiers secours",

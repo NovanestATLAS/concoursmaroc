@@ -14,14 +14,16 @@ export default {
   },
   age: null,
   practice: {
-    subjects: ['logique', 'calcul', 'francais', 'culture', 'economie'],
+    subjects: ['logique', 'calcul', 'francais', 'culture', 'maroc', 'economie'],
+    // Format of the 2024 and 2025 papers without the reading-memory part
+    // (texts read then answered from memory), which a question bank cannot simulate:
+    // reasoning 20 q (50 min), general knowledge 30 q (20 min), French 30 q (20 min).
     mock: {
-      minutes: 100,
+      minutes: 90,
       sections: [
-        { subjects: ['logique'], count: 20 },
-        { subjects: ['calcul'], count: 20 },
-        { subjects: ['francais'], count: 20 },
-        { subjects: ['culture', 'economie'], count: 20 },
+        { subjects: ['logique', 'calcul'], count: 20 },
+        { subjects: ['culture', 'maroc', 'economie'], count: 30 },
+        { subjects: ['francais'], count: 30 },
       ],
       scoring: { correct: 1, wrong: 0, blank: 0 },
       official: false,
@@ -51,7 +53,7 @@ export default {
       ['Écoles', '11 ENCG (liste 2026)'],
       ['Bacs', 'Éco, gestion comptable, SM, PC, SVT'],
       ['Seuils 2025', 'Éco 12 · SM 12 · PC/SVT 14'],
-      ['Épreuve', 'TAFEM : QCM d’aptitudes'],
+      ['Épreuve', 'TAFEM : 100 QCM en 4 parties'],
       ['Inscription', 'Cursus Sup (juin–juillet)'],
     ],
     sections: [
@@ -59,16 +61,17 @@ export default {
       { id: 'conditions', h: "Conditions d'accès", blocks: [ { ul: ['Bac de l’année en **sciences économiques**, **sciences de gestion comptable**, **sciences mathématiques**, **sciences physiques** ou **SVT** (autres séries selon l’avis).', 'Note de présélection (75 % national + 25 % régional) au moins égale au seuil de la série.', 'Inscription sur **Cursus Sup** et classement des ENCG.'] } ] },
       { id: 'seuils', h: 'Seuils de présélection', blocks: [ { seuils: true } ] },
       { id: 'epreuve', h: 'Le test TAFEM', blocks: [
-        { p: "Le TAFEM est un **QCM d'aptitudes** lié à la formation en management. D'après les descriptions publiées par plusieurs sites de préparation (format à confirmer dans la convocation), il couvre :" },
-        { table: { head: ['Partie', 'Ce qui est évalué'], rows: [['Résolution de problèmes', 'Calcul, pourcentages, proportions, statistiques de base, logique et suites'], ['Langue française', 'Grammaire, conjugaison, vocabulaire, compréhension'], ['Culture générale', 'Économie, actualité, histoire et institutions'], ['Mémorisation / attention', 'Tests de mémoire et de rapidité (selon les éditions)']] } },
-        { callout: 'warn', text: "Certaines sources évoquent environ **100 questions en 2 heures** avec **pénalité pour les réponses fausses** : ces modalités ne sont pas confirmées officiellement ici. Lisez la consigne de votre session avant de répondre au hasard." },
+        { p: "Le TAFEM est un **QCM d'aptitudes de 100 questions** à quatre propositions (A à D), distribué en cahiers successifs : on n'ouvre une partie que lorsque l'examinateur l'annonce. Les sujets des sessions 2024 et 2025 suivent ce découpage :" },
+        { table: { head: ['Partie', 'Questions', 'Durée indiquée', 'Ce qui est évalué'], rows: [['Compréhension et mémorisation', '20', '15 à 20 min de lecture, puis 15 min de questions', 'Deux articles de presse récents (climat, numérique, économie) à lire, puis questions de mémoire sur les chiffres, dates et noms, sans le texte'], ['Logique et raisonnement', '20', '50 à 60 min', 'Problèmes (âges, partages, vitesses, pourcentages), suites, codes à déchiffrer, logique des propositions, suffisance des données'], ['Culture générale', '30', '20 min', 'Maroc (institutions, histoire, économie, sport), actualité internationale, sciences, arts et littérature'], ['Langue française', '30', '20 min', 'Vocabulaire et antonymes, accords du participe passé, conjugaison, pronoms, discours indirect, voix passive, orthographe']] } },
+        { callout: 'info', text: "L'examen blanc du site reprend les trois dernières parties (80 questions en 90 minutes). La partie mémorisation se travaille en lisant un article de presse pendant 15 minutes, puis en répondant de mémoire à des questions sur ses chiffres et ses noms." },
+        { callout: 'warn', text: "Plusieurs sources de préparation signalent une **pénalité pour les réponses fausses** : elle n'est pas écrite sur les sujets publiés. Lisez la consigne de votre session avant de répondre au hasard." },
       ] },
       { id: 'calendrier', h: 'Calendrier habituel', blocks: [ { table: { head: ['Étape', 'Période', 'Repère'], rows: [['Inscriptions Cursus Sup', 'Mi-juin – début juillet', 'Juin–juillet 2026'], ['Seuils et convocations', 'Mi-juillet', '14 juillet 2026 annoncé pour les seuils'], ['TAFEM', 'Seconde quinzaine de juillet', '21 juillet en 2025'], ['Résultats', 'Fin juillet – août', 'Été 2026']] } } ] },
       { id: 'preparation', h: 'Conseils', blocks: [ { ul: ['Travaillez la rapidité : beaucoup de questions courtes, peu de temps par question.', 'Révisez les pourcentages, les règles de trois et la lecture de tableaux.', 'Lisez l’actualité économique marocaine (inflation, croissance, grands projets) quelques semaines avant.', 'Entraînez la mémoire de travail avec des exercices de mémorisation de listes.'] }, { practice: true } ] },
     ],
     faq: [
       { q: 'Quel est le seuil ENCG ?', a: 'Pour 2025-2026, les seuils relayés étaient de 12/20 pour les sciences économiques et les sciences mathématiques, et de 14/20 pour les sciences physiques et la SVT (75 % national + 25 % régional).' },
-      { q: 'Que contient le TAFEM ?', a: 'Un QCM d’aptitudes : résolution de problèmes (calcul, logique), langue française, culture générale et, selon les éditions, des épreuves de mémorisation.' },
+      { q: 'Que contient le TAFEM ?', a: 'Aux sessions 2024 et 2025 : 100 questions à quatre propositions, en quatre parties : compréhension et mémorisation de deux articles (20 questions), logique et raisonnement (20), culture générale (30) et langue française (30).' },
       { q: 'Combien d’années dure l’ENCG ?', a: 'Cinq ans : trois années de tronc commun puis deux années de spécialisation en commerce ou en gestion, sanctionnées par le diplôme des ENCG.' },
     ],
   },
@@ -83,7 +86,7 @@ export default {
     sections: [
       { id: 'conditions', h: 'شروط الولوج', blocks: [ { ul: ['بكالوريا السنة الجارية: علوم اقتصادية، تدبير محاسباتي، علوم رياضية، علوم فيزيائية أو علوم الحياة والأرض.', 'نقطة انتقاء تساوي العتبة على الأقل.', 'التسجيل في Cursus Sup.'] } ] },
       { id: 'seuils', h: 'العتبات', blocks: [ { seuils: true } ] },
-      { id: 'epreuve', h: 'اختبار TAFEM', blocks: [ { p: 'اختبار قدرات: حل المسائل (الحساب والمنطق)، اللغة الفرنسية، الثقافة العامة، والتذكر حسب الدورات.' }, { practice: true } ] },
+      { id: 'epreuve', h: 'اختبار TAFEM', blocks: [ { p: 'في دورتي 2024 و2025: 100 سؤال بأربعة اختيارات في أربعة أجزاء: فهم وتذكر مقالين صحفيين (20 سؤالًا)، المنطق والاستدلال (20)، الثقافة العامة (30) واللغة الفرنسية (30).' }, { practice: true } ] },
     ],
     faq: [ { q: 'ما هي عتبة ENCG؟', a: 'لموسم 2025-2026: 12/20 للعلوم الاقتصادية والرياضية و14/20 للعلوم الفيزيائية وعلوم الحياة والأرض.' } ],
   },

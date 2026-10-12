@@ -455,3 +455,189 @@ Q: En quelle année l'Algérie a-t-elle accédé à l'indépendance ?
 - 1960
 C: 1962.
 E: La guerre d'Algérie a duré de 1954 à 1962. Le Maroc et la Tunisie avaient obtenu leur indépendance en 1956.
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[CUL-101] geographie | beginner
+Q: Quel est le plus grand désert chaud du monde ?
+* Le Sahara
+- Le désert de Gobi
+- Le Kalahari
+- Le désert d'Arabie
+C: Le Sahara.
+E: Le Sahara couvre environ 9 millions de km², sur une dizaine de pays d'Afrique du Nord, dont le Maroc. Les déserts froids de l'Antarctique et de l'Arctique sont plus vastes, mais ce ne sont pas des déserts chauds.
+
+[CUL-102] geographie | beginner
+Q: Quel est le plus haut sommet d'Afrique ?
+* Le Kilimandjaro
+- Le Toubkal
+- Le mont Kenya
+- Le mont Cameroun
+C: Le Kilimandjaro (environ 5 895 m, Tanzanie).
+E: Le Kilimandjaro, volcan de Tanzanie, culmine à environ 5 895 m. Le Toubkal (4 167 m) est le plus haut sommet du Maroc et d'Afrique du Nord.
+
+[CUL-103] geographie | beginner
+Q: Quelle est la capitale du Canada ?
+* Ottawa
+- Toronto
+- Montréal
+- Vancouver
+C: Ottawa.
+E: Ottawa, en Ontario, est la capitale fédérale. Toronto est la ville la plus peuplée et Montréal la plus grande ville francophone du pays.
+
+[CUL-104] organisations | beginner
+Q: Où se trouve le siège de l'Organisation des Nations unies (ONU) ?
+* À New York
+- À Genève
+- À Paris
+- À Bruxelles
+C: À New York.
+E: Le siège principal de l'ONU est à New York ; l'organisation a aussi des sièges à Genève, Vienne et Nairobi. Bruxelles accueille les principales institutions de l'Union européenne et le siège de l'OTAN.
+
+[CUL-105] organisations | beginner
+Q: L'OPEP regroupe des pays :
+* Exportateurs de pétrole
+- Producteurs de céréales
+- Membres de l'Union européenne
+- Producteurs de phosphates
+C: L'Organisation des pays exportateurs de pétrole.
+E: Créée en 1960 à Bagdad, l'OPEP coordonne la production de pétrole de ses membres (Arabie saoudite, Irak, Iran, Algérie, Nigeria…) pour peser sur les prix. Son siège est à Vienne.
+
+[CUL-106] litterature | beginner
+Q: Qui est l'auteur du roman « L'Étranger » (1942) ?
+* Albert Camus
+- Jean-Paul Sartre
+- Victor Hugo
+- Émile Zola
+C: Albert Camus.
+E: Albert Camus, né en Algérie, a publié L'Étranger en 1942 ; il a reçu le prix Nobel de littérature en 1957. Victor Hugo est l'auteur des Misérables, Émile Zola de Germinal.
+
+[CUL-107] litterature | beginner
+Q: Qui a écrit « Le Petit Prince » ?
+* Antoine de Saint-Exupéry
+- Jules Verne
+- Alexandre Dumas
+- Guy de Maupassant
+C: Antoine de Saint-Exupéry.
+E: Aviateur et écrivain, Saint-Exupéry a publié Le Petit Prince en 1943 ; c'est l'un des livres les plus traduits au monde. Il a notamment fait escale à Cap Juby (Tarfaya), au Maroc, pour l'Aéropostale.
+
+[CUL-108] sciences | beginner
+Q: Quelle est la planète la plus proche du Soleil ?
+* Mercure
+- Vénus
+- Mars
+- La Terre
+C: Mercure.
+E: L'ordre des planètes à partir du Soleil est : Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune. Jupiter est la plus grande.
+
+[CUL-109] histoire | beginner
+Q: À qui attribue-t-on l'invention de l'imprimerie à caractères mobiles en Europe, au XVe siècle ?
+* Gutenberg
+- Galilée
+- Léonard de Vinci
+- Christophe Colomb
+C: Johannes Gutenberg.
+E: Vers 1450, à Mayence, Gutenberg met au point l'imprimerie à caractères mobiles métalliques ; la Bible de Gutenberg en est l'un des premiers grands livres imprimés. Cette invention a accéléré la diffusion des connaissances en Europe.
+
+[CUL-110] organisations | intermediate
+Q: Dans quelle ville se trouve le siège de l'Organisation des Nations unies pour l'alimentation et l'agriculture (FAO) ?
+* Rome
+- Genève
+- New York
+- Paris
+C: Rome.
+E: La FAO a son siège à Rome. Genève accueille notamment l'OMS et l'OMC, Paris l'UNESCO et l'OCDE.
+
+[CUL-111] sciences | beginner
+Q: Quelle est l'unité de la puissance ?
+* Le watt
+- Le joule
+- Le volt
+- L'ampère
+C: Le watt (W).
+E: Le watt mesure une puissance (énergie par seconde : 1 W = 1 J/s). Le joule mesure une énergie, le volt une tension et l'ampère une intensité électrique.
+
+[CUL-112] sport | beginner | ts
+Q: Avec quels pays le Maroc co-organise-t-il la Coupe du monde de football 2030 ?
+* L'Espagne et le Portugal
+- La France et l'Espagne
+- L'Algérie et la Tunisie
+- L'Égypte et l'Arabie saoudite
+C: Avec l'Espagne et le Portugal.
+E: La FIFA a confirmé en décembre 2024 l'organisation de la Coupe du monde 2030 par le Maroc, l'Espagne et le Portugal, avec trois matchs d'ouverture en Uruguay, en Argentine et au Paraguay pour le centenaire de la compétition. L'édition 2026 se joue aux États-Unis, au Canada et au Mexique, avec 48 équipes.
+
+[CUL-113] environnement | intermediate
+Q: Quelle ville marocaine a accueilli la conférence des Nations unies sur le climat COP22, en 2016 ?
+* Marrakech
+- Rabat
+- Casablanca
+- Tanger
+C: Marrakech.
+E: La COP22 s'est tenue à Marrakech en novembre 2016, un an après l'accord de Paris (COP21). Le Maroc y a mis en avant ses énergies renouvelables, dont le complexe solaire Noor de Ouarzazate.
+
+[CUL-114] histoire | beginner
+Q: En quelle année le mur de Berlin est-il tombé ?
+* 1989
+- 1991
+- 1985
+- 1961
+C: 1989.
+E: Le mur, construit en 1961, est tombé le 9 novembre 1989 ; l'Allemagne a été réunifiée en 1990 et l'URSS a disparu en 1991.
+
+[CUL-115] arts | beginner
+Q: Qui a peint « Guernica » (1937) ?
+* Pablo Picasso
+- Salvador Dalí
+- Claude Monet
+- Vincent van Gogh
+C: Pablo Picasso.
+E: Picasso a peint Guernica pour dénoncer le bombardement de cette ville basque pendant la guerre d'Espagne. Il est, avec Georges Braque, l'inventeur du cubisme.
+
+[CUL-116] numerique | beginner
+Q: Qui a cofondé l'entreprise Microsoft en 1975 ?
+* Bill Gates et Paul Allen
+- Steve Jobs et Steve Wozniak
+- Larry Page et Sergey Brin
+- Mark Zuckerberg
+C: Bill Gates et Paul Allen.
+E: Microsoft a été fondée en 1975 par Bill Gates et Paul Allen. Steve Jobs et Steve Wozniak ont fondé Apple (1976), Larry Page et Sergey Brin Google (1998), Mark Zuckerberg Facebook (2004).
+
+[CUL-117] sciences | beginner
+Q: Quel gaz les plantes vertes absorbent-elles pour réaliser la photosynthèse ?
+* Le dioxyde de carbone
+- Le dioxygène
+- L'azote
+- L'hydrogène
+C: Le dioxyde de carbone (CO₂).
+E: Grâce à la lumière, les plantes fabriquent de la matière organique à partir du CO₂ et de l'eau, et rejettent du dioxygène.
+
+[CUL-118] geographie | intermediate
+Q: Le canal de Suez relie :
+* La mer Méditerranée et la mer Rouge
+- L'océan Atlantique et l'océan Pacifique
+- La mer Noire et la mer Méditerranée
+- La mer Rouge et l'océan Indien
+C: La Méditerranée et la mer Rouge.
+E: Inauguré en 1869 en Égypte, il évite le contournement de l'Afrique. Le canal de Panama relie l'Atlantique et le Pacifique ; le détroit du Bosphore relie la mer Noire à la mer de Marmara.
+
+[CUL-119] histoire | intermediate
+Q: Ibn Khaldoun (XIVe siècle), historien et penseur maghrébin, est l'auteur de :
+* La Muqaddima
+- Les Mille et Une Nuits
+- La Rihla (récit de voyage)
+- Le Canon de la médecine
+C: La Muqaddima.
+E: La Muqaddima (« Introduction ») est considérée comme un texte fondateur de la sociologie et de l'histoire. La Rihla est le récit de voyage d'Ibn Battuta, né à Tanger ; le Canon de la médecine est l'œuvre d'Avicenne (Ibn Sina).
+
+[CUL-120] economie-monde | intermediate
+Q: Dans quelle ville se trouve le siège de la Banque mondiale ?
+* Washington
+- New York
+- Genève
+- Londres
+C: Washington.
+E: La Banque mondiale et le Fonds monétaire international (FMI), créés à Bretton Woods en 1944, ont tous deux leur siège à Washington.

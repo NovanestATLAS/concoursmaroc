@@ -1,0 +1,323 @@
+# Questions complémentaires (format texte), chargées avec francais.json.
+@category francais
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[FRA-101] vocabulaire | beginner
+Q: « Cette crise est inéluctable. » Le mot « inéluctable » signifie :
+* Inévitable
+- Imprévisible
+- Insurmontable
+- Inexplicable
+C: Inévitable.
+E: Est inéluctable ce à quoi on ne peut échapper (du latin eluctari, « sortir en luttant »). « Insurmontable » qualifie un obstacle qu'on ne peut franchir, ce qui est différent.
+
+[FRA-102] vocabulaire | intermediate
+Q: Quel est l'antonyme de « prolixe » dans : « Son rapport est prolixe » ?
+* Concis
+- Bavard
+- Confus
+- Précis
+C: Concis.
+E: Prolixe signifie « trop long, qui s'étend en paroles inutiles ». Son contraire est concis (qui dit beaucoup en peu de mots). « Bavard » en est un synonyme ; « précis » n'est pas un antonyme direct.
+
+[FRA-103] vocabulaire | intermediate
+Q: « Les mesures prises doivent être pérennes. » Le mot « pérennes » signifie :
+* Durables
+- Provisoires
+- Efficaces
+- Coûteuses
+C: Durables.
+E: Pérenne vient du latin perennis, « qui dure toute l'année » : ce qui dure longtemps, de façon continue. Son contraire est éphémère ou provisoire.
+
+[FRA-104] orthographe | intermediate
+Q: Choisissez la phrase correctement orthographiée :
+* Les lettres que j'ai écrites sont parties ce matin
+- Les lettres que j'ai écrit sont parties ce matin
+- Les lettres que j'ai écrits sont parties ce matin
+- Les lettres que j'ai écrites sont partis ce matin
+C: « écrites » s'accorde avec le COD « que » (les lettres), placé avant.
+E: Avec l'auxiliaire avoir, le participe passé s'accorde avec le COD s'il est placé avant le verbe : « que » reprend « les lettres » (féminin pluriel). Avec être, « parties » s'accorde avec le sujet « les lettres ».
+
+[FRA-105] orthographe | advanced
+Q: Complétez : « Les rapports que nous avons … rédiger sont prêts. »
+* fait
+- faits
+- faites
+- fais
+C: « fait » reste invariable devant un infinitif.
+E: Le participe passé de faire suivi d'un infinitif est toujours invariable : « les rapports que nous avons fait rédiger » (ce ne sont pas les rapports qui ont été faits, mais leur rédaction qu'on a fait faire).
+
+[FRA-106] conjugaison | intermediate
+Q: Complétez : « Bien qu'il … fatigué, il a terminé son travail. »
+* soit
+- est
+- était
+- serait
+C: « Bien que » est suivi du subjonctif.
+E: Les conjonctions de concession bien que, quoique, encore que exigent le subjonctif : « bien qu'il soit fatigué ». L'indicatif (est, était) est une faute courante.
+
+[FRA-107] conjugaison | advanced
+Q: Quelle phrase respecte la norme grammaticale ?
+* Après qu'il est parti, la réunion a continué
+- Après qu'il soit parti, la réunion a continué
+- Après qu'il serait parti, la réunion a continué
+- Après qu'il parte, la réunion a continué
+C: « Après que » est suivi de l'indicatif.
+E: « Après que » introduit un fait accompli, donc réel : la norme demande l'indicatif (« après qu'il est parti »). Le subjonctif, très répandu à l'oral, est dû à l'analogie avec « avant que », qui, lui, impose le subjonctif.
+
+[FRA-108] conjugaison | intermediate
+Q: Complétez : « Si j'avais su, je … venu plus tôt. »
+* serais
+- serai
+- suis
+- fus
+C: Plus-que-parfait dans la subordonnée, conditionnel passé dans la principale.
+E: Dans un système hypothétique portant sur le passé, on emploie « si » + plus-que-parfait, puis le conditionnel passé : « je serais venu ». « Serai » (futur) est une confusion fréquente avec « serais ».
+
+[FRA-109] syntaxe | intermediate
+Q: Transformez au discours indirect : Il a dit : « Je viendrai demain. »
+* Il a dit qu'il viendrait le lendemain
+- Il a dit qu'il viendra demain
+- Il a dit qu'il venait demain
+- Il a dit qu'il viendrait demain matin
+C: Le futur devient conditionnel et « demain » devient « le lendemain ».
+E: Quand le verbe introducteur est au passé, le futur se transforme en conditionnel présent (futur dans le passé), et les repères de temps changent : demain → le lendemain, hier → la veille, aujourd'hui → ce jour-là.
+
+[FRA-110] grammaire | beginner
+Q: Dans « Il est devenu médecin », quelle est la fonction du mot « médecin » ?
+* Attribut du sujet
+- Complément d'objet direct
+- Complément circonstanciel
+- Attribut du complément d'objet
+C: Attribut du sujet.
+E: « Devenir » est un verbe d'état, comme être, paraître, sembler, rester : le mot qui le suit donne une qualité au sujet (il) et en est l'attribut.
+
+[FRA-111] grammaire | intermediate
+Q: Remplacez les mots soulignés par des pronoms : « Je donne le livre à Sara. »
+* Je le lui donne
+- Je lui le donne
+- Je la lui donne
+- Je le leur donne
+C: « Je le lui donne. »
+E: « le livre » (COD masculin singulier) devient « le » et « à Sara » (COI singulier) devient « lui ». Quand deux pronoms de 3e personne se suivent, le COD se place en premier : le lui, la lui, les leur.
+
+[FRA-112] orthographe | intermediate
+Q: Quel est le pluriel correct ?
+* Des chefs-d'œuvre
+- Des chef-d'œuvres
+- Des chefs-d'œuvres
+- Des chef-d'œuvre
+C: Seul « chef » prend la marque du pluriel.
+E: Dans un nom composé formé d'un nom et d'un complément introduit par « de », seul le premier nom varie : des chefs-d'œuvre (des chefs de l'œuvre), des arcs-en-ciel, des pommes de terre.
+
+[FRA-113] orthographe | intermediate
+Q: Complétez : « Elle est arrivée à trois heures et … ; elle avait attendu une … -heure. »
+* demie / demi
+- demi / demie
+- demies / demi
+- demi / demi
+C: « trois heures et demie », « une demi-heure ».
+E: Placé après le nom, « demi » s'accorde en genre seulement avec ce nom : trois heures et demie (heure est féminin, mais « demie » reste au singulier), midi et demi (midi est masculin). Placé avant le nom, il est invariable et suivi d'un trait d'union : une demi-heure, deux demi-journées.
+
+[FRA-114] orthographe | advanced
+Q: Choisissez la phrase correcte :
+* Ils se sont rendu compte de leur erreur
+- Ils se sont rendus compte de leur erreur
+- Ils se sont rendu comptes de leur erreur
+- Ils se sont rendues compte de leur erreur
+C: « rendu » reste invariable.
+E: Dans « se rendre compte », le COD est « compte », placé après le verbe ; le pronom « se » est complément d'objet indirect. Le participe passé ne s'accorde donc pas : ils se sont rendu compte.
+
+[FRA-115] orthographe | intermediate
+Q: Complétez : « … tu dises, je ne changerai pas d'avis. »
+* Quoi que
+- Quoique
+- Quoi qu'
+- Quoiqu'
+C: « Quoi que » (en deux mots) signifie « quelle que soit la chose que ».
+E: « Quoi que » en deux mots signifie « quelle que soit la chose que » : quoi que tu dises. « Quoique » en un mot signifie « bien que » : quoique tu sois fatigué. Astuce : si l'on peut remplacer par « bien que », on écrit en un mot.
+
+[FRA-116] vocabulaire | intermediate
+Q: Complétez avec le mot juste : « Le juge lui a … une lourde amende. »
+* infligé
+- affligé
+- infléchi
+- affecté
+C: infligé.
+E: Infliger, c'est imposer une peine ou une sanction. Affliger signifie causer une profonde tristesse. Ces deux verbes sont des paronymes, mots de forme proche mais de sens différent.
+
+[FRA-117] orthographe | beginner
+Q: Complétez : « Pour réussir, il doit travailler … . »
+* davantage
+- d'avantage
+- d'avantages
+- davantages
+C: « davantage » (adverbe, en un mot) signifie « plus ».
+E: « Davantage » est un adverbe invariable qui signifie plus. « D'avantage(s) » est formé de la préposition « de » et du nom « avantage » (bénéfice) : « il n'en tire pas d'avantage ».
+
+[FRA-118] vocabulaire | beginner
+Q: À quel registre de langue appartient le mot « bouquin » ?
+* Familier
+- Soutenu
+- Courant
+- Littéraire
+C: Familier.
+E: « Bouquin » est le synonyme familier de livre (registre courant), et « ouvrage » relève plutôt du registre soutenu. On distingue en général trois registres : familier, courant et soutenu.
+
+[FRA-119] vocabulaire | intermediate
+Q: « Cette obscure clarté qui tombe des étoiles » (Corneille). Quelle figure de style associe ainsi deux termes contradictoires ?
+* Un oxymore
+- Une métaphore
+- Une hyperbole
+- Une litote
+C: Un oxymore.
+E: L'oxymore rapproche deux mots de sens opposé (obscure / clarté). La métaphore est une comparaison sans outil de comparaison, l'hyperbole une exagération, la litote une façon de dire moins pour suggérer plus (« ce n'est pas mauvais »).
+
+[FRA-120] vocabulaire | beginner
+Q: Complétez le proverbe : « Qui sème le vent récolte … »
+* la tempête
+- l'orage
+- la pluie
+- le malheur
+C: « la tempête ».
+E: Le proverbe signifie que celui qui provoque des troubles en subira des conséquences encore plus graves.
+
+[FRA-121] orthographe | advanced
+Q: Complétez : « Elle était … étonnée de la nouvelle. »
+* tout
+- toute
+- tous
+- toutes
+C: « tout » adverbe reste invariable devant un adjectif commençant par une voyelle.
+E: « Tout » adverbe signifie « entièrement ». Il est invariable, sauf devant un adjectif féminin commençant par une consonne ou un h aspiré : elle est toute contente, mais elle est tout étonnée, tout heureuse.
+
+[FRA-122] conjugaison | intermediate
+Q: Complétez : « Je voulais qu'il … avec nous. »
+* vienne
+- vient
+- viendra
+- viendrait
+C: Subjonctif après un verbe de volonté.
+E: Les verbes exprimant la volonté, le souhait ou l'ordre (vouloir, souhaiter, exiger) sont suivis du subjonctif : « je voulais qu'il vienne ». Le subjonctif imparfait (« qu'il vînt ») relève de la langue littéraire.
+
+[FRA-123] syntaxe | beginner
+Q: Dans « Il travaille chaque soir pour réussir son concours », le groupe « pour réussir son concours » est un complément circonstanciel :
+* de but
+- de cause
+- de conséquence
+- de temps
+C: De but.
+E: Il indique l'objectif visé (pour, afin de, dans le but de). « Chaque soir » est un complément circonstanciel de temps ; la cause répondrait à « pourquoi ? » par un fait déjà là (parce que, car, à cause de).
+
+[FRA-124] syntaxe | intermediate
+Q: Mettez à la voix passive : « Le jury a sélectionné les meilleurs candidats. »
+* Les meilleurs candidats ont été sélectionnés par le jury
+- Les meilleurs candidats sont sélectionnés par le jury
+- Les meilleurs candidats ont sélectionné le jury
+- Les meilleurs candidats avaient été sélectionnés par le jury
+C: Le temps de l'auxiliaire « être » reprend celui du verbe actif.
+E: Le COD devient sujet, le sujet devient complément d'agent (« par le jury ») et le verbe se construit avec « être » au temps du verbe actif : « a sélectionné » (passé composé) donne « ont été sélectionnés ».
+
+[FRA-125] orthographe | beginner
+Q: Quel mot est correctement orthographié ?
+* Accueil
+- Acceuil
+- Accueuil
+- Acueil
+C: « accueil ».
+E: Après « c » ou « g », on écrit « ue » devant « il » pour garder le son dur : accueil, cueillir, orgueil. « Acceuil » est une faute très fréquente.
+
+[FRA-126] vocabulaire | intermediate
+Q: « foi », « fois », « foie » et « Foix » sont des :
+* homophones
+- homographes
+- synonymes
+- antonymes
+C: Des homophones.
+E: Les homophones se prononcent de la même façon mais s'écrivent différemment et n'ont pas le même sens. Les homographes s'écrivent de la même façon (« le couvent » / « elles couvent »).
+
+[FRA-127] syntaxe | intermediate
+Q: Transformez en interrogation indirecte : « Ce projet est-il rentable ? »
+* Je me demande si ce projet est rentable
+- Je me demande si ce projet est-il rentable
+- Je me demande que ce projet est rentable
+- Je me demande est-ce que ce projet est rentable
+C: « si » + ordre sujet-verbe, sans point d'interrogation.
+E: Une interrogation totale devient, au discours indirect, une subordonnée introduite par « si », sans inversion du sujet ni « est-ce que », et la phrase se termine par un point.
+
+[FRA-131] vocabulaire | beginner
+Q: Quel est le synonyme du verbe « édifier » dans : « On va édifier un nouveau musée » ?
+* Construire
+- Démolir
+- Décorer
+- Visiter
+C: Construire.
+E: Édifier vient du latin aedificare (« construire une maison ») ; on retrouve la même racine dans « édifice ». Au sens figuré, édifier quelqu'un, c'est l'instruire par l'exemple.
+
+[FRA-132] vocabulaire | beginner
+Q: « L'appartement est exigu. » Le mot « exigu » signifie :
+* Trop petit, étroit
+- Lumineux
+- Luxueux
+- Mal situé
+C: Trop petit.
+E: Exigu se dit d'un espace insuffisant, trop étroit. Son contraire est spacieux ou vaste. Au féminin, on écrit exiguë (ou exigüe selon l'orthographe rectifiée).
+
+[FRA-133] vocabulaire | beginner
+Q: Quel est l'antonyme de « éphémère » ?
+* Durable
+- Bref
+- Fragile
+- Passager
+C: Durable.
+E: Éphémère qualifie ce qui ne dure qu'un temps très court (une installation artistique éphémère). Bref et passager en sont des synonymes ; ses antonymes sont durable, permanent, pérenne.
+
+[FRA-134] vocabulaire | intermediate
+Q: « Un immeuble vétuste » est un immeuble :
+* Détérioré par le temps, en mauvais état
+- Très moderne
+- Très haut
+- Récemment rénové
+C: Usé par le temps.
+E: Vétuste vient du latin vetustus, « vieux ». Un bâtiment vétuste nécessite une réhabilitation. Il ne faut pas le confondre avec « vaste » (très grand).
+
+[FRA-135] vocabulaire | intermediate
+Q: Dans « Sa gentillesse n'est qu'une façade », le mot « façade » signifie :
+* Une apparence trompeuse
+- Le mur principal d'un bâtiment
+- Une qualité véritable
+- Une décoration
+C: Une apparence qui cache autre chose.
+E: Au sens propre, la façade est le côté extérieur d'un bâtiment. Au sens figuré, elle désigne une apparence derrière laquelle se cache une réalité différente. Un même mot peut avoir plusieurs sens : c'est la polysémie.
+
+[FRA-136] vocabulaire | beginner
+Q: Quel mot est l'intrus : maison, demeure, logis, jardin ?
+* Jardin
+- Maison
+- Demeure
+- Logis
+C: Jardin.
+E: Maison, demeure et logis désignent tous un lieu d'habitation : ce sont des synonymes. Le jardin est un espace extérieur planté, pas un logement.
+
+[FRA-137] vocabulaire | intermediate
+Q: Complétez avec le mot juste : « L'ouverture du nouveau musée est … : elle aura lieu dans deux jours. »
+* imminente
+- éminente
+- immanente
+- émergente
+C: imminente.
+E: Imminent signifie « qui va se produire très bientôt ». Éminent signifie « remarquable, supérieur » (un éminent architecte). Ces paronymes sont souvent confondus.
+
+[FRA-138] vocabulaire | beginner
+Q: Quel est le contraire de « urbain » ?
+* Rural
+- Citadin
+- Municipal
+- Moderne
+C: Rural.
+E: Urbain se rapporte à la ville (du latin urbs), rural à la campagne (du latin rus). Citadin (habitant de la ville) et municipal (qui concerne la commune) appartiennent au même champ que urbain.

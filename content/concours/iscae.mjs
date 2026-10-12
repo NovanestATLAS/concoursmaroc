@@ -10,7 +10,10 @@ export default {
   age: { max: 21, ref: '12-31', at: { fr: 'au 31 décembre de l’année du concours (licence)', ar: 'في 31 دجنبر من سنة المباراة (الإجازة)' } },
   practice: {
     subjects: ['maths', 'anglais', 'culture', 'logique', 'economie'],
-    mock: { minutes: 90, sections: [{ subjects: ['maths', 'logique'], count: 20 }, { subjects: ['anglais'], count: 20 }, { subjects: ['culture', 'economie'], count: 20 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    // 2025 written tests: maths 2 h (coef. 2), English 1 h (coef. 1) and general
+    // culture in French 1 h 30 (coef. 1, written essay, not a QCM). The mock covers
+    // the two QCM papers with the scoring printed on the published maths paper.
+    mock: { minutes: 180, sections: [{ subjects: ['maths'], count: 20 }, { subjects: ['anglais'], count: 20 }], scoring: { correct: 2, wrong: -1, blank: 0 }, official: false },
     difficulty: 'selectif',
   },
   related: ['encg-tafem', 'cpge', 'universite'],
@@ -27,10 +30,10 @@ export default {
     description: "Accès à l'ISCAE après le bac (licence en gestion à Casablanca et Rabat) : bacs acceptés, âge maximum 21 ans, présélection, épreuves (maths, anglais, culture générale), entretiens et voie Grande École.",
     keywords: ['concours iscae', 'iscae licence', 'iscae casablanca', 'iscae rabat', 'école de commerce publique'],
     intro: "L'**ISCAE**, grande école publique de management, propose une **licence en gestion accessible après le bac** (Casablanca et Rabat) et un **Programme Grande École** accessible après deux années de prépa (ECS/ECT) ou un bac+2/3. Le concours licence combine **présélection, écrits et entretiens**.",
-    facts: [['Voie post-bac', 'Licence en gestion'], ['Bacs', 'Économiques ou scientifiques'], ['Âge', '21 ans au plus au 31 décembre'], ['Épreuves', 'Maths, anglais, culture générale + entretiens'], ['Préinscription 2026', '3 – 22 juin 2026 (relayé)']],
+    facts: [['Voie post-bac', 'Licence en gestion'], ['Bacs', 'Économiques ou scientifiques'], ['Âge', '21 ans au plus au 31 décembre'], ['Épreuves', 'Maths (2 h, coef. 2), anglais (1 h), culture générale (1 h 30) + entretiens'], ['Préinscription 2026', '3 – 22 juin 2026 (relayé)']],
     sections: [
       { id: 'conditions', h: 'Conditions (licence)', blocks: [ { ul: ['Être en terminale ou titulaire du bac en série **économique ou scientifique** (les bacs lettres ne sont pas acceptés selon les guides).', 'Avoir **21 ans au plus au 31 décembre** de l’année du concours.', 'Se préinscrire en ligne et payer les frais de dossier (montant indiqué dans l’avis).'] } ] },
-      { id: 'epreuves', h: 'Épreuves', blocks: [ { steps: ['**Présélection** sur les notes du baccalauréat.', '**Écrits** : mathématiques, anglais et culture générale, sous forme de questions à choix unique selon les guides.', '**Entretiens** en français et en anglais pour les admissibles.'] }, { p: "En 2026, des sites spécialisés ont relayé une présélection publiée vers le 7 juillet et des écrits le 13 juillet." } ] },
+      { id: 'epreuves', h: 'Épreuves', blocks: [ { steps: ['**Présélection** sur les notes du baccalauréat.', '**Écrits** (session 2025, ISCAE Casablanca) : mathématiques, anglais et culture générale en langue française.', '**Entretiens** en français et en anglais pour les admissibles.'] }, { table: { head: ['Épreuve écrite', 'Durée', 'Coefficient', 'Format des sujets publiés'], rows: [['Mathématiques', '2 h', '2', '20 questions indépendantes à choix unique, sans calculatrice ; barème +2 / −1 / 0 ; suites, limites, intégrales, étude de fonctions, probabilités, systèmes'], ['Anglais', '1 h', '1', 'QCM : compréhension de textes, vocabulaire et grammaire (structure)'], ['Culture générale (en français)', '1 h 30', '1', 'Dissertation à partir d’un texte : argumentation et qualité de l’expression écrite']] } }, { p: "En 2025, les écrits ont eu lieu le 11 juillet ; en 2026, des sites spécialisés ont relayé une présélection publiée vers le 7 juillet et des écrits le 13 juillet. L'examen blanc du site reprend les deux épreuves en QCM (maths et anglais) avec le barème +2 / −1." } ] },
       { id: 'grande-ecole', h: 'Programme Grande École', blocks: [ { p: "Le PGE recrute surtout après les classes préparatoires économiques et commerciales (**ECS, ECT**) via le concours commun des écoles de management, et sur titre après un bac+2 ou bac+3. Voir notre guide [CPGE](@/concours/cpge/)." } ] },
       { id: 'preparation', h: 'Préparation', blocks: [ { ul: ['Anglais : grammaire, vocabulaire des affaires, compréhension écrite.', 'Maths : pourcentages, suites, probabilités, fonctions usuelles.', 'Entretien : savoir présenter son projet et suivre l’actualité économique.'] }, { practice: true } ] },
     ],

@@ -274,3 +274,99 @@ Q: Quel est le principal indice de la Bourse de Casablanca ?
 - Le Nikkei
 C: Le MASI.
 E: Le MASI (Moroccan All Shares Index) suit l'ensemble des valeurs cotées à Casablanca. Le CAC 40 est l'indice de Paris, le Dow Jones celui de New York et le Nikkei celui de Tokyo.
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[ECO-101] economie-generale | beginner
+Q: L'inflation désigne :
+* Une hausse générale et durable du niveau des prix
+- Une baisse générale des prix
+- Une hausse du chômage
+- Une augmentation de la production
+C: Hausse générale et durable des prix.
+E: L'inflation fait baisser le pouvoir d'achat de la monnaie. Au Maroc, elle est mesurée par l'indice des prix à la consommation (IPC) du HCP. La baisse générale des prix s'appelle la déflation.
+
+[ECO-102] economie-generale | beginner
+Q: Le produit intérieur brut (PIB) d'un pays mesure :
+* La valeur de la production de biens et services réalisée sur son territoire pendant une année
+- Le montant de ses exportations
+- La richesse accumulée par ses habitants depuis toujours
+- Le budget de l'État
+C: La richesse produite sur le territoire en un an.
+E: Le PIB additionne les valeurs ajoutées produites par les agents économiques résidents sur le territoire pendant une période (généralement un an). Sa variation mesure la croissance économique.
+
+[ECO-103] economie-generale | beginner
+Q: La balance commerciale d'un pays est déficitaire lorsque :
+* Ses importations de biens sont supérieures à ses exportations de biens
+- Ses exportations sont supérieures à ses importations
+- Son budget de l'État est en déficit
+- Sa monnaie perd de la valeur
+C: Importations > exportations.
+E: La balance commerciale compare les exportations et les importations de marchandises. Le Maroc a une balance commerciale structurellement déficitaire, compensée en partie par les recettes du tourisme et les transferts des Marocains du monde.
+
+[ECO-104] finance | intermediate
+Q: Au Maroc, quelle institution fixe le taux directeur et conduit la politique monétaire ?
+* Bank Al-Maghrib
+- Le ministère de l'Économie et des Finances
+- La Bourse de Casablanca
+- Le Haut-Commissariat au Plan
+C: Bank Al-Maghrib, la banque centrale.
+E: Bank Al-Maghrib émet le dirham, veille à la stabilité des prix et fixe le taux directeur, qui influence le coût du crédit. Augmenter ce taux sert en général à freiner l'inflation.
+
+[ECO-105] fiscalite | beginner
+Q: La TVA est :
+* Un impôt indirect payé par le consommateur final
+- Un impôt sur le revenu des salariés
+- Un impôt sur le bénéfice des sociétés
+- Une cotisation sociale
+C: Un impôt indirect sur la consommation.
+E: La taxe sur la valeur ajoutée est collectée par les entreprises à chaque étape mais supportée par le consommateur final ; son taux normal est de 20 % au Maroc. L'impôt sur le revenu (IR) et l'impôt sur les sociétés (IS) sont des impôts directs.
+
+[ECO-106] finance | intermediate
+Q: Le MASI est :
+* Le principal indice de la Bourse de Casablanca
+- La monnaie de réserve de Bank Al-Maghrib
+- Un impôt sur les sociétés
+- Un indicateur de chômage
+C: L'indice de la Bourse de Casablanca.
+E: Le MASI (Moroccan All Shares Index) mesure l'évolution de l'ensemble des actions cotées à la Bourse de Casablanca, pondérées par leur capitalisation flottante.
+
+[ECO-107] economie-generale | intermediate
+Q: Le taux de chômage se calcule en rapportant le nombre de chômeurs :
+* À la population active
+- À la population totale
+- Au nombre de personnes en âge de travailler
+- Au nombre d'emplois créés
+C: Chômeurs / population active.
+E: La population active regroupe les personnes qui ont un emploi et les chômeurs (sans emploi, disponibles et en recherche active). Les élèves, les retraités et les personnes au foyer n'en font pas partie.
+
+[ECO-108] economie-generale | beginner
+Q: Selon la loi de l'offre et de la demande, lorsque la demande d'un bien augmente alors que l'offre reste constante, son prix a tendance à :
+* Augmenter
+- Baisser
+- Rester stable
+- Devenir nul
+C: Augmenter.
+E: Une demande supérieure à l'offre crée une pénurie relative : les vendeurs peuvent augmenter leurs prix jusqu'à un nouvel équilibre, où quantité offerte et quantité demandée sont égales.
+
+[ECO-109] comptabilite | intermediate
+Q: Dans le bilan d'une entreprise, on trouve à l'actif :
+* Ce que l'entreprise possède (immobilisations, stocks, créances, trésorerie)
+- Les capitaux propres
+- Les dettes envers les fournisseurs
+- Les emprunts bancaires
+C: Les emplois : ce que l'entreprise possède.
+E: Le bilan présente l'actif (emplois : biens, créances, disponibilités) et le passif (ressources : capitaux propres et dettes). Le total de l'actif est toujours égal au total du passif.
+
+[ECO-110] entreprise | beginner
+Q: Le chiffre d'affaires d'une entreprise correspond :
+* Au montant total de ses ventes sur une période
+- À son bénéfice
+- À son capital
+- À la valeur de ses machines
+C: Le total des ventes.
+E: Le chiffre d'affaires mesure l'activité commerciale (prix × quantités vendues). Le bénéfice, lui, est ce qui reste après déduction de toutes les charges : une entreprise peut avoir un chiffre d'affaires élevé et être en perte.

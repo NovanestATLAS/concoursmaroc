@@ -1,0 +1,116 @@
+# Questions complémentaires (format texte), chargées avec calcul.json.
+@category calcul
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[CAL-101] pourcentages | beginner
+Q: Le prix d'un article augmente de 20 %, puis baisse de 20 %. Par rapport au prix initial, le prix final est :
+* Inférieur de 4 %
+- Égal
+- Supérieur de 4 %
+- Inférieur de 2 %
+C: Il baisse de 4 %.
+E: Les coefficients multiplicateurs se multiplient : $1{,}20 \times 0{,}80 = 0{,}96$, soit une baisse de 4 %. Les pourcentages ne s'ajoutent pas, car la baisse s'applique à un prix déjà augmenté.
+
+[CAL-102] pourcentages | intermediate
+Q: Un prix augmente de 10 %, puis encore de 10 %, et subit enfin une remise de 20 %. Quelle affirmation est vraie ?
+* Le prix final est inférieur de moins de 5 % au prix initial
+- Le prix final est égal au prix initial
+- Le prix final est supérieur au prix initial
+- Le prix final est inférieur de plus de 5 % au prix initial
+C: Baisse de 3,2 %.
+E: $1{,}10 \times 1{,}10 \times 0{,}80 = 0{,}968$ : le prix final vaut 96,8 % du prix initial, soit une baisse de 3,2 %, donc de moins de 5 %.
+
+[CAL-103] pourcentages | beginner
+Q: Un article coûte 500 DH hors taxes. Avec une TVA de 20 %, son prix TTC est :
+* 600 DH
+- 520 DH
+- 400 DH
+- 700 DH
+C: 600 DH.
+E: $\text{TTC} = \text{HT} \times (1 + 0{,}20) = 500 \times 1{,}2 = 600$ DH. La TVA vaut 100 DH.
+
+[CAL-104] pourcentages | intermediate
+Q: Après une remise de 20 %, un manteau est vendu 240 DH. Quel était son prix avant la remise ?
+* 300 DH
+- 288 DH
+- 260 DH
+- 192 DH
+C: 300 DH.
+E: Le prix soldé vaut 80 % du prix initial : $P \times 0{,}8 = 240$, donc $P = 300$ DH. Ajouter 20 % à 240 DH (288 DH) est l'erreur classique.
+
+[CAL-105] interets | beginner
+Q: On place 10 000 DH à intérêts simples au taux annuel de 5 % pendant 3 ans. Les intérêts perçus s'élèvent à :
+* 1 500 DH
+- 500 DH
+- 1 576 DH
+- 15 000 DH
+C: 1 500 DH.
+E: Intérêts simples : $I = C \times t \times n = 10\,000 \times 0{,}05 \times 3 = 1\,500$ DH. Avec des intérêts composés, on obtiendrait environ 1 576 DH ($10\,000 \times 1{,}05^3 - 10\,000$).
+
+[CAL-106] proportions | intermediate
+Q: On mélange 2 litres d'un jus contenant 30 % de sucre et 3 litres d'un jus contenant 10 % de sucre. Le pourcentage de sucre du mélange est :
+* 18 %
+- 20 %
+- 40 %
+- 15 %
+C: 18 %.
+E: Quantité de sucre : $2 \times 0{,}30 + 3 \times 0{,}10 = 0{,}9$ L pour 5 L de mélange, soit $\frac{0{,}9}{5} = 18\ \%$. La moyenne simple (20 %) ne tient pas compte des volumes.
+
+[CAL-107] moyennes | intermediate
+Q: La moyenne de 5 nombres est 12. On ajoute un sixième nombre et la moyenne devient 13. Quel est ce sixième nombre ?
+* 18
+- 13
+- 14
+- 25
+C: 18.
+E: Somme des 5 nombres : $5 \times 12 = 60$. Somme des 6 nombres : $6 \times 13 = 78$. Le sixième vaut $78 - 60 = 18$.
+
+[CAL-108] pourcentages | advanced
+Q: Le taux de chômage d'une région passe de 12 % à 13,5 %. Quelle affirmation est exacte ?
+* Il augmente de 1,5 point, soit une hausse de 12,5 %
+- Il augmente de 1,5 %
+- Il augmente de 12,5 points
+- Il augmente de 15 %
+C: +1,5 point de pourcentage, soit +12,5 % en valeur relative.
+E: L'écart entre deux pourcentages s'exprime en points : $13{,}5 - 12 = 1{,}5$ point. En valeur relative : $\frac{1{,}5}{12} = 0{,}125$, soit une hausse de 12,5 %.
+
+[CAL-109] proportions | beginner
+Q: Sur une carte à l'échelle 1/50 000, deux villages sont séparés de 6 cm. La distance réelle est :
+* 3 km
+- 300 m
+- 30 km
+- 50 km
+C: 3 km.
+E: 1 cm sur la carte représente 50 000 cm, soit 500 m. Donc $6 \times 500 = 3\,000$ m, c'est-à-dire 3 km.
+
+[CAL-110] proportions | intermediate
+Q: 6 ouvriers réalisent un chantier en 10 jours. En combien de jours 4 ouvriers, travaillant au même rythme, réaliseraient-ils le même chantier ?
+* 15 jours
+- 6,7 jours
+- 12 jours
+- 8 jours
+C: 15 jours.
+E: La durée est inversement proportionnelle au nombre d'ouvriers : le chantier représente $6 \times 10 = 60$ journées de travail, soit $\frac{60}{4} = 15$ jours avec 4 ouvriers.
+
+[CAL-111] pourcentages | intermediate
+Q: Amine dépense 25 % de son salaire pour son loyer, puis 20 % de ce qui reste pour ses transports. Quel pourcentage de son salaire lui reste-t-il ?
+* 60 %
+- 55 %
+- 45 %
+- 65 %
+C: 60 %.
+E: Après le loyer, il reste 75 % du salaire. Les transports coûtent $0{,}20 \times 75\ \% = 15\ \%$ du salaire. Il reste $75 - 15 = 60\ \%$ (ou $0{,}75 \times 0{,}80 = 0{,}60$).
+
+[CAL-112] proportions | intermediate
+Q: Un bénéfice de 18 000 DH est partagé entre trois associés proportionnellement à leurs apports : 2 000 DH, 3 000 DH et 4 000 DH. Combien reçoit celui qui a apporté 4 000 DH ?
+* 8 000 DH
+- 6 000 DH
+- 4 000 DH
+- 7 200 DH
+C: 8 000 DH.
+E: Les apports totalisent 9 000 DH : cet associé a fourni $\frac{4\,000}{9\,000} = \frac{4}{9}$ du capital et reçoit $\frac{4}{9} \times 18\,000 = 8\,000$ DH. Les deux autres reçoivent 4 000 DH et 6 000 DH ; un partage égal (6 000 DH chacun) ne respecterait pas les apports.

@@ -1705,3 +1705,342 @@ Q: La primitive sur $]0 ; +\infty[$ de $f(x) = \frac{\ln x}{x^3}$ qui s'annule e
 - $F(x) = \frac{(\ln x)^2}{2x^2}$
 C: $F(x) = -\frac{\ln x}{2x^2} - \frac{1}{4x^2} + \frac{1}{4}$.
 E: Intégration par parties avec $u = \ln x$ et $v' = x^{-3}$, donc $v = -\frac{1}{2x^2}$ : $\int \frac{\ln x}{x^3}dx = -\frac{\ln x}{2x^2} + \int \frac{1}{2x^3}dx = -\frac{\ln x}{2x^2} - \frac{1}{4x^2} + c$. La condition $F(1) = -\frac{1}{4} + c = 0$ donne $c = \frac{1}{4}$.
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[MAT-201] probabilites | advanced
+Q: Parmi les candidats d'un concours, 30 % ont la mention « Très bien », 50 % la mention « Bien » et 20 % une autre mention. Leurs probabilités de réussite sont respectivement 0,9 ; 0,4 et 0,1. Un candidat qui a réussi est choisi au hasard. La probabilité qu'il ait la mention « Très bien » est :
+* $\frac{27}{49}$
+- $0{,}27$
+- $0{,}9$
+- $\frac{20}{49}$
+C: $P_S(TB) = \frac{27}{49} \approx 0{,}55$.
+E: Probabilités totales : $P(S) = 0{,}3 \times 0{,}9 + 0{,}5 \times 0{,}4 + 0{,}2 \times 0{,}1 = 0{,}27 + 0{,}20 + 0{,}02 = 0{,}49$. Formule de Bayes : $P_S(TB) = \frac{P(TB \cap S)}{P(S)} = \frac{0{,}27}{0{,}49} = \frac{27}{49}$. La valeur 0,27 est $P(TB \cap S)$ et 0,9 est $P_{TB}(S)$.
+
+[MAT-202] probabilites | intermediate
+Q: Un conseil comprend 6 mathématiciens et 4 physiciens. On forme un comité de 3 mathématiciens et 2 physiciens, dans lequel les deux mathématiciens les plus âgés doivent figurer. Le nombre de comités possibles est :
+* $24$
+- $120$
+- $60$
+- $36$
+C: $C_4^1 \times C_4^2 = 4 \times 6 = 24$.
+E: Les deux doyens étant imposés, il reste à choisir 1 mathématicien parmi les 4 autres ($C_4^1 = 4$) et 2 physiciens parmi 4 ($C_4^2 = 6$). Principe multiplicatif : $4 \times 6 = 24$. Sans la contrainte, on aurait $C_6^3 \times C_4^2 = 120$.
+
+[MAT-203] arithmetique | advanced
+Q: Le reste de la division euclidienne de $3^{100}$ par 7 est :
+* $4$
+- $1$
+- $3$
+- $2$
+C: $3^{100} \equiv 4\ [7]$.
+E: $3^{6} = 729 = 7 \times 104 + 1$, donc $3^{6} \equiv 1\ [7]$ (petit théorème de Fermat). Comme $100 = 6 \times 16 + 4$, $3^{100} = (3^{6})^{16} \times 3^{4} \equiv 3^{4} = 81 \equiv 4\ [7]$, car $81 = 7 \times 11 + 4$.
+
+[MAT-204] arithmetique | intermediate
+Q: Le nombre $2^{60} - 1$ est divisible :
+* Par 3, par 5 et par 7
+- Par 3 et par 7, mais pas par 5
+- Par 7 seulement
+- Ni par 3, ni par 5, ni par 7
+C: Par 3, 5 et 7.
+E: $2^{2} \equiv 1\ [3]$, $2^{4} \equiv 1\ [5]$ et $2^{3} \equiv 1\ [7]$. Or 60 est un multiple de 2, de 4 et de 3, donc $2^{60} \equiv 1$ modulo 3, 5 et 7 : $2^{60} - 1$ est divisible par chacun de ces nombres.
+
+[MAT-205] suites | beginner
+Q: La somme $S = \sum_{k=1}^{20} k^2$ vaut :
+* $2\,870$
+- $2\,850$
+- $2\,470$
+- $44\,100$
+C: $S = \frac{20 \times 21 \times 41}{6} = 2\,870$.
+E: On utilise $\sum_{k=1}^{n} k^2 = \frac{n(n + 1)(2n + 1)}{6}$ avec $n = 20$ : $\frac{20 \times 21 \times 41}{6} = \frac{17\,220}{6} = 2\,870$. La somme des carrés n'est pas le carré de la somme : $\left(\sum_{k=1}^{20} k\right)^2 = 210^2 = 44\,100$.
+
+[MAT-206] suites | intermediate
+Q: La somme $S = \sum_{k=1}^{20} \frac{1}{k(k + 1)}$ vaut :
+* $\frac{20}{21}$
+- $\frac{21}{20}$
+- $\frac{19}{20}$
+- $1$
+C: $S = 1 - \frac{1}{21} = \frac{20}{21}$.
+E: $\frac{1}{k(k + 1)} = \frac{1}{k} - \frac{1}{k + 1}$ : la somme se télescope et il reste $1 - \frac{1}{21} = \frac{20}{21}$. Elle tend vers 1 quand le nombre de termes tend vers l'infini.
+
+[MAT-207] limites | advanced
+Q: La limite $\lim_{n \to +\infty} \frac{1}{n}\sum_{k=1}^{n} \frac{1}{1 + \frac{k}{n}}$ vaut :
+* $\ln 2$
+- $\frac{1}{2}$
+- $1$
+- $+\infty$
+C: $\int_0^1 \frac{dx}{1 + x} = \ln 2$.
+E: C'est une somme de Riemann de la fonction continue $f(x) = \frac{1}{1 + x}$ sur $[0 ; 1]$ : $\frac{1}{n}\sum_{k=1}^{n} f\left(\frac{k}{n}\right) \to \int_0^1 \frac{dx}{1 + x} = \left[\ln(1 + x)\right]_0^1 = \ln 2$.
+
+[MAT-208] limites | intermediate
+Q: La limite $\lim_{x \to 0} \frac{\ln(\cos x)}{x^2}$ vaut :
+* $-\frac{1}{2}$
+- $\frac{1}{2}$
+- $0$
+- $-\infty$
+C: $-\frac{1}{2}$.
+E: $\frac{\ln(\cos x)}{x^2} = \frac{\ln(1 + (\cos x - 1))}{\cos x - 1} \times \frac{\cos x - 1}{x^2}$. Quand $x \to 0$, $\cos x - 1 \to 0$, donc le premier facteur tend vers 1, et $\frac{\cos x - 1}{x^2} \to -\frac{1}{2}$.
+
+[MAT-209] complexes | intermediate
+Q: Soit $z$ un nombre complexe tel que $z^2 = 3 + 4i$. Alors $\mathrm{Re}(z) \times \mathrm{Im}(z)$ vaut :
+* $2$
+- $1$
+- $-2$
+- $4$
+C: $z = \pm(2 + i)$, donc $\mathrm{Re}(z)\mathrm{Im}(z) = 2$.
+E: Avec $z = a + ib$ : $a^2 - b^2 = 3$ et $2ab = 4$, donc $ab = 2$ directement. On trouve $z = 2 + i$ ou $z = -2 - i$ (en effet $(2 + i)^2 = 4 + 4i - 1 = 3 + 4i$).
+
+[MAT-210] complexes | intermediate
+Q: Le nombre complexe $(1 + i\sqrt{3})^9$ est égal à :
+* $-512$
+- $512$
+- $-512i$
+- $512i$
+C: $(1 + i\sqrt{3})^9 = -512$.
+E: $1 + i\sqrt{3} = 2e^{i\frac{\pi}{3}}$, donc $(1 + i\sqrt{3})^9 = 2^9e^{i3\pi} = 512 \times (-1) = -512$ (formule de Moivre).
+
+[MAT-211] limites | intermediate
+Q: La limite $\lim_{x \to 0^+} \frac{\sqrt{x + x^2} - \sqrt{x}}{\sqrt{x}\,\ln(1 + x)}$ vaut :
+* $\frac{1}{2}$
+- $1$
+- $0$
+- $+\infty$
+C: $\frac{1}{2}$.
+E: On factorise $\sqrt{x}$ : l'expression vaut $\frac{\sqrt{1 + x} - 1}{\ln(1 + x)} = \frac{\sqrt{1 + x} - 1}{x} \times \frac{x}{\ln(1 + x)}$. Le premier facteur tend vers la dérivée de $\sqrt{1 + x}$ en 0, soit $\frac{1}{2}$, et le second vers 1.
+
+[MAT-212] integrales | intermediate
+Q: L'intégrale $\int_0^1 \ln(1 + x)\,dx$ vaut :
+* $2\ln 2 - 1$
+- $\ln 2$
+- $2\ln 2$
+- $1 - \ln 2$
+C: $2\ln 2 - 1$.
+E: Une primitive de $\ln(1 + x)$ est $(1 + x)\ln(1 + x) - x$ (intégration par parties avec $u = \ln(1 + x)$, $v' = 1$, en choisissant $v = 1 + x$). Donc l'intégrale vaut $2\ln 2 - 1 - 0 = 2\ln 2 - 1 \approx 0{,}39$.
+
+[MAT-213] integrales | intermediate
+Q: L'intégrale $\int_0^1 x\sqrt{1 - x^2}\,dx$ vaut :
+* $\frac{1}{3}$
+- $\frac{2}{3}$
+- $\frac{\pi}{4}$
+- $\frac{1}{2}$
+C: $\frac{1}{3}$.
+E: Avec $u = 1 - x^2$, $u' = -2x$ : $x\sqrt{1 - x^2} = -\frac{1}{2}u'u^{\frac{1}{2}}$, de primitive $-\frac{1}{3}(1 - x^2)^{\frac{3}{2}}$. L'intégrale vaut $0 - \left(-\frac{1}{3}\right) = \frac{1}{3}$.
+
+[MAT-214] integrales | advanced
+Q: L'intégrale $\int_0^{\ln 2} \frac{dx}{1 + e^{-x}}$ vaut :
+* $\ln\frac{3}{2}$
+- $\ln 3$
+- $\ln 2$
+- $\frac{1}{2}$
+C: $\ln\frac{3}{2}$.
+E: On multiplie par $e^{x}$ : $\frac{1}{1 + e^{-x}} = \frac{e^{x}}{e^{x} + 1}$, de la forme $\frac{u'}{u}$. Une primitive est $\ln(e^{x} + 1)$, d'où $\ln(2 + 1) - \ln(1 + 1) = \ln\frac{3}{2}$.
+
+[MAT-215] geometrie | intermediate
+Q: Dans un repère orthonormé du plan, on donne $A(-1 ; 3)$, $B(3 ; 0)$ et $C(2 ; 4)$. La distance du point $C$ à la droite $(AB)$ vaut :
+* $\frac{13}{5}$
+- $13$
+- $\frac{5}{13}$
+- $3$
+C: $d = \frac{13}{5}$.
+E: $\overrightarrow{AB}(4 ; -3)$ : la droite $(AB)$ a pour équation $3x + 4y - 9 = 0$ (A et B la vérifient). $d(C, AB) = \frac{|3 \times 2 + 4 \times 4 - 9|}{\sqrt{3^2 + 4^2}} = \frac{13}{5}$.
+
+[MAT-216] geometrie-espace | beginner
+Q: La distance du point $\Omega(1 ; 1 ; 3)$ au plan $(P) : x - 2y + 2z - 3 = 0$ vaut :
+* $\frac{2}{3}$
+- $2$
+- $6$
+- $\frac{1}{3}$
+C: $d = \frac{2}{3}$.
+E: $d(\Omega, P) = \frac{|1 - 2 + 6 - 3|}{\sqrt{1 + 4 + 4}} = \frac{2}{3}$. Une sphère de centre $\Omega$ et de rayon supérieur à $\frac{2}{3}$ coupe donc ce plan suivant un cercle.
+
+[MAT-217] equations-differentielles | intermediate
+Q: La solution de l'équation différentielle $y' = 2y + 4$ qui vérifie $y(0) = 0$ est :
+* $y(x) = 2e^{2x} - 2$
+- $y(x) = 2e^{2x} + 2$
+- $y(x) = e^{2x} - 1$
+- $y(x) = 4e^{2x} - 4$
+C: $y(x) = 2e^{2x} - 2$.
+E: Les solutions de $y' = ay + b$ sont $y = Ce^{ax} - \frac{b}{a}$, ici $y = Ce^{2x} - 2$. La condition $y(0) = C - 2 = 0$ donne $C = 2$. Vérification : $y' = 4e^{2x} = 2(2e^{2x} - 2) + 4$.
+
+[MAT-218] fonctions | advanced
+Q: Le nombre de solutions réelles de l'équation $e^{x} = x + 2$ est :
+* $2$
+- $0$
+- $1$
+- $3$
+C: Deux solutions.
+E: Soit $g(x) = e^{x} - x - 2$ : $g'(x) = e^{x} - 1$, donc $g$ décroît sur $]-\infty ; 0]$ et croît sur $[0 ; +\infty[$, avec un minimum $g(0) = -1 < 0$. Comme $g$ tend vers $+\infty$ en $-\infty$ et en $+\infty$, le théorème des valeurs intermédiaires donne une solution sur chaque intervalle.
+
+[MAT-219] derivation | intermediate
+Q: Soit $f(x) = x^{x}$ définie sur $]0 ; +\infty[$. Le nombre dérivé $f'(1)$ vaut :
+* $1$
+- $0$
+- $e$
+- $2$
+C: $f'(1) = 1$.
+E: $x^{x} = e^{x\ln x}$, donc $f'(x) = (\ln x + 1)e^{x\ln x} = (\ln x + 1)x^{x}$ et $f'(1) = (0 + 1) \times 1 = 1$. La règle $(x^{n})' = nx^{n-1}$ ne s'applique pas quand l'exposant dépend de $x$.
+
+[MAT-220] probabilites | intermediate
+Q: Un candidat répond au hasard aux 10 questions d'un QCM ; chaque question a 4 propositions dont une seule juste. La probabilité qu'il ait au moins une bonne réponse est :
+* $1 - \left(\frac{3}{4}\right)^{10}$
+- $\left(\frac{1}{4}\right)^{10}$
+- $1 - \left(\frac{1}{4}\right)^{10}$
+- $\frac{10}{4}$
+C: $1 - \left(\frac{3}{4}\right)^{10} \approx 0{,}94$.
+E: Le nombre de bonnes réponses suit une loi binomiale $\mathcal{B}\left(10 ; \frac{1}{4}\right)$. L'événement contraire « aucune bonne réponse » a pour probabilité $\left(\frac{3}{4}\right)^{10}$. Avec un barème $+2/-1$, répondre au hasard rapporte en moyenne $\frac{1}{4} \times 2 - \frac{3}{4} \times 1 = -0{,}25$ point par question.
+
+[MAT-221] suites | intermediate
+Q: Soit $(u_n)$ définie par $u_0 = 0$ et $u_{n+1} = \frac{1}{2}u_n + 3$. Pour tout entier $n$ :
+* $u_n = 6\left(1 - \left(\frac{1}{2}\right)^{n}\right)$
+- $u_n = 6 - \left(\frac{1}{2}\right)^{n}$
+- $u_n = 3\left(1 - \left(\frac{1}{2}\right)^{n}\right)$
+- $u_n = 6\left(\frac{1}{2}\right)^{n}$
+C: $u_n = 6 - 6\left(\frac{1}{2}\right)^{n}$.
+E: Le point fixe vérifie $\ell = \frac{1}{2}\ell + 3$, soit $\ell = 6$. La suite $v_n = u_n - 6$ est géométrique de raison $\frac{1}{2}$ et $v_0 = -6$, donc $u_n = 6 - 6\left(\frac{1}{2}\right)^{n}$, qui tend vers 6. Vérification : $u_1 = 3$.
+
+[MAT-222] complexes | advanced
+Q: Le produit des quatre solutions dans $\mathbb{C}$ de l'équation $z^4 + 16 = 0$ vaut :
+* $16$
+- $-16$
+- $0$
+- $2$
+C: Le produit vaut 16.
+E: Les solutions sont $2e^{i(\frac{\pi}{4} + k\frac{\pi}{2})}$, $k \in \{0, 1, 2, 3\}$. Leur produit a pour module $2^4 = 16$ et pour argument $\frac{\pi}{4} + \frac{3\pi}{4} + \frac{5\pi}{4} + \frac{7\pi}{4} = 4\pi$, d'où 16. On le retrouve en écrivant $z^4 + 16 = (z - z_1)(z - z_2)(z - z_3)(z - z_4)$ : le terme constant vaut $z_1z_2z_3z_4$.
+
+[MAT-231] suites | intermediate
+Q: Un décorateur empile des cubes : le premier a une arête de 2 m et chaque nouveau cube a une arête égale aux $\frac{1}{2}$ de celle du précédent. Si l'on pouvait empiler une infinité de cubes, la hauteur totale tendrait vers :
+* $4$ m
+- $2$ m
+- $3$ m
+- $+\infty$
+C: $4$ m.
+E: Les arêtes forment une suite géométrique de premier terme 2 et de raison $\frac{1}{2}$. La somme de ses $n$ premiers termes vaut $2 \times \frac{1 - (1/2)^n}{1 - 1/2} = 4\left(1 - \left(\frac{1}{2}\right)^n\right)$, qui tend vers 4 sans jamais l'atteindre.
+
+[MAT-232] suites | intermediate
+Q: La somme $S = 1 + \frac{3}{2} + 2 + \frac{5}{2} + \cdots + 50$ vaut :
+* $\frac{5\,049}{2}$
+- $2\,525$
+- $1\,275$
+- $5\,049$
+C: $S = 99 \times \frac{1 + 50}{2} = \frac{5\,049}{2}$.
+E: C'est une suite arithmétique de premier terme 1 et de raison $\frac{1}{2}$. Le nombre de termes vaut $\frac{50 - 1}{1/2} + 1 = 99$. La somme est égale au nombre de termes multiplié par la moyenne du premier et du dernier : $99 \times \frac{51}{2} = \frac{5\,049}{2} = 2\,524{,}5$.
+
+[MAT-233] suites | advanced
+Q: Soit la suite définie par $u_0 = 1$, $u_1 = 3$ et $u_{n+2} = 5u_{n+1} - 6u_n$. Pour quelle valeur du réel $\alpha$ la suite $v_n = u_{n+1} - \alpha u_n$ est-elle géométrique de raison 3 ?
+* $\alpha = 2$
+- $\alpha = 3$
+- $\alpha = 5$
+- $\alpha = 6$
+C: $\alpha = 2$.
+E: L'équation caractéristique $r^2 = 5r - 6$ a pour racines 2 et 3. Avec $v_n = u_{n+1} - 2u_n$ : $v_{n+1} = u_{n+2} - 2u_{n+1} = 3u_{n+1} - 6u_n = 3v_n$. On a ici $v_0 = 3 - 2 = 1$, donc $v_n = 3^n$.
+
+[MAT-234] limites | intermediate
+Q: La limite $\lim_{x \to +\infty} \left(\sqrt{x + \sqrt{x}} - \sqrt{x}\right)$ vaut :
+* $\frac{1}{2}$
+- $0$
+- $1$
+- $+\infty$
+C: $\frac{1}{2}$.
+E: Avec la quantité conjuguée : $\sqrt{x + \sqrt{x}} - \sqrt{x} = \frac{\sqrt{x}}{\sqrt{x + \sqrt{x}} + \sqrt{x}} = \frac{1}{\sqrt{1 + \frac{1}{\sqrt{x}}} + 1} \to \frac{1}{2}$.
+
+[MAT-235] limites | intermediate
+Q: La limite $\lim_{n \to +\infty} \left(\sqrt{4n^2 + 3n + 1} - 2n\right)$ vaut :
+* $\frac{3}{4}$
+- $0$
+- $\frac{3}{2}$
+- $+\infty$
+C: $\frac{3}{4}$.
+E: $\sqrt{4n^2 + 3n + 1} - 2n = \frac{3n + 1}{\sqrt{4n^2 + 3n + 1} + 2n} = \frac{3 + \frac{1}{n}}{\sqrt{4 + \frac{3}{n} + \frac{1}{n^2}} + 2} \to \frac{3}{4}$.
+
+[MAT-236] integrales | intermediate
+Q: L'intégrale $\int_0^1 \frac{e^{x}}{e^{x} + 1}\,dx$ vaut :
+* $\ln(e + 1) - \ln 2$
+- $\ln 2$
+- $\ln(e + 1)$
+- $e - 1$
+C: $\ln\frac{e + 1}{2}$.
+E: L'intégrande est de la forme $\frac{u'}{u}$ avec $u = e^{x} + 1 > 0$, de primitive $\ln(e^{x} + 1)$. D'où $\ln(e + 1) - \ln 2$.
+
+[MAT-237] integrales | advanced
+Q: L'intégrale $\int_0^1 x\,e^{-x}\,dx$ vaut :
+* $1 - \frac{2}{e}$
+- $\frac{1}{e}$
+- $1 - \frac{1}{e}$
+- $\frac{2}{e}$
+C: $1 - \frac{2}{e}$.
+E: Intégration par parties avec $u = x$ et $v' = e^{-x}$ ($v = -e^{-x}$) : $\int_0^1 xe^{-x}dx = \left[-xe^{-x}\right]_0^1 + \int_0^1 e^{-x}dx = -\frac{1}{e} + 1 - \frac{1}{e} = 1 - \frac{2}{e}$.
+
+[MAT-238] fonctions | intermediate
+Q: La fonction $f(x) = 2x^3 - 9x^2 + 12x$ admet un minimum relatif en :
+* $x = 2$
+- $x = 1$
+- $x = 0$
+- $x = 3$
+C: En $x = 2$.
+E: $f'(x) = 6x^2 - 18x + 12 = 6(x - 1)(x - 2)$. $f'$ est positive avant 1, négative entre 1 et 2, positive après 2 : $f$ admet un maximum relatif en 1 et un minimum relatif en 2.
+
+[MAT-239] fonctions | advanced
+Q: Soit $f(x) = (x^2 + a)e^{x}$. La fonction $f$ est convexe sur $\mathbb{R}$ si et seulement si :
+* $a \geq 2$
+- $a > 0$
+- $a \geq 0$
+- $a < 2$
+C: $a \geq 2$.
+E: $f'(x) = (x^2 + 2x + a)e^{x}$ et $f''(x) = (x^2 + 4x + a + 2)e^{x}$. $f$ est convexe si $f'' \geq 0$ sur $\mathbb{R}$, c'est-à-dire si le trinôme $x^2 + 4x + a + 2$ ne change pas de signe : son discriminant $16 - 4(a + 2) = 8 - 4a$ doit être négatif ou nul, soit $a \geq 2$.
+
+[MAT-240] derivation | advanced
+Q: La courbe de $f(x) = \frac{a + b\ln x}{x}$ passe par le point $B(1 ; 2)$ et admet en $B$ une tangente horizontale. Alors :
+* $a = 2$ et $b = 2$
+- $a = 2$ et $b = 0$
+- $a = 1$ et $b = 2$
+- $a = 0$ et $b = 2$
+C: $a = 2$ et $b = 2$.
+E: $f(1) = a = 2$. $f'(x) = \frac{\frac{b}{x} \cdot x - (a + b\ln x)}{x^2} = \frac{b - a - b\ln x}{x^2}$, donc $f'(1) = b - a = 0$ et $b = 2$.
+
+[MAT-241] logarithme | advanced
+Q: Le système $\ln x + \ln y = \ln 12$ et $x + y = 7$, avec $x > y > 0$, a pour solution :
+* $x = 4$ et $y = 3$
+- $x = 6$ et $y = 1$
+- $x = 3$ et $y = 4$
+- $x = 12$ et $y = 1$
+C: $(4 ; 3)$.
+E: La première équation donne $xy = 12$. Les nombres $x$ et $y$ sont donc les racines de $t^2 - 7t + 12 = 0$, soit 3 et 4. Avec $x > y$ : $x = 4$, $y = 3$.
+
+[MAT-242] probabilites | intermediate
+Q: Dans une urne de 5 boules blanches et 3 noires, on tire successivement deux boules sans remise. La probabilité d'obtenir deux boules de couleurs différentes est :
+* $\frac{15}{28}$
+- $\frac{15}{56}$
+- $\frac{13}{28}$
+- $\frac{1}{2}$
+C: $P = 2 \times \frac{5}{8} \times \frac{3}{7} = \frac{15}{28}$.
+E: Blanche puis noire : $\frac{5}{8} \times \frac{3}{7} = \frac{15}{56}$ ; noire puis blanche : $\frac{3}{8} \times \frac{5}{7} = \frac{15}{56}$. Total : $\frac{30}{56} = \frac{15}{28}$. On retrouve ce résultat avec des combinaisons : $\frac{5 \times 3}{C_8^2} = \frac{15}{28}$.
+
+[MAT-243] probabilites | intermediate
+Q: On lance 4 fois une pièce équilibrée. La probabilité d'obtenir exactement 2 fois « pile » est :
+* $\frac{3}{8}$
+- $\frac{1}{2}$
+- $\frac{1}{4}$
+- $\frac{1}{16}$
+C: $C_4^2 \times \left(\frac{1}{2}\right)^4 = \frac{6}{16} = \frac{3}{8}$.
+E: Le nombre de « pile » suit la loi binomiale $\mathcal{B}\left(4 ; \frac{1}{2}\right)$ : il y a $C_4^2 = 6$ façons de placer les deux « pile » parmi les 4 lancers, chacune de probabilité $\frac{1}{16}$.
+
+[MAT-244] fonctions | intermediate
+Q: Un capital de 10 000 DH est placé à intérêts composés au taux annuel de 10 %. Au bout de combien d'années aura-t-il au moins doublé ? (On donne $\ln 2 \approx 0{,}693$ et $\ln 1{,}1 \approx 0{,}095$.)
+* 8 ans
+- 10 ans
+- 7 ans
+- 20 ans
+C: Après 8 ans.
+E: On cherche le plus petit $n$ tel que $1{,}1^{n} \geq 2$, soit $n \geq \frac{\ln 2}{\ln 1{,}1} \approx 7{,}3$ : il faut donc 8 années entières. Avec des intérêts simples (10 % du capital initial chaque année), il en faudrait 10.
+
+[MAT-245] calcul-algebrique | beginner
+Q: Le système $2x + 3y = 13$ et $x - y = -1$ a pour solution :
+* $x = 2$ et $y = 3$
+- $x = 3$ et $y = 2$
+- $x = -2$ et $y = 3$
+- $x = 5$ et $y = 1$
+C: $(2 ; 3)$.
+E: De la seconde équation, $x = y - 1$. En remplaçant : $2(y - 1) + 3y = 13$, soit $5y = 15$ et $y = 3$, puis $x = 2$. Vérification : $4 + 9 = 13$ et $2 - 3 = -1$.

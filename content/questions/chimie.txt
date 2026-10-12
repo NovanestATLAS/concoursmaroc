@@ -1193,3 +1193,81 @@ Q: L'éthanol réagit avec le chlorure d'éthanoyle $\mathrm{CH_3COCl}$ pour don
 - La réaction nécessite un catalyseur et un chauffage prolongé pour atteindre 67 %
 C: $\mathrm{CH_3COCl + C_2H_5OH \to CH_3COOC_2H_5 + HCl}$, rapide et totale.
 E: Le chlorure d'acyle, très réactif, remplace avantageusement l'acide carboxylique : la réaction est rapide, totale, et le second produit est le chlorure d'hydrogène (et non l'eau, qui pourrait hydrolyser l'ester). On peut aussi utiliser un anhydride d'acide, qui donne l'ester et un acide carboxylique.
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[CHI-201] equilibre | advanced
+Q: On introduit de la poudre d'étain en excès dans une solution d'ions plomb(II) de concentration $0{,}20\ \mathrm{mol\,L^{-1}}$. La réaction $\mathrm{Pb^{2+} + Sn \rightleftharpoons Pb + Sn^{2+}}$ a pour constante $K = 3{,}0$. À l'équilibre :
+* $[\mathrm{Sn^{2+}}] = 0{,}15\ \mathrm{mol\,L^{-1}}$ et $[\mathrm{Pb^{2+}}] = 0{,}05\ \mathrm{mol\,L^{-1}}$
+- $[\mathrm{Sn^{2+}}] = 0{,}20\ \mathrm{mol\,L^{-1}}$ et $[\mathrm{Pb^{2+}}] = 0$
+- $[\mathrm{Sn^{2+}}] = 0{,}05\ \mathrm{mol\,L^{-1}}$ et $[\mathrm{Pb^{2+}}] = 0{,}15\ \mathrm{mol\,L^{-1}}$
+- $[\mathrm{Sn^{2+}}] = 0{,}10\ \mathrm{mol\,L^{-1}}$ et $[\mathrm{Pb^{2+}}] = 0{,}10\ \mathrm{mol\,L^{-1}}$
+C: $[\mathrm{Sn^{2+}}] = 0{,}15$ et $[\mathrm{Pb^{2+}}] = 0{,}05\ \mathrm{mol\,L^{-1}}$.
+E: Les solides n'apparaissent pas dans $K$ : $K = \frac{[\mathrm{Sn^{2+}}]}{[\mathrm{Pb^{2+}}]} = \frac{y}{0{,}20 - y} = 3{,}0$, avec $y$ l'avancement volumique. Donc $y = 0{,}60 - 3y$, soit $y = 0{,}15\ \mathrm{mol\,L^{-1}}$. La transformation n'est pas totale : il reste des ions $\mathrm{Pb^{2+}}$.
+
+[CHI-202] piles | advanced
+Q: Une pile zinc-plomb ($\mathrm{Zn + Pb^{2+} \to Zn^{2+} + Pb}$) contient $200\ \mathrm{mL}$ de solution d'ions $\mathrm{Pb^{2+}}$ à $0{,}10\ \mathrm{mol\,L^{-1}}$ ; l'électrode de zinc est en excès. Elle débite un courant constant de $0{,}50\ \mathrm{A}$ ($F = 96\,500\ \mathrm{C\,mol^{-1}}$). Sa durée de fonctionnement maximale est proche de :
+* $2{,}1\ \mathrm{h}$
+- $1{,}1\ \mathrm{h}$
+- $4{,}3\ \mathrm{h}$
+- $0{,}54\ \mathrm{h}$
+C: $\Delta t = \frac{2n(\mathrm{Pb^{2+}})F}{I} \approx 7\,700\ \mathrm{s} \approx 2{,}1\ \mathrm{h}$.
+E: Les ions $\mathrm{Pb^{2+}}$ sont limitants : $n = 0{,}10 \times 0{,}200 = 2{,}0 \times 10^{-2}\ \mathrm{mol}$, soit $n(e^-) = 4{,}0 \times 10^{-2}\ \mathrm{mol}$ (2 électrons par ion). $Q = n(e^-)F = 3\,860\ \mathrm{C}$ et $\Delta t = \frac{Q}{I} = 7\,720\ \mathrm{s} \approx 2{,}1\ \mathrm{h}$.
+
+[CHI-203] electrolyse | intermediate
+Q: On produit de l'aluminium par électrolyse ($\mathrm{Al^{3+} + 3e^- \to Al}$) avec un courant de $965\ \mathrm{A}$ pendant $10\ \mathrm{h}$ ($F = 96\,500\ \mathrm{C\,mol^{-1}}$ ; $M(\mathrm{Al}) = 27\ \mathrm{g\,mol^{-1}}$). La masse d'aluminium obtenue vaut :
+* $3{,}24\ \mathrm{kg}$
+- $9{,}72\ \mathrm{kg}$
+- $1{,}08\ \mathrm{kg}$
+- $6{,}48\ \mathrm{kg}$
+C: $m = \frac{It}{3F} \times M = 3{,}24\ \mathrm{kg}$.
+E: $Q = It = 965 \times 36\,000 = 3{,}474 \times 10^{7}\ \mathrm{C}$, soit $n(e^-) = 360\ \mathrm{mol}$. Il faut 3 électrons par atome : $n(\mathrm{Al}) = 120\ \mathrm{mol}$ et $m = 120 \times 27 = 3\,240\ \mathrm{g}$. Oublier le facteur 3 donne $9{,}72\ \mathrm{kg}$.
+
+[CHI-204] oxydoreduction | intermediate
+Q: On place $0{,}20\ \mathrm{g}$ de zinc dans de l'acide chlorhydrique : $\mathrm{Zn + 2H^+ \to Zn^{2+} + H_2}$. On recueille $33{,}6\ \mathrm{cm^3}$ de dihydrogène (volume molaire $22{,}4\ \mathrm{L\,mol^{-1}}$ ; $M(\mathrm{Zn}) = 65{,}4\ \mathrm{g\,mol^{-1}}$), puis on sépare le zinc restant. La masse de zinc restant est proche de :
+* $102\ \mathrm{mg}$
+- $98\ \mathrm{mg}$
+- $200\ \mathrm{mg}$
+- $65\ \mathrm{mg}$
+C: $m_{reste} = 200 - 98 \approx 102\ \mathrm{mg}$.
+E: $n(\mathrm{H_2}) = \frac{33{,}6 \times 10^{-3}}{22{,}4} = 1{,}5 \times 10^{-3}\ \mathrm{mol}$ = quantité de zinc consommé, soit $1{,}5 \times 10^{-3} \times 65{,}4 \approx 98\ \mathrm{mg}$. Il reste $200 - 98 \approx 102\ \mathrm{mg}$ de zinc.
+
+[CHI-205] oxydoreduction | advanced
+Q: L'eau de Javel est préparée selon $\mathrm{Cl_2 + 2HO^- \to ClO^- + Cl^- + H_2O}$. Son degré chlorométrique est le volume de dichlore (en litres, volume molaire $22{,}4\ \mathrm{L\,mol^{-1}}$) utilisé pour préparer un litre de solution. Dans une eau de Javel à 12 °Chl, la concentration en ions hypochlorite vaut environ :
+* $0{,}54\ \mathrm{mol\,L^{-1}}$
+- $1{,}07\ \mathrm{mol\,L^{-1}}$
+- $0{,}27\ \mathrm{mol\,L^{-1}}$
+- $12\ \mathrm{mol\,L^{-1}}$
+C: $[\mathrm{ClO^-}] = \frac{12}{22{,}4} \approx 0{,}54\ \mathrm{mol\,L^{-1}}$.
+E: Un litre d'eau de Javel à 12 °Chl a nécessité 12 L de dichlore, soit $\frac{12}{22{,}4} \approx 0{,}54\ \mathrm{mol}$. D'après l'équation, une mole de $\mathrm{Cl_2}$ donne une mole de $\mathrm{ClO^-}$ (et une de $\mathrm{Cl^-}$) : $[\mathrm{ClO^-}] = [\mathrm{Cl^-}] \approx 0{,}54\ \mathrm{mol\,L^{-1}}$.
+
+[CHI-206] acide-base | beginner
+Q: On dose $20{,}0\ \mathrm{mL}$ d'une solution d'hydroxyde de sodium à $0{,}050\ \mathrm{mol\,L^{-1}}$ par de l'acide chlorhydrique à $0{,}10\ \mathrm{mol\,L^{-1}}$. Le volume versé à l'équivalence et le pH à l'équivalence (25 °C) valent :
+* $V_E = 10{,}0\ \mathrm{mL}$ et $\mathrm{pH} = 7$
+- $V_E = 20{,}0\ \mathrm{mL}$ et $\mathrm{pH} = 7$
+- $V_E = 10{,}0\ \mathrm{mL}$ et $\mathrm{pH} = 9$
+- $V_E = 40{,}0\ \mathrm{mL}$ et $\mathrm{pH} = 5$
+C: $V_E = \frac{C_BV_B}{C_A} = 10{,}0\ \mathrm{mL}$ ; pH = 7.
+E: À l'équivalence, $n(\mathrm{H_3O^+})_{\text{versé}} = n(\mathrm{HO^-})_{initial}$ : $0{,}10 \times V_E = 0{,}050 \times 20{,}0$, d'où $V_E = 10{,}0\ \mathrm{mL}$. Le mélange ne contient que des ions spectateurs ($\mathrm{Na^+}$, $\mathrm{Cl^-}$) : la solution est neutre, pH = 7 à 25 °C (acide fort et base forte).
+
+[CHI-207] cinetique | advanced
+Q: L'avancement d'une réaction réalisée dans un volume $V$ constant suit la loi $x(t) = x_f\left(1 - e^{-\frac{t}{\tau}}\right)$. La vitesse volumique de réaction à $t = 0$ vaut :
+* $\frac{x_f}{V\tau}$
+- $\frac{x_f}{\tau}$
+- $\frac{x_f\,\tau}{V}$
+- $0$
+C: $v(0) = \frac{1}{V}\left(\frac{dx}{dt}\right)_{t=0} = \frac{x_f}{V\tau}$.
+E: $\frac{dx}{dt} = \frac{x_f}{\tau}e^{-\frac{t}{\tau}}$, qui vaut $\frac{x_f}{\tau}$ à $t = 0$, puis diminue. La vitesse volumique est maximale au départ et tend vers 0 ; le temps de demi-réaction vaut ici $t_{1/2} = \tau\ln 2$.
+
+[CHI-208] esterification | advanced
+Q: On mélange 1 mol d'acide éthanoïque et 2 mol d'éthanol, avec un catalyseur. La constante d'équilibre de l'estérification vaut $K = 4$ (on donne $\sqrt{48} \approx 6{,}93$). Le rendement de la synthèse de l'ester est proche de :
+* $85\ \%$
+- $67\ \%$
+- $100\ \%$
+- $50\ \%$
+C: $x_f \approx 0{,}85\ \mathrm{mol}$, rendement d'environ 85 %.
+E: À l'équilibre : $K = \frac{x^2}{(1 - x)(2 - x)} = 4$, soit $3x^2 - 12x + 8 = 0$, d'où $x = \frac{12 - \sqrt{48}}{6} \approx 0{,}85\ \mathrm{mol}$ (l'autre racine dépasse 1). Le rendement, rapporté à l'acide limitant, vaut environ 85 % : un excès d'alcool déplace l'équilibre et améliore le rendement par rapport aux 67 % du mélange équimolaire.

@@ -434,3 +434,171 @@ Q: The more you practise, ___ you become.
 - more good
 C: « the better ».
 E: Structure « the + comparatif…, the + comparatif… » : the more…, the better… (plus…, plus…).
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[ANG-101] vocabulary | beginner
+Q: Choose the word that best completes the sentence: "The lawyer charged a very high … for his services."
+* fee
+- fare
+- debt
+- hire
+C: fee.
+E: A fee is the money paid for professional services (a lawyer, a doctor, school fees). A fare is the price of a journey (a bus fare); a debt is money owed.
+
+[ANG-102] vocabulary | intermediate
+Q: Choose the word that best completes the sentence: "The sun was so strong that the curtains … from dark blue to light grey."
+* faded
+- fainted
+- paled
+- bleached
+C: faded.
+E: Colours fade when they lose their intensity over time. To faint means to lose consciousness; paled is used for faces; bleached suggests a deliberate chemical whitening.
+
+[ANG-103] grammar | beginner
+Q: Choose the correct option: "I'm looking forward to … you next week."
+* seeing
+- see
+- to see
+- have seen
+C: seeing.
+E: In "look forward to", "to" is a preposition, so it is followed by a gerund (-ing form): "I look forward to hearing from you."
+
+[ANG-104] grammar | intermediate
+Q: Choose the correct option: "Would you mind … the window? It's cold in here."
+* closing
+- to close
+- close
+- closed
+C: closing.
+E: "Would you mind" is always followed by the -ing form. The same applies to verbs such as enjoy, avoid, finish and suggest.
+
+[ANG-105] grammar | beginner
+Q: Choose the correct option: "His eyes were … tired that he couldn't read the text."
+* so
+- such
+- too
+- very
+C: so.
+E: "So + adjective + that" expresses a consequence. "Such" is used with a noun ("such a tiring day that…"); "too" would require "to" + infinitive ("too tired to read").
+
+[ANG-106] grammar | intermediate
+Q: Choose the correct option: "By the time we arrived at the station, the train …"
+* had already left
+- has already left
+- already left
+- was leaving already
+C: had already left.
+E: The past perfect describes an action completed before another past action ("we arrived"). The present perfect cannot be used with a past reference point.
+
+[ANG-107] grammar | intermediate
+Q: Choose the correct option: "If I … more time, I would learn another language."
+* had
+- have
+- will have
+- would have
+C: had.
+E: The second conditional (an imaginary present situation) uses "if" + past simple, then "would" + base verb. "Will" and "would" are not used in the if-clause.
+
+[ANG-108] grammar | intermediate
+Q: Choose the correct option: "She has been working for this company … 2019."
+* since
+- for
+- during
+- from
+C: since.
+E: "Since" introduces a starting point (since 2019, since Monday); "for" introduces a duration (for six years). Both are used with the present perfect.
+
+[ANG-109] vocabulary | intermediate
+Q: Choose the word that best completes the sentence: "The company needs to decide once and … what its position is."
+* for all
+- forever
+- at all
+- for good
+C: "once and for all".
+E: "Once and for all" is a fixed expression meaning "definitively, finally". "For good" also means permanently, but it is not used after "once and".
+
+[ANG-110] vocabulary | beginner
+Q: Choose the word that best completes the sentence: "Don't put your glass on the … of the table; it might fall."
+* edge
+- border
+- boundary
+- outside
+C: edge.
+E: The edge is the outer limit of an object (the edge of a table, of a cliff). A border separates countries; a boundary marks the limit of an area.
+
+[ANG-111] vocabulary | intermediate
+Q: Choose the word that best completes the sentence: "There's a problem with my car: one of the tyres is …"
+* flat
+- uneven
+- depressed
+- compressed
+C: flat.
+E: A flat tyre has lost its air. This collocation is the standard one; "depressed" describes a person's mood.
+
+[ANG-112] grammar | intermediate
+Q: Choose the correct option: "The report … by the manager before the meeting started."
+* had been approved
+- had approved
+- has been approving
+- was approving
+C: had been approved.
+E: The report does not act: the passive voice is needed (be + past participle). The past perfect passive shows that the approval happened before the meeting started.
+
+[ANG-113] grammar | beginner
+Q: Choose the correct option: "Neither the students nor the teacher … aware of the change."
+* was
+- were
+- are
+- have been
+C: was.
+E: With "neither… nor", the verb agrees with the nearest subject: "the teacher" is singular. With "Neither the teacher nor the students", we would say "were".
+
+[ANG-114] vocabulary | intermediate
+Q: Choose the word that best completes the sentence: "When there is a doubt, the examiner's decision is …"
+* final
+- certain
+- fixed
+- definite
+C: final.
+E: A decision that cannot be changed or appealed is "final" ("The referee's decision is final"). "Definite" means clear or certain, but it is not used in this fixed expression.
+
+[ANG-115] reading | intermediate
+Q: Read the sentence: "Teachers who are more open to new ideas tend to produce students with greater intellectual flexibility." It can be inferred that:
+* Open-minded teaching helps students think more flexibly
+- Strict teachers always produce the best students
+- Students' flexibility does not depend on their teachers
+- New ideas are harmful in the classroom
+C: The teacher's openness supports the students' flexibility.
+E: The sentence establishes a link between the teachers' openness and the students' intellectual flexibility. The other options contradict it or are not supported by it. Inference questions ask what the text implies, not what we think.
+
+[ANG-116] reading | intermediate
+Q: Read the sentence: "In a group of five, there are five people doing the same thing: every idea must be understood by four others." The main idea is that:
+* Communication becomes more complex as the group grows
+- Groups of five are always inefficient
+- Only two people can really communicate
+- Large groups make decisions faster
+C: The more members, the more complex communication becomes.
+E: The sentence compares a pair with a group of five to show that each message must reach and be understood by more people. It does not say that groups of five are inefficient, nor that large groups are faster.
+
+[ANG-117] vocabulary | beginner
+Q: Choose the word that best completes the sentence: "I'm sorry, I didn't … to disturb you."
+* mean
+- think
+- suppose
+- hope
+C: mean.
+E: "I didn't mean to…" expresses that something was not intentional. It is a very common way to apologise in English.
+
+[ANG-118] grammar | advanced
+Q: Choose the correct option: "Hardly … the room when the phone rang."
+* had he entered
+- he had entered
+- did he enter
+- he entered
+C: "Hardly had he entered…"
+E: When a negative adverb such as hardly, scarcely, no sooner or never begins the sentence, the subject and the auxiliary are inverted: "Hardly had he entered the room when the phone rang."

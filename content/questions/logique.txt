@@ -1,0 +1,206 @@
+# Questions complémentaires (format texte), chargées avec logique.json.
+@category logique
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[LOG-101] raisonnement | beginner
+Q: Un escargot veut atteindre le haut d'un mur de 12 mètres. Chaque jour il monte de 4 mètres, et chaque nuit il glisse de 3 mètres. Il part un matin du pied du mur. Quel jour atteint-il le sommet ?
+* Le 9e jour
+- Le 12e jour
+- Le 8e jour
+- Le 10e jour
+C: Le 9e jour.
+E: À la fin de chaque nuit, il a gagné 1 mètre. Au matin du 9e jour, il est à 8 mètres ; dans la journée il monte de 4 mètres et atteint 12 mètres : il ne glisse plus. Le piège consiste à diviser 12 par 1.
+
+[LOG-102] suites | beginner
+Q: Quel nombre complète la suite : 100 ; 98 ; 94 ; 88 ; 80 ; … ?
+* 70
+- 72
+- 68
+- 75
+C: 70.
+E: Les écarts successifs sont 2, 4, 6, 8 : le suivant est 10, donc $80 - 10 = 70$.
+
+[LOG-103] raisonnement | beginner
+Q: Dans un jardin, des enfants jouent avec des chiens. On compte 20 têtes et 56 pattes et jambes. Combien y a-t-il d'enfants et de chiens ?
+* 12 enfants et 8 chiens
+- 8 enfants et 12 chiens
+- 10 enfants et 10 chiens
+- 14 enfants et 6 chiens
+C: 12 enfants et 8 chiens.
+E: Si les 20 étaient des enfants, on aurait 40 jambes. Chaque chien ajoute 2 pattes : $\frac{56 - 40}{2} = 8$ chiens, donc 12 enfants. Vérification : $12 \times 2 + 8 \times 4 = 56$.
+
+[LOG-104] raisonnement | intermediate
+Q: Karim repeint un appartement en 4 jours ; Sami ferait le même travail en 12 jours. En travaillant ensemble, combien de jours leur faut-il ?
+* 3 jours
+- 8 jours
+- 2 jours
+- 6 jours
+C: 3 jours.
+E: En un jour, Karim fait $\frac{1}{4}$ du travail et Sami $\frac{1}{12}$ : ensemble $\frac{1}{4} + \frac{1}{12} = \frac{3 + 1}{12} = \frac{1}{3}$. Il leur faut donc 3 jours. La moyenne des deux durées (8 jours) est un piège.
+
+[LOG-105] raisonnement | intermediate
+Q: Dans une classe de 40 élèves, 22 aiment les mathématiques, 18 aiment la physique et 7 aiment les deux matières. Combien d'élèves n'aiment aucune des deux ?
+* 7
+- 0
+- 15
+- 33
+C: 7 élèves.
+E: Nombre d'élèves qui aiment au moins une matière : $22 + 18 - 7 = 33$ (on retire ceux comptés deux fois). Il en reste $40 - 33 = 7$.
+
+[LOG-106] raisonnement | intermediate
+Q: Un père a trois fois l'âge de son fils. Dans 12 ans, il n'aura plus que le double de l'âge de son fils. Quel est l'âge actuel du fils ?
+* 12 ans
+- 6 ans
+- 24 ans
+- 18 ans
+C: 12 ans (le père a 36 ans).
+E: Avec $P = 3F$ et $P + 12 = 2(F + 12)$ : $3F + 12 = 2F + 24$, donc $F = 12$ et $P = 36$. Dans 12 ans : 48 et 24 ans.
+
+[LOG-107] raisonnement | beginner
+Q: Un tiroir contient, en vrac, des chaussettes de 4 couleurs différentes. Dans le noir, combien faut-il en prendre au minimum pour être sûr d'avoir deux chaussettes de la même couleur ?
+* 5
+- 2
+- 4
+- 8
+C: 5 chaussettes.
+E: Avec 4 chaussettes, on peut tomber sur 4 couleurs différentes. La cinquième est forcément d'une couleur déjà tirée (principe des tiroirs).
+
+[LOG-108] deduction | intermediate
+Q: « Il est faux que les prix aient augmenté et que la qualité ait baissé. » Cet énoncé est équivalent à :
+* Les prix n'ont pas augmenté ou la qualité n'a pas baissé
+- Les prix n'ont pas augmenté et la qualité n'a pas baissé
+- Les prix ont augmenté mais la qualité n'a pas baissé
+- La qualité a baissé mais les prix n'ont pas augmenté
+C: non (A et B) = (non A) ou (non B).
+E: D'après les lois de De Morgan, nier « A et B » revient à affirmer « non A ou non B » : au moins l'une des deux affirmations est fausse. La deuxième proposition est trop forte, car elle exige que les deux soient fausses.
+
+[LOG-109] deduction | beginner
+Q: Quelle est la négation de la phrase « Tous les candidats ont réussi l'examen » ?
+* Au moins un candidat n'a pas réussi l'examen
+- Aucun candidat n'a réussi l'examen
+- Tous les candidats ont échoué
+- Certains candidats ont réussi l'examen
+C: « Il existe un candidat qui n'a pas réussi ».
+E: La négation de « pour tout » est « il existe… ne… pas ». Il suffit d'un seul échec pour que la phrase de départ soit fausse ; « aucun n'a réussi » est une affirmation beaucoup plus forte.
+
+[LOG-110] raisonnement | intermediate
+Q: Pour une sortie, si l'on place 40 élèves par car, 10 élèves restent sans place ; si l'on en place 45 par car, il reste 5 places libres. Combien y a-t-il de cars et d'élèves ?
+* 3 cars et 130 élèves
+- 2 cars et 90 élèves
+- 3 cars et 120 élèves
+- 4 cars et 170 élèves
+C: 3 cars, 130 élèves.
+E: Avec $n$ cars : $40n + 10 = 45n - 5$, d'où $5n = 15$ et $n = 3$. Le nombre d'élèves vaut $40 \times 3 + 10 = 130$ (et $45 \times 3 - 5 = 130$).
+
+[LOG-111] codage | advanced
+Q: Un cadenas a un code de 3 chiffres. Indices : 682 : un chiffre est bon et bien placé ; 614 : un chiffre est bon mais mal placé ; 206 : deux chiffres sont bons mais mal placés ; 738 : aucun chiffre n'est bon ; 780 : un chiffre est bon mais mal placé. Quel est le code ?
+* 042
+- 204
+- 024
+- 062
+C: 042.
+E: 738 élimine 7, 3 et 8. Avec 780, le 0 est bon mais pas en 3e position ; dans 206 il est mal placé, donc pas en 2e : il est en 1re position. Dans 682, un seul chiffre est bon et bien placé : ce ne peut pas être le 6 (la 1re place est prise par 0), c'est donc le 2, en 3e position, et le 6 est absent. Dans 614, le chiffre bon et mal placé est 1 ou 4 ; le 1 y est en 2e position, il serait bien placé : c'est donc le 4, qui va en 2e position. Code : 042.
+
+[LOG-112] raisonnement | intermediate
+Q: Deux trains partent en même temps de deux villes distantes de 300 km et roulent l'un vers l'autre à 70 km/h et 80 km/h. Un oiseau vole à 200 km/h d'un train à l'autre sans s'arrêter jusqu'à leur croisement. Quelle distance l'oiseau parcourt-il ?
+* 400 km
+- 300 km
+- 200 km
+- 600 km
+C: 400 km.
+E: Inutile de suivre les allers-retours : les trains se rapprochent de $70 + 80 = 150$ km par heure et se croisent au bout de $\frac{300}{150} = 2$ h. L'oiseau vole pendant 2 h à 200 km/h, soit 400 km.
+
+[LOG-113] raisonnement | intermediate
+Q: Une voiture fait l'aller à 60 km/h et le retour, sur le même trajet, à 40 km/h. Sa vitesse moyenne sur l'aller-retour est :
+* 48 km/h
+- 50 km/h
+- 45 km/h
+- 52 km/h
+C: 48 km/h.
+E: Pour une distance $d$ : durée totale $\frac{d}{60} + \frac{d}{40} = \frac{5d}{120} = \frac{d}{24}$. Vitesse moyenne : $\frac{2d}{d/24} = 48$ km/h. La moyenne des vitesses (50 km/h) est fausse, car la voiture roule plus longtemps à 40 km/h.
+
+[LOG-114] spatio-temporel | intermediate
+Q: Quel angle forment les aiguilles d'une montre à 3 h 30 ?
+* 75°
+- 90°
+- 60°
+- 105°
+C: 75°.
+E: La grande aiguille est sur le 6 (180°). La petite a dépassé le 3 d'une demi-heure, soit $90° + 0{,}5 \times 30° = 105°$. Écart : $180° - 105° = 75°$.
+
+[LOG-115] series-lettres | intermediate
+Q: Quelle lettre complète la suite : A, C, F, J, O, … ?
+* U
+- T
+- S
+- V
+C: U.
+E: Rangs dans l'alphabet : 1, 3, 6, 10, 15 ; les écarts augmentent de 1 (+2, +3, +4, +5). Le suivant est $15 + 6 = 21$, c'est-à-dire U.
+
+[LOG-116] raisonnement | intermediate
+Q: Combien de fois le chiffre 7 apparaît-il quand on écrit tous les nombres entiers de 1 à 100 ?
+* 20
+- 10
+- 11
+- 19
+C: 20 fois.
+E: Chiffre des unités : 7, 17, 27, …, 97, soit 10 fois. Chiffre des dizaines : 70 à 79, soit 10 fois. Le nombre 77 contient deux 7, comptés une fois dans chaque liste : on a bien 20 chiffres 7.
+
+[LOG-117] intrus | beginner
+Q: Quel est l'intrus : 16 ; 25 ; 36 ; 49 ; 63 ?
+* 63
+- 16
+- 25
+- 49
+C: 63.
+E: 16, 25, 36 et 49 sont des carrés parfaits ($4^2$, $5^2$, $6^2$, $7^2$). 63 n'en est pas un ($8^2 = 64$).
+
+[LOG-118] raisonnement | intermediate
+Q: Si 4 machines fabriquent 4 pièces en 4 minutes, combien de minutes faut-il à 8 machines pour fabriquer 8 pièces ?
+* 4
+- 8
+- 2
+- 16
+C: 4 minutes.
+E: Chaque machine fabrique une pièce en 4 minutes. Avec 8 machines travaillant en parallèle, 8 pièces sont prêtes en 4 minutes.
+
+[LOG-119] deduction | intermediate
+Q: Quel est l'âge de Karim ? (1) Karim a 3 ans de plus que Leïla. (2) La somme des âges de Karim et de Leïla est 25 ans.
+* Les deux informations ensemble permettent de répondre, mais aucune ne suffit seule
+- L'information (1) suffit seule
+- L'information (2) suffit seule
+- Même ensemble, les deux informations ne suffisent pas
+C: Il faut (1) et (2).
+E: Chaque information seule laisse deux inconnues. Ensemble : $K = L + 3$ et $K + L = 25$, donc $2L + 3 = 25$, $L = 11$ et $K = 14$. Ce type de question « suffisance des données » figure au TAFEM.
+
+[LOG-120] raisonnement | advanced
+Q: Une personne entre successivement dans trois magasins. Dans chacun, elle dépense la moitié de ce qu'elle a en entrant, plus 10 DH. En sortant du troisième, il ne lui reste rien. Combien avait-elle au départ ?
+* 140 DH
+- 60 DH
+- 120 DH
+- 70 DH
+C: 140 DH.
+E: On raisonne à rebours. Avant le 3e magasin : $\frac{x}{2} + 10 = x$, soit $x = 20$. Avant le 2e : $y - \left(\frac{y}{2} + 10\right) = 20$, soit $y = 60$. Avant le 1er : $z - \left(\frac{z}{2} + 10\right) = 60$, soit $z = 140$.
+
+[LOG-121] raisonnement | advanced
+Q: Une voiture consomme 1 litre tous les 8 km en ville et 1 litre tous les 12 km sur autoroute. Pour un trajet de 480 km, elle a utilisé 50 litres. Combien de kilomètres a-t-elle parcourus en ville ?
+* 240 km
+- 160 km
+- 320 km
+- 200 km
+C: 240 km.
+E: Avec $c$ km en ville et $a$ km sur autoroute : $c + a = 480$ et $\frac{c}{8} + \frac{a}{12} = 50$, soit $3c + 2a = 1\,200$. En retranchant $2(c + a) = 960$, on obtient $c = 240$.
+
+[LOG-122] suites | intermediate
+Q: Quel nombre complète la suite : 2 ; 6 ; 12 ; 20 ; 30 ; … ?
+* 42
+- 40
+- 36
+- 44
+C: 42.
+E: Les écarts sont 4, 6, 8, 10, puis 12 : $30 + 12 = 42$. On peut aussi voir les termes comme $1 \times 2$, $2 \times 3$, $3 \times 4$, $4 \times 5$, $5 \times 6$, puis $6 \times 7 = 42$.

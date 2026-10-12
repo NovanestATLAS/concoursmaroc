@@ -1429,3 +1429,117 @@ Q: Un fil fin est éclairé par un laser de fréquence $\nu = 4{,}0 \times 10^{1
 - $0{,}30\ \mathrm{mm}$
 C: $a = \frac{2\lambda D}{L} = 0{,}15\ \mathrm{mm}$.
 E: $\lambda = \frac{c}{\nu} = 7{,}5 \times 10^{-7}\ \mathrm{m}$. Avec $\theta = \frac{\lambda}{a} = \frac{L}{2D}$ : $a = \frac{2\lambda D}{L} = \frac{2 \times 7{,}5 \times 10^{-7} \times 2{,}0}{2{,}0 \times 10^{-2}} = 1{,}5 \times 10^{-4}\ \mathrm{m}$. Les taches s'alignent perpendiculairement au fil.
+
+# ---------------------------------------------------------------------------
+# Concours ENSA, ENCG (TAFEM), ENA architecture et ISCAE : questions originales
+# qui reprennent les notions, le niveau et le format des sujets publiés et des
+# sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
+@source src-annales-ecoles
+
+[PHY-201] nucleaire | advanced
+Q: Le césium 137 a une demi-vie de 30 ans. Au bout de combien de temps 99 % des noyaux d'un échantillon se sont-ils désintégrés ? (On donne $\ln 2 \approx 0{,}7$ et $\ln 10 \approx 2{,}3$.)
+* Environ 197 ans
+- Environ 99 ans
+- Environ 300 ans
+- Environ 60 ans
+C: $t = \frac{t_{1/2}}{\ln 2}\ln 100 \approx 197$ ans.
+E: Il reste 1 % des noyaux : $\frac{N}{N_0} = e^{-\lambda t} = \frac{1}{100}$, donc $t = \frac{\ln 100}{\lambda} = \frac{t_{1/2} \times 2\ln 10}{\ln 2} = \frac{30 \times 4{,}6}{0{,}7} \approx 197$ ans. La valeur 99 ans correspond à 90 % de noyaux désintégrés.
+
+[PHY-202] nucleaire | advanced
+Q: Lors de la fission ${}^{1}_{0}n + {}^{235}_{92}\mathrm{U} \to {}^{141}_{56}\mathrm{Ba} + {}^{92}_{36}\mathrm{Kr} + 3\,{}^{1}_{0}n$, l'énergie de liaison par nucléon vaut environ $7{,}6\ \mathrm{MeV}$ pour l'uranium 235 et $8{,}4\ \mathrm{MeV}$ en moyenne pour les deux noyaux produits. L'énergie libérée est plus proche de :
+* $171\ \mathrm{MeV}$
+- $188\ \mathrm{MeV}$
+- $17\ \mathrm{MeV}$
+- $1\,957\ \mathrm{MeV}$
+C: $E \approx 233 \times 8{,}4 - 235 \times 7{,}6 \approx 171\ \mathrm{MeV}$.
+E: Les neutrons libres ont une énergie de liaison nulle. $E_{\text{libérée}} = E_l(\mathrm{Ba}) + E_l(\mathrm{Kr}) - E_l(\mathrm{U}) = (141 + 92) \times 8{,}4 - 235 \times 7{,}6 = 1\,957{,}2 - 1\,786 \approx 171\ \mathrm{MeV}$. Les produits, plus stables (énergie de liaison par nucléon plus grande), libèrent la différence.
+
+[PHY-203] mecanique-newton | beginner
+Q: Dans un référentiel galiléen, le vecteur vitesse du centre d'inertie d'un solide reste constant. On peut affirmer que :
+* La somme des forces extérieures appliquées au solide est nulle
+- Le solide est forcément immobile
+- L'accélération est centripète
+- Le mouvement est rectiligne uniformément varié
+C: Principe d'inertie : $\sum\vec{F}_{ext} = \vec{0}$.
+E: D'après la deuxième loi de Newton, $\sum\vec{F}_{ext} = m\vec{a}_G$ ; un vecteur vitesse constant donne $\vec{a}_G = \vec{0}$, donc des forces qui se compensent. Le mouvement est rectiligne uniforme (ou le repos) : aucune accélération, ni tangentielle ni centripète.
+
+[PHY-204] mecanique | advanced
+Q: Un mobile de masse $m = 0{,}40\ \mathrm{kg}$, initialement au repos, est poussé sur une piste horizontale AB de $2{,}0\ \mathrm{m}$ par une force horizontale constante $\vec{F}$, puis monte une rampe sans frottement. Pour qu'il atteigne tout juste une hauteur de $0{,}50\ \mathrm{m}$ ($g = 10\ \mathrm{m\,s^{-2}}$), l'intensité de $\vec{F}$ doit être :
+* $1{,}0\ \mathrm{N}$
+- $2{,}0\ \mathrm{N}$
+- $0{,}50\ \mathrm{N}$
+- $4{,}0\ \mathrm{N}$
+C: $F = \frac{mgh}{AB} = 1{,}0\ \mathrm{N}$.
+E: Théorème de l'énergie cinétique entre le départ et le point le plus haut (vitesses nulles) : $W(\vec{F}) + W(\vec{P}) = 0$, soit $F \times AB - mgh = 0$. Donc $F = \frac{0{,}40 \times 10 \times 0{,}50}{2{,}0} = 1{,}0\ \mathrm{N}$. La réaction de la piste, perpendiculaire au mouvement, ne travaille pas.
+
+[PHY-205] mecanique-projectile | advanced
+Q: Un ballon est frappé à $2{,}0\ \mathrm{m}$ du sol avec une vitesse $v_0 = 10\ \mathrm{m\,s^{-1}}$ faisant un angle de $45^{\circ}$ avec l'horizontale ($g = 10\ \mathrm{m\,s^{-2}}$, frottements négligés). À $6{,}0\ \mathrm{m}$ du point de frappe (horizontalement), sa hauteur au-dessus du sol vaut :
+* $4{,}4\ \mathrm{m}$
+- $3{,}6\ \mathrm{m}$
+- $8{,}0\ \mathrm{m}$
+- $2{,}4\ \mathrm{m}$
+C: $y = 4{,}4\ \mathrm{m}$.
+E: Équation de la trajectoire : $y = H + x\tan\alpha - \frac{g\,x^2}{2v_0^2\cos^2\alpha}$. Avec $\cos^2 45^{\circ} = \frac{1}{2}$ : $y = 2{,}0 + 6{,}0 - \frac{10 \times 36}{2 \times 100 \times 0{,}5} = 8{,}0 - 3{,}6 = 4{,}4\ \mathrm{m}$.
+
+[PHY-206] oscillateurs | intermediate
+Q: Un circuit LC idéal comprend une bobine d'inductance $L = 0{,}40\ \mathrm{H}$ et un condensateur de capacité $C = 0{,}10\ \mu\mathrm{F}$. On prend $\pi^2 = 10$. La période propre des oscillations est plus proche de :
+* $1{,}26\ \mathrm{ms}$
+- $0{,}40\ \mathrm{ms}$
+- $12{,}6\ \mathrm{ms}$
+- $4{,}0\ \mathrm{ms}$
+C: $T_0 = 2\pi\sqrt{LC} \approx 1{,}26\ \mathrm{ms}$.
+E: $T_0^2 = 4\pi^2LC = 40 \times 0{,}40 \times 1{,}0 \times 10^{-7} = 1{,}6 \times 10^{-6}\ \mathrm{s^2}$, donc $T_0 = \sqrt{1{,}6} \times 10^{-3} \approx 1{,}26\ \mathrm{ms}$ (fréquence propre d'environ 790 Hz).
+
+[PHY-207] oscillateurs | advanced
+Q: Un circuit LC idéal ($L = 0{,}40\ \mathrm{H}$, $C = 0{,}10\ \mu\mathrm{F}$), le condensateur est initialement chargé sous $100\ \mathrm{V}$ et le courant est nul. La charge maximale et l'intensité maximale valent :
+* $Q_m = 10\ \mu\mathrm{C}$ et $I_m = 50\ \mathrm{mA}$
+- $Q_m = 10\ \mu\mathrm{C}$ et $I_m = 5{,}0\ \mathrm{mA}$
+- $Q_m = 1{,}0\ \mu\mathrm{C}$ et $I_m = 50\ \mathrm{mA}$
+- $Q_m = 10\ \mu\mathrm{C}$ et $I_m = 0{,}50\ \mathrm{A}$
+C: $Q_m = CU_0 = 10\ \mu\mathrm{C}$ et $I_m = \omega_0Q_m = 50\ \mathrm{mA}$.
+E: $Q_m = CU_0 = 1{,}0 \times 10^{-7} \times 100 = 1{,}0 \times 10^{-5}\ \mathrm{C}$. La pulsation propre vaut $\omega_0 = \frac{1}{\sqrt{LC}} = \frac{1}{\sqrt{4{,}0 \times 10^{-8}}} = 5{,}0 \times 10^{3}\ \mathrm{rad\,s^{-1}}$, et $q = Q_m\cos(\omega_0t)$ donne $I_m = \omega_0Q_m = 5{,}0 \times 10^{-2}\ \mathrm{A}$.
+
+[PHY-208] ondes | intermediate
+Q: Un coup est frappé sur une conduite en fonte remplie d'eau, à une distance $d$ d'un capteur. Le capteur reçoit deux signaux séparés de $0{,}35\ \mathrm{s}$. Célérités du son : $5\,000\ \mathrm{m\,s^{-1}}$ dans la fonte, $1\,500\ \mathrm{m\,s^{-1}}$ dans l'eau. La distance $d$ vaut :
+* $750\ \mathrm{m}$
+- $1\,500\ \mathrm{m}$
+- $525\ \mathrm{m}$
+- $375\ \mathrm{m}$
+C: $d = 750\ \mathrm{m}$.
+E: Le signal transmis par la fonte arrive le premier : $\Delta t = \frac{d}{1\,500} - \frac{d}{5\,000} = d \times \frac{10 - 3}{15\,000} = \frac{7d}{15\,000}$. Donc $d = \frac{0{,}35 \times 15\,000}{7} = 750\ \mathrm{m}$.
+
+[PHY-209] electricite-rc | intermediate
+Q: Lors de la charge d'un condensateur à travers une résistance (constante de temps $\tau$), au bout de combien de temps la tension $u_C$ atteint-elle 99 % de sa valeur finale ? (On donne $\ln 100 \approx 4{,}6$.)
+* $4{,}6\,\tau$
+- $0{,}99\,\tau$
+- $100\,\tau$
+- $2{,}3\,\tau$
+C: $t = \tau\ln 100 \approx 4{,}6\,\tau$.
+E: $u_C = E\left(1 - e^{-t/\tau}\right) = 0{,}99E$ donne $e^{-t/\tau} = 0{,}01$, soit $t = \tau\ln 100 \approx 4{,}6\,\tau$. C'est pourquoi on considère la charge comme terminée au bout d'environ $5\tau$.
+
+[PHY-210] ondes-lumineuses | beginner
+Q: Une fente de largeur $a = 0{,}10\ \mathrm{mm}$ est éclairée par une radiation de longueur d'onde $\lambda = 0{,}60\ \mu\mathrm{m}$. L'écart angulaire $\theta$ entre le milieu de la tache centrale et la première extinction vaut :
+* $6{,}0 \times 10^{-3}\ \mathrm{rad}$
+- $6{,}0 \times 10^{-6}\ \mathrm{rad}$
+- $0{,}17\ \mathrm{rad}$
+- $1{,}2 \times 10^{-2}\ \mathrm{rad}$
+C: $\theta = \frac{\lambda}{a} = 6{,}0 \times 10^{-3}\ \mathrm{rad}$.
+E: $\theta = \frac{0{,}60 \times 10^{-6}}{0{,}10 \times 10^{-3}} = 6{,}0 \times 10^{-3}\ \mathrm{rad}$. La largeur angulaire totale de la tache centrale vaut $2\theta = 1{,}2 \times 10^{-2}\ \mathrm{rad}$.
+
+[PHY-211] mecanique-satellites | advanced
+Q: Un satellite décrit une orbite circulaire de rayon $r = 4R$ autour de la Terre ($R = 6\,400\ \mathrm{km}$ ; intensité de la pesanteur au sol $g_0 = 10\ \mathrm{m\,s^{-2}}$). Sa vitesse vaut :
+* $4{,}0\ \mathrm{km\,s^{-1}}$
+- $8{,}0\ \mathrm{km\,s^{-1}}$
+- $2{,}0\ \mathrm{km\,s^{-1}}$
+- $16\ \mathrm{km\,s^{-1}}$
+C: $v = \sqrt{\frac{g_0R^2}{r}} = 4{,}0\ \mathrm{km\,s^{-1}}$.
+E: Le mouvement circulaire est uniforme et $\frac{v^2}{r} = \frac{GM}{r^2}$ avec $GM = g_0R^2$. Donc $v = \sqrt{\frac{g_0R}{4}} = \sqrt{\frac{10 \times 6{,}4 \times 10^{6}}{4}} = \sqrt{1{,}6 \times 10^{7}} = 4{,}0 \times 10^{3}\ \mathrm{m\,s^{-1}}$. Près du sol ($r = R$), on trouverait 8 km/s.
+
+[PHY-212] electricite-rl | intermediate
+Q: Dans une bobine d'inductance $L = 0{,}50\ \mathrm{H}$, l'intensité du courant décroît régulièrement de $0{,}20\ \mathrm{A}$ à $0$ en $2{,}0\ \mathrm{ms}$. La valeur absolue de la force électromotrice d'auto-induction vaut :
+* $50\ \mathrm{V}$
+- $0{,}20\ \mathrm{V}$
+- $5{,}0\ \mathrm{V}$
+- $500\ \mathrm{V}$
+C: $|e| = L\left|\frac{\Delta i}{\Delta t}\right| = 50\ \mathrm{V}$.
+E: $e = -L\frac{di}{dt}$ et $\left|\frac{di}{dt}\right| = \frac{0{,}20}{2{,}0 \times 10^{-3}} = 100\ \mathrm{A\,s^{-1}}$, d'où $|e| = 0{,}50 \times 100 = 50\ \mathrm{V}$. Une coupure brutale du courant dans une bobine provoque ainsi des surtensions (étincelle à l'ouverture de l'interrupteur).
