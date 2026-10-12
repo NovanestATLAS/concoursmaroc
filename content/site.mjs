@@ -21,6 +21,10 @@ export default {
   repoUrl: 'https://github.com/NovanestATLAS/concoursmaroc',
   // Optional public contact address. Empty = contact goes through GitHub issues.
   contactEmail: '',
+  // Contact form (/contact/): access key from https://web3forms.com (free).
+  // Messages go to the email address the key was created with; that address
+  // never appears in the site. Empty = the form is shown switched off.
+  contactKey: 'd5dd4775-3f49-4699-8e24-f912ad749d75',
   themeColor: '#101a3d',
 
   // ---- services you will add later (leave empty until then) ----

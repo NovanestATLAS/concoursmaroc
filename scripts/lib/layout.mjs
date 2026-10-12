@@ -80,6 +80,7 @@ const NAV = {
     ['outils/', 'navTools'],
     ['outils/calendrier-concours/', 'navCalendar'],
     ['guides/', 'navGuides'],
+    ['contact/', 'navContact'],
   ],
   ar: [
     ['ar/concours/', 'navConcours'],
@@ -87,6 +88,7 @@ const NAV = {
     ['ar/outils/', 'navTools'],
     ['ar/outils/calendrier-concours/', 'navCalendar'],
     ['ar/guides/', 'navGuides'],
+    ['ar/contact/', 'navContact'],
   ],
 };
 
