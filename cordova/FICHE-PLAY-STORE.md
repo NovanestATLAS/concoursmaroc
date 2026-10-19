@@ -30,7 +30,7 @@ Concours Maroc - QCM corrigés
 **Description courte** (80/80)
 
 ```text
-Concours au Maroc : fiches, plus de 1 000 QCM corrigés, examens blancs, FR et AR
+Concours au Maroc : fiches, plus de 2 300 QCM corrigés, examens blancs, FR et AR
 ```
 
 **Description complète** (3 652/4 000)
@@ -50,7 +50,7 @@ Concours Maroc vous accompagne dans la préparation des concours au Maroc : conc
 Chaque fiche présente les conditions d'accès (bac, âge, taille…), le mode de sélection, les derniers seuils connus, les épreuves, le nombre de postes annoncé, le calendrier et les liens officiels.
 
 PLUS DE 1 000 QCM CORRIGÉS
-17 matières : Maroc (histoire, géographie, institutions), culture générale, logique et tests psychotechniques, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie et gestion, sciences et administration, secourisme, architecture et arts, institutions de sécurité, système éducatif et pédagogie. Chaque question est suivie de la bonne réponse, d'une explication et de sa source.
+18 matières : Maroc (histoire, géographie, institutions), culture générale, logique et tests psychotechniques, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie et gestion, sciences et administration, secourisme, architecture et arts, institutions de sécurité, système éducatif et pédagogie, enseignement primaire (didactique). Chaque question est suivie de la bonne réponse, d'une explication et de sa source.
 
 UN ENTRAÎNEMENT ADAPTÉ À VOTRE CONCOURS
 • Examen blanc chronométré au format du concours choisi : nombre de questions, durée, barème
@@ -85,7 +85,7 @@ Une erreur dans une question ou une fiche ? Signalez-la depuis la rubrique « Co
 **Notes de version** (262/500)
 
 ```text
-Nouvelle version : 32 fiches concours, plus de 1 000 QCM corrigés et expliqués, questions au niveau de chaque concours, examens blancs au format de chaque concours, outils (note du bac, orientation, calendrier) et guides, en français et en arabe. Nouvelle icône.
+Nouvelle version : 33 fiches concours, plus de 2 300 QCM corrigés et expliqués, questions au niveau de chaque concours, examens blancs au format de chaque concours, outils (note du bac, orientation, calendrier) et guides, en français et en arabe. Nouvelle icône.
 ```
 
 ## العربية (traduction arabe)
@@ -99,7 +99,7 @@ Concours Maroc مباريات المغرب
 **الوصف المختصر** (80/80)
 
 ```text
-حضّر مباريات المغرب: أكثر من 1000 سؤال مصحح وامتحانات تجريبية بالعربية والفرنسية
+حضّر مباريات المغرب: أكثر من 2300 سؤال مصحح وامتحانات تجريبية بالعربية والفرنسية
 ```
 
 **الوصف الكامل** (3 047/4 000)
@@ -107,7 +107,7 @@ Concours Maroc مباريات المغرب
 ```text
 يرافقك تطبيق Concours Maroc في التحضير للمباريات بالمغرب: مباريات ولوج المدارس بعد البكالوريا ومباريات التوظيف بمستوى البكالوريا. لكل مباراة بطاقة واضحة وأسئلة متعددة الاختيارات مصححة وامتحانات تجريبية، بالعربية والفرنسية.
 
-32 مباراة مشروحة
+33 مباراة مشروحة
 • الصحة: الطب والصيدلة وطب الأسنان، ISPITS
 • الهندسة: ENSA وENSAM، الأقسام التحضيرية وCNC، معهد الحسن الثاني (APESA)، كليات العلوم والتقنيات، المدارس العليا للتكنولوجيا
 • التجارة: ENCG (TAFEM) وISCAE
@@ -118,8 +118,8 @@ Concours Maroc مباريات المغرب
 • التكوين: شهادة التقني العالي، التكوين المهني، مدرسة 1337، الجامعة
 تعرض كل بطاقة شروط الولوج (البكالوريا، السن، القامة…)، وطريقة الانتقاء، وآخر العتبات المعروفة، والاختبارات، وعدد المناصب المعلن، والمواعيد، والروابط الرسمية.
 
-أكثر من 1000 سؤال مصحح
-17 مادة: المغرب (التاريخ والجغرافيا والمؤسسات)، الثقافة العامة، المنطق والاختبارات السيكوتقنية، الحساب، الرياضيات، الفيزياء، الكيمياء، علوم الحياة والأرض، الفرنسية، العربية، الإنجليزية، الاقتصاد والتدبير، العلوم والإدارة، الإسعافات الأولية، الهندسة المعمارية والفنون، مؤسسات الأمن، المنظومة التربوية والبيداغوجيا. كل سؤال متبوع بالجواب الصحيح وشرحه ومصدره.
+أكثر من 2300 سؤال مصحح
+18 مادة: المغرب (التاريخ والجغرافيا والمؤسسات)، الثقافة العامة، المنطق والاختبارات السيكوتقنية، الحساب، الرياضيات، الفيزياء، الكيمياء، علوم الحياة والأرض، الفرنسية، العربية، الإنجليزية، الاقتصاد والتدبير، العلوم والإدارة، الإسعافات الأولية، الهندسة المعمارية والفنون، مؤسسات الأمن، المنظومة التربوية والبيداغوجيا، التعليم الابتدائي (الديداكتيك). كل سؤال متبوع بالجواب الصحيح وشرحه ومصدره.
 
 تمرين على مقاس مباراتك
 • امتحان تجريبي بتوقيت محدد وبصيغة المباراة المختارة: عدد الأسئلة، المدة، سلّم التنقيط
@@ -154,7 +154,7 @@ Concours Maroc تطبيق مستقل تنشره Novanest ATLAS. لا يمثل أ
 **ملاحظات الإصدار** (201/500)
 
 ```text
-نسخة جديدة: 32 بطاقة مباراة، أكثر من 1000 سؤال مصحح ومشروح، أسئلة بمستوى كل مباراة، امتحانات تجريبية بصيغة كل مباراة، أدوات (معدل البكالوريا، التوجيه، المواعيد) وأدلة، بالعربية والفرنسية. أيقونة جديدة.
+نسخة جديدة: 33 بطاقة مباراة، أكثر من 2300 سؤال مصحح ومشروح، أسئلة بمستوى كل مباراة، امتحانات تجريبية بصيغة كل مباراة، أدوات (معدل البكالوريا، التوجيه، المواعيد) وأدلة، بالعربية والفرنسية. أيقونة جديدة.
 ```
 
 ## Éléments graphiques

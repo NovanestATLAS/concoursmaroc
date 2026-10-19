@@ -2,6 +2,7 @@
 import { html, raw, esc } from './html.mjs';
 import { icon, logo } from './icons.mjs';
 import { t } from './strings.mjs';
+import { appBadge } from './pages/app-landing.mjs';
 
 /* Relative prefix from a page (site-relative output path) to the site root. */
 export function rootOf(pagePath) {
@@ -128,6 +129,7 @@ function footer(lang, link, site, footerLinks) {
       <div class="footer-brand">
         <a class="brand" href="${link(p)}">${logo(32)}<span>Concours <b>Maroc</b></span></a>
         <p>${t(lang, 'footerAbout')}</p>
+        ${appBadge(site, lang, link)}
       </div>
       ${col(t(lang, 'footerConcours'), footerLinks.postbac)}
       ${col(t(lang, 'footerSecurity'), footerLinks.niveauBac)}

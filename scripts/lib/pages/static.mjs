@@ -37,9 +37,15 @@ export function buildStaticPages(site, all, lang, banks) {
   pages.push(simplePage(site, lang, 'a-propos',
     ar ? 'من نحن ومنهجيتنا' : 'À propos de Concours Maroc et méthode de vérification',
     ar ? 'Concours Maroc دليل مستقل ومجاني للمباريات بالمغرب: كيف نجمع المعلومات ونتحقق منها ونحدّثها.' : "Concours Maroc est un guide indépendant et gratuit des concours au Maroc : comment les informations sont collectées, vérifiées, datées et mises à jour.",
-    (link, pfx) => ar ? html`${P('Concours Maroc دليل مستقل ومجاني يساعد الحاصلين على البكالوريا والمترشحين بمستوى البكالوريا على فهم المباريات والتحضير لها.')}
-${H2('منهجيتنا')}${UL(['نعتمد أولًا الإعلانات الرسمية للمؤسسات والمنصات الحكومية (Cursus Sup، بوابات التوظيف…).', 'كل معلومة غير مؤكدة رسميًا يُشار إليها بوضوح مع مصدرها وتاريخها.', 'الأسئلة التدريبية أصلية ومتحقق منها، وتحاكي أسلوب الاختبارات دون نسخ مواضيع رسمية.', 'نراجع الصفحات قبل كل دورة ونحدث تاريخ آخر تحقق.'])}
-${H2('استقلالية')}${P('الموقع غير تابع لأي إدارة أو مؤسسة مذكورة. الإعلان الرسمي لكل دورة هو المرجع الوحيد.')}`
+    (link, pfx) => ar ? html`${P('Concours Maroc دليل **مستقل ومجاني** موجه إلى الحاصلين على البكالوريا والمترشحين بمستوى البكالوريا الذين يستعدون لمباراة بالمغرب. ويجمع، لكل مباراة، شروط الولوج وطريقة الانتقاء والاختبارات وعدد المقاعد المعروف والأجندة، مع تمارين ملائمة.')}
+${H2('منهجيتنا')}${UL([
+  '**المصادر الأولية أولًا**: الإعلانات الرسمية للمؤسسات، والمنصات العمومية (Cursus Sup، بوابات التوظيف) والنصوص المنشورة.',
+  '**معلومة مؤرخة وموثقة المصدر**: تشير كل بطاقة إلى الدورة التي تم التحقق منها وتسرد مصادرها. وكل رقم لا تتداوله إلا الصحافة أو المواقع المتخصصة يُشار إليه على هذا الأساس.',
+  '**أسئلة أصلية**: الأسئلة التدريبية، وعددها ' + nq + '، محررة ومراجعة خصيصًا للموقع؛ وهي تحاكي مستوى الاختبارات وأسلوبها دون نسخ مواضيع رسمية.',
+  '**تحديث حسب كل دورة**: تُراجع البطاقات قبل كل حملة تسجيل. ويُميَّز بين التواريخ القادمة والتقديرات.',
+])}
+${H2('الاستقلالية')}${P('Concours Maroc غير تابع لأي إدارة أو قوة أمنية أو مؤسسة عسكرية أو مؤسسة مذكورة. ولا تُستعمل أسماء المباريات إلا لوصف المحتوى. **وحده الإعلان الرسمي لكل دورة هو المعتمد.**')}
+${H2('الإبلاغ عن خطأ')}${P('تغيّر تاريخ أو نُشرت عتبة؟ أبلغنا بذلك عبر صفحة [الاتصال](@contact). وكل تصحيح يتم التحقق منه يُدمج بسرعة.'.replace('@contact', link(pfx + 'contact/')))}`
       : html`${P("Concours Maroc est un guide **indépendant et gratuit** pour les bacheliers et les candidats de niveau bac qui préparent un concours au Maroc. Il réunit, pour chaque concours, les conditions d'accès, le mode de sélection, les épreuves, le nombre de places connu et le calendrier, avec un entraînement adapté.")}
 ${H2('Notre méthode')}${UL([
   "**Sources primaires d'abord** : avis officiels des établissements, plateformes publiques (Cursus Sup, portails de recrutement) et textes publiés.",

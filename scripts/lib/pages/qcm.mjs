@@ -1,6 +1,6 @@
 /* QCM sample pages per subject: crawlable questions with answers and
  * explanations, plus a link to the interactive trainer. */
-import { html, raw } from '../html.mjs';
+import { html, raw, inline } from '../html.mjs';
 import { icon } from '../icons.mjs';
 import { linker, breadcrumb, breadcrumbLd } from '../layout.mjs';
 import { t } from '../strings.mjs';
@@ -36,6 +36,7 @@ const SEO_TITLE = {
   architecture: 'QCM architecture et art corrigés (concours ENA)',
   securite: 'QCM institutions de sécurité corrigés (police, gendarmerie, DGAPR)',
   education: 'QCM système éducatif et pédagogie corrigés (concours enseignants)',
+  primaire: 'QCM concours enseignement primaire corrigés : didactique, pédagogie',
 };
 
 // Who the subject is for, when it is not a written test of bac-level concours.
@@ -43,10 +44,12 @@ const SCOPE = {
   fr: {
     securite: 'Culture générale des concours de niveau bac (police, gendarmerie, forces auxiliaires, protection civile, DGAPR) : les institutions de sécurité, leurs missions et les numéros d’urgence. Aucune question de droit ni de lois : elles ne figurent pas à ces épreuves.',
     education: 'Pour le concours de recrutement des enseignants des académies régionales (après la licence) : système éducatif, pédagogie et sciences de l’éducation. Les questions « système éducatif » aident aussi à préparer l’entretien d’entrée en licence d’éducation.',
+    primaire: 'Pour l’écrit du concours d’accès au cycle de qualification des professeurs du primaire (CRMEF, après la licence) : sciences de l’éducation, didactique de l’arabe, du français, des mathématiques et de l’activité scientifique, et connaissances de ces matières au niveau du primaire. Pas de question de législation : aucune des sources consultées ne la place à l’écrit du primaire.',
   },
   ar: {
     securite: 'ثقافة عامة لمباريات مستوى البكالوريا (الأمن الوطني، الدرك، القوات المساعدة، الوقاية المدنية، إدارة السجون): مؤسسات الأمن ومهامها وأرقام الطوارئ. لا تتضمن أي سؤال في القانون، فهو غير مطلوب في هذه الاختبارات.',
     education: 'لمباراة توظيف الأساتذة بالأكاديميات الجهوية (بعد الإجازة): المنظومة التربوية والبيداغوجيا وعلوم التربية. وتساعد أسئلة «المنظومة التربوية» أيضًا على التحضير لمقابلة ولوج إجازة التربية.',
+    primaire: 'للاختبار الكتابي لمباراة ولوج مسلك تأهيل أساتذة التعليم الابتدائي (المراكز الجهوية لمهن التربية والتكوين، بعد الإجازة): علوم التربية، وديداكتيك اللغة العربية واللغة الفرنسية والرياضيات والنشاط العلمي، ومعارف هذه المواد في مستوى الابتدائي. ولا تتضمن أسئلة في التشريع، إذ لم نجد أي مصدر يدرجه في الاختبار الكتابي للابتدائي.',
   },
 };
 
@@ -57,7 +60,14 @@ const TXT = {
     h1: (s) => `QCM corrigés : ${s.fr}`,
     lead: (n, total) => `${n} questions d'exemple sur ${total} disponibles dans l'entraînement, avec la bonne réponse et une explication. Cliquez sur « Voir la réponse » après avoir réfléchi.`,
     show: 'Voir la réponse et l’explication', answer: 'Bonne réponse', train: 'S’entraîner sur cette matière (chronométré, corrigé)',
-    idxTitle: 'QCM corrigés par matière pour les concours au Maroc', idxDesc: 'QCM corrigés gratuits par matière : culture générale, Maroc, logique, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie, secourisme, institutions de sécurité, pédagogie.',
+    idxTitle: 'QCM corrigés par matière pour les concours au Maroc', idxDesc: 'QCM corrigés gratuits par matière : culture générale, Maroc, logique, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie, secourisme, institutions de sécurité, pédagogie, enseignement primaire.',
+    idxHowH: 'Comment utiliser ces QCM', idxFrOnly: '', idxFrOnlyText: '',
+    idxHow: [
+      'Chaque page présente une sélection de questions qui couvre tous les thèmes de la matière, avec la bonne réponse, une correction courte et une explication détaillée ; la banque complète est disponible dans l’entraînement.',
+      'Pour vous entraîner dans les conditions du concours, ouvrez l’[entraînement](@/entrainement/) : séries chronométrées, examen blanc au format du concours visé, niveau des questions adapté à sa sélectivité, suivi de vos points faibles.',
+      'Choisissez d’abord le concours sur sa [fiche](@/concours/) : vous y trouverez les matières réellement évaluées, ce qui évite de réviser des épreuves qui n’existent pas.',
+      'Les questions sont rédigées pour ce site à partir des programmes et des épreuves publiés ; elles ne reproduisent pas les sujets officiels.',
+    ],
     idxH1: 'QCM corrigés par matière', idxLead: 'Toutes les questions sont originales, relues et accompagnées d’une explication. Une erreur ? Signalez-la depuis la page contact. Choisissez une matière.',
     notice: 'Questions originales rédigées pour l’entraînement : elles reproduisent le style et le niveau des épreuves, pas des sujets officiels.',
   },
@@ -68,6 +78,13 @@ const TXT = {
     lead: (n, total) => `${n} سؤالًا نموذجيًا من أصل ${total} متاحة في التمرين، مع الجواب الصحيح والشرح.`,
     show: 'عرض الجواب والشرح', answer: 'الجواب الصحيح', train: 'تمرّن على هذه المادة (موقت ومصحح)',
     idxTitle: 'أسئلة مصححة حسب المادة للتحضير للمباريات بالمغرب', idxDesc: 'أسئلة مصححة مجانية حسب المادة: الثقافة العامة، المغرب، المنطق، الحساب، اللغة العربية، العلوم.',
+    idxHowH: 'كيف تستعمل هذه الأسئلة', idxFrOnly: 'مواد باللغة الفرنسية', idxFrOnlyText: 'تُدرَّس هذه المواد وتُمتحن بالفرنسية في أغلب المباريات (الطب، ENSA، الأقسام التحضيرية…)، لذلك أسئلتها متوفرة بالفرنسية فقط.',
+    idxHow: [
+      'تعرض كل صفحة مجموعة من الأسئلة تغطي جميع محاور المادة، مع الجواب الصحيح وتصحيح قصير وشرح مفصل؛ والبنك الكامل متوفر في التمرين.',
+      'للتمرن في ظروف المباراة، افتح [التمرين](@/entrainement/): سلاسل موقتة، امتحان تجريبي بصيغة المباراة المستهدفة، مستوى أسئلة ملائم لدرجة انتقائيتها، وتتبع نقط ضعفك.',
+      'اختر أولًا المباراة من [بطاقتها](@/concours/): ستجد فيها المواد التي تُقيَّم فعلًا، حتى لا تراجع اختبارات غير موجودة.',
+      'الأسئلة محررة لهذا الموقع انطلاقًا من البرامج والاختبارات المنشورة، ولا تنقل المواضيع الرسمية.',
+    ],
     idxH1: 'أسئلة مصححة حسب المادة', idxLead: 'كل الأسئلة أصلية ومُراجَعة ومرفقة بشرح. وجدت خطأ؟ أبلغ عنه من صفحة الاتصال. اختر مادة.',
     notice: 'أسئلة أصلية محررة للتمرين: تحاكي أسلوب الاختبارات ومستواها وليست مواضيع رسمية.',
   },
@@ -162,7 +179,8 @@ ${SCOPE[lang][s.id] ? html`<p class="callout warn">${SCOPE[lang][s.id]}</p>` : '
       styles: list.some((q) => { const b = q.l10n[useLang]; return [b.text, b.explanation, ...b.choices].some(hasMath); }) ? [KATEX_CSS] : [],
     });
   }
-  // index
+  // index (Arabic hub: also the subjects that only exist in French, e.g. the sciences)
+  const frOnly = lang === 'ar' ? SUBJECTS.filter((s) => !pickLang(s, 'ar') && pickLang(s, 'fr') === 'fr') : [];
   const ip = `${pfx}qcm/index.html`;
   const link = linker(ip);
   const crumbs = [[pfx, t(lang, 'home')], [`${pfx}qcm/`, x.qcm]];
@@ -170,7 +188,9 @@ ${SCOPE[lang][s.id] ? html`<p class="callout warn">${SCOPE[lang][s.id]}</p>` : '
     path: ip, lang, title: x.idxTitle, description: x.idxDesc, section: 'navPractice', alternate: `${lang === 'ar' ? '' : 'ar/'}qcm/`,
     jsonld: [breadcrumbLd(site, crumbs)],
     body: html`${breadcrumb(lang, link, crumbs)}<div class="container"><header class="page-head"><span class="eyebrow">${x.qcm}</span><h1>${x.idxH1}</h1><p class="lead">${x.idxLead}</p></header>
-<div class="grid cols-3" style="margin-bottom:30px">${subjects.map((s) => html`<a class="card path-card ${subjectArt(s.id).cls}" href="${link(`${pfx}qcm/${s.slug}/`)}"><div class="card-top"><span class="card-ico">${subjectArt(s.id).ico}</span><span class="card-title">${s[lang]}</span></div><p class="card-sub">${banks[s.id].length} ${lang === 'ar' ? 'سؤال' : 'questions'}</p></a>`)}</div></div>`,
+<div class="grid cols-3" style="margin-bottom:30px">${subjects.map((s) => html`<a class="card path-card ${subjectArt(s.id).cls}" href="${link(`${pfx}qcm/${s.slug}/`)}"><div class="card-top"><span class="card-ico">${subjectArt(s.id).ico}</span><span class="card-title">${s[lang]}</span></div><p class="card-sub">${banks[s.id].length} ${lang === 'ar' ? 'سؤال' : 'questions'}</p></a>`)}</div>
+${frOnly.length ? html`<h2>${x.idxFrOnly}</h2><p>${x.idxFrOnlyText}</p><div class="grid cols-3" style="margin-bottom:30px">${frOnly.map((s) => html`<a class="card path-card ${subjectArt(s.id).cls}" href="${link(`qcm/${s.slug}/`)}" hreflang="fr" lang="fr"><div class="card-top"><span class="card-ico">${subjectArt(s.id).ico}</span><span class="card-title">${s.fr}</span></div><p class="card-sub">${banks[s.id].length} questions</p></a>`)}</div>` : ''}
+<section class="prose" style="margin-bottom:30px"><h2>${x.idxHowH}</h2><ul>${x.idxHow.map((li) => html`<li>${inline(li.replace(/\]\(@\/([^)]*)\)/g, (m, q) => `](${link(pfx + q)})`))}</li>`)}</ul></section></div>`,
   });
   return pages;
 }

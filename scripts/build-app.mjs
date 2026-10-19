@@ -41,6 +41,7 @@ import { buildPracticePage } from './lib/pages/practice.mjs';
 import { buildQcmPages } from './lib/pages/qcm.mjs';
 import { buildGuidesPages } from './lib/pages/guides.mjs';
 import { buildStaticPages } from './lib/pages/static.mjs';
+import { buildAppLanding } from './lib/pages/app-landing.mjs';
 import { loadQuestionBanks } from './lib/questions.mjs';
 import { dataFiles, searchIndex } from './lib/data.mjs';
 import { appPrivacyTitle, appPrivacyContent } from './lib/pages/app-privacy.mjs';
@@ -316,12 +317,13 @@ async function main() {
   for (const lang of site.languages) {
     pages.push(buildHome(site, all, lang, banks));
     pages.push(buildDirectory(site, all, lang));
-    for (const c of all) pages.push(buildGuide(site, c, lang, all));
+    for (const c of all) pages.push(buildGuide(site, c, lang, all, banks));
     pages.push(...buildToolsPages(site, all, lang));
     pages.push(buildPracticePage(site, all, lang, banks));
     pages.push(...buildQcmPages(site, all, lang, banks));
     pages.push(...(await buildGuidesPages(site, all, lang, ROOT)));
     pages.push(...buildStaticPages(site, all, lang, banks));
+    pages.push(buildAppLanding(site, lang, all, banks));
     pages.push(settingsPage(lang));
     pages.push(devPage(lang));
   }

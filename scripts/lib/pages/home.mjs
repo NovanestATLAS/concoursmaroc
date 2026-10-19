@@ -9,6 +9,7 @@ import { qcmPath } from './qcm.mjs';
 import { CALENDAR } from '../../../content/calendar.mjs';
 import { deadlineItem } from './tools.mjs';
 import { hue, subjectArt } from '../art.mjs';
+import { appBadge } from './app-landing.mjs';
 
 const TXT = {
   fr: {
@@ -137,6 +138,7 @@ export function buildHome(site, all, lang, banks) {
 <div class="big-search" role="search">${icon('search')}<label class="visually-hidden" for="home-search">${t(lang, 'search')}</label><input id="home-search" type="search" autocomplete="off" placeholder="${t(lang, 'searchPlaceholder')}" data-search-input><ul class="search-results" data-search-results></ul></div>
 <div class="btn-row"><a class="btn" href="${link(pfx + 'outils/orientation-apres-bac/')}">${icon('compass')} ${x.ctaFind}</a><a class="btn ghost" href="${link(pfx + 'entrainement/')}">${icon('play')} ${x.ctaPractice}</a></div>
 <ul class="stat-row">${x.stats(nc, nq).map(([n, l]) => html`<li><b>${n}</b> ${l}</li>`)}</ul>
+${appBadge(site, lang, link)}
 </div>
 <div class="hero-art">
 <h2 class="mt-0" style="font-size:1.1rem">${icon('calendar')} ${x.upcoming}</h2>

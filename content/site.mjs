@@ -26,6 +26,12 @@ export default {
   // never appears in the site. Empty = the form is shown switched off.
   contactKey: 'd5dd4775-3f49-4699-8e24-f912ad749d75',
   themeColor: '#101a3d',
+  // Android app: 'soon' shows "bientôt sur Google Play" (application/ page,
+  // home page and footer badge); 'live' turns them into Google Play links.
+  androidApp: { status: 'soon', id: 'com.novanest.concoursmaroc' },
+  // IndexNow (Bing, Yandex, Seznam, Naver…): the build publishes <key>.txt and
+  // .github/workflows/indexnow.yml submits the pages changed by each push.
+  indexNowKey: '6255d51ee7beda0ba731f342d1450979',
 
   // ---- services you will add later (leave empty until then) ----
   // Google Search Console HTML-tag verification code (content="..." value only).

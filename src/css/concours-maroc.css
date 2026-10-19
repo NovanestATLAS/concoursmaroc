@@ -842,3 +842,11 @@ html[dir="rtl"] .footer-grid h2 { letter-spacing: 0; font-size: var(--fs-sm); }
 .cf-status { margin: 0; font-weight: 700; }
 .cf-status.ok { color: var(--ok-ink); }
 .cf-status.bad { color: var(--bad-ink); }
+
+/* Android app badge (home page, footer): "bientôt sur Google Play" */
+.app-badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; padding: 7px 14px 7px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: var(--fs-sm); font-weight: 700; text-decoration: none; }
+.app-badge svg { width: 18px; height: 18px; fill: currentColor; color: var(--accent); }
+.app-badge:hover { border-color: var(--accent); }
+.app-badge.live { background: var(--accent); color: #fff; border-color: var(--accent); }
+.app-badge.live svg { color: #fff; }
+.site-footer .app-badge { margin-top: 6px; background: transparent; color: inherit; border-color: currentColor; opacity: .9; }

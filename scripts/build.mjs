@@ -22,6 +22,7 @@ import { buildPracticePage } from './lib/pages/practice.mjs';
 import { buildQcmPages } from './lib/pages/qcm.mjs';
 import { buildGuidesPages } from './lib/pages/guides.mjs';
 import { buildStaticPages } from './lib/pages/static.mjs';
+import { buildAppLanding } from './lib/pages/app-landing.mjs';
 import { loadQuestionBanks } from './lib/questions.mjs';
 import { checkBanks } from './lib/math.mjs';
 import { dataFiles, searchIndex } from './lib/data.mjs';
@@ -85,6 +86,11 @@ function stripTags(s) { return String(s).replace(/<[^>]+>/g, ' ').replace(/\s+/g
 
 async function main() {
   const t0 = Date.now();
+  // Sitemap <lastmod>: a page keeps the date of its last real change. The
+  // previous build's fingerprints are read before docs/ is cleared.
+  const LASTMOD_FILE = 'lastmod.json';
+  let prevLastmod = {};
+  try { prevLastmod = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs', LASTMOD_FILE), 'utf8')); } catch (e) { /* first build */ }
   if (!CHECK && fs.existsSync(OUT)) fs.rmSync(OUT, { recursive: true, force: true });
   fs.mkdirSync(OUT, { recursive: true });
 
@@ -111,13 +117,25 @@ async function main() {
   for (const lang of site.languages) {
     add(buildHome(site, all, lang, banks));
     add(buildDirectory(site, all, lang));
-    for (const c of all) add(buildGuide(site, c, lang, all));
+    for (const c of all) add(buildGuide(site, c, lang, all, banks));
     buildToolsPages(site, all, lang).forEach(add);
     add(buildPracticePage(site, all, lang, banks));
     buildQcmPages(site, all, lang, banks).forEach(add);
     (await buildGuidesPages(site, all, lang, ROOT)).forEach(add);
     buildStaticPages(site, all, lang, banks).forEach(add);
+    add(buildAppLanding(site, lang, all, banks));
   }
+
+  // Last real change of each page: unchanged content keeps its previous date,
+  // changed content gets the editorial date (site.updated).
+  const lastmod = {};
+  for (const p of pages) {
+    const h = crypto.createHash('sha1').update(`${p.title}\n${p.description}\n${String(p.body)}`).digest('hex').slice(0, 16);
+    const prev = prevLastmod[p.path];
+    p.updated = prev && prev.h === h ? prev.d : (p.updated || site.updated);
+    lastmod[p.path] = { h, d: p.updated };
+  }
+  write(LASTMOD_FILE, JSON.stringify(lastmod, null, 0));
 
   // Render pages
   const seen = new Set();
@@ -147,6 +165,7 @@ async function main() {
   write('manifest.webmanifest', manifestJson(site));
   write('.nojekyll', '');
   if (site.customDomain) write('CNAME', `${site.customDomain}\n`);
+  if (site.indexNowKey) write(`${site.indexNowKey}.txt`, site.indexNowKey);
   // Announcement popup of the Android app (src/app/js/notices.js), edited in
   // content/app-annonce.json; GitHub Pages serves it with CORS open.
   const annonce = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/app-annonce.json'), 'utf8'));

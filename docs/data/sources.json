@@ -717,6 +717,18 @@
       "lastVerified": "2026-10-11",
       "validFrom": "2026-03-30",
       "validUntil": null
+    },
+    {
+      "id": "src-curriculum-primaire-revise",
+      "title": "Nouveautés du curriculum révisé des quatre premières années du primaire : 6 unités en arabe (au lieu de 8) et en français (au lieu de 12), unités de 5 semaines dont une d'évaluation et de soutien",
+      "org": "Taalimpress (relais du document de la Direction des curricula) ; Al Moustajad Attarbaoui",
+      "url": "https://www.taalimpress.info/2017/03/curriculum.html",
+      "topic": "Organisation de l'année en unités dans le curriculum révisé du primaire",
+      "reliability": "secondary",
+      "accessed": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "validFrom": "2017-09-01",
+      "validUntil": null
     }
   ]
 }

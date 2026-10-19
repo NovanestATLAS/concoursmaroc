@@ -4,7 +4,8 @@ import { icon } from '../icons.mjs';
 import { linker, breadcrumb, breadcrumbLd, faqLd, practiceHref } from '../layout.mjs';
 import { renderBlocks, makeText } from '../blocks.mjs';
 import { t, formatDate } from '../strings.mjs';
-import { GROUPS, BAC, BAC_SHORT } from '../../../content/taxonomy.mjs';
+import { GROUPS, BAC, BAC_SHORT, SUBJECTS, LEVELS, DEFAULT_LEVEL } from '../../../content/taxonomy.mjs';
+import { CALENDAR } from '../../../content/calendar.mjs';
 
 export function guidePath(c, lang) {
   return `${lang === 'ar' ? 'ar/' : ''}concours/${c.id}/`;
@@ -45,6 +46,77 @@ const TXT = {
   },
 };
 
+/* "En bref" section built from the structured data of the concours, the
+ * same in both languages: accepted bac series, dated calendar entries (with
+ * how sure each date is and its source), subjects and format of the
+ * training. */
+const BRIEF = {
+  fr: {
+    h: 'En bref : séries, dates et entraînement', series: 'Séries de bac acceptées', age: 'Âge', ageRange: (a, z) => (a ? `de ${a} à ${z} ans` : `${z} ans au plus`),
+    calendar: 'Dates', none: 'Aucune date publiée pour la prochaine session : consultez le [calendrier des concours](@/outils/calendrier-concours/), mis à jour dès la parution des avis.',
+    conf: { officiel: 'avis officiel', annonce: 'annoncé par la presse ou des sites spécialisés', estimation: 'estimation d’après la période habituelle' },
+    training: 'Entraînement sur ce site', subjects: 'Matières', mock: (n, m) => `Examen blanc : ${n} questions en ${m} minutes`,
+    official: 'format de l’épreuve officielle', indicative: 'format indicatif, construit d’après les matières de l’épreuve', level: 'Niveau des questions',
+    from: 'du', to: 'au', source: 'source',
+  },
+  ar: {
+    h: 'باختصار: الشعب والتواريخ والتمرين', series: 'شعب البكالوريا المقبولة', age: 'السن', ageRange: (a, z) => (a ? `من ${a} إلى ${z} سنة` : `${z} سنة على الأكثر`),
+    calendar: 'التواريخ', none: 'لم يُنشر أي تاريخ للدورة المقبلة بعد: راجع [أجندة المباريات](@/outils/calendrier-concours/) التي تُحدَّث فور صدور الإعلانات.',
+    conf: { officiel: 'إعلان رسمي', annonce: 'معلن في الصحافة أو المواقع المتخصصة', estimation: 'تقدير حسب الفترة المعتادة' },
+    training: 'التمرين على هذا الموقع', subjects: 'المواد', mock: (n, m) => `الامتحان التجريبي: ${n} سؤالًا في ${m} دقيقة`,
+    official: 'نفس صيغة الاختبار الرسمي', indicative: 'صيغة تقريبية مبنية على مواد الاختبار', level: 'مستوى الأسئلة',
+    from: 'من', to: 'إلى', source: 'المصدر',
+  },
+};
+
+function briefSection(c, lang, link, banks) {
+  const b = BRIEF[lang];
+  const pfx = lang === 'ar' ? 'ar/' : '';
+  const T = makeText({ lang, link });
+  const items = [];
+  const bacs = (c.bac || []).map((id) => (BAC.find((x) => x.id === id) || {})[lang]).filter(Boolean);
+  if (bacs.length) items.push(html`<h3>${b.series}</h3><p>${bacs.join(lang === 'ar' ? '، ' : ' ; ')}.</p>`);
+  if (c.age && c.age.max) {
+    // the notice's own wording when it already gives the range, else the range and its reference date
+    const at = c.age.at && c.age.at[lang];
+    const text = at && /\d+\s*(ans|سنة)/.test(at) ? at : `${b.ageRange(c.age.min, c.age.max)}${at ? ` (${at})` : ''}`;
+    items.push(html`<p><strong>${b.age}${lang === 'ar' ? ':' : ' :'}</strong> ${text}.</p>`);
+  }
+
+  const when = (e) => {
+    if (e.month) return formatDate(e.month, lang);
+    if (e.start && e.start !== e.date) return `${b.from} ${formatDate(e.start, lang)} ${b.to} ${formatDate(e.date, lang)}`;
+    return formatDate(e.date, lang);
+  };
+  const key = (e) => e.start || e.date || (e.month + '-01');
+  const dates = CALENDAR.filter((e) => e.concours === c.id).sort((x, y) => key(y).localeCompare(key(x))).slice(0, 8);
+  items.push(html`<h3>${b.calendar}</h3>${dates.length
+    ? html`<ul>${dates.map((e) => html`<li><strong>${when(e)}</strong> — ${e[lang] || e.fr} <small class="muted">(${b.conf[e.confidence] || e.confidence}${e.source ? html`${lang === 'ar' ? '، ' : ', '}<a href="${e.source.url}" rel="noopener nofollow" target="_blank">${b.source}</a>` : ''})</small></li>`)}</ul>`
+    : html`<p>${T(b.none)}</p>`}`);
+
+  const pr = c.practice;
+  if (pr && pr.subjects && pr.subjects.length) {
+    // link to the QCM page in the page's language, else to the French one
+    // (pages exist from 15 questions in a language, see qcm.mjs)
+    const n = (id, l) => ((banks && banks[id]) || []).filter((q) => q.l10n[l]).length;
+    const qcmPath = (x) => (n(x.id, lang) >= 15 ? pfx : (n(x.id, 'fr') >= 15 || n(x.id, 'ar') >= 15 ? '' : null));
+    const subj = pr.subjects.map((id) => SUBJECTS.find((x) => x.id === id)).filter(Boolean).map((x) => {
+      const label = (x.short && x.short[lang]) || x[lang];
+      const where = qcmPath(x);
+      return where === null ? html`${label}` : html`<a href="${link(where + 'qcm/' + x.slug + '/')}"${where !== pfx ? html` hreflang="fr"` : ''}>${label}</a>`;
+    });
+    const lines = [html`<li><strong>${b.subjects}${lang === 'ar' ? ':' : ' :'}</strong> ${subj.reduce((acc, a, i) => (i ? html`${acc}${lang === 'ar' ? '، ' : ', '}${a}` : a), '')}</li>`];
+    if (pr.mock && pr.mock.sections) {
+      const n = pr.mock.sections.reduce((t_, x) => t_ + (x.count || 0), 0);
+      lines.push(html`<li>${b.mock(n, pr.mock.minutes)} (${pr.mock.official ? b.official : b.indicative}).</li>`);
+    }
+    const lv = LEVELS.find((l) => l.id === (pr.difficulty || DEFAULT_LEVEL));
+    if (lv && !(pr.tracks && pr.tracks.length)) lines.push(html`<li><strong>${b.level}${lang === 'ar' ? ':' : ' :'}</strong> ${lv[lang]}</li>`);
+    items.push(html`<h3>${b.training}</h3><ul>${lines}</ul>`);
+  }
+  return html`<section id="en-bref"><h2>${b.h}</h2>${items}</section>`;
+}
+
 function levelLabel(c, lang) {
   const x = TXT[lang];
   return c.level === 'bac' ? x.bacLevel : c.level === 'bac2' ? x.bac2 : c.level === 'bac3' ? x.bac3 : x.postbac;
@@ -67,7 +139,7 @@ export function concoursCard(c, lang, link) {
 </a>`;
 }
 
-export function buildGuide(site, c, lang, all) {
+export function buildGuide(site, c, lang, all, banks) {
   const d = c[lang];
   if (!d) return null;
   const path = guidePath(c, lang) + 'index.html';
@@ -83,6 +155,7 @@ export function buildGuide(site, c, lang, all) {
 
   const toc = html`<nav class="toc" aria-label="${t(lang, 'toc')}"><details open><summary><strong>${t(lang, 'toc')}</strong></summary><ol>
 ${sections.map((s) => html`<li><a href="#${s.id}">${s.h}</a></li>`)}
+<li><a href="#en-bref">${BRIEF[lang].h}</a></li>
 ${d.faq && d.faq.length ? html`<li><a href="#faq">${t(lang, 'faq')}</a></li>` : ''}
 <li><a href="#sources">${t(lang, 'sources')}</a></li></ol></details></nav>`;
 
@@ -112,6 +185,7 @@ ${d.facts && d.facts.length ? html`<div class="facts">${d.facts.map(([k, v]) => 
 <div class="prose">
 <div class="callout warn"><strong class="c-title">${lang === 'ar' ? 'تنبيه' : 'À vérifier'}</strong>${t(lang, 'disclaimerShort')}</div>
 ${sections.map((s) => html`<section id="${s.id}"><h2>${s.h}</h2>${renderBlocks(s.blocks, ctx)}</section>`)}
+${briefSection(c, lang, link, banks)}
 ${d.faq && d.faq.length ? html`<section id="faq" class="faq"><h2>${t(lang, 'faq')}</h2>${d.faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${T(f.a)}</p></div></details>`)}</section>` : ''}
 <section id="sources"><h2>${t(lang, 'sources')}</h2>
 <p class="muted"><small>${x.sourcesIntro}</small></p>

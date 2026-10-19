@@ -1,0 +1,67 @@
+# IndexNow: tells Bing, Yandex, Seznam, Naver… which pages changed, right
+# after GitHub Pages has published them. (Google does not use IndexNow: it
+# reads the sitemap declared in robots.txt and in Search Console.)
+# - every push that changes docs/ on the branch GitHub Pages serves: the
+#   changed pages of the sitemap are submitted;
+# - Actions tab → "IndexNow" → Run workflow: every URL of the sitemap (to do
+#   once, and after a large update).
+# The key comes from content/site.mjs (indexNowKey); the build publishes it at
+# https://<domain>/<key>.txt, which is how the search engines check it.
+name: IndexNow
+
+on:
+  push:
+    branches: [claude/concoursmaroc-github-site-x6v5br]
+    paths: ['docs/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+
+      - name: Pages à soumettre
+        run: |
+          HOST=$(tr -d '[:space:]' < docs/CNAME)
+          KEY=$(node -e "import('./content/site.mjs').then((m) => process.stdout.write(m.default.indexNowKey || ''))")
+          [ -n "$KEY" ] || { echo "Pas de clé IndexNow (content/site.mjs) : rien à faire."; exit 0; }
+          grep -o '<loc>[^<]*</loc>' docs/sitemap.xml | sed 's#</\?loc>##g' | sort -u > sitemap.txt
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || ! git rev-parse -q --verify HEAD~1 >/dev/null; then
+            cp sitemap.txt urls.txt
+          else
+            git diff --name-only HEAD~1 HEAD -- docs | grep '\.html$' \
+              | sed "s#^docs/##; s#index\.html\$##; s#^#https://$HOST/#" | sort -u > changed.txt || true
+            # only indexable pages (those of the sitemap)
+            comm -12 changed.txt sitemap.txt > urls.txt
+          fi
+          echo "HOST=$HOST" >> "$GITHUB_ENV"
+          echo "KEY=$KEY" >> "$GITHUB_ENV"
+          echo "$(wc -l < urls.txt) page(s) :"; head -50 urls.txt
+
+      - name: Attendre la publication par GitHub Pages
+        run: sleep 120
+
+      - name: Envoi à IndexNow
+        run: |
+          [ -s urls.txt ] || { echo "Aucune page indexable modifiée."; exit 0; }
+          jq -n --arg host "$HOST" --arg key "$KEY" --arg loc "https://$HOST/$KEY.txt" --rawfile urls urls.txt \
+            '{host: $host, key: $key, keyLocation: $loc, urlList: ($urls | split("\n") | map(select(length > 0)))}' > body.json
+          for attempt in 1 2 3; do
+            code=$(curl -sS -o resp.txt -w '%{http_code}' -X POST 'https://api.indexnow.org/indexnow' \
+              -H 'Content-Type: application/json; charset=utf-8' --data @body.json || echo 000)
+            echo "Essai $attempt : HTTP $code"; cat resp.txt; echo
+            case "$code" in
+              200|202) echo "Pages soumises."; exit 0 ;;
+              403) echo "Clé pas encore visible sur le site (publication en cours ?)"; sleep 90 ;;
+              422) echo "::error::URL refusées (domaine différent de la clé ?)"; exit 1 ;;
+              429) echo "Trop de soumissions : nouvel essai plus tard."; sleep 120 ;;
+              *) sleep 60 ;;
+            esac
+          done
+          echo "::warning::IndexNow n'a pas accepté la soumission (dernier code : $code)."
