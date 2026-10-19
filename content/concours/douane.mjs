@@ -15,7 +15,7 @@ export default {
   },
   related: ['fonction-publique', 'encg-tafem', 'iscae'],
   official: [{ label: 'Administration des Douanes et Impôts Indirects', url: 'https://www.douane.gov.ma' }, { label: 'Portail de l’emploi public', url: 'https://www.emploi-public.ma' }],
-  sources: [{ title: 'Bghit-nekhdem — Concours Douane Maroc 2026 : 350 postes (250 inspecteurs, 100 ingénieurs)', url: 'https://bghit-nekhdem.com/concours-douane-maroc-2026-350-postes-ouverts-250-inspecteurs-et-100-ingenieurs/', date: '2026-07' }],
+  sources: [{ title: 'Bghit-nekhdem — Concours Douane Maroc 2026 : 350 postes (250 inspecteurs, 100 ingénieurs)', url: 'https://bghit-nekhdem.com/concours-douane-maroc-2026-350-postes-ouverts-250-inspecteurs-et-100-ingenieurs/', date: '2026-07' }, { title: 'Dreamjob — Concours Douanes Maroc 2026 (350 postes) : date limite le 10 août, concours le 20 septembre 2026', url: 'https://www.dreamjob.ma/emploi-public/concours-de-recrutement-douanes-maroc-2026-350-postes/', date: '2026-07' }, { title: 'Bghit-nekhdem — Concours Douanes 2026 : 900 gardiens des douanes (bac)', url: 'https://bghit-nekhdem.com/concours-douanes-2026-900-gardiens/', date: '2026-03' }],
   fr: {
     short: 'Douane (ADII)',
     name: 'Administration des Douanes et Impôts Indirects (ADII)',
@@ -25,7 +25,7 @@ export default {
     intro: "L'**ADII** recrute surtout des **diplômés** : **inspecteurs** (niveau licence) et **ingénieurs d'État**. En 2026, **350 postes** (250 inspecteurs de 2e grade et 100 ingénieurs d'État) ont été annoncés, avec un écrit le **20 septembre 2026**. Après le bac, la voie consiste à préparer une **licence** (économie, droit, gestion, commerce international…).",
     facts: [['Niveau', 'Licence (inspecteurs), diplôme d’ingénieur'], ['Postes 2026', '350 (relayé)'], ['Écrit 2026', '20 septembre 2026']],
     sections: [
-      { id: 'profils', h: 'Profils recrutés', blocks: [ { ul: ['**Inspecteurs** : licence en économie, gestion, droit, commerce international, etc.', '**Ingénieurs d’État** : informatique, statistique, génie industriel…', 'Ponctuellement, d’autres cadres selon les besoins (avis sur emploi-public.ma).'] } ] },
+      { id: 'profils', h: 'Profils recrutés', blocks: [ { ul: ['**Inspecteurs** : licence en économie, gestion, droit, commerce international, etc.', '**Ingénieurs d’État** : informatique, statistique, génie industriel…', '**Gardiens des douanes** (2e grade) : accessibles avec le **bac** ; en 2026, **900 postes**, candidatures jusqu’au 13 mars et écrit le **29 mars 2026** (selon les informations relayées).', 'Ponctuellement, d’autres cadres selon les besoins (avis sur emploi-public.ma).'] } ] },
       { id: 'epreuves', h: 'Épreuves', blocks: [ { p: "Les épreuves combinent un **écrit** (culture générale, économie, droit, langues, sujet de spécialité selon le profil) et un **oral**. Les programmes sont détaillés dans chaque avis." }, { practice: true } ] },
     ],
     faq: [],
@@ -38,7 +38,7 @@ export default {
     keywords: ['مباراة الجمارك'],
     intro: 'توظف **إدارة الجمارك** أساسًا **حاملي الشهادات**: **المفتشون** (الإجازة) و**مهندسو الدولة**. في 2026 أُعلن عن **350 منصبًا**.',
     facts: [['المستوى', 'الإجازة أو دبلوم مهندس'], ['المناصب 2026', '350']],
-    sections: [ { id: 'profils', h: 'المسارات', blocks: [ { p: 'بعد البكالوريا، الطريق هو تحضير **إجازة** في الاقتصاد أو القانون أو التسيير ثم اجتياز المباراة.' } ] } ],
+    sections: [ { id: 'profils', h: 'المسارات', blocks: [ { p: 'بعد البكالوريا، الطريق هو تحضير **إجازة** في الاقتصاد أو القانون أو التسيير ثم اجتياز المباراة.' }, { p: 'يمكن أيضًا ولوج درجة **حارس الجمارك** (الدرجة الثانية) بـ**البكالوريا**: في 2026 فُتح **900 منصب**، مع آخر أجل للترشيح في 13 مارس واختبار كتابي يوم **29 مارس 2026** (حسب المعطيات المتداولة). أما مباراة **250 مفتشًا و100 مهندس دولة** فكان اختبارها الكتابي مقررًا يوم **20 شتنبر 2026**.' } ] } ],
     faq: [],
   },
 };

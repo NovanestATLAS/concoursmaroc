@@ -20,6 +20,7 @@ export default {
     { title: 'Monparcours — Concours Gendarmerie Royale 2026 : élèves-gendarmes (bac 2025/2026)', url: 'https://monparcours.ma/concours-gendarmerie-royale-maroc-2026/', date: '2026-03' },
     { title: 'Dreamjob — Concours Gendarmerie Royale 2026 (1 500 postes)', url: 'https://www.dreamjob.ma/emploi-public/concours-de-recrutement-gendarmerie-royale-2026-maroc-1500-postes/', date: '2026-03' },
     { title: 'Tawjihnet — Concours Gendarme Royale Maroc 2026', url: 'https://www.tawjihnet.net/concours-gendarme-royale-maroc-2026/', date: '2026-03' },
+    { title: 'TelQuel — La Gendarmerie royale recrute 1 500 bacheliers de 18 à 24 ans (préinscription du 25 mars au 15 avril 2026)', url: 'https://telquel.ma/instant-t/2026/03/24/bac-en-poche-carriere-en-vue-la-gendarmerie-royale-recrute-1-500-nouveaux-uniformes-entre-18-et-24-ans_1980170/', date: '2026-03' },
   ],
   fr: {
     short: 'Gendarmerie Royale',

@@ -24,6 +24,8 @@ export default {
   sources: [
     { title: 'Dreamjob — Concours mokhaznis Forces Auxiliaires 2026/2027', url: 'https://www.dreamjob.ma/emploi-public/concours-mokhazenis-forces-auxiliaires-2026-2027/', date: '2026-09' },
     { title: 'Orientation Chabab — Concours Forces Auxiliaires 2026-2027', url: 'https://orientation-chabab.com/emploi-public/concours-forces-auxiliaires', date: '2026' },
+    { title: 'Alwadifa-Maroc — Élèves mokhaznis (promotion 2027) : date limite le 16 octobre 2026', url: 'https://alwadifa-maroc.com/offre/show/id/23624', date: '2026-09' },
+    { title: 'Tawjihnet — Concours élèves mokhaznis FA 2026-2027 (épreuves du 20 novembre au 16 décembre 2026)', url: 'https://www.tawjihnet.net/concours-forces-auxiliaires-eleves-mokhazenis-fa-2026-2027/', date: '2026-09' },
   ],
   fr: {
     short: 'Forces Auxiliaires',

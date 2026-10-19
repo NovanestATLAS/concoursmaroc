@@ -38,6 +38,7 @@ export default {
   sources: [
     { title: '9rayti — TAFEM ENCG : résultats de présélection et seuils 2025-2026', url: 'https://www.9rayti.com/concoursa/tafem-encg-resultats-de-preselection-et-seuils-officiels-2025-2026', date: '2025-07' },
     { title: 'Tawjihnet — Présélection et seuils ENCG TAFEM 2025-2026', url: 'https://www.tawjihnet.net/preselection-seuil-encg-tafem-cursussup-2025-2026/', date: '2025-07' },
+    { title: 'ENCG Casablanca — Avis aux candidats TAFEM 2026 (test le lundi 20 juillet 2026)', url: 'https://encgcasa.ma/documents/516/avis_aux_candidats_TAFEM_2026.pdf', date: '2026-07' },
     { title: 'Dreamjob — Résultats définitifs ENCG TAFEM 2026-2027 (liste des écoles)', url: 'https://www.dreamjob.ma/orientation/resultats-definitifs-concours-encg-tafem-2026-2027-sur-cursussup-gov-ma/', date: '2026-08' },
     { title: 'Université Moulay Ismaïl — Diplôme des ENCG (DENCG), 5 ans', url: 'https://testumi.umi.ac.ma/wp-content/uploads/2024/12/Diplome-des-Ecoles-Nationales-de-Commerce-et-de-Gestion-%E2%80%93-DENCG.pdf', date: '2024' },
   ],
@@ -66,7 +67,7 @@ export default {
         { callout: 'info', text: "L'examen blanc du site reprend les trois dernières parties (80 questions en 90 minutes). La partie mémorisation se travaille en lisant un article de presse pendant 15 minutes, puis en répondant de mémoire à des questions sur ses chiffres et ses noms." },
         { callout: 'warn', text: "Plusieurs sources de préparation signalent une **pénalité pour les réponses fausses** : elle n'est pas écrite sur les sujets publiés. Lisez la consigne de votre session avant de répondre au hasard." },
       ] },
-      { id: 'calendrier', h: 'Calendrier habituel', blocks: [ { table: { head: ['Étape', 'Période', 'Repère'], rows: [['Inscriptions Cursus Sup', 'Mi-juin – début juillet', 'Juin–juillet 2026'], ['Seuils et convocations', 'Mi-juillet', '14 juillet 2026 annoncé pour les seuils'], ['TAFEM', 'Seconde quinzaine de juillet', '21 juillet en 2025'], ['Résultats', 'Fin juillet – août', 'Été 2026']] } } ] },
+      { id: 'calendrier', h: 'Calendrier habituel', blocks: [ { table: { head: ['Étape', 'Période', 'Repère'], rows: [['Inscriptions Cursus Sup', 'Mi-juin – début juillet', 'Juin–juillet 2026'], ['Seuils et convocations', 'Mi-juillet', '14 juillet 2026 annoncé pour les seuils'], ['TAFEM', 'Seconde quinzaine de juillet', 'Lundi 20 juillet 2026'], ['Résultats', 'Fin juillet – août', 'Été 2026']] } } ] },
       { id: 'preparation', h: 'Conseils', blocks: [ { ul: ['Travaillez la rapidité : beaucoup de questions courtes, peu de temps par question.', 'Révisez les pourcentages, les règles de trois et la lecture de tableaux.', 'Lisez l’actualité économique marocaine (inflation, croissance, grands projets) quelques semaines avant.', 'Entraînez la mémoire de travail avec des exercices de mémorisation de listes.'] }, { practice: true } ] },
     ],
     faq: [

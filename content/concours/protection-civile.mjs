@@ -17,7 +17,7 @@ export default {
   },
   related: ['forces-auxiliaires', 'gendarmerie', 'police-dgsn'],
   official: [{ label: 'Portail de recrutement de la Protection Civile', url: 'https://recrutement.protectioncivile.ma' }],
-  sources: [{ title: 'Dreamjob — Concours Protection Civile 2026 (1 081 agents de secours)', url: 'https://www.dreamjob.ma/emploi-public/concours-de-recrutement-protection-civile-2026-agents-de-secours/', date: '2026-02' }, { title: 'Monparcours — Concours Protection Civile 2026', url: 'https://monparcours.ma/concours-recrutement-protection-civile-2026-1081-agents-de-secours/', date: '2026-02' }],
+  sources: [{ title: 'Dreamjob — Concours Protection Civile 2026 (1 081 agents de secours)', url: 'https://www.dreamjob.ma/emploi-public/concours-de-recrutement-protection-civile-2026-agents-de-secours/', date: '2026-02' }, { title: 'Monparcours — Concours Protection Civile 2026', url: 'https://monparcours.ma/concours-recrutement-protection-civile-2026-1081-agents-de-secours/', date: '2026-02' }, { title: 'emploi-public.ma — Concours de 50 élèves officiers de la Protection civile (C44132/26)', url: 'https://www.emploi-public.ma/fr/concours/details/0bc3b58e-cfd7-466e-9023-6faf53a94738', date: '2026-10' }],
   fr: {
     short: 'Protection civile',
     name: 'Direction Générale de la Protection Civile — recrutement des agents de secours',
@@ -27,7 +27,7 @@ export default {
     intro: "La **Protection civile** (ministère de l'Intérieur) recrute des **élèves agents de secours** (sapeurs-pompiers secouristes). En 2026, **1 081 postes** étaient ouverts aux **hommes de 18 à 26 ans** ayant au moins le **certificat du cycle collégial** et un **permis de conduire B, C ou D**.",
     facts: [['Postes 2026', '1 081 (25 % réservés)'], ['Niveau', 'Cycle collégial + permis B, C ou D'], ['Âge', '18 à 26 ans au 1er janvier'], ['Taille', '1,70 m sans chaussures'], ['Inscription 2026', '20 février – 6 mars 2026']],
     sections: [
-      { id: 'conditions', h: 'Conditions (session 2026)', blocks: [ { ul: ['Candidats **masculins** de nationalité marocaine (selon l’avis 2026).', '**18 à 26 ans au 1er janvier** de l’année du concours.', '**Certificat du cycle collégial** accompagné d’un **permis B, C ou D** (d’autres diplômes listés dans l’avis peuvent être acceptés).', 'Taille minimale **1,70 m**, aptitude physique, casier judiciaire vierge.', '25 % des postes réservés (résistants, pupilles de la Nation, anciens militaires et anciens combattants).'] } ] },
+      { id: 'conditions', h: 'Conditions (session 2026)', blocks: [ { ul: ['Candidats **masculins** de nationalité marocaine (selon l’avis 2026).', '**18 à 26 ans au 1er janvier** de l’année du concours.', '**Certificat du cycle collégial** accompagné d’un **permis B, C ou D** (d’autres diplômes listés dans l’avis peuvent être acceptés).', 'Taille minimale **1,70 m**, aptitude physique, casier judiciaire vierge.', '25 % des postes réservés (résistants, pupilles de la Nation, anciens militaires et anciens combattants).'] }, { callout: 'info', text: "Pour les diplômés : un concours distinct de **50 élèves officiers** (échelle 10, **licence** exigée, hommes de 18 à 26 ans) est ouvert jusqu'au **31 octobre 2026** sur recrutement.protectioncivile.ma ; les épreuves commencent le **16 novembre 2026** par la visite médicale (avis publié sur emploi-public.ma)." } ] },
       { id: 'epreuves', h: 'Épreuves', blocks: [ { steps: ['Inscription en ligne sur recrutement.protectioncivile.ma.', 'Visite médicale et tests physiques (endurance, force… selon l’avis).', 'Épreuve écrite ou entretien sur la culture générale, le secourisme et la sécurité.'] }, { callout: 'info', text: "Révisez les gestes de premiers secours (PLS, alerte, hémorragie, massage cardiaque) et les règles de sécurité incendie : ils sont au cœur du métier." }, { practice: true } ] },
     ],
     faq: [ { q: 'Faut-il le bac pour la Protection civile ?', a: "Pas pour les agents de secours : l'avis 2026 demandait le certificat du cycle collégial avec un permis de conduire B, C ou D." } ],
@@ -40,7 +40,7 @@ export default {
     keywords: ['مباراة الوقاية المدنية', 'عون إنقاذ'],
     intro: 'توظف **الوقاية المدنية** **التلاميذ أعوان الإنقاذ**. في 2026 فُتح **1081 منصبًا** للذكور من **18 إلى 26 سنة** الحاصلين على **شهادة السلك الإعدادي** و**رخصة سياقة**.',
     facts: [['المناصب 2026', '1081'], ['المستوى', 'الإعدادي + رخصة السياقة'], ['السن', '18 إلى 26 سنة']],
-    sections: [ { id: 'conditions', h: 'الشروط', blocks: [ { ul: ['ذكور من جنسية مغربية.', 'من 18 إلى 26 سنة في فاتح يناير.', 'شهادة السلك الإعدادي ورخصة سياقة B أو C أو D.', 'القامة 1.70 م على الأقل.'] }, { practice: true } ] } ],
+    sections: [ { id: 'conditions', h: 'الشروط', blocks: [ { ul: ['ذكور من جنسية مغربية.', 'من 18 إلى 26 سنة في فاتح يناير.', 'شهادة السلك الإعدادي ورخصة سياقة B أو C أو D.', 'القامة 1.70 م على الأقل.'] }, { callout: 'info', text: 'بالنسبة لحاملي الشهادات: مباراة مستقلة لتوظيف **50 تلميذًا ضابطًا** (السلم 10، **الإجازة** مطلوبة، ذكور من 18 إلى 26 سنة) مفتوحة إلى غاية **31 أكتوبر 2026** عبر recrutement.protectioncivile.ma، وتبدأ الاختبارات يوم **16 نونبر 2026** بالفحص الطبي (إعلان منشور على بوابة التشغيل العمومي).' }, { practice: true } ] } ],
     faq: [],
   },
 };

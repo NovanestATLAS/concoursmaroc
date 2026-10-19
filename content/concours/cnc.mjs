@@ -58,7 +58,7 @@ export default {
       {
         id: 'calendrier',
         h: 'Calendrier',
-        blocks: [ { table: { head: ['Étape', 'Période habituelle', 'Repère 2026'], rows: [['Inscriptions', 'Février – mars', '3 février – 3 mars 2026'], ['Écrits', 'Mai', 'Mai 2026'], ['Oraux (TIPE)', 'Juin – juillet', 'Été 2026'], ['Choix des écoles', 'Juillet – août', 'Été 2026']] } } ],
+        blocks: [ { table: { head: ['Étape', 'Période habituelle', 'Repère 2026'], rows: [['Inscriptions', 'Février – mars', '3 février – 3 mars 2026'], ['Écrits', 'Mai', '14 – 19 mai 2026'], ['Oraux (TIPE)', 'Juin – juillet', '29 juin – 11 juillet 2026'], ['Choix des écoles', 'Juillet – août', 'Été 2026']] } } ],
       },
     ],
     faq: [
