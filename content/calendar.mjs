@@ -30,6 +30,10 @@ export const CALENDAR = [
     source: { label: 'iJob — Concours police 2026 : l’écrit fixé au dimanche 22 novembre', url: 'https://ijob.ma/actualite/concours-police-2026-ecrit-22-novembre/' } },
 
   // ---------- 2027 estimates (usual period) ----------
+  { id: 'enseignants-2026-insc', concours: 'enseignants-aref', type: 'inscription', month: '2026-11', confidence: 'estimation',
+    fr: 'Concours de l’enseignement (CRMEF) 2026 : annonce et candidatures sur wolouj.men.gov.ma (attendues fin octobre–novembre)', ar: 'مباراة التعليم (ولوج سلك تأهيل أطر التدريس) 2026: الإعلان والترشيح عبر wolouj.men.gov.ma (مرتقبان أواخر أكتوبر–نونبر)' },
+  { id: 'enseignants-2026-ecrit', concours: 'enseignants-aref', type: 'ecrit', month: '2026-12', confidence: 'estimation',
+    fr: 'Concours de l’enseignement (CRMEF) 2026 : épreuves écrites (en 2025, neuf jours après la clôture des candidatures)', ar: 'مباراة التعليم 2026: الاختبارات الكتابية (سنة 2025، بعد تسعة أيام من إغلاق الترشيح)' },
   { id: 'cnc-2027', concours: 'cnc', type: 'inscription', month: '2027-02', confidence: 'estimation',
     fr: 'CNC 2027 : inscriptions des élèves de CPGE (février–mars)', ar: 'المباراة الوطنية المشتركة 2027: التسجيل (فبراير–مارس)' },
   { id: 'pc-2027', concours: 'protection-civile', type: 'inscription', month: '2027-02', confidence: 'estimation',
@@ -68,6 +72,12 @@ export const CALENDAR = [
     fr: 'Forces Auxiliaires (mokhaznis) : inscriptions (première quinzaine d’octobre), épreuves en novembre–décembre', ar: 'القوات المساعدة (المخازنية): التسجيل (النصف الأول من أكتوبر)، الاختبارات في نونبر–دجنبر' },
 
   // ---------- 2026 reference dates (past) ----------
+  { id: 'enseignants-2025-insc', concours: 'enseignants-aref', type: 'inscription', start: '2025-10-30', date: '2025-11-13', confidence: 'officiel',
+    fr: 'Concours de l’enseignement (CRMEF), session de novembre 2025 : candidatures', ar: 'مباراة ولوج سلك تأهيل أطر التدريس، دورة نونبر 2025: الترشيح',
+    source: { label: 'Portail national du Maroc — ouverture des candidatures (session de novembre 2025)', url: 'https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de' } },
+  { id: 'enseignants-2025-ecrit', concours: 'enseignants-aref', type: 'ecrit', date: '2025-11-22', confidence: 'officiel',
+    fr: 'Concours de l’enseignement (CRMEF), session de novembre 2025 : épreuves écrites', ar: 'مباراة ولوج سلك تأهيل أطر التدريس، دورة نونبر 2025: الاختبارات الكتابية',
+    source: { label: 'Portail national du Maroc — ouverture des candidatures (session de novembre 2025)', url: 'https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de' } },
   { id: 'dgapr-2026-insc', concours: 'dgapr', type: 'deadline', date: '2026-01-18', confidence: 'annonce',
     fr: 'DGAPR 2026 : 1 620 surveillants, date limite d’inscription', ar: 'إدارة السجون 2026: 1620 مراقبًا، آخر أجل للتسجيل',
     source: { label: 'Tawjihnet — Concours 1 620 surveillants adjoints DGAPR 2026', url: 'https://www.tawjihnet.net/?p=76522' } },

@@ -1,0 +1,2022 @@
+# Enseignement primaire : concours d'accès au cycle de qualification des
+# professeurs du primaire (CRMEF), spécialité bilingue.
+# Couvre uniquement les trois composantes de l'écrit confirmées par les relais
+# de la session de novembre 2025 (fiches « بطاقات التوصيف ») :
+#  1. sciences de l'éducation : théories de l'apprentissage, psychologie du
+#     développement, objectifs, compétences et évaluation (thèmes visibles dans
+#     le sujet du primaire de novembre 2025) ;
+#  2. didactique des matières (arabe, français, mathématiques, sciences) et
+#     notions de didactique générale ;
+#  3. connaissances des matières au niveau du primaire (arabe, français,
+#     mathématiques, activité scientifique).
+# Aucune question de législation scolaire : le référentiel écrit du primaire
+# n'a pas pu être lu et aucune source ne l'y place. Les faits datés du
+# curriculum renvoient à une source de sources.json.
+# Rédigé le 2026-10-19. Version arabe pour chaque question.
+@category primaire
+@source src-general
+
+# ---------------------------------------------------------------------------
+# 1. Sciences de l'éducation — théories de l'apprentissage
+# ---------------------------------------------------------------------------
+
+[PRI-001] apprentissage | beginner
+Q: Le chien de Pavlov qui finit par saliver au seul son d'une cloche, associée auparavant à la nourriture, illustre…
+* le conditionnement classique (répondant)
+- le conditionnement opérant
+- l'apprentissage par observation d'un modèle
+- l'apprentissage par insight
+C: Le conditionnement classique (répondant).
+E: Ivan Pavlov a montré qu'un stimulus neutre (la cloche), associé de façon répétée à un stimulus inconditionnel (la nourriture), finit par déclencher seul la réponse (la salivation). Le conditionnement opérant (Skinner) repose au contraire sur les conséquences d'un comportement.
+AR:
+Q: كلب بافلوف الذي أصبح يسيل لعابه بمجرد سماع جرس اقترن سابقا بالطعام، مثال على…
+* الإشراط الكلاسيكي (الاستجابي)
+- الإشراط الإجرائي
+- التعلم بملاحظة نموذج
+- التعلم بالاستبصار
+C: الإشراط الكلاسيكي (الاستجابي).
+E: بيّن إيفان بافلوف أن مثيرا محايدا (الجرس) إذا اقترن مرارا بمثير طبيعي (الطعام) يصبح قادرا وحده على إحداث الاستجابة (سيلان اللعاب). أما الإشراط الإجرائي (سكينر) فيقوم على نتائج السلوك.
+
+[PRI-002] apprentissage | intermediate
+Q: Quel psychologue a formulé la « loi de l'effet », selon laquelle une réponse suivie d'une satisfaction a tendance à se renforcer ?
+* Edward Thorndike
+- Ivan Pavlov
+- Jean Piaget
+- Henri Wallon
+C: Edward Thorndike.
+E: À partir de ses expériences sur des chats placés dans des boîtes à problèmes, Thorndike a décrit un apprentissage par essais et erreurs : les réponses suivies d'un effet satisfaisant se renforcent, celles suivies d'un effet désagréable s'affaiblissent. Cette loi annonce le conditionnement opérant de Skinner.
+AR:
+Q: من صاغ «قانون الأثر» الذي ينص على أن الاستجابة المتبوعة بالإشباع تميل إلى التعزيز؟
+* إدوارد ثورندايك
+- إيفان بافلوف
+- جان بياجي
+- هنري فالون
+C: إدوارد ثورندايك.
+E: انطلاقا من تجاربه على قطط داخل صناديق الألغاز، وصف ثورندايك التعلم بالمحاولة والخطأ: تتقوى الاستجابات المتبوعة بأثر مرضٍ وتضعف المتبوعة بأثر مزعج. وهذا القانون مهّد للإشراط الإجرائي عند سكينر.
+
+[PRI-003] apprentissage | intermediate
+Q: En conditionnement opérant (Skinner), en quoi consiste le renforcement négatif ?
+* Retirer un stimulus désagréable pour augmenter la fréquence d'un comportement
+- Ajouter un stimulus désagréable pour diminuer un comportement
+- Ignorer un comportement pour le faire disparaître
+- Donner une récompense après le comportement attendu
+C: Retirer un stimulus désagréable pour augmenter un comportement.
+E: Tout renforcement augmente la probabilité d'un comportement : il est positif quand on ajoute un stimulus agréable (récompense), négatif quand on supprime un stimulus désagréable. Ajouter un stimulus désagréable pour diminuer un comportement est une punition ; ignorer un comportement pour qu'il disparaisse relève de l'extinction.
+AR:
+Q: في الإشراط الإجرائي (سكينر)، ما المقصود بالتعزيز السلبي؟
+* إزالة مثير مزعج من أجل الرفع من تكرار سلوك ما
+- إضافة مثير مزعج من أجل التقليل من سلوك ما
+- تجاهل سلوك ما لجعله يختفي
+- تقديم مكافأة بعد السلوك المرغوب
+C: إزالة مثير مزعج للرفع من تكرار السلوك.
+E: كل تعزيز يرفع احتمال ظهور السلوك: يكون إيجابيا عند إضافة مثير مرغوب (مكافأة)، وسلبيا عند إزالة مثير مزعج. أما إضافة مثير مزعج للتقليل من سلوك فهي عقاب، وتجاهل السلوك ليختفي يسمى الانطفاء.
+
+[PRI-004] apprentissage | beginner
+Q: Pour la psychologie de la forme (Gestalt), l'apprentissage peut se faire par « insight ». De quoi s'agit-il ?
+* D'une compréhension soudaine de la structure d'ensemble d'un problème
+- D'une série d'essais et d'erreurs au hasard
+- D'une association stimulus-réponse renforcée par une récompense
+- De l'imitation fidèle d'un modèle
+C: Une compréhension soudaine de la structure globale du problème.
+E: Wolfgang Köhler a observé des chimpanzés qui, après une phase d'inactivité, réorganisaient brusquement les éléments de la situation (emboîter des bâtons, empiler des caisses) pour atteindre une banane. Pour la Gestalt, on apprend en percevant le tout et les relations entre ses parties, et non par accumulation d'associations.
+AR:
+Q: بالنسبة لعلم نفس الشكل (الجشطلت)، يمكن أن يتم التعلم عن طريق «الاستبصار». ما المقصود به؟
+* إدراك مفاجئ للبنية الكلية لمشكلة ما
+- سلسلة من المحاولات والأخطاء العشوائية
+- ارتباط بين مثير واستجابة يعززه جزاء
+- التقليد الحرفي لنموذج
+C: إدراك مفاجئ للبنية الكلية للمشكلة.
+E: لاحظ فولفغانغ كوهلر أن قردة الشمبانزي، بعد فترة من التوقف، تعيد فجأة تنظيم عناصر الموقف (وصل العصي، تكديس الصناديق) للوصول إلى الموزة. فالتعلم عند الجشطلت إدراك للكل وللعلاقات بين أجزائه، لا تراكم لارتباطات.
+
+[PRI-005] apprentissage | intermediate
+Q: Quels chercheurs sont à l'origine de la psychologie de la forme (Gestalt) ?
+* Max Wertheimer, Wolfgang Köhler et Kurt Koffka
+- John Watson, Edward Thorndike et Burrhus Skinner
+- Jean Piaget, Bärbel Inhelder et Jean-Blaise Grize
+- Lev Vygotski, Alexandre Luria et Alexis Leontiev
+C: Wertheimer, Köhler et Koffka.
+E: La Gestalttheorie naît en Allemagne au début du XXe siècle avec Wertheimer, Köhler et Koffka. Watson, Thorndike et Skinner sont associés au béhaviorisme, Piaget et Inhelder à l'école de Genève (constructivisme), Vygotski, Luria et Leontiev à l'approche historico-culturelle.
+AR:
+Q: من هم رواد علم نفس الشكل (الجشطلت)؟
+* ماكس فرتهايمر وفولفغانغ كوهلر وكورت كوفكا
+- جون واطسون وإدوارد ثورندايك وبورهوس سكينر
+- جان بياجي وباربل إنهيلدر وجان بليز غريز
+- ليف فيجوتسكي وألكسندر لوريا وأليكسي ليونتييف
+C: فرتهايمر وكوهلر وكوفكا.
+E: نشأت نظرية الجشطلت في ألمانيا مطلع القرن العشرين مع فرتهايمر وكوهلر وكوفكا. أما واطسون وثورندايك وسكينر فيرتبطون بالسلوكية، وبياجي وإنهيلدر بمدرسة جنيف (البنائية)، وفيجوتسكي ولوريا وليونتييف بالمقاربة التاريخية الثقافية.
+
+[PRI-006] apprentissage | intermediate
+Q: Chez Piaget, comment s'appelle le processus qui coordonne l'assimilation et l'accommodation pour rétablir un état d'équilibre entre le sujet et son milieu ?
+* L'équilibration
+- La maturation
+- Le conditionnement
+- L'imitation différée
+C: L'équilibration.
+E: Face à une situation nouvelle, l'enfant l'intègre à ses schèmes (assimilation) ou modifie ses schèmes (accommodation). L'équilibration est le mécanisme d'autorégulation qui coordonne ces deux processus et conduit à des structures de pensée de plus en plus stables ; c'est le cœur du constructivisme piagétien.
+AR:
+Q: عند بياجي، ما اسم السيرورة التي تنسق بين الاستيعاب والتلاؤم لإعادة التوازن بين الذات ومحيطها؟
+* التوازن (الموازنة)
+- النضج
+- الإشراط
+- التقليد المؤجل
+C: التوازن (الموازنة).
+E: أمام وضعية جديدة، يدمجها الطفل في خطاطاته (الاستيعاب) أو يعدّل خطاطاته (التلاؤم). والتوازن آلية للتنظيم الذاتي تنسق بين العمليتين وتقود إلى بنيات ذهنية أكثر استقرارا، وهي جوهر البنائية عند بياجي.
+
+[PRI-007] apprentissage | intermediate
+Q: Dans le socioconstructivisme, d'où naît le « conflit sociocognitif » qui fait progresser l'élève ?
+* De la confrontation de points de vue différents lors d'une interaction entre pairs
+- D'une punition donnée après une erreur
+- De la répétition d'un même exercice
+- D'une récompense annoncée avant la tâche
+C: De la confrontation de points de vue entre pairs.
+E: Les travaux de Willem Doise, Gabriel Mugny et Anne-Nelly Perret-Clermont ont montré que, lorsque des élèves proposent des réponses différentes à un même problème et doivent se mettre d'accord, ce déséquilibre social oblige chacun à réorganiser sa pensée. D'où l'intérêt du travail en groupe et du débat en classe.
+AR:
+Q: في السوسيوبنائية، ممّ ينشأ «الصراع السوسيومعرفي» الذي يجعل المتعلم يتقدم؟
+* من تقابل وجهات نظر مختلفة أثناء التفاعل بين الأقران
+- من عقاب يلي الخطأ
+- من تكرار التمرين نفسه
+- من مكافأة يُعلن عنها قبل المهمة
+C: من تقابل وجهات النظر بين الأقران.
+E: أظهرت أعمال ويليم دواز وغابرييل موني وآن نيلي بيري كليرمون أن اقتراح التلاميذ أجوبة مختلفة لمشكلة واحدة واضطرارهم إلى الاتفاق يخلق اختلالا اجتماعيا يدفع كل واحد إلى إعادة تنظيم تفكيره. ومن هنا أهمية العمل في مجموعات والنقاش داخل القسم.
+
+[PRI-008] apprentissage | advanced
+Q: L'expérience de la « poupée Bobo » (années 1960), où des enfants reproduisent l'agressivité observée chez un adulte, est associée à…
+* Albert Bandura et l'apprentissage social (par observation)
+- Burrhus Skinner et le conditionnement opérant
+- Jean Piaget et l'équilibration
+- David Ausubel et l'apprentissage significatif
+C: Albert Bandura, apprentissage social.
+E: Bandura a montré qu'un enfant apprend aussi en observant un modèle et les conséquences de ses actes (apprentissage vicariant), sans renforcement direct. Sa théorie de l'apprentissage social (1977), devenue sociocognitive, souligne aussi le sentiment d'efficacité personnelle.
+AR:
+Q: ترتبط تجربة «الدمية بوبو» (ستينيات القرن العشرين)، التي قلّد فيها أطفال عدوانية لاحظوها لدى راشد، بـ…
+* ألبرت باندورا والتعلم الاجتماعي (بالملاحظة)
+- بورهوس سكينر والإشراط الإجرائي
+- جان بياجي والتوازن
+- ديفيد أوزوبل والتعلم ذي المعنى
+C: ألبرت باندورا، التعلم الاجتماعي.
+E: بيّن باندورا أن الطفل يتعلم أيضا بملاحظة نموذج ونتائج أفعاله (التعلم بالنيابة) دون تعزيز مباشر. وتؤكد نظريته في التعلم الاجتماعي (1977)، التي أصبحت معرفية اجتماعية، على الشعور بالفعالية الذاتية.
+
+[PRI-009] apprentissage | advanced
+Q: Pour David Ausubel, un apprentissage est « significatif » lorsque…
+* la nouvelle information est reliée de façon non arbitraire aux connaissances déjà présentes chez l'élève
+- l'élève récite mot à mot la définition apprise
+- chaque bonne réponse est immédiatement récompensée
+- l'élève découvre seul le savoir, sans aucun guidage
+C: Quand le nouveau savoir s'ancre dans les connaissances antérieures.
+E: Ausubel oppose l'apprentissage significatif à l'apprentissage par cœur : ce qui compte le plus est ce que l'élève sait déjà. Il propose des « organisateurs préalables » (advance organizers), présentations générales qui préparent l'ancrage des nouvelles notions.
+AR:
+Q: بالنسبة لديفيد أوزوبل، يكون التعلم «ذا معنى» عندما…
+* ترتبط المعلومة الجديدة بشكل غير اعتباطي بالمعارف الموجودة لدى المتعلم
+- يستظهر المتعلم التعريف حرفيا
+- يُكافأ كل جواب صحيح فورا
+- يكتشف المتعلم المعرفة وحده دون أي توجيه
+C: عندما ترتبط المعرفة الجديدة بالمكتسبات السابقة.
+E: يقابل أوزوبل بين التعلم ذي المعنى والحفظ الآلي: أهم عامل هو ما يعرفه المتعلم مسبقا. ويقترح «المنظمات المتقدمة»، وهي عروض عامة تهيئ لترسيخ المفاهيم الجديدة.
+
+[PRI-010] apprentissage | beginner
+Q: À quoi le cognitivisme s'intéresse-t-il surtout ?
+* Aux processus mentaux internes : attention, perception, mémoire, traitement de l'information
+- Aux seuls comportements observables et à leurs renforcements
+- Aux conflits inconscients de l'enfance
+- Aux stades psychosexuels du développement
+C: Aux processus mentaux internes.
+E: Contrairement au béhaviorisme, qui s'en tient aux comportements observables, le cognitivisme étudie ce qui se passe « dans la tête » de l'apprenant : comment il perçoit, sélectionne, encode, stocke et récupère l'information, souvent par analogie avec le traitement informatique.
+AR:
+Q: بماذا تهتم المعرفية (النظرية المعرفية) أساسا؟
+* بالسيرورات الذهنية الداخلية: الانتباه والإدراك والذاكرة ومعالجة المعلومات
+- بالسلوكات الملاحظة وتعزيزاتها فقط
+- بالصراعات اللاشعورية في الطفولة
+- بالمراحل النفسية الجنسية للنمو
+C: بالسيرورات الذهنية الداخلية.
+E: خلافا للسلوكية التي تكتفي بالسلوك الملاحظ، تدرس المعرفية ما يجري في ذهن المتعلم: كيف يدرك المعلومة وينتقيها ويرمزها ويخزنها ويسترجعها، غالبا بالقياس على معالجة المعلومات في الحاسوب.
+
+[PRI-011] apprentissage | intermediate
+Q: Quel psychologue américain a fondé le béhaviorisme par un article-manifeste publié en 1913 ?
+* John B. Watson
+- Burrhus F. Skinner
+- Jerome Bruner
+- John Dewey
+C: John B. Watson.
+E: Dans « Psychology as the Behaviorist Views It » (1913), Watson propose de faire de la psychologie l'étude objective des comportements observables, en écartant l'introspection. Skinner a ensuite développé le conditionnement opérant ; Bruner relève du cognitivisme, Dewey de l'éducation nouvelle.
+AR:
+Q: من هو عالم النفس الأمريكي الذي أسس السلوكية بمقال بياني نُشر سنة 1913؟
+* جون واطسون
+- بورهوس سكينر
+- جيروم برونر
+- جون ديوي
+C: جون واطسون.
+E: اقترح واطسون في مقاله «علم النفس كما يراه السلوكي» (1913) أن يكون علم النفس دراسة موضوعية للسلوكات الملاحظة، مع استبعاد الاستبطان. ثم طور سكينر الإشراط الإجرائي، بينما ينتمي برونر إلى المعرفية وديوي إلى التربية الحديثة.
+
+[PRI-012] apprentissage | advanced
+Q: Selon l'article célèbre de George Miller (1956), combien d'éléments la mémoire à court terme retient-elle en moyenne ?
+* Environ 7, plus ou moins 2
+- Environ 3, plus ou moins 1
+- Environ 15, plus ou moins 3
+- Un nombre illimité
+C: Environ 7 ± 2 éléments.
+E: Miller a montré que l'empan de la mémoire à court terme est limité à environ sept éléments (« le nombre magique sept, plus ou moins deux »), d'où l'intérêt de regrouper l'information en unités plus larges (chunks) et de ne pas surcharger les consignes données aux élèves.
+AR:
+Q: حسب المقال الشهير لجورج ميلر (1956)، كم عنصرا تحتفظ به الذاكرة قصيرة المدى في المتوسط؟
+* حوالي 7، زائد أو ناقص 2
+- حوالي 3، زائد أو ناقص 1
+- حوالي 15، زائد أو ناقص 3
+- عدد غير محدود
+C: حوالي 7 ± 2 عناصر.
+E: بيّن ميلر أن سعة الذاكرة قصيرة المدى محدودة في حوالي سبعة عناصر («العدد السحري سبعة، زائد أو ناقص اثنين»)، ومن هنا أهمية تجميع المعلومات في وحدات أكبر وعدم إثقال التعليمات الموجهة للتلاميذ.
+
+[PRI-013] apprentissage | intermediate
+Q: Jerome Bruner distingue trois modes de représentation, souvent repris en didactique (manipuler, dessiner, écrire). Dans quel ordre l'enfant les acquiert-il ?
+* Énactif (par l'action), iconique (par l'image), symbolique (par le langage et les signes)
+- Symbolique, iconique, énactif
+- Iconique, énactif, symbolique
+- Énactif, symbolique, iconique
+C: Énactif → iconique → symbolique.
+E: Pour Bruner, l'enfant représente d'abord le monde par l'action (énactif), puis par des images (iconique), enfin par des symboles (langage, nombres). D'où la progression concret → imagé → abstrait, par exemple manipuler des objets, les dessiner, puis écrire l'opération.
+AR:
+Q: يميز جيروم برونر بين ثلاثة أنماط للتمثيل يعتمدها الديداكتيك كثيرا (المناولة، الرسم، الكتابة). بأي ترتيب يكتسبها الطفل؟
+* العملي (بالفعل)، ثم الأيقوني (بالصورة)، ثم الرمزي (باللغة والرموز)
+- الرمزي، ثم الأيقوني، ثم العملي
+- الأيقوني، ثم العملي، ثم الرمزي
+- العملي، ثم الرمزي، ثم الأيقوني
+C: العملي ← الأيقوني ← الرمزي.
+E: يرى برونر أن الطفل يمثل العالم أولا بالفعل (التمثيل العملي)، ثم بالصور (الأيقوني)، وأخيرا بالرموز (اللغة والأعداد). ومن هنا التدرج من المحسوس إلى المصوَّر إلى المجرد، كمناولة الأشياء ثم رسمها ثم كتابة العملية.
+
+# ---------------------------------------------------------------------------
+# 2. Sciences de l'éducation — psychologie du développement
+# ---------------------------------------------------------------------------
+
+[PRI-014] developpement | beginner
+Q: Dans quel ordre Piaget présente-t-il les stades du développement de l'intelligence ?
+* Sensori-moteur, préopératoire, opérations concrètes, opérations formelles
+- Préopératoire, sensori-moteur, opérations formelles, opérations concrètes
+- Sensori-moteur, opérations concrètes, préopératoire, opérations formelles
+- Opérations concrètes, sensori-moteur, préopératoire, opérations formelles
+C: Sensori-moteur → préopératoire → opérations concrètes → opérations formelles.
+E: Piaget décrit quatre stades : sensori-moteur (de la naissance à environ 2 ans), préopératoire (environ 2 à 7 ans), opérations concrètes (environ 7 à 11-12 ans) et opérations formelles (à partir de 11-12 ans). L'ordre est invariant, les âges sont indicatifs.
+AR:
+Q: بأي ترتيب يعرض بياجي مراحل نمو الذكاء؟
+* الحسية الحركية، ما قبل العمليات، العمليات المحسوسة، العمليات المجردة (الصورية)
+- ما قبل العمليات، الحسية الحركية، العمليات المجردة، العمليات المحسوسة
+- الحسية الحركية، العمليات المحسوسة، ما قبل العمليات، العمليات المجردة
+- العمليات المحسوسة، الحسية الحركية، ما قبل العمليات، العمليات المجردة
+C: الحسية الحركية ← ما قبل العمليات ← العمليات المحسوسة ← العمليات المجردة.
+E: يصف بياجي أربع مراحل: الحسية الحركية (من الولادة إلى حوالي سنتين)، ما قبل العمليات (من حوالي 2 إلى 7 سنوات)، العمليات المحسوسة (من حوالي 7 إلى 11-12 سنة)، العمليات المجردة (ابتداء من 11-12 سنة). الترتيب ثابت والأعمار تقريبية.
+
+[PRI-015] developpement | intermediate
+Q: Le jeu symbolique (faire semblant) et l'égocentrisme intellectuel caractérisent surtout quel stade piagétien ?
+* Le stade préopératoire (environ 2 à 7 ans)
+- Le stade sensori-moteur (avant 2 ans)
+- Le stade des opérations concrètes (environ 7 à 11 ans)
+- Le stade des opérations formelles (après 11-12 ans)
+C: Le stade préopératoire.
+E: Au stade préopératoire, l'enfant accède à la fonction symbolique (langage, jeu de faire semblant, dessin), mais sa pensée reste centrée sur son propre point de vue (égocentrisme) et sur un seul aspect des situations, d'où l'absence de conservation.
+AR:
+Q: يميز اللعب الرمزي (التظاهر) والتمركز الفكري حول الذات أساسا أي مرحلة عند بياجي؟
+* مرحلة ما قبل العمليات (من حوالي 2 إلى 7 سنوات)
+- المرحلة الحسية الحركية (قبل سنتين)
+- مرحلة العمليات المحسوسة (من حوالي 7 إلى 11 سنة)
+- مرحلة العمليات المجردة (بعد 11-12 سنة)
+C: مرحلة ما قبل العمليات.
+E: في مرحلة ما قبل العمليات يصل الطفل إلى الوظيفة الرمزية (اللغة، لعب التظاهر، الرسم)، لكن تفكيره يبقى متمركزا حول وجهة نظره (التمركز حول الذات) وحول جانب واحد من الوضعيات، ومن هنا غياب مفهوم الاحتفاظ.
+
+[PRI-016] developpement | intermediate
+Q: Selon Piaget, à quel stade apparaît le raisonnement hypothético-déductif sur des propositions abstraites ?
+* Au stade des opérations formelles, vers 11-12 ans
+- Au stade des opérations concrètes, vers 7 ans
+- Au stade préopératoire, vers 4 ans
+- Au stade sensori-moteur, vers 18 mois
+C: Au stade des opérations formelles.
+E: Au stade des opérations concrètes, l'enfant raisonne logiquement mais sur des objets et situations concrets. À partir de 11-12 ans, il peut raisonner sur des hypothèses et des énoncés abstraits, en tirer des conséquences et les vérifier : c'est la pensée formelle.
+AR:
+Q: حسب بياجي، في أي مرحلة يظهر الاستدلال الفرضي الاستنباطي حول قضايا مجردة؟
+* في مرحلة العمليات المجردة (الصورية)، حوالي 11-12 سنة
+- في مرحلة العمليات المحسوسة، حوالي 7 سنوات
+- في مرحلة ما قبل العمليات، حوالي 4 سنوات
+- في المرحلة الحسية الحركية، حوالي 18 شهرا
+C: في مرحلة العمليات المجردة.
+E: في مرحلة العمليات المحسوسة يستدل الطفل منطقيا لكن على أشياء ووضعيات ملموسة. وابتداء من 11-12 سنة يصبح قادرا على الاستدلال انطلاقا من فرضيات وقضايا مجردة واستخلاص نتائجها والتحقق منها: إنه التفكير الصوري.
+
+[PRI-017] developpement | intermediate
+Q: Selon Piaget, au cours de quel stade le bébé acquiert-il la « permanence de l'objet » (un objet caché continue d'exister) ?
+* Le stade sensori-moteur
+- Le stade préopératoire
+- Le stade des opérations concrètes
+- Le stade des opérations formelles
+C: Le stade sensori-moteur.
+E: Au cours des deux premières années, l'enfant construit progressivement l'idée qu'un objet existe même lorsqu'il ne le voit plus : il finit par chercher un jouet caché sous un tissu. C'est l'une des grandes acquisitions du stade sensori-moteur.
+AR:
+Q: حسب بياجي، في أي مرحلة يكتسب الرضيع «ديمومة الشيء» (الشيء المخفي يظل موجودا)؟
+* المرحلة الحسية الحركية
+- مرحلة ما قبل العمليات
+- مرحلة العمليات المحسوسة
+- مرحلة العمليات المجردة
+C: المرحلة الحسية الحركية.
+E: خلال السنتين الأوليين يبني الطفل تدريجيا فكرة أن الشيء يظل موجودا حتى عندما لا يراه، فيصبح يبحث عن لعبة مخفية تحت قطعة قماش. وهذا من أهم مكتسبات المرحلة الحسية الحركية.
+
+[PRI-018] developpement | beginner
+Q: Pour Erik Erikson, l'âge de l'école primaire (environ 6 à 12 ans) correspond à quelle crise psychosociale ?
+* Travail (industrie) contre infériorité
+- Confiance contre méfiance
+- Identité contre confusion des rôles
+- Intimité contre isolement
+C: Travail (industrie) contre infériorité.
+E: À l'âge scolaire, l'enfant cherche à se montrer compétent dans les tâches valorisées (apprendre, produire, réussir) ; des échecs répétés peuvent installer un sentiment d'infériorité. Confiance contre méfiance concerne la première année, identité contre confusion l'adolescence, intimité contre isolement le jeune adulte.
+AR:
+Q: بالنسبة لإريك إريكسون، تقابل سن المدرسة الابتدائية (حوالي 6 إلى 12 سنة) أي أزمة نفسية اجتماعية؟
+* الاجتهاد (المثابرة) مقابل الشعور بالنقص
+- الثقة مقابل عدم الثقة
+- الهوية مقابل تشتت الأدوار
+- الألفة مقابل العزلة
+C: الاجتهاد مقابل الشعور بالنقص.
+E: في سن التمدرس يسعى الطفل إلى إثبات كفاءته في المهام المقدَّرة (التعلم، الإنتاج، النجاح)، وقد يُرسّخ الفشل المتكرر لديه شعورا بالنقص. أما الثقة مقابل عدم الثقة فتخص السنة الأولى، والهوية مقابل تشتت الأدوار المراهقة، والألفة مقابل العزلة الرشد المبكر.
+
+[PRI-019] developpement | intermediate
+Q: Combien de stades compte le développement psychosocial décrit par Erik Erikson ?
+* Huit
+- Quatre
+- Cinq
+- Six
+C: Huit stades.
+E: Erikson décrit huit stades couvrant toute la vie, de la petite enfance (confiance contre méfiance) à la vieillesse (intégrité contre désespoir). Chacun est marqué par une crise entre deux pôles. Quatre stades, c'est Piaget ; cinq stades psychosexuels, c'est Freud.
+AR:
+Q: كم عدد مراحل النمو النفسي الاجتماعي التي وصفها إريك إريكسون؟
+* ثماني مراحل
+- أربع مراحل
+- خمس مراحل
+- ست مراحل
+C: ثماني مراحل.
+E: يصف إريكسون ثماني مراحل تغطي الحياة كلها، من الطفولة المبكرة (الثقة مقابل عدم الثقة) إلى الشيخوخة (التكامل مقابل اليأس)، ولكل مرحلة أزمة بين قطبين. أما المراحل الأربع فهي عند بياجي، والمراحل النفسية الجنسية الخمس عند فرويد.
+
+[PRI-020] developpement | intermediate
+Q: Dans la théorie psychanalytique de Freud, comment s'appelle la période qui s'étend d'environ 6 ans à la puberté, c'est-à-dire l'âge de l'école primaire ?
+* La période de latence
+- Le stade oral
+- Le stade anal
+- Le stade génital
+C: La période de latence.
+E: Freud décrit les stades oral, anal, phallique, la période de latence puis le stade génital (à partir de la puberté). Pendant la latence, les pulsions sexuelles sont mises en veille et l'énergie de l'enfant se tourne vers les apprentissages et la vie sociale.
+AR:
+Q: في نظرية التحليل النفسي لفرويد، ما اسم الفترة الممتدة من حوالي 6 سنوات إلى البلوغ، أي سن المدرسة الابتدائية؟
+* فترة الكمون
+- المرحلة الفمية
+- المرحلة الشرجية
+- المرحلة التناسلية
+C: فترة الكمون.
+E: يصف فرويد المراحل الفمية والشرجية والقضيبية، ثم فترة الكمون، ثم المرحلة التناسلية (ابتداء من البلوغ). خلال الكمون تهدأ الدوافع الجنسية وتتجه طاقة الطفل نحو التعلمات والحياة الاجتماعية.
+
+[PRI-021] developpement | advanced
+Q: Chez Freud, quel stade vient immédiatement après le stade anal ?
+* Le stade phallique
+- Le stade oral
+- La période de latence
+- Le stade génital
+C: Le stade phallique.
+E: L'ordre freudien est : oral (première année), anal (environ 2-3 ans), phallique (environ 3-5 ans, période du complexe d'Œdipe), latence (de 6 ans environ à la puberté), génital (à partir de la puberté).
+AR:
+Q: عند فرويد، ما المرحلة التي تأتي مباشرة بعد المرحلة الشرجية؟
+* المرحلة القضيبية
+- المرحلة الفمية
+- فترة الكمون
+- المرحلة التناسلية
+C: المرحلة القضيبية.
+E: الترتيب عند فرويد هو: الفمية (السنة الأولى)، الشرجية (حوالي 2-3 سنوات)، القضيبية (حوالي 3-5 سنوات، فترة عقدة أوديب)، الكمون (من حوالي 6 سنوات إلى البلوغ)، التناسلية (ابتداء من البلوغ).
+
+[PRI-022] developpement | intermediate
+Q: Pour Carl Rogers, quelle doit être d'abord la posture de l'enseignant ?
+* Celle d'un facilitateur qui accorde à l'élève empathie, authenticité et considération positive inconditionnelle
+- Celle d'un transmetteur qui impose les contenus et contrôle chaque étape
+- Celle d'un juge qui classe les élèves selon leurs résultats
+- Celle d'un distributeur de récompenses et de sanctions
+C: Un facilitateur empathique, authentique et accueillant.
+E: Venu de la psychothérapie centrée sur la personne, Rogers défend une pédagogie non directive (Freedom to Learn, 1969) : l'élève apprend vraiment ce qui a du sens pour lui, dans un climat de confiance créé par un enseignant empathique, congruent et qui l'accepte sans condition.
+AR:
+Q: بالنسبة لكارل روجرز، ما الوضعية التي ينبغي أن يتخذها المدرس أولا؟
+* وضعية الميسِّر الذي يمنح المتعلم التعاطف والأصالة والتقبل الإيجابي غير المشروط
+- وضعية الناقل الذي يفرض المضامين ويراقب كل خطوة
+- وضعية الحَكَم الذي يرتب التلاميذ حسب نتائجهم
+- وضعية موزع المكافآت والعقوبات
+C: ميسِّر متعاطف وأصيل ومتقبِّل.
+E: انطلاقا من العلاج المتمركز حول الشخص، يدافع روجرز عن بيداغوجيا لاتوجيهية (كتاب «حرية التعلم»، 1969): يتعلم التلميذ حقا ما له معنى بالنسبة إليه، في مناخ من الثقة يخلقه مدرس متعاطف ومنسجم مع ذاته ويتقبله دون شروط.
+
+[PRI-023] developpement | intermediate
+Q: Lawrence Kohlberg décrit le développement du jugement moral en trois niveaux. Lesquels ?
+* Préconventionnel, conventionnel, postconventionnel
+- Oral, anal, génital
+- Énactif, iconique, symbolique
+- Sensori-moteur, concret, formel
+C: Préconventionnel, conventionnel, postconventionnel.
+E: Au niveau préconventionnel, l'enfant juge selon les punitions et les récompenses ; au niveau conventionnel, selon les attentes du groupe et les règles établies ; au niveau postconventionnel, selon des principes éthiques universels. Chaque niveau comprend deux stades.
+AR:
+Q: يصف لورنس كولبرغ نمو الحكم الأخلاقي في ثلاثة مستويات. ما هي؟
+* ما قبل العرفي، العرفي، ما بعد العرفي
+- الفمي، الشرجي، التناسلي
+- العملي، الأيقوني، الرمزي
+- الحسي الحركي، المحسوس، المجرد
+C: ما قبل العرفي، العرفي، ما بعد العرفي.
+E: في المستوى ما قبل العرفي يحكم الطفل حسب العقاب والمكافأة، وفي المستوى العرفي حسب انتظارات الجماعة والقواعد القائمة، وفي المستوى ما بعد العرفي حسب مبادئ أخلاقية كونية. ويضم كل مستوى مرحلتين.
+
+[PRI-024] developpement | beginner
+Q: Que trouve-t-on à la base de la pyramide des besoins d'Abraham Maslow ?
+* Les besoins physiologiques (manger, boire, dormir)
+- Le besoin d'estime
+- Le besoin d'accomplissement de soi
+- Le besoin d'appartenance
+C: Les besoins physiologiques.
+E: Maslow hiérarchise les besoins : physiologiques, sécurité, appartenance et amour, estime, accomplissement de soi. En classe, un élève qui a faim, qui a peur ou qui se sent rejeté est rarement disponible pour apprendre.
+AR:
+Q: ماذا يوجد في قاعدة هرم الحاجات لأبراهام ماسلو؟
+* الحاجات الفيزيولوجية (الأكل، الشرب، النوم)
+- الحاجة إلى التقدير
+- الحاجة إلى تحقيق الذات
+- الحاجة إلى الانتماء
+C: الحاجات الفيزيولوجية.
+E: يرتب ماسلو الحاجات كالتالي: الفيزيولوجية، الأمن، الانتماء والحب، التقدير، تحقيق الذات. وفي القسم، نادرا ما يكون التلميذ الجائع أو الخائف أو الذي يشعر بالإقصاء مستعدا للتعلم.
+
+# ---------------------------------------------------------------------------
+# 3. Sciences de l'éducation — objectifs et compétences
+# ---------------------------------------------------------------------------
+
+[PRI-025] objectifs-competences | beginner
+Q: Lequel de ces énoncés est formulé comme un objectif opérationnel ?
+* À la fin de la séance, l'élève sera capable de calculer sans erreur le périmètre d'un rectangle dont on lui donne les dimensions.
+- Faire aimer les mathématiques aux élèves.
+- Comprendre la notion de périmètre.
+- Développer l'esprit scientifique.
+C: Le premier : comportement observable, conditions et critère.
+E: Un objectif opérationnel décrit un comportement observable (calculer), les conditions de réalisation (les dimensions sont données) et un critère de réussite (sans erreur). Les autres énoncés sont des intentions ou des objectifs généraux, impossibles à observer directement.
+AR:
+Q: أي هذه الصيغ صيغت على شكل هدف إجرائي؟
+* في نهاية الحصة، يكون المتعلم قادرا على حساب محيط مستطيل معلوم البعدين دون خطأ.
+- جعل التلاميذ يحبون الرياضيات.
+- فهم مفهوم المحيط.
+- تنمية الفكر العلمي.
+C: الأولى: سلوك قابل للملاحظة وشروط ومعيار.
+E: يصف الهدف الإجرائي سلوكا قابلا للملاحظة (يحسب)، وشروط الإنجاز (البعدان معلومان)، ومعيار النجاح (دون خطأ). أما الصيغ الأخرى فهي مقاصد أو أهداف عامة لا يمكن ملاحظتها مباشرة.
+
+[PRI-026] objectifs-competences | intermediate
+Q: Quel verbe convient le moins à un objectif opérationnel, parce qu'il ne décrit pas un comportement observable ?
+* Comprendre
+- Souligner
+- Calculer
+- Classer
+C: « Comprendre ».
+E: On ne peut pas observer directement la compréhension ; on observe ce que l'élève fait pour la montrer : souligner, calculer, classer, reformuler, justifier… Les objectifs opérationnels utilisent donc des verbes d'action.
+AR:
+Q: أي فعل هو الأقل ملاءمة لصياغة هدف إجرائي، لأنه لا يصف سلوكا قابلا للملاحظة؟
+* يفهم
+- يسطر
+- يحسب
+- يصنف
+C: «يفهم».
+E: لا يمكن ملاحظة الفهم مباشرة، وإنما نلاحظ ما يقوم به المتعلم ليبرهن عليه: يسطر، يحسب، يصنف، يعيد الصياغة، يعلل… لذلك تستعمل الأهداف الإجرائية أفعالا دالة على إنجاز.
+
+[PRI-027] objectifs-competences | intermediate
+Q: Qui a publié en 1964, avec Benjamin Bloom et Bertram Masia, la taxonomie du domaine affectif (réception, réponse, valorisation, organisation, caractérisation) ?
+* David Krathwohl
+- Anita Harrow
+- Robert Gagné
+- Robert Mager
+C: David Krathwohl.
+E: Après la taxonomie du domaine cognitif (Bloom, 1956), Krathwohl, Bloom et Masia ont proposé en 1964 celle du domaine affectif, qui décrit l'intériorisation progressive d'une valeur. Anita Harrow est l'auteure d'une taxonomie du domaine psychomoteur (1972).
+AR:
+Q: من نشر سنة 1964، رفقة بنيامين بلوم وبرترام ماسيا، صنافة المجال الوجداني (التقبل، الاستجابة، التثمين، التنظيم، التمييز بقيمة)؟
+* ديفيد كراثوول
+- أنيتا هارو
+- روبرت غانيي
+- روبرت ماجر
+C: ديفيد كراثوول.
+E: بعد صنافة المجال المعرفي (بلوم، 1956)، اقترح كراثوول وبلوم وماسيا سنة 1964 صنافة المجال الوجداني التي تصف الاستدماج التدريجي لقيمة ما. أما أنيتا هارو فهي صاحبة صنافة للمجال الحسي الحركي (1972).
+
+[PRI-028] objectifs-competences | advanced
+Q: Pour quel domaine Anita Harrow a-t-elle proposé une taxonomie en 1972 ?
+* Le domaine psychomoteur
+- Le domaine cognitif
+- Le domaine affectif
+- Le domaine social
+C: Le domaine psychomoteur.
+E: La taxonomie de Harrow classe les mouvements du plus simple au plus élaboré : mouvements réflexes, mouvements fondamentaux, aptitudes perceptives, qualités physiques, habiletés motrices, communication non verbale. Elle complète Bloom (cognitif) et Krathwohl (affectif).
+AR:
+Q: لأي مجال اقترحت أنيتا هارو صنافة سنة 1972؟
+* المجال الحسي الحركي
+- المجال المعرفي
+- المجال الوجداني
+- المجال الاجتماعي
+C: المجال الحسي الحركي.
+E: تصنف صنافة هارو الحركات من الأبسط إلى الأكثر تعقيدا: الحركات الانعكاسية، الحركات الأساسية، القدرات الإدراكية، الصفات البدنية، المهارات الحركية، التواصل غير اللفظي. وهي تكمل صنافة بلوم (المعرفي) وكراثوول (الوجداني).
+
+[PRI-029] objectifs-competences | intermediate
+Q: Quelle critique adresse-t-on habituellement à la pédagogie par objectifs (PPO), et qui a favorisé le passage à l'approche par compétences ?
+* Le découpage des apprentissages en une multitude d'objectifs isolés, au détriment du sens et de leur intégration
+- L'absence totale d'évaluation des élèves
+- Le refus de formuler des objectifs observables
+- L'obligation de travailler uniquement par projets
+C: L'émiettement des apprentissages en objectifs isolés.
+E: Issue du béhaviorisme, la PPO a clarifié ce que l'on attend des élèves, mais elle a souvent conduit à juxtaposer des savoir-faire morcelés. L'approche par compétences cherche au contraire à faire mobiliser et intégrer ces ressources dans des situations complexes.
+AR:
+Q: ما النقد الذي يوجَّه عادة إلى بيداغوجيا الأهداف، والذي ساهم في الانتقال إلى المقاربة بالكفايات؟
+* تجزيء التعلمات إلى عدد كبير من الأهداف المعزولة على حساب المعنى والإدماج
+- الغياب التام لتقويم المتعلمين
+- رفض صياغة أهداف قابلة للملاحظة
+- إلزامية العمل بالمشاريع فقط
+C: تجزيء التعلمات إلى أهداف معزولة.
+E: انبثقت بيداغوجيا الأهداف من السلوكية، فأوضحت ما يُنتظر من المتعلمين، لكنها أدت غالبا إلى تجاور مهارات مجزأة. أما المقاربة بالكفايات فتسعى إلى تعبئة هذه الموارد وإدماجها في وضعيات مركبة.
+
+[PRI-030] objectifs-competences | intermediate
+Q: Qu'appelle-t-on une compétence transversale ?
+* Une compétence mobilisable dans plusieurs disciplines, par exemple communiquer ou résoudre un problème
+- Une compétence propre à une seule discipline
+- Une compétence évaluée uniquement à l'oral
+- Une compétence réservée aux élèves en difficulté
+C: Une compétence utile dans plusieurs disciplines.
+E: Les compétences disciplinaires relèvent d'une matière (par exemple résoudre une équation) ; les compétences transversales (méthodologiques, communicatives, stratégiques…) se développent et se réinvestissent dans toutes les disciplines.
+AR:
+Q: ما المقصود بالكفاية المستعرضة؟
+* كفاية يمكن تعبئتها في عدة مواد، كالتواصل أو حل المشكلات
+- كفاية خاصة بمادة واحدة
+- كفاية تقوَّم شفهيا فقط
+- كفاية خاصة بالتلاميذ المتعثرين
+C: كفاية مفيدة في عدة مواد.
+E: ترتبط الكفايات النوعية بمادة معينة (مثل حل معادلة)، أما الكفايات المستعرضة (المنهجية والتواصلية والاستراتيجية…) فتنمو ويعاد استثمارها في جميع المواد.
+
+[PRI-031] objectifs-competences | advanced
+Q: Dans la pédagogie de l'intégration (Xavier Roegiers), une compétence est définie par rapport à…
+* une famille de situations, c'est-à-dire des situations équivalentes par leur complexité
+- une liste de contenus du manuel
+- un exercice unique, toujours le même
+- un comportement isolé, observable en quelques secondes
+C: Une famille de situations.
+E: Pour Roegiers, être compétent, c'est mobiliser un ensemble intégré de ressources pour résoudre des situations d'une même famille. On évalue donc la compétence sur une situation nouvelle de cette famille, et non sur un exercice déjà fait en classe.
+AR:
+Q: في بيداغوجيا الإدماج (كزافيي روجرز)، تُعرَّف الكفاية بالنسبة إلى…
+* فئة من الوضعيات، أي وضعيات متكافئة من حيث درجة التعقيد
+- لائحة من مضامين الكتاب المدرسي
+- تمرين واحد يتكرر دائما
+- سلوك معزول يلاحَظ في بضع ثوان
+C: فئة (عائلة) من الوضعيات.
+E: الكفاءة عند روجرز هي تعبئة مجموعة مندمجة من الموارد لحل وضعيات تنتمي إلى الفئة نفسها. لذلك تقوَّم الكفاية بوضعية جديدة من هذه الفئة، لا بتمرين سبق إنجازه في القسم.
+
+[PRI-032] objectifs-competences | advanced
+Q: Dans la pédagogie de l'intégration (Jean-Marie De Ketele, Xavier Roegiers), que désigne l'objectif terminal d'intégration (OTI) ?
+* Une macro-compétence visée au terme d'une année ou d'un cycle, qui intègre les compétences de base
+- Le dernier exercice du manuel
+- La note minimale pour passer au niveau supérieur
+- L'objectif d'une seule séance d'apprentissage
+C: Une macro-compétence de fin d'année ou de cycle.
+E: L'OTI exprime ce que l'élève doit savoir faire face à une situation complexe à la fin d'une étape longue (année, cycle). Il se décompose en quelques compétences de base, elles-mêmes construites à partir de ressources (savoirs, savoir-faire, savoir-être).
+AR:
+Q: في بيداغوجيا الإدماج (جان ماري دوكتيل، كزافيي روجرز)، ما المقصود بالهدف النهائي للإدماج؟
+* كفاية كبرى مستهدفة في نهاية سنة أو سلك، تدمج الكفايات الأساسية
+- آخر تمرين في الكتاب المدرسي
+- النقطة الدنيا للانتقال إلى المستوى الموالي
+- هدف حصة تعلمية واحدة
+C: كفاية كبرى في نهاية السنة أو السلك.
+E: يعبر الهدف النهائي للإدماج عما ينبغي أن يقدر عليه المتعلم أمام وضعية مركبة في نهاية مرحلة طويلة (سنة، سلك). وهو يتفرع إلى بضع كفايات أساسية تُبنى بدورها انطلاقا من موارد (معارف، مهارات، مواقف).
+
+# ---------------------------------------------------------------------------
+# 4. Sciences de l'éducation — évaluation
+# ---------------------------------------------------------------------------
+
+[PRI-033] evaluation | intermediate
+Q: Qui a introduit en 1967 la distinction entre évaluation formative et évaluation sommative ?
+* Michael Scriven
+- Benjamin Bloom
+- Jean Piaget
+- Xavier Roegiers
+C: Michael Scriven.
+E: Dans « The Methodology of Evaluation » (1967), Scriven distingue l'évaluation formative, qui sert à améliorer un programme en cours, de l'évaluation sommative, qui en dresse le bilan. Bloom et ses collaborateurs ont ensuite appliqué cette distinction aux apprentissages des élèves.
+AR:
+Q: من أدخل سنة 1967 التمييز بين التقويم التكويني والتقويم الإجمالي؟
+* مايكل سكريفن
+- بنيامين بلوم
+- جان بياجي
+- كزافيي روجرز
+C: مايكل سكريفن.
+E: ميّز سكريفن في مقاله «منهجية التقويم» (1967) بين التقويم التكويني الذي يحسّن برنامجا أثناء إنجازه، والتقويم الإجمالي الذي يقيم حصيلته. ثم طبق بلوم ومساعدوه هذا التمييز على تعلمات التلاميذ.
+
+[PRI-034] evaluation | intermediate
+Q: Une évaluation critériée compare la performance de l'élève…
+* à des critères de réussite définis à l'avance
+- à celle des autres élèves du groupe
+- à ses propres performances antérieures uniquement
+- à la moyenne nationale de l'année précédente
+C: À des critères fixés à l'avance.
+E: L'évaluation critériée situe l'élève par rapport à ce qui est attendu (critères, objectifs), indépendamment des autres. L'évaluation normative le classe par rapport au groupe ; celle qui le compare à lui-même dans le temps porte sur sa progression.
+AR:
+Q: يقارن التقويم المحكي (محكي المرجع) أداء المتعلم…
+* بمعايير نجاح محددة مسبقا
+- بأداء باقي تلاميذ المجموعة
+- بإنجازاته السابقة فقط
+- بالمعدل الوطني للسنة الماضية
+C: بمعايير محددة مسبقا.
+E: يحدد التقويم المحكي موقع المتعلم بالنسبة لما هو منتظر (معايير، أهداف) بغض النظر عن الآخرين. أما التقويم المعياري فيرتبه بالنسبة للمجموعة، ومقارنته بنفسه عبر الزمن تخص تقدمه.
+
+[PRI-035] evaluation | advanced
+Q: En docimologie, que désigne l'« effet de halo » ?
+* L'influence d'une caractéristique de l'élève (présentation, écriture, réputation) sur la note attribuée à sa copie
+- La différence de notes entre deux correcteurs pour une même copie
+- La sévérité qui augmente au fil de la correction d'une pile de copies
+- L'amélioration des résultats des élèves dont l'enseignant attend beaucoup
+C: L'influence de caractéristiques étrangères à la tâche sur la note.
+E: Une copie propre et bien écrite, ou un élève réputé bon, peut recevoir une meilleure note pour un contenu identique : c'est l'effet de halo. Les grilles critériées et la correction anonyme le limitent. L'amélioration liée aux attentes de l'enseignant est l'effet Pygmalion.
+AR:
+Q: في الدوسيمولوجيا (علم الامتحانات)، ما المقصود بـ«أثر الهالة»؟
+* تأثير خاصية من خصائص التلميذ (التقديم، الخط، السمعة) على النقطة الممنوحة لورقته
+- اختلاف النقط بين مصححين لورقة واحدة
+- تزايد الصرامة كلما تقدم التصحيح في رزمة الأوراق
+- تحسن نتائج التلاميذ الذين ينتظر منهم المدرس الكثير
+C: تأثير خصائص لا علاقة لها بالمهمة على النقطة.
+E: قد تحصل ورقة نظيفة وجيدة الخط، أو تلميذ معروف بتفوقه، على نقطة أفضل لمضمون مماثل: هذا هو أثر الهالة. وتحد منه شبكات التصحيح المعيارية وإخفاء الأسماء. أما التحسن المرتبط بانتظارات المدرس فهو أثر بيجماليون.
+
+[PRI-036] evaluation | advanced
+Q: Quel psychologue français a proposé le terme de « docimologie » pour désigner l'étude scientifique des examens et de la notation ?
+* Henri Piéron
+- Henri Wallon
+- Alfred Binet
+- Gaston Mialaret
+C: Henri Piéron.
+E: Dans les années 1920-1930, Henri Piéron et ses collaborateurs ont montré par des multicorrections que la note d'une même copie varie fortement selon le correcteur. Il a nommé « docimologie » cette science des examens.
+AR:
+Q: من هو عالم النفس الفرنسي الذي اقترح مصطلح «الدوسيمولوجيا» للدلالة على الدراسة العلمية للامتحانات والتنقيط؟
+* هنري بييرون
+- هنري فالون
+- ألفريد بينيه
+- غاستون ميالاري
+C: هنري بييرون.
+E: في عشرينيات وثلاثينيات القرن العشرين، بيّن هنري بييرون ومساعدوه، عبر التصحيح المتعدد، أن نقطة الورقة الواحدة تختلف كثيرا حسب المصحح، وسمى هذا العلم «الدوسيمولوجيا».
+
+[PRI-037] evaluation | intermediate
+Q: Que montre l'effet Pygmalion, mis en évidence par Robert Rosenthal et Lenore Jacobson (1968) ?
+* Que les attentes de l'enseignant envers un élève peuvent influencer ses performances
+- Que la note dépend de l'ordre de correction des copies
+- Que les élèves apprennent mieux le matin que l'après-midi
+- Que la répétition espacée améliore la mémorisation
+C: Les attentes de l'enseignant influencent les performances de l'élève.
+E: Dans « Pygmalion in the Classroom » (1968), des enseignants à qui l'on avait désigné certains élèves comme prometteurs (en réalité tirés au hasard) ont vu ces élèves progresser davantage. L'effet rappelle l'importance d'attentes positives et équitables pour tous.
+AR:
+Q: ماذا يبين أثر بيجماليون الذي أبرزه روبرت روزنتال ولينور جاكوبسون (1968)؟
+* أن انتظارات المدرس من تلميذ ما يمكن أن تؤثر في إنجازاته
+- أن النقطة تتوقف على ترتيب تصحيح الأوراق
+- أن التلاميذ يتعلمون صباحا أفضل من المساء
+- أن التكرار المتباعد يحسن الحفظ
+C: انتظارات المدرس تؤثر في إنجازات المتعلم.
+E: في كتاب «بيجماليون في القسم» (1968)، أُخبر مدرسون بأن بعض التلاميذ واعدون (وقد اختيروا في الحقيقة عشوائيا)، فتقدم هؤلاء أكثر من غيرهم. ويذكّر هذا الأثر بأهمية الانتظارات الإيجابية والمنصفة للجميع.
+
+[PRI-038] evaluation | beginner
+Q: Dans une grille d'évaluation, qu'est-ce qu'un indicateur ?
+* Un signe concret et observable qui permet de vérifier qu'un critère est respecté
+- La qualité générale attendue de la production
+- La note finale attribuée à l'élève
+- La consigne donnée à l'élève
+C: Un signe observable qui opérationnalise un critère.
+E: Le critère est une qualité attendue (par exemple « la cohérence du texte ») ; les indicateurs sont les éléments concrets qui permettent de l'observer (par exemple « les connecteurs sont utilisés correctement », « il n'y a pas de contradiction »).
+AR:
+Q: في شبكة التقويم، ما هو المؤشر؟
+* علامة ملموسة وقابلة للملاحظة تمكّن من التحقق من احترام معيار ما
+- الجودة العامة المنتظرة من الإنتاج
+- النقطة النهائية الممنوحة للمتعلم
+- التعليمة الموجهة للمتعلم
+C: علامة ملاحظة تُجرئ المعيار.
+E: المعيار صفة منتظرة (مثلا «انسجام النص»)، والمؤشرات هي العناصر الملموسة التي تمكّن من ملاحظته (مثلا «استعمال أدوات الربط بشكل صحيح»، «غياب التناقض»).
+
+[PRI-039] evaluation | intermediate
+Q: Selon la « règle des deux tiers » de la pédagogie de l'intégration (De Ketele), quand considère-t-on qu'un critère minimal est maîtrisé ?
+* Quand l'élève le réussit dans au moins deux occasions sur trois proposées
+- Quand l'élève obtient deux tiers de la note totale de l'année
+- Quand deux tiers des élèves de la classe le réussissent
+- Quand l'élève a suivi deux tiers des séances
+C: Deux réussites sur trois occasions indépendantes.
+E: Pour limiter le hasard, on donne à l'élève trois occasions indépendantes de montrer chaque critère minimal ; il le maîtrise s'il réussit au moins deux fois sur trois. La règle des trois quarts, complémentaire, réserve environ trois quarts des points aux critères minimaux.
+AR:
+Q: حسب «قاعدة الثلثين» في بيداغوجيا الإدماج (دوكتيل)، متى نعتبر أن معيارا أدنى قد تم التحكم فيه؟
+* عندما ينجح المتعلم فيه في فرصتين على الأقل من ثلاث فرص مقترحة
+- عندما يحصل المتعلم على ثلثي النقطة الإجمالية للسنة
+- عندما ينجح فيه ثلثا تلاميذ القسم
+- عندما يحضر المتعلم ثلثي الحصص
+C: نجاح في فرصتين من ثلاث فرص مستقلة.
+E: للحد من دور الصدفة، تُمنح للمتعلم ثلاث فرص مستقلة لإظهار كل معيار أدنى، ويعتبر متحكما فيه إذا نجح مرتين على الأقل من ثلاث. وتكملها قاعدة الثلاثة أرباع التي تخصص حوالي ثلاثة أرباع النقط للمعايير الدنيا.
+
+[PRI-040] evaluation | beginner
+Q: Une évaluation formative révèle que plusieurs élèves confondent deux notions. Quelle est la suite logique ?
+* Une remédiation (soutien) ciblée sur les erreurs repérées
+- Une sanction des élèves concernés
+- Le passage immédiat à la leçon suivante
+- Une évaluation sommative le lendemain
+C: Une remédiation ciblée.
+E: L'évaluation formative sert à réguler l'enseignement : elle repère les difficultés pour proposer un soutien adapté (nouvelle explication, autre support, exercices ciblés, travail en groupe de besoin) avant le bilan sommatif.
+AR:
+Q: كشف تقويم تكويني أن عدة تلاميذ يخلطون بين مفهومين. ما الخطوة المنطقية الموالية؟
+* معالجة (دعم) تستهدف الأخطاء المرصودة
+- معاقبة التلاميذ المعنيين
+- الانتقال فورا إلى الدرس الموالي
+- تقويم إجمالي في اليوم الموالي
+C: معالجة مستهدِفة.
+E: يُستعمل التقويم التكويني لتعديل التدريس: يرصد الصعوبات من أجل اقتراح دعم ملائم (شرح جديد، سند آخر، تمارين موجهة، عمل في مجموعات حسب الحاجات) قبل التقويم الإجمالي.
+
+[PRI-041] evaluation | intermediate
+Q: L'« évaluation formatrice » (Georgette Nunziati) met surtout l'accent sur…
+* l'autorégulation par l'élève, qui s'approprie les critères de réussite et évalue lui-même son travail
+- le classement des élèves en fin d'année
+- la certification officielle des acquis
+- la notation chiffrée de chaque exercice
+C: L'autorégulation par l'élève.
+E: Prolongeant l'évaluation formative, l'évaluation formatrice fait de l'élève l'acteur de la régulation : il connaît les critères, les utilise pour s'autoévaluer ou évaluer ses pairs, et ajuste lui-même sa démarche.
+AR:
+Q: يركز «التقويم المكوِّن» (جورجيت نونزياتي) أساسا على…
+* التعديل الذاتي من طرف المتعلم الذي يتملك معايير النجاح ويقوّم عمله بنفسه
+- ترتيب التلاميذ في نهاية السنة
+- الإشهاد الرسمي على المكتسبات
+- التنقيط الرقمي لكل تمرين
+C: التعديل الذاتي من طرف المتعلم.
+E: امتدادا للتقويم التكويني، يجعل التقويم المكوِّن المتعلمَ فاعلا في التعديل: يعرف المعايير ويستعملها لتقويم ذاته أو أقرانه، ويعدّل مساره بنفسه.
+
+# ---------------------------------------------------------------------------
+# 5. Didactique générale
+# ---------------------------------------------------------------------------
+
+[PRI-042] didactique-generale | beginner
+Q: Que désigne la « transposition didactique » ?
+* Le processus qui transforme un savoir savant en savoir à enseigner, puis en savoir enseigné en classe
+- La traduction d'un manuel d'une langue à une autre
+- Le changement d'établissement d'un enseignant
+- Le passage d'un élève d'un niveau au suivant
+C: Le passage du savoir savant au savoir enseigné.
+E: Le savoir produit par les chercheurs ne peut pas être enseigné tel quel : il est sélectionné et réorganisé dans les programmes (savoir à enseigner), puis adapté par l'enseignant en classe (savoir enseigné). Analyser cette transformation aide à repérer ce qui est simplifié ou déformé.
+AR:
+Q: ما المقصود بـ«النقل الديداكتيكي»؟
+* السيرورة التي تحوّل المعرفة العالمة إلى معرفة مقررة للتدريس، ثم إلى معرفة مدرَّسة داخل القسم
+- ترجمة كتاب مدرسي من لغة إلى أخرى
+- انتقال مدرس من مؤسسة إلى أخرى
+- انتقال تلميذ من مستوى إلى المستوى الموالي
+C: الانتقال من المعرفة العالمة إلى المعرفة المدرَّسة.
+E: لا يمكن تدريس المعرفة التي ينتجها الباحثون كما هي، بل تُنتقى ويعاد تنظيمها في البرامج (معرفة مقررة)، ثم يكيفها المدرس داخل القسم (معرفة مدرَّسة). وتحليل هذا التحول يساعد على رصد ما تم تبسيطه أو تحريفه.
+
+[PRI-043] didactique-generale | intermediate
+Q: À quel didacticien des mathématiques doit-on la diffusion du concept de transposition didactique, dans un ouvrage de 1985 ?
+* Yves Chevallard
+- Guy Brousseau
+- Gérard Vergnaud
+- Philippe Meirieu
+C: Yves Chevallard.
+E: Le terme vient du sociologue Michel Verret (1975), mais c'est Yves Chevallard qui l'a développé en didactique des mathématiques dans « La transposition didactique. Du savoir savant au savoir enseigné » (1985). Brousseau est l'auteur de la théorie des situations, Vergnaud des champs conceptuels.
+AR:
+Q: إلى أي ديداكتيكي في الرياضيات يعود الفضل في نشر مفهوم النقل الديداكتيكي في كتاب صدر سنة 1985؟
+* إيف شوفالار
+- غي بروسو
+- جيرار فيرنيو
+- فيليب ميريو
+C: إيف شوفالار.
+E: يعود المصطلح إلى عالم الاجتماع ميشيل فيري (1975)، لكن إيف شوفالار هو من طوره في ديداكتيك الرياضيات في كتابه «النقل الديداكتيكي: من المعرفة العالمة إلى المعرفة المدرَّسة» (1985). أما بروسو فصاحب نظرية الوضعيات، وفيرنيو صاحب الحقول المفاهيمية.
+
+[PRI-044] didactique-generale | advanced
+Q: Chez Yves Chevallard, que désigne la « noosphère » ?
+* L'ensemble des acteurs qui pensent l'enseignement et façonnent les savoirs à enseigner (concepteurs de programmes, inspecteurs, auteurs de manuels…)
+- La salle de classe où se déroule l'apprentissage
+- Le savoir personnel de chaque élève
+- La bibliothèque de l'école
+C: La sphère des acteurs qui décident des savoirs à enseigner.
+E: La noosphère est l'interface entre le système d'enseignement et la société : c'est là que se négocient les programmes et que s'opère la première étape de la transposition didactique, du savoir savant au savoir à enseigner.
+AR:
+Q: عند إيف شوفالار، ما المقصود بـ«النوسفير»؟
+* مجموع الفاعلين الذين يفكرون في التعليم ويشكلون المعارف المقررة (واضعو البرامج، المفتشون، مؤلفو الكتب المدرسية…)
+- حجرة الدرس التي يجري فيها التعلم
+- المعرفة الشخصية لكل متعلم
+- مكتبة المدرسة
+C: فضاء الفاعلين الذين يقررون المعارف المدرَّسة.
+E: النوسفير هو صلة الوصل بين النظام التعليمي والمجتمع، فيه تتم مناقشة البرامج وتنجز المرحلة الأولى من النقل الديداكتيكي، من المعرفة العالمة إلى المعرفة المقررة.
+
+[PRI-045] didactique-generale | beginner
+Q: Que désigne le « contrat didactique » décrit par Guy Brousseau ?
+* L'ensemble des attentes, souvent implicites, entre l'enseignant et les élèves à propos du savoir en jeu
+- Le règlement intérieur de l'école
+- Le contrat de travail de l'enseignant
+- L'engagement écrit signé par les parents en début d'année
+C: Les attentes réciproques, souvent implicites, à propos du savoir.
+E: Chacun attend quelque chose de l'autre : l'élève suppose qu'un problème posé a une solution avec les données fournies et qu'il faut utiliser la leçon du jour ; l'enseignant attend certaines réponses. Ces règles tacites apparaissent surtout quand elles sont rompues.
+AR:
+Q: ما المقصود بـ«العقد الديداكتيكي» الذي وصفه غي بروسو؟
+* مجموع الانتظارات، الضمنية غالبا، بين المدرس والمتعلمين بخصوص المعرفة المستهدفة
+- النظام الداخلي للمدرسة
+- عقد عمل المدرس
+- الالتزام المكتوب الذي يوقعه الآباء في بداية السنة
+C: الانتظارات المتبادلة، الضمنية غالبا، حول المعرفة.
+E: ينتظر كل طرف شيئا من الآخر: يفترض المتعلم أن للمسألة المطروحة حلا بالمعطيات المقدمة وأن عليه استعمال درس اليوم، وينتظر المدرس أجوبة معينة. وتظهر هذه القواعد الضمنية خاصة عند خرقها.
+
+[PRI-046] didactique-generale | advanced
+Q: À la question « Sur un bateau, il y a 26 moutons et 10 chèvres. Quel est l'âge du capitaine ? », de nombreux élèves répondent « 36 ans ». Que révèle surtout ce phénomène ?
+* Un effet du contrat didactique : l'élève pense qu'un problème posé en classe se résout toujours en calculant avec ses données
+- Une erreur de calcul mental
+- Une méconnaissance du vocabulaire maritime
+- Un trouble de la mémoire de travail
+C: Un effet du contrat didactique.
+E: Cette enquête (IREM de Grenoble, vers 1980) montre que beaucoup d'élèves ne questionnent pas la pertinence de la question : habitués à des problèmes toujours solubles, ils combinent les nombres. Proposer aussi des problèmes impossibles ou à données superflues aide à développer l'esprit critique.
+AR:
+Q: أمام سؤال «على متن سفينة 26 خروفا و10 معزات. كم عمر القبطان؟» يجيب كثير من التلاميذ «36 سنة». ماذا تكشف هذه الظاهرة أساسا؟
+* أثرا من آثار العقد الديداكتيكي: يعتقد المتعلم أن كل مسألة تُطرح في القسم تُحل دائما بالحساب بمعطياتها
+- خطأ في الحساب الذهني
+- جهلا بالمعجم البحري
+- اضطرابا في الذاكرة العاملة
+C: أثر من آثار العقد الديداكتيكي.
+E: بينت هذه الدراسة (معهد البحث في تدريس الرياضيات بغرونوبل، حوالي 1980) أن كثيرا من التلاميذ لا يتساءلون عن وجاهة السؤال: لتعودهم على مسائل قابلة للحل دائما، يركبون الأعداد. واقتراح مسائل مستحيلة أو بمعطيات زائدة ينمي الحس النقدي.
+
+[PRI-047] didactique-generale | intermediate
+Q: Dans la théorie de Brousseau, quand parle-t-on d'« effet Topaze » ?
+* Quand l'enseignant suggère tellement la réponse que l'élève la donne sans avoir construit le savoir visé
+- Quand l'élève refuse de répondre aux questions
+- Quand l'enseignant change de manuel en cours d'année
+- Quand les élèves travaillent en groupes de niveau
+C: Quand l'enseignant « souffle » la réponse.
+E: Le nom vient de la pièce de Marcel Pagnol où l'instituteur Topaze dicte « des moutons » en insistant sur le s final. Pour obtenir la bonne réponse, l'enseignant baisse progressivement l'exigence jusqu'à ce que la tâche perde son enjeu : l'élève répond juste sans apprendre.
+AR:
+Q: في نظرية بروسو، متى نتحدث عن «أثر توباز»؟
+* عندما يوحي المدرس بالجواب إلى درجة أن المتعلم يقدمه دون أن يبني المعرفة المستهدفة
+- عندما يرفض المتعلم الإجابة عن الأسئلة
+- عندما يغير المدرس الكتاب المدرسي أثناء السنة
+- عندما يعمل التلاميذ في مجموعات مستوى
+C: عندما «يلقّن» المدرس الجواب.
+E: يعود الاسم إلى مسرحية لمارسيل بانيول يملي فيها المعلم توباز كلمة «des moutons» مع التشديد على حرف s الأخير. فلكي يحصل المدرس على الجواب الصحيح يخفض تدريجيا مستوى المطلوب حتى تفقد المهمة رهانها، فيجيب المتعلم صوابا دون أن يتعلم.
+
+[PRI-048] didactique-generale | intermediate
+Q: Dans la théorie des situations didactiques, quelle phase vient en dernier, quand l'enseignant donne au savoir construit par les élèves son statut de savoir officiel, à retenir et à réutiliser ?
+* L'institutionnalisation
+- La dévolution
+- L'action
+- La formulation
+C: L'institutionnalisation.
+E: Brousseau décrit des situations d'action, de formulation et de validation, où les élèves cherchent, communiquent et prouvent, puis l'institutionnalisation, où l'enseignant fixe le savoir (trace écrite, règle, définition) et le relie aux savoirs de référence.
+AR:
+Q: في نظرية الوضعيات الديداكتيكية، ما المرحلة التي تأتي في الأخير، حين يمنح المدرس المعرفة التي بناها المتعلمون وضعَ المعرفة الرسمية الواجب الاحتفاظ بها وإعادة استعمالها؟
+* المأسسة
+- التفويض
+- الفعل
+- الصياغة
+C: المأسسة.
+E: يصف بروسو وضعيات الفعل والصياغة والمصادقة، التي يبحث فيها المتعلمون ويتواصلون ويبرهنون، ثم المأسسة التي يثبّت فيها المدرس المعرفة (أثر مكتوب، قاعدة، تعريف) ويربطها بالمعارف المرجعية.
+
+[PRI-049] didactique-generale | advanced
+Q: Que désigne la « dévolution » chez Guy Brousseau ?
+* L'acte par lequel l'enseignant fait accepter à l'élève la responsabilité de résoudre lui-même un problème
+- La remise des bulletins de notes aux familles
+- La délégation de la correction aux élèves
+- Le retour à une notion déjà étudiée
+C: Le transfert à l'élève de la responsabilité du problème.
+E: Pour que l'élève construise un savoir, il doit s'approprier le problème et le traiter comme le sien, sans attendre que l'enseignant lui indique la méthode. La dévolution fait basculer la situation vers une situation « adidactique », où le milieu renvoie à l'élève les effets de ses décisions.
+AR:
+Q: ما المقصود بـ«التفويض» (dévolution) عند غي بروسو؟
+* الفعل الذي يجعل به المدرس المتعلمَ يقبل مسؤولية حل المشكلة بنفسه
+- تسليم بيانات النقط للأسر
+- تفويض التصحيح للتلاميذ
+- العودة إلى مفهوم سبقت دراسته
+C: نقل مسؤولية المشكلة إلى المتعلم.
+E: لكي يبني المتعلم معرفة، ينبغي أن يتملك المشكلة ويعالجها كأنها مشكلته، دون انتظار أن يدله المدرس على الطريقة. وبالتفويض تتحول الوضعية إلى وضعية «لاديداكتيكية» يعكس فيها الوسط للمتعلم آثار قراراته.
+
+[PRI-050] didactique-generale | intermediate
+Q: Qui a introduit la notion d'« obstacle épistémologique », reprise ensuite en didactique ?
+* Gaston Bachelard, dans « La formation de l'esprit scientifique » (1938)
+- Guy Brousseau, dans sa théorie des situations
+- Jean Piaget, dans « La naissance de l'intelligence chez l'enfant »
+- Yves Chevallard, dans « La transposition didactique »
+C: Gaston Bachelard (1938).
+E: Pour Bachelard, on connaît « contre une connaissance antérieure » : des idées premières, utiles jusque-là, font obstacle au savoir scientifique. Guy Brousseau a importé cette notion en didactique des mathématiques dans les années 1970.
+AR:
+Q: من أدخل مفهوم «العائق الإبستمولوجي» الذي اعتمده الديداكتيك لاحقا؟
+* غاستون باشلار في كتاب «تكوين الفكر العلمي» (1938)
+- غي بروسو في نظرية الوضعيات
+- جان بياجي في كتاب «نشأة الذكاء عند الطفل»
+- إيف شوفالار في كتاب «النقل الديداكتيكي»
+C: غاستون باشلار (1938).
+E: يرى باشلار أننا نعرف «ضد معرفة سابقة»: فالأفكار الأولية، المفيدة إلى حين، تعيق المعرفة العلمية. وقد نقل غي بروسو هذا المفهوم إلى ديداكتيك الرياضيات في سبعينيات القرن العشرين.
+
+[PRI-051] didactique-generale | advanced
+Q: Guy Brousseau distingue trois origines des obstacles à l'apprentissage. Lesquelles ?
+* Ontogénique, didactique et épistémologique
+- Cognitive, affective et sociale
+- Visuelle, auditive et kinesthésique
+- Familiale, scolaire et culturelle
+C: Ontogénique, didactique, épistémologique.
+E: Les obstacles ontogéniques tiennent aux limites du développement de l'enfant ; les obstacles didactiques viennent des choix d'enseignement (par exemple un apprentissage trop longtemps limité aux nombres entiers) ; les obstacles épistémologiques sont liés au savoir lui-même et se retrouvent dans son histoire.
+AR:
+Q: يميز غي بروسو بين ثلاثة مصادر لعوائق التعلم. ما هي؟
+* نمائية (أونطوجينية) وديداكتيكية وإبستمولوجية
+- معرفية ووجدانية واجتماعية
+- بصرية وسمعية وحركية
+- أسرية ومدرسية وثقافية
+C: نمائية، ديداكتيكية، إبستمولوجية.
+E: العوائق النمائية مرتبطة بحدود نمو الطفل، والعوائق الديداكتيكية ناتجة عن اختيارات التدريس (مثل حصر التعلم مدة طويلة في الأعداد الصحيحة)، والعوائق الإبستمولوجية مرتبطة بالمعرفة ذاتها وتظهر في تاريخها.
+
+[PRI-052] didactique-generale | beginner
+Q: Dans une pédagogie de l'erreur, comment l'erreur de l'élève est-elle considérée ?
+* Comme un indice de son raisonnement et un point d'appui pour apprendre
+- Comme une faute à sanctionner systématiquement
+- Comme la preuve d'un manque de travail
+- Comme un incident à ignorer pour ne pas perdre de temps
+C: Comme un indice et un levier d'apprentissage.
+E: L'erreur révèle souvent une logique cohérente de l'élève (une règle mal généralisée, une conception initiale). L'analyser avec lui permet d'en comprendre l'origine et de construire une remédiation adaptée, au lieu de seulement la corriger.
+AR:
+Q: في بيداغوجيا الخطأ، كيف يُنظر إلى خطأ المتعلم؟
+* باعتباره مؤشرا على طريقة تفكيره ومنطلقا للتعلم
+- باعتباره هفوة يجب معاقبتها دائما
+- باعتباره دليلا على قلة الاجتهاد
+- باعتباره حادثا يجب تجاهله لربح الوقت
+C: مؤشرا ورافعة للتعلم.
+E: يكشف الخطأ غالبا عن منطق متماسك لدى المتعلم (قاعدة عُممت خطأً، تمثل أولي). وتحليله معه يمكّن من فهم مصدره وبناء معالجة ملائمة بدل الاكتفاء بتصحيحه.
+
+[PRI-053] didactique-generale | intermediate
+Q: Qui est l'auteur de l'ouvrage « L'erreur, un outil pour enseigner » (1997) ?
+* Jean-Pierre Astolfi
+- Philippe Meirieu
+- Philippe Perrenoud
+- Gaston Bachelard
+C: Jean-Pierre Astolfi.
+E: Didacticien des sciences, Astolfi y propose une typologie des erreurs (compréhension des consignes, conceptions alternatives, surcharge cognitive, transfert…) pour aider l'enseignant à en diagnostiquer l'origine et à choisir une remédiation.
+AR:
+Q: من هو مؤلف كتاب «الخطأ، أداة للتدريس» (1997)؟
+* جان بيير أستولفي
+- فيليب ميريو
+- فيليب بيرنو
+- غاستون باشلار
+C: جان بيير أستولفي.
+E: يقترح أستولفي، وهو ديداكتيكي في العلوم، تصنيفا للأخطاء (فهم التعليمات، التمثلات البديلة، الحمولة المعرفية الزائدة، النقل…) لمساعدة المدرس على تشخيص مصدرها واختيار المعالجة المناسبة.
+
+[PRI-054] didactique-generale | beginner
+Q: Qu'est-ce qui caractérise une « situation-problème » ?
+* Un obstacle que l'élève ne peut franchir qu'en construisant le savoir visé
+- Un exercice d'application d'une règle déjà apprise
+- Une question de cours à réciter
+- La lecture silencieuse du manuel
+C: Un obstacle à franchir en construisant le savoir visé.
+E: La situation-problème (Philippe Meirieu notamment) propose une tâche qui a du sens, que l'élève ne peut pas réussir avec ses seules connaissances actuelles : en cherchant à la résoudre, il construit le nouveau savoir. Un exercice d'application vient après, pour entraîner ce savoir.
+AR:
+Q: ما الذي يميز «الوضعية المشكلة»؟
+* عائق لا يمكن للمتعلم تجاوزه إلا ببناء المعرفة المستهدفة
+- تمرين تطبيقي لقاعدة سبق تعلمها
+- سؤال درس يُستظهر
+- القراءة الصامتة للكتاب المدرسي
+C: عائق يُتجاوز ببناء المعرفة المستهدفة.
+E: تقترح الوضعية المشكلة (فيليب ميريو خصوصا) مهمة ذات معنى لا يستطيع المتعلم إنجازها بمعارفه الحالية وحدها، وفي سعيه لحلها يبني المعرفة الجديدة. أما التمرين التطبيقي فيأتي بعد ذلك لترسيخ هذه المعرفة.
+
+[PRI-055] didactique-generale | intermediate
+Q: Pourquoi l'enseignant recueille-t-il les représentations (conceptions) initiales des élèves en début de séquence ?
+* Pour partir de ce qu'ils pensent déjà et construire des situations qui feront évoluer ces conceptions
+- Pour noter les élèves dès le premier jour
+- Pour éviter d'aborder les idées fausses en classe
+- Pour remplacer l'évaluation sommative
+C: Pour en partir et les faire évoluer.
+E: Les élèves arrivent avec des explications personnelles souvent résistantes (par exemple « les plantes se nourrissent de terre »). Les ignorer laisse ces conceptions intactes sous le savoir appris ; les faire exprimer permet de les confronter à l'expérience et au débat.
+AR:
+Q: لماذا يرصد المدرس التمثلات الأولية للمتعلمين في بداية المقطع التعلمي؟
+* للانطلاق مما يفكرون فيه أصلا وبناء وضعيات تجعل هذه التمثلات تتطور
+- لتنقيط التلاميذ من اليوم الأول
+- لتجنب تناول الأفكار الخاطئة في القسم
+- لتعويض التقويم الإجمالي
+C: للانطلاق منها وتطويرها.
+E: يأتي المتعلمون بتفسيرات شخصية تقاوم التغيير غالبا (مثلا «النباتات تتغذى من التراب»). وتجاهلها يُبقيها قائمة تحت المعرفة المكتسبة، أما التعبير عنها فيسمح بمواجهتها بالتجربة والنقاش.
+
+[PRI-056] didactique-generale | advanced
+Q: Jean-Louis Martinand a proposé la notion d'« objectif-obstacle ». De quoi s'agit-il ?
+* Choisir comme objectif d'apprentissage le franchissement d'un obstacle repéré chez les élèves
+- Supprimer de la séquence tout ce qui pose difficulté
+- Fixer un objectif impossible pour stimuler la motivation
+- Évaluer uniquement les élèves qui ont surmonté un obstacle
+C: Faire du franchissement d'un obstacle l'objectif visé.
+E: Au lieu d'aligner des objectifs à partir du seul contenu, Martinand propose de repérer les obstacles (conceptions, difficultés) qui empêchent d'apprendre et de construire la séquence autour de leur dépassement.
+AR:
+Q: اقترح جان لوي مارتينان مفهوم «الهدف-العائق». ما المقصود به؟
+* اختيار تجاوز عائق مرصود لدى المتعلمين هدفا للتعلم
+- حذف كل ما يطرح صعوبة من المقطع التعلمي
+- تحديد هدف مستحيل لتحفيز الدافعية
+- تقويم التلاميذ الذين تجاوزوا العائق فقط
+C: جعل تجاوز العائق هو الهدف المستهدف.
+E: بدل سرد أهداف انطلاقا من المحتوى وحده، يقترح مارتينان رصد العوائق (التمثلات، الصعوبات) التي تمنع التعلم، وبناء المقطع حول تجاوزها.
+
+[PRI-057] didactique-generale | advanced
+Q: En didactique des mathématiques, qu'est-ce qu'une « variable didactique » ?
+* Un élément de la situation que l'enseignant peut modifier et qui change les stratégies de résolution des élèves (par exemple la taille des nombres)
+- La note moyenne de la classe
+- Le nombre d'élèves présents
+- La durée de la récréation
+C: Un paramètre modifiable qui change les stratégies des élèves.
+E: Par exemple, avec de petits nombres, un élève peut dénombrer un à un ; avec de grands nombres, il doit inventer un procédé plus économique (groupements, calcul). En jouant sur ces variables, l'enseignant oriente les élèves vers la procédure visée.
+AR:
+Q: في ديداكتيك الرياضيات، ما هو «المتغير الديداكتيكي»؟
+* عنصر من عناصر الوضعية يمكن للمدرس تغييره فتتغير استراتيجيات الحل لدى المتعلمين (مثل حجم الأعداد)
+- المعدل العام للقسم
+- عدد التلاميذ الحاضرين
+- مدة الاستراحة
+C: عنصر قابل للتغيير يغير استراتيجيات المتعلمين.
+E: مثلا، مع أعداد صغيرة يمكن للمتعلم العد واحدا واحدا، ومع أعداد كبيرة يضطر إلى ابتكار طريقة أكثر اقتصادا (التجميع، الحساب). وبالتحكم في هذه المتغيرات يوجه المدرس المتعلمين نحو الطريقة المستهدفة.
+
+# ---------------------------------------------------------------------------
+# 6. Didactique des langues (lecture, écriture) — arabe et français
+# ---------------------------------------------------------------------------
+
+[PRI-058] didactique-langues | intermediate
+Q: Dans le curriculum révisé des premières années du primaire, combien de semaines dure une unité d'apprentissage en langue arabe ?
+* Cinq semaines : quatre pour les apprentissages nouveaux, la cinquième pour l'évaluation et le soutien
+- Deux semaines, dont une d'évaluation
+- Huit semaines, sans semaine d'évaluation
+- Dix semaines, évaluées en fin de semestre
+C: Cinq semaines (4 + 1 d'évaluation et de soutien).
+E: La révision du curriculum des quatre premières années a ramené l'année à six unités en arabe (au lieu de huit) et en français (au lieu de douze). Chaque unité s'étend sur cinq semaines : les quatre premières pour les nouveaux apprentissages, la cinquième pour l'évaluation et le soutien. Une semaine d'évaluation diagnostique et de soutien ouvre l'année.
+S: src-curriculum-primaire-revise
+AR:
+Q: في المنهاج المنقح للسنوات الأولى من التعليم الابتدائي، كم أسبوعا تمتد الوحدة الدراسية في اللغة العربية؟
+* خمسة أسابيع: أربعة للتعلمات الجديدة والخامس للتقويم والدعم
+- أسبوعين، أحدهما للتقويم
+- ثمانية أسابيع دون أسبوع للتقويم
+- عشرة أسابيع تُقوَّم في نهاية الأسدس
+C: خمسة أسابيع (4 + 1 للتقويم والدعم).
+E: قلّصت مراجعة منهاج السنوات الأربع الأولى عدد الوحدات إلى ست في اللغة العربية (بدل ثمان) وفي اللغة الفرنسية (بدل اثنتي عشرة). وتمتد كل وحدة على خمسة أسابيع: الأربعة الأولى للتعلمات الجديدة والخامس للتقويم والدعم، ويُفتتح الموسم بأسبوع للتقويم التشخيصي والدعم.
+
+[PRI-059] didactique-langues | advanced
+Q: Dans le curriculum révisé des premières années du primaire, combien d'unités compte l'année en langue arabe ?
+* Six (contre huit auparavant)
+- Huit (contre six auparavant)
+- Douze
+- Quatre
+C: Six unités.
+E: La révision a réduit le nombre d'unités de huit à six en arabe et de douze à six en français, chaque unité durant cinq semaines, dont une semaine d'évaluation et de soutien.
+S: src-curriculum-primaire-revise
+AR:
+Q: في المنهاج المنقح للسنوات الأولى من التعليم الابتدائي، كم عدد الوحدات الدراسية في السنة في اللغة العربية؟
+* ست وحدات (بدل ثمان سابقا)
+- ثماني وحدات (بدل ست سابقا)
+- اثنتا عشرة وحدة
+- أربع وحدات
+C: ست وحدات.
+E: قلّصت المراجعة عدد الوحدات من ثمان إلى ست في اللغة العربية ومن اثنتي عشرة إلى ست في اللغة الفرنسية، وتمتد كل وحدة على خمسة أسابيع منها أسبوع للتقويم والدعم.
+
+[PRI-060] didactique-langues | beginner
+Q: Que désigne la « conscience phonologique » dans l'apprentissage de la lecture ?
+* La capacité à identifier et à manipuler les unités sonores de la langue orale (syllabes, phonèmes)
+- La capacité à lire vite à voix haute
+- La connaissance du nom des lettres de l'alphabet
+- La compréhension du sens global d'un texte
+C: Identifier et manipuler les sons de la langue orale.
+E: Segmenter un mot en syllabes, repérer un son commun à plusieurs mots, supprimer ou substituer un phonème : ces activités orales préparent le décodage, car l'élève doit comprendre que la langue écrite code des unités sonores.
+AR:
+Q: ما المقصود بـ«الوعي الصوتي» في تعلم القراءة؟
+* القدرة على تمييز الوحدات الصوتية للغة الشفهية والتصرف فيها (المقاطع، الأصوات)
+- القدرة على القراءة الجهرية بسرعة
+- معرفة أسماء حروف الهجاء
+- فهم المعنى العام للنص
+C: تمييز أصوات اللغة الشفهية والتصرف فيها.
+E: تقطيع الكلمة إلى مقاطع، ورصد صوت مشترك بين عدة كلمات، وحذف صوت أو تعويضه: أنشطة شفهية تهيئ لفك الترميز، لأن على المتعلم أن يدرك أن الكتابة ترمز إلى وحدات صوتية.
+
+[PRI-061] didactique-langues | intermediate
+Q: Comment appelle-t-on la méthode de lecture qui part des lettres et des sons pour former des syllabes, puis des mots ?
+* La méthode synthétique (syllabique)
+- La méthode globale (analytique)
+- La méthode mixte
+- La méthode naturelle
+C: La méthode synthétique (syllabique).
+E: La méthode synthétique va des unités les plus petites (graphèmes, phonèmes) vers les syllabes et les mots ; la méthode globale part de mots ou de phrases reconnus en entier pour les analyser ensuite ; la méthode mixte combine les deux.
+AR:
+Q: ما اسم طريقة القراءة التي تنطلق من الحروف والأصوات لتكوين المقاطع ثم الكلمات؟
+* الطريقة التركيبية (المقطعية)
+- الطريقة الكلية (التحليلية)
+- الطريقة المزدوجة (المختلطة)
+- الطريقة الطبيعية
+C: الطريقة التركيبية.
+E: تنتقل الطريقة التركيبية من أصغر الوحدات (الحروف والأصوات) إلى المقاطع ثم الكلمات، وتنطلق الطريقة الكلية من كلمات أو جمل تُتعرف كاملة ثم تُحلل، أما الطريقة المختلطة فتجمع بينهما.
+
+[PRI-062] didactique-langues | advanced
+Q: Selon le modèle de la « simple view of reading » (Gough et Tunmer, 1986), la compréhension en lecture résulte…
+* du produit de deux composantes : le décodage (identification des mots) et la compréhension du langage oral
+- de la seule rapidité de lecture
+- de la seule richesse du vocabulaire
+- de la mémorisation des textes lus
+C: Décodage × compréhension orale.
+E: Si l'une des deux composantes est nulle, la compréhension écrite l'est aussi : un élève qui décode parfaitement une langue qu'il ne comprend pas à l'oral ne comprend pas le texte, et inversement. D'où l'enseignement conjoint du décodage et de la langue orale.
+AR:
+Q: حسب نموذج «الرؤية البسيطة للقراءة» (غوف وتونمر، 1986)، ينتج فهم المقروء عن…
+* جداء مكونين: فك الترميز (التعرف على الكلمات) وفهم اللغة الشفهية
+- سرعة القراءة وحدها
+- غنى المعجم وحده
+- حفظ النصوص المقروءة
+C: فك الترميز × الفهم الشفهي.
+E: إذا انعدم أحد المكونين انعدم فهم المقروء: فالمتعلم الذي يفك رموز لغة لا يفهمها شفهيا لا يفهم النص، والعكس صحيح. ومن هنا تدريس فك الترميز واللغة الشفهية معا.
+
+[PRI-063] didactique-langues | beginner
+Q: Par quoi se caractérise la fluidité (fluence) de lecture ?
+* Par l'exactitude, la vitesse et l'expressivité (prosodie) de la lecture à voix haute
+- Par le nombre de livres lus dans l'année
+- Par la capacité à copier un texte sans erreur
+- Par la connaissance des règles de grammaire
+C: Exactitude, vitesse et prosodie.
+E: Un lecteur fluide lit les mots sans erreur, à un rythme suffisant et avec une intonation qui respecte la ponctuation et le sens. Quand le décodage devient automatique, l'attention est libérée pour la compréhension.
+AR:
+Q: بماذا تتميز الطلاقة في القراءة؟
+* بالدقة والسرعة والتعبيرية (التنغيم) في القراءة الجهرية
+- بعدد الكتب المقروءة في السنة
+- بالقدرة على نقل نص دون خطأ
+- بمعرفة قواعد النحو
+C: الدقة والسرعة والتنغيم.
+E: يقرأ القارئ الطليق الكلمات دون خطأ وبإيقاع كافٍ وبتنغيم يحترم علامات الترقيم والمعنى. وعندما يصبح فك الترميز آليا يتحرر الانتباه لفائدة الفهم.
+
+[PRI-064] didactique-langues | intermediate
+Q: Pourquoi les textes destinés aux élèves qui apprennent à lire en arabe sont-ils entièrement vocalisés (تشكيل) ?
+* Parce que les voyelles brèves ne sont pas des lettres : sans les signes de vocalisation, l'élève ne peut pas associer sûrement l'écrit à sa prononciation
+- Pour décorer le texte et le rendre plus attrayant
+- Parce que l'arabe s'écrit toujours vocalisé, même chez les adultes
+- Pour indiquer la fin de chaque phrase
+C: Pour rendre le décodage transparent.
+E: En arabe, les voyelles brèves (fatha, damma, kasra) sont notées par des signes facultatifs. Pour un lecteur débutant, la vocalisation complète rend la correspondance entre graphie et prononciation régulière ; elle est ensuite réduite progressivement quand la lecture s'automatise.
+AR:
+Q: لماذا تُشكَّل النصوص الموجهة للمتعلمين المبتدئين في القراءة بالعربية تشكيلا تاما؟
+* لأن الحركات القصيرة ليست حروفا، فبدون الشكل لا يستطيع المتعلم ربط المكتوب بنطقه بشكل مضمون
+- لتزيين النص وجعله أكثر جاذبية
+- لأن العربية تُكتب دائما مشكولة حتى عند الراشدين
+- للدلالة على نهاية كل جملة
+C: لجعل فك الترميز واضحا.
+E: في العربية تُرسم الحركات القصيرة (الفتحة، الضمة، الكسرة) بعلامات اختيارية. وبالنسبة للقارئ المبتدئ يجعل الشكل التام العلاقة بين الرسم والنطق منتظمة، ثم يُخفف تدريجيا كلما أصبحت القراءة آلية.
+
+[PRI-065] didactique-langues | advanced
+Q: Dans le modèle de la production écrite de Hayes et Flower (1980), quels sont les trois grands processus de l'écriture ?
+* La planification, la mise en texte et la révision
+- La lecture, la copie et la dictée
+- L'écoute, la répétition et la mémorisation
+- L'introduction, le développement et la conclusion
+C: Planification, mise en texte, révision.
+E: Le scripteur planifie (génère et organise les idées en fonction du but et du destinataire), met en texte (formule en phrases) et révise (relit, évalue, corrige), en allers-retours constants. En classe, cela justifie le brouillon, la grille de relecture et la réécriture.
+AR:
+Q: في نموذج هايز وفلاور للإنتاج الكتابي (1980)، ما هي السيرورات الكبرى الثلاث للكتابة؟
+* التخطيط والصياغة (التحرير) والمراجعة
+- القراءة والنقل والإملاء
+- الاستماع والترديد والحفظ
+- المقدمة والعرض والخاتمة
+C: التخطيط، الصياغة، المراجعة.
+E: يخطط الكاتب (يولد الأفكار وينظمها حسب الهدف والمتلقي)، ثم يصوغ (يعبر عنها في جمل)، ثم يراجع (يعيد القراءة ويقوّم ويصحح)، في ذهاب وإياب مستمر. وفي القسم يبرر ذلك اعتماد المسودة وشبكة المراجعة وإعادة الكتابة.
+
+[PRI-066] didactique-langues | beginner
+Q: Quand un lecteur comprend une information qui n'est pas écrite explicitement dans le texte, il fait…
+* une inférence
+- un décodage
+- une copie
+- une dictée
+C: Une inférence.
+E: Comprendre qu'un personnage « grelotte et souffle sur ses doigts » parce qu'il fait froid, sans que le texte le dise, c'est faire une inférence. Ces liens implicites s'enseignent : questionner « comment le sais-tu ? » aide les élèves à les expliciter.
+AR:
+Q: عندما يفهم القارئ معلومة غير مكتوبة بشكل صريح في النص، فإنه يقوم بـ…
+* استنتاج (استدلال)
+- فك ترميز
+- نقل
+- إملاء
+C: استنتاج.
+E: أن نفهم أن شخصية «ترتعش وتنفخ على أصابعها» لأن الجو بارد، دون أن يصرح النص بذلك، هو استنتاج. وهذه الروابط الضمنية تُدرَّس: فسؤال «كيف عرفت ذلك؟» يساعد المتعلمين على توضيحها.
+
+[PRI-067] didactique-langues | intermediate
+Q: Dans l'approche communicative en didactique des langues, quel est l'objectif prioritaire ?
+* Rendre l'élève capable de communiquer dans des situations réelles, à travers des actes de parole
+- Faire mémoriser des listes de règles de grammaire
+- Traduire des textes mot à mot
+- Réciter des dialogues sans en comprendre le sens
+C: Communiquer en situation (actes de parole).
+E: Développée à partir des années 1970, l'approche communicative met l'accent sur l'usage de la langue (se présenter, demander, décrire, argumenter) et sur le sens ; la grammaire est mise au service de la communication.
+AR:
+Q: في المقاربة التواصلية لديداكتيك اللغات، ما الهدف ذو الأولوية؟
+* جعل المتعلم قادرا على التواصل في وضعيات حقيقية عبر أفعال الكلام
+- جعله يحفظ لوائح من القواعد النحوية
+- ترجمة النصوص كلمة بكلمة
+- استظهار حوارات دون فهم معناها
+C: التواصل في وضعيات (أفعال الكلام).
+E: تطورت المقاربة التواصلية منذ سبعينيات القرن العشرين، وتركز على استعمال اللغة (التقديم، الطلب، الوصف، الحجاج) وعلى المعنى، وتجعل القواعد في خدمة التواصل.
+
+[PRI-068] didactique-langues | intermediate
+Q: Dans une démarche de production d'écrit, à quoi sert surtout la grille de relecture ?
+* À guider l'élève pour réviser et améliorer son brouillon à partir de critères connus
+- À noter l'élève sans qu'il connaisse les critères
+- À recopier le texte au propre
+- À remplacer la consigne d'écriture
+C: À réviser le brouillon selon des critères connus.
+E: Construite souvent avec la classe, la grille liste les critères (respect de la consigne, cohérence, ponctuation, accords…) que l'élève vérifie sur son brouillon avant de réécrire. Elle rend la révision explicite et prépare l'autoévaluation.
+AR:
+Q: في نهج الإنتاج الكتابي، فيمَ تفيد شبكة المراجعة أساسا؟
+* في توجيه المتعلم لمراجعة مسودته وتحسينها انطلاقا من معايير معروفة
+- في تنقيط المتعلم دون أن يعرف المعايير
+- في نقل النص على ورقة نظيفة
+- في تعويض تعليمة الكتابة
+C: في مراجعة المسودة وفق معايير معروفة.
+E: تُبنى الشبكة غالبا مع القسم، وتضم المعايير (احترام التعليمة، الانسجام، الترقيم، المطابقة…) التي يتحقق منها المتعلم في مسودته قبل إعادة الكتابة. وهي تجعل المراجعة صريحة وتهيئ للتقويم الذاتي.
+
+[PRI-069] didactique-langues | beginner
+Q: La phrase « Les enfant joue dans la cour. » contient des erreurs d'orthographe…
+* grammaticale : les accords en nombre (enfants, jouent) ne sont pas faits
+- lexicale : le mot « cour » est mal écrit
+- de ponctuation
+- de majuscule
+C: Grammaticale (accords en nombre).
+E: L'orthographe grammaticale concerne les accords et les marques de nombre, de genre et de personne ; l'orthographe lexicale (d'usage) concerne la façon d'écrire les mots eux-mêmes. Ici, il faut écrire « Les enfants jouent dans la cour. »
+AR:
+Q: تتضمن الجملة الفرنسية «Les enfant joue dans la cour.» أخطاء إملائية…
+* نحوية: لم تتم المطابقة في العدد (enfants, jouent)
+- معجمية: كلمة «cour» مكتوبة خطأ
+- في الترقيم
+- في الحرف الكبير
+C: نحوية (المطابقة في العدد).
+E: تخص الإملاء النحوية المطابقة وعلامات العدد والجنس والشخص، أما الإملاء المعجمية فتخص طريقة كتابة الكلمات نفسها. والصواب هنا: «Les enfants jouent dans la cour.»
+
+[PRI-070] didactique-langues | beginner
+Q: Combien de phonèmes (sons) compte le mot « chapeau » ?
+* 4
+- 7
+- 3
+- 5
+C: 4 phonèmes : /ʃ/ /a/ /p/ /o/.
+E: « chapeau » s'écrit avec 7 lettres mais se prononce avec 4 sons, notés par 4 graphèmes : « ch », « a », « p », « eau ». Distinguer lettres, graphèmes et phonèmes est essentiel pour enseigner le décodage en français.
+AR:
+Q: كم عدد الأصوات (الفونيمات) في الكلمة الفرنسية «chapeau»؟
+* 4
+- 7
+- 3
+- 5
+C: 4 أصوات: /ʃ/ /a/ /p/ /o/.
+E: تُكتب «chapeau» بسبعة حروف لكنها تُنطق بأربعة أصوات تمثلها أربعة رسوم صوتية (graphèmes): «ch» و«a» و«p» و«eau». والتمييز بين الحروف والرسوم الصوتية والأصوات أساسي لتدريس فك الترميز بالفرنسية.
+
+# ---------------------------------------------------------------------------
+# 7. Didactique des mathématiques
+# ---------------------------------------------------------------------------
+
+[PRI-071] didactique-maths | beginner
+Q: Selon George Pólya (« How to Solve It », 1945), quelle est la première étape de la résolution d'un problème ?
+* Comprendre le problème
+- Exécuter le plan
+- Vérifier la solution
+- Écrire la réponse
+C: Comprendre le problème.
+E: Pólya propose quatre étapes : comprendre le problème (données, inconnue, condition), concevoir un plan, exécuter le plan, puis revenir sur la solution (vérifier, chercher une autre méthode). Beaucoup d'erreurs viennent d'élèves qui calculent avant d'avoir compris.
+AR:
+Q: حسب جورج بوليا (كتاب «كيف تحلها»، 1945)، ما هي المرحلة الأولى في حل مسألة؟
+* فهم المسألة
+- تنفيذ الخطة
+- التحقق من الحل
+- كتابة الجواب
+C: فهم المسألة.
+E: يقترح بوليا أربع مراحل: فهم المسألة (المعطيات، المجهول، الشرط)، ثم وضع خطة، ثم تنفيذها، ثم مراجعة الحل (التحقق، البحث عن طريقة أخرى). وكثير من الأخطاء يأتي من تلاميذ يحسبون قبل أن يفهموا.
+
+[PRI-072] didactique-maths | intermediate
+Q: Un élève affirme que 2,15 est plus grand que 2,9 « parce que 15 est plus grand que 9 ». Quelle conception erronée révèle cette erreur ?
+* Il traite la partie décimale comme un nombre entier, sans tenir compte de la valeur des positions (dixièmes, centièmes)
+- Il ne connaît pas la table de multiplication par 9
+- Il confond l'addition et la soustraction
+- Il ne sait pas lire la partie entière d'un nombre
+C: La partie décimale est lue comme un entier.
+E: C'est une erreur classique : l'élève applique aux décimaux une règle valable pour les entiers (« plus il y a de chiffres, plus c'est grand »). Or 2,9 = 2,90 : 90 centièmes est plus grand que 15 centièmes. Les tableaux de numération et les droites graduées aident à la dépasser.
+AR:
+Q: يؤكد متعلم أن 2,15 أكبر من 2,9 «لأن 15 أكبر من 9». أي تمثل خاطئ يكشفه هذا الخطأ؟
+* يتعامل مع الجزء العشري كعدد صحيح دون اعتبار قيمة المنازل (الأعشار، الأجزاء من مائة)
+- لا يعرف جدول الضرب في 9
+- يخلط بين الجمع والطرح
+- لا يعرف قراءة الجزء الصحيح للعدد
+C: يقرأ الجزء العشري كعدد صحيح.
+E: إنه خطأ شائع: يطبق المتعلم على الأعداد العشرية قاعدة صالحة للأعداد الصحيحة («كلما زادت الأرقام كبر العدد»). والحال أن 2,9 = 2,90، و90 جزءا من مائة أكبر من 15 جزءا من مائة. وتساعد جداول العد والمستقيمات المدرجة على تجاوزه.
+
+[PRI-073] didactique-maths | advanced
+Q: Au premier niveau du modèle de van Hiele (géométrie), comment l'élève reconnaît-il les figures ?
+* À leur aspect global (visualisation), sans en analyser les propriétés
+- Par leurs propriétés, qu'il sait énoncer
+- Par des démonstrations déductives
+- Par des définitions axiomatiques
+C: À leur aspect global.
+E: Au niveau de la visualisation, un élève dit « c'est un carré parce que ça ressemble à un carré » et peut refuser d'appeler carré une figure posée sur la pointe. Les niveaux suivants passent à l'analyse des propriétés, puis à leur mise en relation et à la déduction.
+AR:
+Q: في المستوى الأول من نموذج فان هيل (الهندسة)، كيف يتعرف المتعلم على الأشكال؟
+* من خلال مظهرها العام (التصور البصري) دون تحليل خصائصها
+- من خلال خصائصها التي يستطيع التعبير عنها
+- من خلال براهين استنباطية
+- من خلال تعاريف مسلماتية
+C: من خلال مظهرها العام.
+E: في مستوى التصور البصري يقول المتعلم «إنه مربع لأنه يشبه المربع»، وقد يرفض تسمية مربع موضوع على رأسه مربعا. وتنتقل المستويات الموالية إلى تحليل الخصائص ثم الربط بينها ثم الاستنباط.
+
+[PRI-074] didactique-maths | advanced
+Q: Dans la théorie des champs conceptuels de Gérard Vergnaud, le problème « Ali a 12 billes, il en gagne 5. Combien en a-t-il maintenant ? » relève des structures…
+* additives (transformation d'un état initial)
+- multiplicatives (proportionnalité)
+- géométriques
+- statistiques
+C: Additives (transformation d'état).
+E: Vergnaud classe les problèmes additifs en catégories (composition de deux états, transformation d'un état, comparaison…). Ici, un état initial (12) subit une transformation positive (+5) qui donne un état final : c'est une transformation d'état, la catégorie la plus simple quand on cherche l'état final.
+AR:
+Q: في نظرية الحقول المفاهيمية لجيرار فيرنيو، تندرج المسألة «لدى علي 12 كرية، ربح 5. كم أصبح لديه؟» ضمن البنيات…
+* الجمعية (تحويل حالة أولية)
+- الضربية (التناسبية)
+- الهندسية
+- الإحصائية
+C: الجمعية (تحويل حالة).
+E: يصنف فيرنيو المسائل الجمعية إلى فئات (تركيب حالتين، تحويل حالة، مقارنة…). وهنا تخضع حالة أولية (12) لتحويل موجب (+5) يعطي حالة نهائية: إنه تحويل حالة، وهي الفئة الأبسط عندما يكون المطلوب هو الحالة النهائية.
+
+[PRI-075] didactique-maths | beginner
+Q: Un élève calcule le périmètre d'un rectangle de 5 cm sur 3 cm et trouve 15 cm. Quelle est la cause la plus probable de son erreur ?
+* Il confond périmètre et aire : il a multiplié les deux dimensions
+- Il a mal mesuré la longueur
+- Il ne connaît pas les nombres jusqu'à 20
+- Il a oublié l'unité de mesure
+C: Confusion entre périmètre et aire.
+E: Le périmètre est la longueur du contour : 2 × (5 + 3) = 16 cm. L'élève a calculé 5 × 3, formule de l'aire (15 cm²). Faire mesurer le contour avec une ficelle et paver la surface avec des carreaux aide à distinguer les deux grandeurs.
+AR:
+Q: حسب متعلم محيط مستطيل بعداه 5 cm و3 cm فوجد 15 cm. ما السبب الأكثر احتمالا لخطئه؟
+* يخلط بين المحيط والمساحة: ضرب البعدين
+- قاس الطول بشكل خاطئ
+- لا يعرف الأعداد إلى 20
+- نسي وحدة القياس
+C: الخلط بين المحيط والمساحة.
+E: المحيط هو طول الحدود: 2 × (5 + 3) = 16 cm. أما المتعلم فحسب 5 × 3، وهي صيغة المساحة (15 cm²). وقياس الحدود بخيط وتبليط السطح بمربعات يساعدان على التمييز بين المقدارين.
+
+[PRI-076] didactique-maths | beginner
+Q: Pour faire comprendre la numération décimale, l'enseignant fait grouper des bûchettes par paquets de dix. Quelle notion vise-t-il ?
+* L'échange « dix unités = une dizaine », base de la numération de position
+- La multiplication par zéro
+- Le calcul de périmètres
+- La lecture de l'heure
+C: Le groupement par dix (unités, dizaines).
+E: Grouper dix unités en une dizaine, puis dix dizaines en une centaine, permet de comprendre que la valeur d'un chiffre dépend de sa position. La manipulation précède la représentation (dessin, tableau) puis l'écriture chiffrée.
+AR:
+Q: لتقريب فهم نظمة العد العشري، يجعل المدرس التلاميذ يجمعون العيدان في حزم من عشرة. أي مفهوم يستهدف؟
+* التبادل «عشر وحدات = عشرة واحدة»، أساس نظمة العد بالمنازل
+- الضرب في الصفر
+- حساب المحيطات
+- قراءة الساعة
+C: التجميع في عشرات (وحدات، عشرات).
+E: تجميع عشر وحدات في عشرة، ثم عشر عشرات في مائة، يمكّن من فهم أن قيمة الرقم تتوقف على منزلته. وتسبق المناولةُ التمثيلَ (الرسم، الجدول) ثم الكتابة بالأرقام.
+
+[PRI-077] didactique-maths | intermediate
+Q: Avant de demander de calculer, l'enseignant propose aux élèves d'estimer l'ordre de grandeur de 398 × 21. Quel est l'intérêt principal ?
+* Contrôler la vraisemblance du résultat (environ 400 × 20 = 8 000)
+- Remplacer définitivement le calcul exact
+- Éviter d'apprendre la technique de la multiplication
+- Occuper les élèves les plus rapides
+C: Contrôler la vraisemblance du résultat.
+E: L'estimation (400 × 20 = 8 000) permet de repérer une erreur grossière, par exemple un décalage oublié qui donnerait 1 194. Le résultat exact, 8 358, est bien proche de l'ordre de grandeur.
+AR:
+Q: قبل مطالبة التلاميذ بالحساب، يقترح عليهم المدرس تقدير رتبة مقدار 398 × 21. ما الفائدة الأساسية من ذلك؟
+* مراقبة معقولية النتيجة (حوالي 400 × 20 = 8000)
+- تعويض الحساب المضبوط نهائيا
+- تفادي تعلم تقنية الضرب
+- إشغال التلاميذ الأسرع
+C: مراقبة معقولية النتيجة.
+E: يمكّن التقدير (400 × 20 = 8000) من رصد خطأ فادح، كنسيان الإزاحة الذي يعطي 1194. والنتيجة المضبوطة 8358 قريبة فعلا من رتبة المقدار.
+
+# ---------------------------------------------------------------------------
+# 8. Didactique de l'activité scientifique
+# ---------------------------------------------------------------------------
+
+[PRI-078] didactique-sciences | beginner
+Q: Dans une démarche d'investigation en activité scientifique, que fait-on juste après avoir formulé le problème ?
+* On émet des hypothèses
+- On rédige la conclusion
+- On distribue la trace écrite à recopier
+- On passe à la leçon suivante
+C: On émet des hypothèses.
+E: La démarche suit généralement : situation de départ, problème, hypothèses, investigation (expérience, observation, documentation), résultats, conclusion et structuration. Les hypothèses donnent un but aux expériences : vérifier ou réfuter une idée.
+AR:
+Q: في نهج التقصي (الاستقصاء) في النشاط العلمي، ماذا نفعل مباشرة بعد صياغة المشكلة؟
+* نصوغ فرضيات
+- نحرر الخلاصة
+- نوزع الأثر الكتابي للنقل
+- ننتقل إلى الدرس الموالي
+C: نصوغ فرضيات.
+E: يتبع النهج عادة: وضعية الانطلاق، المشكلة، الفرضيات، التقصي (تجربة، ملاحظة، توثيق)، النتائج، الخلاصة والهيكلة. وتعطي الفرضيات للتجارب هدفا: إثبات فكرة أو دحضها.
+
+[PRI-079] didactique-sciences | intermediate
+Q: Pour vérifier que la lumière est nécessaire à la croissance d'une plante, les élèves comparent deux plantes. Quelle condition est indispensable ?
+* Ne faire varier que la lumière, toutes les autres conditions restant identiques
+- Utiliser deux espèces de plantes différentes
+- Arroser davantage la plante placée à l'ombre
+- Observer une seule plante pendant une journée
+C: Ne faire varier qu'un seul facteur.
+E: Pour attribuer une différence de résultat à la lumière, il faut que tout le reste soit identique : même espèce, même terre, même arrosage, même température. La plante placée à la lumière sert de témoin. C'est le principe du test d'un seul facteur à la fois.
+AR:
+Q: للتحقق من أن الضوء ضروري لنمو نبتة، يقارن التلاميذ بين نبتتين. ما الشرط الذي لا غنى عنه؟
+* تغيير عامل الضوء وحده مع إبقاء باقي الشروط متماثلة
+- استعمال نوعين مختلفين من النباتات
+- سقي النبتة الموضوعة في الظل أكثر
+- ملاحظة نبتة واحدة خلال يوم واحد
+C: تغيير عامل واحد فقط.
+E: لكي نُرجع الفرق في النتيجة إلى الضوء، يجب أن يكون كل ما عداه متماثلا: النوع نفسه، التربة نفسها، السقي نفسه، الحرارة نفسها. وتُستعمل النبتة الموضوعة في الضوء شاهدا. هذا هو مبدأ اختبار عامل واحد في كل مرة.
+
+[PRI-080] didactique-sciences | intermediate
+Q: Beaucoup d'élèves pensent qu'un objet lourd tombe toujours plus vite qu'un objet léger. En didactique des sciences, comment traite-t-on cette idée ?
+* Comme une conception initiale à faire exprimer puis à mettre à l'épreuve par l'expérience et le débat
+- Comme une vérité scientifique à confirmer
+- Comme une faute à sanctionner
+- Comme une question hors programme à éviter
+C: Comme une conception à faire évoluer.
+E: Cette conception, très répandue, résiste à un simple énoncé de la règle. Faire prédire, puis lâcher ensemble deux objets de masses différentes mais de forme semblable, permet de constater qu'ils arrivent presque en même temps ; la résistance de l'air explique les cas contraires (feuille de papier).
+AR:
+Q: يعتقد كثير من التلاميذ أن الجسم الثقيل يسقط دائما أسرع من الجسم الخفيف. كيف يُتعامل مع هذه الفكرة في ديداكتيك العلوم؟
+* باعتبارها تمثلا أوليا يُعبَّر عنه ثم يُختبر بالتجربة والنقاش
+- باعتبارها حقيقة علمية يجب تأكيدها
+- باعتبارها خطأ يستحق العقاب
+- باعتبارها سؤالا خارج البرنامج يجب تجنبه
+C: باعتبارها تمثلا ينبغي تطويره.
+E: هذا التمثل الشائع جدا يقاوم مجرد التصريح بالقاعدة. وجعل التلاميذ يتوقعون، ثم إسقاط جسمين مختلفي الكتلة ومتشابهي الشكل معا، يسمح بملاحظة أنهما يصلان في الوقت نفسه تقريبا، ومقاومة الهواء تفسر الحالات المخالفة (ورقة).
+
+[PRI-081] didactique-sciences | advanced
+Q: Que désigne la « pratique sociale de référence » proposée par Jean-Louis Martinand ?
+* Les activités sociales réelles (recherche, production, ingénierie…) qui servent de référence pour construire les activités scolaires
+- Le règlement intérieur de la classe de sciences
+- Les pratiques religieuses des familles
+- La liste des sorties scolaires de l'année
+C: Les pratiques sociales réelles qui inspirent les activités scolaires.
+E: Martinand invite à se demander à quelles pratiques réelles renvoient les activités de classe (le travail du chercheur, du technicien, de l'ingénieur…), pour éviter que les savoirs scolaires ne deviennent des exercices coupés de tout usage.
+AR:
+Q: ما المقصود بـ«الممارسة الاجتماعية المرجعية» التي اقترحها جان لوي مارتينان؟
+* الأنشطة الاجتماعية الحقيقية (البحث، الإنتاج، الهندسة…) التي تُتخذ مرجعا لبناء الأنشطة المدرسية
+- النظام الداخلي لقسم العلوم
+- الممارسات الدينية للأسر
+- لائحة الخرجات المدرسية للسنة
+C: الممارسات الاجتماعية الحقيقية التي تستلهمها الأنشطة المدرسية.
+E: يدعو مارتينان إلى التساؤل عن الممارسات الحقيقية التي تحيل إليها أنشطة القسم (عمل الباحث، التقني، المهندس…)، حتى لا تتحول المعارف المدرسية إلى تمارين منفصلة عن أي استعمال.
+
+[PRI-082] didactique-sciences | beginner
+Q: Qu'est-ce qui distingue une expérimentation d'une simple observation ?
+* Dans l'expérimentation, on provoque un phénomène et on fait varier un facteur de façon contrôlée
+- L'expérimentation se fait toujours en laboratoire
+- L'observation est réservée aux sciences de la vie
+- Il n'y a aucune différence entre les deux
+C: L'expérimentation agit sur le phénomène en contrôlant un facteur.
+E: Observer, c'est relever ce qui se passe sans intervenir (par exemple les phases de la Lune) ; expérimenter, c'est agir pour tester une hypothèse en modifiant un seul facteur et en comparant à un témoin. Les deux sont complémentaires en activité scientifique.
+AR:
+Q: ما الذي يميز التجريب عن مجرد الملاحظة؟
+* في التجريب نُحدث ظاهرة ونغير عاملا واحدا بطريقة مضبوطة
+- التجريب يتم دائما في المختبر
+- الملاحظة خاصة بعلوم الحياة
+- لا فرق بينهما
+C: التجريب يتدخل في الظاهرة مع ضبط عامل.
+E: الملاحظة رصد ما يحدث دون تدخل (مثل أطوار القمر)، أما التجريب فهو تدخل لاختبار فرضية بتغيير عامل واحد ومقارنة النتيجة بشاهد. والاثنان متكاملان في النشاط العلمي.
+
+# ---------------------------------------------------------------------------
+# 9. Connaissances des matières — langue arabe
+# ---------------------------------------------------------------------------
+
+[PRI-083] arabe | beginner
+Q: Dans la phrase arabe « كتبَ التلميذُ الدرسَ », quelle est la fonction de « التلميذُ » ?
+* Sujet du verbe (فاعل), au nominatif (مرفوع), marqué par la damma
+- Complément d'objet (مفعول به), à l'accusatif
+- Sujet de phrase nominale (مبتدأ)
+- Prédicat (خبر)
+C: فاعل مرفوع بالضمة.
+E: Dans une phrase verbale, le nom qui fait l'action après le verbe est le فاعل, toujours au nominatif : « التلميذُ » porte la damma. « الدرسَ » est le complément d'objet (مفعول به), à l'accusatif, avec la fatha.
+AR:
+Q: في جملة «كتبَ التلميذُ الدرسَ»، ما إعراب «التلميذُ»؟
+* فاعل مرفوع وعلامة رفعه الضمة الظاهرة
+- مفعول به منصوب
+- مبتدأ مرفوع
+- خبر مرفوع
+C: فاعل مرفوع بالضمة.
+E: في الجملة الفعلية يكون الاسم الذي قام بالفعل بعد الفعل فاعلا مرفوعا دائما، و«التلميذُ» مرفوع بالضمة. أما «الدرسَ» فمفعول به منصوب وعلامة نصبه الفتحة.
+
+[PRI-084] arabe | intermediate
+Q: Dans la phrase « كانَ الجوُّ صحوًا », quelle est la fonction de « صحوًا » ?
+* Prédicat de كان (خبر كان), à l'accusatif
+- Sujet de كان (اسم كان), au nominatif
+- Complément d'état (حال)
+- Complément d'objet (مفعول به)
+C: خبر كان منصوب.
+E: كان et ses sœurs (أصبح، صار، ليس…) entrent sur une phrase nominale : le sujet devient اسم كان, au nominatif (« الجوُّ »), et le prédicat devient خبر كان, à l'accusatif (« صحوًا », avec le tanwin de la fatha).
+AR:
+Q: في جملة «كانَ الجوُّ صحوًا»، ما إعراب «صحوًا»؟
+* خبر كان منصوب
+- اسم كان مرفوع
+- حال منصوب
+- مفعول به منصوب
+C: خبر كان منصوب.
+E: تدخل كان وأخواتها (أصبح، صار، ليس…) على الجملة الاسمية فترفع المبتدأ ويسمى اسمها («الجوُّ»)، وتنصب الخبر ويسمى خبرها («صحوًا» منصوب وعلامة نصبه الفتحة الظاهرة).
+
+[PRI-085] arabe | intermediate
+Q: Dans la phrase « إنَّ العلمَ نورٌ », quelle est la fonction de « العلمَ » ?
+* Sujet de إنّ (اسم إنّ), à l'accusatif
+- Prédicat de إنّ (خبر إنّ), au nominatif
+- Sujet du verbe (فاعل)
+- Sujet de كان (اسم كان)
+C: اسم إنّ منصوب.
+E: إنّ et ses sœurs (أنّ، كأنّ، لكنّ، ليت، لعلّ) font l'inverse de كان : elles mettent le sujet à l'accusatif (اسم إنّ : « العلمَ ») et laissent le prédicat au nominatif (خبر إنّ : « نورٌ »).
+AR:
+Q: في جملة «إنَّ العلمَ نورٌ»، ما إعراب «العلمَ»؟
+* اسم إنّ منصوب
+- خبر إنّ مرفوع
+- فاعل مرفوع
+- اسم كان مرفوع
+C: اسم إنّ منصوب.
+E: تعمل إنّ وأخواتها (أنّ، كأنّ، لكنّ، ليت، لعلّ) عكس عمل كان: تنصب المبتدأ ويسمى اسمها («العلمَ»)، وترفع الخبر ويسمى خبرها («نورٌ»).
+
+[PRI-086] arabe | intermediate
+Q: Dans « نجحَ المجتهدونَ », quelle est la marque du nominatif de « المجتهدونَ » ?
+* Le waw (و), car c'est un pluriel masculin sain (جمع مذكر سالم)
+- La damma
+- L'alif (ا)
+- Le ya (ي)
+C: Le waw, marque du pluriel masculin sain au nominatif.
+E: Le pluriel masculin sain prend le waw au nominatif (المجتهدون) et le ya à l'accusatif et au génitif (المجتهدين). Le duel prend l'alif au nominatif (المجتهدان) et le ya aux autres cas.
+AR:
+Q: في جملة «نجحَ المجتهدونَ»، ما علامة رفع «المجتهدونَ»؟
+* الواو لأنه جمع مذكر سالم
+- الضمة
+- الألف
+- الياء
+C: الواو، لأنه جمع مذكر سالم.
+E: يُرفع جمع المذكر السالم بالواو (المجتهدون) ويُنصب ويُجر بالياء (المجتهدين). أما المثنى فيُرفع بالألف (المجتهدان) ويُنصب ويُجر بالياء.
+
+[PRI-087] arabe | advanced
+Q: Lequel de ces noms arabes est diptote (ممنوع من الصرف) ?
+* مساجد
+- كتاب
+- قلم
+- بيت
+C: مساجد (صيغة منتهى الجموع).
+E: Les pluriels de la forme مفاعل / مفاعيل (« forme ultime des pluriels », comme مساجد ou مصابيح) sont diptotes : ils ne prennent pas le tanwin et, au génitif, prennent la fatha au lieu de la kasra (صليتُ في مساجدَ كثيرةٍ). كتاب، قلم et بيت sont des noms ordinaires (مصروفة).
+AR:
+Q: أي هذه الأسماء ممنوع من الصرف؟
+* مساجد
+- كتاب
+- قلم
+- بيت
+C: مساجد (صيغة منتهى الجموع).
+E: الجموع التي على وزن مفاعل أو مفاعيل (صيغة منتهى الجموع، مثل مساجد ومصابيح) ممنوعة من الصرف: لا تُنوَّن وتُجر بالفتحة نيابة عن الكسرة (صليتُ في مساجدَ كثيرةٍ). أما كتاب وقلم وبيت فأسماء مصروفة.
+
+[PRI-088] arabe | beginner
+Q: Combien de lettres compte l'alphabet arabe ?
+* 28
+- 26
+- 27
+- 30
+C: 28 lettres.
+E: L'alphabet arabe compte 28 lettres, de l'alif au ya ; la hamza est parfois comptée à part, et le ta marbuta (ة) n'est pas une lettre de l'alphabet mais une forme du ta.
+AR:
+Q: كم عدد حروف الهجاء في اللغة العربية؟
+* 28
+- 26
+- 27
+- 30
+C: 28 حرفا.
+E: تضم الحروف الهجائية العربية 28 حرفا من الألف إلى الياء، وتُعد الهمزة أحيانا حرفا مستقلا، أما التاء المربوطة (ة) فليست حرفا من حروف الهجاء بل صورة من صور التاء.
+
+[PRI-089] arabe | intermediate
+Q: Dans lequel de ces mots arabes la hamza initiale est-elle une hamza de liaison (همزة وصل) ?
+* استخراج
+- أكرم
+- أخذ
+- إكرام
+C: استخراج (masdar d'un verbe à six lettres).
+E: Les masdars et les impératifs des verbes de cinq et six lettres (comme استخرج → استخراج) commencent par une hamza de liaison, qui ne se prononce pas en liaison et ne s'écrit pas. أخذ (verbe trilitère), أكرم et son masdar إكرام (verbe de quatre lettres) ont une hamza de coupure (همزة قطع).
+AR:
+Q: في أي هذه الكلمات تكون الهمزة في أولها همزة وصل؟
+* استخراج
+- أكرم
+- أخذ
+- إكرام
+C: استخراج (مصدر فعل سداسي).
+E: تبدأ مصادر الأفعال الخماسية والسداسية وأوامرها (مثل استخرج ← استخراج) بهمزة وصل لا تُنطق في الدرج ولا تُكتب. أما أخذ (فعل ثلاثي) وأكرم ومصدره إكرام (فعل رباعي) فهمزتها همزة قطع.
+
+[PRI-090] arabe | advanced
+Q: Quel est le schème (الميزان الصرفي) du mot « مكتوب » ?
+* مفعول
+- فاعل
+- مفعل
+- فعيل
+C: مفعول (nom de patient).
+E: On remplace les lettres radicales ك-ت-ب par ف-ع-ل en gardant les lettres ajoutées : مكتوب → مفعول. C'est le schème du nom de patient (اسم المفعول) des verbes trilitères ; كاتب, sur فاعل, est le nom d'agent.
+AR:
+Q: ما الميزان الصرفي لكلمة «مكتوب»؟
+* مفعول
+- فاعل
+- مفعل
+- فعيل
+C: مفعول (اسم مفعول).
+E: نعوض الحروف الأصلية ك-ت-ب بـ ف-ع-ل مع الاحتفاظ بالحروف الزائدة: مكتوب ← مفعول. وهو وزن اسم المفعول من الفعل الثلاثي، أما كاتب على وزن فاعل فاسم فاعل.
+
+# ---------------------------------------------------------------------------
+# 10. Connaissances des matières — langue française
+# ---------------------------------------------------------------------------
+
+[PRI-091] francais | beginner
+Q: Dans « Les élèves écoutent attentivement », quelle est la nature du mot « attentivement » ?
+* Un adverbe
+- Un adjectif qualificatif
+- Un verbe
+- Un nom
+C: Un adverbe.
+E: « Attentivement » modifie le verbe « écoutent » et il est invariable : c'est un adverbe de manière, formé sur l'adjectif « attentive » + -ment.
+AR:
+Q: في الجملة الفرنسية «Les élèves écoutent attentivement»، ما نوع الكلمة «attentivement»؟
+* ظرف (adverbe)
+- نعت (adjectif qualificatif)
+- فعل
+- اسم
+C: ظرف (adverbe).
+E: تُغيّر «attentivement» معنى الفعل «écoutent» وهي ثابتة لا تتغير: إنها ظرف حال (manière) مشتق من الصفة «attentive» بإضافة -ment.
+
+[PRI-092] francais | intermediate
+Q: Dans « Elle parle à son frère », quelle est la fonction de « à son frère » ?
+* Complément d'objet indirect (COI)
+- Complément d'objet direct (COD)
+- Complément circonstanciel de lieu
+- Attribut du sujet
+C: COI.
+E: Le complément est rattaché au verbe « parler » par la préposition « à » (on parle à quelqu'un) : c'est un complément d'objet indirect. Un COD se construit sans préposition (« Elle regarde son frère »).
+AR:
+Q: في الجملة الفرنسية «Elle parle à son frère»، ما وظيفة «à son frère»؟
+* مفعول به غير مباشر (COI)
+- مفعول به مباشر (COD)
+- مفعول فيه للمكان
+- خبر (صفة) للفاعل
+C: مفعول به غير مباشر (COI).
+E: يرتبط المكمل بالفعل «parler» بواسطة حرف الجر «à» (on parle à quelqu'un)، فهو مفعول به غير مباشر. أما المفعول به المباشر فيأتي دون حرف جر («Elle regarde son frère»).
+
+[PRI-093] francais | intermediate
+Q: Complétez correctement : « Les lettres que j'ai … sont sur la table. »
+* écrites
+- écrit
+- écrits
+- écrite
+C: « écrites ».
+E: Avec l'auxiliaire « avoir », le participe passé s'accorde avec le COD s'il est placé avant le verbe. Le COD est « que », mis pour « les lettres » (féminin pluriel) : on écrit « écrites ».
+AR:
+Q: أتمم بشكل صحيح: «Les lettres que j'ai … sont sur la table.»
+* écrites
+- écrit
+- écrits
+- écrite
+C: «écrites».
+E: مع الفعل المساعد «avoir» يتطابق اسم المفعول مع المفعول به المباشر إذا جاء قبل الفعل. والمفعول به هنا «que» العائد على «les lettres» (مؤنث جمع)، فنكتب «écrites».
+
+[PRI-094] francais | intermediate
+Q: Quelle est la forme correcte du verbe « voir » au futur simple, à la première personne du singulier ?
+* je verrai
+- je voirai
+- je verrais
+- je voyerai
+C: « je verrai ».
+E: « Voir » a un radical irrégulier au futur : je verrai, tu verras, il verra… « Je verrais » (avec s) est le conditionnel présent.
+AR:
+Q: ما الصيغة الصحيحة لتصريف الفعل الفرنسي «voir» في المستقبل البسيط مع ضمير المتكلم المفرد؟
+* je verrai
+- je voirai
+- je verrais
+- je voyerai
+C: «je verrai».
+E: للفعل «voir» جذر غير قياسي في المستقبل: je verrai, tu verras, il verra… أما «je verrais» (بحرف s) فهي صيغة الشرط الحاضر.
+
+[PRI-095] francais | beginner
+Q: Quelle phrase est correctement orthographiée ?
+* Ils ont mangé à la cantine.
+- Ils on mangé à la cantine.
+- Ils ont manger à la cantine.
+- Ils ont mangés à la cantine.
+C: « Ils ont mangé à la cantine. »
+E: « Ont » est le verbe avoir (on peut dire « avaient ») ; après l'auxiliaire avoir, on met le participe passé « mangé » (et non l'infinitif « manger ») ; sans COD placé avant, il ne s'accorde pas.
+AR:
+Q: أي جملة كُتبت بشكل صحيح؟
+* Ils ont mangé à la cantine.
+- Ils on mangé à la cantine.
+- Ils ont manger à la cantine.
+- Ils ont mangés à la cantine.
+C: «Ils ont mangé à la cantine.»
+E: «ont» هو الفعل avoir (يمكن تعويضه بـ«avaient»)، وبعد الفعل المساعد avoir نضع اسم المفعول «mangé» لا المصدر «manger»، ولا يتطابق لغياب مفعول به مباشر متقدم.
+
+[PRI-096] francais | intermediate
+Q: « Cet homme est un lion. » Quelle figure de style est employée ?
+* Une métaphore
+- Une comparaison
+- Une personnification
+- Une hyperbole
+C: Une métaphore.
+E: La métaphore rapproche deux réalités sans outil de comparaison (l'homme est assimilé à un lion pour son courage). Avec un outil (« Cet homme est courageux comme un lion »), ce serait une comparaison.
+AR:
+Q: «Cet homme est un lion.» ما الصورة البلاغية المستعملة؟
+* استعارة (métaphore)
+- تشبيه (comparaison)
+- تشخيص (personnification)
+- مبالغة (hyperbole)
+C: استعارة (métaphore).
+E: تقرّب الاستعارة بين حقيقتين دون أداة تشبيه (شُبّه الرجل بالأسد في شجاعته). ولو وُجدت الأداة («Cet homme est courageux comme un lion») لكان تشبيها.
+
+[PRI-097] francais | advanced
+Q: Complétez correctement : « Bien qu'il … malade, il est venu à l'école. »
+* soit
+- est
+- était
+- sera
+C: « soit » (subjonctif).
+E: La locution conjonctive « bien que », qui exprime la concession, est suivie du subjonctif : « bien qu'il soit malade ».
+AR:
+Q: أتمم بشكل صحيح: «Bien qu'il … malade, il est venu à l'école.»
+* soit
+- est
+- était
+- sera
+C: «soit» (صيغة الشك subjonctif).
+E: أداة الربط «bien que» الدالة على التنازل تتبعها صيغة الـsubjonctif: «bien qu'il soit malade».
+
+[PRI-098] francais | intermediate
+Q: Dans un texte, qu'appelle-t-on un « champ lexical » ?
+* L'ensemble des mots qui se rapportent à un même thème
+- L'ensemble des sens d'un même mot
+- La liste alphabétique des mots du texte
+- L'ensemble des mots de même nature grammaticale
+C: Les mots qui se rapportent à un même thème.
+E: « Vague, sable, marée, coquillage » forment le champ lexical de la mer. L'ensemble des significations d'un même mot (par exemple les sens de « feuille ») est son champ sémantique.
+AR:
+Q: في نص ما، ما المقصود بـ«الحقل المعجمي» (champ lexical)؟
+* مجموع الكلمات التي ترتبط بموضوع واحد
+- مجموع معاني الكلمة الواحدة
+- اللائحة الأبجدية لكلمات النص
+- مجموع الكلمات من النوع النحوي نفسه
+C: الكلمات المرتبطة بموضوع واحد.
+E: الكلمات «vague, sable, marée, coquillage» تشكل الحقل المعجمي للبحر. أما مجموع معاني الكلمة الواحدة (مثل معاني «feuille») فهو حقلها الدلالي (champ sémantique).
+
+# ---------------------------------------------------------------------------
+# 11. Connaissances des matières — mathématiques
+# ---------------------------------------------------------------------------
+
+[PRI-099] maths | beginner
+Q: Dans le nombre 3 405, que représente le chiffre 4 ?
+* 4 centaines
+- 4 dizaines
+- 4 unités
+- 4 milliers
+C: 4 centaines (400).
+E: 3 405 = 3 milliers + 4 centaines + 0 dizaine + 5 unités. Le chiffre 4 est au rang des centaines : il vaut 400.
+AR:
+Q: في العدد 3405، ماذا يمثل الرقم 4؟
+* 4 مئات
+- 4 عشرات
+- 4 وحدات
+- 4 آلاف
+C: 4 مئات (400).
+E: 3405 = 3 آلاف + 4 مئات + 0 عشرات + 5 وحدات. يوجد الرقم 4 في منزلة المئات، فقيمته 400.
+
+[PRI-100] maths | beginner
+Q: Combien vaut les trois quarts de 20 ?
+* 15
+- 12
+- 16
+- 5
+C: 15.
+E: Un quart de 20 vaut 20 ÷ 4 = 5, donc trois quarts valent 3 × 5 = 15.
+AR:
+Q: كم تساوي ثلاثة أرباع العدد 20؟
+* 15
+- 12
+- 16
+- 5
+C: 15.
+E: ربع 20 يساوي 20 ÷ 4 = 5، إذن ثلاثة أرباعه تساوي 3 × 5 = 15.
+
+[PRI-101] maths | intermediate
+Q: Combien vaut 1/2 + 1/3 ?
+* 5/6
+- 2/5
+- 2/6
+- 1/6
+C: 5/6.
+E: On réduit au même dénominateur : 1/2 = 3/6 et 1/3 = 2/6, donc 1/2 + 1/3 = 5/6. Additionner numérateurs et dénominateurs (2/5) est une erreur classique.
+AR:
+Q: كم يساوي 1/2 + 1/3؟
+* 5/6
+- 2/5
+- 2/6
+- 1/6
+C: 5/6.
+E: نوحد المقامات: 1/2 = 3/6 و1/3 = 2/6، إذن 1/2 + 1/3 = 5/6. أما جمع البسطين والمقامين (2/5) فخطأ شائع.
+
+[PRI-102] maths | intermediate
+Q: Quel est le plus grand diviseur commun (PGCD) de 12 et 18 ?
+* 6
+- 3
+- 36
+- 2
+C: 6.
+E: Diviseurs de 12 : 1, 2, 3, 4, 6, 12 ; diviseurs de 18 : 1, 2, 3, 6, 9, 18. Le plus grand diviseur commun est 6. 36 est le plus petit multiple commun (PPCM).
+AR:
+Q: ما هو القاسم المشترك الأكبر للعددين 12 و18؟
+* 6
+- 3
+- 36
+- 2
+C: 6.
+E: قواسم 12: 1، 2، 3، 4، 6، 12، وقواسم 18: 1، 2، 3، 6، 9، 18. أكبر قاسم مشترك هو 6، أما 36 فهو المضاعف المشترك الأصغر.
+
+[PRI-103] maths | intermediate
+Q: Quelle est l'aire d'un triangle de base 8 cm et de hauteur 5 cm ?
+* 20 cm²
+- 40 cm²
+- 13 cm²
+- 26 cm²
+C: 20 cm².
+E: Aire d'un triangle = (base × hauteur) ÷ 2 = (8 × 5) ÷ 2 = 20 cm². Oublier de diviser par 2 donne 40 cm², l'aire du rectangle correspondant.
+AR:
+Q: ما مساحة مثلث طول قاعدته 8 cm وارتفاعه 5 cm؟
+* 20 cm²
+- 40 cm²
+- 13 cm²
+- 26 cm²
+C: 20 cm².
+E: مساحة المثلث = (القاعدة × الارتفاع) ÷ 2 = (8 × 5) ÷ 2 = 20 cm². ونسيان القسمة على 2 يعطي 40 cm²، وهي مساحة المستطيل الموافق.
+
+[PRI-104] maths | beginner
+Q: 2,5 km correspondent à…
+* 2 500 m
+- 250 m
+- 25 000 m
+- 25 m
+C: 2 500 m.
+E: 1 km = 1 000 m, donc 2,5 km = 2,5 × 1 000 = 2 500 m.
+AR:
+Q: 2,5 km تساوي…
+* 2500 m
+- 250 m
+- 25000 m
+- 25 m
+C: 2500 m.
+E: 1 km = 1000 m، إذن 2,5 km = 2,5 × 1000 = 2500 m.
+
+[PRI-105] maths | advanced
+Q: Combien de litres d'eau peut contenir un aquarium en forme de pavé droit de 50 cm × 30 cm × 40 cm ?
+* 60 litres
+- 6 litres
+- 600 litres
+- 120 litres
+C: 60 litres.
+E: Volume = 50 × 30 × 40 = 60 000 cm³. Comme 1 L = 1 dm³ = 1 000 cm³, on obtient 60 000 ÷ 1 000 = 60 L.
+AR:
+Q: كم لترا من الماء يمكن أن يسع حوض سمك على شكل متوازي مستطيلات أبعاده 50 cm × 30 cm × 40 cm؟
+* 60 لترا
+- 6 لترات
+- 600 لتر
+- 120 لترا
+C: 60 لترا.
+E: الحجم = 50 × 30 × 40 = 60000 cm³. وبما أن 1 L = 1 dm³ = 1000 cm³، نحصل على 60000 ÷ 1000 = 60 L.
+
+[PRI-106] maths | intermediate
+Q: Deux angles d'un triangle mesurent 50° et 70°. Combien mesure le troisième ?
+* 60°
+- 80°
+- 120°
+- 90°
+C: 60°.
+E: La somme des angles d'un triangle vaut 180° : 180° − (50° + 70°) = 60°.
+AR:
+Q: قياس زاويتين في مثلث هو 50° و70°. ما قياس الزاوية الثالثة؟
+* 60°
+- 80°
+- 120°
+- 90°
+C: 60°.
+E: مجموع قياسات زوايا المثلث يساوي 180°: 180° − (50° + 70°) = 60°.
+
+[PRI-107] maths | intermediate
+Q: 3 cahiers coûtent 18 dirhams. Combien coûtent 5 cahiers au même prix unitaire ?
+* 30 dirhams
+- 25 dirhams
+- 20 dirhams
+- 90 dirhams
+C: 30 dirhams.
+E: Un cahier coûte 18 ÷ 3 = 6 DH (passage par l'unité), donc 5 cahiers coûtent 5 × 6 = 30 DH. Le prix est proportionnel au nombre de cahiers.
+AR:
+Q: ثمن 3 دفاتر هو 18 درهما. كم ثمن 5 دفاتر بالثمن نفسه للوحدة؟
+* 30 درهما
+- 25 درهما
+- 20 درهما
+- 90 درهما
+C: 30 درهما.
+E: ثمن دفتر واحد 18 ÷ 3 = 6 دراهم (المرور بالوحدة)، إذن ثمن 5 دفاتر هو 5 × 6 = 30 درهما، فالثمن يتناسب مع عدد الدفاتر.
+
+[PRI-108] maths | beginner
+Q: Combien vaut 20 % de 150 ?
+* 30
+- 20
+- 15
+- 75
+C: 30.
+E: 20 % de 150 = 150 × 20 ÷ 100 = 30. On peut aussi calculer 10 % (15) puis doubler.
+AR:
+Q: كم تساوي 20 % من 150؟
+* 30
+- 20
+- 15
+- 75
+C: 30.
+E: 20 % من 150 = 150 × 20 ÷ 100 = 30. ويمكن أيضا حساب 10 % (15) ثم مضاعفتها.
+
+# ---------------------------------------------------------------------------
+# 12. Connaissances des matières — activité scientifique
+# ---------------------------------------------------------------------------
+
+[PRI-109] sciences | beginner
+Q: Au cours de la photosynthèse, que rejettent les plantes vertes ?
+* Du dioxygène
+- Du dioxyde de carbone
+- De l'azote
+- De la vapeur de mercure
+C: Du dioxygène.
+E: À la lumière, grâce à la chlorophylle, la plante absorbe du dioxyde de carbone et de l'eau, fabrique de la matière organique (glucose) et rejette du dioxygène.
+AR:
+Q: ماذا تطرح النباتات الخضراء أثناء التركيب الضوئي؟
+* ثنائي الأكسجين
+- ثنائي أكسيد الكربون
+- الآزوت
+- بخار الزئبق
+C: ثنائي الأكسجين.
+E: في وجود الضوء وبفضل اليخضور (الكلوروفيل)، تمتص النبتة ثنائي أكسيد الكربون والماء، وتصنع مادة عضوية (الغلوكوز)، وتطرح ثنائي الأكسجين.
+
+[PRI-110] sciences | beginner
+Q: Comment appelle-t-on le passage de l'eau de l'état solide à l'état liquide ?
+* La fusion
+- La solidification
+- La vaporisation
+- La condensation
+C: La fusion.
+E: Fusion : solide → liquide (la glace fond) ; solidification : liquide → solide ; vaporisation : liquide → gaz ; condensation (liquéfaction) : gaz → liquide.
+AR:
+Q: ما اسم تحول الماء من الحالة الصلبة إلى الحالة السائلة؟
+* الانصهار
+- التجمد (التصلب)
+- التبخر
+- التكاثف
+C: الانصهار.
+E: الانصهار: صلب ← سائل (ذوبان الجليد)، التجمد: سائل ← صلب، التبخر: سائل ← غاز، التكاثف (التمييع): غاز ← سائل.
+
+[PRI-111] sciences | intermediate
+Q: Dans quel organe se fait l'essentiel de l'absorption des nutriments chez l'être humain ?
+* L'intestin grêle
+- L'estomac
+- L'œsophage
+- Le gros intestin
+C: L'intestin grêle.
+E: Les nutriments issus de la digestion traversent la paroi de l'intestin grêle, dont les villosités offrent une très grande surface d'échange, puis passent dans le sang. Le gros intestin absorbe surtout de l'eau.
+AR:
+Q: في أي عضو يتم الجزء الأكبر من امتصاص المغذيات عند الإنسان؟
+* المعي الدقيق
+- المعدة
+- المريء
+- المعي الغليظ
+C: المعي الدقيق.
+E: تعبر المغذيات الناتجة عن الهضم جدار المعي الدقيق، الذي توفر زغاباته مساحة تبادل كبيرة جدا، ثم تنتقل إلى الدم. أما المعي الغليظ فيمتص الماء أساسا.
+
+[PRI-112] sciences | intermediate
+Q: Deux lampes sont montées en série dans un circuit fermé. Que se passe-t-il si l'on dévisse l'une d'elles ?
+* L'autre lampe s'éteint aussi, car le circuit est ouvert
+- L'autre lampe brille davantage
+- L'autre lampe continue de briller normalement
+- La pile se décharge instantanément
+C: L'autre lampe s'éteint.
+E: En série, il n'existe qu'une seule boucle : dévisser une lampe ouvre le circuit et le courant ne circule plus. En dérivation, chaque lampe est sur sa propre boucle et les autres continuent de briller.
+AR:
+Q: مصباحان مركبان على التوالي في دارة مغلقة. ماذا يحدث إذا فككنا أحدهما؟
+* ينطفئ المصباح الآخر أيضا لأن الدارة تصبح مفتوحة
+- يضيء المصباح الآخر أكثر
+- يستمر المصباح الآخر في الإضاءة بشكل عادي
+- تفرغ البطارية فورا
+C: ينطفئ المصباح الآخر.
+E: في التركيب على التوالي توجد حلقة واحدة، وفك مصباح يفتح الدارة فلا يمر التيار. أما في التركيب على التوازي فلكل مصباح حلقته، فتستمر المصابيح الأخرى في الإضاءة.
+
+[PRI-113] sciences | beginner
+Q: Dans la chaîne alimentaire « herbe → sauterelle → lézard → serpent », quel est le producteur ?
+* L'herbe
+- La sauterelle
+- Le lézard
+- Le serpent
+C: L'herbe.
+E: Le producteur est l'être vivant chlorophyllien qui fabrique sa propre matière organique par photosynthèse ; il est toujours au début de la chaîne. La sauterelle est un consommateur primaire (herbivore), le lézard et le serpent des consommateurs secondaire et tertiaire.
+AR:
+Q: في السلسلة الغذائية «عشب ← جرادة ← سحلية ← ثعبان»، ما هو المنتج؟
+* العشب
+- الجرادة
+- السحلية
+- الثعبان
+C: العشب.
+E: المنتج كائن حي يخضوري يصنع مادته العضوية بنفسه بواسطة التركيب الضوئي، ويوجد دائما في بداية السلسلة. أما الجرادة فمستهلك أولي (عاشب)، والسحلية والثعبان مستهلكان من الدرجة الثانية والثالثة.
+
+[PRI-114] sciences | intermediate
+Q: À quoi est due l'alternance du jour et de la nuit ?
+* À la rotation de la Terre sur elle-même, en environ 24 heures
+- À la révolution de la Terre autour du Soleil, en une année
+- Au mouvement de la Lune autour de la Terre
+- Au déplacement du Soleil autour de la Terre
+C: À la rotation de la Terre sur elle-même.
+E: En tournant sur son axe en environ 24 heures, la Terre présente successivement chaque région au Soleil (jour) puis la cache (nuit). La révolution autour du Soleil, en un peu plus de 365 jours, explique l'année ; avec l'inclinaison de l'axe, elle explique les saisons.
+AR:
+Q: إلامَ يرجع تعاقب الليل والنهار؟
+* إلى دوران الأرض حول نفسها في حوالي 24 ساعة
+- إلى دوران الأرض حول الشمس في سنة
+- إلى حركة القمر حول الأرض
+- إلى تنقل الشمس حول الأرض
+C: إلى دوران الأرض حول نفسها.
+E: بدوران الأرض حول محورها في حوالي 24 ساعة، تواجه كل منطقة الشمس (النهار) ثم تحتجب عنها (الليل). أما دورانها حول الشمس في ما يزيد قليلا عن 365 يوما فيفسر السنة، ومع ميلان المحور يفسر الفصول.
+
+[PRI-115] sciences | intermediate
+Q: Quel gaz est le plus abondant dans l'air que nous respirons ?
+* Le diazote (environ 78 %)
+- Le dioxygène (environ 21 %)
+- Le dioxyde de carbone
+- La vapeur d'eau
+C: Le diazote.
+E: L'air sec contient environ 78 % de diazote, 21 % de dioxygène et 1 % d'autres gaz (argon, dioxyde de carbone…). Le dioxygène, indispensable à la respiration, n'est donc pas le gaz majoritaire.
+AR:
+Q: ما الغاز الأكثر وفرة في الهواء الذي نتنفسه؟
+* ثنائي الآزوت (حوالي 78 %)
+- ثنائي الأكسجين (حوالي 21 %)
+- ثنائي أكسيد الكربون
+- بخار الماء
+C: ثنائي الآزوت.
+E: يحتوي الهواء الجاف على حوالي 78 % من ثنائي الآزوت و21 % من ثنائي الأكسجين و1 % من غازات أخرى (الأرغون، ثنائي أكسيد الكربون…). فثنائي الأكسجين الضروري للتنفس ليس الغاز الغالب.

@@ -63,6 +63,7 @@ export const SUBJECTS = [
   { id: 'architecture', fr: 'Architecture, art et perception', ar: 'الهندسة المعمارية والفن والإدراك', short: { fr: 'Archi & art', ar: 'معمار وفن' }, slug: 'architecture-art' },
   { id: 'securite', fr: 'Institutions de sécurité et services d’urgence', ar: 'مؤسسات الأمن وخدمات الطوارئ', short: { fr: 'Institutions de sécurité', ar: 'مؤسسات الأمن' }, slug: 'institutions-securite' },
   { id: 'education', fr: 'Système éducatif et pédagogie', ar: 'المنظومة التربوية والبيداغوجيا', short: { fr: 'Éducation & pédagogie', ar: 'التربية والبيداغوجيا' }, slug: 'systeme-educatif-pedagogie' },
+  { id: 'primaire', fr: 'Didactique du primaire et sciences de l’éducation', ar: 'ديداكتيك الابتدائي وعلوم التربية', short: { fr: 'Enseignement primaire', ar: 'التعليم الابتدائي' }, slug: 'enseignement-primaire-didactique' },
 ];
 
 /* How demanding a concours is. Practice "at the concours level", the daily

@@ -14,7 +14,7 @@ const SUBJECT_ART = {
   maths: ['sigma', 'indigo'], physique: ['bolt', 'amber'], chimie: ['flask', 'rose'], svt: ['leaf', 'cyan'],
   francais: ['Fr', 'blue'], arabe: ['ع', 'terra'], anglais: ['En', 'violet'], economie: ['chart', 'cyan'],
   sciences: ['gear', 'slate'], secourisme: ['health', 'rose'], architecture: ['building', 'terra'],
-  securite: ['shield', 'indigo'], education: ['pen', 'violet'],
+  securite: ['shield', 'indigo'], education: ['pen', 'violet'], primaire: ['compass', 'cyan'],
 };
 
 export function subjectArt(id) {

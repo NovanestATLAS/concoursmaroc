@@ -13,7 +13,7 @@ export default {
     mock: { minutes: 60, sections: [{ subjects: ['francais'], count: 10 }, { subjects: ['arabe'], count: 10 }, { subjects: ['culture', 'maroc', 'education'], count: 10 }, { subjects: ['logique'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
     difficulty: 'standard',
   },
-  related: ['universite', 'fonction-publique', 'cpge'],
+  related: ['enseignants-aref', 'universite', 'fonction-publique', 'cpge'],
   official: [
     { label: 'Cursus Sup — licences d’éducation', url: 'https://www.cursussup.gov.ma' },
     { label: "Ministère de l'Éducation nationale", url: 'https://www.men.gov.ma' },
@@ -31,12 +31,12 @@ export default {
     intro: "Pour devenir enseignant, la voie la plus directe après le bac est la **licence d'éducation**, proposée par les **ENS**, les **ESEF** et les facultés des sciences de l'éducation. Pour 2026-2027, l'accès en 1re année se faisait sur **Cursus Sup** pour les titulaires d'un bac marocain ou équivalent.",
     facts: [['Diplôme', "Licence d'éducation (bac+3)"], ['Établissements', 'ENS, ESEF, FSE'], ['Candidature', 'Cursus Sup'], ['Accès en S3', 'Concours propres à chaque ENS (ex. Tétouan : août–septembre)']],
     sections: [
-      { id: 'parcours', h: 'Le parcours vers l’enseignement', blocks: [ { steps: ["**Licence d'éducation** (3 ans) dans une spécialité : enseignement primaire, mathématiques, physique-chimie, SVT, langues (arabe, français, anglais), etc.", "**Concours de recrutement des enseignants** (académies régionales) après la licence, selon les conditions de l'année : l'écrit porte sur la spécialité, la didactique et les sciences de l'éducation, selon les référentiels publiés à chaque session. Notre [QCM système éducatif et pédagogie](@/qcm/systeme-educatif-pedagogie/) prépare à cette étape.", '**Formation qualifiante** dans un CRMEF (Centre Régional des Métiers de l’Éducation et de la Formation).'] } ] },
+      { id: 'parcours', h: 'Le parcours vers l’enseignement', blocks: [ { steps: ["**Licence d'éducation** (3 ans) dans une spécialité : enseignement primaire, mathématiques, physique-chimie, SVT, langues (arabe, français, anglais), etc.", "**Concours de recrutement des enseignants** après la licence : depuis 2024, [concours d'accès au cycle de qualification des CRMEF](@/concours/enseignants-aref/) (ex-concours des cadres des AREF). L'écrit porte sur la spécialité, la didactique et les sciences de l'éducation, selon les fiches publiées à chaque session. Nos [QCM enseignement primaire](@/qcm/enseignement-primaire-didactique/) et [QCM système éducatif et pédagogie](@/qcm/systeme-educatif-pedagogie/) préparent à cette étape.", '**Formation qualifiante** dans un CRMEF (Centre Régional des Métiers de l’Éducation et de la Formation).'] } ] },
       { id: 'acces', h: 'Accès en première année', blocks: [ { ul: ['Bac marocain ou équivalent, avec une série compatible avec la spécialité visée.', 'Candidature sur **Cursus Sup** et choix des établissements par ordre de préférence.', "Critères de sélection, calendrier et épreuves éventuelles : fixés par la note ministérielle de l'année (présélection, puis écrit et/ou entretien selon les établissements)."] } ] },
       { id: 'acces-s3', h: 'Accès en cours de cursus (S3, S5)', blocks: [ { p: "Plusieurs ENS organisent aussi des concours d'accès en 2e année (S3) ou 3e année (S5) pour les étudiants ayant validé des semestres universitaires. En 2026, l'ENS de Tétouan recevait les candidatures du 1er août au 6 septembre." } ] },
       { id: 'preparation', h: 'Préparation', blocks: [ { ul: ['Maîtriser la langue d’enseignement de sa spécialité (arabe ou français) à l’écrit comme à l’oral.', 'Préparer l’entretien : motivation, connaissance du système éducatif marocain (cycles, AREF, Vision 2015-2030).'] }, { practice: true } ] },
     ],
-    faq: [ { q: 'Comment devenir professeur après le bac au Maroc ?', a: "Suivez une licence d'éducation (ENS, ESEF, FSE) ou une licence universitaire, puis passez le concours de recrutement des enseignants organisé par les académies régionales, suivi d'une formation en CRMEF." } ],
+    faq: [ { q: 'Comment devenir professeur après le bac au Maroc ?', a: "Suivez une licence d'éducation (ENS, ESEF, FSE) ou une licence universitaire, puis passez le concours d'accès au cycle de qualification des cadres enseignants (ex-concours des cadres des AREF), suivi d'une formation en CRMEF." } ],
   },
   ar: {
     short: 'المدارس العليا للأساتذة',
@@ -44,9 +44,14 @@ export default {
     title: 'كيف تصبح أستاذًا بالمغرب: إجازة التربية بعد البكالوريا (2027)',
     description: 'ولوج إجازات التربية بالمدارس العليا للأساتذة والمدارس العليا للتربية والتكوين وكليات علوم التربية عبر Cursus Sup.',
     keywords: ['المدرسة العليا للأساتذة', 'إجازة التربية', 'مهنة التدريس'],
-    intro: 'أقصر طريق إلى مهنة التدريس بعد البكالوريا هو **إجازة التربية** التي تقترحها **المدارس العليا للأساتذة** و**المدارس العليا للتربية والتكوين** وكليات علوم التربية، عبر منصة **Cursus Sup**.',
-    facts: [['الدبلوم', 'إجازة في التربية (باك+3)'], ['الترشيح', 'Cursus Sup']],
-    sections: [ { id: 'parcours', h: 'المسار نحو التدريس', blocks: [ { steps: ['**إجازة التربية** في تخصص (التعليم الابتدائي، الرياضيات، اللغات…).', '**مباراة توظيف الأساتذة** بالأكاديميات الجهوية بعد الإجازة: اختبار كتابي في التخصص والديداكتيك وعلوم التربية حسب الأطر المرجعية لكل دورة، وتساعد [أسئلة المنظومة التربوية والبيداغوجيا](@/qcm/systeme-educatif-pedagogie/) على التحضير له.', '**التكوين التأهيلي** بالمراكز الجهوية لمهن التربية والتكوين.'] }, { practice: true } ] } ],
-    faq: [],
+    intro: 'لتصبح أستاذًا، فإن أقصر طريق بعد البكالوريا هو **إجازة التربية** التي تقترحها **المدارس العليا للأساتذة (ENS)** و**المدارس العليا للتربية والتكوين (ESEF)** وكليات علوم التربية. وبالنسبة لموسم 2026-2027، كان الولوج إلى السنة الأولى يتم عبر **Cursus Sup** لحاملي البكالوريا المغربية أو ما يعادلها.',
+    facts: [['الدبلوم', 'إجازة في التربية (باك+3)'], ['المؤسسات', 'ENS، ESEF، FSE'], ['الترشيح', 'Cursus Sup'], ['الولوج إلى الفصل الثالث (S3)', 'مباريات خاصة بكل مدرسة عليا للأساتذة (مثال تطوان: غشت–شتنبر)']],
+    sections: [
+      { id: 'parcours', h: 'المسار نحو التدريس', blocks: [ { steps: ['**إجازة التربية** (3 سنوات) في تخصص: التعليم الابتدائي، الرياضيات، الفيزياء والكيمياء، علوم الحياة والأرض، اللغات (العربية، الفرنسية، الإنجليزية)، إلخ.', '**مباراة توظيف الأساتذة** بعد الإجازة: منذ 2024، [مباراة ولوج سلك تأهيل أطر التدريس بالمراكز الجهوية](@/concours/enseignants-aref/) (مباراة أطر الأكاديميات سابقًا). ويتناول الاختبار الكتابي التخصص والديداكتيك وعلوم التربية، حسب بطاقات التوصيف المنشورة في كل دورة. وتُحضّر [أسئلة التعليم الابتدائي](@/qcm/enseignement-primaire-didactique/) و[أسئلة المنظومة التربوية والبيداغوجيا](@/qcm/systeme-educatif-pedagogie/) لهذه المرحلة.', '**التكوين التأهيلي** بأحد المراكز الجهوية لمهن التربية والتكوين (CRMEF).'] } ] },
+      { id: 'acces', h: 'الولوج إلى السنة الأولى', blocks: [ { ul: ['البكالوريا المغربية أو ما يعادلها، في شعبة ملائمة للتخصص المطلوب.', 'الترشيح على **Cursus Sup** واختيار المؤسسات حسب ترتيب الأفضلية.', 'معايير الانتقاء والأجندة والاختبارات المحتملة: تحددها المذكرة الوزارية للسنة (انتقاء أولي، ثم اختبار كتابي و/أو مقابلة حسب المؤسسات).'] } ] },
+      { id: 'acces-s3', h: 'الولوج خلال المسار (S3، S5)', blocks: [ { p: 'تنظم عدة مدارس عليا للأساتذة أيضًا مباريات للولوج إلى السنة الثانية (S3) أو السنة الثالثة (S5) لفائدة الطلبة الذين استوفوا فصولًا جامعية. وفي 2026، كانت المدرسة العليا للأساتذة بتطوان تستقبل الترشيحات من فاتح غشت إلى 6 شتنبر.' } ] },
+      { id: 'preparation', h: 'التحضير', blocks: [ { ul: ['إتقان لغة التدريس في تخصصك (العربية أو الفرنسية) كتابةً وشفهيًا.', 'التحضير للمقابلة: الحافز، معرفة المنظومة التربوية المغربية (الأسلاك، الأكاديميات الجهوية، الرؤية الاستراتيجية 2015-2030).'] }, { practice: true } ] },
+    ],
+    faq: [ { q: 'كيف تصبح أستاذًا بعد البكالوريا بالمغرب؟', a: 'تابع دراستك في إجازة التربية (ENS، ESEF، FSE) أو في إجازة جامعية، ثم اجتز مباراة ولوج سلك تأهيل أطر التدريس (مباراة أطر الأكاديميات سابقًا)، يليها تكوين بالمراكز الجهوية لمهن التربية والتكوين.' } ],
   },
 };
