@@ -147,6 +147,10 @@ async function main() {
   write('manifest.webmanifest', manifestJson(site));
   write('.nojekyll', '');
   if (site.customDomain) write('CNAME', `${site.customDomain}\n`);
+  // Announcement popup of the Android app (src/app/js/notices.js), edited in
+  // content/app-annonce.json; GitHub Pages serves it with CORS open.
+  const annonce = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/app-annonce.json'), 'utf8'));
+  write('app/annonce.json', JSON.stringify({ annonces: annonce.annonces || [] }));
   if (site.adsenseClient) {
     // AdSense (site) and AdMob (Android app) share the publisher ID: ads.txt
     // for the site, app-ads.txt for the app when this domain is the

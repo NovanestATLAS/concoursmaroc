@@ -8,7 +8,10 @@
   Vérifié le 10/10/2026 avec cordova-android 15.1.0 (API cible 36, exigée par
   Google Play pour les nouvelles applications et les mises à jour depuis le
   31 août 2026), admob-plus-cordova 2.0.0-alpha.19,
-  cordova-plugin-consent 3.0.0-alpha.9 et cordova-plugin-tts-advanced 0.5.3.
+  cordova-plugin-consent 3.0.0-alpha.9 et cordova-plugin-tts-advanced 0.5.3 ;
+  mis à jour le 19/10/2026 pour la bannière (plugin local
+  cordova-plugin-system-insets) et Firebase (cordova-plugin-firebase-analytics
+  9.0.0, -messaging 9.2.0, -config 9.0.0).
 
   - id : com.novanest.concoursmaroc, dans la lignée des autres applications
     Novanest ATLAS (com.novanest.…) ; c'est lui que donnent les liens Google
@@ -62,6 +65,32 @@
              couleur de la barre d'état suit ensuite le thème choisi dans
              l'appli (clair ou sombre). -->
         <preference name="AndroidEdgeToEdge" value="false" />
+
+        <!-- ★ Écran en portrait sur les téléphones : la bannière publicitaire
+             est placée juste au-dessus de la barre de navigation, qui change
+             de côté quand un téléphone tourne (la bannière se masque alors
+             d'elle-même). Android 16 ignore ce réglage sur les tablettes et
+             les écrans pliables ouverts, où la bannière reste en bas. -->
+        <preference name="Orientation" value="portrait" />
+
+        <!-- ★ Firebase (statistiques, alertes, annonces) : téléchargez
+             google-services.json depuis la console Firebase (application
+             Android com.novanest.concoursmaroc) et posez-le à la racine du
+             projet Cordova, à côté de config.xml. Sans ce fichier, la
+             compilation échoue dès qu'un plugin Firebase est installé. -->
+        <resource-file src="google-services.json" target="app/google-services.json" />
+
+        <!-- ★ Icône des notifications : silhouette blanche du logo (Android
+             l'exige monochrome ; l'icône de l'appli donnerait un carré blanc).
+             Dossier cordova/res/notification/ de ce dépôt, copié avec res/. -->
+        <resource-file src="res/notification/android/drawable-mdpi/ic_stat_concours.png" target="app/src/main/res/drawable-mdpi/ic_stat_concours.png" />
+        <resource-file src="res/notification/android/drawable-hdpi/ic_stat_concours.png" target="app/src/main/res/drawable-hdpi/ic_stat_concours.png" />
+        <resource-file src="res/notification/android/drawable-xhdpi/ic_stat_concours.png" target="app/src/main/res/drawable-xhdpi/ic_stat_concours.png" />
+        <resource-file src="res/notification/android/drawable-xxhdpi/ic_stat_concours.png" target="app/src/main/res/drawable-xxhdpi/ic_stat_concours.png" />
+        <resource-file src="res/notification/android/drawable-xxxhdpi/ic_stat_concours.png" target="app/src/main/res/drawable-xxxhdpi/ic_stat_concours.png" />
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_stat_concours" />
+        </config-file>
 
         <!-- ★ Lecture à voix haute (cordova-plugin-tts-advanced) : depuis
              Android 11, une appli ne voit les moteurs de synthèse vocale du

@@ -1,8 +1,10 @@
 # Compiles the Android app as Google Play will get it: cordova-android 15
 # (API 36) with every plugin (AdMob, consent, read-aloud, review prompt,
-# in-app updates), the icons and the www/ of the repository. Uses Google's
-# demo AdMob App ID and test ad units; the result is a debug APK to install
-# on a phone (Actions tab → this run → Artifacts).
+# in-app updates, banner insets, Firebase analytics / messaging / remote
+# config), the icons and the www/ of the repository. Uses Google's demo
+# AdMob App ID and test ad units, and a placeholder google-services.json
+# (Firebase compiles but sends nothing); the result is a debug APK to
+# install on a phone (Actions tab → this run → Artifacts).
 name: Application Android (APK de test)
 
 on:
@@ -46,6 +48,19 @@ jobs:
           # App ID de démonstration de Google : jamais l'identifiant de production ici
           sed 's/ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN/ca-app-pub-3940256099942544~3347511713/' ../cordova/package.json.exemple > package.json
           unzip -q ../cordova/www_concours_maroc.zip
+          # Firebase : fichier factice (le vrai vient de la console Firebase, jamais du dépôt)
+          cat > google-services.json <<'JSON'
+          {
+            "project_info": { "project_number": "000000000000", "project_id": "concours-maroc-ci", "storage_bucket": "concours-maroc-ci.appspot.com" },
+            "client": [ {
+              "client_info": { "mobilesdk_app_id": "1:000000000000:android:0000000000000000", "android_client_info": { "package_name": "com.novanest.concoursmaroc" } },
+              "oauth_client": [],
+              "api_key": [ { "current_key": "AIzaSyA0000000000000000000000000000000" } ],
+              "services": { "appinvite_service": { "other_platform_oauth_client": [] } }
+            } ],
+            "configuration_version": "1"
+          }
+          JSON
           npm install -g cordova@13.0.0
           npm install --no-audit --no-fund
 

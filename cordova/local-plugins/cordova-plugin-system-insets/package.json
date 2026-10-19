@@ -1,0 +1,10 @@
+{
+  "name": "cordova-plugin-system-insets",
+  "version": "1.0.0",
+  "description": "Measures the Android system bars and the space under the Cordova WebView, so an overlay banner can sit just above the navigation bar.",
+  "license": "MIT",
+  "author": "Novanest ATLAS",
+  "keywords": ["ecosystem:cordova", "cordova-android", "insets", "navigation bar", "edge-to-edge"],
+  "cordova": { "id": "cordova-plugin-system-insets", "platforms": ["android"] },
+  "engines": { "cordovaDependencies": { "1.0.0": { "cordova-android": ">=12.0.0" } } }
+}

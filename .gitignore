@@ -7,3 +7,5 @@ node_modules/
 dist/
 # production AdMob units, kept out of the public repository
 cordova/admob.local.json
+# Firebase configuration of the Android app (downloaded from the Firebase console)
+google-services.json

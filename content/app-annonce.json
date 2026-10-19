@@ -1,0 +1,12 @@
+{
+  "_aide": "Annonce affichée une fois dans l'application Android (fenêtre au démarrage, jamais pendant une question). Copier l'exemple dans \"annonces\", changer l'id à chaque nouvelle annonce. Dates au format AAAA-MM-JJ ; route = page de l'application (sans #/), ou url = lien https. Firebase Remote Config (clé « annonce », même format) est prioritaire quand il est configuré.",
+  "_exemple": {
+    "id": "2026-09-dgsn-inscriptions",
+    "from": "2026-09-07",
+    "until": "2026-09-22",
+    "fr": { "title": "Police (DGSN) : inscriptions ouvertes", "body": "Les inscriptions au concours 2026 sont ouvertes jusqu'au 22 septembre sur concours.dgsn.gov.ma.", "cta": "Voir le concours" },
+    "ar": { "title": "الأمن الوطني: التسجيل مفتوح", "body": "التسجيل في مباراة 2026 مفتوح إلى غاية 22 شتنبر عبر concours.dgsn.gov.ma.", "cta": "عرض المباراة" },
+    "route": "concours/police-dgsn/"
+  },
+  "annonces": []
+}

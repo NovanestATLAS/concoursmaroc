@@ -16,10 +16,10 @@
  * Placement rules enforced here, not left to the caller:
  *   - banners only on content pages, Home, Results, Statistics and Settings;
  *   - never during a question or a timed exam;
- *   - nothing is ever covered: the plugin shrinks the WebView above its
- *     banner (in a desktop browser the slot is only drawn as a preview);
- *   - with cordova-android 15+ banners are off unless forced (see
- *     bannerSupported below); interstitials and rewarded ads are unaffected;
+ *   - nothing is ever covered: the banner sits on the bottom edge of the
+ *     WebView, just above the navigation bar, and the page keeps a space of
+ *     the banner's height free under its content (see bannerMode below; in a
+ *     desktop browser the slot is only drawn as a preview);
  *   - the first study session of a device is always ad-free;
  *   - at most one interstitial per completed session, after results are shown,
  *     after at least 10 answered questions, and never within MIN_GAP of the
@@ -85,15 +85,24 @@
     bannerVisible: false,
     consent: 'unknown',    // 'unknown' | 'obtained' | 'not-required' | 'unavailable'
     online: true,
+    canRequestAds: null,   // consent tool's answer (null: no consent tool)
+    privacyOptions: false, // the settings must offer to change the choices
     interstitialReady: false,
     rewardedReady: false,
     interstitial: null,
     rewarded: null,
     banner: null,
+    bannerOffset: null,    // px, overlay mode: offset the banner was created with
+    bannerHeight: 0,       // CSS px, from admob-plus's banner size event
+    bannerLoaded: false,
+    bannerMisplaced: false,
+    insets: null,
+    log: [],
     listeners: {}
   };
 
   function emit(name, detail) {
+    log(name, detail);
     (state.listeners[name] || []).forEach(function (fn) {
       try { fn(detail); } catch (e) { console.warn('[ads] listener error', e); }
     });
@@ -108,29 +117,106 @@
     return !!(global.admob && typeof global.admob.start === 'function');
   }
 
-  /* admob-plus-cordova 2.0.0-alpha.19 shows a banner by moving the WebView
-     into a LinearLayout with the ad under it. cordova-android 15 (the first
-     version that targets API level 36, which Google Play requires) lays the
-     WebView out in a FrameLayout with system-bar margins and casts its layout
-     params back to FrameLayout.LayoutParams on every insets change: once
-     moved, the WebView slides under the status bar and the next insets change
-     (keyboard, rotation) throws. 'auto' therefore keeps banners up to
-     cordova-android 14 only; true forces them (test on a phone first). */
+  /* How the banner is placed.
+     - 'overlay': admob-plus draws the banner over the window, `offset` pixels
+       above its bottom edge (its offset option), and the WebView is left
+       where cordova-android put it. The local plugin
+       cordova-plugin-system-insets measures that offset: the space under the
+       WebView, i.e. the navigation bar. The page then keeps the banner's
+       height free (body.has-banner, --banner-h), so nothing is covered.
+     - 'legacy': without that plugin, admob-plus moves the WebView into a
+       LinearLayout with the ad under it. cordova-android 15 (API level 36,
+       required by Google Play) lays the WebView out in a FrameLayout with
+       system-bar margins and casts its layout params back to
+       FrameLayout.LayoutParams on every insets change: once moved, the
+       WebView slides under the status bar and the next insets change
+       (keyboard, rotation) throws. That mode is only used up to
+       cordova-android 14, or when the config forces it (banner: true).
+     - 'off': no banner (cordova-android 15 without the insets plugin, or
+       banner: false). Interstitials are unaffected. */
   function platformMajor() {
     var v = global.cordova && global.cordova.platformVersion;
     return v ? parseInt(String(v).split('.')[0], 10) || 0 : 0;
   }
-  function bannerSupported() {
-    if (config.banner === true || config.banner === false) return config.banner;
+  function insetsPresent() {
+    return !!(global.SystemInsets && typeof global.SystemInsets.get === 'function');
+  }
+  function bannerMode() {
+    if (config.banner === false) return 'off';
+    if (insetsPresent()) return 'overlay';
+    if (config.banner === true) return 'legacy';
     var major = platformMajor();
-    return major > 0 && major < 15;
+    return major > 0 && major < 15 ? 'legacy' : 'off';
+  }
+  function bannerSupported() { return bannerMode() !== 'off'; }
+
+  /* Space kept free under the page for the banner, in CSS pixels. */
+  function reserveSlot(on, height) {
+    var body = document.body;
+    body.classList.toggle('has-banner', !!on);
+    if (on && height) body.style.setProperty('--banner-h', Math.ceil(height) + 'px');
+    else body.style.removeProperty('--banner-h');
+    var slot = document.getElementById('ad-banner');
+    // the grey preview slot only in a desktop browser
+    if (slot) slot.classList.toggle('on', !!on && state.mode !== 'native');
   }
 
-  function reserveSlot(on) {
-    document.body.classList.toggle('has-banner', !!on);
-    var slot = document.getElementById('ad-banner');
-    if (slot) slot.classList.toggle('on', !!on);
+  // Last ad events, for the developer screen (newest last).
+  var LOG_MAX = 60;
+  function log(type, detail) {
+    state.log.push({ t: Date.now(), type: type, detail: detail || null });
+    if (state.log.length > LOG_MAX) state.log.shift();
   }
+
+  function measureInsets() {
+    if (!insetsPresent()) return Promise.resolve(null);
+    return Promise.resolve(global.SystemInsets.get()).then(function (ins) {
+      state.insets = ins || null;
+      return state.insets;
+    }, function (err) {
+      log('insets-failed', String(err && err.message || err));
+      return null;
+    });
+  }
+
+  /* admob-plus reports the banner's size (dp, i.e. CSS pixels) just before
+     it is drawn, and again when a refreshed ad has another height. */
+  document.addEventListener('admob.banner.size', function (evt) {
+    if (!state.banner || evt.adId !== state.banner.id) return;
+    var h = evt.size && evt.size.height;
+    if (!h) return;
+    state.bannerLoaded = true;
+    state.bannerHeight = h;
+    log('banner-size', { height: h, width: evt.size.width });
+    if (bannerMode() === 'overlay' && state.bannerVisible && !state.bannerMisplaced) reserveSlot(true, h);
+  });
+  document.addEventListener('admob.ad.loadfail', function (evt) {
+    if (!state.banner || evt.adId !== state.banner.id) return;
+    log('banner-loadfail', evt.error || evt.message || null);
+  });
+  /* Rotation, split screen, keyboard: an overlay banner cannot move, so it
+     is hidden while it would not sit on the WebView's edge. */
+  var resizeTimer = 0;
+  global.addEventListener('resize', function () {
+    if (bannerMode() !== 'overlay' || state.mode !== 'native' || !state.bannerVisible) return;
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      if (!state.banner) { Ads.showBanner(); return; }   // first show was put off
+      measureInsets().then(function (ins) {
+        if (!ins || !state.bannerVisible) return;
+        var off = ins.imeVisible || Math.abs((ins.below || 0) - state.bannerOffset) > 2;
+        if (off && !state.bannerMisplaced) {
+          state.bannerMisplaced = true;
+          reserveSlot(false);
+          try { state.banner.hide(); } catch (e) { /* ignore */ }
+          log('banner-misplaced', { below: ins.below, offset: state.bannerOffset, keyboard: !!ins.imeVisible });
+        } else if (!off && state.bannerMisplaced) {
+          state.bannerMisplaced = false;
+          Ads.showBanner();
+        }
+      });
+    }, 250);
+  });
 
   function online() {
     if (global.navigator && typeof global.navigator.onLine === 'boolean') {
@@ -164,8 +250,17 @@
         enabled: config.enabled,
         testMode: config.testMode,
         banner: state.mode === 'native' && bannerSupported() && !!config.ids.banner,
+        bannerMode: bannerMode(),
+        bannerLoaded: state.bannerLoaded,
+        bannerHeight: state.bannerHeight,
+        bannerOffset: state.bannerOffset,
+        bannerMisplaced: state.bannerMisplaced,
+        insets: state.insets,
+        units: Object.keys(config.ids).filter(function (k) { return !!config.ids[k]; }),
         started: state.started,
         consent: state.consent,
+        canRequestAds: state.canRequestAds,
+        privacyOptions: state.privacyOptions,
         bannerVisible: state.bannerVisible,
         interstitialReady: state.interstitialReady,
         rewardedReady: state.rewardedReady,
@@ -194,7 +289,12 @@
 
       state.mode = 'native';
       return Ads.requestConsent()
-        .then(function () { return global.admob.start(); })
+        .then(function () {
+          // Google's rule: no ad request (not even starting the SDK) until
+          // the consent tool says ads may be requested.
+          if (state.canRequestAds === false) throw new Error('consent: ads may not be requested yet');
+          return global.admob.start();
+        })
         .then(function () {
           state.started = true;
           emit('ready', Ads.status());
@@ -210,38 +310,58 @@
         });
     },
 
-    /* Consent hook for Google's User Messaging Platform. With
-       cordova-plugin-consent installed the real form is requested; otherwise
-       the app records that consent could not be collected and, per policy,
-       personalisation must stay off. */
-    requestConsent: function (force) {
-      if (!global.consent || typeof global.consent.requestInfoUpdate !== 'function') {
+    /* Google's User Messaging Platform (cordova-plugin-consent 3.0.0-alpha.9):
+       requestInfoUpdate, then loadAndShowIfRequired (the form only appears
+       where the law requires it, e.g. for users in the EEA or the UK), then
+       canRequestAds. privacyOptionsRequirementStatus says whether the
+       settings must offer "Modifier mes choix" (showPrivacyOptionsForm).
+       Without the plugin, consent cannot be collected and the app records it.
+       (The plugin's getConsentStatus maps Android's codes wrongly — 1 means
+       NOT_REQUIRED on Android — so it is not used.) */
+    requestConsent: function (privacyOptions) {
+      var C = global.consent;
+      if (!C || typeof C.requestInfoUpdate !== 'function') {
         state.consent = state.consent === 'obtained' ? 'obtained' : 'unavailable';
         return Promise.resolve(state.consent);
       }
-      return Promise.resolve(global.consent.requestInfoUpdate())
-        .then(function (info) {
-          if (force || (info && info.isConsentFormAvailable &&
-              info.status === global.consent.ConsentStatus.REQUIRED)) {
-            return global.consent.loadAndShowFormIfRequired().then(function () { return 'obtained'; });
-          }
-          return info && info.status === global.consent.ConsentStatus.NOT_REQUIRED
-            ? 'not-required' : 'obtained';
+      function call(name) {
+        return typeof C[name] === 'function' ? Promise.resolve(C[name]()) : Promise.resolve(null);
+      }
+      var flow = privacyOptions
+        ? call('showPrivacyOptionsForm')
+        : Promise.resolve(C.requestInfoUpdate()).then(function () { return call('loadAndShowIfRequired'); });
+      return flow
+        .catch(function (err) {
+          // offline or form error: the answers of a previous session still count
+          console.warn('[ads] consent flow:', err && err.message);
+          log('consent-error', String(err && err.message || err));
         })
-        .then(function (s) {
+        .then(function () { return Promise.all([call('canRequestAds'), call('privacyOptionsRequirementStatus')]); })
+        .then(function (r) {
+          state.canRequestAds = r[0] !== false;
+          state.privacyOptions = r[1] === 'Required';
+          var s = !state.canRequestAds ? 'pending' : (state.privacyOptions ? 'obtained' : 'not-required');
           state.consent = s;
           Store.patchProfile({ ads: { consent: s } });
-          emit('consent', { status: s });
+          emit('consent', { status: s, canRequestAds: state.canRequestAds, privacyOptions: state.privacyOptions });
           return s;
         })
         .catch(function (err) {
-          console.warn('[ads] consent flow failed:', err && err.message);
+          console.warn('[ads] consent status unavailable:', err && err.message);
           state.consent = 'unavailable';
           return state.consent;
         });
     },
 
+    /* "Modifier mes choix de confidentialité" in the settings. */
     showConsentForm: function () { return Ads.requestConsent(true); },
+
+    /* Developer screen: forget the consent answers and ask again. */
+    resetConsent: function () {
+      if (!global.consent || typeof global.consent.reset !== 'function') return Promise.resolve('unavailable');
+      return Promise.resolve(global.consent.reset()).then(function () { return Ads.requestConsent(); });
+    },
+
 
     setEnabled: function (on) {
       config.enabled = !!on;
@@ -275,27 +395,40 @@
         emit('banner', { shown: false, reason: !state.online ? 'offline' : (config.ids.banner ? 'unsupported' : 'no-unit') });
         return Promise.resolve(false);
       }
-      try {
+      return (bannerMode() === 'overlay' ? measureInsets() : Promise.resolve(null)).then(function (ins) {
+        if (!state.bannerVisible) return false;                 // hidden meanwhile
+        // Keyboard open, or rotated / navigation changed since the banner was
+        // placed: it would not sit on the WebView's edge, so it waits (the
+        // resize listener shows it again).
+        var away = ins && (ins.imeVisible || (state.bannerOffset !== null && Math.abs((ins.below || 0) - state.bannerOffset) > 2));
+        if (away) {
+          state.bannerMisplaced = true;
+          reserveSlot(false);
+          if (state.banner) { try { state.banner.hide(); } catch (e) { /* ignore */ } }
+          emit('banner', { shown: false, reason: ins.imeVisible ? 'keyboard' : 'misplaced' });
+          return false;
+        }
+        state.bannerMisplaced = false;
         if (!state.banner) {
-          state.banner = new global.admob.BannerAd({
-            adUnitId: config.ids.banner,
-            position: 'bottom'
-          });
+          var opts = { adUnitId: config.ids.banner, position: 'bottom', size: { adaptive: 'anchored' } };
+          if (ins) { opts.offset = Math.max(0, Math.round(ins.below || 0)); state.bannerOffset = opts.offset; }
+          state.banner = new global.admob.BannerAd(opts);
         }
         return Promise.resolve(state.banner.show())
-          .then(function () { emit('banner', { shown: true }); return true; })
-          .catch(function (err) {
-            emit('failed', { stage: 'banner', error: String(err && err.message || err) });
-            return false;
+          .then(function () {
+            if (bannerMode() === 'overlay' && state.bannerLoaded && state.bannerVisible) reserveSlot(true, state.bannerHeight);
+            emit('banner', { shown: true, mode: bannerMode() });
+            return true;
           });
-      } catch (err) {
+      }).catch(function (err) {
         emit('failed', { stage: 'banner', error: String(err && err.message || err) });
-        return Promise.resolve(false);
-      }
+        return false;
+      });
     },
 
     hideBanner: function () {
       reserveSlot(false);
+      if (state.bannerVisible) log('banner-hide');
       state.bannerVisible = false;
       if (state.mode === 'native' && state.banner) {
         try { state.banner.hide(); } catch (e) { /* ignore */ }
@@ -453,7 +586,33 @@
 
     sessionsCompleted: function () { return caps().sessions || 0; },
 
-    resetCaps: function () { saveCaps({ lastInterstitial: 0, sessions: 0, interstitialsShown: 0 }); }
+    resetCaps: function () { saveCaps({ lastInterstitial: 0, sessions: 0, interstitialsShown: 0 }); },
+
+    // --------------------------------------------------- developer screen
+    debug: function () {
+      return { status: Ads.status(), caps: caps(), platform: platformMajor(), log: state.log.slice() };
+    },
+
+    /* Full-screen formats on demand, outside the placement rules: test mode
+       only (Google's demo units), so the developer never clicks real ads. */
+    testInterstitial: function () {
+      if (state.mode !== 'native') return Promise.resolve({ shown: false, reason: 'mock' });
+      if (!config.testMode) return Promise.resolve({ shown: false, reason: 'production' });
+      return (state.interstitialReady ? Promise.resolve(true) : Ads.preloadInterstitial()).then(function (ok) {
+        if (!ok) return { shown: false, reason: 'not-loaded' };
+        return Promise.resolve(state.interstitial.show()).then(function () {
+          state.interstitialReady = false;
+          emit('interstitial', { shown: true, test: true });
+          Ads.preloadInterstitial();
+          return { shown: true, reason: 'test' };
+        });
+      }).catch(function (err) { return { shown: false, reason: String(err && err.message || err) }; });
+    },
+    testRewarded: function () {
+      if (state.mode !== 'native') return Promise.resolve({ rewarded: false, via: 'mock' });
+      if (!config.testMode) return Promise.resolve({ rewarded: false, via: 'production' });
+      return (state.rewardedReady ? Promise.resolve(true) : Ads.preloadRewarded()).then(function () { return Ads.showRewarded(); });
+    }
   };
 
   global.CM = global.CM || {};

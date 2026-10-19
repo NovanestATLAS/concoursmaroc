@@ -15,7 +15,11 @@
     "cordova-android": "15.1.0",
     "cordova-launch-review": "4.2.0",
     "cordova-plugin-consent": "3.0.0-alpha.9",
+    "cordova-plugin-firebase-analytics": "9.0.0",
+    "cordova-plugin-firebase-config": "9.0.0",
+    "cordova-plugin-firebase-messaging": "9.2.0",
     "cordova-plugin-play-update": "file:local-plugins/cordova-plugin-play-update",
+    "cordova-plugin-system-insets": "file:local-plugins/cordova-plugin-system-insets",
     "cordova-plugin-tts-advanced": "0.5.3"
   },
   "cordova": {
@@ -29,7 +33,13 @@
         "APP_ID_ANDROID": "ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN"
       },
       "cordova-launch-review": {},
-      "cordova-plugin-play-update": {}
+      "cordova-plugin-play-update": {},
+      "cordova-plugin-system-insets": {},
+      "cordova-plugin-firebase-analytics": {
+        "AUTOMATIC_SCREEN_REPORTING_ENABLED": "false"
+      },
+      "cordova-plugin-firebase-messaging": {},
+      "cordova-plugin-firebase-config": {}
     }
   }
 }

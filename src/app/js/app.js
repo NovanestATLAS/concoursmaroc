@@ -13,6 +13,9 @@
   var TTS = global.CM.tts;
   var Ads = global.CM.ads;
   var Play = global.CM.play;
+  var Firebase = global.CM.firebase;
+  var Notices = global.CM.notices;
+  var Dev = global.CM.dev;
   var booted = false;
 
   function tr(fr, ar) { return Shell.lang() === 'ar' ? ar : fr; }
@@ -169,6 +172,7 @@
   // ------------------------------------------------------------ lifecycle
   document.addEventListener('resume', function () {
     if (Play) Play.checkUpdate();
+    if (Notices) setTimeout(function () { Notices.check(); }, 1500);
   }, false);
 
   document.addEventListener('pause', function () {
@@ -182,7 +186,12 @@
     withTimeout(TTS.init(Store.getProfile().tts), 6000, 'tts')
       .then(function (s) { if (s && s.available) console.info('[app] tts prête (' + s.engine + ', ' + s.voiceCount + ' voix)'); })
       .catch(function (e) { console.warn('[app] tts indisponible :', e.message); });
+    if (Firebase) {
+      try { Firebase.init(Shell.lang()); } catch (e) { console.warn('[app] firebase :', e.message); }
+    }
     if (Play) setTimeout(function () { Play.checkUpdate(); }, 4000);
+    // the announcement, if any, once the update check has had its turn
+    if (Notices) setTimeout(function () { Notices.check(); }, 7000);
     withTimeout(Ads.init(Store.getProfile().ads), 10000, 'ads')
       .then(syncBanner)
       .catch(function (e) { console.warn('[app] publicité indisponible :', e.message); });
@@ -283,10 +292,47 @@
     }
     adsText();
     if (consent) {
-      consent.hidden = !(global.consent && typeof global.consent.requestInfoUpdate === 'function');
+      // Google's consent tool says whether a way to change the choices is
+      // required (users in the EEA, the UK…).
+      var syncConsent = function () { consent.hidden = !Ads.status().privacyOptions; };
+      syncConsent();
+      Ads.on('consent', syncConsent);
       consent.addEventListener('click', function () {
         Ads.showConsentForm().then(function () { adsText(); toast(tr('Choix enregistrés', 'تم حفظ اختياراتك')); });
       });
+    }
+
+    // Firebase: notifications and usage statistics (card shown with the plugins)
+    var fbCard = root.querySelector('#set-firebase');
+    if (fbCard && Firebase) {
+      var present = Firebase.present();
+      fbCard.hidden = !(present.analytics || present.messaging);
+      var alerts = root.querySelector('#set-alerts');
+      var stats = root.querySelector('#set-analytics');
+      var setSw = function (b, on) { if (b) b.setAttribute('aria-checked', on ? 'true' : 'false'); };
+      if (alerts) {
+        alerts.closest('.switch-row').hidden = !present.messaging;
+        setSw(alerts, Firebase.notificationsOn());
+        alerts.addEventListener('click', function () {
+          var on = alerts.getAttribute('aria-checked') !== 'true';
+          alerts.disabled = true;
+          (on ? Firebase.enableNotifications(Shell.lang()) : Firebase.disableNotifications()).then(function (r) {
+            alerts.disabled = false;
+            setSw(alerts, r === 'on');
+            if (on && r !== 'on') toast(tr('Notifications refusées : autorisez-les dans les réglages Android de l’application.', 'تم رفض الإشعارات: فعّلها من إعدادات أندرويد الخاصة بالتطبيق.'));
+            else toast(r === 'on' ? tr('Alertes activées', 'تم تفعيل التنبيهات') : tr('Alertes désactivées', 'تم إيقاف التنبيهات'));
+          });
+        });
+      }
+      if (stats) {
+        stats.closest('.switch-row').hidden = !present.analytics;
+        setSw(stats, Firebase.analyticsOn());
+        stats.addEventListener('click', function () {
+          var on = stats.getAttribute('aria-checked') !== 'true';
+          setSw(stats, on);
+          Firebase.setAnalytics(on);
+        });
+      }
     }
 
     var rate = root.querySelector('#set-rate');
@@ -305,6 +351,15 @@
       });
     }
 
+    // developer mode: six taps on "À propos"
+    var devLink = root.querySelector('#set-dev');
+    if (Dev) {
+      if (devLink) devLink.hidden = !Dev.enabled();
+      Dev.attachTaps([root.querySelector('#set-about-title'), root.querySelector('#set-version-line')], function () {
+        if (devLink) devLink.hidden = false;
+      });
+    }
+
     var version = root.querySelector('#set-version');
     if (version) {
       global.CM.load.json('data/manifest.json').then(function (m) {
@@ -313,5 +368,7 @@
     }
   });
 
-  global.CM.boot = { back: back, syncBanner: syncBanner };
+  if (Dev) Shell.onInit('developer', Dev.render);
+
+  global.CM.boot = { back: back, syncBanner: syncBanner, isPlaying: function () { return onPlay; } };
 })(window);

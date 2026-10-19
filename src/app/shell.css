@@ -1,9 +1,10 @@
 /* =========================================================================
    Concours Maroc — Android app shell (appended to css/app.css)
    Top bar with back arrow, menu drawer at every width, bottom tab bar,
-   advertising slot preview (in the APK the AdMob plugin shrinks the WebView
-   above its banner, so the slot is only drawn in a desktop browser), Android
-   safe areas.
+   advertising slot (in the APK the AdMob banner is drawn natively on the
+   bottom edge of the WebView and ads-service.js sets body.has-banner and
+   --banner-h to its height, so the page keeps that space free; the grey
+   slot itself only shows in a desktop browser), Android safe areas.
    ========================================================================= */
 
 :root {
@@ -115,3 +116,13 @@ body.has-banner { --banner-h: 56px; }
 .app-settings .set-row > div { min-width: 0; }
 .app-settings .set-row small { display: block; color: var(--muted); }
 .app-settings select { min-height: 42px; padding: 8px 10px; font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; max-width: 60vw; }
+
+/* ---- developer screen ---- */
+.app-dev .dev-pre { white-space: pre-wrap; word-break: break-word; font-size: .74rem; line-height: 1.45; background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: 10px; max-height: 320px; overflow: auto; direction: ltr; text-align: left; }
+.app-dev .dev-checks { margin-top: 12px; display: grid; gap: 6px; }
+.app-dev .dev-check { display: grid; grid-template-columns: 22px 1fr; column-gap: 8px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.app-dev .dev-check small { grid-column: 2; color: var(--muted); word-break: break-word; }
+.app-dev .dev-mark { font-weight: 800; }
+.app-dev .dev-check.ok .dev-mark { color: var(--ok-line); }
+.app-dev .dev-check.ko .dev-mark { color: var(--bad-line); }
+.app-dev .dev-check.na .dev-mark { color: var(--muted); }

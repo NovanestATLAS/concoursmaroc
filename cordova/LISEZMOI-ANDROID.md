@@ -6,7 +6,10 @@ première version dans votre projet Cordova.
 
 Versions vérifiées le 10/10/2026 : Cordova CLI 13.0.0, cordova-android 15.1.0,
 admob-plus-cordova 2.0.0-alpha.19, cordova-plugin-consent 3.0.0-alpha.9,
-cordova-plugin-tts-advanced 0.5.3.
+cordova-plugin-tts-advanced 0.5.3. Ajoutés le 19/10/2026 : plugin local
+cordova-plugin-system-insets (bannière), cordova-plugin-firebase-analytics
+9.0.0, cordova-plugin-firebase-messaging 9.2.0, cordova-plugin-firebase-config
+9.0.0.
 
 ## 1. Ce qui change par rapport à la première version
 
@@ -81,9 +84,20 @@ cordova plugin add admob-plus-cordova@2.0.0-alpha.19 --save \
   --variable APP_ID_ANDROID=ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN
 cordova plugin add cordova-launch-review@4.2.0
 cordova plugin add ./local-plugins/cordova-plugin-play-update
+cordova plugin add ./local-plugins/cordova-plugin-system-insets
+
+# Firebase (section 6) : google-services.json doit être à la racine du projet
+cordova plugin add cordova-plugin-firebase-analytics@9.0.0 \
+  --variable AUTOMATIC_SCREEN_REPORTING_ENABLED=false
+cordova plugin add cordova-plugin-firebase-messaging@9.2.0
+cordova plugin add cordova-plugin-firebase-config@9.0.0
 ```
 
-Les deux derniers plugins servent à Google Play :
+**cordova-plugin-system-insets** (dossier `local-plugins/`, comme le suivant)
+mesure la barre de navigation d’Android : c’est lui qui permet d’afficher la
+bannière publicitaire avec cordova-android 15 (section 5).
+
+Deux plugins servent à Google Play :
 
 - **cordova-launch-review** : la fenêtre d’avis de Google Play (API In-App
   Review), demandée après une session réussie (≥ 60 %), à partir de la
@@ -98,19 +112,28 @@ Les deux derniers plugins servent à Google Play :
   `com.google.android.play:app-update` ; l’ancien plugin `cordova-in-app-update`
   n’est pas utilisable (il impose `compileSdkVersion 28`).
 
+En plus de la fenêtre d’avis de Google, un message « Votre avis compte »
+(bouton « Noter sur Google Play », qui ouvre la fiche de l’application)
+apparaît au plus deux fois, à partir de la 8e session réussie et du 5e jour,
+jamais moins de 30 jours après une fenêtre d’avis, avec « Ne plus demander ».
+Il ne pose aucune question sur l’avis de l’élève et envoie tout le monde vers
+la même page (règles de Google Play : pas de filtrage des avis, pas de
+récompense).
+
 Ces deux fonctions n’agissent que sur une application installée depuis
 Google Play (test interne compris), pas sur un APK installé à la main.
 
 Plus simple : copiez `package.json.exemple` sous le nom `package.json` à la
 racine du projet (mettez-y votre App ID AdMob), puis `npm install` et
-`cordova prepare android` installent d’un coup la plate-forme et les cinq
-plugins aux bonnes versions (copiez aussi le dossier `local-plugins/`). Vérifié le 10/10/2026 avec Cordova 13 : projet
+`cordova prepare android` installent d’un coup la plate-forme et les neuf
+plugins aux bonnes versions (copiez aussi le dossier `local-plugins/` et
+`google-services.json`). Vérifié le 10/10/2026 avec Cordova 13 : projet
 `com.novanest.concoursmaroc`, API 36, icônes adaptatives et écran de
 démarrage générés, un seul `APPLICATION_ID` dans le manifeste.
 
 Mettez directement l’**App ID** de votre application AdMob (celui avec un
 `~`), dès la première installation : Google l’autorise aussi pendant les
-tests. Changer d’App ID plus tard demande la procédure de la section 8,
+tests. Changer d’App ID plus tard demande la procédure de la section 10,
 sinon la compilation échoue sur un `APPLICATION_ID` en double.
 
 Plugin facultatif : `cordova plugin add cordova-plugin-x-socialsharing@6.0.4`
@@ -146,22 +169,117 @@ question, première session sans publicité, au plus un interstitiel par
 session terminée (après les résultats, au moins 10 réponses et 3 minutes
 d’écart).
 
-**Bannières et cordova-android 15.** AdMob Plus 2.0.0-alpha.19 affiche ses
-bannières en déplaçant la WebView dans un `LinearLayout`. cordova-android 15
-place la WebView dans un `FrameLayout` avec des marges pour les barres
-système, et relit ces marges en `FrameLayout.LayoutParams` à chaque
-changement (clavier, rotation) : une fois déplacée, la page passe sous la
-barre d’état et l’application risque de planter dès l’ouverture du clavier.
-Avec `banner: 'auto'` (par défaut), les bannières sont donc désactivées à
-partir de cordova-android 15 ; les interstitiels, plein écran, ne sont pas
-concernés. `banner: true` les force : testez alors sur un vrai téléphone,
-clavier ouvert et après une rotation.
+**Bannière.** AdMob Plus 2.0.0-alpha.19 a deux façons d’afficher une
+bannière. Par défaut, il déplace la WebView dans un `LinearLayout`, ce que
+cordova-android 15 ne supporte pas (la page passe sous la barre d’état et
+l’application plante à l’ouverture du clavier) : c’est pour cela que la
+bannière n’apparaissait pas dans la version précédente, elle était coupée à
+partir de cordova-android 15. L’application utilise maintenant l’autre façon
+(option `offset` d’AdMob Plus) : la bannière est posée par-dessus la fenêtre,
+exactement sur le bord bas de la page, juste au-dessus de la barre de
+navigation, et la page garde libre en bas la hauteur de l’annonce (rien
+n’est caché, la barre d’onglets remonte au-dessus). La hauteur de la barre de
+navigation est mesurée par le plugin local **cordova-plugin-system-insets** :
+il doit être installé, sinon la bannière reste coupée avec cordova-android 15.
+Pendant que le clavier est ouvert, ou si le téléphone tourne, la bannière se
+masque puis revient d’elle-même. Taille : bannière adaptative ancrée (toute
+la largeur). Réglage dans `ads-config.js` : `banner: false` la coupe.
 
 Le formulaire de consentement de Google (UMP) s’affiche quand la
-réglementation l’exige ; l’élève peut revoir ses choix dans
-Menu → Paramètres.
+réglementation l’exige (utilisateurs de l’Espace économique européen, du
+Royaume-Uni…) ; aucune annonce n’est demandée avant sa réponse. Dans ce cas,
+le bouton « Modifier mes choix de confidentialité » apparaît dans
+Menu → Paramètres. (La version précédente appelait une fonction absente du
+plugin, `loadAndShowFormIfRequired` au lieu de `loadAndShowIfRequired` : le
+formulaire ne pouvait pas s’afficher. C’est corrigé.)
 
-## 6. Tester puis publier
+## 6. Firebase : statistiques, alertes et annonces
+
+Trois plugins (versions vérifiées le 19/10/2026), chacun facultatif :
+l’application fonctionne sans eux et n’active que ce qui est installé.
+
+| Plugin | Fonction dans l’application |
+|---|---|
+| `cordova-plugin-firebase-analytics@9.0.0` | Statistiques d’utilisation (Google Analytics for Firebase) : pages ouvertes et événements de l’entraînement (`select_concours`, `quiz_start`, `quiz_complete`, `search`), sans donnée personnelle. Interrupteur « Statistiques d’utilisation » dans les paramètres. |
+| `cordova-plugin-firebase-messaging@9.2.0` | Notifications « Alertes concours » : l’élève les active dans les paramètres (Android 13+ demande l’autorisation), l’application s’abonne aux sujets `concours` et `concours_fr` ou `concours_ar`. |
+| `cordova-plugin-firebase-config@9.0.0` | Remote Config : clé `annonce` pour la fenêtre d’annonce (ci-dessous). |
+
+Mise en place :
+
+1. [console.firebase.google.com](https://console.firebase.google.com) →
+   Créer un projet (« Concours Maroc ») ; Google Analytics : activé, compte
+   Analytics existant ou nouveau.
+2. Ajouter une application **Android**, nom de package
+   `com.novanest.concoursmaroc` (celui du `config.xml`). L’empreinte SHA-1
+   n’est pas nécessaire pour ces trois fonctions.
+3. Télécharger **google-services.json** et le poser à la racine du projet
+   Cordova (à côté de `config.xml`). Le `config.xml.exemple` contient déjà la
+   ligne `<resource-file src="google-services.json" …>` qui le copie dans
+   l’application, ainsi que l’icône des notifications
+   (`res/notification/`, à copier avec `res/`).
+4. Installer les plugins (section 4), puis `cordova build android`.
+5. Vérifier : Firebase → Analytics → **DebugView** après
+   `adb shell setprop debug.firebase.analytics.app com.novanest.concoursmaroc`,
+   ou le mode développeur (section 7).
+
+Envoyer une alerte : Firebase → **Messaging** → Nouvelle campagne →
+Notification ; Cible : **Sujet** `concours_fr` (élèves en français),
+`concours_ar` (en arabe) ou `concours` (tous). Pour ouvrir une page de
+l’application quand l’élève touche la notification, ajouter dans « Options
+supplémentaires » → Données personnalisées la clé `route` avec l’adresse de
+la page sans le domaine, par exemple `concours/police-dgsn/` ou
+`ar/outils/calendrier-concours/`.
+
+Annonce (fenêtre affichée une fois au démarrage, jamais pendant une
+question, jamais au premier lancement) : deux sources possibles.
+
+- **Sans Firebase** : `content/app-annonce.json` dans ce dépôt (un exemple y
+  figure). Après `npm run build` et la mise en ligne du site, l’application
+  lit `https://www.maroc-concour.com/app/annonce.json`.
+- **Avec Firebase** : Remote Config → paramètre `annonce`, type JSON, même
+  format ; il est prioritaire sur le fichier du site.
+
+```json
+{ "annonces": [ { "id": "2026-11-dgsn-ecrit", "from": "2026-11-10", "until": "2026-11-22",
+  "fr": { "title": "Police : écrit le 22 novembre", "body": "Révisez avec l’examen blanc police.", "cta": "S’entraîner" },
+  "ar": { "title": "الأمن الوطني: الكتابي يوم 22 نونبر", "body": "راجع بالامتحان التجريبي.", "cta": "تمرن" },
+  "route": "entrainement/" } ] }
+```
+
+Changer l’`id` à chaque nouvelle annonce (chaque id ne s’affiche qu’une
+fois). `url` (lien https) peut remplacer `route`.
+
+Fiche Google Play → **Sécurité des données** : avec Firebase, déclarer en
+plus « Activité dans les applications » (interactions, pages) et
+« Identifiants de l’appareil » collectés pour les statistiques, non
+partagés, chiffrés en transit, collecte facultative (interrupteur dans les
+paramètres). La politique de confidentialité de l’application mentionne déjà
+Firebase.
+
+## 7. Mode développeur
+
+Menu → Paramètres → toucher **six fois** le titre « À propos » (ou la ligne
+« Version du contenu »). Un bouton « Mode développeur » apparaît alors dans
+cette carte. L’écran :
+
+- **Tout tester** vérifie chaque fonction et affiche ✓ (fonctionne), ✗
+  (échec, avec la raison) ou – (plugin absent de cette version) : stockage,
+  données, banques de questions, recherche, formules, navigation, réseau,
+  lecture à voix haute, AdMob, consentement, bannière, mesure de l’écran,
+  avis et mises à jour Google Play, Firebase Analytics, Messaging et Remote
+  Config, annonces, barre d’état ; « Copier le rapport » copie le tout (JSON)
+  pour me l’envoyer ;
+- boutons de test : bannière (afficher/masquer), interstitiel et vidéo
+  récompensée (en mode test seulement, pour ne jamais cliquer sur une vraie
+  annonce), formulaire de confidentialité, remise à zéro du consentement et
+  des plafonds, voix française et arabe, carte d’avis Google, message « Votre
+  avis compte », fenêtre de mise à jour, recherche de mise à jour, événement
+  Firebase, jeton de notification, Remote Config, aperçu d’annonce ;
+- journal des erreurs et avertissements depuis le démarrage.
+
+« Désactiver le mode développeur » en bas de l’écran le cache de nouveau.
+
+## 8. Tester puis publier
 
 ```sh
 cordova run android                       # téléphone branché, mode débogage USB
@@ -197,7 +315,7 @@ réglages dans [`FICHE-PLAY-STORE.md`](FICHE-PLAY-STORE.md). En bref :
   (identifiant publicitaire, adresse IP, interactions avec les annonces) ;
 - public cible : 13 ans et plus.
 
-## 7. Régénérer le dossier www
+## 9. Régénérer le dossier www
 
 Après une modification du contenu (fiches, questions, guides) :
 
@@ -208,7 +326,7 @@ npm run build:app
 Le dossier est écrit dans `dist/cordova/www/` et le zip copié dans
 `cordova/www_concours_maroc.zip`.
 
-## 8. Dépannage
+## 10. Dépannage
 
 **`Element meta-data#com.google.android.gms.ads.APPLICATION_ID … duplicated`**
 (tâche `processDebugMainManifest`). Le manifeste Android contient deux App ID

@@ -78,7 +78,8 @@ function settingsPage(lang) {
   const key = `${pfx}app/parametres/`;
   const link = linker('');
   const title = ar ? 'إعدادات التطبيق' : 'Paramètres de l’application';
-  const card = (h, body) => html`<section class="card" style="margin-bottom:14px"><h2 style="margin-top:0;font-size:1.15rem">${h}</h2>${body}</section>`;
+  const card = (h, body, id = '', hidden = false) => html`<section class="card"${id ? html` id="${id}"` : ''}${hidden ? html` hidden` : ''} style="margin-bottom:14px"><h2 style="margin-top:0;font-size:1.15rem"${id ? html` id="${id}-title"` : ''}>${h}</h2>${body}</section>`;
+  const sw = (id, label, help) => html`<div class="switch-row"><div class="sr-label"><strong>${label}</strong><small>${help}</small></div><button class="switch" type="button" role="switch" aria-checked="false" id="${id}" aria-label="${label}"></button></div>`;
   const body = html`${breadcrumb(lang, link, [[pfx, t(lang, 'home')], [key, title]])}
 <div class="container narrow app-settings" style="padding-bottom:40px">
 <header class="page-head"><h1>${title}</h1></header>
@@ -94,12 +95,32 @@ ${card(ar ? 'التمرين' : 'Entraînement', html`<p>${ar ? 'النتائج �
 <a class="btn sm" href="${link(pfx + 'entrainement/')}settings">${ar ? 'إعدادات التمرين والبيانات' : 'Réglages de l’entraînement et données'}</a>`)}
 ${card(ar ? 'الإعلانات والخصوصية' : 'Publicité et confidentialité', html`<p class="muted" id="set-ads-status"></p>
 <div class="btn-row"><button class="btn sm" type="button" id="set-consent" hidden>${ar ? 'تعديل اختيارات الخصوصية' : 'Modifier mes choix de confidentialité'}</button><a class="btn sm ghost" href="${link(pfx + 'confidentialite/')}">${ar ? 'سياسة الخصوصية' : 'Politique de confidentialité'}</a></div>`)}
-${card(ar ? 'حول التطبيق' : 'À propos', html`<p>${ar ? 'نسخة المحتوى:' : 'Version du contenu :'} <span id="set-version"></span></p>
+${card(ar ? 'الإشعارات والإحصائيات' : 'Notifications et statistiques', html`${sw('set-alerts', ar ? 'تنبيهات المباريات' : 'Alertes concours', ar ? 'إشعار عند فتح التسجيل في مباراة أو اقتراب موعد مهم. يطلب أندرويد الإذن.' : 'Une notification quand des inscriptions ouvrent ou qu’une date importante approche. Android demande l’autorisation.')}
+${sw('set-analytics', ar ? 'إحصائيات الاستخدام' : 'Statistiques d’utilisation', ar ? 'الصفحات المفتوحة وعدد الاختبارات، دون أي معطيات شخصية (Google Analytics for Firebase).' : 'Pages ouvertes et nombre de séries, sans aucune donnée personnelle (Google Analytics for Firebase).')}`, 'set-firebase', true)}
+${card(ar ? 'حول التطبيق' : 'À propos', html`<p id="set-version-line">${ar ? 'نسخة المحتوى:' : 'Version du contenu :'} <span id="set-version"></span></p>
 <div class="btn-row" style="margin-bottom:10px"><button class="btn sm" type="button" id="set-rate" hidden>${ar ? 'قيّم التطبيق على Google Play' : 'Noter l’application sur Google Play'}</button><button class="btn sm ghost" type="button" id="set-update" hidden>${ar ? 'البحث عن تحديث' : 'Rechercher une mise à jour'}</button></div>
 <div class="btn-row"><a class="btn sm ghost" href="${link(pfx + 'a-propos/')}">${ar ? 'من نحن' : 'À propos'}</a><a class="btn sm ghost" href="${link(pfx + 'sources/')}">${ar ? 'المصادر' : 'Sources'}</a><a class="btn sm ghost" href="${link(pfx + 'contact/')}">${ar ? 'اتصل بنا' : 'Contact'}</a></div>
-<p class="muted" style="font-size:var(--fs-sm);margin-top:10px">${t(lang, 'disclaimerShort')}</p>`)}
+<p class="muted" style="font-size:var(--fs-sm);margin-top:10px">${t(lang, 'disclaimerShort')}</p>
+<p id="set-dev" hidden style="margin-top:12px"><a class="btn sm quiet" href="${link(pfx + 'app/developpeur/')}">${ar ? 'وضع المطور' : 'Mode développeur'}</a></p>`, 'set-about')}
 </div>`;
   return { path: `${key}index.html`, lang, title, description: title, alternate: `${ar ? '' : 'ar/'}app/parametres/`, init: 'settings', noSearch: true, body };
+}
+
+/* Developer screen (6 taps on "À propos" in the settings): diagnostics of
+   every function of the app, filled in by js/dev-tools.js. Not linked from
+   any menu, not in the search index. */
+function devPage(lang) {
+  const ar = lang === 'ar';
+  const pfx = ar ? 'ar/' : '';
+  const key = `${pfx}app/developpeur/`;
+  const link = linker('');
+  const title = ar ? 'وضع المطور' : 'Mode développeur';
+  const body = html`${breadcrumb(lang, link, [[pfx, t(lang, 'home')], [`${pfx}app/parametres/`, ar ? 'الإعدادات' : 'Paramètres'], [key, title]])}
+<div class="container narrow app-settings app-dev" style="padding-bottom:40px">
+<header class="page-head"><h1>${title}</h1><p class="lead">${ar ? 'تشخيص جميع وظائف التطبيق (باللغة الفرنسية).' : 'Diagnostic de toutes les fonctions de l’application.'}</p></header>
+<div id="dev-root"><p class="muted">…</p></div>
+</div>`;
+  return { path: `${key}index.html`, lang, title, description: title, alternate: `${ar ? '' : 'ar/'}app/developpeur/`, init: 'developer', noSearch: true, body };
 }
 
 function privacyBody(lang) {
@@ -155,11 +176,11 @@ function shellHtml(version) {
   ];
   const sec = (s) => (s ? ` data-section="${s}"` : '');
   const scripts = [
-    'js/boot-guard.js', 'cordova.js', 'js/loader.js',
+    'js/boot-guard.js', 'js/dev-tools.js', 'cordova.js', 'js/loader.js',
     'vendor/katex/katex.min.js', 'js/math.js',
     'js/utils.js', 'js/storage.js', 'js/i18n.js', 'js/data-loader.js', 'js/tts-service.js',
     'js/ads-config.js', 'js/ads-service.js', 'js/stats.js', 'js/quiz-engine.js', 'js/ui.js', 'js/entrainement.js',
-    'js/site.js', 'js/router.js', 'js/play-service.js', 'js/app.js',
+    'js/site.js', 'js/router.js', 'js/play-service.js', 'js/firebase-service.js', 'js/notices.js', 'js/app.js',
   ];
   return `<!DOCTYPE html>
 <!-- Concours Maroc — application Android (Apache Cordova). Généré par
@@ -218,9 +239,9 @@ function shellHtml(version) {
 <nav class="tabbar" id="tabbar" data-fr="Navigation" data-ar="التنقل" data-label-attr="aria-label" aria-label="Navigation">
   ${tabs.map((b) => `<a href="#/${b[0]}" data-key="${b[0]}"${sec(b[1])}>${b[4]}<span data-fr="${b[2]}" data-ar="${b[3]}">${b[2]}</span></a>`).join('\n  ')}
 </nav>
-<!-- Advertising slot. In the APK the AdMob plugin shrinks the WebView above
-     its banner, so this element only shows, in a desktop browser, where the
-     banner goes. -->
+<!-- Advertising slot. In the APK the AdMob banner is drawn natively on the
+     bottom edge of the WebView (the page keeps its height free), so this
+     element only shows, in a desktop browser, where the banner goes. -->
 <div id="ad-banner" aria-hidden="true"><span class="ad-mock">Publicité</span></div>
 <div class="sheet-back" id="sheet"></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -302,6 +323,7 @@ async function main() {
     pages.push(...(await buildGuidesPages(site, all, lang, ROOT)));
     pages.push(...buildStaticPages(site, all, lang, banks));
     pages.push(settingsPage(lang));
+    pages.push(devPage(lang));
   }
   // 404 and offline are website-only; the app's own policy replaces confidentialite/,
   // so its public copy (application/confidentialite/) is not needed in the app.
@@ -353,6 +375,9 @@ async function main() {
     'js/site.js': 'src/js/site.js',
     'js/router.js': 'src/app/js/router.js',
     'js/play-service.js': 'src/app/js/play-service.js',
+    'js/firebase-service.js': 'src/app/js/firebase-service.js',
+    'js/notices.js': 'src/app/js/notices.js',
+    'js/dev-tools.js': 'src/app/js/dev-tools.js',
     'js/app.js': 'src/app/js/app.js',
     'js/echeances.js': 'src/js/echeances.js',
     'js/annuaire.js': 'src/js/annuaire.js',

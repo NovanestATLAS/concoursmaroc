@@ -8,6 +8,15 @@
  * Google decides whether the card actually appears (it has its own quota),
  * and no question is asked before it, as Google Play requires.
  *
+ * Rating message: a neutral note of ours ("Votre avis compte") whose button
+ * opens the Play Store page, for the moments the card is not due:
+ *   - after a finished session, results on screen, score ≥ 60 %;
+ *   - at least 8 finished sessions, on at least 5 different days;
+ *   - never within 30 days of a review card, at most twice, 60 days apart;
+ *   - "Ne plus demander" stops it for good.
+ * It asks no question about the user's opinion and sends everyone to the
+ * same Play Store page (no review gating, no reward).
+ *
  * Update: when Google Play has a newer version (In-App Updates API, local
  * plugin cordova-plugin-play-update), a sheet offers to update now; "Plus
  * tard" hides it for 3 days. Google Play's update screen does the rest. An
@@ -57,26 +66,78 @@
       && pct >= 0.6;
   }
 
+  function storePageAvailable() {
+    return !!((global.LaunchReview && typeof global.LaunchReview.launch === 'function') || global.PlayUpdate);
+  }
+
+  function promptEligible(s, summary) {
+    if (!storePageAvailable() || !online() || s.promptOff) return false;
+    var asks = s.asks || [];
+    var lastCard = asks.length ? asks[asks.length - 1] : 0;
+    var prompts = s.prompts || [];
+    var lastPrompt = prompts.length ? prompts[prompts.length - 1] : 0;
+    var pct = summary && summary.total ? (summary.correct || 0) / summary.total : 0;
+    return (s.sessions || 0) >= 8
+      && (s.days || []).length >= 5
+      && prompts.length < 2
+      && Date.now() - lastPrompt > 60 * DAY
+      && Date.now() - lastCard > 30 * DAY
+      && pct >= 0.6;
+  }
+
+  function requestCard() {
+    try {
+      global.LaunchReview.rating(function () { /* requested / shown / dismissed */ }, function (e) {
+        console.warn('[play] review :', e);
+      });
+    } catch (e) { console.warn('[play] review :', e && e.message); }
+  }
+
+  function ratingPrompt() {
+    var UI = global.CM && global.CM.ui;
+    if (!UI || !UI.sheet) return false;
+    if (UI.isSheetOpen && UI.isSheetOpen()) return false;
+    UI.sheet({
+      title: tr('Votre avis compte', 'رأيك يهمنا'),
+      body: tr('Concours Maroc est gratuit et s’améliore grâce aux retours de ses utilisateurs. Si l’application vous aide à préparer vos concours, vous pouvez laisser une note et un commentaire sur Google Play : cela prend une minute.',
+               'تطبيق Concours Maroc مجاني ويتحسن بفضل ملاحظات مستخدميه. إذا كان التطبيق يساعدك في التحضير لمبارياتك، يمكنك ترك تقييم وتعليق على Google Play: يستغرق ذلك دقيقة واحدة.'),
+      actions: [
+        { label: tr('Ne plus demander', 'لا تسألني مجددًا'), style: 'quiet', onclick: function () { var s = load(); s.promptOff = true; save(s); } },
+        { label: tr('Plus tard', 'لاحقًا'), style: 'ghost' },
+        { label: tr('Noter sur Google Play', 'التقييم على Google Play'), style: 'primary', onclick: function () { Play.openStorePage(); } }
+      ]
+    });
+    return true;
+  }
+
   var Play = {
     /* A finished session whose results are on screen. Returns true when the
-       review card was requested (the caller then skips the interstitial). */
+       review card or the rating message was shown (the caller then skips the
+       interstitial). */
     sessionFinished: function (summary) {
       var s = load();
       noteDay(s);
       s.sessions = (s.sessions || 0) + 1;
       var ask = reviewEligible(s, summary);
+      var prompt = !ask && promptEligible(s, summary);
       if (ask) (s.asks = s.asks || []).push(Date.now());
+      if (prompt) (s.prompts = s.prompts || []).push(Date.now());
       save(s);
-      if (!ask) return false;
-      setTimeout(function () {
-        try {
-          global.LaunchReview.rating(function () { /* requested / shown / dismissed */ }, function (e) {
-            console.warn('[play] review :', e);
-          });
-        } catch (e) { console.warn('[play] review :', e && e.message); }
-      }, 900);
-      return true;
+      if (ask) { setTimeout(requestCard, 900); return true; }
+      if (prompt) { setTimeout(ratingPrompt, 1200); return true; }
+      return false;
     },
+
+    // developer screen
+    debug: function () {
+      return { state: load(), reviewPlugin: reviewAvailable(), updatePlugin: Play.updateAvailable(), storePage: storePageAvailable(), online: online() };
+    },
+    requestReviewCard: function () { if (!reviewAvailable()) return false; requestCard(); return true; },
+    previewRatingPrompt: function () { return ratingPrompt(); },
+    previewUpdate: function () {
+      offer({ availability: 'available', versionCode: 0, immediate: false, flexible: false, priority: 0, preview: true });
+    },
+    resetState: function () { save({}); },
 
     /* "Noter l'application" in the settings: the Play Store page. */
     openStorePage: function () {
@@ -123,16 +184,19 @@
                'يتوفر تحديث لتطبيق Concours Maroc على Google Play: بطاقات وأسئلة وتصحيحات جديدة. يستغرق أقل من دقيقة.'),
       actions: [
         { label: tr('Plus tard', 'لاحقًا'), style: 'ghost', onclick: function () {
+          if (info.preview) return;
           var s = load(); s.later = Date.now(); s.laterCode = info.versionCode; save(s);
         } },
         { label: tr('Mettre à jour', 'تحديث الآن'), style: 'primary', onclick: function () {
-          var st = load(); st.updating = Date.now(); save(st);
+          if (!info.preview) { var st = load(); st.updating = Date.now(); save(st); }
           if (type) {
             global.PlayUpdate.start(type).then(function (r) {
               if (r === 'failed') global.PlayUpdate.openStore();
             }, function () { global.PlayUpdate.openStore(); });
-          } else {
+          } else if (global.PlayUpdate) {
             global.PlayUpdate.openStore();
+          } else {
+            Play.openStorePage();
           }
         } }
       ]
