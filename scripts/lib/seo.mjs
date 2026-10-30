@@ -43,6 +43,12 @@ export function manifestJson(site) {
       { src: 'assets/img/concours-maroc-icon-512.png', sizes: '512x512', type: 'image/png' },
       { src: 'assets/img/concours-maroc-icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
     ],
+    // The Android app is preferred to installing the website: Chrome then
+    // offers the Google Play app instead of "Install app" for the site.
+    ...(site.androidApp && site.androidApp.status === 'live' ? {
+      related_applications: [{ platform: 'play', url: `https://play.google.com/store/apps/details?id=${site.androidApp.id}`, id: site.androidApp.id }],
+      prefer_related_applications: true,
+    } : {}),
     shortcuts: [
       { name: 'Entraînement', url: './entrainement/' },
       { name: 'Calendrier des concours', url: './outils/calendrier-concours/' },

@@ -3,6 +3,7 @@ import { html, raw, esc } from './html.mjs';
 import { icon, logo } from './icons.mjs';
 import { t } from './strings.mjs';
 import { appBadge } from './pages/app-landing.mjs';
+import { navCta, appBanner, footerStore, appLive } from './app-funnel.mjs';
 
 /* Relative prefix from a page (site-relative output path) to the site root. */
 export function rootOf(pagePath) {
@@ -93,7 +94,7 @@ const NAV = {
   ],
 };
 
-function header(lang, link, page) {
+function header(lang, link, page, site) {
   const nav = NAV[lang] || NAV.fr;
   const altHref = page.alternate ? link(page.alternate) : link(lang === 'ar' ? '' : 'ar/');
   const homeHref = link(lang === 'ar' ? 'ar/' : '');
@@ -103,6 +104,7 @@ function header(lang, link, page) {
     <nav class="nav" id="site-nav" aria-label="${lang === 'ar' ? 'التنقل الرئيسي' : 'Navigation principale'}">
       ${nav.map(([href, key]) => html`<a href="${link(href)}"${page.section === key ? raw(' aria-current="page"') : ''}>${t(lang, key)}</a>`)}
       <a class="lang-switch" href="${altHref}" hreflang="${lang === 'ar' ? 'fr' : 'ar'}" lang="${lang === 'ar' ? 'fr' : 'ar'}" title="${t(lang, 'langSwitchLabel')}">${t(lang, 'langSwitch')}</a>
+      ${navCta(site, lang)}
     </nav>
     <div class="hdr-tools">
       <div class="search-wrap">
@@ -129,13 +131,14 @@ function footer(lang, link, site, footerLinks) {
       <div class="footer-brand">
         <a class="brand" href="${link(p)}">${logo(32)}<span>Concours <b>Maroc</b></span></a>
         <p>${t(lang, 'footerAbout')}</p>
-        ${appBadge(site, lang, link)}
+        ${appLive(site) ? footerStore(site, lang) : appBadge(site, lang, link)}
       </div>
       ${col(t(lang, 'footerConcours'), footerLinks.postbac)}
       ${col(t(lang, 'footerSecurity'), footerLinks.niveauBac)}
       ${col(t(lang, 'footerTools'), footerLinks.tools)}
       ${col(t(lang, 'footerSite'), [
         [`${p}a-propos/`, t(lang, 'about')],
+        ...(site.androidApp ? [[`${p}application/`, lang === 'ar' ? 'تطبيق أندرويد' : 'Application Android']] : []),
         [`${p}sources/`, t(lang, 'sourcesPage')],
         [`${p}contact/`, t(lang, 'contact')],
         [`${p}confidentialite/`, t(lang, 'privacy')],
@@ -170,7 +173,9 @@ export function layout(site, page, footerLinks) {
   const fullTitle = page.titleFull || (page.title.includes('Concours Maroc') || page.title.length > 52 ? page.title : `${page.title} | Concours Maroc`);
   const jsonld = (page.jsonld || []).filter(Boolean);
 
-  const themeInit = `(function(){try{var t=localStorage.getItem('cm.theme');if(!t||t==='auto'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();`;
+  // Theme, then the device classes of the app funnel (app-funnel.mjs): Android
+  // banner, no Google Play links on iPhone/iPad, banner closed less than 14 days ago.
+  const themeInit = `(function(){var d=document.documentElement;try{var t=localStorage.getItem('cm.theme');if(!t||t==='auto'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t)}catch(e){}try{var u=navigator.userAgent||'';if(/Android/i.test(u))d.classList.add('is-android');if(/iPhone|iPad|iPod/i.test(u)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))d.classList.add('is-ios');var b=+localStorage.getItem('cm.appbanner')||0;if(b&&Date.now()-b<12096e5)d.classList.add('appbanner-off')}catch(e){}})();`;
 
   const ga = site.ga4 ? raw(`<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(site.ga4)}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${esc(site.ga4)}');</script>`) : '';
   const ads = site.adsenseClient && !page.noAds ? raw(`<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(site.adsenseClient)}" crossorigin="anonymous"></script>`) : '';
@@ -215,7 +220,8 @@ ${ga}${ads}
 </head>
 <body${page.bodyClass ? raw(` class="${esc(page.bodyClass)}"`) : ''}>
 <a class="skip-link" href="#main">${t(lang, 'skip')}</a>
-${header(lang, link, page)}
+${page.noAppBanner ? '' : appBanner(site, lang, link)}
+${header(lang, link, page, site)}
 <main id="main">
 ${page.body}
 </main>

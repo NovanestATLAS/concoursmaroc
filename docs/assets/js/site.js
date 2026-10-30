@@ -313,6 +313,25 @@
   window.CMSite = { bindContent: bindContent, loadIndex: loadIndex };
   if (!APP) bindContent(document);
 
+  // ---------------------------------------------------------------- Android app (website only)
+  /* Links to Google Play carry data-app-cta="<where>" (scripts/lib/app-funnel.mjs):
+     GA4 event "app_store_click", sent with the beacon transport so that it
+     survives the page change. The Android banner closes for 14 days; <html>
+     reads the date before the first paint (inline script of the head). */
+  if (!APP) {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('[data-app-cta]');
+      if (a && typeof window.gtag === 'function') {
+        window.gtag('event', 'app_store_click', { placement: a.getAttribute('data-app-cta'), page_lang: lang(), transport_type: 'beacon' });
+      }
+      var x = e.target.closest && e.target.closest('[data-appbanner-close]');
+      if (x) {
+        doc.classList.add('appbanner-off');
+        try { localStorage.setItem('cm.appbanner', String(Date.now())); } catch (err) { /* private mode */ }
+      }
+    });
+  }
+
   // ---------------------------------------------------------------- service worker
   if (!APP && 'serviceWorker' in navigator && location.protocol === 'https:') {
     window.addEventListener('load', function () {

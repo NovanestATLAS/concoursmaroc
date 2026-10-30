@@ -1,7 +1,8 @@
 /* Concours de recrutement des enseignants du primaire : accès au cycle de
  * qualification des cadres enseignants des CRMEF (jusqu'en 2023 : concours
  * des cadres des AREF). Faits vérifiés le 2026-10-19 à partir des relais
- * cités dans `sources` ; les fiches officielles (PDF) n'ont pas pu être lues,
+ * cités dans `sources` (session 2026 revérifiée le 2026-10-30 sur la page
+ * des annonces de men.gov.ma : toujours aucun avis) ; les fiches officielles (PDF) n'ont pas pu être lues,
  * d'où les mentions « relayé » sur les durées et coefficients. */
 export default {
   id: 'enseignants-aref',
@@ -37,6 +38,8 @@ export default {
     { label: 'Portail national du Maroc — ouverture des candidatures (session de novembre 2025)', url: 'https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de' },
   ],
   sources: [
+    { title: 'Ministère de l’Éducation nationale — page des annonces (aucun avis pour la session 2026 au 30 octobre 2026)', url: 'https://www.men.gov.ma/%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA', date: '2026-10-30' },
+    { title: 'iJob — Concours de l’enseignement 2026 : l’annonce attendue fin octobre (en 2025 : annonce le 29 octobre, écrit le 22 novembre)', url: 'https://ijob.ma/actualite/concours-enseignement-2026-annonce-attendue-preparation/', date: '2026-10' },
     { title: 'Le Matin — Tout savoir sur le concours d’enseignement 2025 : âge limite, calendrier et conditions d’accès', url: 'https://lematin.ma/enseignement/tout-savoir-sur-le-concours-denseignement-2025-au-maroc/310673', date: '2025-11' },
     { title: 'Le Nouvelliste — Concours d’enseignement 2025 : les modalités et le calendrier dévoilés (âge limite de 30 à 35 ans)', url: 'https://www.lenouvelliste.ma/concours-denseignement-2025-les-modalites-et-le-calendrier-devoiles/', date: '2025-10' },
     { title: 'Hespress — De 30 à 35 ans : le ministère modifie la limite d’âge des concours de l’enseignement', url: 'https://www.hespress.com/%D9%85%D9%86-30-%D8%A5%D9%84%D9%89-35-%D8%B3%D9%86%D8%A9-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AA%D8%B9%D8%AF%D9%84-%D8%AA%D8%B3%D9%82%D9%8A%D9%81-%D8%A7-1647690.html', date: '2025-10' },
@@ -67,7 +70,7 @@ export default {
     title: 'Concours enseignement primaire 2026 : conditions, épreuves et dates',
     description: 'Devenir professeur du primaire : licence, 35 ans au plus, écrit QCM (matières, didactique, sciences de l’éducation), oral, dates des sessions 2024-2025 et préparation.',
     keywords: ['concours enseignement 2026', 'concours enseignement primaire', 'concours aref', 'concours crmef', 'wolouj men gov ma', 'مباراة التعليم'],
-    intro: "Pour devenir **professeur de l'enseignement primaire** dans le public, il faut réussir, après la licence, le **concours d'accès au cycle de qualification des cadres enseignants** des CRMEF, appelé jusqu'en 2023 « concours des cadres des AREF ». En novembre 2025, **3 383 places** étaient ouvertes au primaire, avec un écrit QCM le **22 novembre 2025**. La session 2026 n'était pas encore annoncée au 19 octobre 2026.",
+    intro: "Pour devenir **professeur de l'enseignement primaire** dans le public, il faut réussir, après la licence, le **concours d'accès au cycle de qualification des cadres enseignants** des CRMEF, appelé jusqu'en 2023 « concours des cadres des AREF ». En novembre 2025, **3 383 places** étaient ouvertes au primaire, avec un écrit QCM le **22 novembre 2025**. La session 2026 n'était pas encore annoncée au 30 octobre 2026.",
     facts: [['Diplôme', 'Licence ou diplôme équivalent'], ['Âge', '35 ans au plus (session 2025)'], ['Épreuves', 'Écrit QCM (matières, didactique, sciences de l’éducation) puis oral'], ['Places au primaire 2025', '3 383'], ['Dernier écrit', '22 novembre 2025'], ['Candidature', 'wolouj.men.gov.ma']],
     sections: [
       { id: 'cadre', h: 'Du « concours des cadres des AREF » au cycle de qualification', blocks: [
@@ -125,7 +128,7 @@ export default {
           ['Oral', '15 – 23 octobre 2024', 'convoqués publiés le 25 janvier 2025', '2 – 11 décembre 2025'],
           ['Résultats définitifs', '28 octobre 2024', 'février 2025 (inscription en CRMEF les 24 et 25 février)', '4 janvier 2026 (inscription en CRMEF du 6 au 9 janvier)'],
         ] } },
-        { p: "**Session 2026** : aucune annonce officielle au 19 octobre 2026. Les deux dernières sessions principales ont été annoncées en septembre (2024) et à la fin d'octobre (2025), avec un écrit en octobre ou en novembre. Surveillez wolouj.men.gov.ma et men.gov.ma, ainsi que notre [calendrier des concours](@/outils/calendrier-concours/)." },
+        { p: "**Session 2026** : aucune annonce officielle au 30 octobre 2026. Les deux dernières sessions principales ont été annoncées en septembre (2024) et à la fin d'octobre (2025), avec un écrit en octobre ou en novembre. Surveillez wolouj.men.gov.ma et men.gov.ma, ainsi que notre [calendrier des concours](@/outils/calendrier-concours/)." },
         { callout: 'info', text: "Les résultats définitifs de la session 2025, annoncés pour le 16 décembre, n'ont été publiés que le **4 janvier 2026**, après des délibérations retardées." },
       ] },
       { id: 'preparation', h: 'Préparation', blocks: [
@@ -146,7 +149,7 @@ export default {
       { q: 'Quel est l’âge maximum pour le concours de l’enseignement ?', a: "35 ans à la date du concours pour la session de novembre 2025, contre 30 ans de 2021 à janvier 2025. Vérifiez la limite dans l'annonce de la session 2026." },
       { q: 'Quelles sont les épreuves écrites du concours de l’enseignement primaire ?', a: "Des QCM sur quatre matières (arabe, français, mathématiques, sciences), sur leur didactique, et une épreuve commune de sciences de l'éducation (25 questions en une heure en novembre 2025)." },
       { q: 'Faut-il une licence en éducation pour enseigner au primaire ?', a: "Non : à la session de janvier 2025, toutes les spécialités de licence étaient acceptées pour le primaire. Les titulaires d'une licence en éducation ou d'une filière universitaire d'éducation sont dispensés de la présélection." },
-      { q: 'Quand aura lieu le concours de l’enseignement 2026 ?', a: "Il n'était pas encore annoncé au 19 octobre 2026. L'écrit a eu lieu le 5 octobre en 2024 et le 22 novembre en 2025." },
+      { q: 'Quand aura lieu le concours de l’enseignement 2026 ?', a: "Il n'était pas encore annoncé au 30 octobre 2026. L'écrit a eu lieu le 5 octobre en 2024 et le 22 novembre en 2025." },
     ],
   },
   ar: {
@@ -155,7 +158,7 @@ export default {
     title: 'مباراة التعليم الابتدائي 2026: الشروط والاختبارات والمواعيد',
     description: 'كيف تصبح أستاذا للتعليم الابتدائي: الإجازة، 35 سنة على الأكثر، اختبار كتابي بأسئلة متعددة الاختيارات (المواد، الديداكتيك، علوم التربية)، الشفوي، مواعيد دورات 2024-2025 والتحضير.',
     keywords: ['مباراة التعليم', 'مباراة التعليم الابتدائي', 'أطر الأكاديميات', 'ولوج سلك تأهيل أطر التدريس', 'wolouj.men.gov.ma'],
-    intro: 'لتصبح **أستاذا للتعليم الابتدائي** في التعليم العمومي، عليك أن تنجح بعد الإجازة في **مباراة ولوج سلك تأهيل أطر التدريس** بالمراكز الجهوية لمهن التربية والتكوين، التي كانت تسمى إلى غاية 2023 «مباراة توظيف أطر الأكاديميات». في نونبر 2025 فُتح **3383 مقعدا** بالتعليم الابتدائي، وأُجري الاختبار الكتابي بأسئلة متعددة الاختيارات يوم **22 نونبر 2025**. ولم يُعلن عن دورة 2026 بعد إلى غاية 19 أكتوبر 2026.',
+    intro: 'لتصبح **أستاذا للتعليم الابتدائي** في التعليم العمومي، عليك أن تنجح بعد الإجازة في **مباراة ولوج سلك تأهيل أطر التدريس** بالمراكز الجهوية لمهن التربية والتكوين، التي كانت تسمى إلى غاية 2023 «مباراة توظيف أطر الأكاديميات». في نونبر 2025 فُتح **3383 مقعدا** بالتعليم الابتدائي، وأُجري الاختبار الكتابي بأسئلة متعددة الاختيارات يوم **22 نونبر 2025**. ولم يُعلن عن دورة 2026 بعد إلى غاية 30 أكتوبر 2026.',
     facts: [['الشهادة', 'الإجازة أو ما يعادلها'], ['السن', '35 سنة على الأكثر (دورة 2025)'], ['الاختبارات', 'كتابي بأسئلة متعددة الاختيارات (المواد، الديداكتيك، علوم التربية) ثم شفوي'], ['مقاعد الابتدائي 2025', '3383'], ['آخر اختبار كتابي', '22 نونبر 2025'], ['الترشيح', 'wolouj.men.gov.ma']],
     sections: [
       { id: 'cadre', h: 'من «مباراة أطر الأكاديميات» إلى سلك التأهيل', blocks: [
@@ -213,7 +216,7 @@ export default {
           ['الاختبار الشفوي', '15 – 23 أكتوبر 2024', 'نُشرت لوائح المدعوين يوم 25 يناير 2025', '2 – 11 دجنبر 2025'],
           ['النتائج النهائية', '28 أكتوبر 2024', 'فبراير 2025 (التسجيل بالمراكز يومي 24 و25 فبراير)', '4 يناير 2026 (التسجيل بالمراكز من 6 إلى 9 يناير)'],
         ] } },
-        { p: '**دورة 2026**: لا يوجد إعلان رسمي إلى غاية 19 أكتوبر 2026. أُعلن عن آخر دورتين رئيسيتين في شتنبر (2024) وفي أواخر أكتوبر (2025)، مع اختبار كتابي في أكتوبر أو نونبر. تابع wolouj.men.gov.ma وmen.gov.ma، وكذلك [أجندة المباريات](@/outils/calendrier-concours/).' },
+        { p: '**دورة 2026**: لا يوجد إعلان رسمي إلى غاية 30 أكتوبر 2026. أُعلن عن آخر دورتين رئيسيتين في شتنبر (2024) وفي أواخر أكتوبر (2025)، مع اختبار كتابي في أكتوبر أو نونبر. تابع wolouj.men.gov.ma وmen.gov.ma، وكذلك [أجندة المباريات](@/outils/calendrier-concours/).' },
         { callout: 'info', text: 'أُعلن أن النتائج النهائية لدورة 2025 ستصدر يوم 16 دجنبر، لكنها لم تُنشر إلا يوم **4 يناير 2026** بعد تأخر المداولات.' },
       ] },
       { id: 'preparation', h: 'التحضير', blocks: [
@@ -234,7 +237,7 @@ export default {
       { q: 'ما هو السن الأقصى لاجتياز مباراة التعليم؟', a: '35 سنة في تاريخ المباراة بالنسبة لدورة نونبر 2025، مقابل 30 سنة من 2021 إلى يناير 2025. تحقق من الحد في إعلان دورة 2026.' },
       { q: 'ما هي الاختبارات الكتابية لمباراة التعليم الابتدائي؟', a: 'أسئلة متعددة الاختيارات في أربع مواد (العربية، الفرنسية، الرياضيات، العلوم) وفي ديداكتيكها، واختبار مشترك في علوم التربية (25 سؤالا في ساعة واحدة في نونبر 2025).' },
       { q: 'هل يشترط الحصول على الإجازة في التربية للتدريس بالابتدائي؟', a: 'لا: في دورة يناير 2025 كانت جميع تخصصات الإجازة مقبولة بالنسبة للابتدائي. ويُستثنى حاملو الإجازة في التربية أو خريجو المسالك الجامعية للتربية من الانتقاء الأولي.' },
-      { q: 'متى ستُجرى مباراة التعليم 2026؟', a: 'لم يُعلن عنها بعد إلى غاية 19 أكتوبر 2026. وقد أُجري الاختبار الكتابي يوم 5 أكتوبر في 2024 ويوم 22 نونبر في 2025.' },
+      { q: 'متى ستُجرى مباراة التعليم 2026؟', a: 'لم يُعلن عنها بعد إلى غاية 30 أكتوبر 2026. وقد أُجري الاختبار الكتابي يوم 5 أكتوبر في 2024 ويوم 22 نونبر في 2025.' },
     ],
   },
 };

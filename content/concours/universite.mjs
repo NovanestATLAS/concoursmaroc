@@ -22,7 +22,7 @@ export default {
     facts: [['Sélection', 'Aucune (dans la limite de la série)'], ['Diplômes', 'Licence (bac+3), master, doctorat'], ['Bourse', 'Minhaty (critères sociaux)']],
     sections: [
       { id: 'pourquoi', h: 'Une vraie stratégie, pas un plan B', blocks: [ { ul: ['Les meilleurs étudiants de licence accèdent ensuite à des **cycles d’ingénieur**, des **écoles de commerce** (admissions parallèles) ou aux concours de la fonction publique.', 'Les licences d’excellence et les parcours en anglais se développent dans plusieurs universités.', 'Combinez faculté et préparation de concours (police, gendarmerie, enseignement…).'] } ] },
-      { id: 'inscription', h: 'Inscription', blocks: [ { steps: ['Préinscription en ligne sur la plateforme de l’université de votre région (généralement en juillet).', 'Dépôt du dossier : bac, relevés, CNIE, photos.', 'Demande de bourse sur **Minhaty** (campagne 2026-2027 jusqu’au 18 octobre 2026).'] }, { p: "Voir aussi notre guide [bourse Minhaty et logement](@/guides/bourse-minhaty-logement/)." } ] },
+      { id: 'inscription', h: 'Inscription', blocks: [ { steps: ['Préinscription en ligne sur la plateforme de l’université de votre région (généralement en juillet).', 'Dépôt du dossier : bac, relevés, CNIE, photos.', 'Demande de bourse sur **Minhaty** (campagne 2026-2027 close le 18 octobre 2026 ; la suivante ouvre en général en juillet).'] }, { p: "Voir aussi notre guide [bourse Minhaty et logement](@/guides/bourse-minhaty-logement/)." } ] },
     ],
     faq: [],
   },
@@ -36,7 +36,7 @@ export default {
     facts: [['الانتقاء', 'لا يوجد (في حدود الشعبة)'], ['الشهادات', 'الإجازة (باك+3)، الماستر، الدكتوراه'], ['المنحة', 'منحتي (معايير اجتماعية)']],
     sections: [
       { id: 'pourquoi', h: 'استراتيجية حقيقية، لا خطة بديلة', blocks: [ { ul: ['يلج أفضل طلبة الإجازة بعد ذلك **أسلاك المهندسين** أو **مدارس التجارة** (القبول الموازي) أو مباريات الوظيفة العمومية.', 'تتطور إجازات التميز والمسارات باللغة الإنجليزية في عدة جامعات.', 'اجمع بين الدراسة في الكلية والتحضير للمباريات (الشرطة، الدرك، التعليم…).'] } ] },
-      { id: 'inscription', h: 'التسجيل', blocks: [ { steps: ['التسجيل القبلي عبر الإنترنت على منصة جامعة جهتك (عادة في يوليوز).', 'إيداع الملف: البكالوريا، كشوف النقط، البطاقة الوطنية للتعريف الإلكترونية، الصور.', 'طلب المنحة على **منحتي** (حملة 2026-2027 إلى غاية 18 أكتوبر 2026).'] }, { p: 'اطلع أيضًا على دليلنا حول [منحة منحتي والسكن](@/guides/bourse-minhaty-logement/).' } ] },
+      { id: 'inscription', h: 'التسجيل', blocks: [ { steps: ['التسجيل القبلي عبر الإنترنت على منصة جامعة جهتك (عادة في يوليوز).', 'إيداع الملف: البكالوريا، كشوف النقط، البطاقة الوطنية للتعريف الإلكترونية، الصور.', 'طلب المنحة على **منحتي** (أُغلقت حملة 2026-2027 يوم 18 أكتوبر 2026، وتُفتح الحملة المقبلة عادة في يوليوز).'] }, { p: 'اطلع أيضًا على دليلنا حول [منحة منحتي والسكن](@/guides/bourse-minhaty-logement/).' } ] },
     ],
     faq: [],
   },
