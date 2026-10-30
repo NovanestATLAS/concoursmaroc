@@ -8,6 +8,7 @@ import { SUBJECTS } from '../../../content/taxonomy.mjs';
 import { subjectArt } from '../art.mjs';
 import { renderMath, plainMath, hasMath, KATEX_CSS } from '../math.mjs';
 import fs from 'node:fs';
+import { inlineCard, APP_TXT } from '../app-funnel.mjs';
 
 const SOURCES = JSON.parse(fs.readFileSync(new URL('../../../content/sources.json', import.meta.url), 'utf8'));
 
@@ -141,16 +142,19 @@ export function buildQcmPages(site, all, lang, banks) {
     const crumbs = [[pfx, t(lang, 'home')], [`${pfx}qcm/`, x.qcm], [`${pfx}qcm/${s.slug}/`, s[lang]]];
     const otherLang = lang === 'ar' ? 'fr' : 'ar';
     const otherHas = otherLang === 'fr' ? true : pickLang(s, 'ar') === 'ar';
+    const appCard = inlineCard(site, lang, link, { campaign: 'qcm', h: APP_TXT[lang].qcmH, p: APP_TXT[lang].qcmP });
     const body = html`${breadcrumb(lang, link, crumbs)}
 <div class="container narrow">
 <header class="page-head"><span class="eyebrow">${x.qcm}</span><h1>${x.h1(s)}</h1><p class="lead">${x.lead(list.length, qs.length)}</p>
 <a class="btn no-print" href="${link(pfx + 'entrainement/')}#/setup?subject=${s.id}">${icon('play')} ${x.train}</a></header>
 <p class="callout info">${x.notice}</p>
 ${SCOPE[lang][s.id] ? html`<p class="callout warn">${SCOPE[lang][s.id]}</p>` : ''}
-<ol class="qcm-list">${list.map((q) => {
+<ol class="qcm-list">${list.map((q, qi) => {
   const b = q.l10n[useLang];
   const ql = useLang;
-  return html`<li class="qcm-item" lang="${ql}" dir="${ql === 'ar' ? 'rtl' : 'ltr'}">
+  // card to the Android app after the 10th question (website only)
+  const appLi = qi === 10 && appCard ? html`<li class="qcm-app">${appCard}</li>` : '';
+  return html`${appLi}<li class="qcm-item" lang="${ql}" dir="${ql === 'ar' ? 'rtl' : 'ltr'}">
 <div class="meta"><span class="badge">${DIFF[lang][q.difficulty]}</span>${BADGE.has(q.sourceId) ? html` <span class="badge gold">${BADGE.get(q.sourceId)[lang] || BADGE.get(q.sourceId).fr}</span>` : ''}</div>
 <div class="q" style="white-space:pre-line">${raw(renderMath(b.text, true))}</div>
 <ol class="opts">${b.choices.map((c) => html`<li>${raw(renderMath(c, true))}</li>`)}</ol>

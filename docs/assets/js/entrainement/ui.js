@@ -31,6 +31,7 @@
 
   // ---------------------------------------------------------------- icons
   var ICONS = {
+    download: 'M11 3h2v9.2l3.6-3.6L18 10l-6 6-6-6 1.4-1.4 3.6 3.6zM5 18h14v2H5z',
     play: 'M8 5v14l11-7z',
     resume: 'M6 4h3v16H6zm5 0 10 8-10 8z',
     clock: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m1 5h-2v6l5 3 1-1.7-4-2.3z',
@@ -810,6 +811,28 @@
     });
   }
 
+  /* Website only: card to the Android app under the results (link and texts
+     in the data-app-* attributes of #cm-app, set by the page while the app is
+     on Google Play; nothing in the app itself nor on iPhone/iPad). The link
+     carries its campaign; site.js sends the GA4 click event (data-app-cta). */
+  function appPromo(el) {
+    var host = document.getElementById('cm-app');
+    var url = host && host.getAttribute('data-app-url');
+    var d = document.documentElement;
+    if (!url || d.hasAttribute('data-app') || d.classList.contains('is-ios')) return;
+    var btn = U.el('a', { class: 'btn sm store-btn play-only', href: url, rel: 'noopener', 'data-app-cta': 'resultats', 'data-google-vignette': 'false' });
+    btn.appendChild(icon('download'));
+    btn.appendChild(U.el('span', { text: host.getAttribute('data-app-btn') }));
+    el.appendChild(U.el('aside', { class: 'app-card inline-app play-only' }, [
+      U.el('img', { class: 'app-ico', src: host.getAttribute('data-app-icon'), width: '56', height: '56', alt: '', loading: 'lazy' }),
+      U.el('div', { class: 'ia-body' }, [
+        U.el('h3', { text: host.getAttribute('data-app-h') }),
+        U.el('p', { text: host.getAttribute('data-app-p') }),
+        U.el('div', { class: 'btn-row' }, [btn])
+      ])
+    ]));
+  }
+
   // ================================================================ RESULTS
   UI.renderResults = function () {
     var el = screen();
@@ -884,6 +907,7 @@
     actions.appendChild(shareBtn);
     actions.appendChild(U.el('button', { class: 'btn ghost', type: 'button', onclick: function () { app.go('home'); } }, [t('results.backHome')]));
     el.appendChild(actions);
+    appPromo(el);
 
     var review = U.el('div', { class: 'card' });
     review.appendChild(U.el('h3', { text: t('results.review') }));

@@ -8,6 +8,7 @@ import { guidePath } from './concours.mjs';
 import { BAC, GROUPS } from '../../../content/taxonomy.mjs';
 import { CALENDAR } from '../../../content/calendar.mjs';
 import { hue } from '../art.mjs';
+import { appLive, asideCard, inlineCard, APP_TXT } from '../app-funnel.mjs';
 
 const TYPE = {
   fr: { inscription: 'Inscriptions', ecrit: 'Épreuves', resultats: 'Résultats', deadline: 'Date limite', estimation: 'Estimation', annonce: 'Annoncé', officiel: 'Officiel' },
@@ -359,19 +360,22 @@ export function buildToolsPages(site, all, lang) {
       extra = html`<div id="cal-tool">
 <div class="filters no-print"><button class="btn sm" type="button" id="ics-all">${icon('calendar')} ${lang === 'ar' ? 'تحميل كل التواريخ (.ics)' : 'Exporter toutes les dates (.ics)'}</button></div>
 <h2>${lang === 'ar' ? 'المواعيد القادمة' : 'Prochaines échéances confirmées'}</h2><ul class="deadlines" data-deadlines data-ics>${upcoming.map((e) => deadlineItem(e, lang, link, all))}</ul>
+${inlineCard(site, lang, link, { campaign: 'calendrier', h: APP_TXT[lang].calH, p: APP_TXT[lang].calP })}
 <h2>${lang === 'ar' ? 'الفترات المتوقعة لدورة 2027' : 'Périodes attendues pour la session 2027 (estimations)'}</h2><ul class="deadlines" data-deadlines data-ics>${est.map((e) => deadlineItem(e, lang, link, all))}</ul>
 <h2>${lang === 'ar' ? 'مرجعيات دورة 2026' : 'Repères de la session 2026'}</h2><ul class="deadlines" data-deadlines>${past.map((e) => deadlineItem(e, lang, link, all))}</ul>
 </div>`;
     }
     const body = html`${breadcrumb(lang, link, crumbs)}
 <div class="container">
-<header class="page-head"><span class="eyebrow">${x.tools}</span><h1>${meta.h1}</h1><p class="lead">${meta.lead}</p>
-<p class="updated"><span>${t(lang, 'updated')} ${formatDate(site.updated, lang)}</span></p></header>
+<header class="page-head${appLive(site) ? ' with-app' : ''}"><span class="eyebrow">${x.tools}</span><h1>${meta.h1}</h1><p class="lead">${meta.lead}</p>
+<p class="updated"><span>${t(lang, 'updated')} ${formatDate(site.updated, lang)}</span></p>
+${asideCard(site, lang, link, tool === 'calendrier-concours' ? { campaign: 'outil-entete', h: APP_TXT[lang].calH, p: APP_TXT[lang].calP, cls: 'head-app' } : { campaign: 'outil-entete', cls: 'head-app' })}</header>
 <div class="layout tool-layout"><div class="prose" style="max-width:none">
 <noscript><div class="callout warn">${x.noscript}</div></noscript>
 ${widget(tool, lang, all, link)}
 ${extra}
 ${renderContent(content.body)}
+${tool === 'calendrier-concours' ? '' : inlineCard(site, lang, link, { campaign: `outil-${tool}`, mobileOnly: true, qr: false })}
 ${content.faq && content.faq.length ? html`<section class="faq"><h2>${t(lang, 'faq')}</h2>${content.faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${inline(f.a)}</p></div></details>`)}</section>` : ''}
 <div class="callout warn">${t(lang, 'disclaimerShort')}</div>
 </div>

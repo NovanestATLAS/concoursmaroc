@@ -6,6 +6,7 @@
 import { html, raw, inline, esc } from './html.mjs';
 import { icon } from './icons.mjs';
 import { BAC_SHORT, LEVELS, DEFAULT_LEVEL } from '../../content/taxonomy.mjs';
+import { practiceLine } from './app-funnel.mjs';
 
 export function makeText(ctx) {
   const prefix = ctx.lang === 'ar' ? 'ar/' : '';
@@ -86,7 +87,8 @@ ${s.note ? html`<p class="muted"><small>${T(s.note[ctx.lang] || s.note.fr)}</sma
 <h3>${lab.practiceTitle}</h3><p>${lab.practiceText}</p>
 ${ctx.concours.practice ? html`<p class="muted"><small>${levelText(ctx.concours.practice, ctx.lang, lab)}</small></p>` : ''}
 <div class="btn-row"><a class="btn" href="${base}?concours=${id}">${icon('play')} ${lab.practiceBtn}</a>
-<a class="btn ghost" href="${base}?concours=${id}#/mock">${icon('clock')} ${lab.mockBtn}</a></div></div>`;
+<a class="btn ghost" href="${base}?concours=${id}#/mock">${icon('clock')} ${lab.mockBtn}</a></div>
+${ctx.site ? practiceLine(ctx.site, ctx.lang) : ''}</div>`;
     }
     if (b.html) return raw(b.html);
     return '';

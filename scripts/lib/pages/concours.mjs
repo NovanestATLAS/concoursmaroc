@@ -6,6 +6,7 @@ import { renderBlocks, makeText } from '../blocks.mjs';
 import { t, formatDate } from '../strings.mjs';
 import { GROUPS, BAC, BAC_SHORT, SUBJECTS, LEVELS, DEFAULT_LEVEL } from '../../../content/taxonomy.mjs';
 import { CALENDAR } from '../../../content/calendar.mjs';
+import { appLive, asideCard, inlineCard, APP_TXT } from '../app-funnel.mjs';
 
 export function guidePath(c, lang) {
   return `${lang === 'ar' ? 'ar/' : ''}concours/${c.id}/`;
@@ -172,7 +173,7 @@ ${c.practice ? html`<div class="cta-box no-print"><h3>${x.practiceAside}</h3><p>
 
   const body = html`${breadcrumb(lang, link, crumbs)}
 <article class="container">
-<header class="page-head">
+<header class="page-head${appLive(site) ? ' with-app' : ''}">
 <span class="eyebrow">${(GROUPS.find((g) => g.id === c.group) || {})[lang] || ''} · ${levelLabel(c, lang)}</span>
 <h1>${d.title}</h1>
 <p class="lead">${T(d.intro)}</p>
@@ -180,12 +181,14 @@ ${c.practice ? html`<div class="cta-box no-print"><h3>${x.practiceAside}</h3><p>
 <button class="btn sm quiet no-print" type="button" data-print>${icon('print')} ${x.print}</button>
 <button class="btn sm quiet no-print" type="button" data-share>${icon('share')} ${x.share}</button></p>
 ${d.facts && d.facts.length ? html`<div class="facts">${d.facts.map(([k, v]) => html`<div class="fact"><div class="f-lab">${k}</div><div class="f-val">${T(v)}</div></div>`)}</div>` : ''}
+${asideCard(site, lang, link, { campaign: 'fiche-entete', h: APP_TXT[lang].ficheH(d.short), p: APP_TXT[lang].ficheP, cls: 'head-app' })}
 </header>
 <div class="layout">
 <div class="prose">
 <div class="callout warn"><strong class="c-title">${lang === 'ar' ? 'تنبيه' : 'À vérifier'}</strong>${t(lang, 'disclaimerShort')}</div>
 ${sections.map((s) => html`<section id="${s.id}"><h2>${s.h}</h2>${renderBlocks(s.blocks, ctx)}</section>`)}
 ${briefSection(c, lang, link, banks)}
+${inlineCard(site, lang, link, { campaign: 'fiche-contenu', h: APP_TXT[lang].ficheH(d.short), p: APP_TXT[lang].ficheP, mobileOnly: true, qr: false })}
 ${d.faq && d.faq.length ? html`<section id="faq" class="faq"><h2>${t(lang, 'faq')}</h2>${d.faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${T(f.a)}</p></div></details>`)}</section>` : ''}
 <section id="sources"><h2>${t(lang, 'sources')}</h2>
 <p class="muted"><small>${x.sourcesIntro}</small></p>
@@ -257,6 +260,7 @@ ${GROUPS.map((g) => {
   return html`<section class="section" data-group-section="${g.id}" style="padding-top:8px"><div class="section-head"><h2 id="${g.id}" class="group-title" data-group="${g.id}"><span class="g-ico">${icon(g.icon)}</span><span>${g[lang + 'Long']}</span><span class="g-count">${items.length}</span></h2></div><div class="grid cols-3">${items.map((c) => concoursCard(c, lang, link))}</div></section>`;
 })}
 <p class="muted" id="f-none" hidden>${x.none}</p>
+${inlineCard(site, lang, link, { campaign: 'annuaire' })}
 </div>`;
   const jsonld = [
     breadcrumbLd(site, crumbs),

@@ -4,7 +4,9 @@ Guide gratuit et bilingue (français / arabe) des concours et de l'orientation a
 conditions d'accès, seuils, épreuves, calendrier, QCM corrigés, examens blancs et outils pratiques.
 
 Site statique, sans base de données ni serveur : il est hébergé gratuitement par **GitHub Pages**.
-Le même contenu est aussi empaqueté en **application Android** (Apache Cordova) : voir plus bas.
+Le même contenu est aussi empaqueté en **application Android** (Apache Cordova), publiée sur Google Play :
+<https://play.google.com/store/apps/details?id=com.novanest.concoursmaroc>. Le site sert d'entonnoir vers
+l'application : voir « Entonnoir vers l'application » plus bas.
 
 ## Ce que contient le site
 
@@ -45,6 +47,32 @@ Le domaine `maroc-concour.com` est enregistré chez Spaceship.
   (de quelques minutes à 24 h après la configuration DNS).
 
 Pour changer de domaine plus tard : modifiez ces deux valeurs, `npm run build`, commit, puis adaptez les DNS.
+
+## Entonnoir vers l'application (Google Play)
+
+Avec `androidApp: { status: 'live', … }` dans `content/site.mjs`, toutes les pages du **site** (jamais
+l'application elle-même) mènent à la fiche Google Play :
+
+| Emplacement | Campagne (`utm_campaign`) |
+|---|---|
+| Bouton « Télécharger l'app » de l'en-tête (premier lien du menu sur téléphone) | `header` |
+| Bandeau Android au-dessus de l'en-tête (téléphones Android, fermé 14 jours par ×) | `banner` |
+| Accueil : pastille « Nouveau » du hero (60 jours après `since`), bouton du hero, bandeau avec capture et code QR, question de la FAQ | `accueil-hero`, `accueil-bandeau` |
+| Fiches concours : carte à droite du titre (ordinateur, avec code QR), ligne sous « Entraînez-vous maintenant », carte après « En bref » (téléphone) | `fiche-entete`, `fiche-entrainement`, `fiche-contenu` |
+| Guides, outils, calendrier (« Ne ratez plus aucune date »), annuaire des concours, pages QCM (après la 10e question) | `guide-entete`, `guide-contenu`, `outil-entete`, `outil-…`, `calendrier`, `annuaire`, `qcm` |
+| Entraînement : bandeau sous l'entraînement et carte sur l'écran de résultats | `entrainement`, `resultats` |
+| Page `application/` (présentation, captures, code QR, FAQ) et pied de page | `page-application`, `page-application-bas`, `footer` |
+| Code QR (`src/img/app/qr-google-play.svg`) | `qr-code` (`utm_medium=qr`) |
+
+- Chaque lien porte `referrer=utm_source=maroc-concour.com&utm_medium=website&utm_campaign=…&utm_content=fr|ar` :
+  les installations par campagne se lisent dans la Play Console (rapports d'acquisition).
+- Google Analytics 4 reçoit l'événement **`app_store_click`** (`placement`, `page_lang`) à chaque clic.
+- Les liens sont masqués sur iPhone et iPad, et ne déclenchent pas d'annonce « vignette » AdSense.
+- Le manifeste web préfère l'application (`prefer_related_applications`) : Chrome propose l'application de
+  Google Play plutôt que d'installer le site.
+- Textes et blocs : `scripts/lib/app-funnel.mjs` ; page de présentation : `scripts/lib/pages/app-landing.mjs`.
+- Images (icône, captures, code QR, image de partage) : `python3 scripts/app-assets.py`, à relancer seulement
+  si le zip Google Play ou le nom du paquet change (Pillow, OpenCV et Playwright ; inutile pour construire le site).
 
 ## Google Search Console, Analytics et AdSense
 
@@ -116,6 +144,8 @@ content/
 scripts/              générateur du site (build.mjs), de l'appli (build-app.mjs), vérifications (check.mjs), images
 src/                  CSS, JavaScript (entraînement, outils), textes de l'application, images
 src/app/              coquille de l'application Android (routeur, bouton Retour, synthèse vocale, AdMob)
+src/img/app/          icône, captures et code QR de l'application, pour l'entonnoir du site
+scripts/lib/app-funnel.mjs   blocs du site qui mènent à Google Play (en-tête, bandeau, cartes, accueil)
 docs/                 site généré, publié par GitHub Pages (ne pas modifier à la main)
 cordova/              www de l'application (zip), exemple de config.xml, notice Android, icônes (res/), fiche et zip Google Play
 ```

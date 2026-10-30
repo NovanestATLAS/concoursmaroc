@@ -7,6 +7,7 @@ import { linker, breadcrumb, breadcrumbLd, faqLd } from '../layout.mjs';
 import { parseFrontMatter, markdown } from '../markdown.mjs';
 import { t, formatDate } from '../strings.mjs';
 import { hue } from '../art.mjs';
+import { appLive, asideCard, inlineCard } from '../app-funnel.mjs';
 
 const TXT = {
   fr: { guides: 'Guides', h1: 'Guides pratiques pour réussir son orientation et ses concours', lead: 'Méthodes, démarches et conseils concrets, de la candidature au jour du concours.',
@@ -45,10 +46,12 @@ export async function buildGuidesPages(site, all, lang, root) {
     const updated = g.meta.updated || site.updated;
     const body = html`${breadcrumb(lang, link, crumbs)}
 <article class="container">
-<header class="page-head"><span class="eyebrow">${x.guides}</span><h1>${g.meta.h1 || g.meta.title}</h1>
+<header class="page-head${appLive(site) ? ' with-app' : ''}"><span class="eyebrow">${x.guides}</span><h1>${g.meta.h1 || g.meta.title}</h1>
 ${g.meta.lead ? html`<p class="lead">${g.meta.lead}</p>` : ''}
-<p class="updated"><span>${t(lang, 'updated')} ${formatDate(updated, lang)}</span></p></header>
-<div class="layout"><div class="prose">${raw(md.html)}</div>
+<p class="updated"><span>${t(lang, 'updated')} ${formatDate(updated, lang)}</span></p>
+${asideCard(site, lang, link, { campaign: 'guide-entete', cls: 'head-app' })}</header>
+<div class="layout"><div class="prose">${raw(md.html)}
+${inlineCard(site, lang, link, { campaign: 'guide-contenu', mobileOnly: true, qr: false })}</div>
 <aside><div class="aside-sticky">${md.toc.length > 2 ? html`<nav class="toc"><details open><summary><strong>${t(lang, 'toc')}</strong></summary><ol>${md.toc.map((h) => html`<li><a href="#${h.id}">${h.text.replace(/\*\*/g, '')}</a></li>`)}</ol></details></nav>` : ''}
 <div class="cta-box no-print"><h3>${lang === 'ar' ? 'كل المباريات' : 'Tous les concours'}</h3><p>${lang === 'ar' ? 'الشروط والعتبات والاختبارات لكل مباراة.' : 'Conditions, seuils et épreuves de chaque concours.'}</p><a class="btn sm" href="${link(pfx + 'concours/')}">${t(lang, 'allConcours')}</a></div>
 </div></aside></div></article>`;

@@ -10,6 +10,7 @@ import { CALENDAR } from '../../../content/calendar.mjs';
 import { deadlineItem } from './tools.mjs';
 import { hue, subjectArt } from '../art.mjs';
 import { appBadge } from './app-landing.mjs';
+import { appLive, heroPill, appBand, storeButton, appJsonLd, APP_TXT } from '../app-funnel.mjs';
 
 const TXT = {
   fr: {
@@ -127,18 +128,23 @@ export function buildHome(site, all, lang, banks) {
   const popular = POPULAR.map((id) => all.find((c) => c.id === id)).filter((c) => c && c[lang]);
   const today = site.updated;
   const upcoming = CALENDAR.filter((e) => e.date && e.date >= today).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 4);
+  // Funnel to the Android app (website only): pill and button in the hero,
+  // band under "Par où commencer ?", question in the FAQ, structured data.
+  const app = appLive(site);
+  const faq = app ? [x.faq[0], { q: APP_TXT[lang].faqQ, a: APP_TXT[lang].faqA }, ...x.faq.slice(1)] : x.faq;
 
   const sec = (key, h2, extra = '') => html`<div class="section-head"><div><span class="eyebrow">${x.eyebrows[key]}</span><h2>${h2}</h2></div>${extra}</div>`;
   const more = (href, label) => html`<a class="more-link" href="${link(href)}">${label} ${icon('arrow')}</a>`;
   const body = html`<section class="hero"><div class="container hero-grid">
 <div>
+${heroPill(site, lang, link)}
 <span class="eyebrow">${t(lang, 'tagline')}</span>
 <h1>${x.h1Parts[0]} <span class="hl">${x.h1Parts[1]}</span></h1>
 <p class="lead">${x.lead}</p>
 <div class="big-search" role="search">${icon('search')}<label class="visually-hidden" for="home-search">${t(lang, 'search')}</label><input id="home-search" type="search" autocomplete="off" placeholder="${t(lang, 'searchPlaceholder')}" data-search-input><ul class="search-results" data-search-results></ul></div>
-<div class="btn-row"><a class="btn" href="${link(pfx + 'outils/orientation-apres-bac/')}">${icon('compass')} ${x.ctaFind}</a><a class="btn ghost" href="${link(pfx + 'entrainement/')}">${icon('play')} ${x.ctaPractice}</a></div>
+<div class="btn-row"><a class="btn" href="${link(pfx + 'outils/orientation-apres-bac/')}">${icon('compass')} ${x.ctaFind}</a><a class="btn ghost" href="${link(pfx + 'entrainement/')}">${icon('play')} ${x.ctaPractice}</a>${app ? storeButton(site, lang, 'accueil-hero', { cls: 'btn alt' }) : ''}</div>
 <ul class="stat-row">${x.stats(nc, nq).map(([n, l]) => html`<li><b>${n}</b> ${l}</li>`)}</ul>
-${appBadge(site, lang, link)}
+${app ? '' : appBadge(site, lang, link)}
 </div>
 <div class="hero-art">
 <h2 class="mt-0" style="font-size:1.1rem">${icon('calendar')} ${x.upcoming}</h2>
@@ -153,6 +159,7 @@ ${appBadge(site, lang, link)}
 ${sec('start', x.start)}
 <div class="grid cols-4">${x.paths.map(([ic, h, p, href], i) => html`<a class="card path-card ${hue([1, 0, 4, 2][i])}" href="${link(pfx + href)}"><div class="card-top"><span class="card-ico">${icon(ic)}</span><span class="card-title">${h}</span></div><p class="card-sub">${p}</p></a>`)}</div>
 </div></section>
+${appBand(site, lang, link, { campaign: 'accueil-bandeau', nc, nq: lang === 'ar' ? nq : nq.toLocaleString('fr-FR').replace(/\u202f/g, '\u00a0') })}
 
 <section class="section" style="padding-top:8px"><div class="container">
 ${sec('popular', x.popular, more(pfx + 'concours/', x.all))}
@@ -194,7 +201,7 @@ ${sec('guides', x.guidesH, more(pfx + 'guides/', lang === 'ar' ? 'كل الأد�
 <section class="section" style="padding-top:12px"><div class="container narrow faq">
 <span class="eyebrow">${x.eyebrows.faq}</span>
 <h2 class="mt-0">${x.faqH}</h2>
-${x.faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${f.a}</p></div></details>`)}
+${faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${f.a}</p></div></details>`)}
 <div class="callout warn" style="margin-top:18px">${t(lang, 'disclaimerShort')}</div>
 </div></section>`;
 
@@ -207,7 +214,8 @@ ${x.faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>
       '@context': 'https://schema.org', '@type': 'Organization', name: 'Concours Maroc', url: `${site.siteUrl}/`,
       logo: `${site.siteUrl}/assets/img/concours-maroc-logo-512.png`,
     },
-    faqLd(x.faq, lang),
+    faqLd(faq, lang),
+    app ? appJsonLd(site, lang) : null,
   ];
   return {
     path, lang, title: x.title, titleFull: x.title, description: x.desc, alternate: lang === 'ar' ? '' : 'ar/',

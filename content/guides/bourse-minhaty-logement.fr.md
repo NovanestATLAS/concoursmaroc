@@ -1,6 +1,6 @@
 ---
 title: Bourse Minhaty 2026-2027 : conditions, RSU, dates, logement universitaire
-description: Bourse d'études supérieures Minhaty : conditions (bac 2026, moins de 26 ans, RSU), dates de dépôt jusqu'au 18 octobre 2026, démarches, cités universitaires de l'ONOUSC et couverture médicale.
+description: Bourse Minhaty : conditions (bac 2026, moins de 26 ans, RSU), campagne 2026-2027 close le 18 octobre 2026, suivi de la demande, cités de l'ONOUSC et couverture médicale.
 h1: Bourse Minhaty, logement et aides pour les étudiants
 short: Bourse Minhaty et logement
 lead: Comment demander la bourse d'études supérieures sur Minhaty, ce que change l'inscription au RSU, et comment candidater à une cité universitaire.
@@ -11,7 +11,7 @@ keywords: [minhaty, bourse minhaty 2026, minhaty.ma, bourse étudiant maroc, RSU
 
 ## Minhaty en bref
 
-[Minhaty](https://www.minhaty.ma) est la plateforme nationale de demande de **bourse d'études supérieures**. Pour l'année universitaire **2026-2027**, la campagne destinée aux bacheliers 2026 est ouverte **jusqu'au 18 octobre 2026**, selon les informations relayées par la presse.
+[Minhaty](https://www.minhaty.ma) est la plateforme nationale de demande de **bourse d'études supérieures**. Pour l'année universitaire **2026-2027**, la campagne destinée aux bacheliers 2026 s'est tenue **du 15 juillet au 18 octobre 2026**, selon les informations relayées par la presse : elle est désormais **close**. Si vous avez déposé une demande, suivez son traitement dans votre espace sur minhaty.ma. La campagne suivante, pour les bacheliers 2027, ouvre en général en **juillet**.
 
 ::: info
 Les dates et les conditions sont fixées chaque année par l'administration. En cas de doute, la référence est l'information publiée sur minhaty.ma.
@@ -52,8 +52,8 @@ Les étudiants peuvent bénéficier d'une **assurance maladie** (AMO). Ses modal
 
 ## Questions fréquentes
 
-### Quelle est la date limite de demande de bourse pour 2026-2027 ?
-Selon les informations relayées par la presse, les demandes des bacheliers 2026 sont reçues sur Minhaty jusqu'au 18 octobre 2026.
+### Quelle était la date limite de demande de bourse pour 2026-2027 ?
+Selon les informations relayées par la presse, les demandes des bacheliers 2026 ont été reçues sur Minhaty du 15 juillet au 18 octobre 2026. La campagne est close ; celle des bacheliers 2027 ouvre en général en juillet.
 
 ### Faut-il être inscrit au RSU pour obtenir la bourse ?
 Oui : l'inscription au Registre social unifié de l'étudiant et de tous les membres de son foyer fait partie des conditions annoncées pour 2026-2027.

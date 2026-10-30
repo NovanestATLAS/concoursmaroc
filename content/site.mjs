@@ -14,7 +14,7 @@ export default {
   defaultLang: 'fr',
   languages: ['fr', 'ar'],
   // Editorial date shown on pages and used as <lastmod> in the sitemap.
-  updated: '2026-10-19',
+  updated: '2026-10-30',
   // Academic year the guides were last checked against.
   session: '2026',
   nextSession: '2027',
@@ -27,8 +27,12 @@ export default {
   contactKey: 'd5dd4775-3f49-4699-8e24-f912ad749d75',
   themeColor: '#101a3d',
   // Android app: 'soon' shows "bientôt sur Google Play" (application/ page,
-  // home page and footer badge); 'live' turns them into Google Play links.
-  androidApp: { status: 'soon', id: 'com.novanest.concoursmaroc' },
+  // home page and footer badge); 'live' turns on the whole funnel to Google
+  // Play (header button, Android banner, home band, cards on the pages, end
+  // of quiz), see scripts/lib/pages/app-landing.mjs. Every store link carries
+  // a campaign (utm_campaign = where it was clicked), read in the Play
+  // Console (acquisition reports) and sent to GA4 as "app_store_click".
+  androidApp: { status: 'live', id: 'com.novanest.concoursmaroc', since: '2026-10-30' },
   // IndexNow (Bing, Yandex, Seznam, Naver…): the build publishes <key>.txt and
   // .github/workflows/indexnow.yml submits the pages changed by each push.
   indexNowKey: '6255d51ee7beda0ba731f342d1450979',

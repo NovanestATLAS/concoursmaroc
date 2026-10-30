@@ -4,15 +4,12 @@
  *   - 2027 entries are estimates based on the usual period (month only,
  *     confidence: 'estimation') and must be confirmed by the official notice.
  * The calendar page computes "upcoming / past" in the browser, so the page
- * stays correct without rebuilding. Last checked against sources: 2026-10-19. */
+ * stays correct without rebuilding. Last checked against sources: 2026-10-30
+ * (CRMEF 2026 still not announced on men.gov.ma; DGSN, Forces Auxiliaires and
+ * Protection civile dates confirmed; Minhaty closed on 18 October; bac 2027
+ * dates fixed by ministerial decision 047.26 of 3 July 2026). */
 export const CALENDAR = [
   // ---------- upcoming at the time of writing (autumn 2026) ----------
-  { id: 'fa-mokhazni-2026-insc', concours: 'forces-auxiliaires', type: 'deadline', date: '2026-10-16', confidence: 'annonce',
-    fr: 'Forces Auxiliaires (mokhaznis, promotion 2027) : date limite d’inscription', ar: 'القوات المساعدة (المخازنية، فوج 2027): آخر أجل للتسجيل',
-    source: { label: 'Alwadifa-Maroc — avis des Inspections des Forces Auxiliaires', url: 'https://alwadifa-maroc.com/offre/show/id/23624' } },
-  { id: 'minhaty-2026', concours: null, guide: 'guides/bourse-minhaty-logement/', type: 'deadline', start: '2026-07-15', date: '2026-10-18', confidence: 'annonce',
-    fr: 'Bourse Minhaty 2026-2027 : fin des candidatures', ar: 'منحتي 2026-2027: نهاية الترشيحات',
-    source: { label: 'Le Matin — demandes de bourse sur Minhaty (15 juillet – 18 octobre 2026)', url: 'https://lematin.ma/enseignement/bac-2026-les-demandes-de-bourse-sur-minhaty-sont-ouvertes/356597' } },
   { id: 'pc-officiers-2026-insc', concours: 'protection-civile', type: 'deadline', date: '2026-10-31', confidence: 'officiel',
     fr: 'Protection civile : 50 élèves officiers (licence), date limite de candidature', ar: 'الوقاية المدنية: 50 تلميذًا ضابطًا (الإجازة)، آخر أجل للترشيح',
     source: { label: 'emploi-public.ma — Élèves officiers, échelle 10 (C44132/26)', url: 'https://www.emploi-public.ma/fr/concours/details/0bc3b58e-cfd7-466e-9023-6faf53a94738' } },
@@ -27,11 +24,20 @@ export const CALENDAR = [
     source: { label: 'iJob — Concours police 2026 : l’écrit fixé au dimanche 22 novembre', url: 'https://ijob.ma/actualite/concours-police-2026-ecrit-22-novembre/' } },
   { id: 'dgsn-2026-ecrit-cp', concours: 'police-dgsn', type: 'ecrit', date: '2026-11-29', confidence: 'annonce',
     fr: 'Police (DGSN) : écrit des commissaires principaux (97 postes)', ar: 'الأمن الوطني: الاختبار الكتابي للعمداء الممتازين (97 منصبًا)',
-    source: { label: 'iJob — Concours police 2026 : l’écrit fixé au dimanche 22 novembre', url: 'https://ijob.ma/actualite/concours-police-2026-ecrit-22-novembre/' } },
+    source: { label: 'Alwadifa-Maroc — DGSN : 97 commissaires de police principaux, concours le 29 novembre 2026', url: 'https://alwadifa-maroc.com/offre/show/id/23572' } },
+  { id: 'bac-2027-regional', concours: null, guide: 'outils/calcul-note-bac/', type: 'ecrit', start: '2027-05-28', date: '2027-05-29', confidence: 'annonce',
+    fr: 'Bac 2027 : examen régional de 1re année bac (session normale, candidats scolarisés et libres)', ar: 'بكالوريا 2027: الامتحان الجهوي للسنة الأولى بكالوريا (الدورة العادية، الممدرسون والأحرار)',
+    source: { label: 'Madrasty — Bac 2027 : dates fixées par la décision ministérielle n° 047.26 du 3 juillet 2026', url: 'https://madrasty.ma/dates-bac-2027-examen-regional-national-resultats/' } },
+  { id: 'bac-2027', concours: null, guide: 'outils/calcul-note-bac/', type: 'ecrit', start: '2027-06-01', date: '2027-06-03', confidence: 'annonce',
+    fr: 'Baccalauréat 2027 : examen national de 2e année bac (session normale)', ar: 'البكالوريا 2027: الامتحان الوطني للسنة الثانية بكالوريا (الدورة العادية)',
+    source: { label: 'Madrasty — Bac 2027 : dates fixées par la décision ministérielle n° 047.26 du 3 juillet 2026', url: 'https://madrasty.ma/dates-bac-2027-examen-regional-national-resultats/' } },
+  { id: 'bac-2027-resultats', concours: null, guide: 'outils/calcul-note-bac/', type: 'resultats', date: '2027-06-19', confidence: 'annonce',
+    fr: 'Baccalauréat 2027 : résultats de la session normale (rattrapage du 1er au 3 juillet, résultats le 10 juillet)', ar: 'البكالوريا 2027: نتائج الدورة العادية (الدورة الاستدراكية من 1 إلى 3 يوليوز، والنتائج يوم 10 يوليوز)',
+    source: { label: 'Madrasty — Bac 2027 : dates fixées par la décision ministérielle n° 047.26 du 3 juillet 2026', url: 'https://madrasty.ma/dates-bac-2027-examen-regional-national-resultats/' } },
 
   // ---------- 2027 estimates (usual period) ----------
   { id: 'enseignants-2026-insc', concours: 'enseignants-aref', type: 'inscription', month: '2026-11', confidence: 'estimation',
-    fr: 'Concours de l’enseignement (CRMEF) 2026 : annonce et candidatures sur wolouj.men.gov.ma (attendues fin octobre–novembre)', ar: 'مباراة التعليم (ولوج سلك تأهيل أطر التدريس) 2026: الإعلان والترشيح عبر wolouj.men.gov.ma (مرتقبان أواخر أكتوبر–نونبر)' },
+    fr: 'Concours de l’enseignement (CRMEF) 2026 : annonce et candidatures sur wolouj.men.gov.ma (pas encore publiées au 30 octobre 2026 ; en 2025, candidatures du 30 octobre au 13 novembre)', ar: 'مباراة التعليم (ولوج سلك تأهيل أطر التدريس) 2026: الإعلان والترشيح عبر wolouj.men.gov.ma (لم يُنشرا بعد إلى غاية 30 أكتوبر 2026؛ سنة 2025، كان الترشيح من 30 أكتوبر إلى 13 نونبر)' },
   { id: 'enseignants-2026-ecrit', concours: 'enseignants-aref', type: 'ecrit', month: '2026-12', confidence: 'estimation',
     fr: 'Concours de l’enseignement (CRMEF) 2026 : épreuves écrites (en 2025, neuf jours après la clôture des candidatures)', ar: 'مباراة التعليم 2026: الاختبارات الكتابية (سنة 2025، بعد تسعة أيام من إغلاق الترشيح)' },
   { id: 'cnc-2027', concours: 'cnc', type: 'inscription', month: '2027-02', confidence: 'estimation',
@@ -46,8 +52,6 @@ export const CALENDAR = [
     fr: 'ARM, École Royale Navale, santé militaire : candidatures (avril–mai)', ar: 'الأكاديمية العسكرية، البحرية، الصحة العسكرية: الترشيحات (أبريل–ماي)' },
   { id: 'ofppt-2027', concours: 'ofppt', type: 'inscription', month: '2027-05', confidence: 'estimation',
     fr: 'OFPPT : inscriptions sur MyWay (mai–juillet)', ar: 'التكوين المهني: التسجيل عبر MyWay (ماي–يوليوز)' },
-  { id: 'bac-2027', concours: null, guide: 'outils/calcul-note-bac/', type: 'ecrit', month: '2027-06', confidence: 'estimation',
-    fr: 'Baccalauréat 2027 : examen national (juin)', ar: 'البكالوريا 2027: الامتحان الوطني (يونيو)' },
   { id: 'cpge-2027', concours: 'cpge', type: 'inscription', month: '2027-06', confidence: 'estimation',
     fr: 'CPGE : candidatures en ligne (juin)', ar: 'الأقسام التحضيرية: الترشيح الإلكتروني (يونيو)' },
   { id: 'iscae-2027', concours: 'iscae', type: 'inscription', month: '2027-06', confidence: 'estimation',
@@ -162,6 +166,12 @@ export const CALENDAR = [
   { id: 'dgsn-2026-insc', concours: 'police-dgsn', type: 'inscription', start: '2026-09-07', date: '2026-09-22', confidence: 'annonce',
     fr: 'Police (DGSN) 2026 : inscriptions (8 427 postes)', ar: 'الأمن الوطني 2026: التسجيل (8427 منصبًا)',
     source: { label: 'Wadifa-info — Concours DGSN 2026 : 8 427 postes', url: 'https://www.wadifa-info.com/fr/concours-dgsn-gov-ma' } },
+  { id: 'fa-mokhazni-2026-insc', concours: 'forces-auxiliaires', type: 'deadline', date: '2026-10-16', confidence: 'annonce',
+    fr: 'Forces Auxiliaires (mokhaznis, promotion 2027) : date limite d’inscription', ar: 'القوات المساعدة (المخازنية، فوج 2027): آخر أجل للتسجيل',
+    source: { label: 'Alwadifa-Maroc — avis des Inspections des Forces Auxiliaires', url: 'https://alwadifa-maroc.com/offre/show/id/23624' } },
+  { id: 'minhaty-2026', concours: null, guide: 'guides/bourse-minhaty-logement/', type: 'deadline', start: '2026-07-15', date: '2026-10-18', confidence: 'annonce',
+    fr: 'Bourse Minhaty 2026-2027 : fin des candidatures', ar: 'منحتي 2026-2027: نهاية الترشيحات',
+    source: { label: 'Le Matin — demandes de bourse sur Minhaty (15 juillet – 18 octobre 2026)', url: 'https://lematin.ma/enseignement/bac-2026-les-demandes-de-bourse-sur-minhaty-sont-ouvertes/356597' } },
   { id: 'douane-2026-ecrit', concours: 'douane', type: 'ecrit', date: '2026-09-20', confidence: 'annonce',
     fr: 'Douane 2026 : écrit des 250 inspecteurs et 100 ingénieurs d’État', ar: 'الجمارك 2026: الاختبار الكتابي لـ250 مفتشًا و100 مهندس دولة',
     source: { label: 'Dreamjob — Concours Douanes Maroc 2026 (350 postes)', url: 'https://www.dreamjob.ma/emploi-public/concours-de-recrutement-douanes-maroc-2026-350-postes/' } },
