@@ -37,6 +37,50 @@ fil d'Ariane…), `sitemap.xml`, `robots.txt`, images de partage par page, pages
 - **Fin de fiche** : bloc « Et maintenant ? » (entraînement, examen blanc, dates, éligibilité, note, autres concours).
 - Le bandeau Android n'apparaît qu'à partir de la 3e page vue : une première visite reste sur le site.
 
+## Alertes par notification (push)
+
+Un bouton 🔔 « M'alerter des dates » sur chaque fiche (en-tête et section « Dates »), un panneau de choix des
+concours en haut du [calendrier](https://www.maroc-concour.com/outils/calendrier-concours/#alertes) et un lien sous
+les échéances de l'accueil. Gratuit, sans compte, sans service payant.
+
+**Ce que reçoit l'abonné** (une notification par jour au plus, regroupée si plusieurs rappels tombent le même jour) :
+
+| Moment | Événements du calendrier (`content/calendar.mjs`) |
+|---|---|
+| Ouverture des inscriptions | `inscription` et `deadline` avec une date de début (`start`) |
+| J-7, J-2 et le jour même | date limite (`deadline`) ; J-3 et le dernier jour pour `inscription` |
+| J-7 et la veille | épreuves (`ecrit`, à partir de `start` s'il existe) |
+| Le jour même | résultats (`resultats`) |
+| Le lendemain de sa publication | toute **nouvelle date** ajoutée au calendrier (hors estimations) |
+
+Les estimations (`confidence: 'estimation'`, mois seul) ne déclenchent jamais de rappel. Ajouter une date au
+calendrier suffit : elle est annoncée aux abonnés du concours le lendemain matin.
+
+**Fonctionnement**
+
+- Navigateur : `src/js/alertes.js` (permission demandée seulement après un geste, abonnement via `sw.js`),
+  service worker `src/sw.template.js` (affichage, clic, renouvellement de l'abonnement).
+- Serveur : **Cloudflare Pages Functions** (`functions/api/push/[[path]].js` → `push/api.mjs`), Web Push
+  standard (VAPID + chiffrement aes128gcm, `push/webpush.mjs`, sans dépendance). Données lues dans
+  `docs/data/alertes.json` (généré par le build). `docs/_routes.json` limite les Functions à `/api/*`.
+- Stockage : un namespace **Workers KV** lié au projet Pages sous le nom **`PUSH`** (abonnements, clé VAPID créée
+  au premier appel et jamais exposée, état de la tournée du jour). Aucun secret à configurer.
+- Envoi : `.github/workflows/alertes-push.yml` appelle `/api/push/run` chaque jour à 10 h 17 (heure du Maroc),
+  20 abonnés par appel, jusqu'à la fin. Lancement manuel possible (mode `status` pour voir l'état). La route
+  n'envoie qu'une tournée par jour et seulement entre 8 h et 22 h.
+- Abonnements expirés (réponse 404/410 du service de notifications) : supprimés automatiquement.
+- Interrupteur : `pushAlerts` dans `content/site.mjs`. Jamais affiché dans l'application Android, qui a ses
+  propres alertes.
+
+**Mise en place (une fois, tableau de bord Cloudflare)** : *Storage & databases → Workers KV → Create* (nom
+`concoursmaroc-push`), puis *Workers & Pages → concoursmaroc → Settings → Bindings → Add → KV namespace*, nom de
+variable `PUSH`, et redéployer (*Deployments → … → Retry deployment*). Tant que le KV n'est pas lié, l'API répond
+503 et le bouton indique que les alertes arrivent bientôt.
+
+**Tests** : `push/api.mjs` se teste hors ligne (KV simulé et faux service de notifications qui vérifie VAPID et
+déchiffre chaque message), et `wrangler pages dev docs --kv PUSH` fait tourner le site et l'API sur le moteur
+de Cloudflare.
+
 ## Mise en ligne (Cloudflare Pages)
 
 Le site est servi par **Cloudflare Pages**, projet `concoursmaroc`, relié à ce dépôt GitHub :

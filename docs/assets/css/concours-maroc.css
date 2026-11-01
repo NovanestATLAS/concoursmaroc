@@ -1237,3 +1237,42 @@ html[dir="rtl"] .sec-prog i { transform-origin: right center; }
 .page-head .updated .btn.wa { background: #1fa855; color: #fff; }
 /* deadlines: calendar buttons */
 .d-cal { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+
+/* ========================================================== alerts (alertes.js) */
+.alert-btn .ab-on { display: none; }
+.alert-btn.on .ab-on { display: inline; }
+.alert-btn.on .ab-off { display: none; }
+.alert-btn.on { background: var(--ok-bg); color: var(--ok-ink); border-color: var(--ok-line); }
+.alert-btn.on:hover { background: var(--ok-bg); color: var(--ok-ink); box-shadow: none; }
+.alert-btn.busy, .alert-chip.busy { opacity: .6; pointer-events: none; }
+.page-head .updated .btn.alert-btn:not(.on) { background: var(--surface); border-color: var(--accent); color: var(--accent); }
+.alert-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 14px 0 0; padding: 12px 14px; border-radius: var(--r-md); background: var(--accent-soft); }
+.alert-line small { flex: 1 1 220px; color: var(--ink-2); line-height: 1.45; }
+.alert-msg { flex-basis: 100%; width: 100%; margin: 8px 0 0; font-size: var(--fs-sm); font-weight: 650; color: var(--ink-2); }
+.alert-msg.ok { color: var(--ok-ink); }
+.alert-msg.warn { color: var(--warn-ink); }
+.hero-art .alert-msg { margin-top: 10px; }
+.hero-art-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 14px 0 0; }
+.alert-home svg { width: 18px; height: 18px; }
+.alert-box { margin: 0 0 22px; padding: 20px; border-radius: var(--r-xl); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); }
+.alb-head { display: flex; gap: 14px; align-items: flex-start; }
+.alb-ico { flex: 0 0 44px; width: 44px; height: 44px; border-radius: 13px; display: grid; place-items: center; background: var(--saffron); color: var(--navy-950); }
+.alb-ico svg { width: 24px; height: 24px; fill: currentColor; }
+.alert-box h2 { margin: 0 0 4px; font-size: 1.2rem; }
+.alert-box h2::before { display: none; }
+.alert-box p { margin: 0; color: var(--ink-2); font-size: var(--fs-sm); line-height: 1.55; }
+.alb-sub { margin: 16px 0 8px !important; font-size: var(--fs-xs) !important; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--muted) !important; }
+html[dir="rtl"] .alb-sub { letter-spacing: 0; text-transform: none; }
+.alert-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.alert-chip {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 6px 14px 6px 10px; border-radius: 999px; cursor: pointer;
+  font: inherit; font-size: var(--fs-sm); font-weight: 700; color: var(--ink-2); background: var(--surface); border: 1.5px solid var(--line-2);
+  transition: background .15s ease, border-color .15s ease, color .15s ease;
+}
+html[dir="rtl"] .alert-chip { padding: 6px 10px 6px 14px; }
+.alert-chip svg { width: 16px; height: 16px; fill: var(--muted); }
+.alert-chip:hover { border-color: var(--accent); color: var(--accent); }
+.alert-chip.on { background: var(--ok-bg); border-color: var(--ok-line); color: var(--ok-ink); }
+.alert-chip.on svg { fill: var(--ok-line); }
+.alb-more { margin-top: 12px; }
+.alb-more summary { cursor: pointer; font-weight: 700; font-size: var(--fs-sm); color: var(--accent); margin-bottom: 10px; }

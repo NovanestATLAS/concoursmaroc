@@ -1,0 +1,48 @@
+# Alertes par notification : envoie chaque matin les rappels des concours
+# suivis (push/api.mjs, route /api/push/run, 20 abonnés par appel).
+# Rien à configurer ici : la clé VAPID et les abonnements sont dans le
+# namespace KV « PUSH » du projet Cloudflare Pages (voir README).
+# Lancement manuel : onglet Actions → « Alertes push » → Run workflow
+# (mode « status » : configuration, nombre d'abonnés, rappels du jour).
+name: Alertes push
+
+on:
+  schedule:
+    - cron: '17 9 * * *'   # 10 h 17 au Maroc (UTC+1)
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'run = envoyer les rappels du jour ; status = afficher l’état'
+        default: run
+        type: choice
+        options: [run, status]
+
+permissions: {}
+
+concurrency:
+  group: alertes-push
+  cancel-in-progress: false
+
+jobs:
+  alertes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      API: https://www.maroc-concour.com/api/push
+      UA: 'ConcoursMaroc-Alertes/1.0 (+https://www.maroc-concour.com)'
+    steps:
+      - name: État
+        run: |
+          curl -sS --max-time 30 -A "$UA" -w '\nHTTP %{http_code}\n' "$API/status"
+
+      - name: Envoyer les rappels du jour
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'run' }}
+        run: |
+          for i in $(seq 1 500); do
+            r=$(curl -sS -X POST --max-time 60 -A "$UA" "$API/run") || { echo "réseau : nouvel essai dans 10 s"; sleep 10; continue; }
+            echo "$r"
+            if echo "$r" | grep -q '"error"'; then exit 1; fi
+            if echo "$r" | grep -q '"done":true'; then exit 0; fi
+          done
+          echo "::error::la tournée ne s'est pas terminée"
+          exit 1

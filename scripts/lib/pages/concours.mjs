@@ -3,6 +3,7 @@ import { html, raw, L, esc } from '../html.mjs';
 import { icon } from '../icons.mjs';
 import { linker, breadcrumb, breadcrumbLd, faqLd, practiceHref, linkMode } from '../layout.mjs';
 import { quizBlock, quizSubjects, quizTitle, quizLead, nextSteps, waShare } from '../engage.mjs';
+import { alertButton, alertLine } from '../alerts.mjs';
 import { renderBlocks, makeText } from '../blocks.mjs';
 import { t, formatDate } from '../strings.mjs';
 import { GROUPS, BAC, BAC_SHORT, SUBJECTS, LEVELS, DEFAULT_LEVEL } from '../../../content/taxonomy.mjs';
@@ -71,7 +72,7 @@ const BRIEF = {
   },
 };
 
-function briefSection(c, lang, link, banks) {
+function briefSection(c, lang, link, banks, site) {
   const b = BRIEF[lang];
   const pfx = lang === 'ar' ? 'ar/' : '';
   const T = makeText({ lang, link });
@@ -94,7 +95,7 @@ function briefSection(c, lang, link, banks) {
   const dates = CALENDAR.filter((e) => e.concours === c.id).sort((x, y) => key(y).localeCompare(key(x))).slice(0, 8);
   items.push(html`<h3>${b.calendar}</h3>${dates.length
     ? html`<ul>${dates.map((e) => html`<li><strong>${when(e)}</strong> — ${e[lang] || e.fr} <small class="muted">(${b.conf[e.confidence] || e.confidence}${e.source ? html`${lang === 'ar' ? '، ' : ', '}<a href="${e.source.url}" rel="noopener nofollow" target="_blank">${b.source}</a>` : ''})</small></li>`)}</ul>`
-    : html`<p>${T(b.none)}</p>`}`);
+    : html`<p>${T(b.none)}</p>`}${site ? alertLine(site, lang, c.id, (c[lang] || c.fr).short) : ''}`);
 
   const pr = c.practice;
   if (pr && pr.subjects && pr.subjects.length) {
@@ -194,7 +195,8 @@ ${c.practice ? html`<div class="cta-box no-print"><h3>${x.practiceAside}</h3><p>
 <p class="updated"><span>${t(lang, 'updated')} ${formatDate(updated, lang)}</span><span>· ${t(lang, 'checkedFor')} ${site.session}</span>
 <button class="btn sm quiet no-print" type="button" data-print>${icon('print')} ${x.print}</button>
 <button class="btn sm quiet no-print" type="button" data-share>${icon('share')} ${x.share}</button>
-${waShare(lang, `${site.siteUrl}/${guidePath(c, lang)}`, d.title, 'fiche')}</p>
+${waShare(lang, `${site.siteUrl}/${guidePath(c, lang)}`, d.title, 'fiche')}
+${alertButton(site, lang, c.id, d.short, 'btn sm ghost')}</p>
 ${d.facts && d.facts.length ? html`<div class="facts">${d.facts.map(([k, v]) => html`<div class="fact"><div class="f-lab">${k}</div><div class="f-val">${T(v)}</div></div>`)}</div>` : ''}
 ${asideCard(site, lang, link, { campaign: 'fiche-entete', h: APP_TXT[lang].ficheH(d.short), p: APP_TXT[lang].ficheP, cls: 'head-app' })}
 </header>
@@ -202,7 +204,7 @@ ${asideCard(site, lang, link, { campaign: 'fiche-entete', h: APP_TXT[lang].fiche
 <div class="prose">
 <div class="callout warn"><strong class="c-title">${lang === 'ar' ? 'تنبيه' : 'À vérifier'}</strong>${t(lang, 'disclaimerShort')}</div>
 ${sections.map((s) => html`<section id="${s.id}"><h2>${s.h}</h2>${renderBlocks(s.blocks, ctx)}</section>`)}
-${briefSection(c, lang, link, banks)}
+${briefSection(c, lang, link, banks, site)}
 ${quiz}
 ${inlineCard(site, lang, link, { campaign: 'fiche-contenu', h: APP_TXT[lang].ficheH(d.short), p: APP_TXT[lang].ficheP, mobileOnly: true, qr: false })}
 ${d.faq && d.faq.length ? html`<section id="faq" class="faq"><h2>${t(lang, 'faq')}</h2>${d.faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${T(f.a)}</p></div></details>`)}</section>` : ''}
@@ -252,7 +254,7 @@ ${aside}
     ogImage: `assets/img/og/concours-${c.id}.png`,
     jsonld,
     body,
-    scripts: linkMode() === 'app' ? [] : ['assets/js/engage.js'],
+    scripts: linkMode() === 'app' ? [] : ['assets/js/engage.js', ...(site.pushAlerts ? ['assets/js/alertes.js'] : [])],
   };
 }
 

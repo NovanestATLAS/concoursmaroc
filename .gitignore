@@ -9,3 +9,5 @@ dist/
 cordova/admob.local.json
 # Firebase configuration of the Android app (downloaded from the Firebase console)
 google-services.json
+# local Cloudflare runtime (wrangler pages dev)
+.wrangler/

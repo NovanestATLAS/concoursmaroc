@@ -27,6 +27,7 @@ import { loadQuestionBanks } from './lib/questions.mjs';
 import { checkBanks } from './lib/math.mjs';
 import { dataFiles, searchIndex } from './lib/data.mjs';
 import { sitemapXml, robotsTxt, manifestJson } from './lib/seo.mjs';
+import { alertsData } from './lib/alerts.mjs';
 import { GROUPS, SUBJECTS, BAC } from '../content/taxonomy.mjs';
 import { CALENDAR } from '../content/calendar.mjs';
 
@@ -158,6 +159,11 @@ async function main() {
   for (const [rel, content] of Object.entries(data)) write(rel, content);
   copyDir(path.join(ROOT, 'src/i18n'), path.join(OUT, 'data/i18n'));
   for (const lang of site.languages) write(`assets/search-${lang}.json`, searchIndex(pages, lang));
+  // Alerts (push/api.mjs reads it): concours, calendar entries and their texts.
+  write('data/alertes.json', alertsData(site, all));
+  // Cloudflare Pages: only /api/* runs the Functions (functions/), the rest
+  // stays plain static files.
+  write('_routes.json', JSON.stringify({ version: 1, include: ['/api/*'], exclude: [] }));
 
   // SEO files
   write('sitemap.xml', sitemapXml(site, pages));

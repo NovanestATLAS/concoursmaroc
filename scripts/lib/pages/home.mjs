@@ -12,6 +12,7 @@ import { hue, subjectArt } from '../art.mjs';
 import { appBadge } from './app-landing.mjs';
 import { appLive, appBand, appJsonLd, APP_TXT } from '../app-funnel.mjs';
 import { quizBlock, quizSubjects, recentRow } from '../engage.mjs';
+import { alertHomeLink } from '../alerts.mjs';
 
 const TXT = {
   fr: {
@@ -170,7 +171,7 @@ ${app ? '' : appBadge(site, lang, link)}
 <div class="hero-art">
 <h2 class="mt-0" style="font-size:1.1rem">${icon('calendar')} ${x.upcoming}</h2>
 <ul class="deadlines" data-deadlines data-limit="4" data-limit-mobile="2">${upcoming.map((e) => deadlineItem(e, lang, link, all))}</ul>
-<p style="margin:14px 0 0">${more(pfx + 'outils/calendrier-concours/', x.upcomingMore)}</p>
+<p class="hero-art-links">${more(pfx + 'outils/calendrier-concours/', x.upcomingMore)}${alertHomeLink(site, lang, link)}</p>
 </div>
 </div></section>
 

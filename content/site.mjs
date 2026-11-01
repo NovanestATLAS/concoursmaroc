@@ -36,6 +36,10 @@ export default {
   // IndexNow (Bing, Yandex, Seznam, Naver…): the build publishes <key>.txt and
   // .github/workflows/indexnow.yml submits the pages changed by each push.
   indexNowKey: '6255d51ee7beda0ba731f342d1450979',
+  // Alerts by notification (website): bell buttons on the fiches, the
+  // calendar and the home page; served by Cloudflare Pages Functions
+  // (functions/, push/) with a KV namespace bound as PUSH. See README.md.
+  pushAlerts: true,
 
   // ---- services you will add later (leave empty until then) ----
   // Google Search Console HTML-tag verification code (content="..." value only).

@@ -9,6 +9,7 @@ import { BAC, GROUPS } from '../../../content/taxonomy.mjs';
 import { CALENDAR } from '../../../content/calendar.mjs';
 import { hue } from '../art.mjs';
 import { appLive, asideCard, inlineCard, APP_TXT } from '../app-funnel.mjs';
+import { alertBox, alertsOn } from '../alerts.mjs';
 
 const TYPE = {
   fr: { inscription: 'Inscriptions', ecrit: 'Épreuves', resultats: 'Résultats', deadline: 'Date limite', estimation: 'Estimation', annonce: 'Annoncé', officiel: 'Officiel' },
@@ -358,6 +359,7 @@ export function buildToolsPages(site, all, lang) {
       const est = CALENDAR.filter((e) => e.confidence === 'estimation').sort((a, b) => a.month.localeCompare(b.month));
       const past = CALENDAR.filter((e) => e.date && e.date < today).sort((a, b) => a.date.localeCompare(b.date));
       extra = html`<div id="cal-tool">
+${alertBox(site, lang, all)}
 <div class="filters no-print"><button class="btn sm" type="button" id="ics-all">${icon('calendar')} ${lang === 'ar' ? 'تحميل كل التواريخ (.ics)' : 'Exporter toutes les dates (.ics)'}</button></div>
 <h2>${lang === 'ar' ? 'المواعيد القادمة' : 'Prochaines échéances confirmées'}</h2><ul class="deadlines" data-deadlines data-ics>${upcoming.map((e) => deadlineItem(e, lang, link, all))}</ul>
 ${inlineCard(site, lang, link, { campaign: 'calendrier', h: APP_TXT[lang].calH, p: APP_TXT[lang].calP })}
@@ -391,7 +393,7 @@ ${content.faq && content.faq.length ? html`<section class="faq"><h2>${t(lang, 'f
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'MAD' }, description: meta.desc,
       }, faqLd(content.faq, lang)],
       body,
-      scripts: tool === 'calendrier-concours' ? ['assets/js/echeances.js'] : ['assets/js/outils/commun.js', `assets/js/outils/${tool}.js`],
+      scripts: tool === 'calendrier-concours' ? ['assets/js/echeances.js', ...(alertsOn(site) ? ['assets/js/alertes.js'] : [])] : ['assets/js/outils/commun.js', `assets/js/outils/${tool}.js`],
       ogImage: `assets/img/og/outil-${tool}.png`,
     });
   }
