@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { html, raw } from '../html.mjs';
 import { icon } from '../icons.mjs';
-import { linker, breadcrumb, breadcrumbLd, faqLd } from '../layout.mjs';
+import { linker, breadcrumb, breadcrumbLd, faqLd, linkMode } from '../layout.mjs';
+import { quizBlock, quizSubjects } from '../engage.mjs';
 import { parseFrontMatter, markdown } from '../markdown.mjs';
 import { t, formatDate } from '../strings.mjs';
 import { hue } from '../art.mjs';
@@ -30,7 +31,7 @@ export function loadGuides(root, lang) {
   }).sort((a, b) => Number(a.meta.order || 99) - Number(b.meta.order || 99));
 }
 
-export async function buildGuidesPages(site, all, lang, root) {
+export async function buildGuidesPages(site, all, lang, root, banks = {}) {
   const x = TXT[lang];
   const pfx = lang === 'ar' ? 'ar/' : '';
   const guides = loadGuides(root, lang);
@@ -45,12 +46,13 @@ export async function buildGuidesPages(site, all, lang, root) {
     const crumbs = [[pfx, t(lang, 'home')], [`${pfx}guides/`, x.guides], [`${pfx}guides/${g.slug}/`, g.meta.short || g.meta.title]];
     const updated = g.meta.updated || site.updated;
     const body = html`${breadcrumb(lang, link, crumbs)}
-<article class="container">
+<article class="container" data-track="guide" data-track-title="${g.meta.short || g.meta.title}">
 <header class="page-head${appLive(site) ? ' with-app' : ''}"><span class="eyebrow">${x.guides}</span><h1>${g.meta.h1 || g.meta.title}</h1>
 ${g.meta.lead ? html`<p class="lead">${g.meta.lead}</p>` : ''}
 <p class="updated"><span>${t(lang, 'updated')} ${formatDate(updated, lang)}</span></p>
 ${asideCard(site, lang, link, { campaign: 'guide-entete', cls: 'head-app' })}</header>
 <div class="layout"><div class="prose">${raw(md.html)}
+${quizBlock(lang, { subjects: quizSubjects(lang === 'ar' ? ['maroc', 'logique', 'calcul', 'sciences'] : ['culture', 'maroc', 'logique', 'francais'], lang, banks), pick: true, where: 'guide', practice: link(pfx + 'entrainement/') })}
 ${inlineCard(site, lang, link, { campaign: 'guide-contenu', mobileOnly: true, qr: false })}</div>
 <aside><div class="aside-sticky">${md.toc.length > 2 ? html`<nav class="toc"><details open><summary><strong>${t(lang, 'toc')}</strong></summary><ol>${md.toc.map((h) => html`<li><a href="#${h.id}">${h.text.replace(/\*\*/g, '')}</a></li>`)}</ol></details></nav>` : ''}
 <div class="cta-box no-print"><h3>${lang === 'ar' ? 'كل المباريات' : 'Tous les concours'}</h3><p>${lang === 'ar' ? 'الشروط والعتبات والاختبارات لكل مباراة.' : 'Conditions, seuils et épreuves de chaque concours.'}</p><a class="btn sm" href="${link(pfx + 'concours/')}">${t(lang, 'allConcours')}</a></div>
@@ -59,6 +61,7 @@ ${inlineCard(site, lang, link, { campaign: 'guide-contenu', mobileOnly: true, qr
       path: p, lang, title: g.meta.title, description: g.meta.description, keywords: g.meta.keywords || [],
       alternate: g.hasAlt ? `${lang === 'ar' ? '' : 'ar/'}guides/${g.slug}/` : null,
       section: 'navGuides', type: 'article', updated, ogImage: g.meta.og || undefined,
+      scripts: linkMode() === 'app' ? [] : ['assets/js/engage.js'],
       jsonld: [breadcrumbLd(site, crumbs), {
         '@context': 'https://schema.org', '@type': 'Article', headline: g.meta.h1 || g.meta.title, description: g.meta.description,
         inLanguage: lang, dateModified: updated, datePublished: g.meta.published || '2026-10-09',

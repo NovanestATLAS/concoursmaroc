@@ -41,31 +41,31 @@ const TOOLS = ['calcul-note-bac', 'orientation-apres-bac', 'calendrier-concours'
 
 const COPY = {
   fr: {
-    toolsH: 'Outils gratuits pour préparer ses concours', toolsTitle: 'Outils pour les candidats : calcul note bac, orientation, calendrier, planning',
-    toolsDesc: "Outils gratuits pour les bacheliers marocains : calcul de la moyenne et de la note de présélection, orientation selon la série, calendrier des concours, planning de révision, checklist et simulateur de barème QCM.",
+    toolsH: 'Outils gratuits pour préparer ses concours', toolsTitle: 'Outils gratuits pour les concours : note du bac, orientation…',
+    toolsDesc: "Outils gratuits pour les bacheliers marocains : note du bac et de présélection, orientation, calendrier des concours, planning de révision et barème QCM.",
     toolsLead: 'Calculez, vérifiez, planifiez : tout fonctionne dans votre navigateur, sans inscription, et vos données restent sur votre appareil.',
     tools: 'Outils',
     noscript: 'Cet outil nécessite JavaScript. Le contenu explicatif ci-dessous reste disponible.',
     'calcul-note-bac': {
       icon: 'calc', short: 'Calcul note du bac',
-      title: 'Calcul de la note du bac et de la note de présélection (75/25) — Maroc',
-      desc: "Calculez votre moyenne générale du bac marocain (25 % contrôle continu, 25 % régional, 50 % national), votre mention et votre note de présélection 75/25 pour médecine, ENSA, ENCG, ENSAM, ISPITS.",
+      title: 'Calcul de la note du bac et de présélection 75/25 (Maroc)',
+      desc: "Calculez votre moyenne du bac marocain, votre mention et votre note de présélection 75/25 pour médecine, ENSA, ENCG, ENSAM et ISPITS.",
       h1: 'Calcul de la moyenne du bac et de la note de présélection',
       lead: "Entrez vos trois notes : l'outil calcule votre moyenne générale, votre mention et la note de présélection utilisée par la plupart des écoles, puis la compare aux derniers seuils connus.",
       keywords: ['calcul note bac', 'calcul moyenne bac maroc', 'note de présélection', '75 25', 'calcul seuil'],
     },
     'orientation-apres-bac': {
       icon: 'compass', short: 'Orientation après le bac',
-      title: 'Orientation après le bac au Maroc : quelles écoles selon ma série et ma note ?',
-      desc: "Indiquez votre série de bac, votre note de présélection et votre âge : l'outil liste les concours et écoles accessibles au Maroc et vous situe par rapport aux derniers seuils connus.",
+      title: 'Orientation après le bac au Maroc : quelles écoles pour moi ?',
+      desc: "Votre série, votre note de présélection et votre âge : la liste des concours et écoles accessibles au Maroc, comparés aux derniers seuils connus.",
       h1: 'Quelles écoles et quels concours pour mon bac ?',
       lead: "Un filtre rapide et honnête : il vérifie la série, le seuil indicatif de la dernière session et la limite d'âge connue de chaque concours. Il ne remplace pas l'avis officiel, mais il évite d'oublier une piste.",
       keywords: ['orientation après bac', 'quelle école après le bac', 'seuil école maroc', 'tawjih'],
     },
     'calendrier-concours': {
       icon: 'calendar', short: 'Calendrier des concours',
-      title: 'Calendrier des concours au Maroc 2026-2027 : dates d’inscription et d’épreuves',
-      desc: "Dates limites d'inscription, épreuves écrites et périodes habituelles des concours au Maroc (médecine, ENSA, ENCG, CPGE, police, gendarmerie, FAR, OFPPT…), avec compte à rebours et ajout à l'agenda.",
+      title: 'Calendrier des concours au Maroc 2026-2027 : toutes les dates',
+      desc: "Dates d'inscription et d'épreuves des concours au Maroc (médecine, ENSA, ENCG, CPGE, police, FAR, OFPPT…), avec compte à rebours et rappel.",
       h1: 'Calendrier des concours au Maroc',
       lead: "Les prochaines échéances confirmées, puis les périodes habituelles de la session 2027 et les repères de la session 2026. Ajoutez une date à votre agenda en un clic.",
       keywords: ['calendrier concours maroc', 'date concours 2027', 'date limite inscription concours'],
@@ -96,7 +96,7 @@ const COPY = {
     },
   },
   ar: {
-    toolsH: 'أدوات مجانية للتحضير للمباريات', toolsTitle: 'أدوات المترشحين: حساب نقطة الباك، التوجيه، الأجندة، برنامج المراجعة',
+    toolsH: 'أدوات مجانية للتحضير للمباريات', toolsTitle: 'أدوات مجانية للمترشحين: نقطة الباك، التوجيه، الأجندة',
     toolsDesc: 'أدوات مجانية للحاصلين على البكالوريا بالمغرب: حساب المعدل ونقطة الانتقاء، التوجيه حسب الشعبة، أجندة المباريات، برنامج المراجعة، لائحة الوثائق ومحاكي سلم التنقيط.',
     toolsLead: 'احسب وتحقق وخطط: كل شيء يعمل في متصفحك بدون تسجيل، وتبقى بياناتك على جهازك.',
     tools: 'أدوات',

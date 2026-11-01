@@ -1,7 +1,7 @@
 /* Home page (FR and AR). */
 import { html, raw } from '../html.mjs';
 import { icon } from '../icons.mjs';
-import { linker, faqLd, practiceHref } from '../layout.mjs';
+import { linker, faqLd, practiceHref, linkMode } from '../layout.mjs';
 import { t } from '../strings.mjs';
 import { concoursCard, guidePath } from './concours.mjs';
 import { GROUPS, SUBJECTS } from '../../../content/taxonomy.mjs';
@@ -10,12 +10,13 @@ import { CALENDAR } from '../../../content/calendar.mjs';
 import { deadlineItem } from './tools.mjs';
 import { hue, subjectArt } from '../art.mjs';
 import { appBadge } from './app-landing.mjs';
-import { appLive, heroPill, appBand, storeButton, appJsonLd, APP_TXT } from '../app-funnel.mjs';
+import { appLive, appBand, appJsonLd, APP_TXT } from '../app-funnel.mjs';
+import { quizBlock, quizSubjects, recentRow } from '../engage.mjs';
 
 const TXT = {
   fr: {
-    title: 'Concours Maroc 2027 : guide des concours après le bac, QCM corrigés et outils',
-    desc: "Le guide gratuit des concours au Maroc après le bac et avec le niveau bac : médecine, ENSA, ENCG, CPGE, ISPITS, police, gendarmerie, FAR… Conditions, seuils, calendrier, QCM corrigés et outils.",
+    title: 'Concours Maroc 2027 : tous les concours après le bac et QCM',
+    desc: "Tous les concours au Maroc après le bac ou niveau bac : médecine, ENSA, ENCG, police, FAR… Conditions, seuils, dates et QCM corrigés gratuits.",
     h1: 'Tous les concours au Maroc, expliqués et préparés',
     h1Parts: ['Tous les concours au Maroc,', 'expliqués et préparés'],
     trust: [
@@ -26,8 +27,17 @@ const TXT = {
     ],
     eyebrows: { start: 'Pour commencer', popular: 'Les plus consultés', domains: 'Par domaine', tools: 'Outils', practice: 'Entraînement', guides: 'Guides', faq: 'FAQ' },
     ctaH: 'Prêt à passer à la pratique ?', ctaP: 'Choisis ton concours et lance un examen blanc chronométré au barème officiel, ou révise matière par matière.', ctaMock: 'Examen blanc',
-    lead: "Conditions d'accès, seuils, épreuves, nombre de places, calendrier : un guide clair pour chaque concours après le bac ou avec le niveau bac, avec des QCM corrigés et des examens blancs pour s'entraîner gratuitement.",
+    lead: "Conditions, seuils, épreuves et dates de chaque concours après le bac ou avec le niveau bac, et des QCM corrigés pour s'entraîner gratuitement.",
     ctaFind: 'Trouver mes concours', ctaPractice: "S'entraîner aux QCM",
+    heroPaths: [
+      ['compass', "J'ai mon bac (ou je le passe)", 'Les concours pour ma série et ma note', 'outils/orientation-apres-bac/'],
+      ['shield', 'Niveau bac ou sans bac', 'Police, gendarmerie, FAR, OFPPT…', 'guides/concours-sans-bac-niveau-bac/'],
+      ['target', "Je m'entraîne aux QCM", 'QCM corrigés et examens blancs', 'entrainement/'],
+      ['calc', 'Je calcule ma note', 'Présélection 75/25 et mention', 'outils/calcul-note-bac/'],
+    ],
+    heroNote: ['Sources officielles citées', '100 % gratuit', 'Sans inscription'],
+    quizSubjects: ['culture', 'maroc', 'logique', 'francais', 'maths', 'svt', 'physique'],
+    domainsLead: 'Choisis un domaine pour voir tous ses concours, avec conditions, seuils et dates.',
     stats: (nc, nq) => [[nc, 'concours expliqués'], [nq, 'QCM corrigés'], ['6', 'outils gratuits'], ['FR · ع', 'bilingue, hors ligne']],
     upcoming: 'Prochaines échéances', upcomingMore: 'Voir le calendrier complet',
     start: 'Par où commencer ?',
@@ -77,8 +87,17 @@ const TXT = {
     ],
     eyebrows: { start: 'للبداية', popular: 'الأكثر زيارة', domains: 'حسب المجال', tools: 'أدوات', practice: 'التمرين', guides: 'أدلة', faq: 'أسئلة' },
     ctaH: 'مستعد للتطبيق؟', ctaP: 'اختر مباراتك وابدأ امتحانًا تجريبيًا موقتًا بسلم التنقيط الرسمي، أو راجع مادة بمادة.', ctaMock: 'امتحان تجريبي',
-    lead: 'شروط الولوج، العتبات، الاختبارات، عدد المقاعد والأجندة: دليل واضح لكل مباراة بعد البكالوريا أو بمستوى البكالوريا، مع أسئلة مصححة وامتحانات تجريبية للتمرن مجانًا.',
+    lead: 'الشروط والعتبات والاختبارات وتواريخ كل مباراة بعد البكالوريا أو بمستوى البكالوريا، مع أسئلة مصححة للتمرن مجانًا.',
     ctaFind: 'اكتشف المباريات المناسبة لي', ctaPractice: 'تمرّن على الأسئلة',
+    heroPaths: [
+      ['compass', 'حصلت على البكالوريا (أو أجتازها)', 'المباريات المناسبة لشعبتي ونقطتي', 'outils/orientation-apres-bac/'],
+      ['shield', 'مستوى البكالوريا أو بدون باك', 'الشرطة، الدرك، القوات المسلحة…', 'concours/'],
+      ['target', 'أتمرن على الأسئلة', 'أسئلة مصححة وامتحانات تجريبية', 'entrainement/'],
+      ['calc', 'أحسب نقطتي', 'نقطة الانتقاء 75/25 والميزة', 'outils/calcul-note-bac/'],
+    ],
+    heroNote: ['مصادر رسمية مذكورة', 'مجاني بالكامل', 'بدون تسجيل'],
+    quizSubjects: ['maroc', 'logique', 'calcul', 'sciences', 'arabe'],
+    domainsLead: 'اختر مجالًا لترى كل مبارياته، مع الشروط والعتبات والتواريخ.',
     stats: (nc, nq) => [[nc, 'مباراة مشروحة'], [nq, 'سؤالًا مصححًا'], ['6', 'أدوات مجانية'], ['FR · ع', 'ثنائي اللغة، بدون إنترنت']],
     upcoming: 'المواعيد القادمة', upcomingMore: 'الأجندة الكاملة',
     start: 'من أين تبدأ؟',
@@ -116,7 +135,7 @@ const TXT = {
   },
 };
 
-const POPULAR = ['medecine', 'ensa', 'encg-tafem', 'cpge', 'ispits', 'ensam', 'police-dgsn', 'gendarmerie', 'arm', 'ofppt', 'ena-architecture', 'ecole-1337'];
+const POPULAR = ['medecine', 'ensa', 'encg-tafem', 'cpge', 'ispits', 'ensam', 'police-dgsn', 'gendarmerie'];
 
 export function buildHome(site, all, lang, banks) {
   const x = TXT[lang];
@@ -135,44 +154,40 @@ export function buildHome(site, all, lang, banks) {
 
   const sec = (key, h2, extra = '') => html`<div class="section-head"><div><span class="eyebrow">${x.eyebrows[key]}</span><h2>${h2}</h2></div>${extra}</div>`;
   const more = (href, label) => html`<a class="more-link" href="${link(href)}">${label} ${icon('arrow')}</a>`;
-  const body = html`<section class="hero"><div class="container hero-grid">
+  const nGroups = (g) => all.filter((c) => c.group === g.id && c[lang]).length;
+  const body = html`<section class="hero hero-compact"><div class="container hero-grid">
 <div>
-${heroPill(site, lang, link)}
+${recentRow()}
 <span class="eyebrow">${t(lang, 'tagline')}</span>
 <h1>${x.h1Parts[0]} <span class="hl">${x.h1Parts[1]}</span></h1>
 <p class="lead">${x.lead}</p>
 <div class="big-search" role="search">${icon('search')}<label class="visually-hidden" for="home-search">${t(lang, 'search')}</label><input id="home-search" type="search" autocomplete="off" placeholder="${t(lang, 'searchPlaceholder')}" data-search-input><ul class="search-results" data-search-results></ul></div>
-<div class="btn-row"><a class="btn" href="${link(pfx + 'outils/orientation-apres-bac/')}">${icon('compass')} ${x.ctaFind}</a><a class="btn ghost" href="${link(pfx + 'entrainement/')}">${icon('play')} ${x.ctaPractice}</a>${app ? storeButton(site, lang, 'accueil-hero', { cls: 'btn alt' }) : ''}</div>
+<ul class="hero-paths">${x.heroPaths.map(([ic, h, sub, href], i) => html`<li><a class="${i === 0 ? 'hp-main' : ''}" href="${link(pfx + href)}"><span class="hp-ico">${icon(ic)}</span><span><b>${h}</b><small>${sub}</small></span></a></li>`)}</ul>
+<p class="hero-note">${x.heroNote.map((n) => html`<span>${icon('check')} ${n}</span>`)}</p>
 <ul class="stat-row">${x.stats(nc, nq).map(([n, l]) => html`<li><b>${n}</b> ${l}</li>`)}</ul>
 ${app ? '' : appBadge(site, lang, link)}
 </div>
 <div class="hero-art">
 <h2 class="mt-0" style="font-size:1.1rem">${icon('calendar')} ${x.upcoming}</h2>
-<ul class="deadlines" data-deadlines data-limit="4">${upcoming.map((e) => deadlineItem(e, lang, link, all))}</ul>
+<ul class="deadlines" data-deadlines data-limit="4" data-limit-mobile="2">${upcoming.map((e) => deadlineItem(e, lang, link, all))}</ul>
 <p style="margin:14px 0 0">${more(pfx + 'outils/calendrier-concours/', x.upcomingMore)}</p>
 </div>
 </div></section>
 
-<div class="container"><ul class="trust" role="list">${x.trust.map(([ic, b, sub], i) => html`<li class="t-item ${hue([6, 3, 4, 5][i])}"><span class="t-ico">${ic.length <= 2 ? html`<b aria-hidden="true" style="font-size:1.05rem">${ic}</b>` : icon(ic)}</span><div><b>${b}</b><span>${sub}</span></div></li>`)}</ul></div>
+<div class="home-compact">
+<section class="section qx-section"><div class="container">
+${quizBlock(lang, { subjects: quizSubjects(x.quizSubjects, lang, banks), pick: true, where: 'accueil', practice: link(pfx + 'entrainement/'), mock: practiceHref(link, pfx, 'mock') })}
+</div></section>
 
 <section class="section"><div class="container">
-${sec('start', x.start)}
-<div class="grid cols-4">${x.paths.map(([ic, h, p, href], i) => html`<a class="card path-card ${hue([1, 0, 4, 2][i])}" href="${link(pfx + href)}"><div class="card-top"><span class="card-ico">${icon(ic)}</span><span class="card-title">${h}</span></div><p class="card-sub">${p}</p></a>`)}</div>
-</div></section>
-${appBand(site, lang, link, { campaign: 'accueil-bandeau', nc, nq: lang === 'ar' ? nq : nq.toLocaleString('fr-FR').replace(/\u202f/g, '\u00a0') })}
-
-<section class="section" style="padding-top:8px"><div class="container">
-${sec('popular', x.popular, more(pfx + 'concours/', x.all))}
+${sec('popular', x.popular, more(pfx + 'concours/', `${x.all} (${nc})`))}
 <div class="grid cols-4">${popular.map((c) => concoursCard(c, lang, link))}</div>
 </div></section>
 
 <section class="section alt"><div class="container">
 ${sec('domains', x.domains)}
-<div class="domain-grid">${GROUPS.map((g) => {
-  const items = all.filter((c) => c.group === g.id && c[lang]);
-  if (!items.length) return '';
-  return html`<div class="card domain-card" data-group="${g.id}"><div class="card-top"><span class="card-ico">${icon(g.icon)}</span><span class="card-title">${g[lang]}</span><span class="d-count">${items.length}</span></div><ul class="domain-links">${items.map((c) => html`<li><a href="${link(guidePath(c, lang))}">${c[lang].short}</a></li>`)}</ul></div>`;
-})}</div>
+<p class="muted" style="margin:-10px 0 18px">${x.domainsLead}</p>
+<nav class="dom-chips" aria-label="${x.domains}">${GROUPS.filter((g) => nGroups(g)).map((g) => html`<a href="${link(pfx + 'concours/')}#${g.id}" data-group="${g.id}"><span class="dc-ico">${icon(g.icon)}</span>${g[lang]} <span class="dc-n">${nGroups(g)}</span></a>`)}</nav>
 </div></section>
 
 <section class="section"><div class="container">
@@ -189,13 +204,11 @@ ${sec('practice', x.practiceH, html`<a class="btn" href="${link(pfx + 'entrainem
 })}</div>
 </div></section>
 
+${appBand(site, lang, link, { campaign: 'accueil-bandeau', nc, nq: lang === 'ar' ? nq : nq.toLocaleString('fr-FR').replace(/\u202f/g, '\u00a0') })}
+
 <section class="section"><div class="container">
 ${sec('guides', x.guidesH, more(pfx + 'guides/', lang === 'ar' ? 'كل الأدلة' : 'Tous les guides'))}
 <div class="grid cols-4">${x.guides.map(([ic, h, href, sub], i) => html`<a class="card path-card guide-card ${hue([1, 6, 3, 4][i])}" href="${link(pfx + href)}"><div class="cover">${icon(ic === 'wallet' ? 'briefcase' : ic)}</div><div class="g-body"><span class="card-title">${h}</span><p class="card-sub">${sub}</p></div></a>`)}</div>
-</div></section>
-
-<section class="section" style="padding-top:8px"><div class="container">
-<div class="cta-band"><div><h2>${x.ctaH}</h2><p>${x.ctaP}</p></div><div class="btn-row"><a class="btn" href="${link(pfx + 'entrainement/')}">${icon('play')} ${x.ctaPractice}</a><a class="btn ghost" href="${practiceHref(link, pfx, 'mock')}">${icon('clock')} ${x.ctaMock}</a></div></div>
 </div></section>
 
 <section class="section" style="padding-top:12px"><div class="container narrow faq">
@@ -203,7 +216,8 @@ ${sec('guides', x.guidesH, more(pfx + 'guides/', lang === 'ar' ? 'كل الأد�
 <h2 class="mt-0">${x.faqH}</h2>
 ${faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${f.a}</p></div></details>`)}
 <div class="callout warn" style="margin-top:18px">${t(lang, 'disclaimerShort')}</div>
-</div></section>`;
+</div></section>
+</div>`;
 
   const jsonld = [
     {
@@ -219,6 +233,6 @@ ${faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${
   ];
   return {
     path, lang, title: x.title, titleFull: x.title, description: x.desc, alternate: lang === 'ar' ? '' : 'ar/',
-    jsonld, body, scripts: ['assets/js/echeances.js'], keywords: ['concours maroc', 'concours après bac'],
+    jsonld, body, scripts: linkMode() === 'app' ? ['assets/js/echeances.js'] : ['assets/js/echeances.js', 'assets/js/engage.js'], keywords: ['concours maroc', 'concours après bac'],
   };
 }

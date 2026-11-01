@@ -61,7 +61,7 @@ const TXT = {
     h1: (s) => `QCM corrigés : ${s.fr}`,
     lead: (n, total) => `${n} questions d'exemple sur ${total} disponibles dans l'entraînement, avec la bonne réponse et une explication. Cliquez sur « Voir la réponse » après avoir réfléchi.`,
     show: 'Voir la réponse et l’explication', answer: 'Bonne réponse', train: 'S’entraîner sur cette matière (chronométré, corrigé)',
-    idxTitle: 'QCM corrigés par matière pour les concours au Maroc', idxDesc: 'QCM corrigés gratuits par matière : culture générale, Maroc, logique, calcul, mathématiques, physique, chimie, SVT, français, arabe, anglais, économie, secourisme, institutions de sécurité, pédagogie, enseignement primaire.',
+    idxTitle: 'QCM corrigés par matière pour les concours au Maroc', idxDesc: 'QCM corrigés gratuits par matière pour les concours au Maroc : culture générale, logique, calcul, maths, physique, chimie, SVT, langues et plus.',
     idxHowH: 'Comment utiliser ces QCM', idxFrOnly: '', idxFrOnlyText: '',
     idxHow: [
       'Chaque page présente une sélection de questions qui couvre tous les thèmes de la matière, avec la bonne réponse, une correction courte et une explication détaillée ; la banque complète est disponible dans l’entraînement.',

@@ -11,7 +11,7 @@ import { trainerAppData, appBand, APP_TXT, ICON_FILE } from '../app-funnel.mjs';
 const TXT = {
   fr: {
     title: 'Entraînement aux concours : QCM corrigés et examens blancs gratuits',
-    desc: "Entraînez-vous gratuitement aux concours marocains : QCM corrigés par concours (médecine, ENSA, ENCG, police, gendarmerie…), examens blancs chronométrés au vrai barème, points faibles et révisions espacées.",
+    desc: "Entraînez-vous gratuitement aux concours marocains : QCM corrigés par concours, examens blancs chronométrés au vrai barème et suivi des points faibles.",
     h1: 'Entraînement aux concours : QCM corrigés et examens blancs',
     lead: "Choisissez votre concours : les questions, l'examen blanc (durée, nombre de questions, barème) et les révisions s'adaptent automatiquement. Changez de concours à tout moment depuis l'accueil de l'entraînement.",
     loading: 'Chargement de l’entraînement…', noscript: "L'entraînement interactif nécessite JavaScript. Vous pouvez consulter les QCM corrigés par matière ci-dessous.",

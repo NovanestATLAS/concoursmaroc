@@ -1,9 +1,9 @@
 /* Global site configuration.
  *
- * Domain: `siteUrl` is the public address and `customDomain` the host that
- * GitHub Pages serves (the build writes it to docs/CNAME). Changing them is
- * enough: canonical URLs, sitemap, hreflang and Open Graph follow. The DNS
- * side is described in README.md.
+ * Domain: `siteUrl` is the public address (canonical URLs, sitemap, hreflang
+ * and Open Graph follow it). The site is served by Cloudflare Pages; the DNS
+ * and the root -> www redirect are described in README.md. `customDomain` is
+ * still written to docs/CNAME, which Cloudflare ignores.
  */
 export default {
   name: 'Concours Maroc',

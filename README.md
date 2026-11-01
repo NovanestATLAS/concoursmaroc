@@ -3,7 +3,8 @@
 Guide gratuit et bilingue (français / arabe) des concours et de l'orientation après le bac au Maroc :
 conditions d'accès, seuils, épreuves, calendrier, QCM corrigés, examens blancs et outils pratiques.
 
-Site statique, sans base de données ni serveur : il est hébergé gratuitement par **GitHub Pages**.
+Site statique, sans base de données ni serveur : il est hébergé gratuitement par **Cloudflare Pages**
+(dépôt GitHub privé, déploiement automatique à chaque commit).
 Le même contenu est aussi empaqueté en **application Android** (Apache Cordova), publiée sur Google Play :
 <https://play.google.com/store/apps/details?id=com.novanest.concoursmaroc>. Le site sert d'entonnoir vers
 l'application : voir « Entonnoir vers l'application » plus bas.
@@ -21,32 +22,45 @@ l'application : voir « Entonnoir vers l'application » plus bas.
 SEO : URL lisibles, titres et descriptions uniques, `hreflang` fr/ar, données structurées (Article, FAQ, Quiz,
 fil d'Ariane…), `sitemap.xml`, `robots.txt`, images de partage par page, pages rapides et utilisables hors ligne.
 
-## Mettre le site en ligne (GitHub Pages)
+## Orientation et engagement des visiteurs
 
-1. Sur GitHub, ouvrez **Settings → Pages**.
-2. Dans **Build and deployment**, choisissez **Source : Deploy from a branch**.
-3. Choisissez la branche qui contient le site (aujourd'hui `claude/concoursmaroc-github-site-x6v5br`, branche par défaut du dépôt) et le dossier **`/docs`**, puis **Save**.
-4. Après une à deux minutes, le site est en ligne à l'adresse
-   **https://www.maroc-concour.com/** (l'ancienne adresse
-   `novanestatlas.github.io/concoursmaroc/` y redirige automatiquement).
+`src/js/engage.js` (site uniquement, jamais dans l'application) et `scripts/lib/engage.mjs` :
 
-Chaque nouveau commit sur cette branche met le site à jour automatiquement.
+- **Accueil** : une recherche et quatre entrées claires dans le hero (« J'ai mon bac », « Niveau bac ou sans bac »,
+  « Je m'entraîne », « Je calcule ma note ») ; échéances limitées à 2 sur téléphone ; domaines en une ligne de liens.
+- **Quiz express** : 5 QCM corrigés joués dans la page (accueil, chaque fiche concours au niveau du concours, fin des
+  guides). Les banques sont chargées à la demande, KaTeX seulement si une formule apparaît ; les questions déjà vues
+  sont évitées. Événements GA4 : `quiz_express_start`, `quiz_express_complete` (`placement`, `score`).
+- **Reprendre** : l'accueil propose les dernières fiches consultées (stockées sur l'appareil).
+- **Pages longues** (fiches, guides) : barre « Sur cette page » sous l'en-tête (section en cours, sommaire en un geste)
+  et progression de lecture ; section en cours surlignée dans le sommaire de côté.
+- **Fin de fiche** : bloc « Et maintenant ? » (entraînement, examen blanc, dates, éligibilité, note, autres concours).
+- Le bandeau Android n'apparaît qu'à partir de la 3e page vue : une première visite reste sur le site.
+
+## Mise en ligne (Cloudflare Pages)
+
+Le site est servi par **Cloudflare Pages**, projet `concoursmaroc`, relié à ce dépôt GitHub :
+
+- branche de production : `claude/concoursmaroc-github-site-x6v5br` (branche par défaut du dépôt) ;
+- aucune commande de build (le dossier est déjà construit) ; dossier publié : **`docs`** ;
+- chaque commit sur cette branche met le site à jour en une minute environ ;
+- aperçus des autres branches désactivés (rien n'est publié hors de la branche de production).
+
+Avant chaque commit : `npm run build`, puis `npm run check` (0 erreur attendue), et commitez `docs/`.
+
+`docs/_headers` (généré par le build) règle la mise en cache des fichiers sur Cloudflare.
 
 ## Nom de domaine : www.maroc-concour.com
 
-Le domaine `maroc-concour.com` est enregistré chez Spaceship.
+Le domaine `maroc-concour.com` est enregistré chez **Spaceship** ; ses serveurs de noms sont ceux de
+**Cloudflare** (`lennon.ns.cloudflare.com`, `sneh.ns.cloudflare.com`), où se gèrent les DNS.
 
-- Dans `content/site.mjs` : `siteUrl: 'https://www.maroc-concour.com'` et
-  `customDomain: 'www.maroc-concour.com'` ; le build écrit `docs/CNAME`, que GitHub Pages lit.
-- DNS chez Spaceship (serveurs de noms Spaceship par défaut) :
-  - `A` pour `@` vers `185.199.108.153`, `185.199.109.153`, `185.199.110.153` et `185.199.111.153` ;
-  - `AAAA` pour `@` vers `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153` et `2606:50c0:8003::153` ;
-  - `CNAME` pour `www` vers `novanestatlas.github.io`.
-- `maroc-concour.com` (sans www) redirige vers `www.maroc-concour.com`.
-- Dans **Settings → Pages**, cochez **Enforce HTTPS** dès que GitHub a émis le certificat
-  (de quelques minutes à 24 h après la configuration DNS).
-
-Pour changer de domaine plus tard : modifiez ces deux valeurs, `npm run build`, commit, puis adaptez les DNS.
+- `www.maroc-concour.com` et `maroc-concour.com` sont des domaines personnalisés du projet Pages.
+- Règle de redirection Cloudflare (Rules → Redirect Rules) : `maroc-concour.com/*` → `https://www.maroc-concour.com/…`
+  en 301, avec la query string : une seule adresse pour Google.
+- `content/site.mjs` : `siteUrl: 'https://www.maroc-concour.com'` (URL canoniques, sitemap, hreflang).
+  `customDomain` écrit encore `docs/CNAME`, sans effet sur Cloudflare.
+- Les enregistrements TXT `google-site-verification` (Search Console) sont dans les DNS Cloudflare.
 
 ## Entonnoir vers l'application (Google Play)
 
@@ -146,7 +160,7 @@ src/                  CSS, JavaScript (entraînement, outils), textes de l'appli
 src/app/              coquille de l'application Android (routeur, bouton Retour, synthèse vocale, AdMob)
 src/img/app/          icône, captures et code QR de l'application, pour l'entonnoir du site
 scripts/lib/app-funnel.mjs   blocs du site qui mènent à Google Play (en-tête, bandeau, cartes, accueil)
-docs/                 site généré, publié par GitHub Pages (ne pas modifier à la main)
+docs/                 site généré, publié par Cloudflare Pages (ne pas modifier à la main)
 cordova/              www de l'application (zip), exemple de config.xml, notice Android, icônes (res/), fiche et zip Google Play
 ```
 

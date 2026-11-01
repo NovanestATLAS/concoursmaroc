@@ -1,7 +1,8 @@
 /* Concours guide pages and the concours directory. */
 import { html, raw, L, esc } from '../html.mjs';
 import { icon } from '../icons.mjs';
-import { linker, breadcrumb, breadcrumbLd, faqLd, practiceHref } from '../layout.mjs';
+import { linker, breadcrumb, breadcrumbLd, faqLd, practiceHref, linkMode } from '../layout.mjs';
+import { quizBlock, quizSubjects, quizTitle, quizLead, nextSteps } from '../engage.mjs';
 import { renderBlocks, makeText } from '../blocks.mjs';
 import { t, formatDate } from '../strings.mjs';
 import { GROUPS, BAC, BAC_SHORT, SUBJECTS, LEVELS, DEFAULT_LEVEL } from '../../../content/taxonomy.mjs';
@@ -171,8 +172,21 @@ ${c.practice ? html`<div class="cta-box no-print"><h3>${x.practiceAside}</h3><p>
 <li><a href="${link(pfx + 'outils/planning-revision/')}?concours=${c.id}">${x.toolPlan}</a></li></ul></div>
 </div></aside>`;
 
+  const qSubjects = c.practice && c.practice.subjects ? quizSubjects(c.practice.subjects, lang, banks || {}) : [];
+  const quiz = quizBlock(lang, {
+    subjects: qSubjects, where: 'fiche', level: c.practice && c.practice.difficulty,
+    practice: practiceHref(link, pfx, '', c.id), mock: c.practice ? practiceHref(link, pfx, 'mock', c.id) : '',
+    title: quizTitle(lang, d.short), lead: quizLead(lang),
+  });
+  const next = nextSteps(lang, link, [
+    ...(c.practice ? [['practice', practiceHref(link, pfx, '', c.id), 'play'], ['mock', practiceHref(link, pfx, 'mock', c.id), 'clock']] : []),
+    ['calendar', link(pfx + 'outils/calendrier-concours/'), 'calendar'],
+    ['orient', `${link(pfx + 'outils/orientation-apres-bac/')}?concours=${c.id}`, 'compass'],
+    ['note', link(pfx + 'outils/calcul-note-bac/'), 'calc'],
+    ['all', link(pfx + 'concours/'), 'list'],
+  ]);
   const body = html`${breadcrumb(lang, link, crumbs)}
-<article class="container">
+<article class="container" data-track="concours" data-track-title="${d.short}">
 <header class="page-head${appLive(site) ? ' with-app' : ''}">
 <span class="eyebrow">${(GROUPS.find((g) => g.id === c.group) || {})[lang] || ''} · ${levelLabel(c, lang)}</span>
 <h1>${d.title}</h1>
@@ -188,6 +202,7 @@ ${asideCard(site, lang, link, { campaign: 'fiche-entete', h: APP_TXT[lang].fiche
 <div class="callout warn"><strong class="c-title">${lang === 'ar' ? 'تنبيه' : 'À vérifier'}</strong>${t(lang, 'disclaimerShort')}</div>
 ${sections.map((s) => html`<section id="${s.id}"><h2>${s.h}</h2>${renderBlocks(s.blocks, ctx)}</section>`)}
 ${briefSection(c, lang, link, banks)}
+${quiz}
 ${inlineCard(site, lang, link, { campaign: 'fiche-contenu', h: APP_TXT[lang].ficheH(d.short), p: APP_TXT[lang].ficheP, mobileOnly: true, qr: false })}
 ${d.faq && d.faq.length ? html`<section id="faq" class="faq"><h2>${t(lang, 'faq')}</h2>${d.faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${T(f.a)}</p></div></details>`)}</section>` : ''}
 <section id="sources"><h2>${t(lang, 'sources')}</h2>
@@ -196,6 +211,7 @@ ${c.official && c.official.length ? html`<h3>${x.officialLinks}</h3><ul class="s
 ${c.sources && c.sources.length ? html`<ul class="sources">${c.sources.map((s) => html`<li><a href="${s.url}" rel="noopener nofollow" target="_blank">${s.title}</a>${s.date ? html` <small class="muted">(${s.date})</small>` : ''}</li>`)}</ul>` : ''}
 </section>
 ${related.length ? html`<section class="no-print"><h2>${t(lang, 'related')}</h2><div class="grid cols-2">${related.map((r) => concoursCard(r, lang, link))}</div></section>` : ''}
+${next}
 </div>
 ${aside}
 </div>
@@ -235,6 +251,7 @@ ${aside}
     ogImage: `assets/img/og/concours-${c.id}.png`,
     jsonld,
     body,
+    scripts: linkMode() === 'app' ? [] : ['assets/js/engage.js'],
   };
 }
 

@@ -174,8 +174,9 @@ export function layout(site, page, footerLinks) {
   const jsonld = (page.jsonld || []).filter(Boolean);
 
   // Theme, then the device classes of the app funnel (app-funnel.mjs): Android
-  // banner, no Google Play links on iPhone/iPad, banner closed less than 14 days ago.
-  const themeInit = `(function(){var d=document.documentElement;try{var t=localStorage.getItem('cm.theme');if(!t||t==='auto'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t)}catch(e){}try{var u=navigator.userAgent||'';if(/Android/i.test(u))d.classList.add('is-android');if(/iPhone|iPad|iPod/i.test(u)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))d.classList.add('is-ios');var b=+localStorage.getItem('cm.appbanner')||0;if(b&&Date.now()-b<12096e5)d.classList.add('appbanner-off')}catch(e){}})();`;
+  // banner, no Google Play links on iPhone/iPad, banner closed less than 14 days
+  // ago. The banner waits for the 3rd page viewed: a first visit stays on the site.
+  const themeInit = `(function(){var d=document.documentElement;try{var t=localStorage.getItem('cm.theme');if(!t||t==='auto'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t)}catch(e){}try{var u=navigator.userAgent||'';if(/Android/i.test(u))d.classList.add('is-android');if(/iPhone|iPad|iPod/i.test(u)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))d.classList.add('is-ios');var b=+localStorage.getItem('cm.appbanner')||0;if(b&&Date.now()-b<12096e5)d.classList.add('appbanner-off');var n=(+localStorage.getItem('cm.pv')||0)+1;localStorage.setItem('cm.pv',n);if(n<3)d.classList.add('appbanner-off')}catch(e){}})();`;
 
   const ga = site.ga4 ? raw(`<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(site.ga4)}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${esc(site.ga4)}');</script>`) : '';
   const ads = site.adsenseClient && !page.noAds ? raw(`<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(site.adsenseClient)}" crossorigin="anonymous"></script>`) : '';

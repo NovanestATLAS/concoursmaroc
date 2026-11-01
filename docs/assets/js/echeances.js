@@ -55,6 +55,9 @@
 
   Array.prototype.slice.call(document.querySelectorAll('[data-deadlines]')).forEach(function (list) {
     var limit = parseInt(list.getAttribute('data-limit') || '0', 10);
+    // a shorter list on phones (data-limit-mobile), so the page stays short
+    var small = parseInt(list.getAttribute('data-limit-mobile') || '0', 10);
+    if (small && window.matchMedia && matchMedia('(max-width: 900px)').matches) limit = small;
     // No file downloads inside the Android WebView: calendar export is web-only.
     var withIcs = list.hasAttribute('data-ics') && !APP;
     var shown = 0;

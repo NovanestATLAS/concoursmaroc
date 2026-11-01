@@ -121,7 +121,7 @@ async function main() {
     buildToolsPages(site, all, lang).forEach(add);
     add(buildPracticePage(site, all, lang, banks));
     buildQcmPages(site, all, lang, banks).forEach(add);
-    (await buildGuidesPages(site, all, lang, ROOT)).forEach(add);
+    (await buildGuidesPages(site, all, lang, ROOT, banks)).forEach(add);
     buildStaticPages(site, all, lang, banks).forEach(add);
     add(buildAppLanding(site, lang, all, banks));
   }
@@ -166,6 +166,20 @@ async function main() {
   write('.nojekyll', '');
   if (site.customDomain) write('CNAME', `${site.customDomain}\n`);
   if (site.indexNowKey) write(`${site.indexNowKey}.txt`, site.indexNowKey);
+  // Cloudflare Pages response headers (ignored by other hosts). CSS and JS are
+  // linked with ?v=<hash of src/>, so browsers may keep them; files fetched
+  // without that token (search index, question banks, sw.js) stay short-lived.
+  write('_headers', [
+    '/assets/css/*', '  Cache-Control: public, max-age=2592000',
+    '/assets/js/*', '  Cache-Control: public, max-age=604800',
+    '/assets/fonts/*', '  Cache-Control: public, max-age=31536000, immutable',
+    '/assets/vendor/*', '  Cache-Control: public, max-age=31536000, immutable',
+    '/assets/img/*', '  Cache-Control: public, max-age=604800',
+    '/data/*', '  Cache-Control: public, max-age=3600',
+    '/sw.js', '  Cache-Control: no-cache',
+    '/*', '  X-Content-Type-Options: nosniff', '  Referrer-Policy: strict-origin-when-cross-origin',
+    '',
+  ].join('\n'));
   // Announcement popup of the Android app (src/app/js/notices.js), edited in
   // content/app-annonce.json; GitHub Pages serves it with CORS open.
   const annonce = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/app-annonce.json'), 'utf8'));
