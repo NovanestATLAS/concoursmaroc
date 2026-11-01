@@ -4,7 +4,7 @@ import path from 'node:path';
 import { html, raw } from '../html.mjs';
 import { icon } from '../icons.mjs';
 import { linker, breadcrumb, breadcrumbLd, faqLd, linkMode } from '../layout.mjs';
-import { quizBlock, quizSubjects } from '../engage.mjs';
+import { quizBlock, quizSubjects, waShare } from '../engage.mjs';
 import { parseFrontMatter, markdown } from '../markdown.mjs';
 import { t, formatDate } from '../strings.mjs';
 import { hue } from '../art.mjs';
@@ -49,7 +49,9 @@ export async function buildGuidesPages(site, all, lang, root, banks = {}) {
 <article class="container" data-track="guide" data-track-title="${g.meta.short || g.meta.title}">
 <header class="page-head${appLive(site) ? ' with-app' : ''}"><span class="eyebrow">${x.guides}</span><h1>${g.meta.h1 || g.meta.title}</h1>
 ${g.meta.lead ? html`<p class="lead">${g.meta.lead}</p>` : ''}
-<p class="updated"><span>${t(lang, 'updated')} ${formatDate(updated, lang)}</span></p>
+<p class="updated"><span>${t(lang, 'updated')} ${formatDate(updated, lang)}</span>
+<button class="btn sm quiet no-print" type="button" data-share>${icon('share')} ${lang === 'ar' ? 'مشاركة' : 'Partager'}</button>
+${waShare(lang, `${site.siteUrl}/${pfx}guides/${g.slug}/`, g.meta.h1 || g.meta.title, 'guide')}</p>
 ${asideCard(site, lang, link, { campaign: 'guide-entete', cls: 'head-app' })}</header>
 <div class="layout"><div class="prose">${raw(md.html)}
 ${quizBlock(lang, { subjects: quizSubjects(lang === 'ar' ? ['maroc', 'logique', 'calcul', 'sciences'] : ['culture', 'maroc', 'logique', 'francais'], lang, banks), pick: true, where: 'guide', practice: link(pfx + 'entrainement/') })}

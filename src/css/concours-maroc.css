@@ -1230,3 +1230,10 @@ html[dir="rtl"] .sec-prog i { transform-origin: right center; }
   .hdr-tools { gap: 1px; }
 }
 @media (max-width: 379px) { .site-header .brand span { white-space: normal; } }
+
+/* WhatsApp share button (generic chat icon, WhatsApp green) */
+.btn.wa { background: #1fa855; color: #fff; border-color: transparent; }
+.btn.wa:hover { background: #178a45; color: #fff; box-shadow: 0 8px 20px rgba(31, 168, 85, .28); }
+.page-head .updated .btn.wa { background: #1fa855; color: #fff; }
+/* deadlines: calendar buttons */
+.d-cal { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }

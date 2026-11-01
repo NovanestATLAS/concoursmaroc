@@ -2,7 +2,7 @@
 import { html, raw, L, esc } from '../html.mjs';
 import { icon } from '../icons.mjs';
 import { linker, breadcrumb, breadcrumbLd, faqLd, practiceHref, linkMode } from '../layout.mjs';
-import { quizBlock, quizSubjects, quizTitle, quizLead, nextSteps } from '../engage.mjs';
+import { quizBlock, quizSubjects, quizTitle, quizLead, nextSteps, waShare } from '../engage.mjs';
 import { renderBlocks, makeText } from '../blocks.mjs';
 import { t, formatDate } from '../strings.mjs';
 import { GROUPS, BAC, BAC_SHORT, SUBJECTS, LEVELS, DEFAULT_LEVEL } from '../../../content/taxonomy.mjs';
@@ -193,7 +193,8 @@ ${c.practice ? html`<div class="cta-box no-print"><h3>${x.practiceAside}</h3><p>
 <p class="lead">${T(d.intro)}</p>
 <p class="updated"><span>${t(lang, 'updated')} ${formatDate(updated, lang)}</span><span>· ${t(lang, 'checkedFor')} ${site.session}</span>
 <button class="btn sm quiet no-print" type="button" data-print>${icon('print')} ${x.print}</button>
-<button class="btn sm quiet no-print" type="button" data-share>${icon('share')} ${x.share}</button></p>
+<button class="btn sm quiet no-print" type="button" data-share>${icon('share')} ${x.share}</button>
+${waShare(lang, `${site.siteUrl}/${guidePath(c, lang)}`, d.title, 'fiche')}</p>
 ${d.facts && d.facts.length ? html`<div class="facts">${d.facts.map(([k, v]) => html`<div class="fact"><div class="f-lab">${k}</div><div class="f-val">${T(v)}</div></div>`)}</div>` : ''}
 ${asideCard(site, lang, link, { campaign: 'fiche-entete', h: APP_TXT[lang].ficheH(d.short), p: APP_TXT[lang].ficheP, cls: 'head-app' })}
 </header>

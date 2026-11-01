@@ -766,10 +766,33 @@
     };
   };
 
+  /* Screen Wake Lock API: the screen stays on while a session runs (a 2-hour
+     mock exam otherwise dims and locks the phone between two questions). The
+     browser drops the lock when the page is hidden: it is taken again on
+     return. Without the API (old browsers, some WebViews) nothing changes. */
+  var wakeLock = null;
+  function keepAwake(on) {
+    var wl = global.navigator && global.navigator.wakeLock;
+    if (!wl) return;
+    if (on) {
+      if (wakeLock) return;
+      wakeLock = 'pending';
+      wl.request('screen').then(function (l) {
+        if (!quizTimer) { l.release().catch(function () {}); wakeLock = null; return; }
+        wakeLock = l;
+        l.addEventListener('release', function () { if (wakeLock === l) wakeLock = null; });
+      }).catch(function () { wakeLock = null; });
+    } else if (wakeLock && wakeLock !== 'pending') {
+      wakeLock.release().catch(function () {});
+      wakeLock = null;
+    }
+  }
+  document.addEventListener('visibilitychange', function () { if (!document.hidden && quizTimer) keepAwake(true); });
+
   function startTimer(timerEl) {
-    stopTimer();
+    stopTimer(true);
     var s = Quiz.current();
-    if (!s) return;
+    if (!s) { keepAwake(false); return; }
     quizTimer = setInterval(function () {
       if (document.hidden) return;                      // background tab: time does not run
       Quiz.tick(1000);
@@ -781,8 +804,15 @@
       }
       if (left <= 0) { stopTimer(); UI.toast(t('quiz.timeUp')); finishSession(); }
     }, 1000);
+    keepAwake(true);
   }
-  function stopTimer() { if (quizTimer) { clearInterval(quizTimer); quizTimer = null; } Quiz.save(); }
+  /* The screen lock is released a moment later, unless the timer has started
+     again in between (moving to the next question stops and restarts it). */
+  function stopTimer(keep) {
+    if (quizTimer) { clearInterval(quizTimer); quizTimer = null; }
+    if (keep !== true) setTimeout(function () { if (!quizTimer) keepAwake(false); }, 1500);
+    Quiz.save();
+  }
   UI.stopTimer = stopTimer;
 
   UI.confirmQuit = function () {

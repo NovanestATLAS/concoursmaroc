@@ -102,3 +102,13 @@ export function nextSteps(lang, link, items) {
 ${items.map(([key, href, ic]) => html`<li><a href="${href}"><span class="ns-ico">${icon(ic)}</span><span>${x[key][0]}<small>${x[key][1]}</small></span></a></li>`)}
 </ul></nav>`;
 }
+
+/* "Partager sur WhatsApp" (wa.me link, no API key): the most used channel in
+   Morocco. The shared address carries utm_source=whatsapp so GA4 counts the
+   visits it brings. Website only. */
+export function waShare(lang, url, text, campaign) {
+  if (linkMode() === 'app') return '';
+  const u = `${url}${url.includes('?') ? '&' : '?'}utm_source=whatsapp&utm_medium=partage&utm_campaign=${campaign}`;
+  const href = `https://wa.me/?text=${encodeURIComponent(`${text}\n${u}`)}`;
+  return html`<a class="btn sm wa no-print" href="${href}" target="_blank" rel="noopener" data-wa="${campaign}">${icon('chat')} WhatsApp</a>`;
+}

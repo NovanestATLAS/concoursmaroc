@@ -2,6 +2,7 @@
 import { raw } from './html.mjs';
 
 export const PATHS = {
+  chat: 'M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9.5L5 21.5V18H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m3 6v2h2V9zm4 0v2h2V9zm4 0v2h2V9z',
   play: 'M8 5v14l11-7z',
   clock: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16m1 3h-2v6l5 3 1-1.7-4-2.3z',
   star: 'M12 2l2.5 6.5L21 9.5l-5 4.3 1.6 6.7L12 17l-5.6 3.5L8 13.8l-5-4.3 6.5-1z',

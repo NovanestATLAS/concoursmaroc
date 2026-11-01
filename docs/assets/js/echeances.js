@@ -5,8 +5,8 @@
   var LANG = document.documentElement.getAttribute('data-lang') || 'fr';
   var APP = document.documentElement.hasAttribute('data-app');
   var T = LANG === 'ar'
-    ? { today: 'اليوم', tomorrow: 'غدًا', inDays: 'بعد {n} يومًا', ongoing: 'جارٍ حتى {d}', past: 'انتهى', est: 'تقدير', add: 'أضف إلى المفكرة' }
-    : { today: "Aujourd'hui", tomorrow: 'Demain', inDays: 'Dans {n} jours', ongoing: "En cours jusqu'au {d}", past: 'Passé', est: 'Estimation', add: 'Ajouter à mon agenda' };
+    ? { today: 'اليوم', tomorrow: 'غدًا', inDays: 'بعد {n} يومًا', ongoing: 'جارٍ حتى {d}', past: 'انتهى', est: 'تقدير', add: 'تقويم آخر (.ics)', gcal: 'أضف إلى تقويم Google' }
+    : { today: "Aujourd'hui", tomorrow: 'Demain', inDays: 'Dans {n} jours', ongoing: "En cours jusqu'au {d}", past: 'Passé', est: 'Estimation', add: 'Autre agenda (.ics)', gcal: 'Ajouter à Google Agenda' };
 
   /* Arabic number agreement: 2 -> dual, 3 to 10 -> plural, otherwise singular accusative. */
   function inDays(n) {
@@ -53,6 +53,36 @@
     setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
   }
 
+  /* "Add to Google Calendar" link (calendar.google.com event template, no API
+     key): opens the Calendar app on Android, where an .ics download is
+     awkward. The event links back to the concours fiche, so the reminder
+     brings the candidate back to the site (utm_source=agenda in GA4). */
+  function gcalLink(li) {
+    var date = li.getAttribute('data-date');
+    var month = li.getAttribute('data-month');
+    var day = date || (month ? month + '-01' : null);
+    if (!day) return null;
+    var main = li.querySelector('.d-main a, .d-main strong');
+    var title = (main ? main.textContent : 'Concours').trim();
+    var link = li.querySelector('.d-main a');
+    var back = link ? link.href.split('#')[0] + (link.href.indexOf('?') === -1 ? '?' : '&') + 'utm_source=agenda&utm_medium=rappel' : '';
+    var details = (LANG === 'ar' ? 'التفاصيل والتحضير: ' : 'Détails et préparation : ') + (back || location.origin);
+    var url = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+      + '&text=' + encodeURIComponent((month && !date ? '(' + T.est + ') ' : '') + title)
+      + '&dates=' + icsDate(day) + '/' + nextDay(day)
+      + '&details=' + encodeURIComponent(details);
+    var a = document.createElement('a');
+    a.className = 'btn sm';
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = T.gcal;
+    a.addEventListener('click', function () {
+      try { if (typeof window.gtag === 'function') window.gtag('event', 'add_to_calendar', { method: 'google', item_id: li.getAttribute('data-id') }); } catch (e) { /* ignore */ }
+    });
+    return a;
+  }
+
   Array.prototype.slice.call(document.querySelectorAll('[data-deadlines]')).forEach(function (list) {
     var limit = parseInt(list.getAttribute('data-limit') || '0', 10);
     // a shorter list on phones (data-limit-mobile), so the page stays short
@@ -82,13 +112,17 @@
       if (limit && shown >= limit) { li.hidden = true; return; }
       shown++;
       if (withIcs && !li.classList.contains('past')) {
+        var row = document.createElement('div');
+        row.className = 'd-cal no-print';
+        var g = gcalLink(li);
+        if (g) row.appendChild(g);
         var b = document.createElement('button');
         b.type = 'button';
-        b.className = 'btn sm quiet no-print';
+        b.className = 'btn sm quiet';
         b.textContent = T.add;
-        b.style.marginTop = '6px';
         b.addEventListener('click', function () { download(li.getAttribute('data-id') + '.ics', [vevent(li)]); });
-        li.querySelector('.d-main').appendChild(b);
+        row.appendChild(b);
+        li.querySelector('.d-main').appendChild(row);
       }
     });
   });

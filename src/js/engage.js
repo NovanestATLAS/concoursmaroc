@@ -266,7 +266,11 @@
         el('b', { text: String(good) }), el('span', { text: '/' + qs.length })
       ]);
       var links = [again, el('a', { cls: 'btn ghost', href: practice, text: T.full })];
-      var more = [shareBtn];
+      // WhatsApp (wa.me link): the score and the page, tagged for GA4
+      var here = location.href.split('#')[0].split('?')[0] + '?utm_source=whatsapp&utm_medium=partage&utm_campaign=quiz';
+      var wa = el('a', { cls: 'btn sm wa', href: 'https://wa.me/?text=' + encodeURIComponent(T.shareText(good, qs.length) + '\n' + here), target: '_blank', rel: 'noopener', text: 'WhatsApp' });
+      wa.addEventListener('click', function () { track('share', { method: 'whatsapp', content_type: 'quiz_express', item_id: where }); });
+      var more = [wa, shareBtn];
       if (mockHref) more.unshift(el('a', { cls: 'btn sm quiet', href: mockHref, text: T.mock }));
       show(el('div', { cls: 'qx-end' }, [
         ring,
