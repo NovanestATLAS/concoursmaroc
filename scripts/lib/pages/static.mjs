@@ -1,5 +1,4 @@
 /* About, sources, contact, privacy, legal notice, 404 and offline pages. */
-import { PHOTOS } from '../../../content/photos.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -29,12 +28,6 @@ const P = (s) => html`<p>${inline(s)}</p>`;
 const UL = (a) => html`<ul>${a.map((s) => html`<li>${inline(s)}</li>`)}</ul>`;
 const H2 = (s) => html`<h2>${s}</h2>`;
 
-
-/* Photo credits (content/photos.mjs), on the Mentions légales page. */
-function photoCredits(lang) {
-  const ar = lang === 'ar';
-  return html`<h2 id="credits-photos">${ar ? 'حقوق الصور' : 'Crédits photos'}</h2><p>${ar ? 'الصور مأخوذة من ويكيميديا كومنز برخص حرة، وقد قمنا بقصها وتصغيرها؛ كل صورة تحتفظ برخصتها.' : 'Les photos viennent de Wikimedia Commons, sous licences libres. Nous les avons recadrées et redimensionnées ; chacune garde sa licence.'}</p><ul class="sources">${Object.values(PHOTOS).map((p) => html`<li>${p[lang] || p.fr} — ${ar ? 'تصوير' : 'photo'} ${p.author}, <a href="${p.licenseUrl}" rel="noopener license nofollow" target="_blank">${p.license}</a>, <a href="${p.source}" rel="noopener nofollow" target="_blank">Wikimedia Commons</a></li>`)}</ul>`;
-}
 
 export function buildStaticPages(site, all, lang, banks) {
   const ar = lang === 'ar';
@@ -118,11 +111,11 @@ ${H2('Vos droits')}${P("Conformément à la loi n° 09-08 relative à la protect
   pages.push(simplePage(site, lang, 'mentions-legales',
     ar ? 'إشعار قانوني' : 'Mentions légales',
     ar ? 'الإشعار القانوني لموقع Concours Maroc: الناشر، الاستضافة، المسؤولية والملكية الفكرية.' : 'Mentions légales du site Concours Maroc : éditeur, hébergement, responsabilité et propriété intellectuelle.',
-    () => ar ? html`${H2('الناشر')}${P('Concours Maroc، مشروع تحريري مستقل.')}${H2('الاستضافة')}${P('Cloudflare Pages — Cloudflare, Inc.')}${H2('المسؤولية')}${P('المعلومات مقدمة للإرشاد فقط. الإعلان الرسمي لكل دورة هو المرجع الوحيد.')}${photoCredits('ar')}`
+    () => ar ? html`${H2('الناشر')}${P('Concours Maroc، مشروع تحريري مستقل.')}${H2('الاستضافة')}${P('Cloudflare Pages — Cloudflare, Inc.')}${H2('المسؤولية')}${P('المعلومات مقدمة للإرشاد فقط. الإعلان الرسمي لكل دورة هو المرجع الوحيد.')}`
       : html`${H2('Éditeur')}${P('Concours Maroc — projet éditorial indépendant. Contact : voir la page contact.')}
 ${H2('Hébergement')}${P('Cloudflare Pages — Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis.')}
 ${H2('Responsabilité')}${P("Les informations sont fournies à titre indicatif et vérifiées avec soin, mais les conditions, dates et formats des concours évoluent. **Seul l'avis officiel publié par l'organisme organisateur fait foi.** Concours Maroc ne peut être tenu responsable d'une décision prise sur la seule base du site.")}
-${H2('Propriété intellectuelle')}${P("Les textes, questions d'entraînement, outils et visuels du site sont des créations originales. Aucun logo ni emblème officiel n'est utilisé. Les marques et noms d'établissements cités appartiennent à leurs titulaires.")}${photoCredits('fr')}`,
+${H2('Propriété intellectuelle')}${P("Les textes, questions d'entraînement, outils et visuels du site sont des créations originales. Aucun logo ni emblème officiel n'est utilisé. Les marques et noms d'établissements cités appartiennent à leurs titulaires.")}`,
     { crumb: ar ? 'إشعار قانوني' : 'Mentions légales' }));
 
   // Sources page: every external source cited by the guides + question sources

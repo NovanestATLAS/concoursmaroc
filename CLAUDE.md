@@ -36,9 +36,8 @@ Permanent rules for every session. The README explains the features in detail; r
 ## Performance and accessibility
 - Small vanilla JS modules, loaded only where used (KaTeX only when a formula appears). No new framework.
 - Images: WebP or AVIF, `srcset`, explicit `width`/`height`, `loading="lazy"` below the fold, alt text in both
-  languages. Photos only under a free licence (CC0, public domain, CC BY, CC BY-SA, Unsplash or Pexels licence),
-  each listed with author, licence and source on the credits page. No identifiable faces without a model
-  release, no public figures.
+  languages. No photos on the site or in the app (owner's decision, 1 Nov 2026: stock photos were not accurate);
+  use the existing SVG icons, illustrations and app screenshots.
 - WCAG AA contrast in light and dark themes, visible focus, 24 px minimum tap targets.
 - The Android app (`npm run build:app`, Cordova www) reuses the site pages: Quiz express, recent fiches, next steps and
   WhatsApp share run in it too; web push alerts, the Play Store funnel and the long-page bar stay site-only.

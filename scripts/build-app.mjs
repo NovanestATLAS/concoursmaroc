@@ -389,7 +389,6 @@ async function main() {
   for (const [to, from] of Object.entries(js)) copy(from, to);
   for (const f of fs.readdirSync(path.join(ROOT, 'src/js/outils'))) copy(`src/js/outils/${f}`, `js/outils/${f}`);
   for (const f of fs.readdirSync(path.join(ROOT, 'src/app/img'))) copy(`src/app/img/${f}`, `img/${f}`);
-  for (const f of fs.readdirSync(path.join(ROOT, 'src/img/photos'))) copy(`src/img/photos/${f}`, `img/photos/${f}`);
   copy('src/app/fonts/README.md', 'fonts/README.md');
   for (const f of fs.readdirSync(path.join(ROOT, 'src/fonts'))) copy(`src/fonts/${f}`, `fonts/${f}`);
   // KaTeX (typesets the $...$ formulas of the question banks)

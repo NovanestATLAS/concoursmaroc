@@ -1,6 +1,4 @@
 /* Concours guide pages and the concours directory. */
-import { photo } from '../photos.mjs';
-import { GROUP_PHOTOS } from '../../../content/photos.mjs';
 import { html, raw, L, esc } from '../html.mjs';
 import { icon } from '../icons.mjs';
 import { linker, breadcrumb, breadcrumbLd, faqLd, practiceHref, linkMode } from '../layout.mjs';
@@ -190,7 +188,6 @@ ${c.practice ? html`<div class="cta-box no-print"><h3>${x.practiceAside}</h3><p>
   ]);
   const body = html`${breadcrumb(lang, link, crumbs)}
 <article class="container" data-track="concours" data-track-title="${d.short}">
-${photo(GROUP_PHOTOS[c.group], lang, link, { priority: true })}
 <header class="page-head${appLive(site) ? ' with-app' : ''}">
 <span class="eyebrow">${(GROUPS.find((g) => g.id === c.group) || {})[lang] || ''} · ${levelLabel(c, lang)}</span>
 <h1>${d.title}</h1>

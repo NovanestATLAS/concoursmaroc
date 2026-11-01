@@ -26,8 +26,6 @@ Remplacez seulement le dossier `www/` (rien à changer dans les plugins ni dans
   l’accueil.
 - **« Et maintenant ? »** en fin de fiche (entraînement, examen blanc, dates,
   éligibilité, note, autres concours) et bouton **WhatsApp** pour partager une fiche.
-- **Photos** (licences libres, crédits dans Mentions légales) en tête des fiches,
-  des guides et sur l’accueil.
 - **Ajout à Google Agenda** des dates et écran maintenu allumé pendant l’examen
   blanc (déjà sur le site).
 - Code de l’application de votre version du 30/10/2026 conservé à l’identique

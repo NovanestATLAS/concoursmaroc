@@ -1287,18 +1287,3 @@ html[dir="rtl"] .alert-chip { padding: 6px 10px 6px 14px; }
 .alert-chip.on svg { fill: var(--ok-line); }
 .alb-more { margin-top: 12px; }
 .alb-more summary { cursor: pointer; font-weight: 700; font-size: var(--fs-sm); color: var(--accent); margin-bottom: 10px; }
-
-/* Photos (content/photos.mjs, scripts/lib/photos.mjs): cropped by their frame, short credit on the image */
-.photo { position: relative; margin: 0; overflow: hidden; background: var(--surface-2); }
-.photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--pos, 50% 50%); }
-.photo-credit {
-  position: absolute; inset-inline-end: 8px; bottom: 8px; max-width: calc(100% - 16px);
-  padding: 1px 8px; border-radius: 6px; background: rgba(8, 14, 40, .66); color: #fff;
-  font-size: .7rem; line-height: 1.45; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-}
-.cover { margin: 14px 0 8px; border-radius: 20px; aspect-ratio: 4 / 1; box-shadow: 0 18px 40px -26px rgba(8, 14, 40, .55); }
-@media (max-width: 640px) { .cover { aspect-ratio: 16 / 8; margin: 6px calc(-1 * var(--pad)) 6px; border-radius: 0; box-shadow: none; } }
-.hero > .hero-bg { position: absolute; inset: 0; z-index: -2; background: transparent; }
-.hero > .hero-bg img { opacity: .16; filter: saturate(.6); }
-.hero > .hero-bg .photo-credit { bottom: 10px; background: rgba(8, 14, 40, .45); color: #c9d2ea; }
-@media print { .cover, .hero-bg { display: none; } }
