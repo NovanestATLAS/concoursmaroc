@@ -103,10 +103,10 @@ function header(lang, link, page, site) {
     <a class="brand" href="${homeHref}" aria-label="Concours Maroc — ${t(lang, 'home')}">${logo(34)}<span>Concours <b>Maroc</b></span></a>
     <nav class="nav" id="site-nav" aria-label="${lang === 'ar' ? 'التنقل الرئيسي' : 'Navigation principale'}">
       ${nav.map(([href, key]) => html`<a href="${link(href)}"${page.section === key ? raw(' aria-current="page"') : ''}>${t(lang, key)}</a>`)}
-      <a class="lang-switch" href="${altHref}" hreflang="${lang === 'ar' ? 'fr' : 'ar'}" lang="${lang === 'ar' ? 'fr' : 'ar'}" title="${t(lang, 'langSwitchLabel')}">${t(lang, 'langSwitch')}</a>
       ${navCta(site, lang)}
     </nav>
     <div class="hdr-tools">
+      <a class="hdr-btn hdr-lang" href="${altHref}" hreflang="${lang === 'ar' ? 'fr' : 'ar'}" lang="${lang === 'ar' ? 'fr' : 'ar'}" title="${t(lang, 'langSwitchLabel')}" aria-label="${t(lang, 'langSwitchLabel')}"><span class="ls-long">${t(lang, 'langSwitch')}</span><span class="ls-short" aria-hidden="true">${lang === 'ar' ? 'FR' : 'ع'}</span></a>
       <div class="search-wrap">
         <button class="hdr-btn" type="button" id="search-btn" aria-expanded="false" aria-controls="search-panel" aria-label="${t(lang, 'search')}">${icon('search')}</button>
         <div class="search-panel" id="search-panel" role="search">

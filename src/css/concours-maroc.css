@@ -1205,3 +1205,28 @@ html[dir="rtl"] .sec-prog i { transform-origin: right center; }
 .hero-note { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 14px 0 0; font-size: var(--fs-sm); color: #c9d2ea; }
 .hero-note span { display: inline-flex; align-items: center; gap: 5px; }
 .hero-note svg { width: 16px; height: 16px; fill: #34c17f; }
+
+/* header: language switch next to the search button (every page, every screen) */
+.hdr-lang {
+  width: auto; padding: 0 14px; margin-inline-end: 4px; gap: 0; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--line-2); font-weight: 750; font-size: var(--fs-sm); line-height: 1; white-space: nowrap;
+}
+.hdr-lang:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+.hdr-lang[lang="ar"] { font-family: var(--font-ar); font-size: .95rem; }
+.hdr-lang .ls-short { display: none; }
+@media (max-width: 480px) {
+  .hdr-lang { padding: 0; margin-inline-end: 2px; }
+  .hdr-lang .ls-long { display: none; }
+  .hdr-lang .ls-short { display: inline; font-size: 1.05rem; }
+  .hdr-lang[lang="fr"] .ls-short { font-size: .85rem; letter-spacing: .02em; }
+}
+/* phones: four header buttons and the brand on one line */
+@media (max-width: 420px) {
+  .site-header .bar { gap: 6px; }
+  .site-header .brand { gap: 8px; }
+  .site-header .brand svg { width: 32px; height: 32px; flex-basis: 32px; }
+  .site-header .brand span { font-size: 1rem; white-space: nowrap; }
+  .hdr-tools .hdr-btn { width: 38px; height: 38px; }
+  .hdr-tools { gap: 1px; }
+}
+@media (max-width: 379px) { .site-header .brand span { white-space: normal; } }
