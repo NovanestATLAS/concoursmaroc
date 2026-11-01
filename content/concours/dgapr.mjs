@@ -19,8 +19,8 @@ export default {
   fr: {
     short: 'Administration pénitentiaire',
     name: "Délégation Générale à l'Administration Pénitentiaire et à la Réinsertion (DGAPR)",
-    title: 'Concours DGAPR 2027 : surveillants pénitentiaires — conditions et épreuves',
-    description: "Recrutement des surveillants pénitentiaires (DGAPR) : bac toutes séries ou diplôme de qualification professionnelle, 21–30 ans, épreuves écrites, sportives et orales.",
+    title: 'Concours DGAPR 2027 : surveillants pénitentiaires',
+    description: "Recrutement des surveillants pénitentiaires (DGAPR) : bac ou diplôme de qualification, 21–30 ans, épreuves écrites, sportives et orales.",
     keywords: ['concours dgapr', 'administration pénitentiaire', 'surveillant pénitentiaire', 'مباراة إدارة السجون'],
     intro: "La **DGAPR** recrute des **surveillants pénitentiaires**. En 2026, **1 620 postes** de surveillants assistants (2e grade) étaient ouverts aux titulaires d'un **bac toutes séries** ou d'un **diplôme de qualification professionnelle**, âgés de **21 à 30 ans**.",
     facts: [['Postes 2026', '1 620 surveillants'], ['Diplôme', 'Bac (toutes séries) ou qualification professionnelle'], ['Âge', '21 à 30 ans au 1er janvier (jusqu’à 35 avec services antérieurs)']],

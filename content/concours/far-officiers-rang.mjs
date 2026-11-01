@@ -26,8 +26,8 @@ export default {
   fr: {
     short: 'Officiers du rang FAR (Marine – CIMR, Air)',
     name: 'Élèves officiers du rang des FAR (ODR) — Marine Royale (CIMR), Forces Royales Air, Armée de Terre',
-    title: 'Concours officiers du rang FAR 2027 : Marine Royale (CIMR), Forces Royales Air — conditions',
-    description: 'Concours des élèves officiers du rang (ODR) des Forces Armées Royales : Marine Royale (Centre d’Instruction de la Marine Royale, CIMR), Forces Royales Air et Armée de Terre. Bac scientifique, 18–23 ans, taille, présélection, inscription sur recrutement.far.ma.',
+    title: 'Concours officiers du rang FAR 2027 : conditions',
+    description: 'Élèves officiers du rang des FAR : Marine Royale (CIMR), Forces Royales Air, Armée de Terre. Bac scientifique, 18–23 ans, taille, recrutement.far.ma.',
     keywords: ['officiers du rang', 'odr', 'cimr', 'centre d instruction de la marine royale', 'marine royale', 'forces royales air', 'aviation', 'armée de l air', 'école royale de l air', 'sous-officiers', 'far', 'recrutement far', 'ista'],
     intro: "Les **Forces Armées Royales** recrutent chaque année des **élèves officiers du rang** (« ODR ») pour la **Marine Royale** — formés au **Centre d’Instruction de la Marine Royale (CIMR)** à Casablanca —, les **Forces Royales Air** et l’**Armée de Terre**. Ce concours est distinct de ceux des écoles d’officiers ([École Royale Navale](@/concours/ern/), [École Royale de l’Air](@/concours/era/), [ARM Meknès](@/concours/arm/)) : il est ouvert aux bacheliers **scientifiques de 18 à 23 ans**.",
     facts: [['Bac', 'Filière scientifique (sessions 2024 à 2026)'], ['Âge', '18 à 23 ans au 16 août 2026'], ['Taille', '1,70 m (garçons) · 1,60 m (filles)'], ['Inscription', 'En ligne sur recrutement.far.ma'], ['Candidature 2026', 'Jusqu’au 29 mai 2026']],
@@ -44,8 +44,8 @@ export default {
   ar: {
     short: 'الضباط الصف بالقوات المسلحة الملكية (البحرية، الجو)',
     name: 'التلاميذ ضباط الصف بالقوات المسلحة الملكية — البحرية الملكية (CIMR)، القوات الملكية الجوية، القوات البرية',
-    title: 'مباراة ضباط الصف بالقوات المسلحة الملكية 2027: البحرية الملكية والقوات الجوية — الشروط',
-    description: 'مباراة ولوج سلك التلاميذ ضباط الصف بالقوات المسلحة الملكية: البحرية الملكية (مركز تكوين البحرية الملكية CIMR)، القوات الملكية الجوية والقوات البرية. بكالوريا علمية، 18–23 سنة، القامة، الانتقاء، التسجيل عبر recrutement.far.ma.',
+    title: 'مباراة ضباط الصف بالقوات المسلحة الملكية 2027',
+    description: 'التلاميذ ضباط الصف بالقوات المسلحة الملكية: البحرية والقوات الجوية والبرية. بكالوريا علمية، 18–23 سنة، القامة، التسجيل عبر recrutement.far.ma.',
     keywords: ['ضباط الصف', 'البحرية الملكية', 'القوات الملكية الجوية', 'القوات المسلحة الملكية', 'مركز تكوين البحرية الملكية', 'التجنيد'],
     intro: 'توظف **القوات المسلحة الملكية** كل سنة **التلاميذ ضباط الصف** («ODR») لفائدة **البحرية الملكية** — الذين يتلقون تكوينهم بـ**مركز تكوين البحرية الملكية (CIMR)** بالدار البيضاء — و**القوات الملكية الجوية** و**القوات البرية**. وهذه المباراة مختلفة عن مباريات مدارس الضباط ([المدرسة الملكية البحرية](@/concours/ern/)، [المدرسة الملكية الجوية](@/concours/era/)، [الأكاديمية الملكية العسكرية بمكناس](@/concours/arm/)): وهي مفتوحة لحاملي **البكالوريا العلمية من 18 إلى 23 سنة**.',
     facts: [['البكالوريا', 'شعبة علمية (دورات 2024 إلى 2026)'], ['السن', 'من 18 إلى 23 سنة في 16 غشت 2026'], ['القامة', '1.70 م (الذكور) · 1.60 م (الإناث)'], ['التسجيل', 'عبر الإنترنت على recrutement.far.ma'], ['الترشيح 2026', 'إلى غاية 29 ماي 2026']],

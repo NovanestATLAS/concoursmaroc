@@ -1,6 +1,6 @@
 ---
-title: Orientation après le bac au Maroc : le guide complet 2026-2027
-description: Toutes les voies après le bac au Maroc : facultés, écoles à accès régulé (médecine, ENSA, ENCG…), CPGE, écoles militaires, OFPPT. Sélection, calendrier et choix selon votre série.
+title: Orientation après le bac au Maroc : guide 2026-2027
+description: Toutes les voies après le bac au Maroc : facultés, écoles à accès régulé (médecine, ENSA, ENCG…), CPGE, écoles militaires, OFPPT, selon votre série.
 h1: Orientation après le bac au Maroc : le guide complet
 short: Orientation après le bac
 lead: Facultés, grandes écoles publiques, classes prépas, écoles militaires, formation professionnelle : comment fonctionne chaque voie, comment se fait la sélection et quel calendrier suivre selon votre série.

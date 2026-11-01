@@ -20,8 +20,8 @@ export default {
   fr: {
     short: 'OFPPT (formation pro)',
     name: 'OFPPT — Office de la Formation Professionnelle et de la Promotion du Travail (ISTA, CMC…)',
-    title: 'Inscription OFPPT 2027 : niveaux, conditions (avec ou sans bac) et MyWay',
-    description: "S'inscrire à l'OFPPT : niveaux technicien spécialisé (bac), technicien (niveau bac), qualification (niveau 3e année collège) et spécialisation, âge maximum, sélection et plateforme MyWay.",
+    title: 'Inscription OFPPT 2027 : niveaux, conditions et MyWay',
+    description: "S'inscrire à l'OFPPT : technicien spécialisé (bac), technicien (niveau bac), qualification et spécialisation, âge maximum, sélection, plateforme MyWay.",
     keywords: ['ofppt inscription', 'myway ofppt', 'ista', 'technicien spécialisé', 'formation professionnelle maroc', 'ofppt sans bac'],
     intro: "L'**OFPPT** est le premier opérateur public de formation professionnelle (ISTA, Cités des Métiers et des Compétences…). C'est **la voie la plus large pour les jeunes avec ou sans bac** : quatre niveaux de formation, de la **spécialisation** (niveau primaire) au **technicien spécialisé** (bac).",
     facts: [['Plateforme', 'myway.ac.ma'], ['Inscriptions 2026', '6 mai – 27 juillet 2026 (relayé)'], ['Âge', '30 ans max (TS et technicien)'], ['Sans bac', 'Oui : technicien, qualification, spécialisation']],
@@ -34,7 +34,7 @@ export default {
   ar: {
     short: 'التكوين المهني',
     name: 'مكتب التكوين المهني وإنعاش الشغل (OFPPT)',
-    title: 'التسجيل في التكوين المهني 2027: المستويات والشروط (بالباك أو بدونه)',
+    title: 'التسجيل في التكوين المهني 2027: المستويات والشروط',
     description: 'التسجيل في مكتب التكوين المهني: مستويات التقني المتخصص والتقني والتأهيل والتخصص، السن الأقصى، الانتقاء ومنصة MyWay.',
     keywords: ['التكوين المهني', 'OFPPT', 'تقني متخصص'],
     intro: '**مكتب التكوين المهني وإنعاش الشغل (OFPPT)** هو أول فاعل عمومي في التكوين المهني (ISTA، مدن المهن والكفاءات…). وهو **المسار الأوسع للشباب بالباك أو بدونه**: أربعة مستويات للتكوين، من **التخصص** (المستوى الابتدائي) إلى **التقني المتخصص** (البكالوريا).',

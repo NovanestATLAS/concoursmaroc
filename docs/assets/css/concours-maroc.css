@@ -532,7 +532,11 @@ html[dir="rtl"] .toc strong { letter-spacing: 0; font-size: var(--fs-sm); }
   color: #fff; border-radius: var(--r-lg); padding: 20px; box-shadow: var(--shadow);
 }
 .cta-box::after { content: ""; position: absolute; z-index: -1; width: 140px; height: 140px; inset-inline-end: -40px; bottom: -50px; clip-path: var(--star); background: rgba(245, 165, 36, .22); }
-.cta-box h3, .cta-box p { color: #fff; margin-top: 0; }
+.cta-box h3, .cta-box .cta-h, .cta-box p { color: #fff; margin-top: 0; }
+.cta-box .cta-h { font-size: 1.15rem; }
+.cta-box .cta-h::before { display: none; }
+.qcm-uses { margin: 28px 0 0; }
+.qcm-uses h2 { font-size: 1.2rem; }
 .cta-box p { color: #d5dcf2; font-size: var(--fs-sm); }
 .cta-box .btn { background: var(--saffron); color: var(--navy-950); box-shadow: none; }
 .cta-box .btn:hover { background: #ffb84d; color: var(--navy-950); }
@@ -613,12 +617,18 @@ html[dir="rtl"] .faq .faq-a { padding: 0 54px 16px 18px; }
 .deadline .d-date span { font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase; }
 .deadline .d-main a { font-weight: 700; text-decoration: none; color: var(--ink); }
 .deadline .d-main a:hover { color: var(--accent); }
+.deadline .d-main .d-cal a.btn { color: var(--accent-ink); font-weight: 700; }
+.deadline .d-main .d-cal a.btn:hover { color: var(--accent-ink); }
 .deadline .d-main small { display: block; color: var(--muted); }
 .deadline .d-left { font-weight: 800; font-size: var(--fs-sm); color: var(--gold); white-space: nowrap; }
 .deadline.soon .d-date { background: var(--bad-bg); color: var(--bad-ink); }
 .deadline.soon .d-left { color: var(--red); }
 :root[data-theme="dark"] .deadline.soon .d-left { color: #ff8a8a; }
-.deadline.past { opacity: .62; }
+/* past dates: greyed without transparency, so the text keeps AA contrast */
+.deadline.past { background: var(--surface-2); border-color: transparent; }
+.deadline.past .d-date { background: var(--surface-3); color: var(--ink-2); }
+.deadline.past .d-main a, .deadline.past .d-main strong { color: var(--ink-2); }
+.deadline.past .d-left { color: var(--muted); }
 @media (max-width: 520px) { .deadline { grid-template-columns: 56px 1fr; } .deadline .d-left { grid-column: 2; } }
 .hero-art .deadline { grid-template-columns: 56px 1fr; background: var(--surface-2); border-color: transparent; }
 .hero-art .deadline:hover { border-color: var(--line-2); }
@@ -736,6 +746,7 @@ html[dir="rtl"] .qcm-item ol.opts { list-style: arabic-indic; }
   flex: 0 0 40px; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
   background: color-mix(in srgb, var(--hue, var(--accent)) 12%, var(--surface)); color: var(--hue, var(--accent)); font-weight: 800; font-size: .95rem;
 }
+.subject .s-ico { color: color-mix(in srgb, var(--hue, var(--accent)) 70%, #0e1630); }
 :root[data-theme="dark"] .subject .s-ico { background: color-mix(in srgb, var(--hue, var(--accent)) 24%, var(--surface)); color: color-mix(in srgb, var(--hue, var(--accent)) 55%, #fff); }
 .subject .s-ico svg { width: 21px; height: 21px; fill: currentColor; }
 .subject .s-name { display: block; font-weight: 700; line-height: 1.3; }
@@ -913,7 +924,7 @@ html.is-android:not(.appbanner-off) .app-banner { display: block; }
 /* card of the side column (desktop) */
 .app-card.aside-app { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--saffron); border-radius: var(--r-lg); padding: 16px; box-shadow: var(--shadow-sm); }
 .aside-app .ac-top { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
-.aside-app .ac-top h3 { margin: 0; font-size: 1.02rem; line-height: 1.3; }
+.aside-app .ac-top .ac-title { margin: 0; font-size: 1.02rem; line-height: 1.3; font-weight: 800; color: var(--ink); }
 .aside-app .app-ico { width: 48px; height: 48px; box-shadow: 0 1px 4px rgba(14, 22, 48, .18); }
 .aside-app p { font-size: var(--fs-sm); color: var(--ink-2); margin: 0 0 12px; }
 .aside-app .ac-qr { display: flex; align-items: center; gap: 12px; margin: 0 0 12px; }
@@ -938,8 +949,8 @@ html.is-android:not(.appbanner-off) .app-banner { display: block; }
 }
 .inline-app .app-ico { width: 56px; height: 56px; box-shadow: 0 2px 8px rgba(14, 22, 48, .2); }
 .inline-app .ia-body { flex: 1; min-width: 0; }
-.inline-app h3 { margin: 0 0 4px; font-size: 1.08rem; }
-.inline-app p { margin: 0 0 12px; color: var(--ink-2); font-size: var(--fs-sm); }
+.inline-app .ac-title { margin: 0 0 4px; font-size: 1.08rem; font-weight: 800; color: var(--ink); line-height: 1.3; }
+.inline-app p:not(.ac-title) { margin: 0 0 12px; color: var(--ink-2); font-size: var(--fs-sm); }
 .inline-app .ia-more { font-weight: 700; font-size: var(--fs-sm); }
 .inline-app .ia-qr .app-qr { border: 1px solid var(--line); }
 @media (max-width: 480px) { .app-card.inline-app { flex-direction: column; gap: 12px; } }

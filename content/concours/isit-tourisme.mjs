@@ -19,8 +19,8 @@ export default {
   fr: {
     short: 'ISIT (tourisme)',
     name: 'Institut Supérieur International du Tourisme de Tanger (ISIT)',
-    title: 'Concours ISIT Tanger 2027 : école publique de tourisme après le bac',
-    description: "Accès à l'Institut Supérieur International du Tourisme de Tanger : candidats bacheliers récents, inscription en ligne, épreuve écrite en juillet, filières du tourisme et de l'hôtellerie.",
+    title: 'Concours ISIT Tanger 2027 : école de tourisme post-bac',
+    description: "Institut Supérieur International du Tourisme de Tanger : bacheliers récents, inscription en ligne, écrit en juillet, tourisme et hôtellerie.",
     keywords: ['isit tanger', 'concours tourisme maroc', 'école de tourisme', 'isitt'],
     intro: "L'**ISIT de Tanger** forme aux métiers du **tourisme, de l'hôtellerie et de l'événementiel** (management touristique, hébergement, voyages). En 2026, le concours était ouvert aux bacheliers des sessions **2024 à 2026**, avec une **épreuve écrite le 19 juillet**.",
     facts: [['Public', 'Bacheliers récents (2024–2026 pour la session 2026)'], ['Inscription 2026', 'Jusqu’au 3 juillet (13 juillet pour la session de rattrapage)'], ['Écrit 2026', '19 juillet 2026']],

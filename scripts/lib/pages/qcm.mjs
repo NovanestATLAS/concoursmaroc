@@ -29,15 +29,15 @@ const SEO_TITLE = {
   chimie: 'QCM chimie niveau bac corrigés pour les concours',
   svt: 'QCM SVT corrigés : biologie et géologie niveau bac',
   francais: 'QCM français corrigés : grammaire, orthographe, vocabulaire',
-  arabe: 'QCM langue arabe corrigés : grammaire, orthographe, rhétorique',
+  arabe: 'QCM langue arabe corrigés : grammaire et orthographe',
   anglais: 'QCM anglais corrigés : grammaire et vocabulaire',
   economie: 'QCM économie et gestion corrigés (ENCG, ISCAE, douane)',
   sciences: 'QCM sciences, numérique et administration corrigés',
   secourisme: 'QCM secourisme corrigés : premiers secours et incendie',
   architecture: 'QCM architecture et art corrigés (concours ENA)',
-  securite: 'QCM institutions de sécurité corrigés (police, gendarmerie, DGAPR)',
-  education: 'QCM système éducatif et pédagogie corrigés (concours enseignants)',
-  primaire: 'QCM concours enseignement primaire corrigés : didactique, pédagogie',
+  securite: 'QCM institutions de sécurité corrigés (police, DGAPR)',
+  education: 'QCM système éducatif et pédagogie corrigés',
+  primaire: 'QCM enseignement primaire corrigés : didactique',
 };
 
 // Who the subject is for, when it is not a written test of bac-level concours.
@@ -57,7 +57,7 @@ const SCOPE = {
 const TXT = {
   fr: {
     qcm: 'QCM corrigés', title: (s) => SEO_TITLE[s.id] || `QCM ${s.short.fr} corrigés pour les concours`,
-    desc: (s, n) => `${n} questions corrigées de ${s.fr.toLowerCase()} pour préparer les concours au Maroc, avec réponse et explication détaillée. Entraînez-vous gratuitement.`,
+    desc: (s, n) => `${n} QCM corrigés (${s.short ? s.short.fr : s.fr}) pour préparer les concours au Maroc, avec la réponse et une explication pour chaque question.`,
     h1: (s) => `QCM corrigés : ${s.fr}`,
     lead: (n, total) => `${n} questions d'exemple sur ${total} disponibles dans l'entraînement, avec la bonne réponse et une explication. Cliquez sur « Voir la réponse » après avoir réfléchi.`,
     show: 'Voir la réponse et l’explication', answer: 'Bonne réponse', train: 'S’entraîner sur cette matière (chronométré, corrigé)',
@@ -73,7 +73,7 @@ const TXT = {
     notice: 'Questions originales rédigées pour l’entraînement : elles reproduisent le style et le niveau des épreuves, pas des sujets officiels.',
   },
   ar: {
-    qcm: 'أسئلة مصححة', title: (s) => `أسئلة مصححة: ${s.ar} — التحضير للمباريات`,
+    qcm: 'أسئلة مصححة', title: (s) => (s.ar.length > 30 ? `أسئلة مصححة: ${s.ar}` : `أسئلة مصححة: ${s.ar} — للمباريات`),
     desc: (s, n) => `${n} سؤالًا مصححًا في ${s.ar} للتحضير للمباريات بالمغرب، مع الجواب والشرح المفصل. تمرّن مجانًا.`,
     h1: (s) => `أسئلة مصححة: ${s.ar}`,
     lead: (n, total) => `${n} سؤالًا نموذجيًا من أصل ${total} متاحة في التمرين، مع الجواب الصحيح والشرح.`,
@@ -161,7 +161,12 @@ ${SCOPE[lang][s.id] ? html`<p class="callout warn">${SCOPE[lang][s.id]}</p>` : '
 <details><summary>${x.show}</summary><div class="answer"><strong>${x.answer} : ${raw(renderMath(b.choices[b.correctIndex]))}</strong><br>${raw(renderMath(b.explanation))}</div></details>
 </li>`;
 })}</ol>
-<div class="cta-box no-print" style="margin:20px 0 40px"><h3>${x.train}</h3><a class="btn" href="${link(pfx + 'entrainement/')}#/setup?subject=${s.id}">${icon('play')} ${t(lang, 'practice')}</a></div>
+${(() => {
+  // internal links: the concours whose written test includes this subject
+  const uses = all.filter((c) => c[lang] && c.practice && (c.practice.subjects || []).includes(s.id));
+  return uses.length ? html`<section class="qcm-uses no-print"><h2>${lang === 'ar' ? 'مباريات تتضمن هذه المادة' : 'Concours où cette matière compte'}</h2><div class="chips">${uses.map((c) => html`<a class="chip" href="${link(`${pfx}concours/${c.id}/`)}">${c[lang].short}</a>`)}</div></section>` : '';
+})()}
+<div class="cta-box no-print" style="margin:20px 0 40px"><h2 class="cta-h">${x.train}</h2><a class="btn" href="${link(pfx + 'entrainement/')}#/setup?subject=${s.id}">${icon('play')} ${t(lang, 'practice')}</a></div>
 </div>`;
     const quizLd = {
       '@context': 'https://schema.org', '@type': 'Quiz', name: x.h1(s), inLanguage: useLang, educationalLevel: 'Baccalauréat',

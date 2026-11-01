@@ -31,8 +31,8 @@ export default {
   fr: {
     short: 'ENA (architecture)',
     name: "Écoles Nationales d'Architecture (ENA Rabat, Fès, Marrakech, Tétouan, Agadir, Oujda)",
-    title: 'Concours ENA architecture 2027 : conditions, seuils, épreuves (QCM + dessin)',
-    description: "Concours commun des Écoles Nationales d'Architecture : âge (moins de 25 ans), bacs acceptés, présélection, épreuve QCM (culture, art et architecture, géométrie, langue) et épreuve de dessin, places.",
+    title: 'Concours ENA architecture 2027 : seuils et épreuves',
+    description: "Concours commun des Écoles Nationales d'Architecture : moins de 25 ans, bacs acceptés, présélection, QCM (culture, art, géométrie) et dessin.",
     keywords: ['concours ena', 'école nationale d architecture', 'concours architecture maroc', 'seuil ena', 'concoursena'],
     intro: "Les **ENA** forment des **architectes** (diplôme d'architecte, bac+6). L'accès post-bac passe par un **concours commun** : présélection sur les notes du bac puis **deux épreuves écrites**, un **QCM** de culture et d'aptitudes et une **épreuve de dessin**.",
     facts: [['Diplôme', "Architecte (bac+6)"], ['Écoles', 'Rabat, Fès, Marrakech, Tétouan, Agadir, Oujda'], ['Âge', 'Moins de 25 ans à la date du concours'], ['Épreuves', 'QCM 50 questions en 50 min (60 %) + dessin 60 min (40 %)'], ['Places 2026', '415 (relayé)'], ['Inscription', 'concoursena.ma']],
@@ -48,7 +48,7 @@ export default {
   ar: {
     short: 'الهندسة المعمارية (ENA)',
     name: 'المدارس الوطنية للهندسة المعمارية (ENA)',
-    title: 'مباراة المدارس الوطنية للهندسة المعمارية 2027: الشروط والعتبات والاختبارات',
+    title: 'مباراة المدارس الوطنية للهندسة المعمارية 2027: الشروط',
     description: 'المباراة المشتركة للمدارس الوطنية للهندسة المعمارية: السن، الشعب، الانتقاء، اختبار الأسئلة متعددة الاختيارات واختبار الرسم.',
     keywords: ['مباراة الهندسة المعمارية', 'ENA'],
     intro: 'تكوّن **المدارس الوطنية للهندسة المعمارية (ENA)** **المهندسين المعماريين** (دبلوم مهندس معماري، باك+6). ويتم الولوج بعد البكالوريا عبر **مباراة مشتركة**: انتقاء أولي على أساس نقط البكالوريا ثم **اختباران كتابيان**: **أسئلة متعددة الاختيارات** في الثقافة والقدرات و**اختبار في الرسم**.',

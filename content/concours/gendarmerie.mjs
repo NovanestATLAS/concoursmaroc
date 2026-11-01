@@ -25,8 +25,8 @@ export default {
   fr: {
     short: 'Gendarmerie Royale',
     name: 'Gendarmerie Royale — recrutement des élèves-gendarmes',
-    title: 'Concours Gendarmerie Royale 2027 : âge, taille, bac et épreuves',
-    description: "Recrutement des élèves-gendarmes de la Gendarmerie Royale : bac de l'année ou précédente, 18–24 ans, taille minimale, célibat, présélection, tests médicaux, psychotechniques et sportifs.",
+    title: 'Concours Gendarmerie Royale 2027 : conditions, épreuves',
+    description: "Élèves-gendarmes de la Gendarmerie Royale : bac de l'année ou précédente, 18–24 ans, taille, célibat, présélection, tests médicaux et sportifs.",
     keywords: ['concours gendarmerie royale', 'élève gendarme', 'recrutement gr ma', 'gendarmerie maroc'],
     intro: "La **Gendarmerie Royale** recrute des **élèves-gendarmes** parmi les **bacheliers** de **18 à 24 ans**, toutes séries confondues. Pour 2026, **1 500 postes** ont été annoncés, avec une préinscription au printemps sur **recrutement.gr.ma**.",
     facts: [['Postes 2026', '1 500 (relayé)'], ['Bac', '2025 ou 2026, toutes séries'], ['Âge', '18 à 24 ans au 1er septembre'], ['Taille', '1,70 m (hommes) · 1,68 m (femmes) selon les sources'], ['Préinscription 2026', '25 mars – 15 avril 2026 (relayé)']],
@@ -40,7 +40,7 @@ export default {
   ar: {
     short: 'الدرك الملكي',
     name: 'الدرك الملكي — توظيف التلاميذ الدركيين',
-    title: 'مباراة الدرك الملكي 2027: التلاميذ الدركيون — السن والقامة والاختبارات',
+    title: 'مباراة الدرك الملكي 2027: السن والقامة والاختبارات',
     description: 'توظيف التلاميذ الدركيين: بكالوريا السنة أو السابقة، 18–24 سنة، القامة، العزوبة، الانتقاء والاختبارات الطبية والسيكوتقنية والرياضية.',
     keywords: ['مباراة الدرك الملكي', 'تلميذ دركي'],
     intro: 'يوظف **الدرك الملكي** **التلاميذ الدركيين** من بين **حاملي البكالوريا** البالغين من **18 إلى 24 سنة**، من جميع الشعب. ولسنة 2026 أُعلن عن **1500 منصب**، مع تسجيل قبلي في فصل الربيع على **recrutement.gr.ma**.',

@@ -1,6 +1,6 @@
 ---
-title: Bourse Minhaty 2026-2027 : conditions, RSU, dates, logement universitaire
-description: Bourse Minhaty : conditions (bac 2026, moins de 26 ans, RSU), campagne 2026-2027 close le 18 octobre 2026, suivi de la demande, cités de l'ONOUSC et couverture médicale.
+title: Bourse Minhaty 2026-2027 : conditions, dates et logement
+description: Bourse Minhaty : conditions (bac 2026, moins de 26 ans, RSU), campagne close le 18 octobre 2026, suivi de la demande, cités universitaires et AMO.
 h1: Bourse Minhaty, logement et aides pour les étudiants
 short: Bourse Minhaty et logement
 lead: Comment demander la bourse d'études supérieures sur Minhaty, ce que change l'inscription au RSU, et comment candidater à une cité universitaire.

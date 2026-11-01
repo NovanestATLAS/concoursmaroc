@@ -16,8 +16,8 @@ export default {
   fr: {
     short: '1337 (école de code)',
     name: 'École 1337 — formation gratuite au développement informatique (réseau 42)',
-    title: 'École 1337 : s’inscrire sans bac, test en ligne, piscine et campus',
-    description: "1337, l'école de code gratuite du réseau 42 au Maroc : ouverte de 18 à 30 ans sans diplôme ni bac, test en ligne de logique et de mémoire, piscine de 4 semaines, campus de Khouribga, Benguerir, Tétouan.",
+    title: 'École 1337 : inscription sans bac, test et piscine',
+    description: "1337, l'école de code gratuite du réseau 42 : 18–30 ans sans bac, test en ligne de logique et de mémoire, piscine de 4 semaines, 3 campus.",
     keywords: ['1337', 'école 1337', 'école de code maroc', 'sans bac informatique', 'piscine 1337', 'candidature 1337'],
     intro: "**1337** (prononcer « leet ») est une école de programmation **gratuite**, sans professeurs ni cours magistraux, issue du réseau **42**. Elle est **ouverte sans bac ni diplôme**, aux candidats de **18 à 30 ans** : une vraie seconde chance pour les passionnés de logique.",
     facts: [['Coût', 'Gratuit'], ['Diplôme requis', 'Aucun (bac non obligatoire)'], ['Âge', '18 à 30 ans au 1er novembre'], ['Sélection', 'Test en ligne puis « piscine » de 4 semaines'], ['Campus', 'Khouribga, Benguerir, Tétouan (1337 Med)']],

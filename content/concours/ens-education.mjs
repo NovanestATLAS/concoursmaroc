@@ -25,8 +25,8 @@ export default {
   fr: {
     short: 'ENS (devenir enseignant)',
     name: "Écoles Normales Supérieures (ENS), ESEF et FSE — licences d'éducation",
-    title: 'Devenir enseignant au Maroc : licence d’éducation ENS/ESEF après le bac (2027)',
-    description: "Accès aux licences d'éducation des ENS, ESEF et facultés des sciences de l'éducation après le bac : candidature sur Cursus Sup, sélection, spécialités et parcours vers le métier d'enseignant.",
+    title: 'Licence d’éducation ENS/ESEF 2027 : devenir enseignant',
+    description: "Licences d'éducation des ENS, ESEF et facultés des sciences de l'éducation : candidature sur Cursus Sup, sélection, spécialités, métier d'enseignant.",
     keywords: ['ens maroc', 'licence éducation', 'devenir enseignant maroc', 'esef', 'concours enseignant'],
     intro: "Pour devenir enseignant, la voie la plus directe après le bac est la **licence d'éducation**, proposée par les **ENS**, les **ESEF** et les facultés des sciences de l'éducation. Pour 2026-2027, l'accès en 1re année se faisait sur **Cursus Sup** pour les titulaires d'un bac marocain ou équivalent.",
     facts: [['Diplôme', "Licence d'éducation (bac+3)"], ['Établissements', 'ENS, ESEF, FSE'], ['Candidature', 'Cursus Sup'], ['Accès en S3', 'Concours propres à chaque ENS (ex. Tétouan : août–septembre)']],
@@ -41,7 +41,7 @@ export default {
   ar: {
     short: 'المدارس العليا للأساتذة',
     name: 'المدارس العليا للأساتذة والمدارس العليا للتربية والتكوين — إجازة التربية',
-    title: 'كيف تصبح أستاذًا بالمغرب: إجازة التربية بعد البكالوريا (2027)',
+    title: 'إجازة التربية 2027: كيف تصبح أستاذًا بعد البكالوريا',
     description: 'ولوج إجازات التربية بالمدارس العليا للأساتذة والمدارس العليا للتربية والتكوين وكليات علوم التربية عبر Cursus Sup.',
     keywords: ['المدرسة العليا للأساتذة', 'إجازة التربية', 'مهنة التدريس'],
     intro: 'لتصبح أستاذًا، فإن أقصر طريق بعد البكالوريا هو **إجازة التربية** التي تقترحها **المدارس العليا للأساتذة (ENS)** و**المدارس العليا للتربية والتكوين (ESEF)** وكليات علوم التربية. وبالنسبة لموسم 2026-2027، كان الولوج إلى السنة الأولى يتم عبر **Cursus Sup** لحاملي البكالوريا المغربية أو ما يعادلها.',

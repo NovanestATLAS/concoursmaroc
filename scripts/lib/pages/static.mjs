@@ -109,10 +109,10 @@ ${H2('Vos droits')}${P("Conformément à la loi n° 09-08 relative à la protect
 
   pages.push(simplePage(site, lang, 'mentions-legales',
     ar ? 'إشعار قانوني' : 'Mentions légales',
-    ar ? 'إشعار قانوني لموقع Concours Maroc.' : 'Mentions légales du site Concours Maroc : éditeur, hébergement, responsabilité et propriété intellectuelle.',
-    () => ar ? html`${H2('الناشر')}${P('Concours Maroc، مشروع تحريري مستقل.')}${H2('الاستضافة')}${P('GitHub Pages — GitHub, Inc.')}${H2('المسؤولية')}${P('المعلومات مقدمة للإرشاد فقط. الإعلان الرسمي لكل دورة هو المرجع الوحيد.')}`
+    ar ? 'الإشعار القانوني لموقع Concours Maroc: الناشر، الاستضافة، المسؤولية والملكية الفكرية.' : 'Mentions légales du site Concours Maroc : éditeur, hébergement, responsabilité et propriété intellectuelle.',
+    () => ar ? html`${H2('الناشر')}${P('Concours Maroc، مشروع تحريري مستقل.')}${H2('الاستضافة')}${P('Cloudflare Pages — Cloudflare, Inc.')}${H2('المسؤولية')}${P('المعلومات مقدمة للإرشاد فقط. الإعلان الرسمي لكل دورة هو المرجع الوحيد.')}`
       : html`${H2('Éditeur')}${P('Concours Maroc — projet éditorial indépendant. Contact : voir la page contact.')}
-${H2('Hébergement')}${P('GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.')}
+${H2('Hébergement')}${P('Cloudflare Pages — Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis.')}
 ${H2('Responsabilité')}${P("Les informations sont fournies à titre indicatif et vérifiées avec soin, mais les conditions, dates et formats des concours évoluent. **Seul l'avis officiel publié par l'organisme organisateur fait foi.** Concours Maroc ne peut être tenu responsable d'une décision prise sur la seule base du site.")}
 ${H2('Propriété intellectuelle')}${P("Les textes, questions d'entraînement, outils et visuels du site sont des créations originales. Aucun logo ni emblème officiel n'est utilisé. Les marques et noms d'établissements cités appartiennent à leurs titulaires.")}`,
     { crumb: ar ? 'إشعار قانوني' : 'Mentions légales' }));
@@ -126,7 +126,7 @@ ${H2('Propriété intellectuelle')}${P("Les textes, questions d'entraînement, o
 <h2>${ar ? 'مصادر الأسئلة' : "Sources des questions d'entraînement"}</h2><ul class="sources">${qs.sources.map((s) => html`<li>${s.url ? html`<a href="${s.url}" rel="noopener nofollow" target="_blank">${s.title}</a>` : s.title} <small class="muted">— ${s.org}</small></li>`)}</ul>`,
     { crumb: ar ? 'المصادر' : 'Sources' }));
 
-  // 404 + offline (FR only; GitHub Pages serves /404.html)
+  // 404 + offline (FR only; Cloudflare Pages serves /404.html)
   if (!ar) {
     const link = linker('404.html');
     const B = basePath(site);

@@ -42,7 +42,7 @@ const TOOLS = ['calcul-note-bac', 'orientation-apres-bac', 'calendrier-concours'
 
 const COPY = {
   fr: {
-    toolsH: 'Outils gratuits pour préparer ses concours', toolsTitle: 'Outils gratuits pour les concours : note du bac, orientation…',
+    toolsH: 'Outils gratuits pour préparer ses concours', toolsTitle: 'Outils gratuits pour les concours au Maroc',
     toolsDesc: "Outils gratuits pour les bacheliers marocains : note du bac et de présélection, orientation, calendrier des concours, planning de révision et barème QCM.",
     toolsLead: 'Calculez, vérifiez, planifiez : tout fonctionne dans votre navigateur, sans inscription, et vos données restent sur votre appareil.',
     tools: 'Outils',
@@ -57,7 +57,7 @@ const COPY = {
     },
     'orientation-apres-bac': {
       icon: 'compass', short: 'Orientation après le bac',
-      title: 'Orientation après le bac au Maroc : quelles écoles pour moi ?',
+      title: 'Orientation après le bac au Maroc : quelles écoles ?',
       desc: "Votre série, votre note de présélection et votre âge : la liste des concours et écoles accessibles au Maroc, comparés aux derniers seuils connus.",
       h1: 'Quelles écoles et quels concours pour mon bac ?',
       lead: "Un filtre rapide et honnête : il vérifie la série, le seuil indicatif de la dernière session et la limite d'âge connue de chaque concours. Il ne remplace pas l'avis officiel, mais il évite d'oublier une piste.",
@@ -65,7 +65,7 @@ const COPY = {
     },
     'calendrier-concours': {
       icon: 'calendar', short: 'Calendrier des concours',
-      title: 'Calendrier des concours au Maroc 2026-2027 : toutes les dates',
+      title: 'Calendrier des concours 2026-2027 au Maroc : les dates',
       desc: "Dates d'inscription et d'épreuves des concours au Maroc (médecine, ENSA, ENCG, CPGE, police, FAR, OFPPT…), avec compte à rebours et rappel.",
       h1: 'Calendrier des concours au Maroc',
       lead: "Les prochaines échéances confirmées, puis les périodes habituelles de la session 2027 et les repères de la session 2026. Ajoutez une date à votre agenda en un clic.",
@@ -73,8 +73,8 @@ const COPY = {
     },
     'planning-revision': {
       icon: 'list', short: 'Planning de révision',
-      title: 'Planning de révision pour concours : programme semaine par semaine',
-      desc: "Générez un planning de révision personnalisé jusqu'au jour du concours : répartition des matières selon vos points faibles, examens blancs et révisions finales.",
+      title: 'Planning de révision pour concours : semaine par semaine',
+      desc: "Un planning de révision personnalisé jusqu'au jour du concours : matières selon vos points faibles, examens blancs et révisions finales.",
       h1: 'Créer mon planning de révision',
       lead: "Choisissez votre concours, la date de l'épreuve et le temps disponible : vous obtenez un programme semaine par semaine, imprimable et enregistré sur votre appareil.",
       keywords: ['planning révision concours', 'programme révision bac concours', 'organisation révisions'],
@@ -82,15 +82,15 @@ const COPY = {
     'checklist-dossier': {
       icon: 'check', short: 'Checklist du dossier',
       title: 'Checklist du dossier de candidature aux concours au Maroc',
-      desc: "Liste des pièces à préparer pour un concours ou une inscription au Maroc : CNIE, relevés de notes, photos, attestation, certificat médical… Cochez au fur et à mesure.",
+      desc: "Les pièces à préparer pour un concours ou une inscription au Maroc : CNIE, relevés de notes, photos, certificat médical… à cocher au fur et à mesure.",
       h1: 'Checklist du dossier de candidature',
       lead: 'Cochez les documents prêts : la liste est enregistrée sur votre appareil. Les pièces exactes sont toujours fixées par l’avis du concours.',
       keywords: ['dossier concours maroc', 'pièces dossier inscription', 'documents concours'],
     },
     'simulateur-qcm': {
       icon: 'scales', short: 'Simulateur de barème QCM',
-      title: 'QCM avec points négatifs : faut-il répondre au hasard ? (simulateur)',
-      desc: "Simulateur de barème QCM (+2/−1, +1/−0,25…) : calculez l'espérance de gain d'une réponse au hasard et la meilleure stratégie selon le nombre de propositions éliminées.",
+      title: 'QCM à points négatifs : répondre au hasard ? Simulateur',
+      desc: "Simulateur de barème QCM (+2/−1, +1/−0,25…) : l'espérance de gain d'une réponse au hasard et la meilleure stratégie selon les choix éliminés.",
       h1: 'Simulateur de barème QCM : répondre ou s’abstenir ?',
       lead: "Avec des points négatifs, une réponse au hasard peut coûter cher. Indiquez le barème et le nombre de propositions que vous avez éliminées : l'outil vous dit si répondre est rentable.",
       keywords: ['qcm points négatifs', 'barème qcm', 'répondre au hasard qcm', 'stratégie qcm'],
@@ -98,13 +98,13 @@ const COPY = {
   },
   ar: {
     toolsH: 'أدوات مجانية للتحضير للمباريات', toolsTitle: 'أدوات مجانية للمترشحين: نقطة الباك، التوجيه، الأجندة',
-    toolsDesc: 'أدوات مجانية للحاصلين على البكالوريا بالمغرب: حساب المعدل ونقطة الانتقاء، التوجيه حسب الشعبة، أجندة المباريات، برنامج المراجعة، لائحة الوثائق ومحاكي سلم التنقيط.',
+    toolsDesc: 'أدوات مجانية للحاصلين على البكالوريا بالمغرب: حساب المعدل ونقطة الانتقاء، التوجيه، أجندة المباريات، برنامج المراجعة ولائحة الوثائق.',
     toolsLead: 'احسب وتحقق وخطط: كل شيء يعمل في متصفحك بدون تسجيل، وتبقى بياناتك على جهازك.',
     tools: 'أدوات',
     noscript: 'تتطلب هذه الأداة تفعيل JavaScript، ويبقى الشرح أسفله متاحًا.',
     'calcul-note-bac': { icon: 'calc', short: 'حساب نقطة البكالوريا', title: 'حساب معدل البكالوريا ونقطة الانتقاء (75/25)', desc: 'احسب معدلك العام في البكالوريا (25% مراقبة مستمرة، 25% جهوي، 50% وطني) والميزة ونقطة الانتقاء 75/25 لمباريات الطب وENSA وENCG وENSAM وISPITS.', h1: 'حساب معدل البكالوريا ونقطة الانتقاء', lead: 'أدخل نقطك الثلاث: تحسب الأداة المعدل العام والميزة ونقطة الانتقاء المعتمدة في أغلب المدارس، ثم تقارنها بآخر العتبات المعروفة.', keywords: ['حساب معدل الباك', 'نقطة الانتقاء'] },
     'orientation-apres-bac': { icon: 'compass', short: 'التوجيه بعد البكالوريا', title: 'التوجيه بعد البكالوريا: ما المدارس المناسبة لشعبتي ونقطتي؟', desc: 'أدخل شعبتك ونقطة الانتقاء وسنك: تعرض الأداة المباريات والمدارس المتاحة بالمغرب وموقعك من آخر العتبات المعروفة.', h1: 'ما المدارس والمباريات المناسبة لي؟', lead: 'أداة سريعة تتحقق من الشعبة والعتبة الإرشادية لآخر دورة والسن الأقصى المعروف لكل مباراة.', keywords: ['التوجيه بعد الباك'] },
-    'calendrier-concours': { icon: 'calendar', short: 'أجندة المباريات', title: 'أجندة المباريات بالمغرب 2026-2027: تواريخ التسجيل والاختبارات', desc: 'آخر آجال التسجيل والاختبارات والفترات المعتادة للمباريات بالمغرب مع العد التنازلي والإضافة إلى المفكرة.', h1: 'أجندة المباريات بالمغرب', lead: 'المواعيد القادمة المؤكدة، ثم الفترات المعتادة لدورة 2027 ومرجعيات دورة 2026.', keywords: ['أجندة المباريات'] },
+    'calendrier-concours': { icon: 'calendar', short: 'أجندة المباريات', title: 'أجندة المباريات بالمغرب 2026-2027: التسجيل والاختبارات', desc: 'آخر آجال التسجيل والاختبارات والفترات المعتادة للمباريات بالمغرب مع العد التنازلي والإضافة إلى المفكرة.', h1: 'أجندة المباريات بالمغرب', lead: 'المواعيد القادمة المؤكدة، ثم الفترات المعتادة لدورة 2027 ومرجعيات دورة 2026.', keywords: ['أجندة المباريات'] },
     'planning-revision': { icon: 'list', short: 'برنامج المراجعة', title: 'برنامج المراجعة للمباريات: خطة أسبوعية', desc: 'أنشئ برنامج مراجعة شخصي حتى يوم المباراة: توزيع المواد حسب نقط ضعفك وامتحانات تجريبية ومراجعة نهائية.', h1: 'إنشاء برنامج المراجعة', lead: 'اختر مباراتك وتاريخ الاختبار والوقت المتاح: تحصل على برنامج أسبوعي قابل للطباعة.', keywords: ['برنامج المراجعة'] },
     'checklist-dossier': { icon: 'check', short: 'لائحة وثائق الملف', title: 'لائحة وثائق ملف الترشيح للمباريات بالمغرب', desc: 'الوثائق المطلوبة عادة في ملفات المباريات والتسجيل بالمغرب: البطاقة الوطنية، كشوف النقط، الصور، الشهادة الطبية…', h1: 'لائحة وثائق ملف الترشيح', lead: 'ضع علامة على الوثائق الجاهزة، وتُحفظ اللائحة على جهازك. الوثائق الدقيقة يحددها إعلان المباراة.', keywords: ['وثائق ملف المباراة'] },
     'simulateur-qcm': { icon: 'scales', short: 'محاكي سلم التنقيط', title: 'الأسئلة متعددة الاختيارات بالتنقيط السلبي: هل تجيب عشوائيًا؟', desc: 'محاكي سلم التنقيط (+2/−1…): احسب الربح المتوقع للإجابة العشوائية وأفضل استراتيجية حسب عدد الاقتراحات المستبعدة.', h1: 'محاكي سلم التنقيط: أجيب أم أمتنع؟', lead: 'مع التنقيط السلبي قد تكلفك الإجابة العشوائية نقطًا. أدخل السلم وعدد الاقتراحات المستبعدة لتعرف هل الإجابة مربحة.', keywords: ['التنقيط السلبي'] },

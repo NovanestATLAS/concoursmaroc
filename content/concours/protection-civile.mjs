@@ -21,8 +21,8 @@ export default {
   fr: {
     short: 'Protection civile',
     name: 'Direction Générale de la Protection Civile — recrutement des agents de secours',
-    title: 'Concours Protection civile 2027 : agents de secours (sans bac) — conditions',
-    description: "Recrutement des élèves agents de secours de la Protection civile : niveau collège + permis, 18–26 ans, taille 1,70 m, inscription en ligne en février–mars, épreuves physiques et médicales.",
+    title: 'Concours Protection civile 2027 : agents de secours',
+    description: "Élèves agents de secours de la Protection civile : niveau collège + permis, 18–26 ans, 1,70 m, inscription en février–mars, épreuves physiques et médicales.",
     keywords: ['concours protection civile', 'sapeur pompier maroc', 'agent de secours', 'الوقاية المدنية'],
     intro: "La **Protection civile** (ministère de l'Intérieur) recrute des **élèves agents de secours** (sapeurs-pompiers secouristes). En 2026, **1 081 postes** étaient ouverts aux **hommes de 18 à 26 ans** ayant au moins le **certificat du cycle collégial** et un **permis de conduire B, C ou D**.",
     facts: [['Postes 2026', '1 081 (25 % réservés)'], ['Niveau', 'Cycle collégial + permis B, C ou D'], ['Âge', '18 à 26 ans au 1er janvier'], ['Taille', '1,70 m sans chaussures'], ['Inscription 2026', '20 février – 6 mars 2026']],

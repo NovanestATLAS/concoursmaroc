@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>QCM avec points négatifs : faut-il répondre au hasard ? (simulateur)</title>
-<meta name="description" content="Simulateur de barème QCM (+2/−1, +1/−0,25…) : calculez l&#39;espérance de gain d&#39;une réponse au hasard et la meilleure stratégie selon le nombre de propositions éliminées.">
+<title>QCM à points négatifs : répondre au hasard ? Simulateur</title>
+<meta name="description" content="Simulateur de barème QCM (+2/−1, +1/−0,25…) : l&#39;espérance de gain d&#39;une réponse au hasard et la meilleure stratégie selon les choix éliminés.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.maroc-concour.com/outils/simulateur-qcm/">
 <link rel="alternate" hreflang="fr" href="https://www.maroc-concour.com/outils/simulateur-qcm/">
@@ -15,8 +15,8 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Concours Maroc">
 <meta property="og:locale" content="fr_MA">
-<meta property="og:title" content="QCM avec points négatifs : faut-il répondre au hasard ? (simulateur)">
-<meta property="og:description" content="Simulateur de barème QCM (+2/−1, +1/−0,25…) : calculez l&#39;espérance de gain d&#39;une réponse au hasard et la meilleure stratégie selon le nombre de propositions éliminées.">
+<meta property="og:title" content="QCM à points négatifs : répondre au hasard ? Simulateur">
+<meta property="og:description" content="Simulateur de barème QCM (+2/−1, +1/−0,25…) : l&#39;espérance de gain d&#39;une réponse au hasard et la meilleure stratégie selon les choix éliminés.">
 <meta property="og:url" content="https://www.maroc-concour.com/outils/simulateur-qcm/">
 <meta property="og:image" content="https://www.maroc-concour.com/assets/img/og/outil-simulateur-qcm.png">
 <meta property="og:image:width" content="1200">
@@ -30,10 +30,10 @@
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="preload" href="../../assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 
-<link rel="stylesheet" href="../../assets/css/concours-maroc.css?v=0dc6c61e99">
+<link rel="stylesheet" href="../../assets/css/concours-maroc.css?v=891ece27a3">
 
 <script>(function(){var d=document.documentElement;try{var t=localStorage.getItem('cm.theme');if(!t||t==='auto'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t)}catch(e){}try{var u=navigator.userAgent||'';if(/Android/i.test(u))d.classList.add('is-android');if(/iPhone|iPad|iPod/i.test(u)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))d.classList.add('is-ios');var b=+localStorage.getItem('cm.appbanner')||0;if(b&&Date.now()-b<12096e5)d.classList.add('appbanner-off');var n=(+localStorage.getItem('cm.pv')||0)+1;localStorage.setItem('cm.pv',n);if(n<3)d.classList.add('appbanner-off')}catch(e){}})();</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.maroc-concour.com/"},{"@type":"ListItem","position":2,"name":"Outils","item":"https://www.maroc-concour.com/outils/"},{"@type":"ListItem","position":3,"name":"Simulateur de barème QCM","item":"https://www.maroc-concour.com/outils/simulateur-qcm/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Simulateur de barème QCM","url":"https://www.maroc-concour.com/outils/simulateur-qcm/","applicationCategory":"EducationalApplication","operatingSystem":"Web","inLanguage":"fr","offers":{"@type":"Offer","price":"0","priceCurrency":"MAD"},"description":"Simulateur de barème QCM (+2/−1, +1/−0,25…) : calculez l'espérance de gain d'une réponse au hasard et la meilleure stratégie selon le nombre de propositions éliminées."}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"fr","mainEntity":[{"@type":"Question","name":"Vaut-il mieux laisser une question vide au concours ENSA ?","acceptedAnswer":{"@type":"Answer","text":"Avec le barème +2/−1 publié pour 2026, répondre au hasard entre 4 propositions coûte en moyenne 0,25 point. Après avoir éliminé une proposition, l'espérance est nulle ; après en avoir éliminé deux, répondre rapporte en moyenne 0,5 point."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.maroc-concour.com/"},{"@type":"ListItem","position":2,"name":"Outils","item":"https://www.maroc-concour.com/outils/"},{"@type":"ListItem","position":3,"name":"Simulateur de barème QCM","item":"https://www.maroc-concour.com/outils/simulateur-qcm/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Simulateur de barème QCM","url":"https://www.maroc-concour.com/outils/simulateur-qcm/","applicationCategory":"EducationalApplication","operatingSystem":"Web","inLanguage":"fr","offers":{"@type":"Offer","price":"0","priceCurrency":"MAD"},"description":"Simulateur de barème QCM (+2/−1, +1/−0,25…) : l'espérance de gain d'une réponse au hasard et la meilleure stratégie selon les choix éliminés."}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"fr","mainEntity":[{"@type":"Question","name":"Vaut-il mieux laisser une question vide au concours ENSA ?","acceptedAnswer":{"@type":"Answer","text":"Avec le barème +2/−1 publié pour 2026, répondre au hasard entre 4 propositions coûte en moyenne 0,25 point. Après avoir éliminé une proposition, l'espérance est nulle ; après en avoir éliminé deux, répondre rapporte en moyenne 0,5 point."}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-11QRJ1VXW0"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-11QRJ1VXW0');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3709043100488694" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -75,7 +75,7 @@
 <header class="page-head with-app"><span class="eyebrow">Outils</span><h1>Simulateur de barème QCM : répondre ou s’abstenir ?</h1><p class="lead">Avec des points négatifs, une réponse au hasard peut coûter cher. Indiquez le barème et le nombre de propositions que vous avez éliminées : l&#39;outil vous dit si répondre est rentable.</p>
 <p class="updated"><span>Mis à jour le 30 octobre 2026</span></p>
 <div class="app-card aside-app play-only no-print only-desktop head-app">
-<div class="ac-top"><img class="app-ico" src="../../assets/img/app/icone-application-192.webp" width="48" height="48" alt="" loading="lazy" decoding="async"><h3>Concours Maroc sur Android</h3></div>
+<div class="ac-top"><img class="app-ico" src="../../assets/img/app/icone-application-192.webp" width="48" height="48" alt="" loading="lazy" decoding="async"><p class="ac-title">Concours Maroc sur Android</p></div>
 <p>Les fiches, les QCM corrigés et les examens blancs dans une application gratuite qui fonctionne sans internet.</p>
 <div class="ac-qr"><img class="app-qr" src="../../assets/img/app/qr-google-play.svg" width="112" height="112" alt="Code QR : l’application Concours Maroc sur Google Play" loading="lazy" decoding="async"><small>Scannez avec votre téléphone Android</small></div>
 <a class="btn sm block store-btn play-only" href="https://play.google.com/store/apps/details?id=com.novanest.concoursmaroc&amp;hl=fr&amp;referrer=utm_source%3Dmaroc-concour.com%26utm_medium%3Dwebsite%26utm_campaign%3Doutil-entete%26utm_content%3Dfr" data-app-cta="outil-entete" data-google-vignette="false" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 3h2v9.2l3.6-3.6L18 10l-6 6-6-6 1.4-1.4 3.6 3.6zM5 18h14v2H5z"/></svg><span>Télécharger sur Google Play</span></a>
@@ -96,7 +96,7 @@
 <h2>Le calcul derrière le simulateur</h2><p>Si vous hésitez entre <strong>k</strong> propositions restantes et que vous répondez au hasard parmi elles, vous avez une chance sur k d’avoir juste. Le gain moyen d’une réponse est :</p><p><code style="display:inline-block;padding:.5em .8em">Gain moyen = (1/k) × points bonne réponse + (1 − 1/k) × points mauvaise réponse</code></p><p>Il faut répondre si ce gain moyen dépasse les points d’une question laissée sans réponse (souvent 0).</p><div class="table-wrap"><table><thead><tr><th>Barème</th><th>4 propositions (aucune éliminée)</th><th>3 restantes</th><th>2 restantes</th></tr></thead><tbody><tr><th scope="row">+2 / −1 (ENSA 2026)</th><td>−0,25 : s’abstenir</td><td>0 : neutre</td><td>+0,5 : répondre</td></tr><tr><th scope="row">+1 / −1</th><td>−0,5 : s’abstenir</td><td>−0,33 : s’abstenir</td><td>0 : neutre</td></tr><tr><th scope="row">+1 / 0</th><td>+0,25 : répondre</td><td>+0,33 : répondre</td><td>+0,5 : répondre</td></tr></tbody></table></div><p>En pratique : sans pénalité, ne laissez jamais de case vide. Avec une pénalité, répondez dès que vous avez éliminé assez de propositions pour que le gain moyen devienne positif.</p>
 <aside class="app-card inline-app play-only no-print only-mobile" aria-label="Concours Maroc sur Android">
 <img class="app-ico" src="../../assets/img/app/icone-application-192.webp" width="56" height="56" alt="" loading="lazy" decoding="async">
-<div class="ia-body"><h3>Concours Maroc sur Android</h3><p>Les fiches, les QCM corrigés et les examens blancs dans une application gratuite qui fonctionne sans internet.</p>
+<div class="ia-body"><p class="ac-title">Concours Maroc sur Android</p><p>Les fiches, les QCM corrigés et les examens blancs dans une application gratuite qui fonctionne sans internet.</p>
 <div class="btn-row"><a class="btn sm store-btn play-only" href="https://play.google.com/store/apps/details?id=com.novanest.concoursmaroc&amp;hl=fr&amp;referrer=utm_source%3Dmaroc-concour.com%26utm_medium%3Dwebsite%26utm_campaign%3Doutil-simulateur-qcm%26utm_content%3Dfr" data-app-cta="outil-simulateur-qcm" data-google-vignette="false" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 3h2v9.2l3.6-3.6L18 10l-6 6-6-6 1.4-1.4 3.6 3.6zM5 18h14v2H5z"/></svg><span>Télécharger sur Google Play</span></a><a class="ia-more" href="../../application/">Découvrir l’application</a></div></div>
 
 </aside>
@@ -127,7 +127,7 @@
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="../../assets/js/site.js?v=0dc6c61e99" defer></script>
-<script src="../../assets/js/outils/commun.js?v=0dc6c61e99" defer></script><script src="../../assets/js/outils/simulateur-qcm.js?v=0dc6c61e99" defer></script>
+<script src="../../assets/js/site.js?v=891ece27a3" defer></script>
+<script src="../../assets/js/outils/commun.js?v=891ece27a3" defer></script><script src="../../assets/js/outils/simulateur-qcm.js?v=891ece27a3" defer></script>
 </body>
 </html>

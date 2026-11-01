@@ -15,8 +15,8 @@ export default {
   fr: {
     short: 'Université (accès ouvert)',
     name: "Facultés à accès ouvert (droit, économie, lettres, sciences, charia…)",
-    title: 'S’inscrire à l’université au Maroc après le bac : facultés à accès ouvert',
-    description: "Facultés à accès ouvert au Maroc (FSJES, FLSH, facultés des sciences, charia…) : inscription sans concours, licences, passerelles vers les écoles et masters, bourses Minhaty.",
+    title: 'S’inscrire à l’université au Maroc après le bac',
+    description: "Facultés à accès ouvert (FSJES, FLSH, sciences, charia…) : inscription sans concours, licences, passerelles vers écoles et masters, bourse Minhaty.",
     keywords: ['inscription université maroc', 'faculté accès ouvert', 'fsjes', 'flsh', 'faculté des sciences', 'licence maroc'],
     intro: "Les **facultés à accès ouvert** accueillent tous les bacheliers des séries correspondantes, **sans concours** : droit et économie (FSJES), lettres et sciences humaines (FLSH), sciences (FS), charia et études islamiques… Elles délivrent licences, masters et doctorats, et ouvrent des **passerelles** vers les écoles.",
     facts: [['Sélection', 'Aucune (dans la limite de la série)'], ['Diplômes', 'Licence (bac+3), master, doctorat'], ['Bourse', 'Minhaty (critères sociaux)']],
@@ -29,7 +29,7 @@ export default {
   ar: {
     short: 'الجامعة (الولوج المفتوح)',
     name: 'المؤسسات الجامعية ذات الولوج المفتوح',
-    title: 'التسجيل في الجامعة بالمغرب بعد البكالوريا: المؤسسات ذات الولوج المفتوح',
+    title: 'التسجيل في الجامعة بالمغرب بعد البكالوريا',
     description: 'كليات الحقوق والاقتصاد والآداب والعلوم والشريعة: التسجيل بدون مباراة، الإجازات، الجسور نحو المدارس، منحة منحتي.',
     keywords: ['التسجيل في الجامعة', 'كلية الحقوق', 'كلية الآداب'],
     intro: 'تستقبل **المؤسسات الجامعية ذات الولوج المفتوح** جميع حاملي البكالوريا من الشعب المناسبة، **بدون مباراة**: الحقوق والاقتصاد (FSJES)، الآداب والعلوم الإنسانية (FLSH)، العلوم (FS)، الشريعة والدراسات الإسلامية… وتمنح الإجازة والماستر والدكتوراه، وتفتح **جسورًا** نحو المدارس.',

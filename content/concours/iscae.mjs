@@ -26,8 +26,8 @@ export default {
   fr: {
     short: 'ISCAE',
     name: "Institut Supérieur de Commerce et d'Administration des Entreprises (ISCAE Casablanca et Rabat)",
-    title: 'Concours ISCAE 2027 : licence post-bac, conditions, épreuves et Grande École',
-    description: "Accès à l'ISCAE après le bac (licence en gestion à Casablanca et Rabat) : bacs acceptés, âge maximum 21 ans, présélection, épreuves (maths, anglais, culture générale), entretiens et voie Grande École.",
+    title: 'Concours ISCAE 2027 : licence post-bac et épreuves',
+    description: "L'ISCAE après le bac (licence en gestion, Casablanca et Rabat) : bacs acceptés, 21 ans au plus, présélection, maths, anglais, culture, entretiens.",
     keywords: ['concours iscae', 'iscae licence', 'iscae casablanca', 'iscae rabat', 'école de commerce publique'],
     intro: "L'**ISCAE**, grande école publique de management, propose une **licence en gestion accessible après le bac** (Casablanca et Rabat) et un **Programme Grande École** accessible après deux années de prépa (ECS/ECT) ou un bac+2/3. Le concours licence combine **présélection, écrits et entretiens**.",
     facts: [['Voie post-bac', 'Licence en gestion'], ['Bacs', 'Économiques ou scientifiques'], ['Âge', '21 ans au plus au 31 décembre'], ['Épreuves', 'Maths (2 h, coef. 2), anglais (1 h), culture générale (1 h 30) + entretiens'], ['Préinscription 2026', '3 – 22 juin 2026 (relayé)']],
@@ -42,7 +42,7 @@ export default {
   ar: {
     short: 'ISCAE',
     name: 'المعهد العالي للتجارة وإدارة المقاولات (ISCAE)',
-    title: 'مباراة ISCAE 2027: الإجازة بعد البكالوريا، الشروط والاختبارات',
+    title: 'مباراة ISCAE 2027: الإجازة بعد البكالوريا والاختبارات',
     description: 'ولوج المعهد العالي للتجارة وإدارة المقاولات بعد البكالوريا: الشعب، السن الأقصى 21 سنة، الانتقاء، الاختبارات والمقابلات.',
     keywords: ['ISCAE', 'المعهد العالي للتجارة وإدارة المقاولات'],
     intro: 'يقترح **ISCAE**، وهو مدرسة عمومية كبرى للتدبير، **إجازة في التسيير متاحة بعد البكالوريا** (الدار البيضاء والرباط) و**برنامج المدرسة الكبرى** المتاح بعد سنتين من الأقسام التحضيرية (ECS/ECT) أو بعد باك+2/3. وتجمع مباراة الإجازة بين **الانتقاء الأولي والاختبارات الكتابية والمقابلات**.',

@@ -40,8 +40,8 @@ export default {
   fr: {
     short: 'ISPITS (infirmiers)',
     name: 'Instituts Supérieurs des Professions Infirmières et Techniques de Santé (ISPITS)',
-    title: 'Concours ISPITS 2027 : infirmier, sage-femme — conditions et épreuves',
-    description: "Concours d'accès aux ISPITS : filières (infirmier polyvalent, sage-femme, kinésithérapie, radiologie…), bacs acceptés, présélection 75/25, épreuves, nombre de places et calendrier.",
+    title: 'Concours ISPITS 2027 : infirmier, sage-femme, épreuves',
+    description: "Concours des ISPITS : infirmier, sage-femme, kiné, radiologie…, bacs acceptés, présélection 75/25, épreuves, places et calendrier.",
     keywords: ['concours ispits', 'ispits', 'concours infirmier maroc', 'sage femme', 'kinésithérapie', 'ispits sante gov ma'],
     intro: "Les **ISPITS** forment en 3 ans (licence) les infirmiers, sages-femmes et techniciens de santé du secteur public. Le concours, ouvert aux bacheliers de l'année et de l'année précédente, combine une **présélection sur les notes du bac (75 % national + 25 % régional)** et une **épreuve écrite** ; près de **5 000 places** ont été annoncées pour 2026.",
     facts: [
@@ -125,7 +125,7 @@ export default {
   ar: {
     short: 'ISPITS (التمريض)',
     name: 'المعاهد العليا للمهن التمريضية وتقنيات الصحة (ISPITS)',
-    title: 'مباراة ISPITS 2027: التمريض والقبالة وتقنيات الصحة — الشروط والاختبارات',
+    title: 'مباراة ISPITS 2027: التمريض وتقنيات الصحة',
     description: 'مباراة ولوج المعاهد العليا للمهن التمريضية وتقنيات الصحة: التخصصات، الشعب المقبولة، الانتقاء 75/25، الاختبارات، عدد المقاعد والأجندة.',
     keywords: ['مباراة التمريض', 'ISPITS', 'معاهد المهن التمريضية'],
     intro: 'تكوّن **المعاهد العليا للمهن التمريضية وتقنيات الصحة (ISPITS)** في 3 سنوات (إجازة) الممرضين والقابلات وتقنيي الصحة للقطاع العمومي. وتجمع المباراة، المفتوحة لحاملي بكالوريا السنة الجارية والسنة السابقة، بين **انتقاء أولي على أساس نقط البكالوريا (75% وطني + 25% جهوي)** و**اختبار كتابي**؛ وقد أُعلن عن حوالي **5000 مقعد** لدورة 2026.',

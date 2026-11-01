@@ -12,10 +12,10 @@ import { appLive, asideCard, inlineCard } from '../app-funnel.mjs';
 
 const TXT = {
   fr: { guides: 'Guides', h1: 'Guides pratiques pour réussir son orientation et ses concours', lead: 'Méthodes, démarches et conseils concrets, de la candidature au jour du concours.',
-    title: 'Guides pratiques : orientation après le bac, Cursus Sup, bourses, QCM', desc: "Guides gratuits pour les bacheliers marocains : orientation après le bac, Cursus Sup, bourse Minhaty, réussir un QCM, tests psychotechniques, oral et épreuves sportives.",
+    title: 'Guides pratiques pour les bacheliers marocains', desc: "Guides gratuits pour les bacheliers marocains : orientation, Cursus Sup, bourse Minhaty, QCM, tests psychotechniques, oral et épreuves sportives.",
     read: 'Lire le guide', practiceTitle: 'Passez à la pratique', practiceText: 'Des QCM corrigés et un examen blanc adaptés à ce concours.', practiceBtn: "S'entraîner" },
   ar: { guides: 'أدلة', h1: 'أدلة عملية لإنجاح التوجيه والمباريات', lead: 'طرق ومساطر ونصائح عملية، من الترشيح إلى يوم المباراة.',
-    title: 'أدلة عملية: التوجيه بعد البكالوريا، Cursus Sup، المنح، الأسئلة متعددة الاختيارات', desc: 'أدلة مجانية للحاصلين على البكالوريا بالمغرب: التوجيه، منصة Cursus Sup، منحة منحتي، النجاح في الأسئلة متعددة الاختيارات، الاختبارات السيكوتقنية والشفوية والرياضية.',
+    title: 'أدلة عملية للحاصلين على البكالوريا بالمغرب', desc: 'أدلة مجانية للحاصلين على البكالوريا بالمغرب: التوجيه، Cursus Sup، منحة منحتي، الأسئلة متعددة الاختيارات، الاختبارات السيكوتقنية والشفوية.',
     read: 'اقرأ الدليل', practiceTitle: 'انتقل إلى التطبيق', practiceText: 'أسئلة مصححة وامتحان تجريبي ملائم لهذه المباراة.', practiceBtn: 'تمرّن' },
 };
 

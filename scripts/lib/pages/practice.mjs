@@ -10,7 +10,7 @@ import { trainerAppData, appBand, APP_TXT, ICON_FILE } from '../app-funnel.mjs';
 
 const TXT = {
   fr: {
-    title: 'Entraînement aux concours : QCM corrigés et examens blancs gratuits',
+    title: 'Entraînement aux concours : QCM corrigés et examens blancs',
     desc: "Entraînez-vous gratuitement aux concours marocains : QCM corrigés par concours, examens blancs chronométrés au vrai barème et suivi des points faibles.",
     h1: 'Entraînement aux concours : QCM corrigés et examens blancs',
     lead: "Choisissez votre concours : les questions, l'examen blanc (durée, nombre de questions, barème) et les révisions s'adaptent automatiquement. Changez de concours à tout moment depuis l'accueil de l'entraînement.",
@@ -27,7 +27,7 @@ const TXT = {
   },
   ar: {
     title: 'التمرن على المباريات: أسئلة مصححة وامتحانات تجريبية مجانية',
-    desc: 'تمرّن مجانًا على المباريات المغربية: أسئلة مصححة حسب المباراة (الطب، ENSA، ENCG، الشرطة، الدرك…)، امتحانات تجريبية موقتة بسلم التنقيط الحقيقي، نقط الضعف والمراجعة المتباعدة.',
+    desc: 'تمرّن مجانًا على المباريات المغربية: أسئلة مصححة حسب المباراة، امتحانات تجريبية موقتة بسلم التنقيط الحقيقي وتتبع نقط الضعف.',
     h1: 'التمرن على المباريات: أسئلة مصححة وامتحانات تجريبية',
     lead: 'اختر مباراتك: تتكيف الأسئلة والامتحان التجريبي (المدة، عدد الأسئلة، سلم التنقيط) والمراجعات تلقائيًا، ويمكنك تغيير المباراة في أي وقت من الصفحة الرئيسية للتمرين.',
     loading: 'جارٍ التحميل…', noscript: 'يتطلب التمرين التفاعلي JavaScript. يمكنك الاطلاع على الأسئلة المصححة حسب المادة أسفله.',

@@ -30,8 +30,8 @@ export default {
   fr: {
     short: 'Police (DGSN)',
     name: 'Direction Générale de la Sûreté Nationale (DGSN) — concours de la police',
-    title: 'Concours police DGSN 2026-2027 : grades, conditions et épreuves',
-    description: "Concours de la Sûreté Nationale : postes (gardiens de la paix, inspecteurs, officiers, commissaires), diplôme, âge 21–30 ans, taille, épreuves écrites, sportives et orales, calendrier (écrits annoncés les 22 et 29 novembre 2026).",
+    title: 'Concours police DGSN 2026-2027 : conditions et épreuves',
+    description: "Concours de la Sûreté Nationale : gardiens de la paix, inspecteurs, officiers, commissaires, 21–30 ans, taille, épreuves, écrits les 22 et 29 novembre 2026.",
     keywords: ['concours police', 'concours dgsn', 'gardien de la paix maroc', 'inspecteur de police', 'concours dgsn gov ma', 'مباراة الأمن الوطني'],
     intro: "La **DGSN** recrute chaque année plusieurs milliers de policiers par concours : **gardiens de la paix** (niveau **bac**), **inspecteurs**, **officiers de police**, **officiers de paix** et **commissaires** (diplômes supérieurs). Pour 2026, **8 427 postes** ont été annoncés, avec des écrits relayés pour le **22 novembre 2026** (le **29 novembre** pour les commissaires principaux).",
     facts: [['Postes 2026', '8 427 (dont 4 890 gardiens de la paix)'], ['Gardien de la paix', 'Baccalauréat'], ['Âge', '21 à 30 ans (commissaires : 21 à 35)'], ['Taille gardiens', '1,73 m (hommes) · 1,67 m (femmes)'], ['Inscription', 'concours.dgsn.gov.ma'], ['Écrits 2026', '22 novembre 2026 ; 29 novembre pour les commissaires principaux (relayé)']],
@@ -52,8 +52,8 @@ export default {
   ar: {
     short: 'الأمن الوطني',
     name: 'المديرية العامة للأمن الوطني — مباريات الشرطة',
-    title: 'مباراة الأمن الوطني 2026-2027: حارس الأمن، مفتش، ضابط — الشروط',
-    description: 'مباريات المديرية العامة للأمن الوطني: المناصب، الشهادة، السن 21–30 سنة، القامة، الاختبارات الكتابية والرياضية والشفوية، الأجندة (الاختبارات الكتابية 22 و29 نونبر 2026).',
+    title: 'مباراة الأمن الوطني 2026-2027: المناصب والشروط',
+    description: 'مباريات الأمن الوطني: المناصب، الشهادة، السن 21–30 سنة، القامة، الاختبارات الكتابية والرياضية والشفوية، والكتابي يومي 22 و29 نونبر 2026.',
     keywords: ['مباراة الأمن الوطني', 'حارس الأمن', 'مفتش الشرطة'],
     intro: 'توظف **المديرية العامة للأمن الوطني (DGSN)** كل سنة آلاف الشرطيين عبر مباريات: **حراس الأمن** (مستوى **البكالوريا**)، **المفتشون**، **ضباط الشرطة**، **ضباط الأمن** و**العمداء** (الشهادات العليا). ولسنة 2026 أُعلن عن **8427 منصبًا**، مع اختبارات كتابية متداولة يوم **22 نونبر 2026** (يوم **29 نونبر** بالنسبة للعمداء الممتازين).',
     facts: [['المناصب 2026', '8427 (منها 4890 حارس أمن)'], ['حارس الأمن', 'البكالوريا'], ['السن', 'من 21 إلى 30 سنة (العمداء: من 21 إلى 35)'], ['قامة حراس الأمن', '1.73 م (الذكور) · 1.67 م (الإناث)'], ['التسجيل', 'concours.dgsn.gov.ma'], ['الاختبارات الكتابية 2026', '22 نونبر 2026؛ 29 نونبر بالنسبة للعمداء الممتازين (متداول)']],

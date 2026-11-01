@@ -18,8 +18,8 @@ export default {
   fr: {
     short: 'FST (sciences et techniques)',
     name: 'Facultés des Sciences et Techniques (FST)',
-    title: 'FST Maroc 2027 : inscription, troncs communs MIP, BCG, GEGM et sélection',
-    description: "Accès aux Facultés des Sciences et Techniques : troncs communs (MIP, MIPC, BCG, GEGM…), bacs acceptés, sélection sur dossier, listes d'attente et passerelles vers les écoles d'ingénieurs.",
+    title: 'FST Maroc 2027 : inscription, troncs communs, sélection',
+    description: "Facultés des Sciences et Techniques : troncs communs (MIP, MIPC, BCG, GEGM…), bacs acceptés, sélection sur dossier et passerelles vers les écoles.",
     keywords: ['fst maroc', 'inscription fst', 'mip', 'bcg', 'faculté des sciences et techniques', 'tronc commun fst'],
     intro: "Les **FST** sont des facultés à **accès régulé** : l'admission se fait **sur dossier** (notes du bac), sans épreuve écrite, dans des **troncs communs** scientifiques et techniques. Elles mènent à la licence en sciences et techniques, aux masters et à des **cycles d'ingénieur** internes ou aux écoles via des passerelles.",
     facts: [['Accès', 'Sur dossier (classement)'], ['Troncs communs', 'MIP, MIPC, BCG, GEGM… selon la faculté'], ['Diplômes', 'DEUST/Licence, master, ingénieur'], ['Inscription', 'Cursus Sup ou site de l’université (été)']],
@@ -33,7 +33,7 @@ export default {
   ar: {
     short: 'كليات العلوم والتقنيات',
     name: 'كليات العلوم والتقنيات (FST)',
-    title: 'كليات العلوم والتقنيات 2027: التسجيل والجذوع المشتركة والانتقاء',
+    title: 'كليات العلوم والتقنيات 2027: التسجيل والانتقاء',
     description: 'ولوج كليات العلوم والتقنيات: الجذوع المشتركة، الشعب المقبولة، الانتقاء بالملف ولوائح الانتظار والجسور نحو مدارس المهندسين.',
     keywords: ['كلية العلوم والتقنيات', 'FST'],
     intro: '**كليات العلوم والتقنيات (FST)** مؤسسات ذات **استقطاب محدود**: يتم القبول **بالملف** (نقط البكالوريا)، دون اختبار كتابي، في **جذوع مشتركة** علمية وتقنية. وتؤدي إلى الإجازة في العلوم والتقنيات والماستر و**أسلاك المهندسين** داخل الكلية أو إلى المدارس عبر الجسور.',

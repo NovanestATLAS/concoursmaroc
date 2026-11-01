@@ -18,8 +18,8 @@ export default {
   fr: {
     short: 'ISMAC et ISADAC (cinéma, théâtre)',
     name: "ISMAC (métiers de l'audiovisuel et du cinéma) et ISADAC (art dramatique et animation culturelle), Rabat",
-    title: 'Concours ISMAC et ISADAC 2027 : cinéma, audiovisuel et théâtre après le bac',
-    description: "Écoles publiques des métiers du cinéma (ISMAC) et du théâtre (ISADAC) à Rabat : conditions d'âge, inscription en ligne, épreuves écrites et orales, calendrier de juillet.",
+    title: 'Concours ISMAC et ISADAC 2027 : cinéma et théâtre',
+    description: "Écoles publiques du cinéma (ISMAC) et du théâtre (ISADAC) à Rabat : conditions d'âge, inscription en ligne, écrits, oraux et calendrier.",
     keywords: ['ismac', 'isadac', 'école de cinéma maroc', 'école de théâtre maroc', 'concours audiovisuel'],
     intro: "Deux écoles publiques de Rabat forment aux métiers artistiques : l'**ISMAC** (réalisation, image, son, montage, production…) et l'**ISADAC** (interprétation, scénographie, animation culturelle). Elles recrutent des bacheliers de toutes séries par **concours écrit et oral**, en juillet.",
     facts: [['Bacs', 'Toutes séries'], ['ISADAC', '17–23 ans ; concours 18–26 juillet 2026'], ['ISMAC', '17–25 ans ; écrit + oral'], ['Inscription', 'En ligne, avant mi-juillet']],

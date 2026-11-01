@@ -23,7 +23,7 @@ export default {
     short: 'CNC (après prépa)',
     name: "Concours National Commun d'accès aux écoles d'ingénieurs (CNC)",
     title: 'CNC Maroc 2027 : écoles, épreuves, places et calendrier',
-    description: "Le CNC permet aux élèves de CPGE (MP, PSI, TSI) d'intégrer les grandes écoles d'ingénieurs marocaines : conditions, épreuves écrites et TIPE, écoles et places, calendrier.",
+    description: "Le CNC ouvre les écoles d'ingénieurs marocaines aux élèves de CPGE (MP, PSI, TSI) : conditions, écrits et TIPE, écoles, places et calendrier.",
     keywords: ['cnc maroc', 'concours national commun', 'cnc 2027', 'écoles ingénieurs maroc', 'tipe'],
     intro: "Le **Concours National Commun (CNC)** clôt les deux années de classes préparatoires scientifiques. Il donne accès aux **grandes écoles d'ingénieurs** publiques (EMI, EHTP, ENSIAS, INPT, INSEA, ENSMR, ENSAM, ENSA en cycle ingénieur…) selon le rang obtenu.",
     facts: [
@@ -69,7 +69,7 @@ export default {
   ar: {
     short: 'المباراة الوطنية المشتركة CNC',
     name: 'المباراة الوطنية المشتركة لولوج مدارس المهندسين (CNC)',
-    title: 'المباراة الوطنية المشتركة CNC 2027: المدارس والاختبارات والمقاعد',
+    title: 'مباراة CNC 2027: المدارس والاختبارات والمقاعد',
     description: 'تتيح المباراة الوطنية المشتركة لتلاميذ الأقسام التحضيرية (MP وPSI وTSI) ولوج مدارس المهندسين: الشروط، الاختبارات الكتابية وTIPE، المدارس والمقاعد والأجندة.',
     keywords: ['المباراة الوطنية المشتركة', 'CNC'],
     intro: 'تختتم **المباراة الوطنية المشتركة (CNC)** سنتي الأقسام التحضيرية العلمية، وتتيح ولوج **مدارس المهندسين الكبرى** العمومية (EMI وEHTP وENSIAS وINPT وINSEA وENSMR وENSAM وENSA في سلك المهندس…) حسب الرتبة المحصل عليها.',

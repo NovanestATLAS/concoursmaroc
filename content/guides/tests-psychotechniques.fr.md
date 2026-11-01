@@ -1,6 +1,6 @@
 ---
 title: Tests psychotechniques : exemples corrigés et méthode
-description: Suites numériques et de lettres, dominos, matrices, cubes, analogies, intrus, codage : les tests psychotechniques des concours au Maroc expliqués avec exemples corrigés et méthode.
+description: Suites, dominos, matrices, cubes, analogies, intrus, codage : les tests psychotechniques des concours au Maroc expliqués, avec exemples corrigés.
 h1: Tests psychotechniques : types de questions et méthode
 short: Tests psychotechniques
 lead: Écoles militaires, police, gendarmerie, ENCG, OFPPT, 1337 : les tests de logique reviennent partout. Ils s'apprennent : voici les familles de questions et les réflexes à acquérir.

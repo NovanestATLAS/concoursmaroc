@@ -19,8 +19,8 @@ export default {
   fr: {
     short: 'EST (DUT)',
     name: 'Écoles Supérieures de Technologie (EST) — DUT',
-    title: 'EST Maroc 2027 : inscription DUT sur Cursus Sup, sélection et filières',
-    description: "Accès aux Écoles Supérieures de Technologie : DUT en 2 ans (informatique, génie électrique, gestion, logistique…), candidature sur Cursus Sup, sélection sur dossier 75/25, calendrier.",
+    title: 'EST Maroc 2027 : inscription DUT, sélection et filières',
+    description: "Écoles Supérieures de Technologie : DUT en 2 ans (informatique, génie électrique, gestion…), candidature sur Cursus Sup, sélection 75/25, calendrier.",
     keywords: ['est maroc', 'inscription est', 'dut maroc', 'école supérieure de technologie', 'cursussup est'],
     intro: "Les **EST** préparent en **2 ans** au **Diplôme Universitaire de Technologie (DUT)**, une formation technologique courte et professionnalisante, prolongeable en licence professionnelle puis en école d'ingénieurs. L'admission se fait **sur dossier** via **Cursus Sup**.",
     facts: [['Diplôme', 'DUT (bac+2)'], ['Sélection', 'Sur dossier, 75 % national + 25 % régional'], ['Candidature 2026', '31 juillet – 23 août 2026 (relayé)'], ['Plateforme', 'Cursus Sup']],
@@ -33,7 +33,7 @@ export default {
   ar: {
     short: 'المدارس العليا للتكنولوجيا',
     name: 'المدارس العليا للتكنولوجيا (EST) — دبلوم جامعي للتكنولوجيا',
-    title: 'المدارس العليا للتكنولوجيا 2027: الترشيح عبر Cursus Sup والانتقاء والشعب',
+    title: 'المدارس العليا للتكنولوجيا 2027: الترشيح والانتقاء',
     description: 'ولوج المدارس العليا للتكنولوجيا: الدبلوم الجامعي للتكنولوجيا في سنتين، الترشيح عبر Cursus Sup، الانتقاء بالملف 75/25.',
     keywords: ['المدرسة العليا للتكنولوجيا', 'DUT'],
     intro: 'تُحضّر **المدارس العليا للتكنولوجيا (EST)** في **سنتين** لـ**الدبلوم الجامعي للتكنولوجيا (DUT)**، وهو تكوين تكنولوجي قصير وذو طابع مهني، يمكن مواصلته بإجازة مهنية ثم بمدرسة للمهندسين. ويتم القبول **بالملف** عبر **Cursus Sup**.',

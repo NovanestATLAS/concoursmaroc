@@ -1,6 +1,6 @@
 ---
-title: Réussir un QCM de concours : méthode, barème négatif et gestion du temps
-description: Méthode pour réussir les QCM des concours au Maroc (médecine, ENSA, ENSAM, ENCG, police…) : lire le barème, gérer le temps, répondre ou non au hasard, éviter les pièges, s'entraîner.
+title: Réussir un QCM de concours : méthode et barème négatif
+description: Réussir les QCM des concours au Maroc (médecine, ENSA, ENCG, police…) : lire le barème, gérer le temps, répondre au hasard ou non, éviter les pièges.
 h1: Réussir un QCM de concours : la méthode complète
 short: Réussir un QCM
 lead: Barème négatif, temps limité, calculatrice interdite : les QCM de concours se préparent avec une méthode précise. Voici comment gagner des points sans connaître davantage le cours.

@@ -1,6 +1,6 @@
 ---
-title: Entretien oral de concours : questions fréquentes et préparation
-description: Préparer l'oral d'un concours au Maroc (écoles militaires, police, ISCAE, ISIC, ENS) : déroulement, questions fréquentes, présentation, motivation, attitude et erreurs à éviter.
+title: Entretien oral de concours : questions et préparation
+description: Préparer l'oral d'un concours au Maroc (écoles militaires, police, ISCAE, ISIC, ENS) : déroulement, questions fréquentes, motivation et erreurs.
 h1: Entretien oral de concours : se préparer efficacement
 short: Entretien oral
 lead: Devant un jury, la motivation, la clarté et l'attitude comptent autant que les connaissances. Voici comment préparer les questions qui reviennent presque toujours.

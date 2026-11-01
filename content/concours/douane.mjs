@@ -19,8 +19,8 @@ export default {
   fr: {
     short: 'Douane (ADII)',
     name: 'Administration des Douanes et Impôts Indirects (ADII)',
-    title: 'Concours de la Douane (ADII) : inspecteurs et ingénieurs — profils et épreuves',
-    description: "Concours de recrutement de la Douane marocaine (ADII) : inspecteurs (licence), ingénieurs d'État, épreuves écrites et orales, calendrier 2026 (350 postes) et préparation.",
+    title: 'Concours Douane (ADII) : inspecteurs et ingénieurs',
+    description: "Concours de la Douane marocaine (ADII) : inspecteurs (licence), ingénieurs d'État, écrits et oraux, session 2026 (350 postes) et préparation.",
     keywords: ['concours douane maroc', 'adii', 'inspecteur des douanes', 'concours douane 2026'],
     intro: "L'**ADII** recrute surtout des **diplômés** : **inspecteurs** (niveau licence) et **ingénieurs d'État**. En 2026, **350 postes** (250 inspecteurs de 2e grade et 100 ingénieurs d'État) ont été annoncés, avec un écrit le **20 septembre 2026**. Après le bac, la voie consiste à préparer une **licence** (économie, droit, gestion, commerce international…).",
     facts: [['Niveau', 'Licence (inspecteurs), diplôme d’ingénieur'], ['Postes 2026', '350 (relayé)'], ['Écrit 2026', '20 septembre 2026']],

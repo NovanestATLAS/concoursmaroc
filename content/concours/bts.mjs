@@ -18,8 +18,8 @@ export default {
   fr: {
     short: 'BTS',
     name: 'Brevet de Technicien Supérieur (BTS) — lycées qualifiants',
-    title: 'BTS Maroc 2027 : candidature, conditions d’âge, sélection et filières',
-    description: "Le BTS au Maroc : formation de 2 ans en lycée (informatique, électrotechnique, gestion, audiovisuel…), candidature en ligne, âge maximum 23 ans, sélection sur la moyenne du bac.",
+    title: 'BTS Maroc 2027 : candidature, conditions et filières',
+    description: "Le BTS au Maroc : 2 ans en lycée (informatique, électrotechnique, gestion…), candidature en ligne, 23 ans au plus, sélection sur la moyenne du bac.",
     keywords: ['bts maroc', 'inscription bts', 'brevet de technicien supérieur', 'bts 2027'],
     intro: "Le **BTS** se prépare en **2 ans** dans des sections de lycées publics (et de certains établissements privés). Formation pratique en petits groupes, il mène au **Brevet de Technicien Supérieur**. La sélection se fait sur la **moyenne générale du bac**, pour les candidats de **23 ans au plus**.",
     facts: [['Durée', '2 ans (bac+2)'], ['Sélection', 'Moyenne générale du bac'], ['Âge', '23 ans au plus au 30 septembre'], ['Candidature 2026', '19 juin – 15 juillet 2026 (relayé)']],

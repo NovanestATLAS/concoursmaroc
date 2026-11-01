@@ -6,7 +6,8 @@
  * Fails (exit 1) on: broken internal links or assets, pages without title,
  * description, canonical or a single <h1>, duplicate titles, sitemap entries
  * without a page, unknown question source ids, malformed calendar dates.
- * Warnings (long titles/descriptions) are printed but do not fail. */
+ * Titles over 60 characters, descriptions over 160 and skipped heading levels
+ * are errors on indexable pages. */
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -81,15 +82,27 @@ for (const f of htmlFiles) {
   if (!desc) err(`${r}: missing meta description`);
   if (!canonical && !noindex) err(`${r}: missing canonical`);
   if (h1 !== 1) err(`${r}: ${h1} <h1> elements (expected 1)`);
+  // heading order: no level skipped (h1 -> h3) in the page
+  {
+    let prev = 0;
+    for (const m of src.matchAll(/<h([1-6])[\s>]/g)) {
+      const lv = Number(m[1]);
+      if (prev && lv > prev + 1) { err(`${r}: heading h${prev} followed by h${lv}`); break; }
+      prev = lv;
+    }
+  }
   if (title) {
     if (titles.has(title)) err(`${r}: duplicate <title> with ${titles.get(title)}`);
     titles.set(title, r);
-    if (title.length > 70) warn(`${r}: long title (${title.length} chars): ${title}`);
+    // search results show about 60 characters (entities such as &amp; count as one)
+    const tlen = title.replace(/&(?:#\d+|\w+);/g, '_').length;
+    if (tlen > 60 && !noindex) err(`${r}: title over 60 characters (${tlen}): ${title}`);
   }
   if (desc) {
     if (descriptions.has(desc)) warn(`${r}: same description as ${descriptions.get(desc)}`);
     descriptions.set(desc, r);
-    if (desc.length > 185) warn(`${r}: long description (${desc.length} chars)`);
+    const dlen = desc.replace(/&(?:#\d+|\w+);/g, '_').length;
+    if (dlen > 160 && !noindex) err(`${r}: description over 160 characters (${dlen})`);
     if (desc.length < 50) warn(`${r}: short description (${desc.length} chars)`);
   }
   if (canonical && !canonical.startsWith(site.siteUrl)) err(`${r}: canonical outside siteUrl (${canonical})`);

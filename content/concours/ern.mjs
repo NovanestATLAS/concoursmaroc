@@ -17,8 +17,8 @@ export default {
   fr: {
     short: 'École Royale Navale',
     name: 'École Royale Navale de Casablanca (ERN) — élèves officiers',
-    title: 'Concours École Royale Navale 2027 (Casablanca) : conditions, âge, cycles',
-    description: "Concours des élèves officiers de l'École Royale Navale : bac sciences mathématiques de l'année, 18–20 ans, taille minimale, cycles ingénieur et licence, présélection avec mention, épreuves.",
+    title: 'Concours École Royale Navale 2027 : conditions et cycles',
+    description: "Élèves officiers de l'École Royale Navale : bac sciences maths de l'année, 18–20 ans, taille, cycles ingénieur et licence, présélection, épreuves.",
     keywords: ['école royale navale', 'ern casablanca', 'marine royale', 'officier de marine'],
     intro: "L'**École Royale Navale** forme les officiers de la **Marine Royale** dans deux cycles : un **cycle ingénieur** (pour les bacheliers SM orientés vers les classes préparatoires) et un **cycle licence**. Les candidats doivent avoir **18 à 20 ans** et un **bac sciences mathématiques de l'année**.",
     facts: [['Bac', 'Sciences mathématiques (année du concours)'], ['Âge', '18 à 20 ans au 31 décembre'], ['Taille', '1,70 m (garçons) · 1,60 m (filles)'], ['Mention', '« Assez bien » minimum'], ['Candidature 2026', 'Jusqu’au 29 mai 2026']],

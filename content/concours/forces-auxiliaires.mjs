@@ -30,8 +30,8 @@ export default {
   fr: {
     short: 'Forces Auxiliaires',
     name: 'Forces Auxiliaires — recrutement des mokhaznis et des élèves officiers',
-    title: 'Concours Forces Auxiliaires 2026-2027 : mokhaznis sans bac, dates',
-    description: "Recrutement des mokhaznis des Forces Auxiliaires : niveau secondaire qualifiant (bac non exigé), 18–24 ans, taille, acuité visuelle, inscriptions closes le 16 octobre 2026, épreuves du 20 novembre au 16 décembre 2026.",
+    title: 'Concours Forces Auxiliaires 2026-2027 : mokhaznis',
+    description: "Mokhaznis des Forces Auxiliaires : sans bac (secondaire qualifiant), 18–24 ans, taille, vue, épreuves du 20 novembre au 16 décembre 2026.",
     keywords: ['concours forces auxiliaires', 'mokhazni', 'recrutement fa gov ma', 'القوات المساعدة'],
     intro: "Les **Forces Auxiliaires** recrutent des **mokhaznis** sans exiger le baccalauréat : le **niveau secondaire qualifiant** ou un **diplôme de qualification professionnelle** suffit. Pour la session 2026/2027, les **inscriptions sont closes depuis le 16 octobre 2026** ; les épreuves ont lieu **du 20 novembre au 16 décembre 2026** aux centres de formation de Lamjaâra (Ouezzane) et d'Aoulouz (Taroudant), selon les informations relayées.",
     facts: [['Niveau', 'Secondaire qualifiant ou qualification professionnelle'], ['Âge', '18 à 24 ans au 1er février 2027'], ['Taille', '1,70 m (hommes) · 1,65 m (femmes)'], ['Vue', '16/20 au moins sans correction'], ['Inscription', 'Close le 16 octobre 2026'], ['Épreuves', '20 novembre – 16 décembre 2026']],
@@ -45,8 +45,8 @@ export default {
   ar: {
     short: 'القوات المساعدة',
     name: 'القوات المساعدة — توظيف المخازنية والتلاميذ الضباط',
-    title: 'مباراة القوات المساعدة 2026-2027: المخازنية بدون باك — الشروط والتواريخ',
-    description: 'توظيف المخازنية: مستوى الثانوي التأهيلي (لا تشترط البكالوريا)، 18–24 سنة، القامة، حدة البصر، أُغلق التسجيل يوم 16 أكتوبر 2026، والاختبارات من 20 نونبر إلى 16 دجنبر 2026.',
+    title: 'مباراة القوات المساعدة 2026-2027: المخازنية بدون باك',
+    description: 'توظيف المخازنية: الثانوي التأهيلي دون اشتراط البكالوريا، 18–24 سنة، القامة، حدة البصر، والاختبارات من 20 نونبر إلى 16 دجنبر 2026.',
     keywords: ['مباراة القوات المساعدة', 'مخازني'],
     intro: 'توظف **القوات المساعدة** **المخازنية** دون اشتراط البكالوريا: يكفي **مستوى الثانوي التأهيلي** أو **دبلوم التأهيل المهني**. وبالنسبة لدورة 2026/2027، **أُغلق التسجيل يوم 16 أكتوبر 2026**، وتُجرى الاختبارات **من 20 نونبر إلى 16 دجنبر 2026** بمركزي التكوين بالمجاعرة (وزان) وأولوز (تارودانت)، حسب المعطيات المتداولة.',
     facts: [['المستوى', 'الثانوي التأهيلي أو التأهيل المهني'], ['السن', 'من 18 إلى 24 سنة في فاتح فبراير 2027'], ['القامة', '1.70 م (الذكور) · 1.65 م (الإناث)'], ['البصر', '16/20 على الأقل بدون تصحيح'], ['التسجيل', 'أُغلق يوم 16 أكتوبر 2026'], ['الاختبارات', '20 نونبر – 16 دجنبر 2026']],

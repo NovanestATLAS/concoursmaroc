@@ -48,8 +48,8 @@ export default {
   fr: {
     short: 'Médecine, pharmacie, dentaire',
     name: 'Facultés de Médecine, de Pharmacie et de Médecine Dentaire (FMP, FMD)',
-    title: 'Concours médecine 2027 au Maroc : seuil, épreuves, places et préparation',
-    description: 'Concours commun d’accès aux facultés publiques de médecine, pharmacie et médecine dentaire : bacs acceptés, seuil 75/25, QCM SVT-physique-chimie-maths, note éliminatoire, places et calendrier.',
+    title: 'Concours médecine 2027 au Maroc : seuil, épreuves, places',
+    description: 'Concours d’accès aux facultés publiques de médecine, pharmacie et dentaire : bacs acceptés, seuil 75/25, QCM SVT-PC-maths, note éliminatoire, places.',
     keywords: ['concours medecine', 'seuil medecine', 'concours fmp', 'concours pharmacie', 'concours medecine dentaire', 'fmd', 'qcm medecine'],
     intro: "L'accès en 1re année des facultés publiques de **médecine, de pharmacie et de médecine dentaire** passe par un **concours commun national**, organisé via la plateforme Cursus Sup : présélection sur les notes du bac (seuil relayé à **12/20** en 2025 et 2026), puis une épreuve écrite en QCM portant sur **SVT, physique, chimie et mathématiques**.",
     facts: [
@@ -156,8 +156,8 @@ export default {
   ar: {
     short: 'الطب والصيدلة وطب الأسنان',
     name: 'كليات الطب والصيدلة وكليات طب الأسنان',
-    title: 'مباراة الطب 2027 بالمغرب: العتبة والاختبارات والمقاعد والتحضير',
-    description: 'المباراة المشتركة لولوج كليات الطب والصيدلة وطب الأسنان العمومية: الشعب المقبولة، عتبة 75/25، أسئلة متعددة الاختيارات في علوم الحياة والأرض والفيزياء والكيمياء والرياضيات، النقطة الموجبة للرسوب، المقاعد والأجندة.',
+    title: 'مباراة الطب 2027 بالمغرب: العتبة والاختبارات والمقاعد',
+    description: 'مباراة ولوج كليات الطب والصيدلة وطب الأسنان العمومية: الشعب المقبولة، عتبة 75/25، اختبار في علوم الحياة والفيزياء والكيمياء والرياضيات، والمقاعد.',
     keywords: ['مباراة الطب', 'عتبة الطب', 'كلية الطب والصيدلة', 'مباراة طب الأسنان'],
     intro: 'يتم الولوج إلى السنة الأولى بكليات **الطب والصيدلة وطب الأسنان** العمومية عبر **مباراة وطنية مشتركة** بمنصة Cursus Sup: انتقاء أولي على أساس نقط البكالوريا (عتبة متداولة **12/20** في 2025 و2026)، ثم اختبار كتابي على شكل أسئلة متعددة الاختيارات في **علوم الحياة والأرض والفيزياء والكيمياء والرياضيات**.',
     facts: [

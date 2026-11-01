@@ -16,8 +16,8 @@ const TXT = {
   fr: {
     title: 'Application Android Concours Maroc : bientôt sur Google Play',
     description: 'L’application Android Concours Maroc : fiches des concours, QCM corrigés, examens blancs et lecture à voix haute, utilisables hors ligne. Bientôt sur Google Play ; en attendant, installez le site sur votre écran d’accueil.',
-    titleLive: 'Application Concours Maroc : QCM et concours hors ligne sur Android',
-    descriptionLive: 'Téléchargez gratuitement l’application Android Concours Maroc sur Google Play : fiches des concours, QCM corrigés, examens blancs, lecture à voix haute et alertes, même sans internet.',
+    titleLive: 'Application Concours Maroc : QCM hors ligne sur Android',
+    descriptionLive: 'L’application Android gratuite Concours Maroc : fiches des concours, QCM corrigés, examens blancs, lecture à voix haute et alertes, même sans internet.',
     crumb: 'Application Android', h1: 'L’application Android Concours Maroc',
     h1Live: 'Tous les concours au Maroc dans votre poche, même sans internet',
     eyebrowLive: 'Application Android gratuite',
@@ -69,8 +69,8 @@ const TXT = {
   ar: {
     title: 'تطبيق Concours Maroc على أندرويد: قريبًا على Google Play',
     description: 'تطبيق Concours Maroc على أندرويد: بطاقات المباريات، أسئلة مصححة، امتحانات تجريبية وقراءة بصوت مرتفع، بدون إنترنت. قريبًا على Google Play؛ وفي الانتظار، ثبّت الموقع على شاشتك الرئيسية.',
-    titleLive: 'تطبيق Concours Maroc: المباريات والأسئلة المصححة بدون إنترنت',
-    descriptionLive: 'حمّل مجانًا تطبيق Concours Maroc على أندرويد من Google Play: بطاقات المباريات، أسئلة مصححة، امتحانات تجريبية، قراءة بصوت مرتفع وتنبيهات، حتى بدون إنترنت.',
+    titleLive: 'تطبيق Concours Maroc: المباريات والأسئلة بدون إنترنت',
+    descriptionLive: 'تطبيق Concours Maroc المجاني على أندرويد: بطاقات المباريات، أسئلة مصححة، امتحانات تجريبية، قراءة بصوت مرتفع وتنبيهات، حتى بدون إنترنت.',
     crumb: 'تطبيق أندرويد', h1: 'تطبيق Concours Maroc على أندرويد',
     h1Live: 'كل المباريات بالمغرب في جيبك، حتى بدون إنترنت',
     eyebrowLive: 'تطبيق أندرويد مجاني',

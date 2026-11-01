@@ -46,7 +46,7 @@ export default {
     short: 'ENSA',
     name: 'Écoles Nationales des Sciences Appliquées (ENSA)',
     title: 'Concours ENSA 2027 : seuils, épreuves, barème et préparation',
-    description: "Concours commun des 13 ENSA du Maroc : bacs acceptés, seuils de présélection, format QCM (maths, physique-chimie), barème, calendrier et QCM d'entraînement corrigés.",
+    description: "Concours commun des 13 ENSA : bacs acceptés, seuils de présélection, QCM maths et physique-chimie, barème, calendrier et QCM corrigés.",
     keywords: ['concours ensa', 'seuil ensa', 'ensa maroc', 'concours commun ensa', 'qcm ensa', 'ensa cursussup', 'école ingénieur post bac'],
     intro: "Les ENSA forment des **ingénieurs d'État en 5 ans** juste après le bac : 2 années de cycle préparatoire intégré, puis 3 années de cycle ingénieur. L'accès en 1re année se fait par un **concours commun national** organisé pour les 13 écoles du réseau, avec une présélection sur les notes du bac puis une épreuve écrite en QCM.",
     facts: [
@@ -183,7 +183,7 @@ export default {
     short: 'ENSA',
     name: 'المدارس الوطنية للعلوم التطبيقية (ENSA)',
     title: 'مباراة ENSA 2027: العتبات والاختبارات وسلم التنقيط والتحضير',
-    description: 'المباراة المشتركة لولوج 13 مدرسة وطنية للعلوم التطبيقية بالمغرب: الشعب المقبولة، عتبات الانتقاء، صيغة الأسئلة متعددة الاختيارات، سلم التنقيط، الأجندة وتمارين مصححة.',
+    description: 'المباراة المشتركة لـ13 مدرسة وطنية للعلوم التطبيقية: الشعب المقبولة، عتبات الانتقاء، صيغة الاختبار، سلم التنقيط، الأجندة وتمارين مصححة.',
     keywords: ['مباراة ENSA', 'عتبة ENSA', 'المدارس الوطنية للعلوم التطبيقية', 'مباراة الهندسة بعد البكالوريا'],
     intro: 'تكوّن المدارس الوطنية للعلوم التطبيقية **مهندسي الدولة في 5 سنوات** مباشرة بعد البكالوريا: سنتان من السلك التحضيري المندمج ثم ثلاث سنوات من سلك المهندس. يتم الولوج إلى السنة الأولى عبر **مباراة وطنية مشتركة** للمدارس الـ13، تبدأ بانتقاء أولي على أساس نقط البكالوريا ثم اختبار كتابي على شكل أسئلة متعددة الاختيارات.',
     facts: [

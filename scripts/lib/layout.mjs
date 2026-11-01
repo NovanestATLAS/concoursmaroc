@@ -169,8 +169,8 @@ export function layout(site, page, footerLinks) {
   const altUrl = page.alternate ? absUrl(site, page.alternate) : null;
   const frUrl = lang === 'fr' ? canonical : altUrl;
   const ogImage = absUrl(site, page.ogImage || 'assets/img/og/concours-maroc.png');
-  // The brand is appended only when it still fits in what search results display.
-  const fullTitle = page.titleFull || (page.title.includes('Concours Maroc') || page.title.length > 52 ? page.title : `${page.title} | Concours Maroc`);
+  // The brand is appended only when the whole title stays within 60 characters (what search results show).
+  const fullTitle = page.titleFull || (page.title.includes('Concours Maroc') || page.title.length + 17 > 60 ? page.title : `${page.title} | Concours Maroc`);
   const jsonld = (page.jsonld || []).filter(Boolean);
 
   // Theme, then the device classes of the app funnel (app-funnel.mjs): Android

@@ -15,8 +15,8 @@ export default {
   fr: {
     short: 'Santé militaire (ERSSM)',
     name: 'École Royale du Service de Santé Militaire de Rabat (ERSSM)',
-    title: 'Concours ERSSM 2027 : médecin, dentiste ou pharmacien militaire — conditions',
-    description: "Concours post-bac de l'École Royale du Service de Santé Militaire : élèves officiers médecins, dentistes et pharmaciens, bac SM/PC/SVT de l'année, 18–22 ans, classement sur la moyenne du bac.",
+    title: 'Concours ERSSM 2027 : médecin ou pharmacien militaire',
+    description: "École Royale du Service de Santé Militaire : élèves officiers médecins, dentistes et pharmaciens, bac SM/PC/SVT de l'année, 18–22 ans, classement.",
     keywords: ['erssm', 'santé militaire', 'médecin militaire maroc', 'concours erssm'],
     intro: "L'**ERSSM** forme les **officiers médecins, médecins dentistes et pharmaciens** des Forces Armées Royales, en **6 ans** de formation. Les candidats sont des bacheliers scientifiques de l'année, classés sur leur **moyenne du bac**.",
     facts: [['Formation', 'Médecin, dentiste, pharmacien militaire (6 ans)'], ['Bac', 'SM, PC ou SVT de l’année'], ['Âge', '18 à 22 ans au 31 décembre'], ['Candidature 2026', 'Jusqu’au 29 mai 2026']],

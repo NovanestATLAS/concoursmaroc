@@ -45,8 +45,8 @@ export default {
   fr: {
     short: 'ENCG (TAFEM)',
     name: 'Écoles Nationales de Commerce et de Gestion (ENCG) — concours TAFEM',
-    title: 'Concours ENCG (TAFEM) 2027 : seuils, épreuve, écoles et préparation',
-    description: "Concours TAFEM d'accès aux ENCG : bacs acceptés, seuils de présélection (éco 12, SM 12, PC/SVT 14), contenu du test (logique, maths, français, culture générale), écoles et calendrier.",
+    title: 'Concours ENCG (TAFEM) 2027 : seuils, épreuve et écoles',
+    description: "Concours TAFEM des ENCG : bacs acceptés, seuils (éco 12, SM 12, PC/SVT 14), test (logique, maths, français, culture), écoles et calendrier.",
     keywords: ['tafem', 'concours encg', 'seuil encg', 'encg maroc', 'test tafem', 'école de commerce maroc'],
     intro: "Les **ENCG** forment en **5 ans** aux métiers du commerce, de la gestion, de la finance et du marketing. L'accès en 1re année se fait par le **TAFEM** (Test d'Admission en Formation en Management), **commun à toutes les ENCG** : présélection 75/25 sur le bac puis un **test écrit en QCM**.",
     facts: [

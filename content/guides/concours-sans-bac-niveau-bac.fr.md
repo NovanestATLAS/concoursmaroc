@@ -1,6 +1,6 @@
 ---
 title: Concours et formations sans le bac au Maroc : le guide
-description: Sans le bac ou avec un niveau bac : Forces Auxiliaires, Protection civile, OFPPT, école 1337, repasser le bac en candidat libre. Conditions, âges, sélection et calendrier.
+description: Sans bac ou niveau bac : Forces Auxiliaires, Protection civile, OFPPT, école 1337, bac en candidat libre. Conditions, âges, sélection et dates.
 h1: Concours et formations sans le bac au Maroc
 short: Sans le bac
 lead: Échouer au bac ou s'arrêter avant n'empêche pas de se former ni de passer des concours. Voici les voies réellement ouvertes, leurs conditions et leur calendrier.

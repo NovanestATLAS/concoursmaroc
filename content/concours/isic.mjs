@@ -22,8 +22,8 @@ export default {
   fr: {
     short: 'ISIC (journalisme)',
     name: "Institut Supérieur de l'Information et de la Communication (ISIC, Rabat)",
-    title: 'Concours ISIC 2027 : licence journalisme, conditions et épreuves',
-    description: "Concours d'accès à la licence en information et communication de l'ISIC (Rabat) : conditions (moyenne ≥ 14, notes de langues ≥ 14, 17–25 ans), présélection, écrit et oral, calendrier.",
+    title: 'Concours ISIC 2027 : licence de journalisme, épreuves',
+    description: "Licence information et communication de l'ISIC (Rabat) : moyenne ≥ 14, langues ≥ 14, 17–25 ans, présélection, écrit, oral et calendrier.",
     keywords: ['concours isic', 'isic rabat', 'école de journalisme maroc', 'licence communication'],
     intro: "L'**ISIC**, école publique de journalisme et de communication à Rabat, recrute en 1re année de **licence en information et communication** des bacheliers de **toutes séries** ayant d'excellentes notes de langues. Sélection : **dossier, écrit et oral**.",
     facts: [['Diplôme', 'Licence (bac+3), puis master'], ['Bacs', 'Toutes séries (bac de l’année ou de l’année précédente)'], ['Notes', 'Moyenne ≥ 14 ; arabe, français, 3e langue ≥ 14'], ['Âge', '17 à 25 ans au 31 décembre'], ['Concours 2026', '12 juillet 2026 (écrit et oral)']],
@@ -37,8 +37,8 @@ export default {
   ar: {
     short: 'المعهد العالي للإعلام والاتصال',
     name: 'المعهد العالي للإعلام والاتصال (ISIC، الرباط)',
-    title: 'مباراة المعهد العالي للإعلام والاتصال 2027: الشروط والاختبارات',
-    description: 'مباراة ولوج إجازة الإعلام والاتصال بالمعهد العالي للإعلام والاتصال: معدل 14 على الأقل، نقط اللغات، السن بين 17 و25 سنة، الانتقاء والاختبارين الكتابي والشفوي.',
+    title: 'مباراة المعهد العالي للإعلام والاتصال 2027',
+    description: 'إجازة الإعلام والاتصال بالمعهد العالي للإعلام والاتصال: معدل 14 على الأقل، نقط اللغات، السن من 17 إلى 25 سنة، الانتقاء والكتابي والشفوي.',
     keywords: ['المعهد العالي للإعلام والاتصال', 'ISIC', 'الصحافة'],
     intro: 'يستقبل **المعهد العالي للإعلام والاتصال (ISIC)**، وهو مدرسة عمومية للصحافة والاتصال بالرباط، في السنة الأولى من **الإجازة في الإعلام والاتصال** حاملي البكالوريا من **جميع الشعب** ذوي النقط الممتازة في اللغات. الانتقاء: **الملف والاختبار الكتابي والشفوي**.',
     facts: [['الدبلوم', 'الإجازة (باك+3) ثم الماستر'], ['الشعب', 'جميع الشعب (بكالوريا السنة الجارية أو السنة السابقة)'], ['النقط', 'معدل ≥ 14؛ العربية والفرنسية واللغة الثالثة ≥ 14'], ['السن', 'من 17 إلى 25 سنة في 31 دجنبر'], ['المباراة 2026', '12 يوليوز 2026 (كتابي وشفوي)']],

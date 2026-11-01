@@ -1,6 +1,6 @@
 ---
 title: Cursus Sup 2026-2027 : s'inscrire aux écoles étape par étape
-description: Mode d'emploi de Cursus Sup (cursussup.gov.ma) : écoles concernées, calendrier, documents, choix des établissements, présélection, convocation et inscription. Erreurs à éviter.
+description: Mode d'emploi de Cursus Sup (cursussup.gov.ma) : écoles concernées, calendrier, documents, choix des écoles, présélection et erreurs à éviter.
 h1: Cursus Sup : le mode d'emploi pour s'inscrire aux écoles après le bac
 short: Cursus Sup : mode d'emploi
 lead: La plateforme nationale de candidature aux établissements à accès régulé : qui l'utilise, quand s'inscrire et comment éviter les erreurs qui coûtent une place.

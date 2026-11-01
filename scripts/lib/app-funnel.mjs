@@ -193,7 +193,7 @@ export function asideCard(site, lang, link, { campaign, h, p, cls = '' }) {
   if (!appLive(site)) return '';
   const x = X(lang);
   return html`<div class="app-card aside-app play-only no-print only-desktop${cls ? ` ${cls}` : ''}">
-<div class="ac-top">${appIcon(link, lang, 48)}<h3>${h || x.genericH}</h3></div>
+<div class="ac-top">${appIcon(link, lang, 48)}<p class="ac-title">${h || x.genericH}</p></div>
 <p>${p || x.genericP}</p>
 <div class="ac-qr">${qrImg(link, lang, 112)}<small>${x.qrShort}</small></div>
 ${storeButton(site, lang, campaign, { cls: 'btn sm block' })}
@@ -206,7 +206,7 @@ export function inlineCard(site, lang, link, { campaign, h, p, mobileOnly = fals
   const x = X(lang);
   return html`<aside class="app-card inline-app play-only no-print${mobileOnly ? ' only-mobile' : ''}" aria-label="${x.genericH}">
 ${appIcon(link, lang, 56)}
-<div class="ia-body"><h3>${h || x.genericH}</h3><p>${p || x.genericP}</p>
+<div class="ia-body"><p class="ac-title">${h || x.genericH}</p><p>${p || x.genericP}</p>
 <div class="btn-row">${storeButton(site, lang, campaign, { cls: 'btn sm' })}<a class="ia-more" href="${link((lang === 'ar' ? 'ar/' : '') + 'application/')}">${x.discover}</a></div></div>
 ${qr ? html`<div class="ia-qr only-desktop">${qrImg(link, lang, 96)}</div>` : ''}
 </aside>`;

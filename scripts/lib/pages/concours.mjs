@@ -24,7 +24,7 @@ const TXT = {
     sourcesIntro: "Informations recoupées à partir des avis officiels et de sources publiques datées. En cas de différence, l'avis officiel de la session prime.",
     print: 'Imprimer', share: 'Partager',
     dirTitle: 'Tous les concours au Maroc après le bac : guide complet',
-    dirDesc: "Liste des concours et écoles accessibles après le bac ou avec le niveau bac au Maroc : conditions, seuils, épreuves, calendrier et entraînement, par domaine et par série de bac.",
+    dirDesc: "Les concours et écoles accessibles après le bac ou avec le niveau bac au Maroc : conditions, seuils, épreuves et dates, par domaine et par série.",
     dirH1: 'Concours et écoles au Maroc',
     dirLead: "Choisissez un domaine ou filtrez par série de bac : chaque fiche détaille les conditions, la sélection, les épreuves, le calendrier et propose un entraînement adapté.",
     filterSearch: 'Filtrer par nom (ex. ENSA, police, infirmier)', filterBac: 'Ma série de bac', filterAll: 'Toutes les séries',

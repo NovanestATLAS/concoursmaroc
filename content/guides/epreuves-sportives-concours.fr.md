@@ -1,6 +1,6 @@
 ---
-title: Épreuves sportives des concours au Maroc : comment se préparer
-description: Préparer les épreuves physiques des concours au Maroc : types d'épreuves, visite médicale, plan d'entraînement de 8 semaines, erreurs à éviter et conseils pour le jour J.
+title: Épreuves sportives des concours au Maroc : se préparer
+description: Épreuves physiques des concours au Maroc : types d'épreuves, visite médicale, plan d'entraînement de 8 semaines et conseils pour le jour J.
 h1: Épreuves sportives des concours : comment se préparer
 short: Épreuves sportives
 lead: Police, gendarmerie, écoles militaires, Forces Auxiliaires, Protection civile : les épreuves physiques sont souvent éliminatoires. Un entraînement progressif de deux mois change tout.

@@ -25,8 +25,8 @@ export default {
   fr: {
     short: 'IAV Hassan II (APESA)',
     name: 'Institut Agronomique et Vétérinaire Hassan II — Année préparatoire APESA',
-    title: 'Concours IAV Hassan II (APESA) 2027 : conditions, âge, test écrit et calendrier',
-    description: "Accès post-bac à l'IAV Hassan II via l'APESA : bacs scientifiques, âge maximum, présélection, test écrit, oral, débouchés (ingénieur agronome, vétérinaire, topographe) et calendrier.",
+    title: 'Concours IAV Hassan II (APESA) 2027 : conditions, épreuves',
+    description: "Accès post-bac à l'IAV Hassan II via l'APESA : bacs scientifiques, âge maximum, présélection, écrit, oral, métiers (agronome, vétérinaire) et calendrier.",
     keywords: ['iav hassan ii', 'apesa', 'concours iav', 'vétérinaire maroc', 'ingénieur agronome'],
     intro: "L'**IAV Hassan II** (Rabat) recrute ses bacheliers par l'**APESA** (Année préparatoire aux études supérieures agronomiques). Après cette préparation, les étudiants poursuivent vers les cycles d'**ingénieur agronome**, de **docteur vétérinaire** ou d'**ingénieur topographe**, entre autres.",
     facts: [
@@ -50,7 +50,7 @@ export default {
   ar: {
     short: 'معهد الحسن الثاني (APESA)',
     name: 'معهد الحسن الثاني للزراعة والبيطرة — السنة التحضيرية APESA',
-    title: 'مباراة معهد الحسن الثاني للزراعة والبيطرة (APESA) 2027: الشروط والسن والاختبار',
+    title: 'مباراة معهد الحسن الثاني للزراعة والبيطرة 2027',
     description: 'الولوج بعد البكالوريا إلى معهد الحسن الثاني عبر السنة التحضيرية APESA: الشعب العلمية، السن الأقصى، الانتقاء، الاختبار الكتابي والآفاق.',
     keywords: ['معهد الحسن الثاني للزراعة والبيطرة', 'APESA', 'البيطرة'],
     intro: 'يستقبل **معهد الحسن الثاني للزراعة والبيطرة** (الرباط) حاملي البكالوريا عبر **APESA** (السنة التحضيرية للدراسات العليا الزراعية). وبعد هذه السنة التحضيرية، يتابع الطلبة دراستهم في أسلاك **مهندس زراعي** أو **دكتور بيطري** أو **مهندس طبوغرافي**، من بين أسلاك أخرى.',

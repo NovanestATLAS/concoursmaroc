@@ -19,8 +19,8 @@ export default {
   fr: {
     short: 'Fonction publique',
     name: 'Concours de la fonction publique (ministères, collectivités, établissements publics)',
-    title: 'Concours de la fonction publique au Maroc : niveaux, épreuves et méthode',
-    description: "Comment fonctionnent les concours de la fonction publique marocaine (ministères, communes, CNSS et établissements publics) : emploi-public.ma, niveaux requis, épreuves écrites et orales, préparation.",
+    title: 'Concours de la fonction publique au Maroc : le guide',
+    description: "Concours de la fonction publique marocaine (ministères, communes, CNSS…) : emploi-public.ma, niveaux requis, épreuves écrites et orales, préparation.",
     keywords: ['concours fonction publique maroc', 'emploi public', 'concours administration', 'emploi-public.ma', 'concours cnss'],
     intro: "Ministères, collectivités territoriales et établissements publics (CNSS, offices, agences…) recrutent **par concours**, publiés sur **emploi-public.ma**. Les postes accessibles avec le **bac** (adjoints administratifs, techniciens, agents) côtoient ceux réservés aux diplômés (administrateurs, ingénieurs).",
     facts: [['Publication', 'emploi-public.ma'], ['Niveaux', 'Du bac au bac+5 selon le grade'], ['Épreuves', 'Écrit (culture, spécialité, langues) + oral']],
@@ -33,7 +33,7 @@ export default {
   ar: {
     short: 'الوظيفة العمومية',
     name: 'مباريات الوظيفة العمومية',
-    title: 'مباريات الوظيفة العمومية بالمغرب: المستويات والاختبارات والطريقة',
+    title: 'مباريات الوظيفة العمومية بالمغرب: المستويات والاختبارات',
     description: 'كيف تشتغل مباريات الوظيفة العمومية: بوابة التشغيل العمومي، المستويات المطلوبة، الاختبارات الكتابية والشفوية، التحضير.',
     keywords: ['مباريات الوظيفة العمومية', 'بوابة التشغيل العمومي'],
     intro: 'توظف الوزارات والجماعات الترابية والمؤسسات العمومية (CNSS، المكاتب، الوكالات…) **عبر مباريات** تُنشر على **بوابة التشغيل العمومي emploi-public.ma**. وإلى جانب المناصب المتاحة بـ**البكالوريا** (المساعدون الإداريون، التقنيون، الأعوان)، توجد مناصب مخصصة لحاملي الشهادات (المتصرفون، المهندسون).',

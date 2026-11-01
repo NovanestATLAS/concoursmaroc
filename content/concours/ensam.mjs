@@ -39,8 +39,8 @@ export default {
   fr: {
     short: 'ENSAM',
     name: "Écoles Nationales Supérieures d'Arts et Métiers (ENSAM Meknès, Casablanca, Rabat)",
-    title: 'Concours ENSAM 2027 : seuils, épreuve maths-physique, places et préparation',
-    description: "Concours d'accès aux ENSAM de Meknès, Casablanca et Rabat : bacs acceptés, seuils de présélection, épreuve QCM maths-physique (60 questions), barème, places et calendrier.",
+    title: 'Concours ENSAM 2027 : seuils, épreuve et places',
+    description: "Concours des ENSAM de Meknès, Casablanca et Rabat : bacs acceptés, seuils de présélection, QCM maths-physique (60 questions), barème et places.",
     keywords: ['concours ensam', 'seuil ensam', 'ensam meknes', 'ensam casablanca', 'ensam rabat', 'arts et métiers maroc'],
     intro: "Les trois **ENSAM** (Meknès, Casablanca, Rabat) forment en 5 ans des **ingénieurs d'État** en génie mécanique, industriel, électrique, informatique et énergétique. Le recrutement post-bac se fait par **concours commun** : présélection 75/25 sur le bac, puis un **QCM de mathématiques et de physique**.",
     facts: [
@@ -113,7 +113,7 @@ export default {
   ar: {
     short: 'ENSAM',
     name: 'المدارس الوطنية العليا للفنون والمهن (مكناس، الدار البيضاء، الرباط)',
-    title: 'مباراة ENSAM 2027: العتبات واختبار الرياضيات والفيزياء والمقاعد',
+    title: 'مباراة ENSAM 2027: العتبات والاختبار والمقاعد',
     description: 'مباراة ولوج المدارس الوطنية العليا للفنون والمهن بمكناس والدار البيضاء والرباط: الشعب، العتبات، اختبار من 60 سؤالًا، سلم التنقيط والمقاعد.',
     keywords: ['مباراة ENSAM', 'الفنون والمهن'],
     intro: 'تكوّن المدارس الوطنية العليا للفنون والمهن **ENSAM** الثلاث (مكناس، الدار البيضاء، الرباط) في 5 سنوات **مهندسي الدولة** في الهندسة الميكانيكية والصناعية والكهربائية والمعلوماتية والطاقية. ويتم الولوج بعد البكالوريا عبر **مباراة مشتركة**: انتقاء أولي 75/25 على أساس البكالوريا، ثم **أسئلة متعددة الاختيارات في الرياضيات والفيزياء**.',
