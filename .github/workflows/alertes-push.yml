@@ -33,7 +33,9 @@ jobs:
     steps:
       - name: État
         run: |
-          curl -sS --max-time 30 -A "$UA" -w '\nHTTP %{http_code}\n' "$API/status"
+          s=$(curl -sS --max-time 30 -A "$UA" -w ' HTTP %{http_code}' "$API/status" || true)
+          echo "$s"
+          echo "::notice title=Alertes : état::$s"
 
       - name: Envoyer les rappels du jour
         if: ${{ github.event_name == 'schedule' || inputs.mode == 'run' }}
@@ -41,8 +43,8 @@ jobs:
           for i in $(seq 1 500); do
             r=$(curl -sS -X POST --max-time 60 -A "$UA" "$API/run") || { echo "réseau : nouvel essai dans 10 s"; sleep 10; continue; }
             echo "$r"
-            if echo "$r" | grep -q '"error"'; then exit 1; fi
-            if echo "$r" | grep -q '"done":true'; then exit 0; fi
+            if echo "$r" | grep -q '"error"'; then echo "::error title=Alertes::$r"; exit 1; fi
+            if echo "$r" | grep -q '"done":true'; then echo "::notice title=Alertes : tournée terminée::$r"; exit 0; fi
           done
           echo "::error::la tournée ne s'est pas terminée"
           exit 1
