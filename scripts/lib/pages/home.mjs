@@ -1,4 +1,6 @@
 /* Home page (FR and AR). */
+import { photo } from '../photos.mjs';
+import { HOME_PHOTO } from '../../../content/photos.mjs';
 import { html, raw } from '../html.mjs';
 import { icon } from '../icons.mjs';
 import { linker, faqLd, practiceHref, linkMode } from '../layout.mjs';
@@ -156,7 +158,7 @@ export function buildHome(site, all, lang, banks) {
   const sec = (key, h2, extra = '') => html`<div class="section-head"><div><span class="eyebrow">${x.eyebrows[key]}</span><h2>${h2}</h2></div>${extra}</div>`;
   const more = (href, label) => html`<a class="more-link" href="${link(href)}">${label} ${icon('arrow')}</a>`;
   const nGroups = (g) => all.filter((c) => c.group === g.id && c[lang]).length;
-  const body = html`<section class="hero hero-compact"><div class="container hero-grid">
+  const body = html`<section class="hero hero-compact">${photo(HOME_PHOTO, lang, link, { cls: 'hero-bg', sizes: '100vw', decorative: true })}<div class="container hero-grid">
 <div>
 ${recentRow()}
 <span class="eyebrow">${t(lang, 'tagline')}</span>

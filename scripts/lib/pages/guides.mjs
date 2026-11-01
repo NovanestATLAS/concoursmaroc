@@ -1,4 +1,6 @@
 /* Long-form guides written in Markdown: content/guides/<slug>.<lang>.md */
+import { photo } from '../photos.mjs';
+import { GUIDE_PHOTOS } from '../../../content/photos.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { html, raw } from '../html.mjs';
@@ -47,6 +49,7 @@ export async function buildGuidesPages(site, all, lang, root, banks = {}) {
     const updated = g.meta.updated || site.updated;
     const body = html`${breadcrumb(lang, link, crumbs)}
 <article class="container" data-track="guide" data-track-title="${g.meta.short || g.meta.title}">
+${GUIDE_PHOTOS[g.slug] ? photo(GUIDE_PHOTOS[g.slug], lang, link, { priority: true }) : ''}
 <header class="page-head${appLive(site) ? ' with-app' : ''}"><span class="eyebrow">${x.guides}</span><h1>${g.meta.h1 || g.meta.title}</h1>
 ${g.meta.lead ? html`<p class="lead">${g.meta.lead}</p>` : ''}
 <p class="updated"><span>${t(lang, 'updated')} ${formatDate(updated, lang)}</span>
