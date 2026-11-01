@@ -257,7 +257,7 @@ ${aside}
     ogImage: `assets/img/og/concours-${c.id}.png`,
     jsonld,
     body,
-    scripts: linkMode() === 'app' ? [] : ['assets/js/engage.js', ...(site.pushAlerts ? ['assets/js/alertes.js'] : [])],
+    scripts: linkMode() === 'app' ? ['assets/js/engage.js'] : ['assets/js/engage.js', ...(site.pushAlerts ? ['assets/js/alertes.js'] : [])],
   };
 }
 

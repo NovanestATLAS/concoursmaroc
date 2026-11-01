@@ -163,8 +163,18 @@
     ['Bannière', function () {
       if (!global.admob) return { ok: null, detail: 'pas de plugin publicitaire' };
       var s = CM().ads.status();
-      var d = 'mode ' + s.bannerMode + (s.bannerLoaded ? ', chargée ' + s.bannerHeight + ' px' : ', pas encore chargée') + (s.bannerOffset != null ? ', décalage ' + s.bannerOffset + ' px' : '') + (s.bannerMisplaced ? ', masquée (clavier/rotation)' : '');
+      var d = 'mode ' + s.bannerMode + (s.bannerLoaded ? ', chargée ' + (Math.round(s.bannerHeight * 10) / 10) + ' px' : ', pas encore chargée') + (s.bannerOffset != null ? ', décalage ' + s.bannerOffset + ' px' : '') + (s.bannerMisplaced ? ', masquée (clavier/rotation)' : '');
       return { ok: s.bannerMode !== 'off', detail: d };
+    }],
+    ['Interstitiel', function () {
+      if (!global.admob) return { ok: null, detail: 'pas de plugin publicitaire' };
+      var A = CM().ads, s = A.status(), i = A.debug().interstitial;
+      var d = (s.interstitialShowing ? 'à l’écran' : s.interstitialReady ? 'chargé' : (i.loading ? 'en chargement' : 'pas chargé'))
+        + ', utilisation ' + Math.round(s.usedMs / 1000) + ' s sur ' + Math.round(s.rules.maxGapMs / 1000)
+        + (s.sinceLastMs != null ? ', dernier fermé il y a ' + Math.round(s.sinceLastMs / 1000) + ' s (minimum ' + Math.round(s.rules.minGapMs / 1000) + ')' : '')
+        + ', série de ' + s.rules.setQuestions + ' questions'
+        + (i.last ? ', dernière décision : ' + i.last.reason : '');
+      return { ok: s.interstitialReady || s.interstitialShowing, detail: d };
     }],
     ['Mesure de l’écran', function () {
       if (!global.SystemInsets) return { ok: null, detail: 'plugin cordova-plugin-system-insets absent' };

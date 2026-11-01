@@ -9,12 +9,14 @@
  *    the header that names the current section and opens the table of
  *    contents; the current section is also marked in the side table.
  *
- * Nothing here runs in the Android app (html[data-app]). */
+ * In the Android app (html[data-app]) the quiz and the recent fiches run too
+ * (paths from data-asset-root, routes in the hash); the long-page bar does not. */
 (function () {
   'use strict';
   var doc = document.documentElement;
-  if (doc.hasAttribute('data-app')) return;
+  var APP = doc.hasAttribute('data-app');
   var ROOT = doc.getAttribute('data-root') || './';
+  var ASSET = APP ? (doc.getAttribute('data-asset-root') || '') : ROOT;
   var LANG = doc.getAttribute('data-lang') || 'fr';
   var AR = LANG === 'ar';
   var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -61,10 +63,11 @@
   var banks = {};
   function bank(id) {
     if (!banks[id]) {
-      banks[id] = fetch(ROOT + 'data/questions/' + id + '.json').then(function (r) {
+      var url = ASSET + 'data/questions/' + id + '.json';
+      banks[id] = (APP && window.CM && CM.load && CM.load.json ? CM.load.json(url) : fetch(url).then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.json();
-      }).then(function (b) { return b.questions || []; });
+      })).then(function (b) { return b.questions || []; });
       banks[id].catch(function () { delete banks[id]; });
     }
     return banks[id];
@@ -78,9 +81,9 @@
   function ensureMath() {
     if (window.CM && window.CM.math && window.katex) return Promise.resolve();
     if (!mathReady) {
-      document.head.appendChild(el('link', { rel: 'stylesheet', href: ROOT + 'assets/vendor/katex/katex.min.css' }));
-      mathReady = loadScript(ROOT + 'assets/vendor/katex/katex.min.js')
-        .then(function () { return loadScript(ROOT + 'assets/js/entrainement/math.js'); })
+      document.head.appendChild(el('link', { rel: 'stylesheet', href: ASSET + (APP ? 'vendor/katex/katex.min.css' : 'assets/vendor/katex/katex.min.css') }));
+      mathReady = loadScript(ASSET + (APP ? 'vendor/katex/katex.min.js' : 'assets/vendor/katex/katex.min.js'))
+        .then(function () { return loadScript(ASSET + (APP ? 'js/math.js' : 'assets/js/entrainement/math.js')); })
         .catch(function () { /* formulas then show as plain text */ });
     }
     return mathReady;
@@ -291,13 +294,14 @@
   var art = $('[data-track]');
   var recent = store.get('cm.recent', []);
   if (art && art.getAttribute('data-track-title')) {
-    var here = location.pathname;
+    var here = APP ? location.hash.split('?')[0] : location.pathname;
     recent = recent.filter(function (r) { return r.u !== here; });
     recent.unshift({ u: here, t: art.getAttribute('data-track-title'), l: LANG });
     store.set('cm.recent', recent.slice(0, 6));
   }
   $$('[data-recent]').forEach(function (box) {
-    var list = recent.filter(function (r) { return r.l === LANG && r.u !== location.pathname; }).slice(0, 3);
+    var now = APP ? location.hash.split('?')[0] : location.pathname;
+    var list = recent.filter(function (r) { return r.l === LANG && r.u !== now; }).slice(0, 3);
     if (!list.length) return;
     box.appendChild(el('span', { cls: 'rc-label', text: T.recent }));
     list.forEach(function (r) { box.appendChild(el('a', { cls: 'rc-chip', href: r.u, text: r.t })); });
@@ -306,7 +310,7 @@
 
   /* ------------------------------------------------------------ long pages */
   var tocList = $('.toc ol');
-  if (!art || !tocList) return;
+  if (APP || !art || !tocList) return;
   var links = $$('a[href^="#"]', tocList);
   var targets = links.map(function (a) { return document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1))); });
   if (targets.filter(Boolean).length < 3) return;

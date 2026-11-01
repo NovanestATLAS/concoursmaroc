@@ -11,6 +11,28 @@ cordova-plugin-system-insets (bannière), cordova-plugin-firebase-analytics
 9.0.0, cordova-plugin-firebase-messaging 9.2.0, cordova-plugin-firebase-config
 9.0.0.
 
+
+## Mise à jour du 01/11/2026 (www seulement)
+
+Remplacez seulement le dossier `www/` (rien à changer dans les plugins ni dans
+`config.xml`, sauf la version : passez par exemple `version="2.0.0"` à
+`version="2.1.0"` pour que Google Play accepte le nouvel APK/AAB).
+
+- **Contenu du site à jour** : fiches, calendrier et dates, titres et textes revus,
+  2 308 questions.
+- **Quiz express dans l’application** : 5 QCM corrigés joués dans la page, sur
+  l’accueil, chaque fiche concours (au niveau du concours) et en fin de guide.
+- **« Reprendre là où tu t’es arrêté »** : les dernières fiches consultées sur
+  l’accueil.
+- **« Et maintenant ? »** en fin de fiche (entraînement, examen blanc, dates,
+  éligibilité, note, autres concours) et bouton **WhatsApp** pour partager une fiche.
+- **Photos** (licences libres, crédits dans Mentions légales) en tête des fiches,
+  des guides et sur l’accueil.
+- **Ajout à Google Agenda** des dates et écran maintenu allumé pendant l’examen
+  blanc (déjà sur le site).
+- Code de l’application de votre version du 30/10/2026 conservé à l’identique
+  (publicité, mises à jour Play, avis, annonces, mode développeur).
+
 ## 1. Ce qui change par rapport à la première version
 
 | | Première version | Cette version |
@@ -93,32 +115,61 @@ cordova plugin add cordova-plugin-firebase-messaging@9.2.0
 cordova plugin add cordova-plugin-firebase-config@9.0.0
 ```
 
+Les mêmes commandes dans l’invite de commandes de **Windows (CMD)**, une
+commande par ligne (`local-plugins\` copié à la racine du projet). Un plugin
+déjà installé est seulement signalé : relancer la liste ne casse rien. Le
+fichier `installer-plugins.cmd` de ce dossier fait la même chose (il garde
+l’App ID d’un admob-plus-cordova déjà installé et n’ajoute Firebase que si
+`google-services.json` est présent) :
+
+```bat
+cd C:\chemin\vers\mon-projet-cordova
+cordova platform remove android
+cordova platform add android@15.1.0
+cordova plugin add cordova-plugin-tts-advanced@0.5.3
+cordova plugin add cordova-plugin-consent@3.0.0-alpha.9
+cordova plugin add admob-plus-cordova@2.0.0-alpha.19 --save --variable APP_ID_ANDROID=ca-app-pub-XXXXXXXXXXXXXXXX~NNNNNNNNNN
+cordova plugin add cordova-launch-review@4.2.0
+cordova plugin add .\local-plugins\cordova-plugin-play-update
+cordova plugin add .\local-plugins\cordova-plugin-system-insets
+cordova plugin add cordova-plugin-firebase-analytics@9.0.0 --variable AUTOMATIC_SCREEN_REPORTING_ENABLED=false
+cordova plugin add cordova-plugin-firebase-messaging@9.2.0
+cordova plugin add cordova-plugin-firebase-config@9.0.0
+cordova plugin ls
+```
+
 **cordova-plugin-system-insets** (dossier `local-plugins/`, comme le suivant)
 mesure la barre de navigation d’Android : c’est lui qui permet d’afficher la
 bannière publicitaire avec cordova-android 15 (section 5).
 
 Deux plugins servent à Google Play :
 
-- **cordova-launch-review** : la fenêtre d’avis de Google Play (API In-App
-  Review), demandée après une session réussie (≥ 60 %), à partir de la
-  4e session et du 3e jour d’utilisation, au plus une fois tous les 90 jours.
-  Google décide lui-même de l’afficher. Bouton « Noter l’application » dans
-  les paramètres.
 - **cordova-plugin-play-update** (dossier `local-plugins/` de ce dépôt, à
-  copier à la racine du projet) : quand une version plus récente est publiée
-  sur Google Play, une fenêtre propose « Mettre à jour » (écran de mise à jour
-  de Google Play) ou « Plus tard » (3 jours). Bouton « Rechercher une mise à
-  jour » dans les paramètres. Il utilise la bibliothèque officielle
-  `com.google.android.play:app-update` ; l’ancien plugin `cordova-in-app-update`
-  n’est pas utilisable (il impose `compileSdkVersion 28`).
+  copier à la racine du projet) : à chaque ouverture de l’application (et à
+  son retour au premier plan, 30 minutes d’écart au moins), si une version
+  plus récente est publiée sur Google Play, une fenêtre propose « Mettre à
+  jour » (écran de mise à jour de Google Play, l’application redémarre à
+  jour) ou « Plus tard » (redemandé à une ouverture suivante, 6 heures après
+  au plus tôt ; tout de suite pour une mise à jour de priorité ≥ 4 dans la
+  Play Console). Bouton « Rechercher une mise à jour » dans les paramètres.
+  Il utilise la bibliothèque officielle `com.google.android.play:app-update` ;
+  l’ancien plugin `cordova-in-app-update` n’est pas utilisable (il impose
+  `compileSdkVersion 28`).
+- **cordova-launch-review** : le message « Votre avis compte » et son bouton
+  « Noter sur Google Play » (qui ouvre la fiche de l’application), **une fois
+  par mois à partir de la 2e ouverture** de l’application, une trentaine de
+  secondes après l’ouverture, à un moment calme. « Plus tard » : le mois
+  suivant ; « Noter sur Google Play » ou « Ne plus demander » : plus jamais
+  redemandé. Bouton « Noter l’application » dans les paramètres. Il sert
+  aussi, rarement, la carte d’avis de Google (API In-App Review) après une
+  bonne série (≥ 60 %, à partir de la 4e série et du 3e jour, au plus une
+  fois tous les 90 jours), jamais sur une série suivie d’un interstitiel.
+  Google décide lui-même d’afficher cette carte.
 
-En plus de la fenêtre d’avis de Google, un message « Votre avis compte »
-(bouton « Noter sur Google Play », qui ouvre la fiche de l’application)
-apparaît au plus deux fois, à partir de la 8e session réussie et du 5e jour,
-jamais moins de 30 jours après une fenêtre d’avis, avec « Ne plus demander ».
-Il ne pose aucune question sur l’avis de l’élève et envoie tout le monde vers
-la même page (règles de Google Play : pas de filtrage des avis, pas de
-récompense).
+Le message d’avis ne pose aucune question sur l’avis de l’élève et envoie
+tout le monde vers la même page (règles de Google Play : pas de filtrage des
+avis, pas de récompense). Le bouton n’ouvre pas la carte de Google : Google
+interdit de la déclencher depuis un bouton.
 
 Ces deux fonctions n’agissent que sur une application installée depuis
 Google Play (test interne compris), pas sur un APK installé à la main.
@@ -164,10 +215,37 @@ comme appareil de test dans AdMob (Paramètres → Appareils de test, avec
 l’identifiant publicitaire du téléphone) et ne cliquez jamais sur vos propres
 annonces.
 
-Règles appliquées par l’application : jamais de publicité pendant une
-question, première session sans publicité, au plus un interstitiel par
-session terminée (après les résultats, au moins 10 réponses et 3 minutes
-d’écart).
+Règles appliquées par l’application (version du 30/10/2026, réglables dans
+`ads-config.js` : `setQuestions`, `minGapMs`, `maxGapMs`) :
+
+- **bannière permanente** : sur tous les écrans, questions comprises, collée
+  sous la barre d’onglets. Elle ne s’efface que le temps d’une fenêtre de
+  l’application (mise à jour, avis, annonce : ses boutons ne sont jamais à
+  côté d’une annonce), clavier ouvert ou rotation ;
+- **interstitiel en fin de série** : à l’affichage des résultats d’une série
+  d’au moins 10 questions, sauf si le précédent s’est fermé il y a moins de
+  3 minutes ;
+- **interstitiel toutes les 4 minutes d’utilisation**, même en ne consultant
+  que les fiches : une fois 4 minutes passées depuis le précédent (ou depuis
+  l’ouverture de l’application), il s’affiche au prochain changement d’écran.
+  Jamais au milieu d’une lecture, jamais pendant une question ou un examen
+  blanc, jamais à l’ouverture, au retour dans l’application ni à la sortie
+  (règles AdMob : interstitiels uniquement aux transitions naturelles). Le
+  temps passé hors de l’application ou devant une annonce ne compte pas ;
+- un interstitiel dû en fin de série mais pas encore chargé est montré au
+  changement d’écran suivant (dans les 2 minutes) ; un chargement raté est
+  relancé (30 s, 1, 2, 4 puis 5 minutes) ;
+- **fenêtres et publicité ne se chevauchent jamais** : pas d’interstitiel
+  pendant une fenêtre, ni dans les 10 secondes qui suivent la fermeture de la
+  fenêtre de mise à jour, du message d’avis ou d’une annonce (30 secondes
+  après la carte d’avis de Google) : aucun de leurs boutons ne semble mener à
+  une publicité ; pas de fenêtre pendant un interstitiel, ni dans les
+  10 secondes qui suivent sa fermeture (30 secondes pour une annonce,
+  60 secondes pour le message d’avis).
+
+Le mode développeur (section 7, ligne « Interstitiel ») affiche le temps
+d’utilisation compté, l’écart depuis le dernier interstitiel et la raison de
+la dernière décision (`not-yet`, `min-gap`, `set-too-short`, `not-ready`…).
 
 **Bannière.** AdMob Plus 2.0.0-alpha.19 a deux façons d’afficher une
 bannière. Par défaut, il déplace la WebView dans un `LinearLayout`, ce que
@@ -184,6 +262,14 @@ il doit être installé, sinon la bannière reste coupée avec cordova-android 1
 Pendant que le clavier est ouvert, ou si le téléphone tourne, la bannière se
 masque puis revient d’elle-même. Taille : bannière adaptative ancrée (toute
 la largeur). Réglage dans `ads-config.js` : `banner: false` la coupe.
+
+Écart entre la barre d’onglets et la bannière (corrigé le 30/10/2026) : AdMob
+Plus donne la hauteur de la bannière en « dp » calculés avec la densité
+physique de l’écran (`xdpi`), qui n’est pas celle de la page sur la plupart
+des téléphones ; la page réservait donc quelques pixels de trop (6 px sur un
+écran 2,75×). La hauteur est maintenant tirée de la taille en pixels réels,
+et un fond de la couleur de la barre d’onglets est posé sous la bannière :
+barre et bannière forment un seul bloc.
 
 Le formulaire de consentement de Google (UMP) s’affiche quand la
 réglementation l’exige (utilisateurs de l’Espace économique européen, du

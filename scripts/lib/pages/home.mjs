@@ -236,6 +236,6 @@ ${faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${
   ];
   return {
     path, lang, title: x.title, titleFull: x.title, description: x.desc, alternate: lang === 'ar' ? '' : 'ar/',
-    jsonld, body, scripts: linkMode() === 'app' ? ['assets/js/echeances.js'] : ['assets/js/echeances.js', 'assets/js/engage.js'], keywords: ['concours maroc', 'concours après bac'],
+    jsonld, body, scripts: linkMode() === 'app' ? ['assets/js/echeances.js', 'assets/js/engage.js'] : ['assets/js/echeances.js', 'assets/js/engage.js'], keywords: ['concours maroc', 'concours après bac'],
   };
 }

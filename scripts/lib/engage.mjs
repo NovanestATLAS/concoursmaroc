@@ -3,7 +3,6 @@
  * "what next" links at the end of a fiche. */
 import { html } from './html.mjs';
 import { icon } from './icons.mjs';
-import { linkMode } from './layout.mjs';
 import { SUBJECTS, LEVELS, DEFAULT_LEVEL } from '../../content/taxonomy.mjs';
 
 const TXT = {
@@ -45,7 +44,7 @@ export function quizSubjects(ids, lang, banks, min = 10) {
 
 /* opts: { subjects, pick (show subject buttons), practice, mock, where, title, lead, level } */
 export function quizBlock(lang, opts) {
-  if (linkMode() === 'app' || !opts.subjects || !opts.subjects.length) return '';
+  if (!opts.subjects || !opts.subjects.length) return '';
   const x = TXT[lang] || TXT.fr;
   const lab = labels(opts.subjects, lang);
   const lv = opts.level ? LEVELS.find((l) => l.id === (opts.level || DEFAULT_LEVEL)) : null;
@@ -69,7 +68,6 @@ export function quizLead(lang) { return (TXT[lang] || TXT.fr).leadConcours; }
 
 /* Row of recently viewed fiches, filled by engage.js (hidden when empty). */
 export function recentRow() {
-  if (linkMode() === 'app') return '';
   return html`<div class="recent-row" data-recent hidden></div>`;
 }
 
@@ -96,7 +94,6 @@ const NEXT = {
 
 /* "What next" links at the end of a fiche (all pages but the app). */
 export function nextSteps(lang, link, items) {
-  if (linkMode() === 'app') return '';
   const x = NEXT[lang] || NEXT.fr;
   return html`<nav class="next-steps no-print" aria-labelledby="ns-h"><h2 id="ns-h">${x.h}</h2><ul>
 ${items.map(([key, href, ic]) => html`<li><a href="${href}"><span class="ns-ico">${icon(ic)}</span><span>${x[key][0]}<small>${x[key][1]}</small></span></a></li>`)}
@@ -107,7 +104,6 @@ ${items.map(([key, href, ic]) => html`<li><a href="${href}"><span class="ns-ico"
    Morocco. The shared address carries utm_source=whatsapp so GA4 counts the
    visits it brings. Website only. */
 export function waShare(lang, url, text, campaign) {
-  if (linkMode() === 'app') return '';
   const u = `${url}${url.includes('?') ? '&' : '?'}utm_source=whatsapp&utm_medium=partage&utm_campaign=${campaign}`;
   const href = `https://wa.me/?text=${encodeURIComponent(`${text}\n${u}`)}`;
   return html`<a class="btn sm wa no-print" href="${href}" target="_blank" rel="noopener" data-wa="${campaign}">${icon('chat')} WhatsApp</a>`;

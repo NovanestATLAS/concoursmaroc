@@ -24,7 +24,7 @@ fil d'Ariane…), `sitemap.xml`, `robots.txt`, images de partage par page, pages
 
 ## Orientation et engagement des visiteurs
 
-`src/js/engage.js` (site uniquement, jamais dans l'application) et `scripts/lib/engage.mjs` :
+`src/js/engage.js` et `scripts/lib/engage.mjs` (site et application Android ; dans l'application, pas de barre « Sur cette page ») :
 
 - **Accueil** : une recherche et quatre entrées claires dans le hero (« J'ai mon bac », « Niveau bac ou sans bac »,
   « Je m'entraîne », « Je calcule ma note ») ; échéances limitées à 2 sur téléphone ; domaines en une ligne de liens.

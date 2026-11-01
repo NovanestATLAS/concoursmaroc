@@ -1,34 +1,51 @@
-/* Concours Maroc (Android app) — advertising bridge.
+/* Concours Maroc (Android app) — advertising bridge and dialog coordinator.
  *
- * Unchanged from the first version of the app except for the placement
- * vocabulary: the app is now made of content pages plus the trainer, so the
- * shell asks for "page" (guides, concours, tools…) or "quiz" (a question is
- * on screen, banners are hidden). Production identifiers go in
- * js/ads-config.js.
+ * Talks to admob-plus-cordova (npm 2.0.0-alpha.19, its Android sources
+ * re-read on 2026-10-30) when the plugin is installed; everywhere else
+ * (desktop browser) it is a no-op mock: nothing is requested and no
+ * impression is ever faked. Production units go in js/ads-config.js (see
+ * that file).
  *
- * A www/ package cannot display native ads on its own. This file is the whole
- * JavaScript side of the integration: it talks to admob-plus-cordova
- * (npm 2.0.0-alpha.19, verified 2026-08-11) when the plugin is installed, and
- * runs a no-operation mock everywhere else so that the app is fully usable in
- * a browser. See PRIVACY_AND_ADMOB.md for the install commands and the
- * production checklist.
+ * Banner — permanent: on every screen, questions included, on the bottom
+ * edge of the WebView just above Android's navigation bar, with the app's
+ * tab bar sitting right on it. The page keeps exactly the banner's height
+ * free (body.has-banner, --banner-h, computed from the banner's size in
+ * device pixels; admob-plus's own "dp" figure uses the screen's physical
+ * dpi and left a gap of a few pixels on most phones). It only steps aside
+ * while the keyboard is open, while a dialog of the app is open (so that
+ * the dialog's buttons are never next to an ad) and when it cannot sit on
+ * the edge of the page (rotation). A banner that fails to load is retried
+ * (30 s, 1, 2, 4, then every 5 minutes) and comes back with the network.
  *
- * Placement rules enforced here, not left to the caller:
- *   - banners only on content pages, Home, Results, Statistics and Settings;
- *   - never during a question or a timed exam;
- *   - nothing is ever covered: the banner sits on the bottom edge of the
- *     WebView, just above the navigation bar, and the page keeps a space of
- *     the banner's height free under its content (see bannerMode below; in a
- *     desktop browser the slot is only drawn as a preview);
- *   - the first study session of a device is always ad-free;
- *   - at most one interstitial per completed session, after results are shown,
- *     after at least 10 answered questions, and never within MIN_GAP of the
- *     previous one;
- *   - rewarded ads only ever unlock extras; the answer, the short correction
- *     and the detailed explanation stay free. No screen offers one yet, so
- *     none is requested (showRewarded loads on demand);
- *   - a reward is granted only when the native reward callback fires, or, if
- *     no ad could be served at all, through an honest non-ad fallback.
+ * Interstitials — only at natural transitions (AdMob policy): never while
+ * a question is on screen, never over a dialog of the app, never on launch,
+ * on return to the app or on exit:
+ *   - end of a set of at least 10 questions (ads-config.js: setQuestions):
+ *     one as the results appear, unless the previous one closed less than
+ *     3 minutes ago (minGapMs);
+ *   - otherwise, once 4 minutes of use (maxGapMs) have passed since the
+ *     previous one closed, or since the app was opened, at the next screen
+ *     change, browsing pages included;
+ *   - one due at the end of a set but not ready yet (still loading, a
+ *     dialog open) is shown at the next screen change within 2 minutes.
+ * Time spent outside the app or watching an ad does not count as use. The
+ * next interstitial is loaded once the previous one has closed (loading it
+ * during the show detached the show's callbacks in admob-plus), and failed
+ * loads are retried.
+ *
+ * Dialogs — the update window, the review message and announcements go
+ * through CM.ads.popups.when(): they open at a calm moment only (no question
+ * on screen, no other dialog, no interstitial showing, about to show or
+ * closed less than 10 s ago — 30 s for an announcement, 60 s for the review
+ * message), and an interstitial waits 10 s after one of them closes (30 s
+ * after Google's own review card), so that no button of theirs ever seems
+ * to lead to an ad. No interstitial ever opens over a dialog.
+ *
+ * Rewarded ads only ever unlock extras; the answer, the short correction
+ * and the detailed explanation stay free. No screen offers one yet, so none
+ * is requested (showRewarded loads on demand). A reward is granted only
+ * when the native reward event fires, or, if no ad could be served at all,
+ * through an honest non-ad fallback.
  */
 (function (global) {
   'use strict';
@@ -45,14 +62,15 @@
     rewarded: 'ca-app-pub-3940256099942544/5224354917'
   };
 
+  var MIN = 60000;
   var config = {
     enabled: true,
     testMode: true,
     ids: Object.assign({}, TEST_IDS),
-    minQuestionsBeforeInterstitial: 10,
-    minGapMs: 3 * 60 * 1000,
-    freeFirstSession: true,
-    banner: 'auto'
+    banner: 'auto',
+    setQuestions: 10,
+    minGapMs: 3 * MIN,
+    maxGapMs: 4 * MIN
   };
 
   /* js/ads-config.js defines window.CM_ADS_CONFIG. In test mode Google's
@@ -67,39 +85,70 @@
       config.ids = {};
       Object.keys(c.ids || {}).forEach(function (k) { if (c.ids[k]) config.ids[k] = c.ids[k]; });
     }
-    if (typeof c.minQuestionsBeforeInterstitial === 'number') {
-      config.minQuestionsBeforeInterstitial = c.minQuestionsBeforeInterstitial;
-    }
-    if (typeof c.minGapMs === 'number') config.minGapMs = c.minGapMs;
-    if (typeof c.freeFirstSession === 'boolean') config.freeFirstSession = c.freeFirstSession;
+    // minQuestionsBeforeInterstitial: name used by the first versions
+    var q = typeof c.setQuestions === 'number' ? c.setQuestions : c.minQuestionsBeforeInterstitial;
+    if (typeof q === 'number' && q > 0) config.setQuestions = q;
+    if (typeof c.minGapMs === 'number' && c.minGapMs >= 0) config.minGapMs = c.minGapMs;
+    if (typeof c.maxGapMs === 'number' && c.maxGapMs > 0) config.maxGapMs = c.maxGapMs;
+    if (config.maxGapMs < config.minGapMs) config.maxGapMs = config.minGapMs;
     if (c.banner === true || c.banner === false || c.banner === 'auto') config.banner = c.banner;
   })();
 
-  // 'page' = any content page of the app shell (guides, concours, tools…).
-  var BANNER_SCREENS = ['home', 'results', 'stats', 'settings', 'page'];
   var CAP_KEY = 'ads.caps';
+  var NAV_DELAY = 400;            // screen change -> the new page is drawn behind the ad
+  var SET_END_DELAY = 300;        // results route -> the ad, before anything is tapped
+  var AFTER_POPUP_MS = 10000;     // no interstitial right after an update / review / announcement window
+  var AFTER_AD_MS = 10000;        // no dialog right after an interstitial closed
+  var OWED_MS = 2 * MIN;
+  var EXPIRY_MS = 55 * MIN;       // a loaded interstitial is valid one hour
+  var RETRY = [30000, 60000, 120000, 240000, 300000];
+  var startedAt = Date.now();
 
   var state = {
     mode: 'mock',          // 'native' | 'mock'
     started: false,
-    bannerVisible: false,
-    consent: 'unknown',    // 'unknown' | 'obtained' | 'not-required' | 'unavailable'
+    bannerVisible: false,  // the app wants the banner on screen
+    consent: 'unknown',    // 'unknown' | 'obtained' | 'not-required' | 'pending' | 'unavailable'
+    consentRunning: false,
     online: true,
     canRequestAds: null,   // consent tool's answer (null: no consent tool)
     privacyOptions: false, // the settings must offer to change the choices
-    interstitialReady: false,
     rewardedReady: false,
-    interstitial: null,
     rewarded: null,
     banner: null,
     bannerOffset: null,    // px, overlay mode: offset the banner was created with
-    bannerHeight: 0,       // CSS px, from admob-plus's banner size event
+    bannerHeight: 0,       // CSS px, from the banner's size in device pixels
     bannerLoaded: false,
     bannerMisplaced: false,
+    bannerForDialog: false, // native banner hidden while a dialog is open
+    bannerRetry: 0,
+    bannerRetryTimer: 0,
     insets: null,
     log: [],
     listeners: {}
   };
+
+  var inter = {
+    ad: null,
+    ready: false,
+    loading: false,
+    loadedAt: 0,
+    showing: false,        // from show() to the dismiss / failure event
+    displayed: false,      // admob.ad.show received
+    shownAt: 0,
+    endedAt: 0,            // last one closed (this run of the app)
+    prevLast: 0,
+    timer: 0,              // an opportunity is being evaluated shortly
+    pendingKind: '',
+    watchdog: 0,
+    retry: 0,
+    retryTimer: 0,
+    owed: null,
+    last: null             // last decision, for the developer screen
+  };
+
+  var screenState = { sheetOpen: false, sheetClosedAt: 0, nativeUntil: 0, nativeWhat: '' };
+  var popups = { last: 0, waiting: 0, open: false, closedAt: 0 };
 
   function emit(name, detail) {
     log(name, detail);
@@ -108,19 +157,134 @@
     });
   }
 
+  // Last ad events, for the developer screen (newest last).
+  var LOG_MAX = 80;
+  function log(type, detail) {
+    state.log.push({ t: Date.now(), type: type, detail: detail || null });
+    if (state.log.length > LOG_MAX) state.log.shift();
+  }
+
   function caps() {
     return Store.read(CAP_KEY, { lastInterstitial: 0, sessions: 0, interstitialsShown: 0 });
   }
   function saveCaps(c) { Store.write(CAP_KEY, c); }
+  function lastInterstitial() {
+    var t = caps().lastInterstitial || 0;
+    return t > Date.now() ? 0 : t;   // clock changed backwards: ignore
+  }
 
   function pluginPresent() {
     return !!(global.admob && typeof global.admob.start === 'function');
   }
+  function online() {
+    if (global.navigator && typeof global.navigator.onLine === 'boolean') return global.navigator.onLine;
+    return true;
+  }
+  function playing() {
+    var b = global.CM && global.CM.boot;
+    return !!(b && b.isPlaying && b.isPlaying());
+  }
+  function sheetOpenNow() {
+    var UI = global.CM && global.CM.ui;
+    try { return !!(UI && UI.isSheetOpen && UI.isSheetOpen()); } catch (e) { return false; }
+  }
+  function stopSpeech() {
+    try { var T = global.CM && global.CM.tts; if (T && T.stop) T.stop(); } catch (e) { /* ignore */ }
+  }
 
+  // ------------------------------------------------------- time of use
+  /* Foreground time since the last interstitial closed or since the app
+     was opened: paused in the background and while an ad is on screen. */
+  var clock = { active: 0, since: Date.now(), running: true };
+  function tick() {
+    if (!clock.running) return;
+    var n = Date.now();
+    if (n > clock.since) clock.active += n - clock.since;
+    clock.since = n;
+  }
+  function pauseClock() { tick(); clock.running = false; }
+  function resumeClock() { if (!clock.running) { clock.running = true; clock.since = Date.now(); } }
+  function resetClock() { clock.active = 0; clock.since = Date.now(); }
+  function activeMs() { tick(); return clock.active; }
+
+  document.addEventListener('pause', function () {
+    pauseClock();
+    // the ad's own screen has covered the app: it is on screen, even if its
+    // show event comes late (timers and events can be held in the background)
+    if (inter.showing) inter.displayed = true;
+  }, false);
+  document.addEventListener('resume', function () {
+    if (inter.showing) {
+      // the app is back: the ad is closed even if its event got lost
+      setTimeout(function () { if (inter.showing && inter.displayed) finish('resumed'); }, 2500);
+      return;
+    }
+    resumeClock();
+    if (state.mode === 'native' && state.started) {
+      if (!inter.ready && !inter.loading && !inter.retryTimer) preload();
+      if (state.bannerVisible && (!state.banner || !state.bannerLoaded)) Ads.showBanner();
+    }
+  }, false);
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) { pauseClock(); if (inter.showing) inter.displayed = true; }
+    else if (!inter.showing) resumeClock();
+  });
+
+  // ------------------------------------------------------ app dialogs
+  /* The app's dialogs (#sheet, ui.js) are watched: no interstitial while
+     one is open or just closed, and the native banner is hidden meanwhile
+     (its place is kept, so nothing moves). */
+  function watchSheet() {
+    var el = document.getElementById('sheet');
+    if (!el || el.__cmAds || !global.MutationObserver) return;
+    el.__cmAds = true;
+    screenState.sheetOpen = el.classList.contains('is-open');
+    new global.MutationObserver(function () {
+      var open = el.classList.contains('is-open');
+      if (open === screenState.sheetOpen) return;
+      screenState.sheetOpen = open;
+      if (open) {
+        cancelPending('dialog');
+        bannerForDialog(true);
+      } else {
+        screenState.sheetClosedAt = Date.now();
+        if (popups.open) { popups.open = false; popups.closedAt = screenState.sheetClosedAt; }
+        bannerForDialog(false);
+      }
+    }).observe(el, { attributes: true, attributeFilter: ['class'] });
+  }
+  watchSheet();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', watchSheet);
+
+  function dialogBusy() {
+    if (screenState.sheetOpen || sheetOpenNow()) return 'dialog-open';
+    // the windows of the coordinator (update, review, announcement): their
+    // buttons must never seem to lead to an ad
+    if (popups.closedAt && Date.now() - popups.closedAt < AFTER_POPUP_MS) return 'dialog-just-closed';
+    if (Date.now() < screenState.nativeUntil) return 'native-dialog';
+    if (state.consentRunning) return 'consent';
+    return '';
+  }
+
+  function popupBlocked(afterAd) {
+    if (inter.showing) return 'interstitial';
+    if (inter.timer) return 'interstitial-pending';
+    if (inter.endedAt && Date.now() - inter.endedAt < Math.max(AFTER_AD_MS, afterAd || 0)) return 'after-interstitial';
+    if (screenState.sheetOpen || sheetOpenNow()) return 'dialog-open';
+    if (Date.now() - screenState.sheetClosedAt < 1500) return 'dialog-just-closed';
+    if (Date.now() < screenState.nativeUntil) return 'native-dialog';
+    if (state.consentRunning) return 'consent';
+    if (playing()) return 'question-on-screen';
+    if (document.hidden) return 'hidden';
+    if (Date.now() - startedAt < 2500) return 'starting';
+    return '';
+  }
+
+  // ------------------------------------------------------------ banner
   /* How the banner is placed.
-     - 'overlay': admob-plus draws the banner over the window, `offset` pixels
-       above its bottom edge (its offset option), and the WebView is left
-       where cordova-android put it. The local plugin
+     - 'overlay': admob-plus draws the banner over the window, `offset`
+       pixels above its bottom edge (its offset option), and the WebView is
+       left where cordova-android put it. The local plugin
        cordova-plugin-system-insets measures that offset: the space under the
        WebView, i.e. the navigation bar. The page then keeps the banner's
        height free (body.has-banner, --banner-h), so nothing is covered.
@@ -153,19 +317,27 @@
   /* Space kept free under the page for the banner, in CSS pixels. */
   function reserveSlot(on, height) {
     var body = document.body;
+    if (!body) return;
     body.classList.toggle('has-banner', !!on);
-    if (on && height) body.style.setProperty('--banner-h', Math.ceil(height) + 'px');
+    if (on && height) body.style.setProperty('--banner-h', height + 'px');
     else body.style.removeProperty('--banner-h');
     var slot = document.getElementById('ad-banner');
-    // the grey preview slot only in a desktop browser
-    if (slot) slot.classList.toggle('on', !!on && state.mode !== 'native');
+    if (!slot) return;
+    // desktop browser: grey preview of the slot; in the app: an opaque base
+    // under the native banner, the colour of the tab bar (shell.css)
+    slot.classList.toggle('on', !!on && state.mode !== 'native');
+    slot.classList.toggle('native', !!on && state.mode === 'native');
   }
 
-  // Last ad events, for the developer screen (newest last).
-  var LOG_MAX = 60;
-  function log(type, detail) {
-    state.log.push({ t: Date.now(), type: type, detail: detail || null });
-    if (state.log.length > LOG_MAX) state.log.shift();
+  /* The banner's height in CSS pixels, from its size in device pixels:
+     admob-plus's "dp" divides by the physical dpi (xdpi / 160), which is not
+     the WebView's pixel ratio on most phones. Rounded down to the layout
+     unit (1/64 px), so that the tab bar never stops short of the banner. */
+  function cssHeight(size) {
+    if (!size) return 0;
+    var dpr = global.devicePixelRatio || (state.insets && state.insets.density) || 1;
+    var h = size.heightInPixels ? size.heightInPixels / dpr : (size.height || 0);
+    return Math.floor(h * 64) / 64;
   }
 
   function measureInsets() {
@@ -179,21 +351,53 @@
     });
   }
 
-  /* admob-plus reports the banner's size (dp, i.e. CSS pixels) just before
-     it is drawn, and again when a refreshed ad has another height. */
+  function isBanner(evt) { return !!(state.banner && evt && evt.adId === state.banner.id); }
+
+  /* admob-plus reports the banner's size just before it is drawn, and again
+     when a refreshed ad has another height. */
   document.addEventListener('admob.banner.size', function (evt) {
-    if (!state.banner || evt.adId !== state.banner.id) return;
-    var h = evt.size && evt.size.height;
+    if (!isBanner(evt)) return;
+    var h = cssHeight(evt.size);
     if (!h) return;
     state.bannerLoaded = true;
     state.bannerHeight = h;
-    log('banner-size', { height: h, width: evt.size.width });
+    state.bannerRetry = 0;
+    log('banner-size', { css: h, px: evt.size && evt.size.heightInPixels, dp: evt.size && evt.size.height });
     if (bannerMode() === 'overlay' && state.bannerVisible && !state.bannerMisplaced) reserveSlot(true, h);
   });
   document.addEventListener('admob.ad.loadfail', function (evt) {
-    if (!state.banner || evt.adId !== state.banner.id) return;
-    log('banner-loadfail', evt.error || evt.message || null);
+    if (!isBanner(evt)) return;
+    log('banner-loadfail', { code: evt.code, message: evt.message || null });
+    // A banner that has shown an ad keeps it on a failed refresh and the SDK
+    // tries again by itself; a banner that never loaded is retried here.
+    if (!state.bannerLoaded) retryBanner();
   });
+
+  function retryBanner() {
+    if (state.bannerRetryTimer) return;
+    var d = RETRY[Math.min(state.bannerRetry, RETRY.length - 1)];
+    state.bannerRetry++;
+    state.bannerRetryTimer = setTimeout(function () {
+      state.bannerRetryTimer = 0;
+      if (!state.banner || state.bannerLoaded || !state.bannerVisible) return;
+      if (!state.online) return;              // the 'online' event tries again
+      log('banner-retry', { attempt: state.bannerRetry });
+      Promise.resolve(state.banner.load()).catch(function (e) { log('banner-retry-failed', String(e && e.message || e)); });
+    }, d);
+  }
+
+  function bannerForDialog(open) {
+    if (state.mode !== 'native' || !state.banner) return;
+    if (open) {
+      if (state.bannerForDialog || !state.bannerVisible || state.bannerMisplaced) return;
+      state.bannerForDialog = true;
+      try { Promise.resolve(state.banner.hide()).catch(function () {}); } catch (e) { /* ignore */ }
+    } else if (state.bannerForDialog) {
+      state.bannerForDialog = false;
+      if (state.bannerVisible && !state.bannerMisplaced) Ads.showBanner();
+    }
+  }
+
   /* Rotation, split screen, keyboard: an overlay banner cannot move, so it
      is hidden while it would not sit on the WebView's edge. */
   var resizeTimer = 0;
@@ -218,14 +422,168 @@
     }, 250);
   });
 
-  function online() {
-    if (global.navigator && typeof global.navigator.onLine === 'boolean') {
-      return global.navigator.onLine;
+  // ------------------------------------------------------ interstitial
+  function isInter(evt) { return !!(inter.ad && evt && evt.adId === inter.ad.id); }
+  function interReady() { return inter.ready && Date.now() - inter.loadedAt < EXPIRY_MS; }
+
+  /* now: from the retry timer, the return of the network or the developer
+     screen; otherwise a load waits for its retry time (no burst of
+     requests while ads cannot be served). */
+  function preload(now) {
+    if (state.mode !== 'native' || !state.started || !config.enabled || !config.ids.interstitial) return Promise.resolve(false);
+    if (inter.showing || inter.loading) return Promise.resolve(false);
+    if (interReady()) return Promise.resolve(true);
+    if (!state.online) { inter.ready = false; return Promise.resolve(false); }
+    if (inter.retryTimer && now !== true) return Promise.resolve(false);
+    clearTimeout(inter.retryTimer);
+    inter.retryTimer = 0;
+    try {
+      if (!inter.ad) inter.ad = new global.admob.InterstitialAd({ adUnitId: config.ids.interstitial });
+    } catch (e) {
+      emit('failed', { stage: 'interstitial-create', error: String(e && e.message || e) });
+      return Promise.resolve(false);
     }
+    inter.loading = true;
+    inter.ready = false;
+    return Promise.resolve(inter.ad.load()).then(function () {
+      inter.loading = false;
+      inter.ready = true;
+      inter.loadedAt = Date.now();
+      inter.retry = 0;
+      emit('loaded', { type: 'interstitial' });
+      return true;
+    }, function (err) {
+      inter.loading = false;
+      inter.ready = false;
+      emit('failed', { stage: 'interstitial-load', error: String(err && err.message || err) });
+      retryInterstitial();
+      return false;
+    });
+  }
+
+  function retryInterstitial() {
+    if (inter.retryTimer) return;
+    var d = RETRY[Math.min(inter.retry, RETRY.length - 1)];
+    inter.retry++;
+    inter.retryTimer = setTimeout(function () { inter.retryTimer = 0; preload(true); }, d);
+  }
+
+  function cancelPending(why) {
+    if (!inter.timer) return;
+    clearTimeout(inter.timer);
+    inter.timer = 0;
+    inter.pendingKind = '';
+    log('interstitial-cancel', why || null);
+  }
+
+  /* A natural transition: evaluated after a short delay, the latest one
+     wins, except that the end of a set is not replaced by the screen change
+     that may follow it. */
+  function opportunity(ctx) {
+    if (inter.timer && inter.pendingKind === 'set-end' && ctx.kind !== 'set-end') return;
+    cancelPending();
+    inter.pendingKind = ctx.kind;
+    inter.timer = setTimeout(function () {
+      inter.timer = 0;
+      inter.pendingKind = '';
+      evaluate(ctx);
+    }, ctx.kind === 'set-end' ? SET_END_DELAY : NAV_DELAY);
+  }
+
+  // reasons that only mean "not right now"
+  var TRANSIENT = ['not-ready', 'dialog-open', 'dialog-just-closed', 'native-dialog', 'consent', 'offline'];
+
+  function evaluate(ctx) {
+    var owed = inter.owed && Date.now() - inter.owed.at < OWED_MS ? inter.owed : null;
+    if (!owed) inter.owed = null;
+    var c = ctx.kind === 'navigation' && owed ? { kind: 'owed', questions: owed.questions } : ctx;
+    var d = Ads.interstitialDecision(c);
+    if (d.show && state.mode !== 'native') d = { show: false, reason: 'mock' };   // never fake an impression
+    if (d.show && !interReady()) {
+      d = { show: false, reason: 'not-ready' };
+      preload();
+    }
+    inter.last = { at: Date.now(), kind: c.kind, show: d.show, reason: d.reason, activeMs: activeMs() };
+    if (!d.show) {
+      if (c.kind === 'set-end' || c.kind === 'owed') {
+        // kept for the next screen change only when it was "not right now"
+        inter.owed = TRANSIENT.indexOf(d.reason) !== -1 ? (owed || { at: Date.now(), questions: c.questions || 0 }) : null;
+      }
+      emit('interstitial', { shown: false, reason: d.reason, kind: c.kind });
+      return false;
+    }
+    showInterstitial(d.reason);
     return true;
   }
 
-  // ------------------------------------------------------------- lifecycle
+  function showInterstitial(reason) {
+    inter.showing = true;
+    inter.displayed = false;
+    inter.ready = false;
+    inter.owed = null;
+    inter.shownAt = Date.now();
+    pauseClock();
+    stopSpeech();
+    var c = caps();
+    inter.prevLast = c.lastInterstitial || 0;
+    c.lastInterstitial = inter.shownAt;   // final value written when it closes
+    saveCaps(c);
+    emit('interstitial', { shown: true, reason: reason });
+    clearTimeout(inter.watchdog);
+    inter.watchdog = setTimeout(function () {
+      if (inter.showing && !inter.displayed) finish('no-show');
+    }, 8000);
+    try {
+      Promise.resolve(inter.ad.show()).catch(function (err) {
+        emit('failed', { stage: 'interstitial-show', error: String(err && err.message || err) });
+        finish('error');
+      });
+    } catch (err) {
+      emit('failed', { stage: 'interstitial-show', error: String(err && err.message || err) });
+      finish('error');
+    }
+  }
+
+  function finish(how) {
+    if (!inter.showing) return;
+    clearTimeout(inter.watchdog);
+    var seen = inter.displayed || how === 'dismissed';
+    inter.showing = false;
+    inter.displayed = false;
+    var now = Date.now();
+    var c = caps();
+    if (seen) {
+      c.lastInterstitial = now;
+      c.interstitialsShown = (c.interstitialsShown || 0) + 1;
+      inter.endedAt = now;
+      resetClock();
+    } else {
+      c.lastInterstitial = inter.prevLast;   // nothing was seen: no gap to keep
+    }
+    saveCaps(c);
+    if (!document.hidden) resumeClock();
+    emit('dismissed', { type: 'interstitial', how: how });
+    setTimeout(function () { preload(); }, seen ? 1500 : 5000);
+  }
+
+  document.addEventListener('admob.ad.show', function (evt) {
+    if (!isInter(evt) || !inter.showing) return;
+    inter.displayed = true;
+    log('interstitial-on-screen');
+  });
+  document.addEventListener('admob.ad.dismiss', function (evt) {
+    if (isInter(evt)) finish('dismissed');
+  });
+  document.addEventListener('admob.ad.showfail', function (evt) {
+    if (!isInter(evt)) return;
+    emit('failed', { stage: 'interstitial-show', error: evt.message || evt.code || null });
+    finish('showfail');
+  });
+  document.addEventListener('admob.ad.loadfail', function (evt) {
+    if (isInter(evt)) log('interstitial-loadfail', { code: evt.code, message: evt.message || null });
+  });
+
+  // ------------------------------------------------------------- Ads API
   var Ads = {
     TEST_IDS: TEST_IDS,
 
@@ -262,9 +620,13 @@
         canRequestAds: state.canRequestAds,
         privacyOptions: state.privacyOptions,
         bannerVisible: state.bannerVisible,
-        interstitialReady: state.interstitialReady,
+        interstitialReady: interReady(),
+        interstitialShowing: inter.showing,
         rewardedReady: state.rewardedReady,
-        online: state.online
+        online: state.online,
+        rules: { setQuestions: config.setQuestions, minGapMs: config.minGapMs, maxGapMs: config.maxGapMs },
+        usedMs: activeMs(),
+        sinceLastMs: lastInterstitial() ? Date.now() - lastInterstitial() : null
       };
     },
 
@@ -273,8 +635,22 @@
         config.enabled = profileAds.enabled !== false;
         state.consent = profileAds.consent || 'unknown';
       }
+      watchSheet();
       state.online = online();
-      global.addEventListener('online', function () { state.online = true; emit('network', { online: true }); });
+      global.addEventListener('online', function () {
+        state.online = true;
+        emit('network', { online: true });
+        if (state.mode === 'native' && state.started) {
+          if (state.bannerVisible && !state.bannerLoaded) {
+            clearTimeout(state.bannerRetryTimer);
+            state.bannerRetryTimer = 0;
+            state.bannerRetry = 0;
+            if (state.banner) Promise.resolve(state.banner.load()).catch(function () {});
+            else Ads.showBanner();
+          }
+          if (!interReady()) { inter.retry = 0; preload(true); }
+        }
+      });
       global.addEventListener('offline', function () { state.online = false; emit('network', { online: false }); });
 
       if (!pluginPresent()) {
@@ -298,7 +674,8 @@
         .then(function () {
           state.started = true;
           emit('ready', Ads.status());
-          Ads.preloadInterstitial();
+          preload();
+          if (state.bannerVisible) Ads.showBanner();
           return Ads.status();
         })
         .catch(function (err) {
@@ -327,6 +704,7 @@
       function call(name) {
         return typeof C[name] === 'function' ? Promise.resolve(C[name]()) : Promise.resolve(null);
       }
+      state.consentRunning = true;
       var flow = privacyOptions
         ? call('showPrivacyOptionsForm')
         : Promise.resolve(C.requestInfoUpdate()).then(function () { return call('loadAndShowIfRequired'); });
@@ -338,6 +716,7 @@
         })
         .then(function () { return Promise.all([call('canRequestAds'), call('privacyOptionsRequirementStatus')]); })
         .then(function (r) {
+          state.consentRunning = false;
           state.canRequestAds = r[0] !== false;
           state.privacyOptions = r[1] === 'Required';
           var s = !state.canRequestAds ? 'pending' : (state.privacyOptions ? 'obtained' : 'not-required');
@@ -347,6 +726,7 @@
           return s;
         })
         .catch(function (err) {
+          state.consentRunning = false;
           console.warn('[ads] consent status unavailable:', err && err.message);
           state.consent = 'unavailable';
           return state.consent;
@@ -362,21 +742,19 @@
       return Promise.resolve(global.consent.reset()).then(function () { return Ads.requestConsent(); });
     },
 
-
     setEnabled: function (on) {
       config.enabled = !!on;
-      if (!config.enabled) Ads.hideBanner();
+      if (!config.enabled) { Ads.hideBanner(); cancelPending('disabled'); }
       Store.patchProfile({ ads: { enabled: config.enabled } });
       return config.enabled;
     },
 
     // ------------------------------------------------------------- banner
-    canShowBannerOn: function (screenId) {
-      return config.enabled && BANNER_SCREENS.indexOf(screenId) !== -1;
-    },
+    /* The banner is permanent: every screen of the app may carry it. */
+    canShowBannerOn: function () { return config.enabled; },
 
-    syncBanner: function (screenId) {
-      if (Ads.canShowBannerOn(screenId)) Ads.showBanner();
+    syncBanner: function () {
+      if (config.enabled) Ads.showBanner();
       else Ads.hideBanner();
     },
 
@@ -386,11 +764,12 @@
 
       if (state.mode !== 'native') {
         // Desktop browser: draw where the banner goes. Inside the app without
-        // the plugin there is nothing to show, so no space is taken.
+        // the plugin (or before it has started) no space is taken.
         reserveSlot(!global.cordova);
         emit('banner', { shown: false, reason: 'mock' });
         return Promise.resolve(false);
       }
+      if (!state.started) return Promise.resolve(false);      // init() shows it once started
       if (!bannerSupported() || !config.ids.banner || !state.online) {
         emit('banner', { shown: false, reason: !state.online ? 'offline' : (config.ids.banner ? 'unsupported' : 'no-unit') });
         return Promise.resolve(false);
@@ -414,14 +793,26 @@
           if (ins) { opts.offset = Math.max(0, Math.round(ins.below || 0)); state.bannerOffset = opts.offset; }
           state.banner = new global.admob.BannerAd(opts);
         }
+        if (state.bannerLoaded && bannerMode() === 'overlay') reserveSlot(true, state.bannerHeight);
+        if (screenState.sheetOpen || sheetOpenNow()) {
+          // a dialog is open: the banner comes back when it closes
+          state.bannerForDialog = true;
+          return false;
+        }
         return Promise.resolve(state.banner.show())
           .then(function () {
-            if (bannerMode() === 'overlay' && state.bannerLoaded && state.bannerVisible) reserveSlot(true, state.bannerHeight);
+            if (bannerMode() === 'overlay' && state.bannerLoaded && state.bannerVisible && !state.bannerMisplaced) reserveSlot(true, state.bannerHeight);
+            if (screenState.sheetOpen || sheetOpenNow()) {
+              // a dialog opened while the first ad was loading
+              state.bannerForDialog = true;
+              try { state.banner.hide(); } catch (e) { /* ignore */ }
+            }
             emit('banner', { shown: true, mode: bannerMode() });
             return true;
           });
       }).catch(function (err) {
         emit('failed', { stage: 'banner', error: String(err && err.message || err) });
+        if (!state.bannerLoaded) retryBanner();
         return false;
       });
     },
@@ -437,78 +828,52 @@
     },
 
     // ------------------------------------------------------- interstitial
-    preloadInterstitial: function () {
-      if (state.mode !== 'native' || !config.enabled || !state.online || !config.ids.interstitial) return Promise.resolve(false);
-      try {
-        if (!state.interstitial) {
-          state.interstitial = new global.admob.InterstitialAd({ adUnitId: config.ids.interstitial });
-        }
-        return Promise.resolve(state.interstitial.load())
-          .then(function () { state.interstitialReady = true; emit('loaded', { type: 'interstitial' }); return true; })
-          .catch(function (err) {
-            state.interstitialReady = false;
-            emit('failed', { stage: 'interstitial-load', error: String(err && err.message || err) });
-            return false;
-          });
-      } catch (e) { return Promise.resolve(false); }
-    },
+    preloadInterstitial: function () { return preload(true); },
 
-    /* The single decision point for interstitials. Returns a reason string
-       when an ad is withheld, which makes the policy auditable and testable. */
+    /* The single decision point for interstitials. ctx.kind: 'set-end'
+       (results of a finished set, ctx.questions = its size), 'navigation'
+       (any other screen change) or 'owed'. Returns the reason an ad is
+       withheld, which makes the policy auditable and testable. */
     interstitialDecision: function (ctx) {
-      if (!config.enabled) return { show: false, reason: 'ads-disabled' };
-      if (!ctx || ctx.questionsAnswered < config.minQuestionsBeforeInterstitial) {
-        return { show: false, reason: 'session-too-short' };
+      ctx = ctx || {};
+      var no = function (r) { return { show: false, reason: r }; };
+      if (!config.enabled) return no('ads-disabled');
+      if (!config.ids.interstitial) return no('no-unit');
+      if (playing()) return no('question-on-screen');
+      if (inter.showing) return no('showing');
+      var busy = dialogBusy();
+      if (busy) return no(busy);
+      if (Date.now() - lastInterstitial() < config.minGapMs) return no('min-gap');
+      var timeUp = activeMs() >= config.maxGapMs;
+      if (ctx.kind === 'set-end' || ctx.kind === 'owed') {
+        if (!timeUp && (ctx.questions || 0) < config.setQuestions) return no('set-too-short');
+      } else if (!timeUp) {
+        return no('not-yet');
       }
-      if (!ctx.resultsVisible) return { show: false, reason: 'results-not-visible' };
-      var c = caps();
-      if (config.freeFirstSession && c.sessions <= 1) return { show: false, reason: 'first-session-free' };
-      if (Date.now() - (c.lastInterstitial || 0) < config.minGapMs) {
-        return { show: false, reason: 'frequency-cap' };
-      }
-      if (ctx.alreadyShownThisSession) return { show: false, reason: 'one-per-session' };
-      if (!state.online) return { show: false, reason: 'offline' };
-      return { show: true, reason: 'ok' };
+      if (!state.online) return no('offline');
+      return { show: true, reason: timeUp ? 'time' : 'set-end' };
     },
 
-    maybeShowInterstitial: function (ctx) {
-      var decision = Ads.interstitialDecision(ctx);
-      if (!decision.show) {
-        emit('interstitial', { shown: false, reason: decision.reason });
-        return Promise.resolve({ shown: false, reason: decision.reason });
-      }
-      if (state.mode !== 'native') {
-        // Never fake an impression in the browser.
-        emit('interstitial', { shown: false, reason: 'mock' });
-        return Promise.resolve({ shown: false, reason: 'mock' });
-      }
-      if (!state.interstitialReady) {
-        Ads.preloadInterstitial();
-        emit('interstitial', { shown: false, reason: 'not-ready' });
-        return Promise.resolve({ shown: false, reason: 'not-ready' });
-      }
-      return Promise.resolve(state.interstitial.show())
-        .then(function () {
-          var c = caps();
-          c.lastInterstitial = Date.now();
-          c.interstitialsShown = (c.interstitialsShown || 0) + 1;
-          saveCaps(c);
-          state.interstitialReady = false;
-          emit('interstitial', { shown: true });
-          emit('dismissed', { type: 'interstitial' });
-          Ads.preloadInterstitial();
-          return { shown: true, reason: 'ok' };
-        })
-        .catch(function (err) {
-          state.interstitialReady = false;
-          emit('failed', { stage: 'interstitial-show', error: String(err && err.message || err) });
-          return { shown: false, reason: 'error' };
-        });
+    /* Results of a finished set are on screen. Returns true when an
+       interstitial is about to be shown for it (the caller then keeps the
+       review card for another time). */
+    setFinished: function (summary) {
+      Ads.noteSessionCompleted();
+      var ctx = { kind: 'set-end', questions: summary ? (summary.total || 0) : 0 };
+      var d = Ads.interstitialDecision(ctx);
+      opportunity(ctx);
+      return d.show && state.mode === 'native' && interReady();
     },
+
+    /* Any other screen change of the app (pages, practice screens). */
+    screenChanged: function () { opportunity({ kind: 'navigation' }); },
+
+    /* A question is on screen: nothing pending may show. */
+    questionOnScreen: function () { cancelPending('question'); },
 
     // ----------------------------------------------------------- rewarded
     preloadRewarded: function () {
-      if (state.mode !== 'native' || !config.enabled || !state.online || !config.ids.rewarded) return Promise.resolve(false);
+      if (state.mode !== 'native' || !state.started || !config.enabled || !state.online || !config.ids.rewarded) return Promise.resolve(false);
       try {
         if (!state.rewarded) {
           state.rewarded = new global.admob.RewardedAd({ adUnitId: config.ids.rewarded });
@@ -524,54 +889,55 @@
     },
 
     isRewardedAvailable: function () {
-      return config.enabled && state.mode === 'native' && state.online && state.rewardedReady;
+      return config.enabled && state.mode === 'native' && state.online && state.rewardedReady && !inter.showing;
     },
 
     /* Resolves { rewarded: true, via: 'ad' } only after the native reward
-       callback has fired. When no ad can be served, resolves
-       { rewarded: true, via: 'fallback' }: the user is never left at a dead
-       end because an ad network was unavailable. */
+       event has fired and the ad has closed. When no ad can be served,
+       resolves { rewarded: true, via: 'fallback' }: the user is never left at
+       a dead end because an ad network was unavailable. */
     showRewarded: function () {
       if (!Ads.isRewardedAvailable()) {
         Ads.preloadRewarded();
         emit('reward', { granted: true, via: 'fallback' });
         return Promise.resolve({ rewarded: true, via: 'fallback' });
       }
+      var ad = state.rewarded;
       return new Promise(function (resolve) {
         var settled = false;
         var earned = false;
-        var offReward = null;
-
-        function finish(result) {
+        var offs = [];
+        function listen(name, fn) {
+          var h = function (evt) { if (evt && evt.adId === ad.id) fn(evt); };
+          document.addEventListener(name, h);
+          offs.push(function () { document.removeEventListener(name, h); });
+        }
+        function done(result) {
           if (settled) return;
           settled = true;
-          if (offReward) offReward();
+          offs.forEach(function (off) { off(); });
           state.rewardedReady = false;
-          Ads.preloadRewarded();
+          if (!document.hidden) resumeClock();
+          setTimeout(Ads.preloadRewarded, 1500);
           emit('reward', { granted: result.rewarded, via: result.via });
           resolve(result);
         }
-
+        // admob-plus: show() resolves as soon as the ad is asked to show;
+        // the reward and the closing come as document events.
+        listen('admob.ad.reward', function () { earned = true; });
+        listen('admob.ad.dismiss', function () {
+          setTimeout(function () { done(earned ? { rewarded: true, via: 'ad' } : { rewarded: false, via: 'dismissed' }); }, 60);
+        });
+        listen('admob.ad.showfail', function () { done({ rewarded: true, via: 'fallback' }); });
+        pauseClock();
+        stopSpeech();
         try {
-          // admob-plus emits a reward event on the document; the reward is only
-          // granted when this fires, never on dismissal alone.
-          var handler = function () { earned = true; };
-          document.addEventListener('admob.rewarded.reward', handler);
-          offReward = function () { document.removeEventListener('admob.rewarded.reward', handler); };
-
-          Promise.resolve(state.rewarded.show())
-            .then(function () {
-              // show() resolves when the ad closes.
-              setTimeout(function () {
-                finish(earned ? { rewarded: true, via: 'ad' } : { rewarded: false, via: 'dismissed' });
-              }, 60);
-            })
-            .catch(function (err) {
-              emit('failed', { stage: 'rewarded-show', error: String(err && err.message || err) });
-              finish({ rewarded: true, via: 'fallback' });
-            });
+          Promise.resolve(ad.show()).catch(function (err) {
+            emit('failed', { stage: 'rewarded-show', error: String(err && err.message || err) });
+            done({ rewarded: true, via: 'fallback' });
+          });
         } catch (err) {
-          finish({ rewarded: true, via: 'fallback' });
+          done({ rewarded: true, via: 'fallback' });
         }
       });
     },
@@ -586,11 +952,71 @@
 
     sessionsCompleted: function () { return caps().sessions || 0; },
 
-    resetCaps: function () { saveCaps({ lastInterstitial: 0, sessions: 0, interstitialsShown: 0 }); },
+    resetCaps: function () {
+      saveCaps({ lastInterstitial: 0, sessions: 0, interstitialsShown: 0 });
+      inter.owed = null;
+      inter.endedAt = 0;
+      resetClock();
+    },
+
+    /* The app came back to the foreground because an ad (or Google's
+       review card) closed: not a return of the user, nothing to check. */
+    resumedFromAd: function () {
+      return inter.showing || (inter.endedAt > 0 && Date.now() - inter.endedAt < 5000) || Date.now() < screenState.nativeUntil;
+    },
+
+    // --------------------------------------------------- dialog coordinator
+    popups: {
+      /* Why a dialog may not open right now ('' when it may). */
+      blocked: function () { return popupBlocked(); },
+
+      /* Runs show() at the next calm moment, checked every second, at most
+         opts.maxWait ms from now (default 2 min), at least opts.spacing ms
+         after the previous window opened this way (default 30 s) and
+         opts.afterAd ms after an interstitial closed (default and minimum
+         10 s). show() returns false when it finally had nothing to show. */
+      when: function (show, opts) {
+        opts = opts || {};
+        var deadline = Date.now() + (opts.maxWait || 2 * MIN);
+        var spacing = opts.spacing == null ? 30000 : opts.spacing;
+        popups.waiting++;
+        function attempt() {
+          if (Date.now() > deadline) { popups.waiting--; log('popup-gave-up', opts.name || null); return; }
+          var why = popupBlocked(opts.afterAd) || (popups.last && Date.now() - popups.last < spacing ? 'spacing' : '');
+          if (why) { setTimeout(attempt, 1000); return; }
+          popups.waiting--;
+          var shown = false;
+          try { shown = show() !== false; } catch (e) { console.warn('[ads] dialog', e); }
+          if (shown) {
+            popups.last = Date.now();
+            popups.open = screenState.sheetOpen || sheetOpenNow();
+            log('popup', opts.name || null);
+          }
+        }
+        setTimeout(attempt, 0);
+      },
+
+      /* A native screen over the app (Google's review card, the store…):
+         no interstitial for `ms`, and the return to the app is not a
+         "resume" that checks for updates or announcements. */
+      native: function (what, ms) {
+        screenState.nativeUntil = Math.max(screenState.nativeUntil, Date.now() + (ms || 30000));
+        screenState.nativeWhat = what || '';
+      },
+
+      lastShown: function () { return popups.last; }
+    },
 
     // --------------------------------------------------- developer screen
     debug: function () {
-      return { status: Ads.status(), caps: caps(), platform: platformMajor(), log: state.log.slice() };
+      return {
+        status: Ads.status(),
+        caps: caps(),
+        platform: platformMajor(),
+        interstitial: { ready: interReady(), loading: inter.loading, showing: inter.showing, owed: inter.owed, last: inter.last, endedAt: inter.endedAt, retry: inter.retry },
+        popups: { last: popups.last, waiting: popups.waiting, blocked: popupBlocked() },
+        log: state.log.slice()
+      };
     },
 
     /* Full-screen formats on demand, outside the placement rules: test mode
@@ -598,14 +1024,11 @@
     testInterstitial: function () {
       if (state.mode !== 'native') return Promise.resolve({ shown: false, reason: 'mock' });
       if (!config.testMode) return Promise.resolve({ shown: false, reason: 'production' });
-      return (state.interstitialReady ? Promise.resolve(true) : Ads.preloadInterstitial()).then(function (ok) {
+      if (inter.showing) return Promise.resolve({ shown: false, reason: 'showing' });
+      return (interReady() ? Promise.resolve(true) : preload(true)).then(function (ok) {
         if (!ok) return { shown: false, reason: 'not-loaded' };
-        return Promise.resolve(state.interstitial.show()).then(function () {
-          state.interstitialReady = false;
-          emit('interstitial', { shown: true, test: true });
-          Ads.preloadInterstitial();
-          return { shown: true, reason: 'test' };
-        });
+        showInterstitial('test');
+        return { shown: true, reason: 'test' };
       }).catch(function (err) { return { shown: false, reason: String(err && err.message || err) }; });
     },
     testRewarded: function () {

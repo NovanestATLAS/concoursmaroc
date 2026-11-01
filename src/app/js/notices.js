@@ -14,8 +14,9 @@
  *   "route": "concours/police-dgsn/"  or  "url": "https://…" } ] }
  * A single object without the "annonces" array is accepted too.
  *
- * Shown once per id, never on the first launch, never during a question,
- * never over another dialog; at most one per day.
+ * Shown once per id, never on the first launch, at most one per day, at a
+ * calm moment (CM.ads.popups.when: never during a question, never over
+ * another dialog, never next to an interstitial).
  */
 (function (global) {
   'use strict';
@@ -77,14 +78,23 @@
     return true;
   }
 
+  function markShown(a) {
+    var st = load();
+    st.seen = (st.seen || []).concat(a.id).slice(-50);
+    st.lastShown = Date.now();
+    save(st);
+  }
+
+  var waiting = false;
+
   var Notices = {
-    /* Called a few seconds after start-up and when the app comes back. */
-    check: function (force) {
+    /* Called a few seconds after start-up (launch: true) and when the app
+       comes back; force: developer screen (shown at once). */
+    check: function (force, launch) {
       var s = load();
-      s.launches = (s.launches || 0) + (force ? 0 : 1);
-      save(s);
-      if (!force && s.launches < 2) return Promise.resolve(null);            // not on the first launch
-      if (!force && Date.now() - (s.lastShown || 0) < DAY) return Promise.resolve(null);
+      if (launch && !force) { s.launches = (s.launches || 0) + 1; save(s); }
+      if (!force && (s.launches || 0) < 2) return Promise.resolve(null);   // not on the first launch
+      if (!force && (waiting || Date.now() - (s.lastShown || 0) < DAY)) return Promise.resolve(null);
       return fromFirebase().then(function (a) {
         if (a.length) { state.source = 'firebase'; return a; }
         return fromSite().then(function (b) { state.source = b.length ? 'site' : null; return b; });
@@ -94,13 +104,18 @@
         var next = items.filter(function (a) { return force || seen.indexOf(a.id) === -1; })[0] || null;
         state.current = next;
         if (!next) return null;
-        var boot = global.CM.boot;
-        if (!force && boot && boot.isPlaying && boot.isPlaying()) return null;   // a question is on screen
-        if (!show(next)) return null;
-        var st = load();
-        st.seen = (st.seen || []).concat(next.id).slice(-50);
-        st.lastShown = Date.now();
-        save(st);
+        if (force) { if (show(next, true)) markShown(next); return next; }
+        var Ads = global.CM.ads;
+        if (!Ads || !Ads.popups) { if (show(next)) markShown(next); return next; }
+        waiting = true;
+        Ads.popups.when(function () {
+          waiting = false;
+          if ((load().seen || []).indexOf(next.id) !== -1) return false;
+          if (!show(next)) return false;
+          markShown(next);
+          return true;
+        }, { name: 'annonce', spacing: 45000, afterAd: 30000, maxWait: 3 * 60000 });
+        setTimeout(function () { waiting = false; }, 3 * 60000 + 2000);
         return next;
       }).catch(function (e) { state.error = String(e && e.message || e); return null; });
     },

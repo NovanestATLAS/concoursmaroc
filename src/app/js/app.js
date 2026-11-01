@@ -86,44 +86,39 @@
   detectEdge();
 
   // ------------------------------------------------------------ advertising
+  /* The banner is on every screen; interstitials only at the transitions
+     reported here (screen changes, results of a finished set), never while
+     a question is on screen. All the rules are in ads-service.js. */
   var onPlay = false;
-  var pageBanner = true;
   var handled = {};
 
-  function syncBanner() {
-    if (!Ads) return;
-    Ads.syncBanner(onPlay || !pageBanner ? 'quiz' : 'page');
-  }
+  function syncBanner() { if (Ads) Ads.syncBanner(); }
 
   document.addEventListener('cm:page', function (e) {
     var d = e.detail || {};
-    pageBanner = d.banner !== false;
     if (!d.practice) onPlay = false;
     syncBanner();
+    // the practice page reports its own screens (cm:route)
+    if (Ads && !d.practice) Ads.screenChanged();
   });
 
-  /* Trainer screens: no banner while a question is on screen; after a
-     finished session, at most one interstitial, once the results are shown
-     (all other conditions are decided by ads-service). */
   document.addEventListener('cm:route', function (e) {
     var d = e.detail || {};
     onPlay = d.name === 'quiz' || d.name === 'memoire';
     syncBanner();
+    if (!Ads) return;
+    if (onPlay) { Ads.questionOnScreen(); return; }
     if (d.name === 'results' && d.previous === 'quiz') {
       var sum = Store.read('lastSummary', null);
-      if (!sum || handled[sum.sessionId]) return;
-      handled[sum.sessionId] = true;
-      Ads.noteSessionCompleted();
-      // Google Play's review card replaces the interstitial that time
-      if (Play && Play.sessionFinished(sum)) return;
-      setTimeout(function () {
-        Ads.maybeShowInterstitial({
-          questionsAnswered: (sum.total || 0) - (sum.skipped || 0),
-          resultsVisible: true,
-          alreadyShownThisSession: false
-        });
-      }, 1200);
+      if (sum && !handled[sum.sessionId]) {
+        handled[sum.sessionId] = true;
+        var adShown = Ads.setFinished(sum);
+        // Google's review card, when due, never on a set that has its ad
+        if (Play) Play.sessionFinished(sum, adShown);
+        return;
+      }
     }
+    Ads.screenChanged();
   });
 
   // ------------------------------------------------------------ back button
@@ -171,8 +166,11 @@
 
   // ------------------------------------------------------------ lifecycle
   document.addEventListener('resume', function () {
-    if (Play) Play.checkUpdate();
-    if (Notices) setTimeout(function () { Notices.check(); }, 1500);
+    // back from an interstitial, Google's review card or the store page:
+    // not a return of the user, nothing to check
+    if (Ads && Ads.resumedFromAd && Ads.resumedFromAd()) return;
+    if (Play) Play.checkUpdate(false, true);
+    if (Notices) setTimeout(function () { Notices.check(false, false); }, 1500);
   }, false);
 
   document.addEventListener('pause', function () {
@@ -189,9 +187,13 @@
     if (Firebase) {
       try { Firebase.init(Shell.lang()); } catch (e) { console.warn('[app] firebase :', e.message); }
     }
-    if (Play) setTimeout(function () { Play.checkUpdate(); }, 4000);
-    // the announcement, if any, once the update check has had its turn
-    if (Notices) setTimeout(function () { Notices.check(); }, 7000);
+    // dialogs open at calm moments only (CM.ads.popups): the update window
+    // first, the announcement if any, the monthly review message later
+    if (Play) {
+      Play.appOpened();
+      setTimeout(function () { Play.checkUpdate(); }, 3000);
+    }
+    if (Notices) setTimeout(function () { Notices.check(false, true); }, 8000);
     withTimeout(Ads.init(Store.getProfile().ads), 10000, 'ads')
       .then(syncBanner)
       .catch(function (e) { console.warn('[app] publicité indisponible :', e.message); });

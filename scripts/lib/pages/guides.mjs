@@ -66,7 +66,7 @@ ${inlineCard(site, lang, link, { campaign: 'guide-contenu', mobileOnly: true, qr
       path: p, lang, title: g.meta.title, description: g.meta.description, keywords: g.meta.keywords || [],
       alternate: g.hasAlt ? `${lang === 'ar' ? '' : 'ar/'}guides/${g.slug}/` : null,
       section: 'navGuides', type: 'article', updated, ogImage: g.meta.og || undefined,
-      scripts: linkMode() === 'app' ? [] : ['assets/js/engage.js'],
+      scripts: ['assets/js/engage.js'],
       jsonld: [breadcrumbLd(site, crumbs), {
         '@context': 'https://schema.org', '@type': 'Article', headline: g.meta.h1 || g.meta.title, description: g.meta.description,
         inLanguage: lang, dateModified: updated, datePublished: g.meta.published || '2026-10-09',

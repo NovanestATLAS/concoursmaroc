@@ -2,9 +2,10 @@
    Concours Maroc — Android app shell (appended to css/app.css)
    Top bar with back arrow, menu drawer at every width, bottom tab bar,
    advertising slot (in the APK the AdMob banner is drawn natively on the
-   bottom edge of the WebView and ads-service.js sets body.has-banner and
-   --banner-h to its height, so the page keeps that space free; the grey
-   slot itself only shows in a desktop browser), Android safe areas.
+   bottom edge of the WebView, right under the tab bar; ads-service.js sets
+   body.has-banner and --banner-h to its exact height, so the page keeps
+   that space free and an opaque base sits under it; the grey preview slot
+   only shows in a desktop browser), Android safe areas.
    ========================================================================= */
 
 :root {
@@ -93,7 +94,18 @@ html[dir="rtl"] .tabbar a { font-size: .78rem; }
 /* toast above the tab bar */
 html[data-app] .toast { bottom: calc(var(--tab-h) + var(--banner-h) + var(--safe-b) + 14px); }
 
-/* ---- advertising slot: desktop preview of where the banner goes ---- */
+/* the quiz's sticky buttons stay above the tab bar and the banner (with
+   bottom: 0 they slid under both while a long question was scrolled) */
+html[data-app] .quiz-foot { bottom: calc(var(--tab-h) + var(--banner-h) + var(--safe-b)); padding-bottom: 12px; }
+
+/* ---- advertising slot ----
+   The banner's exact height is kept free under the tab bar (ads-service.js
+   sets body.has-banner and --banner-h; 56px is only the desktop preview).
+   .on     desktop browser: grey preview of where the banner goes;
+   .native in the app: an opaque base under the native banner, the colour
+           of the tab bar, so that the tab bar and the banner make one block:
+           no strip of the page shows between them, nor around an ad
+           smaller than its slot. */
 #ad-banner {
   position: fixed; inset-inline: 0; bottom: 0; z-index: 30;
   height: calc(var(--banner-h) + var(--safe-b));
@@ -102,6 +114,8 @@ html[data-app] .toast { bottom: calc(var(--tab-h) + var(--banner-h) + var(--safe
   background: var(--surface-2); border-top: 1px solid var(--line);
 }
 #ad-banner.on { display: flex; }
+#ad-banner.native { display: block; background: var(--surface); border-top: 0; }
+#ad-banner.native .ad-mock { display: none; }
 #ad-banner .ad-mock { font-size: var(--fs-xs); color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
 body.has-banner { --banner-h: 56px; }
 

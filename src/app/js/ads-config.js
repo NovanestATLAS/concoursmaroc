@@ -18,15 +18,20 @@ window.CM_ADS_CONFIG = {
   ids: {
     // banner: 'ca-app-pub-XXXXXXXXXXXXXXXX/NNNNNNNNNN',
     // interstitial: 'ca-app-pub-XXXXXXXXXXXXXXXX/NNNNNNNNNN',
-    // rewarded: 'ca-app-pub-XXXXXXXXXXXXXXXX/NNNNNNNNNN'
+    // rewardedInterstitial: 'ca-app-pub-XXXXXXXXXXXXXXXX/NNNNNNNNNN'
   },
-  // Placement rules (same defaults as before).
-  minQuestionsBeforeInterstitial: 10,
-  minGapMs: 180000,
-  freeFirstSession: true,
-  // Banners: 'auto' shows them up to cordova-android 14 and turns them off
-  // from cordova-android 15, whose layout admob-plus-cordova 2.0.0-alpha.19
-  // breaks (see js/ads-service.js). true forces them: test on a phone first,
-  // with the keyboard open and after a rotation. false: never.
-  banner: 'auto'
+  // Banner on every screen, questions included, right under the tab bar.
+  // 'auto': drawn over the bottom of the page with the local plugin
+  // cordova-plugin-system-insets (needed from cordova-android 15), or under
+  // the page up to cordova-android 14. true forces the second way, false
+  // turns banners off.
+  banner: 'auto',
+  // Interstitials, never while a question is on screen nor over a dialog:
+  //  - at the end of a set of at least `setQuestions` questions, unless the
+  //    previous interstitial closed less than `minGapMs` ago;
+  //  - otherwise at the first screen change once `maxGapMs` of use have
+  //    passed since the previous one (or since the app was opened).
+  setQuestions: 10,
+  minGapMs: 180000,   // 3 minutes
+  maxGapMs: 240000    // 4 minutes
 };
