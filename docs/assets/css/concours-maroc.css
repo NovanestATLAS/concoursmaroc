@@ -612,6 +612,8 @@ html[dir="rtl"] .faq .faq-a { padding: 0 54px 16px 18px; }
   transition: border-color .15s ease;
 }
 .deadline:hover { border-color: var(--line-2); }
+/* echeances.js hides past dates and those beyond data-limit(-mobile) */
+.deadline[hidden] { display: none; }
 .deadline .d-date { text-align: center; background: var(--accent-soft); color: var(--accent); border-radius: 12px; padding: 7px 4px; line-height: 1.1; }
 .deadline .d-date b { display: block; font-size: 1.35rem; font-weight: 800; }
 .deadline .d-date span { font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase; }
@@ -620,6 +622,9 @@ html[dir="rtl"] .faq .faq-a { padding: 0 54px 16px 18px; }
 .deadline .d-main .d-cal a.btn { color: var(--accent-ink); font-weight: 700; }
 .deadline .d-main .d-cal a.btn:hover { color: var(--accent-ink); }
 .deadline .d-main small { display: block; color: var(--muted); }
+/* "Nouveau": date published in the last 21 days (shown by echeances.js) */
+.deadline .d-new { display: inline-block; margin-inline-end: 6px; padding: 0 8px; border-radius: 999px; background: var(--saffron); color: var(--navy-950); font-size: var(--fs-xs); font-weight: 800; line-height: 1.6; vertical-align: 1px; }
+.deadline .d-new[hidden] { display: none; }
 .deadline .d-left { font-weight: 800; font-size: var(--fs-sm); color: var(--gold); white-space: nowrap; }
 .deadline.soon .d-date { background: var(--bad-bg); color: var(--bad-ink); }
 .deadline.soon .d-left { color: var(--red); }

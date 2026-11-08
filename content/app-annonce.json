@@ -1,5 +1,5 @@
 {
-  "_aide": "Annonce affichée une fois dans l'application Android (fenêtre au démarrage, jamais pendant une question). Copier l'exemple dans \"annonces\", changer l'id à chaque nouvelle annonce. Dates au format AAAA-MM-JJ ; route = page de l'application (sans #/), ou url = lien https. Firebase Remote Config (clé « annonce », même format) est prioritaire quand il est configuré.",
+  "_aide": "Annonce affichée une fois dans l'application Android (fenêtre au démarrage, jamais pendant une question). Copier l'exemple dans \"annonces\", changer l'id à chaque nouvelle annonce. Dates au format AAAA-MM-JJ ; route = page de l'application (sans #/), ou url = lien https. Une route par langue (\"route\" dans \"fr\" et dans \"ar\", ex. \"ar/concours/police-dgsn/\") ouvre la page dans la langue du lecteur ; les versions de l'application antérieures à novembre 2026 ne lisent que la route commune et, sans elle, affichent le message sans bouton. Firebase Remote Config (clé « annonce », même format) est prioritaire quand il est configuré.",
   "_exemple": {
     "id": "2026-09-dgsn-inscriptions",
     "from": "2026-09-07",
@@ -8,5 +8,20 @@
     "ar": { "title": "الأمن الوطني: التسجيل مفتوح", "body": "التسجيل في مباراة 2026 مفتوح إلى غاية 22 شتنبر عبر concours.dgsn.gov.ma.", "cta": "عرض المباراة" },
     "route": "concours/police-dgsn/"
   },
-  "annonces": []
+  "annonces": [
+    {
+      "id": "2026-11-crmef-candidatures",
+      "from": "2026-11-08",
+      "until": "2026-11-19",
+      "fr": { "title": "Concours de l'enseignement 2026", "body": "17 953 places, dont 7 023 au primaire, et 40 ans au plus : candidatures jusqu'au 19 novembre à 16 h 30 sur wolouj.men.gov.ma, écrit le samedi 28 novembre.", "cta": "Voir le concours", "route": "concours/enseignants-aref/" },
+      "ar": { "title": "مباراة التعليم 2026", "body": "17953 مقعدا، منها 7023 بالابتدائي، و40 سنة على الأكثر: الترشيح إلى غاية 19 نونبر على الساعة 16:30 عبر wolouj.men.gov.ma، والاختبار الكتابي يوم السبت 28 نونبر.", "cta": "عرض المباراة", "route": "ar/concours/enseignants-aref/" }
+    },
+    {
+      "id": "2026-11-bac-libre-2027",
+      "from": "2026-11-08",
+      "until": "2026-12-04",
+      "fr": { "title": "Bac 2027 : candidats libres", "body": "Les candidatures au bac en candidat libre sont ouvertes jusqu'au 4 décembre 2026 sur candidaturesbac.men.gov.ma, avec l'application « Mon e-ID ».", "cta": "Voir le calendrier", "route": "outils/calendrier-concours/" },
+      "ar": { "title": "بكالوريا 2027: المترشحون الأحرار", "body": "الترشيح لاجتياز البكالوريا بصفة مترشح حر مفتوح إلى غاية 4 دجنبر 2026 عبر candidaturesbac.men.gov.ma، بواسطة تطبيق «هويتي الرقمية».", "cta": "عرض الأجندة", "route": "ar/outils/calendrier-concours/" }
+    }
+  ]
 }

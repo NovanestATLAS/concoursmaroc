@@ -1,9 +1,11 @@
 /* Concours de recrutement des enseignants du primaire : accès au cycle de
  * qualification des cadres enseignants des CRMEF (jusqu'en 2023 : concours
  * des cadres des AREF). Faits vérifiés le 2026-10-19 à partir des relais
- * cités dans `sources` (session 2026 revérifiée le 2026-10-30 sur la page
- * des annonces de men.gov.ma : toujours aucun avis) ; les fiches officielles (PDF) n'ont pas pu être lues,
- * d'où les mentions « relayé » sur les durées et coefficients. */
+ * cités dans `sources`. Session de novembre 2026 (vérifiée le 2026-11-08) :
+ * annonce du 3 novembre (reproduite par Alwadifa-Maroc, PDF sur men.gov.ma),
+ * annonce complémentaire du 4 novembre (places portées à 17 953), calendrier
+ * de l'annexe 2 relayé par Le Matin. Les fiches officielles (PDF) n'ont pas pu
+ * être lues, d'où les mentions « relayé » sur les durées et coefficients. */
 export default {
   id: 'enseignants-aref',
   order: 61,
@@ -13,7 +15,7 @@ export default {
   icon: 'pen',
   bac: [],
   seuils: null,
-  age: { max: 35, ref: 'exam', at: { fr: '35 ans au plus à la date du concours (session de novembre 2025)', ar: '35 سنة على الأكثر في تاريخ المباراة (دورة نونبر 2025)' } },
+  age: { max: 40, ref: 'exam', at: { fr: '40 ans au plus à la date du concours (session de novembre 2026)', ar: '40 سنة على الأكثر في تاريخ المباراة (دورة نونبر 2026)' } },
   published: '2026-10-19',
   practice: {
     subjects: ['primaire', 'education', 'arabe', 'francais', 'calcul'],
@@ -34,11 +36,16 @@ export default {
   related: ['ens-education', 'universite', 'fonction-publique'],
   official: [
     { label: 'Portail de candidature wolouj.men.gov.ma', url: 'https://wolouj.men.gov.ma' },
+    { label: 'Ministère de l’Éducation nationale — annonce de la session de novembre 2026 (PDF)', url: 'https://www.men.gov.ma/sites/default/files/2026-11/%D8%A5%D8%B9%D9%84%D8%A7%D9%86_0.pdf' },
     { label: 'Ministère de l’Éducation nationale — page de la session de novembre 2025', url: 'https://www.men.gov.ma/%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA/%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA-%D9%88%D9%84%D9%88%D8%AC-%D8%B3%D9%84%D9%83-%D8%AA%D8%A3%D9%87%D9%8A%D9%84-%D8%A3%D8%B7%D8%B1-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%B3-%D8%A8%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%83%D8%B2-%D8%A7%D9%84%D8%AC%D9%87%D9%88%D9%8A%D8%A9-%D9%84%D9%85%D9%87%D9%86-%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%AA%D9%83%D9%88%D9%8A%D9%86-%D8%AF%D9%88%D8%B1%D8%A9-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1-2025' },
     { label: 'Portail national du Maroc — ouverture des candidatures (session de novembre 2025)', url: 'https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de' },
   ],
   sources: [
-    { title: 'Ministère de l’Éducation nationale — page des annonces (aucun avis pour la session 2026 au 30 octobre 2026)', url: 'https://www.men.gov.ma/%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA', date: '2026-10-30' },
+    { title: 'Ministère de l’Éducation nationale — annonce des concours d’accès au cycle de qualification des cadres enseignants, session de novembre 2026 (PDF)', url: 'https://www.men.gov.ma/sites/default/files/2026-11/%D8%A5%D8%B9%D9%84%D8%A7%D9%86_0.pdf', date: '2026-11' },
+    { title: 'Alwadifa-Maroc — Annonce de la session de novembre 2026 reproduite : candidatures du 5 au 19 novembre (16 h 30), écrit le 28 novembre, 40 ans au plus, présélection sur dossier', url: 'https://alwadifa-maroc.com/offre/show/id/23794', date: '2026-11-04' },
+    { title: 'Alwadifa-Maroc — Annonce complémentaire du 4 novembre 2026 : places révisées à la hausse (17 953), autres dispositions inchangées', url: 'https://alwadifa-maroc.com/offre/show/id/23799', date: '2026-11-05' },
+    { title: 'Le Matin — Concours de l’enseignement 2026 : 15 590 places, la limite d’âge portée à 40 ans (calendrier complet de la session)', url: 'https://lematin.ma/enseignement/concours-de-lenseignement-15590-places-la-limite-dage-portee-a-40-ans/374010', date: '2026-11-04' },
+    { title: 'Le Matin — Concours de l’enseignement 2026 : le nombre de places en hausse à 17 953 (primaire 7 023, collégial 8 870, qualifiant 2 060)', url: 'https://lematin.ma/enseignement/concours-de-lenseignement-2026-le-nombre-de-places-en-hausse-a-17953/374134', date: '2026-11-05' },
     { title: 'iJob — Concours de l’enseignement 2026 : l’annonce attendue fin octobre (en 2025 : annonce le 29 octobre, écrit le 22 novembre)', url: 'https://ijob.ma/actualite/concours-enseignement-2026-annonce-attendue-preparation/', date: '2026-10' },
     { title: 'Le Matin — Tout savoir sur le concours d’enseignement 2025 : âge limite, calendrier et conditions d’accès', url: 'https://lematin.ma/enseignement/tout-savoir-sur-le-concours-denseignement-2025-au-maroc/310673', date: '2025-11' },
     { title: 'Le Nouvelliste — Concours d’enseignement 2025 : les modalités et le calendrier dévoilés (âge limite de 30 à 35 ans)', url: 'https://www.lenouvelliste.ma/concours-denseignement-2025-les-modalites-et-le-calendrier-devoiles/', date: '2025-10' },
@@ -62,35 +69,34 @@ export default {
     { title: 'Moutamadris — Résultats de la session d’octobre 2024 (écrit le 5 octobre, oraux du 15 au 23 octobre, résultats le 28 octobre)', url: 'https://moutamadris.ma/%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D9%85%D8%A8%D8%A7%D8%B1%D8%A7%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85/', date: '2024-10' },
     { title: 'Base de données juridiques (MTNRA) — Décret n° 2-24-140 du 23 février 2024 portant statut particulier des fonctionnaires du ministère chargé de l’éducation nationale', url: 'http://bdj.mmsp.gov.ma/Ar/Document/10606-D%C3%A9cret-n-2-24-140-du-13-cha%C3%A2bane-1445-23-f%C3%A9vrier.aspx?KeyPath=594/596/599/601/10606', date: '2024-02' },
     { title: 'Cariat Maaref — Annonce du concours de l’enseignement « cadres des académies » 2023-2024', url: 'https://www.cariatmaaref.com/2023/10/concours-taalim-2023.html', date: '2023-10' },
-    { title: 'Khedma — Concours de l’enseignement 2026 (CRMEF) : session non encore annoncée', url: 'https://khedma.pro/concours/concours-enseignement', date: '2026-07' },
   ],
   fr: {
     short: 'Enseignants du primaire (CRMEF)',
     name: 'Concours de l’enseignement primaire — accès au cycle de qualification des CRMEF (ex-concours des cadres des AREF)',
-    title: 'Concours enseignement primaire 2026 : conditions et dates',
-    description: 'Devenir professeur du primaire : licence, 35 ans au plus, écrit QCM (matières, didactique, sciences de l’éducation), oral, dates et préparation.',
-    keywords: ['concours enseignement 2026', 'concours enseignement primaire', 'concours aref', 'concours crmef', 'wolouj men gov ma', 'مباراة التعليم'],
-    intro: "Pour devenir **professeur de l'enseignement primaire** dans le public, il faut réussir, après la licence, le **concours d'accès au cycle de qualification des cadres enseignants** des CRMEF, appelé jusqu'en 2023 « concours des cadres des AREF ». En novembre 2025, **3 383 places** étaient ouvertes au primaire, avec un écrit QCM le **22 novembre 2025**. La session 2026 n'était pas encore annoncée au 30 octobre 2026.",
-    facts: [['Diplôme', 'Licence ou diplôme équivalent'], ['Âge', '35 ans au plus (session 2025)'], ['Épreuves', 'Écrit QCM (matières, didactique, sciences de l’éducation) puis oral'], ['Places au primaire 2025', '3 383'], ['Dernier écrit', '22 novembre 2025'], ['Candidature', 'wolouj.men.gov.ma']],
+    title: 'Concours enseignement primaire 2026 : écrit le 28 novembre',
+    description: 'Concours de l’enseignement 2026 : 7 023 places au primaire, 40 ans au plus, candidatures jusqu’au 19 novembre, écrit QCM le 28 novembre, oral et préparation.',
+    keywords: ['concours enseignement 2026', 'concours enseignement primaire', 'concours enseignement 40 ans', 'concours aref', 'concours crmef', 'wolouj men gov ma', 'مباراة التعليم 2026'],
+    intro: "Pour devenir **professeur de l'enseignement primaire** dans le public, il faut réussir, après la licence, le **concours d'accès au cycle de qualification des cadres enseignants** des CRMEF, appelé jusqu'en 2023 « concours des cadres des AREF ». **Session de novembre 2026** : candidatures du **5 au 19 novembre 2026** (16 h 30) sur wolouj.men.gov.ma, écrit le **samedi 28 novembre 2026**, **7 023 places** au primaire sur 17 953 au total, et une limite d'âge portée à **40 ans**.",
+    facts: [['Diplôme', 'Licence ou diplôme équivalent'], ['Âge', '40 ans au plus (session 2026)'], ['Épreuves', 'Écrit QCM (matières, didactique, sciences de l’éducation) puis oral'], ['Places au primaire 2026', '7 023 (6 023 double spécialité, 1 000 amazighe)'], ['Candidature', 'Du 5 au 19 novembre 2026, wolouj.men.gov.ma'], ['Écrit', 'Samedi 28 novembre 2026']],
     sections: [
       { id: 'cadre', h: 'Du « concours des cadres des AREF » au cycle de qualification', blocks: [
         { p: "Jusqu'en 2023, le concours était organisé sous le nom de **concours de recrutement des cadres des académies régionales (AREF)**. Après l'adoption du **statut particulier des fonctionnaires du ministère de l'Éducation nationale** (décret n° 2-24-140 du 23 février 2024, Bulletin officiel n° 7277 du 26 février 2024), les sessions de 2024 et de 2025 se sont tenues sous le nom de **concours d'accès au cycle de qualification des cadres enseignants** dans les **centres régionaux des métiers de l'éducation et de la formation (CRMEF)**, avec une candidature en ligne sur **wolouj.men.gov.ma**." },
         { p: "Les lauréats suivent la formation qualifiante du CRMEF. Pour la session de janvier 2025, la fiche du portail de l'emploi public indiquait le grade de **professeur de l'enseignement primaire du 2e grade (échelle 10)**." },
-        { callout: 'info', text: "Cette fiche porte sur le **cycle primaire, spécialité bilingue** (arabe et français). Le primaire compte aussi une **spécialité langue amazighe** (1 000 des 3 383 places en 2025), qui a ses propres fiches d'épreuves." },
+        { callout: 'info', text: "Cette fiche porte sur le **cycle primaire, double spécialité** (dite bilingue : arabe et français). Le primaire compte aussi une **spécialité langue amazighe** (1 000 des 7 023 places en 2026, 1 000 des 3 383 en 2025), qui a ses propres fiches d'épreuves." },
       ] },
-      { id: 'conditions', h: 'Conditions (session de novembre 2025)', blocks: [
-        { table: { head: ['Condition', 'Session de novembre 2025'], rows: [
-          ['Nationalité', 'Marocaine'],
-          ['Diplôme', 'Licence ou diplôme équivalent ; au primaire, toutes les spécialités de licence étaient acceptées à la session de janvier 2025 (selon les relais de l’annonce)'],
-          ['Âge', '35 ans au plus à la date du concours (limite portée de 30 à 35 ans en 2025)'],
-          ['Candidature', 'Une seule demande : primaire, collégial ou qualifiant ; pièces en PDF sur wolouj.men.gov.ma'],
-          ['Présélection', 'Étude des dossiers par des commissions ; dispense pour les titulaires d’une licence en éducation ou d’une filière universitaire d’éducation'],
+      { id: 'conditions', h: 'Conditions (session de novembre 2026)', blocks: [
+        { table: { head: ['Condition', 'Session de novembre 2026'], rows: [
+          ['Nationalité', 'Marocaine, avec la jouissance des droits civiques et l’aptitude physique ; ne pas être lié à un autre employeur'],
+          ['Diplôme', 'Licence en éducation ou d’un parcours universitaire d’éducation, licence fondamentale ou professionnelle, ou diplôme équivalent ; au primaire, toutes les spécialités de licence sont acceptées (selon les relais de l’annonce)'],
+          ['Âge', '40 ans au plus à la date du concours (35 ans en 2025, 30 ans auparavant)'],
+          ['Candidature', 'Un seul cycle : primaire, collégial ou qualifiant (une licence de mathématiques ou de français permet le collégial et le qualifiant) ; choix de l’académie et ordre des CRMEF ; pièces en PDF sur wolouj.men.gov.ma'],
+          ['Présélection', 'Sur dossier ; dispense pour les titulaires d’une licence en éducation ou d’une filière universitaire d’éducation'],
         ] } },
-        { callout: 'warn', text: "Les critères chiffrés de la présélection (poids des mentions, année d'obtention…) ne figurent pas dans les relais que nous avons consultés : reportez-vous à l'annonce officielle de la session. L'âge maximum était de **30 ans** aux sessions d'octobre 2024 et de janvier 2025." },
+        { callout: 'warn', text: "Les critères chiffrés de la présélection (poids des mentions, année d'obtention…) ne figurent pas dans les relais que nous avons consultés : reportez-vous à l'annonce officielle de la session. L'âge maximum était de **30 ans** aux sessions d'octobre 2024 et de janvier 2025, puis de **35 ans** en novembre 2025." },
       ] },
       { id: 'deroulement', h: 'Déroulement du concours', blocks: [
         { steps: [
-          "**Candidature en ligne** sur wolouj.men.gov.ma (en 2025 : du 30 octobre au 13 novembre, 16 h 30).",
+          "**Candidature en ligne** sur wolouj.men.gov.ma (en 2026 : du 5 au 19 novembre, 16 h 30).",
           "**Présélection** et publication des listes des candidats convoqués à l'écrit.",
           "**Écrit** en une journée : QCM sur les matières, leur didactique et les sciences de l'éducation (détail ci-dessous).",
           "**Oral** pour les admissibles : un **test professionnel** (رائز مهني) puis un **entretien individuel** devant une commission spécialisée (communication, motivation, gestion d'une situation d'enseignement).",
@@ -108,7 +114,7 @@ export default {
           ['Didactique de chacune des quatre matières', 'Faire apprendre ces contenus : objectifs, situations, activités, évaluation et soutien', '45 min · coef. 3 par matière'],
           ['Sciences de l’éducation (épreuve commune)', 'En novembre 2025 : 25 QCM à cinq choix', '1 h · coef. 8'],
         ] } },
-        { callout: 'warn', text: "**À vérifier sur les fiches officielles.** Selon le ministère, ces fiches « définissent les domaines essentiels des épreuves, délimitent les axes principaux et le degré d'importance de chaque domaine et de chaque axe selon chaque spécialité ». Nous n'avons pas pu lire les PDF officiels : les durées et coefficients ci-dessus viennent de relais concordants, et la liste exacte des axes et de leur poids n'est pas reproduite ici. Téléchargez les fiches de votre session sur men.gov.ma avant de réviser." },
+        { callout: 'warn', text: "**À vérifier sur les fiches officielles.** Selon le ministère, ces fiches « définissent les domaines essentiels des épreuves, délimitent les axes principaux et le degré d'importance de chaque domaine et de chaque axe selon chaque spécialité ». Nous n'avons pas pu lire les PDF officiels : les durées et coefficients ci-dessus viennent de relais concordants, et la liste exacte des axes et de leur poids n'est pas reproduite ici. **Pour la session de novembre 2026**, un site spécialisé indique que l'annonce modifie l'organisation des épreuves, leur durée et leurs coefficients : téléchargez les fiches de description de la session sur men.gov.ma avant de réviser." },
         { h3: 'Ce que montrent les sujets récents' },
         { ul: [
           "**Sciences de l'éducation (novembre 2025)** : 25 questions numérotées de 101 à 125, cinq choix, une heure. Elles portent sur les théories de l'apprentissage (constructivisme, socioconstructivisme, cognitivisme, Gestalt), la psychologie du développement (Piaget, Freud, Erikson, Rogers), puis les objectifs, les compétences et l'évaluation.",
@@ -118,7 +124,18 @@ export default {
         ] },
         { p: "Nos [QCM enseignement primaire](@/qcm/enseignement-primaire-didactique/) suivent ces trois composantes. Ils ne contiennent pas de législation scolaire : aucune des sources consultées ne la place à l'écrit du primaire." },
       ] },
-      { id: 'calendrier', h: 'Calendrier des dernières sessions', blocks: [
+      { id: 'calendrier', h: 'Calendrier de la session 2026 et des précédentes', blocks: [
+        { p: "**Session de novembre 2026** : annonce publiée le 3 novembre 2026, places révisées à la hausse par une annonce complémentaire le 4 novembre (17 953 au total : 7 023 au primaire, 8 870 au collégial, 2 060 au qualifiant). Calendrier de l'annexe de l'annonce, tel que le relaie la presse :" },
+        { table: { head: ['Étape', 'Novembre 2026'], rows: [
+          ['Candidature', 'Du 5 au 19 novembre 2026, 16 h 30, sur wolouj.men.gov.ma'],
+          ['Convoqués à l’écrit', 'À partir du 24 novembre (recours les 25 et 26 novembre)'],
+          ['Écrit', 'Samedi 28 novembre 2026'],
+          ['Pratique (EPS)', 'Du 1er au 4 décembre (éducation physique et sportive seulement)'],
+          ['Résultats écrit', '9 décembre'],
+          ['Oral', 'Du 14 au 23 décembre'],
+          ['Résultats finaux', 'À partir du 29 décembre (inscription en CRMEF du 31 décembre au 2 janvier, début de la formation le 4 janvier 2027)'],
+        ] } },
+        { p: 'Les sessions précédentes, pour comparaison :' },
         { table: { head: ['Étape', 'Octobre 2024', 'Janvier 2025 (primaire)', 'Novembre 2025'], rows: [
           ['Places au primaire', '4 052', '442', '3 383 (2 383 bilingue, 1 000 amazighe)'],
           ['Âge maximum', '30 ans', '30 ans', '35 ans'],
@@ -128,8 +145,8 @@ export default {
           ['Oral', '15 – 23 octobre 2024', 'convoqués publiés le 25 janvier 2025', '2 – 11 décembre 2025'],
           ['Résultats définitifs', '28 octobre 2024', 'février 2025 (inscription en CRMEF les 24 et 25 février)', '4 janvier 2026 (inscription en CRMEF du 6 au 9 janvier)'],
         ] } },
-        { p: "**Session 2026** : aucune annonce officielle au 30 octobre 2026. Les deux dernières sessions principales ont été annoncées en septembre (2024) et à la fin d'octobre (2025), avec un écrit en octobre ou en novembre. Surveillez wolouj.men.gov.ma et men.gov.ma, ainsi que notre [calendrier des concours](@/outils/calendrier-concours/)." },
-        { callout: 'info', text: "Les résultats définitifs de la session 2025, annoncés pour le 16 décembre, n'ont été publiés que le **4 janvier 2026**, après des délibérations retardées." },
+        { p: "Toutes les dates de la session 2026 figurent dans notre [calendrier des concours](@/outils/calendrier-concours/), avec rappel dans votre agenda. Les listes et les résultats sont publiés sur men.gov.ma et wolouj.men.gov.ma." },
+        { callout: 'info', text: "Les résultats définitifs de la session 2025, annoncés pour le 16 décembre, n'ont été publiés que le **4 janvier 2026**, après des délibérations retardées : la date du 29 décembre 2026 peut, elle aussi, glisser." },
       ] },
       { id: 'preparation', h: 'Préparation', blocks: [
         { ul: [
@@ -146,39 +163,40 @@ export default {
     ],
     faq: [
       { q: 'Le concours des cadres des AREF existe-t-il encore ?', a: "Plus sous ce nom : depuis 2024, le recrutement des enseignants passe par le concours d'accès au cycle de qualification des cadres enseignants des CRMEF, avec candidature sur wolouj.men.gov.ma. Les résultats sont publiés par région et par centre." },
-      { q: 'Quel est l’âge maximum pour le concours de l’enseignement ?', a: "35 ans à la date du concours pour la session de novembre 2025, contre 30 ans de 2021 à janvier 2025. Vérifiez la limite dans l'annonce de la session 2026." },
+      { q: 'Quel est l’âge maximum pour le concours de l’enseignement ?', a: "40 ans à la date du concours pour la session de novembre 2026 (écrit le 28 novembre 2026), contre 35 ans en novembre 2025 et 30 ans de 2021 à janvier 2025." },
       { q: 'Quelles sont les épreuves écrites du concours de l’enseignement primaire ?', a: "Des QCM sur quatre matières (arabe, français, mathématiques, sciences), sur leur didactique, et une épreuve commune de sciences de l'éducation (25 questions en une heure en novembre 2025)." },
-      { q: 'Faut-il une licence en éducation pour enseigner au primaire ?', a: "Non : à la session de janvier 2025, toutes les spécialités de licence étaient acceptées pour le primaire. Les titulaires d'une licence en éducation ou d'une filière universitaire d'éducation sont dispensés de la présélection." },
-      { q: 'Quand aura lieu le concours de l’enseignement 2026 ?', a: "Il n'était pas encore annoncé au 30 octobre 2026. L'écrit a eu lieu le 5 octobre en 2024 et le 22 novembre en 2025." },
+      { q: 'Faut-il une licence en éducation pour enseigner au primaire ?', a: "Non : pour le primaire, toutes les spécialités de licence sont acceptées (session de novembre 2026, selon les relais de l'annonce). Les titulaires d'une licence en éducation ou d'une filière universitaire d'éducation sont dispensés de la présélection sur dossier." },
+      { q: 'Quand a lieu le concours de l’enseignement 2026 ?', a: "L'écrit a lieu le samedi 28 novembre 2026. Les candidatures sont ouvertes du 5 au 19 novembre 2026 à 16 h 30 sur wolouj.men.gov.ma ; l'oral est prévu du 14 au 23 décembre et les résultats définitifs à partir du 29 décembre." },
+      { q: 'Combien de places au concours de l’enseignement 2026 ?', a: "17 953 places après l'annonce complémentaire du 4 novembre 2026 : 7 023 au primaire (6 023 en double spécialité et 1 000 en amazighe), 8 870 au collégial et 2 060 au qualifiant. L'annonce initiale du 3 novembre en prévoyait 15 590." },
     ],
   },
   ar: {
     short: 'أساتذة التعليم الابتدائي',
     name: 'مباراة التعليم الابتدائي — ولوج سلك تأهيل أطر التدريس بالمراكز الجهوية (مباراة أطر الأكاديميات سابقا)',
-    title: 'مباراة التعليم الابتدائي 2026: الشروط والاختبارات والمواعيد',
-    description: 'كيف تصبح أستاذا للتعليم الابتدائي: الإجازة، 35 سنة على الأكثر، اختبار كتابي (المواد، الديداكتيك، علوم التربية)، الشفوي والمواعيد والتحضير.',
-    keywords: ['مباراة التعليم', 'مباراة التعليم الابتدائي', 'أطر الأكاديميات', 'ولوج سلك تأهيل أطر التدريس', 'wolouj.men.gov.ma'],
-    intro: 'لتصبح **أستاذا للتعليم الابتدائي** في التعليم العمومي، عليك أن تنجح بعد الإجازة في **مباراة ولوج سلك تأهيل أطر التدريس** بالمراكز الجهوية لمهن التربية والتكوين، التي كانت تسمى إلى غاية 2023 «مباراة توظيف أطر الأكاديميات». في نونبر 2025 فُتح **3383 مقعدا** بالتعليم الابتدائي، وأُجري الاختبار الكتابي بأسئلة متعددة الاختيارات يوم **22 نونبر 2025**. ولم يُعلن عن دورة 2026 بعد إلى غاية 30 أكتوبر 2026.',
-    facts: [['الشهادة', 'الإجازة أو ما يعادلها'], ['السن', '35 سنة على الأكثر (دورة 2025)'], ['الاختبارات', 'كتابي بأسئلة متعددة الاختيارات (المواد، الديداكتيك، علوم التربية) ثم شفوي'], ['مقاعد الابتدائي 2025', '3383'], ['آخر اختبار كتابي', '22 نونبر 2025'], ['الترشيح', 'wolouj.men.gov.ma']],
+    title: 'مباراة التعليم الابتدائي 2026: الكتابي يوم 28 نونبر',
+    description: 'مباراة التعليم 2026: 7023 مقعدا بالابتدائي، 40 سنة على الأكثر، الترشيح إلى غاية 19 نونبر، الاختبار الكتابي يوم 28 نونبر، ثم الشفوي والتحضير.',
+    keywords: ['مباراة التعليم 2026', 'مباراة التعليم الابتدائي', 'مباراة التعليم 40 سنة', 'أطر الأكاديميات', 'ولوج سلك تأهيل أطر التدريس', 'wolouj.men.gov.ma'],
+    intro: 'لتصبح **أستاذا للتعليم الابتدائي** في التعليم العمومي، عليك أن تنجح بعد الإجازة في **مباراة ولوج سلك تأهيل أطر التدريس** بالمراكز الجهوية لمهن التربية والتكوين، التي كانت تسمى إلى غاية 2023 «مباراة توظيف أطر الأكاديميات». **دورة نونبر 2026**: الترشيح من **5 إلى 19 نونبر 2026** (الساعة 16:30) عبر wolouj.men.gov.ma، والاختبار الكتابي يوم **السبت 28 نونبر 2026**، و**7023 مقعدا** بالابتدائي من أصل 17953، مع رفع السن الأقصى إلى **40 سنة**.',
+    facts: [['الشهادة', 'الإجازة أو ما يعادلها'], ['السن', '40 سنة على الأكثر (دورة 2026)'], ['الاختبارات', 'كتابي بأسئلة متعددة الاختيارات (المواد، الديداكتيك، علوم التربية) ثم شفوي'], ['مقاعد الابتدائي 2026', '7023 (6023 مزدوج، 1000 أمازيغية)'], ['الترشيح', 'من 5 إلى 19 نونبر 2026 عبر wolouj.men.gov.ma'], ['الاختبار الكتابي', 'السبت 28 نونبر 2026']],
     sections: [
       { id: 'cadre', h: 'من «مباراة أطر الأكاديميات» إلى سلك التأهيل', blocks: [
         { p: 'إلى غاية 2023 كانت المباراة تُنظم باسم **مباراة توظيف أطر الأكاديميات الجهوية للتربية والتكوين**. وبعد اعتماد **النظام الأساسي الخاص بموظفي الوزارة المكلفة بالتربية الوطنية** (المرسوم رقم 2.24.140 الصادر في 23 فبراير 2024، الجريدة الرسمية عدد 7277 بتاريخ 26 فبراير 2024)، نُظمت دورتا 2024 و2025 باسم **مباريات ولوج سلك تأهيل أطر التدريس** بـ**المراكز الجهوية لمهن التربية والتكوين**، مع ترشيح إلكتروني عبر **wolouj.men.gov.ma**.' },
         { p: 'يتابع الناجحون التكوين التأهيلي بالمركز الجهوي. وبالنسبة لدورة يناير 2025، كانت بطاقة بوابة التشغيل العمومي تذكر إطار **أستاذ التعليم الابتدائي من الدرجة الثانية (السلم 10)**.' },
-        { callout: 'info', text: 'تخص هذه البطاقة **سلك التعليم الابتدائي، التخصص المزدوج** (العربية والفرنسية). ويضم الابتدائي أيضا **تخصص اللغة الأمازيغية** (1000 من أصل 3383 مقعدا سنة 2025)، وله بطاقات توصيف خاصة به.' },
+        { callout: 'info', text: 'تخص هذه البطاقة **سلك التعليم الابتدائي، التخصص المزدوج** (العربية والفرنسية). ويضم الابتدائي أيضا **تخصص اللغة الأمازيغية** (1000 من أصل 7023 مقعدا سنة 2026، و1000 من أصل 3383 سنة 2025)، وله بطاقات توصيف خاصة به.' },
       ] },
-      { id: 'conditions', h: 'الشروط (دورة نونبر 2025)', blocks: [
-        { table: { head: ['الشرط', 'دورة نونبر 2025'], rows: [
-          ['الجنسية', 'مغربية'],
-          ['الشهادة', 'الإجازة أو ما يعادلها؛ وبالنسبة للابتدائي قُبلت جميع تخصصات الإجازة في دورة يناير 2025 (حسب ما نقلته المواقع عن الإعلان)'],
-          ['السن', '35 سنة على الأكثر في تاريخ إجراء المباراة (رُفع الحد من 30 إلى 35 سنة في 2025)'],
-          ['الترشيح', 'طلب واحد فقط: الابتدائي أو الإعدادي أو التأهيلي؛ الوثائق بصيغة PDF عبر wolouj.men.gov.ma'],
-          ['الانتقاء الأولي', 'دراسة الملفات من طرف لجان؛ يُستثنى حاملو الإجازة في التربية أو خريجو المسالك الجامعية للتربية'],
+      { id: 'conditions', h: 'الشروط (دورة نونبر 2026)', blocks: [
+        { table: { head: ['الشرط', 'دورة نونبر 2026'], rows: [
+          ['الجنسية', 'مغربية، مع التمتع بالحقوق الوطنية والقدرة البدنية؛ وألا يكون المترشح مرتبطا بمشغل آخر'],
+          ['الشهادة', 'الإجازة في التربية أو في أحد المسالك الجامعية للتربية، أو الإجازة الأساسية أو المهنية، أو شهادة معادلة؛ وبالنسبة للابتدائي تُقبل جميع تخصصات الإجازة (حسب ما نقلته المواقع عن الإعلان)'],
+          ['السن', '40 سنة على الأكثر في تاريخ إجراء المباراة (35 سنة في 2025، و30 سنة قبل ذلك)'],
+          ['الترشيح', 'سلك واحد فقط: الابتدائي أو الإعدادي أو التأهيلي (تسمح الإجازة في الرياضيات أو الفرنسية بالإعدادي والتأهيلي)؛ اختيار الأكاديمية وترتيب المراكز؛ الوثائق بصيغة PDF عبر wolouj.men.gov.ma'],
+          ['الانتقاء الأولي', 'على أساس الملفات؛ يُستثنى حاملو الإجازة في التربية أو خريجو المسالك الجامعية للتربية'],
         ] } },
-        { callout: 'warn', text: 'لا تتضمن المصادر التي اطلعنا عليها المعايير المرقمة للانتقاء الأولي (وزن الميزات، سنة الحصول على الشهادة…): ارجع إلى الإعلان الرسمي للدورة. وكان السن الأقصى **30 سنة** في دورتي أكتوبر 2024 ويناير 2025.' },
+        { callout: 'warn', text: 'لا تتضمن المصادر التي اطلعنا عليها المعايير المرقمة للانتقاء الأولي (وزن الميزات، سنة الحصول على الشهادة…): ارجع إلى الإعلان الرسمي للدورة. وكان السن الأقصى **30 سنة** في دورتي أكتوبر 2024 ويناير 2025، ثم **35 سنة** في نونبر 2025.' },
       ] },
       { id: 'deroulement', h: 'مراحل المباراة', blocks: [
         { steps: [
-          '**الترشيح الإلكتروني** عبر wolouj.men.gov.ma (في 2025: من 30 أكتوبر إلى 13 نونبر، الساعة 16:30).',
+          '**الترشيح الإلكتروني** عبر wolouj.men.gov.ma (في 2026: من 5 إلى 19 نونبر، الساعة 16:30).',
           '**الانتقاء الأولي** ونشر لوائح المدعوين لاجتياز الاختبار الكتابي.',
           '**الاختبار الكتابي** في يوم واحد: أسئلة متعددة الاختيارات في المواد وديداكتيكها وعلوم التربية (التفاصيل أسفله).',
           '**الاختبار الشفوي** للناجحين في الكتابي: **رائز مهني** ثم **مقابلة فردية** أمام لجنة تخصصية (التواصل، الدافعية، تدبير وضعية تعليمية).',
@@ -196,7 +214,7 @@ export default {
           ['ديداكتيك كل مادة من المواد الأربع', 'تدريس هذه المضامين: الأهداف، الوضعيات، الأنشطة، التقويم والدعم', '45 دقيقة · المعامل 3 لكل مادة'],
           ['علوم التربية (اختبار مشترك)', 'في نونبر 2025: 25 سؤالا متعدد الاختيارات بخمسة اختيارات', 'ساعة واحدة · المعامل 8'],
         ] } },
-        { callout: 'warn', text: '**يجب التحقق من البطاقات الرسمية.** حسب الوزارة، «تحدد هذه التوصيفات المجالات الأساسية للاختبارات، وتحصر المحاور الرئيسية ودرجة أهمية كل مجال وكل محور حسب كل تخصص». لم نتمكن من قراءة ملفات PDF الرسمية: المدد والمعاملات أعلاه مأخوذة من مصادر ناقلة متطابقة، أما اللائحة الدقيقة للمحاور وأوزانها فلا نعرضها هنا. حمّل بطاقات دورتك من men.gov.ma قبل المراجعة.' },
+        { callout: 'warn', text: '**يجب التحقق من البطاقات الرسمية.** حسب الوزارة، «تحدد هذه التوصيفات المجالات الأساسية للاختبارات، وتحصر المحاور الرئيسية ودرجة أهمية كل مجال وكل محور حسب كل تخصص». لم نتمكن من قراءة ملفات PDF الرسمية: المدد والمعاملات أعلاه مأخوذة من مصادر ناقلة متطابقة، أما اللائحة الدقيقة للمحاور وأوزانها فلا نعرضها هنا. **بالنسبة لدورة نونبر 2026**، يشير موقع متخصص إلى أن الإعلان يعدّل تنظيم الاختبارات ومددها ومعاملاتها: حمّل بطاقات توصيف الدورة من men.gov.ma قبل المراجعة.' },
         { h3: 'ما تُظهره المواضيع الأخيرة' },
         { ul: [
           '**علوم التربية (نونبر 2025)**: 25 سؤالا مرقمة من 101 إلى 125، بخمسة اختيارات، في ساعة واحدة. تتناول نظريات التعلم (البنائية، السوسيوبنائية، المعرفية، الجشطلت)، وعلم النفس النمائي (بياجي، فرويد، إريكسون، روجرز)، ثم الأهداف والكفايات والتقويم.',
@@ -206,7 +224,18 @@ export default {
         ] },
         { p: 'تتبع [أسئلة التعليم الابتدائي المصححة](@/qcm/enseignement-primaire-didactique/) هذه المكونات الثلاثة، ولا تتضمن أسئلة في التشريع المدرسي، إذ لم نجد أي مصدر يدرجه في الاختبار الكتابي للابتدائي.' },
       ] },
-      { id: 'calendrier', h: 'مواعيد الدورات الأخيرة', blocks: [
+      { id: 'calendrier', h: 'مواعيد دورة 2026 والدورات السابقة', blocks: [
+        { p: '**دورة نونبر 2026**: نُشر الإعلان يوم 3 نونبر 2026، ثم رُفع عدد المقاعد بإعلان تكميلي يوم 4 نونبر (17953 في المجموع: 7023 بالابتدائي، و8870 بالإعدادي، و2060 بالتأهيلي). البرمجة الزمنية الواردة في ملحق الإعلان، كما نقلتها الصحافة:' },
+        { table: { head: ['المرحلة', 'نونبر 2026'], rows: [
+          ['الترشيح', 'من 5 إلى 19 نونبر 2026، الساعة 16:30، عبر wolouj.men.gov.ma'],
+          ['لوائح المدعوين', 'ابتداءً من 24 نونبر (الطعون يومي 25 و26 نونبر)'],
+          ['الاختبار الكتابي', 'السبت 28 نونبر 2026'],
+          ['الاختبار التطبيقي', 'من 1 إلى 4 دجنبر (التربية البدنية والرياضية فقط)'],
+          ['نتائج الكتابي', '9 دجنبر'],
+          ['الاختبار الشفوي', 'من 14 إلى 23 دجنبر'],
+          ['النتائج النهائية', 'ابتداءً من 29 دجنبر (التسجيل بالمراكز من 31 دجنبر إلى 2 يناير، وانطلاق التكوين يوم 4 يناير 2027)'],
+        ] } },
+        { p: 'الدورات السابقة للمقارنة:' },
         { table: { head: ['المرحلة', 'أكتوبر 2024', 'يناير 2025 (الابتدائي)', 'نونبر 2025'], rows: [
           ['مقاعد الابتدائي', '4052', '442', '3383 (2383 مزدوج، 1000 أمازيغية)'],
           ['السن الأقصى', '30 سنة', '30 سنة', '35 سنة'],
@@ -216,8 +245,8 @@ export default {
           ['الاختبار الشفوي', '15 – 23 أكتوبر 2024', 'نُشرت لوائح المدعوين يوم 25 يناير 2025', '2 – 11 دجنبر 2025'],
           ['النتائج النهائية', '28 أكتوبر 2024', 'فبراير 2025 (التسجيل بالمراكز يومي 24 و25 فبراير)', '4 يناير 2026 (التسجيل بالمراكز من 6 إلى 9 يناير)'],
         ] } },
-        { p: '**دورة 2026**: لا يوجد إعلان رسمي إلى غاية 30 أكتوبر 2026. أُعلن عن آخر دورتين رئيسيتين في شتنبر (2024) وفي أواخر أكتوبر (2025)، مع اختبار كتابي في أكتوبر أو نونبر. تابع wolouj.men.gov.ma وmen.gov.ma، وكذلك [أجندة المباريات](@/outils/calendrier-concours/).' },
-        { callout: 'info', text: 'أُعلن أن النتائج النهائية لدورة 2025 ستصدر يوم 16 دجنبر، لكنها لم تُنشر إلا يوم **4 يناير 2026** بعد تأخر المداولات.' },
+        { p: 'كل مواعيد دورة 2026 موجودة في [أجندة المباريات](@/outils/calendrier-concours/) مع إمكانية إضافتها إلى مفكرتك. وتُنشر اللوائح والنتائج على men.gov.ma وwolouj.men.gov.ma.' },
+        { callout: 'info', text: 'أُعلن أن النتائج النهائية لدورة 2025 ستصدر يوم 16 دجنبر، لكنها لم تُنشر إلا يوم **4 يناير 2026** بعد تأخر المداولات: قد يتأخر بدوره موعد 29 دجنبر 2026.' },
       ] },
       { id: 'preparation', h: 'التحضير', blocks: [
         { ul: [
@@ -234,10 +263,11 @@ export default {
     ],
     faq: [
       { q: 'هل ما زالت مباراة أطر الأكاديميات قائمة؟', a: 'ليس بهذا الاسم: منذ 2024 يتم توظيف الأساتذة عبر مباراة ولوج سلك تأهيل أطر التدريس بالمراكز الجهوية لمهن التربية والتكوين، مع الترشيح عبر wolouj.men.gov.ma. وتُنشر النتائج حسب الجهة والمركز.' },
-      { q: 'ما هو السن الأقصى لاجتياز مباراة التعليم؟', a: '35 سنة في تاريخ المباراة بالنسبة لدورة نونبر 2025، مقابل 30 سنة من 2021 إلى يناير 2025. تحقق من الحد في إعلان دورة 2026.' },
+      { q: 'ما هو السن الأقصى لاجتياز مباراة التعليم؟', a: '40 سنة في تاريخ المباراة بالنسبة لدورة نونبر 2026 (الاختبار الكتابي يوم 28 نونبر 2026)، مقابل 35 سنة في نونبر 2025 و30 سنة من 2021 إلى يناير 2025.' },
       { q: 'ما هي الاختبارات الكتابية لمباراة التعليم الابتدائي؟', a: 'أسئلة متعددة الاختيارات في أربع مواد (العربية، الفرنسية، الرياضيات، العلوم) وفي ديداكتيكها، واختبار مشترك في علوم التربية (25 سؤالا في ساعة واحدة في نونبر 2025).' },
-      { q: 'هل يشترط الحصول على الإجازة في التربية للتدريس بالابتدائي؟', a: 'لا: في دورة يناير 2025 كانت جميع تخصصات الإجازة مقبولة بالنسبة للابتدائي. ويُستثنى حاملو الإجازة في التربية أو خريجو المسالك الجامعية للتربية من الانتقاء الأولي.' },
-      { q: 'متى ستُجرى مباراة التعليم 2026؟', a: 'لم يُعلن عنها بعد إلى غاية 30 أكتوبر 2026. وقد أُجري الاختبار الكتابي يوم 5 أكتوبر في 2024 ويوم 22 نونبر في 2025.' },
+      { q: 'هل يشترط الحصول على الإجازة في التربية للتدريس بالابتدائي؟', a: 'لا: بالنسبة للابتدائي تُقبل جميع تخصصات الإجازة (دورة نونبر 2026، حسب ما نقلته المواقع عن الإعلان). ويُستثنى حاملو الإجازة في التربية أو خريجو المسالك الجامعية للتربية من الانتقاء الأولي على أساس الملفات.' },
+      { q: 'متى تُجرى مباراة التعليم 2026؟', a: 'يُجرى الاختبار الكتابي يوم السبت 28 نونبر 2026. والترشيح مفتوح من 5 إلى 19 نونبر 2026 على الساعة 16:30 عبر wolouj.men.gov.ma، والاختبار الشفوي مبرمج من 14 إلى 23 دجنبر، والنتائج النهائية ابتداءً من 29 دجنبر.' },
+      { q: 'كم عدد المقاعد في مباراة التعليم 2026؟', a: '17953 مقعدا بعد الإعلان التكميلي ليوم 4 نونبر 2026: 7023 بالابتدائي (6023 للتخصص المزدوج و1000 للأمازيغية)، و8870 بالإعدادي، و2060 بالتأهيلي. وكان الإعلان الأول ليوم 3 نونبر يتضمن 15590 مقعدا.' },
     ],
   },
 };

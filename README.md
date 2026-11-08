@@ -230,6 +230,9 @@ Le build refuse toute question mal formée.
 ### Mettre à jour pour une nouvelle session
 
 1. Mettez à jour les dates dans `content/calendar.mjs` et les seuils dans `content/concours/*.mjs`.
+   Une nouvelle date reçoit `added: 'AAAA-MM-JJ'` (jour de sa mise en ligne) : les listes d'échéances
+   (accueil, calendrier) l'affichent avec un badge « Nouveau » pendant 21 jours. Une date confirmée prend un
+   nouvel `id` (pas celui de l'estimation qu'elle remplace), pour que les abonnés aux alertes soient prévenus.
 2. Changez `updated`, `session` et `nextSession` dans `content/site.mjs`.
 3. `npm run build`, `npm run check`, commit.
 

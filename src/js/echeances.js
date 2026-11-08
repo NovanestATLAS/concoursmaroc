@@ -4,6 +4,7 @@
   'use strict';
   var LANG = document.documentElement.getAttribute('data-lang') || 'fr';
   var APP = document.documentElement.hasAttribute('data-app');
+  var NEW_DAYS = 21;
   var T = LANG === 'ar'
     ? { today: 'اليوم', tomorrow: 'غدًا', inDays: 'بعد {n} يومًا', ongoing: 'جارٍ حتى {d}', past: 'انتهى', est: 'تقدير', add: 'تقويم آخر (.ics)', gcal: 'أضف إلى تقويم Google' }
     : { today: "Aujourd'hui", tomorrow: 'Demain', inDays: 'Dans {n} jours', ongoing: "En cours jusqu'au {d}", past: 'Passé', est: 'Estimation', add: 'Autre agenda (.ics)', gcal: 'Ajouter à Google Agenda' };
@@ -108,6 +109,12 @@
         }
       } else if (left) {
         left.textContent = T.est;
+      }
+      // "Nouveau" on a date published on the site in the last NEW_DAYS days
+      var added = li.getAttribute('data-added');
+      var badge = li.querySelector('[data-new]');
+      if (badge && added && !li.classList.contains('past')) {
+        badge.hidden = -daysUntil(added) > NEW_DAYS;
       }
       if (limit && shown >= limit) { li.hidden = true; return; }
       shown++;

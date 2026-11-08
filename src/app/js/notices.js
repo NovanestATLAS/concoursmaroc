@@ -12,6 +12,8 @@
  *   "fr": { "title": "…", "body": "…", "cta": "Voir le concours" },
  *   "ar": { "title": "…", "body": "…", "cta": "…" },
  *   "route": "concours/police-dgsn/"  or  "url": "https://…" } ] }
+ * "fr"/"ar" may carry their own "route" (e.g. "ar/concours/police-dgsn/"),
+ * used instead of the shared one for readers of that language.
  * A single object without the "annonces" array is accepted too.
  *
  * Shown once per id, never on the first launch, at most one per day, at a
@@ -64,13 +66,16 @@
     if (!UI || !UI.sheet) return false;
     if (!preview && UI.isSheetOpen && UI.isSheetOpen()) return false;
     var t = a[lang()] || a.fr;
+    // a route per language (fr.route / ar.route) wins over the shared one, so
+    // that an Arabic reader opens the Arabic page
+    var route = (t && t.route) || a.route;
     var actions = [{ label: tr('Fermer', 'إغلاق'), style: 'ghost' }];
     var Shell = global.CM.shell;
-    if (a.route || a.url) {
+    if (route || a.url) {
       actions.push({ label: t.cta || tr('Voir', 'عرض'), style: 'primary', onclick: function () {
         var FB = global.CM.firebase;
         if (FB) FB.log('announcement_open', { id: a.id });
-        if (a.route && FB) FB.openRoute(a.route);
+        if (route && FB) FB.openRoute(route);
         else if (a.url && /^https:\/\//.test(a.url) && Shell) Shell.openExternal(a.url);
       } });
     }

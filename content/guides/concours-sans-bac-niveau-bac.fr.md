@@ -18,6 +18,7 @@ keywords: [concours sans bac maroc, formation sans bac, niveau bac concours, for
 | [OFPPT](@/concours/ofppt/) — technicien | Niveau 2e année du bac achevée, ou diplôme de qualification | 30 ans au plus | Dossier, test ou entretien selon la filière |
 | [OFPPT](@/concours/ofppt/) — qualification | Niveau 3e année du collège | Selon l'avis | Dossier, test ou entretien |
 | [École 1337](@/concours/ecole-1337/) | Aucun diplôme exigé | 18 à 30 ans | Test en ligne, puis « piscine » de quatre semaines |
+| Bac en candidat libre (session 2027) | Cycle collégial achevé au moins deux ans avant l'année de candidature | Aucune limite indiquée dans le communiqué | Candidature en ligne du 4 novembre au 4 décembre 2026, examens fin mai – début juin 2027 |
 
 Les âges et les niveaux changent d'une session à l'autre : vérifiez toujours l'avis officiel, rappelé sur chaque fiche.
 
@@ -37,7 +38,13 @@ Gratuite et sans exigence de diplôme, l'école 1337 (réseau 42) forme au déve
 
 ## Repasser le bac en candidat libre
 
-On peut se présenter au baccalauréat en **candidat libre**. Les inscriptions se font en général en fin d'année civile auprès de l'académie régionale (AREF) : surveillez les annonces officielles. Obtenir le bac ouvre ensuite les concours de la police, de la gendarmerie, les écoles et les facultés.
+On peut se présenter au baccalauréat en **candidat libre**. Pour la **session 2027**, les candidatures se font uniquement en ligne sur **candidaturesbac.men.gov.ma**, du **4 novembre au 4 décembre 2026**, selon le communiqué du ministère de l'Éducation nationale du 4 novembre 2026 :
+
+- le compte se crée avec l'application **« Mon e-ID » (هويتي الرقمية)** et la carte nationale d'identité électronique ;
+- sans bac, il faut avoir achevé le cycle collégial au moins deux ans avant l'année de la candidature ; avec un bac, on ne peut se présenter que dans une filière où on ne l'a pas encore obtenu ;
+- les listes provisoires paraissent avant le 9 décembre, puis les réclamations sont ouvertes **du 9 au 17 décembre 2026** sur le même portail.
+
+Obtenir le bac ouvre ensuite les concours de la police, de la gendarmerie, les écoles et les facultés. La date limite figure dans notre [calendrier des concours](@/outils/calendrier-concours/).
 
 ## Ce qui exige le bac
 
@@ -53,3 +60,6 @@ Oui pour les niveaux qualification (après le collège) et technicien (après la
 
 ### L'école 1337 demande-t-elle un diplôme ?
 Non. Il faut avoir entre 18 et 30 ans selon les dernières conditions publiées et réussir le test en ligne puis la piscine.
+
+### Quand s'inscrire au bac libre 2027 ?
+Du 4 novembre au 4 décembre 2026, uniquement sur candidaturesbac.men.gov.ma, avec l'application « Mon e-ID ». Les réclamations sur les candidatures refusées sont ouvertes du 9 au 17 décembre 2026.

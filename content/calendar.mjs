@@ -4,15 +4,26 @@
  *   - 2027 entries are estimates based on the usual period (month only,
  *     confidence: 'estimation') and must be confirmed by the official notice.
  * The calendar page computes "upcoming / past" in the browser, so the page
- * stays correct without rebuilding. Last checked against sources: 2026-10-30
- * (CRMEF 2026 still not announced on men.gov.ma; DGSN, Forces Auxiliaires and
- * Protection civile dates confirmed; Minhaty closed on 18 October; bac 2027
- * dates fixed by ministerial decision 047.26 of 3 July 2026). */
+ * stays correct without rebuilding. Last checked against sources: 2026-11-08
+ * (CRMEF 2026 announced on 3 November, places raised to 17,953 on 4 November,
+ * written exams on 28 November; bac 2027 free candidates from 4 November to
+ * 4 December; DGSN, Forces Auxiliaires and Protection civile dates unchanged;
+ * bac 2027 dates fixed by ministerial decision 047.26 of 3 July 2026).
+ * `added` = the day an entry was published on the site: the date lists show a
+ * "Nouveau" badge on it for 21 days (src/js/echeances.js). A confirmed date
+ * gets a new id (never the id of the estimate it replaces), so that push
+ * subscribers are told about it the next morning. */
 export const CALENDAR = [
   // ---------- upcoming at the time of writing (autumn 2026) ----------
   { id: 'pc-officiers-2026-insc', concours: 'protection-civile', type: 'deadline', date: '2026-10-31', confidence: 'officiel',
     fr: 'Protection civile : 50 élèves officiers (licence), date limite de candidature', ar: 'الوقاية المدنية: 50 تلميذًا ضابطًا (الإجازة)، آخر أجل للترشيح',
     source: { label: 'emploi-public.ma — Élèves officiers, échelle 10 (C44132/26)', url: 'https://www.emploi-public.ma/fr/concours/details/0bc3b58e-cfd7-466e-9023-6faf53a94738' } },
+  { id: 'bac-2027-libres-insc', concours: null, guide: 'outils/calcul-note-bac/', type: 'inscription', start: '2026-11-04', date: '2026-12-04', confidence: 'annonce', added: '2026-11-08',
+    fr: 'Bac 2027 : candidatures des candidats libres sur candidaturesbac.men.gov.ma (réclamations du 9 au 17 décembre)', ar: 'بكالوريا 2027: ترشيحات المترشحين الأحرار عبر candidaturesbac.men.gov.ma (الشكايات من 9 إلى 17 دجنبر)',
+    source: { label: 'Le Matin — Bac 2027 : ouverture des inscriptions pour les candidats libres jusqu’au 4 décembre (4 novembre 2026)', url: 'https://lematin.ma/enseignement/bac-2027-ouverture-des-inscriptions-pour-les-candidats-libres/374068' } },
+  { id: 'crmef-2026-insc', concours: 'enseignants-aref', type: 'inscription', start: '2026-11-05', date: '2026-11-19', confidence: 'officiel', added: '2026-11-08',
+    fr: 'Concours de l’enseignement (CRMEF) 2026 : candidatures sur wolouj.men.gov.ma (17 953 places, 40 ans au plus)', ar: 'مباريات التعليم 2026: الترشيح عبر wolouj.men.gov.ma (17953 مقعدًا، 40 سنة على الأكثر)',
+    source: { label: 'Ministère de l’Éducation nationale — annonce des concours d’accès au cycle de qualification des cadres enseignants, session de novembre 2026 (PDF)', url: 'https://www.men.gov.ma/sites/default/files/2026-11/%D8%A5%D8%B9%D9%84%D8%A7%D9%86_0.pdf' } },
   { id: 'pc-officiers-2026-epreuves', concours: 'protection-civile', type: 'ecrit', date: '2026-11-16', confidence: 'officiel',
     fr: 'Protection civile : concours des élèves officiers (début par la visite médicale)', ar: 'الوقاية المدنية: مباراة التلاميذ الضباط (تبدأ بالفحص الطبي)',
     source: { label: 'emploi-public.ma — Élèves officiers, échelle 10 (C44132/26)', url: 'https://www.emploi-public.ma/fr/concours/details/0bc3b58e-cfd7-466e-9023-6faf53a94738' } },
@@ -22,9 +33,18 @@ export const CALENDAR = [
   { id: 'dgsn-2026-ecrit', concours: 'police-dgsn', type: 'ecrit', date: '2026-11-22', confidence: 'annonce',
     fr: 'Police (DGSN) : épreuves écrites du concours 2026 (tous grades sauf commissaires principaux)', ar: 'الأمن الوطني: الاختبارات الكتابية لمباراة 2026 (جميع الرتب باستثناء العمداء الممتازين)',
     source: { label: 'iJob — Concours police 2026 : l’écrit fixé au dimanche 22 novembre', url: 'https://ijob.ma/actualite/concours-police-2026-ecrit-22-novembre/' } },
+  { id: 'crmef-2026-ecrit', concours: 'enseignants-aref', type: 'ecrit', date: '2026-11-28', confidence: 'officiel', added: '2026-11-08',
+    fr: 'Concours de l’enseignement (CRMEF) 2026 : épreuves écrites (convoqués publiés à partir du 24 novembre)', ar: 'مباريات التعليم 2026: الاختبارات الكتابية (لوائح المدعوين ابتداءً من 24 نونبر)',
+    source: { label: 'Ministère de l’Éducation nationale — annonce des concours d’accès au cycle de qualification des cadres enseignants, session de novembre 2026 (PDF)', url: 'https://www.men.gov.ma/sites/default/files/2026-11/%D8%A5%D8%B9%D9%84%D8%A7%D9%86_0.pdf' } },
   { id: 'dgsn-2026-ecrit-cp', concours: 'police-dgsn', type: 'ecrit', date: '2026-11-29', confidence: 'annonce',
     fr: 'Police (DGSN) : écrit des commissaires principaux (97 postes)', ar: 'الأمن الوطني: الاختبار الكتابي للعمداء الممتازين (97 منصبًا)',
     source: { label: 'Alwadifa-Maroc — DGSN : 97 commissaires de police principaux, concours le 29 novembre 2026', url: 'https://alwadifa-maroc.com/offre/show/id/23572' } },
+  { id: 'crmef-2026-oral', concours: 'enseignants-aref', type: 'ecrit', start: '2026-12-14', date: '2026-12-23', confidence: 'annonce', added: '2026-11-08',
+    fr: 'Concours de l’enseignement (CRMEF) 2026 : entretiens oraux (résultats de l’écrit le 9 décembre ; épreuves pratiques d’EPS du 1er au 4 décembre)', ar: 'مباريات التعليم 2026: الاختبارات الشفوية (نتائج الكتابي يوم 9 دجنبر؛ الاختبارات التطبيقية للتربية البدنية والرياضية من 1 إلى 4 دجنبر)',
+    source: { label: 'Le Matin — Concours de l’enseignement 2026 : 15 590 places, la limite d’âge portée à 40 ans (4 novembre 2026)', url: 'https://lematin.ma/enseignement/concours-de-lenseignement-15590-places-la-limite-dage-portee-a-40-ans/374010' } },
+  { id: 'crmef-2026-resultats', concours: 'enseignants-aref', type: 'resultats', date: '2026-12-29', confidence: 'annonce', added: '2026-11-08',
+    fr: 'Concours de l’enseignement (CRMEF) 2026 : résultats définitifs à partir du 29 décembre (inscription en CRMEF du 31 décembre au 2 janvier, formation dès le 4 janvier 2027)', ar: 'مباريات التعليم 2026: النتائج النهائية ابتداءً من 29 دجنبر (التسجيل بالمراكز من 31 دجنبر إلى 2 يناير، وانطلاق التكوين يوم 4 يناير 2027)',
+    source: { label: 'Le Matin — Concours de l’enseignement 2026 : 15 590 places, la limite d’âge portée à 40 ans (4 novembre 2026)', url: 'https://lematin.ma/enseignement/concours-de-lenseignement-15590-places-la-limite-dage-portee-a-40-ans/374010' } },
   { id: 'bac-2027-regional', concours: null, guide: 'outils/calcul-note-bac/', type: 'ecrit', start: '2027-05-28', date: '2027-05-29', confidence: 'annonce',
     fr: 'Bac 2027 : examen régional de 1re année bac (session normale, candidats scolarisés et libres)', ar: 'بكالوريا 2027: الامتحان الجهوي للسنة الأولى بكالوريا (الدورة العادية، الممدرسون والأحرار)',
     source: { label: 'Madrasty — Bac 2027 : dates fixées par la décision ministérielle n° 047.26 du 3 juillet 2026', url: 'https://madrasty.ma/dates-bac-2027-examen-regional-national-resultats/' } },
@@ -36,10 +56,6 @@ export const CALENDAR = [
     source: { label: 'Madrasty — Bac 2027 : dates fixées par la décision ministérielle n° 047.26 du 3 juillet 2026', url: 'https://madrasty.ma/dates-bac-2027-examen-regional-national-resultats/' } },
 
   // ---------- 2027 estimates (usual period) ----------
-  { id: 'enseignants-2026-insc', concours: 'enseignants-aref', type: 'inscription', month: '2026-11', confidence: 'estimation',
-    fr: 'Concours de l’enseignement (CRMEF) 2026 : annonce et candidatures sur wolouj.men.gov.ma (pas encore publiées au 30 octobre 2026 ; en 2025, candidatures du 30 octobre au 13 novembre)', ar: 'مباراة التعليم (ولوج سلك تأهيل أطر التدريس) 2026: الإعلان والترشيح عبر wolouj.men.gov.ma (لم يُنشرا بعد إلى غاية 30 أكتوبر 2026؛ سنة 2025، كان الترشيح من 30 أكتوبر إلى 13 نونبر)' },
-  { id: 'enseignants-2026-ecrit', concours: 'enseignants-aref', type: 'ecrit', month: '2026-12', confidence: 'estimation',
-    fr: 'Concours de l’enseignement (CRMEF) 2026 : épreuves écrites (en 2025, neuf jours après la clôture des candidatures)', ar: 'مباراة التعليم 2026: الاختبارات الكتابية (سنة 2025، بعد تسعة أيام من إغلاق الترشيح)' },
   { id: 'cnc-2027', concours: 'cnc', type: 'inscription', month: '2027-02', confidence: 'estimation',
     fr: 'CNC 2027 : inscriptions des élèves de CPGE (février–mars)', ar: 'المباراة الوطنية المشتركة 2027: التسجيل (فبراير–مارس)' },
   { id: 'pc-2027', concours: 'protection-civile', type: 'inscription', month: '2027-02', confidence: 'estimation',

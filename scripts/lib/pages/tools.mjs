@@ -12,8 +12,8 @@ import { appLive, asideCard, inlineCard, APP_TXT } from '../app-funnel.mjs';
 import { alertBox, alertsOn } from '../alerts.mjs';
 
 const TYPE = {
-  fr: { inscription: 'Inscriptions', ecrit: 'Épreuves', resultats: 'Résultats', deadline: 'Date limite', estimation: 'Estimation', annonce: 'Annoncé', officiel: 'Officiel' },
-  ar: { inscription: 'التسجيل', ecrit: 'الاختبارات', resultats: 'النتائج', deadline: 'آخر أجل', estimation: 'تقدير', annonce: 'معلن', officiel: 'رسمي' },
+  fr: { inscription: 'Inscriptions', ecrit: 'Épreuves', resultats: 'Résultats', deadline: 'Date limite', estimation: 'Estimation', annonce: 'Annoncé', officiel: 'Officiel', added: 'Nouveau' },
+  ar: { inscription: 'التسجيل', ecrit: 'الاختبارات', resultats: 'النتائج', deadline: 'آخر أجل', estimation: 'تقدير', annonce: 'معلن', officiel: 'رسمي', added: 'جديد' },
 };
 
 export function deadlineItem(e, lang, link, all) {
@@ -31,9 +31,12 @@ export function deadlineItem(e, lang, link, all) {
   const title = e[lang] || e.fr;
   const meta = [TYPE[lang][e.type], TYPE[lang][e.confidence]].filter(Boolean).join(' · ');
   const range = e.start && e.date ? `${formatDate(e.start, lang)} → ${formatDate(e.date, lang)}` : e.date ? formatDate(e.date, lang) : '';
-  return html`<li class="deadline" data-date="${e.date || ''}" data-start="${e.start || ''}" data-month="${e.month || ''}" data-id="${e.id}">
+  // "Nouveau" badge: hidden in the HTML, shown by echeances.js during the
+  // 21 days after `added` (the day the date was published on the site).
+  const isNew = e.added ? html`<span class="d-new" data-new hidden>${TYPE[lang].added}</span> ` : '';
+  return html`<li class="deadline" data-date="${e.date || ''}" data-start="${e.start || ''}" data-month="${e.month || ''}"${e.added ? html` data-added="${e.added}"` : ''} data-id="${e.id}">
 <div class="d-date">${dayBox}</div>
-<div class="d-main">${href ? html`<a href="${href}">${title}</a>` : html`<strong>${title}</strong>`}<small>${range ? range + ' · ' : ''}${meta}</small></div>
+<div class="d-main">${isNew}${href ? html`<a href="${href}">${title}</a>` : html`<strong>${title}</strong>`}<small>${range ? range + ' · ' : ''}${meta}</small></div>
 <div class="d-left" data-left></div>
 </li>`;
 }
