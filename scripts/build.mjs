@@ -11,6 +11,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import crypto from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import site from '../content/site.mjs';
@@ -182,6 +183,10 @@ async function main() {
     '/assets/vendor/*', '  Cache-Control: public, max-age=31536000, immutable',
     '/assets/img/*', '  Cache-Control: public, max-age=604800',
     '/data/*', '  Cache-Control: public, max-age=3600',
+    // live content of the Android app: the manifest is checked each time, the
+    // packs have their hash in their name
+    '/app/live/manifest.json', '  Cache-Control: no-cache',
+    '/app/live/packs/*', '  Cache-Control: public, max-age=31536000, immutable',
     '/sw.js', '  Cache-Control: no-cache',
     '/*', '  X-Content-Type-Options: nosniff', '  Referrer-Policy: strict-origin-when-cross-origin',
     '',
@@ -190,6 +195,10 @@ async function main() {
   // content/app-annonce.json; GitHub Pages serves it with CORS open.
   const annonce = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/app-annonce.json'), 'utf8'));
   write('app/annonce.json', JSON.stringify({ annonces: annonce.annonces || [] }));
+  // Live content of the Android app (src/app/js/live.js): its pages and data,
+  // rendered for the app, published with every build, so that a change of the
+  // content reaches the installed apps without a new version on Google Play.
+  execFileSync(process.execPath, [path.join(ROOT, 'scripts/build-app.mjs'), '--live', OUT], { stdio: ['ignore', CHECK ? 'ignore' : 'inherit', 'inherit'] });
   if (site.adsenseClient) {
     // AdSense (site) and AdMob (Android app) share the publisher ID: ads.txt
     // for the site, app-ads.txt for the app when this domain is the

@@ -169,7 +169,38 @@ publicité AdMob (admob-plus-cordova, consentement UMP). Il garde la structure d
   `https://novanestatlas.github.io/concours-privacy.html` (même contenu que
   `https://www.maroc-concour.com/application/confidentialite/`, affichée dans l'application).
 
-Après une modification du contenu, `npm run build:app` régénère `dist/cordova/www/` et le zip de `cordova/`
+### Contenu mis à jour sans nouvelle version Google Play
+
+À chaque `npm run build`, le site publie aussi le contenu de l'application dans `docs/app/live/` : un manifeste
+(`manifest.json`, toujours revérifié) et quatre paquets au nom contenant leur empreinte (`core` : registre des
+pages, calendrier, concours, recherche et feuille de style ; `pages-fr` et `pages-ar` : les pages ; `questions` :
+les banques de QCM), rendus exactement comme dans l'application (`scripts/build-app.mjs --live`).
+
+L'application installée (`src/app/js/live.js`, à partir de la version du 8 novembre 2026) :
+
+- lit le manifeste au démarrage et au retour dans l'appli (au plus une fois par demi-heure ; bouton
+  « Rechercher des nouveautés » dans Paramètres) ;
+- ne télécharge que les paquets différents des siens (empreintes de l'APK dans `data/live-base.json`),
+  vérifie leur SHA-256 et les garde hors ligne (Cache API, un cache par paquet) ;
+- s'en sert tout de suite pour les pages suivantes (message « Contenu mis à jour »), puis dès le premier
+  écran aux démarrages suivants ; hors ligne, elle garde le dernier contenu reçu.
+
+Passent ainsi : fiches, guides, calendrier et dates, QCM, recherche et styles. Le JavaScript et les plugins ne
+passent jamais par là (règlement Google Play) : une nouvelle fonction demande toujours une version sur Google
+Play. Si des pages ont besoin d'un code que les versions déjà installées n'ont pas, augmentez `SHELL` dans
+`src/app/js/live.js` : ces versions gardent leur contenu jusqu'à leur mise à jour. Une page qui demande un
+script ou une image absents d'un APK est écartée de la même façon, automatiquement (`needs` du manifeste).
+Une modification du seul code de l'application change la version du manifeste mais aucun paquet : les applis
+installées ne téléchargent rien et n'affichent aucun message.
+
+Sécurité : paquet altéré refusé ; une version qui empêcherait l'appli de démarrer est abandonnée pour de bon
+(redémarrage avec le contenu de l'APK) ; après une mise à jour Google Play, l'appli repart du contenu de son
+APK et ne reprend du site qu'un contenu plus récent. Une mise à jour de dates pèse 0,5 à 1 Mo compressé.
+`npm run check` vérifie les paquets (présents, intacts, chaque page dans son paquet).
+
+### Régénérer le www de l'application
+
+Après une modification du code de l'application, `npm run build:app` régénère `dist/cordova/www/` et le zip de `cordova/`
 (en mode test : blocs d'annonces de démonstration de Google). Les identifiants AdMob de production restent hors
 du dépôt public, dans `cordova/admob.local.json` (modèle : `admob.local.exemple.json`) ; le build produit alors
 aussi `dist/cordova/production/www_concours_maroc.zip`.

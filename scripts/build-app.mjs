@@ -22,9 +22,17 @@
  *
  * Links inside pages are routes of the shell (#/concours/ensa/), so nothing
  * depends on directory index files, which the Cordova WebView does not serve.
+ *
+ *   node scripts/build-app.mjs --live <dir>   (run by scripts/build.mjs)
+ *     -> <dir>/app/live/manifest.json and <dir>/app/live/packs/*.json
+ * The same pages and data, as packs the installed apps download when the
+ * website changes (src/app/js/live.js): content updates reach the app without
+ * a new version on Google Play. The www gets data/live-base.json, the hashes
+ * of its own packs, so that an app only downloads what differs.
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -50,7 +58,12 @@ setLinkMode('app');
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist/cordova');
-const OUT = path.join(DIST, 'www');
+// --live <dir>: only the live content packs, written into <dir> (the website
+// build); the www is then rendered in a temporary folder and dist/ is left alone.
+const LIVE_ARG = process.argv.indexOf('--live');
+const LIVE_DIR = LIVE_ARG > -1 ? path.resolve(process.argv[LIVE_ARG + 1] || '') : null;
+if (LIVE_ARG > -1 && !process.argv[LIVE_ARG + 1]) throw new Error('--live needs an output folder');
+const OUT = LIVE_DIR ? fs.mkdtempSync(path.join(os.tmpdir(), 'cm-app-live-')) : path.join(DIST, 'www');
 
 function write(rel, content) {
   const file = path.join(OUT, rel);
@@ -99,7 +112,8 @@ ${card(ar ? 'الإعلانات والخصوصية' : 'Publicité et confidentia
 ${card(ar ? 'الإشعارات والإحصائيات' : 'Notifications et statistiques', html`${sw('set-alerts', ar ? 'تنبيهات المباريات' : 'Alertes concours', ar ? 'إشعار عند فتح التسجيل في مباراة أو اقتراب موعد مهم. يطلب أندرويد الإذن.' : 'Une notification quand des inscriptions ouvrent ou qu’une date importante approche. Android demande l’autorisation.')}
 ${sw('set-analytics', ar ? 'إحصائيات الاستخدام' : 'Statistiques d’utilisation', ar ? 'الصفحات المفتوحة وعدد الاختبارات، دون أي معطيات شخصية (Google Analytics for Firebase).' : 'Pages ouvertes et nombre de séries, sans aucune donnée personnelle (Google Analytics for Firebase).')}`, 'set-firebase', true)}
 ${card(ar ? 'حول التطبيق' : 'À propos', html`<p id="set-version-line">${ar ? 'نسخة المحتوى:' : 'Version du contenu :'} <span id="set-version"></span></p>
-<div class="btn-row" style="margin-bottom:10px"><button class="btn sm" type="button" id="set-rate" hidden>${ar ? 'قيّم التطبيق على Google Play' : 'Noter l’application sur Google Play'}</button><button class="btn sm ghost" type="button" id="set-update" hidden>${ar ? 'البحث عن تحديث' : 'Rechercher une mise à jour'}</button></div>
+<p id="set-live-line" hidden>${ar ? 'التحيين التلقائي من الموقع:' : 'Mise à jour automatique depuis le site :'} <span id="set-live"></span></p>
+<div class="btn-row" style="margin-bottom:10px"><button class="btn sm ghost" type="button" id="set-live-check" hidden>${ar ? 'البحث عن مستجدات' : 'Rechercher des nouveautés'}</button><button class="btn sm" type="button" id="set-rate" hidden>${ar ? 'قيّم التطبيق على Google Play' : 'Noter l’application sur Google Play'}</button><button class="btn sm ghost" type="button" id="set-update" hidden>${ar ? 'البحث عن تحديث' : 'Rechercher une mise à jour'}</button></div>
 <div class="btn-row"><a class="btn sm ghost" href="${link(pfx + 'a-propos/')}">${ar ? 'من نحن' : 'À propos'}</a><a class="btn sm ghost" href="${link(pfx + 'sources/')}">${ar ? 'المصادر' : 'Sources'}</a><a class="btn sm ghost" href="${link(pfx + 'contact/')}">${ar ? 'اتصل بنا' : 'Contact'}</a></div>
 <p class="muted" style="font-size:var(--fs-sm);margin-top:10px">${t(lang, 'disclaimerShort')}</p>
 <p id="set-dev" hidden style="margin-top:12px"><a class="btn sm quiet" href="${link(pfx + 'app/developpeur/')}">${ar ? 'وضع المطور' : 'Mode développeur'}</a></p>`, 'set-about')}
@@ -177,7 +191,7 @@ function shellHtml(version) {
   ];
   const sec = (s) => (s ? ` data-section="${s}"` : '');
   const scripts = [
-    'js/boot-guard.js', 'js/dev-tools.js', 'cordova.js', 'js/loader.js',
+    'js/boot-guard.js', 'js/dev-tools.js', 'cordova.js', 'js/loader.js', 'js/live.js',
     'vendor/katex/katex.min.js', 'js/math.js',
     'js/utils.js', 'js/storage.js', 'js/i18n.js', 'js/data-loader.js', 'js/tts-service.js',
     'js/ads-config.js', 'js/ads-service.js', 'js/stats.js', 'js/quiz-engine.js', 'js/ui.js', 'js/entrainement.js',
@@ -303,10 +317,100 @@ function checkLinks(where, markup, registry) {
   return problems;
 }
 
+/* ------------------------------------------------------------- live content
+   The files the app reads through CM.load, in packs chosen by the longest
+   matching prefix (a prefix without a final slash is a single file). Text
+   files only: never a script, the app's code changes only through Google Play.
+   The prefixes travel in the manifest, so src/app/js/live.js needs no copy. */
+const LIVE_PACKS = [
+  ['core', ['data/', 'css/app.css']],
+  ['questions', ['data/questions/']],
+  ['pages-fr', ['pages/']],
+  ['pages-ar', ['pages/ar/']],
+];
+const LIVE_SKIP = new Set(['data/live-base.json']);
+
+function packOf(rel) {
+  let best = null;
+  let len = -1;
+  for (const [name, prefixes] of LIVE_PACKS) {
+    for (const p of prefixes) {
+      const hit = p.endsWith('/') ? rel.startsWith(p) : rel === p;
+      if (hit && p.length > len) { best = name; len = p.length; }
+    }
+  }
+  return best;
+}
+
+/* SHELL of src/app/js/live.js: the version of the app code the content is made for. */
+function liveShell() {
+  const m = read('src/app/js/live.js').match(/\n {2}var SHELL = (\d+);/);
+  if (!m) throw new Error('src/app/js/live.js: "var SHELL = <n>;" not found');
+  return Number(m[1]);
+}
+
+function listFiles(dir) {
+  const out = [];
+  (function walk(rel) {
+    for (const e of fs.readdirSync(path.join(dir, rel), { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
+      const r = rel ? `${rel}/${e.name}` : e.name;
+      if (e.isDirectory()) walk(r); else out.push(r);
+    }
+  })('');
+  return out;
+}
+
+/* Files outside the packs that the pages need (scripts of the registry,
+   images, fonts…): an app that lacks one of them keeps its content. */
+function liveNeeds(appPages, registry) {
+  const refs = new Set();
+  for (const e of Object.values(registry)) for (const s of e.s) refs.add(s);
+  for (const p of appPages) {
+    const markup = String(p.body);
+    for (const m of markup.matchAll(/\s(?:href|src)="([^"]*)"/g)) refs.add(m[1]);
+    for (const m of markup.matchAll(/\ssrcset="([^"]*)"/g)) for (const part of m[1].split(',')) refs.add(part.trim().split(/\s+/)[0]);
+  }
+  return [...refs]
+    .filter((u) => u && !/^(#|https?:|mailto:|tel:|sms:|data:|whatsapp:|market:|geo:)/.test(u))
+    .map((u) => u.split(/[?#]/)[0])
+    .filter((f, i, a) => f && f !== 'cordova.js' && !packOf(f) && a.indexOf(f) === i)
+    .sort();
+}
+
+function livePacks(appPages, registry) {
+  const groups = Object.fromEntries(LIVE_PACKS.map(([name]) => [name, {}]));
+  const files = listFiles(OUT);
+  for (const rel of files) {
+    if (LIVE_SKIP.has(rel) || !/\.(json|html|css)$/.test(rel)) continue;
+    const name = packOf(rel);
+    if (name) groups[name][rel] = fs.readFileSync(path.join(OUT, rel), 'utf8');
+  }
+  const packs = {};
+  for (const [name, prefixes] of LIVE_PACKS) {
+    const text = JSON.stringify(groups[name]);
+    const sha256 = crypto.createHash('sha256').update(text, 'utf8').digest('hex');
+    packs[name] = { file: `packs/${name}.${sha256.slice(0, 12)}.json`, sha256, bytes: Buffer.byteLength(text), files: Object.keys(groups[name]).length, prefixes, text };
+  }
+  // what an app keeps from its APK whatever the content: scripts, fonts, images…
+  return { packs, needs: liveNeeds(appPages, registry), available: files.filter((f) => !packOf(f)) };
+}
+
+function writeLive(dir, live, version) {
+  const base = path.join(dir, 'app', 'live');
+  fs.mkdirSync(path.join(base, 'packs'), { recursive: true });
+  const manifest = { format: 1, shell: liveShell(), version, updated: site.updated, needs: live.needs, packs: {} };
+  for (const [name, p] of Object.entries(live.packs)) {
+    fs.writeFileSync(path.join(base, p.file), p.text);
+    manifest.packs[name] = { file: p.file, sha256: p.sha256, bytes: p.bytes, files: p.files, prefixes: p.prefixes };
+  }
+  fs.writeFileSync(path.join(base, 'manifest.json'), JSON.stringify(manifest, null, 1) + '\n');
+  return manifest;
+}
+
 /* ------------------------------------------------------------------ main */
 async function main() {
   const t0 = Date.now();
-  fs.rmSync(DIST, { recursive: true, force: true });
+  if (!LIVE_DIR) fs.rmSync(DIST, { recursive: true, force: true });
   fs.mkdirSync(OUT, { recursive: true });
 
   const all = await loadConcours();
@@ -362,6 +466,7 @@ async function main() {
     'js/boot-theme.js': 'src/app/js/boot-theme.js',
     'js/boot-guard.js': 'src/app/js/boot-guard.js',
     'js/loader.js': 'src/app/js/loader.js',
+    'js/live.js': 'src/app/js/live.js',
     'js/math.js': 'src/js/entrainement/math.js',
     'js/utils.js': 'src/js/entrainement/utils.js',
     'js/storage.js': 'src/js/entrainement/storage.js',
@@ -413,7 +518,10 @@ async function main() {
     }
   })(OUT);
   const version = `${site.updated}-${h.digest('hex').slice(0, 8)}`;
-  pagesJson.v = version;
+  // The date of the content, not the version: the version also covers the app
+  // code, and a change of code alone must leave the live packs identical
+  // (installed apps would download the content again for nothing).
+  pagesJson.v = site.updated;
   write('data/pages.json', JSON.stringify(pagesJson));
   const shell = shellHtml(version);
   write('index.html', shell);
@@ -428,6 +536,22 @@ async function main() {
     console.error(problems.slice(0, 40).join('\n'));
     throw new Error(`${problems.length} link problem(s) in the app build`);
   }
+
+  // Live content (src/app/js/live.js): the packs for the website, or the
+  // hashes of this www's own packs (an app only downloads what differs).
+  const live = livePacks(appPages, pagesJson.pages);
+  if (LIVE_DIR) {
+    const m = writeLive(LIVE_DIR, live, version);
+    fs.rmSync(OUT, { recursive: true, force: true });
+    const kb = Math.round(Object.values(m.packs).reduce((n, p) => n + p.bytes, 0) / 1024);
+    console.log(`App live content: ${Object.keys(m.packs).length} packs, ${kb} KB, version ${version} → app/live/`);
+    return;
+  }
+  write('data/live-base.json', JSON.stringify({
+    shell: liveShell(), id: version, updated: site.updated,
+    packs: Object.fromEntries(Object.entries(live.packs).map(([n, p]) => [n, p.sha256])),
+    files: live.available,
+  }));
 
   // Fallback bundle for file:// previews (loaded only when fetch and XHR fail).
   const bundle = {};
@@ -480,4 +604,8 @@ async function main() {
   console.log(`  → ${path.relative(ROOT, path.join(DIST, zipName))}, copied to cordova/${zipName}`);
 }
 
-main().catch((e) => { console.error(e); process.exit(1); });
+main().catch((e) => {
+  console.error(e);
+  if (LIVE_DIR) fs.rmSync(OUT, { recursive: true, force: true });
+  process.exit(1);
+});

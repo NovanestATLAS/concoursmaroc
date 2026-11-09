@@ -22,7 +22,8 @@ export function sitemapXml(site, pages) {
 }
 
 export function robotsTxt(site) {
-  return `User-agent: *\nAllow: /\nDisallow: /data/questions/\n\nSitemap: ${site.siteUrl}/sitemap.xml\n`;
+  // /app/: files read by the Android app (announcements, live content), not pages
+  return `User-agent: *\nAllow: /\nDisallow: /data/questions/\nDisallow: /app/\n\nSitemap: ${site.siteUrl}/sitemap.xml\n`;
 }
 
 export function manifestJson(site) {

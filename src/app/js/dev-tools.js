@@ -119,6 +119,16 @@
         return { ok: n > 0, detail: 'maths : ' + n + ' questions' };
       });
     }],
+    ['Contenu en ligne', function () {
+      var L = CM().live;
+      if (!L) return { ok: false, detail: 'module absent' };
+      var s = L.status();
+      if (!s.supported) return { ok: false, detail: 'Cache API indisponible : contenu de l’APK seulement' };
+      var d = s.active ? 'version ' + s.active + ' (téléchargée)' : 'contenu de l’APK ' + (s.installed || '?');
+      if (s.checked) d += ', vérifié ' + time(s.checked);
+      if (s.error) d += ', dernière erreur : ' + s.error;
+      return { ok: !s.error, detail: d };
+    }],
     ['Index de recherche', function () {
       var lang = document.documentElement.getAttribute('lang') === 'ar' ? 'ar' : 'fr';
       return CM().load.json('data/search-' + lang + '.json').then(function (d) {
@@ -263,6 +273,7 @@
       googlePlay: CMx.play ? CMx.play.debug() : null,
       firebase: CMx.firebase ? CMx.firebase.debug() : null,
       annonces: CMx.notices ? CMx.notices.debug() : null,
+      contenuEnLigne: CMx.live ? CMx.live.status() : null,
       stockage: storageInfo(),
       journal: entries.slice(-80)
     };
@@ -383,6 +394,20 @@
       row(btn('Aperçu', function () { N.preview(); }),
         btn('Vérifier maintenant', function () { return N.check(true).then(function (a) { return a ? 'Annonce « ' + a.id + ' »' : 'Aucune annonce en cours'; }); }),
         btn('Oublier les annonces vues', function () { N.reset(); return Promise.resolve('Fait'); }))
+    ]));
+
+    // content downloaded from the website (js/live.js)
+    var L = CM().live;
+    var livePre = pre(L ? json(L.status()) : 'module absent');
+    host.appendChild(section('Contenu en ligne (sans Google Play)', [
+      el('p', { class: 'muted', text: 'Pages, dates, QCM et styles téléchargés depuis le site quand ils changent ; le code de l’application, lui, ne change qu’avec Google Play.' }),
+      livePre,
+      row(btn('Vérifier maintenant', function () {
+        return L.check(true).then(function (r) { livePre.textContent = json(L.status()); return 'Résultat : ' + r.status + (r.version ? ' (' + r.version + ')' : ''); });
+      }),
+      btn('Revenir au contenu de l’APK', function () {
+        return L.reset().then(function () { livePre.textContent = json(L.status()); return 'Contenu de l’APK rétabli'; });
+      }))
     ]));
 
     // storage

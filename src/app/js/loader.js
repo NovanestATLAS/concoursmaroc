@@ -6,7 +6,8 @@
  * refused by Chromium but XMLHttpRequest still works, and in a desktop
  * browser opened from disk neither works: js/data-bundle.js, a generated copy
  * of the same files, is then loaded on demand. All three paths return
- * identical content. */
+ * identical content. Newer content downloaded from the website (js/live.js)
+ * is read before any of them. */
 (function (global) {
   'use strict';
 
@@ -60,19 +61,32 @@
     });
   }
 
+  function viaLocal(url) {
+    return viaFetch(url)
+      .catch(function () { return viaXhr(url); })
+      .catch(function () { return viaBundle(url); });
+  }
+
   var Load = {
+    /* Content downloaded from the website (js/live.js) first, then the file
+       of the APK. */
     text: function (url) {
       if (textCache[url]) return textCache[url];
-      var p = viaFetch(url)
-        .catch(function () { return viaXhr(url); })
-        .catch(function () { return viaBundle(url); });
+      var live = global.CM && global.CM.live;
+      var p = (live ? live.get(url) : Promise.resolve(null)).then(function (t) {
+        return t != null ? t : viaLocal(url);
+      }, function () { return viaLocal(url); });
       textCache[url] = p;
       p.catch(function () { delete textCache[url]; });
       return p;
     },
     json: function (url) {
       return Load.text(url).then(function (t) { return JSON.parse(t); });
-    }
+    },
+    /* The file of the APK only (js/live.js reads its reference file this way). */
+    local: viaLocal,
+    /* Forget what was read: called when new content becomes active. */
+    clear: function () { textCache = {}; }
   };
 
   global.CM = global.CM || {};

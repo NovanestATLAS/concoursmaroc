@@ -271,6 +271,14 @@
       });
     },
 
+    /* Reads the registry again (new content downloaded by js/live.js): new
+       pages become reachable; the page on screen stays as it is. */
+    reload: function () {
+      return global.CM.load.json('data/pages.json').then(function (reg) {
+        if (reg && reg.pages) registry = reg;
+      }).catch(function (e) { console.warn('[router] registre non relu :', e.message); });
+    },
+
     go: function (target, replace) {
       var hash = '#/' + String(target || '').replace(/^#?\/?/, '');
       if (hash !== location.hash || replace) {

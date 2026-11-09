@@ -1,0 +1,57 @@
+{
+ "format": 1,
+ "shell": 1,
+ "version": "2026-11-08-9913754b",
+ "updated": "2026-11-08",
+ "needs": [
+  "js/annuaire.js",
+  "js/contact.js",
+  "js/echeances.js",
+  "js/engage.js",
+  "js/outils/calcul-note-bac.js",
+  "js/outils/checklist-dossier.js",
+  "js/outils/commun.js",
+  "js/outils/orientation-apres-bac.js",
+  "js/outils/planning-revision.js",
+  "js/outils/simulateur-qcm.js"
+ ],
+ "packs": {
+  "core": {
+   "file": "packs/core.c3c6c674515d.json",
+   "sha256": "c3c6c674515d45876fc5ec52b612f72812755e32aebafdfb9b63f5f9a3e9f5d1",
+   "bytes": 764833,
+   "files": 8,
+   "prefixes": [
+    "data/",
+    "css/app.css"
+   ]
+  },
+  "questions": {
+   "file": "packs/questions.06b8554675de.json",
+   "sha256": "06b8554675dedc5cb6d147bbc9d46a2a8b001ff559f3f01f95505b4776694434",
+   "bytes": 2139048,
+   "files": 18,
+   "prefixes": [
+    "data/questions/"
+   ]
+  },
+  "pages-fr": {
+   "file": "packs/pages-fr.6456cfa21d65.json",
+   "sha256": "6456cfa21d65cab88993d2f7dda31c7f426efe200b06c45082aefddb588d6677",
+   "bytes": 2286896,
+   "files": 78,
+   "prefixes": [
+    "pages/"
+   ]
+  },
+  "pages-ar": {
+   "file": "packs/pages-ar.e69204bddd87.json",
+   "sha256": "e69204bddd87134ce8fa7c7b3b749290d66fbe94ea19805d45d885d0cea9d2f6",
+   "bytes": 1256061,
+   "files": 66,
+   "prefixes": [
+    "pages/ar/"
+   ]
+  }
+ }
+}

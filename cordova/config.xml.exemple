@@ -33,10 +33,15 @@
 
     <content src="index.html" />
 
+    <!-- ★ (08/11/2026) Le site, seule adresse que l'appli interroge elle-même :
+         annonces (app/annonce.json) et contenu à jour (app/live/, voir
+         js/live.js) téléchargés en arrière-plan. Aucune page distante n'est
+         affichée dans l'appli (pas de <allow-navigation>). -->
+    <access origin="https://www.maroc-concour.com" />
+
     <!-- ★ Liens externes (sources officielles, inscriptions, e-mail…) :
          ouverts dans le navigateur ou l'application du téléphone, jamais
-         dans l'appli. Aucune page distante n'est chargée dans l'appli,
-         d'où l'absence de <access> et de <allow-navigation>. -->
+         dans l'appli. -->
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="mailto:*" />

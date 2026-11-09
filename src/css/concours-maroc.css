@@ -370,6 +370,9 @@ html[dir="rtl"] .hero h1 { max-width: 20ch; line-height: 1.35; }
   transition: transform .1s ease, background .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 .btn:hover { background: var(--accent-2); color: var(--accent-ink); box-shadow: 0 8px 20px color-mix(in srgb, var(--accent) 28%, transparent); text-decoration: none; }
+/* scripts hide buttons with the hidden attribute (update, consent, export…):
+   inline-flex above would otherwise keep them on screen */
+.btn[hidden] { display: none; }
 .btn:active { transform: scale(.98); }
 .btn[disabled] { opacity: .45; cursor: not-allowed; box-shadow: none; }
 .btn.block { width: 100%; }

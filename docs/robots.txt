@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /data/questions/
+Disallow: /app/
 
 Sitemap: https://www.maroc-concour.com/sitemap.xml

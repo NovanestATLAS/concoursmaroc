@@ -42,6 +42,9 @@ Permanent rules for every session. The README explains the features in detail; r
 - The Android app (`npm run build:app`, Cordova www) reuses the site pages: Quiz express, recent fiches, next steps and
   WhatsApp share run in it too; web push alerts, the Play Store funnel and the long-page bar stay site-only.
   App shell code lives in `src/app/`; production AdMob units only in git-ignored `cordova/admob.local.json`.
+- Installed apps download their content from `docs/app/live/` (published by `npm run build`, read by
+  `src/app/js/live.js`): pages, JSON and CSS only, never JavaScript. When page fragments start to need app code
+  that installed versions lack, bump `SHELL` in `src/app/js/live.js`; never break older versions silently.
 
 ## Working style
 - Keep commits focused, explain the why in the message. Prefer extending `scripts/lib/` helpers over copying HTML.

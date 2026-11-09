@@ -12,6 +12,51 @@ cordova-plugin-system-insets (bannière), cordova-plugin-firebase-analytics
 9.0.0.
 
 
+## Mise à jour du 08/11/2026 : le contenu se met à jour tout seul
+
+C'est la **dernière fois** qu'il faut republier l'application pour du contenu.
+À partir de cette version, l'appli télécharge elle-même, depuis le site, les
+fiches, dates, guides, QCM et styles dès qu'ils changent : il suffit de mettre
+le site à jour (`npm run build`, commit), et les téléphones reçoivent le
+nouveau contenu au prochain lancement, sans passer par Google Play.
+
+À faire une fois :
+
+1. Remplacez le dossier `www/` par celui du zip de production : avec votre
+   `admob.local.json` en place, `npm run build:app` écrit
+   `dist/cordova/production/www_concours_maroc.zip` (le zip du dépôt est en
+   mode test, annonces de démonstration : voir section 5).
+2. Dans `config.xml`, ajoutez la ligne ★ suivante (voir `config.xml.exemple`) :
+   `<access origin="https://www.maroc-concour.com" />`
+3. Augmentez la version (par exemple `2.1.0` → `2.2.0`), construisez l'AAB et
+   publiez-le sur Google Play comme d'habitude.
+
+Comment ça marche (détails dans le README du dépôt, « Contenu mis à jour sans
+nouvelle version Google Play ») :
+
+- au démarrage et au retour dans l'appli (au plus une fois par demi-heure),
+  l'appli lit `https://www.maroc-concour.com/app/live/manifest.json` (1 Ko) ;
+- elle ne télécharge que les paquets qui ont changé (0,5 à 1 Mo compressés
+  pour une mise à jour de dates), vérifie leur empreinte SHA-256 et les garde
+  pour l'usage hors ligne ;
+- les pages ouvertes ensuite montrent le nouveau contenu (petit message
+  « Contenu mis à jour »), puis dès le premier écran aux lancements suivants ;
+- Paramètres → **Rechercher des nouveautés** force la vérification ; le mode
+  développeur a une section « Contenu en ligne ».
+
+Ce qui demande encore une nouvelle version sur Google Play : le code
+(JavaScript, plugins, nouvelles fonctions). Jamais de code n'est téléchargé :
+seulement des pages HTML, des données JSON et la feuille de style, ce
+qu'autorise le règlement Google Play. Si le site publie un jour un contenu qui
+a besoin d'un code plus récent, les anciennes versions le laissent de côté et
+gardent le leur jusqu'à leur mise à jour.
+
+Sécurité : un paquet abîmé est refusé, une version qui empêcherait l'appli de
+démarrer est abandonnée (l'appli repart avec son contenu intégré), et après une
+mise à jour Google Play, l'appli repart de son contenu intégré et ne reprend du
+site qu'un contenu plus récent. Une modification du seul code (JavaScript) ne
+fait rien télécharger : ce code n'arrive qu'avec une version Google Play.
+
 ## Mise à jour du 01/11/2026 (www seulement)
 
 Remplacez seulement le dossier `www/` (rien à changer dans les plugins ni dans
@@ -401,7 +446,10 @@ réglages dans [`FICHE-PLAY-STORE.md`](FICHE-PLAY-STORE.md). En bref :
 
 ## 9. Régénérer le dossier www
 
-Après une modification du contenu (fiches, questions, guides) :
+Une modification du contenu (fiches, questions, guides, dates) n'a plus besoin
+d'un nouvel APK : `npm run build` la publie sur le site et les applications
+installées la téléchargent. Pour une nouvelle version de l'application (code,
+plugins) ou pour que l'APK parte avec le contenu du jour :
 
 ```sh
 npm run build:app

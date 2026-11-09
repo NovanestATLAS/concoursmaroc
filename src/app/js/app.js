@@ -16,10 +16,27 @@
   var Firebase = global.CM.firebase;
   var Notices = global.CM.notices;
   var Dev = global.CM.dev;
+  var Live = global.CM.live;
   var booted = false;
 
   function tr(fr, ar) { return Shell.lang() === 'ar' ? ar : fr; }
   function toast(msg) { if (global.cmToast) global.cmToast(msg); }
+  function locale() { return Shell.lang() === 'ar' ? 'ar-MA' : 'fr-FR'; }
+  function dateText(iso) {
+    if (!iso) return '';
+    try { return new Date(iso + 'T12:00:00').toLocaleDateString(locale(), { day: 'numeric', month: 'long', year: 'numeric' }); } catch (e) { return iso; }
+  }
+
+  /* Message for the result of a content check (js/live.js). */
+  function liveMessage(r) {
+    switch (r && r.status) {
+      case 'updated': return tr('Contenu mis à jour : nouveautés du ', 'تم تحديث المحتوى: مستجدات ') + dateText(r.updated);
+      case 'uptodate': case 'skipped': return tr('Le contenu est déjà à jour', 'المحتوى محيَّن');
+      case 'offline': return tr('Pas de connexion : réessayez plus tard', 'لا يوجد اتصال: أعد المحاولة لاحقًا');
+      case 'app-update': return tr('Ce nouveau contenu demande la dernière version de l’application', 'يتطلب هذا المحتوى الجديد آخر نسخة من التطبيق');
+      default: return tr('Vérification impossible pour le moment', 'تعذر التحقق حاليًا');
+    }
+  }
 
   function withTimeout(promise, ms, label) {
     return new Promise(function (resolve, reject) {
@@ -171,7 +188,15 @@
     if (Ads && Ads.resumedFromAd && Ads.resumedFromAd()) return;
     if (Play) Play.checkUpdate(false, true);
     if (Notices) setTimeout(function () { Notices.check(false, false); }, 1500);
+    if (Live) setTimeout(function () { Live.check(false); }, 2500);
   }, false);
+
+  // New content downloaded during the session (js/live.js): the next pages
+  // opened show it. Said once, never over a question.
+  document.addEventListener('cm:live', function (e) {
+    var d = e.detail || {};
+    if (!onPlay) toast(liveMessage({ status: 'updated', updated: d.updated }));
+  });
 
   document.addEventListener('pause', function () {
     if (TTS) TTS.stop();
@@ -203,11 +228,19 @@
     if (booted) return;
     booted = true;
     console.info('[app] démarrage (' + trigger + ')');
-    Shell.start().then(function () {
+    // content downloaded from the website, if any (bounded: never a blank screen)
+    var content = Live ? withTimeout(Live.init(), 4000, 'contenu en ligne').catch(function (e) {
+      console.warn('[app] contenu en ligne :', e.message);
+    }) : Promise.resolve();
+    content.then(function () { return Shell.start(); }).then(function () {
       global.CM.appStarted = true;
+      if (Live) Live.started();
       initNativeServices();
     }).catch(function (err) {
       console.error('[app] démarrage impossible', err);
+      // downloaded content that breaks the start is dropped: start again with
+      // the content of the APK
+      if (Live && Live.failed()) { global.location.reload(); return; }
       fail(err);
     });
   }
@@ -363,10 +396,43 @@
     }
 
     var version = root.querySelector('#set-version');
-    if (version) {
+    function showVersion() {
+      if (!version) return;
       global.CM.load.json('data/manifest.json').then(function (m) {
-        version.textContent = (m.contentVersion || '') + ' · ' + (m.totalQuestions || 0) + tr(' questions', ' سؤالًا');
+        // LRI … PDI: in Arabic the bidi algorithm would otherwise show "2.0.0-2026-11-09" as "09-11-2026-2.0.0"
+        version.textContent = '\u2066' + (m.contentVersion || '') + '\u2069 · ' + (m.totalQuestions || 0) + tr(' questions', ' سؤالًا');
       }).catch(function () { /* ignore */ });
+    }
+    showVersion();
+
+    // content kept up to date from the website (js/live.js)
+    var liveLine = root.querySelector('#set-live-line');
+    var liveText = root.querySelector('#set-live');
+    var liveBtn = root.querySelector('#set-live-check');
+    if (Live && Live.supported() && liveLine && liveText) {
+      var showLive = function () {
+        var s = Live.status();
+        var checked = '';
+        if (s.checked) {
+          try { checked = new Date(s.checked).toLocaleString(locale(), { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); } catch (e) { checked = ''; }
+        }
+        liveText.textContent = tr('contenu du ', 'محتوى ') + dateText(Live.contentDate()) + (checked ? tr(' · vérifié le ', ' · آخر تحقق ') + checked : '');
+        liveLine.hidden = false;
+      };
+      showLive();
+      if (liveBtn) {
+        liveBtn.hidden = false;
+        liveBtn.addEventListener('click', function () {
+          liveBtn.disabled = true;
+          Live.check(true).then(function (r) {
+            liveBtn.disabled = false;
+            // 'updated' is announced by the cm:live toast
+            if (r.status !== 'updated') toast(liveMessage(r));
+            showLive();
+            showVersion();
+          });
+        });
+      }
     }
   });
 

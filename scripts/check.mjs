@@ -10,6 +10,7 @@
  * are errors on indexable pages. */
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 import site from '../content/site.mjs';
@@ -155,6 +156,63 @@ for (const e of CALENDAR) {
   if (e.start && !ISO.test(e.start)) err(`calendar ${e.id}: bad start ${e.start}`);
   if (e.month && !/^\d{4}-\d{2}$/.test(e.month)) err(`calendar ${e.id}: bad month ${e.month}`);
   if (!e.date && !e.month) err(`calendar ${e.id}: needs date or month`);
+}
+
+/* ------------------------------------------------- live content of the app */
+// What the installed Android apps download (src/app/js/live.js): every pack of
+// the manifest present and intact, every page of the registry in its pack.
+{
+  const LIVE = path.join(DOCS, 'app/live');
+  const mf = path.join(LIVE, 'manifest.json');
+  if (!fs.existsSync(mf)) err('app/live/manifest.json missing (npm run build)');
+  else {
+    const m = JSON.parse(fs.readFileSync(mf, 'utf8'));
+    if (m.format !== 1) err(`app/live: unknown format ${m.format}`);
+    if (!Number.isInteger(m.shell) || m.shell < 1) err('app/live: shell must be a positive integer');
+    if (m.updated !== site.updated) err(`app/live: updated ${m.updated} instead of ${site.updated}`);
+    if (typeof m.version !== 'string' || !m.version.startsWith(site.updated)) err(`app/live: bad version ${m.version}`);
+    const contents = {};
+    const listed = new Set();
+    for (const [name, p] of Object.entries(m.packs || {})) {
+      const f = path.join(LIVE, p.file);
+      listed.add(p.file);
+      if (!fs.existsSync(f)) { err(`app/live: pack ${name} missing (${p.file})`); continue; }
+      const buf = fs.readFileSync(f);
+      if (crypto.createHash('sha256').update(buf).digest('hex') !== p.sha256) err(`app/live: pack ${name} does not match its sha256`);
+      if (buf.length !== p.bytes) err(`app/live: pack ${name} is ${buf.length} bytes, manifest says ${p.bytes}`);
+      try {
+        contents[name] = JSON.parse(buf.toString('utf8'));
+        if (Object.keys(contents[name]).length !== p.files) err(`app/live: pack ${name} holds ${Object.keys(contents[name]).length} files, manifest says ${p.files}`);
+      } catch (e) { err(`app/live: pack ${name} is not valid JSON`); }
+      if (!Array.isArray(p.prefixes) || !p.prefixes.length) err(`app/live: pack ${name} without prefixes`);
+    }
+    for (const f of fs.existsSync(path.join(LIVE, 'packs')) ? fs.readdirSync(path.join(LIVE, 'packs')) : []) {
+      if (!listed.has(`packs/${f}`)) err(`app/live: stray pack packs/${f}`);
+    }
+    const packOf = (rel) => {
+      let best = null;
+      let len = -1;
+      for (const [name, p] of Object.entries(m.packs || {})) {
+        for (const pre of p.prefixes || []) {
+          const hit = pre.endsWith('/') ? rel.startsWith(pre) : rel === pre;
+          if (hit && pre.length > len) { best = name; len = pre.length; }
+        }
+      }
+      return best;
+    };
+    const regText = contents.core && contents.core['data/pages.json'];
+    if (!regText) err('app/live: data/pages.json missing from the core pack');
+    else {
+      const reg = JSON.parse(regText);
+      const needs = new Set(m.needs || []);
+      for (const [key, e] of Object.entries(reg.pages || {})) {
+        const name = packOf(e.f);
+        if (!name || !contents[name] || !(e.f in contents[name])) err(`app/live: page ${key || '(accueil)'} → ${e.f} not in its pack`);
+        for (const sc of e.s || []) if (!needs.has(sc)) err(`app/live: script ${sc} of ${key} missing from needs`);
+      }
+      if (!contents.core['css/app.css']) err('app/live: css/app.css missing from the core pack');
+    }
+  }
 }
 
 /* ---------------------------------------------------------------- report */
