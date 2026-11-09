@@ -64,7 +64,7 @@ Remplacez seulement le dossier `www/` (rien à changer dans les plugins ni dans
 `version="2.1.0"` pour que Google Play accepte le nouvel APK/AAB).
 
 - **Contenu du site à jour** : fiches, calendrier et dates, titres et textes revus,
-  2 308 questions.
+  2 354 questions.
 - **Quiz express dans l’application** : 5 QCM corrigés joués dans la page, sur
   l’accueil, chaque fiche concours (au niveau du concours) et en fin de guide.
 - **« Reprendre là où tu t’es arrêté »** : les dernières fiches consultées sur
@@ -80,7 +80,7 @@ Remplacez seulement le dossier `www/` (rien à changer dans les plugins ni dans
 
 | | Première version | Cette version |
 |---|---|---|
-| Contenu | 500 questions, 6 matières | tout le site : 33 fiches concours, guides, outils, 2 308 questions, examens blancs (FR et AR) |
+| Contenu | 500 questions, 6 matières | tout le site : 33 fiches concours, guides, outils, 2 354 questions, examens blancs (FR et AR) |
 | Navigation | écrans de l’entraînement | barre d’onglets, menu, recherche, bouton Retour qui remonte l’historique puis quitte après deux appuis |
 | Structure de `www/` | `index.html`, `css/app.css`, `js/`, `data/`, `i18n/`, `img/`, `fonts/` | les mêmes dossiers, plus `pages/` (une page HTML par page du site) et `js/outils/` |
 | Progression enregistrée | clés `cm.v1.*` | les mêmes clés et les mêmes identifiants de questions : rien n’est perdu à la mise à jour |

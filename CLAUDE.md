@@ -20,6 +20,10 @@ Permanent rules for every session. The README explains the features in detail; r
   Never invent a date: an unconfirmed date is `confidence: 'estimation'` with a month only, and it never triggers
   a push alert.
 - MCQs are our own; every question has a valid `sourceId`. Never copy questions from other sites or books.
+- Practice matches the recruitment: subjects follow the exams of the official avis, difficulty follows the diploma
+  required (`base` level for recruitment without the bac). Never train entry-level candidates on what is taught
+  during the training (first aid, procedures, inside knowledge of a corps). Questions used by Arabic-language
+  exams need an Arabic version.
 - We are not a government site: no official seals or logos, no wording that implies we are the ministry or a school.
 
 ## SEO (enforced by `scripts/check.mjs`)

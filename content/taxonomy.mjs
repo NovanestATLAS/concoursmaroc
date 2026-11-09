@@ -71,6 +71,9 @@ export const SUBJECTS = [
  * questions in these proportions (a concours sets practice.difficulty, or one
  * per track when its grades differ, e.g. gardien de la paix vs inspecteur). */
 export const LEVELS = [
+  // Recruitment without the bac (collège or lycée level, e.g. agents de secours,
+  // mokhaznis): no advanced question at all.
+  { id: 'base', fr: 'De base', ar: 'أساسي', mix: { beginner: 0.75, intermediate: 0.25, advanced: 0 } },
   { id: 'accessible', fr: 'Accessible', ar: 'في المتناول', mix: { beginner: 0.5, intermediate: 0.4, advanced: 0.1 } },
   { id: 'standard', fr: 'Standard', ar: 'عادي', mix: { beginner: 0.3, intermediate: 0.5, advanced: 0.2 } },
   { id: 'selectif', fr: 'Sélectif', ar: 'انتقائي', mix: { beginner: 0.15, intermediate: 0.5, advanced: 0.35 } },

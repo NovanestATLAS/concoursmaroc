@@ -14,7 +14,7 @@ l'application : voir « Entonnoir vers l'application » plus bas.
 | Rubrique | Contenu |
 |---|---|
 | Fiches concours (`/concours/`) | 33 fiches en français et en arabe : médecine, ISPITS, ENSA, ENSAM, CPGE, CNC, IAV, FST, EST, BTS, ENCG, ISCAE, ENA, ISIC, ISMAC/ISADAC, ISIT, ENS, concours de l’enseignement primaire (CRMEF), écoles militaires, police, gendarmerie, Forces Auxiliaires, Protection civile, DGAPR, douane, fonction publique, OFPPT, 1337, université |
-| Entraînement (`/entrainement/`) | 2 308 QCM corrigés dans 18 matières (dont près de 600 en SVT, physique, chimie et maths sur le programme de 2e année bac, au format à 5 propositions des concours de médecine), tirés au niveau du concours choisi (accessible, standard, sélectif, très sélectif ; par grade pour la police et les forces auxiliaires), examen blanc au barème du concours, révisions espacées, défi du jour, favoris, statistiques ; le bouton retour du navigateur et du téléphone fonctionne |
+| Entraînement (`/entrainement/`) | 2 354 QCM corrigés dans 18 matières (dont près de 600 en SVT, physique, chimie et maths sur le programme de 2e année bac, au format à 5 propositions des concours de médecine), tirés au niveau du concours choisi (de base pour les recrutements sans bac, accessible, standard, sélectif, très sélectif ; par grade pour la police et les forces auxiliaires), examen blanc au barème du concours, révisions espacées, défi du jour, favoris, statistiques ; le bouton retour du navigateur et du téléphone fonctionne |
 | QCM corrigés (`/qcm/`) | Pages d'exemples par matière, avec réponses et explications (indexables par Google) |
 | Outils (`/outils/`) | Calcul de la note du bac et de la présélection 75/25, orientation selon la série, calendrier avec rappels, planning de révision, checklist du dossier, simulateur de barème QCM |
 | Guides (`/guides/`) | Orientation après le bac, Cursus Sup, bourse Minhaty, réussir un QCM, concours sans le bac, épreuves sportives, tests psychotechniques, entretien oral |
@@ -149,7 +149,7 @@ européennes) pour les visiteurs de l'Espace économique européen, du Royaume-U
 ## Application Android (Cordova)
 
 `cordova/www_concours_maroc.zip` est le dossier `www/` de l'application, généré à partir du site :
-mêmes fiches, guides, outils et 2 308 questions, en français et en arabe, utilisables hors ligne, avec
+mêmes fiches, guides, outils et 2 354 questions, en français et en arabe, utilisables hors ligne, avec
 barre d'onglets, bouton Retour Android, lecture à voix haute (cordova-plugin-tts-advanced) et
 publicité AdMob (admob-plus-cordova, consentement UMP). Il garde la structure du premier `www/`
 (`index.html`, `css/`, `js/`, `data/`, `i18n/`, `img/`, `fonts/`) et ajoute `pages/`.
@@ -255,8 +255,18 @@ E: C'est la somme des 10 premiers nombres impairs, qui vaut 10² = 100.
 ```
 
 Quatre propositions exactement, une seule bonne réponse marquée `*` (l'ordre est mélangé automatiquement),
-une correction `C:` et une explication `E:`. Une version arabe peut suivre après une ligne `AR:`.
+une correction `C:` et une explication `E:`. Une version arabe peut suivre après une ligne `AR:` : mêmes
+propositions, dans le même ordre, avec la bonne réponse à la même place.
 Le build refuse toute question mal formée.
+
+Niveau et matières (mise à jour du 9 novembre 2026) : les matières d'un concours (`practice.subjects`, examen
+blanc) suivent les épreuves de l'avis officiel, et la difficulté suit le diplôme exigé. `beginner` = niveau du
+certificat collégial, `intermediate` = niveau bac, `advanced` = problèmes en plusieurs étapes ou connaissances
+pointues. Les recrutements sans bac (agents de secours, mokhaznis, OFPPT) sont au niveau « de base » (aucune
+question avancée). Rien de ce qui s'apprend pendant la formation (secourisme, procédures, organisation interne
+d'un corps) dans l'entraînement d'un concours dont l'écrit ne le demande pas : la Protection civile teste l'étude
+d'un texte ou des questions générales, la Gendarmerie des tests psychologiques sans écrit de connaissances. Les
+questions inspirées des sujets publiés de ces recrutements citent la source `src-annales-recrutement`.
 
 ### Mettre à jour pour une nouvelle session
 

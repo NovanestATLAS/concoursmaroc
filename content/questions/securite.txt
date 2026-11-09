@@ -11,7 +11,7 @@
 @category securite
 @source src-general
 
-[CIV-001] institutions | beginner
+[CIV-001] institutions | intermediate
 Q: À quelle date la Direction générale de la Sûreté nationale (DGSN) a-t-elle été créée ?
 * Le 16 mai 1956
 - Le 29 avril 1957

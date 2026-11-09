@@ -776,3 +776,97 @@ Q: Quel mot est un synonyme de « commencer » ?
 - Conclure
 C: Entamer.
 E: Entamer, débuter, amorcer sont des synonymes de commencer. Achever, terminer et conclure en sont les antonymes.
+
+# ---------------------------------------------------------------------------
+# Compréhension d'un court texte, comme l'étude de texte des écrits de
+# recrutement (agents de secours, forces auxiliaires, police). Textes originaux,
+# niveau collège : la réponse se trouve dans le texte.
+@source src-annales-recrutement
+
+[FRA-301] comprehension | beginner
+Q: Lisez le texte, puis répondez.
+« Samedi dernier, une association de quartier a organisé une journée de nettoyage de la plage. Plus de deux cents habitants, jeunes et moins jeunes, ont ramassé des sacs entiers de bouteilles et de plastiques. À la fin de la journée, le président de la commune a remercié les bénévoles et promis d'installer de nouvelles poubelles. »
+Qui a organisé la journée de nettoyage ?
+* Une association de quartier
+- Le président de la commune
+- Une école
+- Une entreprise
+C: Une association de quartier.
+E: La réponse est dans la première phrase. Le président de la commune n'intervient qu'à la fin, pour remercier les bénévoles.
+
+[FRA-302] comprehension | beginner
+Q: Lisez le texte, puis répondez.
+« Samedi dernier, une association de quartier a organisé une journée de nettoyage de la plage. Plus de deux cents habitants, jeunes et moins jeunes, ont ramassé des sacs entiers de bouteilles et de plastiques. À la fin de la journée, le président de la commune a remercié les bénévoles et promis d'installer de nouvelles poubelles. »
+Dans ce texte, que désigne le mot « bénévoles » ?
+* Des personnes qui aident sans être payées
+- Des employés de la commune
+- Des touristes en vacances
+- Des agents de police
+C: Des personnes qui aident sans être payées.
+E: Le texte parle d'habitants venus nettoyer la plage de leur propre initiative : ce sont des bénévoles, c'est-à-dire des volontaires non rémunérés.
+
+[FRA-303] comprehension | beginner
+Q: Lisez le texte, puis répondez.
+« Un adolescent a besoin de huit à dix heures de sommeil par nuit. Pourtant, beaucoup se couchent tard, les yeux rivés sur leur téléphone. Le manque de sommeil diminue la concentration et rend irritable. Éteindre les écrans une heure avant de dormir est un geste simple pour mieux se reposer. »
+Selon le texte, quel geste aide à mieux dormir ?
+* Éteindre les écrans une heure avant de dormir
+- Boire un café le soir
+- Se coucher plus tard
+- Garder son téléphone près de l'oreiller
+C: Éteindre les écrans une heure avant de dormir.
+E: La dernière phrase donne ce conseil. Les autres propositions vont à l'encontre de ce que recommande le texte.
+
+[FRA-304] comprehension | intermediate
+Q: Lisez le texte, puis répondez.
+« Un adolescent a besoin de huit à dix heures de sommeil par nuit. Pourtant, beaucoup se couchent tard, les yeux rivés sur leur téléphone. Le manque de sommeil diminue la concentration et rend irritable. Éteindre les écrans une heure avant de dormir est un geste simple pour mieux se reposer. »
+Que marque le mot « Pourtant » au début de la deuxième phrase ?
+* Une opposition
+- Une cause
+- Une conséquence
+- Un exemple
+C: Une opposition.
+E: « Pourtant » oppose deux idées : les adolescents ont besoin de beaucoup de sommeil, mais beaucoup se couchent tard. Il a le même sens que « cependant » ou « mais ».
+
+[FRA-305] comprehension | beginner
+Q: Lisez le texte, puis répondez.
+« Arriver à l'heure, c'est respecter les autres. Celui qui est en retard fait attendre ses collègues, retarde le travail de toute l'équipe et donne une mauvaise image de lui-même. Pour être ponctuel, il suffit souvent de préparer ses affaires la veille et de partir quelques minutes plus tôt. »
+Selon le texte, être ponctuel, c'est d'abord :
+* Respecter les autres
+- Travailler seul
+- Partir en retard
+- Changer d'équipe
+C: Respecter les autres.
+E: La première phrase le dit directement. La suite du texte explique les conséquences d'un retard, puis donne deux conseils pour être à l'heure.
+
+[FRA-306] comprehension | intermediate
+Q: Lisez le texte, puis répondez.
+« Arriver à l'heure, c'est respecter les autres. Celui qui est en retard fait attendre ses collègues, retarde le travail de toute l'équipe et donne une mauvaise image de lui-même. Pour être ponctuel, il suffit souvent de préparer ses affaires la veille et de partir quelques minutes plus tôt. »
+Quel titre convient le mieux à ce texte ?
+* La ponctualité, une marque de respect
+- Les transports en ville
+- Comment changer de travail
+- Les dangers de la vitesse
+C: La ponctualité, une marque de respect.
+E: Un bon titre résume l'idée générale de tout le texte : ici, l'importance d'arriver à l'heure par respect pour les autres.
+
+[FRA-307] comprehension | intermediate
+Q: Lisez le texte, puis répondez.
+« Sur les réseaux sociaux, une fausse information circule plus vite qu'une vraie. Avant de partager une nouvelle, il faut se demander d'où elle vient, vérifier sa date et chercher si des médias sérieux en parlent. Partager sans vérifier, c'est parfois participer, sans le vouloir, à une rumeur. »
+Quel conseil le texte NE donne-t-il PAS ?
+* Partager vite une nouvelle pour prévenir ses amis
+- Se demander d'où vient l'information
+- Vérifier la date de l'information
+- Chercher si des médias sérieux en parlent
+C: Partager vite pour prévenir ses amis.
+E: Le texte recommande au contraire de vérifier avant de partager. Dans une question négative, cherchez la proposition qui contredit le texte.
+
+[FRA-308] comprehension | beginner
+Q: Lisez le texte, puis répondez.
+« La bibliothèque municipale est ouverte du lundi au samedi, de 9 h à 18 h. L'inscription est gratuite pour les élèves et les étudiants : il suffit de présenter sa carte scolaire ou sa carte d'étudiant. Chaque lecteur peut emprunter trois livres pour une durée de quinze jours. »
+Combien de livres un lecteur peut-il emprunter en même temps ?
+* Trois
+- Deux
+- Six
+- Quinze
+C: Trois livres.
+E: La dernière phrase l'indique. « Quinze » est la durée du prêt en jours, pas le nombre de livres : lisez bien à quoi se rapporte chaque nombre.

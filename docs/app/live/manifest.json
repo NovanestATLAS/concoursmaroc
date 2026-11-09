@@ -1,8 +1,8 @@
 {
  "format": 1,
  "shell": 1,
- "version": "2026-11-08-9913754b",
- "updated": "2026-11-08",
+ "version": "2026-11-09-56da206e",
+ "updated": "2026-11-09",
  "needs": [
   "js/annuaire.js",
   "js/contact.js",
@@ -17,9 +17,9 @@
  ],
  "packs": {
   "core": {
-   "file": "packs/core.c3c6c674515d.json",
-   "sha256": "c3c6c674515d45876fc5ec52b612f72812755e32aebafdfb9b63f5f9a3e9f5d1",
-   "bytes": 764833,
+   "file": "packs/core.05b15034bfc3.json",
+   "sha256": "05b15034bfc31513823c5e160186f82817e2ed2ac363192c5fb9d6fd84359e50",
+   "bytes": 777630,
    "files": 8,
    "prefixes": [
     "data/",
@@ -27,28 +27,28 @@
    ]
   },
   "questions": {
-   "file": "packs/questions.06b8554675de.json",
-   "sha256": "06b8554675dedc5cb6d147bbc9d46a2a8b001ff559f3f01f95505b4776694434",
-   "bytes": 2139048,
+   "file": "packs/questions.4db3e946be16.json",
+   "sha256": "4db3e946be16be7c92a8d63638f5df40fb070ab606479a98681c36e5a48dacea",
+   "bytes": 2268691,
    "files": 18,
    "prefixes": [
     "data/questions/"
    ]
   },
   "pages-fr": {
-   "file": "packs/pages-fr.6456cfa21d65.json",
-   "sha256": "6456cfa21d65cab88993d2f7dda31c7f426efe200b06c45082aefddb588d6677",
-   "bytes": 2286896,
+   "file": "packs/pages-fr.640a0589c842.json",
+   "sha256": "640a0589c842a4fe84c956ec4ddb626ae95fd8724ea67eb5b93150fb63c5c1f2",
+   "bytes": 2287298,
    "files": 78,
    "prefixes": [
     "pages/"
    ]
   },
   "pages-ar": {
-   "file": "packs/pages-ar.e69204bddd87.json",
-   "sha256": "e69204bddd87134ce8fa7c7b3b749290d66fbe94ea19805d45d885d0cea9d2f6",
-   "bytes": 1256061,
-   "files": 66,
+   "file": "packs/pages-ar.dec21f570be4.json",
+   "sha256": "dec21f570be4ff59692542a4402a274e9f49920a0a417d0f260f34ea35e09fb2",
+   "bytes": 1286444,
+   "files": 67,
    "prefixes": [
     "pages/ar/"
    ]

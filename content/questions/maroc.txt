@@ -15,6 +15,14 @@ Q: Qui a fondé, en 859 à Fès, l'université Al Quaraouiyine, considérée com
 - Ibn Khaldoun
 C: Fatima al-Fihriya.
 E: Fatima al-Fihriya, originaire de Kairouan, a financé la fondation de la mosquée-université Al Quaraouiyine en 859. Idriss II avait fondé la ville de Fès au début du IXe siècle.
+AR:
+Q: من أسّس سنة 859 بفاس جامعة القرويين، التي تُعدّ أقدم جامعة ما تزال تشتغل؟
+* فاطمة الفهرية
+- إدريس الثاني
+- يوسف بن تاشفين
+- ابن خلدون
+C: فاطمة الفهرية.
+E: موّلت فاطمة الفهرية، المنحدرة من القيروان، تأسيس جامع وجامعة القرويين سنة 859. أما إدريس الثاني فقد أسس مدينة فاس في بداية القرن التاسع.
 
 [MAR-102] histoire | intermediate
 Q: Quel est l'ordre chronologique de ces dynasties marocaines ?
@@ -33,6 +41,14 @@ Q: Depuis la Constitution de 2011, quelles sont les langues officielles du Maroc
 - L'arabe, l'amazighe et le français
 C: L'arabe et l'amazighe.
 E: L'article 5 de la Constitution de 2011 fait de l'arabe et de l'amazighe les langues officielles de l'État. Le français est une langue étrangère très utilisée dans l'administration, l'économie et l'enseignement, sans statut officiel.
+AR:
+Q: منذ دستور 2011، ما هي اللغات الرسمية للمغرب؟
+* العربية والأمازيغية
+- العربية والفرنسية
+- العربية وحدها
+- العربية والأمازيغية والفرنسية
+C: العربية والأمازيغية.
+E: جعل الفصل 5 من دستور 2011 العربية والأمازيغية لغتين رسميتين للدولة. أما الفرنسية فلغة أجنبية كثيرة الاستعمال في الإدارة والاقتصاد والتعليم، دون صفة رسمية.
 
 [MAR-104] culture | beginner
 Q: Le Nouvel An amazigh (Yennayer), devenu jour férié national au Maroc, est célébré au mois de :
@@ -42,6 +58,14 @@ Q: Le Nouvel An amazigh (Yennayer), devenu jour férié national au Maroc, est c
 - Décembre
 C: En janvier (le 14).
 E: Yennayer marque le début de l'année agraire amazighe, le 14 janvier. Le Roi Mohammed VI a décidé en 2023 d'en faire un jour férié national, chômé et payé, célébré à ce titre depuis janvier 2024.
+AR:
+Q: يُحتفل برأس السنة الأمازيغية (إيض يناير)، الذي أصبح عطلة وطنية بالمغرب، في شهر:
+* يناير
+- مارس
+- شتنبر
+- دجنبر
+C: في يناير (يوم 14).
+E: يمثل «يناير» بداية السنة الفلاحية الأمازيغية، يوم 14 يناير. وقد قرر الملك محمد السادس سنة 2023 جعله عطلة وطنية رسمية مؤدى عنها، يُحتفل بها بهذه الصفة منذ يناير 2024.
 
 [MAR-105] economie | intermediate | ts
 Q: Quel est le premier port à conteneurs d'Afrique et de Méditerranée, situé au Maroc ?
@@ -60,6 +84,14 @@ Q: Le train à grande vitesse Al Boraq, inauguré en 2018, relie :
 - Fès et Oujda
 C: Tanger et Casablanca (via Kénitra et Rabat).
 E: Al Boraq est la première ligne à grande vitesse d'Afrique ; elle met Tanger à environ 2 h 10 de Casablanca. Son prolongement de Kénitra vers Marrakech est en cours de réalisation.
+AR:
+Q: يربط قطار «البراق» فائق السرعة، الذي دُشّن سنة 2018، بين:
+* طنجة والدار البيضاء
+- الرباط ومراكش
+- الدار البيضاء وأكادير
+- فاس ووجدة
+C: طنجة والدار البيضاء (مرورًا بالقنيطرة والرباط).
+E: البراق أول خط للقطار فائق السرعة في إفريقيا، ويجعل طنجة على بعد نحو ساعتين وعشر دقائق من الدار البيضاء. ويجري حاليًا تمديده من القنيطرة نحو مراكش.
 
 [MAR-107] economie | beginner
 Q: Le complexe solaire Noor, l'un des plus grands du monde, est situé près de :
@@ -69,6 +101,14 @@ Q: Le complexe solaire Noor, l'un des plus grands du monde, est situé près de 
 - Oujda
 C: Ouarzazate.
 E: Le complexe Noor Ouarzazate, mis en service à partir de 2016, utilise surtout le solaire thermodynamique à concentration. Il s'inscrit dans la stratégie énergétique du Maroc, qui vise une forte part d'énergies renouvelables dans la production d'électricité.
+AR:
+Q: يوجد مركب «نور» للطاقة الشمسية، من أكبر المركبات في العالم، قرب مدينة:
+* ورزازات
+- العيون
+- الرشيدية
+- وجدة
+C: ورزازات.
+E: يعتمد مركب «نور ورزازات»، الذي بدأ تشغيله سنة 2016، أساسًا على الطاقة الشمسية الحرارية المركزة. ويندرج في الاستراتيجية الطاقية للمغرب الرامية إلى رفع حصة الطاقات المتجددة في إنتاج الكهرباء.
 
 [MAR-108] histoire | beginner
 Q: En quelle année a eu lieu la Marche verte ?
@@ -78,6 +118,14 @@ Q: En quelle année a eu lieu la Marche verte ?
 - 1999
 C: Le 6 novembre 1975.
 E: Lancée par le Roi Hassan II, la Marche verte a réuni 350 000 volontaires vers le Sahara. On la commémore chaque 6 novembre. 1956 est l'année de l'indépendance du Maroc.
+AR:
+Q: في أي سنة جرت المسيرة الخضراء؟
+* 1975
+- 1956
+- 1963
+- 1999
+C: يوم 6 نونبر 1975.
+E: أطلقها الملك الحسن الثاني، وشارك فيها 350 ألف متطوع نحو الصحراء، ويُخلَّد ذكراها كل 6 نونبر. أما سنة 1956 فهي سنة استقلال المغرب.
 
 [MAR-109] institutions | intermediate
 Q: Quelle institution publie au Maroc les statistiques officielles (recensement, chômage, inflation) ?
@@ -114,6 +162,14 @@ Q: Quel est le point culminant du Maroc ?
 - Le Jbel Saghro
 C: Le Toubkal (4 167 m).
 E: Situé dans le Haut Atlas, près de Marrakech, le Toubkal est le plus haut sommet d'Afrique du Nord. Le Jbel Ayachi et l'Ighil M'Goun dépassent aussi 3 700 m.
+AR:
+Q: ما هي أعلى قمة في المغرب؟
+* توبقال
+- جبل العياشي
+- إغيل مكون
+- جبل صاغرو
+C: توبقال (4167 م).
+E: يقع توبقال في الأطلس الكبير قرب مراكش، وهو أعلى قمة في شمال إفريقيا. ويتجاوز جبل العياشي وإغيل مكون أيضًا 3700 م.
 
 [MAR-113] patrimoine | beginner
 Q: Dans quelle ville se trouve la mosquée Hassan II, inaugurée en 1993 ?
@@ -123,6 +179,14 @@ Q: Dans quelle ville se trouve la mosquée Hassan II, inaugurée en 1993 ?
 - Tanger
 C: Casablanca.
 E: Construite en partie sur la mer, la mosquée Hassan II possède l'un des plus hauts minarets du monde (environ 210 m). À Rabat se trouvent la tour Hassan (XIIe siècle, inachevée) et le mausolée Mohammed V.
+AR:
+Q: في أي مدينة يوجد مسجد الحسن الثاني، الذي دُشّن سنة 1993؟
+* الدار البيضاء
+- الرباط
+- فاس
+- طنجة
+C: الدار البيضاء.
+E: بُني جزء منه فوق البحر، ومئذنته من أعلى المآذن في العالم (نحو 210 م). أما في الرباط فيوجد صومعة حسان (القرن الثاني عشر، غير مكتملة) وضريح محمد الخامس.
 
 [MAR-114] histoire | beginner
 Q: Quelle fête nationale le Maroc célèbre-t-il chaque 30 juillet ?
@@ -132,6 +196,14 @@ Q: Quelle fête nationale le Maroc célèbre-t-il chaque 30 juillet ?
 - La Révolution du Roi et du Peuple
 C: La fête du Trône.
 E: Elle commémore l'accession du Roi Mohammed VI au trône, le 30 juillet 1999. La fête de l'Indépendance est célébrée le 18 novembre, la Révolution du Roi et du Peuple le 20 août et la fête de la Jeunesse le 21 août.
+AR:
+Q: ما العيد الوطني الذي يحتفل به المغرب يوم 30 يوليوز من كل سنة؟
+* عيد العرش
+- عيد الاستقلال
+- عيد الشباب
+- ذكرى ثورة الملك والشعب
+C: عيد العرش.
+E: يخلّد ذكرى اعتلاء الملك محمد السادس العرش يوم 30 يوليوز 1999. ويُحتفل بعيد الاستقلال يوم 18 نونبر، وبذكرى ثورة الملك والشعب يوم 20 غشت، وبعيد الشباب يوم 21 غشت.
 
 # ---------------------------------------------------------------------------
 # lot-2026-10-programme : questions de niveau bac dans l'esprit des épreuves TAFEM (ENCG),
@@ -146,6 +218,14 @@ Q: Selon l'article 1er de la Constitution de 2011, le régime politique du Maroc
 - Une fédération de régions
 C: Monarchie constitutionnelle, démocratique, parlementaire et sociale.
 E: La Constitution de 2011, adoptée par référendum le 1er juillet 2011, définit ce régime et repose sur la séparation, l'équilibre et la collaboration des pouvoirs.
+AR:
+Q: حسب الفصل الأول من دستور 2011، نظام الحكم بالمغرب هو:
+* ملكية دستورية، ديمقراطية برلمانية واجتماعية
+- ملكية مطلقة
+- جمهورية برلمانية
+- اتحاد فيدرالي للجهات
+C: ملكية دستورية، ديمقراطية برلمانية واجتماعية.
+E: يحدد دستور 2011، الذي اعتُمد بالاستفتاء يوم فاتح يوليوز 2011، هذا النظام، ويقوم على فصل السلط وتوازنها وتعاونها.
 
 [MAR-202] institutions | intermediate
 Q: Selon la Constitution de 2011, le Chef du gouvernement est nommé par le Roi :
@@ -200,6 +280,14 @@ Q: Quelle est la devise du Royaume du Maroc ?
 - Paix, Justice, Développement
 C: « Dieu, la Patrie, le Roi ».
 E: Elle est inscrite à l'article 4 de la Constitution. « Liberté, Égalité, Fraternité » est la devise de la France.
+AR:
+Q: ما هو شعار المملكة المغربية؟
+* الله، الوطن، الملك
+- حرية، مساواة، أخوة
+- وحدة، عمل، تقدم
+- سلام، عدالة، تنمية
+C: «الله، الوطن، الملك».
+E: ينص عليه الفصل 4 من الدستور. أما «حرية، مساواة، أخوة» فشعار الجمهورية الفرنسية.
 
 [MAR-208] institutions | intermediate
 Q: Quelle institution est chargée de la protection et de la promotion des droits de l'homme au Maroc ?
@@ -218,6 +306,14 @@ Q: Qui a fondé la dynastie idrisside et le premier État marocain, à la fin du
 - Ahmed al-Mansour
 C: Idriss Ier (788).
 E: Descendant du Prophète, Idriss Ier s'installe à Walili (Volubilis) en 788. Son fils Idriss II fonde ou développe Fès.
+AR:
+Q: من أسّس الدولة الإدريسية، أول دولة مغربية، في أواخر القرن الثامن؟
+* إدريس الأول
+- يوسف بن تاشفين
+- المولى إسماعيل
+- أحمد المنصور
+C: إدريس الأول (788).
+E: استقر إدريس الأول، وهو من آل البيت، في وليلي سنة 788. وأسس ابنه إدريس الثاني مدينة فاس أو وسّعها.
 
 [MAR-210] histoire | intermediate
 Q: Quelle dynastie a fondé la ville de Marrakech au XIe siècle ?
@@ -290,6 +386,14 @@ Q: La fête de l'Indépendance du Maroc est célébrée le :
 - 11 janvier
 C: 18 novembre.
 E: Elle commémore le discours de Mohammed V du 18 novembre 1955, après son retour d'exil. Le 6 novembre commémore la Marche verte.
+AR:
+Q: يُحتفل بعيد الاستقلال بالمغرب يوم:
+* 18 نونبر
+- 30 يوليوز
+- 6 نونبر
+- 11 يناير
+C: 18 نونبر.
+E: يخلّد خطاب محمد الخامس يوم 18 نونبر 1955 بعد عودته من المنفى. أما 6 نونبر فذكرى المسيرة الخضراء.
 
 [MAR-218] histoire | intermediate
 Q: Le roi Hassan II a régné de :
@@ -308,6 +412,14 @@ Q: Quel est le plus long fleuve du Maroc ?
 - La Moulouya
 C: La Draa (plus de 1 100 km).
 E: La Draa est le plus long, mais son débit est faible et irrégulier. Le Sebou a le plus fort débit ; l'Oum Er-Rbia est le plus long fleuve à écoulement permanent.
+AR:
+Q: ما هو أطول نهر في المغرب؟
+* وادي درعة
+- وادي سبو
+- وادي أم الربيع
+- وادي ملوية
+C: وادي درعة (أكثر من 1100 كلم).
+E: درعة هو الأطول، لكن صبيبه ضعيف وغير منتظم. أما سبو فأكبر الأنهار صبيبًا، وأم الربيع أطول نهر دائم الجريان.
 
 [MAR-220] geographie | beginner
 Q: Quelle chaîne de montagnes est la plus septentrionale du Maroc, le long de la Méditerranée ?
@@ -317,6 +429,14 @@ Q: Quelle chaîne de montagnes est la plus septentrionale du Maroc, le long de l
 - Le Moyen Atlas
 C: Le Rif.
 E: Le Rif borde la Méditerranée. Le Moyen Atlas, le Haut Atlas puis l'Anti-Atlas se succèdent vers le sud.
+AR:
+Q: ما السلسلة الجبلية الواقعة في أقصى شمال المغرب، على طول البحر الأبيض المتوسط؟
+* الريف
+- الأطلس الكبير
+- الأطلس الصغير
+- الأطلس المتوسط
+C: الريف.
+E: تحاذي جبال الريف البحر الأبيض المتوسط، ثم تتوالى نحو الجنوب جبال الأطلس المتوسط فالأطلس الكبير فالأطلس الصغير.
 
 [MAR-221] geographie | intermediate
 Q: Quelle ville marocaine est la plus peuplée ?
@@ -398,6 +518,14 @@ Q: Que signifie le sigle ONCF ?
 - Office national de la culture française
 C: Office national des chemins de fer.
 E: L'ONCF exploite le réseau ferroviaire marocain, dont la ligne à grande vitesse Al Boraq entre Tanger et Casablanca.
+AR:
+Q: ماذا يعني الاختصار الفرنسي ONCF؟
+* المكتب الوطني للسكك الحديدية
+- المنظمة الوطنية لمراكز التكوين
+- المكتب الوطني للتجارة والمالية
+- المكتب الوطني للثقافة الفرنسية
+C: المكتب الوطني للسكك الحديدية.
+E: يستغل المكتب الوطني للسكك الحديدية الشبكة السككية المغربية، ومنها خط القطار فائق السرعة «البراق» بين طنجة والدار البيضاء.
 
 [MAR-230] economie | intermediate | ts
 Q: Quelle stratégie numérique nationale a été lancée en 2024 pour la transformation digitale du Maroc à l'horizon 2030 ?
@@ -416,6 +544,14 @@ Q: Quel instrument est emblématique de la musique gnaoua ?
 - Le piano
 C: Le guembri.
 E: Le guembri est un luth à trois cordes, accompagné des qraqeb (castagnettes métalliques). Le Festival Gnaoua d'Essaouira est célèbre dans le monde entier ; l'art gnaoua est inscrit au patrimoine immatériel de l'UNESCO depuis 2019.
+AR:
+Q: ما الآلة الموسيقية الرمزية لفن كناوة؟
+* الكمبري (الهجهوج)
+- الكمان
+- مزمار القربة
+- البيانو
+C: الكمبري.
+E: الكمبري آلة وترية بثلاثة أوتار، ترافقها القراقب (صنوج معدنية). ويشتهر مهرجان كناوة بالصويرة عالميًا، وقد أُدرج فن كناوة في التراث غير المادي لليونسكو سنة 2019.
 
 [MAR-232] culture | intermediate
 Q: La place Jemaa el-Fna, inscrite au patrimoine culturel immatériel de l'UNESCO, se trouve à :
@@ -497,6 +633,14 @@ Q: À quelle phase de la Coupe du monde 2022 l'équipe du Maroc s'est-elle hiss�
 - Les huitièmes de finale
 C: Les demi-finales.
 E: Après avoir éliminé l'Espagne puis le Portugal, les Lions de l'Atlas ont terminé quatrièmes du tournoi au Qatar.
+AR:
+Q: إلى أي دور وصل المنتخب المغربي في كأس العالم 2022، في سابقة لمنتخب إفريقي؟
+* نصف النهائي
+- النهائي
+- ربع النهائي
+- ثمن النهائي
+C: نصف النهائي.
+E: بعد إقصاء إسبانيا ثم البرتغال، أنهى أسود الأطلس البطولة في المركز الرابع في قطر.
 
 [MAR-241] institutions | intermediate
 Q: Le chantier de la généralisation de la protection sociale, lancé en 2021, prévoit notamment :
@@ -560,6 +704,14 @@ Q: Quel alphabet a été adopté au Maroc pour écrire la langue amazighe ?
 - L'alphabet grec
 C: Le tifinagh.
 E: L'Institut royal de la culture amazighe (IRCAM), créé en 2001, a standardisé l'alphabet tifinagh, utilisé dans l'enseignement et sur les panneaux officiels.
+AR:
+Q: ما الحرف الذي اعتُمد في المغرب لكتابة اللغة الأمازيغية؟
+* تيفيناغ
+- الحرف اللاتيني
+- الحرف السيريلي
+- الحرف الإغريقي
+C: تيفيناغ.
+E: وحّد المعهد الملكي للثقافة الأمازيغية، الذي أُنشئ سنة 2001، حرف تيفيناغ المستعمل في التعليم وعلى اللوحات الرسمية.
 
 [MAR-248] institutions | intermediate
 Q: L'Institut royal de la culture amazighe (IRCAM) a été créé en :

@@ -124,7 +124,8 @@
         var r = Math.random(), acc = 0;
         Object.keys(mix).some(function (k) { acc += mix[k]; if (r <= acc) { diff = k; return true; } return false; });
       }
-      if (!takeFrom(diff)) takeFrom(null);
+      // Missing difficulty: another one the concours allows (share > 0), then any.
+      if (!takeFrom(diff) && !(mix && Object.keys(mix).some(function (k) { return mix[k] > 0 && takeFrom(k); }))) takeFrom(null);
     }
     out.forEach(function (q) { q._lang = q.l10n[LANG] ? LANG : 'fr'; });
     return out;

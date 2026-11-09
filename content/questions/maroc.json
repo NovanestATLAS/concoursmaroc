@@ -62,7 +62,7 @@
    "id": "CM-MAR-002",
    "category": "maroc",
    "subcategory": "institutions",
-   "difficulty": "beginner",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -317,7 +317,7 @@
    "id": "CM-MAR-007",
    "category": "maroc",
    "subcategory": "geographie",
-   "difficulty": "beginner",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -566,7 +566,7 @@
    "id": "CM-MAR-012",
    "category": "maroc",
    "subcategory": "institutions",
-   "difficulty": "beginner",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -801,7 +801,7 @@
    "id": "CM-MAR-017",
    "category": "maroc",
    "subcategory": "institutions",
-   "difficulty": "beginner",
+   "difficulty": "intermediate",
    "exams": [
     "cnss"
    ],

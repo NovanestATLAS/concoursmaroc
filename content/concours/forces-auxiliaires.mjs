@@ -11,11 +11,12 @@ export default {
   age: { min: 18, max: 24, ref: '02-01+1', at: { fr: 'au 1er février de l’année suivante (session 2026/2027)', ar: 'في فاتح فبراير 2027 (دورة 2026/2027)' } },
   height: { m: 1.70, f: 1.65 },
   practice: {
-    subjects: ['maroc', 'securite', 'logique', 'calcul', 'arabe', 'francais', 'secourisme'],
-    mock: { minutes: 40, sections: [{ subjects: ['logique'], count: 10 }, { subjects: ['maroc', 'securite'], count: 10 }, { subjects: ['calcul'], count: 5 }, { subjects: ['arabe'], count: 5 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
-    difficulty: 'accessible',
+    // No first aid or military knowledge: it is taught during the training.
+    subjects: ['maroc', 'culture', 'logique', 'calcul', 'arabe', 'francais', 'securite'],
+    mock: { minutes: 40, sections: [{ subjects: ['logique'], count: 10 }, { subjects: ['maroc', 'culture', 'securite'], count: 10 }, { subjects: ['calcul'], count: 5 }, { subjects: ['arabe'], count: 5 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'base',
     tracks: [
-      { id: 'mokhazni', fr: 'Mokhazni', ar: 'مخزني', difficulty: 'accessible' },
+      { id: 'mokhazni', fr: 'Mokhazni', ar: 'مخزني', difficulty: 'base' },
       { id: 'eleve-officier', fr: 'Élève officier', ar: 'تلميذ ضابط', difficulty: 'selectif' },
     ],
   },
@@ -38,7 +39,7 @@ export default {
     sections: [
       { id: 'mokhazni', h: 'Mokhaznis : conditions (session 2026/2027)', blocks: [ { ul: ['Nationalité marocaine, **célibataire**, apte médicalement, sans antécédents judiciaires.', '**18 à 24 ans au 1er février 2027**.', 'Niveau **secondaire qualifiant** (lycée) ou **diplôme de qualification professionnelle** : le bac n’est pas exigé.', 'Taille minimale **1,70 m** (hommes) et **1,65 m** (femmes) ; acuité visuelle d’au moins **16/20 sans lunettes ni lentilles** (condition de l’édition précédente, à vérifier).', 'Inscription **uniquement** sur recrutement.fa.gov.ma.'] }, { callout: 'warn', text: "Inscriptions closes le **16 octobre 2026**. Les candidats présélectionnés reçoivent leur **convocation par e-mail et par SMS** pour la visite médicale, l'épreuve sportive, l'épreuve écrite et l'entretien : vérifiez votre boîte de réception et vos courriers indésirables, et venez avec votre tenue de sport." } ] },
       { id: 'officiers', h: 'Élèves officiers (bacheliers)', blocks: [ { p: "Les élèves officiers des Forces Auxiliaires sont recrutés parmi les **bacheliers de l'année** (18 à 23 ans à la date du concours, taille 1,70 m / 1,65 m) et formés à l'**Académie Royale Militaire**. Les inscriptions se tiennent au printemps (closes fin mai en 2026)." } ] },
-      { id: 'epreuves', h: 'Épreuves', blocks: [ { steps: ['Vérification des conditions et visite médicale.', 'Tests physiques.', 'Tests écrits / psychotechniques et entretien selon l’avis.'] }, { practice: true } ] },
+      { id: 'epreuves', h: 'Épreuves', blocks: [ { steps: ['Vérification des conditions et visite médicale.', 'Épreuves physiques (session 2026/2027 : 1 000 m pour les hommes, 800 m pour les femmes).', 'Écrit, puis entretien oral ; classement sur la moyenne générale finale.'] }, { callout: 'info', text: "L'avis ne détaille pas les matières de l'écrit. L'entraînement ci-dessous, au niveau du secondaire qualifiant, couvre la culture générale, l'arabe, le français, la logique et le calcul de base ; il ne demande aucune connaissance militaire ni de secourisme, qui s'apprennent pendant la formation." }, { practice: true } ] },
     ],
     faq: [ { q: 'Faut-il le bac pour les Forces Auxiliaires ?', a: "Non pour les mokhaznis : le niveau secondaire qualifiant ou un diplôme de qualification professionnelle suffit. Le bac est exigé pour les élèves officiers." } ],
   },
@@ -53,7 +54,7 @@ export default {
     sections: [
       { id: 'mokhazni', h: 'المخازنية: الشروط (دورة 2026/2027)', blocks: [ { ul: ['الجنسية المغربية، **أعزب/عزباء**، الأهلية الطبية، بدون سوابق قضائية.', '**من 18 إلى 24 سنة في فاتح فبراير 2027**.', 'مستوى **الثانوي التأهيلي** (الثانوية) أو **دبلوم التأهيل المهني**: لا تُشترط البكالوريا.', 'القامة الدنيا **1.70 م** (الذكور) و**1.65 م** (الإناث)؛ حدة بصر لا تقل عن **16/20 بدون نظارات ولا عدسات** (شرط الدورة السابقة، يجب التحقق منه).', 'التسجيل **فقط** عبر recrutement.fa.gov.ma.'] }, { callout: 'warn', text: 'أُغلق التسجيل يوم **16 أكتوبر 2026**. يتوصل المترشحون المنتقون **باستدعاء عبر البريد الإلكتروني ورسالة نصية** لاجتياز الفحص الطبي والاختبار الرياضي والاختبار الكتابي والمقابلة: راقب بريدك (بما فيه الرسائل غير المرغوب فيها) واحضر بلباسك الرياضي.' } ] },
       { id: 'officiers', h: 'التلاميذ الضباط (حاملو البكالوريا)', blocks: [ { p: 'يتم توظيف التلاميذ الضباط للقوات المساعدة من بين **حاملي بكالوريا السنة الجارية** (من 18 إلى 23 سنة في تاريخ المباراة، القامة 1.70 م / 1.65 م)، ويتلقون تكوينهم بـ**الأكاديمية الملكية العسكرية**. ويجري التسجيل في فصل الربيع (أُغلق في نهاية ماي في 2026).' } ] },
-      { id: 'epreuves', h: 'الاختبارات', blocks: [ { steps: ['التحقق من الشروط والفحص الطبي.', 'الاختبارات البدنية.', 'اختبارات كتابية / سيكوتقنية ومقابلة حسب الإعلان.'] }, { practice: true } ] },
+      { id: 'epreuves', h: 'الاختبارات', blocks: [ { steps: ['التحقق من الشروط والفحص الطبي.', 'الاختبارات البدنية (دورة 2026/2027: 1000 م للذكور و800 م للإناث).', 'اختبار كتابي ثم مقابلة شفوية؛ والترتيب حسب المعدل العام النهائي.'] }, { callout: 'info', text: 'لا يحدد الإعلان مواد الاختبار الكتابي. ويغطي التدريب أسفله، في مستوى الثانوي التأهيلي، الثقافة العامة والعربية والفرنسية والمنطق والحساب الأساسي، دون أي معارف عسكرية أو في الإسعاف، فهذه تُكتسب خلال التكوين.' }, { practice: true } ] },
     ],
     faq: [ { q: 'هل البكالوريا ضرورية لولوج القوات المساعدة؟', a: 'لا بالنسبة للمخازنية: يكفي مستوى الثانوي التأهيلي أو دبلوم التأهيل المهني. أما التلاميذ الضباط فتُشترط فيهم البكالوريا.' } ],
   },

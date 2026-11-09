@@ -7,7 +7,7 @@
 # sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
 @source src-annales-ecoles
 
-[CAL-101] pourcentages | beginner
+[CAL-101] pourcentages | intermediate
 Q: Le prix d'un article augmente de 20 %, puis baisse de 20 %. Par rapport au prix initial, le prix final est :
 * Inférieur de 4 %
 - Égal
@@ -16,7 +16,7 @@ Q: Le prix d'un article augmente de 20 %, puis baisse de 20 %. Par rapport au pr
 C: Il baisse de 4 %.
 E: Les coefficients multiplicateurs se multiplient : $1{,}20 \times 0{,}80 = 0{,}96$, soit une baisse de 4 %. Les pourcentages ne s'ajoutent pas, car la baisse s'applique à un prix déjà augmenté.
 
-[CAL-102] pourcentages | intermediate
+[CAL-102] pourcentages | advanced
 Q: Un prix augmente de 10 %, puis encore de 10 %, et subit enfin une remise de 20 %. Quelle affirmation est vraie ?
 * Le prix final est inférieur de moins de 5 % au prix initial
 - Le prix final est égal au prix initial
@@ -33,8 +33,16 @@ Q: Un article coûte 500 DH hors taxes. Avec une TVA de 20 %, son prix TTC est :
 - 700 DH
 C: 600 DH.
 E: $\text{TTC} = \text{HT} \times (1 + 0{,}20) = 500 \times 1{,}2 = 600$ DH. La TVA vaut 100 DH.
+AR:
+Q: ثمن سلعة دون احتساب الرسوم 500 درهم. مع ضريبة على القيمة المضافة نسبتها 20%، يصبح ثمنها مع احتساب الرسوم:
+* 600 درهم
+- 520 درهمًا
+- 400 درهم
+- 700 درهم
+C: 600 درهم.
+E: الثمن مع الرسوم = 500 × 1,2 = 600 درهم، أي أن الضريبة تساوي 100 درهم.
 
-[CAL-104] pourcentages | intermediate
+[CAL-104] pourcentages | advanced
 Q: Après une remise de 20 %, un manteau est vendu 240 DH. Quel était son prix avant la remise ?
 * 300 DH
 - 288 DH
@@ -43,7 +51,7 @@ Q: Après une remise de 20 %, un manteau est vendu 240 DH. Quel était son prix 
 C: 300 DH.
 E: Le prix soldé vaut 80 % du prix initial : $P \times 0{,}8 = 240$, donc $P = 300$ DH. Ajouter 20 % à 240 DH (288 DH) est l'erreur classique.
 
-[CAL-105] interets | beginner
+[CAL-105] interets | intermediate
 Q: On place 10 000 DH à intérêts simples au taux annuel de 5 % pendant 3 ans. Les intérêts perçus s'élèvent à :
 * 1 500 DH
 - 500 DH
@@ -52,7 +60,7 @@ Q: On place 10 000 DH à intérêts simples au taux annuel de 5 % pendant 3 ans.
 C: 1 500 DH.
 E: Intérêts simples : $I = C \times t \times n = 10\,000 \times 0{,}05 \times 3 = 1\,500$ DH. Avec des intérêts composés, on obtiendrait environ 1 576 DH ($10\,000 \times 1{,}05^3 - 10\,000$).
 
-[CAL-106] proportions | intermediate
+[CAL-106] proportions | advanced
 Q: On mélange 2 litres d'un jus contenant 30 % de sucre et 3 litres d'un jus contenant 10 % de sucre. Le pourcentage de sucre du mélange est :
 * 18 %
 - 20 %
@@ -79,7 +87,7 @@ Q: Le taux de chômage d'une région passe de 12 % à 13,5 %. Quelle affirmation
 C: +1,5 point de pourcentage, soit +12,5 % en valeur relative.
 E: L'écart entre deux pourcentages s'exprime en points : $13{,}5 - 12 = 1{,}5$ point. En valeur relative : $\frac{1{,}5}{12} = 0{,}125$, soit une hausse de 12,5 %.
 
-[CAL-109] proportions | beginner
+[CAL-109] proportions | intermediate
 Q: Sur une carte à l'échelle 1/50 000, deux villages sont séparés de 6 cm. La distance réelle est :
 * 3 km
 - 300 m
@@ -97,7 +105,7 @@ Q: 6 ouvriers réalisent un chantier en 10 jours. En combien de jours 4 ouvriers
 C: 15 jours.
 E: La durée est inversement proportionnelle au nombre d'ouvriers : le chantier représente $6 \times 10 = 60$ journées de travail, soit $\frac{60}{4} = 15$ jours avec 4 ouvriers.
 
-[CAL-111] pourcentages | intermediate
+[CAL-111] pourcentages | advanced
 Q: Amine dépense 25 % de son salaire pour son loyer, puis 20 % de ce qui reste pour ses transports. Quel pourcentage de son salaire lui reste-t-il ?
 * 60 %
 - 55 %
@@ -128,8 +136,16 @@ Q: Combien font 15 % de 240 ?
 - 160
 C: 36.
 E: $240 \times 0{,}15 = 24 + 12 = 36$ (10 % = 24 et 5 % = 12).
+AR:
+Q: كم تساوي 15% من 240؟
+* 36
+- 24
+- 32
+- 160
+C: 36.
+E: ‏10% من 240 تساوي 24، و5% تساوي نصفها أي 12، والمجموع 24 + 12 = 36.
 
-[CAL-202] pourcentages | beginner
+[CAL-202] pourcentages | intermediate
 Q: Un prix passe de 80 DH à 100 DH. Le pourcentage d'augmentation est :
 * 25 %
 - 20 %
@@ -147,7 +163,7 @@ Q: Un prix passe de 100 DH à 80 DH. Le pourcentage de baisse est :
 C: 20 %.
 E: $\frac{100 - 80}{100} = 0{,}20$. Une hausse de 25 % suivie d'une baisse de 20 % ramène au prix de départ.
 
-[CAL-204] pourcentages | intermediate
+[CAL-204] pourcentages | advanced
 Q: Un salaire de 6 000 DH augmente de 5 % chaque année pendant 2 ans. Il vaut alors :
 * 6 615 DH
 - 6 600 DH
@@ -191,6 +207,14 @@ Q: 4 cahiers coûtent 28 DH. Combien coûtent 7 cahiers ?
 - 42 DH
 C: 49 DH.
 E: Un cahier coûte $\frac{28}{4} = 7$ DH, donc 7 cahiers coûtent 49 DH (règle de trois).
+AR:
+Q: ثمن 4 دفاتر 28 درهمًا. كم ثمن 7 دفاتر؟
+* 49 درهمًا
+- 35 درهمًا
+- 56 درهمًا
+- 42 درهمًا
+C: 49 درهمًا.
+E: ثمن الدفتر الواحد 28 ÷ 4 = 7 دراهم، إذن ثمن 7 دفاتر 7 × 7 = 49 درهمًا (القاعدة الثلاثية).
 
 [CAL-209] proportions | intermediate
 Q: Une voiture consomme 6 litres aux 100 km. Combien de litres lui faut-il pour 450 km ?
@@ -219,7 +243,7 @@ Q: Un héritage de 72 000 DH est partagé entre trois enfants dans les proportio
 C: 16 000 DH.
 E: Il y a $2 + 3 + 4 = 9$ parts de $\frac{72\,000}{9} = 8\,000$ DH. Les parts valent 16 000, 24 000 et 32 000 DH.
 
-[CAL-212] fractions | beginner
+[CAL-212] fractions | intermediate
 Q: Combien font $\frac{2}{3} + \frac{3}{4}$ ?
 * $\frac{17}{12}$
 - $\frac{5}{7}$
@@ -228,7 +252,7 @@ Q: Combien font $\frac{2}{3} + \frac{3}{4}$ ?
 C: $\frac{8}{12} + \frac{9}{12} = \frac{17}{12}$.
 E: On réduit au même dénominateur (12) avant d'ajouter. On n'additionne jamais numérateurs et dénominateurs entre eux.
 
-[CAL-213] fractions | intermediate
+[CAL-213] fractions | advanced
 Q: Un réservoir est rempli aux $\frac{3}{5}$. On ajoute 30 litres et il est alors rempli aux $\frac{4}{5}$. Quelle est sa capacité ?
 * 150 litres
 - 120 litres
@@ -237,7 +261,7 @@ Q: Un réservoir est rempli aux $\frac{3}{5}$. On ajoute 30 litres et il est alo
 C: 150 L.
 E: 30 litres représentent $\frac{4}{5} - \frac{3}{5} = \frac{1}{5}$ de la capacité, donc la capacité vaut $5 \times 30 = 150$ L.
 
-[CAL-214] fractions | intermediate
+[CAL-214] fractions | advanced
 Q: Karim dépense $\frac{1}{4}$ de son argent, puis $\frac{1}{3}$ de ce qui reste. Il lui reste 300 DH. Combien avait-il au départ ?
 * 600 DH
 - 500 DH
@@ -263,6 +287,14 @@ Q: Les notes d'un élève sont 12, 15, 9 et 16. Sa moyenne est :
 - 52
 C: 13.
 E: $\frac{12 + 15 + 9 + 16}{4} = \frac{52}{4} = 13$.
+AR:
+Q: نقط تلميذ هي 12 و15 و9 و16. ما معدله؟
+* 13
+- 12,5
+- 14
+- 52
+C: 13.
+E: المعدل = (12 + 15 + 9 + 16) ÷ 4 = 52 ÷ 4 = 13.
 
 [CAL-217] moyennes | intermediate
 Q: Un élève a 14 (coefficient 3) en maths et 10 (coefficient 1) en français. Sa moyenne pondérée est :
@@ -299,6 +331,14 @@ Q: Un cycliste parcourt 45 km en 1 h 30. Sa vitesse moyenne est :
 - 22,5 km/h
 C: 30 km/h.
 E: $v = \frac{45}{1{,}5} = 30$ km/h. Attention : 1 h 30 = 1,5 h, et non 1,3 h.
+AR:
+Q: قطع درّاج 45 كلم في ساعة ونصف. ما سرعته المتوسطة؟
+* 30 كلم/س
+- 45 كلم/س
+- 35 كلم/س
+- 22,5 كلم/س
+C: 30 كلم/س.
+E: السرعة = 45 ÷ 1,5 = 30 كلم/س. انتبه: ساعة ونصف تساوي 1,5 ساعة وليس 1,3 ساعة.
 
 [CAL-221] vitesse | intermediate
 Q: Combien font 72 km/h en m/s ?
@@ -336,7 +376,7 @@ Q: Une voiture rattrape un camion. Le camion roule à 70 km/h et a 15 km d'avanc
 C: 30 min.
 E: L'écart diminue de $100 - 70 = 30$ km par heure : $\frac{15}{30} = 0{,}5$ h.
 
-[CAL-225] interets | intermediate
+[CAL-225] interets | advanced
 Q: Un capital de 20 000 DH est placé à intérêts composés au taux annuel de 10 % pendant 2 ans. Sa valeur finale est :
 * 24 200 DH
 - 24 000 DH
@@ -362,6 +402,14 @@ Q: Un terrain rectangulaire mesure 25 m sur 16 m. Son aire est :
 - 800 m²
 C: 400 m².
 E: $25 \times 16 = 400$ m². Le périmètre, lui, vaut $2 \times (25 + 16) = 82$ m.
+AR:
+Q: قطعة أرض مستطيلة طولها 25 م وعرضها 16 م. ما مساحتها؟
+* 400 م²
+- 82 م²
+- 41 م²
+- 800 م²
+C: 400 م².
+E: المساحة = 25 × 16 = 400 م². أما المحيط فيساوي 2 × (25 + 16) = 82 م.
 
 [CAL-228] geometrie | intermediate
 Q: Un disque a un rayon de 10 cm. Son aire vaut environ ($\pi \approx 3{,}14$) :
@@ -462,7 +510,7 @@ Q: Dans un sondage auprès de 400 personnes, 30 % préfèrent le train. Sur un d
 C: $0{,}30 \times 360° = 108°$.
 E: Le disque entier (360°) représente 100 % ; chaque pourcentage $p$ correspond à un angle $p \times 360°$.
 
-[CAL-239] statistiques | advanced
+[CAL-239] statistiques | intermediate
 Q: Les ventes d'une entreprise passent de 2 000 unités en 2023 à 2 500 en 2024. En prenant 2023 comme base 100, l'indice de 2024 vaut :
 * 125
 - 25
@@ -479,6 +527,14 @@ Q: Combien font $25 \times 48$ ?
 - 1 150
 C: 1 200.
 E: $25 \times 48 = 25 \times 4 \times 12 = 100 \times 12 = 1\,200$.
+AR:
+Q: كم يساوي 25 × 48؟
+* 1200
+- 1000
+- 1250
+- 1150
+C: 1200.
+E: ‏25 × 48 = 25 × 4 × 12 = 100 × 12 = 1200.
 
 [CAL-241] calcul-mental | beginner
 Q: Combien font $0{,}5 \times 0{,}4$ ?
@@ -488,6 +544,14 @@ Q: Combien font $0{,}5 \times 0{,}4$ ?
 - 0,9
 C: 0,2.
 E: $5 \times 4 = 20$ et il y a deux chiffres après la virgule au total : 0,20.
+AR:
+Q: كم يساوي 0,5 × 0,4؟
+* 0,2
+- 2
+- 0,02
+- 0,9
+C: 0,2.
+E: ‏5 × 4 = 20، وفي المجموع رقمان بعد الفاصلة، إذن النتيجة 0,20 أي 0,2.
 
 [CAL-242] calcul-mental | intermediate
 Q: Combien font $\frac{3}{4}$ de 2 h 40 min ?
@@ -507,7 +571,7 @@ Q: Combien font $99^2$ ?
 C: 9 801.
 E: $(100 - 1)^2 = 10\,000 - 200 + 1 = 9\,801$.
 
-[CAL-244] proportions | advanced
+[CAL-244] proportions | intermediate
 Q: Un mélange contient de l'eau et du sirop dans le rapport 5 : 2. Pour 3,5 litres de mélange, il faut :
 * 1 litre de sirop
 - 1,5 litre de sirop
@@ -516,7 +580,7 @@ Q: Un mélange contient de l'eau et du sirop dans le rapport 5 : 2. Pour 3,5 lit
 C: 1 L de sirop et 2,5 L d'eau.
 E: Le mélange compte $5 + 2 = 7$ parts ; une part vaut $\frac{3{,}5}{7} = 0{,}5$ L. Sirop : $2 \times 0{,}5 = 1$ L.
 
-[CAL-245] pourcentages | intermediate
+[CAL-245] pourcentages | advanced
 Q: Après une hausse de 50 %, de quel pourcentage doit baisser un prix pour revenir à sa valeur initiale ?
 * 33,3 %
 - 50 %
@@ -552,7 +616,7 @@ Q: Les dépenses d'une famille sont : logement 3 000 DH, alimentation 2 500 DH, 
 C: $\frac{3\,000}{8\,000} = 37{,}5\ \%$.
 E: Budget total : $3\,000 + 2\,500 + 1\,000 + 1\,500 = 8\,000$ DH. Part du logement : $\frac{3\,000}{8\,000} = 0{,}375$.
 
-[CAL-249] fractions | advanced
+[CAL-249] fractions | intermediate
 Q: Combien font $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16}$ ?
 * $\frac{15}{16}$
 - $1$
@@ -569,3 +633,213 @@ Q: Un ouvrier gagne 180 DH pour 8 heures de travail. Combien gagne-t-il pour 30 
 - 540 DH
 C: 675 DH.
 E: Salaire horaire : $\frac{180}{8} = 22{,}5$ DH ; pour 30 h : $30 \times 22{,}5 = 675$ DH.
+
+# ---------------------------------------------------------------------------
+# Calcul pratique de niveau collège, comme les tests numériques des concours de
+# recrutement sans bac (agents de secours, mokhaznis, OFPPT) : monnaie, durées,
+# conversions, partages. Questions originales.
+@source src-annales-recrutement
+
+[CAL-301] monnaie | beginner
+Q: Vous payez un achat de 37 DH avec un billet de 100 DH. Combien vous rend-on ?
+* 63 DH
+- 73 DH
+- 67 DH
+- 53 DH
+C: 63 DH.
+E: Rendu : 100 − 37 = 63 DH. Astuce : de 37 à 40, il manque 3 ; de 40 à 100, il manque 60 ; au total 63.
+AR:
+Q: دفعت ثمن مشتريات قيمتها 37 درهمًا بورقة نقدية من فئة 100 درهم. كم يُرَدّ إليك؟
+* 63 درهمًا
+- 73 درهمًا
+- 67 درهمًا
+- 53 درهمًا
+C: 63 درهمًا.
+E: الباقي: 100 − 37 = 63 درهمًا. طريقة سريعة: من 37 إلى 40 تنقص 3، ومن 40 إلى 100 تنقص 60، والمجموع 63.
+
+[CAL-302] durees | beginner
+Q: Un car part à 7 h 45. Le trajet dure 2 h 30. À quelle heure arrive-t-il ?
+* 10 h 15
+- 10 h 45
+- 9 h 15
+- 10 h 05
+C: À 10 h 15.
+E: 7 h 45 + 2 h = 9 h 45, puis 9 h 45 + 30 min = 10 h 15. Quand les minutes dépassent 60, on ajoute une heure.
+AR:
+Q: انطلقت حافلة على الساعة 7 و45 دقيقة، ودامت الرحلة ساعتين ونصفًا. متى وصلت؟
+* على الساعة 10 و15 دقيقة
+- على الساعة 10 و45 دقيقة
+- على الساعة 9 و15 دقيقة
+- على الساعة 10 و5 دقائق
+C: على الساعة 10 و15 دقيقة.
+E: ‏7 و45 د + ساعتان = 9 و45 د، ثم 9 و45 د + 30 د = 10 و15 د. حين تتجاوز الدقائق 60 نضيف ساعة.
+
+[CAL-303] conversions | beginner
+Q: Combien de mètres y a-t-il dans 3,5 km ?
+* 3 500 m
+- 350 m
+- 35 000 m
+- 35 m
+C: 3 500 m.
+E: 1 km = 1 000 m, donc 3,5 km = 3,5 × 1 000 = 3 500 m.
+AR:
+Q: كم مترًا في 3,5 كلم؟
+* 3500 م
+- 350 م
+- 35000 م
+- 35 م
+C: 3500 م.
+E: ‏1 كلم = 1000 م، إذن 3,5 كلم = 3,5 × 1000 = 3500 م.
+
+[CAL-304] conversions | beginner
+Q: Combien de minutes y a-t-il dans 2 heures et quart ?
+* 135
+- 120
+- 125
+- 145
+C: 135 minutes.
+E: 2 h = 120 min et un quart d'heure = 15 min, soit 120 + 15 = 135 minutes.
+AR:
+Q: كم دقيقة في ساعتين وربع؟
+* 135
+- 120
+- 125
+- 145
+C: 135 دقيقة.
+E: ساعتان = 120 دقيقة، وربع ساعة = 15 دقيقة، والمجموع 120 + 15 = 135 دقيقة.
+
+[CAL-305] pourcentages | beginner
+Q: Combien font 10 % de 450 DH ?
+* 45 DH
+- 4,5 DH
+- 40 DH
+- 450 DH
+C: 45 DH.
+E: Prendre 10 %, c'est diviser par 10 : 450 ÷ 10 = 45 DH. Pour 20 %, on double ce résultat (90 DH) ; pour 5 %, on le divise par deux.
+AR:
+Q: كم تساوي 10% من 450 درهمًا؟
+* 45 درهمًا
+- 4,5 دراهم
+- 40 درهمًا
+- 450 درهمًا
+C: 45 درهمًا.
+E: حساب 10% يعني القسمة على 10: ‏450 ÷ 10 = 45 درهمًا. ولحساب 20% نضاعف النتيجة (90 درهمًا)، ولحساب 5% نقسمها على 2.
+
+[CAL-306] partage | beginner
+Q: Un sac de 20 kg de farine est partagé en quatre parts égales. Combien pèse chaque part ?
+* 5 kg
+- 4 kg
+- 8 kg
+- 16 kg
+C: 5 kg.
+E: 20 ÷ 4 = 5 kg. Vérification : 4 parts × 5 kg = 20 kg.
+AR:
+Q: قُسّم كيس دقيق وزنه 20 كلغ إلى أربعة أجزاء متساوية. كم يزن كل جزء؟
+* 5 كلغ
+- 4 كلغ
+- 8 كلغ
+- 16 كلغ
+C: 5 كلغ.
+E: ‏20 ÷ 4 = 5 كلغ. وللتحقق: 4 أجزاء × 5 كلغ = 20 كلغ.
+
+[CAL-307] proportions | beginner
+Q: Un agent travaille 8 heures par jour, 5 jours par semaine. Combien d'heures travaille-t-il par semaine ?
+* 40 heures
+- 13 heures
+- 35 heures
+- 48 heures
+C: 40 heures.
+E: 8 × 5 = 40 heures. Le piège « 13 » vient d'une addition (8 + 5) au lieu d'une multiplication.
+AR:
+Q: يعمل عون 8 ساعات في اليوم، 5 أيام في الأسبوع. كم ساعة يعمل في الأسبوع؟
+* 40 ساعة
+- 13 ساعة
+- 35 ساعة
+- 48 ساعة
+C: 40 ساعة.
+E: ‏8 × 5 = 40 ساعة. والفخ «13» ناتج عن الجمع (8 + 5) بدل الضرب.
+
+[CAL-308] geometrie | beginner
+Q: Un terrain carré mesure 20 m de côté. Quelle longueur de grillage faut-il pour en faire le tour ?
+* 80 m
+- 40 m
+- 400 m
+- 60 m
+C: 80 m.
+E: Le tour d'un carré (son périmètre) vaut 4 × côté = 4 × 20 = 80 m. 400 m² serait son aire, pas son tour.
+AR:
+Q: أرض مربعة الشكل طول ضلعها 20 م. ما طول السياج اللازم لإحاطتها؟
+* 80 م
+- 40 م
+- 400 م
+- 60 م
+C: 80 م.
+E: محيط المربع = 4 × الضلع = 4 × 20 = 80 م. أما 400 م² فهي مساحته وليست محيطه.
+
+[CAL-309] durees | beginner
+Q: Au 1 000 m, un candidat court en 4 min 05 s au premier essai et en 3 min 50 s au second. De combien de temps a-t-il progressé ?
+* 15 secondes
+- 25 secondes
+- 55 secondes
+- 1 minute 15 secondes
+C: 15 secondes.
+E: 4 min 05 s = 245 s et 3 min 50 s = 230 s ; 245 − 230 = 15 s. Convertir en secondes évite les erreurs.
+AR:
+Q: في سباق 1000 م، قطع مترشح المسافة في 4 دقائق و5 ثوانٍ في المحاولة الأولى، وفي 3 دقائق و50 ثانية في الثانية. بكم تحسّن توقيته؟
+* 15 ثانية
+- 25 ثانية
+- 55 ثانية
+- دقيقة و15 ثانية
+C: 15 ثانية.
+E: ‏4 د و5 ث = 245 ث، و3 د و50 ث = 230 ث؛ والفرق 245 − 230 = 15 ث. التحويل إلى الثواني يجنّب الأخطاء.
+
+[CAL-310] proportions | beginner
+Q: Une caisse contient 12 bouteilles d'eau. Combien de bouteilles y a-t-il dans 5 caisses ?
+* 60
+- 17
+- 50
+- 72
+C: 60 bouteilles.
+E: 12 × 5 = 60 bouteilles. Astuce : 10 × 5 = 50 et 2 × 5 = 10, soit 60.
+AR:
+Q: يحتوي صندوق على 12 قنينة ماء. كم قنينة في 5 صناديق؟
+* 60
+- 17
+- 50
+- 72
+C: 60 قنينة.
+E: ‏12 × 5 = 60 قنينة. طريقة سريعة: 10 × 5 = 50 و2 × 5 = 10، والمجموع 60.
+
+[CAL-311] fractions | beginner
+Q: Un réservoir de 50 litres est rempli à moitié. Combien de litres contient-il ?
+* 25 litres
+- 20 litres
+- 50 litres
+- 100 litres
+C: 25 litres.
+E: La moitié de 50, c'est 50 ÷ 2 = 25 litres.
+AR:
+Q: خزان سعته 50 لترًا مملوء إلى النصف. كم لترًا يحتوي؟
+* 25 لترًا
+- 20 لترًا
+- 50 لترًا
+- 100 لتر
+C: 25 لترًا.
+E: نصف 50 هو 50 ÷ 2 = 25 لترًا.
+
+[CAL-312] comparaison | beginner
+Q: Quel est le plus grand nombre : 0,8 ; 0,75 ; 0,09 ; 0,705 ?
+* 0,8
+- 0,75
+- 0,705
+- 0,09
+C: 0,8.
+E: On compare chiffre par chiffre après la virgule : 0,8 = 0,800, plus grand que 0,750 et 0,705. Le nombre de chiffres après la virgule ne dit pas lequel est le plus grand.
+AR:
+Q: ما هو أكبر عدد من بين: 0,8 ؛ 0,75 ؛ 0,09 ؛ 0,705؟
+* 0,8
+- 0,75
+- 0,705
+- 0,09
+C: 0,8.
+E: نقارن الأرقام بعد الفاصلة رقمًا برقم: 0,8 = 0,800، وهو أكبر من 0,750 ومن 0,705. وعدد الأرقام بعد الفاصلة لا يدل على العدد الأكبر.

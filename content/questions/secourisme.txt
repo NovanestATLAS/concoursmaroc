@@ -91,7 +91,7 @@ Q: مصاب لا يستجيب لكنه يتنفس بشكل عادي. ماذا ي
 C: وضعية الأمان الجانبية ثم الإنذار والمراقبة.
 E: تحافظ وضعية الأمان الجانبية على تحرر المسالك التنفسية وتسمح بخروج القيء، ثم تُراقب عملية التنفس في انتظار وصول الإسعاف.
 
-[SEC-006] inconscience | intermediate
+[SEC-006] inconscience | advanced
 Q: Comment libérer les voies aériennes d'une victime inconsciente allongée sur le dos ?
 * Basculer prudemment la tête en arrière et élever le menton
 - Pencher la tête en avant
@@ -125,7 +125,7 @@ Q: مصاب لا يستجيب ولا يتنفس، أو يتنفس بشكل غي�
 C: الإنذار، التدليك القلبي، إزالة الرجفان.
 E: إنها حالة توقف القلب: كل دقيقة دون إنعاش تقلل كثيرًا من فرص النجاة، والضغط على الصدر يحافظ على حد أدنى من الدورة الدموية إلى حين استعمال جهاز إزالة الرجفان.
 
-[SEC-008] rcp | intermediate
+[SEC-008] rcp | advanced
 Q: Chez l'adulte, à quel rythme faut-il réaliser les compressions thoraciques ?
 * 100 à 120 compressions par minute
 - 30 à 40 compressions par minute
@@ -142,7 +142,7 @@ Q: عند الشخص البالغ، ما هو الإيقاع الموصى به �
 C: من 100 إلى 120 ضغطة في الدقيقة.
 E: توصي المعايير الدولية بما بين 100 و120 ضغطة في الدقيقة، مع ترك الصدر يعود إلى وضعه الطبيعي بين كل ضغطتين.
 
-[SEC-009] rcp | intermediate
+[SEC-009] rcp | advanced
 Q: Chez l'adulte, quelle profondeur de compression thoracique est recommandée ?
 * 5 à 6 cm
 - 1 à 2 cm
@@ -159,7 +159,7 @@ Q: عند الشخص البالغ، ما هو عمق الضغط على الصد�
 C: من 5 إلى 6 سنتيمترات.
 E: نضغط في وسط الصدر بذراعين ممدودتين وبباطن اليدين، والمصاب ممدد على سطح صلب.
 
-[SEC-010] rcp | intermediate
+[SEC-010] rcp | advanced
 Q: Pour la réanimation d'un adulte par un secouriste formé, quel est le rapport compressions/insufflations ?
 * 30 compressions pour 2 insufflations
 - 15 compressions pour 1 insufflation
@@ -176,7 +176,7 @@ Q: في إنعاش شخص بالغ من طرف مسعف مكوَّن، ما هي
 C: 30 ضغطة مقابل نفختين.
 E: يتناوب المسعف المكوَّن بين 30 ضغطة ونفختين، أما الشخص غير المكوَّن فيمكنه الاكتفاء بالضغط المتواصل على الصدر.
 
-[SEC-011] rcp | beginner
+[SEC-011] rcp | intermediate
 Q: Où place-t-on les mains pour les compressions thoraciques chez l'adulte ?
 * Au centre de la poitrine, sur la moitié inférieure du sternum
 - Sur le ventre, au niveau du nombril
@@ -210,7 +210,7 @@ Q: ما فائدة جهاز إزالة الرجفان الآلي الخارجي�
 C: تحليل نظم القلب وإعطاء صدمة عند الحاجة.
 E: يوجه الجهاز المستعمل بالصوت ولا يعطي الصدمة إلا إذا رصد نظمًا قلبيًا يستدعيها، ويمكن لأي شخص استعماله.
 
-[SEC-013] defibrillateur | intermediate
+[SEC-013] defibrillateur | advanced
 Q: Pendant que le défibrillateur analyse le rythme cardiaque ou délivre un choc, il faut :
 * Ne pas toucher la victime
 - Continuer à la secouer
@@ -295,7 +295,7 @@ Q: اشتعلت النار في ملابس شخص. ماذا يجب فعله؟
 C: مدّه على الأرض وإخماد اللهب.
 E: الجري يزيد من اشتعال اللهب. نخمد النار بغطاء من الصوف أو القطن (وليس من نسيج اصطناعي) أو بجعل المصاب يتدحرج على الأرض، ثم نبرد الحرق.
 
-[SEC-018] etouffement | intermediate
+[SEC-018] etouffement | advanced
 Q: Un adulte s'étouffe : il ne peut plus parler, ni tousser, ni respirer. Quel est le premier geste ?
 * Donner jusqu'à 5 claques vigoureuses dans le dos, entre les omoplates
 - Lui donner à boire
@@ -329,7 +329,7 @@ Q: شخص يختنق لكنه ما زال قادرًا على السعال وا�
 C: تشجيعه على السعال.
 E: السعال هو أنجع وسيلة لطرد الجسم الغريب، أما الضربات على الظهر والضغط على البطن فخاصة بالانسداد الكلي.
 
-[SEC-020] etouffement | intermediate
+[SEC-020] etouffement | advanced
 Q: La méthode de Heimlich consiste à :
 * Réaliser des compressions abdominales, poing au creux de l'estomac, en tirant vers soi et vers le haut
 - Souffler dans la bouche de la victime
@@ -465,7 +465,7 @@ Q: لماذا لا يجب أبدًا صب الماء على زيت الطهي ا
 C: خطر قذف الزيت المشتعل بقوة.
 E: يجب إطفاء مصدر الحرارة (الغاز أو الصفيحة الكهربائية)، وتغطية الإناء بغطاء أو بقطعة قماش مبللة جيدة العصر لخنق اللهب، وعدم تحريكه.
 
-[SEC-028] incendie | intermediate
+[SEC-028] incendie | advanced
 Q: Quel extincteur est adapté à un feu d'origine électrique ?
 * Un extincteur à dioxyde de carbone (CO₂)
 - Un extincteur à eau en jet plein
@@ -516,7 +516,7 @@ Q: إذا حاصرنا حريق داخل غرفة، يجب:
 C: الإغلاق، وسد الفتحات، وإثارة الانتباه.
 E: الباب المغلق يؤخر انتشار النار والدخان، ولا يجب أبدًا استعمال المصعد أثناء الحريق.
 
-[SEC-031] intoxication | intermediate
+[SEC-031] intoxication | advanced
 Q: Quels signes doivent faire penser à une intoxication au monoxyde de carbone (chauffe-eau à gaz, brasero) ?
 * Maux de tête, nausées et vertiges touchant plusieurs personnes d'un même lieu
 - Une forte odeur d'œuf pourri
@@ -567,7 +567,7 @@ Q: شخص أُخرج من الماء فاقدًا للوعي ولا يتنفس. 
 C: الإنذار والإنعاش.
 E: عند الغريق يتوقف القلب بسبب نقص الأكسجين، لذلك يبدأ المسعفون المكوَّنون بخمس نفخات قبل الضغط على الصدر. ولا يجب أبدًا إضاعة الوقت في محاولة إخراج الماء.
 
-[SEC-034] chaleur | intermediate
+[SEC-034] chaleur | advanced
 Q: Une personne a la peau chaude, une température très élevée et elle est confuse après une exposition à la chaleur. Que faire ?
 * La mettre au frais, la rafraîchir et alerter : c'est un coup de chaleur
 - La couvrir chaudement

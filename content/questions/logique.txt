@@ -7,7 +7,7 @@
 # sessions 2025-2026 ; valeurs, textes et énoncés réécrits.
 @source src-annales-ecoles
 
-[LOG-101] raisonnement | beginner
+[LOG-101] raisonnement | intermediate
 Q: Un escargot veut atteindre le haut d'un mur de 12 mètres. Chaque jour il monte de 4 mètres, et chaque nuit il glisse de 3 mètres. Il part un matin du pied du mur. Quel jour atteint-il le sommet ?
 * Le 9e jour
 - Le 12e jour
@@ -24,8 +24,16 @@ Q: Quel nombre complète la suite : 100 ; 98 ; 94 ; 88 ; 80 ; … ?
 - 75
 C: 70.
 E: Les écarts successifs sont 2, 4, 6, 8 : le suivant est 10, donc $80 - 10 = 70$.
+AR:
+Q: ما العدد الذي يكمل المتتالية: 100 ؛ 98 ؛ 94 ؛ 88 ؛ 80 ؛ …؟
+* 70
+- 72
+- 68
+- 75
+C: 70.
+E: الفروق المتتالية هي 2 ثم 4 ثم 6 ثم 8، فالفرق الموالي 10، إذن 80 − 10 = 70.
 
-[LOG-103] raisonnement | beginner
+[LOG-103] raisonnement | advanced
 Q: Dans un jardin, des enfants jouent avec des chiens. On compte 20 têtes et 56 pattes et jambes. Combien y a-t-il d'enfants et de chiens ?
 * 12 enfants et 8 chiens
 - 8 enfants et 12 chiens
@@ -34,7 +42,7 @@ Q: Dans un jardin, des enfants jouent avec des chiens. On compte 20 têtes et 56
 C: 12 enfants et 8 chiens.
 E: Si les 20 étaient des enfants, on aurait 40 jambes. Chaque chien ajoute 2 pattes : $\frac{56 - 40}{2} = 8$ chiens, donc 12 enfants. Vérification : $12 \times 2 + 8 \times 4 = 56$.
 
-[LOG-104] raisonnement | intermediate
+[LOG-104] raisonnement | advanced
 Q: Karim repeint un appartement en 4 jours ; Sami ferait le même travail en 12 jours. En travaillant ensemble, combien de jours leur faut-il ?
 * 3 jours
 - 8 jours
@@ -43,7 +51,7 @@ Q: Karim repeint un appartement en 4 jours ; Sami ferait le même travail en 12 
 C: 3 jours.
 E: En un jour, Karim fait $\frac{1}{4}$ du travail et Sami $\frac{1}{12}$ : ensemble $\frac{1}{4} + \frac{1}{12} = \frac{3 + 1}{12} = \frac{1}{3}$. Il leur faut donc 3 jours. La moyenne des deux durées (8 jours) est un piège.
 
-[LOG-105] raisonnement | intermediate
+[LOG-105] raisonnement | advanced
 Q: Dans une classe de 40 élèves, 22 aiment les mathématiques, 18 aiment la physique et 7 aiment les deux matières. Combien d'élèves n'aiment aucune des deux ?
 * 7
 - 0
@@ -52,7 +60,7 @@ Q: Dans une classe de 40 élèves, 22 aiment les mathématiques, 18 aiment la ph
 C: 7 élèves.
 E: Nombre d'élèves qui aiment au moins une matière : $22 + 18 - 7 = 33$ (on retire ceux comptés deux fois). Il en reste $40 - 33 = 7$.
 
-[LOG-106] raisonnement | intermediate
+[LOG-106] raisonnement | advanced
 Q: Un père a trois fois l'âge de son fils. Dans 12 ans, il n'aura plus que le double de l'âge de son fils. Quel est l'âge actuel du fils ?
 * 12 ans
 - 6 ans
@@ -61,7 +69,7 @@ Q: Un père a trois fois l'âge de son fils. Dans 12 ans, il n'aura plus que le 
 C: 12 ans (le père a 36 ans).
 E: Avec $P = 3F$ et $P + 12 = 2(F + 12)$ : $3F + 12 = 2F + 24$, donc $F = 12$ et $P = 36$. Dans 12 ans : 48 et 24 ans.
 
-[LOG-107] raisonnement | beginner
+[LOG-107] raisonnement | intermediate
 Q: Un tiroir contient, en vrac, des chaussettes de 4 couleurs différentes. Dans le noir, combien faut-il en prendre au minimum pour être sûr d'avoir deux chaussettes de la même couleur ?
 * 5
 - 2
@@ -70,7 +78,7 @@ Q: Un tiroir contient, en vrac, des chaussettes de 4 couleurs différentes. Dans
 C: 5 chaussettes.
 E: Avec 4 chaussettes, on peut tomber sur 4 couleurs différentes. La cinquième est forcément d'une couleur déjà tirée (principe des tiroirs).
 
-[LOG-108] deduction | intermediate
+[LOG-108] deduction | advanced
 Q: « Il est faux que les prix aient augmenté et que la qualité ait baissé. » Cet énoncé est équivalent à :
 * Les prix n'ont pas augmenté ou la qualité n'a pas baissé
 - Les prix n'ont pas augmenté et la qualité n'a pas baissé
@@ -79,7 +87,7 @@ Q: « Il est faux que les prix aient augmenté et que la qualité ait baissé. �
 C: non (A et B) = (non A) ou (non B).
 E: D'après les lois de De Morgan, nier « A et B » revient à affirmer « non A ou non B » : au moins l'une des deux affirmations est fausse. La deuxième proposition est trop forte, car elle exige que les deux soient fausses.
 
-[LOG-109] deduction | beginner
+[LOG-109] deduction | intermediate
 Q: Quelle est la négation de la phrase « Tous les candidats ont réussi l'examen » ?
 * Au moins un candidat n'a pas réussi l'examen
 - Aucun candidat n'a réussi l'examen
@@ -88,7 +96,7 @@ Q: Quelle est la négation de la phrase « Tous les candidats ont réussi l'exam
 C: « Il existe un candidat qui n'a pas réussi ».
 E: La négation de « pour tout » est « il existe… ne… pas ». Il suffit d'un seul échec pour que la phrase de départ soit fausse ; « aucun n'a réussi » est une affirmation beaucoup plus forte.
 
-[LOG-110] raisonnement | intermediate
+[LOG-110] raisonnement | advanced
 Q: Pour une sortie, si l'on place 40 élèves par car, 10 élèves restent sans place ; si l'on en place 45 par car, il reste 5 places libres. Combien y a-t-il de cars et d'élèves ?
 * 3 cars et 130 élèves
 - 2 cars et 90 élèves
@@ -106,7 +114,7 @@ Q: Un cadenas a un code de 3 chiffres. Indices : 682 : un chiffre est bon et bie
 C: 042.
 E: 738 élimine 7, 3 et 8. Avec 780, le 0 est bon mais pas en 3e position ; dans 206 il est mal placé, donc pas en 2e : il est en 1re position. Dans 682, un seul chiffre est bon et bien placé : ce ne peut pas être le 6 (la 1re place est prise par 0), c'est donc le 2, en 3e position, et le 6 est absent. Dans 614, le chiffre bon et mal placé est 1 ou 4 ; le 1 y est en 2e position, il serait bien placé : c'est donc le 4, qui va en 2e position. Code : 042.
 
-[LOG-112] raisonnement | intermediate
+[LOG-112] raisonnement | advanced
 Q: Deux trains partent en même temps de deux villes distantes de 300 km et roulent l'un vers l'autre à 70 km/h et 80 km/h. Un oiseau vole à 200 km/h d'un train à l'autre sans s'arrêter jusqu'à leur croisement. Quelle distance l'oiseau parcourt-il ?
 * 400 km
 - 300 km
@@ -115,7 +123,7 @@ Q: Deux trains partent en même temps de deux villes distantes de 300 km et roul
 C: 400 km.
 E: Inutile de suivre les allers-retours : les trains se rapprochent de $70 + 80 = 150$ km par heure et se croisent au bout de $\frac{300}{150} = 2$ h. L'oiseau vole pendant 2 h à 200 km/h, soit 400 km.
 
-[LOG-113] raisonnement | intermediate
+[LOG-113] raisonnement | advanced
 Q: Une voiture fait l'aller à 60 km/h et le retour, sur le même trajet, à 40 km/h. Sa vitesse moyenne sur l'aller-retour est :
 * 48 km/h
 - 50 km/h
@@ -124,7 +132,7 @@ Q: Une voiture fait l'aller à 60 km/h et le retour, sur le même trajet, à 40 
 C: 48 km/h.
 E: Pour une distance $d$ : durée totale $\frac{d}{60} + \frac{d}{40} = \frac{5d}{120} = \frac{d}{24}$. Vitesse moyenne : $\frac{2d}{d/24} = 48$ km/h. La moyenne des vitesses (50 km/h) est fausse, car la voiture roule plus longtemps à 40 km/h.
 
-[LOG-114] spatio-temporel | intermediate
+[LOG-114] spatio-temporel | advanced
 Q: Quel angle forment les aiguilles d'une montre à 3 h 30 ?
 * 75°
 - 90°
@@ -142,7 +150,7 @@ Q: Quelle lettre complète la suite : A, C, F, J, O, … ?
 C: U.
 E: Rangs dans l'alphabet : 1, 3, 6, 10, 15 ; les écarts augmentent de 1 (+2, +3, +4, +5). Le suivant est $15 + 6 = 21$, c'est-à-dire U.
 
-[LOG-116] raisonnement | intermediate
+[LOG-116] raisonnement | advanced
 Q: Combien de fois le chiffre 7 apparaît-il quand on écrit tous les nombres entiers de 1 à 100 ?
 * 20
 - 10
@@ -159,8 +167,16 @@ Q: Quel est l'intrus : 16 ; 25 ; 36 ; 49 ; 63 ?
 - 49
 C: 63.
 E: 16, 25, 36 et 49 sont des carrés parfaits ($4^2$, $5^2$, $6^2$, $7^2$). 63 n'en est pas un ($8^2 = 64$).
+AR:
+Q: ما العدد الدخيل: 16 ؛ 25 ؛ 36 ؛ 49 ؛ 63؟
+* 63
+- 16
+- 25
+- 49
+C: 63.
+E: الأعداد 16 و25 و36 و49 مربعات كاملة (4² و5² و6² و7²)، أما 63 فليس مربعًا كاملًا (8² = 64).
 
-[LOG-118] raisonnement | intermediate
+[LOG-118] raisonnement | advanced
 Q: Si 4 machines fabriquent 4 pièces en 4 minutes, combien de minutes faut-il à 8 machines pour fabriquer 8 pièces ?
 * 4
 - 8
@@ -218,6 +234,14 @@ Q: Quel nombre complète la suite : 3 ; 6 ; 12 ; 24 ; … ?
 - 42
 C: 48 (chaque terme est doublé).
 E: Suite géométrique de raison 2 : $24 \times 2 = 48$.
+AR:
+Q: ما العدد الذي يكمل المتتالية: 3 ؛ 6 ؛ 12 ؛ 24 ؛ …؟
+* 48
+- 36
+- 30
+- 42
+C: 48 (كل حد يُضاعف).
+E: كل عدد يساوي ضعف العدد الذي قبله: 24 × 2 = 48.
 
 [LOG-202] suites | beginner
 Q: Quel nombre complète la suite : 1 ; 4 ; 9 ; 16 ; 25 ; … ?
@@ -227,6 +251,14 @@ Q: Quel nombre complète la suite : 1 ; 4 ; 9 ; 16 ; 25 ; … ?
 - 49
 C: 36.
 E: Ce sont les carrés des entiers : $1^2, 2^2, 3^2, 4^2, 5^2$, puis $6^2 = 36$.
+AR:
+Q: ما العدد الذي يكمل المتتالية: 1 ؛ 4 ؛ 9 ؛ 16 ؛ 25 ؛ …؟
+* 36
+- 30
+- 35
+- 49
+C: 36.
+E: هذه مربعات الأعداد: 1² و2² و3² و4² و5²، ثم 6² = 36.
 
 [LOG-203] suites | intermediate
 Q: Quel nombre complète la suite : 1 ; 1 ; 2 ; 3 ; 5 ; 8 ; 13 ; … ?
@@ -299,6 +331,14 @@ Q: Quelle lettre complète la suite : B, D, F, H, … ?
 - L
 C: J.
 E: On saute une lettre à chaque fois (rangs 2, 4, 6, 8, puis 10) : J.
+AR:
+Q: ما الحرف الذي يكمل المتتالية: B، D، F، H، …؟
+* J
+- I
+- K
+- L
+C: J.
+E: نقفز على حرف في كل مرة (الرتب 2 و4 و6 و8، ثم 10): J.
 
 [LOG-211] series-lettres | intermediate
 Q: Quel groupe complète la suite : AZ, BY, CX, DW, … ?
@@ -335,6 +375,14 @@ Q: Médecin est à hôpital ce que professeur est à :
 - Cours
 C: École (lieu de travail).
 E: L'analogie relie une profession à son lieu d'exercice : le médecin travaille à l'hôpital, le professeur à l'école.
+AR:
+Q: الطبيب بالنسبة إلى المستشفى كالأستاذ بالنسبة إلى:
+* المدرسة
+- التلميذ
+- الكتاب
+- الدرس
+C: المدرسة (مكان العمل).
+E: تربط هذه العلاقة بين المهنة ومكان ممارستها: الطبيب يعمل في المستشفى، والأستاذ في المدرسة.
 
 [LOG-215] analogies | beginner
 Q: Pied est à chaussure ce que main est à :
@@ -344,6 +392,14 @@ Q: Pied est à chaussure ce que main est à :
 - Bague
 C: Gant.
 E: La chaussure couvre et protège le pied ; le gant couvre et protège la main.
+AR:
+Q: القدم بالنسبة إلى الحذاء كاليد بالنسبة إلى:
+* القفاز
+- الإصبع
+- الذراع
+- الخاتم
+C: القفاز.
+E: الحذاء يغطي القدم ويحميها، والقفاز يغطي اليد ويحميها.
 
 [LOG-216] analogies | intermediate
 Q: 3 est à 27 ce que 4 est à :
@@ -371,6 +427,14 @@ Q: Quel est l'intrus : Rabat, Fès, Marrakech, Séville, Meknès ?
 - Meknès
 C: Séville (ville espagnole).
 E: Rabat, Fès, Marrakech et Meknès sont les villes impériales du Maroc ; Séville est en Espagne.
+AR:
+Q: ما الدخيل: الرباط، فاس، مراكش، إشبيلية، مكناس؟
+* إشبيلية
+- الرباط
+- فاس
+- مكناس
+C: إشبيلية (مدينة إسبانية).
+E: الرباط وفاس ومراكش ومكناس هي المدن الإمبراطورية في المغرب، أما إشبيلية ففي إسبانيا.
 
 [LOG-219] intrus | intermediate
 Q: Quel est l'intrus : 121 ; 144 ; 169 ; 186 ; 196 ?
@@ -416,6 +480,14 @@ Q: Tous les élèves de la classe sont inscrits au club de lecture. Sara est dan
 - Aucune conclusion n'est possible
 C: Sara est inscrite.
 E: Si tous les éléments d'un ensemble ont une propriété, chacun de ses éléments l'a aussi. En revanche, on ne sait rien des inscrits qui ne sont pas dans la classe.
+AR:
+Q: جميع تلاميذ القسم مسجلون في نادي القراءة. سارة في هذا القسم. يمكن أن نؤكد أن:
+* سارة مسجلة في نادي القراءة
+- جميع المسجلين في النادي هم من هذا القسم
+- سارة لا تحب القراءة
+- لا يمكن استنتاج أي شيء
+C: سارة مسجلة في النادي.
+E: إذا كانت لجميع عناصر مجموعة خاصية ما، فإن كل عنصر منها له هذه الخاصية. لكننا لا نعرف شيئًا عن المسجلين الذين ليسوا من القسم.
 
 [LOG-224] deduction | intermediate
 Q: « S'il pleut, la route est mouillée. » La route est sèche. On peut conclure que :
@@ -480,7 +552,7 @@ Q: Si ROSE = 6821 et SEL = 214 (avec le même code), alors ORSE s'écrit :
 C: 8621.
 E: Le code donne R = 6, O = 8, S = 2, E = 1 (et L = 4). ORSE s'écrit donc O-R-S-E = 8-6-2-1.
 
-[LOG-231] raisonnement | intermediate
+[LOG-231] raisonnement | advanced
 Q: Dans une ferme, il y a des poules et des moutons : 30 têtes et 84 pattes. Combien y a-t-il de moutons ?
 * 12
 - 18
@@ -498,7 +570,7 @@ Q: La somme des âges d'une mère et de sa fille est 50 ans. La mère a 26 ans d
 C: 12 ans (la mère a 38 ans).
 E: $f + (f + 26) = 50$, soit $2f = 24$ et $f = 12$.
 
-[LOG-233] raisonnement | intermediate
+[LOG-233] raisonnement | advanced
 Q: Un robinet remplit une cuve en 3 heures ; un second la remplit en 6 heures. Ensemble, ils la remplissent en :
 * 2 heures
 - 4 h 30
@@ -570,7 +642,7 @@ Q: Combien de carrés de toutes tailles compte une grille de 3 × 3 petits carr�
 C: 14.
 E: 9 carrés de 1 × 1, 4 carrés de 2 × 2 et 1 carré de 3 × 3 : $9 + 4 + 1 = 14$.
 
-[LOG-241] spatio-temporel | intermediate
+[LOG-241] spatio-temporel | advanced
 Q: Un cube de 3 cm d'arête, peint en rouge sur toutes ses faces, est découpé en 27 petits cubes de 1 cm. Combien de petits cubes ont exactement deux faces peintes ?
 * 12
 - 8
@@ -615,7 +687,7 @@ Q: Un nénuphar double de surface chaque jour et couvre tout l'étang en 30 jour
 C: 29 jours.
 E: La surface double chaque jour : la veille du 30e jour, elle était la moitié de la surface finale.
 
-[LOG-246] raisonnement | intermediate
+[LOG-246] raisonnement | advanced
 Q: Dans un groupe de 25 étudiants, 15 parlent anglais, 12 parlent espagnol et 4 ne parlent aucune des deux langues. Combien parlent les deux langues ?
 * 6
 - 2
@@ -642,7 +714,7 @@ Q: Complétez : 2 → 5 ; 3 → 10 ; 4 → 17 ; 5 → …
 C: 26.
 E: Chaque nombre $n$ est associé à $n^2 + 1$ : $5^2 + 1 = 26$.
 
-[LOG-249] raisonnement | intermediate
+[LOG-249] raisonnement | advanced
 Q: Si 5 machines fabriquent 5 objets en 5 minutes, combien de machines faut-il pour fabriquer 100 objets en 100 minutes ?
 * 5
 - 100

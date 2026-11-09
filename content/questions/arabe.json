@@ -201,7 +201,7 @@
    "id": "CM-ARA-006",
    "category": "arabe",
    "subcategory": "نحو",
-   "difficulty": "advanced",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -239,7 +239,7 @@
    "id": "CM-ARA-007",
    "category": "arabe",
    "subcategory": "نحو",
-   "difficulty": "advanced",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -315,7 +315,7 @@
    "id": "CM-ARA-009",
    "category": "arabe",
    "subcategory": "نحو",
-   "difficulty": "advanced",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -429,7 +429,7 @@
    "id": "CM-ARA-012",
    "category": "arabe",
    "subcategory": "نحو",
-   "difficulty": "advanced",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -657,7 +657,7 @@
    "id": "CM-ARA-018",
    "category": "arabe",
    "subcategory": "صرف",
-   "difficulty": "advanced",
+   "difficulty": "beginner",
    "exams": [
     "police",
     "gendarmerie",
@@ -695,7 +695,7 @@
    "id": "CM-ARA-019",
    "category": "arabe",
    "subcategory": "صرف",
-   "difficulty": "advanced",
+   "difficulty": "beginner",
    "exams": [
     "police",
     "gendarmerie",
@@ -847,7 +847,7 @@
    "id": "CM-ARA-023",
    "category": "arabe",
    "subcategory": "صرف",
-   "difficulty": "advanced",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -1379,7 +1379,7 @@
    "id": "CM-ARA-037",
    "category": "arabe",
    "subcategory": "مفردات",
-   "difficulty": "beginner",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -1645,7 +1645,7 @@
    "id": "CM-ARA-044",
    "category": "arabe",
    "subcategory": "مفردات",
-   "difficulty": "beginner",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -2215,7 +2215,7 @@
    "id": "CM-ARA-059",
    "category": "arabe",
    "subcategory": "صرف",
-   "difficulty": "advanced",
+   "difficulty": "intermediate",
    "exams": [
     "police",
     "gendarmerie",
@@ -2253,7 +2253,7 @@
    "id": "CM-ARA-060",
    "category": "arabe",
    "subcategory": "إملاء",
-   "difficulty": "advanced",
+   "difficulty": "beginner",
    "exams": [
     "police",
     "gendarmerie",

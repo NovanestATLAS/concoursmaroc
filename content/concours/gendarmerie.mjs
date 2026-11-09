@@ -10,9 +10,11 @@ export default {
   age: { min: 18, max: 24, ref: '09-01', at: { fr: 'au 1er septembre de l’année du concours', ar: 'في فاتح شتنبر من سنة المباراة' } },
   height: { m: 1.70, f: 1.68 },
   practice: {
-    subjects: ['maroc', 'logique', 'calcul', 'francais', 'arabe', 'secourisme', 'culture', 'securite'],
-    mock: { minutes: 45, sections: [{ subjects: ['logique'], count: 15 }, { subjects: ['maroc', 'culture', 'securite'], count: 10 }, { subjects: ['calcul'], count: 5 }, { subjects: ['arabe', 'francais'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
-    difficulty: 'standard',
+    // Selection on the bac average, then medical, psychological and sports tests:
+    // no written knowledge exam, so the mock exam is a psychotechnical test.
+    subjects: ['logique', 'calcul', 'maroc', 'culture', 'securite', 'arabe', 'francais'],
+    mock: { minutes: 30, sections: [{ subjects: ['logique'], count: 20 }, { subjects: ['calcul'], count: 10 }], scoring: { correct: 1, wrong: 0, blank: 0 }, official: false },
+    difficulty: 'accessible',
   },
   related: ['police-dgsn', 'forces-auxiliaires', 'arm', 'protection-civile'],
   official: [{ label: 'Portail de recrutement de la Gendarmerie Royale', url: 'https://recrutement.gr.ma' }],
@@ -32,7 +34,7 @@ export default {
     facts: [['Postes 2026', '1 500 (relayé)'], ['Bac', '2025 ou 2026, toutes séries'], ['Âge', '18 à 24 ans au 1er septembre'], ['Taille', '1,70 m (hommes) · 1,68 m (femmes) selon les sources'], ['Préinscription 2026', '25 mars – 15 avril 2026 (relayé)']],
     sections: [
       { id: 'conditions', h: 'Conditions', blocks: [ { ul: ['Nationalité marocaine, **célibataire**, sans antécédents judiciaires, aptitude physique.', '**18 à 24 ans au 1er septembre** de l’année du concours.', 'Baccalauréat **de l’année ou de l’année précédente**, toutes séries.', 'Taille minimale relayée : **1,70 m** pour les hommes et **1,68 m** pour les femmes (à vérifier dans l’avis).'] } ] },
-      { id: 'epreuves', h: 'Sélection', blocks: [ { steps: ['Préinscription en ligne et **présélection sur la moyenne du bac**.', '**Visite médicale**.', '**Tests psychotechniques** (logique, attention, mémoire).', '**Épreuves sportives**.', 'Entretien et enquête administrative selon l’avis.'] }, { practice: true } ] },
+      { id: 'epreuves', h: 'Sélection', blocks: [ { steps: ['Préinscription en ligne et **présélection sur la moyenne du bac** par une commission.', '**Visite médicale**, **tests psychologiques** et **épreuves sportives** pour les candidats retenus, convoqués par e-mail.', 'Les admis rejoignent les centres de formation de la Gendarmerie.'] }, { callout: 'info', text: "L'avis 2026 ne prévoit pas d'écrit de connaissances : les tests psychologiques évaluent le raisonnement, l'attention et le profil. Entraînez-vous surtout à la logique et au calcul mental ; le secourisme et le métier de gendarme s'apprennent en formation." }, { practice: true } ] },
       { id: 'officiers', h: 'Et pour devenir officier ?', blocks: [ { p: "Les officiers de la Gendarmerie sont formés à partir de cursus militaires d'officiers (voir l'[ARM](@/concours/arm/)) ou de recrutements spécifiques de diplômés annoncés par le portail officiel." } ] },
     ],
     faq: [ { q: 'Quel âge pour être gendarme ?', a: 'De 18 à 24 ans au 1er septembre de l’année du concours, selon les conditions relayées pour 2026.' } ],
@@ -47,7 +49,7 @@ export default {
     facts: [['المناصب 2026', '1500 (متداول)'], ['البكالوريا', '2025 أو 2026، جميع الشعب'], ['السن', 'من 18 إلى 24 سنة في فاتح شتنبر'], ['القامة', '1.70 م (الذكور) · 1.68 م (الإناث) حسب المصادر'], ['التسجيل القبلي 2026', '25 مارس – 15 أبريل 2026 (متداول)']],
     sections: [
       { id: 'conditions', h: 'الشروط', blocks: [ { ul: ['الجنسية المغربية، **أعزب/عزباء**، بدون سوابق قضائية، الأهلية البدنية.', '**من 18 إلى 24 سنة في فاتح شتنبر** من سنة المباراة.', 'بكالوريا **السنة الجارية أو السنة السابقة**، جميع الشعب.', 'القامة الدنيا المتداولة: **1.70 م** للذكور و**1.68 م** للإناث (يجب التحقق منها في الإعلان).'] } ] },
-      { id: 'epreuves', h: 'الانتقاء', blocks: [ { steps: ['التسجيل القبلي عبر الإنترنت و**الانتقاء الأولي على معدل البكالوريا**.', '**الفحص الطبي**.', '**الاختبارات السيكوتقنية** (المنطق، الانتباه، الذاكرة).', '**الاختبارات الرياضية**.', 'مقابلة وبحث إداري حسب الإعلان.'] }, { practice: true } ] },
+      { id: 'epreuves', h: 'الانتقاء', blocks: [ { steps: ['التسجيل القبلي عبر الإنترنت و**انتقاء أولي على معدل البكالوريا** من طرف لجنة.', '**الفحص الطبي** و**الاختبارات النفسية** و**الاختبارات الرياضية** للمترشحين المقبولين، باستدعاء عبر البريد الإلكتروني.', 'يلتحق الناجحون بمراكز التكوين التابعة للدرك.'] }, { callout: 'info', text: 'لا يتضمن إعلان 2026 اختبارًا كتابيًا في المعارف: تقيس الاختبارات النفسية الاستدلال والانتباه والشخصية. تدرّب أساسًا على المنطق والحساب الذهني؛ أما الإسعاف ومهنة الدركي فيُكتسبان خلال التكوين.' }, { practice: true } ] },
       { id: 'officiers', h: 'وماذا عن ولوج سلك الضباط؟', blocks: [ { p: 'يتم تكوين ضباط الدرك انطلاقًا من مسارات الضباط العسكرية (انظر [الأكاديمية الملكية العسكرية](@/concours/arm/)) أو عبر عمليات توظيف خاصة بحاملي الشهادات يُعلن عنها في البوابة الرسمية.' } ] },
     ],
     faq: [ { q: 'ما هو السن المطلوب لتصبح دركيًا؟', a: 'من 18 إلى 24 سنة في فاتح شتنبر من سنة المباراة، حسب الشروط المتداولة لسنة 2026.' } ],
