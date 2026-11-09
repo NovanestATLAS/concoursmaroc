@@ -1,7 +1,7 @@
 {
  "format": 1,
  "shell": 1,
- "version": "2026-11-09-5003f0eb",
+ "version": "2026-11-09-186c2d28",
  "updated": "2026-11-09",
  "needs": [
   "js/annuaire.js",
@@ -17,9 +17,9 @@
  ],
  "packs": {
   "core": {
-   "file": "packs/core.28bc13e2e14b.json",
-   "sha256": "28bc13e2e14bbc4ca059f5a84971e75026cf96b97895b82b68f5f777f9e9a0b2",
-   "bytes": 784109,
+   "file": "packs/core.94ec33cc6871.json",
+   "sha256": "94ec33cc68714b68b1a13f1c11483ea554d7e54e311bb4775bac416076ed270a",
+   "bytes": 784468,
    "files": 8,
    "prefixes": [
     "data/",
@@ -36,18 +36,18 @@
    ]
   },
   "pages-fr": {
-   "file": "packs/pages-fr.aab418eed589.json",
-   "sha256": "aab418eed58980f6ce839542564d101fae5b3edacab2b3c3f96647278fe9fd3c",
-   "bytes": 2299429,
+   "file": "packs/pages-fr.9fbd3ee73a10.json",
+   "sha256": "9fbd3ee73a10ec5e263a4a9e9424bd34bb735040dcd641496c421456e09cadcc",
+   "bytes": 2302252,
    "files": 78,
    "prefixes": [
     "pages/"
    ]
   },
   "pages-ar": {
-   "file": "packs/pages-ar.be3a6e4f2709.json",
-   "sha256": "be3a6e4f270923dfc230b507aecda72c30e41adf5127c00029b1630cdce8ca24",
-   "bytes": 1300757,
+   "file": "packs/pages-ar.9a2fbcaf476b.json",
+   "sha256": "9a2fbcaf476b84cc86cc0fb816a5ca6991cb37869e673d18870e6e921053fca8",
+   "bytes": 1303580,
    "files": 67,
    "prefixes": [
     "pages/ar/"

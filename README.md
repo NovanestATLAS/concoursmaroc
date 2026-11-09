@@ -146,6 +146,31 @@ AdSense est configuré avec `ca-pub-3709043100488694`. Après validation du site
 automatiques dans AdSense, ainsi que le message de consentement (Confidentialité et messages → Réglementations
 européennes) pour les visiteurs de l'Espace économique européen, du Royaume-Uni et de la Suisse.
 
+### Monetag (site uniquement)
+
+`monetag` dans `content/site.mjs` : collez la balise de vérification et les balises des deux zones,
+**In-Page Push** et **Vignette Banner**, telles que le tableau de bord Monetag les donne (les trois styles de
+balise sont lus par `scripts/lib/monetag.mjs`). Vide = rien n’est chargé. Jamais de MultiTag (il inclut OnClick
+et Push Notifications), d’OnClick/Popunder, de Direct Link ni de Push Notifications : le build refuse une
+balise qui installe un service worker. Pour la vérification, choisir « Insert code » (balise meta), **jamais le
+fichier `sw.js`** : il remplacerait `docs/sw.js` et casserait les alertes concours.
+
+Règles appliquées dans le navigateur (vérifiées avec Playwright) :
+- la vignette jamais sur la première page d’une visite (le visiteur venu de Google lit d’abord la page),
+  puis au plus une fois toutes les `vignetteHours` (12 h) par navigateur ;
+- un seul format Monetag par page vue ; sans localStorage/sessionStorage, aucune annonce Monetag ;
+- In-Page Push sur téléphone seulement (≤ 920 px) : Monetag l’affiche en haut de l’écran, sur les boutons de
+  l’en-tête ; sur ordinateur il serait en haut à droite, sur le bouton « Télécharger l’app ». Jamais quand la
+  bannière Android (bouton Installer) est affichée en haut de la page ;
+- aucune annonce Monetag sur l’entraînement, le simulateur QCM, la page de l’application, contact, sources,
+  à propos, mentions légales, confidentialité, 404 et hors ligne ;
+- les liens officiels (`data-cta="official"`) et les liens Google Play ne déclenchent pas de vignette AdSense
+  et gardent un espace libre autour d’eux si AdSense place une annonce à côté.
+
+Dans le tableau de bord Monetag : bloquer les catégories adulte, jeux d’argent, paris et les fausses alertes
+« nettoyage/virus » (ou les signaler au support si l’option n’apparaît pas), et dans AdSense désactiver les
+vignettes des annonces automatiques pour ne jamais avoir deux annonces plein écran.
+
 ## Application Android (Cordova)
 
 `cordova/www_concours_maroc.zip` est le dossier `www/` de l'application, généré à partir du site :

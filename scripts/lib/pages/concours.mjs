@@ -210,7 +210,7 @@ ${inlineCard(site, lang, link, { campaign: 'fiche-contenu', h: APP_TXT[lang].fic
 ${d.faq && d.faq.length ? html`<section id="faq" class="faq"><h2>${t(lang, 'faq')}</h2>${d.faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${T(f.a)}</p></div></details>`)}</section>` : ''}
 <section id="sources"><h2>${t(lang, 'sources')}</h2>
 <p class="muted"><small>${x.sourcesIntro}</small></p>
-${c.official && c.official.length ? html`<h3>${x.officialLinks}</h3><ul class="sources">${c.official.map((o) => html`<li><a href="${o.url}" rel="noopener" target="_blank">${o.label}</a></li>`)}</ul>` : ''}
+${c.official && c.official.length ? html`<h3>${x.officialLinks}</h3><ul class="sources cta-zone">${c.official.map((o) => html`<li><a href="${o.url}" rel="noopener" target="_blank" data-cta="official" data-google-vignette="false">${o.label}</a></li>`)}</ul>` : ''}
 ${c.sources && c.sources.length ? html`<ul class="sources">${c.sources.map((s) => html`<li><a href="${s.url}" rel="noopener nofollow" target="_blank">${s.title}</a>${s.date ? html` <small class="muted">(${s.date})</small>` : ''}</li>`)}</ul>` : ''}
 </section>
 ${related.length ? html`<section class="no-print"><h2>${t(lang, 'related')}</h2><div class="grid cols-2">${related.map((r) => concoursCard(r, lang, link))}</div></section>` : ''}

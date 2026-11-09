@@ -16,6 +16,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import site from '../content/site.mjs';
 import { layout } from './lib/layout.mjs';
+import { monetagAdsTxt } from './lib/monetag.mjs';
 import { buildGuide, buildDirectory, guidePath } from './lib/pages/concours.mjs';
 import { buildHome } from './lib/pages/home.mjs';
 import { buildToolsPages } from './lib/pages/tools.mjs';
@@ -204,7 +205,8 @@ async function main() {
     // for the site, app-ads.txt for the app when this domain is the
     // developer website of its Google Play listing.
     const sellers = `google.com, ${site.adsenseClient.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`;
-    write('ads.txt', sellers);
+    // Monetag runs on the website only: its lines go to ads.txt, not app-ads.txt.
+    write('ads.txt', sellers + monetagAdsTxt(site).map((l) => l + '\n').join(''));
     write('app-ads.txt', sellers);
   }
 

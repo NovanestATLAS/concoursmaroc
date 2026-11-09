@@ -52,4 +52,24 @@ export default {
   // Google AdSense publisher ID, e.g. 'ca-pub-1234567890123456'.
   // When set, the AdSense script is added to every content page and ads.txt is generated.
   adsenseClient: 'ca-pub-3709043100488694',
+  // Monetag (website only, never in the Android app): In-Page Push and Vignette
+  // Banner zones only. Paste each value exactly as the Monetag dashboard gives it
+  // (scripts/lib/monetag.mjs reads both tag styles); an empty value loads nothing.
+  // Never paste a MultiTag, OnClick/Popunder, Direct Link or Push Notifications
+  // tag: the build refuses tags that install a service worker (it would replace
+  // docs/sw.js and break the concours alerts). Rules applied on the site: the
+  // vignette never on the first page of a visit and at most once every
+  // vignetteHours per browser, one Monetag format per page, In-Page Push on phones
+  // only and never with the app banner, none on practice, legal and app pages.
+  monetag: {
+    // Sites → Add site → verification "Insert code": the <meta name="monetag" …> tag or its content value.
+    verification: '',
+    // Sites → Add zone → In-Page Push → Get tag.
+    inPagePush: ``,
+    // Sites → Add zone → Vignette Banner → Get tag.
+    vignette: ``,
+    vignetteHours: 12,
+    // Extra ads.txt lines, if the Monetag dashboard asks for them.
+    adsTxt: [],
+  },
 };

@@ -827,6 +827,11 @@ html[dir="rtl"] .footer-grid h2 { letter-spacing: 0; font-size: var(--fs-sm); }
 /* ========================================================== ads (AdSense slots, when used) */
 .ad-slot { margin: 22px 0; min-height: 100px; display: flex; align-items: center; justify-content: center; }
 .ad-slot:empty { display: none; }
+/* Official links and download buttons keep clear space: an ad placed by AdSense
+   Auto ads never touches them (Monetag only uses overlays, see scripts/lib/monetag.mjs). */
+.cta-zone { margin-block: 12px 20px; }
+.google-auto-placed + .cta-zone, .cta-zone + .google-auto-placed,
+.google-auto-placed + h3:has(+ .cta-zone) { margin-top: 32px !important; }
 
 /* ========================================================== toast & sheet (shared) */
 .toast {

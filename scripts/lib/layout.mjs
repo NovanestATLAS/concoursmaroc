@@ -4,6 +4,7 @@ import { icon, logo } from './icons.mjs';
 import { t } from './strings.mjs';
 import { appBadge } from './pages/app-landing.mjs';
 import { navCta, appBanner, footerStore, appLive } from './app-funnel.mjs';
+import { monetagHead } from './monetag.mjs';
 
 /* Relative prefix from a page (site-relative output path) to the site root. */
 export function rootOf(pagePath) {
@@ -158,7 +159,8 @@ function footer(lang, link, site, footerLinks) {
  *   alternate: 'ar/concours/ensa/' (site-relative path of the other language),
  *   section: 'navConcours', jsonld: [objects], body: Raw, scripts: ['assets/js/x.js'],
  *   styles: ['assets/css/x.css'], ogImage: 'assets/og/x.png', noindex, type: 'article'|'website',
- *   noAds (no AdSense script: AdSense allows no ads on pages without content)
+ *   noAds (no AdSense or Monetag script: AdSense allows no ads on pages without content),
+ *   noMonetag (no Monetag script on this page; see monetag.mjs for the pages always without)
  * } */
 export function layout(site, page, footerLinks) {
   const lang = page.lang || 'fr';
@@ -217,7 +219,7 @@ ${lang === 'ar' ? html`<link rel="preload" href="${root}assets/fonts/readex-pro-
 ${(page.styles || []).map((s) => html`<link rel="stylesheet" href="${root}${s}?v=${site.assetVersion || '1'}">`)}
 <script>${raw(themeInit)}</script>
 ${jsonld.map((o) => raw(`<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}</script>`))}
-${ga}${ads}
+${ga}${ads}${monetagHead(site, page)}
 </head>
 <body${page.bodyClass ? raw(` class="${esc(page.bodyClass)}"`) : ''}>
 <a class="skip-link" href="#main">${t(lang, 'skip')}</a>
