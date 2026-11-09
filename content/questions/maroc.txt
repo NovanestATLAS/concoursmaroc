@@ -32,6 +32,14 @@ Q: Quel est l'ordre chronologique de ces dynasties marocaines ?
 - Almohades, Almoravides, Idrissides, Saadiens, Mérinides, Alaouites
 C: Idrissides → Almoravides → Almohades → Mérinides → Saadiens → Alaouites.
 E: Les Idrissides (fin du VIIIe siècle) fondent le premier État marocain ; les Almoravides (XIe siècle) fondent Marrakech ; les Almohades (XIIe siècle) bâtissent la Koutoubia et la tour Hassan ; puis viennent les Mérinides, les Saadiens (XVIe siècle) et les Alaouites (depuis le XVIIe siècle).
+AR:
+Q: ما الترتيب الزمني لهذه الدول المغربية؟
+* الأدارسة، المرابطون، الموحدون، المرينيون، السعديون، العلويون
+- المرابطون، الأدارسة، الموحدون، السعديون، المرينيون، العلويون
+- الأدارسة، الموحدون، المرابطون، المرينيون، العلويون، السعديون
+- الموحدون، المرابطون، الأدارسة، السعديون، المرينيون، العلويون
+C: الأدارسة ← المرابطون ← الموحدون ← المرينيون ← السعديون ← العلويون.
+E: أسس الأدارسة (أواخر القرن الثامن) أول دولة مغربية، وأسس المرابطون (القرن الحادي عشر) مراكش، وشيّد الموحدون (القرن الثاني عشر) الكتبية وصومعة حسان، ثم جاء المرينيون، فالسعديون (القرن السادس عشر)، فالعلويون (منذ القرن السابع عشر).
 
 [MAR-103] institutions | beginner
 Q: Depuis la Constitution de 2011, quelles sont les langues officielles du Maroc ?
@@ -75,6 +83,14 @@ Q: Quel est le premier port à conteneurs d'Afrique et de Méditerranée, situé
 - Nador West Med
 C: Tanger Med.
 E: Mis en service à partir de 2007 sur le détroit de Gibraltar, Tanger Med est devenu le premier port à conteneurs de Méditerranée et d'Afrique, avec plus de 10 millions de conteneurs EVP traités par an. Nador West Med est un nouveau port en cours de mise en service.
+AR:
+Q: ما هو أول ميناء للحاويات في إفريقيا والبحر الأبيض المتوسط، ويوجد في المغرب؟
+* طنجة المتوسط
+- الدار البيضاء
+- أكادير
+- الناظور غرب المتوسط
+C: طنجة المتوسط.
+E: بدأ تشغيله سنة 2007 على مضيق جبل طارق، وأصبح أول ميناء للحاويات في البحر الأبيض المتوسط وإفريقيا، بأكثر من 10 ملايين حاوية (بمكافئ 20 قدمًا) سنويًا. أما الناظور غرب المتوسط فميناء جديد في طور التشغيل.
 
 [MAR-106] economie | beginner
 Q: Le train à grande vitesse Al Boraq, inauguré en 2018, relie :
@@ -135,6 +151,14 @@ Q: Quelle institution publie au Maroc les statistiques officielles (recensement,
 - L'ANRT
 C: Le Haut-Commissariat au Plan.
 E: Le HCP réalise le recensement général de la population (le dernier en 2024) et publie le taux de chômage, l'indice des prix à la consommation et les comptes nationaux. Bank Al-Maghrib est la banque centrale ; la HACA régule l'audiovisuel et l'ANRT les télécommunications.
+AR:
+Q: ما المؤسسة التي تنشر الإحصاءات الرسمية بالمغرب (الإحصاء العام، البطالة، التضخم)؟
+* المندوبية السامية للتخطيط
+- بنك المغرب
+- الهيأة العليا للاتصال السمعي البصري
+- الوكالة الوطنية لتقنين المواصلات
+C: المندوبية السامية للتخطيط.
+E: تنجز المندوبية السامية للتخطيط الإحصاء العام للسكان (آخره سنة 2024)، وتنشر معدل البطالة ومؤشر الأسعار عند الاستهلاك والحسابات الوطنية. أما بنك المغرب فهو البنك المركزي، والهيأة العليا تقنن السمعي البصري، والوكالة الوطنية تقنن الاتصالات.
 
 [MAR-110] geographie | intermediate | ts
 Q: Selon le recensement général de la population de 2024, la population légale du Maroc est d'environ :
@@ -144,6 +168,14 @@ Q: Selon le recensement général de la population de 2024, la population légal
 - 30,5 millions d'habitants
 C: Environ 36,8 millions d'habitants.
 E: Le RGPH 2024, réalisé par le HCP en septembre 2024, a recensé 36 828 330 habitants, contre 33,8 millions en 2014. La croissance démographique ralentit et la population est de plus en plus urbaine.
+AR:
+Q: حسب الإحصاء العام للسكان لسنة 2024، يبلغ عدد السكان القانونيين للمغرب نحو:
+* 36,8 مليون نسمة
+- 33,8 مليون نسمة
+- 40,2 مليون نسمة
+- 30,5 مليون نسمة
+C: نحو 36,8 مليون نسمة.
+E: أحصى الإحصاء العام لسنة 2024، الذي أنجزته المندوبية السامية للتخطيط في شتنبر 2024، 36828330 نسمة، مقابل 33,8 مليون سنة 2014. ويتباطأ النمو الديموغرافي ويزداد تمدن السكان.
 
 [MAR-111] institutions | intermediate
 Q: Combien de membres compte la Chambre des conseillers, seconde chambre du Parlement marocain ?
@@ -153,6 +185,14 @@ Q: Combien de membres compte la Chambre des conseillers, seconde chambre du Parl
 - 270
 C: 120 membres.
 E: Le Parlement comprend la Chambre des représentants (395 députés élus au suffrage direct pour 5 ans) et la Chambre des conseillers (120 membres élus au suffrage indirect pour 6 ans, représentant notamment les collectivités territoriales, les salariés et les entreprises).
+AR:
+Q: كم عضوًا يضم مجلس المستشارين، الغرفة الثانية في البرلمان المغربي؟
+* 120
+- 395
+- 90
+- 270
+C: ‏120 عضوًا.
+E: يتكون البرلمان من مجلس النواب (395 نائبًا منتخبين بالاقتراع المباشر لمدة 5 سنوات) ومجلس المستشارين (120 عضوًا منتخبين بالاقتراع غير المباشر لمدة 6 سنوات، يمثلون خصوصًا الجماعات الترابية والأجراء والمقاولات).
 
 [MAR-112] geographie | beginner
 Q: Quel est le point culminant du Maroc ?
@@ -235,6 +275,14 @@ Q: Selon la Constitution de 2011, le Chef du gouvernement est nommé par le Roi 
 - Parmi les walis des régions
 C: Au sein du parti arrivé premier aux législatives.
 E: L'article 47 de la Constitution prévoit cette nomination ; les ministres sont nommés sur proposition du Chef du gouvernement.
+AR:
+Q: حسب دستور 2011، يعيّن الملك رئيس الحكومة:
+* من الحزب السياسي الذي تصدّر انتخابات أعضاء مجلس النواب
+- من بين أعضاء مجلس المستشارين
+- بحرية ودون ارتباط بالانتخابات
+- من بين ولاة الجهات
+C: من الحزب الذي تصدّر الانتخابات التشريعية.
+E: ينص الفصل 47 من الدستور على هذا التعيين، ويعيّن الملك أعضاء الحكومة باقتراح من رئيسها.
 
 [MAR-203] institutions | intermediate
 Q: Combien de membres compte la Chambre des représentants ?
@@ -244,6 +292,14 @@ Q: Combien de membres compte la Chambre des représentants ?
 - 450
 C: 395 députés.
 E: Ils sont élus au suffrage universel direct pour cinq ans. La Chambre des conseillers compte 120 membres élus au suffrage indirect pour six ans.
+AR:
+Q: كم عضوًا يضم مجلس النواب؟
+* 395
+- 120
+- 325
+- 450
+C: ‏395 نائبًا.
+E: يُنتخبون بالاقتراع العام المباشر لمدة خمس سنوات. أما مجلس المستشارين فيضم 120 عضوًا منتخبين بالاقتراع غير المباشر لمدة ست سنوات.
 
 [MAR-204] institutions | intermediate
 Q: Quelle institution contrôle la conformité des lois à la Constitution ?
@@ -253,6 +309,14 @@ Q: Quelle institution contrôle la conformité des lois à la Constitution ?
 - Le Conseil économique, social et environnemental
 C: La Cour constitutionnelle.
 E: Créée par la Constitution de 2011 (en remplacement du Conseil constitutionnel), elle se prononce sur la constitutionnalité des lois. La Cour des comptes contrôle les finances publiques.
+AR:
+Q: ما المؤسسة التي تراقب مطابقة القوانين للدستور؟
+* المحكمة الدستورية
+- المجلس الأعلى للحسابات
+- محكمة النقض
+- المجلس الاقتصادي والاجتماعي والبيئي
+C: المحكمة الدستورية.
+E: أحدثها دستور 2011 لتحل محل المجلس الدستوري، وتبتّ في دستورية القوانين. أما المجلس الأعلى للحسابات فيراقب المالية العمومية.
 
 [MAR-205] institutions | intermediate
 Q: Depuis le découpage territorial de 2015, le Maroc compte :
@@ -262,6 +326,14 @@ Q: Depuis le découpage territorial de 2015, le Maroc compte :
 - 14 régions
 C: 12 régions.
 E: Le découpage de 2015 a ramené le nombre de régions de 16 à 12, dans le cadre de la régionalisation avancée. Chaque région est dirigée par un conseil élu.
+AR:
+Q: منذ التقسيم الترابي لسنة 2015، يضم المغرب:
+* 12 جهة
+- 16 جهة
+- 10 جهات
+- 14 جهة
+C: ‏12 جهة.
+E: قلّص تقسيم 2015 عدد الجهات من 16 إلى 12، في إطار الجهوية المتقدمة، ويسيّر كل جهة مجلس منتخب.
 
 [MAR-206] institutions | intermediate
 Q: Quelle est la région dont le chef-lieu est Rabat ?
@@ -271,6 +343,14 @@ Q: Quelle est la région dont le chef-lieu est Rabat ?
 - Tanger-Tétouan-Al Hoceïma
 C: Rabat-Salé-Kénitra.
 E: Rabat est la capitale administrative du Royaume et le chef-lieu de la région Rabat-Salé-Kénitra.
+AR:
+Q: ما الجهة التي عاصمتها الرباط؟
+* الرباط-سلا-القنيطرة
+- الدار البيضاء-سطات
+- فاس-مكناس
+- طنجة-تطوان-الحسيمة
+C: الرباط-سلا-القنيطرة.
+E: الرباط هي العاصمة الإدارية للمملكة وعاصمة جهة الرباط-سلا-القنيطرة.
 
 [MAR-207] institutions | beginner
 Q: Quelle est la devise du Royaume du Maroc ?
@@ -297,6 +377,14 @@ Q: Quelle institution est chargée de la protection et de la promotion des droit
 - L'ANRT
 C: Le CNDH.
 E: Institution constitutionnelle indépendante, le CNDH veille au respect des droits de l'homme. La HACA régule l'audiovisuel, l'ANRT les télécommunications.
+AR:
+Q: ما المؤسسة المكلفة بحماية حقوق الإنسان والنهوض بها في المغرب؟
+* المجلس الوطني لحقوق الإنسان
+- الهيأة العليا للاتصال السمعي البصري
+- بنك المغرب
+- الوكالة الوطنية لتقنين المواصلات
+C: المجلس الوطني لحقوق الإنسان.
+E: مؤسسة دستورية مستقلة تسهر على احترام حقوق الإنسان. أما الهيأة العليا فتقنن السمعي البصري، والوكالة الوطنية تقنن الاتصالات.
 
 [MAR-209] histoire | beginner
 Q: Qui a fondé la dynastie idrisside et le premier État marocain, à la fin du VIIIe siècle ?
@@ -323,6 +411,14 @@ Q: Quelle dynastie a fondé la ville de Marrakech au XIe siècle ?
 - Les Saadiens
 C: Les Almoravides (vers 1070).
 E: Fondée par Abou Bakr puis développée par Youssef Ibn Tachfine, Marrakech a donné son nom au pays dans plusieurs langues (Morocco, Marruecos).
+AR:
+Q: أي دولة أسست مدينة مراكش في القرن الحادي عشر؟
+* المرابطون
+- الموحدون
+- المرينيون
+- السعديون
+C: المرابطون (نحو سنة 1070).
+E: أسسها أبو بكر بن عمر ثم طوّرها يوسف بن تاشفين، ومن اسمها اشتُق اسم المغرب في عدة لغات (Morocco، Marruecos).
 
 [MAR-211] histoire | intermediate
 Q: La bataille des Trois Rois (Oued El Makhazine), en 1578, a été remportée par :
@@ -332,6 +428,14 @@ Q: La bataille des Trois Rois (Oued El Makhazine), en 1578, a été remportée p
 - Les Mérinides contre les Espagnols
 C: Victoire saadienne sur les Portugais.
 E: Trois rois y moururent, dont Sébastien Ier du Portugal. Ahmed al-Mansour, frère du sultan défunt, monta sur le trône et marqua l'apogée de la dynastie saadienne.
+AR:
+Q: انتصر في معركة وادي المخازن (معركة الملوك الثلاثة) سنة 1578:
+* السعديون على البرتغاليين
+- الموحدون على القشتاليين
+- العلويون على العثمانيين
+- المرينيون على الإسبان
+C: انتصار السعديين على البرتغاليين.
+E: قُتل فيها ثلاثة ملوك، منهم سيباستيان الأول ملك البرتغال. واعتلى العرش أحمد المنصور، أخو السلطان المتوفى، فبلغت الدولة السعدية في عهده أوجها.
 
 [MAR-212] histoire | intermediate
 Q: Quel sultan alaouite a fait de Meknès sa capitale impériale au XVIIe siècle ?
@@ -341,6 +445,14 @@ Q: Quel sultan alaouite a fait de Meknès sa capitale impériale au XVIIe siècl
 - Moulay Hassan Ier
 C: Moulay Ismaïl (1672-1727).
 E: Son règne de 55 ans est l'un des plus longs de l'histoire du Maroc. Il fit de Meknès une ville impériale entourée de longues murailles, avec la célèbre porte Bab Mansour.
+AR:
+Q: أي سلطان علوي اتخذ مكناس عاصمة إمبراطورية في القرن السابع عشر؟
+* المولى إسماعيل
+- المولى الرشيد
+- محمد الثالث
+- المولى الحسن الأول
+C: المولى إسماعيل (1672-1727).
+E: يُعد حكمه الذي دام 55 سنة من أطول فترات الحكم في تاريخ المغرب، وقد جعل من مكناس مدينة إمبراطورية محاطة بأسوار طويلة، ومن معالمها باب المنصور الشهير.
 
 [MAR-213] histoire | intermediate
 Q: Le Maroc a été l'un des premiers pays à reconnaître l'indépendance des États-Unis, en :
@@ -350,6 +462,14 @@ Q: Le Maroc a été l'un des premiers pays à reconnaître l'indépendance des �
 - 1956
 C: 1777, sous Mohammed III.
 E: Le sultan Mohammed ben Abdallah reconnaît les États-Unis en 1777 ; le traité d'amitié maroco-américain de 1786 est le plus ancien traité ininterrompu des États-Unis.
+AR:
+Q: كان المغرب من أوائل الدول التي اعترفت باستقلال الولايات المتحدة، وذلك سنة:
+* 1777
+- 1830
+- 1912
+- 1956
+C: سنة 1777، في عهد محمد الثالث.
+E: اعترف السلطان محمد بن عبد الله بالولايات المتحدة سنة 1777، وتُعد معاهدة الصداقة المغربية الأمريكية لسنة 1786 أقدم معاهدة سارية دون انقطاع في تاريخ الولايات المتحدة.
 
 [MAR-214] histoire | intermediate
 Q: Le traité de Fès, qui instaure le protectorat français, a été signé en :
@@ -359,6 +479,14 @@ Q: Le traité de Fès, qui instaure le protectorat français, a été signé en 
 - 1944
 C: 1912.
 E: Le 30 mars 1912. L'Espagne exerce un protectorat sur le nord et le sud du pays ; Tanger reçoit un statut international. Le protectorat prend fin en 1956.
+AR:
+Q: وُقّعت معاهدة فاس، التي أقامت الحماية الفرنسية، سنة:
+* 1912
+- 1906
+- 1830
+- 1944
+C: سنة 1912.
+E: يوم 30 مارس 1912. ومارست إسبانيا الحماية على شمال البلاد وجنوبها، ومُنحت طنجة وضعًا دوليًا. وانتهت الحماية سنة 1956.
 
 [MAR-215] histoire | intermediate
 Q: Le Manifeste de l'Indépendance a été présenté le :
@@ -368,6 +496,14 @@ Q: Le Manifeste de l'Indépendance a été présenté le :
 - 2 mars 1956
 C: 11 janvier 1944.
 E: Présenté par le parti de l'Istiqlal, il réclamait l'indépendance du Maroc. Cette date est un jour férié national.
+AR:
+Q: قُدّمت وثيقة المطالبة بالاستقلال يوم:
+* 11 يناير 1944
+- 18 نونبر 1955
+- 20 غشت 1953
+- 2 مارس 1956
+C: ‏11 يناير 1944.
+E: قدّمها حزب الاستقلال للمطالبة باستقلال المغرب، وهذا اليوم عطلة وطنية.
 
 [MAR-216] histoire | intermediate
 Q: La « Révolution du Roi et du Peuple », commémorée le 20 août, fait référence :
@@ -377,6 +513,14 @@ Q: La « Révolution du Roi et du Peuple », commémorée le 20 août, fait réf
 - À l'adoption de la Constitution de 2011
 C: L'exil de Mohammed V (20 août 1953).
 E: L'exil du sultan, en Corse puis à Madagascar, provoqua un soulèvement populaire. Son retour en novembre 1955 ouvrit la voie à l'indépendance, obtenue le 2 mars 1956 (fin du protectorat français).
+AR:
+Q: تشير «ثورة الملك والشعب»، التي تُخلَّد ذكراها يوم 20 غشت، إلى:
+* نفي سلطات الحماية للسلطان محمد بن يوسف سنة 1953
+- المسيرة الخضراء
+- استقلال 1956
+- اعتماد دستور 2011
+C: نفي محمد الخامس (20 غشت 1953).
+E: أثار نفي السلطان، إلى كورسيكا ثم مدغشقر، انتفاضة شعبية. وفتحت عودته في نونبر 1955 الطريق أمام الاستقلال، الذي تحقق يوم 2 مارس 1956 (نهاية الحماية الفرنسية).
 
 [MAR-217] histoire | beginner
 Q: La fête de l'Indépendance du Maroc est célébrée le :
@@ -403,6 +547,14 @@ Q: Le roi Hassan II a régné de :
 - 1999 à 2010
 C: 1961-1999.
 E: Il succède à Mohammed V le 3 mars 1961 et règne jusqu'à sa mort le 23 juillet 1999. Le roi Mohammed VI lui succède le 30 juillet 1999.
+AR:
+Q: حكم الملك الحسن الثاني من:
+* 1961 إلى 1999
+- 1956 إلى 1990
+- 1953 إلى 1961
+- 1999 إلى 2010
+C: ‏1961-1999.
+E: خلف محمدًا الخامس يوم 3 مارس 1961، وحكم إلى وفاته يوم 23 يوليوز 1999، ثم خلفه الملك محمد السادس يوم 30 يوليوز 1999.
 
 [MAR-219] geographie | beginner
 Q: Quel est le plus long fleuve du Maroc ?
@@ -446,6 +598,14 @@ Q: Quelle ville marocaine est la plus peuplée ?
 - Tanger
 C: Casablanca.
 E: Capitale économique, Casablanca compte plus de 3 millions d'habitants ; c'est le premier port et le premier pôle industriel et financier du pays.
+AR:
+Q: ما هي أكثر المدن المغربية سكانًا؟
+* الدار البيضاء
+- الرباط
+- فاس
+- طنجة
+C: الدار البيضاء.
+E: الدار البيضاء العاصمة الاقتصادية، يتجاوز عدد سكانها 3 ملايين نسمة، وهي أول ميناء وأول قطب صناعي ومالي في البلاد.
 
 [MAR-222] geographie | intermediate
 Q: Le Maroc est bordé par deux façades maritimes :
@@ -455,6 +615,14 @@ Q: Le Maroc est bordé par deux façades maritimes :
 - La mer Noire et l'Atlantique
 C: Méditerranée au nord, Atlantique à l'ouest.
 E: Le Maroc possède environ 3 500 km de côtes, dont la plus grande partie sur l'Atlantique.
+AR:
+Q: يطل المغرب على واجهتين بحريتين:
+* البحر الأبيض المتوسط والمحيط الأطلسي
+- البحر الأحمر والمحيط الأطلسي
+- المحيط الهندي والبحر الأبيض المتوسط
+- البحر الأسود والمحيط الأطلسي
+C: المتوسط شمالًا والأطلسي غربًا.
+E: يتوفر المغرب على نحو 3500 كلم من السواحل، أغلبها على المحيط الأطلسي.
 
 [MAR-223] geographie | intermediate
 Q: Quel barrage marocain est le plus grand par sa capacité de stockage ?
@@ -464,6 +632,14 @@ Q: Quel barrage marocain est le plus grand par sa capacité de stockage ?
 - Le barrage Idriss Ier
 C: Al Wahda (sur l'Ouergha).
 E: Situé dans la région de Ouezzane, Al Wahda a une capacité de près de 3,8 milliards de m³. La politique des barrages, lancée dans les années 1960, est essentielle pour l'irrigation et l'eau potable.
+AR:
+Q: ما هو أكبر سد مغربي من حيث سعة التخزين؟
+* سد الوحدة
+- سد بين الويدان
+- سد المسيرة
+- سد إدريس الأول
+C: سد الوحدة (على وادي ورغة).
+E: يقع في منطقة وزان، وتقارب سعته 3,8 مليارات م³. وسياسة السدود، التي انطلقت في الستينيات، أساسية للسقي والماء الصالح للشرب.
 
 [MAR-224] economie | intermediate
 Q: Le Maroc détient les plus grandes réserves mondiales de :
@@ -473,6 +649,14 @@ Q: Le Maroc détient les plus grandes réserves mondiales de :
 - Uranium extrait
 C: Phosphates (environ 70 % des réserves mondiales).
 E: Le groupe OCP exploite notamment les gisements de Khouribga, Benguérir et Youssoufia et transforme une partie des phosphates en engrais, principalement à Jorf Lasfar et Safi.
+AR:
+Q: يملك المغرب أكبر احتياطي عالمي من:
+* الفوسفاط
+- النفط
+- الذهب
+- اليورانيوم المستخرج
+C: الفوسفاط (نحو 70% من الاحتياطي العالمي).
+E: تستغل مجموعة المكتب الشريف للفوسفاط خصوصًا مناجم خريبكة وابن جرير واليوسفية، وتحوّل جزءًا من الفوسفاط إلى أسمدة، أساسًا في الجرف الأصفر وآسفي.
 
 [MAR-225] economie | intermediate
 Q: Quelle est la monnaie du Maroc et quelle institution l'émet ?
@@ -482,6 +666,14 @@ Q: Quelle est la monnaie du Maroc et quelle institution l'émet ?
 - Le rial, émis par Bank Al-Maghrib
 C: Le dirham (MAD), Bank Al-Maghrib.
 E: Bank Al-Maghrib, la banque centrale créée en 1959, émet la monnaie et conduit la politique monétaire. Le dirham se divise en 100 centimes.
+AR:
+Q: ما هي عملة المغرب، وما المؤسسة التي تصدرها؟
+* الدرهم، ويصدره بنك المغرب
+- الدينار، وتصدره الخزينة
+- الدرهم، وتصدره وزارة المالية
+- الريال، ويصدره بنك المغرب
+C: الدرهم (MAD)، بنك المغرب.
+E: يصدر بنك المغرب، البنك المركزي الذي أُنشئ سنة 1959، العملة ويقود السياسة النقدية. وينقسم الدرهم إلى 100 سنتيم.
 
 [MAR-226] economie | intermediate
 Q: Quel secteur industriel est devenu le premier secteur exportateur du Maroc ces dernières années ?
@@ -491,6 +683,14 @@ Q: Quel secteur industriel est devenu le premier secteur exportateur du Maroc ce
 - L'aéronautique
 C: L'automobile.
 E: Grâce aux usines de Renault (Tanger, Casablanca) et de Stellantis (Kénitra) et à leurs fournisseurs, l'automobile est devenue le premier secteur exportateur, devant les phosphates et dérivés.
+AR:
+Q: أي قطاع صناعي أصبح في السنوات الأخيرة أول قطاع مصدّر في المغرب؟
+* صناعة السيارات
+- النسيج
+- الصناعة الغذائية
+- صناعة الطيران
+C: صناعة السيارات.
+E: بفضل مصانع رونو (طنجة والدار البيضاء) وستيلانتيس (القنيطرة) ومزوديها، أصبحت صناعة السيارات أول قطاع مصدّر، متقدمة على الفوسفاط ومشتقاته.
 
 [MAR-227] economie | intermediate
 Q: Le Plan Maroc Vert, lancé en 2008, puis la stratégie « Génération Green 2020-2030 » concernent :
@@ -500,6 +700,14 @@ Q: Le Plan Maroc Vert, lancé en 2008, puis la stratégie « Génération Green 
 - L'industrie automobile
 C: L'agriculture.
 E: Le Plan Maroc Vert visait à moderniser l'agriculture ; Génération Green prolonge cette stratégie en mettant l'accent sur le monde rural et une classe moyenne agricole.
+AR:
+Q: يهم مخطط المغرب الأخضر، الذي انطلق سنة 2008، ثم استراتيجية «الجيل الأخضر 2020-2030»:
+* تنمية الفلاحة
+- الطاقة الشمسية
+- السياحة
+- صناعة السيارات
+C: الفلاحة.
+E: هدف مخطط المغرب الأخضر إلى تحديث الفلاحة، وتواصل استراتيجية «الجيل الأخضر» هذا التوجه مع التركيز على العالم القروي وعلى طبقة وسطى فلاحية.
 
 [MAR-228] economie | intermediate
 Q: Quelle agence est chargée de promouvoir les énergies renouvelables au Maroc, notamment le solaire ?
@@ -509,6 +717,14 @@ Q: Quelle agence est chargée de promouvoir les énergies renouvelables au Maroc
 - La CDG
 C: MASEN.
 E: MASEN pilote notamment le complexe solaire Noor de Ouarzazate. L'ONDA gère les aéroports, la CDG est une institution financière publique.
+AR:
+Q: ما الوكالة المكلفة بتطوير الطاقات المتجددة في المغرب، خصوصًا الطاقة الشمسية؟
+* مازن (الوكالة المغربية للطاقة المستدامة)
+- المكتب الشريف للفوسفاط
+- المكتب الوطني للمطارات
+- صندوق الإيداع والتدبير
+C: مازن.
+E: تشرف مازن خصوصًا على مركب «نور» للطاقة الشمسية بورزازات. أما المكتب الوطني للمطارات فيسيّر المطارات، وصندوق الإيداع والتدبير مؤسسة مالية عمومية.
 
 [MAR-229] economie | beginner
 Q: Que signifie le sigle ONCF ?
@@ -535,6 +751,14 @@ Q: Quelle stratégie numérique nationale a été lancée en 2024 pour la transf
 - Vision 2010
 C: Maroc Digital 2030.
 E: Elle vise à digitaliser les services publics, développer l'économie numérique et former des talents dans ce domaine. Maroc Numeric 2013 était une stratégie antérieure ; le Plan Azur concernait le tourisme balnéaire.
+AR:
+Q: ما الاستراتيجية الرقمية الوطنية التي أُطلقت سنة 2024 للتحول الرقمي للمغرب في أفق 2030؟
+* المغرب الرقمي 2030
+- المغرب الرقمي 2013
+- المخطط الأزرق
+- رؤية 2010
+C: المغرب الرقمي 2030.
+E: تهدف إلى رقمنة الخدمات العمومية وتطوير الاقتصاد الرقمي وتكوين الكفاءات في هذا المجال. أما «المغرب الرقمي 2013» فاستراتيجية سابقة، و«المخطط الأزرق» كان يهم السياحة الشاطئية.
 
 [MAR-231] culture | beginner
 Q: Quel instrument est emblématique de la musique gnaoua ?
@@ -561,6 +785,14 @@ Q: La place Jemaa el-Fna, inscrite au patrimoine culturel immatériel de l'UNESC
 - Essaouira
 C: Marrakech.
 E: Elle a été proclamée chef-d'œuvre du patrimoine oral et immatériel de l'humanité en 2001, pour ses conteurs, musiciens et artistes de rue.
+AR:
+Q: توجد ساحة جامع الفنا، المسجلة في التراث الثقافي غير المادي لليونسكو، في:
+* مراكش
+- فاس
+- الرباط
+- الصويرة
+C: مراكش.
+E: أُعلنت سنة 2001 من روائع التراث الشفهي وغير المادي للإنسانية، بفضل رواتها وموسيقييها وفناني الشارع.
 
 [MAR-233] culture | intermediate
 Q: Le festival Mawazine, consacré aux musiques du monde, se déroule à :
@@ -570,6 +802,14 @@ Q: Le festival Mawazine, consacré aux musiques du monde, se déroule à :
 - Tanger
 C: Rabat.
 E: Mawazine est l'un des plus grands festivals de musique d'Afrique. Fès accueille le Festival des musiques sacrées du monde, Agadir le festival Timitar.
+AR:
+Q: يُقام مهرجان موازين، المخصص لموسيقى العالم، في:
+* الرباط
+- أكادير
+- فاس
+- طنجة
+C: الرباط.
+E: موازين من أكبر مهرجانات الموسيقى في إفريقيا. وتحتضن فاس مهرجان الموسيقى العالمية العريقة، وأكادير مهرجان تيميتار.
 
 [MAR-234] culture | intermediate | ts
 Q: Quelle ville marocaine a été désignée « Capitale mondiale du livre » par l'UNESCO pour 2026 ?
@@ -579,6 +819,14 @@ Q: Quelle ville marocaine a été désignée « Capitale mondiale du livre » pa
 - Tanger
 C: Rabat.
 E: L'UNESCO a désigné Rabat Capitale mondiale du livre 2026, pour la richesse de son patrimoine et son engagement en faveur de la lecture.
+AR:
+Q: أي مدينة مغربية اختارتها اليونسكو «عاصمة عالمية للكتاب» لسنة 2026؟
+* الرباط
+- الدار البيضاء
+- مراكش
+- طنجة
+C: الرباط.
+E: اختارت اليونسكو الرباط عاصمة عالمية للكتاب لسنة 2026، لغنى تراثها والتزامها بتشجيع القراءة.
 
 [MAR-235] patrimoine | intermediate
 Q: Quel monument de Rabat est resté inachevé depuis la mort du calife almohade Yacoub El Mansour en 1199 ?
@@ -588,6 +836,14 @@ Q: Quel monument de Rabat est resté inachevé depuis la mort du calife almohade
 - Le mausolée Mohammed V
 C: La tour Hassan.
 E: Elle devait être le minaret d'une immense mosquée. Le mausolée Mohammed V, achevé en 1971, a été construit sur la même esplanade.
+AR:
+Q: أي معلمة في الرباط بقيت غير مكتملة منذ وفاة الخليفة الموحدي يعقوب المنصور سنة 1199؟
+* صومعة حسان
+- الكتبية
+- قصبة الأوداية
+- ضريح محمد الخامس
+C: صومعة حسان.
+E: كان يُراد لها أن تكون مئذنة لمسجد ضخم. وقد بُني ضريح محمد الخامس، الذي اكتمل سنة 1971، في الساحة نفسها.
 
 [MAR-236] patrimoine | intermediate
 Q: La médersa Bou Inania de Fès a été construite sous la dynastie des :
@@ -597,6 +853,14 @@ Q: La médersa Bou Inania de Fès a été construite sous la dynastie des :
 - Idrissides
 C: Les Mérinides (XIVe siècle).
 E: Les Mérinides ont construit de nombreuses médersas (écoles), réputées pour leurs zelliges, stucs et bois sculptés. Les tombeaux saadiens se trouvent à Marrakech.
+AR:
+Q: بُنيت المدرسة البوعنانية بفاس في عهد دولة:
+* المرينيين
+- الموحدين
+- السعديين
+- الأدارسة
+C: المرينيون (القرن الرابع عشر).
+E: شيّد المرينيون مدارس عديدة اشتهرت بزليجها وجبصها وخشبها المنقوش. أما قبور السعديين فتوجد في مراكش.
 
 [MAR-237] patrimoine | intermediate
 Q: La cité portugaise de Mazagan, inscrite au patrimoine mondial, se trouve dans la ville de :
@@ -606,6 +870,14 @@ Q: La cité portugaise de Mazagan, inscrite au patrimoine mondial, se trouve dan
 - Asilah
 C: El Jadida.
 E: Fortifiée par les Portugais au XVIe siècle, elle est célèbre pour sa citerne souterraine. Essaouira (Mogador) est aussi inscrite au patrimoine mondial pour sa médina.
+AR:
+Q: يوجد الحي البرتغالي «مازاغان»، المسجل في التراث العالمي، في مدينة:
+* الجديدة
+- الصويرة
+- آسفي
+- أصيلة
+C: الجديدة.
+E: حصّنه البرتغاليون في القرن السادس عشر، ويشتهر بصهريجه تحت الأرض. والصويرة (موكادور) مسجلة أيضًا في التراث العالمي بمدينتها العتيقة.
 
 [MAR-238] sport | intermediate
 Q: Quel athlète marocain détient le record du monde du 1 500 m (3 min 26 s), établi en 1998 ?
@@ -615,6 +887,14 @@ Q: Quel athlète marocain détient le record du monde du 1 500 m (3 min 26 s), �
 - Nawal El Moutawakel
 C: Hicham El Guerrouj.
 E: Il a établi ce record à Rome en 1998 et a remporté deux titres olympiques en 2004 (1 500 m et 5 000 m). Nawal El Moutawakel a été en 1984 la première femme africaine et arabe championne olympique.
+AR:
+Q: أي عدّاء مغربي يحمل الرقم القياسي العالمي لسباق 1500 م (3 د 26 ث)، المسجّل سنة 1998؟
+* هشام الكروج
+- سعيد عويطة
+- سفيان البقالي
+- نوال المتوكل
+C: هشام الكروج.
+E: سجّل هذا الرقم في روما سنة 1998، وفاز بلقبين أولمبيين سنة 2004 (1500 م و5000 م). أما نوال المتوكل فكانت سنة 1984 أول امرأة إفريقية وعربية تفوز بلقب أولمبي.
 
 [MAR-239] sport | intermediate
 Q: Soufiane El Bakkali est champion olympique et champion du monde dans quelle discipline ?
@@ -624,6 +904,14 @@ Q: Soufiane El Bakkali est champion olympique et champion du monde dans quelle d
 - Le saut en longueur
 C: Le 3 000 m steeple.
 E: Il a remporté l'or olympique à Tokyo (2021) puis à Paris (2024), et plusieurs titres mondiaux dans cette discipline.
+AR:
+Q: سفيان البقالي بطل أولمبي وبطل للعالم في أي تخصص؟
+* 3000 م موانع
+- الماراثون
+- 800 م
+- الوثب الطويل
+C: سباق 3000 م موانع.
+E: فاز بالذهبية الأولمبية في طوكيو (2021) ثم في باريس (2024)، وبعدة ألقاب عالمية في هذا التخصص.
 
 [MAR-240] sport | beginner
 Q: À quelle phase de la Coupe du monde 2022 l'équipe du Maroc s'est-elle hissée, une première pour une sélection africaine ?
@@ -650,6 +938,14 @@ Q: Le chantier de la généralisation de la protection sociale, lancé en 2021, 
 - La gratuité de tous les médicaments
 C: Généraliser l'AMO, puis les allocations familiales et la retraite.
 E: La loi-cadre 09-21 prévoit la généralisation de l'assurance maladie obligatoire, des allocations familiales (aide sociale directe), puis l'élargissement de la retraite et de l'indemnité pour perte d'emploi.
+AR:
+Q: يتضمن ورش تعميم الحماية الاجتماعية، الذي انطلق سنة 2021، خصوصًا:
+* توسيع التأمين الإجباري الأساسي عن المرض ليشمل جميع السكان
+- حذف الصندوق الوطني للضمان الاجتماعي
+- خوصصة المستشفيات العمومية
+- مجانية جميع الأدوية
+C: تعميم التأمين الإجباري عن المرض، ثم التعويضات العائلية والتقاعد.
+E: ينص القانون الإطار 09-21 على تعميم التأمين الإجباري الأساسي عن المرض والتعويضات العائلية (الدعم الاجتماعي المباشر)، ثم توسيع التقاعد والتعويض عن فقدان الشغل.
 
 [MAR-242] institutions | intermediate
 Q: Le Nouveau modèle de développement (NMD), présenté en 2021, fixe des objectifs à l'horizon :
@@ -659,6 +955,14 @@ Q: Le Nouveau modèle de développement (NMD), présenté en 2021, fixe des obje
 - 2030 uniquement pour l'agriculture
 C: 2035.
 E: Élaboré par une commission spéciale, le NMD vise notamment à doubler le PIB par habitant et à améliorer le capital humain (éducation, santé) d'ici 2035.
+AR:
+Q: يحدد النموذج التنموي الجديد، الذي قُدّم سنة 2021، أهدافه في أفق:
+* 2035
+- 2025
+- 2050
+- 2030 بالنسبة للفلاحة وحدها
+C: ‏2035.
+E: أعدّته لجنة خاصة، ويهدف خصوصًا إلى مضاعفة الناتج الداخلي الخام للفرد وتحسين الرأسمال البشري (التعليم والصحة) في أفق 2035.
 
 [MAR-243] geographie | intermediate
 Q: Quelle ville est le chef-lieu de la région Souss-Massa ?
@@ -668,6 +972,14 @@ Q: Quelle ville est le chef-lieu de la région Souss-Massa ?
 - Ouarzazate
 C: Agadir.
 E: Agadir est un grand port de pêche et une station balnéaire. Ouarzazate est le chef-lieu d'une province de la région Drâa-Tafilalet.
+AR:
+Q: ما هي عاصمة جهة سوس-ماسة؟
+* أكادير
+- تارودانت
+- تيزنيت
+- ورزازات
+C: أكادير.
+E: أكادير ميناء كبير للصيد ومحطة شاطئية. أما ورزازات فعاصمة إقليم في جهة درعة-تافيلالت.
 
 [MAR-244] geographie | intermediate
 Q: Ifrane, dans le Moyen Atlas, est surnommée :
@@ -677,6 +989,14 @@ Q: Ifrane, dans le Moyen Atlas, est surnommée :
 - La « ville ocre »
 C: La « Suisse du Maroc ».
 E: Son architecture alpine, sa forêt de cèdres et ses hivers enneigés expliquent ce surnom. Chefchaouen est la « ville bleue », Marrakech la « ville ocre ».
+AR:
+Q: تُلقَّب مدينة إفران، في الأطلس المتوسط، بـ:
+* «سويسرا المغرب»
+- «المدينة الزرقاء»
+- «جوهرة الجنوب»
+- «المدينة الحمراء»
+C: «سويسرا المغرب».
+E: يفسّر هذا اللقب عمرانها الجبلي على الطراز الألبي وغابة الأرز وشتاؤها المثلج. أما شفشاون فهي «المدينة الزرقاء»، ومراكش «المدينة الحمراء».
 
 [MAR-245] histoire | intermediate
 Q: L'Instance Équité et Réconciliation (IER), créée en 2004, était chargée :
@@ -686,6 +1006,14 @@ Q: L'Instance Équité et Réconciliation (IER), créée en 2004, était chargé
 - De gérer la régionalisation
 C: La justice transitionnelle.
 E: Présidée par Driss Benzekri, l'IER a établi la vérité sur les violations passées et proposé des réparations et des réformes.
+AR:
+Q: كانت هيئة الإنصاف والمصالحة، التي أُحدثت سنة 2004، مكلفة:
+* بالتحقيق في الانتهاكات الجسيمة لحقوق الإنسان المرتكبة بين 1956 و1999
+- بمراجعة الدستور
+- بتنظيم المسيرة الخضراء
+- بتدبير الجهوية
+C: العدالة الانتقالية.
+E: ترأسها إدريس بنزكري، وكشفت الحقيقة عن الانتهاكات الماضية واقترحت جبر الضرر وإصلاحات.
 
 [MAR-246] institutions | intermediate
 Q: La Moudawana (Code de la famille) a été profondément réformée en :
@@ -695,6 +1023,14 @@ Q: La Moudawana (Code de la famille) a été profondément réformée en :
 - 1993
 C: 2004.
 E: La réforme de 2004 a notamment instauré la coresponsabilité des époux, relevé l'âge du mariage à 18 ans et encadré la polygamie. Un nouveau chantier de révision a été lancé en 2023.
+AR:
+Q: عُدّلت مدونة الأسرة تعديلًا عميقًا سنة:
+* 2004
+- 1957
+- 2011
+- 1993
+C: سنة 2004.
+E: أقر إصلاح 2004 خصوصًا المسؤولية المشتركة للزوجين، ورفع سن الزواج إلى 18 سنة، وقيّد التعدد. وانطلق ورش جديد لمراجعتها سنة 2023.
 
 [MAR-247] culture | beginner
 Q: Quel alphabet a été adopté au Maroc pour écrire la langue amazighe ?
@@ -721,6 +1057,14 @@ Q: L'Institut royal de la culture amazighe (IRCAM) a été créé en :
 - 1990
 C: 2001 (dahir d'Ajdir).
 E: Annoncé dans le discours d'Ajdir du 17 octobre 2001, l'IRCAM œuvre à la promotion de la langue et de la culture amazighes, officialisées par la Constitution de 2011.
+AR:
+Q: أُحدث المعهد الملكي للثقافة الأمازيغية سنة:
+* 2001
+- 1956
+- 2011
+- 1990
+C: سنة 2001 (ظهير أجدير).
+E: أُعلن عنه في خطاب أجدير يوم 17 أكتوبر 2001، ويعمل على النهوض باللغة والثقافة الأمازيغيتين، اللتين رسّمهما دستور 2011.
 
 [MAR-249] economie | intermediate
 Q: Le gazoduc Nigeria-Maroc, en projet, doit relier le Nigeria au Maroc en longeant :
@@ -730,6 +1074,14 @@ Q: Le gazoduc Nigeria-Maroc, en projet, doit relier le Nigeria au Maroc en longe
 - Le fleuve Niger uniquement
 C: La façade atlantique.
 E: Ce projet de gazoduc africain atlantique doit traverser une dizaine de pays d'Afrique de l'Ouest et pourrait être prolongé vers l'Europe.
+AR:
+Q: يُفترض أن يربط أنبوب الغاز نيجيريا-المغرب، الذي هو في طور الإعداد، بين البلدين بمحاذاة:
+* الساحل الأطلسي لغرب إفريقيا
+- وسط الصحراء الكبرى
+- البحر الأبيض المتوسط
+- نهر النيجر وحده
+C: الواجهة الأطلسية.
+E: يُفترض أن يعبر مشروع أنبوب الغاز الإفريقي الأطلسي نحو عشر دول من غرب إفريقيا، ويمكن تمديده نحو أوروبا.
 
 [MAR-250] histoire | intermediate
 Q: La ville de Chefchaouen, surnommée la « perle bleue », a été fondée en 1471 par :
@@ -739,3 +1091,11 @@ Q: La ville de Chefchaouen, surnommée la « perle bleue », a été fondée en 
 - Idriss II
 C: Moulay Ali Ben Rachid.
 E: Fondée comme forteresse contre les incursions portugaises, Chefchaouen a accueilli des réfugiés andalous. Ses maisons bleues en ont fait une destination touristique majeure.
+AR:
+Q: أسس مدينة شفشاون، الملقبة بـ«الجوهرة الزرقاء»، سنة 1471:
+* مولاي علي بن راشد
+- المولى إسماعيل
+- يوسف بن تاشفين
+- إدريس الثاني
+C: مولاي علي بن راشد.
+E: أُسست حصنًا لصد الغارات البرتغالية، واستقبلت لاجئين أندلسيين. وجعلت منها بيوتها الزرقاء وجهة سياحية كبرى.

@@ -1,7 +1,7 @@
 {
  "format": 1,
  "shell": 1,
- "version": "2026-11-09-56da206e",
+ "version": "2026-11-09-69f0c1c8",
  "updated": "2026-11-09",
  "needs": [
   "js/annuaire.js",
@@ -17,9 +17,9 @@
  ],
  "packs": {
   "core": {
-   "file": "packs/core.05b15034bfc3.json",
-   "sha256": "05b15034bfc31513823c5e160186f82817e2ed2ac363192c5fb9d6fd84359e50",
-   "bytes": 777630,
+   "file": "packs/core.6191ff462271.json",
+   "sha256": "6191ff4622718e345e88733ecc69a2c10cf938864c002befe2d8a5d1c9ca6910",
+   "bytes": 777897,
    "files": 8,
    "prefixes": [
     "data/",
@@ -27,9 +27,9 @@
    ]
   },
   "questions": {
-   "file": "packs/questions.4db3e946be16.json",
-   "sha256": "4db3e946be16be7c92a8d63638f5df40fb070ab606479a98681c36e5a48dacea",
-   "bytes": 2268691,
+   "file": "packs/questions.a53e783e4cf2.json",
+   "sha256": "a53e783e4cf2919a6e724954e891f96afed2b25716b58714ee92a3605468ed91",
+   "bytes": 2350790,
    "files": 18,
    "prefixes": [
     "data/questions/"
@@ -45,9 +45,9 @@
    ]
   },
   "pages-ar": {
-   "file": "packs/pages-ar.dec21f570be4.json",
-   "sha256": "dec21f570be4ff59692542a4402a274e9f49920a0a417d0f260f34ea35e09fb2",
-   "bytes": 1286444,
+   "file": "packs/pages-ar.1f312ff539e5.json",
+   "sha256": "1f312ff539e5d11c276318d85cc9f5d215678252e06c486ab1dad171c07d6810",
+   "bytes": 1285856,
    "files": 67,
    "prefixes": [
     "pages/ar/"

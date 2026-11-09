@@ -373,6 +373,8 @@ html[dir="rtl"] .hero h1 { max-width: 20ch; line-height: 1.35; }
 /* scripts hide buttons with the hidden attribute (update, consent, export…):
    inline-flex above would otherwise keep them on screen */
 .btn[hidden] { display: none; }
+/* Formulas read left to right in Arabic pages too (else "8/12 + 9/12 = 17/12" is mirrored). */
+.katex { direction: ltr; unicode-bidi: isolate; }
 .btn:active { transform: scale(.98); }
 .btn[disabled] { opacity: .45; cursor: not-allowed; box-shadow: none; }
 .btn.block { width: 100%; }

@@ -15,6 +15,14 @@ Q: Le prix d'un article augmente de 20 %, puis baisse de 20 %. Par rapport au pr
 - Inférieur de 2 %
 C: Il baisse de 4 %.
 E: Les coefficients multiplicateurs se multiplient : $1{,}20 \times 0{,}80 = 0{,}96$, soit une baisse de 4 %. Les pourcentages ne s'ajoutent pas, car la baisse s'applique à un prix déjà augmenté.
+AR:
+Q: ارتفع ثمن سلعة بنسبة 20%، ثم انخفض بنسبة 20%. مقارنة بالثمن الأصلي، يكون الثمن النهائي:
+* أقل بنسبة 4%
+- مساويًا له
+- أكبر بنسبة 4%
+- أقل بنسبة 2%
+C: ينخفض بنسبة 4%.
+E: معاملات الضرب تُضرب في بعضها: 1,20 × 0,80 = 0,96، أي انخفاض بنسبة 4%. النسب لا تُجمع، لأن الانخفاض يُطبَّق على ثمن سبق أن ارتفع.
 
 [CAL-102] pourcentages | advanced
 Q: Un prix augmente de 10 %, puis encore de 10 %, et subit enfin une remise de 20 %. Quelle affirmation est vraie ?
@@ -24,6 +32,14 @@ Q: Un prix augmente de 10 %, puis encore de 10 %, et subit enfin une remise de 2
 - Le prix final est inférieur de plus de 5 % au prix initial
 C: Baisse de 3,2 %.
 E: $1{,}10 \times 1{,}10 \times 0{,}80 = 0{,}968$ : le prix final vaut 96,8 % du prix initial, soit une baisse de 3,2 %, donc de moins de 5 %.
+AR:
+Q: ارتفع ثمن بنسبة 10%، ثم ارتفع مرة أخرى بنسبة 10%، ثم خُفّض بنسبة 20%. أي عبارة صحيحة؟
+* الثمن النهائي أقل من الثمن الأصلي بأقل من 5%
+- الثمن النهائي يساوي الثمن الأصلي
+- الثمن النهائي أكبر من الثمن الأصلي
+- الثمن النهائي أقل من الثمن الأصلي بأكثر من 5%
+C: انخفاض بنسبة 3,2%.
+E: ‏1,10 × 1,10 × 0,80 = 0,968: الثمن النهائي يساوي 96,8% من الثمن الأصلي، أي انخفاض بنسبة 3,2%، وهي أقل من 5%.
 
 [CAL-103] pourcentages | beginner
 Q: Un article coûte 500 DH hors taxes. Avec une TVA de 20 %, son prix TTC est :
@@ -50,6 +66,14 @@ Q: Après une remise de 20 %, un manteau est vendu 240 DH. Quel était son prix 
 - 192 DH
 C: 300 DH.
 E: Le prix soldé vaut 80 % du prix initial : $P \times 0{,}8 = 240$, donc $P = 300$ DH. Ajouter 20 % à 240 DH (288 DH) est l'erreur classique.
+AR:
+Q: بعد تخفيض بنسبة 20%، بيع معطف بـ240 درهمًا. كم كان ثمنه قبل التخفيض؟
+* 300 درهم
+- 288 درهمًا
+- 260 درهمًا
+- 192 درهمًا
+C: ‏300 درهم.
+E: الثمن بعد التخفيض يساوي 80% من الثمن الأصلي: ث × 0,8 = 240، إذن ث = 300 درهم. أما إضافة 20% إلى 240 درهمًا (288 درهمًا) فهو الخطأ الشائع.
 
 [CAL-105] interets | intermediate
 Q: On place 10 000 DH à intérêts simples au taux annuel de 5 % pendant 3 ans. Les intérêts perçus s'élèvent à :
@@ -59,6 +83,14 @@ Q: On place 10 000 DH à intérêts simples au taux annuel de 5 % pendant 3 ans.
 - 15 000 DH
 C: 1 500 DH.
 E: Intérêts simples : $I = C \times t \times n = 10\,000 \times 0{,}05 \times 3 = 1\,500$ DH. Avec des intérêts composés, on obtiendrait environ 1 576 DH ($10\,000 \times 1{,}05^3 - 10\,000$).
+AR:
+Q: نودع 10000 درهم بفائدة بسيطة بسعر سنوي قدره 5% لمدة 3 سنوات. تبلغ الفوائد المحصلة:
+* 1500 درهم
+- 500 درهم
+- 1576 درهمًا
+- 15000 درهم
+C: 1500 درهم.
+E: الفائدة البسيطة = رأس المال × السعر × المدة = 10000 × 0,05 × 3 = 1500 درهم. وبالفائدة المركبة نحصل على نحو 1576 درهمًا.
 
 [CAL-106] proportions | advanced
 Q: On mélange 2 litres d'un jus contenant 30 % de sucre et 3 litres d'un jus contenant 10 % de sucre. Le pourcentage de sucre du mélange est :
@@ -68,6 +100,14 @@ Q: On mélange 2 litres d'un jus contenant 30 % de sucre et 3 litres d'un jus co
 - 15 %
 C: 18 %.
 E: Quantité de sucre : $2 \times 0{,}30 + 3 \times 0{,}10 = 0{,}9$ L pour 5 L de mélange, soit $\frac{0{,}9}{5} = 18\ \%$. La moyenne simple (20 %) ne tient pas compte des volumes.
+AR:
+Q: نخلط لترين من عصير يحتوي على 30% من السكر و3 لترات من عصير يحتوي على 10% من السكر. نسبة السكر في الخليط:
+* 18%
+- 20%
+- 40%
+- 15%
+C: ‏18%.
+E: كمية السكر: 2 × 0,30 + 3 × 0,10 = 0,9 لتر في 5 لترات من الخليط، أي 0,9 ÷ 5 = 18%. أما المعدل البسيط (20%) فلا يراعي الكميات.
 
 [CAL-107] moyennes | intermediate
 Q: La moyenne de 5 nombres est 12. On ajoute un sixième nombre et la moyenne devient 13. Quel est ce sixième nombre ?
@@ -77,6 +117,14 @@ Q: La moyenne de 5 nombres est 12. On ajoute un sixième nombre et la moyenne de
 - 25
 C: 18.
 E: Somme des 5 nombres : $5 \times 12 = 60$. Somme des 6 nombres : $6 \times 13 = 78$. Le sixième vaut $78 - 60 = 18$.
+AR:
+Q: معدل 5 أعداد هو 12. نضيف عددًا سادسًا فيصبح المعدل 13. ما هو العدد السادس؟
+* 18
+- 13
+- 14
+- 25
+C: 18.
+E: مجموع الأعداد الخمسة: 5 × 12 = 60. ومجموع الأعداد الستة: 6 × 13 = 78. إذن العدد السادس 78 − 60 = 18.
 
 [CAL-108] pourcentages | advanced
 Q: Le taux de chômage d'une région passe de 12 % à 13,5 %. Quelle affirmation est exacte ?
@@ -86,6 +134,14 @@ Q: Le taux de chômage d'une région passe de 12 % à 13,5 %. Quelle affirmation
 - Il augmente de 15 %
 C: +1,5 point de pourcentage, soit +12,5 % en valeur relative.
 E: L'écart entre deux pourcentages s'exprime en points : $13{,}5 - 12 = 1{,}5$ point. En valeur relative : $\frac{1{,}5}{12} = 0{,}125$, soit une hausse de 12,5 %.
+AR:
+Q: انتقل معدل البطالة في جهة من 12% إلى 13,5%. أي عبارة صحيحة؟
+* ارتفع بـ1,5 نقطة، أي بنسبة 12,5%
+- ارتفع بنسبة 1,5%
+- ارتفع بـ12,5 نقطة
+- ارتفع بنسبة 15%
+C: ‏+1,5 نقطة مئوية، أي +12,5% بالقيمة النسبية.
+E: الفرق بين نسبتين مئويتين يُعبَّر عنه بالنقط: 13,5 − 12 = 1,5 نقطة. وبالقيمة النسبية: 1,5 ÷ 12 = 0,125، أي ارتفاع بنسبة 12,5%.
 
 [CAL-109] proportions | intermediate
 Q: Sur une carte à l'échelle 1/50 000, deux villages sont séparés de 6 cm. La distance réelle est :
@@ -95,6 +151,14 @@ Q: Sur une carte à l'échelle 1/50 000, deux villages sont séparés de 6 cm. L
 - 50 km
 C: 3 km.
 E: 1 cm sur la carte représente 50 000 cm, soit 500 m. Donc $6 \times 500 = 3\,000$ m, c'est-à-dire 3 km.
+AR:
+Q: على خريطة مقياسها 1/50000، تفصل بين قريتين مسافة 6 سم. المسافة الحقيقية هي:
+* 3 كلم
+- 300 م
+- 30 كلم
+- 50 كلم
+C: 3 كلم.
+E: ‏1 سم على الخريطة يمثل 50000 سم، أي 500 م. إذن 6 × 500 = 3000 م، أي 3 كلم.
 
 [CAL-110] proportions | intermediate
 Q: 6 ouvriers réalisent un chantier en 10 jours. En combien de jours 4 ouvriers, travaillant au même rythme, réaliseraient-ils le même chantier ?
@@ -104,6 +168,14 @@ Q: 6 ouvriers réalisent un chantier en 10 jours. En combien de jours 4 ouvriers
 - 8 jours
 C: 15 jours.
 E: La durée est inversement proportionnelle au nombre d'ouvriers : le chantier représente $6 \times 10 = 60$ journées de travail, soit $\frac{60}{4} = 15$ jours avec 4 ouvriers.
+AR:
+Q: ينجز 6 عمال ورشًا في 10 أيام. في كم يومًا ينجز 4 عمال، بالوتيرة نفسها، الورش نفسه؟
+* 15 يومًا
+- 6,7 أيام
+- 12 يومًا
+- 8 أيام
+C: 15 يومًا.
+E: المدة تتناسب عكسيًا مع عدد العمال: الورش يساوي 6 × 10 = 60 يوم عمل، أي 60 ÷ 4 = 15 يومًا بأربعة عمال.
 
 [CAL-111] pourcentages | advanced
 Q: Amine dépense 25 % de son salaire pour son loyer, puis 20 % de ce qui reste pour ses transports. Quel pourcentage de son salaire lui reste-t-il ?
@@ -113,6 +185,14 @@ Q: Amine dépense 25 % de son salaire pour son loyer, puis 20 % de ce qui reste 
 - 65 %
 C: 60 %.
 E: Après le loyer, il reste 75 % du salaire. Les transports coûtent $0{,}20 \times 75\ \% = 15\ \%$ du salaire. Il reste $75 - 15 = 60\ \%$ (ou $0{,}75 \times 0{,}80 = 0{,}60$).
+AR:
+Q: ينفق أمين 25% من أجرته على الكراء، ثم 20% مما تبقى على التنقل. ما النسبة التي تبقى له من أجرته؟
+* 60%
+- 55%
+- 45%
+- 65%
+C: ‏60%.
+E: بعد الكراء يبقى 75% من الأجرة. والتنقل يكلف 0,20 × 75% = 15% من الأجرة. يبقى 75 − 15 = 60% (أو 0,75 × 0,80 = 0,60).
 
 [CAL-112] proportions | intermediate
 Q: Un bénéfice de 18 000 DH est partagé entre trois associés proportionnellement à leurs apports : 2 000 DH, 3 000 DH et 4 000 DH. Combien reçoit celui qui a apporté 4 000 DH ?
@@ -122,6 +202,14 @@ Q: Un bénéfice de 18 000 DH est partagé entre trois associés proportionnelle
 - 7 200 DH
 C: 8 000 DH.
 E: Les apports totalisent 9 000 DH : cet associé a fourni $\frac{4\,000}{9\,000} = \frac{4}{9}$ du capital et reçoit $\frac{4}{9} \times 18\,000 = 8\,000$ DH. Les deux autres reçoivent 4 000 DH et 6 000 DH ; un partage égal (6 000 DH chacun) ne respecterait pas les apports.
+AR:
+Q: يُقسَّم ربح قدره 18000 درهم بين ثلاثة شركاء بالتناسب مع مساهماتهم: 2000 و3000 و4000 درهم. كم يتسلم صاحب مساهمة 4000 درهم؟
+* 8000 درهم
+- 6000 درهم
+- 4000 درهم
+- 7200 درهم
+C: 8000 درهم.
+E: مجموع المساهمات 9000 درهم، فهذا الشريك قدّم 4/9 من رأس المال، ويتسلم 4/9 × 18000 = 8000 درهم. ويتسلم الآخران 4000 و6000 درهم؛ والتقسيم بالتساوي (6000 لكل واحد) لا يحترم المساهمات.
 
 # ---------------------------------------------------------------------------
 # lot-2026-10-programme : questions de niveau bac dans l'esprit des épreuves TAFEM (ENCG),
@@ -153,6 +241,14 @@ Q: Un prix passe de 80 DH à 100 DH. Le pourcentage d'augmentation est :
 - 125 %
 C: 25 %.
 E: $\frac{100 - 80}{80} = \frac{20}{80} = 0{,}25$. On divise toujours par la valeur de départ.
+AR:
+Q: انتقل ثمن من 80 درهمًا إلى 100 درهم. نسبة الارتفاع هي:
+* 25%
+- 20%
+- 80%
+- 125%
+C: ‏25%.
+E: ‏(100 − 80) ÷ 80 = 20 ÷ 80 = 0,25. نقسم دائمًا على القيمة الأصلية.
 
 [CAL-203] pourcentages | intermediate
 Q: Un prix passe de 100 DH à 80 DH. Le pourcentage de baisse est :
@@ -162,6 +258,14 @@ Q: Un prix passe de 100 DH à 80 DH. Le pourcentage de baisse est :
 - 15 %
 C: 20 %.
 E: $\frac{100 - 80}{100} = 0{,}20$. Une hausse de 25 % suivie d'une baisse de 20 % ramène au prix de départ.
+AR:
+Q: انتقل ثمن من 100 درهم إلى 80 درهمًا. نسبة الانخفاض هي:
+* 20%
+- 25%
+- 80%
+- 15%
+C: ‏20%.
+E: ‏(100 − 80) ÷ 100 = 0,20. وارتفاع بنسبة 25% يتبعه انخفاض بنسبة 20% يعيد الثمن إلى قيمته الأصلية.
 
 [CAL-204] pourcentages | advanced
 Q: Un salaire de 6 000 DH augmente de 5 % chaque année pendant 2 ans. Il vaut alors :
@@ -171,6 +275,14 @@ Q: Un salaire de 6 000 DH augmente de 5 % chaque année pendant 2 ans. Il vaut a
 - 6 610 DH
 C: 6 615 DH.
 E: $6\,000 \times 1{,}05^2 = 6\,000 \times 1{,}1025 = 6\,615$ DH. Les augmentations successives se multiplient : la deuxième s'applique au salaire déjà augmenté.
+AR:
+Q: أجرة قدرها 6000 درهم ترتفع بنسبة 5% كل سنة لمدة سنتين. تصبح قيمتها:
+* 6615 درهمًا
+- 6600 درهم
+- 6300 درهم
+- 6610 دراهم
+C: ‏6615 درهمًا.
+E: ‏6000 × 1,05 × 1,05 = 6000 × 1,1025 = 6615 درهمًا. الزيادات المتتالية تُضرب: الزيادة الثانية تُطبَّق على الأجرة بعد زيادتها.
 
 [CAL-205] pourcentages | intermediate
 Q: Dans une classe de 32 élèves, 24 ont réussi l'examen. Le taux de réussite est :
@@ -180,6 +292,14 @@ Q: Dans une classe de 32 élèves, 24 ont réussi l'examen. Le taux de réussite
 - 66 %
 C: 75 %.
 E: $\frac{24}{32} = \frac{3}{4} = 75\ \%$.
+AR:
+Q: في قسم من 32 تلميذًا، نجح 24 في الامتحان. نسبة النجاح هي:
+* 75%
+- 24%
+- 80%
+- 66%
+C: ‏75%.
+E: ‏24 ÷ 32 = 3/4 = 75%.
 
 [CAL-206] pourcentages | advanced
 Q: Le prix TTC d'un article est de 360 DH, avec une TVA de 20 %. Son prix hors taxes est :
@@ -189,6 +309,14 @@ Q: Le prix TTC d'un article est de 360 DH, avec une TVA de 20 %. Son prix hors t
 - 432 DH
 C: 300 DH.
 E: TTC = HT × 1,2, donc HT = $\frac{360}{1{,}2} = 300$ DH. Retirer 20 % du prix TTC (288 DH) est l'erreur classique.
+AR:
+Q: ثمن سلعة مع احتساب الرسوم 360 درهمًا، بضريبة على القيمة المضافة نسبتها 20%. ثمنها دون احتساب الرسوم:
+* 300 درهم
+- 288 درهمًا
+- 340 درهمًا
+- 432 درهمًا
+C: ‏300 درهم.
+E: الثمن مع الرسوم = الثمن دون رسوم × 1,2، إذن الثمن دون رسوم = 360 ÷ 1,2 = 300 درهم. أما طرح 20% من الثمن مع الرسوم (288 درهمًا) فهو الخطأ الشائع.
 
 [CAL-207] pourcentages | intermediate
 Q: Une population de 50 000 habitants diminue de 4 %. Elle compte alors :
@@ -198,6 +326,14 @@ Q: Une population de 50 000 habitants diminue de 4 %. Elle compte alors :
 - 52 000 habitants
 C: 48 000.
 E: $50\,000 \times 0{,}96 = 48\,000$ habitants (perte de 2 000 habitants).
+AR:
+Q: انخفض عدد سكان مدينة من 50000 نسمة بنسبة 4%. يصبح عددهم:
+* 48000 نسمة
+- 46000 نسمة
+- 49600 نسمة
+- 52000 نسمة
+C: ‏48000.
+E: ‏50000 × 0,96 = 48000 نسمة (نقص قدره 2000 نسمة).
 
 [CAL-208] proportions | beginner
 Q: 4 cahiers coûtent 28 DH. Combien coûtent 7 cahiers ?
@@ -224,6 +360,14 @@ Q: Une voiture consomme 6 litres aux 100 km. Combien de litres lui faut-il pour 
 - 45 litres
 C: 27 L.
 E: $\frac{6 \times 450}{100} = 27$ litres.
+AR:
+Q: تستهلك سيارة 6 لترات في كل 100 كلم. كم لترًا تحتاج لقطع 450 كلم؟
+* 27 لترًا
+- 24 لترًا
+- 30 لترًا
+- 45 لترًا
+C: ‏27 لترًا.
+E: ‏(6 × 450) ÷ 100 = 27 لترًا.
 
 [CAL-210] proportions | intermediate
 Q: Pour faire un gâteau pour 6 personnes, il faut 300 g de farine. Quelle quantité faut-il pour 10 personnes ?
@@ -233,6 +377,14 @@ Q: Pour faire un gâteau pour 6 personnes, il faut 300 g de farine. Quelle quant
 - 450 g
 C: 500 g.
 E: 50 g par personne ($\frac{300}{6}$), donc $10 \times 50 = 500$ g.
+AR:
+Q: لإعداد حلوى لـ6 أشخاص نحتاج إلى 300 غ من الدقيق. ما الكمية اللازمة لـ10 أشخاص؟
+* 500 غ
+- 400 غ
+- 600 غ
+- 450 غ
+C: ‏500 غ.
+E: ‏50 غ لكل شخص (300 ÷ 6)، إذن 10 × 50 = 500 غ.
 
 [CAL-211] proportions | intermediate
 Q: Un héritage de 72 000 DH est partagé entre trois enfants dans les proportions 2, 3 et 4. La plus petite part vaut :
@@ -242,6 +394,14 @@ Q: Un héritage de 72 000 DH est partagé entre trois enfants dans les proportio
 - 32 000 DH
 C: 16 000 DH.
 E: Il y a $2 + 3 + 4 = 9$ parts de $\frac{72\,000}{9} = 8\,000$ DH. Les parts valent 16 000, 24 000 et 32 000 DH.
+AR:
+Q: تُقسَّم تركة قدرها 72000 درهم بين ثلاثة أبناء حسب النسب 2 و3 و4. أصغر نصيب يساوي:
+* 16000 درهم
+- 24000 درهم
+- 18000 درهم
+- 32000 درهم
+C: ‏16000 درهم.
+E: هناك 2 + 3 + 4 = 9 أجزاء، قيمة كل جزء 72000 ÷ 9 = 8000 درهم. فالأنصبة 16000 و24000 و32000 درهم.
 
 [CAL-212] fractions | intermediate
 Q: Combien font $\frac{2}{3} + \frac{3}{4}$ ?
@@ -251,6 +411,14 @@ Q: Combien font $\frac{2}{3} + \frac{3}{4}$ ?
 - $\frac{6}{12}$
 C: $\frac{8}{12} + \frac{9}{12} = \frac{17}{12}$.
 E: On réduit au même dénominateur (12) avant d'ajouter. On n'additionne jamais numérateurs et dénominateurs entre eux.
+AR:
+Q: كم يساوي $\frac{2}{3} + \frac{3}{4}$؟
+* $\frac{17}{12}$
+- $\frac{5}{7}$
+- $\frac{5}{12}$
+- $\frac{6}{12}$
+C: $\frac{8}{12} + \frac{9}{12} = \frac{17}{12}$
+E: نوحّد المقامات (12) قبل الجمع، ولا نجمع أبدًا البسوط فيما بينها والمقامات فيما بينها.
 
 [CAL-213] fractions | advanced
 Q: Un réservoir est rempli aux $\frac{3}{5}$. On ajoute 30 litres et il est alors rempli aux $\frac{4}{5}$. Quelle est sa capacité ?
@@ -260,6 +428,14 @@ Q: Un réservoir est rempli aux $\frac{3}{5}$. On ajoute 30 litres et il est alo
 - 200 litres
 C: 150 L.
 E: 30 litres représentent $\frac{4}{5} - \frac{3}{5} = \frac{1}{5}$ de la capacité, donc la capacité vaut $5 \times 30 = 150$ L.
+AR:
+Q: خزان مملوء إلى $\frac{3}{5}$. نضيف 30 لترًا فيصبح مملوءًا إلى $\frac{4}{5}$. ما سعته؟
+* 150 لترًا
+- 120 لترًا
+- 90 لترًا
+- 200 لتر
+C: ‏150 لترًا.
+E: الثلاثون لترًا تمثل 4/5 − 3/5 = 1/5 من السعة، إذن السعة 5 × 30 = 150 لترًا.
 
 [CAL-214] fractions | advanced
 Q: Karim dépense $\frac{1}{4}$ de son argent, puis $\frac{1}{3}$ de ce qui reste. Il lui reste 300 DH. Combien avait-il au départ ?
@@ -269,6 +445,14 @@ Q: Karim dépense $\frac{1}{4}$ de son argent, puis $\frac{1}{3}$ de ce qui rest
 - 900 DH
 C: 600 DH.
 E: Après la 1re dépense, il reste $\frac{3}{4}$ ; après la 2e, il reste $\frac{2}{3} \times \frac{3}{4} = \frac{1}{2}$ de la somme initiale. Donc la somme vaut $2 \times 300 = 600$ DH.
+AR:
+Q: أنفق كريم $\frac{1}{4}$ من ماله، ثم $\frac{1}{3}$ مما تبقى، فبقي معه 300 درهم. كم كان معه في البداية؟
+* 600 درهم
+- 500 درهم
+- 720 درهمًا
+- 900 درهم
+C: ‏600 درهم.
+E: بعد الإنفاق الأول يبقى 3/4، وبعد الثاني يبقى 2/3 × 3/4 = 1/2 من المبلغ الأصلي. إذن المبلغ 2 × 300 = 600 درهم.
 
 [CAL-215] fractions | intermediate
 Q: Quel est le plus grand nombre parmi : $\frac{5}{8}$ ; $\frac{3}{5}$ ; $\frac{7}{12}$ ; $\frac{2}{3}$ ?
@@ -278,6 +462,14 @@ Q: Quel est le plus grand nombre parmi : $\frac{5}{8}$ ; $\frac{3}{5}$ ; $\frac{
 - $\frac{7}{12}$
 C: $\frac{2}{3} \approx 0{,}667$.
 E: En écriture décimale : 0,625 ; 0,6 ; 0,583 ; 0,667. La plus grande est $\frac{2}{3}$.
+AR:
+Q: ما أكبر عدد من بين: $\frac{5}{8}$ ؛ $\frac{3}{5}$ ؛ $\frac{7}{12}$ ؛ $\frac{2}{3}$؟
+* $\frac{2}{3}$
+- $\frac{5}{8}$
+- $\frac{3}{5}$
+- $\frac{7}{12}$
+C: $\frac{2}{3} \approx 0{,}667$
+E: بالكتابة العشرية: 0,625 و0,6 و0,583 و0,667. فالأكبر هو 2/3.
 
 [CAL-216] moyennes | beginner
 Q: Les notes d'un élève sont 12, 15, 9 et 16. Sa moyenne est :
@@ -304,6 +496,14 @@ Q: Un élève a 14 (coefficient 3) en maths et 10 (coefficient 1) en français. 
 - 11
 C: 13.
 E: $\frac{14 \times 3 + 10 \times 1}{3 + 1} = \frac{52}{4} = 13$.
+AR:
+Q: حصل تلميذ على 14 (المعامل 3) في الرياضيات و10 (المعامل 1) في الفرنسية. معدله الموزون هو:
+* 13
+- 12
+- 14
+- 11
+C: ‏13.
+E: ‏(14 × 3 + 10 × 1) ÷ (3 + 1) = 52 ÷ 4 = 13.
 
 [CAL-218] moyennes | intermediate
 Q: La moyenne de 4 nombres est 15. Trois d'entre eux sont 12, 18 et 10. Le quatrième vaut :
@@ -313,6 +513,14 @@ Q: La moyenne de 4 nombres est 15. Trois d'entre eux sont 12, 18 et 10. Le quatr
 - 18
 C: 20.
 E: Somme des 4 nombres : $4 \times 15 = 60$. Le quatrième vaut $60 - (12 + 18 + 10) = 20$.
+AR:
+Q: معدل 4 أعداد هو 15، وثلاثة منها هي 12 و18 و10. العدد الرابع يساوي:
+* 20
+- 15
+- 25
+- 18
+C: ‏20.
+E: مجموع الأعداد الأربعة: 4 × 15 = 60. فالعدد الرابع 60 − (12 + 18 + 10) = 20.
 
 [CAL-219] moyennes | advanced
 Q: Une classe de 20 élèves a une moyenne de 11 ; une autre classe de 30 élèves a une moyenne de 13. La moyenne de l'ensemble des 50 élèves est :
@@ -322,6 +530,14 @@ Q: Une classe de 20 élèves a une moyenne de 11 ; une autre classe de 30 élèv
 - 24
 C: 12,2.
 E: $\frac{20 \times 11 + 30 \times 13}{50} = \frac{220 + 390}{50} = \frac{610}{50} = 12{,}2$. La moyenne simple (12) ne tient pas compte des effectifs.
+AR:
+Q: قسم من 20 تلميذًا معدله 11، وقسم آخر من 30 تلميذًا معدله 13. معدل التلاميذ الخمسين مجتمعين:
+* 12,2
+- 12
+- 12,5
+- 24
+C: ‏12,2.
+E: ‏(20 × 11 + 30 × 13) ÷ 50 = (220 + 390) ÷ 50 = 610 ÷ 50 = 12,2. أما المعدل البسيط (12) فلا يراعي عدد التلاميذ في كل قسم.
 
 [CAL-220] vitesse | beginner
 Q: Un cycliste parcourt 45 km en 1 h 30. Sa vitesse moyenne est :
@@ -348,6 +564,14 @@ Q: Combien font 72 km/h en m/s ?
 - 25 m/s
 C: 20 m/s.
 E: On divise par 3,6 : $\frac{72}{3{,}6} = 20$ m/s (72 000 m en 3 600 s).
+AR:
+Q: كم تساوي 72 كلم/س بالمتر في الثانية؟
+* 20 م/ث
+- 7,2 م/ث
+- 72 م/ث
+- 25 م/ث
+C: ‏20 م/ث.
+E: نقسم على 3,6: ‏72 ÷ 3,6 = 20 م/ث (72000 م في 3600 ث).
 
 [CAL-222] vitesse | intermediate
 Q: Un train roule à 120 km/h. Combien de temps met-il pour parcourir 50 km ?
@@ -357,6 +581,14 @@ Q: Un train roule à 120 km/h. Combien de temps met-il pour parcourir 50 km ?
 - 40 minutes
 C: 25 min.
 E: $t = \frac{50}{120}$ h $= \frac{5}{12}$ h $= 25$ minutes.
+AR:
+Q: يسير قطار بسرعة 120 كلم/س. كم يستغرق لقطع 50 كلم؟
+* 25 دقيقة
+- 24 دقيقة
+- 30 دقيقة
+- 40 دقيقة
+C: ‏25 دقيقة.
+E: المدة = 50 ÷ 120 ساعة = 5/12 ساعة = 25 دقيقة.
 
 [CAL-223] vitesse | advanced
 Q: Deux voitures partent en même temps de Rabat et Casablanca (90 km) et roulent l'une vers l'autre à 80 km/h et 100 km/h. Elles se croisent au bout de :
@@ -366,6 +598,14 @@ Q: Deux voitures partent en même temps de Rabat et Casablanca (90 km) et roulen
 - 20 minutes
 C: 30 min.
 E: Elles se rapprochent de $80 + 100 = 180$ km par heure : $\frac{90}{180} = 0{,}5$ h.
+AR:
+Q: تنطلق سيارتان في الوقت نفسه من الرباط والدار البيضاء (90 كلم) وتسيران إحداهما نحو الأخرى بسرعتي 80 كلم/س و100 كلم/س. تلتقيان بعد:
+* 30 دقيقة
+- 45 دقيقة
+- ساعة
+- 20 دقيقة
+C: ‏30 دقيقة.
+E: تقتربان بـ80 + 100 = 180 كلم في الساعة: 90 ÷ 180 = 0,5 ساعة.
 
 [CAL-224] vitesse | advanced
 Q: Une voiture rattrape un camion. Le camion roule à 70 km/h et a 15 km d'avance ; la voiture roule à 100 km/h. Elle le rattrape au bout de :
@@ -375,6 +615,14 @@ Q: Une voiture rattrape un camion. Le camion roule à 70 km/h et a 15 km d'avanc
 - 1 heure
 C: 30 min.
 E: L'écart diminue de $100 - 70 = 30$ km par heure : $\frac{15}{30} = 0{,}5$ h.
+AR:
+Q: سيارة تلحق بشاحنة. تسير الشاحنة بسرعة 70 كلم/س ولها تقدم 15 كلم، وتسير السيارة بسرعة 100 كلم/س. تلحق بها بعد:
+* 30 دقيقة
+- 15 دقيقة
+- 9 دقائق
+- ساعة
+C: ‏30 دقيقة.
+E: يتقلص الفارق بـ100 − 70 = 30 كلم في الساعة: 15 ÷ 30 = 0,5 ساعة.
 
 [CAL-225] interets | advanced
 Q: Un capital de 20 000 DH est placé à intérêts composés au taux annuel de 10 % pendant 2 ans. Sa valeur finale est :
@@ -384,6 +632,14 @@ Q: Un capital de 20 000 DH est placé à intérêts composés au taux annuel de 
 - 24 400 DH
 C: 24 200 DH.
 E: $20\,000 \times 1{,}1^2 = 20\,000 \times 1{,}21 = 24\,200$ DH. En intérêts simples, on obtiendrait 24 000 DH.
+AR:
+Q: يُودَع رأس مال قدره 20000 درهم بفائدة مركبة بسعر سنوي 10% لمدة سنتين. قيمته النهائية:
+* 24200 درهم
+- 24000 درهم
+- 22000 درهم
+- 24400 درهم
+C: ‏24200 درهم.
+E: ‏20000 × 1,1 × 1,1 = 20000 × 1,21 = 24200 درهم. وبالفائدة البسيطة نحصل على 24000 درهم.
 
 [CAL-226] interets | intermediate
 Q: Un prêt de 30 000 DH est remboursé en une seule fois après un an, avec un intérêt de 6 %. La somme remboursée est :
@@ -393,6 +649,14 @@ Q: Un prêt de 30 000 DH est remboursé en une seule fois après un an, avec un 
 - 30 600 DH
 C: 31 800 DH.
 E: Intérêt : $30\,000 \times 0{,}06 = 1\,800$ DH. Somme remboursée : $30\,000 + 1\,800 = 31\,800$ DH.
+AR:
+Q: يُسدَّد قرض قدره 30000 درهم دفعة واحدة بعد سنة، بفائدة نسبتها 6%. المبلغ المسدَّد هو:
+* 31800 درهم
+- 31000 درهم
+- 36000 درهم
+- 30600 درهم
+C: ‏31800 درهم.
+E: الفائدة: 30000 × 0,06 = 1800 درهم. والمبلغ المسدد: 30000 + 1800 = 31800 درهم.
 
 [CAL-227] geometrie | beginner
 Q: Un terrain rectangulaire mesure 25 m sur 16 m. Son aire est :
@@ -419,6 +683,14 @@ Q: Un disque a un rayon de 10 cm. Son aire vaut environ ($\pi \approx 3{,}14$) :
 - 100 cm²
 C: $\pi r^2 \approx 314$ cm².
 E: Aire : $\pi \times 10^2 \approx 314$ cm² ; périmètre : $2\pi r \approx 62{,}8$ cm.
+AR:
+Q: قرص شعاعه 10 سم. مساحته تساوي تقريبًا (π ≈ 3,14):
+* 314 سم²
+- 62,8 سم²
+- 31,4 سم²
+- 100 سم²
+C: ‏π × ش² ≈ 314 سم².
+E: المساحة: π × 10² ≈ 314 سم²؛ والمحيط: 2 × π × ش ≈ 62,8 سم.
 
 [CAL-229] geometrie | intermediate
 Q: Un triangle rectangle a des côtés de l'angle droit de 6 cm et 8 cm. Son hypoténuse mesure :
@@ -428,6 +700,14 @@ Q: Un triangle rectangle a des côtés de l'angle droit de 6 cm et 8 cm. Son hyp
 - 48 cm
 C: 10 cm.
 E: Théorème de Pythagore : $\sqrt{6^2 + 8^2} = \sqrt{100} = 10$ cm.
+AR:
+Q: مثلث قائم الزاوية ضلعا الزاوية القائمة فيه 6 سم و8 سم. طول الوتر:
+* 10 سم
+- 14 سم
+- 12 سم
+- 48 سم
+C: ‏10 سم.
+E: حسب مبرهنة فيثاغورس: الجذر المربع لـ(6² + 8²) = الجذر المربع لـ100 = 10 سم.
 
 [CAL-230] geometrie | intermediate
 Q: Un aquarium mesure 50 cm × 30 cm × 40 cm. Sa contenance est de :
@@ -437,6 +717,14 @@ Q: Un aquarium mesure 50 cm × 30 cm × 40 cm. Sa contenance est de :
 - 120 litres
 C: 60 L.
 E: Volume : $50 \times 30 \times 40 = 60\,000$ cm³ = 60 dm³ = 60 L (1 L = 1 dm³ = 1 000 cm³).
+AR:
+Q: أبعاد حوض أسماك 50 سم × 30 سم × 40 سم. سعته:
+* 60 لترًا
+- 6 لترات
+- 600 لتر
+- 120 لترًا
+C: ‏60 لترًا.
+E: الحجم: 50 × 30 × 40 = 60000 سم³ = 60 دسم³ = 60 لترًا (1 لتر = 1 دسم³ = 1000 سم³).
 
 [CAL-231] geometrie | advanced
 Q: On augmente de 10 % la longueur et la largeur d'un rectangle. Son aire augmente de :
@@ -446,6 +734,14 @@ Q: On augmente de 10 % la longueur et la largeur d'un rectangle. Son aire augmen
 - 11 %
 C: 21 %.
 E: L'aire est multipliée par $1{,}1 \times 1{,}1 = 1{,}21$, soit une hausse de 21 %.
+AR:
+Q: نزيد طول مستطيل وعرضه بنسبة 10%. تزداد مساحته بنسبة:
+* 21%
+- 20%
+- 10%
+- 11%
+C: ‏21%.
+E: تُضرب المساحة في 1,1 × 1,1 = 1,21، أي زيادة بنسبة 21%.
 
 [CAL-232] pourcentages | advanced
 Q: Un commerçant achète un article 400 DH et veut réaliser une marge de 25 % sur le prix de vente. Il doit le vendre :
@@ -455,6 +751,14 @@ Q: Un commerçant achète un article 400 DH et veut réaliser une marge de 25 % 
 - 480 DH
 C: $P = \frac{400}{0{,}75} \approx 533$ DH.
 E: Si la marge représente 25 % du prix de vente, le coût d'achat en représente 75 % : $P = \frac{400}{0{,}75} \approx 533{,}33$ DH. Une marge de 25 % du prix d'achat donnerait 500 DH.
+AR:
+Q: يشتري تاجر سلعة بـ400 درهم ويريد تحقيق هامش ربح قدره 25% من ثمن البيع. يجب أن يبيعها بـ:
+* نحو 533 درهمًا
+- 500 درهم
+- 425 درهمًا
+- 480 درهمًا
+C: ث = 400 ÷ 0,75 ≈ 533 درهمًا.
+E: إذا كان الهامش يمثل 25% من ثمن البيع، فإن ثمن الشراء يمثل 75% منه: ث = 400 ÷ 0,75 ≈ 533,33 درهمًا. أما هامش 25% من ثمن الشراء فيعطي 500 درهم.
 
 [CAL-233] proportions | intermediate
 Q: Sur une carte à l'échelle 1/200 000, une route mesure 7,5 cm. Sa longueur réelle est :
@@ -464,6 +768,14 @@ Q: Sur une carte à l'échelle 1/200 000, une route mesure 7,5 cm. Sa longueur r
 - 75 km
 C: 15 km.
 E: $7{,}5 \times 200\,000 = 1\,500\,000$ cm $= 15\,000$ m $= 15$ km.
+AR:
+Q: على خريطة مقياسها 1/200000، يبلغ طول طريق 7,5 سم. طوله الحقيقي:
+* 15 كلم
+- 1,5 كلم
+- 150 كلم
+- 75 كلم
+C: ‏15 كلم.
+E: ‏7,5 × 200000 = 1500000 سم = 15000 م = 15 كلم.
 
 [CAL-234] proportions | intermediate
 Q: 1 dirham vaut environ 0,092 euro. Combien d'euros obtient-on avec 5 000 DH ?
@@ -473,6 +785,14 @@ Q: 1 dirham vaut environ 0,092 euro. Combien d'euros obtient-on avec 5 000 DH ?
 - 543 €
 C: 460 €.
 E: $5\,000 \times 0{,}092 = 460$ €. Pour convertir des euros en dirhams, on diviserait par 0,092.
+AR:
+Q: الدرهم الواحد يساوي نحو 0,092 يورو. كم يورو نحصل عليه مقابل 5000 درهم؟
+* 460 يورو
+- 46 يورو
+- 4600 يورو
+- 543 يورو
+C: ‏460 يورو.
+E: ‏5000 × 0,092 = 460 يورو. ولتحويل اليورو إلى دراهم نقسم على 0,092.
 
 [CAL-235] fractions | intermediate
 Q: Le nombre $0{,}125$ s'écrit sous forme de fraction irréductible :
@@ -482,6 +802,14 @@ Q: Le nombre $0{,}125$ s'écrit sous forme de fraction irréductible :
 - $\frac{12}{100}$
 C: $\frac{125}{1\,000} = \frac{1}{8}$.
 E: $0{,}125 = \frac{125}{1\,000}$ ; en simplifiant par 125, on obtient $\frac{1}{8}$.
+AR:
+Q: يُكتب العدد 0,125 على شكل كسر غير قابل للاختزال:
+* $\frac{1}{8}$
+- $\frac{125}{100}$
+- $\frac{1}{4}$
+- $\frac{12}{100}$
+C: $\frac{125}{1\,000} = \frac{1}{8}$
+E: ‏0,125 = 125/1000، وباختزال البسط والمقام على 125 نحصل على 1/8.
 
 [CAL-236] moyennes | intermediate
 Q: Un candidat obtient 12 à l'examen national (coefficient 75 %) et 16 à l'examen régional (coefficient 25 %). Sa note de présélection est :
@@ -491,6 +819,14 @@ Q: Un candidat obtient 12 à l'examen national (coefficient 75 %) et 16 à l'exa
 - 15
 C: $0{,}75 \times 12 + 0{,}25 \times 16 = 13$.
 E: $9 + 4 = 13$. C'est la formule 75/25 utilisée pour la présélection de nombreux concours (médecine, ENSA, ENCG…).
+AR:
+Q: حصل مترشح على 12 في الامتحان الوطني (المعامل 75%) و16 في الامتحان الجهوي (المعامل 25%). نقطة الانتقاء الأولي هي:
+* 13
+- 14
+- 12,5
+- 15
+C: ‏0,75 × 12 + 0,25 × 16 = 13
+E: ‏9 + 4 = 13. وهذه صيغة 75/25 المعتمدة في الانتقاء الأولي لعدد من المباريات (الطب، ENSA، ENCG…).
 
 [CAL-237] statistiques | intermediate
 Q: La médiane de la série 3 ; 7 ; 8 ; 12 ; 15 ; 20 est :
@@ -500,6 +836,14 @@ Q: La médiane de la série 3 ; 7 ; 8 ; 12 ; 15 ; 20 est :
 - 10,8
 C: 10.
 E: La série compte 6 valeurs rangées : la médiane est la moyenne des 3e et 4e valeurs, $\frac{8 + 12}{2} = 10$. La moyenne vaut environ 10,8.
+AR:
+Q: الوسيط في السلسلة 3 ؛ 7 ؛ 8 ؛ 12 ؛ 15 ؛ 20 هو:
+* 10
+- 8
+- 12
+- 10,8
+C: ‏10.
+E: تضم السلسلة 6 قيم مرتبة، فالوسيط هو معدل القيمتين الثالثة والرابعة: (8 + 12) ÷ 2 = 10. أما المعدل فيساوي نحو 10,8.
 
 [CAL-238] statistiques | intermediate
 Q: Dans un sondage auprès de 400 personnes, 30 % préfèrent le train. Sur un diagramme circulaire, l'angle correspondant mesure :
@@ -509,6 +853,14 @@ Q: Dans un sondage auprès de 400 personnes, 30 % préfèrent le train. Sur un d
 - 90°
 C: $0{,}30 \times 360° = 108°$.
 E: Le disque entier (360°) représente 100 % ; chaque pourcentage $p$ correspond à un angle $p \times 360°$.
+AR:
+Q: في استطلاع شمل 400 شخص، يفضّل 30% منهم القطار. على مخطط دائري، تقيس الزاوية المقابلة:
+* 108°
+- 30°
+- 120°
+- 90°
+C: ‏0,30 × 360° = 108°
+E: القرص كله (360°) يمثل 100%، وكل نسبة p تقابلها زاوية p × 360°.
 
 [CAL-239] statistiques | intermediate
 Q: Les ventes d'une entreprise passent de 2 000 unités en 2023 à 2 500 en 2024. En prenant 2023 comme base 100, l'indice de 2024 vaut :
@@ -518,6 +870,14 @@ Q: Les ventes d'une entreprise passent de 2 000 unités en 2023 à 2 500 en 2024
 - 150
 C: 125.
 E: Indice $= \frac{2\,500}{2\,000} \times 100 = 125$ : les ventes ont augmenté de 25 %.
+AR:
+Q: انتقلت مبيعات مقاولة من 2000 وحدة سنة 2023 إلى 2500 وحدة سنة 2024. باعتماد سنة 2023 أساسًا (100)، يساوي مؤشر 2024:
+* 125
+- 25
+- 120
+- 150
+C: ‏125.
+E: المؤشر = (2500 ÷ 2000) × 100 = 125، أي أن المبيعات ارتفعت بنسبة 25%.
 
 [CAL-240] calcul-mental | beginner
 Q: Combien font $25 \times 48$ ?
@@ -561,6 +921,14 @@ Q: Combien font $\frac{3}{4}$ de 2 h 40 min ?
 - 1 h 30
 C: 2 heures.
 E: 2 h 40 = 160 min ; $\frac{3}{4} \times 160 = 120$ min = 2 h.
+AR:
+Q: كم تساوي 3/4 من ساعتين و40 دقيقة؟
+* ساعتان
+- ساعة و50 دقيقة
+- ساعتان و10 دقائق
+- ساعة و30 دقيقة
+C: ساعتان.
+E: ساعتان و40 دقيقة = 160 دقيقة؛ و3/4 × 160 = 120 دقيقة = ساعتان.
 
 [CAL-243] calcul-mental | intermediate
 Q: Combien font $99^2$ ?
@@ -570,6 +938,14 @@ Q: Combien font $99^2$ ?
 - 9 081
 C: 9 801.
 E: $(100 - 1)^2 = 10\,000 - 200 + 1 = 9\,801$.
+AR:
+Q: كم يساوي 99²؟
+* 9801
+- 9999
+- 9900
+- 9081
+C: ‏9801.
+E: ‏(100 − 1)² = 10000 − 200 + 1 = 9801.
 
 [CAL-244] proportions | intermediate
 Q: Un mélange contient de l'eau et du sirop dans le rapport 5 : 2. Pour 3,5 litres de mélange, il faut :
@@ -579,6 +955,14 @@ Q: Un mélange contient de l'eau et du sirop dans le rapport 5 : 2. Pour 3,5 lit
 - 2 litres de sirop
 C: 1 L de sirop et 2,5 L d'eau.
 E: Le mélange compte $5 + 2 = 7$ parts ; une part vaut $\frac{3{,}5}{7} = 0{,}5$ L. Sirop : $2 \times 0{,}5 = 1$ L.
+AR:
+Q: يحتوي خليط على الماء والشراب بنسبة 5 : 2. لتحضير 3,5 لترات من الخليط، نحتاج إلى:
+* لتر واحد من الشراب
+- 1,5 لتر من الشراب
+- 0,7 لتر من الشراب
+- لترين من الشراب
+C: لتر من الشراب و2,5 لتر من الماء.
+E: يضم الخليط 5 + 2 = 7 أجزاء، والجزء الواحد 3,5 ÷ 7 = 0,5 لتر. فالشراب: 2 × 0,5 = 1 لتر.
 
 [CAL-245] pourcentages | advanced
 Q: Après une hausse de 50 %, de quel pourcentage doit baisser un prix pour revenir à sa valeur initiale ?
@@ -588,6 +972,14 @@ Q: Après une hausse de 50 %, de quel pourcentage doit baisser un prix pour reve
 - 66,7 %
 C: Environ 33,3 %.
 E: Le prix est multiplié par 1,5 ; pour revenir au départ, il faut le multiplier par $\frac{1}{1{,}5} = \frac{2}{3}$, soit une baisse d'un tiers.
+AR:
+Q: بعد ارتفاع بنسبة 50%، بأي نسبة يجب أن ينخفض الثمن ليعود إلى قيمته الأصلية؟
+* 33,3%
+- 50%
+- 25%
+- 66,7%
+C: نحو 33,3%.
+E: يُضرب الثمن في 1,5؛ وللعودة إلى البداية يجب ضربه في 1 ÷ 1,5 = 2/3، أي انخفاض بالثلث.
 
 [CAL-246] vitesse | intermediate
 Q: Un piéton marche à 5 km/h. Combien de temps lui faut-il pour parcourir 2 km ?
@@ -597,6 +989,14 @@ Q: Un piéton marche à 5 km/h. Combien de temps lui faut-il pour parcourir 2 km
 - 40 minutes
 C: 24 min.
 E: $t = \frac{2}{5}$ h $= 0{,}4$ h $= 24$ minutes.
+AR:
+Q: يمشي راجل بسرعة 5 كلم/س. كم يستغرق لقطع 2 كلم؟
+* 24 دقيقة
+- 20 دقيقة
+- 25 دقيقة
+- 40 دقيقة
+C: ‏24 دقيقة.
+E: المدة = 2 ÷ 5 ساعة = 0,4 ساعة = 24 دقيقة.
 
 [CAL-247] interets | advanced
 Q: Un placement rapporte 4 % par an à intérêts simples. En combien d'années un capital produit-il des intérêts égaux à sa moitié ?
@@ -606,6 +1006,14 @@ Q: Un placement rapporte 4 % par an à intérêts simples. En combien d'années 
 - 8 ans
 C: 12,5 ans.
 E: Les intérêts valent $C \times 0{,}04 \times n$ ; on veut $0{,}04n = 0{,}5$, soit $n = 12{,}5$ ans.
+AR:
+Q: يدرّ توظيف 4% سنويًا بفائدة بسيطة. في كم سنة ينتج رأس المال فوائد تساوي نصفه؟
+* 12,5 سنة
+- 10 سنوات
+- 25 سنة
+- 8 سنوات
+C: ‏12,5 سنة.
+E: الفوائد = رأس المال × 0,04 × عدد السنوات؛ ونريد 0,04 × ن = 0,5، أي ن = 12,5 سنة.
 
 [CAL-248] statistiques | intermediate
 Q: Les dépenses d'une famille sont : logement 3 000 DH, alimentation 2 500 DH, transport 1 000 DH, autres 1 500 DH. La part du logement dans le budget est :
@@ -615,6 +1023,14 @@ Q: Les dépenses d'une famille sont : logement 3 000 DH, alimentation 2 500 DH, 
 - 40 %
 C: $\frac{3\,000}{8\,000} = 37{,}5\ \%$.
 E: Budget total : $3\,000 + 2\,500 + 1\,000 + 1\,500 = 8\,000$ DH. Part du logement : $\frac{3\,000}{8\,000} = 0{,}375$.
+AR:
+Q: نفقات أسرة: السكن 3000 درهم، والتغذية 2500 درهم، والنقل 1000 درهم، ونفقات أخرى 1500 درهم. حصة السكن من الميزانية هي:
+* 37,5%
+- 30%
+- 33,3%
+- 40%
+C: ‏3000 ÷ 8000 = 37,5%
+E: الميزانية الكلية: 3000 + 2500 + 1000 + 1500 = 8000 درهم. وحصة السكن: 3000 ÷ 8000 = 0,375.
 
 [CAL-249] fractions | intermediate
 Q: Combien font $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16}$ ?
@@ -624,6 +1040,14 @@ Q: Combien font $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16}$ ?
 - $\frac{7}{8}$
 C: $\frac{15}{16}$.
 E: Au dénominateur 16 : $\frac{8 + 4 + 2 + 1}{16} = \frac{15}{16}$. Il ne manque que $\frac{1}{16}$ pour atteindre 1.
+AR:
+Q: كم يساوي $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16}$؟
+* $\frac{15}{16}$
+- $1$
+- $\frac{4}{30}$
+- $\frac{7}{8}$
+C: $\frac{15}{16}$
+E: بالمقام 16: (8 + 4 + 2 + 1) ÷ 16 = 15/16. ولا ينقص إلا 1/16 لبلوغ 1.
 
 [CAL-250] proportions | intermediate
 Q: Un ouvrier gagne 180 DH pour 8 heures de travail. Combien gagne-t-il pour 30 heures ?
@@ -633,6 +1057,14 @@ Q: Un ouvrier gagne 180 DH pour 8 heures de travail. Combien gagne-t-il pour 30 
 - 540 DH
 C: 675 DH.
 E: Salaire horaire : $\frac{180}{8} = 22{,}5$ DH ; pour 30 h : $30 \times 22{,}5 = 675$ DH.
+AR:
+Q: يتقاضى عامل 180 درهمًا مقابل 8 ساعات عمل. كم يتقاضى مقابل 30 ساعة؟
+* 675 درهمًا
+- 600 درهم
+- 720 درهمًا
+- 540 درهمًا
+C: ‏675 درهمًا.
+E: الأجر عن الساعة: 180 ÷ 8 = 22,5 درهمًا؛ وعن 30 ساعة: 30 × 22,5 = 675 درهمًا.
 
 # ---------------------------------------------------------------------------
 # Calcul pratique de niveau collège, comme les tests numériques des concours de
