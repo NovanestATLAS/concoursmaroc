@@ -65,9 +65,9 @@ export default {
     // Sites → Add site → verification "Insert code": the <meta name="monetag" …> tag or its content value.
     verification: '31ece9affdce40cc1594afadf5d15eab',
     // Sites → Add zone → In-Page Push → Get tag.
-    inPagePush: ``,
+    inPagePush: `<script>(function(s){s.dataset.zone='12229061',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>`,
     // Sites → Add zone → Vignette Banner → Get tag.
-    vignette: ``,
+    vignette: `<script>(function(s){s.dataset.zone='12229058',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>`,
     vignetteHours: 12,
     // Extra ads.txt lines, if the Monetag dashboard asks for them.
     adsTxt: [],
