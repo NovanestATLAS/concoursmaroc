@@ -63,7 +63,7 @@ export default {
   // only and never with the app banner, none on practice, legal and app pages.
   monetag: {
     // Sites → Add site → verification "Insert code": the <meta name="monetag" …> tag or its content value.
-    verification: '',
+    verification: '31ece9affdce40cc1594afadf5d15eab',
     // Sites → Add zone → In-Page Push → Get tag.
     inPagePush: ``,
     // Sites → Add zone → Vignette Banner → Get tag.
