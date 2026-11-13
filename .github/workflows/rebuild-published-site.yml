@@ -1,0 +1,36 @@
+name: Rebuild published site
+
+on:
+  push:
+    branches:
+      - claude/concoursmaroc-github-site-x6v5br
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    if: "!contains(github.event.head_commit.message, '[site-built]')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build the published website
+        run: |
+          npm install --no-package-lock
+          npm run build
+      - name: Commit generated website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "Rebuild published site without Monetag [site-built]"
+          git push
