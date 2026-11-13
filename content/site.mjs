@@ -41,35 +41,13 @@ export default {
   // (functions/, push/) with a KV namespace bound as PUSH. See README.md.
   pushAlerts: true,
 
-  // ---- services you will add later (leave empty until then) ----
+  // ---- services ---- ----
   // Google Search Console HTML-tag verification code (content="..." value only).
   googleSiteVerification: '',
-  // Google Analytics 4 measurement ID, e.g. 'G-XXXXXXXXXX' (Admin → Data streams →
-  // Web). When set, every page of the website gets the tag and the trainer sends
-  // events (select_concours, quiz_start, quiz_complete, search); the Android app
-  // never loads it.
+  // Google Analytics 4 measurement ID.
   ga4: 'G-11QRJ1VXW0',
-  // Google AdSense publisher ID, e.g. 'ca-pub-1234567890123456'.
-  // When set, the AdSense script is added to every content page and ads.txt is generated.
+  // Google AdSense publisher ID.
   adsenseClient: 'ca-pub-3709043100488694',
-  // Monetag (website only, never in the Android app): In-Page Push and Vignette
-  // Banner zones only. Paste each value exactly as the Monetag dashboard gives it
-  // (scripts/lib/monetag.mjs reads both tag styles); an empty value loads nothing.
-  // Never paste a MultiTag, OnClick/Popunder, Direct Link or Push Notifications
-  // tag: the build refuses tags that install a service worker (it would replace
-  // docs/sw.js and break the concours alerts). Rules applied on the site: the
-  // vignette never on the first page of a visit and at most once every
-  // vignetteHours per browser, one Monetag format per page, In-Page Push on phones
-  // only and never with the app banner, none on practice, legal and app pages.
-  monetag: {
-    // Sites → Add site → verification "Insert code": the <meta name="monetag" …> tag or its content value.
-    verification: '31ece9affdce40cc1594afadf5d15eab',
-    // Sites → Add zone → In-Page Push → Get tag.
-    inPagePush: `<script>(function(s){s.dataset.zone='12229061',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>`,
-    // Sites → Add zone → Vignette Banner → Get tag.
-    vignette: `<script>(function(s){s.dataset.zone='12229058',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>`,
-    vignetteHours: 12,
-    // Extra ads.txt lines, if the Monetag dashboard asks for them.
-    adsTxt: [],
-  },
+  // Monetag is disabled: no verification tag, ad zones or ads.txt entries.
+  monetag: {},
 };
