@@ -1,12 +1,12 @@
 ---
-title: Bourse Minhaty 2026-2027 : conditions, dates et logement
-description: Bourse Minhaty : conditions (bac 2026, moins de 26 ans, RSU), campagne close le 18 octobre 2026, suivi de la demande, cités universitaires et AMO.
-h1: Bourse Minhaty, logement et aides pour les étudiants
+title: Minhaty 2026-2027 : résultat, e-Bourse et logement
+description: Minhaty 2026-2027 : demandes closes le 18 octobre. Voir le résultat avec « Suivi de la demande » sur minhaty.ma, puis e-Bourse de l’ONOUSC.
+h1: Bourse Minhaty 2026-2027 : résultat, logement et aides
 short: Bourse Minhaty et logement
 lead: Comment demander la bourse d'études supérieures sur Minhaty, ce que change l'inscription au RSU, et comment candidater à une cité universitaire.
 icon: briefcase
 order: 4
-keywords: [minhaty, bourse minhaty 2026, minhaty.ma, bourse étudiant maroc, RSU bourse, cité universitaire onousc, logement étudiant maroc]
+keywords: [minhaty, minhaty 2026-2027, résultat minhaty, e-bourse maroc, suivi demande minhaty, bourse minhaty 2026, minhaty.ma, bourse étudiant maroc, RSU bourse, cité universitaire onousc, logement étudiant maroc]
 ---
 
 ## Minhaty en bref
@@ -16,6 +16,16 @@ keywords: [minhaty, bourse minhaty 2026, minhaty.ma, bourse étudiant maroc, RSU
 ::: info
 Les dates et les conditions sont fixées chaque année par l'administration. En cas de doute, la référence est l'information publiée sur minhaty.ma.
 :::
+
+## Voir le résultat de sa demande
+
+La campagne étant close, l'étape en cours est le **résultat** :
+
+1. Sur [minhaty.ma](https://www.minhaty.ma), ouvrez **« Suivi de la demande »** (تتبع الطلب) et saisissez le **code secret** inscrit sur votre **récépissé de dépôt**.
+2. Si la demande est acceptée, le suivi du **paiement** se fait ensuite sur **e-Bourse**, le service de l'[ONOUSC](https://www.onousc.ma).
+3. Gardez le récépissé et votre code Massar : ils vous seront demandés à chaque étape.
+
+Une réponse qui tarde n'est pas un refus : les dossiers sont traités par vagues. En cas de doute, seule l'information affichée sur minhaty.ma fait foi.
 
 ## Qui peut demander la bourse ?
 
@@ -54,6 +64,9 @@ Les étudiants peuvent bénéficier d'une **assurance maladie** (AMO). Ses modal
 
 ### Quelle était la date limite de demande de bourse pour 2026-2027 ?
 Selon les informations relayées par la presse, les demandes des bacheliers 2026 ont été reçues sur Minhaty du 15 juillet au 18 octobre 2026. La campagne est close ; celle des bacheliers 2027 ouvre en général en juillet.
+
+### Comment savoir si ma bourse Minhaty est acceptée ?
+Ouvrez « Suivi de la demande » sur minhaty.ma avec le code secret de votre récépissé de dépôt. Une fois la demande acceptée, le paiement se suit sur e-Bourse, le service de l'ONOUSC.
 
 ### Faut-il être inscrit au RSU pour obtenir la bourse ?
 Oui : l'inscription au Registre social unifié de l'étudiant et de tous les membres de son foyer fait partie des conditions annoncées pour 2026-2027.

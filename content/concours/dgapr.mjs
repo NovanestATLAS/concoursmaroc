@@ -34,9 +34,9 @@ export default {
   fr: {
     short: 'Administration pénitentiaire',
     name: "Délégation Générale à l'Administration Pénitentiaire et à la Réinsertion (DGAPR)",
-    title: 'Concours DGAPR 2026 : 348 postes avant le 26 novembre',
-    description: "DGAPR : 120 surveillantes adjointes (bac), 200 surveillants chefs et 28 médecins. Inscription sur dgapr.gov.ma jusqu’au 26 novembre 2026, écrit le 6 décembre.",
-    keywords: ['concours dgapr 2026', 'concours administration pénitentiaire', 'surveillante pénitentiaire adjointe', 'surveillant pénitentiaire chef', 'concours dgapr 2027', 'extranet.dgapr.gov.ma', 'مباراة إدارة السجون 2026'],
+    title: 'Concours DGAPR 2026-2027 : 348 postes jusqu’au 26 novembre',
+    description: "Concours DGAPR 2026-2027 : 120 surveillantes (bac), 200 surveillants chefs, 28 médecins. Inscription sur dgapr.gov.ma jusqu’au 26 novembre, écrit le 6 décembre.",
+    keywords: ['concours dgapr 2026', 'concours dgapr 2026-2027', 'concours dgapr femme', 'concours administration pénitentiaire', 'surveillante pénitentiaire adjointe', 'surveillant pénitentiaire chef', 'concours dgapr 2027', 'extranet.dgapr.gov.ma', 'مباراة إدارة السجون 2026'],
     intro: "**Trois concours de la DGAPR sont ouverts** : **120 surveillantes pénitentiaires adjointes** (femmes, **bac**), **200 surveillants pénitentiaires chefs** (hommes, technicien spécialisé, DUT ou BTS) et **28 commandants adjoints médecins**. Inscription en ligne sur **dgapr.gov.ma** jusqu’au **jeudi 26 novembre 2026 à 16 h 30**, écrit le **dimanche 6 décembre 2026** à Marrakech et Fès. Pour les **hommes titulaires du bac**, le grand concours des **surveillants adjoints** n’est pas encore annoncé : le **projet de loi de finances 2027** prévoit **1 500 postes** pour la DGAPR, et en 2026 l’avis était paru le **3 janvier**.",
     facts: [['Ouvert maintenant', '348 postes, jusqu’au 26 novembre 2026 à 16 h 30'], ['Écrit', 'Dimanche 6 décembre 2026, Marrakech et Fès'], ['Avec le bac', '120 surveillantes adjointes (femmes)'], ['Budget 2027', '1 500 postes (projet de loi de finances)'], ['Âge', '21 à 30 ans au 1er janvier 2026 (35 avec services)'], ['Inscription', 'En ligne sur dgapr.gov.ma']],
     sections: [
@@ -118,9 +118,9 @@ export default {
   ar: {
     short: 'إدارة السجون',
     name: 'المندوبية العامة لإدارة السجون وإعادة الإدماج',
-    title: 'مباراة إدارة السجون 2026: 348 منصبًا قبل 26 نونبر',
-    description: 'إدارة السجون: 120 مراقبة مساعدة (بكالوريا) و200 مراقب رئيس و28 طبيبًا. التسجيل عبر dgapr.gov.ma إلى غاية 26 نونبر 2026، والكتابي يوم 6 دجنبر.',
-    keywords: ['مباراة إدارة السجون 2026', 'مباراة إدارة السجون إناث', 'مباراة مراقب السجون مساعد', 'مراقب السجون رئيس', 'مباراة إدارة السجون 2027', 'شروط مباراة إدارة السجون', 'extranet.dgapr.gov.ma'],
+    title: 'مباراة إدارة السجون 2026-2027: إناث وذكور قبل 26 نونبر',
+    description: 'مباراة إدارة السجون 2026-2027: 120 منصبًا للإناث بالبكالوريا، و200 مراقب رئيس و28 طبيبًا. التسجيل عبر dgapr.gov.ma إلى 26 نونبر 2026، والكتابي يوم 6 دجنبر.',
+    keywords: ['مباراة إدارة السجون 2026', 'مباراة إدارة السجون 2026-2027', 'التسجيل في مباراة إدارة السجون', 'مباراة إدارة السجون 2027 إناث', 'مباراة إدارة السجون إناث', 'مباراة مراقب السجون مساعد', 'مراقب السجون رئيس', 'مباراة إدارة السجون 2027', 'شروط مباراة إدارة السجون', 'extranet.dgapr.gov.ma'],
     intro: '**ثلاث مباريات للمندوبية العامة لإدارة السجون وإعادة الإدماج مفتوحة الآن**: **120 مراقبة سجون مساعدة** (إناث، **البكالوريا**)، و**200 مراقب سجون رئيس** (ذكور، دبلوم تقني متخصص أو DUT أو BTS)، و**28 قائد سجون مساعدًا طبيبًا**. التسجيل عبر **dgapr.gov.ma** إلى غاية **الخميس 26 نونبر 2026 على الساعة 16:30**، والاختبار الكتابي يوم **الأحد 6 دجنبر 2026** بمراكش وفاس. أما **الذكور حاملو البكالوريا** فلم يُعلن بعد عن مباراتهم الكبرى لمراقبي السجون المساعدين: يخصص **مشروع قانون المالية لسنة 2027** **1500 منصب** للمندوبية، وفي 2026 صدر الإعلان يوم **3 يناير**.',
     facts: [['مفتوحة الآن', '348 منصبًا، إلى غاية 26 نونبر 2026 على الساعة 16:30'], ['الكتابي', 'الأحد 6 دجنبر 2026، مراكش وفاس'], ['بالبكالوريا', '120 مراقبة سجون مساعدة (إناث)'], ['ميزانية 2027', '1500 منصب (مشروع قانون المالية)'], ['السن', 'من 21 إلى 30 سنة في فاتح يناير 2026 (35 مع الخدمات)'], ['التسجيل', 'عبر الإنترنت على dgapr.gov.ma']],
     sections: [
