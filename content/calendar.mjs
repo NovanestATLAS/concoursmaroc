@@ -4,8 +4,11 @@
  *   - 2027 entries are estimates based on the usual period (month only,
  *     confidence: 'estimation') and must be confirmed by the official notice.
  * The calendar page computes "upcoming / past" in the browser, so the page
- * stays correct without rebuilding. Last checked against sources: 2026-11-08
- * (CRMEF 2026 announced on 3 November, places raised to 17,953 on 4 November,
+ * stays correct without rebuilding. Last checked against sources: 2026-11-18
+ * (DGAPR: 348 posts announced on 11-12 November, deadline 26 November, written
+ * exam 6 December; CRMEF deadline 19 November unchanged; DGSN written exams
+ * 22 and 29 November unchanged; Forces Auxiliaires 20 November - 16 December).
+ * Earlier check, 2026-11-08 (CRMEF 2026 announced on 3 November, places raised to 17,953 on 4 November,
  * written exams on 28 November; bac 2027 free candidates from 4 November to
  * 4 December; DGSN, Forces Auxiliaires and Protection civile dates unchanged;
  * bac 2027 dates fixed by ministerial decision 047.26 of 3 July 2026).
@@ -27,6 +30,12 @@ export const CALENDAR = [
   { id: 'pc-officiers-2026-epreuves', concours: 'protection-civile', type: 'ecrit', date: '2026-11-16', confidence: 'officiel',
     fr: 'Protection civile : concours des élèves officiers (début par la visite médicale)', ar: 'الوقاية المدنية: مباراة التلاميذ الضباط (تبدأ بالفحص الطبي)',
     source: { label: 'emploi-public.ma — Élèves officiers, échelle 10 (C44132/26)', url: 'https://www.emploi-public.ma/fr/concours/details/0bc3b58e-cfd7-466e-9023-6faf53a94738' } },
+  { id: 'dgapr-2026-nov-insc', concours: 'dgapr', type: 'inscription', start: '2026-11-12', date: '2026-11-26', confidence: 'officiel', added: '2026-11-18',
+    fr: 'Administration pénitentiaire (DGAPR) : 348 postes (120 surveillantes adjointes avec le bac, 200 surveillants chefs, 28 médecins), inscription sur dgapr.gov.ma jusqu’à 16 h 30', ar: 'إدارة السجون: 348 منصبًا (120 مراقبة مساعدة بالبكالوريا، 200 مراقب رئيس، 28 طبيبًا)، التسجيل عبر dgapr.gov.ma إلى غاية الساعة 16:30',
+    source: { label: 'emploi-public.ma — Surveillant pénitentiaire chef de 2e grade, 200 postes (C 44690/26)', url: 'https://www.emploi-public.ma/ar/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84/%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA/cc2bd7ff-97cf-4de3-9665-4e7c05c3c825' } },
+  { id: 'dgapr-2026-dec-ecrit', concours: 'dgapr', type: 'ecrit', date: '2026-12-06', confidence: 'officiel', added: '2026-11-18',
+    fr: 'Administration pénitentiaire (DGAPR) : écrit des trois concours à Marrakech et Fès (liste définitive, valant convocation, à partir du 30 novembre)', ar: 'إدارة السجون: الاختبار الكتابي للمباريات الثلاث بمراكش وفاس (اللائحة النهائية، بمثابة استدعاء، ابتداءً من 30 نونبر)',
+    source: { label: 'emploi-public.ma — Surveillant pénitentiaire chef de 2e grade, 200 postes (C 44690/26)', url: 'https://www.emploi-public.ma/ar/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84/%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA/cc2bd7ff-97cf-4de3-9665-4e7c05c3c825' } },
   { id: 'fa-mokhazni-2026-epreuves', concours: 'forces-auxiliaires', type: 'ecrit', start: '2026-11-20', date: '2026-12-16', confidence: 'annonce',
     fr: 'Forces Auxiliaires (mokhaznis) : épreuves de sélection', ar: 'القوات المساعدة (مخازنية): اختبارات الانتقاء',
     source: { label: 'Tawjihnet — Concours élèves mokhaznis FA 2026-2027', url: 'https://www.tawjihnet.net/concours-forces-auxiliaires-eleves-mokhazenis-fa-2026-2027/' } },
@@ -59,7 +68,7 @@ export const CALENDAR = [
   { id: 'cnc-2027', concours: 'cnc', type: 'inscription', month: '2027-02', confidence: 'estimation',
     fr: 'CNC 2027 : inscriptions des élèves de CPGE (février–mars)', ar: 'المباراة الوطنية المشتركة 2027: التسجيل (فبراير–مارس)' },
   { id: 'dgapr-2027', concours: 'dgapr', type: 'inscription', month: '2027-01', confidence: 'estimation',
-    fr: 'DGAPR : avis et inscription des surveillants pénitentiaires (janvier en 2026)', ar: 'إدارة السجون: إعلان مباراة المراقبين والتسجيل (يناير في 2026)' },
+    fr: 'DGAPR : avis et inscription des surveillants pénitentiaires adjoints hommes, niveau bac (janvier en 2026)', ar: 'إدارة السجون: إعلان مباراة المراقبين المساعدين الذكور بالبكالوريا والتسجيل (يناير في 2026)' },
   { id: 'pc-2027', concours: 'protection-civile', type: 'inscription', month: '2027-02', confidence: 'estimation',
     fr: 'Protection civile : recrutement des agents de secours (février–mars)', ar: 'الوقاية المدنية: توظيف أعوان الإنقاذ (فبراير–مارس)' },
   { id: 'gr-2027', concours: 'gendarmerie', type: 'inscription', month: '2027-03', confidence: 'estimation',

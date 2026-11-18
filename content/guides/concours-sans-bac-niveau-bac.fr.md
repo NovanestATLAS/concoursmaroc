@@ -48,7 +48,7 @@ Obtenir le bac ouvre ensuite les concours de la police, de la gendarmerie, les �
 
 ## Ce qui exige le bac
 
-La police (DGSN), la gendarmerie royale, l'administration pénitentiaire, les écoles militaires d'officiers et toutes les écoles supérieures exigent le baccalauréat. Consultez l'[outil d'orientation](@/outils/orientation-apres-bac/) en choisissant « Je n'ai pas le bac » pour voir la liste à jour.
+La police (DGSN), la gendarmerie royale, les écoles militaires d'officiers et toutes les écoles supérieures exigent le baccalauréat. L'[administration pénitentiaire](@/concours/dgapr/) demande le bac, mais son concours de surveillants adjoints de janvier 2026 acceptait aussi un diplôme de qualification professionnelle dans une spécialité listée par l'avis (électricité, soudage, plomberie, restauration…). Consultez l'[outil d'orientation](@/outils/orientation-apres-bac/) en choisissant « Je n'ai pas le bac » pour voir la liste à jour.
 
 ## Questions fréquentes
 

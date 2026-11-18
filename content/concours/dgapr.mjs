@@ -19,6 +19,10 @@ export default {
   related: ['police-dgsn', 'fonction-publique', 'forces-auxiliaires'],
   official: [{ label: 'Site de la DGAPR (inscription en ligne)', url: 'https://www.dgapr.gov.ma' }, { label: 'Portail de l’emploi public', url: 'https://www.emploi-public.ma' }],
   sources: [
+    { title: 'emploi-public.ma — Surveillant pénitentiaire chef de 2e grade, 200 postes, concours du 6 décembre 2026 (C 44690/26), dépôt jusqu’au 26 novembre 2026 à 16 h 30', url: 'https://www.emploi-public.ma/ar/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84/%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA/cc2bd7ff-97cf-4de3-9665-4e7c05c3c825', date: '2026-11' },
+    { title: 'emploi-public.ma — Commandant pénitentiaire adjoint de 1er grade, médecine générale, 28 postes, concours du 6 décembre 2026 (C 44691/26)', url: 'https://www.emploi-public.ma/ar/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84/%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA/b2542f15-9180-4680-9a40-56cab838599c', date: '2026-11' },
+    { title: 'Alwadifa-Maroc — Avis des 120 surveillantes pénitentiaires adjointes de 2e grade reproduit (conditions, épreuves, dates, 11 novembre 2026)', url: 'https://alwadifa-maroc.com/offre/show/id/23836', date: '2026-11' },
+    { title: 'iJob — Concours DGAPR : 348 postes, diplômes, âges et épreuves des trois avis (12 novembre 2026)', url: 'https://ijob.ma/emploi/concours-de-recrutement-dgapr-2026-348-postes/', date: '2026-11' },
     { title: 'emploi-public.ma — Surveillant pénitentiaire adjoint de 2e grade, concours du 1er février 2026 (C40591/26) : avis du 3 janvier, dépôt jusqu’au 18 janvier 2026 à 16 h 30', url: 'https://www.emploi-public.ma/fr/concours/details/2e819ffa-1062-4d5e-87d4-cd424a62307e', date: '2026-01' },
     { title: 'emploi-public.ma — Surveillant pénitentiaire adjoint de 2e grade, concours du 15 février 2026, région Casablanca-Settat (C40599/26)', url: 'https://www.emploi-public.ma/ar/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84/%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA/51b72c4f-1b3b-4b11-9d40-f5002a2159b7', date: '2026-01' },
     { title: 'Alwadifa-Maroc — Avis des concours de 1 620 surveillants adjoints reproduit (conditions, centres, épreuves et coefficients)', url: 'https://alwadifa-maroc.com/offre/show/id/22368', date: '2026-01' },
@@ -30,28 +34,46 @@ export default {
   fr: {
     short: 'Administration pénitentiaire',
     name: "Délégation Générale à l'Administration Pénitentiaire et à la Réinsertion (DGAPR)",
-    title: 'Concours DGAPR 2027 : 1 500 postes prévus, conditions',
-    description: "Surveillants pénitentiaires : 1 500 postes au projet de budget 2027, bac, 21–30 ans, 1,73 m, épreuves et coefficients, dates 2026, inscription sur dgapr.gov.ma.",
-    keywords: ['concours dgapr 2027', 'concours administration pénitentiaire', 'surveillant pénitentiaire adjoint', 'extranet.dgapr.gov.ma', 'مباراة إدارة السجون 2027'],
-    intro: "La **DGAPR** recrute surtout des **surveillants pénitentiaires adjoints** de 2e grade, au niveau du **bac** ou d'un **diplôme de qualification professionnelle**. Le **projet de loi de finances 2027** lui attribue **1 500 postes budgétaires**. Au 9 novembre 2026, l'avis du concours 2027 **n'est pas encore publié** : en 2026, il était paru le **3 janvier**, et les écrits avaient eu lieu les **1er et 15 février**.",
-    facts: [['Budget 2027', '1 500 postes (projet de loi de finances)'], ['Concours 2026', '1 620 surveillants adjoints (1 490 hommes, 130 femmes)'], ['Diplôme', 'Bac toutes séries ou qualification professionnelle'], ['Âge', '21 à 30 ans au 1er janvier (35 ans avec services)'], ['Taille', '1,73 m (hommes) · 1,64 m (femmes)'], ['Inscription', 'En ligne sur dgapr.gov.ma']],
+    title: 'Concours DGAPR 2026 : 348 postes avant le 26 novembre',
+    description: "DGAPR : 120 surveillantes adjointes (bac), 200 surveillants chefs et 28 médecins. Inscription sur dgapr.gov.ma jusqu’au 26 novembre 2026, écrit le 6 décembre.",
+    keywords: ['concours dgapr 2026', 'concours administration pénitentiaire', 'surveillante pénitentiaire adjointe', 'surveillant pénitentiaire chef', 'concours dgapr 2027', 'extranet.dgapr.gov.ma', 'مباراة إدارة السجون 2026'],
+    intro: "**Trois concours de la DGAPR sont ouverts** : **120 surveillantes pénitentiaires adjointes** (femmes, **bac**), **200 surveillants pénitentiaires chefs** (hommes, technicien spécialisé, DUT ou BTS) et **28 commandants adjoints médecins**. Inscription en ligne sur **dgapr.gov.ma** jusqu’au **jeudi 26 novembre 2026 à 16 h 30**, écrit le **dimanche 6 décembre 2026** à Marrakech et Fès. Pour les **hommes titulaires du bac**, le grand concours des **surveillants adjoints** n’est pas encore annoncé : le **projet de loi de finances 2027** prévoit **1 500 postes** pour la DGAPR, et en 2026 l’avis était paru le **3 janvier**.",
+    facts: [['Ouvert maintenant', '348 postes, jusqu’au 26 novembre 2026 à 16 h 30'], ['Écrit', 'Dimanche 6 décembre 2026, Marrakech et Fès'], ['Avec le bac', '120 surveillantes adjointes (femmes)'], ['Budget 2027', '1 500 postes (projet de loi de finances)'], ['Âge', '21 à 30 ans au 1er janvier 2026 (35 avec services)'], ['Inscription', 'En ligne sur dgapr.gov.ma']],
     sections: [
-      { id: 'concours-2027', h: 'Concours 2027 : ce que l’on sait', blocks: [ { ul: [
-        "Le **projet de loi de finances 2027** (article 21), présenté au Parlement en octobre 2026, prévoit **1 500 postes budgétaires** pour la DGAPR. Leur répartition entre les grades (surveillants, cadres) sera fixée par les avis de concours.",
-        "**Aucun avis 2027** n'est publié au 9 novembre 2026 : les dernières annonces de la DGAPR, en juillet 2026, sont les résultats de la session 2026.",
-        "En 2026, l'avis des 1 620 surveillants est paru le **3 janvier** ; l'inscription a fermé le **18 janvier à 16 h 30** et les écrits ont eu lieu les **1er et 15 février**. Le calendrier 2027 suivra peut-être ce rythme : seul l'avis officiel fixera les dates.",
-        "Les avis paraissent sur **dgapr.gov.ma**, où se fait l'inscription, et sur **emploi-public.ma**. Gardez vos pièces prêtes (CNIE, diplôme) : seul le certificat médical doit dater de moins de 3 mois au moment du dépôt.",
+      { id: 'concours-novembre-2026', h: 'Concours ouverts : 348 postes (novembre 2026)', blocks: [
+        { callout: 'warn', text: "Date limite : **jeudi 26 novembre 2026 à 16 h 30**, sur dgapr.gov.ma uniquement. Un dossier incomplet ou déposé après l’heure est rejeté." },
+        { table: { head: ['Concours', 'Postes et conditions'], rows: [
+          ['Surveillantes adjointes', '**120** · femmes · bac, toutes séries · 21 à 30 ans'],
+          ['Surveillants chefs', '**200** · hommes · technicien spécialisé, DUT ou BTS · 21 à 30 ans'],
+          ['Médecins', '**28** · hommes et femmes · doctorat en médecine générale, grade de commandant adjoint (1er grade) · 21 à 35 ans'],
+        ] } },
+        { p: "Âges au 1er janvier 2026 ; la limite recule d’autant d’années de services civils ou militaires, jusqu’à 35 ans (40 ans pour les médecins). Les surveillants chefs doivent avoir leur diplôme dans l’une des **15 spécialités** de l’avis, parmi lesquelles les soins infirmiers, la gestion des services de santé, l’informatique, les réseaux et la cybersécurité, la finance et la comptabilité, la gestion des entreprises, le génie civil et la qualité, hygiène, sécurité et environnement." },
+        { steps: [
+          '**Jusqu’au 26 novembre, 16 h 30** : inscription et dépôt des pièces en PDF lisible, une pièce par fichier, sur dgapr.gov.ma.',
+          '**À partir du 27 novembre** : liste provisoire des candidats admis à concourir ; pour les surveillantes, demandes de précision jusqu’au **29 novembre à midi**.',
+          '**À partir du 30 novembre** : liste définitive, qui vaut convocation.',
+          '**Dimanche 6 décembre 2026** : écrit des trois concours à **Marrakech** et **Fès** (d’autres centres peuvent être ouverts).',
+        ] },
+        { p: "**Surveillantes adjointes** : 1,64 m au moins sans chaussures et 16/10 de vue sans lunettes. Les candidates peuvent joindre les justificatifs d’un service militaire ou de compétences (informatique, travail social ou artistique, sports de défense, cuisine collective, soins infirmiers). Les épreuves sont celles décrites plus bas : écrit (coef. 2), course de 800 m avec obstacles (coef. 2), oral (coef. 4)." },
+        { p: "**Surveillants chefs** : 1,73 m au moins sans chaussures, sauf exceptions prévues par l’avis ; écrit de 2 heures (coef. 3), course de 1 200 m avec obstacles (coef. 2) et oral (coef. 4). **Médecins** : écrit de 2 h 30 (coef. 3) puis oral ou épreuve pratique de 15 à 40 minutes (coef. 5), ouvert à partir de 12/20 à l’écrit." },
+        { p: "Pour les trois concours, **25 % des postes** sont réservés aux pupilles de la Nation, anciens militaires, anciens combattants et résistants, et les admis s’engagent à servir **au moins 8 ans**." },
+      ] },
+      { id: 'concours-2027', h: 'Hommes avec le bac : concours 2027', blocks: [ { ul: [
+        "Les concours de novembre ne recrutent **pas de surveillants adjoints hommes** : avec le seul bac, un homme doit attendre le prochain grand concours.",
+        "Le **projet de loi de finances 2027** (article 21), présenté au Parlement en octobre 2026, prévoit **1 500 postes budgétaires** pour la DGAPR. Leur répartition entre les grades sera fixée par les avis de concours.",
+        "En 2026, l'avis des 1 620 surveillants adjoints est paru le **3 janvier** ; l'inscription a fermé le **18 janvier à 16 h 30** et les écrits ont eu lieu les **1er et 15 février**. Le calendrier 2027 suivra peut-être ce rythme : seul l'avis officiel fixera les dates.",
+        "Les avis paraissent sur **dgapr.gov.ma**, où se fait l'inscription, et sur **emploi-public.ma**. Gardez vos pièces prêtes (CNIE, bac) : seul le certificat médical doit dater de moins de 3 mois au moment du dépôt.",
       ] } ] },
       { id: 'conditions', h: 'Conditions (avis 2026)', blocks: [ { ul: [
         'Nationalité marocaine, jouissance des droits civiques et bonne moralité.',
         '**21 à 30 ans au 1er janvier** de l’année du concours ; la limite d’âge recule d’autant d’années de services civils ou militaires, **sans dépasser 35 ans**.',
-        '**Bac de toutes séries** ou **diplôme de qualification professionnelle** dans une spécialité listée par l’avis (par exemple électricité, soudage, plomberie ou restauration pour les hommes ; informatique, restauration, secrétariat ou assistance sociale pour les femmes).',
+        '**Bac de toutes séries** ou **diplôme de qualification professionnelle** dans une spécialité listée par l’avis de janvier 2026 (par exemple électricité, soudage, plomberie ou restauration pour les hommes ; informatique, restauration, secrétariat ou assistance sociale pour les femmes). L’avis des surveillantes de novembre 2026 demande le **bac**.',
         'Taille sans chaussures : **1,73 m** pour les hommes, **1,64 m** pour les femmes.',
         'Vue : au moins **16/10 pour les deux yeux réunis, sans lunettes ni lentilles** (10/10 au plus comptés par œil). Audition normale et aptitude médicale au service de jour comme de nuit.',
         'Engagement écrit à servir **au moins 8 ans** dans l’administration pénitentiaire.',
         '**25 % des postes** réservés aux pupilles de la Nation, aux anciens militaires, aux anciens combattants et aux résistants.',
       ] } ] },
-      { id: 'epreuves', h: 'Épreuves et coefficients', blocks: [
+      { id: 'epreuves', h: 'Épreuves et coefficients (surveillants adjoints)', blocks: [
         { table: { head: ['Épreuve', 'Contenu'], rows: [
           ['Écrit · coef. 2', '2 heures : questions générales ou QCM sur des sujets sociaux, économiques et administratifs, les affaires pénitentiaires et les missions du poste. Il faut 10/20 pour continuer.'],
           ['Sport · coef. 2', 'Course avec obstacles : 1 200 m pour les hommes, 800 m pour les femmes, après contrôle de l’aptitude physique.'],
@@ -75,7 +97,7 @@ export default {
         'Après la liste définitive, télécharger et signer l’**engagement** à présenter le jour de l’écrit. Un dossier incomplet ou hors délai est rejeté.',
       ] } ] },
       { id: 'autres-grades', h: 'Autres grades recrutés', blocks: [
-        { p: 'En février 2026, la DGAPR a aussi ouvert **415 postes de cadres** (dépôt jusqu’au 20 février, concours le 8 mars 2026) :' },
+        { p: 'Avant les concours de novembre (voir plus haut), la DGAPR avait ouvert en février 2026 **415 postes de cadres** (dépôt jusqu’au 20 février, concours le 8 mars 2026) :' },
         { ul: [
           '**315 surveillants pénitentiaires chefs** de 2e grade (hommes), avec un diplôme de technicien spécialisé, un DUT ou un diplôme équivalent ;',
           '**60 commandants pénitentiaires adjoints** de 2e grade et **40 de 1er grade** (hommes et femmes), dans des spécialités comme la médecine, la médecine dentaire, l’ingénierie, la psychologie ou le droit privé.',
@@ -84,38 +106,58 @@ export default {
       ] },
     ],
     faq: [
-      { q: 'Quand sera publié le concours DGAPR 2027 ?', a: "Au 9 novembre 2026, aucun avis n'est publié. Le projet de loi de finances 2027 prévoit 1 500 postes pour la DGAPR, et en 2026 l'avis des surveillants était paru le 3 janvier. Seul l'avis officiel fixera les dates." },
+      { q: 'Quel concours DGAPR est ouvert en ce moment ?', a: "Trois concours, jusqu’au jeudi 26 novembre 2026 à 16 h 30 : 120 surveillantes pénitentiaires adjointes (femmes, bac), 200 surveillants pénitentiaires chefs (hommes, technicien spécialisé, DUT ou BTS) et 28 commandants adjoints médecins. L’écrit a lieu le dimanche 6 décembre 2026 à Marrakech et Fès." },
+      { q: 'Un homme avec le bac peut-il passer le concours de novembre 2026 ?', a: "Non. Le concours de surveillant adjoint de novembre est réservé aux femmes ; les hommes y accèdent seulement au grade de surveillant chef, avec un diplôme de technicien spécialisé, un DUT ou un BTS. Pour les hommes avec le bac, le prochain grand concours n’est pas encore annoncé : en 2026, son avis était paru le 3 janvier." },
+      { q: 'Quand sera publié le concours DGAPR 2027 ?', a: "Au 18 novembre 2026, l’avis 2027 des surveillants adjoints n’est pas publié. Le projet de loi de finances 2027 prévoit 1 500 postes pour la DGAPR, et en 2026 l'avis était paru le 3 janvier. Seul l'avis officiel fixera les dates." },
       { q: 'Quelle taille faut-il pour être surveillant pénitentiaire ?', a: "1,73 m pour les hommes et 1,64 m pour les femmes, mesurés sans chaussures (avis 2026). Il faut aussi au moins 16/10 de vue pour les deux yeux réunis, sans lunettes." },
       { q: 'Que contient l’écrit du concours DGAPR ?', a: "Une épreuve de 2 heures, coefficient 2 : questions générales ou QCM sur des sujets sociaux, économiques et administratifs, les affaires pénitentiaires et les missions du poste. Il faut 10/20 pour passer au sport." },
       { q: 'Le diplôme de qualification professionnelle suffit-il ?', a: "Oui, s'il relève d'une des spécialités listées par l'avis. Sinon, il faut le bac, toutes séries acceptées." },
-      { q: 'Où s’inscrire au concours de l’administration pénitentiaire ?', a: "Uniquement en ligne, sur le site de la DGAPR (dgapr.gov.ma), avant la date limite de l'avis : le 18 janvier à 16 h 30 en 2026. Un dossier incomplet ou déposé hors délai est rejeté." },
+      { q: 'Où s’inscrire au concours de l’administration pénitentiaire ?', a: "Uniquement en ligne, sur le site de la DGAPR (dgapr.gov.ma), avant la date limite de l'avis : le 26 novembre 2026 à 16 h 30 pour les concours de novembre. Un dossier incomplet ou déposé hors délai est rejeté." },
     ],
   },
   ar: {
     short: 'إدارة السجون',
     name: 'المندوبية العامة لإدارة السجون وإعادة الإدماج',
-    title: 'مباراة إدارة السجون 2027: 1500 منصب مالي والشروط',
-    description: 'مراقب السجون مساعد: 1500 منصب في مشروع مالية 2027، البكالوريا، 21–30 سنة، القامة 1.73 م، الاختبارات ومعاملاتها، مواعيد 2026 والتسجيل عبر dgapr.gov.ma.',
-    keywords: ['مباراة إدارة السجون 2027', 'مباراة مراقب السجون مساعد', 'شروط مباراة إدارة السجون', 'extranet.dgapr.gov.ma', 'حارس السجن'],
-    intro: 'توظف **المندوبية العامة لإدارة السجون وإعادة الإدماج** أساسًا **مراقبي السجون المساعدين من الدرجة الثانية**، من حاملي **البكالوريا** أو **دبلوم التأهيل المهني**. ويخصص لها **مشروع قانون المالية لسنة 2027** **1500 منصب مالي**. وإلى غاية 9 نونبر 2026 **لم يُنشر بعد** إعلان مباراة 2027: في سنة 2026 صدر الإعلان يوم **3 يناير**، وأُجريت الاختبارات الكتابية يومي **فاتح و15 فبراير**.',
-    facts: [['ميزانية 2027', '1500 منصب (مشروع قانون المالية)'], ['مباراة 2026', '1620 مراقبًا مساعدًا (1490 ذكرًا و130 أنثى)'], ['الشهادة', 'البكالوريا من جميع الشعب أو دبلوم التأهيل المهني'], ['السن', 'من 21 إلى 30 سنة في فاتح يناير (35 سنة مع الخدمات)'], ['القامة', '1.73 م (الذكور) · 1.64 م (الإناث)'], ['التسجيل', 'عبر الإنترنت على dgapr.gov.ma']],
+    title: 'مباراة إدارة السجون 2026: 348 منصبًا قبل 26 نونبر',
+    description: 'إدارة السجون: 120 مراقبة مساعدة (بكالوريا) و200 مراقب رئيس و28 طبيبًا. التسجيل عبر dgapr.gov.ma إلى غاية 26 نونبر 2026، والكتابي يوم 6 دجنبر.',
+    keywords: ['مباراة إدارة السجون 2026', 'مباراة إدارة السجون إناث', 'مباراة مراقب السجون مساعد', 'مراقب السجون رئيس', 'مباراة إدارة السجون 2027', 'شروط مباراة إدارة السجون', 'extranet.dgapr.gov.ma'],
+    intro: '**ثلاث مباريات للمندوبية العامة لإدارة السجون وإعادة الإدماج مفتوحة الآن**: **120 مراقبة سجون مساعدة** (إناث، **البكالوريا**)، و**200 مراقب سجون رئيس** (ذكور، دبلوم تقني متخصص أو DUT أو BTS)، و**28 قائد سجون مساعدًا طبيبًا**. التسجيل عبر **dgapr.gov.ma** إلى غاية **الخميس 26 نونبر 2026 على الساعة 16:30**، والاختبار الكتابي يوم **الأحد 6 دجنبر 2026** بمراكش وفاس. أما **الذكور حاملو البكالوريا** فلم يُعلن بعد عن مباراتهم الكبرى لمراقبي السجون المساعدين: يخصص **مشروع قانون المالية لسنة 2027** **1500 منصب** للمندوبية، وفي 2026 صدر الإعلان يوم **3 يناير**.',
+    facts: [['مفتوحة الآن', '348 منصبًا، إلى غاية 26 نونبر 2026 على الساعة 16:30'], ['الكتابي', 'الأحد 6 دجنبر 2026، مراكش وفاس'], ['بالبكالوريا', '120 مراقبة سجون مساعدة (إناث)'], ['ميزانية 2027', '1500 منصب (مشروع قانون المالية)'], ['السن', 'من 21 إلى 30 سنة في فاتح يناير 2026 (35 مع الخدمات)'], ['التسجيل', 'عبر الإنترنت على dgapr.gov.ma']],
     sections: [
-      { id: 'concours-2027', h: 'مباراة 2027: ما نعرفه', blocks: [ { ul: [
-        'يخصص **مشروع قانون المالية لسنة 2027** (المادة 21)، الذي قُدّم أمام البرلمان في أكتوبر 2026، **1500 منصب مالي** للمندوبية العامة لإدارة السجون، وتحدد إعلانات المباريات توزيعها بين الدرجات (المراقبون والأطر).',
-        '**لم يُنشر أي إعلان لسنة 2027** إلى غاية 9 نونبر 2026: آخر إعلانات المندوبية، في يوليوز 2026، هي نتائج دورة 2026.',
-        'في 2026، صدر إعلان مباريات 1620 مراقبًا يوم **3 يناير**، وأُغلق التسجيل يوم **18 يناير على الساعة 16:30**، وأُجريت الاختبارات الكتابية يومي **فاتح و15 فبراير**. قد يتبع موعد 2027 الإيقاع نفسه، والإعلان الرسمي وحده يحدد التواريخ.',
-        'تُنشر الإعلانات على **dgapr.gov.ma**، حيث يتم التسجيل، وعلى **بوابة التشغيل العمومي emploi-public.ma**. جهّز وثائقك (البطاقة الوطنية، الشهادة) منذ الآن؛ أما الشهادة الطبية فيجب ألا يتجاوز تاريخها 3 أشهر عند الإيداع.',
+      { id: 'concours-novembre-2026', h: 'المباريات المفتوحة: 348 منصبًا (نونبر 2026)', blocks: [
+        { callout: 'warn', text: 'آخر أجل: **الخميس 26 نونبر 2026 على الساعة 16:30**، عبر dgapr.gov.ma فقط. ويُرفض كل ملف ناقص أو مودع بعد الموعد.' },
+        { table: { head: ['المباراة', 'المناصب والشهادة والسن'], rows: [
+          ['مراقبات مساعدات', '**120** · إناث · البكالوريا، جميع الشعب · من 21 إلى 30 سنة'],
+          ['مراقبون رؤساء', '**200** · ذكور · تقني متخصص أو DUT أو BTS · من 21 إلى 30 سنة'],
+          ['أطباء', '**28** · ذكور وإناث · الدكتوراه في الطب العام، درجة قائد السجون مساعد من الدرجة الأولى · من 21 إلى 35 سنة'],
+        ] } },
+        { p: 'السن محتسبة في فاتح يناير 2026؛ ويُرفع الحد الأقصى بقدر سنوات الخدمة المدنية أو العسكرية، إلى 35 سنة (40 سنة بالنسبة للأطباء). ويجب أن يكون دبلوم المراقبين الرؤساء في أحد **التخصصات الخمسة عشر** الواردة في الإعلان، ومنها التمريض، وتدبير المصالح الصحية، والمعلوميات، والشبكات والأمن السيبراني، والمالية والمحاسبة، وتسيير المقاولات، والهندسة المدنية، والجودة والنظافة والسلامة والبيئة.' },
+        { steps: [
+          '**إلى غاية 26 نونبر على الساعة 16:30**: التسجيل ورفع الوثائق بصيغة PDF واضحة، كل وثيقة في ملف، على dgapr.gov.ma.',
+          '**ابتداءً من 27 نونبر**: اللائحة الأولية للمترشحين المقبولين؛ وبالنسبة للمراقبات، طلبات التوضيح إلى غاية **29 نونبر على الساعة 12:00 زوالًا**.',
+          '**ابتداءً من 30 نونبر**: اللائحة النهائية، وهي بمثابة استدعاء.',
+          '**الأحد 6 دجنبر 2026**: الاختبار الكتابي للمباريات الثلاث بمركزي **مراكش** و**فاس** (ويمكن فتح مراكز أخرى).',
+        ] },
+        { p: '**المراقبات المساعدات**: قامة 1.64 م على الأقل بدون حذاء، وحدة بصر 16/10 دون نظارات. ويمكن للمترشحات إرفاق ما يثبت قضاء الخدمة العسكرية أو مهارات في المعلوميات أو العمل الاجتماعي والفني أو الرياضات الدفاعية أو الطبخ الجماعي أو التمريض. والاختبارات هي المبينة أسفله: الكتابي (المعامل 2)، والجري 800 متر بحواجز (المعامل 2)، والشفوي (المعامل 4).' },
+        { p: '**المراقبون الرؤساء**: قامة 1.73 م على الأقل بدون حذاء، باستثناء الحالات التي يحددها الإعلان؛ اختبار كتابي مدته ساعتان (المعامل 3)، والجري 1200 متر بحواجز (المعامل 2)، والشفوي (المعامل 4). **الأطباء**: اختبار كتابي مدته ساعتان ونصف (المعامل 3)، ثم شفوي أو تطبيقي من 15 إلى 40 دقيقة (المعامل 5) لمن حصل على 12/20 على الأقل في الكتابي.' },
+        { p: 'في المباريات الثلاث، يُحتفظ بـ**25% من المناصب** لمكفولي الأمة وقدماء العسكريين وقدماء المحاربين والمقاومين، ويلتزم الناجحون بالعمل **8 سنوات على الأقل**.' },
+      ] },
+      { id: 'concours-2027', h: 'الذكور حاملو البكالوريا: مباراة 2027', blocks: [ { ul: [
+        'مباريات نونبر **لا توظف مراقبين مساعدين ذكورًا**: على الذكور الحاصلين على البكالوريا وحدها انتظار المباراة الكبرى المقبلة.',
+        'يخصص **مشروع قانون المالية لسنة 2027** (المادة 21)، الذي قُدّم أمام البرلمان في أكتوبر 2026، **1500 منصب مالي** للمندوبية العامة لإدارة السجون، وتحدد إعلانات المباريات توزيعها بين الدرجات.',
+        'في 2026، صدر إعلان مباريات 1620 مراقبًا مساعدًا يوم **3 يناير**، وأُغلق التسجيل يوم **18 يناير على الساعة 16:30**، وأُجريت الاختبارات الكتابية يومي **فاتح و15 فبراير**. قد يتبع موعد 2027 الإيقاع نفسه، والإعلان الرسمي وحده يحدد التواريخ.',
+        'تُنشر الإعلانات على **dgapr.gov.ma**، حيث يتم التسجيل، وعلى **بوابة التشغيل العمومي emploi-public.ma**. جهّز وثائقك (البطاقة الوطنية، البكالوريا) منذ الآن؛ أما الشهادة الطبية فيجب ألا يتجاوز تاريخها 3 أشهر عند الإيداع.',
       ] } ] },
       { id: 'conditions', h: 'الشروط (إعلان 2026)', blocks: [ { ul: [
         'الجنسية المغربية، والتمتع بالحقوق الوطنية، والمروءة.',
         '**من 21 إلى 30 سنة في فاتح يناير** من سنة المباراة؛ ويُرفع الحد الأقصى بقدر سنوات الخدمة المدنية أو العسكرية، **دون تجاوز 35 سنة**.',
-        '**البكالوريا من جميع الشعب** أو **دبلوم التأهيل المهني** في التخصصات المحددة في الإعلان: بالنسبة للذكور: عامل في المطعمة، كهرباء الصيانة الصناعية، كهرباء الإنشاءات، لحام متعدد الكفاءات، الترصيص الصحي، منشئ حراري صحي، عامل متعدد الكفاءات في التركيب المعدني؛ وبالنسبة للإناث: معالجة مساعدة، عاملة على الحاسوب، عامل في المطعمة، الكتابة والمكتبيات، مساعدة اجتماعية.',
+        '**البكالوريا من جميع الشعب** أو **دبلوم التأهيل المهني** في التخصصات المحددة في إعلان يناير 2026: بالنسبة للذكور: عامل في المطعمة، كهرباء الصيانة الصناعية، كهرباء الإنشاءات، لحام متعدد الكفاءات، الترصيص الصحي، منشئ حراري صحي، عامل متعدد الكفاءات في التركيب المعدني؛ وبالنسبة للإناث: معالجة مساعدة، عاملة على الحاسوب، عامل في المطعمة، الكتابة والمكتبيات، مساعدة اجتماعية. أما إعلان المراقبات في نونبر 2026 فيشترط **البكالوريا**.',
         'القامة بدون حذاء: **1.73 م** للذكور و**1.64 م** للإناث.',
         'البصر: **16/10 على الأقل للعينين معًا دون نظارات أو عدسات** (يُحتسب 10/10 على الأكثر لكل عين)، مع سمع سليم وأهلية صحية للعمل ليلًا ونهارًا.',
         'الالتزام كتابة بالعمل في مصالح إدارة السجون **مدة لا تقل عن 8 سنوات**.',
         '**25% من المناصب** مخصصة لمكفولي الأمة وقدماء العسكريين وقدماء المحاربين والمقاومين.',
       ] } ] },
-      { id: 'epreuves', h: 'الاختبارات ومعاملاتها', blocks: [
+      { id: 'epreuves', h: 'الاختبارات ومعاملاتها (المراقبون المساعدون)', blocks: [
         { table: { head: ['الاختبار', 'المحتوى'], rows: [
           ['الكتابي · المعامل 2', 'ساعتان: سؤال أو أسئلة عامة أو أسئلة متعددة الاختيارات (QCM) حول مواضيع اجتماعية واقتصادية وإدارية، وشؤون السجون ومهام المنصب. يلزم الحصول على 10/20 لمتابعة المباراة.'],
           ['الرياضة · المعامل 2', 'الجري بحواجز: 1200 متر للذكور و800 متر للإناث، بعد التأكد من الأهلية البدنية.'],
@@ -139,7 +181,7 @@ export default {
         'بعد اللائحة النهائية، تحميل **الالتزام** وتوقيعه وتقديمه يوم الاختبار الكتابي. ويُرفض كل ملف ناقص أو خارج الأجل.',
       ] } ] },
       { id: 'autres-grades', h: 'درجات أخرى', blocks: [
-        { p: 'في فبراير 2026، فتحت المندوبية أيضًا **415 منصبًا للأطر** (آخر أجل 20 فبراير، والمباراة يوم 8 مارس 2026):' },
+        { p: 'قبل مباريات نونبر (انظر أعلاه)، فتحت المندوبية في فبراير 2026 **415 منصبًا للأطر** (آخر أجل 20 فبراير، والمباراة يوم 8 مارس 2026):' },
         { ul: [
           '**315 مراقب السجون رئيس من الدرجة الثانية** (ذكور)، من حاملي دبلوم تقني متخصص أو الدبلوم الجامعي للتكنولوجيا أو ما يعادله؛',
           '**60 قائد السجون مساعد من الدرجة الثانية** و**40 من الدرجة الأولى** (ذكور وإناث)، في تخصصات مثل الطب وطب الأسنان والهندسة وعلم النفس والقانون الخاص.',
@@ -148,11 +190,13 @@ export default {
       ] },
     ],
     faq: [
-      { q: 'متى يُعلن عن مباراة إدارة السجون 2027؟', a: 'إلى غاية 9 نونبر 2026 لم يُنشر أي إعلان. يخصص مشروع قانون المالية لسنة 2027 1500 منصب للمندوبية، وفي 2026 صدر إعلان المراقبين يوم 3 يناير. والإعلان الرسمي وحده يحدد التواريخ.' },
+      { q: 'ما هي مباريات إدارة السجون المفتوحة حاليًا؟', a: 'ثلاث مباريات إلى غاية الخميس 26 نونبر 2026 على الساعة 16:30: 120 مراقبة سجون مساعدة (إناث، البكالوريا)، و200 مراقب سجون رئيس (ذكور، دبلوم تقني متخصص أو DUT أو BTS)، و28 قائد سجون مساعدًا طبيبًا. ويُجرى الاختبار الكتابي يوم الأحد 6 دجنبر 2026 بمراكش وفاس.' },
+      { q: 'هل يمكن للذكور حاملي البكالوريا اجتياز مباراة نونبر 2026؟', a: 'لا. مباراة المراقب المساعد في نونبر خاصة بالإناث، ولا يُقبل الذكور إلا في درجة المراقب الرئيس بدبلوم تقني متخصص أو DUT أو BTS. أما المباراة الكبرى للذكور حاملي البكالوريا فلم يُعلن عنها بعد، وقد صدر إعلانها في 2026 يوم 3 يناير.' },
+      { q: 'متى يُعلن عن مباراة إدارة السجون 2027؟', a: 'إلى غاية 18 نونبر 2026 لم يُنشر إعلان 2027 الخاص بالمراقبين المساعدين. يخصص مشروع قانون المالية لسنة 2027 1500 منصب للمندوبية، وفي 2026 صدر الإعلان يوم 3 يناير. والإعلان الرسمي وحده يحدد التواريخ.' },
       { q: 'ما هي القامة المطلوبة في مباراة إدارة السجون؟', a: '1.73 م للذكور و1.64 م للإناث بدون حذاء (إعلان 2026)، مع حدة بصر لا تقل عن 16/10 للعينين معًا دون نظارات.' },
       { q: 'ما مواد الاختبار الكتابي في مباراة إدارة السجون؟', a: 'اختبار مدته ساعتان ومعامله 2: أسئلة عامة أو متعددة الاختيارات حول مواضيع اجتماعية واقتصادية وإدارية، وشؤون السجون ومهام المنصب. ويلزم 10/20 للمرور إلى اختبار الرياضة.' },
       { q: 'هل يكفي دبلوم التأهيل المهني؟', a: 'نعم، إذا كان في أحد التخصصات المحددة في الإعلان؛ وإلا فالبكالوريا مطلوبة، وتُقبل جميع الشعب.' },
-      { q: 'أين يتم التسجيل في مباراة إدارة السجون؟', a: 'عبر الإنترنت فقط، على موقع المندوبية dgapr.gov.ma، قبل آخر أجل في الإعلان: 18 يناير على الساعة 16:30 في 2026. ويُرفض كل ملف ناقص أو مودع خارج الأجل.' },
+      { q: 'أين يتم التسجيل في مباراة إدارة السجون؟', a: 'عبر الإنترنت فقط، على موقع المندوبية dgapr.gov.ma، قبل آخر أجل في الإعلان: 26 نونبر 2026 على الساعة 16:30 بالنسبة لمباريات نونبر. ويُرفض كل ملف ناقص أو مودع خارج الأجل.' },
     ],
   },
 };
