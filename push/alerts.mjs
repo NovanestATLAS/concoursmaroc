@@ -139,7 +139,7 @@ export function buildMessage(due, lang, data) {
     const t = data.topics[d.topic];
     return {
       title: oneTitle(d, lang, data), body: oneBody(d, lang), lang,
-      url: link(data, t ? t.u[lang] || t.u.fr : (lang === 'ar' ? 'ar/' : ''), d.kind),
+      url: link(data, t ? t.u[lang] || t.u.fr : (lang === 'ar' ? '' : 'fr/'), d.kind),
       tag: `cm-${d.id}`, ttl: urgent ? 12 * 3600 : 24 * 3600,
     };
   }
@@ -167,7 +167,7 @@ export function confirmMessage(topics, lang, data, today) {
     title: x.confirmT,
     body: x.confirmB(list) + (next ? x.next(next[lang] || next.fr, fmtDate(mainDate(next), lang)) : ''),
     lang,
-    url: link(data, first ? first.u[lang] || first.u.fr : (lang === 'ar' ? 'ar/' : ''), 'confirmation'),
+    url: link(data, first ? first.u[lang] || first.u.fr : (lang === 'ar' ? '' : 'fr/'), 'confirmation'),
     tag: 'cm-confirm', ttl: 3600,
   };
 }

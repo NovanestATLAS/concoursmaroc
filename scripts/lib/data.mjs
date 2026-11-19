@@ -6,6 +6,7 @@ import path from 'node:path';
 import { guidePath } from './pages/concours.mjs';
 import { GROUPS, SUBJECTS, BAC, LEVELS, DEFAULT_LEVEL } from '../../content/taxonomy.mjs';
 import { CALENDAR } from '../../content/calendar.mjs';
+import { sitePath } from './layout.mjs';
 
 // Where candidates register (platform field, else the "Inscription" fact of the guide).
 function platformOf(c) {
@@ -83,7 +84,7 @@ function bodyWords(body, known) {
 export function searchIndex(pages, lang) {
   return JSON.stringify(pages.filter((p) => p.lang === lang && !p.noindex && !p.noSearch).map((p) => {
     const e = {
-      u: p.path.replace(/index\.html$/, ''),
+      u: sitePath(p.path).replace(/index\.html$/, ''),
       t: p.searchTitle || p.title,
       d: (p.description || '').slice(0, 150),
       k: p.keywords ? p.keywords.join(' ') : '',

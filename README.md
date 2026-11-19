@@ -22,6 +22,14 @@ l'application : voir « Entonnoir vers l'application » plus bas.
 SEO : URL lisibles, titres et descriptions uniques, `hreflang` fr/ar, données structurées (Article, FAQ, Quiz,
 fil d'Ariane…), `sitemap.xml`, `robots.txt`, images de partage par page, pages rapides et utilisables hors ligne.
 
+Langue par défaut : **l'arabe** (depuis le 19/11/2026). L'accueil arabe est à la racine `/`, l'accueil français à
+`/fr/`, et `/ar/` redirige vers `/` (`docs/_redirects`, 301). Toutes les autres adresses ne changent pas (`/ar/…` en
+arabe, sans préfixe en français) ; `x-default` pointe vers l'arabe. Le bouton de langue garde le choix du visiteur
+(`cm.lang`) : un visiteur qui a choisi le français retrouve l'accueil français en revenant sur `/`. Une première
+visite et les robots de Google, qui ne gardent rien, voient l'accueil arabe. Les pages sont écrites avec leurs chemins
+« source » ('' = accueil français, 'ar/' = accueil arabe) ; `sitePath()` (`scripts/lib/layout.mjs`) échange les deux
+accueils sur le site seulement, jamais dans l'application Android.
+
 ## Orientation et engagement des visiteurs
 
 `src/js/engage.js` et `scripts/lib/engage.mjs` (site et application Android ; dans l'application, pas de barre « Sur cette page ») :

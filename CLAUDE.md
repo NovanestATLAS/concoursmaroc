@@ -36,6 +36,10 @@ Permanent rules for every session. The README explains the features in detail; r
 ## Bilingual
 - Every user-facing string exists in French and Arabic (`strings.mjs`, `fr`/`ar` fields). Arabic pages are
   `dir="rtl"`; check the layout in RTL after any CSS change.
+- Arabic is the default language (owner's decision, 19 Nov 2026): the Arabic home page is `/`, the French one `/fr/`,
+  `/ar/` redirects to `/`, `x-default` points to Arabic. Every other URL keeps its form (`ar/…` Arabic, no prefix
+  French). Pages are written with source paths ('' = French home, 'ar/' = Arabic home); `sitePath()` in
+  `scripts/lib/layout.mjs` swaps the two homes on the website only, never in the Android app.
 
 ## Performance and accessibility
 - Small vanilla JS modules, loaded only where used (KaTeX only when a formula appears). No new framework.

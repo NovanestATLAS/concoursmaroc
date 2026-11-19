@@ -25,6 +25,17 @@
     el._t = setTimeout(function () { el.classList.remove('show'); }, 2600);
   };
 
+  // ---------------------------------------------------------------- language
+  // Arabic is the default language (the home page / is in Arabic). The
+  // visitor's choice with the language button is kept, so that / opens the
+  // French home next time (inline script of the Arabic home, layout.mjs).
+  if (!APP) {
+    var langBtn = $('.hdr-lang');
+    if (langBtn) langBtn.addEventListener('click', function () {
+      try { localStorage.setItem('cm.lang', langBtn.getAttribute('hreflang') === 'fr' ? 'fr' : 'ar'); } catch (e) {}
+    });
+  }
+
   // ---------------------------------------------------------------- menu
   var menuBtn = $('#menu-btn');
   var nav = $('#site-nav');
@@ -288,6 +299,8 @@
     var cur = window.CM && CM.shell && CM.shell.current ? CM.shell.current() : null;
     var key = (cur && cur.key) || '';
     if (/^(ar\/)?app\//.test(key)) key = lang() === 'ar' ? 'ar/' : '';   // app-only pages
+    // website: the Arabic home is the root, the French home is fr/
+    key = key === '' || key === 'index.html' ? 'fr/' : key === 'ar/' || key === 'ar/index.html' ? '' : key;
     return base + key;
   }
   function share() {

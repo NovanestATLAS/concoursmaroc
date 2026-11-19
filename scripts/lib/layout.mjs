@@ -49,6 +49,24 @@ export function isAssetPath(target) {
   return /\.[a-z0-9]+$/i.test(p);
 }
 
+/* Arabic is the default language of the website (owner's decision, 19 Nov 2026):
+ * the Arabic home page is the site root and the French home page is /fr/.
+ * Every other page keeps its address ('ar/…' in Arabic, no prefix in French),
+ * so pages are still written with those source paths ('' = French home,
+ * 'ar/' = Arabic home) and only the website output swaps the two homes;
+ * the Android app keeps its own routes. /ar/ redirects to / (docs/_redirects).
+ * Takes a source path (with an optional ?query or #hash), returns the
+ * published one. Call it once per path: it is not idempotent. */
+export function sitePath(target) {
+  if (LINK_MODE === 'app') return target;
+  const m = String(target == null ? '' : target).match(/^([^?#]*)(.*)$/);
+  const p = m[1];
+  if (p === '' || p === 'index.html') return 'fr/' + p + m[2];
+  if (p === 'ar' || p === 'ar/') return m[2];
+  if (p === 'ar/index.html') return 'index.html' + m[2];
+  return target;
+}
+
 /* Builds a relative link from the current page to a site-relative target. */
 export function linker(pagePath) {
   if (LINK_MODE === 'app') {
@@ -58,9 +76,9 @@ export function linker(pagePath) {
       return '#/' + tgt.replace(/index\.html(?=$|[?#])/, '');
     };
   }
-  const root = rootOf(pagePath);
+  const root = rootOf(sitePath(pagePath));
   return (target) => {
-    const tgt = String(target || '').replace(/^\//, '');
+    const tgt = sitePath(String(target || '').replace(/^\//, ''));
     const out = (root === './' ? '' : root) + tgt;
     return out === '' ? './' : out;
   };
@@ -72,7 +90,7 @@ export function basePath(site) {
 }
 
 function absUrl(site, path) {
-  const p = String(path || '').replace(/^\//, '').replace(/index\.html$/, '');
+  const p = sitePath(String(path || '').replace(/^\//, '')).replace(/index\.html$/, '');
   return `${site.siteUrl}/${p}`;
 }
 
@@ -97,7 +115,7 @@ const NAV = {
 
 function header(lang, link, page, site) {
   const nav = NAV[lang] || NAV.fr;
-  const altHref = page.alternate ? link(page.alternate) : link(lang === 'ar' ? '' : 'ar/');
+  const altHref = page.alternate != null ? link(page.alternate) : link(lang === 'ar' ? '' : 'ar/');
   const homeHref = link(lang === 'ar' ? 'ar/' : '');
   return html`<header class="site-header">
   <div class="container bar">
@@ -164,12 +182,12 @@ function footer(lang, link, site, footerLinks) {
  * } */
 export function layout(site, page, footerLinks) {
   const lang = page.lang || 'fr';
-  const root = page.absolute ? basePath(site) : rootOf(page.path);
-  const link = page.absolute ? ((target) => root + String(target || '').replace(/^\//, '')) : linker(page.path);
+  const root = page.absolute ? basePath(site) : rootOf(sitePath(page.path));
+  const link = page.absolute ? ((target) => root + sitePath(String(target || '').replace(/^\//, ''))) : linker(page.path);
   const canonical = absUrl(site, page.path);
   const altLang = lang === 'ar' ? 'fr' : 'ar';
-  const altUrl = page.alternate ? absUrl(site, page.alternate) : null;
-  const frUrl = lang === 'fr' ? canonical : altUrl;
+  const altUrl = page.alternate != null ? absUrl(site, page.alternate) : null;   // '' = French home
+  const arUrl = lang === 'ar' ? canonical : altUrl;   // x-default: Arabic, the default language
   const ogImage = absUrl(site, page.ogImage || 'assets/img/og/concours-maroc.png');
   // The brand is appended only when the whole title stays within 60 characters (what search results show).
   const fullTitle = page.titleFull || (page.title.includes('Concours Maroc') || page.title.length + 17 > 60 ? page.title : `${page.title} | Concours Maroc`);
@@ -180,6 +198,12 @@ export function layout(site, page, footerLinks) {
   // ago. The banner waits for the 3rd page viewed: a first visit stays on the site.
   const themeInit = `(function(){var d=document.documentElement;try{var t=localStorage.getItem('cm.theme');if(!t||t==='auto'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t)}catch(e){}try{var u=navigator.userAgent||'';if(/Android/i.test(u))d.classList.add('is-android');if(/iPhone|iPad|iPod/i.test(u)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))d.classList.add('is-ios');var b=+localStorage.getItem('cm.appbanner')||0;if(b&&Date.now()-b<12096e5)d.classList.add('appbanner-off');var n=(+localStorage.getItem('cm.pv')||0)+1;localStorage.setItem('cm.pv',n);if(n<3)d.classList.add('appbanner-off')}catch(e){}})();`;
 
+  // Arabic home (the site root): a visitor who picked French with the language
+  // button (cm.lang, set by site.js) goes on to the French home. First visits
+  // and crawlers, which keep no storage, get the Arabic home.
+  const langPref = linkMode() === 'site' && page.path === 'ar/index.html'
+    ? raw(`<script>try{if(localStorage.getItem('cm.lang')==='fr')location.replace('fr/'+location.search+location.hash)}catch(e){}</script>\n`) : '';
+
   const ga = site.ga4 ? raw(`<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(site.ga4)}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${esc(site.ga4)}');</script>`) : '';
   const ads = site.adsenseClient && !page.noAds ? raw(`<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(site.adsenseClient)}" crossorigin="anonymous"></script>`) : '';
 
@@ -188,13 +212,13 @@ ${html`<html lang="${lang}" dir="${lang === 'ar' ? 'rtl' : 'ltr'}" data-root="${
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>${fullTitle}</title>
+${langPref}<title>${fullTitle}</title>
 <meta name="description" content="${page.description}">
 ${page.noindex ? raw('<meta name="robots" content="noindex, follow">') : raw('<meta name="robots" content="index, follow, max-image-preview:large">')}
 <link rel="canonical" href="${canonical}">
 ${altUrl ? html`<link rel="alternate" hreflang="${lang}" href="${canonical}">
 <link rel="alternate" hreflang="${altLang}" href="${altUrl}">
-<link rel="alternate" hreflang="x-default" href="${frUrl}">` : html`<link rel="alternate" hreflang="${lang}" href="${canonical}">`}
+<link rel="alternate" hreflang="x-default" href="${arUrl}">` : html`<link rel="alternate" hreflang="${lang}" href="${canonical}">`}
 <meta name="theme-color" content="${site.themeColor}">
 <meta name="color-scheme" content="light dark">
 <meta property="og:type" content="${page.type === 'article' ? 'article' : 'website'}">
@@ -251,7 +275,7 @@ export function breadcrumbLd(site, items) {
       '@type': 'ListItem',
       position: i + 1,
       name: label,
-      item: `${site.siteUrl}/${String(href).replace(/^\//, '')}`,
+      item: `${site.siteUrl}/${sitePath(String(href).replace(/^\//, '')).replace(/index\.html$/, '')}`,
     })),
   };
 }

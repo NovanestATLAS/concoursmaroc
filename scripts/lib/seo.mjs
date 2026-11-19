@@ -1,20 +1,22 @@
 /* sitemap.xml, robots.txt, web app manifest. */
 
+import { sitePath } from './layout.mjs';
+
 function abs(site, p) {
-  return `${site.siteUrl}/${String(p).replace(/^\//, '').replace(/index\.html$/, '')}`;
+  return `${site.siteUrl}/${sitePath(String(p).replace(/^\//, '')).replace(/index\.html$/, '')}`;
 }
 
 export function sitemapXml(site, pages) {
   const byPath = new Map(pages.map((p) => [p.path.replace(/index\.html$/, ''), p]));
   const rows = pages.filter((p) => !p.noindex).map((p) => {
     const self = p.path.replace(/index\.html$/, '');
-    const alt = p.alternate && byPath.has(p.alternate) ? p.alternate : null;
+    const alt = p.alternate != null && byPath.has(p.alternate) ? p.alternate : null;   // '' = French home
     const prio = self === '' || self === 'ar/' ? '1.0' : /^(ar\/)?concours\//.test(self) ? '0.9' : /^(ar\/)?(outils|entrainement)\//.test(self) ? '0.8' : '0.6';
     let links = '';
-    if (alt) {
+    if (alt !== null) {
       const fr = p.lang === 'fr' ? self : alt;
       const ar = p.lang === 'ar' ? self : alt;
-      links = `\n    <xhtml:link rel="alternate" hreflang="fr" href="${abs(site, fr)}"/>\n    <xhtml:link rel="alternate" hreflang="ar" href="${abs(site, ar)}"/>\n    <xhtml:link rel="alternate" hreflang="x-default" href="${abs(site, fr)}"/>`;
+      links = `\n    <xhtml:link rel="alternate" hreflang="fr" href="${abs(site, fr)}"/>\n    <xhtml:link rel="alternate" hreflang="ar" href="${abs(site, ar)}"/>\n    <xhtml:link rel="alternate" hreflang="x-default" href="${abs(site, ar)}"/>`;
     }
     return `  <url>\n    <loc>${abs(site, self)}</loc>\n    <lastmod>${p.updated || site.updated}</lastmod>\n    <priority>${prio}</priority>${links}\n  </url>`;
   });

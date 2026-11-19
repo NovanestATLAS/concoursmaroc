@@ -15,7 +15,7 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import site from '../content/site.mjs';
-import { layout } from './lib/layout.mjs';
+import { layout, sitePath } from './lib/layout.mjs';
 import { monetagAdsTxt } from './lib/monetag.mjs';
 import { buildGuide, buildDirectory, guidePath } from './lib/pages/concours.mjs';
 import { buildHome } from './lib/pages/home.mjs';
@@ -145,7 +145,7 @@ async function main() {
   for (const p of pages) {
     if (seen.has(p.path)) throw new Error(`Duplicate page path: ${p.path}`);
     seen.add(p.path);
-    write(p.path, layout(site, p, links));
+    write(sitePath(p.path), layout(site, p, links));
   }
 
   // Static assets
@@ -172,6 +172,9 @@ async function main() {
   write('robots.txt', robotsTxt(site));
   write('manifest.webmanifest', manifestJson(site));
   write('.nojekyll', '');
+  // Arabic is the default language: the Arabic home page moved from /ar/ to /
+  // (the French one is /fr/, see sitePath in scripts/lib/layout.mjs).
+  write('_redirects', ['/ar / 301', '/ar/ / 301', ''].join('\n'));
   if (site.customDomain) write('CNAME', `${site.customDomain}\n`);
   if (site.indexNowKey) write(`${site.indexNowKey}.txt`, site.indexNowKey);
   // Cloudflare Pages response headers (ignored by other hosts). CSS and JS are
@@ -221,7 +224,7 @@ async function main() {
     }
   })(OUT);
   const version = hash.digest('hex').slice(0, 12);
-  const precache = files.filter((f) => /^(assets\/(css|js)\/|assets\/fonts\/.*\.woff2$|assets\/vendor\/katex\/(katex\.min\.(js|css)|fonts\/.*\.woff2)$|data\/(manifest|concours|outils|sources)\.json|data\/i18n\/|favicon\.svg|manifest\.webmanifest|entrainement\/index\.html|ar\/entrainement\/index\.html|index\.html|ar\/index\.html|offline\.html)/.test(f));
+  const precache = files.filter((f) => /^(assets\/(css|js)\/|assets\/fonts\/.*\.woff2$|assets\/vendor\/katex\/(katex\.min\.(js|css)|fonts\/.*\.woff2)$|data\/(manifest|concours|outils|sources)\.json|data\/i18n\/|favicon\.svg|manifest\.webmanifest|entrainement\/index\.html|ar\/entrainement\/index\.html|index\.html|fr\/index\.html|offline\.html)/.test(f));
   const sw = fs.readFileSync(path.join(ROOT, 'src/sw.template.js'), 'utf8')
     .replace('__VERSION__', version)
     .replace('__PRECACHE__', JSON.stringify(precache));

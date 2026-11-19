@@ -138,8 +138,8 @@ ${H2('Propriété intellectuelle')}${P("Les textes, questions d'entraînement, o
       path: '404.html', lang, title: 'Page introuvable', description: 'Cette page n’existe pas ou a été déplacée.', noindex: true, noSearch: true, noAds: true, absolute: true,
       body: html`<div class="container narrow" style="padding:50px 20px 60px;text-align:center"><div class="state"><div class="st-star" style="width:56px;height:56px;margin:0 auto 16px;background:var(--accent);clip-path:var(--star)"></div></div>
 <h1>Page introuvable</h1><p class="lead">La page demandée n’existe pas ou a changé d’adresse. Essayez la recherche ou l’un de ces liens.</p>
-<div class="btn-row" style="justify-content:center"><a class="btn" href="${B}">Accueil</a><a class="btn ghost" href="${B}concours/">Tous les concours</a><a class="btn ghost" href="${B}entrainement/">Entraînement</a></div>
-<p class="muted" style="margin-top:20px" lang="ar" dir="rtl">الصفحة غير موجودة. <a href="${B}ar/">العودة إلى الرئيسية</a></p></div>`,
+<div class="btn-row" style="justify-content:center"><a class="btn" href="${B}fr/">Accueil</a><a class="btn ghost" href="${B}concours/">Tous les concours</a><a class="btn ghost" href="${B}entrainement/">Entraînement</a></div>
+<p class="muted" style="margin-top:20px" lang="ar" dir="rtl">الصفحة غير موجودة. <a href="${B}">العودة إلى الرئيسية</a></p></div>`,
     });
     pages.push({
       path: 'offline.html', lang, title: 'Hors ligne', description: 'Vous êtes hors ligne.', noindex: true, noSearch: true, noAds: true,
