@@ -4,10 +4,14 @@
  *   - 2027 entries are estimates based on the usual period (month only,
  *     confidence: 'estimation') and must be confirmed by the official notice.
  * The calendar page computes "upcoming / past" in the browser, so the page
- * stays correct without rebuilding. Last checked against sources: 2026-11-18
- * (DGAPR: 348 posts announced on 11-12 November, deadline 26 November, written
- * exam 6 December; CRMEF deadline 19 November unchanged; DGSN written exams
- * 22 and 29 November unchanged; Forces Auxiliaires 20 November - 16 December).
+ * stays correct without rebuilding. Last checked against sources: 2026-11-19
+ * (new: CRMEF cadres spécialistes, 1,759 places, announced by the ministry on
+ * 9 November, applications 11-25 November, written exam 5 December; unchanged:
+ * DGAPR deadline 26 November and written exam 6 December, CRMEF teachers'
+ * deadline 19 November at 16:30 with no extension, DGSN written exams 22 and
+ * 29 November with convocations online since 14 November, Forces Auxiliaires
+ * 20 November - 16 December, bac 2027 free candidates until 4 December).
+ * Earlier check, 2026-11-18 (DGAPR: 348 posts announced on 11-12 November).
  * Earlier check, 2026-11-08 (CRMEF 2026 announced on 3 November, places raised to 17,953 on 4 November,
  * written exams on 28 November; bac 2027 free candidates from 4 November to
  * 4 December; DGSN, Forces Auxiliaires and Protection civile dates unchanged;
@@ -27,6 +31,9 @@ export const CALENDAR = [
   { id: 'crmef-2026-insc', concours: 'enseignants-aref', type: 'inscription', start: '2026-11-05', date: '2026-11-19', confidence: 'officiel', added: '2026-11-08',
     fr: 'Concours de l’enseignement (CRMEF) 2026 : candidatures sur wolouj.men.gov.ma (17 953 places, 40 ans au plus)', ar: 'مباريات التعليم 2026: الترشيح عبر wolouj.men.gov.ma (17953 مقعدًا، 40 سنة على الأكثر)',
     source: { label: 'Ministère de l’Éducation nationale — annonce des concours d’accès au cycle de qualification des cadres enseignants, session de novembre 2026 (PDF)', url: 'https://www.men.gov.ma/sites/default/files/2026-11/%D8%A5%D8%B9%D9%84%D8%A7%D9%86_0.pdf' } },
+  { id: 'crmef-specialistes-2026-insc', concours: 'enseignants-aref', type: 'inscription', start: '2026-11-11', date: '2026-11-25', confidence: 'officiel', added: '2026-11-19',
+    fr: 'CRMEF, cadres spécialistes (sociaux, économie et administration, pédagogiques) : candidatures sur wolouj.men.gov.ma jusqu’à 16 h 30 (1 759 places, licence, 40 ans au plus)', ar: 'المراكز الجهوية، أطر المختصين (الاجتماعيون، الاقتصاد والإدارة، التربويون): الترشيح عبر wolouj.men.gov.ma إلى غاية الساعة 16:30 (1759 منصبًا، الإجازة، 40 سنة على الأكثر)',
+    source: { label: 'Ministère de l’Éducation nationale — annonce des concours d’accès au cycle de formation des cadres spécialistes, session de décembre 2026 (PDF)', url: 'https://www.men.gov.ma/sites/default/files/2026-11/%D8%A5%D8%B9%D9%84%D8%A7%D9%86_2.pdf' } },
   { id: 'pc-officiers-2026-epreuves', concours: 'protection-civile', type: 'ecrit', date: '2026-11-16', confidence: 'officiel',
     fr: 'Protection civile : concours des élèves officiers (début par la visite médicale)', ar: 'الوقاية المدنية: مباراة التلاميذ الضباط (تبدأ بالفحص الطبي)',
     source: { label: 'emploi-public.ma — Élèves officiers, échelle 10 (C44132/26)', url: 'https://www.emploi-public.ma/fr/concours/details/0bc3b58e-cfd7-466e-9023-6faf53a94738' } },
@@ -48,6 +55,9 @@ export const CALENDAR = [
   { id: 'dgsn-2026-ecrit-cp', concours: 'police-dgsn', type: 'ecrit', date: '2026-11-29', confidence: 'annonce',
     fr: 'Police (DGSN) : écrit des commissaires principaux (97 postes)', ar: 'الأمن الوطني: الاختبار الكتابي للعمداء الممتازين (97 منصبًا)',
     source: { label: 'Alwadifa-Maroc — DGSN : 97 commissaires de police principaux, concours le 29 novembre 2026', url: 'https://alwadifa-maroc.com/offre/show/id/23572' } },
+  { id: 'crmef-specialistes-2026-ecrit', concours: 'enseignants-aref', type: 'ecrit', date: '2026-12-05', confidence: 'officiel', added: '2026-11-19',
+    fr: 'CRMEF, cadres spécialistes : épreuves écrites (convoqués publiés le 30 novembre, résultats le 11 décembre, oral du 16 au 23 décembre)', ar: 'المراكز الجهوية، أطر المختصين: الاختبارات الكتابية (لوائح المدعوين يوم 30 نونبر، النتائج يوم 11 دجنبر، الشفوي من 16 إلى 23 دجنبر)',
+    source: { label: 'Ministère de l’Éducation nationale — annonce des concours d’accès au cycle de formation des cadres spécialistes, session de décembre 2026 (PDF)', url: 'https://www.men.gov.ma/sites/default/files/2026-11/%D8%A5%D8%B9%D9%84%D8%A7%D9%86_2.pdf' } },
   { id: 'crmef-2026-oral', concours: 'enseignants-aref', type: 'ecrit', start: '2026-12-14', date: '2026-12-23', confidence: 'annonce', added: '2026-11-08',
     fr: 'Concours de l’enseignement (CRMEF) 2026 : entretiens oraux (résultats de l’écrit le 9 décembre ; épreuves pratiques d’EPS du 1er au 4 décembre)', ar: 'مباريات التعليم 2026: الاختبارات الشفوية (نتائج الكتابي يوم 9 دجنبر؛ الاختبارات التطبيقية للتربية البدنية والرياضية من 1 إلى 4 دجنبر)',
     source: { label: 'Le Matin — Concours de l’enseignement 2026 : 15 590 places, la limite d’âge portée à 40 ans (4 novembre 2026)', url: 'https://lematin.ma/enseignement/concours-de-lenseignement-15590-places-la-limite-dage-portee-a-40-ans/374010' } },
