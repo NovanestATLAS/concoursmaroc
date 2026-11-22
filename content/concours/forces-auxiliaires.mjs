@@ -1,5 +1,6 @@
 export default {
   id: 'forces-auxiliaires',
+  updated: '2026-11-22',
   order: 84,
   group: 'securite',
   level: 'bac',
@@ -32,7 +33,7 @@ export default {
     short: 'Forces Auxiliaires',
     name: 'Forces Auxiliaires — recrutement des mokhaznis et des élèves officiers',
     title: 'Concours Forces Auxiliaires 2026-2027 : mokhaznis',
-    description: "Mokhaznis des Forces Auxiliaires : sans bac (secondaire qualifiant), 18–24 ans, taille, vue, épreuves du 20 novembre au 16 décembre 2026.",
+    description: "Site officiel recrutement.fa.gov.ma : mokhaznis sans bac, 18–24 ans, taille, vue. Inscriptions closes, épreuves du 20 novembre au 16 décembre 2026.",
     keywords: ['concours forces auxiliaires', 'mokhazni', 'recrutement fa gov ma', 'القوات المساعدة'],
     intro: "Les **Forces Auxiliaires** recrutent des **mokhaznis** sans exiger le baccalauréat : le **niveau secondaire qualifiant** ou un **diplôme de qualification professionnelle** suffit. Pour la session 2026/2027, les **inscriptions sont closes depuis le 16 octobre 2026** ; les épreuves ont lieu **du 20 novembre au 16 décembre 2026** aux centres de formation de Lamjaâra (Ouezzane) et d'Aoulouz (Taroudant), selon les informations relayées.",
     facts: [['Niveau', 'Secondaire qualifiant ou qualification professionnelle'], ['Âge', '18 à 24 ans au 1er février 2027'], ['Taille', '1,70 m (hommes) · 1,65 m (femmes)'], ['Vue', '16/20 au moins sans correction'], ['Inscription', 'Close le 16 octobre 2026'], ['Épreuves', '20 novembre – 16 décembre 2026']],
@@ -41,7 +42,7 @@ export default {
       { id: 'officiers', h: 'Élèves officiers (bacheliers)', blocks: [ { p: "Les élèves officiers des Forces Auxiliaires sont recrutés parmi les **bacheliers de l'année** (18 à 23 ans à la date du concours, taille 1,70 m / 1,65 m) et formés à l'**Académie Royale Militaire**. Les inscriptions se tiennent au printemps (closes fin mai en 2026)." } ] },
       { id: 'epreuves', h: 'Épreuves', blocks: [ { steps: ['Vérification des conditions et visite médicale.', 'Épreuves physiques (session 2026/2027 : 1 000 m pour les hommes, 800 m pour les femmes).', 'Écrit, puis entretien oral ; classement sur la moyenne générale finale.'] }, { callout: 'info', text: "L'avis ne détaille pas les matières de l'écrit. L'entraînement ci-dessous, au niveau du secondaire qualifiant, couvre la culture générale, l'arabe, le français, la logique et le calcul de base ; il ne demande aucune connaissance militaire ni de secourisme, qui s'apprennent pendant la formation." }, { practice: true } ] },
     ],
-    faq: [ { q: 'Faut-il le bac pour les Forces Auxiliaires ?', a: "Non pour les mokhaznis : le niveau secondaire qualifiant ou un diplôme de qualification professionnelle suffit. Le bac est exigé pour les élèves officiers." } ],
+    faq: [ { q: 'Quel est le site officiel du concours des Forces Auxiliaires ?', a: "Le portail officiel de recrutement est recrutement.fa.gov.ma : c'est là que se font les inscriptions et que sont publiés les avis. Pour la session 2026/2027, les inscriptions sont closes depuis le 16 octobre 2026 et les candidats retenus sont convoqués par e-mail aux épreuves, du 20 novembre au 16 décembre 2026. Concours Maroc est un guide indépendant, pas le site officiel." }, { q: 'Faut-il le bac pour les Forces Auxiliaires ?', a: "Non pour les mokhaznis : le niveau secondaire qualifiant ou un diplôme de qualification professionnelle suffit. Le bac est exigé pour les élèves officiers." } ],
   },
   ar: {
     short: 'القوات المساعدة',
