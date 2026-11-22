@@ -4,7 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { html, inline } from '../html.mjs';
 import { icon } from '../icons.mjs';
-import { linker, breadcrumb, breadcrumbLd, basePath } from '../layout.mjs';
+import { linker, breadcrumb, breadcrumbLd, basePath, publisherLd, sitePath, linkMode } from '../layout.mjs';
 import { t, formatDate } from '../strings.mjs';
 import { guidePath } from './concours.mjs';
 import { appPrivacyTitle, appPrivacyContent } from './app-privacy.mjs';
@@ -18,8 +18,8 @@ function simplePage(site, lang, slug, title, description, blocks, extra = {}) {
   const link = linker(p);
   const crumbs = [[pfx, t(lang, 'home')], [`${pfx}${slug}/`, extra.crumb || title]];
   return {
-    path: p, lang, title, description, alternate: `${lang === 'ar' ? '' : 'ar/'}${slug}/`,
-    jsonld: [breadcrumbLd(site, crumbs)], noSearch: extra.noSearch, scripts: extra.scripts, section: extra.section,
+    path: p, lang, title, description, alternate: `${lang === 'ar' ? '' : 'ar/'}${slug}/`, updated: extra.updated,
+    jsonld: [breadcrumbLd(site, crumbs), ...(extra.jsonld || [])], noSearch: extra.noSearch, scripts: extra.scripts, section: extra.section,
     body: html`${breadcrumb(lang, link, crumbs)}<div class="container narrow" style="padding-bottom:40px"><header class="page-head"><h1>${extra.h1 || title}</h1>${extra.lead ? html`<p class="lead">${extra.lead}</p>` : ''}</header>
 ${blocks(link, pfx)}</div>`,
   };
@@ -36,28 +36,44 @@ export function buildStaticPages(site, all, lang, banks) {
   const repoIssues = `${site.repoUrl}/issues`;
   const nq = Object.values(banks).reduce((s, b) => s + b.length, 0);
 
+  // About: publisher (brand-first, owner's decision of 22 Nov 2026), method,
+  // non-affiliation. Organization JSON-LD in full, AboutPage pointing to it.
+  const pub = site.publisher;
+  const mail = `[${pub.email}](mailto:${pub.email})`;
+  const aboutUrl = `${site.siteUrl}/${sitePath(`${ar ? 'ar/' : ''}a-propos/`)}`;
   pages.push(simplePage(site, lang, 'a-propos',
     ar ? 'من نحن ومنهجيتنا' : 'À propos de Concours Maroc et méthode de vérification',
-    ar ? 'Concours Maroc دليل مستقل ومجاني للمباريات بالمغرب: كيف نجمع المعلومات ونتحقق منها ونحدّثها.' : "Concours Maroc est un guide indépendant et gratuit des concours au Maroc : comment les informations sont collectées, vérifiées, datées et mises à jour.",
-    (link, pfx) => ar ? html`${P('Concours Maroc دليل **مستقل ومجاني** موجه إلى الحاصلين على البكالوريا والمترشحين بمستوى البكالوريا الذين يستعدون لمباراة بالمغرب. ويجمع، لكل مباراة، شروط الولوج وطريقة الانتقاء والاختبارات وعدد المقاعد المعروف والأجندة، مع تمارين ملائمة.')}
-${H2('منهجيتنا')}${UL([
+    ar ? 'Concours Maroc دليل مستقل ومجاني للمباريات بالمغرب تنشره Novanest ATLAS بالدار البيضاء: الناشر ومنهجية إعداد المحتوى والتواصل.' : "Concours Maroc, guide indépendant et gratuit des concours au Maroc édité par Novanest ATLAS (Casablanca) : éditeur, méthode de vérification, contact.",
+    (link, pfx) => ar ? html`${P('Concours Maroc دليل **مستقل ومجاني** موجه إلى الحاصلين على البكالوريا والمترشحين بمستوى البكالوريا الذين يستعدون لمباراة بالمغرب. ويجمع، لكل مباراة، شروط الولوج وطريقة الانتقاء والاختبارات وعدد المقاعد المعروف والأجندة، مع تمارين ملائمة. وتنشره **Novanest ATLAS**.')}
+${H2('الناشر')}${P('**فريق التحرير – Novanest ATLAS** — ناشر مستقل للتطبيقات التعليمية ومنصات التحضير للامتحانات والمباريات، مقره في الدار البيضاء، المغرب.')}
+${P(`للتواصل: ${mail}`)}${linkMode() === 'app' ? '' : P(`وتنشر Novanest ATLAS أيضًا [تطبيق Concours Maroc على أندرويد](${link(pfx + 'application/')}).`)}
+${H2('منهجية إعداد المحتوى')}${P('تُعدّ الأسئلة التدريبية والأدلة بشكل مستقل، انطلاقًا من الأطر العمومية للاختبارات: إعلانات المباريات، وبطاقات توصيف الاختبارات، والبرامج والنصوص الرسمية، وتُحدَّث مع كل دورة.')}${UL([
   '**المصادر الأولية أولًا**: الإعلانات الرسمية للمؤسسات، والمنصات العمومية (Cursus Sup، بوابات التوظيف) والنصوص المنشورة.',
   '**معلومة مؤرخة وموثقة المصدر**: تشير كل بطاقة إلى الدورة التي تم التحقق منها وتسرد مصادرها. وكل رقم لا تتداوله إلا الصحافة أو المواقع المتخصصة يُشار إليه على هذا الأساس.',
   '**أسئلة أصلية**: الأسئلة التدريبية، وعددها ' + nq + '، محررة ومراجعة خصيصًا للموقع؛ وهي تحاكي مستوى الاختبارات وأسلوبها دون نسخ مواضيع رسمية.',
   '**تحديث حسب كل دورة**: تُراجع البطاقات قبل كل حملة تسجيل. ويُميَّز بين التواريخ القادمة والتقديرات.',
 ])}
-${H2('الاستقلالية')}${P('Concours Maroc غير تابع لأي إدارة أو قوة أمنية أو مؤسسة عسكرية أو مؤسسة مذكورة. ولا تُستعمل أسماء المباريات إلا لوصف المحتوى. **وحده الإعلان الرسمي لكل دورة هو المعتمد.**')}
-${H2('الإبلاغ عن خطأ')}${P('تغيّر تاريخ أو نُشرت عتبة؟ أبلغنا بذلك عبر صفحة [الاتصال](@contact). وكل تصحيح يتم التحقق منه يُدمج بسرعة.'.replace('@contact', link(pfx + 'contact/')))}`
-      : html`${P("Concours Maroc est un guide **indépendant et gratuit** pour les bacheliers et les candidats de niveau bac qui préparent un concours au Maroc. Il réunit, pour chaque concours, les conditions d'accès, le mode de sélection, les épreuves, le nombre de places connu et le calendrier, avec un entraînement adapté.")}
-${H2('Notre méthode')}${UL([
+${H2('إخلاء مسؤولية')}${P('هذا الموقع (maroc-concour.com) منصة تعليمية مستقلة تابعة لـ Novanest ATLAS، ولا يرتبط بأي وزارة أو مؤسسة حكومية أو جهة رسمية منظمة للمباريات أو الامتحانات، ولا بأي قوة أمنية أو مؤسسة عسكرية أو مؤسسة مذكورة. ولا تُستعمل أسماء المباريات إلا لوصف المحتوى. **وحده الإعلان الرسمي لكل دورة هو المعتمد.**')}
+${H2('الإبلاغ عن خطأ')}${P(`تغيّر تاريخ أو نُشرت عتبة؟ أبلغنا بذلك عبر صفحة [الاتصال](${link(pfx + 'contact/')}) أو على ${mail}. وكل تصحيح يتم التحقق منه يُدمج بسرعة.`)}`
+      : html`${P("Concours Maroc est un guide **indépendant et gratuit** pour les bacheliers et les candidats de niveau bac qui préparent un concours au Maroc. Il réunit, pour chaque concours, les conditions d'accès, le mode de sélection, les épreuves, le nombre de places connu et le calendrier, avec un entraînement adapté. Il est édité par **Novanest ATLAS**.")}
+${H2('Éditeur')}${P("**Équipe éditoriale Novanest ATLAS** — Éditeur indépendant d'applications éducatives et de plateformes de préparation aux examens et concours, basé à Casablanca, Maroc.")}
+${P(`Contact : ${mail}`)}${linkMode() === 'app' ? '' : P(`Novanest ATLAS publie aussi [l'application Android Concours Maroc](${link(pfx + 'application/')}).`)}
+${H2('Comment le contenu est vérifié')}${P("Les questions d'entraînement et les guides sont recherchés et rédigés de façon indépendante à partir des cadres publics des épreuves : avis de concours, fiches de description des épreuves, programmes et textes officiels. Ils sont mis à jour à chaque session.")}${UL([
   "**Sources primaires d'abord** : avis officiels des établissements, plateformes publiques (Cursus Sup, portails de recrutement) et textes publiés.",
   '**Information datée et sourcée** : chaque fiche indique la session vérifiée et liste ses sources. Un chiffre relayé uniquement par la presse ou des sites spécialisés est signalé comme tel.',
   "**Questions originales** : les " + nq + " questions d'entraînement sont rédigées et relues pour le site ; elles reproduisent le niveau et le style des épreuves sans copier de sujets officiels.",
   "**Mise à jour par session** : les fiches sont revues avant chaque campagne d'inscription. Les dates à venir sont distinguées des estimations.",
 ])}
-${H2('Indépendance')}${P("Concours Maroc n'est affilié à aucune administration, force de sécurité, institution militaire ou établissement cité. Les noms des concours ne sont utilisés que pour décrire le contenu. **Seul l'avis officiel de chaque session fait foi.**")}
-${H2('Signaler une erreur')}${P(`Une date a changé, un seuil est publié ? Signalez-le depuis la page [contact](@contact). Chaque correction vérifiée est intégrée rapidement.`.replace('@contact', link(pfx + 'contact/')))}`,
-    { crumb: ar ? 'من نحن' : 'À propos' }));
+${H2('Non-affiliation')}${P("Ce site (maroc-concour.com) est une ressource éducative indépendante éditée par Novanest ATLAS et n'est affilié à aucun ministère, organisme public ou centre d'examen officiel, ni à aucune force de sécurité, institution militaire ou établissement cité. Les noms des concours ne sont utilisés que pour décrire le contenu. **Seul l'avis officiel de chaque session fait foi.**")}
+${H2('Signaler une erreur')}${P(`Une date a changé, un seuil est publié ? Signalez-le depuis la page [contact](${link(pfx + 'contact/')}) ou à ${mail}. Chaque correction vérifiée est intégrée rapidement.`)}`,
+    {
+      crumb: ar ? 'من نحن' : 'À propos',
+      updated: '2026-11-22',
+      jsonld: [
+        { '@context': 'https://schema.org', '@type': 'AboutPage', url: aboutUrl, inLanguage: lang, name: ar ? 'من نحن ومنهجيتنا' : 'À propos de Concours Maroc', about: { '@id': `${site.siteUrl}/#publisher` }, publisher: { '@id': `${site.siteUrl}/#publisher` } },
+        publisherLd(site, lang, true),
+      ],
+    }));
 
   pages.push(simplePage(site, lang, 'contact',
     ar ? 'اتصل بنا وصحّح معلومة' : 'Contact et signalement d’erreur',

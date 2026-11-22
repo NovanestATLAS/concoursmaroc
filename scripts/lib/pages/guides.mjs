@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { html, raw } from '../html.mjs';
 import { icon } from '../icons.mjs';
-import { linker, breadcrumb, breadcrumbLd, faqLd, linkMode } from '../layout.mjs';
+import { linker, breadcrumb, breadcrumbLd, faqLd, linkMode, publisherLd } from '../layout.mjs';
 import { quizBlock, quizSubjects, waShare } from '../engage.mjs';
 import { parseFrontMatter, markdown } from '../markdown.mjs';
 import { t, formatDate } from '../strings.mjs';
@@ -67,8 +67,8 @@ ${inlineCard(site, lang, link, { campaign: 'guide-contenu', mobileOnly: true, qr
       jsonld: [breadcrumbLd(site, crumbs), {
         '@context': 'https://schema.org', '@type': 'Article', headline: g.meta.h1 || g.meta.title, description: g.meta.description,
         inLanguage: lang, dateModified: updated, datePublished: g.meta.published || '2026-10-09',
-        author: { '@type': 'Organization', name: 'Concours Maroc' },
-        publisher: { '@type': 'Organization', name: 'Concours Maroc', logo: { '@type': 'ImageObject', url: `${site.siteUrl}/assets/img/concours-maroc-logo-512.png` } },
+        author: publisherLd(site, lang),
+        publisher: publisherLd(site, lang),
         mainEntityOfPage: `${site.siteUrl}/${pfx}guides/${g.slug}/`,
       }, faq.length ? faqLd(faq, lang) : null],
       body,

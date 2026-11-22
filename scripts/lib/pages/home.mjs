@@ -1,7 +1,7 @@
 /* Home page (FR and AR). */
 import { html, raw } from '../html.mjs';
 import { icon } from '../icons.mjs';
-import { linker, faqLd, practiceHref, linkMode, sitePath } from '../layout.mjs';
+import { linker, faqLd, practiceHref, linkMode, sitePath, publisherLd } from '../layout.mjs';
 import { t } from '../strings.mjs';
 import { concoursCard, guidePath } from './concours.mjs';
 import { GROUPS, SUBJECTS } from '../../../content/taxonomy.mjs';
@@ -224,11 +224,9 @@ ${faq.map((f) => html`<details><summary>${f.q}</summary><div class="faq-a"><p>${
     {
       '@context': 'https://schema.org', '@type': 'WebSite', name: 'Concours Maroc', alternateName: 'ConcoursMaroc',
       url: `${site.siteUrl}/${sitePath(pfx)}`, inLanguage: lang, description: x.desc,
+      publisher: { '@id': `${site.siteUrl}/#publisher` },
     },
-    {
-      '@context': 'https://schema.org', '@type': 'Organization', name: 'Concours Maroc', url: `${site.siteUrl}/`,
-      logo: `${site.siteUrl}/assets/img/concours-maroc-logo-512.png`,
-    },
+    publisherLd(site, lang, true),
     faqLd(faq, lang),
     app ? appJsonLd(site, lang) : null,
   ];

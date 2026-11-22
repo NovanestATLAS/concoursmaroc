@@ -267,6 +267,27 @@ ${items.map(([href, label], i) => html`<li>${i < items.length - 1 ? html`<a href
 </ol></nav>`;
 }
 
+/* Publisher of the site as a schema.org Organization (content/site.mjs
+ * `publisher`). Short form (name, url, @id) for the author/publisher of a page;
+ * full form (logo, email, address, contact point, sameAs) on the home and About
+ * pages, which other pages point to through the same @id. */
+export function publisherLd(site, lang, full = false) {
+  const pub = site.publisher;
+  const id = `${site.siteUrl}/#publisher`;
+  const logo = { '@type': 'ImageObject', url: `${site.siteUrl}/assets/img/concours-maroc-logo-512.png`, width: 512, height: 512 };
+  const base = { '@type': 'Organization', '@id': id, name: pub.name, url: `${site.siteUrl}/` };
+  if (!full) return { ...base, logo };
+  return {
+    '@context': 'https://schema.org', ...base, logo,
+    description: pub.description[lang] || pub.description.fr,
+    email: pub.email,
+    address: { '@type': 'PostalAddress', addressLocality: pub.locality, addressCountry: pub.country },
+    contactPoint: [{ '@type': 'ContactPoint', contactType: 'customer support', email: pub.email, availableLanguage: ['French', 'Arabic'] }],
+    brand: { '@type': 'Brand', name: site.name, logo: logo.url },
+    sameAs: pub.sameAs,
+  };
+}
+
 export function breadcrumbLd(site, items) {
   return {
     '@context': 'https://schema.org',

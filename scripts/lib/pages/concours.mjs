@@ -1,7 +1,7 @@
 /* Concours guide pages and the concours directory. */
 import { html, raw, L, esc } from '../html.mjs';
 import { icon } from '../icons.mjs';
-import { linker, breadcrumb, breadcrumbLd, faqLd, practiceHref, linkMode } from '../layout.mjs';
+import { linker, breadcrumb, breadcrumbLd, faqLd, practiceHref, linkMode, publisherLd } from '../layout.mjs';
 import { quizBlock, quizSubjects, quizTitle, quizLead, nextSteps, waShare } from '../engage.mjs';
 import { alertButton, alertLine } from '../alerts.mjs';
 import { renderBlocks, makeText } from '../blocks.mjs';
@@ -233,8 +233,8 @@ ${aside}
       datePublished: c.published || '2026-10-09',
       mainEntityOfPage: url,
       image: `${site.siteUrl}/assets/img/og/concours-${c.id}.png`,
-      author: { '@type': 'Organization', name: 'Concours Maroc', url: `${site.siteUrl}/` },
-      publisher: { '@type': 'Organization', name: 'Concours Maroc', logo: { '@type': 'ImageObject', url: `${site.siteUrl}/assets/img/concours-maroc-logo-512.png` } },
+      author: publisherLd(site, lang),
+      publisher: publisherLd(site, lang),
       about: { '@type': 'EducationalOccupationalProgram', name: d.name, provider: { '@type': 'Organization', name: d.short } },
     },
     faqLd(d.faq, lang),

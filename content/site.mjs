@@ -7,6 +7,22 @@
  */
 export default {
   name: 'Concours Maroc',
+  // Publisher of the site (owner's decision, 22 Nov 2026: brand-first editorial
+  // identity, no personal name). Shown on the About pages and used as the
+  // Organization in JSON-LD: author and publisher of every article, full record
+  // on the home and About pages (scripts/lib/layout.mjs publisherLd).
+  publisher: {
+    name: 'Novanest ATLAS',
+    email: 'support@maroc-concour.com',
+    locality: 'Casablanca',
+    country: 'MA',
+    description: {
+      fr: "Éditeur indépendant d'applications éducatives et de plateformes de préparation aux examens et concours, basé à Casablanca, Maroc.",
+      ar: 'ناشر مستقل للتطبيقات التعليمية ومنصات التحضير للامتحانات والمباريات، مقره في الدار البيضاء، المغرب.',
+    },
+    // Profiles of the same publisher elsewhere (schema.org sameAs).
+    sameAs: ['https://novanest-atlas.net/'],
+  },
   // Public address of the site, without trailing slash.
   siteUrl: 'https://www.maroc-concour.com',
   // Host name for the GitHub Pages custom domain ('' = none).

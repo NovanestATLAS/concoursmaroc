@@ -265,7 +265,7 @@ export function appJsonLd(site, lang, extra = {}) {
     downloadUrl: storeUrl(site),
     image: `${site.siteUrl}/${ICON_FILE}`,
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'MAD' },
-    publisher: { '@type': 'Organization', name: 'Novanest ATLAS' },
+    publisher: { '@type': 'Organization', '@id': `${site.siteUrl}/#publisher`, name: site.publisher.name, url: `${site.siteUrl}/` },
     ...extra,
   };
 }
