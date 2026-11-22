@@ -275,7 +275,7 @@ export function publisherLd(site, lang, full = false) {
   const pub = site.publisher;
   const id = `${site.siteUrl}/#publisher`;
   const logo = { '@type': 'ImageObject', url: `${site.siteUrl}/assets/img/concours-maroc-logo-512.png`, width: 512, height: 512 };
-  const base = { '@type': 'Organization', '@id': id, name: pub.name, url: `${site.siteUrl}/` };
+  const base = { '@type': 'Organization', '@id': id, name: pub.name, url: pub.website || `${site.siteUrl}/` };
   if (!full) return { ...base, logo };
   return {
     '@context': 'https://schema.org', ...base, logo,
@@ -284,7 +284,7 @@ export function publisherLd(site, lang, full = false) {
     address: { '@type': 'PostalAddress', addressLocality: pub.locality, addressCountry: pub.country },
     contactPoint: [{ '@type': 'ContactPoint', contactType: 'customer support', email: pub.email, availableLanguage: ['French', 'Arabic'] }],
     brand: { '@type': 'Brand', name: site.name, logo: logo.url },
-    sameAs: pub.sameAs,
+    ...(pub.sameAs && pub.sameAs.length ? { sameAs: pub.sameAs } : {}),
   };
 }
 

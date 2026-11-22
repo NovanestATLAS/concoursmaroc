@@ -46,7 +46,7 @@ export function buildStaticPages(site, all, lang, banks) {
     ar ? 'Concours Maroc دليل مستقل ومجاني للمباريات بالمغرب تنشره Novanest ATLAS بالدار البيضاء: الناشر ومنهجية إعداد المحتوى والتواصل.' : "Concours Maroc, guide indépendant et gratuit des concours au Maroc édité par Novanest ATLAS (Casablanca) : éditeur, méthode de vérification, contact.",
     (link, pfx) => ar ? html`${P('Concours Maroc دليل **مستقل ومجاني** موجه إلى الحاصلين على البكالوريا والمترشحين بمستوى البكالوريا الذين يستعدون لمباراة بالمغرب. ويجمع، لكل مباراة، شروط الولوج وطريقة الانتقاء والاختبارات وعدد المقاعد المعروف والأجندة، مع تمارين ملائمة. وتنشره **Novanest ATLAS**.')}
 ${H2('الناشر')}${P('**فريق التحرير – Novanest ATLAS** — ناشر مستقل للتطبيقات التعليمية ومنصات التحضير للامتحانات والمباريات، مقره في الدار البيضاء، المغرب.')}
-${P(`للتواصل: ${mail}`)}${linkMode() === 'app' ? '' : P(`وتنشر Novanest ATLAS أيضًا [تطبيق Concours Maroc على أندرويد](${link(pfx + 'application/')}).`)}
+${P(`الموقع: [novanest-atlas.net](${pub.website}) — للتواصل: ${mail}`)}${linkMode() === 'app' ? '' : P(`وتنشر Novanest ATLAS أيضًا [تطبيق Concours Maroc على أندرويد](${link(pfx + 'application/')}).`)}
 ${H2('منهجية إعداد المحتوى')}${P('تُعدّ الأسئلة التدريبية والأدلة بشكل مستقل، انطلاقًا من الأطر العمومية للاختبارات: إعلانات المباريات، وبطاقات توصيف الاختبارات، والبرامج والنصوص الرسمية، وتُحدَّث مع كل دورة.')}${UL([
   '**المصادر الأولية أولًا**: الإعلانات الرسمية للمؤسسات، والمنصات العمومية (Cursus Sup، بوابات التوظيف) والنصوص المنشورة.',
   '**معلومة مؤرخة وموثقة المصدر**: تشير كل بطاقة إلى الدورة التي تم التحقق منها وتسرد مصادرها. وكل رقم لا تتداوله إلا الصحافة أو المواقع المتخصصة يُشار إليه على هذا الأساس.',
@@ -57,7 +57,7 @@ ${H2('إخلاء مسؤولية')}${P('هذا الموقع (maroc-concour.com) �
 ${H2('الإبلاغ عن خطأ')}${P(`تغيّر تاريخ أو نُشرت عتبة؟ أبلغنا بذلك عبر صفحة [الاتصال](${link(pfx + 'contact/')}) أو على ${mail}. وكل تصحيح يتم التحقق منه يُدمج بسرعة.`)}`
       : html`${P("Concours Maroc est un guide **indépendant et gratuit** pour les bacheliers et les candidats de niveau bac qui préparent un concours au Maroc. Il réunit, pour chaque concours, les conditions d'accès, le mode de sélection, les épreuves, le nombre de places connu et le calendrier, avec un entraînement adapté. Il est édité par **Novanest ATLAS**.")}
 ${H2('Éditeur')}${P("**Équipe éditoriale Novanest ATLAS** — Éditeur indépendant d'applications éducatives et de plateformes de préparation aux examens et concours, basé à Casablanca, Maroc.")}
-${P(`Contact : ${mail}`)}${linkMode() === 'app' ? '' : P(`Novanest ATLAS publie aussi [l'application Android Concours Maroc](${link(pfx + 'application/')}).`)}
+${P(`Site : [novanest-atlas.net](${pub.website}) — Contact : ${mail}`)}${linkMode() === 'app' ? '' : P(`Novanest ATLAS publie aussi [l'application Android Concours Maroc](${link(pfx + 'application/')}).`)}
 ${H2('Comment le contenu est vérifié')}${P("Les questions d'entraînement et les guides sont recherchés et rédigés de façon indépendante à partir des cadres publics des épreuves : avis de concours, fiches de description des épreuves, programmes et textes officiels. Ils sont mis à jour à chaque session.")}${UL([
   "**Sources primaires d'abord** : avis officiels des établissements, plateformes publiques (Cursus Sup, portails de recrutement) et textes publiés.",
   '**Information datée et sourcée** : chaque fiche indique la session vérifiée et liste ses sources. Un chiffre relayé uniquement par la presse ou des sites spécialisés est signalé comme tel.',

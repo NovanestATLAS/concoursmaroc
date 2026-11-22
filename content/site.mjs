@@ -13,15 +13,17 @@ export default {
   // on the home and About pages (scripts/lib/layout.mjs publisherLd).
   publisher: {
     name: 'Novanest ATLAS',
-    email: 'support@maroc-concour.com',
+    email: 'support@novanest-atlas.net',
+    // The publisher's own website (owner, 22 Nov 2026): Organization url and the About pages link.
+    website: 'https://novanest-atlas.net/',
     locality: 'Casablanca',
     country: 'MA',
     description: {
       fr: "Éditeur indépendant d'applications éducatives et de plateformes de préparation aux examens et concours, basé à Casablanca, Maroc.",
       ar: 'ناشر مستقل للتطبيقات التعليمية ومنصات التحضير للامتحانات والمباريات، مقره في الدار البيضاء، المغرب.',
     },
-    // Profiles of the same publisher elsewhere (schema.org sameAs).
-    sameAs: ['https://novanest-atlas.net/'],
+    // Profiles of the same publisher elsewhere (schema.org sameAs), e.g. its Google Play developer page.
+    sameAs: [],
   },
   // Public address of the site, without trailing slash.
   siteUrl: 'https://www.maroc-concour.com',
