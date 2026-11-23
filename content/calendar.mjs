@@ -4,13 +4,21 @@
  *   - 2027 entries are estimates based on the usual period (month only,
  *     confidence: 'estimation') and must be confirmed by the official notice.
  * The calendar page computes "upcoming / past" in the browser, so the page
- * stays correct without rebuilding. Last checked against sources: 2026-11-19
- * (new: CRMEF cadres spécialistes, 1,759 places, announced by the ministry on
- * 9 November, applications 11-25 November, written exam 5 December; unchanged:
- * DGAPR deadline 26 November and written exam 6 December, CRMEF teachers'
- * deadline 19 November at 16:30 with no extension, DGSN written exams 22 and
- * 29 November with convocations online since 14 November, Forces Auxiliaires
- * 20 November - 16 December, bac 2027 free candidates until 4 December).
+ * stays correct without rebuilding. Last checked against sources: 2026-11-23
+ * (new: CRMEF teachers' session, 301,373 applications counted on 20 November,
+ * ministry statement of 22 November, no calendar change announced; DGSN: the
+ * official avis on emploi-public.ma (officiers de police, C 43407/26) gives
+ * the 22 November exam date and a deadline of 23 September at 16:30, so the
+ * 2026 registration entry now uses it; no news yet of written results or of
+ * the sport and oral dates; unchanged: DGAPR deadline 26 November at 16:30,
+ * provisional list 27 November, final list 30 November, written exam
+ * 6 December, no new avis and no 2027 avis for male surveillants adjoints;
+ * CRMEF cadres spécialistes deadline 25 November; DGSN commissaires
+ * principaux 29 November; Forces Auxiliaires 20 November - 16 December;
+ * bac 2027 free candidates until 4 December; no new Protection civile avis).
+ * Earlier check, 2026-11-19 (new: CRMEF cadres spécialistes, 1,759 places,
+ * announced on 9 November, applications 11-25 November, written exam
+ * 5 December; CRMEF teachers' deadline 19 November at 16:30 with no extension).
  * Earlier check, 2026-11-18 (DGAPR: 348 posts announced on 11-12 November).
  * Earlier check, 2026-11-08 (CRMEF 2026 announced on 3 November, places raised to 17,953 on 4 November,
  * written exams on 28 November; bac 2027 free candidates from 4 November to
@@ -200,9 +208,9 @@ export const CALENDAR = [
   { id: 'est-2026', concours: 'est', type: 'inscription', start: '2026-07-31', date: '2026-08-23', confidence: 'annonce',
     fr: 'EST 2026 (DUT) : candidatures Cursus Sup', ar: 'المدارس العليا للتكنولوجيا 2026: الترشيحات',
     source: { label: 'EST Sidi Bennour — Inscription DUT 1re année 2026-2027', url: 'https://www.estsb.ucd.ac.ma/inscription-dut-1ere-annee-est-sidi-bennour-2026-2027/' } },
-  { id: 'dgsn-2026-insc', concours: 'police-dgsn', type: 'inscription', start: '2026-09-07', date: '2026-09-22', confidence: 'annonce',
-    fr: 'Police (DGSN) 2026 : inscriptions (8 427 postes)', ar: 'الأمن الوطني 2026: التسجيل (8427 منصبًا)',
-    source: { label: 'Wadifa-info — Concours DGSN 2026 : 8 427 postes', url: 'https://www.wadifa-info.com/fr/concours-dgsn-gov-ma' } },
+  { id: 'dgsn-2026-insc', concours: 'police-dgsn', type: 'inscription', start: '2026-09-07', date: '2026-09-23', confidence: 'officiel',
+    fr: 'Police (DGSN) 2026 : inscriptions jusqu’à 16 h 30 (8 427 postes)', ar: 'الأمن الوطني 2026: التسجيل إلى غاية الساعة 16:30 (8427 منصبًا)',
+    source: { label: 'emploi-public.ma — Officier de police, échelle 8, 450 postes (C 43407/26) : dépôt du 7 au 23 septembre 2026 à 16 h 30', url: 'https://www.emploi-public.ma/ar/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84/%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA/ccd521a4-dc1f-4976-9bb9-a963ade0c62d' } },
   { id: 'fa-mokhazni-2026-insc', concours: 'forces-auxiliaires', type: 'deadline', date: '2026-10-16', confidence: 'annonce',
     fr: 'Forces Auxiliaires (mokhaznis, promotion 2027) : date limite d’inscription', ar: 'القوات المساعدة (المخازنية، فوج 2027): آخر أجل للتسجيل',
     source: { label: 'Alwadifa-Maroc — avis des Inspections des Forces Auxiliaires', url: 'https://alwadifa-maroc.com/offre/show/id/23624' } },

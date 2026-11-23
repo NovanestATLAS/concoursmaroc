@@ -5,10 +5,12 @@
  * annonce du 3 novembre (reproduite par Alwadifa-Maroc, PDF sur men.gov.ma),
  * annonce complémentaire du 4 novembre (places portées à 17 953), calendrier
  * de l'annexe 2 relayé par Le Matin. Les fiches officielles (PDF) n'ont pas pu
- * être lues, d'où les mentions « relayé » sur les durées et coefficients. */
+ * être lues, d'où les mentions « relayé » sur les durées et coefficients.
+ * 2026-11-23 : bilan des candidatures (301 373 au 20 novembre, communiqué du
+ * ministère du 22 novembre relayé par Hespress et Alyaoum24). */
 export default {
   id: 'enseignants-aref',
-  updated: '2026-11-22',
+  updated: '2026-11-23',
   order: 61,
   group: 'enseignement',
   level: 'bac3',
@@ -42,6 +44,8 @@ export default {
     { label: 'Portail national du Maroc — ouverture des candidatures (session de novembre 2025)', url: 'https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de' },
   ],
   sources: [
+    { title: 'Hespress — 301 000 candidatures aux concours de l’enseignement : 301 373 au vendredi 20 novembre 2026, répartition par âge (communiqué du ministère, 22 novembre 2026)', url: 'https://www.hespress.com/301-%D8%A3%D9%84%D9%81-%D8%AA%D8%B1%D8%B4%D9%8A%D8%AD-%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A8%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8-1843739.html', date: '2026-11-22' },
+    { title: 'Alyaoum24 — Concours de l’enseignement 2026 : plus de 301 000 candidatures au 20 novembre, dépôt possible dans les CRMEF pendant les quatre derniers jours', url: 'https://alyaoum24.com/2059237.html', date: '2026-11-22' },
     { title: 'Ministère de l’Éducation nationale — annonce des concours d’accès au cycle de qualification des cadres enseignants, session de novembre 2026 (PDF)', url: 'https://www.men.gov.ma/sites/default/files/2026-11/%D8%A5%D8%B9%D9%84%D8%A7%D9%86_0.pdf', date: '2026-11' },
     { title: 'Ministère de l’Éducation nationale — annonce des concours d’accès au cycle de formation des cadres spécialistes (pédagogiques, sociaux, économie et administration), session de décembre 2026, avec places et calendrier en annexe (PDF)', url: 'https://www.men.gov.ma/sites/default/files/2026-11/%D8%A5%D8%B9%D9%84%D8%A7%D9%86_2.pdf', date: '2026-11-09' },
     { title: 'Alwadifa-Maroc — Annonce des concours des cadres spécialistes reproduite : 1 759 places, candidatures du 11 au 25 novembre 2026 (16 h 30), écrit le 5 décembre', url: 'https://alwadifa-maroc.com/offre/show/id/23816', date: '2026-11-09' },
@@ -78,10 +82,10 @@ export default {
     short: 'Enseignants du primaire (CRMEF)',
     name: 'Concours de l’enseignement primaire — accès au cycle de qualification des CRMEF (ex-concours des cadres des AREF)',
     title: 'Concours enseignement primaire 2026 : écrit le 28 novembre',
-    description: 'Concours de l’enseignement 2026 : 7 023 places au primaire, 40 ans au plus, candidatures jusqu’au 19 novembre, écrit QCM le 28 novembre, oral et préparation.',
+    description: 'Concours de l’enseignement 2026 : 301 373 candidatures, 7 023 places au primaire, convoqués à l’écrit dès le 24 novembre, écrit QCM le 28 novembre, oral.',
     keywords: ['concours enseignement 2026', 'concours enseignement primaire', 'concours enseignement 40 ans', 'concours aref', 'concours crmef', 'wolouj men gov ma', 'concours cadres spécialistes crmef 2026', 'مباراة التعليم 2026'],
-    intro: "Pour devenir **professeur de l'enseignement primaire** dans le public, il faut réussir, après la licence, le **concours d'accès au cycle de qualification des cadres enseignants** des CRMEF, appelé jusqu'en 2023 « concours des cadres des AREF ». **Session de novembre 2026** : candidatures du **5 au 19 novembre 2026** (16 h 30) sur wolouj.men.gov.ma, écrit le **samedi 28 novembre 2026**, **7 023 places** au primaire sur 17 953 au total, et une limite d'âge portée à **40 ans**. Autre concours des CRMEF : **1 759 cadres spécialistes** (non enseignants), candidatures jusqu’au **25 novembre 2026** et écrit le **5 décembre** (voir plus bas).",
-    facts: [['Diplôme', 'Licence ou diplôme équivalent'], ['Âge', '40 ans au plus (session 2026)'], ['Épreuves', 'Écrit QCM (matières, didactique, sciences de l’éducation) puis oral'], ['Places au primaire 2026', '7 023 (6 023 double spécialité, 1 000 amazighe)'], ['Candidature', 'Du 5 au 19 novembre 2026, wolouj.men.gov.ma'], ['Écrit', 'Samedi 28 novembre 2026']],
+    intro: "Pour devenir **professeur de l'enseignement primaire** dans le public, il faut réussir, après la licence, le **concours d'accès au cycle de qualification des cadres enseignants** des CRMEF, appelé jusqu'en 2023 « concours des cadres des AREF ». **Session de novembre 2026** : les candidatures, reçues du 5 au 19 novembre sur wolouj.men.gov.ma, sont closes. Le ministère en a compté **301 373** au 20 novembre, pour **17 953 places** (dont **7 023** au primaire), avec une limite d'âge portée à **40 ans**. Prochaines étapes : liste des convoqués à l'écrit à partir du **24 novembre**, écrit le **samedi 28 novembre 2026**. Autre concours des CRMEF : **1 759 cadres spécialistes** (non enseignants), candidatures jusqu’au **25 novembre 2026** et écrit le **5 décembre** (voir plus bas).",
+    facts: [['Diplôme', 'Licence ou diplôme équivalent'], ['Âge', '40 ans au plus (session 2026)'], ['Épreuves', 'Écrit QCM (matières, didactique, sciences de l’éducation) puis oral'], ['Places au primaire 2026', '7 023 (6 023 double spécialité, 1 000 amazighe)'], ['Candidatures', '301 373 (closes, bilan du 20 novembre 2026)'], ['Écrit', 'Samedi 28 novembre 2026 (convoqués publiés dès le 24 novembre)']],
     sections: [
       { id: 'cadre', h: 'Du « concours des cadres des AREF » au cycle de qualification', blocks: [
         { p: "Jusqu'en 2023, le concours était organisé sous le nom de **concours de recrutement des cadres des académies régionales (AREF)**. Après l'adoption du **statut particulier des fonctionnaires du ministère de l'Éducation nationale** (décret n° 2-24-140 du 23 février 2024, Bulletin officiel n° 7277 du 26 février 2024), les sessions de 2024 et de 2025 se sont tenues sous le nom de **concours d'accès au cycle de qualification des cadres enseignants** dans les **centres régionaux des métiers de l'éducation et de la formation (CRMEF)**, avec une candidature en ligne sur **wolouj.men.gov.ma**." },
@@ -139,6 +143,14 @@ export default {
           ['Oral', 'Du 14 au 23 décembre'],
           ['Résultats finaux', 'À partir du 29 décembre (inscription en CRMEF du 31 décembre au 2 janvier, début de la formation le 4 janvier 2027)'],
         ] } },
+        { p: "**Bilan des candidatures.** Le ministère a annoncé le **22 novembre 2026** avoir reçu **301 373 candidatures** au vendredi 20 novembre, soit près de **17 par place**, tous cycles confondus. Pendant les quatre derniers jours, les candidats qui n'arrivaient pas à finir leur dossier en ligne ont pu le déposer dans les CRMEF et les directions provinciales. Répartition par âge :" },
+        { table: { head: ['Âge', 'Candidatures'], rows: [
+          ['18 à 25 ans', '116 785 (38,75 %)'],
+          ['26 à 30 ans', '95 622 (31,73 %)'],
+          ['31 à 35 ans', '58 948 (19,56 %)'],
+          ['36 à 40 ans', '30 018 (9,96 %)'],
+        ] } },
+        { p: "Les 36 à 40 ans, admis grâce à la nouvelle limite d'âge, font près d'une candidature sur dix." },
         { p: 'Les sessions précédentes, pour comparaison :' },
         { table: { head: ['Étape', 'Octobre 2024', 'Janvier 2025 (primaire)', 'Novembre 2025'], rows: [
           ['Places au primaire', '4 052', '442', '3 383 (2 383 bilingue, 1 000 amazighe)'],
@@ -190,16 +202,17 @@ export default {
       { q: 'Quand a lieu le concours de l’enseignement 2026 ?', a: "L'écrit a lieu le samedi 28 novembre 2026, après des candidatures reçues du 5 au 19 novembre 2026 à 16 h 30 sur wolouj.men.gov.ma. La liste des convoqués à l'écrit paraît à partir du 24 novembre ; l'oral est prévu du 14 au 23 décembre et les résultats définitifs à partir du 29 décembre." },
       { q: 'Les CRMEF recrutent-ils d’autres profils que des enseignants ?', a: "Oui. Le concours d'accès au cycle de formation des cadres spécialistes (session de décembre 2026) offre 1 759 places : 1 000 spécialistes sociaux, 559 spécialistes en économie et administration et 200 spécialistes pédagogiques (laboratoires scolaires, surveillance pédagogique et documentation). Il faut une licence et 40 ans au plus ; candidatures du 11 au 25 novembre 2026 à 16 h 30 sur wolouj.men.gov.ma, écrit le samedi 5 décembre 2026." },
       { q: 'Combien de places au concours de l’enseignement 2026 ?', a: "17 953 places après l'annonce complémentaire du 4 novembre 2026 : 7 023 au primaire (6 023 en double spécialité et 1 000 en amazighe), 8 870 au collégial et 2 060 au qualifiant. L'annonce initiale du 3 novembre en prévoyait 15 590." },
+      { q: 'Combien de candidats au concours de l’enseignement 2026 ?', a: "301 373 candidatures au vendredi 20 novembre 2026, selon le ministère, pour 17 953 places : près de 17 par place. 38,75 % viennent de candidats de 18 à 25 ans et 9,96 % (30 018) de candidats de 36 à 40 ans, admis grâce à la limite d'âge portée à 40 ans." },
     ],
   },
   ar: {
     short: 'أساتذة التعليم الابتدائي',
     name: 'مباراة التعليم الابتدائي — ولوج سلك تأهيل أطر التدريس بالمراكز الجهوية (مباراة أطر الأكاديميات سابقا)',
     title: 'مباراة التعليم الابتدائي 2026: الكتابي يوم 28 نونبر',
-    description: 'مباراة التعليم 2026: 7023 مقعدا بالابتدائي، 40 سنة على الأكثر، الترشيح إلى غاية 19 نونبر، الاختبار الكتابي يوم 28 نونبر، ثم الشفوي والتحضير.',
+    description: 'مباراة التعليم 2026: 301373 ترشيحا، 7023 مقعدا بالابتدائي، لوائح المدعوين للكتابي ابتداءً من 24 نونبر، والاختبار الكتابي يوم 28 نونبر، ثم الشفوي.',
     keywords: ['مباراة التعليم 2026', 'مباراة التعليم الابتدائي', 'مباراة التعليم 40 سنة', 'أطر الأكاديميات', 'ولوج سلك تأهيل أطر التدريس', 'مباراة أطر المختصين 2026', 'توصيف مباراة التعليم 2026 2027', 'wolouj.men.gov.ma'],
-    intro: 'لتصبح **أستاذا للتعليم الابتدائي** في التعليم العمومي، عليك أن تنجح بعد الإجازة في **مباراة ولوج سلك تأهيل أطر التدريس** بالمراكز الجهوية لمهن التربية والتكوين، التي كانت تسمى إلى غاية 2023 «مباراة توظيف أطر الأكاديميات». **دورة نونبر 2026**: الترشيح من **5 إلى 19 نونبر 2026** (الساعة 16:30) عبر wolouj.men.gov.ma، والاختبار الكتابي يوم **السبت 28 نونبر 2026**، و**7023 مقعدا** بالابتدائي من أصل 17953، مع رفع السن الأقصى إلى **40 سنة**. وهناك مباراة أخرى بالمراكز الجهوية: **1759 منصبًا لأطر المختصين** (غير المدرّسين)، الترشيح إلى غاية **25 نونبر 2026** والكتابي يوم **5 دجنبر** (انظر أسفله).',
-    facts: [['الشهادة', 'الإجازة أو ما يعادلها'], ['السن', '40 سنة على الأكثر (دورة 2026)'], ['الاختبارات', 'كتابي بأسئلة متعددة الاختيارات (المواد، الديداكتيك، علوم التربية) ثم شفوي'], ['مقاعد الابتدائي 2026', '7023 (6023 مزدوج، 1000 أمازيغية)'], ['الترشيح', 'من 5 إلى 19 نونبر 2026 عبر wolouj.men.gov.ma'], ['الاختبار الكتابي', 'السبت 28 نونبر 2026']],
+    intro: 'لتصبح **أستاذا للتعليم الابتدائي** في التعليم العمومي، عليك أن تنجح بعد الإجازة في **مباراة ولوج سلك تأهيل أطر التدريس** بالمراكز الجهوية لمهن التربية والتكوين، التي كانت تسمى إلى غاية 2023 «مباراة توظيف أطر الأكاديميات». **دورة نونبر 2026**: انتهى الترشيح الذي جرى من 5 إلى 19 نونبر عبر wolouj.men.gov.ma، وأحصت الوزارة **301373 ترشيحا** إلى غاية 20 نونبر، على **17953 مقعدا** (منها **7023** بالابتدائي)، مع رفع السن الأقصى إلى **40 سنة**. المراحل المقبلة: لوائح المدعوين للاختبار الكتابي ابتداءً من **24 نونبر**، والاختبار الكتابي يوم **السبت 28 نونبر 2026**. وهناك مباراة أخرى بالمراكز الجهوية: **1759 منصبًا لأطر المختصين** (غير المدرّسين)، الترشيح إلى غاية **25 نونبر 2026** والكتابي يوم **5 دجنبر** (انظر أسفله).',
+    facts: [['الشهادة', 'الإجازة أو ما يعادلها'], ['السن', '40 سنة على الأكثر (دورة 2026)'], ['الاختبارات', 'كتابي بأسئلة متعددة الاختيارات (المواد، الديداكتيك، علوم التربية) ثم شفوي'], ['مقاعد الابتدائي 2026', '7023 (6023 مزدوج، 1000 أمازيغية)'], ['الترشيحات', '301373 (انتهى الترشيح، حصيلة 20 نونبر 2026)'], ['الاختبار الكتابي', 'السبت 28 نونبر 2026 (لوائح المدعوين ابتداءً من 24 نونبر)']],
     sections: [
       { id: 'cadre', h: 'من «مباراة أطر الأكاديميات» إلى سلك التأهيل', blocks: [
         { p: 'إلى غاية 2023 كانت المباراة تُنظم باسم **مباراة توظيف أطر الأكاديميات الجهوية للتربية والتكوين**. وبعد اعتماد **النظام الأساسي الخاص بموظفي الوزارة المكلفة بالتربية الوطنية** (المرسوم رقم 2.24.140 الصادر في 23 فبراير 2024، الجريدة الرسمية عدد 7277 بتاريخ 26 فبراير 2024)، نُظمت دورتا 2024 و2025 باسم **مباريات ولوج سلك تأهيل أطر التدريس** بـ**المراكز الجهوية لمهن التربية والتكوين**، مع ترشيح إلكتروني عبر **wolouj.men.gov.ma**.' },
@@ -257,6 +270,14 @@ export default {
           ['الاختبار الشفوي', 'من 14 إلى 23 دجنبر'],
           ['النتائج النهائية', 'ابتداءً من 29 دجنبر (التسجيل بالمراكز من 31 دجنبر إلى 2 يناير، وانطلاق التكوين يوم 4 يناير 2027)'],
         ] } },
+        { p: '**حصيلة الترشيحات.** أعلنت الوزارة يوم **22 نونبر 2026** أنها توصلت بـ**301373 ترشيحا** إلى غاية يوم الجمعة 20 نونبر، أي قرابة **17 ترشيحا لكل مقعد** في جميع الأسلاك. وخلال الأيام الأربعة الأخيرة، تمكن المترشحون الذين تعذر عليهم إتمام ملفاتهم عبر الإنترنت من إيداعها بالمراكز الجهوية لمهن التربية والتكوين والمديريات الإقليمية. التوزيع حسب السن:' },
+        { table: { head: ['السن', 'الترشيحات'], rows: [
+          ['من 18 إلى 25 سنة', '116785 (38,75%)'],
+          ['من 26 إلى 30 سنة', '95622 (31,73%)'],
+          ['من 31 إلى 35 سنة', '58948 (19,56%)'],
+          ['من 36 إلى 40 سنة', '30018 (9,96%)'],
+        ] } },
+        { p: 'تمثل فئة 36 إلى 40 سنة، التي فتحها رفع السن الأقصى، قرابة ترشيح من كل عشرة.' },
         { p: 'الدورات السابقة للمقارنة:' },
         { table: { head: ['المرحلة', 'أكتوبر 2024', 'يناير 2025 (الابتدائي)', 'نونبر 2025'], rows: [
           ['مقاعد الابتدائي', '4052', '442', '3383 (2383 مزدوج، 1000 أمازيغية)'],
@@ -309,6 +330,7 @@ export default {
       { q: 'متى تُجرى مباراة التعليم 2026؟', a: 'يُجرى الاختبار الكتابي يوم السبت 28 نونبر 2026، بعد ترشيحات استُقبلت من 5 إلى 19 نونبر 2026 على الساعة 16:30 عبر wolouj.men.gov.ma. وتُنشر لوائح المدعوين للكتابي ابتداءً من 24 نونبر، والاختبار الشفوي مبرمج من 14 إلى 23 دجنبر، والنتائج النهائية ابتداءً من 29 دجنبر.' },
       { q: 'هل توظف المراكز الجهوية لمهن التربية والتكوين أطرًا غير الأساتذة؟', a: 'نعم. تتضمن مباريات ولوج سلك تكوين أطر المختصين (دورة دجنبر 2026) 1759 منصبًا: 1000 من المختصين الاجتماعيين، و559 من مختصي الاقتصاد والإدارة، و200 من المختصين التربويين (المختبرات المدرسية، والحراسة التربوية والتوثيق). ويُشترط الحصول على الإجازة وألا يتجاوز السن 40 سنة؛ والترشيح من 11 إلى 25 نونبر 2026 على الساعة 16:30 عبر wolouj.men.gov.ma، والاختبار الكتابي يوم السبت 5 دجنبر 2026.' },
       { q: 'كم عدد المقاعد في مباراة التعليم 2026؟', a: '17953 مقعدا بعد الإعلان التكميلي ليوم 4 نونبر 2026: 7023 بالابتدائي (6023 للتخصص المزدوج و1000 للأمازيغية)، و8870 بالإعدادي، و2060 بالتأهيلي. وكان الإعلان الأول ليوم 3 نونبر يتضمن 15590 مقعدا.' },
+      { q: 'كم عدد المترشحين لمباراة التعليم 2026؟', a: '301373 ترشيحا إلى غاية يوم الجمعة 20 نونبر 2026 حسب الوزارة، على 17953 مقعدا، أي قرابة 17 ترشيحا لكل مقعد. 38,75% منها لمترشحين من 18 إلى 25 سنة، و9,96% (30018) لمترشحين من 36 إلى 40 سنة، قُبلوا بفضل رفع السن الأقصى إلى 40 سنة.' },
     ],
   },
 };
