@@ -145,9 +145,14 @@ public class PlayUpdate extends CordovaPlugin {
         else cb.success("failed");
     }
 
+    /* The app's page in the Google Play app itself. The intent names the Play
+       Store package: without it, Xiaomi/Redmi/POCO phones answer a market://
+       link with their own "Select an app market" chooser (Google Play or
+       GetApps). Without Google Play, the page opens in the browser. */
     private void openStore(final CallbackContext callback) {
         String pkg = cordova.getActivity().getPackageName();
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + pkg));
+        intent.setPackage("com.android.vending");
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         try {
             cordova.getActivity().startActivity(intent);

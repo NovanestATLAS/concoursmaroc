@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-play-update",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Google Play in-app updates (check, immediate or flexible flow) for Cordova Android.",
   "license": "MIT",
   "author": "Novanest ATLAS",

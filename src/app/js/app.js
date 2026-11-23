@@ -138,6 +138,35 @@
     Ads.screenChanged();
   });
 
+  // between two practice questions (src/js/entrainement/ui.js)
+  document.addEventListener('cm:question-break', function () { if (Ads && onPlay) Ads.questionBreak(); });
+
+  /* Ad rules published with the website (content/app-ads.json →
+     <site>/app/ads.json): the frequency of interstitials can change without
+     a new version. JSON only, bounded in ads-service.js; the last rules read
+     are kept for offline starts. */
+  var RULES_KEY = 'cm.adRules';
+  function applyStoredRules() {
+    try { var r = JSON.parse(localStorage.getItem(RULES_KEY) || 'null'); if (r && Ads) Ads.applyRules(r); } catch (e) { /* ignore */ }
+  }
+  function fetchRules() {
+    if (!Ads || !global.fetch) return;
+    var site = (document.documentElement.getAttribute('data-site-url') || 'https://www.maroc-concour.com/').replace(/\/?$/, '/');
+    global.fetch(site + 'app/ads.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (r) {
+        if (!r || typeof r !== 'object') return;
+        try { localStorage.setItem(RULES_KEY, JSON.stringify(r)); } catch (e) { /* ignore */ }
+        Ads.applyRules(r);
+      })
+      .catch(function () { /* offline: the stored rules stay */ });
+  }
+  applyStoredRules();
+  var rulesAt = 0;
+  function refreshRules() { if (Date.now() - rulesAt > 6 * 3600000) { rulesAt = Date.now(); fetchRules(); } }
+  refreshRules();
+  document.addEventListener('resume', refreshRules);
+
   // ------------------------------------------------------------ back button
   var lastBack = 0;
   function closeOverlays() {

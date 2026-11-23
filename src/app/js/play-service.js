@@ -252,8 +252,11 @@
 
     /* "Noter l'application" in the settings: the Play Store page. */
     openStorePage: function () {
-      if (global.LaunchReview && typeof global.LaunchReview.launch === 'function') { nativeScreen('store', 15000); global.LaunchReview.launch(); return true; }
+      // PlayUpdate.openStore names the Google Play app in the intent: some
+      // phones (Xiaomi, Redmi, POCO) otherwise ask "Select an app market"
+      // for a market:// link. LaunchReview.launch only as a fallback.
       if (global.PlayUpdate) { nativeScreen('store', 15000); global.PlayUpdate.openStore(); return true; }
+      if (global.LaunchReview && typeof global.LaunchReview.launch === 'function') { nativeScreen('store', 15000); global.LaunchReview.launch(); return true; }
       return false;
     },
 

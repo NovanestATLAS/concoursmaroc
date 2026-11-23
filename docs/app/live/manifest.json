@@ -1,8 +1,8 @@
 {
  "format": 1,
  "shell": 1,
- "version": "2026-11-19-96252568",
- "updated": "2026-11-19",
+ "version": "2026-11-22-1090739a",
+ "updated": "2026-11-22",
  "needs": [
   "js/annuaire.js",
   "js/contact.js",
@@ -17,8 +17,8 @@
  ],
  "packs": {
   "core": {
-   "file": "packs/core.fbc12397fb2f.json",
-   "sha256": "fbc12397fb2f1f2eb81f31cc3696dbf0c8aeb1a024ab8469d5c2c044d814b9a9",
+   "file": "packs/core.08cc096e28c4.json",
+   "sha256": "08cc096e28c45324d689391cc7bfe2562ed4247345937b938a00a62e830e1997",
    "bytes": 795558,
    "files": 8,
    "prefixes": [

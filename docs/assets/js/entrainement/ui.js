@@ -729,7 +729,14 @@
     function advance() {
       TTS.stop();
       stopTimer();
-      if (Quiz.next()) UI.renderQuiz(); else finishSession();
+      if (!Quiz.next()) { finishSession(); return; }
+      UI.renderQuiz();
+      // A break between two questions (correction read, next question just
+      // drawn): the Android app may place an interstitial here, never in an
+      // exam or a timed set. Nothing listens to it on the website.
+      if (!session.limitMs) {
+        try { document.dispatchEvent(new CustomEvent('cm:question-break')); } catch (e) { /* old WebView */ }
+      }
     }
 
     function confirmFinish() {

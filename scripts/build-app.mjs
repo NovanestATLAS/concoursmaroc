@@ -38,6 +38,7 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import site from '../content/site.mjs';
+
 import { setLinkMode, linker, breadcrumb, appAsset } from './lib/layout.mjs';
 import { html } from './lib/html.mjs';
 import { icon, logo } from './lib/icons.mjs';
@@ -57,6 +58,19 @@ import { appPrivacyTitle, appPrivacyContent } from './lib/pages/app-privacy.mjs'
 setLinkMode('app');
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+
+/* Date of the content the app shows ("contenu du …", the version's prefix):
+   the newest page date of the website (docs/lastmod.json, written by
+   scripts/build.mjs before this script runs), not the editorial date
+   site.updated, which only moves when every page is reviewed. */
+const CONTENT_DATE = (() => {
+  let d = site.updated;
+  try {
+    const lm = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs', 'lastmod.json'), 'utf8'));
+    for (const e of Object.values(lm)) if (e && typeof e.d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(e.d) && e.d > d) d = e.d;
+  } catch (e) { /* first build: the editorial date */ }
+  return d;
+})();
 const DIST = path.join(ROOT, 'dist/cordova');
 // --live <dir>: only the live content packs, written into <dir> (the website
 // build); the www is then rendered in a temporary folder and dist/ is left alone.
@@ -398,7 +412,7 @@ function livePacks(appPages, registry) {
 function writeLive(dir, live, version) {
   const base = path.join(dir, 'app', 'live');
   fs.mkdirSync(path.join(base, 'packs'), { recursive: true });
-  const manifest = { format: 1, shell: liveShell(), version, updated: site.updated, needs: live.needs, packs: {} };
+  const manifest = { format: 1, shell: liveShell(), version, updated: CONTENT_DATE, needs: live.needs, packs: {} };
   for (const [name, p] of Object.entries(live.packs)) {
     fs.writeFileSync(path.join(base, p.file), p.text);
     manifest.packs[name] = { file: p.file, sha256: p.sha256, bytes: p.bytes, files: p.files, prefixes: p.prefixes };
@@ -517,11 +531,11 @@ async function main() {
       if (e.isDirectory()) walk(full); else h.update(fs.readFileSync(full));
     }
   })(OUT);
-  const version = `${site.updated}-${h.digest('hex').slice(0, 8)}`;
+  const version = `${CONTENT_DATE}-${h.digest('hex').slice(0, 8)}`;
   // The date of the content, not the version: the version also covers the app
   // code, and a change of code alone must leave the live packs identical
   // (installed apps would download the content again for nothing).
-  pagesJson.v = site.updated;
+  pagesJson.v = CONTENT_DATE;
   write('data/pages.json', JSON.stringify(pagesJson));
   const shell = shellHtml(version);
   write('index.html', shell);
@@ -548,7 +562,7 @@ async function main() {
     return;
   }
   write('data/live-base.json', JSON.stringify({
-    shell: liveShell(), id: version, updated: site.updated,
+    shell: liveShell(), id: version, updated: CONTENT_DATE,
     packs: Object.fromEntries(Object.entries(live.packs).map(([n, p]) => [n, p.sha256])),
     files: live.available,
   }));
@@ -578,7 +592,7 @@ async function main() {
     }
   })('www');
   entries.sort();
-  const stamp = new Date(`${site.updated}T12:00:00Z`);
+  const stamp = new Date(`${CONTENT_DATE}T12:00:00Z`);
   for (const r of entries) fs.utimesSync(path.join(DIST, r), stamp, stamp);
   execFileSync('zip', ['-q', '-X', '-D', zipName, '-@'], { cwd: DIST, input: entries.join('\n') + '\n', env: { ...process.env, TZ: 'UTC' } });
   fs.copyFileSync(path.join(DIST, zipName), path.join(ROOT, 'cordova', zipName));

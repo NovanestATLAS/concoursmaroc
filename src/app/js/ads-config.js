@@ -26,12 +26,17 @@ window.CM_ADS_CONFIG = {
   // the page up to cordova-android 14. true forces the second way, false
   // turns banners off.
   banner: 'auto',
-  // Interstitials, never while a question is on screen nor over a dialog:
+  // Interstitials, never while a question is being answered nor over a dialog:
   //  - at the end of a set of at least `setQuestions` questions, unless the
   //    previous interstitial closed less than `minGapMs` ago;
-  //  - otherwise at the first screen change once `maxGapMs` of use have
-  //    passed since the previous one (or since the app was opened).
+  //  - otherwise at the next natural break once `maxGapMs` of use have
+  //    passed since the previous one (or since the app was opened): a screen
+  //    change, or (betweenQuestions) the move to the next question after a
+  //    correction was read, outside exams and timed sets.
+  // These are the defaults of this version: the website's app/ads.json
+  // (content/app-ads.json) can change them without a new version.
   setQuestions: 10,
-  minGapMs: 180000,   // 3 minutes
-  maxGapMs: 240000    // 4 minutes
+  minGapMs: 210000,   // 3 min 30 s
+  maxGapMs: 210000,   // 3 min 30 s
+  betweenQuestions: true
 };

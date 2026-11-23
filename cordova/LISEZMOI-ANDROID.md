@@ -12,6 +12,32 @@ cordova-plugin-system-insets (bannière), cordova-plugin-firebase-analytics
 9.0.0.
 
 
+## Version 2.1.0 (23/11/2026) : plus d'interstitielles, bouton « Noter » corrigé
+
+Nouvelle version Google Play nécessaire (code JavaScript et plugin natif) :
+
+- **Interstitielles toutes les 3 min 30 s d'utilisation** (au lieu de 4 min),
+  aussi entre deux questions d'entraînement, quand on passe à la question
+  suivante après la correction (jamais en examen blanc ni en série chronométrée,
+  jamais pendant qu'on répond, jamais sur une fenêtre). La fin d'une série de
+  10 questions en déclenche toujours une si la précédente date de plus de
+  3 min 30 s.
+- **Ces règles se règlent désormais depuis le site**, sans nouvelle version :
+  `content/app-ads.json` → `https://www.maroc-concour.com/app/ads.json`, lu au
+  démarrage puis toutes les 6 h (bornes : 1 min 30 s à 1 h ; 5 à 50 questions).
+- **« Noter l'application sur Google Play »** ouvre directement Google Play : sur
+  les téléphones Xiaomi, Redmi et POCO, la fenêtre « Select an app market »
+  (Google Play ou GetApps) n'apparaît plus.
+
+À faire :
+
+1. Avec votre `admob.local.json` en place : `npm run build:app`, puis remplacez
+   `www/` par `dist/cordova/production/www_concours_maroc.zip`.
+2. Réinstallez le plugin local mis à jour (1.0.1) :
+   `cordova plugin rm cordova-plugin-play-update` puis
+   `cordova plugin add .\local-plugins\cordova-plugin-play-update`.
+3. `config.xml` : `version="2.1.0"`, construisez l'AAB et publiez-le.
+
 ## Mise à jour du 08/11/2026 : le contenu se met à jour tout seul
 
 C'est la **dernière fois** qu'il faut republier l'application pour du contenu.

@@ -190,6 +190,8 @@ async function main() {
     // live content of the Android app: the manifest is checked each time, the
     // packs have their hash in their name
     '/app/live/manifest.json', '  Cache-Control: no-cache',
+    '/app/ads.json', '  Cache-Control: no-cache',
+    '/app/annonce.json', '  Cache-Control: no-cache',
     '/app/live/packs/*', '  Cache-Control: public, max-age=31536000, immutable',
     '/sw.js', '  Cache-Control: no-cache',
     '/*', '  X-Content-Type-Options: nosniff', '  Referrer-Policy: strict-origin-when-cross-origin',
@@ -199,6 +201,11 @@ async function main() {
   // content/app-annonce.json; GitHub Pages serves it with CORS open.
   const annonce = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/app-annonce.json'), 'utf8'));
   write('app/annonce.json', JSON.stringify({ annonces: annonce.annonces || [] }));
+  // content/app-ads.json: interstitial rules of the Android app (read by
+  // src/app/js/app.js, bounded in ads-service.js). Only the rule keys travel.
+  const adRules = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/app-ads.json'), 'utf8'));
+  write('app/ads.json', JSON.stringify(Object.fromEntries(['minGapMs', 'maxGapMs', 'setQuestions', 'betweenQuestions']
+    .filter((k) => k in adRules).map((k) => [k, adRules[k]]))));
   // Live content of the Android app (src/app/js/live.js): its pages and data,
   // rendered for the app, published with every build, so that a change of the
   // content reaches the installed apps without a new version on Google Play.

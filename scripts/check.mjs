@@ -169,8 +169,11 @@ for (const e of CALENDAR) {
     const m = JSON.parse(fs.readFileSync(mf, 'utf8'));
     if (m.format !== 1) err(`app/live: unknown format ${m.format}`);
     if (!Number.isInteger(m.shell) || m.shell < 1) err('app/live: shell must be a positive integer');
-    if (m.updated !== site.updated) err(`app/live: updated ${m.updated} instead of ${site.updated}`);
-    if (typeof m.version !== 'string' || !m.version.startsWith(site.updated)) err(`app/live: bad version ${m.version}`);
+    // content date = newest page date (docs/lastmod.json), never older than site.updated
+    let contentDate = site.updated;
+    try { for (const e of Object.values(JSON.parse(fs.readFileSync(path.join(DOCS, 'lastmod.json'), 'utf8')))) if (e && e.d > contentDate) contentDate = e.d; } catch (e) { /* checked elsewhere */ }
+    if (m.updated !== contentDate) err(`app/live: updated ${m.updated} instead of ${contentDate}`);
+    if (typeof m.version !== 'string' || !m.version.startsWith(contentDate)) err(`app/live: bad version ${m.version}`);
     const contents = {};
     const listed = new Set();
     for (const [name, p] of Object.entries(m.packs || {})) {

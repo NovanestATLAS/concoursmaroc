@@ -23,9 +23,11 @@
  *   - end of a set of at least 10 questions (ads-config.js: setQuestions):
  *     one as the results appear, unless the previous one closed less than
  *     3 minutes ago (minGapMs);
- *   - otherwise, once 4 minutes of use (maxGapMs) have passed since the
- *     previous one closed, or since the app was opened, at the next screen
- *     change, browsing pages included;
+ *   - otherwise, once 3 min 30 s of use (maxGapMs) have passed since the
+ *     previous one closed, or since the app was opened, at the next natural
+ *     break: a screen change (browsing pages included) or, in a practice set
+ *     that is neither an exam nor timed, the move to the next question once
+ *     the correction was read (cm:question-break, betweenQuestions);
  *   - one due at the end of a set but not ready yet (still loading, a
  *     dialog open) is shown at the next screen change within 2 minutes.
  * Time spent outside the app or watching an ad does not count as use. The
@@ -69,9 +71,18 @@
     ids: Object.assign({}, TEST_IDS),
     banner: 'auto',
     setQuestions: 10,
-    minGapMs: 3 * MIN,
-    maxGapMs: 4 * MIN
+    minGapMs: 3.5 * MIN,
+    maxGapMs: 3.5 * MIN,
+    betweenQuestions: true
   };
+
+  /* Ad rules from outside the code (the website's app/ads.json, see
+     applyRules): kept within these bounds whatever the file says. */
+  var RULE_BOUNDS = { minGapMs: [90000, 3600000], maxGapMs: [90000, 3600000], setQuestions: [5, 50] };
+  function bounded(k, v) {
+    var b = RULE_BOUNDS[k];
+    return typeof v === 'number' && isFinite(v) && v >= b[0] && v <= b[1];
+  }
 
   /* js/ads-config.js defines window.CM_ADS_CONFIG. In test mode Google's
      demo units are used whatever the file lists, so a test build never
@@ -91,12 +102,14 @@
     if (typeof c.minGapMs === 'number' && c.minGapMs >= 0) config.minGapMs = c.minGapMs;
     if (typeof c.maxGapMs === 'number' && c.maxGapMs > 0) config.maxGapMs = c.maxGapMs;
     if (config.maxGapMs < config.minGapMs) config.maxGapMs = config.minGapMs;
+    if (typeof c.betweenQuestions === 'boolean') config.betweenQuestions = c.betweenQuestions;
     if (c.banner === true || c.banner === false || c.banner === 'auto') config.banner = c.banner;
   })();
 
   var CAP_KEY = 'ads.caps';
   var NAV_DELAY = 400;            // screen change -> the new page is drawn behind the ad
   var SET_END_DELAY = 300;        // results route -> the ad, before anything is tapped
+  var BREAK_DELAY = 150;          // next question drawn -> the ad, before it can be answered
   var AFTER_POPUP_MS = 10000;     // no interstitial right after an update / review / announcement window
   var AFTER_AD_MS = 10000;        // no dialog right after an interstitial closed
   var OWED_MS = 2 * MIN;
@@ -487,7 +500,7 @@
       inter.timer = 0;
       inter.pendingKind = '';
       evaluate(ctx);
-    }, ctx.kind === 'set-end' ? SET_END_DELAY : NAV_DELAY);
+    }, ctx.kind === 'set-end' ? SET_END_DELAY : ctx.kind === 'question-break' ? BREAK_DELAY : NAV_DELAY);
   }
 
   // reasons that only mean "not right now"
@@ -624,7 +637,7 @@
         interstitialShowing: inter.showing,
         rewardedReady: state.rewardedReady,
         online: state.online,
-        rules: { setQuestions: config.setQuestions, minGapMs: config.minGapMs, maxGapMs: config.maxGapMs },
+        rules: { setQuestions: config.setQuestions, minGapMs: config.minGapMs, maxGapMs: config.maxGapMs, betweenQuestions: config.betweenQuestions },
         usedMs: activeMs(),
         sinceLastMs: lastInterstitial() ? Date.now() - lastInterstitial() : null
       };
@@ -839,7 +852,9 @@
       var no = function (r) { return { show: false, reason: r }; };
       if (!config.enabled) return no('ads-disabled');
       if (!config.ids.interstitial) return no('no-unit');
-      if (playing()) return no('question-on-screen');
+      // between two questions: the next one has just been drawn, not yet read
+      if (ctx.kind === 'question-break' && !config.betweenQuestions) return no('breaks-off');
+      if (playing() && ctx.kind !== 'question-break') return no('question-on-screen');
       if (inter.showing) return no('showing');
       var busy = dialogBusy();
       if (busy) return no(busy);
@@ -868,8 +883,28 @@
     /* Any other screen change of the app (pages, practice screens). */
     screenChanged: function () { opportunity({ kind: 'navigation' }); },
 
+    /* The user moved on to the next question after reading the correction
+       (practice sets only, never exams or timed sets): a break where the
+       time rule (maxGapMs) may show an interstitial over the new question,
+       before it can be answered. */
+    questionBreak: function () { opportunity({ kind: 'question-break' }); },
+
     /* A question is on screen: nothing pending may show. */
     questionOnScreen: function () { cancelPending('question'); },
+
+    /* Rules from the website (app/ads.json): only known keys within
+       RULE_BOUNDS are taken; units and test mode never come from outside. */
+    applyRules: function (r) {
+      if (!r || typeof r !== 'object') return false;
+      var changed = false;
+      ['minGapMs', 'maxGapMs', 'setQuestions'].forEach(function (k) {
+        if (bounded(k, r[k])) { config[k] = r[k]; changed = true; }
+      });
+      if (typeof r.betweenQuestions === 'boolean') { config.betweenQuestions = r.betweenQuestions; changed = true; }
+      if (config.maxGapMs < config.minGapMs) config.maxGapMs = config.minGapMs;
+      if (changed) log('rules', { minGapMs: config.minGapMs, maxGapMs: config.maxGapMs, setQuestions: config.setQuestions, betweenQuestions: config.betweenQuestions });
+      return changed;
+    },
 
     // ----------------------------------------------------------- rewarded
     preloadRewarded: function () {
