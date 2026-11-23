@@ -12,7 +12,7 @@ cordova-plugin-system-insets (bannière), cordova-plugin-firebase-analytics
 9.0.0.
 
 
-## Version 2.1.0 (23/11/2026) : plus d'interstitielles, bouton « Noter » corrigé
+## Version 2.3.0 (23/11/2026, après la 2.2.0) : plus d'interstitielles, bouton « Noter » corrigé
 
 Nouvelle version Google Play nécessaire (code JavaScript et plugin natif) :
 
@@ -36,7 +36,7 @@ Nouvelle version Google Play nécessaire (code JavaScript et plugin natif) :
 2. Réinstallez le plugin local mis à jour (1.0.1) :
    `cordova plugin rm cordova-plugin-play-update` puis
    `cordova plugin add .\local-plugins\cordova-plugin-play-update`.
-3. `config.xml` : `version="2.1.0"`, construisez l'AAB et publiez-le.
+3. `config.xml` : `version="2.3.0"` (la 2.2.0 est publiée), construisez l'AAB et publiez-le.
 
 ## Mise à jour du 08/11/2026 : le contenu se met à jour tout seul
 
