@@ -4,8 +4,21 @@
  *   - 2027 entries are estimates based on the usual period (month only,
  *     confidence: 'estimation') and must be confirmed by the official notice.
  * The calendar page computes "upcoming / past" in the browser, so the page
- * stays correct without rebuilding. Last checked against sources: 2026-11-23
- * (new: CRMEF teachers' session, 301,373 applications counted on 20 November,
+ * stays correct without rebuilding. Last checked against sources: 2026-11-28
+ * (DGAPR: registration closed on 26 November at 16:30; no provisional list,
+ * extension, date change or new avis relayed yet, so the page now gives the
+ * next steps of the avis: provisional list from 27 November, final list
+ * (convocation) from 30 November, written exam 6 December in Marrakech and
+ * Fès; dgapr.gov.ma itself could not be read from the sandbox. New: CRMEF
+ * teachers, lists of the candidates admitted to the written exam published on
+ * 25 November (124,971 candidates, seven per place instead of six, Hespress
+ * 25 and 28 November), written exams held on 28 November, results still
+ * expected on 9 December; CRMEF cadres spécialistes, applications closed on
+ * 25 November, convoked list 30 November, written exam 5 December. Unchanged:
+ * DGSN commissaires principaux 29 November, no news of the 22 November
+ * results; Forces Auxiliaires 20 November - 16 December; bac 2027 free
+ * candidates until 4 December; no new Protection civile avis).
+ * Earlier check, 2026-11-23 (new: CRMEF teachers' session, 301,373 applications counted on 20 November,
  * ministry statement of 22 November, no calendar change announced; DGSN: the
  * official avis on emploi-public.ma (officiers de police, C 43407/26) gives
  * the 22 November exam date and a deadline of 23 September at 16:30, so the
@@ -58,8 +71,8 @@ export const CALENDAR = [
     fr: 'Police (DGSN) : épreuves écrites du concours 2026 (tous grades sauf commissaires principaux)', ar: 'الأمن الوطني: الاختبارات الكتابية لمباراة 2026 (جميع الرتب باستثناء العمداء الممتازين)',
     source: { label: 'iJob — Concours police 2026 : l’écrit fixé au dimanche 22 novembre', url: 'https://ijob.ma/actualite/concours-police-2026-ecrit-22-novembre/' } },
   { id: 'crmef-2026-ecrit', concours: 'enseignants-aref', type: 'ecrit', date: '2026-11-28', confidence: 'officiel', added: '2026-11-08',
-    fr: 'Concours de l’enseignement (CRMEF) 2026 : épreuves écrites (convoqués publiés à partir du 24 novembre)', ar: 'مباريات التعليم 2026: الاختبارات الكتابية (لوائح المدعوين ابتداءً من 24 نونبر)',
-    source: { label: 'Ministère de l’Éducation nationale — annonce des concours d’accès au cycle de qualification des cadres enseignants, session de novembre 2026 (PDF)', url: 'https://www.men.gov.ma/sites/default/files/2026-11/%D8%A5%D8%B9%D9%84%D8%A7%D9%86_0.pdf' } },
+    fr: 'Concours de l’enseignement (CRMEF) 2026 : épreuves écrites (124 971 candidats convoqués, listes publiées le 25 novembre)', ar: 'مباريات التعليم 2026: الاختبارات الكتابية (124971 مترشحا مدعوا، نُشرت اللوائح يوم 25 نونبر)',
+    source: { label: 'Hespress FR — Le ministère publie les listes des candidats admis à l’écrit du 28 novembre : 124 971 candidats (25 novembre 2026)', url: 'https://fr.hespress.com/497922-le-men-publie-les-listes-des-candidats-admis-aux-concours-dacces-au-cycle-de-qualification-des-cadres-denseignement.html' } },
   { id: 'dgsn-2026-ecrit-cp', concours: 'police-dgsn', type: 'ecrit', date: '2026-11-29', confidence: 'annonce',
     fr: 'Police (DGSN) : écrit des commissaires principaux (97 postes)', ar: 'الأمن الوطني: الاختبار الكتابي للعمداء الممتازين (97 منصبًا)',
     source: { label: 'Alwadifa-Maroc — DGSN : 97 commissaires de police principaux, concours le 29 novembre 2026', url: 'https://alwadifa-maroc.com/offre/show/id/23572' } },

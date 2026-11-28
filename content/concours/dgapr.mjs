@@ -34,14 +34,14 @@ export default {
   fr: {
     short: 'Administration pénitentiaire',
     name: "Délégation Générale à l'Administration Pénitentiaire et à la Réinsertion (DGAPR)",
-    title: 'Concours DGAPR 2026-2027 : 348 postes jusqu’au 26 novembre',
-    description: "Concours DGAPR 2026-2027 : 120 surveillantes (bac), 200 surveillants chefs, 28 médecins. Inscription sur dgapr.gov.ma jusqu’au 26 novembre, écrit le 6 décembre.",
+    title: 'Concours DGAPR 2026-2027 : écrit le 6 décembre, 348 postes',
+    description: "Concours DGAPR 2026-2027 : inscriptions closes le 26 novembre. Liste définitive (convocation) dès le 30 novembre, écrit le 6 décembre à Marrakech et Fès.",
     keywords: ['concours dgapr 2026', 'concours dgapr 2026-2027', 'concours dgapr femme', 'concours administration pénitentiaire', 'surveillante pénitentiaire adjointe', 'surveillant pénitentiaire chef', 'concours dgapr 2027', 'extranet.dgapr.gov.ma', 'مباراة إدارة السجون 2026'],
-    intro: "**Trois concours de la DGAPR sont ouverts** : **120 surveillantes pénitentiaires adjointes** (femmes, **bac**), **200 surveillants pénitentiaires chefs** (hommes, technicien spécialisé, DUT ou BTS) et **28 commandants adjoints médecins**. Inscription en ligne sur **dgapr.gov.ma** jusqu’au **jeudi 26 novembre 2026 à 16 h 30**, écrit le **dimanche 6 décembre 2026** à Marrakech et Fès. Pour les **hommes titulaires du bac**, le grand concours des **surveillants adjoints** n’est pas encore annoncé : le **projet de loi de finances 2027** prévoit **1 500 postes** pour la DGAPR, et en 2026 l’avis était paru le **3 janvier**.",
-    facts: [['Ouvert maintenant', '348 postes, jusqu’au 26 novembre 2026 à 16 h 30'], ['Écrit', 'Dimanche 6 décembre 2026, Marrakech et Fès'], ['Avec le bac', '120 surveillantes adjointes (femmes)'], ['Budget 2027', '1 500 postes (projet de loi de finances)'], ['Âge', '21 à 30 ans au 1er janvier 2026 (35 avec services)'], ['Inscription', 'En ligne sur dgapr.gov.ma']],
+    intro: "**Les inscriptions aux trois concours de la DGAPR sont closes** depuis le **jeudi 26 novembre 2026 à 16 h 30** : **120 surveillantes pénitentiaires adjointes** (femmes, **bac**), **200 surveillants pénitentiaires chefs** (hommes, technicien spécialisé, DUT ou BTS) et **28 commandants adjoints médecins**. Selon l’avis, la **liste provisoire** des candidats admis à concourir paraît sur **dgapr.gov.ma** à partir du **27 novembre**, puis la **liste définitive**, qui vaut convocation, à partir du **30 novembre** ; l’écrit a lieu le **dimanche 6 décembre 2026** à Marrakech et Fès. Pour les **hommes titulaires du bac**, le grand concours des **surveillants adjoints** n’est pas encore annoncé : le **projet de loi de finances 2027** prévoit **1 500 postes** pour la DGAPR, et en 2026 l’avis était paru le **3 janvier**.",
+    facts: [['Inscriptions', 'Closes le 26 novembre 2026 à 16 h 30 (348 postes)'], ['Convocation', 'Liste définitive sur dgapr.gov.ma dès le 30 novembre'], ['Écrit', 'Dimanche 6 décembre 2026, Marrakech et Fès'], ['Avec le bac', '120 surveillantes adjointes (femmes)'], ['Budget 2027', '1 500 postes (projet de loi de finances)'], ['Âge', '21 à 30 ans au 1er janvier 2026 (35 avec services)']],
     sections: [
-      { id: 'concours-novembre-2026', h: 'Concours ouverts : 348 postes (novembre 2026)', blocks: [
-        { callout: 'warn', text: "Date limite : **jeudi 26 novembre 2026 à 16 h 30**, sur dgapr.gov.ma uniquement. Un dossier incomplet ou déposé après l’heure est rejeté." },
+      { id: 'concours-novembre-2026', h: 'Concours de novembre 2026 : 348 postes, écrit le 6 décembre', blocks: [
+        { callout: 'info', text: "Les inscriptions sont **closes depuis le jeudi 26 novembre 2026 à 16 h 30**. Prochaine étape : la **liste définitive** des candidats admis à concourir, publiée sur dgapr.gov.ma à partir du **30 novembre**, vaut convocation à l’écrit du **dimanche 6 décembre**. Vérifiez votre nom et votre centre d’examen dès sa parution." },
         { table: { head: ['Concours', 'Postes et conditions'], rows: [
           ['Surveillantes adjointes', '**120** · femmes · bac, toutes séries · 21 à 30 ans'],
           ['Surveillants chefs', '**200** · hommes · technicien spécialisé, DUT ou BTS · 21 à 30 ans'],
@@ -49,7 +49,7 @@ export default {
         ] } },
         { p: "Âges au 1er janvier 2026 ; la limite recule d’autant d’années de services civils ou militaires, jusqu’à 35 ans (40 ans pour les médecins). Les surveillants chefs doivent avoir leur diplôme dans l’une des **15 spécialités** de l’avis, parmi lesquelles les soins infirmiers, la gestion des services de santé, l’informatique, les réseaux et la cybersécurité, la finance et la comptabilité, la gestion des entreprises, le génie civil et la qualité, hygiène, sécurité et environnement." },
         { steps: [
-          '**Jusqu’au 26 novembre, 16 h 30** : inscription et dépôt des pièces en PDF lisible, une pièce par fichier, sur dgapr.gov.ma.',
+          '**26 novembre, 16 h 30** : fin des inscriptions et du dépôt des pièces sur dgapr.gov.ma.',
           '**À partir du 27 novembre** : liste provisoire des candidats admis à concourir ; pour les surveillantes, demandes de précision jusqu’au **29 novembre à midi**.',
           '**À partir du 30 novembre** : liste définitive, qui vaut convocation.',
           '**Dimanche 6 décembre 2026** : écrit des trois concours à **Marrakech** et **Fès** (d’autres centres peuvent être ouverts).',
@@ -106,26 +106,26 @@ export default {
       ] },
     ],
     faq: [
-      { q: 'Quel concours DGAPR est ouvert en ce moment ?', a: "Trois concours, jusqu’au jeudi 26 novembre 2026 à 16 h 30 : 120 surveillantes pénitentiaires adjointes (femmes, bac), 200 surveillants pénitentiaires chefs (hommes, technicien spécialisé, DUT ou BTS) et 28 commandants adjoints médecins. L’écrit a lieu le dimanche 6 décembre 2026 à Marrakech et Fès." },
+      { q: 'Quel concours DGAPR est ouvert en ce moment ?', a: "Aucun au 28 novembre 2026. Les inscriptions aux trois concours de novembre (120 surveillantes pénitentiaires adjointes avec le bac, 200 surveillants pénitentiaires chefs et 28 commandants adjoints médecins) ont fermé le jeudi 26 novembre 2026 à 16 h 30. La liste définitive des candidats admis, publiée sur dgapr.gov.ma à partir du 30 novembre, vaut convocation à l’écrit du dimanche 6 décembre 2026 à Marrakech et Fès." },
       { q: 'Un homme avec le bac peut-il passer le concours de novembre 2026 ?', a: "Non. Le concours de surveillant adjoint de novembre est réservé aux femmes ; les hommes y accèdent seulement au grade de surveillant chef, avec un diplôme de technicien spécialisé, un DUT ou un BTS. Pour les hommes avec le bac, le prochain grand concours n’est pas encore annoncé : en 2026, son avis était paru le 3 janvier." },
-      { q: 'Quand sera publié le concours DGAPR 2027 ?', a: "Au 18 novembre 2026, l’avis 2027 des surveillants adjoints n’est pas publié. Le projet de loi de finances 2027 prévoit 1 500 postes pour la DGAPR, et en 2026 l'avis était paru le 3 janvier. Seul l'avis officiel fixera les dates." },
+      { q: 'Quand sera publié le concours DGAPR 2027 ?', a: "Au 28 novembre 2026, l’avis 2027 des surveillants adjoints n’est pas publié. Le projet de loi de finances 2027 prévoit 1 500 postes pour la DGAPR, et en 2026 l'avis était paru le 3 janvier. Seul l'avis officiel fixera les dates." },
       { q: 'Quelle taille faut-il pour être surveillant pénitentiaire ?', a: "1,73 m pour les hommes et 1,64 m pour les femmes, mesurés sans chaussures (avis 2026). Il faut aussi au moins 16/10 de vue pour les deux yeux réunis, sans lunettes." },
       { q: 'Que contient l’écrit du concours DGAPR ?', a: "Une épreuve de 2 heures, coefficient 2 : questions générales ou QCM sur des sujets sociaux, économiques et administratifs, les affaires pénitentiaires et les missions du poste. Il faut 10/20 pour passer au sport." },
       { q: 'Le diplôme de qualification professionnelle suffit-il ?', a: "Oui, s'il relève d'une des spécialités listées par l'avis. Sinon, il faut le bac, toutes séries acceptées." },
-      { q: 'Où s’inscrire au concours de l’administration pénitentiaire ?', a: "Uniquement en ligne, sur le site de la DGAPR (dgapr.gov.ma), avant la date limite de l'avis : le 26 novembre 2026 à 16 h 30 pour les concours de novembre. Un dossier incomplet ou déposé hors délai est rejeté." },
+      { q: 'Où s’inscrire au concours de l’administration pénitentiaire ?', a: "Uniquement en ligne, sur le site de la DGAPR (dgapr.gov.ma), avant la date limite de l'avis. Pour les concours de novembre 2026, elle était fixée au 26 novembre à 16 h 30 : les inscriptions sont closes. Un dossier incomplet ou déposé hors délai est rejeté." },
     ],
   },
   ar: {
     short: 'إدارة السجون',
     name: 'المندوبية العامة لإدارة السجون وإعادة الإدماج',
-    title: 'مباراة إدارة السجون 2026-2027: إناث وذكور قبل 26 نونبر',
-    description: 'مباراة إدارة السجون 2026-2027: 120 منصبًا للإناث بالبكالوريا، و200 مراقب رئيس و28 طبيبًا. التسجيل عبر dgapr.gov.ma إلى 26 نونبر 2026، والكتابي يوم 6 دجنبر.',
+    title: 'مباراة إدارة السجون 2026-2027 إناث وذكور: الكتابي 6 دجنبر',
+    description: 'مباراة إدارة السجون 2026-2027 (إناث وذكور): أُغلق التسجيل يوم 26 نونبر. اللائحة النهائية بمثابة استدعاء ابتداءً من 30 نونبر، والكتابي يوم 6 دجنبر بمراكش وفاس.',
     keywords: ['مباراة إدارة السجون 2026', 'مباراة إدارة السجون 2026-2027', 'التسجيل في مباراة إدارة السجون', 'مباراة إدارة السجون 2027 إناث', 'مباراة إدارة السجون إناث', 'مباراة مراقب السجون مساعد', 'مراقب السجون رئيس', 'مباراة إدارة السجون 2027', 'شروط مباراة إدارة السجون', 'extranet.dgapr.gov.ma'],
-    intro: '**ثلاث مباريات للمندوبية العامة لإدارة السجون وإعادة الإدماج مفتوحة الآن**: **120 مراقبة سجون مساعدة** (إناث، **البكالوريا**)، و**200 مراقب سجون رئيس** (ذكور، دبلوم تقني متخصص أو DUT أو BTS)، و**28 قائد سجون مساعدًا طبيبًا**. التسجيل عبر **dgapr.gov.ma** إلى غاية **الخميس 26 نونبر 2026 على الساعة 16:30**، والاختبار الكتابي يوم **الأحد 6 دجنبر 2026** بمراكش وفاس. أما **الذكور حاملو البكالوريا** فلم يُعلن بعد عن مباراتهم الكبرى لمراقبي السجون المساعدين: يخصص **مشروع قانون المالية لسنة 2027** **1500 منصب** للمندوبية، وفي 2026 صدر الإعلان يوم **3 يناير**.',
-    facts: [['مفتوحة الآن', '348 منصبًا، إلى غاية 26 نونبر 2026 على الساعة 16:30'], ['الكتابي', 'الأحد 6 دجنبر 2026، مراكش وفاس'], ['بالبكالوريا', '120 مراقبة سجون مساعدة (إناث)'], ['ميزانية 2027', '1500 منصب (مشروع قانون المالية)'], ['السن', 'من 21 إلى 30 سنة في فاتح يناير 2026 (35 مع الخدمات)'], ['التسجيل', 'عبر الإنترنت على dgapr.gov.ma']],
+    intro: '**أُغلق التسجيل في المباريات الثلاث للمندوبية العامة لإدارة السجون وإعادة الإدماج** يوم **الخميس 26 نونبر 2026 على الساعة 16:30**: **120 مراقبة سجون مساعدة** (إناث، **البكالوريا**)، و**200 مراقب سجون رئيس** (ذكور، دبلوم تقني متخصص أو DUT أو BTS)، و**28 قائد سجون مساعدًا طبيبًا**. وحسب الإعلان، تُنشر **اللائحة الأولية** للمترشحين المقبولين لاجتياز المباراة على **dgapr.gov.ma** ابتداءً من **27 نونبر**، ثم **اللائحة النهائية**، وهي بمثابة استدعاء، ابتداءً من **30 نونبر**، ويُجرى الاختبار الكتابي يوم **الأحد 6 دجنبر 2026** بمراكش وفاس. أما **الذكور حاملو البكالوريا** فلم يُعلن بعد عن مباراتهم الكبرى لمراقبي السجون المساعدين: يخصص **مشروع قانون المالية لسنة 2027** **1500 منصب** للمندوبية، وفي 2026 صدر الإعلان يوم **3 يناير**.',
+    facts: [['التسجيل', 'أُغلق يوم 26 نونبر 2026 على الساعة 16:30 (348 منصبًا)'], ['الاستدعاء', 'اللائحة النهائية على dgapr.gov.ma ابتداءً من 30 نونبر'], ['الكتابي', 'الأحد 6 دجنبر 2026، مراكش وفاس'], ['بالبكالوريا', '120 مراقبة سجون مساعدة (إناث)'], ['ميزانية 2027', '1500 منصب (مشروع قانون المالية)'], ['السن', 'من 21 إلى 30 سنة في فاتح يناير 2026 (35 مع الخدمات)']],
     sections: [
-      { id: 'concours-novembre-2026', h: 'المباريات المفتوحة: 348 منصبًا (نونبر 2026)', blocks: [
-        { callout: 'warn', text: 'آخر أجل: **الخميس 26 نونبر 2026 على الساعة 16:30**، عبر dgapr.gov.ma فقط. ويُرفض كل ملف ناقص أو مودع بعد الموعد.' },
+      { id: 'concours-novembre-2026', h: 'مباريات نونبر 2026: 348 منصبًا، والكتابي يوم 6 دجنبر', blocks: [
+        { callout: 'info', text: 'أُغلق التسجيل يوم **الخميس 26 نونبر 2026 على الساعة 16:30**. المرحلة المقبلة: **اللائحة النهائية** للمترشحين المقبولين لاجتياز المباراة، التي تُنشر على dgapr.gov.ma ابتداءً من **30 نونبر**، وهي بمثابة استدعاء للاختبار الكتابي يوم **الأحد 6 دجنبر**. تحقق من اسمك ومن مركز امتحانك فور صدورها.' },
         { table: { head: ['المباراة', 'المناصب والشهادة والسن'], rows: [
           ['مراقبات مساعدات', '**120** · إناث · البكالوريا، جميع الشعب · من 21 إلى 30 سنة'],
           ['مراقبون رؤساء', '**200** · ذكور · تقني متخصص أو DUT أو BTS · من 21 إلى 30 سنة'],
@@ -133,7 +133,7 @@ export default {
         ] } },
         { p: 'السن محتسبة في فاتح يناير 2026؛ ويُرفع الحد الأقصى بقدر سنوات الخدمة المدنية أو العسكرية، إلى 35 سنة (40 سنة بالنسبة للأطباء). ويجب أن يكون دبلوم المراقبين الرؤساء في أحد **التخصصات الخمسة عشر** الواردة في الإعلان، ومنها التمريض، وتدبير المصالح الصحية، والمعلوميات، والشبكات والأمن السيبراني، والمالية والمحاسبة، وتسيير المقاولات، والهندسة المدنية، والجودة والنظافة والسلامة والبيئة.' },
         { steps: [
-          '**إلى غاية 26 نونبر على الساعة 16:30**: التسجيل ورفع الوثائق بصيغة PDF واضحة، كل وثيقة في ملف، على dgapr.gov.ma.',
+          '**26 نونبر، الساعة 16:30**: انتهاء التسجيل ورفع الوثائق على dgapr.gov.ma.',
           '**ابتداءً من 27 نونبر**: اللائحة الأولية للمترشحين المقبولين؛ وبالنسبة للمراقبات، طلبات التوضيح إلى غاية **29 نونبر على الساعة 12:00 زوالًا**.',
           '**ابتداءً من 30 نونبر**: اللائحة النهائية، وهي بمثابة استدعاء.',
           '**الأحد 6 دجنبر 2026**: الاختبار الكتابي للمباريات الثلاث بمركزي **مراكش** و**فاس** (ويمكن فتح مراكز أخرى).',
@@ -190,13 +190,13 @@ export default {
       ] },
     ],
     faq: [
-      { q: 'ما هي مباريات إدارة السجون المفتوحة حاليًا؟', a: 'ثلاث مباريات إلى غاية الخميس 26 نونبر 2026 على الساعة 16:30: 120 مراقبة سجون مساعدة (إناث، البكالوريا)، و200 مراقب سجون رئيس (ذكور، دبلوم تقني متخصص أو DUT أو BTS)، و28 قائد سجون مساعدًا طبيبًا. ويُجرى الاختبار الكتابي يوم الأحد 6 دجنبر 2026 بمراكش وفاس.' },
+      { q: 'ما هي مباريات إدارة السجون المفتوحة حاليًا؟', a: 'لا توجد مباراة مفتوحة إلى غاية 28 نونبر 2026. فقد أُغلق التسجيل في مباريات نونبر الثلاث (120 مراقبة سجون مساعدة بالبكالوريا، و200 مراقب سجون رئيس، و28 قائد سجون مساعدًا طبيبًا) يوم الخميس 26 نونبر 2026 على الساعة 16:30. وتُعد اللائحة النهائية للمترشحين المقبولين، التي تُنشر على dgapr.gov.ma ابتداءً من 30 نونبر، بمثابة استدعاء للاختبار الكتابي يوم الأحد 6 دجنبر 2026 بمراكش وفاس.' },
       { q: 'هل يمكن للذكور حاملي البكالوريا اجتياز مباراة نونبر 2026؟', a: 'لا. مباراة المراقب المساعد في نونبر خاصة بالإناث، ولا يُقبل الذكور إلا في درجة المراقب الرئيس بدبلوم تقني متخصص أو DUT أو BTS. أما المباراة الكبرى للذكور حاملي البكالوريا فلم يُعلن عنها بعد، وقد صدر إعلانها في 2026 يوم 3 يناير.' },
-      { q: 'متى يُعلن عن مباراة إدارة السجون 2027؟', a: 'إلى غاية 18 نونبر 2026 لم يُنشر إعلان 2027 الخاص بالمراقبين المساعدين. يخصص مشروع قانون المالية لسنة 2027 1500 منصب للمندوبية، وفي 2026 صدر الإعلان يوم 3 يناير. والإعلان الرسمي وحده يحدد التواريخ.' },
+      { q: 'متى يُعلن عن مباراة إدارة السجون 2027؟', a: 'إلى غاية 28 نونبر 2026 لم يُنشر إعلان 2027 الخاص بالمراقبين المساعدين. يخصص مشروع قانون المالية لسنة 2027 1500 منصب للمندوبية، وفي 2026 صدر الإعلان يوم 3 يناير. والإعلان الرسمي وحده يحدد التواريخ.' },
       { q: 'ما هي القامة المطلوبة في مباراة إدارة السجون؟', a: '1.73 م للذكور و1.64 م للإناث بدون حذاء (إعلان 2026)، مع حدة بصر لا تقل عن 16/10 للعينين معًا دون نظارات.' },
       { q: 'ما مواد الاختبار الكتابي في مباراة إدارة السجون؟', a: 'اختبار مدته ساعتان ومعامله 2: أسئلة عامة أو متعددة الاختيارات حول مواضيع اجتماعية واقتصادية وإدارية، وشؤون السجون ومهام المنصب. ويلزم 10/20 للمرور إلى اختبار الرياضة.' },
       { q: 'هل يكفي دبلوم التأهيل المهني؟', a: 'نعم، إذا كان في أحد التخصصات المحددة في الإعلان؛ وإلا فالبكالوريا مطلوبة، وتُقبل جميع الشعب.' },
-      { q: 'أين يتم التسجيل في مباراة إدارة السجون؟', a: 'عبر الإنترنت فقط، على موقع المندوبية dgapr.gov.ma، قبل آخر أجل في الإعلان: 26 نونبر 2026 على الساعة 16:30 بالنسبة لمباريات نونبر. ويُرفض كل ملف ناقص أو مودع خارج الأجل.' },
+      { q: 'أين يتم التسجيل في مباراة إدارة السجون؟', a: 'عبر الإنترنت فقط، على موقع المندوبية dgapr.gov.ma، قبل آخر أجل في الإعلان. وبالنسبة لمباريات نونبر 2026، كان آخر أجل هو 26 نونبر على الساعة 16:30، وقد أُغلق التسجيل. ويُرفض كل ملف ناقص أو مودع خارج الأجل.' },
     ],
   },
 };

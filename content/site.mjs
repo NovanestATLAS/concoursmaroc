@@ -32,7 +32,7 @@ export default {
   defaultLang: 'fr',
   languages: ['fr', 'ar'],
   // Editorial date shown on pages and used as <lastmod> in the sitemap.
-  updated: '2026-11-23',
+  updated: '2026-11-28',
   // Academic year the guides were last checked against.
   session: '2026',
   nextSession: '2027',
